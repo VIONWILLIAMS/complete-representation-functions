@@ -1,0 +1,163 @@
+{
+  "$schema": "../schemas/crf-domain.schema.json",
+  "version": "0.1.0",
+  "admission_axiom": {
+    "id": "CRF-T1",
+    "text": "D is in the CRF core domain set iff there exists a mathematical theorem T that proves completeness of basis B and closure of operations Ops over D, and F_D can be constructed from B and Ops.",
+    "source": "paper/crf-paper.zh-CN.md#4-域准入公理域周期表与九域框架"
+  },
+  "domains": [
+    {
+      "id": "D1",
+      "name": "Geometry",
+      "name_zh": "三维几何",
+      "function_signature": "F: R^3 -> R",
+      "theorem": "SDF and CSG closure",
+      "basis": ["box", "sphere", "cylinder", "torus", "capsule", "cone", "plane"],
+      "operations": ["blend", "subtract", "round", "onion", "elongate", "rotate", "scale", "mirror", "twist", "bend", "displace", "repeat"],
+      "keyword_count": 19,
+      "status": "runtime_case_study",
+      "evidence": ["paper/crf-paper.zh-CN.md#6-2-d1三维几何", "paper/crf-paper.zh-CN.md#9-jiyu-案例研究从几何体到可编辑活物件"]
+    },
+    {
+      "id": "D2",
+      "name": "Multi-Agent Collaboration",
+      "name_zh": "多智能体协作",
+      "function_signature": "F: Task x Agents -> Result",
+      "theorem": "CSP and pi-calculus",
+      "basis": ["task", "gate", "merge", "split", "state"],
+      "operations": ["->", "||", "?:", "*", ">>"],
+      "keyword_count": 10,
+      "status": "reported_benchmark",
+      "evidence": ["paper/crf-paper.zh-CN.md#7-6-实验三d2-多智能体协作对照实验"]
+    },
+    {
+      "id": "D3",
+      "name": "UI Layout",
+      "name_zh": "用户界面布局",
+      "function_signature": "F: Rect x State -> PartitionTree",
+      "theorem": "2D spatial partition and constraint layout",
+      "basis": ["text", "image", "input", "canvas", "sequence", "grid", "layer"],
+      "operations": ["pad", "align", "scroll", "size", "style", "on", "when", "each"],
+      "keyword_count": 15,
+      "status": "runtime_case_study",
+      "evidence": ["paper/crf-paper.zh-CN.md#6-4-d3用户界面布局", "paper/crf-paper.zh-CN.md#7-5-实验二d3-ui-布局引擎验证"]
+    },
+    {
+      "id": "D4",
+      "name": "Data Transformation",
+      "name_zh": "数据变换",
+      "function_signature": "F: Table x Op -> Table",
+      "theorem": "Codd relational algebra",
+      "basis": ["source", "sink", "literal"],
+      "operations": ["filter", "select", "join", "union", "derive", "rename", "cast", "drop", "dedupe", "sort", "limit", "sample", "group", "window", "pivot", "unpivot", "fill"],
+      "keyword_count": 20,
+      "status": "planned_executable",
+      "parser": "domains/D4-data-transform/parser.js",
+      "evaluator": "domains/D4-data-transform/evaluator.js",
+      "tests": "domains/D4-data-transform/tests.js"
+    },
+    {
+      "id": "D5",
+      "name": "State Machine",
+      "name_zh": "状态机",
+      "function_signature": "F: State x Event -> State x Action[]",
+      "theorem": "Finite automata",
+      "basis": ["state", "event", "action", "guard", "context"],
+      "operations": ["on->", "if", "do", "after", "enter", "exit", "assign"],
+      "keyword_count": 12,
+      "status": "planned_executable",
+      "parser": "domains/D5-state-machine/parser.js",
+      "evaluator": "domains/D5-state-machine/evaluator.js",
+      "tests": "domains/D5-state-machine/tests.js"
+    },
+    {
+      "id": "D6",
+      "name": "Permission",
+      "name_zh": "权限控制",
+      "function_signature": "F: Subject x Resource x Action x Environment -> Decision",
+      "theorem": "ABAC",
+      "basis": ["role", "resource", "action", "condition"],
+      "operations": ["allow", "deny", "when", "inherit", "scope", "delegate"],
+      "keyword_count": 10,
+      "status": "planned_executable",
+      "parser": "domains/D6-permission/parser.js",
+      "evaluator": "domains/D6-permission/evaluator.js",
+      "tests": "domains/D6-permission/tests.js"
+    },
+    {
+      "id": "D7",
+      "name": "Validation",
+      "name_zh": "数据验证",
+      "function_signature": "F: Data x Rules -> Valid | Error[]",
+      "theorem": "Type theory and refinement types",
+      "basis": ["field", "entity", "error"],
+      "operations": ["required", "range", "length", "match", "oneof", "unique", "ref", "depends", "custom"],
+      "keyword_count": 12,
+      "status": "planned_executable",
+      "parser": "domains/D7-validation/parser.js",
+      "evaluator": "domains/D7-validation/evaluator.js",
+      "tests": "domains/D7-validation/tests.js"
+    },
+    {
+      "id": "D8",
+      "name": "Notification",
+      "name_zh": "消息通知",
+      "function_signature": "F: Event x Audience x Channel x TimePolicy x Template -> DeliveryPlan",
+      "theorem": "Predicate logic and temporal logic",
+      "basis": ["trigger", "audience", "template", "channel", "schedule"],
+      "operations": ["when", "throttle", "batch", "escalate", "fallback", "priority", "personalize"],
+      "keyword_count": 12,
+      "status": "planned_executable",
+      "parser": "domains/D8-notification/parser.js",
+      "evaluator": "domains/D8-notification/evaluator.js",
+      "tests": "domains/D8-notification/tests.js"
+    },
+    {
+      "id": "D9",
+      "name": "Agent Evolution",
+      "name_zh": "智能体进化",
+      "function_signature": "F: Agent x Feedback -> Agent",
+      "theorem": "Bellman dynamic programming and policy update",
+      "basis": ["agent", "state", "action", "reward", "policy"],
+      "operations": ["plan", "sample", "bootstrap", "gradient", "improve", "mutate", "select", "evaluate", "remember"],
+      "keyword_count": 14,
+      "status": "theoretical_extension",
+      "evidence": ["paper/crf-paper.zh-CN.md#4-5-九域扩展智能体进化"]
+    }
+  ],
+  "reduced_candidates": [
+    {
+      "name": "data_generation",
+      "reduced_to": ["D4", "D7"],
+      "reason": "Generated data is a table or data object constrained by validation rules."
+    },
+    {
+      "name": "layout_validation",
+      "reduced_to": ["D7"],
+      "reason": "Output is Valid/Error[] or Violation[], so it is a validator over layout."
+    },
+    {
+      "name": "spatial_transform_2d",
+      "reduced_to": ["D3"],
+      "reason": "2D pan, zoom, and rotate are layout/view-state operations."
+    },
+    {
+      "name": "collision_detection",
+      "reduced_to": ["D1"],
+      "reason": "Collision detection is an observer or validator over geometry, not a closed object domain."
+    },
+    {
+      "name": "sdf_transform",
+      "reduced_to": ["D1"],
+      "reason": "SDF transforms are D1 geometry operations."
+    }
+  ],
+  "open_candidates": [
+    {
+      "name": "agent_evaluation",
+      "status": "open",
+      "reason": "Score output may not satisfy closure unless evaluation criteria become self-updating objects."
+    }
+  ]
+}

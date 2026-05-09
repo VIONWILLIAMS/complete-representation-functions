@@ -1,0 +1,39 @@
+# Complete Representation Functions: Agent Context
+
+This repository publishes Complete Representation Functions as an agent-native research object.
+
+Language files:
+
+- Chinese original: `paper/crf-paper.zh-CN.md`
+- English paper: `paper/crf-paper.en.md`
+- English agent index: `llms.en.txt`
+- Chinese agent index: `llms.zh-CN.txt`
+- English agent instructions: `AGENTS.en.md`
+- Chinese agent instructions: `AGENTS.zh-CN.md`
+
+Core thesis:
+
+For any formalizable domain D, if there exists a mathematically grounded complete representation function F_D with basis B_D and closed operations Omega_D, then the domain's AI-native DSL core can be derived from B_D and Omega_D rather than invented only by expert convention.
+
+Canonical chain:
+
+Natural Language -> BDI Intent Semantics -> Intent IR -> CRF-derived DSL -> Verified Runtime.
+
+Core files:
+
+- `machine/crf.manifest.json`: top-level manifest.
+- `machine/domain-registry.json`: D1-D9 domain registry.
+- `machine/claim-graph.json`: claim-to-evidence graph.
+- `schemas/*.schema.json`: JSON schemas.
+
+Current evidence status:
+
+- D1 and D3 are represented as runtime/case-study evidence.
+- D2 has reported benchmark evidence: 4.72x token compression, 6.83x latency improvement, 100% parse rate.
+- D4-D8 are intended as the first executable evidence layer.
+- D9 is part of the current nine-domain theoretical closure.
+- JiYu is treated as a system case study, not the sole proof of CRF.
+
+Important boundary:
+
+Mathematical completeness does not imply intent completeness. Use BDI and Intent IR for claims about user intent fidelity.

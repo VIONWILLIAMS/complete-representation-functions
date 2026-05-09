@@ -1,0 +1,35 @@
+# 完备表示函数
+
+## 权威论文
+
+- /paper/crf-paper.zh-CN.md: 中文原始论文全文。
+- /paper/crf-paper.en.md: 英文论文版本。
+- /paper/abstract.zh-CN.md: 中文摘要与贡献摘要。
+- /paper/claims.md: Claim 索引，用于审稿和验证。
+
+## 机器可读索引
+
+- /machine/crf.manifest.json: CRF 顶层机器 manifest。
+- /machine/domain-registry.json: D1-D9 域注册表。
+- /machine/keyword-table.json: 基底、操作与关键词数量。
+- /machine/theorem-map.json: 每个域的数学定理来源。
+- /machine/claim-graph.json: Claim 到 evidence 的证据图。
+- /machine/experiment-index.json: 实验与可复现索引。
+- /machine/dlm-map.json: D×L×M 运行时坐标图。
+- /machine/morphism-registry.json: Typed morphism 注册表。
+
+## 可执行证据
+
+- /domains/D4-data-transform/README.md: 数据变换 DSL。
+- /domains/D5-state-machine/README.md: 状态机 DSL。
+- /domains/D6-permission/README.md: 权限 DSL。
+- /domains/D7-validation/README.md: 验证 DSL。
+- /domains/D8-notification/README.md: 通知 DSL。
+- /benchmarks/reproducibility.md: 复现实验说明。
+
+## 智能体接口
+
+- /AGENTS.zh-CN.md: 中文智能体操作规则。
+- /AGENTS.en.md: 英文智能体操作规则。
+- /docs/for-agents.md: 智能体阅读与审稿指南。
+- /docs/mcp.md: MCP server 资源、工具、提示词与安全策略。

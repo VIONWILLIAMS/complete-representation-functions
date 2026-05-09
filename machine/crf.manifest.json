@@ -1,0 +1,77 @@
+{
+  "$schema": "../schemas/crf-manifest.schema.json",
+  "id": "crf-paper-2026",
+  "title": "Complete Representation Functions",
+  "subtitle": "From Mathematical Completeness to Intent Semantics and Verifiable Runtime",
+  "version": "0.1.0",
+  "status": "agent-native-research-object-draft",
+  "canonical_paper": "paper/crf-paper.zh-CN.md",
+  "canonical_language": "zh-CN",
+  "languages": ["zh-CN", "en"],
+  "papers": {
+    "zh-CN": "paper/crf-paper.zh-CN.md",
+    "en": "paper/crf-paper.en.md",
+    "selector": "paper/crf-paper.md"
+  },
+  "readmes": {
+    "root": "README.md",
+    "zh-CN": "README.zh-CN.md",
+    "en": "README.en.md"
+  },
+  "core_claim": {
+    "id": "CRF-C0",
+    "text": "For any formalizable domain D with a complete representation function F_D, the domain's AI-native DSL can be derived from its mathematical basis and closed operations."
+  },
+  "entrypoints": {
+    "human": "README.md",
+    "agent": "llms.txt",
+    "agent_full": "llms-full.txt",
+    "agent_instructions": "AGENTS.md",
+    "localized": {
+      "en": {
+        "readme": "README.en.md",
+        "paper": "paper/crf-paper.en.md",
+        "agent": "AGENTS.en.md",
+        "llms": "llms.en.txt",
+        "llms_full": "llms-full.en.txt"
+      },
+      "zh-CN": {
+        "readme": "README.zh-CN.md",
+        "paper": "paper/crf-paper.zh-CN.md",
+        "agent": "AGENTS.zh-CN.md",
+        "llms": "llms.zh-CN.txt",
+        "llms_full": "llms-full.zh-CN.txt"
+      }
+    }
+  },
+  "machine_files": {
+    "domains": "machine/domain-registry.json",
+    "keywords": "machine/keyword-table.json",
+    "theorems": "machine/theorem-map.json",
+    "claims": "machine/claim-graph.json",
+    "experiments": "machine/experiment-index.json",
+    "dlm": "machine/dlm-map.json",
+    "morphisms": "machine/morphism-registry.json"
+  },
+  "schemas": {
+    "domain": "schemas/crf-domain.schema.json",
+    "claim": "schemas/crf-claim.schema.json",
+    "experiment": "schemas/crf-experiment.schema.json",
+    "dsl_ast": "schemas/crf-dsl-ast.schema.json",
+    "morphism": "schemas/crf-morphism.schema.json",
+    "bdi_intent": "schemas/bdi-intent.schema.json"
+  },
+  "mcp": {
+    "server_package": "packages/crf-mcp-server",
+    "docs": "docs/mcp.md",
+    "status": "planned"
+  },
+  "reproducibility": {
+    "status": "metadata-first",
+    "commands": [
+      "npm test",
+      "npm run validate:machine",
+      "npm run validate:claims"
+    ]
+  }
+}

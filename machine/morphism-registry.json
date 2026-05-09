@@ -1,0 +1,47 @@
+{
+  "$schema": "../schemas/crf-morphism.schema.json",
+  "version": "0.1.0",
+  "definition": "A typed morphism maps source domain objects to target domain objects with preconditions, postconditions, preservation constraints, and validators.",
+  "morphisms": [
+    {
+      "id": "MORPH-PHOTO-STRUCTURE",
+      "source": "Image",
+      "target": "StructureIR",
+      "kind": "approximate",
+      "status": "planned",
+      "preconditions": ["image_available", "object_segmentable"],
+      "postconditions": ["parts_identified", "spatial_relations_estimated"],
+      "validators": ["structure_recall", "relation_consistency"]
+    },
+    {
+      "id": "MORPH-STRUCTURE-D1L4",
+      "source": "StructureIR",
+      "target": "D1.L4.ObjectDSL",
+      "kind": "faithful",
+      "status": "planned",
+      "preconditions": ["parts_identified"],
+      "postconditions": ["object_dsl_parseable", "part_identity_preserved"],
+      "validators": ["object_dsl_schema", "part_joint_integrity"]
+    },
+    {
+      "id": "MORPH-D1L4-COMPONENT-TREE",
+      "source": "D1.L4.ObjectDSL",
+      "target": "ComponentTree",
+      "kind": "faithful",
+      "status": "planned",
+      "preconditions": ["object_dsl_parseable"],
+      "postconditions": ["component_tree_connected", "joint_refs_valid"],
+      "validators": ["component_tree_schema"]
+    },
+    {
+      "id": "MORPH-RENDER-FEEDBACK",
+      "source": "RenderedImage",
+      "target": "DifferenceReport",
+      "kind": "observer",
+      "status": "planned",
+      "preconditions": ["render_available", "target_available"],
+      "postconditions": ["similarity_score_available"],
+      "validators": ["score_range"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crf.dev/schemas/crf-theorem-map.schema.json",
+  "title": "CRF Theorem Map",
+  "type": "object",
+  "required": ["version", "domains"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "version": {"type": "string"},
+    "domains": {"type": "array", "items": {"type": "object"}}
+  }
+}

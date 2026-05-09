@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crf.dev/schemas/crf-experiment.schema.json",
+  "title": "CRF Experiment Index",
+  "type": "object",
+  "required": ["version", "experiments"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "version": {"type": "string"},
+    "experiments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "domain", "title", "status"],
+        "properties": {
+          "id": {"type": "string"},
+          "domain": {
+            "oneOf": [
+              {"type": "string"},
+              {"type": "array", "items": {"type": "string"}}
+            ]
+          },
+          "title": {"type": "string"},
+          "status": {"type": "string"},
+          "paper_section": {"type": "string"},
+          "reported_results": {"type": "object"},
+          "artifacts": {"type": "array", "items": {"type": "string"}},
+          "reproduce": {"type": "string"}
+        }
+      }
+    }
+  }
+}

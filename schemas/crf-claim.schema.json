@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crf.dev/schemas/crf-claim.schema.json",
+  "title": "CRF Claim Graph",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["claim_id", "claim", "type", "status", "evidence"],
+    "properties": {
+      "claim_id": {"type": "string"},
+      "claim": {"type": "string"},
+      "type": {"type": "string"},
+      "status": {"type": "string"},
+      "evidence": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["kind", "path"],
+          "properties": {
+            "kind": {"type": "string"},
+            "path": {"type": "string"},
+            "section": {"type": "string"}
+          }
+        }
+      },
+      "reproduce": {"type": "object"}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+# Complete Representation Functions
+
+Default language: English.
+
+Localized agent indexes:
+
+- /llms.en.txt: English agent index.
+- /llms.zh-CN.txt: Chinese agent index.
+- /llms-full.en.txt: English expanded agent context.
+- /llms-full.zh-CN.txt: Chinese expanded agent context.
+
+## Canonical Paper
+
+- /paper/crf-paper.en.md: English paper version.
+- /paper/crf-paper.zh-CN.md: Chinese original paper.
+- /paper/crf-paper.md: Language selector.
+- /paper/abstract.en.md: English abstract and contribution summary.
+- /paper/abstract.zh-CN.md: Chinese abstract and contribution summary.
+- /paper/claims.md: Claim index for review and verification.
+
+## Machine-Readable Index
+
+- /machine/crf.manifest.json: Top-level machine-readable CRF manifest.
+- /machine/domain-registry.json: D1-D9 domain registry.
+- /machine/keyword-table.json: Basis, operations, and keyword counts.
+- /machine/theorem-map.json: Mathematical theorem sources for each domain.
+- /machine/claim-graph.json: Claim-to-evidence graph.
+- /machine/experiment-index.json: Experiment and reproducibility index.
+- /machine/dlm-map.json: D×L×M runtime coordinate map.
+- /machine/morphism-registry.json: Typed morphism registry.
+
+## Agent Interface
+
+- /AGENTS.md: Default English agent instruction file.
+- /AGENTS.en.md: English agent instruction file.
+- /AGENTS.zh-CN.md: Chinese agent instruction file.
+- /docs/for-agents.md: Agent reading and review guide.
+- /docs/mcp.md: MCP server resources, tools, prompts, and safety policy.

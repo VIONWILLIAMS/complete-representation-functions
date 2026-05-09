@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crf.dev/schemas/crf-manifest.schema.json",
+  "title": "CRF Manifest",
+  "type": "object",
+  "required": ["id", "title", "version", "canonical_paper", "core_claim", "machine_files"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "subtitle": {"type": "string"},
+    "version": {"type": "string"},
+    "status": {"type": "string"},
+    "canonical_paper": {"type": "string"},
+    "canonical_language": {"type": "string"},
+    "languages": {"type": "array", "items": {"type": "string"}},
+    "core_claim": {
+      "type": "object",
+      "required": ["id", "text"],
+      "properties": {
+        "id": {"type": "string"},
+        "text": {"type": "string"}
+      }
+    },
+    "entrypoints": {"type": "object"},
+    "machine_files": {"type": "object"},
+    "schemas": {"type": "object"},
+    "mcp": {"type": "object"},
+    "reproducibility": {"type": "object"}
+  }
+}

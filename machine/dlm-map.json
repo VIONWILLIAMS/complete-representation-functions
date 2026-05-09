@@ -1,0 +1,43 @@
+{
+  "$schema": "../schemas/crf-dlm-map.schema.json",
+  "version": "0.1.0",
+  "axes": {
+    "D": {
+      "name": "Domain",
+      "values": ["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9"]
+    },
+    "L": {
+      "name": "Layer",
+      "values": [
+        {"id": "L1", "name": "primitive"},
+        {"id": "L2", "name": "operation"},
+        {"id": "L3", "name": "template"},
+        {"id": "L4", "name": "assembly"}
+      ]
+    },
+    "M": {
+      "name": "Manifestation",
+      "values": [
+        {"id": "M1", "name": "axiom"},
+        {"id": "M2", "name": "syntax"},
+        {"id": "M3", "name": "instance"},
+        {"id": "M4", "name": "runtime"}
+      ]
+    }
+  },
+  "coordinate_count": 144,
+  "examples": [
+    {
+      "coordinate": "D1.L4.M3",
+      "meaning": "Concrete object/part/joint geometry instance"
+    },
+    {
+      "coordinate": "D1.L4.M4",
+      "meaning": "Rendered Layer 4 geometry object"
+    },
+    {
+      "coordinate": "D9.L2.M4",
+      "meaning": "Runtime agent evolution operation"
+    }
+  ]
+}

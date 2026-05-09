@@ -1,0 +1,31 @@
+# Complete Representation Functions: Agent Context
+
+Default language: English.
+
+Use these localized files:
+
+- Chinese original paper: `paper/crf-paper.zh-CN.md`
+- English paper version: `paper/crf-paper.en.md`
+- English agent index: `llms.en.txt`
+- Chinese agent index: `llms.zh-CN.txt`
+- English agent instructions: `AGENTS.en.md`
+- Chinese agent instructions: `AGENTS.zh-CN.md`
+
+Core thesis:
+
+For any formalizable domain D, if there exists a mathematically grounded complete representation function F_D with basis B_D and closed operations Omega_D, then the domain's AI-native DSL core can be derived from B_D and Omega_D rather than invented only by expert convention.
+
+Canonical chain:
+
+Natural Language -> BDI Intent Semantics -> Intent IR -> CRF-derived DSL -> Verified Runtime.
+
+Core files:
+
+- `machine/crf.manifest.json`: top-level manifest.
+- `machine/domain-registry.json`: D1-D9 domain registry.
+- `machine/claim-graph.json`: claim-to-evidence graph.
+- `schemas/*.schema.json`: JSON schemas.
+
+Important boundary:
+
+Mathematical completeness does not imply intent completeness. Use BDI and Intent IR for claims about user intent fidelity.

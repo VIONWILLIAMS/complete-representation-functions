@@ -1,0 +1,39 @@
+# 完备表示函数：智能体上下文
+
+本仓库将《完备表示函数》发布为一个智能体原生研究对象。
+
+语言文件：
+
+- 中文原文：`paper/crf-paper.zh-CN.md`
+- 英文论文：`paper/crf-paper.en.md`
+- 中文 agent 索引：`llms.zh-CN.txt`
+- 英文 agent 索引：`llms.en.txt`
+- 中文 agent 指令：`AGENTS.zh-CN.md`
+- 英文 agent 指令：`AGENTS.en.md`
+
+核心命题：
+
+对于任意可形式化领域 D，若存在由数学完备性结构支撑的完备表示函数 F_D，并且存在基底 B_D 与封闭操作 Omega_D，则该领域的 AI-native DSL 核心可以从 B_D 与 Omega_D 中推导，而不是只由专家经验设计。
+
+标准链路：
+
+Natural Language -> BDI Intent Semantics -> Intent IR -> CRF-derived DSL -> Verified Runtime。
+
+核心文件：
+
+- `machine/crf.manifest.json`: 顶层 manifest。
+- `machine/domain-registry.json`: D1-D9 域注册表。
+- `machine/claim-graph.json`: claim 到 evidence 的证据图。
+- `schemas/*.schema.json`: JSON schema。
+
+当前证据状态：
+
+- D1 和 D3 是运行时/案例研究证据。
+- D2 报告了 4.72x token 压缩、6.83x 延迟提升和 100% 解析率。
+- D4-D8 是第一批计划落地的可执行证据层。
+- D9 是当前九域理论闭包的一部分。
+- JiYu 是系统案例，不是 CRF 的唯一证明。
+
+重要边界：
+
+数学完备不等于意图完备。涉及用户意图保真时，应使用 BDI 与 Intent IR。

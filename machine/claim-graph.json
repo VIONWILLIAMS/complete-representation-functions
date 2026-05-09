@@ -1,0 +1,128 @@
+[
+  {
+    "claim_id": "CRF-C0",
+    "claim": "For any formalizable domain D with a complete representation function F_D, the domain's AI-native DSL can be derived from its mathematical basis and closed operations.",
+    "type": "core",
+    "status": "theoretical",
+    "evidence": [
+      {"kind": "paper_section", "path": "paper/crf-paper.zh-CN.md", "section": "0"},
+      {"kind": "paper_section", "path": "paper/crf-paper.en.md", "section": "3"}
+    ]
+  },
+  {
+    "claim_id": "CRF-C1",
+    "claim": "CRF DSL keywords derive from basis elements and closed operations.",
+    "type": "theoretical",
+    "status": "theoretical",
+    "evidence": [
+      {"kind": "machine_file", "path": "machine/domain-registry.json"},
+      {"kind": "machine_file", "path": "machine/keyword-table.json"}
+    ]
+  },
+  {
+    "claim_id": "CRF-T1",
+    "claim": "The Domain Admission Axiom defines whether a candidate should enter the CRF core domain set.",
+    "type": "theoretical",
+    "status": "theoretical",
+    "evidence": [
+      {"kind": "paper_section", "path": "paper/crf-paper.zh-CN.md", "section": "4.2"},
+      {"kind": "machine_file", "path": "machine/domain-registry.json"}
+    ]
+  },
+  {
+    "claim_id": "CRF-T2",
+    "claim": "The current CRF framework has nine domains, 124 keywords, five reduced candidates, and one open candidate.",
+    "type": "theoretical_closure",
+    "status": "current_closure",
+    "evidence": [
+      {"kind": "machine_file", "path": "machine/domain-registry.json"},
+      {"kind": "machine_file", "path": "machine/keyword-table.json"}
+    ]
+  },
+  {
+    "claim_id": "CRF-E1",
+    "claim": "The D2 multi-agent DSL achieved 4.72x token compression compared with the natural language baseline.",
+    "type": "experimental",
+    "status": "reported",
+    "evidence": [
+      {"kind": "paper_section", "path": "paper/crf-paper.zh-CN.md", "section": "7.6"},
+      {"kind": "benchmark_placeholder", "path": "benchmarks/d2-multi-agent-800-calls/README.md"}
+    ],
+    "reproduce": {
+      "command": "npm run benchmark:d2",
+      "status": "not_yet_executable",
+      "expected": {"token_compression_min": 4.7}
+    }
+  },
+  {
+    "claim_id": "CRF-E2",
+    "claim": "The D2 multi-agent DSL achieved 6.83x latency improvement compared with the natural language baseline.",
+    "type": "experimental",
+    "status": "reported",
+    "evidence": [
+      {"kind": "paper_section", "path": "paper/crf-paper.zh-CN.md", "section": "7.6"},
+      {"kind": "benchmark_placeholder", "path": "benchmarks/d2-multi-agent-800-calls/README.md"}
+    ],
+    "reproduce": {
+      "command": "npm run benchmark:d2",
+      "status": "not_yet_executable",
+      "expected": {"latency_speedup_min": 6.8}
+    }
+  },
+  {
+    "claim_id": "CRF-E3",
+    "claim": "The D2 multi-agent DSL achieved 100% parse rate in the reported experiment.",
+    "type": "experimental",
+    "status": "reported",
+    "evidence": [
+      {"kind": "paper_section", "path": "paper/crf-paper.zh-CN.md", "section": "7.6"},
+      {"kind": "benchmark_placeholder", "path": "benchmarks/d2-multi-agent-800-calls/README.md"}
+    ],
+    "reproduce": {
+      "command": "npm run benchmark:d2",
+      "status": "not_yet_executable",
+      "expected": {"parse_rate": 1.0}
+    }
+  },
+  {
+    "claim_id": "CRF-E4",
+    "claim": "D4-D8 are the first priority for executable parser/evaluator/test evidence.",
+    "type": "implementation_plan",
+    "status": "planned_executable",
+    "evidence": [
+      {"kind": "domain_docs", "path": "domains/D4-data-transform/README.md"},
+      {"kind": "domain_docs", "path": "domains/D5-state-machine/README.md"},
+      {"kind": "domain_docs", "path": "domains/D6-permission/README.md"},
+      {"kind": "domain_docs", "path": "domains/D7-validation/README.md"},
+      {"kind": "domain_docs", "path": "domains/D8-notification/README.md"}
+    ]
+  },
+  {
+    "claim_id": "CRF-R1",
+    "claim": "Mathematical completeness does not imply intent completeness.",
+    "type": "limitation",
+    "status": "theoretical",
+    "evidence": [
+      {"kind": "paper_section", "path": "paper/crf-paper.zh-CN.md", "section": "5"}
+    ]
+  },
+  {
+    "claim_id": "CRF-R2",
+    "claim": "BDI is a horizontal intent semantics layer, not a tenth CRF domain.",
+    "type": "architecture",
+    "status": "theoretical",
+    "evidence": [
+      {"kind": "paper_section", "path": "paper/crf-paper.zh-CN.md", "section": "5.2"},
+      {"kind": "doc", "path": "docs/bdi-layer.md"}
+    ]
+  },
+  {
+    "claim_id": "CRF-J1",
+    "claim": "JiYu Layer 4 object/part/joint is an object-completeness layer over D1 geometry.",
+    "type": "case_study",
+    "status": "experimental",
+    "evidence": [
+      {"kind": "paper_section", "path": "paper/crf-paper.zh-CN.md", "section": "9"}
+    ]
+  }
+]

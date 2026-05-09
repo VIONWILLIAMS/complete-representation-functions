@@ -1,0 +1,20 @@
+{
+  "$schema": "../schemas/crf-keyword-table.schema.json",
+  "version": "0.1.0",
+  "source": "machine/domain-registry.json",
+  "totals": {
+    "eight_domain_keywords": 110,
+    "nine_domain_keywords": 124
+  },
+  "domains": [
+    {"id": "D1", "basis_count": 7, "operation_count": 12, "keyword_count": 19},
+    {"id": "D2", "basis_count": 5, "operation_count": 5, "keyword_count": 10},
+    {"id": "D3", "basis_count": 7, "operation_count": 8, "keyword_count": 15},
+    {"id": "D4", "basis_count": 3, "operation_count": 17, "keyword_count": 20},
+    {"id": "D5", "basis_count": 5, "operation_count": 7, "keyword_count": 12},
+    {"id": "D6", "basis_count": 4, "operation_count": 6, "keyword_count": 10},
+    {"id": "D7", "basis_count": 3, "operation_count": 9, "keyword_count": 12},
+    {"id": "D8", "basis_count": 5, "operation_count": 7, "keyword_count": 12},
+    {"id": "D9", "basis_count": 5, "operation_count": 9, "keyword_count": 14}
+  ]
+}

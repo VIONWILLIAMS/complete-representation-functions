@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crf.dev/schemas/crf-domain.schema.json",
+  "title": "CRF Domain Registry",
+  "type": "object",
+  "required": ["version", "admission_axiom", "domains"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "version": {"type": "string"},
+    "admission_axiom": {
+      "type": "object",
+      "required": ["id", "text"],
+      "properties": {
+        "id": {"type": "string"},
+        "text": {"type": "string"},
+        "source": {"type": "string"}
+      }
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "function_signature", "theorem", "basis", "operations", "keyword_count", "status"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "name_zh": {"type": "string"},
+          "function_signature": {"type": "string"},
+          "theorem": {"type": "string"},
+          "basis": {"type": "array", "items": {"type": "string"}},
+          "operations": {"type": "array", "items": {"type": "string"}},
+          "keyword_count": {"type": "integer"},
+          "status": {"type": "string"},
+          "parser": {"type": "string"},
+          "evaluator": {"type": "string"},
+          "tests": {"type": "string"},
+          "evidence": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "reduced_candidates": {"type": "array"},
+    "open_candidates": {"type": "array"}
+  }
+}

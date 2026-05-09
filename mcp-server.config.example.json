@@ -1,0 +1,27 @@
+{
+  "name": "crf-mcp-server",
+  "mode": "public-readonly",
+  "entry": "packages/crf-mcp-server/src/index.ts",
+  "resources": {
+    "root": ".",
+    "allow": [
+      "paper/**",
+      "machine/**",
+      "schemas/**",
+      "docs/**",
+      "domains/**/README.md",
+      "benchmarks/**/README.md"
+    ]
+  },
+  "tools": {
+    "allow": [
+      "crf_parse",
+      "crf_validate",
+      "crf_explain_claim",
+      "crf_check_domain_admission",
+      "crf_run_tests",
+      "crf_check_morphism"
+    ],
+    "deny": ["shell", "filesystem_write", "network_fetch", "git_write"]
+  }
+}

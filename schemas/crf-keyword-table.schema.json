@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crf.dev/schemas/crf-keyword-table.schema.json",
+  "title": "CRF Keyword Table",
+  "type": "object",
+  "required": ["version", "domains"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "version": {"type": "string"},
+    "source": {"type": "string"},
+    "totals": {"type": "object"},
+    "domains": {"type": "array", "items": {"type": "object"}}
+  }
+}

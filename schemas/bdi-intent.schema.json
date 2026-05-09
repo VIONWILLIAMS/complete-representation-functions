@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crf.dev/schemas/bdi-intent.schema.json",
+  "title": "BDI Intent IR",
+  "type": "object",
+  "required": ["intent_id", "utterance", "goal", "candidate_domains"],
+  "properties": {
+    "intent_id": {"type": "string"},
+    "utterance": {"type": "string"},
+    "beliefs": {"type": "array", "items": {"type": "object"}},
+    "goal": {"type": "object"},
+    "background_reason": {"type": "object"},
+    "constraints": {"type": "array", "items": {"type": "string"}},
+    "candidate_domains": {"type": "array", "items": {"type": "string"}},
+    "plan_bindings": {"type": "array", "items": {"type": "object"}},
+    "commitment": {"type": "string"},
+    "reconsideration_policy": {"type": "object"}
+  }
+}

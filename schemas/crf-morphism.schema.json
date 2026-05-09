@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crf.dev/schemas/crf-morphism.schema.json",
+  "title": "CRF Typed Morphism Registry",
+  "type": "object",
+  "required": ["version", "morphisms"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "version": {"type": "string"},
+    "definition": {"type": "string"},
+    "morphisms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source", "target", "kind", "status"],
+        "properties": {
+          "id": {"type": "string"},
+          "source": {"type": "string"},
+          "target": {"type": "string"},
+          "kind": {"type": "string"},
+          "status": {"type": "string"},
+          "preconditions": {"type": "array", "items": {"type": "string"}},
+          "postconditions": {"type": "array", "items": {"type": "string"}},
+          "validators": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

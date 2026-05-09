@@ -1,0 +1,51 @@
+{
+  "$schema": "../schemas/crf-theorem-map.schema.json",
+  "version": "0.1.0",
+  "domains": [
+    {
+      "domain": "D1",
+      "theory": "Signed distance fields, implicit surfaces, constructive solid geometry",
+      "references": ["Hart 1996", "Bloomenthal 1997", "Requicha 1980"]
+    },
+    {
+      "domain": "D2",
+      "theory": "CSP and pi-calculus",
+      "references": ["Hoare 1978", "Milner Parrow Walker 1992"]
+    },
+    {
+      "domain": "D3",
+      "theory": "2D spatial partition, constraint layout",
+      "references": ["Borning et al. 1997", "Badros Borning Stuckey 2001"]
+    },
+    {
+      "domain": "D4",
+      "theory": "Relational algebra",
+      "references": ["Codd 1970"]
+    },
+    {
+      "domain": "D5",
+      "theory": "Finite automata",
+      "references": ["Rabin Scott 1959"]
+    },
+    {
+      "domain": "D6",
+      "theory": "Attribute-based access control",
+      "references": ["NIST SP 800-162", "XACML 3.0"]
+    },
+    {
+      "domain": "D7",
+      "theory": "Type theory and refinement types",
+      "references": ["Church 1940", "Freeman Pfenning 1991", "Rondon Kawaguchi Jhala 2008"]
+    },
+    {
+      "domain": "D8",
+      "theory": "Predicate logic, LTL, MTL",
+      "references": ["Pnueli 1977", "Koymans 1990", "Alur Henzinger 1992"]
+    },
+    {
+      "domain": "D9",
+      "theory": "Dynamic programming, Markov decision processes, reinforcement learning",
+      "references": ["Bellman 1957", "Puterman 1994", "Sutton Barto 2018"]
+    }
+  ]
+}

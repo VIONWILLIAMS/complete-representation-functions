@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crf.dev/schemas/crf-dlm-map.schema.json",
+  "title": "CRF DLM Map",
+  "type": "object",
+  "required": ["version", "axes", "coordinate_count"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "version": {"type": "string"},
+    "axes": {"type": "object"},
+    "coordinate_count": {"type": "integer"},
+    "examples": {"type": "array", "items": {"type": "object"}}
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "complete-representation-functions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent-native research object for Complete Representation Functions.",
+  "scripts": {
+    "test": "npm run validate:machine",
+    "validate:machine": "node scripts/validate-machine.mjs",
+    "validate:claims": "node scripts/validate-claims.mjs",
+    "benchmark:d2": "node scripts/not-yet-executable.mjs benchmark:d2",
+    "test:domains": "node scripts/not-yet-executable.mjs test:domains",
+    "mcp": "node scripts/not-yet-executable.mjs mcp"
+  }
+}
