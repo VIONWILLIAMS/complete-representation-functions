@@ -1,5 +1,11 @@
 # Complete Representation Functions / 完备表示函数
 
+> **Free Dancing in the Rabbit Hole.**  
+> **But first, fries at the pier.**
+
+_An independent researcher's epigraph._  
+_独立研究员题记。_
+
 **Complete Representation Functions: Paper, Proof Objects, DSL Runtime, and Agent Interface**
 
 **完备表示函数：论文、证明对象、DSL 运行时与智能体接口**

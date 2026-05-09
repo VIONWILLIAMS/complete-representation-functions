@@ -1,5 +1,10 @@
 # Complete Representation Functions
 
+> **Free Dancing in the Rabbit Hole.**  
+> **But first, fries at the pier.**
+
+_An independent researcher's epigraph._
+
 **Complete Representation Functions: A Unified Theory for Deriving AI-Native Domain Languages**
 
 Subtitle: **From Mathematical Completeness to Intent Semantics and Verifiable Runtime**

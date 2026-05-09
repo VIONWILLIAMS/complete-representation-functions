@@ -1,5 +1,10 @@
 # 完备表示函数：AI 原生领域语言的统一推导理论
 
+> **Free Dancing in the Rabbit Hole.**  
+> **But first, fries at the pier.**
+
+_独立研究员题记。_
+
 **副标题：从数学完备到意图语义与可验证运行时**
 
 **Complete Representation Functions: A Unified Theory for Deriving AI-Native Domain Languages**
