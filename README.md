@@ -59,6 +59,16 @@ Executable evidence roadmap:
 
 ---
 
+## Graphics Editor Research / 图形计算编辑器研究
+
+- [CRF 图形计算编辑器 0.8 研发计划](docs/graphics-editor/CRF_0_8_Development_Plan.md)
+
+The plan covers image-plane Gaussian reconstruction, semantic object editing, and bounded language-driven generation. Its milestones and metrics are proposed research targets; this document does not change the verification status of the paper or runtime.
+
+该计划围绕二维高斯重建、语义对象编辑与受限语言生成推进。里程碑和指标为拟定研究目标，文档归档不改变论文或运行时的验证状态。
+
+---
+
 ## Minimal Verification
 
 ```bash
