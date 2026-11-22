@@ -1,0 +1,51 @@
+{
+  "schema": "crf.build.v1.1",
+  "builtAt": "2026-11-22T06:35:51.812Z",
+  "releaseStatus": "reference_quality_experimental",
+  "version": "1.1.0-experimental.2",
+  "sourceFiles": 901,
+  "legacyAssetsChecked": 885,
+  "legacyAssetsByteExact": true,
+  "allPublishedURLsByteExact": true,
+  "sourcePreserved": true,
+  "originalBytes": 389150854,
+  "expandedDistBytes": 261718911,
+  "expandedLimitBytes": 262144000,
+  "headroomBytes": 425089,
+  "workerBytes": 640009,
+  "workerSha256": "5e0d51ae1e867f6fceb692d64270daa2659fff1975969a0e217fe7ee696172b8",
+  "textPacking": {
+    "sourceFiles": 901,
+    "sourceBytes": 389150854,
+    "packedStorageFiles": 347,
+    "mappedPublicURLs": 376,
+    "duplicateAliases": 29,
+    "deduplicatedBytes": 7351430,
+    "gzipSavedBytes": 82784338,
+    "clientBytes": 299015086
+  },
+  "losslessTransport": {
+    "savedBytes": 1936541,
+    "allByteExact": true
+  },
+  "archives": {
+    "archiveCount": 9,
+    "originalBytes": 125010528,
+    "storedBytes": 87074082,
+    "savedBytes": 37936446,
+    "rawZipSegments": 2063,
+    "uniqueChunks": 1711,
+    "packFiles": 25,
+    "maxPackBytes": 4194304,
+    "payloadBytes": 124831608,
+    "metadataBytes": 178920,
+    "removedDisposableCopies": 9,
+    "sourcePreserved": true,
+    "allArchivesByteExact": true
+  },
+  "configuredSecretsInBuild": false,
+  "verifiedStatusPaths": [
+    "/api/crf/status",
+    "/api/crf/functions11/status"
+  ]
+}

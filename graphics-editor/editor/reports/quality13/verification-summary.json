@@ -1,0 +1,149 @@
+{
+  "schema": "crf.detail_delivery_verification.v1",
+  "status": "passed_with_browser_verification_not_completed",
+  "scope": "Reference-conditioned native-image reconstruction and function-only replay; not novel scene generation.",
+  "tests": {
+    "javascript": {
+      "total": 197,
+      "passed": 197,
+      "failed": 0,
+      "groups": [
+        {
+          "command": "npm test",
+          "passed": 52,
+          "log": "tests/baseline-js.log"
+        },
+        {
+          "command": "npm run test:v10",
+          "passed": 64,
+          "log": "tests/v10-js.log"
+        },
+        {
+          "command": "npm run test:v11",
+          "passed": 50,
+          "log": "tests/v11-js.log"
+        },
+        {
+          "command": "npm run test:quality",
+          "passed": 31,
+          "log": "tests/quality-final-js.log"
+        }
+      ]
+    },
+    "python": {
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "groups": [
+        {
+          "command": "python3 -m unittest discover -s tests -p 'test_quality12.py' -v",
+          "passed": 9,
+          "log": "tests/quality12-python-final-tests.log"
+        },
+        {
+          "command": "python3 -m unittest discover -s tests -p 'test_quality13.py'",
+          "passed": 11,
+          "log": "tests/quality13-python-final-tests.log"
+        }
+      ]
+    }
+  },
+  "nativePhotoQuality": {
+    "report": "independent-photo-audit.json",
+    "scenesPassed": 3,
+    "fixedROIsPassed": 9,
+    "dimensionsPreserved": true,
+    "evaluationDownsampling": false
+  },
+  "runtime": {
+    "report": "runtime/verification.json",
+    "pythonJavaScriptRGBAByteExact": true,
+    "savedProjectReplayByteExact": true,
+    "freshProcessParameterOnlyReplayByteExact": true,
+    "pixelAlignedROIByteExact": true,
+    "editsChangePixels": true,
+    "outputPixelBudgetGuardPreserved": true
+  },
+  "sourceAndRetryControls": {
+    "report": "source-at-fit/control-fix-verification.json",
+    "independentReview": "quality13-post-fix-independent-audit.json",
+    "fittingMathUnchangedSinceMeasuredRun": true
+  },
+  "comparisonBoards": {
+    "report": "quality13-boards-independent-audit.json",
+    "photoPanelsByteExact": 11
+  },
+  "httpServing": {
+    "report": "detail-http-smoke.json",
+    "status": "passed",
+    "browserInteractionClaim": false
+  },
+  "browser": {
+    "report": "browser-status.json",
+    "status": "not_completed"
+  },
+  "build": {
+    "report": "build/build_verification.json",
+    "status": "passed",
+    "legacyAssetsByteExact": 885,
+    "publicResourcesByteExact": 901,
+    "expandedBytes": 261718911,
+    "limitBytes": 262144000,
+    "headroomBytes": 425089
+  },
+  "provenance": {
+    "qualityContractSHA256": "f262a18ad60ae4f77bed9608b28aecac2c1201d109a7709b82668a1d0a1b193b",
+    "contractLocalCommitBeforeFitting": "e772c7efcd591961b51c26e86ed08db886cfb7ed",
+    "contractPublishedCommit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+    "actualSolver": "CPU",
+    "gpuUsed": false
+  },
+  "deliverables": [
+    {
+      "filename": "CRF_Alpine_1280.png",
+      "bytes": 2158822,
+      "sha256": "debfef7611bb9abf2d3fb46fa4f3efe6c59f0784ed94e48bbdb65000a99f0ecb"
+    },
+    {
+      "filename": "CRF_Alpine_Comparison.png",
+      "bytes": 3880722,
+      "sha256": "65e02d7dfbd97e4ebe08ec8989fa7a80ceff6b35dcfe322d90e37552911e93a6"
+    },
+    {
+      "filename": "CRF_Detail_Comparison.png",
+      "bytes": 724774,
+      "sha256": "dec92130509c398e01e3e3dccf6c3fd4d1e940b4c8e9e22459f2d1c6a2ba9e3f"
+    },
+    {
+      "filename": "CRF_Detail_Delivery.zip",
+      "bytes": 17160176,
+      "sha256": "281e9c1d33a9637e68e6bdd88dd45378df87c91cea6dd70684e366e3bca917ed"
+    },
+    {
+      "filename": "CRF_Detail_Review.html",
+      "bytes": 31493297,
+      "sha256": "c1fa4b61b897f0ea6db05faba12c813e413309c78404f2f9d35adcfac185eff8"
+    },
+    {
+      "filename": "CRF_Orchard_800.png",
+      "bytes": 626890,
+      "sha256": "f725147f2703ed8c5f16c417d716b193934687fa435e597099c394c1e4c20ec8"
+    },
+    {
+      "filename": "CRF_Street_667.png",
+      "bytes": 890224,
+      "sha256": "85339936a52e27e3983bbd9bc0ea709ea8f12cbbb59c1bd46269bbf58c009dd4"
+    }
+  ],
+  "minimalRenderPackage": {
+    "report": "quality13-zip-independent-audit.json",
+    "status": "passed",
+    "zipCRCAndManifestVerified": true,
+    "noOriginalPhotographsIncluded": true,
+    "threeNativeRGBAReplaysByteExact": true,
+    "exposureAndResamplingReplayed": true,
+    "full2xCorrectlyRejected": true,
+    "dependenciesInstalled": false,
+    "nodeActuallyTested": "v24.22.3"
+  }
+}

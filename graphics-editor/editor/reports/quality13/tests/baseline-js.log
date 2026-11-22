@@ -1,0 +1,68 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> crf-graphics-editor@1.1.0-experimental.2 test
+> node --test tests/test_core.cjs tests/test_boundary_v05.cjs tests/test_fruit.cjs tests/test_program06.cjs tests/test_observation06.cjs tests/test_integration06.cjs
+
+{"case":"wall_mixed_edge","declaredMixturePixels":10319,"edgeChanged":10318,"undeclaredChanges":0,"baselineErrors":0}
+{"case":"signal_removed","allHousingPixelsRevealedAsInferredWall":4288,"staleHousingSeamTicks":0}
+✔ a known mixed edge has exact default observation and follows the background material delta (6.645751ms)
+✔ malformed boundary payload and invalid generator operations are rejected atomically (1.356808ms)
+✔ Street recoloring only changes the wall and its declared mixed-edge influence band (1957.86158ms)
+✔ removing the front signal reveals inferred wall at every housing pixel, including the bridge (395.171347ms)
+{"test":"full_observation","exact100":true,"width":667,"height":1000,"stats":{"backend":"cpu-gaussian","quality":"exact","width":667,"height":1000,"lod":1,"sigmaReferencePx":0.18,"gaussianCount":766102,"inferredGaussianCount":99102,"observedPixelCount":667000,"layerCount":18,"representation":"dense-observation-gaussians-with-inferred-layer-depths","physicalRelighting":false,"sourceImageBlit":false,"boundaryMaterialSampleCount":0,"proceduralSampleCount":0,"contributions":766102,"visibleInferredPixels":0,"elapsedMs":1427.840033}}
+✔ every arbitrary RGB byte is recovered through Gaussian accumulation at its reference center (14.718366ms)
+✔ Gaussian kernel uses exp and normalized sums at an actual subpixel translation (7.529464ms)
+✔ a local color function leaves all other original object pixels unchanged (10.695092ms)
+✔ moving an observed object reveals marked inferred host samples and performs depth occlusion (1.625884ms)
+✔ inferred samples move with their host and do not become a fixed image background (1.779196ms)
+✔ hierarchical transforms carry attached child Gaussians (2.223897ms)
+✔ camera yaw produces depth parallax and transforms the actual Gaussian covariance (1.051898ms)
+✔ operations are atomic and reject unknown fields, NaN, bad IDs and attachment cycles (1.630261ms)
+✔ duplicate and delete create independent editable identities (2.058016ms)
+✔ new primitives generate their own samples without a source object (7.544898ms)
+✔ identity light is exact and exposure is a separate monotonic calibrated function (2.417038ms)
+✔ timeline interpolation is deterministic, immutable, and time:null bypasses it (11.309691ms)
+✔ inferred highlights expose assumptions rather than altering the observed source data (1.724733ms)
+✔ step trajectories select the new value exactly at the keyframe timestamp (1.034381ms)
+✔ full 667x1000 street observation passes independent RGB8 comparison through the CPU kernel (1886.818437ms)
+✔ fruit case is wholly procedural and source data contains only necessary numeric backdrop fields (1.925816ms)
+✔ fruit surfaces are deterministic, volumetric and seed-editable (469.012666ms)
+✔ camera movement changes projected geometry and roughness changes shading only (105.700066ms)
+✔ apple to pear replacement preserves transforms while rebuilding a distinct volume (148.218781ms)
+✔ contact shadows are multiplicative, do not claim object IDs, and render repeatably (750.186802ms)
+✔ common scene contains fitted and generated functions using one editable geometry protocol (2918.799293ms)
+✔ common objects occlude each other according to their shared spatial positions (353.87597ms)
+✔ serialized scene renders identically in an isolated directory without reference images or asset globals (518.245381ms)
+✔ multi-view and time are scene evaluations with deterministic frame pixels (509.886279ms)
+✔ invalid compound operations and source program imports do not partially mutate the source (9.991009ms)
+✔ real profile optimization lowers its declared objective and follows image shape (453.639423ms)
+✔ held-out UV colors are predicted from fitting coefficients and outperform constant color (187.988668ms)
+✔ changing held-out RGB cannot change fitted coefficients, mean, or back prior (180.732642ms)
+✔ background perturbations cannot become fitted appearance donors with a supplied mask (170.150464ms)
+✔ fitted fields explicitly distinguish observed front from inferred back (186.688005ms)
+✔ bounded automatic color segmentation is reproducible without supplied labels (318.511445ms)
+✔ invalid and unsupported image inputs fail clearly instead of fabricating objects (6.756759ms)
+✔ an observed fit accepts the same CRFProgram edits and timeline as a generated object (99.264258ms)
+✔ the shared renderer evaluates the fitted radius function with the same interpolation (27.664985ms)
+✔ runtime observed rendering needs no source image and uses the same Gaussian path (225.075934ms)
+✔ all native presets are validated programs with explicit generated provenance (39.576185ms)
+✔ serialized object program renders deterministically without original image resources (450.870063ms)
+✔ same material/shape operations apply to both observation and procedural generation (308.677477ms)
+✔ perspective depth resolves real object occlusion independently of list order (577.623145ms)
+✔ object rotation changes observed UV appearance and camera time changes projection (422.159045ms)
+✔ opaque sampled lathe has no interior coverage holes, including the steep cap (81.68758ms)
+✔ field cache respects confidence, reference color and dimensions with unchanged RGB bytes (0.459543ms)
+✔ observed recolor preserves neutral highlights and additive achromatic reflection (0.3576ms)
+✔ unmodified observed tint retains baseline floating-point arithmetic exactly (65.585698ms)
+✔ linear observation coefficients match the actual runtime radius function (0.671904ms)
+✔ invalid operations are atomic and malformed program paths, fields and relations reject (1.339191ms)
+✔ timeline keyframes reject wrong ranges and vector types at import (0.657001ms)
+✔ local intent compiler states partial support and preserves edited observations (1.849912ms)
+ℹ tests 52
+ℹ suites 0
+ℹ pass 52
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4549.048464

@@ -1,0 +1,30 @@
+{
+  "schema": "crf.post_fix_independent_review.v1",
+  "pythonTests": {
+    "count": 11,
+    "passed": true,
+    "log": "quality13-python-final-tests.log"
+  },
+  "sourceArchiveHashesMatch": true,
+  "actualAcceptedPacks": [
+    {
+      "scene": "alpine_hd",
+      "newValidatorAccepted": true,
+      "passing": true,
+      "fitterArchiveHashMatches": true
+    },
+    {
+      "scene": "street",
+      "newValidatorAccepted": true,
+      "passing": true,
+      "fitterArchiveHashMatches": true
+    },
+    {
+      "scene": "orchard",
+      "newValidatorAccepted": true,
+      "passing": true,
+      "fitterArchiveHashMatches": true
+    }
+  ],
+  "review": "Decoded-source binding and monotonic best-passing result selection reviewed. Actual delivered packs accepted by new revalidation API. Browser interaction not attempted."
+}

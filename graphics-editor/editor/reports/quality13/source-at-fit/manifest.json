@@ -1,0 +1,23 @@
+{
+  "schema": "crf.fit_source_snapshot.v1",
+  "purpose": "Exact source before post-fit input-binding and monotonic retry control fixes. Existing measured image/asset hashes are preserved.",
+  "archivedAt": "2026-11-22T06:35:59.582257+00:00",
+  "files": [
+    {
+      "originalPath": "fitting/quality13.py",
+      "archivedPath": "reports/quality13/source-at-fit/quality13.3926869c2b47d91d.py",
+      "sha256": "3926869c2b47d91d626f581b4cbe3995cd11f53bdd0ab8aa9e1511345050b9e2",
+      "bytes": 12872
+    },
+    {
+      "originalPath": "scripts/fit_quality13.py",
+      "archivedPath": "reports/quality13/source-at-fit/fit_quality13.f3232afe4480b741.py",
+      "sha256": "f3232afe4480b7413d3654a3dec9d6bcdf91dc199db3312ca028d04fb0af4ae8",
+      "bytes": 9296
+    }
+  ],
+  "reportBinding": {
+    "fitterSHA256": "fitting/quality13.py",
+    "scriptNote": "Original reports contain fitterSHA256, not scriptSHA256. Script snapshot is the exact current post-fit script before control fixes; its final scene-named PNG alias was added after the numerical runs."
+  }
+}

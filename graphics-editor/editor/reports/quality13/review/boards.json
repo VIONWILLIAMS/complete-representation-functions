@@ -1,0 +1,387 @@
+{
+  "schema": "crf.native_quality_boards.v1",
+  "date": "2026-11-22",
+  "timezone": "Asia/Shanghai",
+  "generator": {
+    "path": "scripts/build_quality_boards13.py",
+    "sha256": "d895c47fe6c764340fc92e64044d99e56697ab9ce922b4184ac6972fbd0f3d96",
+    "pillowVersion": "13.0.0",
+    "numpyVersion": "2.3.5",
+    "fonts": [
+      {
+        "path": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+        "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+        "ttcIndex": 2
+      },
+      {
+        "path": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+        "sha256": "faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb",
+        "ttcIndex": 2
+      }
+    ]
+  },
+  "qualityContractSHA256": "f262a18ad60ae4f77bed9608b28aecac2c1201d109a7709b82668a1d0a1b193b",
+  "pixelPolicy": {
+    "photoPanelScaling": "none",
+    "cropInterpolation": "none",
+    "colourEdits": false,
+    "outputPNGCopyPolicy": "unchanged_original_bytes",
+    "boardEncoding": "lossless_RGB_PNG",
+    "referenceIsGeneratedOutput": false,
+    "realismPercentageClaim": false
+  },
+  "nativeOutputCopies": [
+    {
+      "scene": "alpine_hd",
+      "source": {
+        "path": "reports/quality13/fitting/alpine_hd/alpine_hd.png",
+        "bytes": 2158822,
+        "fileSHA256": "debfef7611bb9abf2d3fb46fa4f3efe6c59f0784ed94e48bbdb65000a99f0ecb",
+        "width": 1280,
+        "height": 850,
+        "decodedRGBASHA256": "8df7a8d2d07b1346575ee3122246c63899d3caf240527d4a6c5aedef7f3953b3"
+      },
+      "output": "/workspace/scratch/5cb3f69227e7/deliverables/CRF_Alpine_1280.png",
+      "byteExact": true
+    },
+    {
+      "scene": "street",
+      "source": {
+        "path": "reports/quality13/fitting/street/street.png",
+        "bytes": 890224,
+        "fileSHA256": "85339936a52e27e3983bbd9bc0ea709ea8f12cbbb59c1bd46269bbf58c009dd4",
+        "width": 667,
+        "height": 1000,
+        "decodedRGBASHA256": "2de7fdd4aeb984e765901d47fb14bcc7cea45d60538664cf3f9cb22a6372298c"
+      },
+      "output": "/workspace/scratch/5cb3f69227e7/deliverables/CRF_Street_667.png",
+      "byteExact": true
+    },
+    {
+      "scene": "orchard",
+      "source": {
+        "path": "reports/quality13/fitting/orchard/orchard.png",
+        "bytes": 626890,
+        "fileSHA256": "f725147f2703ed8c5f16c417d716b193934687fa435e597099c394c1e4c20ec8",
+        "width": 800,
+        "height": 600,
+        "decodedRGBASHA256": "8ec93cee6d967cb870fa76ab0fb7ef87c188d87a1129bd00e82afb440e60dfc6"
+      },
+      "output": "/workspace/scratch/5cb3f69227e7/deliverables/CRF_Orchard_800.png",
+      "byteExact": true
+    }
+  ],
+  "sources": {
+    "reference": {
+      "path": "assets/source_photos/alpine.jpg",
+      "bytes": 327785,
+      "fileSHA256": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+      "width": 1280,
+      "height": 850,
+      "decodedRGBASHA256": "73ac9f7d5decf8a76a09961ae45cea7683a85890fcf56cde9bebbc5ea66b5d87"
+    },
+    "sameCapacityBaseline": {
+      "path": "reports/quality13/fitting/alpine_hd/baseline.png",
+      "bytes": 2144727,
+      "fileSHA256": "8124a3fd087e4a228a3b5cf4904b17931c11fc1c095bc4ceb49f4c4402990b3b",
+      "width": 1280,
+      "height": 850,
+      "decodedRGBASHA256": "7cbbc27cfc442e56decfd9a687d5636f0df55651970fbbf2b3c93a4d0aae1e0a"
+    },
+    "finalComputed": {
+      "path": "reports/quality13/fitting/alpine_hd/alpine_hd.png",
+      "bytes": 2158822,
+      "fileSHA256": "debfef7611bb9abf2d3fb46fa4f3efe6c59f0784ed94e48bbdb65000a99f0ecb",
+      "width": 1280,
+      "height": 850,
+      "decodedRGBASHA256": "8df7a8d2d07b1346575ee3122246c63899d3caf240527d4a6c5aedef7f3953b3"
+    }
+  },
+  "fullBoard": {
+    "photoDimensions": [
+      1280,
+      850
+    ],
+    "referencePlacement": [
+      36,
+      182,
+      1316,
+      1032
+    ],
+    "computedPlacement": [
+      1340,
+      182,
+      2620,
+      1032
+    ],
+    "resized": false
+  },
+  "detailBoard": {
+    "selectionRule": "floor-centred 200x160 crop within each integer frozen ROI; independent of errors",
+    "rows": [
+      {
+        "roiId": "forest",
+        "frozenNormalizedBounds": [
+          0.05,
+          0.05,
+          0.4,
+          0.55
+        ],
+        "frozenPixelBounds": [
+          64,
+          42,
+          512,
+          468
+        ],
+        "cropBoxHalfOpen": [
+          188,
+          175,
+          388,
+          335
+        ],
+        "cropDimensions": [
+          200,
+          160
+        ],
+        "resized": false,
+        "placements": [
+          {
+            "role": "参考照片",
+            "boardBox": [
+              168,
+              166,
+              368,
+              326
+            ],
+            "decodedRGBSHA256": "245fff20a93941629c4c8fb4a6550ffb8d6230b102dd79f0485c0e9415cf2977"
+          },
+          {
+            "role": "同容量基线",
+            "boardBox": [
+              386,
+              166,
+              586,
+              326
+            ],
+            "decodedRGBSHA256": "84f81a5c3d65a0629f6f1ffe05f83cf5e71ef9772048393eb6b13d3a26489751"
+          },
+          {
+            "role": "最终计算结果",
+            "boardBox": [
+              604,
+              166,
+              804,
+              326
+            ],
+            "decodedRGBSHA256": "81e99e15e04cdeb4189997b7823aff21689a272d2c19cf0ad2662df3475fad0c"
+          }
+        ],
+        "baselineMetrics": {
+          "mae": 2.972864583333333,
+          "psnr": 34.88725657808077,
+          "maxChannelError": 44,
+          "evaluatedPixels": 32000
+        },
+        "finalMetrics": {
+          "mae": 2.9567604166666666,
+          "psnr": 35.25173474634232,
+          "maxChannelError": 38,
+          "evaluatedPixels": 32000
+        }
+      },
+      {
+        "roiId": "water",
+        "frozenNormalizedBounds": [
+          0.05,
+          0.7,
+          0.95,
+          0.98
+        ],
+        "frozenPixelBounds": [
+          64,
+          595,
+          1216,
+          833
+        ],
+        "cropBoxHalfOpen": [
+          540,
+          634,
+          740,
+          794
+        ],
+        "cropDimensions": [
+          200,
+          160
+        ],
+        "resized": false,
+        "placements": [
+          {
+            "role": "参考照片",
+            "boardBox": [
+              168,
+              380,
+              368,
+              540
+            ],
+            "decodedRGBSHA256": "adc9d3f0d57872a3dae389dd0afda2d8dc53ce435f1a4c784982c34f54e67b16"
+          },
+          {
+            "role": "同容量基线",
+            "boardBox": [
+              386,
+              380,
+              586,
+              540
+            ],
+            "decodedRGBSHA256": "a3467e8099fe56d5755927d6994a8e6b485b8f4909751ee58664f97c853837d5"
+          },
+          {
+            "role": "最终计算结果",
+            "boardBox": [
+              604,
+              380,
+              804,
+              540
+            ],
+            "decodedRGBSHA256": "04eb1f18ba3d78ae29776e706d359c531d42fe983ee41220ccd957f5a396049b"
+          }
+        ],
+        "baselineMetrics": {
+          "mae": 0.7046979166666667,
+          "psnr": 47.10064584258073,
+          "maxChannelError": 12,
+          "evaluatedPixels": 32000
+        },
+        "finalMetrics": {
+          "mae": 0.58853125,
+          "psnr": 48.490221671025225,
+          "maxChannelError": 10,
+          "evaluatedPixels": 32000
+        }
+      },
+      {
+        "roiId": "buildings",
+        "frozenNormalizedBounds": [
+          0.6,
+          0.48,
+          0.98,
+          0.7
+        ],
+        "frozenPixelBounds": [
+          768,
+          408,
+          1255,
+          595
+        ],
+        "cropBoxHalfOpen": [
+          911,
+          421,
+          1111,
+          581
+        ],
+        "cropDimensions": [
+          200,
+          160
+        ],
+        "resized": false,
+        "placements": [
+          {
+            "role": "参考照片",
+            "boardBox": [
+              168,
+              594,
+              368,
+              754
+            ],
+            "decodedRGBSHA256": "952c92313225b4e1ffaa46b9684eb9ac43792f72fe88b42938ccb050ed77bab2"
+          },
+          {
+            "role": "同容量基线",
+            "boardBox": [
+              386,
+              594,
+              586,
+              754
+            ],
+            "decodedRGBSHA256": "ffbd645916afb0efe06e1bc08318b9383bc2533608260cb4bbec4be874b92de1"
+          },
+          {
+            "role": "最终计算结果",
+            "boardBox": [
+              604,
+              594,
+              804,
+              754
+            ],
+            "decodedRGBSHA256": "6f14efaa4597db5abd1d5e2b162af7db4fc23929c80adc6abec02d18b6d37f57"
+          }
+        ],
+        "baselineMetrics": {
+          "mae": 3.1988333333333334,
+          "psnr": 34.19828439778839,
+          "maxChannelError": 52,
+          "evaluatedPixels": 32000
+        },
+        "finalMetrics": {
+          "mae": 3.1064479166666668,
+          "psnr": 34.68729643554342,
+          "maxChannelError": 51,
+          "evaluatedPixels": 32000
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "baselineBasisCount": 196608,
+    "finalBasisCount": 196608,
+    "baselineFitSeconds": 143.953981,
+    "finalFitSeconds": 240.707842,
+    "equalCapacity": true,
+    "equalCompute": false,
+    "note": "Different optimization steps and wall time; no equal-time speed claim."
+  },
+  "writtenPNGChecks": {
+    "panelsChecked": [
+      "full_reference",
+      "full_computed",
+      "forest/参考照片",
+      "forest/同容量基线",
+      "forest/最终计算结果",
+      "water/参考照片",
+      "water/同容量基线",
+      "water/最终计算结果",
+      "buildings/参考照片",
+      "buildings/同容量基线",
+      "buildings/最终计算结果"
+    ],
+    "allPhotoPanelRGBBytesExact": true
+  },
+  "boards": [
+    {
+      "role": "native_full_reference_vs_computed",
+      "output": {
+        "path": "/workspace/scratch/5cb3f69227e7/deliverables/CRF_Alpine_Comparison.png",
+        "bytes": 3880722,
+        "fileSHA256": "65e02d7dfbd97e4ebe08ec8989fa7a80ceff6b35dcfe322d90e37552911e93a6",
+        "width": 2656,
+        "height": 1138,
+        "decodedRGBASHA256": "c50bcd0726d8b46567f76097e7fcd200f35919e41b15c5c651fa4688ad131766"
+      },
+      "repositoryPath": "reports/quality13/review/CRF_Alpine_Comparison.png",
+      "byteExactRepositoryCopy": true
+    },
+    {
+      "role": "native_fixed_centre_detail_comparison",
+      "output": {
+        "path": "/workspace/scratch/5cb3f69227e7/deliverables/CRF_Detail_Comparison.png",
+        "bytes": 724774,
+        "fileSHA256": "dec92130509c398e01e3e3dccf6c3fd4d1e940b4c8e9e22459f2d1c6a2ba9e3f",
+        "width": 850,
+        "height": 946,
+        "decodedRGBASHA256": "f9a2a0b31260ba41a183b2dcb11dc5c104cc481f7da996790780c09b5009c89c"
+      },
+      "repositoryPath": "reports/quality13/review/CRF_Detail_Comparison.png",
+      "byteExactRepositoryCopy": true
+    }
+  ]
+}

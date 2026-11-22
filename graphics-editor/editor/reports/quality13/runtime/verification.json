@@ -1,0 +1,445 @@
+{
+  "schema": "crf.detail_runtime_verification.v1",
+  "generatedAt": "2026-11-22T06:36:14.567Z",
+  "status": "passed",
+  "contractSHA256": "f262a18ad60ae4f77bed9608b28aecac2c1201d109a7709b82668a1d0a1b193b",
+  "rendererSHA256": "09a93dc3ae598b6bb1ccbb48c5ceac07d6a8bc540a3b8090f0b748d07847a72f",
+  "verifierSHA256": "1beb3a31e670e84ff71d4f10a37526b54370b398331ed12dbc9f965f8d6a8af5",
+  "environment": {
+    "node": "v24.22.3",
+    "cpu": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "scope": "Function evaluation, cross-runtime, serialization and pixel-aligned crops; photo quality evaluated separately.",
+  "scenes": [
+    {
+      "id": "alpine_hd",
+      "status": "passed",
+      "assetSHA256": "fc28abb256fb45fa1009824f75be9544c35cb4e939f0960dd2642b7f9eca014f",
+      "projectContentHash": "3732a7cd16089833b99fa83dd67ea69d2cb0aa0a61cdcf0277cc23988516a242",
+      "serializedProjectBytes": 16006336,
+      "outputs": {
+        "native": {
+          "path": "reports/quality13/runtime/alpine_hd.png",
+          "width": 1280,
+          "height": 850,
+          "fileSHA256": "3d47262a70df55f8461cbae61f50e2aa0f888035f7c6a109077a52aa16743d92",
+          "rgbaSHA256": "8df7a8d2d07b1346575ee3122246c63899d3caf240527d4a6c5aedef7f3953b3",
+          "bytes": 2260468
+        },
+        "edited": {
+          "path": "reports/quality13/runtime/alpine_hd.edited.png",
+          "width": 1280,
+          "height": 850,
+          "fileSHA256": "893b624b02ba6ffebcda5d80b5ead05464024bb2f4795e72a4fc3947d563590d",
+          "rgbaSHA256": "461f8865a243ebb6bf87b41163784557850d084ffe185b28fbb1e9d2105410a1",
+          "bytes": 2165858
+        },
+        "resampled": {
+          "path": "reports/quality13/runtime/alpine_hd.1_5x.png",
+          "width": 1920,
+          "height": 1275,
+          "fileSHA256": "34527e2cb82ec13f4ecb05c40f3fb5e41aebf6e37d2dd3bf0e3d204885a39f63",
+          "rgbaSHA256": "3b0eee1f3649a901c6d4c31ffbf0c68362cc4be6698cf0428a0983cf3874db00",
+          "bytes": 4560275
+        }
+      },
+      "crossRuntime": {
+        "changedChannels": 0,
+        "maxChannelError": 0,
+        "exact": true
+      },
+      "projectReplay": {
+        "changedChannels": 0,
+        "maxChannelError": 0,
+        "exact": true
+      },
+      "isolatedReplay": {
+        "changedChannels": 0,
+        "maxChannelError": 0,
+        "exact": true,
+        "filesSupplied": [
+          "kernel.cjs",
+          "project.json",
+          "replay.cjs"
+        ],
+        "sourceImageSupplied": false,
+        "accessSandboxClaim": false
+      },
+      "editing": {
+        "changedChannels": 3003637,
+        "maxChannelError": 19,
+        "exact": false
+      },
+      "regions": [
+        {
+          "id": "forest",
+          "pixelBounds": [
+            64,
+            42,
+            512,
+            468
+          ],
+          "comparison": {
+            "changedChannels": 0,
+            "maxChannelError": 0,
+            "exact": true
+          }
+        },
+        {
+          "id": "water",
+          "pixelBounds": [
+            64,
+            595,
+            1216,
+            833
+          ],
+          "comparison": {
+            "changedChannels": 0,
+            "maxChannelError": 0,
+            "exact": true
+          }
+        },
+        {
+          "id": "buildings",
+          "pixelBounds": [
+            768,
+            408,
+            1255,
+            595
+          ],
+          "comparison": {
+            "changedChannels": 0,
+            "maxChannelError": 0,
+            "exact": true
+          }
+        }
+      ],
+      "budgetGuard": {
+        "requestedWidth": 2560,
+        "requestedHeight": 1700,
+        "status": "correctly_rejected"
+      },
+      "diagnostics": {
+        "engine": "CRFQuality12",
+        "version": "1.1.0-experimental.2",
+        "renderer": "direct_signed_anisotropic_gaussian_support_splat",
+        "elapsedMs": 1676.951721,
+        "gaussianCount": 196608,
+        "parameterCount": 1572867,
+        "supportVisits": 29166236,
+        "basisEvaluations": 21085634,
+        "supportVisitLimit": 200000000,
+        "sourceWidth": 1280,
+        "sourceHeight": 850,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "outputWidth": 1280,
+        "outputHeight": 850,
+        "sampling": "pixel_centres_in_source_plane",
+        "accumulation": "float64_asset_order",
+        "cutoffSigma": 4,
+        "colorSpace": "srgb_encoded_0_255",
+        "quantization": "clamp_floor_value_plus_half",
+        "sourceRGBAtRender": false,
+        "sourceRGBBlit": false,
+        "colourRasterResampling": false,
+        "cachedColourField": false,
+        "referenceConditioned": true,
+        "novelSceneGeneration": false,
+        "superResolutionClaim": false,
+        "coverageSampling": "opaque_rectangle",
+        "editingModel": "linear_exposure_then_display_contrast_and_saturation",
+        "contrastPivotSRGB8": 127.5,
+        "saturationLumaWeights": [
+          0.2126,
+          0.7152,
+          0.0722
+        ],
+        "physicalRelighting": false,
+        "qualityClaim": "requires_separate_reference_evaluation"
+      }
+    },
+    {
+      "id": "street",
+      "status": "passed",
+      "assetSHA256": "220b0195fdd23c9ded0b0e0ba78d437595de9bd5d2e1772a01c7ee0c73511764",
+      "projectContentHash": "016c47417114056dcaca0af629411c15f3df9a1612989faf2f4c6502ea5bbe74",
+      "serializedProjectBytes": 7929749,
+      "outputs": {
+        "native": {
+          "path": "reports/quality13/runtime/street.png",
+          "width": 667,
+          "height": 1000,
+          "fileSHA256": "238723c371c7390392964964cd3530f2afc7d80c8aaf0211b954f3b2cc824973",
+          "rgbaSHA256": "2de7fdd4aeb984e765901d47fb14bcc7cea45d60538664cf3f9cb22a6372298c",
+          "bytes": 1039341
+        },
+        "edited": {
+          "path": "reports/quality13/runtime/street.edited.png",
+          "width": 667,
+          "height": 1000,
+          "fileSHA256": "0cd31d5a297d2d5dcc86b07c40ffd0474c2df3d2dd8a11132ff2e9fd32efe7af",
+          "rgbaSHA256": "c5787590b2d170b4bb3f81aae71cb47731de8371afb396c7288eb9b898d7575a",
+          "bytes": 1070950
+        }
+      },
+      "crossRuntime": {
+        "changedChannels": 0,
+        "maxChannelError": 0,
+        "exact": true
+      },
+      "projectReplay": {
+        "changedChannels": 0,
+        "maxChannelError": 0,
+        "exact": true
+      },
+      "isolatedReplay": {
+        "changedChannels": 0,
+        "maxChannelError": 0,
+        "exact": true,
+        "filesSupplied": [
+          "kernel.cjs",
+          "project.json",
+          "replay.cjs"
+        ],
+        "sourceImageSupplied": false,
+        "accessSandboxClaim": false
+      },
+      "editing": {
+        "changedChannels": 1987677,
+        "maxChannelError": 19,
+        "exact": false
+      },
+      "regions": [
+        {
+          "id": "signal",
+          "pixelBounds": [
+            266,
+            370,
+            341,
+            500
+          ],
+          "comparison": {
+            "changedChannels": 0,
+            "maxChannelError": 0,
+            "exact": true
+          }
+        },
+        {
+          "id": "wall",
+          "pixelBounds": [
+            360,
+            200,
+            621,
+            700
+          ],
+          "comparison": {
+            "changedChannels": 0,
+            "maxChannelError": 0,
+            "exact": true
+          }
+        },
+        {
+          "id": "crosswalk",
+          "pixelBounds": [
+            100,
+            830,
+            654,
+            990
+          ],
+          "comparison": {
+            "changedChannels": 0,
+            "maxChannelError": 0,
+            "exact": true
+          }
+        }
+      ],
+      "diagnostics": {
+        "engine": "CRFQuality12",
+        "version": "1.1.0-experimental.2",
+        "renderer": "direct_signed_anisotropic_gaussian_support_splat",
+        "elapsedMs": 1183.1675709999981,
+        "gaussianCount": 98304,
+        "parameterCount": 786435,
+        "supportVisits": 18062390,
+        "basisEvaluations": 13537481,
+        "supportVisitLimit": 200000000,
+        "sourceWidth": 667,
+        "sourceHeight": 1000,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "outputWidth": 667,
+        "outputHeight": 1000,
+        "sampling": "pixel_centres_in_source_plane",
+        "accumulation": "float64_asset_order",
+        "cutoffSigma": 4,
+        "colorSpace": "srgb_encoded_0_255",
+        "quantization": "clamp_floor_value_plus_half",
+        "sourceRGBAtRender": false,
+        "sourceRGBBlit": false,
+        "colourRasterResampling": false,
+        "cachedColourField": false,
+        "referenceConditioned": true,
+        "novelSceneGeneration": false,
+        "superResolutionClaim": false,
+        "coverageSampling": "opaque_rectangle",
+        "editingModel": "linear_exposure_then_display_contrast_and_saturation",
+        "contrastPivotSRGB8": 127.5,
+        "saturationLumaWeights": [
+          0.2126,
+          0.7152,
+          0.0722
+        ],
+        "physicalRelighting": false,
+        "qualityClaim": "requires_separate_reference_evaluation"
+      }
+    },
+    {
+      "id": "orchard",
+      "status": "passed",
+      "assetSHA256": "7c2320cd295076095216c1e2d23d5f8adf5edcafefc3aeed0c7e97ca649036e1",
+      "projectContentHash": "4df979870101e890f95980b799f555c4c992a3537f8bb9fa2c3bca9442bc0f05",
+      "serializedProjectBytes": 5237954,
+      "outputs": {
+        "native": {
+          "path": "reports/quality13/runtime/orchard.png",
+          "width": 800,
+          "height": 600,
+          "fileSHA256": "0a8dc5694fbefd9e4ed46e1e139106885ce9d8c16c306f444fba27eb44f5c273",
+          "rgbaSHA256": "8ec93cee6d967cb870fa76ab0fb7ef87c188d87a1129bd00e82afb440e60dfc6",
+          "bytes": 619398
+        },
+        "edited": {
+          "path": "reports/quality13/runtime/orchard.edited.png",
+          "width": 800,
+          "height": 600,
+          "fileSHA256": "950352c8f8b28b3b25c2a5a74c752ecd7c4b29d649cc3f65efd18fda03410eb2",
+          "rgbaSHA256": "6e982d329ea0bf7fb88e6d2ac51efa898d7f1389ca69b54d88b7504e77d5b720",
+          "bytes": 610200
+        }
+      },
+      "crossRuntime": {
+        "changedChannels": 0,
+        "maxChannelError": 0,
+        "exact": true
+      },
+      "projectReplay": {
+        "changedChannels": 0,
+        "maxChannelError": 0,
+        "exact": true
+      },
+      "isolatedReplay": {
+        "changedChannels": 0,
+        "maxChannelError": 0,
+        "exact": true,
+        "filesSupplied": [
+          "kernel.cjs",
+          "project.json",
+          "replay.cjs"
+        ],
+        "sourceImageSupplied": false,
+        "accessSandboxClaim": false
+      },
+      "editing": {
+        "changedChannels": 1393163,
+        "maxChannelError": 19,
+        "exact": false
+      },
+      "regions": [
+        {
+          "id": "apple",
+          "pixelBounds": [
+            152,
+            210,
+            368,
+            462
+          ],
+          "comparison": {
+            "changedChannels": 0,
+            "maxChannelError": 0,
+            "exact": true
+          }
+        },
+        {
+          "id": "pear",
+          "pixelBounds": [
+            392,
+            114,
+            576,
+            487
+          ],
+          "comparison": {
+            "changedChannels": 0,
+            "maxChannelError": 0,
+            "exact": true
+          }
+        },
+        {
+          "id": "contact",
+          "pixelBounds": [
+            160,
+            432,
+            616,
+            534
+          ],
+          "comparison": {
+            "changedChannels": 0,
+            "maxChannelError": 0,
+            "exact": true
+          }
+        }
+      ],
+      "diagnostics": {
+        "engine": "CRFQuality12",
+        "version": "1.1.0-experimental.2",
+        "renderer": "direct_signed_anisotropic_gaussian_support_splat",
+        "elapsedMs": 797.2236730000004,
+        "gaussianCount": 65536,
+        "parameterCount": 524291,
+        "supportVisits": 12781173,
+        "basisEvaluations": 9537553,
+        "supportVisitLimit": 200000000,
+        "sourceWidth": 800,
+        "sourceHeight": 600,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "outputWidth": 800,
+        "outputHeight": 600,
+        "sampling": "pixel_centres_in_source_plane",
+        "accumulation": "float64_asset_order",
+        "cutoffSigma": 4,
+        "colorSpace": "srgb_encoded_0_255",
+        "quantization": "clamp_floor_value_plus_half",
+        "sourceRGBAtRender": false,
+        "sourceRGBBlit": false,
+        "colourRasterResampling": false,
+        "cachedColourField": false,
+        "referenceConditioned": true,
+        "novelSceneGeneration": false,
+        "superResolutionClaim": false,
+        "coverageSampling": "opaque_rectangle",
+        "editingModel": "linear_exposure_then_display_contrast_and_saturation",
+        "contrastPivotSRGB8": 127.5,
+        "saturationLumaWeights": [
+          0.2126,
+          0.7152,
+          0.0722
+        ],
+        "physicalRelighting": false,
+        "qualityClaim": "requires_separate_reference_evaluation"
+      }
+    }
+  ]
+}

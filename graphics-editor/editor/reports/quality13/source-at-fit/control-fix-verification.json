@@ -1,0 +1,87 @@
+{
+  "schema": "crf.quality13_control_fix_verification.v1",
+  "scope": "Validation and retry control only; no photographic refits",
+  "scenes": [
+    {
+      "id": "alpine_hd",
+      "revalidated": true,
+      "passed": true,
+      "originalArtifactsUnchanged": true,
+      "artifactsSHA256": {
+        "quality-packs/alpine_hd.asset.json": "fc28abb256fb45fa1009824f75be9544c35cb4e939f0960dd2642b7f9eca014f",
+        "reports/quality13/fitting/alpine_hd/alpine_hd.quality.json": "6331737ec41b8060ca0218ae114058e7cd0fabca010e4cc1b637dd652db549e7",
+        "quality-packs/alpine_hd.quality.json": "6331737ec41b8060ca0218ae114058e7cd0fabca010e4cc1b637dd652db549e7",
+        "reports/quality13/fitting/alpine_hd/alpine_hd.png": "debfef7611bb9abf2d3fb46fa4f3efe6c59f0784ed94e48bbdb65000a99f0ecb"
+      },
+      "fitterAtFitSHA256": "3926869c2b47d91d626f581b4cbe3995cd11f53bdd0ab8aa9e1511345050b9e2"
+    },
+    {
+      "id": "street",
+      "revalidated": true,
+      "passed": true,
+      "originalArtifactsUnchanged": true,
+      "artifactsSHA256": {
+        "quality-packs/street.asset.json": "220b0195fdd23c9ded0b0e0ba78d437595de9bd5d2e1772a01c7ee0c73511764",
+        "reports/quality13/fitting/street/street.quality.json": "9a19bb514e4aad875ea2efaaec2a2d89defbd0db34080c7246142a2217989beb",
+        "quality-packs/street.quality.json": "9a19bb514e4aad875ea2efaaec2a2d89defbd0db34080c7246142a2217989beb",
+        "reports/quality13/fitting/street/street.png": "85339936a52e27e3983bbd9bc0ea709ea8f12cbbb59c1bd46269bbf58c009dd4"
+      },
+      "fitterAtFitSHA256": "3926869c2b47d91d626f581b4cbe3995cd11f53bdd0ab8aa9e1511345050b9e2"
+    },
+    {
+      "id": "orchard",
+      "revalidated": true,
+      "passed": true,
+      "originalArtifactsUnchanged": true,
+      "artifactsSHA256": {
+        "quality-packs/orchard.asset.json": "7c2320cd295076095216c1e2d23d5f8adf5edcafefc3aeed0c7e97ca649036e1",
+        "reports/quality13/fitting/orchard/orchard.quality.json": "a5580d52ec26674734c1691a5f4c4febff726c794f029f90f73dc520b735f918",
+        "quality-packs/orchard.quality.json": "a5580d52ec26674734c1691a5f4c4febff726c794f029f90f73dc520b735f918",
+        "reports/quality13/fitting/orchard/orchard.png": "f725147f2703ed8c5f16c417d716b193934687fa435e597099c394c1e4c20ec8"
+      },
+      "fitterAtFitSHA256": "3926869c2b47d91d626f581b4cbe3995cd11f53bdd0ab8aa9e1511345050b9e2"
+    }
+  ],
+  "optimizerAndMeasurementASTUnchanged": {
+    "render_float": true,
+    "polish": true,
+    "fit_observation": true,
+    "measure_quality": true
+  },
+  "tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=2 python3 tests/test_quality13.py",
+    "passed": 11,
+    "failed": 0,
+    "observedRuntimeSeconds": 0.199,
+    "testSourceSHA256": "4a2363e070345f9a95d4475ad506e32e58893f257fc8e5327b3fff599aedee73"
+  },
+  "currentFitterSHA256": "5c047fb3b29b722fbd039284b8d60456a5c7a8d0fbe119a6c811b29270015307",
+  "currentScriptSHA256": "09908ff3c3f4b2044d87069f95c27809df96fa1c5a320140a212238060081a78",
+  "sourceAtFitManifest": "reports/quality13/source-at-fit/manifest.json",
+  "changes": [
+    "Exact decoded reference pixel binding",
+    "Revalidated prior accepted asset and report evidence",
+    "Best passing result across attempts; failed or weaker retries preserve accepted bytes"
+  ],
+  "testHistory": [
+    {
+      "run": "initial control regressions",
+      "tests": 10,
+      "errors": 2,
+      "cause": "publish_selection helper assumed its reports directory already existed",
+      "resolvedBy": "Create reports directory before writing selected output"
+    },
+    {
+      "run": "after helper fix",
+      "tests": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "run": "added previous-attempt scanning and inconsistent report-copy regressions",
+      "tests": 11,
+      "passed": 11,
+      "failed": 0
+    }
+  ]
+}

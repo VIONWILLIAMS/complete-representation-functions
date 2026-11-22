@@ -142,10 +142,13 @@
   }
 
   async function loadReference() {
-    if (state.reference) return state.reference;
     need(qualityAttached(), '当前工程没有可核对的参考来源');
+    if (state.reference) return state.reference;
+    const assetHash = state.assetHash;
     const image = new Image(); image.decoding = 'async'; image.src = REFERENCE_URL;
-    await image.decode(); state.reference = image; state.referenceLoads++;
+    await image.decode();
+    need(qualityAttached() && state.assetHash === assetHash, '参考加载期间工程已经改变；未显示旧参考');
+    state.reference = image; state.referenceLoads++;
     $('referenceState').textContent = '参考像素仅用于对照'; return image;
   }
   async function paintReference() {
@@ -167,7 +170,9 @@
   async function saveProject() { need(state.project, '尚无工程'); const text = await core.serializeProject(state.project); state.lastSavedHash = JSON.parse(text).contentHash; download(new Blob([text], {type: 'application/json'}), 'CRF_1_1_real_scene.crf.json'); status('完整函数参数与当前编辑已保存，可在无需参考图的情况下重新计算。'); }
   async function openProject(file) {
     if (!file) return; need(file.size < 64 * 1024 * 1024, '工程超过 64 MiB 读取预算');
-    const project = await core.parseProject(await file.text()); cancelCalculation(); state.project = project; state.assetHash = await digest(JSON.stringify(project.asset));
+    const project = await core.parseProject(await file.text());
+    const assetHash = await digest(JSON.stringify(project.asset));
+    cancelCalculation(); state.project = project; state.assetHash = assetHash;
     state.region = Object.keys(regions).find(id => JSON.stringify(regionView(id, 1).roi) === JSON.stringify(project.view.roi)) || 'custom';
     const nativeWidth = (project.view.roi[2] - project.view.roi[0]) * project.asset.width;
     $('resolution').value = Math.abs(project.view.width / nativeWidth - 2) < .01 ? '2' : '1';

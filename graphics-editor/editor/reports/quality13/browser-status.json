@@ -1,0 +1,25 @@
+{
+  "schema": "crf.detail_browser_verification.v1",
+  "status": "not_completed",
+  "newPortablePreview": true,
+  "limitations": [
+    {
+      "surface": "connected_local_browser",
+      "result": "navigation_did_not_complete_and_request_was_terminated"
+    },
+    {
+      "surface": "cloud_browser",
+      "result": "development_localhost_connection_refused; subsequent attempt to observe the browser error page was blocked by URL security policy; no workaround attempted"
+    },
+    {
+      "surface": "standalone_headless",
+      "result": "one agent startup failed with socket Operation not permitted; path stopped and no bypass attempted"
+    }
+  ],
+  "completedInstead": [
+    "31 quality-related Node tests including 7 portable-worker/controller tests",
+    "three actual JS/native PNG replays and independent photo measurements",
+    "parameter-only fresh-process replays"
+  ],
+  "claim": "No new live-browser interaction or download verification is claimed for the quality13 portable preview."
+}

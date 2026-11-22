@@ -1,0 +1,114 @@
+{
+  "schema": "crf.independent_delivery_review.v1",
+  "reviewedAt": "2026-11-22T06:25:07.190555+00:00",
+  "scope": "quality12_baseline_and_cached_reference_fix",
+  "tests": {
+    "quality_js": {
+      "passed": 21,
+      "failed": 0
+    },
+    "quality_python": {
+      "passed": 9,
+      "failed": 0
+    },
+    "gui_reference_regressions": {
+      "passed": 3,
+      "failed": 0,
+      "original_controller_failed": 3
+    }
+  },
+  "independentImageAudit": {
+    "schema": "crf.independent_image_quality_audit.v1",
+    "passed": true,
+    "method": "Independent NumPy/SciPy image calculation; no project fitter/evaluator imported",
+    "contractSHA256": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+    "referenceSHA256": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+    "reconstructionSHA256": "60aff7c35f313ab36605269958e768a77f4eea8d1511e9b619fd3d1486a8e418",
+    "metricsMatchSealedReport": true,
+    "fullFrame": {
+      "psnr": 36.66775251244562,
+      "ssim": 0.9728077248326319,
+      "mae": 2.1342953546767105,
+      "maxChannelError": 80
+    },
+    "rois": [
+      {
+        "id": "mountain_forest",
+        "bounds": [
+          40,
+          26,
+          320,
+          293
+        ],
+        "psnr": 34.549993746708324,
+        "ssim": 0.9656937728189448,
+        "mae": 3.168151417870519,
+        "maxChannelError": 38,
+        "passed": true
+      },
+      {
+        "id": "water",
+        "bounds": [
+          40,
+          371,
+          760,
+          521
+        ],
+        "psnr": 39.64486646063503,
+        "ssim": 0.9659826656082298,
+        "mae": 1.6501574074074075,
+        "maxChannelError": 41,
+        "passed": true
+      },
+      {
+        "id": "shore_buildings",
+        "bounds": [
+          480,
+          254,
+          784,
+          372
+        ],
+        "psnr": 34.05748343733242,
+        "ssim": 0.9670445894980022,
+        "mae": 3.371245911388641,
+        "maxChannelError": 80,
+        "passed": true
+      }
+    ],
+    "artifacts": [
+      "reference-vs-computed.png",
+      "fixed-detail-comparison.png",
+      "absolute-error-times4.png"
+    ],
+    "diagnosticImageScope": "Comparison/crop/error images are reports only, never runtime rendering inputs"
+  },
+  "sourceFreeReplay": {
+    "crossRuntimeChangedChannels": 0,
+    "isolatedReplayChangedChannels": 0,
+    "sourcePhotographSupplied": false,
+    "assetSHA256": "c82556bd942e63f73ff2c3dedfd98cec0b3ebfd8cd5716a9bcd43cea1aaa6672",
+    "rendererSHA256": "09a93dc3ae598b6bb1ccbb48c5ceac07d6a8bc540a3b8090f0b748d07847a72f"
+  },
+  "newlyFixedBug": "Cached or late Alpine comparison image could previously be shown after a different project import. Current asset verification now precedes cached returns and follows decode, and import project/hash assignment is atomic.",
+  "changedFiles": [
+    "web/quality-editor12.js",
+    "tests/test_quality_editor12.cjs"
+  ],
+  "changedFileSHA256": {
+    "web/quality-editor12.js": "1d2c735e54e532f97174e79429bd82432062ae69391ededfa832cccb1b9b1c52",
+    "tests/test_quality_editor12.cjs": "27247b46a35a87a85c0d39b13b4502dc7eaa306884bb0bc59c95aaaf804802ba"
+  },
+  "limitations": [
+    "No fresh real browser acceptance performed in this independent baseline check.",
+    "Build deliberately deferred while the parent is modifying new quality13 code.",
+    "Photo quality is observation reconstruction, not unseen scene generation."
+  ],
+  "logs": [
+    "quality12-gui-before-fix.log",
+    "quality12-js-tests.log",
+    "quality12-kernel.log",
+    "quality12-gui-regression.log",
+    "quality12-python-tests.log",
+    "quality12-image-audit.log"
+  ]
+}

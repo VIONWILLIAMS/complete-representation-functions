@@ -35,8 +35,12 @@
     "verify:browser:v11": "node scripts/browser_smoke11.cjs",
     "dev:quality": "node ../tools/start11.mjs --quality",
     "fit:quality": "python3 scripts/fit_quality12.py",
-    "test:quality": "node --test tests/test_quality12.cjs tests/test_quality_harness12.cjs",
-    "verify:quality": "node scripts/verify_quality12.cjs"
+    "test:quality": "node --test tests/test_quality12.cjs tests/test_quality_harness12.cjs tests/test_quality_editor12.cjs tests/test_quality_review13.cjs",
+    "verify:quality": "node scripts/verify_quality12.cjs",
+    "fit:detail": "python3 scripts/fit_quality13.py",
+    "verify:detail": "node scripts/verify_quality13.cjs && python3 scripts/verify_quality13.py",
+    "build:quality-review": "node scripts/build_quality_review13.cjs",
+    "dev:detail": "node scripts/dev_quality_review13.mjs"
   },
   "devDependencies": {
     "esbuild": "0.28.2",
