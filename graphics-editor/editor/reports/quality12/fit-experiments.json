@@ -1,0 +1,132 @@
+{
+  "schema": "crf.quality_fit_experiments.v1",
+  "finalAsset": "web/assets/quality12/alpine.asset.json",
+  "finalEvidence": "web/assets/quality12/alpine.quality.json",
+  "qualityContractHash": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+  "historicalExperiments": [
+    {
+      "id": "alpine-131072-v08",
+      "role": "feasibility_not_delivery",
+      "report": "reports/quality12/experiments/alpine-131072-v08.report.json",
+      "assetSHA256": "7e450557062725b9f2051fb424d4b3e51b2ecc6166b0fde1c3bec0d8ffe915dd",
+      "gaussians": 131072,
+      "assetBytes": 8154984,
+      "metrics": {
+        "mae": 3.1565262084118015,
+        "rmse": 5.48383338494598,
+        "psnr": 33.34911858530045,
+        "ssim": 0.9563248852858744,
+        "maxError": 86,
+        "exactRGBFraction": 0.12090866290018833,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "fitSeconds": 30.775,
+      "legacyPilotGatePassed": true,
+      "finalQualityContractEvaluated": false,
+      "note": "No geometry refinement; not the final delivery."
+    },
+    {
+      "id": "alpine-32768-v08",
+      "role": "feasibility_not_delivery",
+      "report": "reports/quality12/experiments/alpine-32768-v08.report.json",
+      "assetSHA256": "117ea21d93e785e86ad4e806d40dea35cad798e3ba17eb30dd0e3b1ecc13b521",
+      "gaussians": 32768,
+      "assetBytes": 2156609,
+      "metrics": {
+        "mae": 6.930369585687382,
+        "rmse": 11.623945557616318,
+        "psnr": 26.823732264370143,
+        "ssim": 0.7988511084673664,
+        "maxError": 155,
+        "exactRGBFraction": 0.0681379472693032,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "fitSeconds": 9.632,
+      "legacyPilotGatePassed": false,
+      "finalQualityContractEvaluated": false,
+      "note": "No geometry refinement; not the final delivery."
+    },
+    {
+      "id": "alpine-65536-adam",
+      "role": "feasibility_not_delivery",
+      "report": "reports/quality12/experiments/alpine-65536-adam.report.json",
+      "assetSHA256": "f57e84e7860833df1bd996dd6b4e33837c99756dd77291686c7cb6d7e2835bae",
+      "gaussians": 65536,
+      "assetBytes": 5341418,
+      "metrics": {
+        "mae": 2.154319679849341,
+        "rmse": 3.7741612314033097,
+        "psnr": 36.59439462472891,
+        "ssim": 0.9723722493680768,
+        "maxError": 99,
+        "exactRGBFraction": 0.1319020715630885,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "fitSeconds": 40.586,
+      "legacyPilotGatePassed": true,
+      "finalQualityContractEvaluated": false,
+      "note": "Preserved historical metrics; legacy 0.3 sigma refinement is not the final fixed 0.35 profile."
+    },
+    {
+      "id": "alpine-65536-v08",
+      "role": "feasibility_not_delivery",
+      "report": "reports/quality12/experiments/alpine-65536-v08.report.json",
+      "assetSHA256": "5cfc7217168f9567b4c8c07bf79af48e045f593dc7c57153fe6bc6780065f1cf",
+      "gaussians": 65536,
+      "assetBytes": 4311240,
+      "metrics": {
+        "mae": 5.048512241054614,
+        "rmse": 8.461375817689804,
+        "psnr": 29.581983909480996,
+        "ssim": 0.8922511898026712,
+        "maxError": 120,
+        "exactRGBFraction": 0.08801789077212806,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "fitSeconds": 15.116,
+      "legacyPilotGatePassed": false,
+      "finalQualityContractEvaluated": false,
+      "note": "No geometry refinement; not the final delivery."
+    }
+  ],
+  "sameBasisCountComparison": {
+    "gaussians": 65536,
+    "beforeJointGeometry": {
+      "phase": "joint_geometry_colour_0",
+      "elapsedSeconds": 16.63805,
+      "mae": 5.04712570621469,
+      "rmse": 8.460272499503228,
+      "psnr": 29.58311657691838,
+      "ssim": 0.8922935734565928,
+      "maxError": 121,
+      "exactRGBFraction": 0.08813088512241055,
+      "evaluatedPixels": 424800,
+      "rounding": "floor(x+0.5), clamp 0..255",
+      "count": 65536,
+      "floatMSE": 71.66980202106416
+    },
+    "finalExportReplay": {
+      "mae": 2.1342953546767105,
+      "rmse": 3.7424202534484574,
+      "psnr": 36.66775251244562,
+      "ssim": 0.9728077248326319,
+      "maxError": 80,
+      "exactRGBFraction": 0.13453154425612052,
+      "evaluatedPixels": 424800
+    },
+    "psnrImprovementDb": 7.084635935527238,
+    "maeReductionFraction": 0.5771265708621675,
+    "scope": "Same basis count and target. Additional geometry optimization and colour polish consume more compute; this is not an equal-time speed or efficiency comparison."
+  },
+  "largeIntermediateArtifacts": "Kept outside the Git repository; exact commands and source are retained for reproduction.",
+  "secondary": {
+    "report": "reports/quality12/secondary/leaves.quality.json",
+    "source": "web/assets/v08/references/learn.r10.5cbf8dbb8c71.png",
+    "independence": "Different existing source file and visual scene; no claim of a statistically independent held-out benchmark.",
+    "primaryContractAcceptance": "not_applicable"
+  }
+}

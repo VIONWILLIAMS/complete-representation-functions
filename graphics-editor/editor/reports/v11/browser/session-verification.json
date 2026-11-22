@@ -1,0 +1,258 @@
+{
+  "schema": "crf.browser_session_artifact_validation/1.1",
+  "at": "2026-11-22T04:41:10.503Z",
+  "status": "passed",
+  "scope": "Independent verification of exported artifacts from the actual agent-operated CUA session; this report is not an independent observation of browser UI interactions.",
+  "artifacts": [
+    {
+      "name": "video-export-report.json",
+      "bytes": 3581,
+      "sha256": "5a06c913699cb763e566179bcc6d2365d8ec7411e9895a87c5baed37de106c0f"
+    },
+    {
+      "name": "session-evidence.json",
+      "bytes": 34472,
+      "sha256": "8e6405920d618efd689bf9dcb90f5af30f457e4d3232977888317b5ad6c64433"
+    },
+    {
+      "name": "observed-session.crf.json",
+      "bytes": 94022,
+      "sha256": "ef686575c380db07d551e29a5c5d5570e6d9bc13803c8d3ce7e228b25f4c242d"
+    },
+    {
+      "name": "training-complete.jpg",
+      "bytes": 164678,
+      "sha256": "7740a7ff25cd28c11a144d9170315c86e91f749a73aebc7bc37b35eefaf15ae7"
+    }
+  ],
+  "project": {
+    "id": "project.mountain_lake",
+    "sceneRevision": 3,
+    "sceneSha256": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+    "projectSha256": "a02f0c2308619085c088b111e3f969b01248a2f5a3418288991b6c086db70e0a",
+    "functions": 5,
+    "objects": 6,
+    "references": 4
+  },
+  "checks": [
+    {
+      "name": "scene_unchanged_after_reference_search_and_training_cancel",
+      "passed": true
+    },
+    {
+      "name": "immutable_functions_unchanged_after_training_cancel",
+      "passed": true
+    },
+    {
+      "name": "evidence_matches_exported_project_scene_and_function_versions",
+      "passed": true
+    },
+    {
+      "name": "training_and_feedback_records_match_evidence",
+      "passed": true
+    },
+    {
+      "name": "one_completed_training_and_one_real_cancelled_run",
+      "passed": true,
+      "detail": [
+        {
+          "id": "training.mwrcezch",
+          "state": "completed",
+          "stepsCompleted": 600,
+          "plannedSteps": 600,
+          "hidden": 24,
+          "functionVersion": "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b",
+          "elapsedMs": 1139.800000000745,
+          "error": null
+        },
+        {
+          "id": "training.mwrcjci1",
+          "state": "canceled",
+          "stepsCompleted": 8,
+          "plannedSteps": 1200,
+          "hidden": 16,
+          "functionVersion": null,
+          "elapsedMs": 199.5,
+          "error": "Local training canceled."
+        }
+      ]
+    },
+    {
+      "name": "cancel_stopped_before_planned_budget_and_did_not_register_weights",
+      "passed": true
+    },
+    {
+      "name": "four_references_include_three_downloaded_commons_search_results",
+      "passed": true
+    },
+    {
+      "name": "reference_metadata_hashes_match_download_history",
+      "passed": true
+    },
+    {
+      "name": "public_reference_search_records_zero_model_provider_calls",
+      "passed": true
+    },
+    {
+      "name": "no_agent_runs_fabricated",
+      "passed": true
+    },
+    {
+      "name": "video_report_scene_and_functions_bound_to_downloaded_project",
+      "passed": true
+    },
+    {
+      "name": "video_report_matches_independent_ffmpeg_probe",
+      "passed": true
+    },
+    {
+      "name": "feedback_bound_to_current_scene_frame_and_function_versions",
+      "passed": true
+    },
+    {
+      "name": "comparison_bound_to_current_scene",
+      "passed": true
+    },
+    {
+      "name": "cache_direct_pixel_metrics_independently_reproduced",
+      "passed": true,
+      "detail": {
+        "recorded": {
+          "status": "measured",
+          "evaluatedPixels": 49152,
+          "mae": 0.07648383246527778,
+          "rmse": 0.32655045498785906,
+          "maxError": 7,
+          "psnr": 57.8517977445492,
+          "psnrStatus": "finite",
+          "exactRGBAFraction": 0.85943603515625,
+          "linearRMSE": 0.0011591719074735937,
+          "scope": "finite_frame_numeric_measurement_not_formal_proof_or_visual_quality"
+        },
+        "recomputed": {
+          "status": "measured",
+          "evaluatedPixels": 49152,
+          "mae": 0.07648383246527778,
+          "rmse": 0.32655045498785906,
+          "maxError": 7,
+          "psnr": 57.8517977445492,
+          "psnrStatus": "finite",
+          "exactRGBAFraction": 0.85943603515625,
+          "linearRMSE": 0.0011591719074735937,
+          "scope": "finite_frame_numeric_measurement_not_formal_proof_or_visual_quality"
+        }
+      }
+    },
+    {
+      "name": "honest_unimplemented_capability_markers",
+      "passed": true
+    }
+  ],
+  "referenceSearch": {
+    "query": "lake water",
+    "downloaded": 3,
+    "providerCalls": 0,
+    "sources": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGurudongmar_Lake_Sikkim%2C_India_(edit).jpg",
+        "sha256": "d01694c93fc4db406bc0047676d38f95be3684066d1098f7d34baa4e8fc810f9",
+        "bytes": 173991,
+        "license": {
+          "name": "CC BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Original: Yoghya Derivative work: UnpetitproleX",
+          "credit": "This file was derived from: Gurudongmar Lake Sikkim, India.jpg",
+          "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        }
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALake_Seliger._Ostashkov._View_of_Voroniy_Island.jpg",
+        "sha256": "a8c4c85ed6c9dc88c82179983ea40d66e57169c10af1b08a0afa89c89d6fdc54",
+        "bytes": 180057,
+        "license": {
+          "name": "CC BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Александр Байдуков",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        }
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMono_Lake_Tufa.JPG",
+        "sha256": "a22b6ae288b71d6ce8f3c6d73406a29dcd4981c29db590ea181ef7009c8e77c7",
+        "bytes": 126472,
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Vezoy ( talk · contribs )",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        }
+      }
+    ],
+    "evidenceLimit": "Source and license metadata are retained as returned by Commons; original downloaded reference bytes are not embedded in this project and were not rehashed in this artifact-only verification."
+  },
+  "feedback": {
+    "actor": "agent_operated_cua_acceptance",
+    "actorEvidence": "Parent agent reported conducting the feedback click during this browser acceptance run.",
+    "independentHumanReview": false,
+    "records": [
+      {
+        "id": "feedback.mwrcgf52",
+        "kind": "explicit_user_annotation",
+        "choice": "accept",
+        "sceneSha256": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+        "frameSha256": "5d1bbc9f8a5ed3ff52b2977dd4ea80c331a3f2ff6efca439e08b47a58e445ec1",
+        "pixelSha256": "0d3e5222c314ce930c00c370d60642285d12f198a11c4fb5c2b22f9f2315cfb8"
+      }
+    ],
+    "interpretation": "explicit_user_annotation identifies the UI feedback channel. In this acceptance session the actor was the assistant controlling the browser; it is not independent human preference or blind visual-quality evidence."
+  },
+  "provider": {
+    "recordedAgentRuns": 0,
+    "unconfiguredDisabledUI": {
+      "status": "reported_observed_by_parent_cua_agent",
+      "independentlyEstablishedFromTheseJSONFiles": false
+    }
+  },
+  "browserMeasurements": {
+    "comparison": {
+      "width": 256,
+      "height": 192,
+      "time": 0,
+      "samples": 1,
+      "directMs": 192.5,
+      "cachedMs": 105.39999999850988,
+      "metrics": {
+        "status": "measured",
+        "evaluatedPixels": 49152,
+        "mae": 0.07648383246527778,
+        "rmse": 0.32655045498785906,
+        "maxError": 7,
+        "psnr": 57.8517977445492,
+        "psnrStatus": "finite",
+        "exactRGBAFraction": 0.85943603515625,
+        "linearRMSE": 0.0011591719074735937,
+        "scope": "finite_frame_numeric_measurement_not_formal_proof_or_visual_quality"
+      }
+    },
+    "timingScope": "One measured browser run at this finite frame. Reproduced pixel metrics do not imply reproduced wall-clock timing or a universal performance claim."
+  },
+  "limitations": [
+    "PNG and WebM decoding results are in artifact-verification.json; this report cross-checks their exported encoder metadata.",
+    "Screenshots are copied unchanged; the CSS wrapping fix is to be visually checked by the parent browser session.",
+    "The earlier local Playwright launch failure remains recorded separately in acceptance.json."
+  ],
+  "sourceHashes": {
+    "web/editor11.css": "f66853ffd24d259facc58112789ee718bf31eb6b7e31e2c8d6d1a1bc8721afa7",
+    "web/editor11.js": "f6ef534ff31fb891efee7a6cd10b26012ec465b25c0c9e4563a1d8b9fa587972",
+    "web/crf-core11.js": "38e9d1d92490c1f6a73e3f7b20017a7267be158e041971cde3bf2263a80c050d",
+    "web/learn11.js": "7132a94db2043443900eb4bdd5d4c2981b9c01c315f2d2e39be14982617506a5"
+  }
+}

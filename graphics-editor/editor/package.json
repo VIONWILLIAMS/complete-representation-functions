@@ -1,11 +1,11 @@
 {
   "name": "crf-graphics-editor",
-  "version": "0.10.0",
+  "version": "1.1.0-experimental.2",
   "private": true,
-  "description": "CRF editor: frozen-model semantic compilation, direct Gaussian pixels, evidence-bound repair loops, preserved historical cases.",
+  "description": "CRF 1.1: versioned learnable object functions, shared compute kernel, scene harness and preserved 1.0 workspaces.",
   "scripts": {
     "dev": "node scripts/dev07.mjs",
-    "build": "node scripts/build_server10.cjs",
+    "build": "node scripts/build_server11.cjs",
     "test": "node --test tests/test_core.cjs tests/test_boundary_v05.cjs tests/test_fruit.cjs tests/test_program06.cjs tests/test_observation06.cjs tests/test_integration06.cjs",
     "test:v06": "node --test tests/test_program06.cjs tests/test_observation06.cjs tests/test_integration06.cjs",
     "test:legacy": "node --test tests/test_core.cjs tests/test_boundary_v05.cjs tests/test_fruit.cjs",
@@ -26,7 +26,21 @@
     "render:v09": "node scripts/render_v09.cjs",
     "verify:v09": "node scripts/verify_v09.cjs --require-build --contracts",
     "test:v10": "node --test tests/test_gaussian10.cjs tests/test_verifier10.cjs tests/test_task_runner10.cjs tests/test_provider10.mjs tests/test_storage10.mjs",
-    "generate:v10": "python3 scripts/private10.py run_generation10.mjs"
+    "generate:v10": "python3 scripts/private10.py run_generation10.mjs",
+    "dev:v11": "node ../tools/start11.mjs",
+    "build:v10": "node scripts/build_server10.cjs",
+    "test:v11": "node --test tests/test_core11.cjs tests/test_learn11.cjs tests/test_harness11.cjs tests/test_functions_provider11.mjs tests/test_editor11_contract.cjs",
+    "train:v11": "node scripts/train_example11.cjs --water",
+    "benchmark:v11": "node scripts/benchmark_functions11.cjs",
+    "verify:browser:v11": "node scripts/browser_smoke11.cjs",
+    "dev:quality": "node ../tools/start11.mjs --quality",
+    "fit:quality": "python3 scripts/fit_quality12.py",
+    "test:quality": "node --test tests/test_quality12.cjs tests/test_quality_harness12.cjs tests/test_quality_editor12.cjs tests/test_quality_review13.cjs",
+    "verify:quality": "node scripts/verify_quality12.cjs",
+    "fit:detail": "python3 scripts/fit_quality13.py",
+    "verify:detail": "node scripts/verify_quality13.cjs && python3 scripts/verify_quality13.py",
+    "build:quality-review": "node scripts/build_quality_review13.cjs",
+    "dev:detail": "node scripts/dev_quality_review13.mjs"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

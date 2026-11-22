@@ -1,0 +1,153 @@
+{
+  "schema": "crf.detail_quality_contract.v1",
+  "id": "crf-detail-quality-2026-11-22",
+  "status": "frozen_before_new_fits",
+  "scope": "Finite observation-conditioned reconstruction at each declared source size. Not novel-scene generation or physical relighting.",
+  "noDownsampleDuringFitOrEvaluation": true,
+  "baseContract": "contracts/quality12.json",
+  "baseContractHash": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+  "globalGate": {
+    "psnrMin": 35.0,
+    "ssimMin": 0.97,
+    "maeMax": 3.0,
+    "p99ChannelErrorMax": 18.0,
+    "fractionPixelsAnyChannelAbove32Max": 0.003
+  },
+  "roiGate": {
+    "ssimMin": 0.93,
+    "maeMax": 5.0
+  },
+  "representation": {
+    "minimumSigmaSourcePixels": 0.35,
+    "maximumBasisCount": 262144,
+    "sourceRGBEmbedded": false,
+    "residualRasterEmbedded": false
+  },
+  "budgets": {
+    "solver": "CPU numerical fitting; no paid provider/GPU claim",
+    "initialGeometrySteps": 100,
+    "lateGeometrySteps": 60,
+    "polishIterations": 40,
+    "maxFitAttemptsPerScene": 3,
+    "algorithmComparison": "same final Gaussian count; record unequal wall time, no equal-time speed claim"
+  },
+  "scenes": [
+    {
+      "id": "alpine_hd",
+      "title": "山林湖泊",
+      "referencePath": "assets/source_photos/alpine.jpg",
+      "fileSHA256": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+      "width": 1280,
+      "height": 850,
+      "basisBudget": 196608,
+      "referenceScope": "downloaded 1280px observation, not full 9528px camera image",
+      "rois": [
+        {
+          "id": "forest",
+          "bounds": [
+            0.05,
+            0.05,
+            0.4,
+            0.55
+          ]
+        },
+        {
+          "id": "water",
+          "bounds": [
+            0.05,
+            0.7,
+            0.95,
+            0.98
+          ]
+        },
+        {
+          "id": "buildings",
+          "bounds": [
+            0.6,
+            0.48,
+            0.98,
+            0.7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "street",
+      "title": "建筑与信号灯",
+      "referencePath": "web/assets/reference.png",
+      "fileSHA256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+      "width": 667,
+      "height": 1000,
+      "basisBudget": 98304,
+      "referenceScope": "existing canonical reference, not camera-native image",
+      "rois": [
+        {
+          "id": "signal",
+          "bounds": [
+            0.4,
+            0.37,
+            0.51,
+            0.5
+          ]
+        },
+        {
+          "id": "wall",
+          "bounds": [
+            0.54,
+            0.2,
+            0.93,
+            0.7
+          ]
+        },
+        {
+          "id": "crosswalk",
+          "bounds": [
+            0.15,
+            0.83,
+            0.98,
+            0.99
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orchard",
+      "title": "果皮与高光",
+      "referencePath": "web/assets/cases/orchard-reference.png",
+      "fileSHA256": "710c064d8802060e4cbd3b93859e40b81c213a35b21c4ac5ff99340b7238242e",
+      "width": 800,
+      "height": 600,
+      "basisBudget": 65536,
+      "referenceScope": "existing canonical reference, not camera-native image",
+      "rois": [
+        {
+          "id": "apple",
+          "bounds": [
+            0.19,
+            0.35,
+            0.46,
+            0.77
+          ]
+        },
+        {
+          "id": "pear",
+          "bounds": [
+            0.49,
+            0.19,
+            0.72,
+            0.81
+          ]
+        },
+        {
+          "id": "contact",
+          "bounds": [
+            0.2,
+            0.72,
+            0.77,
+            0.89
+          ]
+        }
+      ]
+    }
+  ]
+}

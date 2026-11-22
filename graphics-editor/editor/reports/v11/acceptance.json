@@ -1,0 +1,126 @@
+{
+  "schema": "crf.upgrade_acceptance/1.1",
+  "recordedAt": "2026-11-22T04:45:15.771878+00:00",
+  "status": "implemented_scope_verified_for_branch_review",
+  "version": "1.1.0-experimental.1",
+  "repository": "VIONWILLIAMS/complete-representation-functions",
+  "baseBranch": "crf-editor-1.1",
+  "baseCommit": "a04e7a0e85f997b8040bff85783dda89a768e928",
+  "branch": "feat/crf-1.1-learnable-object-functions",
+  "designCommit": "bed93d86e3b507f7f869d4c97a479e9fa813f7d2",
+  "designCommittedBeforeImplementation": true,
+  "implemented": [
+    "immutable function versions and executable Scene/Patch IR",
+    "explicit,Gaussian,and actual local neural functions",
+    "actual Adam training with fixed parameters and cancellation",
+    "direct and cached CPU kernels with joint color/alpha sampling",
+    "lightweight-catalog Agent Harness and bounded provider adapter",
+    "actual public reference collection",
+    "GUI editing and output-bound feedback",
+    "real PNG and120frame WebM export",
+    "standalone project replay",
+    "legacy byte-exact preservation"
+  ],
+  "validation": {
+    "editorNodeTests": {
+      "passed": 166,
+      "failed": 0,
+      "skipped": 0,
+      "suites": {
+        "base": 52,
+        "v10": 64,
+        "v11": 50
+      }
+    },
+    "machineJSONFilesParsed": 18,
+    "claimEvidencePathsChecked": 11,
+    "claimTruthProved": false,
+    "actualBrowserWorkflow": "passed",
+    "downloadedPNGReplay": "exactRGBA",
+    "browserReopenPNG": "exactFileAndRGBA",
+    "video": {
+      "codec": "vp9",
+      "width": 640,
+      "height": 480,
+      "frames": 120,
+      "fps": 24,
+      "durationSeconds": 5
+    },
+    "networkReferenceDownloads": 3,
+    "computeBenchmarkCasesPassed": 4,
+    "legacyAssetsByteExact": true,
+    "legacyAssetCount": 885,
+    "sourceAssetCount": 893,
+    "build": {
+      "passed": true,
+      "expandedBytes": 261220779,
+      "limitBytes": 262144000,
+      "headroomBytes": 923221
+    }
+  },
+  "verificationScopeNotes": [
+    "Final regression source snapshot preceded one CSS-only long-text wrapping fix; final browser layout QA and production build cover that final CSS. JavaScript did not change afterward.",
+    "Original headless Playwright launch failure is retained; actual CUA workflow and artifact verification are separate evidence.",
+    "Root claim validator checks evidence path existence, not theorem truth.",
+    "Training reports originally had model/data hashes but no source SHA fields; current integrity association preserves that fact."
+  ],
+  "notVerifiedOrNotImplemented": {
+    "liveProviderTask": "not_exercised_missing_credentials",
+    "githubActions": "not_run_at_report_creation; consult branch workflow results",
+    "targetMacM4": "not_tested",
+    "windows": "not_tested",
+    "webGPU": "not_implemented",
+    "formalProof": "not_implemented",
+    "programRSI": "not_executed",
+    "independentSourceGeneralization": "not_evaluated",
+    "independentHumanVisualReview": "not_evaluated"
+  },
+  "sourceHashes": {
+    "web/crf-core11.js": "38e9d1d92490c1f6a73e3f7b20017a7267be158e041971cde3bf2263a80c050d",
+    "web/learn11.js": "7132a94db2043443900eb4bdd5d4c2981b9c01c315f2d2e39be14982617506a5",
+    "web/learn-worker11.js": "5cb243941e0883e1e4648e1bbc5e1089439fd84c8f729fb3b30432dbf0188509",
+    "web/harness11.js": "626c401d0baf3589eed7dcc57528a18979dc6c1437b7e81eabbe3fd447e840d8",
+    "web/editor11.js": "f6ef534ff31fb891efee7a6cd10b26012ec465b25c0c9e4563a1d8b9fa587972",
+    "web/editor11.css": "f66853ffd24d259facc58112789ee718bf31eb6b7e31e2c8d6d1a1bc8721afa7",
+    "web/studio11.html": "84c01f46b2b3b56734b268750bac52c6bec584cdefcb97155b4a94f90dc81616",
+    "web/render-worker11.js": "7ef93fb75a843096958c66906f8b452a02c841937e71aa4dd175ec77c4831f07",
+    "web/crf-video09.js": "cfe939684ed4385acdaae5bf4b730130502c50024b08661fd824cebedf2305c3",
+    "server/functions11.mjs": "3d478349405a8be1548b75234297b647a33cee204507c349df336e1baa53073f",
+    "server/worker07.mjs": "6de956e95e62fe9abfa3e2a148f3bff12395d6a7805e26ea304fb2fb43b709d2",
+    "server/gaussian08.mjs": "73582512228fc108d949381b9a44e345ca917a5647e503431ae1ac577027f627",
+    "scripts/build_server11.cjs": "5300b3a6e0e9f644d66582e5fba58a231682bd0c1682783f822e5ff3a0045f30",
+    "scripts/build_server07.cjs": "a684317c421077307775435e0f20190a86a05b9bfc5e35436e039eeea934cb37"
+  },
+  "evidence": {
+    "benchmark_integrity.json": "8336e552efedcacc43bcc69251ece2a01f8acd59a934e5027e4b238c828ccee3",
+    "browser/artifact-verification.json": "02dc9002fcf17c6e022a2c334bd59a82d75788eccebfa0ad2e7451048b522bb5",
+    "browser/observed-browser-acceptance.json": "ec6e4c1d35af33273893853ff5caddabb612848fe89b3068cf297804e8f9348f",
+    "browser/observed-session.crf.json": "ef686575c380db07d551e29a5c5d5570e6d9bc13803c8d3ce7e228b25f4c242d",
+    "browser/reopen-verification.json": "f15928aab0fb923bbebd8ef3fe68083cb07ce708285b134f6c70bb7488ffc5af",
+    "browser/session-evidence.json": "8e6405920d618efd689bf9dcb90f5af30f457e4d3232977888317b5ad6c64433",
+    "browser/session-verification.json": "7d388846e23e884b47706a2e8e1cad509c5f28eb119cd7743093afaea04ddaa3",
+    "browser/studio-final.jpg": "b982ee39a3661631b0e23e8120aa444f7fecb9ab93e004bd15dd99f395a19b45",
+    "browser/training-complete.jpg": "7740a7ff25cd28c11a144d9170315c86e91f749a73aebc7bc37b35eefaf15ae7",
+    "browser/video-export-report.json": "5a06c913699cb763e566179bcc6d2365d8ec7411e9895a87c5baed37de106c0f",
+    "browser/water-scene-reopened.png": "a2e518d5f9bdb8a6f974fef45a7ecf1e6acd758e161531ad20d420167157ab37",
+    "browser/water-scene.crf.json": "e8798653a54fa9374bf3de215b3ba541969570e23e46441d2f30ca202a07fd91",
+    "browser/water-scene.png": "a2e518d5f9bdb8a6f974fef45a7ecf1e6acd758e161531ad20d420167157ab37",
+    "browser/water-scene.webm": "d00ff8b3d75a590197117334da24e41409b2ac2c074606fc350d5f330b37a42c",
+    "build_verification.json": "58084f92ec3fa61daf1ffe77de509209d3114e64a0594ecca30494a0824c5c59",
+    "compute_benchmark.json": "3182cc3ffce2c9f0e89359191767d5dc997275288379e307047e1d73fcddc9c4",
+    "editor_contract_validation.json": "128422d36ec7e2901d9e7ccd1db26bb44c5424944e239f995f6faf6c061011af",
+    "regression_validation.json": "b31aa8cca4ad4b5a0e69a99ad7a2b5e6b976b1fb96207bf55ffb89e0ba148cb8",
+    "training-ceramic.json": "a13e742bfadb179a6333a47085c717ff7afa434936eb7a0d21b4a6728e07055c",
+    "training-ceramic.model.json": "3efa28f027ba67db78b958fe206ea0cbde62acd2b3226ef9b2fb2a224fa22d32",
+    "training-conditional.json": "dae452770e5440670be56cdd5ce600c19e7d7c719a3882eb8a85263117ec9aa1",
+    "training-conditional.model.json": "c69dd155589fbd1a9625bb854e971507112d76a042de75e6f092dbb63566770f",
+    "training-water.json": "ff048ee545cf29e689c9fb4635ca30359b0a23e3fc499ed7b723cbaa31e0ecd7",
+    "training-water.model.json": "0c937fb1707599156c94639898923f3a957683352784c9b009fbdcdfc00c506a",
+    "browser/acceptance.json": "9068bfa97a72871dd74deee1e0e46cf59bc9cdf47c7ba97723b9b91116282acc"
+  },
+  "documentation": {
+    "design": "../../../plans/CRF_1_1_Learnable_Functions_Design.md",
+    "delivery": "../../docs/v11/DELIVERY.md",
+    "usage": "../../../README_1_1.md"
+  }
+}

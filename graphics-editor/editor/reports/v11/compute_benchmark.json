@@ -1,0 +1,1217 @@
+{
+  "schema": "crf.compute_benchmark/1.1",
+  "state": "completed",
+  "registeredAt": "2026-11-22T04:24:43.362Z",
+  "contract": {
+    "schema": "crf.compute_benchmark_contract/1.1",
+    "cases": [
+      {
+        "name": "water",
+        "file": "training-water.model.json",
+        "instance": 0
+      },
+      {
+        "name": "ceramic",
+        "file": "training-ceramic.model.json",
+        "instance": 0
+      },
+      {
+        "name": "conditional.ceramic",
+        "file": "training-conditional.model.json",
+        "instance": 0
+      },
+      {
+        "name": "conditional.orange",
+        "file": "training-conditional.model.json",
+        "instance": 1
+      }
+    ],
+    "width": 256,
+    "height": 160,
+    "background": [
+      0.12,
+      0.14,
+      0.18
+    ],
+    "object": {
+      "x": 28,
+      "y": 20,
+      "width": 200,
+      "height": 120,
+      "opacity": 1,
+      "rotation": 0,
+      "tint": [
+        1,
+        1,
+        1
+      ]
+    },
+    "time": 0,
+    "samples": 1,
+    "cacheResolution": 64,
+    "repeats": 5,
+    "quality": {
+      "domain": "RGB8 full-frame channels; all output alpha bytes",
+      "meanAbsoluteErrorMax": 1,
+      "maxChannelErrorMax": 12,
+      "alphaExact": true
+    },
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "training": {
+      "steps": 600,
+      "hidden": 24,
+      "batchSize": 64,
+      "learningRate": 0.01
+    },
+    "qualityGateFrozenBeforeMeasurement": true,
+    "timingDefinitions": {
+      "compile": "createRuntime including immutable snapshot/hash checks",
+      "cold": "first frame of a fresh runtime, not a fresh operating-system process",
+      "warm": "next same-profile frame on that runtime",
+      "cacheBuild": "reported inside cold cached render; not added twice",
+      "endToEndCold": "compile wall time plus first-frame wall time"
+    },
+    "exclusions": [
+      "No target Mac M4 performance claim.",
+      "No GPU path.",
+      "No photographic realism or unseen-source generalization claim.",
+      "All means are explicitly compared to direct evaluation, not source-photo truth."
+    ]
+  },
+  "contractSha256": "f217438a868b78cae326299e63bfadfcfee9ce587406f4f01c04b0b5e78dddce",
+  "inputFileHashes": {
+    "training-water.model.json": "0c937fb1707599156c94639898923f3a957683352784c9b009fbdcdfc00c506a",
+    "training-ceramic.model.json": "3efa28f027ba67db78b958fe206ea0cbde62acd2b3226ef9b2fb2a224fa22d32",
+    "training-conditional.model.json": "c69dd155589fbd1a9625bb854e971507112d76a042de75e6f092dbb63566770f"
+  },
+  "sourceHashes": {
+    "web/crf-core11.js": "38e9d1d92490c1f6a73e3f7b20017a7267be158e041971cde3bf2263a80c050d",
+    "web/learn11.js": "7132a94db2043443900eb4bdd5d4c2981b9c01c315f2d2e39be14982617506a5",
+    "scripts/benchmark_functions11.cjs": "9fe322572ab9172b88a3aa50949bc7e9cbfbb896a6e01cdb5632560955e5386e"
+  },
+  "environment": {
+    "platform": "linux",
+    "architecture": "x64",
+    "node": "v24.22.3",
+    "cpuModel": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCPUs": 9,
+    "targetMacM4Measured": false,
+    "timingScope": "this shared Linux executor; wall-clock observations may include scheduling noise"
+  },
+  "cases": [
+    {
+      "name": "water",
+      "instance": 0,
+      "modelHash": "e5ba1cf7b10a3305362637a73bd44bdbeef4945c7ae89ca8be303fe397de5d06",
+      "projectDigest": "3b0988c9516e790b5af1559f5b303c0716f40b56dbbb4208a8a3066e6faa15ad",
+      "direct": {
+        "backend": "direct",
+        "repetitions": [
+          {
+            "compileMs": 8.952143000000007,
+            "coldMs": 85.34405,
+            "warmMs": 52.65310500000001,
+            "endToEndColdMs": 94.296193,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 5.963480000000004,
+            "coldMs": 78.702673,
+            "warmMs": 67.40786000000003,
+            "endToEndColdMs": 84.66615300000001,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 3.9691500000000133,
+            "coldMs": 67.60087099999998,
+            "warmMs": 67.55082600000003,
+            "endToEndColdMs": 71.570021,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 7.580871999999999,
+            "coldMs": 70.39380600000004,
+            "warmMs": 66.49335900000005,
+            "endToEndColdMs": 77.97467800000004,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 3.863371000000029,
+            "coldMs": 66.37323800000001,
+            "warmMs": 67.19933500000002,
+            "endToEndColdMs": 70.23660900000004,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          }
+        ],
+        "median": {
+          "compileMs": 5.963480000000004,
+          "coldMs": 70.39380600000004,
+          "warmMs": 67.19933500000002,
+          "endToEndColdMs": 77.97467800000004,
+          "cacheBuildMs": 0
+        },
+        "framesDeterministicAcrossRepeats": true,
+        "pixelSha256": "2a2e1777bf7f1eba6c3f176906dd50fcca30d30cd6353950668a10ae341e9222",
+        "lastDiagnostics": {
+          "engine": "CRF11",
+          "backend": "direct",
+          "elapsedMs": 67.143371,
+          "compileMs": 3.837472000000048,
+          "time": 0,
+          "visibleObjects": 1,
+          "fieldEvaluations": 24000,
+          "cachedSamples": 0,
+          "coveredSamples": 24000,
+          "estimatedSampleVisits": 24000,
+          "estimatedBoundingBoxTests": 40960,
+          "estimatedFrameMAC": 24192000,
+          "cacheBuildEvaluations": 0,
+          "cacheBuildMAC": 0,
+          "cacheBuildMs": 0,
+          "cacheBytes": 0,
+          "cacheEntries": 0,
+          "generatedFieldCache": false,
+          "generatedFieldCacheApproximation": "none",
+          "sourceRGBBlit": false,
+          "sourceRGBAtRender": false,
+          "referenceNetworkReads": 0,
+          "neuralWeightsUsed": true,
+          "colorSpace": "linear_srgb_joint_premultiplied_then_srgb8",
+          "geometry": "explicit_2d_affine_motion",
+          "learnedDynamics": false,
+          "physicalRelighting": false,
+          "formalProofStatus": "not_implemented",
+          "photographicQuality": "not_evaluated"
+        }
+      },
+      "cached": {
+        "backend": "cached",
+        "repetitions": [
+          {
+            "compileMs": 3.898204000000078,
+            "coldMs": 26.532637000000022,
+            "warmMs": 21.684739000000036,
+            "endToEndColdMs": 30.4308410000001,
+            "cacheBuildMs": 10.718367000000057,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 3.568866000000071,
+            "coldMs": 26.127685000000042,
+            "warmMs": 13.690983999999958,
+            "endToEndColdMs": 29.696551000000113,
+            "cacheBuildMs": 11.274946,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 7.384915999999976,
+            "coldMs": 23.210020999999983,
+            "warmMs": 26.61024299999997,
+            "endToEndColdMs": 30.59493699999996,
+            "cacheBuildMs": 10.68397600000003,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 6.207719999999995,
+            "coldMs": 21.322091999999998,
+            "warmMs": 10.92433799999992,
+            "endToEndColdMs": 27.529811999999993,
+            "cacheBuildMs": 10.715613000000076,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 5.682056000000102,
+            "coldMs": 17.053608999999824,
+            "warmMs": 6.203523000000132,
+            "endToEndColdMs": 22.735664999999926,
+            "cacheBuildMs": 10.782163999999966,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          }
+        ],
+        "median": {
+          "compileMs": 5.682056000000102,
+          "coldMs": 23.210020999999983,
+          "warmMs": 13.690983999999958,
+          "endToEndColdMs": 29.696551000000113,
+          "cacheBuildMs": 10.718367000000057
+        },
+        "framesDeterministicAcrossRepeats": true,
+        "pixelSha256": "62f37ec9841aca8bfe7f5c274bba9db4564929fc1d924fb1fd1626cdfb98117e",
+        "lastDiagnostics": {
+          "engine": "CRF11",
+          "backend": "cached",
+          "elapsedMs": 6.187359000000015,
+          "compileMs": 5.670468000000028,
+          "time": 0,
+          "visibleObjects": 1,
+          "fieldEvaluations": 0,
+          "cachedSamples": 24000,
+          "coveredSamples": 24000,
+          "estimatedSampleVisits": 24000,
+          "estimatedBoundingBoxTests": 40960,
+          "estimatedFrameMAC": 384000,
+          "cacheBuildEvaluations": 0,
+          "cacheBuildMAC": 0,
+          "cacheBuildMs": 0,
+          "cacheBytes": 49152,
+          "cacheEntries": 1,
+          "generatedFieldCache": true,
+          "generatedFieldCacheApproximation": "bilinear_canonical_grid",
+          "sourceRGBBlit": false,
+          "sourceRGBAtRender": false,
+          "referenceNetworkReads": 0,
+          "neuralWeightsUsed": true,
+          "colorSpace": "linear_srgb_joint_premultiplied_then_srgb8",
+          "geometry": "explicit_2d_affine_motion",
+          "learnedDynamics": false,
+          "physicalRelighting": false,
+          "formalProofStatus": "not_implemented",
+          "photographicQuality": "not_evaluated"
+        }
+      },
+      "comparison": {
+        "pixels": 40960,
+        "meanAbsoluteError": 0.15506998697916666,
+        "rootMeanSquaredError": 0.5335352197645126,
+        "maxChannelError": 11,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "objectRectangleComparison": {
+        "pixels": 24000,
+        "meanAbsoluteError": 0.2646527777777778,
+        "rootMeanSquaredError": 0.6970074923875959,
+        "maxChannelError": 11,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "qualityGate": {
+        "status": "passed",
+        "thresholds": {
+          "domain": "RGB8 full-frame channels; all output alpha bytes",
+          "meanAbsoluteErrorMax": 1,
+          "maxChannelErrorMax": 12,
+          "alphaExact": true
+        }
+      },
+      "payload": {
+        "projectJSONBytes": 29165,
+        "functionLibraryJSONBytes": 28555,
+        "catalogJSONBytes": 575,
+        "modelJSONBytes": 22351,
+        "modelWeightBytesFloat64": 8472,
+        "coverageJSONBytes": 111,
+        "preparedReferenceRGBABytes": 7680,
+        "sizeMeaning": "bytes, not tokens; trained model may be larger than its small downsampled training image",
+        "libraryToCatalogByteRatio": 49.66086956521739
+      },
+      "independentProjectImport": {
+        "integrity": true,
+        "exactDirectRGBAReplay": true,
+        "referencesAvailableToRuntime": false
+      },
+      "speedRatios": {
+        "directOverCachedWarm": 4.908291106030087,
+        "directOverCachedColdIncludingCompile": 2.6257149525545826
+      }
+    },
+    {
+      "name": "ceramic",
+      "instance": 0,
+      "modelHash": "528e8a5cc8082252eb1b9e514abe7be6517c11ab71c647afe52763701d0e0dfa",
+      "projectDigest": "0f3c9bf8b07c06db8ba1ac44d16bb5a909dd126f817c9a171af31f4b9dbd9dd2",
+      "direct": {
+        "backend": "direct",
+        "repetitions": [
+          {
+            "compileMs": 3.701186000000007,
+            "coldMs": 51.860573999999815,
+            "warmMs": 52.091363,
+            "endToEndColdMs": 55.56175999999982,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.210334999999986,
+            "coldMs": 51.324575000000095,
+            "warmMs": 51.26686900000004,
+            "endToEndColdMs": 55.53491000000008,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 5.1001269999999295,
+            "coldMs": 51.90059300000007,
+            "warmMs": 58.53770200000008,
+            "endToEndColdMs": 57.00072,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 7.079073999999991,
+            "coldMs": 56.877116000000115,
+            "warmMs": 52.70345600000019,
+            "endToEndColdMs": 63.956190000000106,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 3.612923000000137,
+            "coldMs": 53.709554000000026,
+            "warmMs": 52.225844999999936,
+            "endToEndColdMs": 57.32247700000016,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24192000,
+            "frameBuffersBytes": 655360
+          }
+        ],
+        "median": {
+          "compileMs": 4.210334999999986,
+          "coldMs": 51.90059300000007,
+          "warmMs": 52.225844999999936,
+          "endToEndColdMs": 57.00072,
+          "cacheBuildMs": 0
+        },
+        "framesDeterministicAcrossRepeats": true,
+        "pixelSha256": "cb1fec6941ac7600a291221ef2b02fe6ea4a1564510f8ac2876dbea1adc5a9fc",
+        "lastDiagnostics": {
+          "engine": "CRF11",
+          "backend": "direct",
+          "elapsedMs": 52.21641100000011,
+          "compileMs": 3.6032390000000305,
+          "time": 0,
+          "visibleObjects": 1,
+          "fieldEvaluations": 18732,
+          "cachedSamples": 0,
+          "coveredSamples": 18732,
+          "estimatedSampleVisits": 24000,
+          "estimatedBoundingBoxTests": 40960,
+          "estimatedFrameMAC": 24192000,
+          "cacheBuildEvaluations": 0,
+          "cacheBuildMAC": 0,
+          "cacheBuildMs": 0,
+          "cacheBytes": 0,
+          "cacheEntries": 0,
+          "generatedFieldCache": false,
+          "generatedFieldCacheApproximation": "none",
+          "sourceRGBBlit": false,
+          "sourceRGBAtRender": false,
+          "referenceNetworkReads": 0,
+          "neuralWeightsUsed": true,
+          "colorSpace": "linear_srgb_joint_premultiplied_then_srgb8",
+          "geometry": "explicit_2d_affine_motion",
+          "learnedDynamics": false,
+          "physicalRelighting": false,
+          "formalProofStatus": "not_implemented",
+          "photographicQuality": "not_evaluated"
+        }
+      },
+      "cached": {
+        "backend": "cached",
+        "repetitions": [
+          {
+            "compileMs": 4.085086000000047,
+            "coldMs": 16.89647200000013,
+            "warmMs": 6.253850000000057,
+            "endToEndColdMs": 20.981558000000177,
+            "cacheBuildMs": 10.809675000000198,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 3.3869220000001405,
+            "coldMs": 16.701196999999866,
+            "warmMs": 5.751241000000164,
+            "endToEndColdMs": 20.088119000000006,
+            "cacheBuildMs": 10.757115999999996,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 3.667856000000029,
+            "coldMs": 16.97101500000008,
+            "warmMs": 6.006354999999985,
+            "endToEndColdMs": 20.63887100000011,
+            "cacheBuildMs": 10.48075800000015,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 3.86195900000007,
+            "coldMs": 17.525211000000127,
+            "warmMs": 5.861938000000009,
+            "endToEndColdMs": 21.387170000000197,
+            "cacheBuildMs": 11.136418999999933,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 3.7910729999998694,
+            "coldMs": 17.31943000000001,
+            "warmMs": 7.229903000000149,
+            "endToEndColdMs": 21.11050299999988,
+            "cacheBuildMs": 10.741012000000183,
+            "cacheBuildMAC": 4128768,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          }
+        ],
+        "median": {
+          "compileMs": 3.7910729999998694,
+          "coldMs": 16.97101500000008,
+          "warmMs": 6.006354999999985,
+          "endToEndColdMs": 20.981558000000177,
+          "cacheBuildMs": 10.757115999999996
+        },
+        "framesDeterministicAcrossRepeats": true,
+        "pixelSha256": "a8bbf0169a67ffce930b3bd66874186f89111a2ff32c85dba9c11a5fabddbd72",
+        "lastDiagnostics": {
+          "engine": "CRF11",
+          "backend": "cached",
+          "elapsedMs": 7.225756000000047,
+          "compileMs": 3.7819590000001426,
+          "time": 0,
+          "visibleObjects": 1,
+          "fieldEvaluations": 0,
+          "cachedSamples": 18732,
+          "coveredSamples": 18732,
+          "estimatedSampleVisits": 24000,
+          "estimatedBoundingBoxTests": 40960,
+          "estimatedFrameMAC": 384000,
+          "cacheBuildEvaluations": 0,
+          "cacheBuildMAC": 0,
+          "cacheBuildMs": 0,
+          "cacheBytes": 49152,
+          "cacheEntries": 1,
+          "generatedFieldCache": true,
+          "generatedFieldCacheApproximation": "bilinear_canonical_grid",
+          "sourceRGBBlit": false,
+          "sourceRGBAtRender": false,
+          "referenceNetworkReads": 0,
+          "neuralWeightsUsed": true,
+          "colorSpace": "linear_srgb_joint_premultiplied_then_srgb8",
+          "geometry": "explicit_2d_affine_motion",
+          "learnedDynamics": false,
+          "physicalRelighting": false,
+          "formalProofStatus": "not_implemented",
+          "photographicQuality": "not_evaluated"
+        }
+      },
+      "comparison": {
+        "pixels": 40960,
+        "meanAbsoluteError": 0.09590657552083333,
+        "rootMeanSquaredError": 0.47960521145434465,
+        "maxChannelError": 11,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "objectRectangleComparison": {
+        "pixels": 24000,
+        "meanAbsoluteError": 0.16368055555555555,
+        "rootMeanSquaredError": 0.6265536245561464,
+        "maxChannelError": 11,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "qualityGate": {
+        "status": "passed",
+        "thresholds": {
+          "domain": "RGB8 full-frame channels; all output alpha bytes",
+          "meanAbsoluteErrorMax": 1,
+          "maxChannelErrorMax": 12,
+          "alphaExact": true
+        }
+      },
+      "payload": {
+        "projectJSONBytes": 31680,
+        "functionLibraryJSONBytes": 31072,
+        "catalogJSONBytes": 584,
+        "modelJSONBytes": 22636,
+        "modelWeightBytesFloat64": 8472,
+        "coverageJSONBytes": 2130,
+        "preparedReferenceRGBABytes": 18048,
+        "sizeMeaning": "bytes, not tokens; trained model may be larger than its small downsampled training image",
+        "libraryToCatalogByteRatio": 53.205479452054796
+      },
+      "independentProjectImport": {
+        "integrity": true,
+        "exactDirectRGBAReplay": true,
+        "referencesAvailableToRuntime": false
+      },
+      "speedRatios": {
+        "directOverCachedWarm": 8.695097942096341,
+        "directOverCachedColdIncludingCompile": 2.716705785147105
+      }
+    },
+    {
+      "name": "conditional.ceramic",
+      "instance": 0,
+      "modelHash": "d538bc17a28026622ba0a97b50b30f066fb8e0d0f47c688d4b9196025d691a90",
+      "projectDigest": "f7bc3a2774134282cb2df3920d047e22ce0acaba316e4bac03fe77f6fb50203c",
+      "direct": {
+        "backend": "direct",
+        "repetitions": [
+          {
+            "compileMs": 7.634904000000006,
+            "coldMs": 63.50635599999987,
+            "warmMs": 55.624254000000064,
+            "endToEndColdMs": 71.14125999999987,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 5.282932999999957,
+            "coldMs": 54.97918200000004,
+            "warmMs": 54.958439,
+            "endToEndColdMs": 60.262114999999994,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 5.41789800000015,
+            "coldMs": 57.36313300000029,
+            "warmMs": 53.18308999999999,
+            "endToEndColdMs": 62.78103100000044,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 5.463796000000002,
+            "coldMs": 54.90793299999996,
+            "warmMs": 54.20317000000023,
+            "endToEndColdMs": 60.37172899999996,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 5.326529999999821,
+            "coldMs": 53.63512300000002,
+            "warmMs": 54.377362000000176,
+            "endToEndColdMs": 58.96165299999984,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          }
+        ],
+        "median": {
+          "compileMs": 5.41789800000015,
+          "coldMs": 54.97918200000004,
+          "warmMs": 54.377362000000176,
+          "endToEndColdMs": 60.37172899999996,
+          "cacheBuildMs": 0
+        },
+        "framesDeterministicAcrossRepeats": true,
+        "pixelSha256": "04b5e674db450e309e77b126a4bffe27b6d3eaee74882903ad412f38decd0c12",
+        "lastDiagnostics": {
+          "engine": "CRF11",
+          "backend": "direct",
+          "elapsedMs": 54.36172899999974,
+          "compileMs": 5.3115060000000085,
+          "time": 0,
+          "visibleObjects": 1,
+          "fieldEvaluations": 18732,
+          "cachedSamples": 0,
+          "coveredSamples": 18732,
+          "estimatedSampleVisits": 24000,
+          "estimatedBoundingBoxTests": 40960,
+          "estimatedFrameMAC": 24768000,
+          "cacheBuildEvaluations": 0,
+          "cacheBuildMAC": 0,
+          "cacheBuildMs": 0,
+          "cacheBytes": 0,
+          "cacheEntries": 0,
+          "generatedFieldCache": false,
+          "generatedFieldCacheApproximation": "none",
+          "sourceRGBBlit": false,
+          "sourceRGBAtRender": false,
+          "referenceNetworkReads": 0,
+          "neuralWeightsUsed": true,
+          "colorSpace": "linear_srgb_joint_premultiplied_then_srgb8",
+          "geometry": "explicit_2d_affine_motion",
+          "learnedDynamics": false,
+          "physicalRelighting": false,
+          "formalProofStatus": "not_implemented",
+          "photographicQuality": "not_evaluated"
+        }
+      },
+      "cached": {
+        "backend": "cached",
+        "repetitions": [
+          {
+            "compileMs": 5.055659999999989,
+            "coldMs": 24.193915999999717,
+            "warmMs": 12.929845000000114,
+            "endToEndColdMs": 29.249575999999706,
+            "cacheBuildMs": 11.153604000000087,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 5.357836000000134,
+            "coldMs": 20.616125999999895,
+            "warmMs": 8.981016000000182,
+            "endToEndColdMs": 25.97396200000003,
+            "cacheBuildMs": 11.637764999999945,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.705140999999912,
+            "coldMs": 21.10408299999972,
+            "warmMs": 5.908186999999998,
+            "endToEndColdMs": 25.80922399999963,
+            "cacheBuildMs": 11.614720000000034,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.576668000000154,
+            "coldMs": 17.847105999999712,
+            "warmMs": 6.128721000000041,
+            "endToEndColdMs": 22.423773999999867,
+            "cacheBuildMs": 11.117840000000342,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.73523699999987,
+            "coldMs": 18.46429900000021,
+            "warmMs": 6.2394170000002305,
+            "endToEndColdMs": 23.19953600000008,
+            "cacheBuildMs": 12.177169000000049,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          }
+        ],
+        "median": {
+          "compileMs": 4.73523699999987,
+          "coldMs": 20.616125999999895,
+          "warmMs": 6.2394170000002305,
+          "endToEndColdMs": 25.80922399999963,
+          "cacheBuildMs": 11.614720000000034
+        },
+        "framesDeterministicAcrossRepeats": true,
+        "pixelSha256": "afa4ea505f53df7561804be4fa885a19a7e1de60ca61866f100c6ff48dbfdffd",
+        "lastDiagnostics": {
+          "engine": "CRF11",
+          "backend": "cached",
+          "elapsedMs": 6.233958999999686,
+          "compileMs": 4.72738500000014,
+          "time": 0,
+          "visibleObjects": 1,
+          "fieldEvaluations": 0,
+          "cachedSamples": 18732,
+          "coveredSamples": 18732,
+          "estimatedSampleVisits": 24000,
+          "estimatedBoundingBoxTests": 40960,
+          "estimatedFrameMAC": 384000,
+          "cacheBuildEvaluations": 0,
+          "cacheBuildMAC": 0,
+          "cacheBuildMs": 0,
+          "cacheBytes": 49152,
+          "cacheEntries": 1,
+          "generatedFieldCache": true,
+          "generatedFieldCacheApproximation": "bilinear_canonical_grid",
+          "sourceRGBBlit": false,
+          "sourceRGBAtRender": false,
+          "referenceNetworkReads": 0,
+          "neuralWeightsUsed": true,
+          "colorSpace": "linear_srgb_joint_premultiplied_then_srgb8",
+          "geometry": "explicit_2d_affine_motion",
+          "learnedDynamics": false,
+          "physicalRelighting": false,
+          "formalProofStatus": "not_implemented",
+          "photographicQuality": "not_evaluated"
+        }
+      },
+      "comparison": {
+        "pixels": 40960,
+        "meanAbsoluteError": 0.08782552083333334,
+        "rootMeanSquaredError": 0.32031885156304285,
+        "maxChannelError": 4,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "objectRectangleComparison": {
+        "pixels": 24000,
+        "meanAbsoluteError": 0.14988888888888888,
+        "rootMeanSquaredError": 0.4184627953726724,
+        "maxChannelError": 4,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "qualityGate": {
+        "status": "passed",
+        "thresholds": {
+          "domain": "RGB8 full-frame channels; all output alpha bytes",
+          "meanAbsoluteErrorMax": 1,
+          "maxChannelErrorMax": 12,
+          "alphaExact": true
+        }
+      },
+      "payload": {
+        "projectJSONBytes": 36828,
+        "functionLibraryJSONBytes": 36208,
+        "catalogJSONBytes": 767,
+        "modelJSONBytes": 23840,
+        "modelWeightBytesFloat64": 8664,
+        "coverageJSONBytes": 5034,
+        "preparedReferenceRGBABytes": 52608,
+        "sizeMeaning": "bytes, not tokens; trained model may be larger than its small downsampled training image",
+        "libraryToCatalogByteRatio": 47.20730117340287
+      },
+      "independentProjectImport": {
+        "integrity": true,
+        "exactDirectRGBAReplay": true,
+        "referencesAvailableToRuntime": false
+      },
+      "speedRatios": {
+        "directOverCachedWarm": 8.715135083934632,
+        "directOverCachedColdIncludingCompile": 2.3391532035213776
+      }
+    },
+    {
+      "name": "conditional.orange",
+      "instance": 1,
+      "modelHash": "d538bc17a28026622ba0a97b50b30f066fb8e0d0f47c688d4b9196025d691a90",
+      "projectDigest": "de0557d3ebba3660702e2af16b30883a66af03de54f66989d447ef19087feb2f",
+      "direct": {
+        "backend": "direct",
+        "repetitions": [
+          {
+            "compileMs": 9.508931999999731,
+            "coldMs": 69.33944599999995,
+            "warmMs": 54.3909920000001,
+            "endToEndColdMs": 78.84837799999968,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.958184000000074,
+            "coldMs": 62.78081599999996,
+            "warmMs": 54.712508999999955,
+            "endToEndColdMs": 67.73900000000003,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.869920000000093,
+            "coldMs": 54.44636700000001,
+            "warmMs": 53.9097569999999,
+            "endToEndColdMs": 59.3162870000001,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 5.758240999999998,
+            "coldMs": 54.06736499999988,
+            "warmMs": 53.58182199999965,
+            "endToEndColdMs": 59.82560599999988,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.92980099999977,
+            "coldMs": 54.75866799999994,
+            "warmMs": 53.66319399999975,
+            "endToEndColdMs": 59.688468999999714,
+            "cacheBuildMs": 0,
+            "cacheBuildMAC": 0,
+            "cacheBytes": 0,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 24768000,
+            "frameBuffersBytes": 655360
+          }
+        ],
+        "median": {
+          "compileMs": 4.958184000000074,
+          "coldMs": 54.75866799999994,
+          "warmMs": 53.9097569999999,
+          "endToEndColdMs": 59.82560599999988,
+          "cacheBuildMs": 0
+        },
+        "framesDeterministicAcrossRepeats": true,
+        "pixelSha256": "cac51d2f644fe90f118421b58e0fa9139b6c3d3f65704750452c7ec515ddf588",
+        "lastDiagnostics": {
+          "engine": "CRF11",
+          "backend": "direct",
+          "elapsedMs": 53.65251799999987,
+          "compileMs": 4.916752000000088,
+          "time": 0,
+          "visibleObjects": 1,
+          "fieldEvaluations": 18581,
+          "cachedSamples": 0,
+          "coveredSamples": 18581,
+          "estimatedSampleVisits": 24000,
+          "estimatedBoundingBoxTests": 40960,
+          "estimatedFrameMAC": 24768000,
+          "cacheBuildEvaluations": 0,
+          "cacheBuildMAC": 0,
+          "cacheBuildMs": 0,
+          "cacheBytes": 0,
+          "cacheEntries": 0,
+          "generatedFieldCache": false,
+          "generatedFieldCacheApproximation": "none",
+          "sourceRGBBlit": false,
+          "sourceRGBAtRender": false,
+          "referenceNetworkReads": 0,
+          "neuralWeightsUsed": true,
+          "colorSpace": "linear_srgb_joint_premultiplied_then_srgb8",
+          "geometry": "explicit_2d_affine_motion",
+          "learnedDynamics": false,
+          "physicalRelighting": false,
+          "formalProofStatus": "not_implemented",
+          "photographicQuality": "not_evaluated"
+        }
+      },
+      "cached": {
+        "backend": "cached",
+        "repetitions": [
+          {
+            "compileMs": 5.777870999999777,
+            "coldMs": 18.397397000000183,
+            "warmMs": 6.091123000000152,
+            "endToEndColdMs": 24.17526799999996,
+            "cacheBuildMs": 12.069006000000172,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.987086999999974,
+            "coldMs": 16.99476100000038,
+            "warmMs": 6.299919000000045,
+            "endToEndColdMs": 21.981848000000355,
+            "cacheBuildMs": 11.072302000000036,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.504778999999871,
+            "coldMs": 16.70092700000032,
+            "warmMs": 6.010721999999987,
+            "endToEndColdMs": 21.20570600000019,
+            "cacheBuildMs": 10.919801000000007,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.347261999999773,
+            "coldMs": 16.631571999999778,
+            "warmMs": 6.242621999999756,
+            "endToEndColdMs": 20.97883399999955,
+            "cacheBuildMs": 10.797395999999935,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          },
+          {
+            "compileMs": 4.396846000000096,
+            "coldMs": 17.309765999999854,
+            "warmMs": 7.367900000000191,
+            "endToEndColdMs": 21.70661199999995,
+            "cacheBuildMs": 11.370482000000266,
+            "cacheBuildMAC": 4227072,
+            "cacheBytes": 49152,
+            "warmCacheBuildEvaluations": 0,
+            "estimatedFrameMAC": 384000,
+            "frameBuffersBytes": 655360
+          }
+        ],
+        "median": {
+          "compileMs": 4.504778999999871,
+          "coldMs": 16.99476100000038,
+          "warmMs": 6.242621999999756,
+          "endToEndColdMs": 21.70661199999995,
+          "cacheBuildMs": 11.072302000000036
+        },
+        "framesDeterministicAcrossRepeats": true,
+        "pixelSha256": "41cf41cf93a30855fb247513cbcc988cf41c68a4cf618549bd74f3fd5d47ef6c",
+        "lastDiagnostics": {
+          "engine": "CRF11",
+          "backend": "cached",
+          "elapsedMs": 7.362491999999747,
+          "compileMs": 4.386650999999802,
+          "time": 0,
+          "visibleObjects": 1,
+          "fieldEvaluations": 0,
+          "cachedSamples": 18581,
+          "coveredSamples": 18581,
+          "estimatedSampleVisits": 24000,
+          "estimatedBoundingBoxTests": 40960,
+          "estimatedFrameMAC": 384000,
+          "cacheBuildEvaluations": 0,
+          "cacheBuildMAC": 0,
+          "cacheBuildMs": 0,
+          "cacheBytes": 49152,
+          "cacheEntries": 1,
+          "generatedFieldCache": true,
+          "generatedFieldCacheApproximation": "bilinear_canonical_grid",
+          "sourceRGBBlit": false,
+          "sourceRGBAtRender": false,
+          "referenceNetworkReads": 0,
+          "neuralWeightsUsed": true,
+          "colorSpace": "linear_srgb_joint_premultiplied_then_srgb8",
+          "geometry": "explicit_2d_affine_motion",
+          "learnedDynamics": false,
+          "physicalRelighting": false,
+          "formalProofStatus": "not_implemented",
+          "photographicQuality": "not_evaluated"
+        }
+      },
+      "comparison": {
+        "pixels": 40960,
+        "meanAbsoluteError": 0.09388020833333334,
+        "rootMeanSquaredError": 0.31377344699905163,
+        "maxChannelError": 3,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "objectRectangleComparison": {
+        "pixels": 24000,
+        "meanAbsoluteError": 0.1602222222222222,
+        "rootMeanSquaredError": 0.4099119146570124,
+        "maxChannelError": 3,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "qualityGate": {
+        "status": "passed",
+        "thresholds": {
+          "domain": "RGB8 full-frame channels; all output alpha bytes",
+          "meanAbsoluteErrorMax": 1,
+          "maxChannelErrorMax": 12,
+          "alphaExact": true
+        }
+      },
+      "payload": {
+        "projectJSONBytes": 36808,
+        "functionLibraryJSONBytes": 36198,
+        "catalogJSONBytes": 757,
+        "modelJSONBytes": 23840,
+        "modelWeightBytesFloat64": 8664,
+        "coverageJSONBytes": 5034,
+        "preparedReferenceRGBABytes": 52608,
+        "sizeMeaning": "bytes, not tokens; trained model may be larger than its small downsampled training image",
+        "libraryToCatalogByteRatio": 47.81770145310436
+      },
+      "independentProjectImport": {
+        "integrity": true,
+        "exactDirectRGBAReplay": true,
+        "referencesAvailableToRuntime": false
+      },
+      "speedRatios": {
+        "directOverCachedWarm": 8.63575545660173,
+        "directOverCachedColdIncludingCompile": 2.7561005835456966
+      }
+    }
+  ],
+  "trainingSeeds": [
+    {
+      "seed": 11,
+      "modelHash": "e5ba1cf7b10a3305362637a73bd44bdbeef4945c7ae89ca8be303fe397de5d06",
+      "state": "completed",
+      "initialLoss": 0.18568816921102582,
+      "finalLoss": 0.002868718533226665,
+      "initialValidationLoss": 0.18241872322523814,
+      "validationLoss": 0.0037781254127615778,
+      "bestStep": 550,
+      "stepsCompleted": 600,
+      "elapsedMs": 668.5522850000002,
+      "parameterCount": 1059,
+      "modelJSONBytes": 22351,
+      "trainImproved": true,
+      "validationImproved": true,
+      "evidenceScope": "spatial_reconstruction_holdout",
+      "independentSourceGeneralization": "not_evaluated"
+    },
+    {
+      "seed": 29,
+      "modelHash": "c422abe623818590cf9c8c41dc9872803d8734b2b0eca622e8066adb6b4584c1",
+      "state": "completed",
+      "initialLoss": 0.2151404685085571,
+      "finalLoss": 0.002506055102939787,
+      "initialValidationLoss": 0.21503700615917315,
+      "validationLoss": 0.005065369044695136,
+      "bestStep": 575,
+      "stepsCompleted": 600,
+      "elapsedMs": 688.9360699999997,
+      "parameterCount": 1059,
+      "modelJSONBytes": 22312,
+      "trainImproved": true,
+      "validationImproved": true,
+      "evidenceScope": "spatial_reconstruction_holdout",
+      "independentSourceGeneralization": "not_evaluated"
+    },
+    {
+      "seed": 47,
+      "modelHash": "52933b8b3b5b0d1e91cda28dc2568e3a218681bcbd6a1a4fe35d53798fe07a62",
+      "state": "completed",
+      "initialLoss": 0.1897420734951205,
+      "finalLoss": 0.002614204145258772,
+      "initialValidationLoss": 0.18975576535805885,
+      "validationLoss": 0.0034155279788668233,
+      "bestStep": 600,
+      "stepsCompleted": 600,
+      "elapsedMs": 602.9221769999995,
+      "parameterCount": 1059,
+      "modelJSONBytes": 22388,
+      "trainImproved": true,
+      "validationImproved": true,
+      "evidenceScope": "spatial_reconstruction_holdout",
+      "independentSourceGeneralization": "not_evaluated"
+    }
+  ],
+  "failures": [],
+  "networkReadsDuringRuntime": 0,
+  "trainingSeedSummary": {
+    "count": 3,
+    "allTrainImproved": true,
+    "allValidationImproved": true,
+    "evidenceScope": "same real water crop, three initialization/sampling seeds; not three independent sources"
+  },
+  "thresholdsUnchanged": true,
+  "finishedAt": "2026-11-22T04:24:48.903Z"
+}

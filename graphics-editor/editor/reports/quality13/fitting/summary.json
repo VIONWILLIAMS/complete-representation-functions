@@ -1,0 +1,505 @@
+{
+  "schema": "crf.detail_fitting_summary.v1",
+  "contractSHA256": "f262a18ad60ae4f77bed9608b28aecac2c1201d109a7709b82668a1d0a1b193b",
+  "algorithm": "post_geometry_residual_allocation_joint_adam_colour_polish_v1",
+  "scenes": [
+    {
+      "id": "alpine_hd",
+      "passed": true,
+      "selection": {
+        "selected": "late_residual_candidate",
+        "candidateAttempt": 1,
+        "candidatePassedFrozenGates": true,
+        "candidateNonregressingMSE": true,
+        "rule": "candidate must pass frozen contract and not regress baseline full-frame MSE",
+        "baselineReport": "/workspace/scratch/5cb3f69227e7/crf-delivery/graphics-editor/editor/reports/quality13/fitting/alpine_hd/baseline.quality.json",
+        "candidateReport": "/workspace/scratch/5cb3f69227e7/crf-delivery/graphics-editor/editor/reports/quality13/fitting/alpine_hd/attempt-01.quality.json"
+      },
+      "metrics": {
+        "mae": 1.6567889093137256,
+        "rmse": 3.3074604191160937,
+        "psnr": 37.740910496234065,
+        "identicalRGB": false,
+        "ssim": 0.9876248398363497,
+        "p99ChannelError": 14.0,
+        "fractionPixelsAnyChannelAbove32": 0.0002224264705882353,
+        "pixelsAnyChannelAbove32": 242,
+        "maxChannelError": 63,
+        "evaluatedPixels": 1088000
+      },
+      "rois": [
+        {
+          "id": "forest",
+          "normalizedBounds": [
+            0.05,
+            0.05,
+            0.4,
+            0.55
+          ],
+          "pixelBounds": [
+            64,
+            42,
+            512,
+            468
+          ],
+          "metrics": {
+            "mae": 2.7284505644981,
+            "rmse": 4.258113696115905,
+            "psnr": 35.546458541144396,
+            "identicalRGB": false,
+            "ssim": 0.9801490892727744,
+            "p99ChannelError": 15.0,
+            "fractionPixelsAnyChannelAbove32": 4.71579476861167e-05,
+            "pixelsAnyChannelAbove32": 9,
+            "maxChannelError": 40,
+            "evaluatedPixels": 190848
+          },
+          "passed": true
+        },
+        {
+          "id": "water",
+          "normalizedBounds": [
+            0.05,
+            0.7,
+            0.95,
+            0.98
+          ],
+          "pixelBounds": [
+            64,
+            595,
+            1216,
+            833
+          ],
+          "metrics": {
+            "mae": 0.8695400035014006,
+            "rmse": 2.045964756428407,
+            "psnr": 41.912840642079985,
+            "identicalRGB": false,
+            "ssim": 0.9924704999762453,
+            "p99ChannelError": 9.0,
+            "fractionPixelsAnyChannelAbove32": 0.00020060107376283846,
+            "pixelsAnyChannelAbove32": 55,
+            "maxChannelError": 56,
+            "evaluatedPixels": 274176
+          },
+          "passed": true
+        },
+        {
+          "id": "buildings",
+          "normalizedBounds": [
+            0.6,
+            0.48,
+            0.98,
+            0.7
+          ],
+          "pixelBounds": [
+            768,
+            408,
+            1255,
+            595
+          ],
+          "metrics": {
+            "mae": 2.8710757777070133,
+            "rmse": 4.428426543569153,
+            "psnr": 35.20581470421696,
+            "identicalRGB": false,
+            "ssim": 0.9804703537476653,
+            "p99ChannelError": 15.0,
+            "fractionPixelsAnyChannelAbove32": 0.00024157506945283246,
+            "pixelsAnyChannelAbove32": 22,
+            "maxChannelError": 51,
+            "evaluatedPixels": 91069
+          },
+          "passed": true
+        }
+      ],
+      "comparison": {
+        "baselineMetrics": {
+          "mae": 1.7954427083333333,
+          "rmse": 3.5172917127595573,
+          "psnr": 37.20663583296843,
+          "identicalRGB": false,
+          "ssim": 0.9842522586392692,
+          "p99ChannelError": 15.0,
+          "fractionPixelsAnyChannelAbove32": 0.00045036764705882353,
+          "pixelsAnyChannelAbove32": 490,
+          "maxChannelError": 89,
+          "evaluatedPixels": 1088000
+        },
+        "baselineFitSeconds": 143.953981,
+        "candidateFitSeconds": 240.707842,
+        "baselineBasisCount": 196608,
+        "candidateBasisCount": 196608,
+        "psnrImprovementDb": 0.5342746632656343,
+        "maeReductionFraction": 0.07722540985354898,
+        "computeComparison": "Different optimization steps and actual wall time; no equal-time speed claim."
+      },
+      "representation": {
+        "gaussians": 196608,
+        "parameterCount": 1572867,
+        "geometryParameterCount": 983040,
+        "colourParameterCount": 589827,
+        "parameterFloat32Bytes": 6291468,
+        "parameterFloat64Bytes": 12582936,
+        "rawRGBBytes": 3264000,
+        "float32ToRawRGBRatio": 1.9275330882352941,
+        "jsonBytes": 16005838,
+        "jsonToRawRGBRatio": 4.903749387254902,
+        "gaussiansPerSourcePixel": 0.1807058823529412,
+        "minimumSigma": 0.35,
+        "medianSigma": 0.802033,
+        "maximumSigma": 11.933256,
+        "sigmasAtMinimum": 12815,
+        "encoding": "JSON decimal explicit continuous Gaussian parameters; not a compression claim"
+      },
+      "asset": {
+        "path": "quality-packs/alpine_hd.asset.json",
+        "sha256": "fc28abb256fb45fa1009824f75be9544c35cb4e939f0960dd2642b7f9eca014f",
+        "bytes": 16005838
+      },
+      "replayRGBASHA256": "8df7a8d2d07b1346575ee3122246c63899d3caf240527d4a6c5aedef7f3953b3"
+    },
+    {
+      "id": "street",
+      "passed": true,
+      "selection": {
+        "selected": "late_residual_candidate",
+        "candidateAttempt": 1,
+        "candidatePassedFrozenGates": true,
+        "candidateNonregressingMSE": true,
+        "rule": "candidate must pass frozen contract and not regress baseline full-frame MSE",
+        "baselineReport": "/workspace/scratch/5cb3f69227e7/crf-delivery/graphics-editor/editor/reports/quality13/fitting/street/baseline.quality.json",
+        "candidateReport": "/workspace/scratch/5cb3f69227e7/crf-delivery/graphics-editor/editor/reports/quality13/fitting/street/attempt-01.quality.json"
+      },
+      "metrics": {
+        "mae": 0.5854222888555722,
+        "rmse": 0.9759179228316016,
+        "psnr": 48.34253772994012,
+        "identicalRGB": false,
+        "ssim": 0.992669232100803,
+        "p99ChannelError": 3.0,
+        "fractionPixelsAnyChannelAbove32": 0.0,
+        "pixelsAnyChannelAbove32": 0,
+        "maxChannelError": 24,
+        "evaluatedPixels": 667000
+      },
+      "rois": [
+        {
+          "id": "signal",
+          "normalizedBounds": [
+            0.4,
+            0.37,
+            0.51,
+            0.5
+          ],
+          "pixelBounds": [
+            266,
+            370,
+            341,
+            500
+          ],
+          "metrics": {
+            "mae": 1.4230769230769231,
+            "rmse": 2.217637150192639,
+            "psnr": 41.212993841490345,
+            "identicalRGB": false,
+            "ssim": 0.9883739849361576,
+            "p99ChannelError": 8.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "pixelsAnyChannelAbove32": 0,
+            "maxChannelError": 24,
+            "evaluatedPixels": 9750
+          },
+          "passed": true
+        },
+        {
+          "id": "wall",
+          "normalizedBounds": [
+            0.54,
+            0.2,
+            0.93,
+            0.7
+          ],
+          "pixelBounds": [
+            360,
+            200,
+            621,
+            700
+          ],
+          "metrics": {
+            "mae": 0.5597931034482758,
+            "rmse": 0.9276744155146842,
+            "psnr": 48.78289202300565,
+            "identicalRGB": false,
+            "ssim": 0.9913321971120627,
+            "p99ChannelError": 3.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "pixelsAnyChannelAbove32": 0,
+            "maxChannelError": 10,
+            "evaluatedPixels": 130500
+          },
+          "passed": true
+        },
+        {
+          "id": "crosswalk",
+          "normalizedBounds": [
+            0.15,
+            0.83,
+            0.98,
+            0.99
+          ],
+          "pixelBounds": [
+            100,
+            830,
+            654,
+            990
+          ],
+          "metrics": {
+            "mae": 0.59173059566787,
+            "rmse": 0.9287027072274272,
+            "psnr": 48.7732693777611,
+            "identicalRGB": false,
+            "ssim": 0.9971488501443299,
+            "p99ChannelError": 3.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "pixelsAnyChannelAbove32": 0,
+            "maxChannelError": 12,
+            "evaluatedPixels": 88640
+          },
+          "passed": true
+        }
+      ],
+      "comparison": {
+        "baselineMetrics": {
+          "mae": 0.7310974512743628,
+          "rmse": 1.2418763511574806,
+          "psnr": 46.249236469376136,
+          "identicalRGB": false,
+          "ssim": 0.9895057138090103,
+          "p99ChannelError": 4.0,
+          "fractionPixelsAnyChannelAbove32": 0.0,
+          "pixelsAnyChannelAbove32": 0,
+          "maxChannelError": 32,
+          "evaluatedPixels": 667000
+        },
+        "baselineFitSeconds": 80.24156,
+        "candidateFitSeconds": 145.341863,
+        "baselineBasisCount": 98304,
+        "candidateBasisCount": 98304,
+        "psnrImprovementDb": 2.093301260563983,
+        "maeReductionFraction": 0.1992554647330076,
+        "computeComparison": "Different optimization steps and actual wall time; no equal-time speed claim."
+      },
+      "representation": {
+        "gaussians": 98304,
+        "parameterCount": 786435,
+        "geometryParameterCount": 491520,
+        "colourParameterCount": 294915,
+        "parameterFloat32Bytes": 3145740,
+        "parameterFloat64Bytes": 6291480,
+        "rawRGBBytes": 2001000,
+        "float32ToRawRGBRatio": 1.5720839580209895,
+        "jsonBytes": 7929265,
+        "jsonToRawRGBRatio": 3.9626511744127937,
+        "gaussiansPerSourcePixel": 0.1473823088455772,
+        "minimumSigma": 0.35,
+        "medianSigma": 0.8889130000000001,
+        "maximumSigma": 11.799998,
+        "sigmasAtMinimum": 2052,
+        "encoding": "JSON decimal explicit continuous Gaussian parameters; not a compression claim"
+      },
+      "asset": {
+        "path": "quality-packs/street.asset.json",
+        "sha256": "220b0195fdd23c9ded0b0e0ba78d437595de9bd5d2e1772a01c7ee0c73511764",
+        "bytes": 7929265
+      },
+      "replayRGBASHA256": "2de7fdd4aeb984e765901d47fb14bcc7cea45d60538664cf3f9cb22a6372298c"
+    },
+    {
+      "id": "orchard",
+      "passed": true,
+      "selection": {
+        "selected": "late_residual_candidate",
+        "candidateAttempt": 1,
+        "candidatePassedFrozenGates": true,
+        "candidateNonregressingMSE": true,
+        "rule": "candidate must pass frozen contract and not regress baseline full-frame MSE",
+        "baselineReport": "/workspace/scratch/5cb3f69227e7/crf-delivery/graphics-editor/editor/reports/quality13/fitting/orchard/baseline.quality.json",
+        "candidateReport": "/workspace/scratch/5cb3f69227e7/crf-delivery/graphics-editor/editor/reports/quality13/fitting/orchard/attempt-01.quality.json"
+      },
+      "metrics": {
+        "mae": 0.5757159722222223,
+        "rmse": 0.9411705920465925,
+        "psnr": 48.6574366349322,
+        "identicalRGB": false,
+        "ssim": 0.9911607714183457,
+        "p99ChannelError": 3.0,
+        "fractionPixelsAnyChannelAbove32": 0.0,
+        "pixelsAnyChannelAbove32": 0,
+        "maxChannelError": 31,
+        "evaluatedPixels": 480000
+      },
+      "rois": [
+        {
+          "id": "apple",
+          "normalizedBounds": [
+            0.19,
+            0.35,
+            0.46,
+            0.77
+          ],
+          "pixelBounds": [
+            152,
+            210,
+            368,
+            462
+          ],
+          "metrics": {
+            "mae": 0.9500110229276896,
+            "rmse": 1.495815657652187,
+            "psnr": 44.63324210973336,
+            "identicalRGB": false,
+            "ssim": 0.9867571235818043,
+            "p99ChannelError": 5.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "pixelsAnyChannelAbove32": 0,
+            "maxChannelError": 31,
+            "evaluatedPixels": 54432
+          },
+          "passed": true
+        },
+        {
+          "id": "pear",
+          "normalizedBounds": [
+            0.49,
+            0.19,
+            0.72,
+            0.81
+          ],
+          "pixelBounds": [
+            392,
+            114,
+            576,
+            487
+          ],
+          "metrics": {
+            "mae": 0.7545508412013833,
+            "rmse": 1.1382616334475362,
+            "psnr": 47.005961655672365,
+            "identicalRGB": false,
+            "ssim": 0.9897390937629763,
+            "p99ChannelError": 4.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "pixelsAnyChannelAbove32": 0,
+            "maxChannelError": 12,
+            "evaluatedPixels": 68632
+          },
+          "passed": true
+        },
+        {
+          "id": "contact",
+          "normalizedBounds": [
+            0.2,
+            0.72,
+            0.77,
+            0.89
+          ],
+          "pixelBounds": [
+            160,
+            432,
+            616,
+            534
+          ],
+          "metrics": {
+            "mae": 0.7043916981997478,
+            "rmse": 1.0699706419504866,
+            "psnr": 47.543366376728564,
+            "identicalRGB": false,
+            "ssim": 0.9900097604363751,
+            "p99ChannelError": 3.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "pixelsAnyChannelAbove32": 0,
+            "maxChannelError": 11,
+            "evaluatedPixels": 46512
+          },
+          "passed": true
+        }
+      ],
+      "comparison": {
+        "baselineMetrics": {
+          "mae": 0.6449729166666667,
+          "rmse": 1.0916389945602183,
+          "psnr": 47.369222793532245,
+          "identicalRGB": false,
+          "ssim": 0.989564746095492,
+          "p99ChannelError": 4.0,
+          "fractionPixelsAnyChannelAbove32": 1.0416666666666666e-05,
+          "pixelsAnyChannelAbove32": 5,
+          "maxChannelError": 48,
+          "evaluatedPixels": 480000
+        },
+        "baselineFitSeconds": 53.011518,
+        "candidateFitSeconds": 101.892779,
+        "baselineBasisCount": 65536,
+        "candidateBasisCount": 65536,
+        "psnrImprovementDb": 1.2882138413999584,
+        "maeReductionFraction": 0.10737961649983141,
+        "computeComparison": "Different optimization steps and actual wall time; no equal-time speed claim."
+      },
+      "representation": {
+        "gaussians": 65536,
+        "parameterCount": 524291,
+        "geometryParameterCount": 327680,
+        "colourParameterCount": 196611,
+        "parameterFloat32Bytes": 2097164,
+        "parameterFloat64Bytes": 4194328,
+        "rawRGBBytes": 1440000,
+        "float32ToRawRGBRatio": 1.4563638888888888,
+        "jsonBytes": 5237497,
+        "jsonToRawRGBRatio": 3.6371506944444443,
+        "gaussiansPerSourcePixel": 0.13653333333333334,
+        "minimumSigma": 0.35,
+        "medianSigma": 0.892737,
+        "maximumSigma": 9.998674,
+        "sigmasAtMinimum": 836,
+        "encoding": "JSON decimal explicit continuous Gaussian parameters; not a compression claim"
+      },
+      "asset": {
+        "path": "quality-packs/orchard.asset.json",
+        "sha256": "7c2320cd295076095216c1e2d23d5f8adf5edcafefc3aeed0c7e97ca649036e1",
+        "bytes": 5237497
+      },
+      "replayRGBASHA256": "8ec93cee6d967cb870fa76ab0fb7ef87c188d87a1129bd00e82afb440e60dfc6"
+    }
+  ],
+  "passed": true,
+  "fitAttemptsPerScene": {
+    "alpine_hd": 1,
+    "street": 1,
+    "orchard": 1
+  },
+  "fallbacks": [],
+  "runContext": {
+    "mode": "three scene jobs started concurrently",
+    "environment": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 2
+    },
+    "gpuUsed": false,
+    "timingScope": "per-process wall time with shared-host contention, not CPU seconds or controlled speed benchmarking; baseline and candidate use unequal optimization work",
+    "attempts": 6,
+    "attemptCountMeaning": "three same-budget old-method baselines plus three first new-method candidate fits"
+  },
+  "reproduce": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=2 python3 scripts/fit_quality13.py <alpine_hd|street|orchard> --work-dir /path/to/work",
+  "limitations": [
+    "finite observation-conditioned reconstruction only",
+    "encoded photographic appearance, no recovered physical reflectance/geometry/lighting",
+    "no novel-scene generation, GPU, formal proof, or program-level RSI claim"
+  ],
+  "tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=2 python3 tests/test_quality13.py",
+    "passed": 6,
+    "failed": 0,
+    "observedResult": "Ran 6 tests in 0.088s; OK"
+  }
+}

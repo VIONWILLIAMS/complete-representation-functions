@@ -1,0 +1,63 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> crf-graphics-editor@1.1.0-experimental.2 test:v11
+> node --test tests/test_core11.cjs tests/test_learn11.cjs tests/test_harness11.cjs tests/test_functions_provider11.mjs tests/test_editor11_contract.cjs
+
+✔ canonical hashes bind content, distinguish byte input, and reject executable/nonfinite/prototype data (12.259873ms)
+✔ immutable versions reject changed coefficients and preserve caller-owned input (60.355283ms)
+✔ lightweight catalog validates scene references without sending neural weights (7.458878ms)
+✔ patches are atomic, revision checked, and cannot modify the function registry (2.394514ms)
+✔ coverage and color are integrated jointly against independent analytic ground truth (3.416897ms)
+✔ source-over respects layer order and uses linear-light premultiplied contributions (9.804147ms)
+✔ affine motion is evaluated from a frozen scene, and runtime metadata cannot be overwritten (5.635335ms)
+✔ an authorized local move leaves pixels outside old/new support exactly unchanged (13.290129ms)
+✔ neural direct evaluation agrees with an independent closed expression and uses no source fetch (26.030978ms)
+✔ generated caches have measured error, actual cold/hot work, and preserved lifetime counters (24.588842ms)
+✔ multiple neural instances select their own explicitly declared coverage (20.479579ms)
+✔ fractional alpha resampling remains in its declared range despite floating rounding (22.763196ms)
+✔ training evidence must be completed and match the precise model content (9.339235ms)
+✔ legacy Gaussian adapter evaluates declared coefficients with explicit color conversion (4.606663ms)
+✔ render and generated-cache aggregate budgets are checked before expensive computation (33.683668ms)
+✔ export/import retains exact execution dependencies and yields the same image (66.927381ms)
+✔ studio imports and code edits are atomic; stale code cannot replace newer scene (73.438199ms)
+✔ code drafts are stale after undo and branch even when revision numbers repeat (17.380512ms)
+✔ undo preserves audit records and the UI never silently drops old failed runs (127.359802ms)
+✔ the GUI controller applies the same typed patch as programmatic callers (61.16828ms)
+✔ late frames from prior revisions or prior time requests never become current evidence (12.057789ms)
+✔ a genuinely learned function survives studio export/reopen without reference pixels (83.645194ms)
+✔ shipped render worker executes the shared core and rejects reusing a key for changed content (52.675331ms)
+✔ real transport adapter sends bounded scene/catalog, passes effort, and never forwards weights or reasoning (25.142247ms)
+✔ unknown function, executable fields and protected edits cannot reach a successful candidate (8.847453ms)
+✔ input rejection costs no calls and schema repair is bounded to two actual requests (4.310766ms)
+✔ truncation, unknown transport usage, cancellation and missing credentials remain distinct (5.734054ms)
+✔ unsupported is a capability outcome without an invented scene or quality acceptance (2.267993ms)
+✔ public search follows actual source metadata and returns checked bytes without a model call (56.110517ms)
+✔ reference access failures, arbitrary hosts and redirects never become fake download success (1.575728ms)
+✔ new HTTP capabilities keep legacy semantics and enforce JSON/origin/method boundaries (5.352949ms)
+✔ scene proposals render actual pixels and bind descriptor, scene, function versions and costs (95.488528ms)
+✔ a successful proposal is the same shared atomic patch a manual editor uses (29.21249ms)
+✔ protected object, unknown function and malicious patch failures preserve the original project (17.113599ms)
+✔ tampered weights/functions fail before provider invocation and never receive a success check (2.39861ms)
+✔ provider unavailability, unknown request outcome and cancellation preserve useful failure records (5.228631ms)
+✔ mutable caller state, bad renderers and observer errors cannot forge acceptance (35.737197ms)
+✔ stale or forged renderer descriptors cannot overwrite authoritative evidence bindings (78.651858ms)
+✔ abort at each async observer boundary prevents request or candidate commit (38.415039ms)
+✔ task input scope and project are captured before asynchronous integrity or callback work (4.310866ms)
+✔ renderer callbacks cannot mutate an already validated candidate or forge missing provenance (15.110456ms)
+✔ actual Adam learns an independently known linear-color target and records honest scope (162.001756ms)
+✔ changed validation targets cannot enter the optimizer or its random sampling (58.102869ms)
+✔ shared decoder uses observed instance identity and never invents an unobserved code (99.128623ms)
+✔ serialized models replay exactly; compiled evaluators hold their immutable numeric snapshot (9.744508ms)
+✔ seeded learning is reproducible and tensor digests bind dimensions as well as pixels (18.414212ms)
+✔ coverage is separate, transparent RGB is excluded, and duplicate sources cannot forge independent groups (11.574079ms)
+✔ bad shapes, non-finite models, raw image payloads, and unbounded work are rejected (11.338772ms)
+✔ cancellation and wall-clock exhaustion preserve partial truthful reports without usable artifacts (1062.596604ms)
+✔ worker cancellation reaches its active training job and cannot emit a completed model (6.178285ms)
+ℹ tests 50
+ℹ suites 0
+ℹ pass 50
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1613.352577

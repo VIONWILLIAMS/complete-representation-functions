@@ -25,7 +25,9 @@ function packClientAssets08(source,client){
   const canonical=group[0],original=fs.readFileSync(path.join(source,canonical.path));
   for(const item of group.slice(1))if(!original.equals(fs.readFileSync(path.join(source,item.path))))throw new Error('Content hash collision; refusing asset alias.');
   let compressed=null;
-  if(PACKABLE.has(path.extname(canonical.path).toLowerCase())&&original.length>=16*1024){const candidate=zlib.gzipSync(original,{level:9});if(original.length-candidate.length>4*1024)compressed=candidate;}
+  // Small authored modules also benefit from lossless packing. Public source
+  // bytes and URLs remain unchanged; this makes room for the additive v11 UI.
+  if(PACKABLE.has(path.extname(canonical.path).toLowerCase())&&original.length>=4*1024){const candidate=zlib.gzipSync(original,{level:9});if(original.length-candidate.length>1024)compressed=candidate;}
   const storage=compressed?`/_crf-packed/${canonical.sha256}.crfgz`:`/${canonical.path}`;
   if(compressed){
    const file=path.join(client,storage.slice(1));fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,compressed);

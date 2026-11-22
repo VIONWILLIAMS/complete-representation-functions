@@ -1,0 +1,290 @@
+{
+  "schema": "crf.quality_browser_artifact_verification.v1",
+  "verifiedAt": "2026-11-22T05:34:43.929Z",
+  "status": "passed",
+  "verifier": {
+    "path": "scripts/verify_browser_quality12.cjs",
+    "sha256": "38be8ccaed6b888440c38c8fb3c64fc87c14f27a7f7fcfdea79d1f626d793e92"
+  },
+  "nativePNG": {
+    "width": 800,
+    "height": 531,
+    "changedRGBAChannels": 0,
+    "maxChannelError": 0,
+    "mae": 0,
+    "psnr": null,
+    "exact": true
+  },
+  "reopenedPNG": {
+    "width": 800,
+    "height": 531,
+    "changedRGBAChannels": 0,
+    "maxChannelError": 0,
+    "mae": 0,
+    "psnr": null,
+    "exact": true
+  },
+  "doubleResolutionPNG": {
+    "width": 1600,
+    "height": 1062,
+    "changedRGBAChannels": 0,
+    "maxChannelError": 0,
+    "mae": 0,
+    "psnr": null,
+    "exact": true
+  },
+  "editedPNG": {
+    "width": 800,
+    "height": 531,
+    "changedRGBAChannels": 0,
+    "maxChannelError": 0,
+    "mae": 0,
+    "psnr": null,
+    "exact": true
+  },
+  "editedDifferenceFromBaseline": {
+    "width": 800,
+    "height": 531,
+    "changedRGBAChannels": 1111082,
+    "maxChannelError": 30,
+    "mae": 6.87112366603892,
+    "psnr": 28.03926735325255,
+    "exact": false
+  },
+  "savedProjectReplay": {
+    "width": 800,
+    "height": 531,
+    "changedRGBAChannels": 0,
+    "maxChannelError": 0,
+    "mae": 0,
+    "psnr": null,
+    "exact": true
+  },
+  "savedProjectHash": "e2f81e007b161c554a401698c40650d85f8a2c8da7d26fe1e15e6ff8c2fe6bb0",
+  "feedbackCount": 1,
+  "sourceFreeUI": {
+    "referenceImageLoads": 0,
+    "referencePixelsPassedToWorker": false
+  },
+  "harness": {
+    "actualBoundedCodeEdit": true,
+    "actualOutOfScopeRejection": true,
+    "successfulRun": {
+      "kind": "harness",
+      "schema": "crf.quality_harness_run.v1",
+      "version": "1.1.0-experimental.2",
+      "startedAt": "2026-11-22T05:24:34.962Z",
+      "status": "rendered",
+      "providerCalls": 0,
+      "inputKind": "declared_json_parameters",
+      "classification": "L0_parameter_edit",
+      "sourcePixelsTransmitted": false,
+      "functionWeightsTransmitted": false,
+      "programRSI": false,
+      "referenceQualityReevaluated": false,
+      "checks": [
+        {
+          "id": "base_integrity",
+          "status": "passed"
+        },
+        {
+          "id": "bounded_parameters",
+          "status": "passed"
+        },
+        {
+          "id": "immutable_function_and_quality_contract",
+          "status": "passed"
+        },
+        {
+          "id": "actual_frame",
+          "status": "passed"
+        }
+      ],
+      "baseProjectHash": "21896b8b79f4ffedc9124d54e2289aab6718baf789eca0b9907976bb751a9c2a",
+      "proposalHash": "3e809d9958948974b5c8f55bc455cb7b95e88dd5912c54a47e8ada1af2284a2b",
+      "qualityContractHash": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+      "candidateProjectHash": "394bdddd55ebac191ebdf6bb8050c24b610fd465556afd264672c528a142d0b2",
+      "proposal": {
+        "edits": {
+          "contrast": 1.08,
+          "exposure": 0.25,
+          "saturation": 0.9
+        },
+        "view": {
+          "height": 531,
+          "roi": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "width": 800
+        }
+      },
+      "rendered": true,
+      "renderMs": 737.3000000007451,
+      "frame": {
+        "width": 800,
+        "height": 531,
+        "qualityScope": "execution_and_dimensions_only_not_reference_acceptance"
+      },
+      "finishedAt": "2026-11-22T05:24:37.380Z"
+    },
+    "failedRun": {
+      "kind": "harness",
+      "schema": "crf.quality_harness_run.v1",
+      "version": "1.1.0-experimental.2",
+      "startedAt": "2026-11-22T05:26:48.501Z",
+      "status": "failed",
+      "providerCalls": 0,
+      "inputKind": "declared_json_parameters",
+      "classification": "L0_parameter_edit",
+      "sourcePixelsTransmitted": false,
+      "functionWeightsTransmitted": false,
+      "programRSI": false,
+      "referenceQualityReevaluated": false,
+      "checks": [],
+      "error": {
+        "code": "EDIT_SCOPE",
+        "message": "仅支持 view 和 edits；函数资产、来源与质量契约保持冻结。"
+      },
+      "retainedCurrentProject": true,
+      "finishedAt": "2026-11-22T05:26:48.501Z"
+    }
+  },
+  "video": {
+    "independentProbe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "width": 800,
+          "height": 531,
+          "color_range": "pc",
+          "color_space": "bt709",
+          "avg_frame_rate": "24/1",
+          "nb_read_frames": "120"
+        }
+      ],
+      "format": {
+        "duration": "5.000000"
+      }
+    },
+    "reported": {
+      "width": 800,
+      "height": 531,
+      "fps": 24,
+      "frameCount": 120,
+      "duration": 5,
+      "codec": "vp09.00.40.08"
+    },
+    "firstDecodedFrameAgainstRealReference": {
+      "width": 800,
+      "height": 531,
+      "changedRGBAChannels": 1066127,
+      "maxChannelError": 81,
+      "mae": 3.255681104833647,
+      "psnr": 33.977077981852204,
+      "exact": false
+    },
+    "actualCancellationObserved": true,
+    "cameraChecks": [
+      {
+        "frameIndex": 0,
+        "timeSeconds": 0,
+        "comparisonToComputedFrame": {
+          "width": 800,
+          "height": 531,
+          "changedRGBAChannels": 1024418,
+          "maxChannelError": 65,
+          "mae": 2.2038653483992467,
+          "psnr": 37.19035763678637,
+          "exact": false
+        }
+      },
+      {
+        "frameIndex": 119,
+        "timeSeconds": 4.958333333333333,
+        "comparisonToComputedFrame": {
+          "width": 800,
+          "height": 531,
+          "changedRGBAChannels": 1057180,
+          "maxChannelError": 72,
+          "mae": 2.8622402699309477,
+          "psnr": 35.056830942487444,
+          "exact": false
+        }
+      }
+    ],
+    "scope": "Explicit 2D camera zoom; natural scene dynamics not learned. Decoded-frame errors include lossy video encoding and color conversion."
+  },
+  "artifacts": [
+    {
+      "path": "reports/quality12/browser/native-browser.png",
+      "bytes": 975699,
+      "sha256": "7eea39de433e2217a98b0feb475af0ed6cde11f6b3dd39c32a5dff8656fa05f0"
+    },
+    {
+      "path": "reports/quality12/browser/native-browser.crf.json",
+      "bytes": 5329395,
+      "sha256": "74c17045a393c3b7885464da35a704850a71704d1df445a47848e6f83c7ffbe6"
+    },
+    {
+      "path": "reports/quality12/browser/edited-browser.png",
+      "bytes": 904822,
+      "sha256": "e2d40921396f50af57ec8e8578e4394b55a8431ce1cf95456a8fbf8da7b3a5d4"
+    },
+    {
+      "path": "reports/quality12/browser/edited-browser.crf.json",
+      "bytes": 5329403,
+      "sha256": "9b9e0b8d4f523a436579ae28990d8cd4a69408b76a01e6b3011877f438ce0397"
+    },
+    {
+      "path": "reports/quality12/browser/double-browser.png",
+      "bytes": 3309569,
+      "sha256": "bb113ad5de998b0b9cdc049816b06ba3a9e5a8a35d392a71bb50163ba9156a31"
+    },
+    {
+      "path": "reports/quality12/browser/reviewed-browser.crf.json",
+      "bytes": 5329735,
+      "sha256": "db323857909c5c15bef21479968c1892cc86baa97143fcb7acf99036713f4642"
+    },
+    {
+      "path": "reports/quality12/browser/reopened-browser.png",
+      "bytes": 975699,
+      "sha256": "7eea39de433e2217a98b0feb475af0ed6cde11f6b3dd39c32a5dff8656fa05f0"
+    },
+    {
+      "path": "reports/quality12/browser/camera-browser.webm",
+      "bytes": 3235162,
+      "sha256": "e9cf989c5683dd64293df5a2cb4ecd689675202985402336c2de2fc7158bde9c"
+    },
+    {
+      "path": "reports/quality12/browser/video-export.json",
+      "bytes": 3226,
+      "sha256": "41a6d3dfea735d11cf2d09766b53d7dc2ba81af2920082e255578df94613a00b"
+    },
+    {
+      "path": "reports/quality12/browser/source-free-session.json",
+      "bytes": 21466,
+      "sha256": "bd86577ee7714e51a61b73973005b22f46372d491b983f3f2cd41c33907117f1"
+    },
+    {
+      "path": "reports/quality12/browser/edit-session.json",
+      "bytes": 36925,
+      "sha256": "23e8b325578b38372e473f41bceec4a801fd160a6d30f30e103cb69f2978fb0d"
+    },
+    {
+      "path": "reports/quality12/browser/reopen-video-session.json",
+      "bytes": 27944,
+      "sha256": "bcc164c7bd6c29a80dbbef65d8ed529119e506a0d9a8b8ab2cc864d20ecaecf2"
+    },
+    {
+      "path": "reports/quality12/browser/verified-workspace.jpg",
+      "bytes": 147349,
+      "sha256": "a032a6959c8f319a698f8c051993180c98c4c90a4bb8a36901ffd4475b9cc909"
+    }
+  ],
+  "numericalScope": "PNG replay is exact across runtimes. Video frames are compared separately. Real-reference image quality is in alpine.quality.json, not these replay differences."
+}

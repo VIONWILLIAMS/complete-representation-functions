@@ -1,0 +1,121 @@
+{
+  "schema": "crf.quality13_zip_independent_audit.v1",
+  "auditedAt": "2026-11-22T06:46:06.362530+00:00",
+  "passed": true,
+  "zip": {
+    "path": "/workspace/scratch/5cb3f69227e7/deliverables/CRF_Detail_Delivery.zip",
+    "bytes": 17160176,
+    "sha256": "281e9c1d33a9637e68e6bdd88dd45378df87c91cea6dd70684e366e3bca917ed",
+    "memberCount": 13,
+    "CRCCheckPassed": true,
+    "pathTraversalOrSymlinks": false,
+    "manifestEntriesVerified": 12,
+    "allExpectedMembersPresent": true
+  },
+  "extractedTo": "/workspace/scratch/5cb3f69227e7/qa-work/quality13-zip-independent/CRF_Detail_Delivery",
+  "environment": {
+    "node": "v24.22.3",
+    "dependenciesInstalled": false,
+    "browserUsed": false
+  },
+  "sourceFreeChecks": {
+    "originalPhotoHashMatches": [],
+    "originalPhotoPathsPresent": [],
+    "includedImageMembers": [
+      "CRF_Detail_Delivery/renders/alpine_hd.png",
+      "CRF_Detail_Delivery/renders/orchard.png",
+      "CRF_Detail_Delivery/renders/street.png"
+    ],
+    "includedImagesMatchAcceptedComputedOutputs": true,
+    "projectRepresentation": "explicit Gaussian base and 8-scalar function arrays; no embedded raster/image asset",
+    "rendererRequires": [
+      "node:fs",
+      "node:path",
+      "node:zlib",
+      "node:crypto"
+    ],
+    "kernelLoadedFromKit": true,
+    "scope": "Fresh extracted package contains no original photos; script reads declared project plus local kernel. This is not an OS access-sandbox claim."
+  },
+  "nativeReplays": [
+    {
+      "id": "alpine_hd",
+      "command": "node render.cjs projects/alpine_hd.crf.json alpine-recomputed.png",
+      "exitCode": 0,
+      "dimensions": [
+        1280,
+        850
+      ],
+      "decodedRGBASHA256": "8df7a8d2d07b1346575ee3122246c63899d3caf240527d4a6c5aedef7f3953b3",
+      "matchesExpectedAcceptedRuntime": true,
+      "matchesBundledComputedPNG": true,
+      "gaussianCount": 196608
+    },
+    {
+      "id": "street",
+      "command": "node render.cjs projects/street.crf.json street-recomputed.png",
+      "exitCode": 0,
+      "dimensions": [
+        667,
+        1000
+      ],
+      "decodedRGBASHA256": "2de7fdd4aeb984e765901d47fb14bcc7cea45d60538664cf3f9cb22a6372298c",
+      "matchesExpectedAcceptedRuntime": true,
+      "matchesBundledComputedPNG": true,
+      "gaussianCount": 98304
+    },
+    {
+      "id": "orchard",
+      "command": "node render.cjs projects/orchard.crf.json orchard-recomputed.png",
+      "exitCode": 0,
+      "dimensions": [
+        800,
+        600
+      ],
+      "decodedRGBASHA256": "8ec93cee6d967cb870fa76ab0fb7ef87c188d87a1129bd00e82afb440e60dfc6",
+      "matchesExpectedAcceptedRuntime": true,
+      "matchesBundledComputedPNG": true,
+      "gaussianCount": 65536
+    }
+  ],
+  "readmeOptionalCommands": [
+    {
+      "command": "node render.cjs projects/alpine_hd.crf.json alpine-brighter.png --exposure 0.25",
+      "exitCode": 0,
+      "dimensions": [
+        1280,
+        850
+      ],
+      "decodedRGBASHA256": "461f8865a243ebb6bf87b41163784557850d084ffe185b28fbb1e9d2105410a1",
+      "matchesExistingRuntimeEvidence": true
+    },
+    {
+      "command": "node render.cjs projects/alpine_hd.crf.json alpine-1_5x.png --scale 1.5",
+      "exitCode": 0,
+      "dimensions": [
+        1920,
+        1275
+      ],
+      "decodedRGBASHA256": "3b0eee1f3649a901c6d4c31ffbf0c68362cc4be6698cf0428a0983cf3874db00",
+      "matchesExistingRuntimeEvidence": true
+    }
+  ],
+  "twoTimesGuard": {
+    "command": "node render.cjs projects/alpine_hd.crf.json alpine-invalid-2x.png --scale 2",
+    "exitCode": 1,
+    "stderr": "Output dimensions exceed the 4,000,000-pixel budget.",
+    "outputFileCreated": false,
+    "passed": true
+  },
+  "readmeReview": {
+    "nativeCommandsExecuted": 3,
+    "optionalCommandsExecuted": 2,
+    "dependencyFreeClaimConfirmed": true,
+    "separateRepositoryEditorCommandsConsistent": true,
+    "separateReviewHTMLClearlyNotIncludedInMinimalZip": true,
+    "limitationsAccuratelyDistinguishReconstructionResamplingAndRelighting": true,
+    "node22SpecificRuntimeNotExercised": true,
+    "issues": []
+  },
+  "finalSourceOrZIPModified": false
+}

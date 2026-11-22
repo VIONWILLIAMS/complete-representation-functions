@@ -1,0 +1,261 @@
+{
+  "schema": "crf.training_run/1.1",
+  "trainerBuild": "crf.learn11.cpu-adam-v1",
+  "state": "completed",
+  "startedAt": "2026-11-22T04:21:42.486Z",
+  "config": {
+    "steps": 600,
+    "hidden": 24,
+    "batchSize": 64,
+    "learningRate": 0.01,
+    "seed": 11,
+    "maxMilliseconds": 30000,
+    "reportEvery": 25,
+    "estimatedMAC": 154828800
+  },
+  "stepsCompleted": 600,
+  "history": [
+    {
+      "step": 0,
+      "trainLoss": 0.18568816921102582,
+      "validationLoss": 0.18241872322523814,
+      "elapsedMs": 34.19208599999999
+    },
+    {
+      "step": 25,
+      "trainLoss": 0.008081856002040795,
+      "validationLoss": 0.00968515889281283,
+      "elapsedMs": 130.699373
+    },
+    {
+      "step": 50,
+      "trainLoss": 0.005781563556780555,
+      "validationLoss": 0.00783451043698385,
+      "elapsedMs": 205.44603800000002
+    },
+    {
+      "step": 75,
+      "trainLoss": 0.005332048359837075,
+      "validationLoss": 0.007130513778431279,
+      "elapsedMs": 241.416188
+    },
+    {
+      "step": 100,
+      "trainLoss": 0.004816799821105397,
+      "validationLoss": 0.006079369347469797,
+      "elapsedMs": 270.30703700000004
+    },
+    {
+      "step": 125,
+      "trainLoss": 0.004496817210975875,
+      "validationLoss": 0.006340855583271528,
+      "elapsedMs": 310.25677800000005
+    },
+    {
+      "step": 150,
+      "trainLoss": 0.005306858312058273,
+      "validationLoss": 0.005947522027721071,
+      "elapsedMs": 335.96603600000003
+    },
+    {
+      "step": 175,
+      "trainLoss": 0.0044935287356424975,
+      "validationLoss": 0.0056818983567663356,
+      "elapsedMs": 358.8108450000001
+    },
+    {
+      "step": 200,
+      "trainLoss": 0.004048256260148814,
+      "validationLoss": 0.005688251435711836,
+      "elapsedMs": 397.48079000000007
+    },
+    {
+      "step": 225,
+      "trainLoss": 0.004962536542214908,
+      "validationLoss": 0.00676135568083386,
+      "elapsedMs": 429.91425100000004
+    },
+    {
+      "step": 250,
+      "trainLoss": 0.005053318594398281,
+      "validationLoss": 0.006012520267520605,
+      "elapsedMs": 454.4974950000001
+    },
+    {
+      "step": 275,
+      "trainLoss": 0.0038885413993295214,
+      "validationLoss": 0.005095271452178992,
+      "elapsedMs": 477.812644
+    },
+    {
+      "step": 300,
+      "trainLoss": 0.004275807061772291,
+      "validationLoss": 0.00637681055490142,
+      "elapsedMs": 500.52287
+    },
+    {
+      "step": 325,
+      "trainLoss": 0.003417942719689629,
+      "validationLoss": 0.004555178727725499,
+      "elapsedMs": 524.373387
+    },
+    {
+      "step": 350,
+      "trainLoss": 0.004127709476646065,
+      "validationLoss": 0.005208168495753006,
+      "elapsedMs": 547.153139
+    },
+    {
+      "step": 375,
+      "trainLoss": 0.003451675393046177,
+      "validationLoss": 0.0047466625959663965,
+      "elapsedMs": 569.417803
+    },
+    {
+      "step": 400,
+      "trainLoss": 0.0038970651741164378,
+      "validationLoss": 0.005726602639900854,
+      "elapsedMs": 592.47279
+    },
+    {
+      "step": 425,
+      "trainLoss": 0.0036780720347594762,
+      "validationLoss": 0.00476569207824355,
+      "elapsedMs": 616.7198050000001
+    },
+    {
+      "step": 450,
+      "trainLoss": 0.003224403624370497,
+      "validationLoss": 0.004587107830165836,
+      "elapsedMs": 639.961414
+    },
+    {
+      "step": 475,
+      "trainLoss": 0.0032982362020746434,
+      "validationLoss": 0.004698381330041388,
+      "elapsedMs": 662.7421760000001
+    },
+    {
+      "step": 500,
+      "trainLoss": 0.0034927274674391236,
+      "validationLoss": 0.005301671108994146,
+      "elapsedMs": 686.188745
+    },
+    {
+      "step": 525,
+      "trainLoss": 0.0031973401828654813,
+      "validationLoss": 0.003951920453582406,
+      "elapsedMs": 709.94506
+    },
+    {
+      "step": 550,
+      "trainLoss": 0.002868718533226665,
+      "validationLoss": 0.0037781254127615778,
+      "elapsedMs": 732.620574
+    },
+    {
+      "step": 575,
+      "trainLoss": 0.0030007854490463454,
+      "validationLoss": 0.00484576989901879,
+      "elapsedMs": 756.776782
+    },
+    {
+      "step": 600,
+      "trainLoss": 0.0027745357789816963,
+      "validationLoss": 0.004622692237249999,
+      "elapsedMs": 781.311092
+    }
+  ],
+  "evidenceScope": "spatial_reconstruction_holdout",
+  "independentSourceGeneralization": "not_evaluated",
+  "semanticControlsLearned": false,
+  "learnedDynamics": false,
+  "programRSI": false,
+  "precision": "float64",
+  "sourceRGBEmbedded": false,
+  "coverageGroundTruth": false,
+  "instances": [
+    {
+      "id": "lake.water",
+      "label": "Lautersee 参考水面外观",
+      "sourceGroup": "source.1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+      "width": 96,
+      "height": 20,
+      "crop": [
+        0.05,
+        0.7,
+        0.95,
+        0.98
+      ],
+      "coverageKind": "rectangle",
+      "sourceUri": "https://commons.wikimedia.org/wiki/File:Lautersee_2026.jpg",
+      "originalWidth": 800,
+      "originalHeight": 531,
+      "originalSourceHash": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+      "licenseStatus": "CC0 1.0 (inherited source manifest)",
+      "attribution": "Taubenflieger68",
+      "declaredSourceHash": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+      "decodedPixelHash": "1d478152bd13933c71da2c7fdf56ba067fe9833eaf5fd051ca966defe8ef1d14"
+    }
+  ],
+  "sourceGroupCount": 1,
+  "sourceGroupStatus": "declared_groups_with_identical_content_consistency_check",
+  "splitProtocol": {
+    "method": "deterministic_pixel_hash_mod5",
+    "validationModulo": 5,
+    "seed": 11,
+    "validationUsedForCheckpointSelection": true,
+    "independentTestSet": false,
+    "trainPixels": 1514,
+    "validationPixels": 406,
+    "measuredTrainPixels": 1024,
+    "measuredValidationPixels": 406,
+    "measurementSelection": "fixed_even_stride_up_to_1024_per_partition",
+    "sourceGroups": [
+      "source.1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0"
+    ]
+  },
+  "datasetHash": "7bcd5d2a65e226fb9755fded506bd631d86544a08d421e92a2c9af10e86c3399",
+  "parameterCount": 1059,
+  "weightBytes": 8472,
+  "initialLoss": 0.18568816921102582,
+  "initialValidationLoss": 0.18241872322523814,
+  "lastStepTrainLoss": 0.0027745357789816963,
+  "lastStepValidationLoss": 0.004622692237249999,
+  "finalLoss": 0.002868718533226665,
+  "validationLoss": 0.0037781254127615778,
+  "bestStep": 550,
+  "checkpointRule": "lowest measured spatial validation MSE, including initialization; never an independent test claim",
+  "instanceMetrics": [
+    {
+      "id": "lake.water",
+      "trainPixels": 1514,
+      "validationPixels": 406,
+      "measuredTrainPixels": 512,
+      "measuredValidationPixels": 406,
+      "trainLoss": 0.002404233618043464,
+      "validationLoss": 0.0037781254127615778
+    }
+  ],
+  "modelHash": "e5ba1cf7b10a3305362637a73bd44bdbeef4945c7ae89ca8be303fe397de5d06",
+  "modelHashProtocol": "sha256_canonical_json_sorted_keys_utf8_v1",
+  "modelJSONBytes": 22351,
+  "coverageJSONBytes": 111,
+  "coverageRawBytes": 1920,
+  "endedAt": "2026-11-22T04:21:43.280Z",
+  "elapsedMs": 793.470424,
+  "command": "node scripts/train_example11.cjs --water",
+  "inputKind": "existing_real_reference_photo_crops",
+  "preprocessing": "normalized crop; nearest pixel-centre downsample to longest side 96; alpha preserved; sRGB decoded to linear by trainer",
+  "serializedReplayExact": true,
+  "trainingImproved": true,
+  "sourceRGBAtRender": false,
+  "sourceRGBInModel": false,
+  "approximateArtifactBytes": 28059,
+  "limitations": [
+    "Spatial validation was used to choose the checkpoint; it is not an independent source test.",
+    "Reference-derived lighting and reflections are retained; no unseen object, relighting or dynamic generalization is established.",
+    "Alpha is an explicitly disclosed independent coverage asset.",
+    "No claim of photographic-quality improvement or target-device acceleration is made."
+  ]
+}

@@ -1,0 +1,44 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> crf-graphics-editor@1.1.0-experimental.2 test:quality
+> node --test tests/test_quality12.cjs tests/test_quality_harness12.cjs tests/test_quality_editor12.cjs tests/test_quality_review13.cjs
+
+✔ native full-frame output matches an independent analytic pixel evaluator (3.903441ms)
+✔ Gaussian peaks, signed coefficients, cutoff and half-up clamp are explicit (0.500976ms)
+✔ ROI native crop is exactly the corresponding full-frame samples (4.87632ms)
+✔ 2x and fractional zoom compute the continuous functions instead of upsampling RGB (3.24715ms)
+✔ point coverage is declared and independently sampled from an RLE mask (0.574007ms)
+✔ view and tone edits are immutable, change real pixels and change the project digest (11.604114ms)
+✔ wrapped asset provenance, fixed contract and user feedback survive a source-free JSON round trip (2.703119ms)
+✔ hashes bind coefficients, metadata, frame dimensions and feedback; tampering cannot re-import (4.181601ms)
+✔ canonical serialization is ordered and rejects executable, cyclic and nonfinite input (1.186421ms)
+✔ invalid kernels, delta-like widths, malformed coverage and unsupported programs are rejected (1.17246ms)
+✔ pixel and support-visit budgets fail before rendering without silently reducing resolution (0.622619ms)
+✔ extremely narrow ROIs cannot wrap faraway support bounds into unbudgeted work (0.421566ms)
+✔ async evaluation matches synchronous results and cooperatively cancels (2.892215ms)
+✔ Worker fences superseded frames and only returns the newest complete result (6.589175ms)
+✔ Worker cancellation produces no frame, and malformed or corrupt jobs produce explicit errors (9.808924ms)
+✔ displayed code is the actual parameter-rendering path and contains no source-image operations (0.6693ms)
+✔ cached comparison photo cannot be shown after importing a different function asset (4.106217ms)
+✔ reference decoding completion cannot attach an old photo to a newly imported asset (1.232861ms)
+✔ a verified unchanged asset can finish and reuse its decoded comparison reference (1.763362ms)
+✔ JSON proposal renders a real changed frame without modifying the frozen function (17.040759ms)
+✔ a proposal cannot replace model weights, provenance or the evaluator contract (1.348986ms)
+✔ stale and tampered project proposals fail before invoking a renderer (2.738323ms)
+✔ cancellation and incorrect-size frames do not yield an accepted candidate (3.013869ms)
+✔ validation-only and oversized output requests remain distinguishable from execution (4.246239ms)
+✔ portable input binds saved coefficients, frozen reference and actual RGBA report (13.207583ms)
+✔ embedded metadata cannot terminate its JSON script element (1.038147ms)
+✔ large portable artifact cannot be placed in the hosted web bundle (0.575468ms)
+✔ embedded worker computes pixels from functions and ignores comparison metadata (14.032119ms)
+✔ a superseded worker render cannot publish an old frame (7.485488ms)
+✔ portable worker preserves the existing output-pixel guard (3.006227ms)
+✔ editing during the debounce interval rejects an earlier completed UI frame (23.185303ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 164.88379

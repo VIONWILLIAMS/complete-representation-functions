@@ -1,0 +1,49 @@
+{
+  "schema": "crf.browser_reopen_artifact_validation/1.1",
+  "at": "2026-11-22T04:41:32.759Z",
+  "status": "passed",
+  "scope": "Independent byte and decoded-pixel comparison of two actual browser downloads. Browser reload, IndexedDB recovery, project-file selection and final layout were observed by the parent CUA agent and are documented separately.",
+  "artifacts": [
+    {
+      "name": "water-scene-reopened.png",
+      "bytes": 238533,
+      "sha256": "a2e518d5f9bdb8a6f974fef45a7ecf1e6acd758e161531ad20d420167157ab37"
+    },
+    {
+      "name": "studio-final.jpg",
+      "bytes": 142370,
+      "sha256": "b982ee39a3661631b0e23e8120aa444f7fecb9ab93e004bd15dd99f395a19b45"
+    }
+  ],
+  "original": {
+    "name": "water-scene.png",
+    "bytes": 238533,
+    "sha256": "a2e518d5f9bdb8a6f974fef45a7ecf1e6acd758e161531ad20d420167157ab37",
+    "width": 640,
+    "height": 480,
+    "rgbaBytes": 1228800,
+    "rgbaSha256": "0d3e5222c314ce930c00c370d60642285d12f198a11c4fb5c2b22f9f2315cfb8"
+  },
+  "reopened": {
+    "name": "water-scene-reopened.png",
+    "bytes": 238533,
+    "sha256": "a2e518d5f9bdb8a6f974fef45a7ecf1e6acd758e161531ad20d420167157ab37",
+    "width": 640,
+    "height": 480,
+    "rgbaBytes": 1228800,
+    "rgbaSha256": "0d3e5222c314ce930c00c370d60642285d12f198a11c4fb5c2b22f9f2315cfb8"
+  },
+  "comparison": {
+    "filesByteIdentical": true,
+    "dimensionsIdentical": true,
+    "rgbaByteIdentical": true,
+    "differingChannels": 0,
+    "maxDifference": 0
+  },
+  "actor": "agent_operated_cua_acceptance",
+  "limitations": [
+    "This verification compares exported bytes and pixels; it does not independently prove each browser interaction.",
+    "The final screenshot is copied unchanged; layout observations belong to the separate CUA acceptance report.",
+    "No claim of a session-wide error-free browser console is made."
+  ]
+}

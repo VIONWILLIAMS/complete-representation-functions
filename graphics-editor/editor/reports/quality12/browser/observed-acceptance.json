@@ -1,0 +1,76 @@
+{
+  "schema": "crf.observed_browser_quality_acceptance.v1",
+  "status": "passed",
+  "date": "2026-11-22",
+  "browser": "Cloud Chrome through managed local preview",
+  "url": "http://127.0.0.1:4173/quality12.html",
+  "realBrowserActions": [
+    {
+      "action": "default load, compute and download PNG before reference display",
+      "status": "passed",
+      "evidence": "source-free-session.json"
+    },
+    {
+      "action": "compare full reference, forest and shore ROIs at native and 2x sampling",
+      "status": "passed",
+      "evidence": [
+        "forest-comparison.jpg",
+        "shore-comparison.jpg"
+      ]
+    },
+    {
+      "action": "execute view/tone JSON via bounded harness",
+      "status": "passed",
+      "evidence": "edit-session.json"
+    },
+    {
+      "action": "reject attempted asset mutation and retain current project",
+      "status": "passed",
+      "evidence": "edit-session.json"
+    },
+    {
+      "action": "compute and download 1600x1062 PNG",
+      "status": "passed",
+      "evidence": "double-browser.png"
+    },
+    {
+      "action": "save project with an explicitly AI-authored development review; reload page and import saved project",
+      "status": "passed",
+      "evidence": [
+        "reviewed-browser.crf.json",
+        "reopened-browser.png"
+      ]
+    },
+    {
+      "action": "cancel camera export, restart and complete real 120-frame WebM",
+      "status": "passed",
+      "evidence": [
+        "reopen-video-session.json",
+        "camera-browser.webm",
+        "video-export.json"
+      ]
+    }
+  ],
+  "observedTimingExamples": {
+    "nativeMs": [
+      301,
+      313,
+      320,
+      258
+    ],
+    "full2xMs": 1030,
+    "scope": "specific cold/warm browser operations, not a statistically controlled speed benchmark"
+  },
+  "automationNotes": [
+    "Full-page screenshot request timed out; viewport screenshots were saved from actual browser output.",
+    "One automation cell timed out during video cancellation/restart and lost its variables. The existing tab was reconnected; its completed download links were used. Export logs independently show one cancellation then one complete video.",
+    "Captured console errors were extension metadata messages, not application-origin errors."
+  ],
+  "remainingLimits": {
+    "liveLLMCall": "not_performed",
+    "gpu": "not_used",
+    "naturalDynamics": "not_learned",
+    "visualReview": "AI/development inspection, not independent multi-person human evaluation"
+  },
+  "independentDownloadedArtifactVerification": "artifact-verification.json"
+}

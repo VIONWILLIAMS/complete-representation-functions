@@ -2,6 +2,15 @@
 
 ## CRF 图形计算编辑器｜1.1 开发入口
 
+**最新画质交付：[三类真实场景、1280像素山林与可重算工程](graphics-editor/README_DETAIL_QUALITY.md)。** 进入 `graphics-editor/editor` 后运行 `npm run dev:detail`；实际数值资产、PNG、拟合器和独立测量均已纳入本分支。
+
+**当前实验分支已加入可学习对象函数工作台：真实本地训练、固定函数版本、统一 CPU 内核、Agent Harness，以及图片/二维视频导出。**
+
+- **[1.1 实验分支启动与使用](graphics-editor/README_1_1.md)**
+- [开发前完整技术设计](graphics-editor/plans/CRF_1_1_Learnable_Functions_Design.md) · [本分支交付与实测验收](graphics-editor/editor/docs/v11/DELIVERY.md)
+
+下面保留原整体 1.1 计划的开发入口；本实验分支的局部验收不代表其中形式证明、WebGPU、程序级 RSI 和独立来源泛化已完成。
+
 **完整工程已接入：可运行的产品 1.0 基线（历史 0.10.0/v10）＋最新 1.1 开发计划＋Codex 交接说明。1.1 尚未完成验收。**
 
 - **[打开 1.1 开发工作区](graphics-editor/README.md)**

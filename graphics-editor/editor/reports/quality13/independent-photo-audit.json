@@ -1,0 +1,287 @@
+{
+  "schema": "crf.detail_independent_photo_audit.v1",
+  "contractSHA256": "f262a18ad60ae4f77bed9608b28aecac2c1201d109a7709b82668a1d0a1b193b",
+  "verifierSHA256": "8916513c941924c8928762b3f036016eb2be228a8566bb2f7c2569b22977f5d0",
+  "referenceResizedForEvaluation": false,
+  "runtime": "Actual JavaScript parameter output PNG",
+  "scope": "Three finite observation-conditioned reconstructions; no novel-scene generation, human blind review or photorealism percentage.",
+  "scenes": [
+    {
+      "id": "alpine_hd",
+      "width": 1280,
+      "height": 850,
+      "referenceSHA256": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+      "outputSHA256": "3d47262a70df55f8461cbae61f50e2aa0f888035f7c6a109077a52aa16743d92",
+      "metrics": {
+        "psnr": 37.740910496234065,
+        "ssim": 0.9876248398363497,
+        "mae": 1.6567889093137256,
+        "rmse": 3.3074604191160937,
+        "maxError": 63,
+        "p99ChannelError": 14.0,
+        "fractionPixelsAnyChannelAbove16": 0.0070818014705882355,
+        "fractionPixelsAnyChannelAbove32": 0.0002224264705882353,
+        "evaluatedPixels": 1088000
+      },
+      "rois": [
+        {
+          "id": "forest",
+          "pixelBounds": [
+            64,
+            42,
+            512,
+            468
+          ],
+          "metrics": {
+            "psnr": 35.546458541144396,
+            "ssim": 0.9801490892727744,
+            "mae": 2.7284505644981,
+            "rmse": 4.258113696115905,
+            "maxError": 40,
+            "p99ChannelError": 15.0,
+            "fractionPixelsAnyChannelAbove16": 0.009096244131455399,
+            "fractionPixelsAnyChannelAbove32": 4.71579476861167e-05,
+            "evaluatedPixels": 190848
+          },
+          "passed": true
+        },
+        {
+          "id": "water",
+          "pixelBounds": [
+            64,
+            595,
+            1216,
+            833
+          ],
+          "metrics": {
+            "psnr": 41.912840642079985,
+            "ssim": 0.9924704999762453,
+            "mae": 0.8695400035014006,
+            "rmse": 2.045964756428407,
+            "maxError": 56,
+            "p99ChannelError": 9.0,
+            "fractionPixelsAnyChannelAbove16": 0.0030053688141923438,
+            "fractionPixelsAnyChannelAbove32": 0.00020060107376283846,
+            "evaluatedPixels": 274176
+          },
+          "passed": true
+        },
+        {
+          "id": "buildings",
+          "pixelBounds": [
+            768,
+            408,
+            1255,
+            595
+          ],
+          "metrics": {
+            "psnr": 35.20581470421696,
+            "ssim": 0.9804703537476653,
+            "mae": 2.8710757777070133,
+            "rmse": 4.428426543569153,
+            "maxError": 51,
+            "p99ChannelError": 15.0,
+            "fractionPixelsAnyChannelAbove16": 0.012045811417716237,
+            "fractionPixelsAnyChannelAbove32": 0.00024157506945283246,
+            "evaluatedPixels": 91069
+          },
+          "passed": true
+        }
+      ],
+      "checks": {
+        "psnr": true,
+        "ssim": true,
+        "mae": true,
+        "p99": true,
+        "tail": true,
+        "rois": true
+      },
+      "passed": true
+    },
+    {
+      "id": "street",
+      "width": 667,
+      "height": 1000,
+      "referenceSHA256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+      "outputSHA256": "238723c371c7390392964964cd3530f2afc7d80c8aaf0211b954f3b2cc824973",
+      "metrics": {
+        "psnr": 48.34253772994012,
+        "ssim": 0.992669232100803,
+        "mae": 0.5854222888555722,
+        "rmse": 0.9759179228316016,
+        "maxError": 24,
+        "p99ChannelError": 3.0,
+        "fractionPixelsAnyChannelAbove16": 8.995502248875562e-06,
+        "fractionPixelsAnyChannelAbove32": 0.0,
+        "evaluatedPixels": 667000
+      },
+      "rois": [
+        {
+          "id": "signal",
+          "pixelBounds": [
+            266,
+            370,
+            341,
+            500
+          ],
+          "metrics": {
+            "psnr": 41.212993841490345,
+            "ssim": 0.9883739849361576,
+            "mae": 1.4230769230769231,
+            "rmse": 2.217637150192639,
+            "maxError": 24,
+            "p99ChannelError": 8.0,
+            "fractionPixelsAnyChannelAbove16": 0.0006153846153846154,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "evaluatedPixels": 9750
+          },
+          "passed": true
+        },
+        {
+          "id": "wall",
+          "pixelBounds": [
+            360,
+            200,
+            621,
+            700
+          ],
+          "metrics": {
+            "psnr": 48.78289202300565,
+            "ssim": 0.9913321971120627,
+            "mae": 0.5597931034482758,
+            "rmse": 0.9276744155146842,
+            "maxError": 10,
+            "p99ChannelError": 3.0,
+            "fractionPixelsAnyChannelAbove16": 0.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "evaluatedPixels": 130500
+          },
+          "passed": true
+        },
+        {
+          "id": "crosswalk",
+          "pixelBounds": [
+            100,
+            830,
+            654,
+            990
+          ],
+          "metrics": {
+            "psnr": 48.7732693777611,
+            "ssim": 0.9971488501443299,
+            "mae": 0.59173059566787,
+            "rmse": 0.9287027072274272,
+            "maxError": 12,
+            "p99ChannelError": 3.0,
+            "fractionPixelsAnyChannelAbove16": 0.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "evaluatedPixels": 88640
+          },
+          "passed": true
+        }
+      ],
+      "checks": {
+        "psnr": true,
+        "ssim": true,
+        "mae": true,
+        "p99": true,
+        "tail": true,
+        "rois": true
+      },
+      "passed": true
+    },
+    {
+      "id": "orchard",
+      "width": 800,
+      "height": 600,
+      "referenceSHA256": "710c064d8802060e4cbd3b93859e40b81c213a35b21c4ac5ff99340b7238242e",
+      "outputSHA256": "0a8dc5694fbefd9e4ed46e1e139106885ce9d8c16c306f444fba27eb44f5c273",
+      "metrics": {
+        "psnr": 48.6574366349322,
+        "ssim": 0.9911607714183457,
+        "mae": 0.5757159722222223,
+        "rmse": 0.9411705920465925,
+        "maxError": 31,
+        "p99ChannelError": 3.0,
+        "fractionPixelsAnyChannelAbove16": 2.5e-05,
+        "fractionPixelsAnyChannelAbove32": 0.0,
+        "evaluatedPixels": 480000
+      },
+      "rois": [
+        {
+          "id": "apple",
+          "pixelBounds": [
+            152,
+            210,
+            368,
+            462
+          ],
+          "metrics": {
+            "psnr": 44.63324210973336,
+            "ssim": 0.9867571235818043,
+            "mae": 0.9500110229276896,
+            "rmse": 1.495815657652187,
+            "maxError": 31,
+            "p99ChannelError": 5.0,
+            "fractionPixelsAnyChannelAbove16": 0.0002204585537918871,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "evaluatedPixels": 54432
+          },
+          "passed": true
+        },
+        {
+          "id": "pear",
+          "pixelBounds": [
+            392,
+            114,
+            576,
+            487
+          ],
+          "metrics": {
+            "psnr": 47.005961655672365,
+            "ssim": 0.9897390937629763,
+            "mae": 0.7545508412013833,
+            "rmse": 1.1382616334475362,
+            "maxError": 12,
+            "p99ChannelError": 4.0,
+            "fractionPixelsAnyChannelAbove16": 0.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "evaluatedPixels": 68632
+          },
+          "passed": true
+        },
+        {
+          "id": "contact",
+          "pixelBounds": [
+            160,
+            432,
+            616,
+            534
+          ],
+          "metrics": {
+            "psnr": 47.543366376728564,
+            "ssim": 0.9900097604363751,
+            "mae": 0.7043916981997478,
+            "rmse": 1.0699706419504866,
+            "maxError": 11,
+            "p99ChannelError": 3.0,
+            "fractionPixelsAnyChannelAbove16": 0.0,
+            "fractionPixelsAnyChannelAbove32": 0.0,
+            "evaluatedPixels": 46512
+          },
+          "passed": true
+        }
+      ],
+      "checks": {
+        "psnr": true,
+        "ssim": true,
+        "mae": true,
+        "p99": true,
+        "tail": true,
+        "rois": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

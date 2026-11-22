@@ -1,0 +1,130 @@
+{
+  "width": 640,
+  "height": 480,
+  "frameCount": 120,
+  "fps": 24,
+  "duration": 5,
+  "codec": "vp09.00.40.08",
+  "mimeType": "video/webm;codecs=vp9",
+  "timing": "fixed timestamps; no real-time frame dropping",
+  "encodedFrames": 120,
+  "containerTimecodeScaleNanoseconds": 1000000,
+  "exporterVersion": "0.9.1",
+  "encoderSelection": {
+    "selectedCodec": "vp09.00.40.08",
+    "preference": [
+      "vp09.00.40.08",
+      "vp09.00.10.08",
+      "vp8"
+    ],
+    "attempts": [
+      {
+        "codec": "vp09.00.40.08",
+        "supported": true
+      }
+    ],
+    "reason": "Prefer VP9 bitstream range/matrix signalling; incompatible VP8 fallback is rejected."
+  },
+  "colorMetadata": {
+    "source": "VideoEncoder output metadata.decoderConfig.colorSpace",
+    "decoderConfigEvents": [
+      {
+        "timestamp": 0,
+        "codec": "vp09.00.40.08",
+        "codedWidth": 640,
+        "codedHeight": 480,
+        "colorSpaceProvided": true,
+        "colorSpace": {
+          "primaries": "bt709",
+          "transfer": "iec61966-2-1",
+          "matrix": "bt709",
+          "fullRange": true
+        }
+      }
+    ],
+    "bitstreamColourEvents": [
+      {
+        "timestamp": 0,
+        "codec": "vp9",
+        "status": "matched-declared-range-and-matrix",
+        "profile": 0,
+        "bitDepth": 8,
+        "colorSpaceCode": 2,
+        "matrix": "bt709",
+        "fullRange": true
+      },
+      {
+        "timestamp": 1000000,
+        "codec": "vp9",
+        "status": "matched-declared-range-and-matrix",
+        "profile": 0,
+        "bitDepth": 8,
+        "colorSpaceCode": 2,
+        "matrix": "bt709",
+        "fullRange": true
+      },
+      {
+        "timestamp": 2000000,
+        "codec": "vp9",
+        "status": "matched-declared-range-and-matrix",
+        "profile": 0,
+        "bitDepth": 8,
+        "colorSpaceCode": 2,
+        "matrix": "bt709",
+        "fullRange": true
+      },
+      {
+        "timestamp": 3000000,
+        "codec": "vp9",
+        "status": "matched-declared-range-and-matrix",
+        "profile": 0,
+        "bitDepth": 8,
+        "colorSpaceCode": 2,
+        "matrix": "bt709",
+        "fullRange": true
+      },
+      {
+        "timestamp": 4000000,
+        "codec": "vp9",
+        "status": "matched-declared-range-and-matrix",
+        "profile": 0,
+        "bitDepth": 8,
+        "colorSpaceCode": 2,
+        "matrix": "bt709",
+        "fullRange": true
+      }
+    ],
+    "policy": "Encoder-declared values only; missing values remain unspecified; no pixel-range remapping or guessed colour tags.",
+    "encoderColorSpace": {
+      "primaries": "bt709",
+      "transfer": "iec61966-2-1",
+      "matrix": "bt709",
+      "fullRange": true
+    },
+    "webmColour": {
+      "written": true,
+      "matrixCoefficients": 1,
+      "range": 2,
+      "transferCharacteristics": 13,
+      "primaries": 1
+    },
+    "unknownFields": [],
+    "unmappedFields": {},
+    "warnings": []
+  },
+  "kind": "video",
+  "scope": "fixed learned appearance with explicit 2D motion",
+  "sceneSha256": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+  "functionVersions": [
+    "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+    "7e2f695f1a8da7618b88c386678f73b16df3860a48e95e4696738645bba9146b",
+    "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b",
+    "c3cbc4d8cfb8f2465f686038d576d374b2c36cdb352d006bf7eadd284b025886",
+    "f101f0c6e468d3cfd034d80ea7b49de44916abc74dd201c82efa3a4471ebc7cf"
+  ],
+  "profile": {
+    "backend": "cached",
+    "samples": 1
+  },
+  "at": "2026-11-22T04:37:05.297Z"
+}

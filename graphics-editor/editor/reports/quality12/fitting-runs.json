@@ -1,0 +1,152 @@
+{
+  "schema": "crf.quality_fitting_run_ledger.v1",
+  "scope": "Fitting-process experiments in this development round; excludes assistant inference and UI/browser work",
+  "runs": [
+    {
+      "id": "alpine-131072-v08",
+      "scope": "feasibility_not_final_contract",
+      "gaussians": 131072,
+      "fitSeconds": 30.775,
+      "timingCompleteness": "full_fit_from_recorded_report",
+      "metrics": {
+        "mae": 3.1565262084118015,
+        "rmse": 5.48383338494598,
+        "psnr": 33.34911858530045,
+        "ssim": 0.9563248852858744,
+        "maxError": 86,
+        "exactRGBFraction": 0.12090866290018833,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "evidence": "reports/quality12/experiments/alpine-131072-v08.report.json"
+    },
+    {
+      "id": "alpine-32768-v08",
+      "scope": "feasibility_not_final_contract",
+      "gaussians": 32768,
+      "fitSeconds": 9.632,
+      "timingCompleteness": "full_fit_from_recorded_report",
+      "metrics": {
+        "mae": 6.930369585687382,
+        "rmse": 11.623945557616318,
+        "psnr": 26.823732264370143,
+        "ssim": 0.7988511084673664,
+        "maxError": 155,
+        "exactRGBFraction": 0.0681379472693032,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "evidence": "reports/quality12/experiments/alpine-32768-v08.report.json"
+    },
+    {
+      "id": "alpine-65536-adam",
+      "scope": "feasibility_not_final_contract",
+      "gaussians": 65536,
+      "fitSeconds": 40.586,
+      "timingCompleteness": "full_fit_from_recorded_report",
+      "metrics": {
+        "mae": 2.154319679849341,
+        "rmse": 3.7741612314033097,
+        "psnr": 36.59439462472891,
+        "ssim": 0.9723722493680768,
+        "maxError": 99,
+        "exactRGBFraction": 0.1319020715630885,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "evidence": "reports/quality12/experiments/alpine-65536-adam.report.json"
+    },
+    {
+      "id": "alpine-65536-v08",
+      "scope": "feasibility_not_final_contract",
+      "gaussians": 65536,
+      "fitSeconds": 15.116,
+      "timingCompleteness": "full_fit_from_recorded_report",
+      "metrics": {
+        "mae": 5.048512241054614,
+        "rmse": 8.461375817689804,
+        "psnr": 29.581983909480996,
+        "ssim": 0.8922511898026712,
+        "maxError": 120,
+        "exactRGBFraction": 0.08801789077212806,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "evidence": "reports/quality12/experiments/alpine-65536-v08.report.json"
+    },
+    {
+      "id": "quality12-min035-provisional-before-contract-loader",
+      "scope": "provisional_success_superseded_by_final_bound_run",
+      "gaussians": 65536,
+      "fitSeconds": null,
+      "fitSecondsLowerBound": 47.646033,
+      "timingCompleteness": "last_colour_polish_phase_elapsed; total_fit_not_retained",
+      "metrics": {
+        "psnr": 36.66775251244562,
+        "ssim": 0.9728077248326319,
+        "mae": 2.1342953546767105
+      },
+      "resultRetention": "superseded when the same numerical fit was repeated with external frozen-contract validation; not official evidence"
+    },
+    {
+      "id": "quality12-final-primary",
+      "scope": "main_reference_acceptance",
+      "gaussians": 65536,
+      "fitSeconds": 48.544883,
+      "timingCompleteness": "full_fit_from_recorded_report",
+      "metrics": {
+        "mae": 2.1342953546767105,
+        "rmse": 3.7424202534484574,
+        "psnr": 36.66775251244562,
+        "ssim": 0.9728077248326319,
+        "maxError": 80,
+        "exactRGBFraction": 0.13453154425612052,
+        "evaluatedPixels": 424800
+      },
+      "evidence": "web/assets/quality12/alpine.quality.json"
+    },
+    {
+      "id": "quality12-secondary-jpeg-feasibility",
+      "scope": "shared_metric_profile_only_different_reference",
+      "gaussians": 24576,
+      "fitSeconds": 17.436851,
+      "timingCompleteness": "full_fit_from_recorded_report",
+      "metrics": {
+        "mae": 1.2975684039668949,
+        "rmse": 1.8772751844877136,
+        "psnr": 42.66024482279781,
+        "ssim": 0.9854491409497871,
+        "maxError": 29,
+        "exactRGBFraction": 0.07447292380136987,
+        "evaluatedPixels": 149504
+      },
+      "evidence": "reports/quality12/secondary/leaves-jpeg-feasibility.quality.json"
+    },
+    {
+      "id": "quality12-secondary-canonical-png",
+      "scope": "shared_metric_profile_only_different_reference",
+      "gaussians": 24576,
+      "fitSeconds": 17.543434,
+      "timingCompleteness": "full_fit_from_recorded_report",
+      "metrics": {
+        "mae": 1.249620968892694,
+        "rmse": 1.7974980927806927,
+        "psnr": 43.03743484366148,
+        "ssim": 0.9873231274117432,
+        "maxError": 22,
+        "exactRGBFraction": 0.061717412243150686,
+        "evaluatedPixels": 149504
+      },
+      "evidence": "reports/quality12/secondary/leaves.quality.json"
+    }
+  ],
+  "recordedFitAttempts": 8,
+  "knownFitWallSecondsSum": 179.634168,
+  "fitWallSecondsSumLowerBound": 227.280201,
+  "aggregateMeaning": "Sum of per-process wall times; some experiments overlapped. This is not CPU-seconds or elapsed end-to-end wall time.",
+  "cpuSeconds": null,
+  "gpuUsed": false,
+  "externalModelCallsByFitter": 0,
+  "externalApiSpendByFitter": 0,
+  "unmeasured": "One superseded provisional successful run retained only its last recorded phase elapsed time; it is excluded from exact-total claims."
+}

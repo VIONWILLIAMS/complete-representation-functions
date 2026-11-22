@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' blob:; worker-src blob:; img-src data: blob:; style-src 'unsafe-inline'; connect-src 'none'; object-src 'none'; base-uri 'none'">
+<title>CRF · 真实场景细节工作台</title>
+<style>
+:root{--ink:#143530;--muted:#637871;--line:#d9e5df;--paper:#f6f8f4;--white:#fff;--accent:#167763;--aqua:#d9f2e7;--gold:#a47735;--danger:#a1493c;--shadow:0 12px 42px #174b3820;font-family:Inter,"SF Pro Display","PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--paper)}*{box-sizing:border-box}body{margin:0}button,select,input{font:inherit}button,select{border:1px solid var(--line);background:var(--white);color:var(--ink);border-radius:9px;min-height:38px;padding:8px 13px}button{cursor:pointer;transition:background .15s,border .15s,transform .15s}button:hover{background:#edf5ee;border-color:#9fbdb0}button:active{transform:translateY(1px)}button:disabled{opacity:.45;cursor:wait;transform:none}button.primary{background:var(--ink);color:#fff;border-color:var(--ink)}button.primary:hover{background:#1d5145}.shell{max-width:1780px;margin:auto;padding:0 42px 36px}.topbar{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px}.brand{display:flex;align-items:center;gap:14px}.brandmark{font-size:27px;font-weight:800;letter-spacing:-2px}.brand-rule{width:1px;height:25px;background:#bfcec5}.brand-label{font-size:12px;letter-spacing:2px}.edition{font-size:11px;letter-spacing:1.4px;color:var(--muted);text-align:right}.intro{display:flex;justify-content:space-between;gap:24px;align-items:end;padding:30px 0 24px}.eyebrow{font-size:10px;color:var(--accent);font-weight:700;letter-spacing:2.3px;margin:0 0 9px}.intro h1{font-size:clamp(25px,3vw,40px);line-height:1.25;font-weight:650;letter-spacing:-1.2px;margin:0 0 10px}.intro p{font-size:13px;line-height:1.8;margin:0;color:var(--muted);max-width:680px}.intro-tag{font-size:11px;background:#e5eee5;border:1px solid #d2dfd2;border-radius:100px;padding:9px 14px;white-space:nowrap}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.scene-tab{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:10px;min-width:183px;text-align:left}.scene-tab.active{background:#e2efe7;border-color:#a9c8b9;box-shadow:inset 0 0 0 1px #a9c8b9}.tab-number{font:11px ui-monospace,monospace;color:var(--muted)}.tab-title{font-size:13px;font-weight:650}.tab-size{display:block;font-size:10px;color:var(--muted);font-weight:400;margin-top:4px}.main{display:grid;grid-template-columns:minmax(0,1fr) 274px;gap:20px;align-items:start}.workbench{border:1px solid var(--line);border-radius:15px;background:white;overflow:hidden;box-shadow:var(--shadow)}.toolbar{display:flex;gap:10px;align-items:center;padding:13px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}.toolbar label{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:6px}.toolbar select{font-size:12px;min-height:33px;padding:6px 9px}.toolbar .spacer{flex:1}.toggle.active{background:var(--aqua);border-color:#8bbca7}.toolbar button{font-size:12px;min-height:33px;padding:6px 10px}.frames{display:grid;grid-template-columns:minmax(0,1fr);background:#e8eee8}.frames.comparing{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.pane{min-width:0}.pane[hidden]{display:none}.pane+.pane{border-left:1px solid #cad8cf}.pane-heading{height:36px;display:flex;align-items:center;justify-content:space-between;padding:0 15px;background:#f1f5ef;font-size:10px;letter-spacing:.3px;color:#536a61}.pane-heading strong{color:#315b4b;font-size:11px;font-weight:600}.reference-heading strong{color:var(--gold)}.canvas-viewport{height:min(65vh,710px);min-height:360px;position:relative;overflow:auto;display:flex;align-items:flex-start;justify-content:flex-start;padding:20px;background:linear-gradient(135deg,#e4ede5,#edf0e9)}.canvas-viewport canvas{display:block;margin:auto;box-shadow:0 3px 18px #25483418;flex-shrink:0}.canvas-viewport.native{align-items:flex-start;justify-content:flex-start}.canvas-viewport.native canvas{margin:0;image-rendering:auto}.render-state{padding:11px 15px;border-top:1px solid var(--line);font-size:11px;display:flex;align-items:center;gap:10px;min-height:42px;flex-wrap:wrap}.status-dot{height:6px;width:6px;border-radius:50%;background:#a5b7aa;flex-shrink:0}.status-dot.ready{background:#2c9874}.status-dot.busy{background:#bb934d;animation:pulse 1s infinite}.status-dot.error{background:var(--danger)}@keyframes pulse{50%{opacity:.3}}#status{flex:1;line-height:1.5;color:#5a7064}.render-state button{font-size:10px;min-height:24px;padding:3px 8px}.runtime-label{font:10px ui-monospace,monospace;color:var(--muted)}.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 0}.actions .buttons{display:flex;gap:8px}.actions button{font-size:12px}.display-note{font-size:10px;color:var(--muted);max-width:400px;line-height:1.6}.inspector{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}.inspector-section{padding:20px;border-bottom:1px solid var(--line)}.inspector-section:last-child{border-bottom:0}.section-title{display:flex;align-items:center;justify-content:space-between;margin:0 0 13px;font-size:12px;font-weight:650}.section-title span{font-size:9px;color:var(--muted);font-weight:400;letter-spacing:1px}.badge{font-size:10px;line-height:1.6;border-radius:7px;background:#f0f3ed;color:#59705f;padding:9px 10px;margin-bottom:16px}.badge.good{background:#e1f1e8;color:#246446}.badge.pending{background:#fff4dd;color:#8a6b2c}.badge.failed{background:#fbece6;color:#9a4e3d}.metric{display:flex;justify-content:space-between;align-items:baseline;margin:12px 0}.metric dt{font-size:11px;color:var(--muted)}.metric dd{margin:0;font:23px ui-monospace,"SF Mono",monospace;color:#224d3f;letter-spacing:-1px}.metric dd small{font-family:inherit;font-size:10px;letter-spacing:0;color:var(--muted);margin-left:3px}.fineprint{font-size:10px;color:var(--muted);line-height:1.75;margin:12px 0 0}.divider{border-top:1px solid var(--line);margin-top:15px;padding-top:12px}.facts{display:grid;grid-template-columns:auto 1fr;gap:10px;font-size:10px;margin:0}.facts dt{color:var(--muted)}.facts dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}.range-header{display:flex;justify-content:space-between;align-items:center;font-size:11px;margin:14px 0 7px}.range-header output{font:11px ui-monospace,monospace;color:var(--accent)}input[type=range]{width:100%;accent-color:var(--accent)}.reset{width:100%;font-size:11px;margin-top:12px}.evidence-button{width:100%;font-size:11px}.scope{display:grid;grid-template-columns:1.25fr 1fr;gap:30px;margin-top:15px;padding:20px 0;border-top:1px solid var(--line)}.scope h2{font-size:12px;margin:0 0 7px;font-weight:650}.scope p{font-size:11px;line-height:1.9;color:var(--muted);margin:0}.scope code{font:11px ui-monospace,monospace;color:#446354}.footer{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:20px;color:#809087;font-size:10px;line-height:1.5}.empty{display:flex;position:absolute;inset:20px;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;pointer-events:none}.empty[hidden]{display:none}dialog{border:1px solid var(--line);border-radius:14px;width:min(800px,92vw);max-height:85vh;padding:0;box-shadow:0 30px 100px #18372940;background:var(--paper);color:var(--ink)}dialog::backdrop{background:#183a3060;backdrop-filter:blur(3px)}.dialog-top{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid var(--line)}.dialog-top h2{font-size:16px;margin:0}.dialog-body{padding:20px 22px}.dialog-body pre{font-size:11px;line-height:1.65;overflow-wrap:anywhere;white-space:pre-wrap;max-height:55vh;overflow:auto}.dialog-body p{font-size:12px;line-height:1.7;color:var(--muted)}@media(max-width:1100px){.shell{padding:0 22px 24px}.main{grid-template-columns:minmax(0,1fr) 235px}.inspector-section{padding:16px}.toolbar .spacer{display:none}}@media(max-width:800px){.main{display:block}.inspector{margin-top:12px;display:grid;grid-template-columns:1fr 1fr}.inspector-section{border-right:1px solid var(--line)}.inspector-section:last-child{grid-column:1/-1}.intro{padding-top:24px}.intro-tag{display:none}.canvas-viewport{min-height:260px;height:55vh}.scope{grid-template-columns:1fr;gap:16px}.actions{align-items:flex-start}.display-note{max-width:240px}.edition{font-size:9px}.topbar{height:66px}.brand-label{font-size:10px}}@media(max-width:530px){.shell{padding:0 12px 18px}.intro h1{font-size:27px}.intro p{font-size:12px}.scene-tab{min-width:0;flex:1;padding:10px 9px;gap:6px}.tab-title{font-size:10px}.tab-size{font-size:8px}.frames.comparing{grid-template-columns:1fr}.pane+.pane{border-left:none;border-top:1px solid var(--line)}.canvas-viewport{padding:10px}.actions{flex-direction:column}.display-note{max-width:none}.toolbar{padding:10px}.inspector{grid-template-columns:1fr}.inspector-section{border-right:0}.brand-label{letter-spacing:1px}.footer{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="topbar"><div class="brand"><div class="brandmark">CRF</div><div class="brand-rule"></div><div class="brand-label">COMPLETE REPRESENTATION FUNCTION</div></div><div class="edition">VISUAL COMPUTING<br>细节质量实验 · 2026.11</div></header>
+  <section class="intro"><div><p class="eyebrow">OBSERVATION → FUNCTION → PIXELS</p><h1>真实场景 · 细节工作台</h1><p>这里的画面由函数参数重新计算。打开参考对照，检查同一位置的纹理、边缘与光影。</p></div><div class="intro-tag">独立离线运行 · 无网络请求</div></section>
+  <nav id="sceneTabs" class="tabs" aria-label="选择场景"></nav>
+  <main class="main">
+    <section>
+      <div class="workbench">
+        <div class="toolbar">
+          <label>区域<select id="regionSelect" aria-label="选择画面区域"></select></label>
+          <label>计算<select id="scaleSelect" aria-label="计算倍率"><option value="1">1× 原生</option><option value="1.5">1.5× 重算</option></select></label>
+          <label>显示<select id="displaySelect" aria-label="画布显示"><option value="fit">适应窗口</option><option value="native">100% 像素</option></select></label>
+          <span class="spacer"></span><button id="referenceToggle" class="toggle" aria-pressed="false">打开参考对照</button>
+        </div>
+        <div id="frames" class="frames">
+          <section class="pane"><div class="pane-heading"><strong>参数计算结果</strong><span id="frameLabel">等待计算</span></div><div id="outputViewport" class="canvas-viewport"><canvas id="outputCanvas" width="1" height="1" hidden></canvas><div id="outputEmpty" class="empty">正在准备函数参数…</div></div></section>
+          <section id="referencePane" class="pane" hidden><div class="pane-heading reference-heading"><strong>参考原图 · 仅用于对照</strong><span id="referenceLabel">未加载</span></div><div id="referenceViewport" class="canvas-viewport"><canvas id="referenceCanvas" width="1" height="1" hidden></canvas><div id="referenceEmpty" class="empty">参考图不会进入计算内核</div></div></section>
+        </div>
+        <div class="render-state"><span id="statusDot" class="status-dot busy"></span><span id="status" role="status" aria-live="polite">正在初始化离线工作台…</span><button id="cancelRender" hidden>取消</button><span id="renderTime" class="runtime-label">CPU / Float64</span></div>
+      </div>
+      <div class="actions"><p class="display-note">“适应窗口”只改变屏幕显示。PNG 与工程保留当前实际计算尺寸。</p><div class="buttons"><button id="exportProject" disabled>保存完整工程</button><button id="exportPNG" class="primary" disabled>导出 PNG</button></div></div>
+    </section>
+    <aside class="inspector">
+      <section class="inspector-section"><h2 class="section-title">原生重建质量<span>REFERENCE METRICS</span></h2><div id="qualityBadge" class="badge pending">参数与输出摘要待核对</div><dl><div class="metric"><dt>PSNR</dt><dd><span id="metricPSNR">—</span><small>dB</small></dd></div><div class="metric"><dt>SSIM</dt><dd id="metricSSIM">—</dd></div><div class="metric"><dt>平均绝对误差</dt><dd><span id="metricMAE">—</span><small>/255</small></dd></div></dl><p id="qualityScope" class="fineprint">这些指标来自冻结参考与序列化参数的原生重建。</p><dl class="facts divider"><dt>99% 通道误差</dt><dd id="tailError">—</dd><dt>大误差像素比例</dt><dd id="tailFraction">—</dd></dl></section>
+      <section class="inspector-section"><h2 class="section-title">当前画面<span>COMPUTED FRAME</span></h2><dl class="facts"><dt>源观察</dt><dd id="sourceSize">—</dd><dt>实际输出</dt><dd id="outputSize">—</dd><dt>函数数量</dt><dd id="gaussianCount">—</dd><dt>求值方式</dt><dd>连续二维高斯</dd></dl><div class="range-header"><label for="exposure">曝光调整</label><output id="exposureValue">0.00 EV</output></div><input id="exposure" type="range" min="-1.5" max="1.5" step="0.05" value="0"><p class="fineprint">色彩调整会触发重新求值；它不代表恢复了独立材质与真实光源。</p><button id="resetScene" class="reset">恢复原生参数</button></section>
+      <section class="inspector-section"><button id="showEvidence" class="evidence-button">查看计算与质量证据 ↗</button><p class="fineprint">工程包含全部函数参数，可导入 CRF 质量编辑器继续编辑与重放。</p></section>
+    </aside>
+  </main>
+  <section class="scope"><div><h2>同一场景，独立计算每个像素</h2><p>计算路径：<code>base + Σ RGBᵢ × exp(−qᵢ/2)</code>。有限支持域内累计函数，最后量化到 RGB。结果画布不读取参考照片、成图缓存或栅格残差。</p></div><div><h2>这次结果的范围</h2><p id="scopeText">这是对已观察场景的函数重建。光影与纹理来自该观察；新场景生成、物理重光照和真实三维仍需要单独实现与验收。</p></div></section>
+  <footer class="footer"><span>CRF 1.1 实验分支 · 内部模块 quality13</span><span>参考图只在开启对照后解码 · 函数资产与输出证据分开核验</span></footer>
+</div>
+<dialog id="evidenceDialog"><div class="dialog-top"><h2>当前场景的计算与证据</h2><button id="closeEvidence">关闭</button></div><div class="dialog-body"><p>摘要用于绑定具体参数、参考和输出；它不是照片真实感或物理正确性的数学证明。</p><pre id="evidenceText"></pre><button id="downloadEvidence">下载证据 JSON</button></div></dialog>
+<script id="crf-kernel">/*__CRF_KERNEL__*/</script>
+<script id="crf-review-data" type="application/json">/*__CRF_PAYLOAD__*/</script>
+<script>
+(function(){
+'use strict';
+const payload=JSON.parse(document.getElementById('crf-review-data').textContent);
+const Core=globalThis.CRFQuality12,$=id=>document.getElementById(id);
+const names={forest:'山林纹理',mountain_forest:'山林纹理',water:'水面倒影',buildings:'岸边建筑',shore_buildings:'岸边建筑',signal:'信号灯细节',wall:'墙面纹理',crosswalk:'斑马线边缘',apple:'苹果高光',pear:'梨皮纹理',contact:'接触与阴影'};
+const state={index:-1,scene:null,project:null,renderProject:null,frameProject:null,frame:null,busy:false,request:0,worker:null,assetVerified:false,frameVerified:false,referenceImage:null,referencePromise:null,showReference:false,sequence:0,editTimer:null,runs:[],exports:[],referenceLoads:0,error:null};
+const n=(v,d=2)=>Number.isFinite(v)?v.toFixed(d):'—';
+const count=v=>Number.isFinite(v)?v.toLocaleString('en-US'):'—';
+function setStatus(message,kind='ready'){$('status').textContent=message;$('statusDot').className='status-dot '+kind;}
+function invalidate(){state.frameVerified=false;$('exportPNG').disabled=true;$('exportProject').disabled=true;updateQuality();}
+function currentNative(){const p=state.project;return !!p&&p.edits.exposure===0&&p.edits.contrast===1&&p.edits.saturation===1&&p.view.width===p.asset.width&&p.view.height===p.asset.height&&p.view.roi.every((v,i)=>v===[0,0,1,1][i]);}
+function updateQuality(){
+ const report=state.scene?.report||{},m=report.metrics||{},tail=report.tailMetrics||m;
+ $('metricPSNR').textContent=n(m.psnr);$('metricSSIM').textContent=n(m.ssim,4);$('metricMAE').textContent=n(m.mae);
+ $('tailError').textContent=Number.isFinite(tail.p99ChannelError)?n(tail.p99ChannelError,0)+' /255':'未记录';
+ $('tailFraction').textContent=Number.isFinite(tail.fractionPixelsAnyChannelAbove32)?n(tail.fractionPixelsAnyChannelAbove32*100,3)+'%':'未记录';
+ const current=state.assetVerified&&state.frameVerified&&currentNative()&&state.frameProject===state.project;
+ const badge=$('qualityBadge');badge.className='badge '+(!state.assetVerified?'pending':report.passed!==true?'failed':current?'good':'pending');
+ badge.textContent=!state.assetVerified?'参数摘要待核对':report.passed!==true?'原生报告未通过冻结门槛':current?'原生重建通过 · 输出摘要一致':'原生报告通过 · 当前输出未重验';
+ $('qualityScope').textContent=current?'当前原生结果与质量报告的 RGBA 摘要一致。指标仅适用于这份观察。':'这里保留原生重建报告。局部、倍率或曝光变化后的输出不继承原生分数。';
+ $('sourceSize').textContent=state.scene?state.scene.width+' × '+state.scene.height:'—';
+ $('gaussianCount').textContent=count(state.project?.asset.splats.length);
+}
+async function hashBytes(bytes){if(!globalThis.crypto?.subtle)throw new Error('此浏览器没有可用的 WebCrypto，无法核对或保存完整工程。请用现代桌面浏览器打开本文件。');return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');}
+function workerSource(){return $('crf-kernel').textContent+'\n'+String.raw`
+let revision=0;
+self.onmessage=async function(event){
+ const message=event.data||{};
+ if(message.type==='cancel'){revision++;return;}
+ if(message.type!=='render')return;
+ const own=++revision;
+ try{
+   const frame=await CRFQuality12.renderAsync(message.project,{shouldCancel:()=>own!==revision,onProgress:progress=>self.postMessage({type:'progress',requestId:message.requestId,progress})});
+   if(own!==revision)return;
+   self.postMessage({type:'result',requestId:message.requestId,width:frame.width,height:frame.height,diagnostics:frame.diagnostics,data:frame.data.buffer},[frame.data.buffer]);
+ }catch(error){self.postMessage({type:error.code==='CANCELLED'?'cancelled':'error',requestId:message.requestId,message:error.message,code:error.code});}
+};`;}
+function ensureWorker(){if(state.worker)return;const url=URL.createObjectURL(new Blob([workerSource()],{type:'text/javascript'}));try{state.worker=new Worker(url);}finally{URL.revokeObjectURL(url);}state.worker.onmessage=event=>handleWorker(event.data).catch(fail);state.worker.onerror=event=>{state.worker?.terminate();state.worker=null;fail(new Error(event.message||'离线计算 Worker 启动失败。'));};}
+function fail(error){state.busy=false;state.error=error.message||String(error);$('cancelRender').hidden=true;invalidate();setStatus(state.error,'error');}
+function cancelRender(){clearTimeout(state.editTimer);state.editTimer=null;state.worker?.postMessage({type:'cancel'});state.request=++state.sequence;state.busy=false;$('cancelRender').hidden=true;invalidate();setStatus('已取消；画布保留上一次完成的画面。','ready');}
+async function handleWorker(message){
+ if(message.requestId!==state.request)return;
+ if(state.renderProject!==state.project)return;
+ if(message.type==='progress'){setStatus('函数直接求值中 · '+Math.round((message.progress.fraction||0)*100)+'%','busy');return;}
+ if(message.type==='error'){fail(new Error(message.message));return;}
+ if(message.type==='cancelled')return;
+ if(message.type!=='result')return;
+ const request=state.request,project=state.renderProject,data=new Uint8ClampedArray(message.data);
+ const canvas=$('outputCanvas');canvas.width=message.width;canvas.height=message.height;canvas.getContext('2d').putImageData(new ImageData(data,message.width,message.height),0,0);canvas.hidden=false;$('outputEmpty').hidden=true;
+ state.frame={width:message.width,height:message.height,data,diagnostics:message.diagnostics};state.frameProject=project;state.busy=false;state.error=null;
+ $('frameLabel').textContent=message.width+' × '+message.height;$('outputSize').textContent=message.width+' × '+message.height;
+ $('renderTime').textContent=n(message.diagnostics.elapsedMs,0)+' ms · CPU';$('cancelRender').hidden=true;
+ resizeCanvases();
+ let rgbaHash=null;
+ if(currentNative()){
+   setStatus('已完成函数求值，正在核对原生输出摘要…','busy');rgbaHash=await hashBytes(data);
+   if(request!==state.request||project!==state.project)return;
+   if(rgbaHash!==state.scene.expectedRGBASHA256){state.runs.push({scene:state.scene.id,status:'hash_mismatch',rgbaHash,expected:state.scene.expectedRGBASHA256});throw new Error('当前计算输出与已封存原生报告不一致，质量标识保持未验证。');}
+   state.frameVerified=true;
+ }
+ if(request!==state.request||project!==state.project)return;
+ state.runs.push({scene:state.scene.id,status:'completed',at:new Date().toISOString(),view:project.view,edits:project.edits,rgbaHash,diagnostics:message.diagnostics,referencePixelsPassedToWorker:false});
+ if(state.runs.length>30)state.runs.shift();
+ $('exportPNG').disabled=false;$('exportProject').disabled=false;updateQuality();
+ setStatus('已计算 '+count(message.width*message.height)+' 个像素'+(state.frameVerified?' · 与原生报告输出一致。':' · 当前编辑输出未重新做参考质量测量。'));
+ if(state.showReference)await paintReference();
+}
+function render(){
+ if(!state.project)return;clearTimeout(state.editTimer);state.editTimer=null;ensureWorker();state.worker.postMessage({type:'cancel'});invalidate();
+ const requestId=++state.sequence;state.request=requestId;state.renderProject=state.project;state.busy=true;state.error=null;$('cancelRender').hidden=false;setStatus('正在提交函数参数…','busy');
+ // Only the project enters the worker. comparisonOnly never crosses this boundary.
+ state.worker.postMessage({type:'render',requestId,project:state.project});
+}
+function setView(){
+ const scene=state.scene,asset=state.project.asset,region=scene.rois.find(r=>r.id===$('regionSelect').value),scale=Number($('scaleSelect').value);
+ let bounds=[0,0,asset.width,asset.height];
+ if(region){const r=region.bounds;bounds=[Math.floor(r[0]*asset.width),Math.floor(r[1]*asset.height),Math.ceil(r[2]*asset.width),Math.ceil(r[3]*asset.height)];}
+ const width=Math.max(1,Math.round((bounds[2]-bounds[0])*scale)),height=Math.max(1,Math.round((bounds[3]-bounds[1])*scale));
+ state.project=Core.withView(state.project,{width,height,roi:[bounds[0]/asset.width,bounds[1]/asset.height,bounds[2]/asset.width,bounds[3]/asset.height]});render();
+}
+async function selectScene(index){
+ cancelRender();const selection=++state.sequence;state.request=selection;state.index=index;state.scene=payload.scenes[index];state.referenceImage=null;state.referencePromise=null;state.assetVerified=false;state.frameVerified=false;state.frame=null;state.frameProject=null;
+ for(const id of ['regionSelect','scaleSelect','exposure','resetScene'])$(id).disabled=true;
+ $('outputCanvas').hidden=true;$('outputEmpty').hidden=false;$('outputEmpty').textContent='正在核对场景参数…';$('referenceCanvas').hidden=true;$('referenceEmpty').hidden=false;$('referenceEmpty').textContent='当前场景参考图仅用于对照';
+ state.project=Core.createProject(state.scene.asset,{title:'CRF · '+state.scene.title});
+ $('regionSelect').replaceChildren();const full=document.createElement('option');full.value='full';full.textContent='完整场景';$('regionSelect').append(full);
+ for(const region of state.scene.rois){const option=document.createElement('option');option.value=region.id;option.textContent=names[region.id]||region.id;$('regionSelect').append(option);}
+ $('scaleSelect').value='1';$('exposure').value='0';$('exposureValue').textContent='0.00 EV';$('outputSize').textContent='—';$('frameLabel').textContent='等待计算';
+ for(const tab of $('sceneTabs').children){const active=Number(tab.dataset.index)===index;tab.classList.toggle('active',active);tab.setAttribute('aria-selected',String(active));}
+ $('scopeText').textContent=state.scene.id==='alpine_hd'?'山林湖泊直接拟合保留的 1280×850 观察。这里没有把 800 像素版本插值放大；它也不等于原始相机照片的全部细节。':'这是对已观察场景的函数重建。光影与纹理来自该观察；新场景生成、物理重光照和真实三维仍需要单独实现与验收。';
+ if(payload.developmentFixture)$('scopeText').textContent='当前文件是 800×531 开发基线预览，用于测试离线交互；它不属于本轮高分辨率交付。';
+ updateQuality();setStatus('正在核对函数参数摘要…','busy');
+ const actual=await Core.digest(state.project.asset);if(selection!==state.request)return;
+ if(actual!==state.scene.gaussianSHA256)throw new Error('嵌入的函数参数与构建摘要不一致。');state.assetVerified=true;
+ for(const id of ['regionSelect','scaleSelect','exposure','resetScene'])$(id).disabled=false;
+ render();
+}
+async function paintReference(){
+ const scene=state.scene,project=state.frameProject;
+ if(!state.showReference||!project||!state.frame)return;
+ if(!state.assetVerified)throw new Error('函数参数未核验，不能绑定参考对照。');
+ if(!state.referenceImage){
+   if(!state.referencePromise){state.referenceLoads++;state.referencePromise=new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error('嵌入参考图解码失败。'));img.src=scene.comparisonOnly.imageDataURL;});}
+   const img=await state.referencePromise;
+   if(scene!==state.scene||!state.showReference||project!==state.frameProject)return;
+   if(img.naturalWidth!==scene.width||img.naturalHeight!==scene.height)throw new Error('参考图尺寸与当前函数场景不一致。');
+   state.referenceImage=img;
+ }
+ if(scene!==state.scene||!state.showReference||project!==state.frameProject)return;
+ const canvas=$('referenceCanvas'),v=project.view;canvas.width=v.width;canvas.height=v.height;
+ const r=v.roi;canvas.getContext('2d').drawImage(state.referenceImage,r[0]*scene.width,r[1]*scene.height,(r[2]-r[0])*scene.width,(r[3]-r[1])*scene.height,0,0,v.width,v.height);
+ canvas.hidden=false;$('referenceEmpty').hidden=true;$('referenceLabel').textContent=scene.width+' × '+scene.height+' 源观察';resizeCanvases();
+}
+function resizeCanvases(){const native=$('displaySelect').value==='native';for(const name of ['output','reference']){const viewport=$(name+'Viewport'),canvas=$(name+'Canvas');viewport.classList.toggle('native',native);if(canvas.hidden)continue;const padding=window.innerWidth<=530?20:40;const factor=native?1:Math.min((viewport.clientWidth-padding)/canvas.width,(viewport.clientHeight-padding)/canvas.height);canvas.style.width=Math.max(1,canvas.width*factor)+'px';canvas.style.height=Math.max(1,canvas.height*factor)+'px';}}
+function download(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);}
+async function exportPNG(){
+ if(state.busy||!state.frame||state.frameProject!==state.project)throw new Error('请等待当前参数计算完成后再导出。');
+ const frame=state.frame,project=state.frameProject,scene=state.scene;const canvas=document.createElement('canvas');canvas.width=frame.width;canvas.height=frame.height;canvas.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(frame.data),frame.width,frame.height),0,0);
+ const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw new Error('PNG 编码失败。');
+ const name='CRF_'+scene.id+'_'+frame.width+'x'+frame.height+'.png';download(blob,name);state.exports.push({type:'png',name,width:frame.width,height:frame.height,view:project.view,edits:project.edits,at:new Date().toISOString()});
+}
+async function exportProject(){if(state.busy||state.frameProject!==state.project)throw new Error('请等待当前画面计算完成后保存。');const project=state.project,scene=state.scene,text=await Core.serializeProject(project);const name='CRF_'+scene.id+'.crf.json';download(new Blob([text],{type:'application/json'}),name);state.exports.push({type:'project',name,bytes:new TextEncoder().encode(text).byteLength,at:new Date().toISOString()});}
+function evidence(){return{schema:payload.schema,scene:state.scene?.id,title:state.scene?.title,assetSHA256:state.scene?.assetSHA256,gaussianSHA256:state.scene?.gaussianSHA256,kernelSHA256:payload.kernelSHA256,contractHash:payload.contractHash,assetVerified:state.assetVerified,currentNative:currentNative(),currentFrameVerified:state.frameVerified,currentView:state.project?.view,currentEdits:state.project?.edits,qualityReport:state.scene?.report,renderingContract:payload.renderingContract,runs:state.runs,referenceImageDecoded:!!state.referenceImage,referenceLoads:state.referenceLoads,exports:state.exports};}
+function on(id,event,fn){$(id).addEventListener(event,e=>Promise.resolve().then(()=>fn(e)).catch(fail));}
+payload.scenes.forEach((scene,index)=>{const button=document.createElement('button');button.className='scene-tab';button.dataset.index=String(index);button.setAttribute('role','tab');const number=document.createElement('span');number.className='tab-number';number.textContent=String(index+1).padStart(2,'0');const text=document.createElement('span');text.className='tab-title';text.textContent=scene.title;const size=document.createElement('span');size.className='tab-size';size.textContent=scene.width+' × '+scene.height+' / '+count(scene.asset.gaussian.splats.length)+' 函数';text.append(size);button.append(number,text);button.addEventListener('click',()=>selectScene(index).catch(fail));$('sceneTabs').append(button);});
+on('regionSelect','change',setView);on('scaleSelect','change',setView);on('displaySelect','change',resizeCanvases);
+on('referenceToggle','click',async()=>{state.showReference=!state.showReference;$('referenceToggle').classList.toggle('active',state.showReference);$('referenceToggle').setAttribute('aria-pressed',String(state.showReference));$('referenceToggle').textContent=state.showReference?'关闭参考对照':'打开参考对照';$('referencePane').hidden=!state.showReference;$('frames').classList.toggle('comparing',state.showReference);resizeCanvases();if(state.showReference)await paintReference();});
+on('exposure','input',()=>{const value=Number($('exposure').value);$('exposureValue').textContent=(value>0?'+':'')+value.toFixed(2)+' EV';state.project=Core.applyEdits(state.project,{exposure:value});invalidate();clearTimeout(state.editTimer);state.editTimer=setTimeout(()=>{try{render();}catch(error){fail(error);}},180);});
+on('resetScene','click',()=>{state.project=Core.withView(Core.applyEdits(state.project,{exposure:0,contrast:1,saturation:1}),{width:state.scene.width,height:state.scene.height,roi:[0,0,1,1]});$('regionSelect').value='full';$('scaleSelect').value='1';$('exposure').value='0';$('exposureValue').textContent='0.00 EV';render();});
+on('cancelRender','click',cancelRender);on('exportPNG','click',exportPNG);on('exportProject','click',exportProject);
+on('showEvidence','click',()=>{$('evidenceText').textContent=JSON.stringify(evidence(),null,2);$('evidenceDialog').showModal();});on('closeEvidence','click',()=>$('evidenceDialog').close());on('downloadEvidence','click',()=>download(new Blob([JSON.stringify(evidence(),null,2)],{type:'application/json'}),'CRF_'+state.scene.id+'_evidence.json'));
+if(globalThis.ResizeObserver){const observer=new ResizeObserver(resizeCanvases);observer.observe($('outputViewport'));observer.observe($('referenceViewport'));}else window.addEventListener('resize',resizeCanvases);
+window.__CRF_REVIEW13__=Object.freeze({audit:evidence,getProject:()=>state.project,getFrame:()=>state.frame,isBusy:()=>state.busy,selectScene:index=>selectScene(index)});
+selectScene(0).catch(fail);
+})();
+</script>
+</body>
+</html>

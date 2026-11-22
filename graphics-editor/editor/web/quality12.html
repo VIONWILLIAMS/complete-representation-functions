@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101512">
+  <title>CRF 1.1 · 真实场景质量工作台</title>
+  <meta name="description" content="从真实参考拟合连续视觉函数，检查原生细节，用相同计算内核编辑与导出。">
+  <link rel="stylesheet" href="quality12.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="quality12.html"><span class="brand-mark" aria-hidden="true">ƒ</span><span><strong>CRF <small>1.1</small></strong><span class="brand-subtitle">真实场景质量工作台</span></span></a>
+  <nav aria-label="编辑器导航"><a href="quality12.html" aria-current="page">真实场景</a><a href="studio11.html">对象函数</a><a href="studio10.html">完整案例</a></nav>
+  <div class="actions"><button id="openProject">打开工程</button><button id="saveProject" disabled>保存工程</button><button id="exportPNG" class="primary" disabled>导出 PNG</button></div>
+</header>
+
+<div class="workspace">
+  <main>
+    <div class="heading"><div><p class="eyebrow">REFERENCE → EXECUTABLE IMAGE</p><h1>把真实细节保留在函数里</h1><p class="intro">全分辨率拟合。直接计算像素。可检查的原图对照。</p></div><span id="qualityBadge" class="badge">正在载入</span></div>
+    <section class="metrics" aria-label="已封存原生重建质量">
+      <div><span>参考重建 PSNR</span><strong id="metricPSNR">—</strong><small>dB · 越高越好</small></div>
+      <div><span>结构相似度 SSIM</span><strong id="metricSSIM">—</strong><small>0–1 · 越接近 1 越好</small></div>
+      <div><span>平均绝对误差 MAE</span><strong id="metricMAE">—</strong><small>RGB 0–255 · 越低越好</small></div>
+      <div class="metrics-caption"><span class="dot"></span><p id="qualityScope">读取已封存参数与真实参考的同尺寸测量。</p><button id="showEvidence" class="text-button">查看测量依据</button></div>
+    </section>
+
+    <section class="image-workspace" aria-label="函数重建与原图对照">
+      <div class="viewbar">
+        <div class="segmented" role="group" aria-label="细节区域"><button data-region="full" aria-pressed="true">完整场景</button><button data-region="forest" aria-pressed="false">山林</button><button data-region="water" aria-pressed="false">水面</button><button data-region="shore" aria-pressed="false">岸边建筑</button></div>
+        <div class="view-actions"><label class="compact-label" for="resolution">求值尺寸</label><select id="resolution"><option value="1">原生 1×</option><option value="2">重新计算 2×</option></select><button id="toggleReference" aria-pressed="false">显示参考对照</button></div>
+      </div>
+      <div id="stages" class="stages">
+        <figure id="referenceFigure" class="image-panel" hidden><figcaption><span><i class="reference-dot"></i>真实参考</span><span id="referenceCaption">仅用于对照</span></figcaption><div class="canvas-surface"><canvas id="referenceCanvas" width="800" height="531" aria-label="真实参考图像的对应区域"></canvas></div></figure>
+        <figure class="image-panel output-panel"><figcaption><span><i class="result-dot"></i>函数计算结果</span><span id="frameSize">800 × 531</span></figcaption><div class="canvas-surface" id="outputSurface"><canvas id="outputCanvas" width="800" height="531" aria-label="由声明函数参数直接计算的重建图像"></canvas><div id="renderOverlay" class="render-overlay"><span class="spinner" aria-hidden="true"></span><p id="renderMessage">载入函数资产</p><button id="cancelRender" hidden>取消计算</button></div></div></figure>
+      </div>
+      <div class="image-caption"><p id="regionCaption">完整场景 · 保持真实参考的原生比例</p><span id="referenceState">未加载参考像素</span></div>
+      <div class="execution-strip"><div><span>本次函数求值</span><strong id="renderTime">—</strong></div><div><span>计算方式</span><strong>CPU · 直接求值</strong></div><div><span>参数函数</span><strong id="basisCount">—</strong></div><div><span>当前输出</span><strong id="currentState">等待计算</strong></div></div>
+    </section>
+
+    <section class="detail-note"><div><h2>放大时重新求值</h2><p id="detailNote">切换山林、水面与岸边区域，检查树枝、倒影和建筑边缘。2× 会对同一连续函数重新采样；它不会提供原参考中未记录的真实细节。</p></div><button id="resetView">回到原生场景</button></section>
+
+    <details class="code-section" id="codeDetails"><summary><span>可执行场景参数</span><small>修改后由相同内核重新计算</small></summary><p>工程保存完整函数资产。这里编辑视口与颜色参数，资产内容可单独打开检查。</p><textarea id="sceneCode" aria-label="可编辑的场景参数 JSON" spellcheck="false"></textarea><div class="code-actions"><span id="codeStatus">与当前工程同步</span><button id="reloadCode">重载参数</button><button id="runCode" class="primary">检查并执行</button></div><details class="source-code"><summary>查看求值程序</summary><pre id="renderSource"></pre><button id="downloadAsset">下载完整函数资产</button></details></details>
+    <footer class="statusbar"><span id="status" role="status" aria-live="polite">正在载入真实场景参数</span><span>1.1 · 质量候选版</span></footer>
+  </main>
+
+  <aside class="inspector" aria-label="画面编辑与来源">
+    <section class="inspector-section"><p class="eyebrow">APPEARANCE</p><h2>编辑画面</h2><p class="section-description">调整颜色，重新计算当前区域。</p><label class="slider-label" for="exposure"><span>曝光</span><output id="exposureValue">0.00 EV</output></label><input id="exposure" type="range" min="-2" max="2" step="0.05" value="0"><label class="slider-label" for="contrast"><span>对比度</span><output id="contrastValue">1.00</output></label><input id="contrast" type="range" min="0.5" max="1.8" step="0.02" value="1"><label class="slider-label" for="saturation"><span>饱和度</span><output id="saturationValue">1.00</output></label><input id="saturation" type="range" min="0" max="2" step="0.02" value="1"><button id="resetEdits" class="full subtle">还原画面参数</button><p class="hint">颜色调整为成像近似，不改变场景物理光照。</p></section>
+
+    <section class="inspector-section"><p class="eyebrow">FUNCTION ASSET</p><h2>从观察得到的函数</h2><dl class="asset-details"><dt>参考场景</dt><dd id="assetTitle">Lautersee · 山林与湖水</dd><dt>原始尺寸</dt><dd id="nativeSize">—</dd><dt>可计算参数</dt><dd id="parameterCount">—</dd><dt>计算时读取原图</dt><dd class="good">无需原图</dd><dt>表示</dt><dd>二维连续高斯颜色场</dd></dl><p class="hint" id="representationScope">逐参考拟合的视觉函数。未证明新场景生成、物体语义理解或自然动态能力。</p><button id="showAssetInfo" class="full">查看资产与来源</button></section>
+
+    <section class="inspector-section"><p class="eyebrow">DELIVERABLES</p><h2>可重放的输出</h2><p class="section-description">工程包含函数参数、当前视口与颜色设置。导入后可以独立计算。</p><button id="exportEvidence" class="full">导出本次运行记录</button><button id="exportVideo" class="full">导出 5 秒镜头视频</button><p class="hint" id="videoNote">120 帧逐帧求值的二维镜头推进；场景内容保持固定。</p><div id="videoDownloads" class="artifact-links" hidden></div></section>
+
+    <section class="inspector-section feedback-section"><p class="eyebrow">YOUR REVIEW</p><h2>记录视觉反馈</h2><textarea id="feedbackNote" rows="3" maxlength="2000" aria-label="视觉质量反馈" placeholder="哪一处细节需要继续改进？"></textarea><div class="feedback-actions"><button id="acceptQuality">质量可用</button><button id="rejectQuality">需要改进</button></div><p class="hint" id="feedbackState">反馈会随工程保存。</p></section>
+  </aside>
+</div>
+
+<input id="projectFile" type="file" accept=".json,application/json" hidden>
+<dialog id="infoDialog"><div class="dialog-heading"><h2 id="dialogTitle"></h2><button id="closeDialog">关闭</button></div><pre id="dialogContent"></pre></dialog>
+<script src="crf-quality12.js"></script><script src="quality-harness12.js"></script><script src="crf-video09.js"></script><script src="quality-editor12.js" defer></script>
+</body>
+</html>

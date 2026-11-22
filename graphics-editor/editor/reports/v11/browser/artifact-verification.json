@@ -1,0 +1,92 @@
+{
+  "schema": "crf.browser_artifact_validation/1.1",
+  "at": "2026-11-22T04:37:18.890Z",
+  "status": "passed",
+  "scope": "Actual downloaded artifact verification; browser interaction is documented by a separate observed run.",
+  "artifacts": [
+    {
+      "name": "water-scene.crf.json",
+      "bytes": 72976,
+      "sha256": "e8798653a54fa9374bf3de215b3ba541969570e23e46441d2f30ca202a07fd91"
+    },
+    {
+      "name": "water-scene.png",
+      "bytes": 238533,
+      "sha256": "a2e518d5f9bdb8a6f974fef45a7ecf1e6acd758e161531ad20d420167157ab37"
+    },
+    {
+      "name": "water-scene.webm",
+      "bytes": 235323,
+      "sha256": "d00ff8b3d75a590197117334da24e41409b2ac2c074606fc350d5f330b37a42c"
+    }
+  ],
+  "project": {
+    "id": "project.mountain_lake",
+    "sceneDigest": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+    "projectDigest": "c8a9de0cfda07ffe2f3e3ad987d9db33b630173046a920835e4318ec5e7c9c7a",
+    "functions": 5,
+    "neuralFunctions": 1,
+    "objects": 6,
+    "trainingStates": [
+      "completed"
+    ],
+    "feedbackRecords": 1,
+    "sourceRGBAtRender": false
+  },
+  "profile": {
+    "backend": "cached",
+    "samples": 1,
+    "time": 0,
+    "cacheResolution": 64
+  },
+  "png": {
+    "width": 640,
+    "height": 480,
+    "alphaExact": true,
+    "meanAbsoluteRGB8": 0,
+    "maxChannelRGB8": 0,
+    "exactChannelFraction": 1,
+    "comparisonToleranceRGB8": 1,
+    "toleranceScope": "Same JavaScript program across browser and Node numerical runtimes; browser reopen byte identity is checked separately."
+  },
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 640,
+        "height": 480,
+        "color_range": "pc",
+        "color_space": "bt709",
+        "color_transfer": "iec61966-2-1",
+        "color_primaries": "bt709",
+        "r_frame_rate": "24/1",
+        "nb_read_frames": "120"
+      }
+    ],
+    "format": {
+      "duration": "5.000000"
+    },
+    "expectedFrames": 120,
+    "expectedDurationSeconds": 5,
+    "firstFrameDifference": {
+      "meanAbsoluteRGB8": 1.2132573784722223,
+      "maxChannelRGB8": 19,
+      "exactChannelFraction": 0.2413693576388889
+    },
+    "differenceScope": "Measured lossy encode/decode difference; no universal visual-quality claim."
+  },
+  "sourceHashes": {
+    "web/crf-core11.js": "38e9d1d92490c1f6a73e3f7b20017a7267be158e041971cde3bf2263a80c050d",
+    "web/learn11.js": "7132a94db2043443900eb4bdd5d4c2981b9c01c315f2d2e39be14982617506a5",
+    "web/editor11.js": "f6ef534ff31fb891efee7a6cd10b26012ec465b25c0c9e4563a1d8b9fa587972",
+    "web/render-worker11.js": "7ef93fb75a843096958c66906f8b452a02c841937e71aa4dd175ec77c4831f07",
+    "web/crf-video09.js": "cfe939684ed4385acdaae5bf4b730130502c50024b08661fd824cebedf2305c3"
+  },
+  "environment": {
+    "node": "v24.22.3",
+    "platform": "linux",
+    "arch": "x64"
+  }
+}

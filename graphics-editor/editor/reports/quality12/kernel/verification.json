@@ -1,0 +1,335 @@
+{
+  "schema": "crf.quality_kernel_verification.v1",
+  "version": "1.1.0-experimental.2",
+  "generatedAt": "2026-11-22T05:21:37.871Z",
+  "status": "passed",
+  "scope": "numerical_implementation_and_replay_not_a_new_reference_quality_score",
+  "environment": {
+    "node": "v24.22.3",
+    "platform": "linux",
+    "arch": "x64",
+    "cpuModel": "AMD EPYC 9V74 80-Core Processor",
+    "cpuCount": 9
+  },
+  "asset": {
+    "path": "web/assets/quality12/alpine.asset.json",
+    "sha256": "c82556bd942e63f73ff2c3dedfd98cec0b3ebfd8cd5716a9bcd43cea1aaa6672",
+    "bytes": 5328907,
+    "gaussianCount": 65536,
+    "qualityContractHash": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8"
+  },
+  "renderer": {
+    "path": "web/crf-quality12.js",
+    "sha256": "09a93dc3ae598b6bb1ccbb48c5ceac07d6a8bc540a3b8090f0b748d07847a72f"
+  },
+  "verifier": {
+    "path": "scripts/verify_quality12.cjs",
+    "sha256": "ee3b544506003fad37f52297727e5931c648860bcc15a891d5d10891ce76ee08"
+  },
+  "independentPythonFrame": {
+    "path": "reports/quality12/alpine/reconstruction.png",
+    "sha256": "60aff7c35f313ab36605269958e768a77f4eea8d1511e9b619fd3d1486a8e418"
+  },
+  "outputs": {
+    "native": {
+      "path": "reports/quality12/kernel/native.png",
+      "sha256": "f74e9254e20dcabd1745138c989a2d0a5fcd1a721920634741f0a1c87669c891",
+      "rgbaSHA256": "1d1e3dd5e8854fe659735dc33974443a136d5471084951e40bf28b2a3a3c90e1",
+      "bytes": 850954,
+      "width": 800,
+      "height": 531
+    },
+    "doubleResolution": {
+      "path": "reports/quality12/kernel/double-resolution.png",
+      "sha256": "de36eef7dfb7e5789915e4b475655699c9916b03f94a2058cb4183314109a36e",
+      "rgbaSHA256": "1043a1cff66b775232f388325ba36c2aeb4ca50d5225a28535ca7fabd575b8f0",
+      "bytes": 2703204,
+      "width": 1600,
+      "height": 1062
+    }
+  },
+  "timings": {
+    "scope": "single_cold_synchronous_render_on_this_machine_not_browser_or_realtime_claim",
+    "nativeMs": 647.649172,
+    "doubleResolutionMs": 2405.0136310000003
+  },
+  "nativeDiagnostics": {
+    "engine": "CRFQuality12",
+    "version": "1.1.0-experimental.2",
+    "renderer": "direct_signed_anisotropic_gaussian_support_splat",
+    "elapsedMs": 647.649172,
+    "gaussianCount": 65536,
+    "parameterCount": 524291,
+    "supportVisits": 10896211,
+    "basisEvaluations": 7969312,
+    "supportVisitLimit": 200000000,
+    "sourceWidth": 800,
+    "sourceHeight": 531,
+    "roi": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "outputWidth": 800,
+    "outputHeight": 531,
+    "sampling": "pixel_centres_in_source_plane",
+    "accumulation": "float64_asset_order",
+    "cutoffSigma": 4,
+    "colorSpace": "srgb_encoded_0_255",
+    "quantization": "clamp_floor_value_plus_half",
+    "sourceRGBAtRender": false,
+    "sourceRGBBlit": false,
+    "colourRasterResampling": false,
+    "cachedColourField": false,
+    "referenceConditioned": true,
+    "novelSceneGeneration": false,
+    "superResolutionClaim": false,
+    "coverageSampling": "opaque_rectangle",
+    "editingModel": "linear_exposure_then_display_contrast_and_saturation",
+    "contrastPivotSRGB8": 127.5,
+    "saturationLumaWeights": [
+      0.2126,
+      0.7152,
+      0.0722
+    ],
+    "physicalRelighting": false,
+    "qualityClaim": "requires_separate_reference_evaluation"
+  },
+  "doubleResolutionDiagnostics": {
+    "engine": "CRFQuality12",
+    "version": "1.1.0-experimental.2",
+    "renderer": "direct_signed_anisotropic_gaussian_support_splat",
+    "elapsedMs": 2405.0136310000003,
+    "gaussianCount": 65536,
+    "parameterCount": 524291,
+    "supportVisits": 43594477,
+    "basisEvaluations": 31873119,
+    "supportVisitLimit": 200000000,
+    "sourceWidth": 800,
+    "sourceHeight": 531,
+    "roi": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "outputWidth": 1600,
+    "outputHeight": 1062,
+    "sampling": "pixel_centres_in_source_plane",
+    "accumulation": "float64_asset_order",
+    "cutoffSigma": 4,
+    "colorSpace": "srgb_encoded_0_255",
+    "quantization": "clamp_floor_value_plus_half",
+    "sourceRGBAtRender": false,
+    "sourceRGBBlit": false,
+    "colourRasterResampling": false,
+    "cachedColourField": false,
+    "referenceConditioned": true,
+    "novelSceneGeneration": false,
+    "superResolutionClaim": false,
+    "coverageSampling": "opaque_rectangle",
+    "editingModel": "linear_exposure_then_display_contrast_and_saturation",
+    "contrastPivotSRGB8": 127.5,
+    "saturationLumaWeights": [
+      0.2126,
+      0.7152,
+      0.0722
+    ],
+    "physicalRelighting": false,
+    "qualityClaim": "requires_separate_reference_evaluation"
+  },
+  "crossRuntime": {
+    "width": 800,
+    "height": 531,
+    "channels": "RGBA8",
+    "changedChannels": 0,
+    "changedPixels": 0,
+    "maxChannelError": 0,
+    "meanRGBError": 0,
+    "rgbPSNR": null,
+    "exact": true,
+    "identicalPSNRConvention": "null_means_zero_error_infinite_PSNR"
+  },
+  "JSONReplay": {
+    "width": 800,
+    "height": 531,
+    "channels": "RGBA8",
+    "changedChannels": 0,
+    "changedPixels": 0,
+    "maxChannelError": 0,
+    "meanRGBError": 0,
+    "rgbPSNR": null,
+    "exact": true,
+    "identicalPSNRConvention": "null_means_zero_error_infinite_PSNR",
+    "contentHash": "6cae966a32008eeed53225e74c37b450c64bb69b76d1e427a423d4caac8a05e5",
+    "serializedBytes": 5329402
+  },
+  "isolatedReplay": {
+    "width": 800,
+    "height": 531,
+    "channels": "RGBA8",
+    "changedChannels": 0,
+    "changedPixels": 0,
+    "maxChannelError": 0,
+    "meanRGBError": 0,
+    "rgbPSNR": null,
+    "exact": true,
+    "identicalPSNRConvention": "null_means_zero_error_infinite_PSNR",
+    "process": "fresh_Node_process",
+    "filesSupplied": [
+      "kernel.cjs",
+      "project.json",
+      "replay.cjs"
+    ],
+    "referenceImageSupplied": false,
+    "sourcePhotographSupplied": false,
+    "networkRequired": false,
+    "accessSandboxClaim": false
+  },
+  "coefficientAblation": {
+    "width": 800,
+    "height": 531,
+    "channels": "RGBA8",
+    "changedChannels": 1271767,
+    "changedPixels": 424800,
+    "maxChannelError": 136,
+    "meanRGBError": 70.82922865662272,
+    "rgbPSNR": 10.115745314448656,
+    "exact": false,
+    "identicalPSNRConvention": "null_means_zero_error_infinite_PSNR",
+    "intervention": "remove_all_splats_keep_base",
+    "purpose": "confirm_declared_function_coefficients_materially_drive_pixels_not_an_external_RGB_image"
+  },
+  "crops": [
+    {
+      "id": "mountain_forest",
+      "sourcePixelBounds": [
+        40,
+        26,
+        320,
+        293
+      ],
+      "requestedROI": [
+        0.05,
+        0.05,
+        0.4,
+        0.55
+      ],
+      "renderedROI": [
+        0.05,
+        0.04896421845574388,
+        0.4,
+        0.551789077212806
+      ],
+      "independentCropReplay": {
+        "width": 280,
+        "height": 267,
+        "channels": "RGBA8",
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxChannelError": 0,
+        "meanRGBError": 0,
+        "rgbPSNR": null,
+        "exact": true,
+        "identicalPSNRConvention": "null_means_zero_error_infinite_PSNR"
+      },
+      "output": {
+        "path": "reports/quality12/kernel/mountain_forest.png",
+        "sha256": "2d8ef82212520c8356f8765608d959a4cd36f6cd4971ff6ee6d5c8cd60da101e",
+        "rgbaSHA256": "51ba71a89bf2d4bb05bc8a81b039fda3325c3be277a94473ff09ba7eea78fb91",
+        "bytes": 190023,
+        "width": 280,
+        "height": 267
+      }
+    },
+    {
+      "id": "water",
+      "sourcePixelBounds": [
+        40,
+        371,
+        760,
+        521
+      ],
+      "requestedROI": [
+        0.05,
+        0.7,
+        0.95,
+        0.98
+      ],
+      "renderedROI": [
+        0.05,
+        0.6986817325800376,
+        0.95,
+        0.9811676082862524
+      ],
+      "independentCropReplay": {
+        "width": 720,
+        "height": 150,
+        "channels": "RGBA8",
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxChannelError": 0,
+        "meanRGBError": 0,
+        "rgbPSNR": null,
+        "exact": true,
+        "identicalPSNRConvention": "null_means_zero_error_infinite_PSNR"
+      },
+      "output": {
+        "path": "reports/quality12/kernel/water.png",
+        "sha256": "68680af6a1450d29c55cced186c137f6b7f6f3eb75adc2f4e95e39c67ed97abb",
+        "rgbaSHA256": "81bbb2968c6540df4d6a26fce6dd7c735dc93964249c15b5246f9f4f0790880d",
+        "bytes": 192680,
+        "width": 720,
+        "height": 150
+      }
+    },
+    {
+      "id": "shore_buildings",
+      "sourcePixelBounds": [
+        480,
+        254,
+        784,
+        372
+      ],
+      "requestedROI": [
+        0.6,
+        0.48,
+        0.98,
+        0.7
+      ],
+      "renderedROI": [
+        0.6,
+        0.4783427495291902,
+        0.98,
+        0.7005649717514124
+      ],
+      "independentCropReplay": {
+        "width": 304,
+        "height": 118,
+        "channels": "RGBA8",
+        "changedChannels": 0,
+        "changedPixels": 0,
+        "maxChannelError": 0,
+        "meanRGBError": 0,
+        "rgbPSNR": null,
+        "exact": true,
+        "identicalPSNRConvention": "null_means_zero_error_infinite_PSNR"
+      },
+      "output": {
+        "path": "reports/quality12/kernel/shore_buildings.png",
+        "sha256": "1b94807ae942e2726a155e3bf7c57f8cdafe44650a9bbf56d3fe7db1904bb484",
+        "rgbaSHA256": "8c999cfd93541a030444b40fef5e1d4345e841af9e581565447fac575f40d858",
+        "bytes": 92193,
+        "width": 304,
+        "height": 118
+      }
+    }
+  ],
+  "limitations": [
+    "The reference-conditioned reconstruction is not a generative model.",
+    "Double resolution evaluates the fitted continuous field; it does not establish recovery of unseen source detail.",
+    "Tone edits are linear exposure followed by display-space contrast/saturation, not physical relighting.",
+    "Browser timing and actual UI export are validated separately."
+  ]
+}

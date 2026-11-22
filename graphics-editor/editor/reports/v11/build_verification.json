@@ -1,0 +1,46 @@
+{
+  "schema": "crf.build.v1.1",
+  "builtAt": "2026-11-22T04:41:24.732Z",
+  "releaseStatus": "learnable_functions_experimental",
+  "sourceFiles": 893,
+  "legacyAssetsChecked": 885,
+  "legacyAssetsByteExact": true,
+  "allPublishedURLsByteExact": true,
+  "sourcePreserved": true,
+  "originalBytes": 383726679,
+  "expandedDistBytes": 261220779,
+  "expandedLimitBytes": 262144000,
+  "headroomBytes": 923221,
+  "workerBytes": 638088,
+  "workerSha256": "19da757e61fffb04c13ecf23b83f3f74ca6a588e3dd2a24c75beab6f7efb9dd5",
+  "textPacking": {
+    "sourceFiles": 893,
+    "sourceBytes": 383726679,
+    "packedStorageFiles": 340,
+    "mappedPublicURLs": 369,
+    "duplicateAliases": 29,
+    "deduplicatedBytes": 7351430,
+    "gzipSavedBytes": 77856374,
+    "clientBytes": 298518875
+  },
+  "archives": {
+    "archiveCount": 9,
+    "originalBytes": 125010528,
+    "storedBytes": 87074082,
+    "savedBytes": 37936446,
+    "rawZipSegments": 2063,
+    "uniqueChunks": 1711,
+    "packFiles": 25,
+    "maxPackBytes": 4194304,
+    "payloadBytes": 124831608,
+    "metadataBytes": 178920,
+    "removedDisposableCopies": 9,
+    "sourcePreserved": true,
+    "allArchivesByteExact": true
+  },
+  "configuredSecretsInBuild": false,
+  "verifiedStatusPaths": [
+    "/api/crf/status",
+    "/api/crf/functions11/status"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "assetId": "landscape.alpine",
+  "source": "web/assets/v08/references/landscape.alpine.png",
+  "sourceSHA256": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+  "width": 800,
+  "height": 531,
+  "gaussians": 32768,
+  "assetBytes": 2156609,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "renderedFromExportOnly": true,
+  "metrics": {
+    "mae": 6.930369585687382,
+    "rmse": 11.623945557616318,
+    "psnr": 26.823732264370143,
+    "ssim": 0.7988511084673664,
+    "maxError": 155,
+    "exactRGBFraction": 0.0681379472693032,
+    "evaluatedPixels": 424800,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fit": {
+    "iterationsPerStage": 30,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": false,
+      "steps": 0
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 11468,
+        "elapsedSeconds": 0.894,
+        "mae": 12.045907093534213,
+        "rmse": 19.938929948602855,
+        "psnr": 22.136766657437956,
+        "ssim": 0.532884692407702,
+        "maxError": 202,
+        "exactRGBFraction": 0.02793079096045198,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 11468,
+        "elapsedSeconds": 2.14,
+        "mae": 10.12624607658506,
+        "rmse": 16.76390752233653,
+        "psnr": 23.643298480796968,
+        "ssim": 0.5659342523415194,
+        "maxError": 176,
+        "exactRGBFraction": 0.04599576271186441,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 25313,
+        "elapsedSeconds": 6.556,
+        "mae": 7.744256120527307,
+        "rmse": 13.048439439802257,
+        "psnr": 25.81963212340628,
+        "ssim": 0.7452592901655388,
+        "maxError": 165,
+        "exactRGBFraction": 0.061558380414312615,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 32768,
+        "elapsedSeconds": 9.616,
+        "mae": 6.930371155053359,
+        "rmse": 11.623946975236665,
+        "psnr": 26.823731205066043,
+        "ssim": 0.7988511331464808,
+        "maxError": 155,
+        "exactRGBFraction": 0.0681379472693032,
+        "evaluatedPixels": 424800,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 9.632,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "targets": {
+    "pilot": {
+      "psnr": 32,
+      "ssim": 0.95
+    },
+    "highFidelity": {
+      "psnr": 38,
+      "ssim": 0.98
+    }
+  },
+  "passedPilot": false,
+  "passedHighFidelity": false
+}

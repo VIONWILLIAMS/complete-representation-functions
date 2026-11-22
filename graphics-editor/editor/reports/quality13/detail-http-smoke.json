@@ -1,0 +1,12 @@
+{
+  "schema": "crf.detail_http_smoke.v1",
+  "status": "passed",
+  "command": "node scripts/dev_quality_review13.mjs --port 4178",
+  "getStatus": 200,
+  "getBodyByteExact": true,
+  "headStatus": 200,
+  "bytes": 31493297,
+  "sha256": "371836a18d8a77834d6010fb8039b01c96c0e5f5eb6290ff02860fcf3eb47dec",
+  "browserExecutionVerified": false,
+  "scope": "HTTP serving only; no browser DOM, interaction, canvas or downloads checked."
+}

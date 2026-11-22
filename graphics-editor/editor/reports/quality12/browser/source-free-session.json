@@ -1,0 +1,688 @@
+{
+  "schema": "crf.quality_session.v1",
+  "version": "1.1.0-experimental.2",
+  "createdAt": "2026-11-22T05:23:52.942Z",
+  "assetFileSHA256": "c82556bd942e63f73ff2c3dedfd98cec0b3ebfd8cd5716a9bcd43cea1aaa6672",
+  "reportFileMatched": true,
+  "currentAssetMatchesBaseline": true,
+  "currentOutputIsBaseline": true,
+  "referenceImageLoads": 0,
+  "referencePixelsPassedToWorker": false,
+  "qualityEvidence": {
+    "schema": "crf.quality_evidence.v1",
+    "version": "1.1.0-experimental.2",
+    "source": {
+      "path": "web/assets/v08/references/landscape.alpine.png",
+      "sha256": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+      "width": 800,
+      "height": 531,
+      "decodedRGBASHA256": "e3a4788daf7cebbd8b228ac51fd5fdaaa83099cedeb3c13c7c3d8f915152b6e1",
+      "resized": false,
+      "cropped": false
+    },
+    "provenance": {
+      "kind": "observation_conditioned_gaussian_reconstruction",
+      "sourceRGBEmbedded": false,
+      "losslessResidualEmbedded": false,
+      "perPixelRGBTable": false,
+      "neuralModelTraining": false,
+      "referenceConditioned": true,
+      "optimizationScope": "this_observation_only",
+      "generalSceneGeneration": false,
+      "physicalRelighting": false,
+      "geometry": "two_dimensional_image_plane",
+      "illumination": "inherited_from_observation",
+      "source": {
+        "path": "web/assets/v08/references/landscape.alpine.png",
+        "sha256": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+        "width": 800,
+        "height": 531,
+        "decodedRGBASHA256": "e3a4788daf7cebbd8b228ac51fd5fdaaa83099cedeb3c13c7c3d8f915152b6e1",
+        "resized": false,
+        "cropped": false
+      },
+      "qualityContractRole": "main_reference_acceptance",
+      "fitterSHA256": "6fa49af17569d967488f9e2f5ee4d248ebfb2cffe3c49956b6ea24ca149b3313",
+      "legacyFitterSHA256": "d8e576bb59e02dd9328e29c64a321f1a5febaec1a0622982386bec9433de8aa4"
+    },
+    "metrics": {
+      "mae": 2.1342953546767105,
+      "rmse": 3.7424202534484574,
+      "psnr": 36.66775251244562,
+      "ssim": 0.9728077248326319,
+      "maxError": 80,
+      "exactRGBFraction": 0.13453154425612052,
+      "evaluatedPixels": 424800
+    },
+    "rois": [
+      {
+        "id": "mountain_forest",
+        "name": "山体与树林",
+        "normalizedBox": [
+          0.05,
+          0.05,
+          0.4,
+          0.55
+        ],
+        "pixelBounds": [
+          40,
+          26,
+          320,
+          293
+        ],
+        "metrics": {
+          "mae": 3.168151417870519,
+          "rmse": 4.7757379999230904,
+          "psnr": 34.549993746708324,
+          "ssim": 0.9656937728189448,
+          "maxError": 38,
+          "exactRGBFraction": 0.06736222578919208,
+          "evaluatedPixels": 74760
+        },
+        "passed": true
+      },
+      {
+        "id": "water",
+        "name": "水面与倒影",
+        "normalizedBox": [
+          0.05,
+          0.7,
+          0.95,
+          0.98
+        ],
+        "pixelBounds": [
+          40,
+          371,
+          760,
+          521
+        ],
+        "metrics": {
+          "mae": 1.6501574074074075,
+          "rmse": 2.656420709837642,
+          "psnr": 39.64486646063503,
+          "ssim": 0.9659826656082298,
+          "maxError": 41,
+          "exactRGBFraction": 0.0687037037037037,
+          "evaluatedPixels": 108000
+        },
+        "passed": true
+      },
+      {
+        "id": "shore_buildings",
+        "name": "岸线与建筑",
+        "normalizedBox": [
+          0.6,
+          0.48,
+          0.98,
+          0.7
+        ],
+        "pixelBounds": [
+          480,
+          254,
+          784,
+          372
+        ],
+        "metrics": {
+          "mae": 3.371245911388641,
+          "rmse": 5.054358102776571,
+          "psnr": 34.05748343733242,
+          "ssim": 0.9670445894980022,
+          "maxError": 80,
+          "exactRGBFraction": 0.02266391614629795,
+          "evaluatedPixels": 35872
+        },
+        "passed": true
+      }
+    ],
+    "metricSpec": {
+      "colorSpace": "decoded_srgb_encoded_8bit",
+      "rounding": "floor(x+0.5), clamp 0..255",
+      "ssim": {
+        "window": "gaussian",
+        "sigma": 1.5,
+        "truncate": 3.5,
+        "boundary": "reflect",
+        "covariance": "population",
+        "C1": 6.5025,
+        "C2": 58.5225,
+        "channels": "RGB independently, arithmetic mean",
+        "roi": "select from the full-frame SSIM map, no recropping/filtering"
+      },
+      "roiBounds": "floor(min*dimension), ceil(max*dimension), half-open"
+    },
+    "qualityContractHash": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+    "qualityContractId": "alpine-native-quality-2026-11-22",
+    "gates": {
+      "fullFrame": {
+        "psnrMin": 32,
+        "ssimMin": 0.95,
+        "maeMax": 4
+      },
+      "rois": [
+        {
+          "id": "mountain_forest",
+          "ssimMin": 0.9,
+          "maeMax": 6
+        },
+        {
+          "id": "water",
+          "ssimMin": 0.9,
+          "maeMax": 6
+        },
+        {
+          "id": "shore_buildings",
+          "ssimMin": 0.9,
+          "maeMax": 6
+        }
+      ],
+      "fullFramePassed": true,
+      "roiPassed": true
+    },
+    "passed": true,
+    "qualityContractRole": "main_reference_acceptance",
+    "representation": {
+      "gaussians": 65536,
+      "parameterCount": 524291,
+      "geometryParameterCount": 327680,
+      "colourParameterCount": 196611,
+      "parameterFloat32Bytes": 2097164,
+      "parameterFloat64Bytes": 4194328,
+      "rawRGBBytes": 1274400,
+      "float32ToRawRGBRatio": 1.6456089139987444,
+      "jsonBytes": 5328907,
+      "jsonToRawRGBRatio": 4.181502667922159,
+      "gaussiansPerSourcePixel": 0.1542749529190207,
+      "minimumSigma": 0.35,
+      "medianSigma": 1.0042355,
+      "maximumSigma": 7.391421,
+      "sigmasAtMinimum": 4846,
+      "encoding": "JSON decimal explicit continuous Gaussian parameters; not a compression claim"
+    },
+    "fit": {
+      "spec": {
+        "budget": 65536,
+        "iterations": 50,
+        "geometry_steps": 100,
+        "polish_iterations": 30,
+        "initial_fraction": 0.35,
+        "decimals": 6
+      },
+      "seconds": 48.544883,
+      "history": [
+        {
+          "phase": "grid_sample_initialization",
+          "count": 22937,
+          "elapsedSeconds": 1.282114,
+          "mae": 10.877521186440678,
+          "rmse": 18.567211745676527,
+          "psnr": 22.755869803549615,
+          "ssim": 0.5696735953211336,
+          "maxError": 217,
+          "exactRGBFraction": 0.031593691148775895,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255"
+        },
+        {
+          "phase": "fixed_geometry_least_squares",
+          "count": 22937,
+          "elapsedSeconds": 2.923156,
+          "mae": 9.134996861268048,
+          "rmse": 15.467306863414548,
+          "psnr": 24.342509572801156,
+          "ssim": 0.6204774650008247,
+          "maxError": 176,
+          "exactRGBFraction": 0.06286016949152542,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255"
+        },
+        {
+          "phase": "adaptive_geometry_least_squares",
+          "count": 50626,
+          "elapsedSeconds": 10.734159,
+          "mae": 5.970987915881984,
+          "rmse": 10.040038841732777,
+          "psnr": 28.09609574947602,
+          "ssim": 0.845794390842972,
+          "maxError": 138,
+          "exactRGBFraction": 0.0754472693032015,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255"
+        },
+        {
+          "phase": "adaptive_geometry_least_squares",
+          "count": 65536,
+          "elapsedSeconds": 16.303935,
+          "mae": 5.047126490897678,
+          "rmse": 8.460272267630378,
+          "psnr": 29.583116814974776,
+          "ssim": 0.8922935968961541,
+          "maxError": 121,
+          "exactRGBFraction": 0.0881238229755179,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255"
+        },
+        {
+          "phase": "joint_geometry_colour_0",
+          "elapsedSeconds": 16.63805,
+          "mae": 5.04712570621469,
+          "rmse": 8.460272499503228,
+          "psnr": 29.58311657691838,
+          "ssim": 0.8922935734565928,
+          "maxError": 121,
+          "exactRGBFraction": 0.08813088512241055,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 71.66980202106416
+        },
+        {
+          "phase": "joint_geometry_colour_10",
+          "elapsedSeconds": 19.376895,
+          "mae": 3.8168942247332076,
+          "rmse": 6.182277664819135,
+          "psnr": 32.307833475755075,
+          "ssim": 0.9348468448081587,
+          "maxError": 106,
+          "exactRGBFraction": 0.05399952919020715,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 38.26704807028619
+        },
+        {
+          "phase": "joint_geometry_colour_20",
+          "elapsedSeconds": 21.917535,
+          "mae": 3.19418157564344,
+          "rmse": 5.374359259025414,
+          "psnr": 33.52426972290533,
+          "ssim": 0.9500884497305,
+          "maxError": 110,
+          "exactRGBFraction": 0.07986817325800377,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 28.87895815747772
+        },
+        {
+          "phase": "joint_geometry_colour_30",
+          "elapsedSeconds": 24.531582,
+          "mae": 2.828760985561833,
+          "rmse": 4.855051940725635,
+          "psnr": 34.40692599918538,
+          "ssim": 0.9582433807282639,
+          "maxError": 110,
+          "exactRGBFraction": 0.09851224105461394,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 23.533518650162158
+        },
+        {
+          "phase": "joint_geometry_colour_40",
+          "elapsedSeconds": 27.255188,
+          "mae": 2.5936268047708726,
+          "rmse": 4.5043466138918635,
+          "psnr": 35.058167558364694,
+          "ssim": 0.9632509490438649,
+          "maxError": 110,
+          "exactRGBFraction": 0.11266949152542373,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 20.24348293389461
+        },
+        {
+          "phase": "joint_geometry_colour_50",
+          "elapsedSeconds": 30.033395,
+          "mae": 2.440164783427495,
+          "rmse": 4.2602676826915244,
+          "psnr": 35.5420658544955,
+          "ssim": 0.9664974667574154,
+          "maxError": 109,
+          "exactRGBFraction": 0.12003060263653484,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 18.097502807005664
+        },
+        {
+          "phase": "joint_geometry_colour_60",
+          "elapsedSeconds": 32.660061,
+          "mae": 2.333416509730069,
+          "rmse": 4.084396840634988,
+          "psnr": 35.90824497698727,
+          "ssim": 0.9687257185759707,
+          "maxError": 107,
+          "exactRGBFraction": 0.12535310734463276,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 16.626578184907203
+        },
+        {
+          "phase": "joint_geometry_colour_70",
+          "elapsedSeconds": 35.221353,
+          "mae": 2.2594985875706213,
+          "rmse": 3.95847531710862,
+          "psnr": 36.1802447834623,
+          "ssim": 0.9702474120125795,
+          "maxError": 104,
+          "exactRGBFraction": 0.12813323917137476,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 15.61314791459953
+        },
+        {
+          "phase": "joint_geometry_colour_80",
+          "elapsedSeconds": 37.807881,
+          "mae": 2.2103421217827997,
+          "rmse": 3.8726241121653278,
+          "psnr": 36.37069670502621,
+          "ssim": 0.9712544696023742,
+          "maxError": 102,
+          "exactRGBFraction": 0.13014830508474576,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 14.936559175654708
+        },
+        {
+          "phase": "joint_geometry_colour_90",
+          "elapsedSeconds": 40.386359,
+          "mae": 2.1815473948524797,
+          "rmse": 3.8209330261347367,
+          "psnr": 36.48741510110318,
+          "ssim": 0.9718561989970304,
+          "maxError": 100,
+          "exactRGBFraction": 0.1310593220338983,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 14.540020896969033
+        },
+        {
+          "phase": "joint_geometry_colour_100",
+          "elapsedSeconds": 43.056433,
+          "mae": 2.1634730069052104,
+          "rmse": 3.7875479482295806,
+          "psnr": 36.56364081929186,
+          "ssim": 0.9722376342846288,
+          "maxError": 99,
+          "exactRGBFraction": 0.13167372881355932,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536,
+          "floatMSE": 14.287797384954382
+        },
+        {
+          "phase": "global_colour_polish",
+          "elapsedSeconds": 48.382384,
+          "mae": 2.134300062774639,
+          "rmse": 3.7424246565704857,
+          "psnr": 36.66774229312044,
+          "ssim": 0.9728075957320974,
+          "maxError": 80,
+          "exactRGBFraction": 0.1345291902071563,
+          "evaluatedPixels": 424800,
+          "rounding": "floor(x+0.5), clamp 0..255",
+          "count": 65536
+        }
+      ],
+      "geometryOptimization": {
+        "available": true,
+        "steps": 100,
+        "bestFloatMSE": 14.287797384954382,
+        "minimumSigmaConstraint": 0.35,
+        "nativeBuildSHA256": "73e03fee5a8844a4d2ab939dadc68fafd79037380082ac0ef6c4d1f0d988f834",
+        "history": [
+          {
+            "step": 0,
+            "floatMSE": 71.66980202106416,
+            "bestFloatMSE": 71.66980202106416
+          },
+          {
+            "step": 10,
+            "floatMSE": 38.26704807028619,
+            "bestFloatMSE": 38.26704807028619
+          },
+          {
+            "step": 20,
+            "floatMSE": 28.87895815747772,
+            "bestFloatMSE": 28.87895815747772
+          },
+          {
+            "step": 30,
+            "floatMSE": 23.533518650162158,
+            "bestFloatMSE": 23.533518650162158
+          },
+          {
+            "step": 40,
+            "floatMSE": 20.24348293389461,
+            "bestFloatMSE": 20.24348293389461
+          },
+          {
+            "step": 50,
+            "floatMSE": 18.097502807005664,
+            "bestFloatMSE": 18.097502807005664
+          },
+          {
+            "step": 60,
+            "floatMSE": 16.626578184907203,
+            "bestFloatMSE": 16.626578184907203
+          },
+          {
+            "step": 70,
+            "floatMSE": 15.61314791459953,
+            "bestFloatMSE": 15.61314791459953
+          },
+          {
+            "step": 80,
+            "floatMSE": 14.936559175654708,
+            "bestFloatMSE": 14.936559175654708
+          },
+          {
+            "step": 90,
+            "floatMSE": 14.540020896969033,
+            "bestFloatMSE": 14.540020896969033
+          },
+          {
+            "step": 100,
+            "floatMSE": 14.287797384954382,
+            "bestFloatMSE": 14.287797384954382
+          }
+        ],
+        "parameters": "cx,cy,log_sigma_x,log_sigma_y,theta,R,G,B"
+      },
+      "colourPolish": {
+        "iterations": 30,
+        "accepted": true,
+        "beforeFloatMSE": 14.28779740207582,
+        "afterFloatMSE": 13.947976841229158
+      },
+      "algorithm": "residual_adaptive_lsmr_joint_geometry_colour_adam_polish",
+      "bestCheckpointRule": "lowest_unquantized_full_frame_MSE_within_each_stage",
+      "minimumSigmaConstraint": 0.35
+    },
+    "exportedJSONReplayed": true,
+    "runtimeSourceImageRead": false,
+    "assetSHA256": "c82556bd942e63f73ff2c3dedfd98cec0b3ebfd8cd5716a9bcd43cea1aaa6672",
+    "asset": {
+      "path": "web/assets/quality12/alpine.asset.json",
+      "sha256": "c82556bd942e63f73ff2c3dedfd98cec0b3ebfd8cd5716a9bcd43cea1aaa6672"
+    },
+    "replayRGBASHA256": "1d1e3dd5e8854fe659735dc33974443a136d5471084951e40bf28b2a3a3c90e1",
+    "frameDescriptor": {
+      "width": 800,
+      "height": 531,
+      "channels": "RGBA8",
+      "colorSpace": "srgb",
+      "alpha": "opaque",
+      "sample": "pixel_centres"
+    },
+    "replaySeconds": 2.551626,
+    "totalSeconds": 51.678924,
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+    },
+    "artifacts": {
+      "asset": "web/assets/quality12/alpine.asset.json",
+      "preview": "reports/quality12/alpine/reconstruction.png"
+    },
+    "claimScope": "One observation-conditioned reconstruction. No held-out scene generation or realistic physical motion claim."
+  },
+  "view": {
+    "width": 800,
+    "height": 531,
+    "roi": [
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  "edits": {
+    "exposure": 0,
+    "contrast": 1,
+    "saturation": 1
+  },
+  "runs": [
+    {
+      "at": "2026-11-22T05:20:05.282Z",
+      "status": "completed",
+      "view": {
+        "width": 800,
+        "height": 531,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "edits": {
+        "exposure": 0,
+        "contrast": 1,
+        "saturation": 1
+      },
+      "diagnostics": {
+        "engine": "CRFQuality12",
+        "version": "1.1.0-experimental.2",
+        "renderer": "direct_signed_anisotropic_gaussian_support_splat",
+        "elapsedMs": 300.69999999925494,
+        "gaussianCount": 65536,
+        "parameterCount": 524291,
+        "supportVisits": 10896211,
+        "basisEvaluations": 7969312,
+        "supportVisitLimit": 200000000,
+        "sourceWidth": 800,
+        "sourceHeight": 531,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "outputWidth": 800,
+        "outputHeight": 531,
+        "sampling": "pixel_centres_in_source_plane",
+        "accumulation": "float64_asset_order",
+        "cutoffSigma": 4,
+        "colorSpace": "srgb_encoded_0_255",
+        "quantization": "clamp_floor_value_plus_half",
+        "sourceRGBAtRender": false,
+        "sourceRGBBlit": false,
+        "colourRasterResampling": false,
+        "cachedColourField": false,
+        "referenceConditioned": true,
+        "novelSceneGeneration": false,
+        "superResolutionClaim": false,
+        "coverageSampling": "opaque_rectangle",
+        "editingModel": "linear_exposure_then_display_contrast_and_saturation",
+        "physicalRelighting": false,
+        "qualityClaim": "requires_separate_reference_evaluation"
+      },
+      "wallMs": 463.2,
+      "referencePixelsPassedToWorker": false
+    },
+    {
+      "at": "2026-11-22T05:22:56.558Z",
+      "status": "completed",
+      "view": {
+        "width": 800,
+        "height": 531,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "edits": {
+        "exposure": 0,
+        "contrast": 1,
+        "saturation": 1
+      },
+      "diagnostics": {
+        "engine": "CRFQuality12",
+        "version": "1.1.0-experimental.2",
+        "renderer": "direct_signed_anisotropic_gaussian_support_splat",
+        "elapsedMs": 319.5,
+        "gaussianCount": 65536,
+        "parameterCount": 524291,
+        "supportVisits": 10896211,
+        "basisEvaluations": 7969312,
+        "supportVisitLimit": 200000000,
+        "sourceWidth": 800,
+        "sourceHeight": 531,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "outputWidth": 800,
+        "outputHeight": 531,
+        "sampling": "pixel_centres_in_source_plane",
+        "accumulation": "float64_asset_order",
+        "cutoffSigma": 4,
+        "colorSpace": "srgb_encoded_0_255",
+        "quantization": "clamp_floor_value_plus_half",
+        "sourceRGBAtRender": false,
+        "sourceRGBBlit": false,
+        "colourRasterResampling": false,
+        "cachedColourField": false,
+        "referenceConditioned": true,
+        "novelSceneGeneration": false,
+        "superResolutionClaim": false,
+        "coverageSampling": "opaque_rectangle",
+        "editingModel": "linear_exposure_then_display_contrast_and_saturation",
+        "physicalRelighting": false,
+        "qualityClaim": "requires_separate_reference_evaluation"
+      },
+      "wallMs": 436.1,
+      "referencePixelsPassedToWorker": false
+    }
+  ],
+  "exports": [
+    {
+      "kind": "png",
+      "at": "2026-11-22T05:22:58.506Z",
+      "width": 800,
+      "height": 531,
+      "bytes": 975699,
+      "projectHash": "540449b92d6e8f2ade3cf416d634f213a261a54be7a4c8d2233929fc19e894e4",
+      "rgbaSHA256": "1d1e3dd5e8854fe659735dc33974443a136d5471084951e40bf28b2a3a3c90e1",
+      "source": "computed_function_pixels"
+    }
+  ],
+  "feedback": [],
+  "limitations": [
+    "Per-reference appearance fitting; unseen-scene synthesis is not established.",
+    "2x sampling does not establish unseen real-world detail.",
+    "Video uses an explicit 2D camera path; no learned natural dynamics."
+  ]
+}
