@@ -1,0 +1,67 @@
+{
+  "schema": "crf.reference_quality_contract.v1",
+  "id": "alpine-native-quality-2026-11-22",
+  "version": "1.1.0-experimental.2",
+  "scope": "reference_conditioned_reconstruction_at_canonical_native_resolution",
+  "frozenBefore": "delivery implementation and final candidate selection; thresholds were sent before feasibility experiments",
+  "reference": {
+    "path": "web/assets/v08/references/landscape.alpine.png",
+    "fileSha256": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+    "width": 800,
+    "height": 531,
+    "normalization": "existing canonical RGB8 asset; originally EXIF-transposed and Lanczos-downsampled from the downloaded 1280x850 source; no further resizing in this evaluation"
+  },
+  "metrics": {
+    "domain": "sRGB encoded RGB8, all three channels, opaque full frame",
+    "quantization": "clamp(floor(value + 0.5), 0, 255)",
+    "mae": "mean absolute error over all RGB channels",
+    "psnr": "10 * log10(255^2 / mean squared RGB8 error)",
+    "ssim": {
+      "implementation": "scipy.ndimage.gaussian_filter per RGB channel; mean of full-frame SSIM map",
+      "sigma": 1.5,
+      "truncate": 3.5,
+      "boundary": "reflect",
+      "covariance": "population",
+      "C1": 6.5025,
+      "C2": 58.5225,
+      "roiPolicy": "crop the already computed full-frame SSIM map; never recompute window padding inside a crop"
+    }
+  },
+  "fullFrame": {"psnrMin": 32, "ssimMin": 0.95, "maeMax": 4},
+  "roiCoordinates": "normalized continuous image boundaries; floor lower bounds, ceil upper bounds, clamp to image; upper bounds exclusive",
+  "rois": [
+    {"id": "mountain_forest", "label": "山体与树林", "bounds": [0.05, 0.05, 0.4, 0.55], "ssimMin": 0.90, "maeMax": 6},
+    {"id": "water", "label": "水面与倒影", "bounds": [0.05, 0.70, 0.95, 0.98], "ssimMin": 0.90, "maeMax": 6},
+    {"id": "shore_buildings", "label": "岸线与建筑", "bounds": [0.60, 0.48, 0.98, 0.70], "ssimMin": 0.90, "maeMax": 6}
+  ],
+  "representation": {
+    "family": "signed additive anisotropic 2D Gaussian functions plus RGB base",
+    "maxBasisCount": 262144,
+    "minSigmaSourcePixels": 0.35,
+    "cutoffSquaredMahalanobis": 16,
+    "sourceRGBRasterEmbedded": false,
+    "residualRasterEmbedded": false,
+    "perPixelLookupAllowed": false,
+    "sourceRequiredAtRenderTime": false,
+    "parameterCountAndStorageDisclosureRequired": true
+  },
+  "runtime": {"maxOutputPixels": 4000000, "maxSupportVisits": 200000000, "referenceReplayMaxChannelError": 1},
+  "requiredEvidence": [
+    "full-frame reconstruction PNG at 800x531",
+    "reference/result side-by-side and matching crops at native sampling",
+    "metrics recomputed from the serialized final asset output",
+    "independent JavaScript replay compared against Python",
+    "source-free renderer and saved-project replay",
+    "real browser load, edit, full-resolution render and PNG export",
+    "failed baseline and optimization history retained",
+    "legacy assets and routes remain byte-exact"
+  ],
+  "exclusions": [
+    "not an unseen-scene generation or class-generalization benchmark",
+    "not recovered unseen high-resolution detail when zoomed",
+    "not physically correct relighting or a learned dynamic scene",
+    "not a formal proof or autonomous L2 program RSI result",
+    "not a claim that a finite PSNR/SSIM gate establishes universal photorealism"
+  ],
+  "policy": "Candidates cannot edit this contract or lower its thresholds. A failed candidate remains failed. Engineering replay/performance results do not substitute for reference quality."
+}
