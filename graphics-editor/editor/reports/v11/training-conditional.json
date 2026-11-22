@@ -1,0 +1,293 @@
+{
+  "schema": "crf.training_run/1.1",
+  "trainerBuild": "crf.learn11.cpu-adam-v1",
+  "state": "completed",
+  "startedAt": "2026-11-22T04:21:42.446Z",
+  "config": {
+    "steps": 600,
+    "hidden": 24,
+    "batchSize": 64,
+    "learningRate": 0.01,
+    "seed": 11,
+    "maxMilliseconds": 30000,
+    "reportEvery": 25,
+    "estimatedMAC": 158515200
+  },
+  "stepsCompleted": 600,
+  "history": [
+    {
+      "step": 0,
+      "trainLoss": 0.14691833110352273,
+      "validationLoss": 0.14563013139698217,
+      "elapsedMs": 56.07749800000002
+    },
+    {
+      "step": 25,
+      "trainLoss": 0.011251049867518388,
+      "validationLoss": 0.011050940547386097,
+      "elapsedMs": 189.50419700000003
+    },
+    {
+      "step": 50,
+      "trainLoss": 0.009079113370396014,
+      "validationLoss": 0.009056691298972526,
+      "elapsedMs": 261.318582
+    },
+    {
+      "step": 75,
+      "trainLoss": 0.008294881645536935,
+      "validationLoss": 0.008321219292695132,
+      "elapsedMs": 299.652789
+    },
+    {
+      "step": 100,
+      "trainLoss": 0.007835438051452058,
+      "validationLoss": 0.007476389406337772,
+      "elapsedMs": 333.811344
+    },
+    {
+      "step": 125,
+      "trainLoss": 0.007239915618796349,
+      "validationLoss": 0.007195876999179682,
+      "elapsedMs": 365.475945
+    },
+    {
+      "step": 150,
+      "trainLoss": 0.006833167020164946,
+      "validationLoss": 0.006722453653209365,
+      "elapsedMs": 390.00216300000005
+    },
+    {
+      "step": 175,
+      "trainLoss": 0.006579507301520045,
+      "validationLoss": 0.006726235079131506,
+      "elapsedMs": 416.481248
+    },
+    {
+      "step": 200,
+      "trainLoss": 0.00628455894503231,
+      "validationLoss": 0.0061747692707082,
+      "elapsedMs": 444.88526800000005
+    },
+    {
+      "step": 225,
+      "trainLoss": 0.0061400537635542245,
+      "validationLoss": 0.0066081490474927534,
+      "elapsedMs": 469.96604199999996
+    },
+    {
+      "step": 250,
+      "trainLoss": 0.006265812905002249,
+      "validationLoss": 0.006483321001378035,
+      "elapsedMs": 495.62257600000004
+    },
+    {
+      "step": 275,
+      "trainLoss": 0.0062015777976352346,
+      "validationLoss": 0.006526432649977711,
+      "elapsedMs": 519.249405
+    },
+    {
+      "step": 300,
+      "trainLoss": 0.005720086980978005,
+      "validationLoss": 0.006160115701137876,
+      "elapsedMs": 543.4593050000001
+    },
+    {
+      "step": 325,
+      "trainLoss": 0.005646163581974288,
+      "validationLoss": 0.006060008636662732,
+      "elapsedMs": 567.9531730000001
+    },
+    {
+      "step": 350,
+      "trainLoss": 0.005587613386429271,
+      "validationLoss": 0.005906857816130709,
+      "elapsedMs": 591.8737860000001
+    },
+    {
+      "step": 375,
+      "trainLoss": 0.005754634542534198,
+      "validationLoss": 0.005952390838898377,
+      "elapsedMs": 615.9222219999999
+    },
+    {
+      "step": 400,
+      "trainLoss": 0.005381232680450164,
+      "validationLoss": 0.005527660055117194,
+      "elapsedMs": 640.106203
+    },
+    {
+      "step": 425,
+      "trainLoss": 0.005296055504681077,
+      "validationLoss": 0.005548112561321155,
+      "elapsedMs": 665.0618690000001
+    },
+    {
+      "step": 450,
+      "trainLoss": 0.005150669613944857,
+      "validationLoss": 0.005755856881810224,
+      "elapsedMs": 690.836941
+    },
+    {
+      "step": 475,
+      "trainLoss": 0.00543989583637409,
+      "validationLoss": 0.005535723263496649,
+      "elapsedMs": 714.425943
+    },
+    {
+      "step": 500,
+      "trainLoss": 0.005733151555606795,
+      "validationLoss": 0.0061141638051280265,
+      "elapsedMs": 737.2322750000001
+    },
+    {
+      "step": 525,
+      "trainLoss": 0.00501802859107144,
+      "validationLoss": 0.005439209393722606,
+      "elapsedMs": 761.645972
+    },
+    {
+      "step": 550,
+      "trainLoss": 0.004661612211732241,
+      "validationLoss": 0.005161379955876588,
+      "elapsedMs": 785.633446
+    },
+    {
+      "step": 575,
+      "trainLoss": 0.0055272704349039956,
+      "validationLoss": 0.006173960287786615,
+      "elapsedMs": 809.505015
+    },
+    {
+      "step": 600,
+      "trainLoss": 0.005047188344244888,
+      "validationLoss": 0.00553757790383359,
+      "elapsedMs": 832.647825
+    }
+  ],
+  "evidenceScope": "spatial_reconstruction_holdout",
+  "independentSourceGeneralization": "not_evaluated",
+  "semanticControlsLearned": false,
+  "learnedDynamics": false,
+  "programRSI": false,
+  "precision": "float64",
+  "sourceRGBEmbedded": false,
+  "coverageGroundTruth": false,
+  "instances": [
+    {
+      "id": "learn.r03.097cfbf071e3.object",
+      "label": "青蓝色釉陶瓷花瓶",
+      "sourceGroup": "source.097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "width": 47,
+      "height": 96,
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "coverageKind": "inferred_mask",
+      "sourceUri": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+      "originalWidth": 180,
+      "originalHeight": 365,
+      "originalSourceHash": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "licenseStatus": "source terms require attribution/verification",
+      "attribution": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+      "declaredSourceHash": "f064b22dda4e2a4bd004da181b3d82fad6dab6fa7505065812185f60ff80d598",
+      "decodedPixelHash": "a11089bba677b6527a98e5c5bd8ee7ccd4ad3306e291f214e6a5f45e0522732c"
+    },
+    {
+      "id": "learn.r01.c6657129fc5c.object",
+      "label": "横切橙子半",
+      "sourceGroup": "source.c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+      "width": 96,
+      "height": 90,
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "coverageKind": "inferred_mask",
+      "sourceUri": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+      "originalWidth": 195,
+      "originalHeight": 182,
+      "originalSourceHash": "c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+      "licenseStatus": "source terms require attribution/verification",
+      "attribution": "Photo by Ricardo Utsumi on Pexels",
+      "declaredSourceHash": "b634d9724b22acf4cb383fa6f5338c2b82f9bfb61ec96ac9777099b20966f57b",
+      "decodedPixelHash": "987023c5fc15a572165e8e94897664444cbe4af4ccc8ed191babf45538a24998"
+    }
+  ],
+  "sourceGroupCount": 2,
+  "sourceGroupStatus": "declared_groups_with_identical_content_consistency_check",
+  "splitProtocol": {
+    "method": "deterministic_pixel_hash_mod5",
+    "validationModulo": 5,
+    "seed": 11,
+    "validationUsedForCheckpointSelection": true,
+    "independentTestSet": false,
+    "trainPixels": 7900,
+    "validationPixels": 1986,
+    "measuredTrainPixels": 1024,
+    "measuredValidationPixels": 1024,
+    "measurementSelection": "fixed_even_stride_up_to_1024_per_partition",
+    "sourceGroups": [
+      "source.097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "source.c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6"
+    ]
+  },
+  "datasetHash": "53febd3846f5cd54c950372edd7f972bd145ba4abc13b15b9252d0abade89729",
+  "parameterCount": 1083,
+  "weightBytes": 8664,
+  "initialLoss": 0.14691833110352273,
+  "initialValidationLoss": 0.14563013139698217,
+  "lastStepTrainLoss": 0.005047188344244888,
+  "lastStepValidationLoss": 0.00553757790383359,
+  "finalLoss": 0.004661612211732241,
+  "validationLoss": 0.005161379955876588,
+  "bestStep": 550,
+  "checkpointRule": "lowest measured spatial validation MSE, including initialization; never an independent test claim",
+  "instanceMetrics": [
+    {
+      "id": "learn.r03.097cfbf071e3.object",
+      "trainPixels": 2744,
+      "validationPixels": 639,
+      "measuredTrainPixels": 512,
+      "measuredValidationPixels": 512,
+      "trainLoss": 0.001048212715385329,
+      "validationLoss": 0.0008565307275068087
+    },
+    {
+      "id": "learn.r01.c6657129fc5c.object",
+      "trainPixels": 5156,
+      "validationPixels": 1347,
+      "measuredTrainPixels": 512,
+      "measuredValidationPixels": 512,
+      "trainLoss": 0.00833384987848157,
+      "validationLoss": 0.009483608662447338
+    }
+  ],
+  "modelHash": "d538bc17a28026622ba0a97b50b30f066fb8e0d0f47c688d4b9196025d691a90",
+  "modelHashProtocol": "sha256_canonical_json_sorted_keys_utf8_v1",
+  "modelJSONBytes": 23840,
+  "coverageJSONBytes": 5034,
+  "coverageRawBytes": 13152,
+  "endedAt": "2026-11-22T04:21:43.294Z",
+  "elapsedMs": 848.4639360000001,
+  "command": "node scripts/train_example11.cjs --conditional",
+  "inputKind": "existing_real_reference_photo_crops",
+  "preprocessing": "normalized crop; nearest pixel-centre downsample to longest side 96; alpha preserved; sRGB decoded to linear by trainer",
+  "serializedReplayExact": true,
+  "trainingImproved": true,
+  "sourceRGBAtRender": false,
+  "sourceRGBInModel": false,
+  "approximateArtifactBytes": 35688,
+  "limitations": [
+    "Spatial validation was used to choose the checkpoint; it is not an independent source test.",
+    "Reference-derived lighting and reflections are retained; no unseen object, relighting or dynamic generalization is established.",
+    "Alpha is an explicitly disclosed independent coverage asset.",
+    "No claim of photographic-quality improvement or target-device acceleration is made."
+  ]
+}

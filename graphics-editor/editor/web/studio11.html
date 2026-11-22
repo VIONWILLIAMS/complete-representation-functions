@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f5f7">
+  <title>CRF 1.1 · 可学习的视觉函数</title>
+  <meta name="description" content="从参考中学习对象函数，用代码组合场景，在同一个计算内核中生成图片与视频。">
+  <link rel="stylesheet" href="editor11.css">
+</head>
+<body>
+<header class="topbar">
+  <a href="studio11.html" class="brand"><span class="brand-icon" aria-hidden="true">ƒ</span><span><strong>CRF <small>1.1</small></strong><span class="brand-subtitle">可学习的视觉函数</span></span></a>
+  <span class="branch-label">实验分支</span>
+  <nav aria-label="编辑器导航"><a class="active" href="studio11.html">函数工作台</a><a href="studio10.html">1.0 完整案例</a></nav>
+  <div class="header-actions"><span id="connection" class="connection">检查服务</span><button id="newScene">新建</button><button id="openProject">打开工程</button><button id="saveProject">保存工程</button><button id="exportPNG" class="primary" disabled>导出 PNG</button></div>
+</header>
+
+<div class="workspace">
+  <aside class="library" aria-label="参考与函数库">
+    <section class="library-section reference-section">
+      <div class="section-title"><div><span class="eyebrow">01 / REFERENCE</span><h2>参考与观察</h2></div><span id="referenceCount" class="count">0</span></div>
+      <div class="button-row"><button id="importReference" class="wide">＋ 导入图片</button><button id="sampleWater" title="读取仓库内已有的真实参考">湖水样本</button></div>
+      <form id="referenceSearch" class="search-form"><label class="sr-only" for="referenceQuery">搜索关键词或 Wikimedia Commons 文件页</label><input id="referenceQuery" placeholder="关键词 / Commons 文件页" maxlength="2000"><button type="submit" id="searchReferences">找图</button></form>
+      <p id="referenceStatus" class="hint">实际来源、裁剪与覆盖会随训练记录保存。</p>
+      <div id="referenceList" class="reference-list"><p class="empty">导入照片，或从湖水样本开始。</p></div>
+      <div id="referenceDetails" hidden>
+        <canvas id="referenceCanvas" width="256" height="160" aria-label="参考图与选定裁剪范围"></canvas>
+        <div class="reference-caption"><strong id="referenceTitle"></strong><a id="referenceSource" target="_blank" rel="noopener noreferrer" hidden>来源 ↗</a></div>
+        <div class="crop-grid"><label>左<input id="cropX0" type="number" min="0" max="0.99" step="0.01" value="0"></label><label>上<input id="cropY0" type="number" min="0" max="0.99" step="0.01" value="0"></label><label>右<input id="cropX1" type="number" min="0.01" max="1" step="0.01" value="1"></label><label>下<input id="cropY1" type="number" min="0.01" max="1" step="0.01" value="1"></label></div>
+        <label class="field compact">覆盖<select id="coverageKind"><option value="source_alpha">保留原 alpha / 矩形</option><option value="ellipse">人工椭圆覆盖</option></select></label>
+        <p class="hint" id="referenceScope"></p>
+        <button id="removeReference" class="text-button">移除此参考</button>
+      </div>
+    </section>
+    <section class="library-section function-section">
+      <div class="section-title"><div><span class="eyebrow">02 / FUNCTION LIBRARY</span><h2>版本化函数</h2></div><span id="functionCount" class="count">0</span></div>
+      <p class="hint">选择函数，再添加到场景。旧版本保持固定。</p>
+      <div id="functionList" class="function-list"></div>
+    </section>
+    <footer class="library-footer"><a href="studio10.html">打开 1.0 的全部 17 个案例 ↗</a><a href="gaussian08.html">高斯拟合实验室 ↗</a></footer>
+  </aside>
+
+  <main class="main">
+    <div class="scene-heading"><div><span class="eyebrow">SCENE / EXECUTABLE IMAGE</span><h1 id="sceneTitle">准备函数场景</h1></div><div class="button-row"><button id="undo" title="撤销" disabled>↶</button><button id="redo" title="重做" disabled>↷</button><span id="revision" class="revision">r0</span></div></div>
+    <div class="viewbar"><label class="inline-label">求值<select id="renderBackend"><option value="cached">缓存预览 · 64</option><option value="direct">直接函数求值</option></select></label><label class="inline-label">采样<select id="renderSamples"><option value="1">1 × 1</option><option value="2">2 × 2</option></select></label><button id="compareBackends" class="text-button">比较直接 / 缓存</button></div>
+    <div id="stage" class="stage"><canvas id="canvas" width="640" height="480" aria-label="当前场景由函数计算的图像"></canvas><div class="stage-label" id="stageLabel">加载计算内核</div><div id="renderBusy" class="render-busy" hidden><span class="spinner"></span><span>函数求值中</span></div></div>
+    <div class="timeline"><button id="play" aria-label="播放或暂停二维时间轨迹">播放</button><span>0 s</span><input id="timeline" aria-label="时间" type="range" min="0" max="5" step="0.0416666667" value="0"><output id="timeLabel">0.00 / 5 s</output><button id="exportVideo">导出 WebM</button></div>
+    <div class="render-stats"><div><span>画幅</span><strong id="dimensions">640 × 480</strong></div><div><span>本次求值</span><strong id="renderTime">—</strong></div><div><span>函数 / 对象</span><strong id="objectStats">—</strong></div><div><span>实际后端</span><strong id="backendLabel">CPU</strong></div></div>
+    <div id="videoResult" class="artifact-links" hidden></div>
+    <section class="feedback-bar" aria-label="人工反馈"><span>当前画面</span><button id="acceptFrame">采用</button><button id="rejectFrame">需要改进</button><input id="feedbackNote" aria-label="反馈说明" placeholder="记录具体原因，可供后续编排参考" maxlength="2000"><span id="feedbackCount" class="hint">0 条反馈</span></section>
+    <details class="code-section"><summary><span>场景程序</span><small>可检查的 Scene IR · JSON</small></summary><p class="hint">场景引用固定函数版本。点击执行后，由相同内核重新计算。</p><textarea id="sceneCode" spellcheck="false" aria-label="场景 JSON 程序"></textarea><div class="code-actions"><span id="codeStatus" class="hint">与当前场景同步</span><button id="reloadCode">重载当前程序</button><button id="runCode" class="primary">检查并执行</button></div></details>
+    <footer class="statusbar"><span id="status" role="status">正在加载</span><span id="persistenceStatus">尚未保存</span></footer>
+  </main>
+
+  <aside class="inspector" aria-label="场景控制与证据">
+    <div class="tabs" role="tablist"><button data-tab="edit" role="tab" aria-selected="true">对象</button><button data-tab="learn" role="tab" aria-selected="false">学习</button><button data-tab="agent" role="tab" aria-selected="false">Agent</button><button data-tab="evidence" role="tab" aria-selected="false">证据</button></div>
+    <section id="editPanel" class="panel">
+      <div class="panel-heading"><span class="eyebrow">SCENE CONTROLS</span><h2>编辑对象函数</h2><p>参数修改直接重新求值。</p></div>
+      <div id="objectList" class="object-list"></div>
+      <form id="objectForm" class="property-card" hidden>
+        <div class="property-title"><strong id="objectTitle">对象</strong><label class="check-label"><input id="objectVisible" type="checkbox" checked>显示</label></div>
+        <label class="field">学习实例<select id="objectInstance"></select></label>
+        <div class="field-row"><label class="field">X / px<input id="objectX" type="number" step="1"></label><label class="field">Y / px<input id="objectY" type="number" step="1"></label></div>
+        <div class="field-row"><label class="field">宽度 / px<input id="objectWidth" type="number" min="1" step="1"></label><label class="field">高度 / px<input id="objectHeight" type="number" min="1" step="1"></label></div>
+        <div class="field-row"><label class="field">旋转 / °<input id="objectRotation" type="number" step="1"></label><label class="field">层次<input id="objectZ" type="number" step="1"></label></div>
+        <div class="field-row"><label class="field">色彩乘子<input id="objectTint" type="color" value="#ffffff"></label><label class="field">不透明度<input id="objectOpacity" type="number" min="0" max="1" step="0.05" value="1"></label></div>
+        <details><summary>二维运动</summary><div class="field-row"><label class="field">X 速度 / px·s⁻¹<input id="motionX" type="number" step="1" value="0"></label><label class="field">Y 速度 / px·s⁻¹<input id="motionY" type="number" step="1" value="0"></label></div><label class="field">旋转速度 / °·s⁻¹<input id="motionRotation" type="number" step="1" value="0"></label><p class="hint">固定外观随二维轨迹移动。</p></details>
+        <button id="removeObject" type="button" class="full subtle">从场景移除</button>
+      </form>
+      <div class="property-card"><h3>画布</h3><div class="field-row"><label class="field">宽度<input id="sceneWidth" type="number" min="32" max="2048" step="1" value="640"></label><label class="field">高度<input id="sceneHeight" type="number" min="32" max="2048" step="1" value="480"></label></div><label class="field">底色<input id="sceneBackground" type="color" value="#edf4f6"></label><button id="applyCanvas" class="full">应用画布设置</button></div>
+    </section>
+
+    <section id="learnPanel" class="panel" hidden>
+      <div class="panel-heading"><span class="eyebrow">LOCAL FUNCTION LEARNING</span><h2>把观察变成函数</h2><p>在本机训练小型坐标网络，保存真实权重。</p></div>
+      <form id="trainingForm"><label class="field">函数名称<input id="functionName" value="我的外观函数" maxlength="100"></label><div class="field-row"><label class="field">训练步数<select id="trainingSteps"><option value="200">200</option><option value="600" selected>600</option><option value="1200">1200</option></select></label><label class="field">隐层宽度<select id="trainingHidden"><option value="16">16</option><option value="24" selected>24</option><option value="32">32</option></select></label></div><p class="hint">全部已添加参考共同训练；每张参考对应一个固定实例。训练图最长边为 128 px，使用显式记录的裁剪与覆盖。</p><button id="train" type="submit" class="primary full">开始本地训练</button></form>
+      <div id="trainingPanel" class="training-panel" hidden><div class="property-title"><strong id="trainingState">等待训练</strong><button id="cancelTraining" class="text-button">取消</button></div><progress id="trainingProgress" max="600" value="0"></progress><p id="trainingDetail" class="hint"></p><canvas id="lossChart" width="500" height="170" aria-label="训练损失变化"></canvas><dl id="trainingMetrics" class="evidence-list"></dl></div>
+      <p class="scope-note">单图或有限实例重建。类别泛化、自然运动和照片质量需要分别评价。</p>
+      <div class="section-title"><h3>训练记录</h3><span id="trainingCount" class="count">0</span></div><div id="trainingHistory" class="run-list"></div>
+    </section>
+
+    <section id="agentPanel" class="panel" hidden>
+      <div class="panel-heading"><span class="eyebrow">AGENT HARNESS</span><h2>描述构图与修改</h2><p>LLM 选择已登记函数并编写场景，内核检查后执行。</p></div>
+      <form id="agentForm"><label class="field">任务<select id="agentMode"><option value="edit">修改当前场景</option><option value="compose">重新编排场景</option></select></label><label class="field">视觉目标<textarea id="agentPrompt" rows="6" placeholder="把云层向右移动，保持山体与湖面不变…" maxlength="6000"></textarea></label><label class="check-label"><input id="protectOthers" type="checkbox">只允许修改当前选中对象</label><button id="runAgent" type="submit" class="primary full">生成并检查场景</button></form><button id="cancelAgent" class="full" hidden>取消当前请求</button><p id="agentStatus" class="hint">检查模型配置中。</p><div id="agentLog" class="run-list" aria-live="polite"></div>
+    </section>
+
+    <section id="evidencePanel" class="panel" hidden>
+      <div class="panel-heading"><span class="eyebrow">EXECUTION & EVIDENCE</span><h2>当前结果的依据</h2><p>执行、训练、数值测量和人工反馈分开记录。</p></div>
+      <div id="frameState" class="evidence-banner">尚无已计算帧</div><div class="property-card"><h3>实际求值</h3><dl id="frameEvidence" class="evidence-list"></dl></div><div class="property-card"><h3>直接 / 缓存对照</h3><div id="comparisonEvidence" class="hint">尚未比较当前场景。</div></div><div class="property-card"><h3>验证范围</h3><dl class="evidence-list"><dt>类型与摘要</dt><dd id="integrityState">待检查</dd><dt>形式证明</dt><dd>未实现</dd><dt>独立来源泛化</dt><dd>未评价</dd><dt>程序级 RSI</dt><dd>未执行</dd><dt>照片质量</dt><dd>未认证</dd></dl></div><button id="exportEvidence" class="full">导出运行与反馈记录</button><button id="showDependencies" class="full subtle">查看函数与依赖</button>
+    </section>
+  </aside>
+</div>
+<input id="referenceFiles" class="hidden-input" type="file" multiple accept="image/png,image/jpeg,image/webp">
+<input id="projectFile" class="hidden-input" type="file" accept=".json,application/json">
+<dialog id="dialog"><div class="dialog-heading"><h2 id="dialogTitle"></h2><button id="closeDialog">关闭</button></div><pre id="dialogBody"></pre></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="learn11.js"></script><script src="crf-gaussian08.js"></script><script src="crf-gaussian10.js"></script><script src="crf-core11.js"></script><script src="harness11.js"></script><script src="crf-video09.js"></script><script src="editor11.js" defer></script>
+</body>
+</html>

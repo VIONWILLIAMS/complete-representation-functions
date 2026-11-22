@@ -9,6 +9,7 @@ import {servePackedAsset08} from './packed_assets08.mjs';
 import {servePackedArchive09} from './packed_archives09.mjs';
 import {generateNative09} from './generative09.mjs';
 import {generateNative10} from './generative10.mjs';
+import {composeFunctions11,referencesFunctions11} from './functions11.mjs';
 
 const MAX_BODY=6*1024*1024;
 const json=(value,status=200)=>new Response(JSON.stringify(value),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
@@ -38,6 +39,25 @@ export default {
     const origin=request.headers.get('origin');
     if(origin&&origin!==url.origin)return failure('origin_rejected','请求必须来自当前编辑器。',403);
     const key=env.DEEPSEEK_API_KEY;
+    if(url.pathname.startsWith('/api/crf/functions11/')){
+      if(request.method==='GET'&&url.pathname==='/api/crf/functions11/status'){
+        return json({ok:true,version:'1.1.0-experimental.1',releaseStatus:'learnable_functions_experimental',
+          configured:typeof key==='string'&&key.length>0,model:DEFAULT_MODEL,connection:'configuration_only',
+          capabilities:{localTraining:'browser_worker_adam',objectFunctions:['explicit','neural','gaussian'],
+            runtime:'shared_cpu',cachedFieldSampling:true,publicReferences:true,composeAdapter:true,
+            completeProjectReplay:true,videoExport:'requires_local_webcodecs',gpu:false},
+          quality:{classGeneralization:'not_evaluated',formalProof:'not_implemented',programRSI:false},
+          message:key?'服务端已配置；真实供应商调用仍以运行记录为准。':'本地训练、编辑和导出可用；LLM 编排尚未配置服务端凭证。'});
+      }
+      const handler=url.pathname==='/api/crf/functions11/compose'?composeFunctions11:
+        url.pathname==='/api/crf/functions11/references'?referencesFunctions11:null;
+      if(!handler)return failure('not_found','未知的对象函数接口。',404);
+      if(request.method!=='POST')return failure('method_not_allowed','此接口需要 POST。',405);
+      if(!request.headers.get('content-type')?.includes('application/json'))return failure('content_type','请求需要 JSON。',415);
+      let body;try{body=await readBounded(request);}catch(error){return failure(error.message==='body_limit'?'body_limit':'invalid_json','请求 JSON 无效或超过 6 MiB 限制。',error.message==='body_limit'?413:400);}
+      const result=await handler(body,{apiKey:key,signal:request.signal});
+      return json(result,result.ok===false?(result.httpStatus||502):200);
+    }
     if(request.method==='GET'&&url.pathname==='/api/crf/status'){
       return json({ok:true,version:'0.10.0',releaseStatus:'frozen_model_research_release',configured:typeof key==='string'&&key.length>0,model:DEFAULT_MODEL,connection:'configuration_only',capabilities:{search:true,vision:true,programOutput:true,gaussianFunctions:true,referenceLearning:true,semanticComposition:true,sharedAppearanceLearning:true,nativeSceneGeneration:true,resumableTasks:true,gaussian10:true,pixelFootprintFiltering:true,everyCandidateEvaluated:true},currentWorkflow:{modelTraining:false,sharedModelUpdates:false,referenceDerivedCompositing:true,physicalRelighting:false,unseen3DRecovery:false},quality:{photorealism:'not_certified',fullPlanAcceptance:'see_assets/v10/acceptance.json'},secretLocation:'server',message:key?'服务端已配置；实际调用结果将显示在对话记录中。':'服务端尚未配置测试密钥。'});
     }

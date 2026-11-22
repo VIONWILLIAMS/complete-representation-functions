@@ -1,0 +1,261 @@
+{
+  "schema": "crf.training_run/1.1",
+  "trainerBuild": "crf.learn11.cpu-adam-v1",
+  "state": "completed",
+  "startedAt": "2026-11-22T04:21:42.452Z",
+  "config": {
+    "steps": 600,
+    "hidden": 24,
+    "batchSize": 64,
+    "learningRate": 0.01,
+    "seed": 11,
+    "maxMilliseconds": 30000,
+    "reportEvery": 25,
+    "estimatedMAC": 154828800
+  },
+  "stepsCompleted": 600,
+  "history": [
+    {
+      "step": 0,
+      "trainLoss": 0.171054772469296,
+      "validationLoss": 0.1677820231471373,
+      "elapsedMs": 51.700466000000006
+    },
+    {
+      "step": 25,
+      "trainLoss": 0.006004337855392915,
+      "validationLoss": 0.006280130268948697,
+      "elapsedMs": 187.973792
+    },
+    {
+      "step": 50,
+      "trainLoss": 0.0025753027209741274,
+      "validationLoss": 0.002165044427791902,
+      "elapsedMs": 249.13663000000003
+    },
+    {
+      "step": 75,
+      "trainLoss": 0.001833886704209598,
+      "validationLoss": 0.0013459543538241734,
+      "elapsedMs": 309.165236
+    },
+    {
+      "step": 100,
+      "trainLoss": 0.0017327589304131725,
+      "validationLoss": 0.0012082588154652793,
+      "elapsedMs": 350.811196
+    },
+    {
+      "step": 125,
+      "trainLoss": 0.0015499439263532318,
+      "validationLoss": 0.0012236130595697677,
+      "elapsedMs": 383.79560000000004
+    },
+    {
+      "step": 150,
+      "trainLoss": 0.0016243484606391458,
+      "validationLoss": 0.0010817924480945949,
+      "elapsedMs": 420.09494500000005
+    },
+    {
+      "step": 175,
+      "trainLoss": 0.0013866454964416733,
+      "validationLoss": 0.0010506616933720536,
+      "elapsedMs": 452.44458099999997
+    },
+    {
+      "step": 200,
+      "trainLoss": 0.001285197614672682,
+      "validationLoss": 0.0008587742384805792,
+      "elapsedMs": 481.943163
+    },
+    {
+      "step": 225,
+      "trainLoss": 0.0013401664725655566,
+      "validationLoss": 0.0008823810829500684,
+      "elapsedMs": 510.35371299999997
+    },
+    {
+      "step": 250,
+      "trainLoss": 0.0012366643643647252,
+      "validationLoss": 0.0007956671175263347,
+      "elapsedMs": 535.407136
+    },
+    {
+      "step": 275,
+      "trainLoss": 0.0012813047798773479,
+      "validationLoss": 0.0008564029541452326,
+      "elapsedMs": 559.832891
+    },
+    {
+      "step": 300,
+      "trainLoss": 0.0011899512617279447,
+      "validationLoss": 0.0006982287781771591,
+      "elapsedMs": 583.707976
+    },
+    {
+      "step": 325,
+      "trainLoss": 0.0010516846973248474,
+      "validationLoss": 0.0007410041348751336,
+      "elapsedMs": 608.975882
+    },
+    {
+      "step": 350,
+      "trainLoss": 0.0015617903502896937,
+      "validationLoss": 0.0010207361587732892,
+      "elapsedMs": 632.485475
+    },
+    {
+      "step": 375,
+      "trainLoss": 0.0014152940927014835,
+      "validationLoss": 0.0009475696971796807,
+      "elapsedMs": 655.659431
+    },
+    {
+      "step": 400,
+      "trainLoss": 0.0009743812554658633,
+      "validationLoss": 0.0006589439992713622,
+      "elapsedMs": 679.10639
+    },
+    {
+      "step": 425,
+      "trainLoss": 0.0014548508715111113,
+      "validationLoss": 0.0010088869924138966,
+      "elapsedMs": 703.617103
+    },
+    {
+      "step": 450,
+      "trainLoss": 0.0011655212471590425,
+      "validationLoss": 0.0008405292416183554,
+      "elapsedMs": 727.295922
+    },
+    {
+      "step": 475,
+      "trainLoss": 0.0009859319560454908,
+      "validationLoss": 0.0005807607705989143,
+      "elapsedMs": 750.853738
+    },
+    {
+      "step": 500,
+      "trainLoss": 0.0012153325764188787,
+      "validationLoss": 0.0009787009536694133,
+      "elapsedMs": 775.859238
+    },
+    {
+      "step": 525,
+      "trainLoss": 0.0010551121729591851,
+      "validationLoss": 0.0007003397699246844,
+      "elapsedMs": 808.813556
+    },
+    {
+      "step": 550,
+      "trainLoss": 0.0009343699419210184,
+      "validationLoss": 0.0005337413469024521,
+      "elapsedMs": 840.992042
+    },
+    {
+      "step": 575,
+      "trainLoss": 0.0009579397295266291,
+      "validationLoss": 0.000511018872784212,
+      "elapsedMs": 873.272544
+    },
+    {
+      "step": 600,
+      "trainLoss": 0.0008944917069861161,
+      "validationLoss": 0.0005534738379722896,
+      "elapsedMs": 901.5064470000001
+    }
+  ],
+  "evidenceScope": "spatial_reconstruction_holdout",
+  "independentSourceGeneralization": "not_evaluated",
+  "semanticControlsLearned": false,
+  "learnedDynamics": false,
+  "programRSI": false,
+  "precision": "float64",
+  "sourceRGBEmbedded": false,
+  "coverageGroundTruth": false,
+  "instances": [
+    {
+      "id": "learn.r03.097cfbf071e3.object",
+      "label": "青蓝色釉陶瓷花瓶",
+      "sourceGroup": "source.097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "width": 47,
+      "height": 96,
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "coverageKind": "inferred_mask",
+      "sourceUri": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+      "originalWidth": 180,
+      "originalHeight": 365,
+      "originalSourceHash": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "licenseStatus": "source terms require attribution/verification",
+      "attribution": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+      "declaredSourceHash": "f064b22dda4e2a4bd004da181b3d82fad6dab6fa7505065812185f60ff80d598",
+      "decodedPixelHash": "a11089bba677b6527a98e5c5bd8ee7ccd4ad3306e291f214e6a5f45e0522732c"
+    }
+  ],
+  "sourceGroupCount": 1,
+  "sourceGroupStatus": "declared_groups_with_identical_content_consistency_check",
+  "splitProtocol": {
+    "method": "deterministic_pixel_hash_mod5",
+    "validationModulo": 5,
+    "seed": 11,
+    "validationUsedForCheckpointSelection": true,
+    "independentTestSet": false,
+    "trainPixels": 2744,
+    "validationPixels": 639,
+    "measuredTrainPixels": 1024,
+    "measuredValidationPixels": 639,
+    "measurementSelection": "fixed_even_stride_up_to_1024_per_partition",
+    "sourceGroups": [
+      "source.097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9"
+    ]
+  },
+  "datasetHash": "8b6a1bd0bc1c168272985e646ba08706b3d72c04e16c4ec0184b4d0a9acc3ec6",
+  "parameterCount": 1059,
+  "weightBytes": 8472,
+  "initialLoss": 0.171054772469296,
+  "initialValidationLoss": 0.1677820231471373,
+  "lastStepTrainLoss": 0.0008944917069861161,
+  "lastStepValidationLoss": 0.0005534738379722896,
+  "finalLoss": 0.0009579397295266291,
+  "validationLoss": 0.000511018872784212,
+  "bestStep": 575,
+  "checkpointRule": "lowest measured spatial validation MSE, including initialization; never an independent test claim",
+  "instanceMetrics": [
+    {
+      "id": "learn.r03.097cfbf071e3.object",
+      "trainPixels": 2744,
+      "validationPixels": 639,
+      "measuredTrainPixels": 512,
+      "measuredValidationPixels": 512,
+      "trainLoss": 0.0007714626186279544,
+      "validationLoss": 0.0004658555416752169
+    }
+  ],
+  "modelHash": "528e8a5cc8082252eb1b9e514abe7be6517c11ab71c647afe52763701d0e0dfa",
+  "modelHashProtocol": "sha256_canonical_json_sorted_keys_utf8_v1",
+  "modelJSONBytes": 22636,
+  "coverageJSONBytes": 2130,
+  "coverageRawBytes": 4512,
+  "endedAt": "2026-11-22T04:21:43.366Z",
+  "elapsedMs": 913.9504679999999,
+  "command": "node scripts/train_example11.cjs",
+  "inputKind": "existing_real_reference_photo_crops",
+  "preprocessing": "normalized crop; nearest pixel-centre downsample to longest side 96; alpha preserved; sRGB decoded to linear by trainer",
+  "serializedReplayExact": true,
+  "trainingImproved": true,
+  "sourceRGBAtRender": false,
+  "sourceRGBInModel": false,
+  "approximateArtifactBytes": 30578,
+  "limitations": [
+    "Spatial validation was used to choose the checkpoint; it is not an independent source test.",
+    "Reference-derived lighting and reflections are retained; no unseen object, relighting or dynamic generalization is established.",
+    "Alpha is an explicitly disclosed independent coverage asset.",
+    "No claim of photographic-quality improvement or target-device acceleration is made."
+  ]
+}

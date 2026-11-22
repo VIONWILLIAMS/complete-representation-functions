@@ -1,0 +1,37 @@
+{
+  "schema": "crf.editor_contract_validation/1.1",
+  "at": "2026-11-22T04:35:06.476Z",
+  "status": "passed",
+  "command": "node --test tests/test_editor11_contract.cjs",
+  "exitCode": 0,
+  "scope": "Actual UI session controller and shipped render worker in Node/VM; genuine local model training used for save/reopen tests.",
+  "covered": [
+    "atomic invalid imports and typed scene edits",
+    "revision plus epoch rejection of stale code after undo/branch",
+    "retention of 251 failed runs through undo/redo",
+    "shared core and UI patch equality",
+    "old render response rejection",
+    "trained model weight export and independent replay",
+    "real worker pixel parity and immutable snapshot key checks"
+  ],
+  "notExercisedByThisCommand": [
+    "browser DOM interaction and layout",
+    "WebCodecs encoding or playback",
+    "paid provider calls",
+    "target Mac M4 performance"
+  ],
+  "sourceHashes": {
+    "web/editor11.js": "f6ef534ff31fb891efee7a6cd10b26012ec465b25c0c9e4563a1d8b9fa587972",
+    "web/render-worker11.js": "7ef93fb75a843096958c66906f8b452a02c841937e71aa4dd175ec77c4831f07",
+    "web/crf-core11.js": "38e9d1d92490c1f6a73e3f7b20017a7267be158e041971cde3bf2263a80c050d",
+    "web/learn11.js": "7132a94db2043443900eb4bdd5d4c2981b9c01c315f2d2e39be14982617506a5",
+    "tests/test_editor11_contract.cjs": "7fec7879a3622bfa7ea76df0f45c7189b694b47ccfb88727fd3b4b7af48c7345"
+  },
+  "environment": {
+    "node": "v24.22.3",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "stdout": "✔ studio imports and code edits are atomic; stale code cannot replace newer scene (35.393754ms)\n✔ code drafts are stale after undo and branch even when revision numbers repeat (18.652379ms)\n✔ undo preserves audit records and the UI never silently drops old failed runs (130.801248ms)\n✔ the GUI controller applies the same typed patch as programmatic callers (35.223487ms)\n✔ late frames from prior revisions or prior time requests never become current evidence (8.928464ms)\n✔ a genuinely learned function survives studio export/reopen without reference pixels (62.959134ms)\n✔ shipped render worker executes the shared core and rejects reusing a key for changed content (58.720477ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 525.789901\n",
+  "stderr": ""
+}

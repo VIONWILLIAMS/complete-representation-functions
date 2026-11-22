@@ -14,3 +14,21 @@ jobs:
           node-version: 22
       - run: npm test
       - run: npm run validate:claims
+
+  editor:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: graphics-editor/editor
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: graphics-editor/editor/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run test:v10
+      - run: npm run test:v11
+      - run: npm run build

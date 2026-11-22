@@ -1,0 +1,1020 @@
+{
+  "schema": "crf.studio_evidence/1.1",
+  "projectId": "project.mountain_lake",
+  "scene": {
+    "background": [
+      0.05,
+      0.08,
+      0.12
+    ],
+    "height": 480,
+    "objects": [
+      {
+        "functionRef": "f101f0c6e468d3cfd034d80ea7b49de44916abc74dd201c82efa3a4471ebc7cf",
+        "height": 480,
+        "id": "sky",
+        "instance": 0,
+        "label": "天空 · 显式渐变",
+        "motion": {
+          "rotationSpeed": 0,
+          "vx": 0,
+          "vy": 0
+        },
+        "opacity": 1,
+        "rotation": 0,
+        "tint": [
+          1,
+          1,
+          1
+        ],
+        "visible": true,
+        "width": 640,
+        "x": 0,
+        "y": 0,
+        "zIndex": 0
+      },
+      {
+        "functionRef": "7e2f695f1a8da7618b88c386678f73b16df3860a48e95e4696738645bba9146b",
+        "height": 65,
+        "id": "cloud.far",
+        "instance": 0,
+        "label": "云层 · 显式高斯外观",
+        "motion": {
+          "rotationSpeed": 0,
+          "vx": 8,
+          "vy": 0
+        },
+        "opacity": 0.7,
+        "rotation": 0,
+        "tint": [
+          1,
+          1,
+          1
+        ],
+        "visible": true,
+        "width": 235,
+        "x": 340,
+        "y": 65,
+        "zIndex": 1
+      },
+      {
+        "functionRef": "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+        "height": 210,
+        "id": "mountain.far",
+        "instance": 0,
+        "label": "山脊 · 显式颜色场",
+        "motion": {
+          "rotationSpeed": 0,
+          "vx": 0,
+          "vy": 0
+        },
+        "opacity": 1,
+        "rotation": 0,
+        "tint": [
+          1.4,
+          1.4,
+          1.45
+        ],
+        "visible": true,
+        "width": 720,
+        "x": -30,
+        "y": 120,
+        "zIndex": 2
+      },
+      {
+        "functionRef": "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+        "height": 185,
+        "id": "mountain.near",
+        "instance": 0,
+        "label": "山脊 · 显式颜色场",
+        "motion": {
+          "rotationSpeed": 0,
+          "vx": 0,
+          "vy": 0
+        },
+        "opacity": 1,
+        "rotation": 0,
+        "tint": [
+          0.75,
+          0.8,
+          0.8
+        ],
+        "visible": true,
+        "width": 710,
+        "x": -40,
+        "y": 175,
+        "zIndex": 3
+      },
+      {
+        "functionRef": "c3cbc4d8cfb8f2465f686038d576d374b2c36cdb352d006bf7eadd284b025886",
+        "height": 190,
+        "id": "water",
+        "instance": 0,
+        "label": "湖面 · 显式波纹",
+        "motion": {
+          "rotationSpeed": 0,
+          "vx": 0,
+          "vy": 0
+        },
+        "opacity": 1,
+        "rotation": 0,
+        "tint": [
+          1,
+          1,
+          1
+        ],
+        "visible": true,
+        "width": 640,
+        "x": 0,
+        "y": 290,
+        "zIndex": 4
+      },
+      {
+        "functionRef": "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b",
+        "height": 190,
+        "id": "object.mwrcf8lr.5",
+        "instance": 0,
+        "label": "湖水外观函数",
+        "motion": {
+          "rotationSpeed": 0,
+          "vx": 0,
+          "vy": 0
+        },
+        "opacity": 1,
+        "rotation": 0,
+        "tint": [
+          1,
+          1,
+          1
+        ],
+        "visible": true,
+        "width": 640,
+        "x": 0,
+        "y": 290,
+        "zIndex": 6
+      }
+    ],
+    "revision": 3,
+    "schema": "crf.scene.v1.1",
+    "seed": 11,
+    "width": 640
+  },
+  "functionVersions": [
+    "f101f0c6e468d3cfd034d80ea7b49de44916abc74dd201c82efa3a4471ebc7cf",
+    "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+    "c3cbc4d8cfb8f2465f686038d576d374b2c36cdb352d006bf7eadd284b025886",
+    "7e2f695f1a8da7618b88c386678f73b16df3860a48e95e4696738645bba9146b",
+    "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b"
+  ],
+  "frame": {
+    "descriptor": {
+      "schema": "crf.frame_descriptor.v1.1",
+      "width": 640,
+      "height": 480,
+      "channels": "RGBA8",
+      "colorSpace": "srgb",
+      "alpha": "straight_opaque_background",
+      "sampling": {
+        "type": "joint_regular_subpixel",
+        "samplesPerAxis": 1
+      },
+      "time": 0,
+      "backend": "cached",
+      "cacheResolution": 64,
+      "sceneDigest": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+      "functionVersions": [
+        "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+        "7e2f695f1a8da7618b88c386678f73b16df3860a48e95e4696738645bba9146b",
+        "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b",
+        "c3cbc4d8cfb8f2465f686038d576d374b2c36cdb352d006bf7eadd284b025886",
+        "f101f0c6e468d3cfd034d80ea7b49de44916abc74dd201c82efa3a4471ebc7cf"
+      ],
+      "rendererBuild": "1.1.0-learnable-functions.1",
+      "rendererSourceSha256": null
+    },
+    "diagnostics": {
+      "engine": "CRF11",
+      "backend": "cached",
+      "elapsedMs": 581.6999999992549,
+      "compileMs": 10.599999997764826,
+      "time": 0,
+      "visibleObjects": 6,
+      "fieldEvaluations": 622196,
+      "cachedSamples": 121600,
+      "coveredSamples": 743796,
+      "estimatedSampleVisits": 818475,
+      "estimatedBoundingBoxTests": 1843200,
+      "estimatedFrameMAC": 15353825,
+      "cacheBuildEvaluations": 4096,
+      "cacheBuildMAC": 4128768,
+      "cacheBuildMs": 13.5,
+      "cacheBytes": 49152,
+      "cacheEntries": 1,
+      "generatedFieldCache": true,
+      "generatedFieldCacheApproximation": "bilinear_canonical_grid",
+      "sourceRGBBlit": false,
+      "sourceRGBAtRender": false,
+      "referenceNetworkReads": 0,
+      "neuralWeightsUsed": true,
+      "colorSpace": "linear_srgb_joint_premultiplied_then_srgb8",
+      "geometry": "explicit_2d_affine_motion",
+      "learnedDynamics": false,
+      "physicalRelighting": false,
+      "formalProofStatus": "not_implemented",
+      "photographicQuality": "not_evaluated"
+    },
+    "runtimeTrace": {
+      "cacheBuildEvaluations": 4096,
+      "cacheBuildMAC": 4128768,
+      "cacheBuildMs": 13.5,
+      "cacheBytes": 49152,
+      "cacheEntries": 1,
+      "cacheResolution": 64,
+      "compileMs": 10.599999997764826,
+      "engine": "CRF11",
+      "formalProofStatus": "not_implemented",
+      "functionVersions": [
+        "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+        "7e2f695f1a8da7618b88c386678f73b16df3860a48e95e4696738645bba9146b",
+        "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b",
+        "c3cbc4d8cfb8f2465f686038d576d374b2c36cdb352d006bf7eadd284b025886",
+        "f101f0c6e468d3cfd034d80ea7b49de44916abc74dd201c82efa3a4471ebc7cf"
+      ],
+      "projectDigest": "3c81296c82d2bce549e219c2c8cbc6225877232859b231725f88d0ff9edb93b5",
+      "referenceNetworkReads": 0,
+      "renderedFrames": 1,
+      "rendererBuild": "1.1.0-learnable-functions.1",
+      "rendererSourceSha256": null,
+      "sceneDigest": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+      "sourceRGBAtRender": false
+    }
+  },
+  "comparison": {
+    "epoch": 5,
+    "sceneSha256": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+    "width": 256,
+    "height": 192,
+    "time": 0,
+    "samples": 1,
+    "metrics": {
+      "status": "measured",
+      "evaluatedPixels": 49152,
+      "mae": 0.07648383246527778,
+      "rmse": 0.32655045498785906,
+      "maxError": 7,
+      "psnr": 57.8517977445492,
+      "psnrStatus": "finite",
+      "exactRGBAFraction": 0.85943603515625,
+      "linearRMSE": 0.0011591719074735937,
+      "scope": "finite_frame_numeric_measurement_not_formal_proof_or_visual_quality"
+    },
+    "directMs": 192.5,
+    "cachedMs": 105.39999999850988,
+    "stale": false
+  },
+  "learningRuns": [
+    {
+      "id": "training.mwrcezch",
+      "label": "湖水外观函数",
+      "state": "completed",
+      "config": {
+        "steps": 600,
+        "hidden": 24,
+        "batchSize": 64,
+        "learningRate": 0.01,
+        "seed": 11,
+        "maxMilliseconds": 30000,
+        "reportEvery": 25,
+        "estimatedMAC": 154828800
+      },
+      "startedAt": "2026-11-22T04:34:46.090Z",
+      "stepsCompleted": 600,
+      "preparedReferences": [
+        {
+          "id": "reference.b689d5ebe330549b6aa6",
+          "label": "Lautersee 湖水反射",
+          "sourceGroup": "source.1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File:Lautersee_2026.jpg",
+          "contentHash": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+          "width": 128,
+          "height": 26,
+          "crop": [
+            0.05,
+            0.7,
+            0.95,
+            0.98
+          ],
+          "coverageKind": "rectangle",
+          "originalWidth": 800,
+          "originalHeight": 531,
+          "originalSourceHash": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "licenseStatus": "CC0 1.0（仓库来源记录）",
+          "attribution": "Taubenflieger68"
+        }
+      ],
+      "lastProgress": {
+        "step": 600,
+        "trainLoss": 0.0023469734018060967,
+        "validationLoss": 0.0026863817801313274,
+        "elapsedMs": 1125.300000000745,
+        "totalSteps": 600,
+        "bestStep": 475,
+        "bestValidationLoss": 0.0024471659094261896,
+        "state": "running"
+      },
+      "schema": "crf.training_run/1.1",
+      "trainerBuild": "crf.learn11.cpu-adam-v1",
+      "history": [
+        {
+          "step": 0,
+          "trainLoss": 0.18512460965169486,
+          "validationLoss": 0.18544420239564266,
+          "elapsedMs": 25.800000000745058
+        },
+        {
+          "step": 25,
+          "trainLoss": 0.007063721513410618,
+          "validationLoss": 0.007473645309290072,
+          "elapsedMs": 121
+        },
+        {
+          "step": 50,
+          "trainLoss": 0.004669013696175439,
+          "validationLoss": 0.004925390914719815,
+          "elapsedMs": 170.10000000149012
+        },
+        {
+          "step": 75,
+          "trainLoss": 0.004510197632690339,
+          "validationLoss": 0.004874498565295421,
+          "elapsedMs": 216.40000000223517
+        },
+        {
+          "step": 100,
+          "trainLoss": 0.0036119436744936778,
+          "validationLoss": 0.003565151975361425,
+          "elapsedMs": 263.6000000014901
+        },
+        {
+          "step": 125,
+          "trainLoss": 0.003920583147853216,
+          "validationLoss": 0.004127512763605197,
+          "elapsedMs": 315.30000000074506
+        },
+        {
+          "step": 150,
+          "trainLoss": 0.0036678574319835306,
+          "validationLoss": 0.003875400870728032,
+          "elapsedMs": 362.1000000014901
+        },
+        {
+          "step": 175,
+          "trainLoss": 0.0035993531866931362,
+          "validationLoss": 0.004145139408547682,
+          "elapsedMs": 407.30000000074506
+        },
+        {
+          "step": 200,
+          "trainLoss": 0.0038826814474406737,
+          "validationLoss": 0.0036274342311737318,
+          "elapsedMs": 448.30000000074506
+        },
+        {
+          "step": 225,
+          "trainLoss": 0.0035702541753863844,
+          "validationLoss": 0.004129346156978728,
+          "elapsedMs": 493.70000000298023
+        },
+        {
+          "step": 250,
+          "trainLoss": 0.0029850126570521024,
+          "validationLoss": 0.003128403153182129,
+          "elapsedMs": 533.9000000022352
+        },
+        {
+          "step": 275,
+          "trainLoss": 0.003189837801900529,
+          "validationLoss": 0.0033992848407351744,
+          "elapsedMs": 574.4000000022352
+        },
+        {
+          "step": 300,
+          "trainLoss": 0.0032163551312143182,
+          "validationLoss": 0.0031567192183727367,
+          "elapsedMs": 615.3000000007451
+        },
+        {
+          "step": 325,
+          "trainLoss": 0.0028903127401618024,
+          "validationLoss": 0.003013504415145777,
+          "elapsedMs": 661
+        },
+        {
+          "step": 350,
+          "trainLoss": 0.003711563926794491,
+          "validationLoss": 0.003993950826358955,
+          "elapsedMs": 701.7000000029802
+        },
+        {
+          "step": 375,
+          "trainLoss": 0.0028711255568596803,
+          "validationLoss": 0.0032931985873690204,
+          "elapsedMs": 743.4000000022352
+        },
+        {
+          "step": 400,
+          "trainLoss": 0.00323850927209724,
+          "validationLoss": 0.0032821153329326796,
+          "elapsedMs": 783.7000000029802
+        },
+        {
+          "step": 425,
+          "trainLoss": 0.003000772393476288,
+          "validationLoss": 0.0030954833705924513,
+          "elapsedMs": 828.3000000007451
+        },
+        {
+          "step": 450,
+          "trainLoss": 0.0026821723468804168,
+          "validationLoss": 0.0027731973945585484,
+          "elapsedMs": 870
+        },
+        {
+          "step": 475,
+          "trainLoss": 0.002563798835840384,
+          "validationLoss": 0.0024471659094261896,
+          "elapsedMs": 912
+        },
+        {
+          "step": 500,
+          "trainLoss": 0.002639443058203198,
+          "validationLoss": 0.0028632680351454885,
+          "elapsedMs": 953.3000000007451
+        },
+        {
+          "step": 525,
+          "trainLoss": 0.002764977365669894,
+          "validationLoss": 0.0025014659882370985,
+          "elapsedMs": 997.8000000007451
+        },
+        {
+          "step": 550,
+          "trainLoss": 0.0023043139559686264,
+          "validationLoss": 0.002498534963718434,
+          "elapsedMs": 1040
+        },
+        {
+          "step": 575,
+          "trainLoss": 0.0023745276522490638,
+          "validationLoss": 0.0025126329429568475,
+          "elapsedMs": 1083.9000000022352
+        },
+        {
+          "step": 600,
+          "trainLoss": 0.0023469734018060967,
+          "validationLoss": 0.0026863817801313274,
+          "elapsedMs": 1125.300000000745
+        }
+      ],
+      "evidenceScope": "spatial_reconstruction_holdout",
+      "independentSourceGeneralization": "not_evaluated",
+      "semanticControlsLearned": false,
+      "learnedDynamics": false,
+      "programRSI": false,
+      "precision": "float64",
+      "sourceRGBEmbedded": false,
+      "coverageGroundTruth": false,
+      "instances": [
+        {
+          "id": "reference.b689d5ebe330549b6aa6",
+          "label": "Lautersee 湖水反射",
+          "sourceGroup": "source.1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "width": 128,
+          "height": 26,
+          "crop": [
+            0.05,
+            0.7,
+            0.95,
+            0.98
+          ],
+          "coverageKind": "rectangle",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File:Lautersee_2026.jpg",
+          "originalWidth": 800,
+          "originalHeight": 531,
+          "originalSourceHash": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "licenseStatus": "CC0 1.0（仓库来源记录）",
+          "attribution": "Taubenflieger68",
+          "declaredSourceHash": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+          "decodedPixelHash": "69b6563dc122e6587cb06ec0b89a4621308e2f9ecd96cd772c384ab2bba2286f"
+        }
+      ],
+      "sourceGroupCount": 1,
+      "sourceGroupStatus": "declared_groups_with_identical_content_consistency_check",
+      "splitProtocol": {
+        "method": "deterministic_pixel_hash_mod5",
+        "validationModulo": 5,
+        "seed": 11,
+        "validationUsedForCheckpointSelection": true,
+        "independentTestSet": false,
+        "trainPixels": 2629,
+        "validationPixels": 699,
+        "measuredTrainPixels": 1024,
+        "measuredValidationPixels": 699,
+        "measurementSelection": "fixed_even_stride_up_to_1024_per_partition",
+        "sourceGroups": [
+          "source.1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0"
+        ]
+      },
+      "datasetHash": "7312401531871bd049df5c9dfb5dc177503a8dcedb96ab784a33e54477d2751b",
+      "parameterCount": 1059,
+      "weightBytes": 8472,
+      "initialLoss": 0.18512460965169486,
+      "initialValidationLoss": 0.18544420239564266,
+      "lastStepTrainLoss": 0.0023469734018060967,
+      "lastStepValidationLoss": 0.0026863817801313274,
+      "finalLoss": 0.002563798835840384,
+      "validationLoss": 0.0024471659094261896,
+      "bestStep": 475,
+      "checkpointRule": "lowest measured spatial validation MSE, including initialization; never an independent test claim",
+      "instanceMetrics": [
+        {
+          "id": "reference.b689d5ebe330549b6aa6",
+          "trainPixels": 2629,
+          "validationPixels": 699,
+          "measuredTrainPixels": 512,
+          "measuredValidationPixels": 512,
+          "trainLoss": 0.0027751980847525305,
+          "validationLoss": 0.0027146944541748975
+        }
+      ],
+      "modelHash": "25436a9417163f9a4af620bc4dddd355881265eed44ad51adb41613eff409b1a",
+      "modelHashProtocol": "sha256_canonical_json_sorted_keys_utf8_v1",
+      "modelJSONBytes": 22369,
+      "coverageJSONBytes": 132,
+      "coverageRawBytes": 3328,
+      "endedAt": "2026-11-22T04:34:47.229Z",
+      "elapsedMs": 1139.800000000745,
+      "functionVersion": "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b"
+    },
+    {
+      "id": "training.mwrcjci1",
+      "label": "湖水外观函数",
+      "state": "canceled",
+      "config": {
+        "steps": 1200,
+        "hidden": 16,
+        "seed": 11
+      },
+      "startedAt": "2026-11-22T04:38:09.759Z",
+      "stepsCompleted": 8,
+      "preparedReferences": [
+        {
+          "id": "reference.b689d5ebe330549b6aa6",
+          "label": "Lautersee 湖水反射",
+          "sourceGroup": "source.1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File:Lautersee_2026.jpg",
+          "contentHash": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+          "width": 128,
+          "height": 26,
+          "crop": [
+            0.05,
+            0.7,
+            0.95,
+            0.98
+          ],
+          "coverageKind": "rectangle",
+          "originalWidth": 800,
+          "originalHeight": 531,
+          "originalSourceHash": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "licenseStatus": "CC0 1.0（仓库来源记录）",
+          "attribution": "Taubenflieger68"
+        },
+        {
+          "id": "reference.d01694c93fc4db406bc0",
+          "label": "File:Gurudongmar Lake Sikkim, India (edit).jpg",
+          "sourceGroup": "source.d01694c93fc4db406bc0047676d38f95be3684066d1098f7d34baa4e8fc810f9",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File%3AGurudongmar_Lake_Sikkim%2C_India_(edit).jpg",
+          "contentHash": "d01694c93fc4db406bc0047676d38f95be3684066d1098f7d34baa4e8fc810f9",
+          "width": 128,
+          "height": 85,
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "coverageKind": "source_alpha",
+          "originalWidth": 960,
+          "originalHeight": 640,
+          "licenseStatus": "CC BY-SA 4.0",
+          "attribution": "Original: Yoghya Derivative work: UnpetitproleX"
+        },
+        {
+          "id": "reference.a8c4c85ed6c9dc88c821",
+          "label": "File:Lake Seliger. Ostashkov. View of Voroniy Island.jpg",
+          "sourceGroup": "source.a8c4c85ed6c9dc88c82179983ea40d66e57169c10af1b08a0afa89c89d6fdc54",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File%3ALake_Seliger._Ostashkov._View_of_Voroniy_Island.jpg",
+          "contentHash": "a8c4c85ed6c9dc88c82179983ea40d66e57169c10af1b08a0afa89c89d6fdc54",
+          "width": 128,
+          "height": 85,
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "coverageKind": "source_alpha",
+          "originalWidth": 960,
+          "originalHeight": 641,
+          "licenseStatus": "CC BY-SA 4.0",
+          "attribution": "Александр Байдуков"
+        },
+        {
+          "id": "reference.a22b6ae288b71d6ce8f3",
+          "label": "File:Mono Lake Tufa.JPG",
+          "sourceGroup": "source.a22b6ae288b71d6ce8f3c6d73406a29dcd4981c29db590ea181ef7009c8e77c7",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File%3AMono_Lake_Tufa.JPG",
+          "contentHash": "a22b6ae288b71d6ce8f3c6d73406a29dcd4981c29db590ea181ef7009c8e77c7",
+          "width": 128,
+          "height": 85,
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "coverageKind": "source_alpha",
+          "originalWidth": 960,
+          "originalHeight": 640,
+          "licenseStatus": "CC BY-SA 3.0",
+          "attribution": "Vezoy ( talk · contribs )"
+        }
+      ],
+      "lastProgress": {
+        "step": 0,
+        "trainLoss": 0.11754868381150828,
+        "validationLoss": 0.11566328582977971,
+        "elapsedMs": 151,
+        "totalSteps": 1200,
+        "bestStep": 0,
+        "bestValidationLoss": 0.11566328582977971,
+        "state": "running"
+      },
+      "schema": "crf.training_run/1.1",
+      "trainerBuild": "crf.learn11.cpu-adam-v1",
+      "history": [
+        {
+          "step": 0,
+          "trainLoss": 0.11754868381150828,
+          "validationLoss": 0.11566328582977971,
+          "elapsedMs": 151
+        }
+      ],
+      "evidenceScope": "spatial_reconstruction_holdout",
+      "independentSourceGeneralization": "not_evaluated",
+      "semanticControlsLearned": false,
+      "learnedDynamics": false,
+      "programRSI": false,
+      "precision": "float64",
+      "sourceRGBEmbedded": false,
+      "coverageGroundTruth": false,
+      "instances": [
+        {
+          "id": "reference.b689d5ebe330549b6aa6",
+          "label": "Lautersee 湖水反射",
+          "sourceGroup": "source.1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "width": 128,
+          "height": 26,
+          "crop": [
+            0.05,
+            0.7,
+            0.95,
+            0.98
+          ],
+          "coverageKind": "rectangle",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File:Lautersee_2026.jpg",
+          "originalWidth": 800,
+          "originalHeight": 531,
+          "originalSourceHash": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "licenseStatus": "CC0 1.0（仓库来源记录）",
+          "attribution": "Taubenflieger68",
+          "declaredSourceHash": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+          "decodedPixelHash": "69b6563dc122e6587cb06ec0b89a4621308e2f9ecd96cd772c384ab2bba2286f"
+        },
+        {
+          "id": "reference.d01694c93fc4db406bc0",
+          "label": "File:Gurudongmar Lake Sikkim, India (edit).jpg",
+          "sourceGroup": "source.d01694c93fc4db406bc0047676d38f95be3684066d1098f7d34baa4e8fc810f9",
+          "width": 128,
+          "height": 85,
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "coverageKind": "source_alpha",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File%3AGurudongmar_Lake_Sikkim%2C_India_(edit).jpg",
+          "originalWidth": 960,
+          "originalHeight": 640,
+          "licenseStatus": "CC BY-SA 4.0",
+          "attribution": "Original: Yoghya Derivative work: UnpetitproleX",
+          "declaredSourceHash": "d01694c93fc4db406bc0047676d38f95be3684066d1098f7d34baa4e8fc810f9",
+          "decodedPixelHash": "0e128c0adec128049e790acda8f6eb6af2f9fa1376d8ae207dec1ee04bc11d10"
+        },
+        {
+          "id": "reference.a8c4c85ed6c9dc88c821",
+          "label": "File:Lake Seliger. Ostashkov. View of Voroniy Island.jpg",
+          "sourceGroup": "source.a8c4c85ed6c9dc88c82179983ea40d66e57169c10af1b08a0afa89c89d6fdc54",
+          "width": 128,
+          "height": 85,
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "coverageKind": "source_alpha",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File%3ALake_Seliger._Ostashkov._View_of_Voroniy_Island.jpg",
+          "originalWidth": 960,
+          "originalHeight": 641,
+          "licenseStatus": "CC BY-SA 4.0",
+          "attribution": "Александр Байдуков",
+          "declaredSourceHash": "a8c4c85ed6c9dc88c82179983ea40d66e57169c10af1b08a0afa89c89d6fdc54",
+          "decodedPixelHash": "81061b8f56d1d05bf61726caa4aac054481dcbfe42e65158521110ab827636a0"
+        },
+        {
+          "id": "reference.a22b6ae288b71d6ce8f3",
+          "label": "File:Mono Lake Tufa.JPG",
+          "sourceGroup": "source.a22b6ae288b71d6ce8f3c6d73406a29dcd4981c29db590ea181ef7009c8e77c7",
+          "width": 128,
+          "height": 85,
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "coverageKind": "source_alpha",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File%3AMono_Lake_Tufa.JPG",
+          "originalWidth": 960,
+          "originalHeight": 640,
+          "licenseStatus": "CC BY-SA 3.0",
+          "attribution": "Vezoy ( talk · contribs )",
+          "declaredSourceHash": "a22b6ae288b71d6ce8f3c6d73406a29dcd4981c29db590ea181ef7009c8e77c7",
+          "decodedPixelHash": "47692d73d16decba5ad2cc9dbd940b670ef19e4cce0f819a828723965fcd101f"
+        }
+      ],
+      "sourceGroupCount": 4,
+      "sourceGroupStatus": "declared_groups_with_identical_content_consistency_check",
+      "splitProtocol": {
+        "method": "deterministic_pixel_hash_mod5",
+        "validationModulo": 5,
+        "seed": 11,
+        "validationUsedForCheckpointSelection": true,
+        "independentTestSet": false,
+        "trainPixels": 28684,
+        "validationPixels": 7284,
+        "measuredTrainPixels": 1024,
+        "measuredValidationPixels": 1024,
+        "measurementSelection": "fixed_even_stride_up_to_1024_per_partition",
+        "sourceGroups": [
+          "source.1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "source.d01694c93fc4db406bc0047676d38f95be3684066d1098f7d34baa4e8fc810f9",
+          "source.a8c4c85ed6c9dc88c82179983ea40d66e57169c10af1b08a0afa89c89d6fdc54",
+          "source.a22b6ae288b71d6ce8f3c6d73406a29dcd4981c29db590ea181ef7009c8e77c7"
+        ]
+      },
+      "datasetHash": "1c12cfe0c0c6163ac77400a6c62ebe8f7c0395a313207149f1eaa610a3cf3f9a",
+      "parameterCount": 627,
+      "weightBytes": 5016,
+      "initialLoss": 0.11754868381150828,
+      "initialValidationLoss": 0.11566328582977971,
+      "lastStepTrainLoss": 0.11754868381150828,
+      "lastStepValidationLoss": 0.11566328582977971,
+      "elapsedMs": 199.5,
+      "error": "Local training canceled."
+    }
+  ],
+  "feedback": [
+    {
+      "id": "feedback.mwrcgf52",
+      "createdAt": "2026-11-22T04:35:53.126Z",
+      "kind": "explicit_user_annotation",
+      "choice": "accept",
+      "note": "验收：本地训练的湖水函数已合成到场景；云层以显式二维轨迹运动。",
+      "sceneRevision": 3,
+      "sceneSha256": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+      "functionVersions": [
+        "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+        "7e2f695f1a8da7618b88c386678f73b16df3860a48e95e4696738645bba9146b",
+        "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b",
+        "c3cbc4d8cfb8f2465f686038d576d374b2c36cdb352d006bf7eadd284b025886",
+        "f101f0c6e468d3cfd034d80ea7b49de44916abc74dd201c82efa3a4471ebc7cf"
+      ],
+      "frameSha256": "5d1bbc9f8a5ed3ff52b2977dd4ea80c331a3f2ff6efca439e08b47a58e445ec1",
+      "pixelSha256": "0d3e5222c314ce930c00c370d60642285d12f198a11c4fb5c2b22f9f2315cfb8",
+      "width": 640,
+      "height": 480,
+      "time": 0,
+      "descriptor": {
+        "schema": "crf.frame_descriptor.v1.1",
+        "width": 640,
+        "height": 480,
+        "channels": "RGBA8",
+        "colorSpace": "srgb",
+        "alpha": "straight_opaque_background",
+        "sampling": {
+          "type": "joint_regular_subpixel",
+          "samplesPerAxis": 1
+        },
+        "time": 0,
+        "backend": "cached",
+        "cacheResolution": 64,
+        "sceneDigest": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+        "functionVersions": [
+          "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+          "7e2f695f1a8da7618b88c386678f73b16df3860a48e95e4696738645bba9146b",
+          "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b",
+          "c3cbc4d8cfb8f2465f686038d576d374b2c36cdb352d006bf7eadd284b025886",
+          "f101f0c6e468d3cfd034d80ea7b49de44916abc74dd201c82efa3a4471ebc7cf"
+        ],
+        "rendererBuild": "1.1.0-learnable-functions.1",
+        "rendererSourceSha256": null
+      }
+    }
+  ],
+  "agentRuns": [],
+  "exports": [
+    {
+      "kind": "png",
+      "at": "2026-11-22T04:36:00.931Z",
+      "sceneSha256": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+      "descriptor": {
+        "schema": "crf.frame_descriptor.v1.1",
+        "width": 640,
+        "height": 480,
+        "channels": "RGBA8",
+        "colorSpace": "srgb",
+        "alpha": "straight_opaque_background",
+        "sampling": {
+          "type": "joint_regular_subpixel",
+          "samplesPerAxis": 1
+        },
+        "time": 0,
+        "backend": "cached",
+        "cacheResolution": 64,
+        "sceneDigest": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+        "functionVersions": [
+          "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+          "7e2f695f1a8da7618b88c386678f73b16df3860a48e95e4696738645bba9146b",
+          "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b",
+          "c3cbc4d8cfb8f2465f686038d576d374b2c36cdb352d006bf7eadd284b025886",
+          "f101f0c6e468d3cfd034d80ea7b49de44916abc74dd201c82efa3a4471ebc7cf"
+        ],
+        "rendererBuild": "1.1.0-learnable-functions.1",
+        "rendererSourceSha256": null
+      },
+      "profile": {
+        "time": 0,
+        "backend": "cached",
+        "samples": 1
+      },
+      "bytes": 238533
+    },
+    {
+      "width": 640,
+      "height": 480,
+      "frameCount": 120,
+      "fps": 24,
+      "duration": 5,
+      "codec": "vp09.00.40.08",
+      "mimeType": "video/webm;codecs=vp9",
+      "timing": "fixed timestamps; no real-time frame dropping",
+      "encodedFrames": 120,
+      "containerTimecodeScaleNanoseconds": 1000000,
+      "exporterVersion": "0.9.1",
+      "encoderSelection": {
+        "selectedCodec": "vp09.00.40.08",
+        "preference": [
+          "vp09.00.40.08",
+          "vp09.00.10.08",
+          "vp8"
+        ],
+        "attempts": [
+          {
+            "codec": "vp09.00.40.08",
+            "supported": true
+          }
+        ],
+        "reason": "Prefer VP9 bitstream range/matrix signalling; incompatible VP8 fallback is rejected."
+      },
+      "colorMetadata": {
+        "source": "VideoEncoder output metadata.decoderConfig.colorSpace",
+        "decoderConfigEvents": [
+          {
+            "timestamp": 0,
+            "codec": "vp09.00.40.08",
+            "codedWidth": 640,
+            "codedHeight": 480,
+            "colorSpaceProvided": true,
+            "colorSpace": {
+              "primaries": "bt709",
+              "transfer": "iec61966-2-1",
+              "matrix": "bt709",
+              "fullRange": true
+            }
+          }
+        ],
+        "bitstreamColourEvents": [
+          {
+            "timestamp": 0,
+            "codec": "vp9",
+            "status": "matched-declared-range-and-matrix",
+            "profile": 0,
+            "bitDepth": 8,
+            "colorSpaceCode": 2,
+            "matrix": "bt709",
+            "fullRange": true
+          },
+          {
+            "timestamp": 1000000,
+            "codec": "vp9",
+            "status": "matched-declared-range-and-matrix",
+            "profile": 0,
+            "bitDepth": 8,
+            "colorSpaceCode": 2,
+            "matrix": "bt709",
+            "fullRange": true
+          },
+          {
+            "timestamp": 2000000,
+            "codec": "vp9",
+            "status": "matched-declared-range-and-matrix",
+            "profile": 0,
+            "bitDepth": 8,
+            "colorSpaceCode": 2,
+            "matrix": "bt709",
+            "fullRange": true
+          },
+          {
+            "timestamp": 3000000,
+            "codec": "vp9",
+            "status": "matched-declared-range-and-matrix",
+            "profile": 0,
+            "bitDepth": 8,
+            "colorSpaceCode": 2,
+            "matrix": "bt709",
+            "fullRange": true
+          },
+          {
+            "timestamp": 4000000,
+            "codec": "vp9",
+            "status": "matched-declared-range-and-matrix",
+            "profile": 0,
+            "bitDepth": 8,
+            "colorSpaceCode": 2,
+            "matrix": "bt709",
+            "fullRange": true
+          }
+        ],
+        "policy": "Encoder-declared values only; missing values remain unspecified; no pixel-range remapping or guessed colour tags.",
+        "encoderColorSpace": {
+          "primaries": "bt709",
+          "transfer": "iec61966-2-1",
+          "matrix": "bt709",
+          "fullRange": true
+        },
+        "webmColour": {
+          "written": true,
+          "matrixCoefficients": 1,
+          "range": 2,
+          "transferCharacteristics": 13,
+          "primaries": 1
+        },
+        "unknownFields": [],
+        "unmappedFields": {},
+        "warnings": []
+      },
+      "kind": "video",
+      "scope": "fixed learned appearance with explicit 2D motion",
+      "sceneSha256": "0b7de307e04c95902b3d00b10e3ae968144004122eff3498a0bb4f3f750340dc",
+      "functionVersions": [
+        "3aacbca67cf83b4b21d12086415c042f6fe1cc3fa0008eae6a8eee7297db1884",
+        "7e2f695f1a8da7618b88c386678f73b16df3860a48e95e4696738645bba9146b",
+        "bd547e751188197fed78237dcaeeef571dd6e1df097f9c218e3079feda8e4b7b",
+        "c3cbc4d8cfb8f2465f686038d576d374b2c36cdb352d006bf7eadd284b025886",
+        "f101f0c6e468d3cfd034d80ea7b49de44916abc74dd201c82efa3a4471ebc7cf"
+      ],
+      "profile": {
+        "backend": "cached",
+        "samples": 1
+      },
+      "at": "2026-11-22T04:37:05.297Z"
+    }
+  ],
+  "formalProof": "not_implemented",
+  "programRSI": "not_executed",
+  "independentSourceGeneralization": "not_evaluated",
+  "persistenceFailed": false
+}

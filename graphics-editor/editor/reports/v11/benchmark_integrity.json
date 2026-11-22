@@ -1,0 +1,680 @@
+{
+  "schema": "crf.benchmark_integrity/1.1",
+  "checkedAt": "2026-11-22T04:40:32.678Z",
+  "status": "bindings_match",
+  "scope": "Read-only verification of existing numerical evidence and current source/input bindings; no new performance measurement or release acceptance.",
+  "checks": {
+    "runtimeSourceBindingsMatch": true,
+    "benchmarkModelFilesMatch": true,
+    "contractHashMatches": true,
+    "allTrainingModelHashesMatch": true,
+    "allTrainingDatasetHashesMatch": true,
+    "allTrainingEmbeddedReportsMatch": true,
+    "allPreparedReferenceHashesMatch": true,
+    "availableOriginalReferenceBytesMatch": true
+  },
+  "benchmarkReport": {
+    "file": "reports/v11/compute_benchmark.json",
+    "sha256": "3182cc3ffce2c9f0e89359191767d5dc997275288379e307047e1d73fcddc9c4",
+    "registeredAt": "2026-11-22T04:24:43.362Z",
+    "finishedAt": "2026-11-22T04:24:48.903Z",
+    "state": "completed",
+    "recordedContractHash": "f217438a868b78cae326299e63bfadfcfee9ce587406f4f01c04b0b5e78dddce",
+    "recomputedContractHash": "f217438a868b78cae326299e63bfadfcfee9ce587406f4f01c04b0b5e78dddce",
+    "sourceBindings": [
+      {
+        "file": "web/crf-core11.js",
+        "recordedSha256": "38e9d1d92490c1f6a73e3f7b20017a7267be158e041971cde3bf2263a80c050d",
+        "currentSha256": "38e9d1d92490c1f6a73e3f7b20017a7267be158e041971cde3bf2263a80c050d",
+        "matches": true
+      },
+      {
+        "file": "web/learn11.js",
+        "recordedSha256": "7132a94db2043443900eb4bdd5d4c2981b9c01c315f2d2e39be14982617506a5",
+        "currentSha256": "7132a94db2043443900eb4bdd5d4c2981b9c01c315f2d2e39be14982617506a5",
+        "matches": true
+      },
+      {
+        "file": "scripts/benchmark_functions11.cjs",
+        "recordedSha256": "9fe322572ab9172b88a3aa50949bc7e9cbfbb896a6e01cdb5632560955e5386e",
+        "currentSha256": "9fe322572ab9172b88a3aa50949bc7e9cbfbb896a6e01cdb5632560955e5386e",
+        "matches": true
+      }
+    ],
+    "modelFileBindings": [
+      {
+        "file": "reports/v11/training-water.model.json",
+        "recordedSha256": "0c937fb1707599156c94639898923f3a957683352784c9b009fbdcdfc00c506a",
+        "currentSha256": "0c937fb1707599156c94639898923f3a957683352784c9b009fbdcdfc00c506a",
+        "matches": true
+      },
+      {
+        "file": "reports/v11/training-ceramic.model.json",
+        "recordedSha256": "3efa28f027ba67db78b958fe206ea0cbde62acd2b3226ef9b2fb2a224fa22d32",
+        "currentSha256": "3efa28f027ba67db78b958fe206ea0cbde62acd2b3226ef9b2fb2a224fa22d32",
+        "matches": true
+      },
+      {
+        "file": "reports/v11/training-conditional.model.json",
+        "recordedSha256": "c69dd155589fbd1a9625bb854e971507112d76a042de75e6f092dbb63566770f",
+        "currentSha256": "c69dd155589fbd1a9625bb854e971507112d76a042de75e6f092dbb63566770f",
+        "matches": true
+      }
+    ],
+    "environment": {
+      "platform": "linux",
+      "architecture": "x64",
+      "node": "v24.22.3",
+      "cpuModel": "AMD EPYC 9V74 80-Core Processor",
+      "logicalCPUs": 9,
+      "targetMacM4Measured": false,
+      "timingScope": "this shared Linux executor; wall-clock observations may include scheduling noise"
+    },
+    "contract": {
+      "schema": "crf.compute_benchmark_contract/1.1",
+      "cases": [
+        {
+          "name": "water",
+          "file": "training-water.model.json",
+          "instance": 0
+        },
+        {
+          "name": "ceramic",
+          "file": "training-ceramic.model.json",
+          "instance": 0
+        },
+        {
+          "name": "conditional.ceramic",
+          "file": "training-conditional.model.json",
+          "instance": 0
+        },
+        {
+          "name": "conditional.orange",
+          "file": "training-conditional.model.json",
+          "instance": 1
+        }
+      ],
+      "width": 256,
+      "height": 160,
+      "background": [
+        0.12,
+        0.14,
+        0.18
+      ],
+      "object": {
+        "x": 28,
+        "y": 20,
+        "width": 200,
+        "height": 120,
+        "opacity": 1,
+        "rotation": 0,
+        "tint": [
+          1,
+          1,
+          1
+        ]
+      },
+      "time": 0,
+      "samples": 1,
+      "cacheResolution": 64,
+      "repeats": 5,
+      "quality": {
+        "domain": "RGB8 full-frame channels; all output alpha bytes",
+        "meanAbsoluteErrorMax": 1,
+        "maxChannelErrorMax": 12,
+        "alphaExact": true
+      },
+      "seeds": [
+        11,
+        29,
+        47
+      ],
+      "training": {
+        "steps": 600,
+        "hidden": 24,
+        "batchSize": 64,
+        "learningRate": 0.01
+      },
+      "qualityGateFrozenBeforeMeasurement": true,
+      "timingDefinitions": {
+        "compile": "createRuntime including immutable snapshot/hash checks",
+        "cold": "first frame of a fresh runtime, not a fresh operating-system process",
+        "warm": "next same-profile frame on that runtime",
+        "cacheBuild": "reported inside cold cached render; not added twice",
+        "endToEndCold": "compile wall time plus first-frame wall time"
+      },
+      "exclusions": [
+        "No target Mac M4 performance claim.",
+        "No GPU path.",
+        "No photographic realism or unseen-source generalization claim.",
+        "All means are explicitly compared to direct evaluation, not source-photo truth."
+      ]
+    }
+  },
+  "trainingReports": [
+    {
+      "name": "water",
+      "reportFile": "reports/v11/training-water.json",
+      "reportFileSha256": "ff048ee545cf29e689c9fb4635ca30359b0a23e3fc499ed7b723cbaa31e0ecd7",
+      "modelFile": "reports/v11/training-water.model.json",
+      "modelFileSha256": "0c937fb1707599156c94639898923f3a957683352784c9b009fbdcdfc00c506a",
+      "originalSourceCodeHashBinding": "not_recorded_in_training_report",
+      "trainerBuild": "crf.learn11.cpu-adam-v1",
+      "currentTrainerBuild": "crf.learn11.cpu-adam-v1",
+      "trainerBuildMatches": true,
+      "recordedModelHash": "e5ba1cf7b10a3305362637a73bd44bdbeef4945c7ae89ca8be303fe397de5d06",
+      "recomputedModelHash": "e5ba1cf7b10a3305362637a73bd44bdbeef4945c7ae89ca8be303fe397de5d06",
+      "modelHashMatches": true,
+      "modelHashProtocol": "sha256_canonical_json_sorted_keys_utf8_v1",
+      "recordedDatasetHash": "7bcd5d2a65e226fb9755fded506bd631d86544a08d421e92a2c9af10e86c3399",
+      "recomputedDatasetHash": "7bcd5d2a65e226fb9755fded506bd631d86544a08d421e92a2c9af10e86c3399",
+      "datasetHashMatches": true,
+      "embeddedReportMatches": true,
+      "state": "completed",
+      "stepsCompleted": 600,
+      "parameterCount": 1059,
+      "initialLoss": 0.18568816921102582,
+      "finalLoss": 0.002868718533226665,
+      "validationLoss": 0.0037781254127615778,
+      "referenceChecks": [
+        {
+          "id": "lake.water",
+          "sourceGroup": "source.1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File:Lautersee_2026.jpg",
+          "originalSourceHash": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "originalSourceHashStatus": "inherited_original_download_digest; original bytes checked separately where present",
+          "preparedInputFileHash": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+          "recordedInputFileHash": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+          "inputFileHashMatches": true,
+          "preparedTensorHash": "1d478152bd13933c71da2c7fdf56ba067fe9833eaf5fd051ca966defe8ef1d14",
+          "recordedTensorHash": "1d478152bd13933c71da2c7fdf56ba067fe9833eaf5fd051ca966defe8ef1d14",
+          "tensorHashMatches": true,
+          "width": 96,
+          "height": 20,
+          "crop": [
+            0.05,
+            0.7,
+            0.95,
+            0.98
+          ],
+          "coverageKind": "rectangle",
+          "licenseStatus": "CC0 1.0 (inherited source manifest)",
+          "attribution": "Taubenflieger68",
+          "licenseCheck": "recorded repository provenance only; no new remote license verification"
+        }
+      ]
+    },
+    {
+      "name": "ceramic",
+      "reportFile": "reports/v11/training-ceramic.json",
+      "reportFileSha256": "a13e742bfadb179a6333a47085c717ff7afa434936eb7a0d21b4a6728e07055c",
+      "modelFile": "reports/v11/training-ceramic.model.json",
+      "modelFileSha256": "3efa28f027ba67db78b958fe206ea0cbde62acd2b3226ef9b2fb2a224fa22d32",
+      "originalSourceCodeHashBinding": "not_recorded_in_training_report",
+      "trainerBuild": "crf.learn11.cpu-adam-v1",
+      "currentTrainerBuild": "crf.learn11.cpu-adam-v1",
+      "trainerBuildMatches": true,
+      "recordedModelHash": "528e8a5cc8082252eb1b9e514abe7be6517c11ab71c647afe52763701d0e0dfa",
+      "recomputedModelHash": "528e8a5cc8082252eb1b9e514abe7be6517c11ab71c647afe52763701d0e0dfa",
+      "modelHashMatches": true,
+      "modelHashProtocol": "sha256_canonical_json_sorted_keys_utf8_v1",
+      "recordedDatasetHash": "8b6a1bd0bc1c168272985e646ba08706b3d72c04e16c4ec0184b4d0a9acc3ec6",
+      "recomputedDatasetHash": "8b6a1bd0bc1c168272985e646ba08706b3d72c04e16c4ec0184b4d0a9acc3ec6",
+      "datasetHashMatches": true,
+      "embeddedReportMatches": true,
+      "state": "completed",
+      "stepsCompleted": 600,
+      "parameterCount": 1059,
+      "initialLoss": 0.171054772469296,
+      "finalLoss": 0.0009579397295266291,
+      "validationLoss": 0.000511018872784212,
+      "referenceChecks": [
+        {
+          "id": "learn.r03.097cfbf071e3.object",
+          "sourceGroup": "source.097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+          "originalSourceHash": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+          "originalSourceHashStatus": "inherited_original_download_digest; original bytes checked separately where present",
+          "preparedInputFileHash": "f064b22dda4e2a4bd004da181b3d82fad6dab6fa7505065812185f60ff80d598",
+          "recordedInputFileHash": "f064b22dda4e2a4bd004da181b3d82fad6dab6fa7505065812185f60ff80d598",
+          "inputFileHashMatches": true,
+          "preparedTensorHash": "a11089bba677b6527a98e5c5bd8ee7ccd4ad3306e291f214e6a5f45e0522732c",
+          "recordedTensorHash": "a11089bba677b6527a98e5c5bd8ee7ccd4ad3306e291f214e6a5f45e0522732c",
+          "tensorHashMatches": true,
+          "width": 47,
+          "height": 96,
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "coverageKind": "inferred_mask",
+          "licenseStatus": "source terms require attribution/verification",
+          "attribution": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+          "licenseCheck": "recorded repository provenance only; no new remote license verification"
+        }
+      ]
+    },
+    {
+      "name": "conditional",
+      "reportFile": "reports/v11/training-conditional.json",
+      "reportFileSha256": "dae452770e5440670be56cdd5ce600c19e7d7c719a3882eb8a85263117ec9aa1",
+      "modelFile": "reports/v11/training-conditional.model.json",
+      "modelFileSha256": "c69dd155589fbd1a9625bb854e971507112d76a042de75e6f092dbb63566770f",
+      "originalSourceCodeHashBinding": "not_recorded_in_training_report",
+      "trainerBuild": "crf.learn11.cpu-adam-v1",
+      "currentTrainerBuild": "crf.learn11.cpu-adam-v1",
+      "trainerBuildMatches": true,
+      "recordedModelHash": "d538bc17a28026622ba0a97b50b30f066fb8e0d0f47c688d4b9196025d691a90",
+      "recomputedModelHash": "d538bc17a28026622ba0a97b50b30f066fb8e0d0f47c688d4b9196025d691a90",
+      "modelHashMatches": true,
+      "modelHashProtocol": "sha256_canonical_json_sorted_keys_utf8_v1",
+      "recordedDatasetHash": "53febd3846f5cd54c950372edd7f972bd145ba4abc13b15b9252d0abade89729",
+      "recomputedDatasetHash": "53febd3846f5cd54c950372edd7f972bd145ba4abc13b15b9252d0abade89729",
+      "datasetHashMatches": true,
+      "embeddedReportMatches": true,
+      "state": "completed",
+      "stepsCompleted": 600,
+      "parameterCount": 1083,
+      "initialLoss": 0.14691833110352273,
+      "finalLoss": 0.004661612211732241,
+      "validationLoss": 0.005161379955876588,
+      "referenceChecks": [
+        {
+          "id": "learn.r03.097cfbf071e3.object",
+          "sourceGroup": "source.097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+          "sourceUri": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+          "originalSourceHash": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+          "originalSourceHashStatus": "inherited_original_download_digest; original bytes checked separately where present",
+          "preparedInputFileHash": "f064b22dda4e2a4bd004da181b3d82fad6dab6fa7505065812185f60ff80d598",
+          "recordedInputFileHash": "f064b22dda4e2a4bd004da181b3d82fad6dab6fa7505065812185f60ff80d598",
+          "inputFileHashMatches": true,
+          "preparedTensorHash": "a11089bba677b6527a98e5c5bd8ee7ccd4ad3306e291f214e6a5f45e0522732c",
+          "recordedTensorHash": "a11089bba677b6527a98e5c5bd8ee7ccd4ad3306e291f214e6a5f45e0522732c",
+          "tensorHashMatches": true,
+          "width": 47,
+          "height": 96,
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "coverageKind": "inferred_mask",
+          "licenseStatus": "source terms require attribution/verification",
+          "attribution": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+          "licenseCheck": "recorded repository provenance only; no new remote license verification"
+        },
+        {
+          "id": "learn.r01.c6657129fc5c.object",
+          "sourceGroup": "source.c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+          "sourceUri": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+          "originalSourceHash": "c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+          "originalSourceHashStatus": "inherited_original_download_digest; original bytes checked separately where present",
+          "preparedInputFileHash": "b634d9724b22acf4cb383fa6f5338c2b82f9bfb61ec96ac9777099b20966f57b",
+          "recordedInputFileHash": "b634d9724b22acf4cb383fa6f5338c2b82f9bfb61ec96ac9777099b20966f57b",
+          "inputFileHashMatches": true,
+          "preparedTensorHash": "987023c5fc15a572165e8e94897664444cbe4af4ccc8ed191babf45538a24998",
+          "recordedTensorHash": "987023c5fc15a572165e8e94897664444cbe4af4ccc8ed191babf45538a24998",
+          "tensorHashMatches": true,
+          "width": 96,
+          "height": 90,
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "coverageKind": "inferred_mask",
+          "licenseStatus": "source terms require attribution/verification",
+          "attribution": "Photo by Ricardo Utsumi on Pexels",
+          "licenseCheck": "recorded repository provenance only; no new remote license verification"
+        }
+      ]
+    }
+  ],
+  "availableOriginalReferenceFiles": [
+    {
+      "name": "ceramic",
+      "file": "fitting/learning08/originals/learn.r03.097cfbf071e3.jpg",
+      "expectedSha256": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "currentSha256": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "matches": true
+    },
+    {
+      "name": "orange",
+      "file": "fitting/learning08/originals/learn.r01.c6657129fc5c.webp",
+      "expectedSha256": "c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+      "currentSha256": "c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+      "matches": true
+    }
+  ],
+  "sourceProvenanceLimitations": [
+    "Water reference original-download digest is inherited from assets/source_photos/sources.json; this check verifies the bundled prepared PNG and derived training tensor.",
+    "The three original training reports record trainerBuild, dataset and model digests but no source-code SHA fields. This integrity report links them to the current checked source snapshot; it does not retrospectively claim a source hash was recorded during those runs.",
+    "The Commons ceramic and Pexels orange records still say source terms require attribution/verification. These checks do not resolve that license metadata."
+  ],
+  "cases": [
+    {
+      "name": "water",
+      "directMedianMs": {
+        "compileMs": 5.963480000000004,
+        "coldMs": 70.39380600000004,
+        "warmMs": 67.19933500000002,
+        "endToEndColdMs": 77.97467800000004,
+        "cacheBuildMs": 0
+      },
+      "cachedMedianMs": {
+        "compileMs": 5.682056000000102,
+        "coldMs": 23.210020999999983,
+        "warmMs": 13.690983999999958,
+        "endToEndColdMs": 29.696551000000113,
+        "cacheBuildMs": 10.718367000000057
+      },
+      "comparison": {
+        "pixels": 40960,
+        "meanAbsoluteError": 0.15506998697916666,
+        "rootMeanSquaredError": 0.5335352197645126,
+        "maxChannelError": 11,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "objectRectangleComparison": {
+        "pixels": 24000,
+        "meanAbsoluteError": 0.2646527777777778,
+        "rootMeanSquaredError": 0.6970074923875959,
+        "maxChannelError": 11,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "qualityGate": {
+        "status": "passed",
+        "thresholds": {
+          "domain": "RGB8 full-frame channels; all output alpha bytes",
+          "meanAbsoluteErrorMax": 1,
+          "maxChannelErrorMax": 12,
+          "alphaExact": true
+        }
+      },
+      "speedRatios": {
+        "directOverCachedWarm": 4.908291106030087,
+        "directOverCachedColdIncludingCompile": 2.6257149525545826
+      },
+      "payload": {
+        "projectJSONBytes": 29165,
+        "functionLibraryJSONBytes": 28555,
+        "catalogJSONBytes": 575,
+        "modelJSONBytes": 22351,
+        "modelWeightBytesFloat64": 8472,
+        "coverageJSONBytes": 111,
+        "preparedReferenceRGBABytes": 7680,
+        "sizeMeaning": "bytes, not tokens; trained model may be larger than its small downsampled training image",
+        "libraryToCatalogByteRatio": 49.66086956521739
+      },
+      "independentProjectImport": {
+        "integrity": true,
+        "exactDirectRGBAReplay": true,
+        "referencesAvailableToRuntime": false
+      }
+    },
+    {
+      "name": "ceramic",
+      "directMedianMs": {
+        "compileMs": 4.210334999999986,
+        "coldMs": 51.90059300000007,
+        "warmMs": 52.225844999999936,
+        "endToEndColdMs": 57.00072,
+        "cacheBuildMs": 0
+      },
+      "cachedMedianMs": {
+        "compileMs": 3.7910729999998694,
+        "coldMs": 16.97101500000008,
+        "warmMs": 6.006354999999985,
+        "endToEndColdMs": 20.981558000000177,
+        "cacheBuildMs": 10.757115999999996
+      },
+      "comparison": {
+        "pixels": 40960,
+        "meanAbsoluteError": 0.09590657552083333,
+        "rootMeanSquaredError": 0.47960521145434465,
+        "maxChannelError": 11,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "objectRectangleComparison": {
+        "pixels": 24000,
+        "meanAbsoluteError": 0.16368055555555555,
+        "rootMeanSquaredError": 0.6265536245561464,
+        "maxChannelError": 11,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "qualityGate": {
+        "status": "passed",
+        "thresholds": {
+          "domain": "RGB8 full-frame channels; all output alpha bytes",
+          "meanAbsoluteErrorMax": 1,
+          "maxChannelErrorMax": 12,
+          "alphaExact": true
+        }
+      },
+      "speedRatios": {
+        "directOverCachedWarm": 8.695097942096341,
+        "directOverCachedColdIncludingCompile": 2.716705785147105
+      },
+      "payload": {
+        "projectJSONBytes": 31680,
+        "functionLibraryJSONBytes": 31072,
+        "catalogJSONBytes": 584,
+        "modelJSONBytes": 22636,
+        "modelWeightBytesFloat64": 8472,
+        "coverageJSONBytes": 2130,
+        "preparedReferenceRGBABytes": 18048,
+        "sizeMeaning": "bytes, not tokens; trained model may be larger than its small downsampled training image",
+        "libraryToCatalogByteRatio": 53.205479452054796
+      },
+      "independentProjectImport": {
+        "integrity": true,
+        "exactDirectRGBAReplay": true,
+        "referencesAvailableToRuntime": false
+      }
+    },
+    {
+      "name": "conditional.ceramic",
+      "directMedianMs": {
+        "compileMs": 5.41789800000015,
+        "coldMs": 54.97918200000004,
+        "warmMs": 54.377362000000176,
+        "endToEndColdMs": 60.37172899999996,
+        "cacheBuildMs": 0
+      },
+      "cachedMedianMs": {
+        "compileMs": 4.73523699999987,
+        "coldMs": 20.616125999999895,
+        "warmMs": 6.2394170000002305,
+        "endToEndColdMs": 25.80922399999963,
+        "cacheBuildMs": 11.614720000000034
+      },
+      "comparison": {
+        "pixels": 40960,
+        "meanAbsoluteError": 0.08782552083333334,
+        "rootMeanSquaredError": 0.32031885156304285,
+        "maxChannelError": 4,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "objectRectangleComparison": {
+        "pixels": 24000,
+        "meanAbsoluteError": 0.14988888888888888,
+        "rootMeanSquaredError": 0.4184627953726724,
+        "maxChannelError": 4,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "qualityGate": {
+        "status": "passed",
+        "thresholds": {
+          "domain": "RGB8 full-frame channels; all output alpha bytes",
+          "meanAbsoluteErrorMax": 1,
+          "maxChannelErrorMax": 12,
+          "alphaExact": true
+        }
+      },
+      "speedRatios": {
+        "directOverCachedWarm": 8.715135083934632,
+        "directOverCachedColdIncludingCompile": 2.3391532035213776
+      },
+      "payload": {
+        "projectJSONBytes": 36828,
+        "functionLibraryJSONBytes": 36208,
+        "catalogJSONBytes": 767,
+        "modelJSONBytes": 23840,
+        "modelWeightBytesFloat64": 8664,
+        "coverageJSONBytes": 5034,
+        "preparedReferenceRGBABytes": 52608,
+        "sizeMeaning": "bytes, not tokens; trained model may be larger than its small downsampled training image",
+        "libraryToCatalogByteRatio": 47.20730117340287
+      },
+      "independentProjectImport": {
+        "integrity": true,
+        "exactDirectRGBAReplay": true,
+        "referencesAvailableToRuntime": false
+      }
+    },
+    {
+      "name": "conditional.orange",
+      "directMedianMs": {
+        "compileMs": 4.958184000000074,
+        "coldMs": 54.75866799999994,
+        "warmMs": 53.9097569999999,
+        "endToEndColdMs": 59.82560599999988,
+        "cacheBuildMs": 0
+      },
+      "cachedMedianMs": {
+        "compileMs": 4.504778999999871,
+        "coldMs": 16.99476100000038,
+        "warmMs": 6.242621999999756,
+        "endToEndColdMs": 21.70661199999995,
+        "cacheBuildMs": 11.072302000000036
+      },
+      "comparison": {
+        "pixels": 40960,
+        "meanAbsoluteError": 0.09388020833333334,
+        "rootMeanSquaredError": 0.31377344699905163,
+        "maxChannelError": 3,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "objectRectangleComparison": {
+        "pixels": 24000,
+        "meanAbsoluteError": 0.1602222222222222,
+        "rootMeanSquaredError": 0.4099119146570124,
+        "maxChannelError": 3,
+        "alphaDifferentPixels": 0,
+        "alphaExact": true
+      },
+      "qualityGate": {
+        "status": "passed",
+        "thresholds": {
+          "domain": "RGB8 full-frame channels; all output alpha bytes",
+          "meanAbsoluteErrorMax": 1,
+          "maxChannelErrorMax": 12,
+          "alphaExact": true
+        }
+      },
+      "speedRatios": {
+        "directOverCachedWarm": 8.63575545660173,
+        "directOverCachedColdIncludingCompile": 2.7561005835456966
+      },
+      "payload": {
+        "projectJSONBytes": 36808,
+        "functionLibraryJSONBytes": 36198,
+        "catalogJSONBytes": 757,
+        "modelJSONBytes": 23840,
+        "modelWeightBytesFloat64": 8664,
+        "coverageJSONBytes": 5034,
+        "preparedReferenceRGBABytes": 52608,
+        "sizeMeaning": "bytes, not tokens; trained model may be larger than its small downsampled training image",
+        "libraryToCatalogByteRatio": 47.81770145310436
+      },
+      "independentProjectImport": {
+        "integrity": true,
+        "exactDirectRGBAReplay": true,
+        "referencesAvailableToRuntime": false
+      }
+    }
+  ],
+  "trainingSeeds": [
+    {
+      "seed": 11,
+      "modelHash": "e5ba1cf7b10a3305362637a73bd44bdbeef4945c7ae89ca8be303fe397de5d06",
+      "state": "completed",
+      "initialLoss": 0.18568816921102582,
+      "finalLoss": 0.002868718533226665,
+      "initialValidationLoss": 0.18241872322523814,
+      "validationLoss": 0.0037781254127615778,
+      "bestStep": 550,
+      "stepsCompleted": 600,
+      "elapsedMs": 668.5522850000002,
+      "parameterCount": 1059,
+      "modelJSONBytes": 22351,
+      "trainImproved": true,
+      "validationImproved": true,
+      "evidenceScope": "spatial_reconstruction_holdout",
+      "independentSourceGeneralization": "not_evaluated"
+    },
+    {
+      "seed": 29,
+      "modelHash": "c422abe623818590cf9c8c41dc9872803d8734b2b0eca622e8066adb6b4584c1",
+      "state": "completed",
+      "initialLoss": 0.2151404685085571,
+      "finalLoss": 0.002506055102939787,
+      "initialValidationLoss": 0.21503700615917315,
+      "validationLoss": 0.005065369044695136,
+      "bestStep": 575,
+      "stepsCompleted": 600,
+      "elapsedMs": 688.9360699999997,
+      "parameterCount": 1059,
+      "modelJSONBytes": 22312,
+      "trainImproved": true,
+      "validationImproved": true,
+      "evidenceScope": "spatial_reconstruction_holdout",
+      "independentSourceGeneralization": "not_evaluated"
+    },
+    {
+      "seed": 47,
+      "modelHash": "52933b8b3b5b0d1e91cda28dc2568e3a218681bcbd6a1a4fe35d53798fe07a62",
+      "state": "completed",
+      "initialLoss": 0.1897420734951205,
+      "finalLoss": 0.002614204145258772,
+      "initialValidationLoss": 0.18975576535805885,
+      "validationLoss": 0.0034155279788668233,
+      "bestStep": 600,
+      "stepsCompleted": 600,
+      "elapsedMs": 602.9221769999995,
+      "parameterCount": 1059,
+      "modelJSONBytes": 22388,
+      "trainImproved": true,
+      "validationImproved": true,
+      "evidenceScope": "spatial_reconstruction_holdout",
+      "independentSourceGeneralization": "not_evaluated"
+    }
+  ],
+  "trainingSeedSummary": {
+    "count": 3,
+    "allTrainImproved": true,
+    "allValidationImproved": true,
+    "evidenceScope": "same real water crop, three initialization/sampling seeds; not three independent sources"
+  },
+  "networkReadsDuringRuntime": 0,
+  "interpretationLimits": [
+    "Performance applies only to the specified 256x160 single-object Node CPU benchmark, cache64, one sample and five-repeat medians in this Linux executor.",
+    "Do not extrapolate these measurements to 640x480 browser FPS, GUI event-to-frame latency, Mac M4, GPU or video export speed.",
+    "Cold means first frame on a fresh runtime, not a fresh OS process. Compile, cold frame and end-to-end cold medians are separately computed; medians are not additive.",
+    "RGB differences are cached-versus-direct numerical differences, not photograph realism scores. Both paths share much of the same renderer.",
+    "Output alpha is opaque-background RGBA; alpha equality is not independent alpha matting validation.",
+    "Water seed runs share one source crop and use spatial validation for checkpoint selection. They do not establish unseen-source generalization.",
+    "Browser PNG byte replay and VP9 5-second/120-frame checks are separate evidence and are not derived from this Node benchmark."
+  ]
+}
