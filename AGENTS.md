@@ -56,3 +56,9 @@ When evaluating a proposed domain:
 3. Check whether a mathematical theorem supports basis and operations.
 4. Check reducibility against existing D1-D9 domains.
 5. If rejected, classify it as operation, validator, observer, or combination pattern.
+
+## Graphics Editor Development Entry
+
+For work under `graphics-editor/`, read its `AGENTS.md`, then `CODEX_START_HERE.md` and `plans/CRF_Integrated_Development_Plan.md`. The current GPU96 implementation branch is `crf-gpu96-development`; the default branch also contains the plan but does not automatically contain the experimental application implementation.
+
+The integrated plan preserves original 1.1 requirements and explicitly scopes object-local training and native spatial-function research. It does not admit a new mathematical CRF domain, change core DSL keywords, or promote claims to verified. The canonical truth order and claim-evidence requirements above remain in force. Treat product design, uploaded reports, measured runs, and formally checked claims as distinct evidence classes.
