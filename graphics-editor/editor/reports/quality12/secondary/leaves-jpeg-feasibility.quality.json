@@ -1,0 +1,450 @@
+{
+  "schema": "crf.quality_evidence.v1",
+  "version": "1.1.0-experimental.2",
+  "source": {
+    "path": "web/assets/v08/references/learn.r10.5cbf8dbb8c71.jpg",
+    "sha256": "2e40a273c6d31c25553ebf7f9f160d03d7c326d5e7c75d2a2bddb4bd5b12b19f",
+    "width": 512,
+    "height": 292,
+    "decodedRGBASHA256": "ecd7f34014452d49aa0a460fb2cd52c9d3ecabf33552c54c267440dd71392165",
+    "resized": false,
+    "cropped": false
+  },
+  "provenance": {
+    "kind": "observation_conditioned_gaussian_reconstruction",
+    "sourceRGBEmbedded": false,
+    "losslessResidualEmbedded": false,
+    "perPixelRGBTable": false,
+    "neuralModelTraining": false,
+    "referenceConditioned": true,
+    "optimizationScope": "this_observation_only",
+    "generalSceneGeneration": false,
+    "physicalRelighting": false,
+    "geometry": "two_dimensional_image_plane",
+    "illumination": "inherited_from_observation",
+    "source": {
+      "path": "web/assets/v08/references/learn.r10.5cbf8dbb8c71.jpg",
+      "sha256": "2e40a273c6d31c25553ebf7f9f160d03d7c326d5e7c75d2a2bddb4bd5b12b19f",
+      "width": 512,
+      "height": 292,
+      "decodedRGBASHA256": "ecd7f34014452d49aa0a460fb2cd52c9d3ecabf33552c54c267440dd71392165",
+      "resized": false,
+      "cropped": false
+    },
+    "qualityContractRole": "shared_metric_profile_only_different_reference",
+    "fitterSHA256": "6fa49af17569d967488f9e2f5ee4d248ebfb2cffe3c49956b6ea24ca149b3313",
+    "legacyFitterSHA256": "d8e576bb59e02dd9328e29c64a321f1a5febaec1a0622982386bec9433de8aa4"
+  },
+  "metrics": {
+    "mae": 1.2975684039668949,
+    "rmse": 1.8772751844877136,
+    "psnr": 42.66024482279781,
+    "ssim": 0.9854491409497871,
+    "maxError": 29,
+    "exactRGBFraction": 0.07447292380136987,
+    "evaluatedPixels": 149504
+  },
+  "rois": [],
+  "metricSpec": {
+    "colorSpace": "decoded_srgb_encoded_8bit",
+    "rounding": "floor(x+0.5), clamp 0..255",
+    "ssim": {
+      "window": "gaussian",
+      "sigma": 1.5,
+      "truncate": 3.5,
+      "boundary": "reflect",
+      "covariance": "population",
+      "C1": 6.5025,
+      "C2": 58.5225,
+      "channels": "RGB independently, arithmetic mean",
+      "roi": "select from the full-frame SSIM map, no recropping/filtering"
+    },
+    "roiBounds": "floor(min*dimension), ceil(max*dimension), half-open"
+  },
+  "qualityContractHash": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+  "qualityContractId": "alpine-native-quality-2026-11-22",
+  "gates": {
+    "fullFrame": {
+      "psnrMin": 32,
+      "ssimMin": 0.95,
+      "maeMax": 4
+    },
+    "rois": [
+      {
+        "id": "mountain_forest",
+        "ssimMin": 0.9,
+        "maeMax": 6
+      },
+      {
+        "id": "water",
+        "ssimMin": 0.9,
+        "maeMax": 6
+      },
+      {
+        "id": "shore_buildings",
+        "ssimMin": 0.9,
+        "maeMax": 6
+      }
+    ],
+    "fullFramePassed": true,
+    "roiPassed": null
+  },
+  "passed": null,
+  "qualityContractRole": "shared_metric_profile_only_different_reference",
+  "representation": {
+    "gaussians": 24576,
+    "parameterCount": 196611,
+    "geometryParameterCount": 122880,
+    "colourParameterCount": 73731,
+    "parameterFloat32Bytes": 786444,
+    "parameterFloat64Bytes": 1572888,
+    "rawRGBBytes": 448512,
+    "float32ToRawRGBRatio": 1.7534514126712328,
+    "jsonBytes": 1993810,
+    "jsonToRawRGBRatio": 4.445388306221461,
+    "gaussiansPerSourcePixel": 0.1643835616438356,
+    "minimumSigma": 0.35,
+    "medianSigma": 1.1082135,
+    "maximumSigma": 6.320093,
+    "sigmasAtMinimum": 505,
+    "encoding": "JSON decimal explicit continuous Gaussian parameters; not a compression claim"
+  },
+  "fit": {
+    "spec": {
+      "budget": 24576,
+      "iterations": 50,
+      "geometry_steps": 100,
+      "polish_iterations": 30,
+      "initial_fraction": 0.35,
+      "decimals": 6
+    },
+    "seconds": 17.436851,
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 8601,
+        "elapsedSeconds": 0.573975,
+        "mae": 9.7548828125,
+        "rmse": 14.55003036536319,
+        "psnr": 24.87352561509843,
+        "ssim": 0.6228114123894268,
+        "maxError": 148,
+        "exactRGBFraction": 0.0036587649828767124,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 8601,
+        "elapsedSeconds": 1.178475,
+        "mae": 7.727501159389269,
+        "rmse": 11.42121729026332,
+        "psnr": 26.97655572615604,
+        "ssim": 0.7153958920306208,
+        "maxError": 119,
+        "exactRGBFraction": 0.006668717893835617,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 18984,
+        "elapsedSeconds": 4.189871,
+        "mae": 4.3024779716038815,
+        "rmse": 6.156478704638538,
+        "psnr": 32.34415597710804,
+        "ssim": 0.9029874194121275,
+        "maxError": 69,
+        "exactRGBFraction": 0.012762200342465753,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 24576,
+        "elapsedSeconds": 6.053113,
+        "mae": 3.4218348672945207,
+        "rmse": 4.85510756015375,
+        "psnr": 34.40682649428759,
+        "ssim": 0.9378246963415453,
+        "maxError": 53,
+        "exactRGBFraction": 0.019103167808219176,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "joint_geometry_colour_0",
+        "elapsedSeconds": 6.148495,
+        "mae": 3.4218370968892695,
+        "rmse": 4.855105493633414,
+        "psnr": 34.406830191336766,
+        "ssim": 0.9378247716230139,
+        "maxError": 53,
+        "exactRGBFraction": 0.019103167808219176,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 23.530459450313316
+      },
+      {
+        "phase": "joint_geometry_colour_10",
+        "elapsedSeconds": 7.105318,
+        "mae": 2.286083761415525,
+        "rmse": 3.2035302603081566,
+        "psnr": 38.01822699546764,
+        "ssim": 0.9678762797276291,
+        "maxError": 46,
+        "exactRGBFraction": 0.024179955051369863,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 10.20438962612284
+      },
+      {
+        "phase": "joint_geometry_colour_20",
+        "elapsedSeconds": 7.980995,
+        "mae": 1.9058129994292237,
+        "rmse": 2.6892822552180338,
+        "psnr": 39.53807588365801,
+        "ssim": 0.9752458877131012,
+        "maxError": 42,
+        "exactRGBFraction": 0.032534246575342464,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 7.172377515544024
+      },
+      {
+        "phase": "joint_geometry_colour_30",
+        "elapsedSeconds": 8.929832,
+        "mae": 1.6859370540810503,
+        "rmse": 2.3987770715657666,
+        "psnr": 40.53100582804274,
+        "ssim": 0.9790432659716031,
+        "maxError": 37,
+        "exactRGBFraction": 0.042353381849315065,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 5.688876651384876
+      },
+      {
+        "phase": "joint_geometry_colour_40",
+        "elapsedSeconds": 9.880474,
+        "mae": 1.5478225777682648,
+        "rmse": 2.215505357155702,
+        "psnr": 41.22134751857003,
+        "ssim": 0.9813469112586936,
+        "maxError": 36,
+        "exactRGBFraction": 0.0517845676369863,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 4.845325136642298
+      },
+      {
+        "phase": "joint_geometry_colour_50",
+        "elapsedSeconds": 10.814768,
+        "mae": 1.4577803938356164,
+        "rmse": 2.096486021584363,
+        "psnr": 41.70096418725741,
+        "ssim": 0.9828027730833848,
+        "maxError": 35,
+        "exactRGBFraction": 0.05978435359589041,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 4.330270694529175
+      },
+      {
+        "phase": "joint_geometry_colour_60",
+        "elapsedSeconds": 11.758314,
+        "mae": 1.3985913420376712,
+        "rmse": 2.0160472306510466,
+        "psnr": 42.04078956341914,
+        "ssim": 0.9837887915247885,
+        "maxError": 34,
+        "exactRGBFraction": 0.06520895761986302,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 3.9953537456086106
+      },
+      {
+        "phase": "joint_geometry_colour_70",
+        "elapsedSeconds": 12.750407,
+        "mae": 1.3569246753710045,
+        "rmse": 1.9596241753288064,
+        "psnr": 42.28734783697022,
+        "ssim": 0.9844704778603985,
+        "maxError": 33,
+        "exactRGBFraction": 0.0684931506849315,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 3.7711675250490404
+      },
+      {
+        "phase": "joint_geometry_colour_80",
+        "elapsedSeconds": 13.735915,
+        "mae": 1.3293802618436072,
+        "rmse": 1.9222366316223696,
+        "psnr": 42.454666623796456,
+        "ssim": 0.9849212490809997,
+        "maxError": 32,
+        "exactRGBFraction": 0.07100813356164383,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 3.625040498000206
+      },
+      {
+        "phase": "joint_geometry_colour_90",
+        "elapsedSeconds": 14.769425,
+        "mae": 1.3129035566495433,
+        "rmse": 1.8999382040163966,
+        "psnr": 42.55601409584493,
+        "ssim": 0.9851853489759427,
+        "maxError": 31,
+        "exactRGBFraction": 0.07244622217465753,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 3.540789213403617
+      },
+      {
+        "phase": "joint_geometry_colour_100",
+        "elapsedSeconds": 15.766126,
+        "mae": 1.302609517694064,
+        "rmse": 1.885815931261101,
+        "psnr": 42.620817602464356,
+        "ssim": 0.9853513488307032,
+        "maxError": 31,
+        "exactRGBFraction": 0.07319536601027397,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576,
+        "floatMSE": 3.487537663428191
+      },
+      {
+        "phase": "global_colour_polish",
+        "elapsedSeconds": 17.367758,
+        "mae": 1.297570633561644,
+        "rmse": 1.8772757783256375,
+        "psnr": 42.66024207519324,
+        "ssim": 0.9854491326290439,
+        "maxError": 29,
+        "exactRGBFraction": 0.07447292380136987,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255",
+        "count": 24576
+      }
+    ],
+    "geometryOptimization": {
+      "available": true,
+      "steps": 100,
+      "bestFloatMSE": 3.487537663428191,
+      "minimumSigmaConstraint": 0.35,
+      "nativeBuildSHA256": "73e03fee5a8844a4d2ab939dadc68fafd79037380082ac0ef6c4d1f0d988f834",
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 23.530459450313316,
+          "bestFloatMSE": 23.530459450313316
+        },
+        {
+          "step": 10,
+          "floatMSE": 10.20438962612284,
+          "bestFloatMSE": 10.20438962612284
+        },
+        {
+          "step": 20,
+          "floatMSE": 7.172377515544024,
+          "bestFloatMSE": 7.172377515544024
+        },
+        {
+          "step": 30,
+          "floatMSE": 5.688876651384876,
+          "bestFloatMSE": 5.688876651384876
+        },
+        {
+          "step": 40,
+          "floatMSE": 4.845325136642298,
+          "bestFloatMSE": 4.845325136642298
+        },
+        {
+          "step": 50,
+          "floatMSE": 4.330270694529175,
+          "bestFloatMSE": 4.330270694529175
+        },
+        {
+          "step": 60,
+          "floatMSE": 3.9953537456086106,
+          "bestFloatMSE": 3.9953537456086106
+        },
+        {
+          "step": 70,
+          "floatMSE": 3.7711675250490404,
+          "bestFloatMSE": 3.7711675250490404
+        },
+        {
+          "step": 80,
+          "floatMSE": 3.625040498000206,
+          "bestFloatMSE": 3.625040498000206
+        },
+        {
+          "step": 90,
+          "floatMSE": 3.540789213403617,
+          "bestFloatMSE": 3.540789213403617
+        },
+        {
+          "step": 100,
+          "floatMSE": 3.487537663428191,
+          "bestFloatMSE": 3.487537663428191
+        }
+      ],
+      "parameters": "cx,cy,log_sigma_x,log_sigma_y,theta,R,G,B"
+    },
+    "colourPolish": {
+      "iterations": 30,
+      "accepted": true,
+      "beforeFloatMSE": 3.4875376680894306,
+      "afterFloatMSE": 3.456822325060539
+    },
+    "algorithm": "residual_adaptive_lsmr_joint_geometry_colour_adam_polish",
+    "bestCheckpointRule": "lowest_unquantized_full_frame_MSE_within_each_stage",
+    "minimumSigmaConstraint": 0.35
+  },
+  "exportedJSONReplayed": true,
+  "runtimeSourceImageRead": false,
+  "assetSHA256": "a5a7ac8dd185f40c31947cb119985fe768ec53bf24ff69a3651a5374bceea7ad",
+  "asset": {
+    "path": "/tmp/crf-quality12-secondary/leaves.asset.json",
+    "sha256": "a5a7ac8dd185f40c31947cb119985fe768ec53bf24ff69a3651a5374bceea7ad"
+  },
+  "replayRGBASHA256": "ea5bfd458989c254126a73605e0b6406bc0efc3d95194a5d618d8c21d37ad003",
+  "frameDescriptor": {
+    "width": 512,
+    "height": 292,
+    "channels": "RGBA8",
+    "colorSpace": "srgb",
+    "alpha": "opaque",
+    "sample": "pixel_centres"
+  },
+  "replaySeconds": 0.995786,
+  "totalSeconds": 18.670052,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "artifacts": {
+    "asset": "/tmp/crf-quality12-secondary/leaves.asset.json",
+    "preview": null
+  },
+  "claimScope": "One observation-conditioned reconstruction. No held-out scene generation or realistic physical motion claim.",
+  "supplementaryFullFrameGatePassed": true,
+  "primaryContractAcceptance": "not_applicable",
+  "previewRetention": "Preview superseded by canonical PNG run; JPEG parameters remain in scratch and the measured output RGBA hash is retained."
+}

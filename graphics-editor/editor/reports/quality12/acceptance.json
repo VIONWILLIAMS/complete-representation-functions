@@ -1,0 +1,137 @@
+{
+  "schema": "crf.quality_delivery_acceptance.v1",
+  "version": "1.1.0-experimental.2",
+  "status": "passed_for_declared_reference_quality_scope",
+  "designCommit": "f66a3e35b1501ef0172b859351a42aa4c03230ee",
+  "qualityContractSHA256": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+  "assetSHA256": "c82556bd942e63f73ff2c3dedfd98cec0b3ebfd8cd5716a9bcd43cea1aaa6672",
+  "referenceQuality": {
+    "passed": true,
+    "metrics": {
+      "mae": 2.1342953546767105,
+      "rmse": 3.7424202534484574,
+      "psnr": 36.66775251244562,
+      "ssim": 0.9728077248326319,
+      "maxError": 80,
+      "exactRGBFraction": 0.13453154425612052,
+      "evaluatedPixels": 424800
+    },
+    "rois": [
+      {
+        "id": "mountain_forest",
+        "name": "山体与树林",
+        "normalizedBox": [
+          0.05,
+          0.05,
+          0.4,
+          0.55
+        ],
+        "pixelBounds": [
+          40,
+          26,
+          320,
+          293
+        ],
+        "metrics": {
+          "mae": 3.168151417870519,
+          "rmse": 4.7757379999230904,
+          "psnr": 34.549993746708324,
+          "ssim": 0.9656937728189448,
+          "maxError": 38,
+          "exactRGBFraction": 0.06736222578919208,
+          "evaluatedPixels": 74760
+        },
+        "passed": true
+      },
+      {
+        "id": "water",
+        "name": "水面与倒影",
+        "normalizedBox": [
+          0.05,
+          0.7,
+          0.95,
+          0.98
+        ],
+        "pixelBounds": [
+          40,
+          371,
+          760,
+          521
+        ],
+        "metrics": {
+          "mae": 1.6501574074074075,
+          "rmse": 2.656420709837642,
+          "psnr": 39.64486646063503,
+          "ssim": 0.9659826656082298,
+          "maxError": 41,
+          "exactRGBFraction": 0.0687037037037037,
+          "evaluatedPixels": 108000
+        },
+        "passed": true
+      },
+      {
+        "id": "shore_buildings",
+        "name": "岸线与建筑",
+        "normalizedBox": [
+          0.6,
+          0.48,
+          0.98,
+          0.7
+        ],
+        "pixelBounds": [
+          480,
+          254,
+          784,
+          372
+        ],
+        "metrics": {
+          "mae": 3.371245911388641,
+          "rmse": 5.054358102776571,
+          "psnr": 34.05748343733242,
+          "ssim": 0.9670445894980022,
+          "maxError": 80,
+          "exactRGBFraction": 0.02266391614629795,
+          "evaluatedPixels": 35872
+        },
+        "passed": true
+      }
+    ]
+  },
+  "crossRuntimeExact": true,
+  "browserArtifacts": "passed",
+  "tests": {
+    "editorJS": 187,
+    "python": 9,
+    "rootJSONFiles": 18,
+    "claimEvidencePaths": 11
+  },
+  "build": {
+    "expandedDistBytes": 261718865,
+    "expandedLimitBytes": 262144000,
+    "headroomBytes": 425135,
+    "legacyAssetsChecked": 885,
+    "sourceFiles": 901,
+    "legacyAssetsByteExact": true,
+    "allPublishedURLsByteExact": true
+  },
+  "claims": {
+    "sourceFreeParameterRendering": "verified_finite_instances",
+    "referenceConditionedVisualQuality": "passed_this_canonical_reference",
+    "newSceneGeneration": "not_evaluated",
+    "smallNetworkGeneralization": "not_established",
+    "physicalRelighting": false,
+    "naturalDynamics": false,
+    "formalProof": "not_implemented",
+    "programRSI": false,
+    "liveLLMCallsThisRound": 0,
+    "fullCRF11PlanAcceptance": false
+  },
+  "evidence": [
+    "web/assets/quality12/alpine.quality.json",
+    "reports/quality12/review/independent-audit.json",
+    "reports/quality12/kernel/verification.json",
+    "reports/quality12/browser/artifact-verification.json",
+    "reports/quality12/test-results.json",
+    "reports/quality12/build_verification.json"
+  ]
+}

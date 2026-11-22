@@ -31,4 +31,10 @@ jobs:
       - run: npm test
       - run: npm run test:v10
       - run: npm run test:v11
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-build.txt -r requirements.txt
+      - run: npm run test:quality
+      - run: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=2 python3 tests/test_quality12.py
       - run: npm run build

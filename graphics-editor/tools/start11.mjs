@@ -9,8 +9,10 @@ const port = Number(at < 0 ? 4173 : args[at + 1]);
 if (Number(process.versions.node.split('.')[0]) < 22 || !Number.isInteger(port) || port < 1024 || port > 65535) {
   console.error('Use Node.js 22+ and --port 1024..65535.'); process.exit(1);
 }
-const url = 'http://127.0.0.1:' + port + '/studio11.html';
-console.log('CRF 1.1 experimental object functions — local training, code, image and video');
+const quality = args.includes('--quality');
+const url = 'http://127.0.0.1:' + port + (quality ? '/quality12.html' : '/studio11.html');
+console.log(quality ? 'CRF 1.1 visual quality workspace — reference reconstruction and direct function rendering' :
+  'CRF 1.1 experimental object functions — local training, code, image and video');
 console.log('Keep this terminal open. Press Control+C to stop.');
 const server = spawn(process.execPath, [path.join(root, 'editor/scripts/dev07.mjs'),
   '--host', '127.0.0.1', '--port', String(port)], {cwd: path.join(root, 'editor'), env: process.env,

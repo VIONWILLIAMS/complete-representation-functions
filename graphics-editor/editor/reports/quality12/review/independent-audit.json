@@ -1,0 +1,65 @@
+{
+  "schema": "crf.independent_image_quality_audit.v1",
+  "passed": true,
+  "method": "Independent NumPy/SciPy image calculation; no project fitter/evaluator imported",
+  "contractSHA256": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+  "referenceSHA256": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+  "reconstructionSHA256": "60aff7c35f313ab36605269958e768a77f4eea8d1511e9b619fd3d1486a8e418",
+  "metricsMatchSealedReport": true,
+  "fullFrame": {
+    "psnr": 36.66775251244562,
+    "ssim": 0.9728077248326319,
+    "mae": 2.1342953546767105,
+    "maxChannelError": 80
+  },
+  "rois": [
+    {
+      "id": "mountain_forest",
+      "bounds": [
+        40,
+        26,
+        320,
+        293
+      ],
+      "psnr": 34.549993746708324,
+      "ssim": 0.9656937728189448,
+      "mae": 3.168151417870519,
+      "maxChannelError": 38,
+      "passed": true
+    },
+    {
+      "id": "water",
+      "bounds": [
+        40,
+        371,
+        760,
+        521
+      ],
+      "psnr": 39.64486646063503,
+      "ssim": 0.9659826656082298,
+      "mae": 1.6501574074074075,
+      "maxChannelError": 41,
+      "passed": true
+    },
+    {
+      "id": "shore_buildings",
+      "bounds": [
+        480,
+        254,
+        784,
+        372
+      ],
+      "psnr": 34.05748343733242,
+      "ssim": 0.9670445894980022,
+      "mae": 3.371245911388641,
+      "maxChannelError": 80,
+      "passed": true
+    }
+  ],
+  "artifacts": [
+    "reference-vs-computed.png",
+    "fixed-detail-comparison.png",
+    "absolute-error-times4.png"
+  ],
+  "diagnosticImageScope": "Comparison/crop/error images are reports only, never runtime rendering inputs"
+}

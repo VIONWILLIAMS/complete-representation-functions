@@ -1,6 +1,6 @@
 {
   "name": "crf-graphics-editor",
-  "version": "1.1.0-experimental.1",
+  "version": "1.1.0-experimental.2",
   "private": true,
   "description": "CRF 1.1: versioned learnable object functions, shared compute kernel, scene harness and preserved 1.0 workspaces.",
   "scripts": {
@@ -32,7 +32,11 @@
     "test:v11": "node --test tests/test_core11.cjs tests/test_learn11.cjs tests/test_harness11.cjs tests/test_functions_provider11.mjs tests/test_editor11_contract.cjs",
     "train:v11": "node scripts/train_example11.cjs --water",
     "benchmark:v11": "node scripts/benchmark_functions11.cjs",
-    "verify:browser:v11": "node scripts/browser_smoke11.cjs"
+    "verify:browser:v11": "node scripts/browser_smoke11.cjs",
+    "dev:quality": "node ../tools/start11.mjs --quality",
+    "fit:quality": "python3 scripts/fit_quality12.py",
+    "test:quality": "node --test tests/test_quality12.cjs tests/test_quality_harness12.cjs",
+    "verify:quality": "node scripts/verify_quality12.cjs"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

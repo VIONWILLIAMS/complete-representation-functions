@@ -1,5 +1,7 @@
 # CRF 1.1 · 可学习对象函数实验分支
 
+> **第二轮视觉质量已交付：** 当前版本 `1.1.0-experimental.2` 的新入口是 `/quality12.html`，启动命令 `npm run dev:quality`。请先阅读 [真实场景质量说明](README_QUALITY.md) 和实际原图对照。下文保留第一轮对象函数工作流，不代表第二轮画质示例。
+
 本分支把 **GUI Service、Agent Harness、Compute Kernel 和本地对象函数学习** 接到同一份工程中：参考图片经过真实小模型训练，得到带固定版本和来源的函数；人和语言模型共同编辑 Scene IR；计算内核据此产生图片与二维运动视频。
 
 当前产品标识为 `1.1.0-experimental.1`。历史 `0.10.0 / v10` 对应产品 **1.0**，原页面、案例、资产和证据保持可访问。完整架构、范围变更和后续研究要求见 [技术升级设计](plans/CRF_1_1_Learnable_Functions_Design.md)；本分支没有把原 1.1 计划中的形式证明、WebGPU 和程序级 RSI 标为完成。

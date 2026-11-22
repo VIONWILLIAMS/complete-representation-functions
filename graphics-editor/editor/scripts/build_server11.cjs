@@ -4,7 +4,7 @@ const fs = require('node:fs'), path = require('node:path'), crypto = require('no
 const cp = require('node:child_process'), esbuild = require('esbuild');
 const {packClientAssets08, snapshot, expandedBytes, MAX_EXPANDED_BYTES} = require('./build_server07.cjs');
 const root = path.resolve(__dirname, '..'), web = path.join(root, 'web'), dist = path.join(root, 'dist');
-const client = path.join(dist, 'client'), server = path.join(dist, 'server'), reports = path.join(root, 'reports/v11');
+const client = path.join(dist, 'client'), server = path.join(dist, 'server'), reports = path.join(root, 'reports/quality12');
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 
 async function build() {
@@ -22,6 +22,22 @@ async function build() {
   fs.mkdirSync(server, {recursive: true}); fs.mkdirSync(reports, {recursive: true});
   fs.cpSync(web, client, {recursive: true});
   const packed = packClientAssets08(web, client);
+  const transportInput = path.join(root, 'build/quality12-packing-input.json');
+  fs.mkdirSync(path.dirname(transportInput), {recursive: true});
+  fs.writeFileSync(transportInput, JSON.stringify(packed));
+  const transportReport = path.join(reports, 'lossless_transport.json');
+  cp.execFileSync('python3', [path.join(root, 'scripts/optimize_gzip12.py'),
+    '--client', client, '--manifest', transportInput,
+    '--cache', path.join(root, 'build/quality12-gzip-cache'), '--report', transportReport],
+    {stdio: ['ignore', 'pipe', 'inherit']});
+  const transport = JSON.parse(fs.readFileSync(transportReport, 'utf8'));
+  const stored = new Map(transport.files.map(item => [item.file, item.storedBytes]));
+  for (const entry of Object.values(packed.manifest))
+    if (stored.has(entry.file)) entry.storedBytes = stored.get(entry.file);
+  for (const entry of packed.packedFiles)
+    if (stored.has(entry.file)) entry.bytes = stored.get(entry.file);
+  packed.counts.gzipSavedBytes += transport.savedBytes;
+  packed.counts.clientBytes -= transport.savedBytes;
   const archiveReport = path.join(reports, 'archive_packing.json');
   cp.execFileSync('python3', [path.join(root, 'scripts/pack_archives09.py'), '--source', web,
     '--client', client, '--report', archiveReport], {stdio: ['ignore', 'pipe', 'inherit']});
@@ -59,12 +75,13 @@ async function build() {
     throw new Error('Source changed during build; wait for ongoing edits and rebuild.');
   const size = expandedBytes(dist);
   const report = {schema: 'crf.build.v1.1', builtAt: new Date().toISOString(),
-    releaseStatus: 'learnable_functions_experimental', sourceFiles: packed.sourceFiles.length,
+    releaseStatus: 'reference_quality_experimental', version: '1.1.0-experimental.2', sourceFiles: packed.sourceFiles.length,
     legacyAssetsChecked: legacy.length, legacyAssetsByteExact: true, allPublishedURLsByteExact: true,
     sourcePreserved: true, originalBytes: packed.counts.sourceBytes, expandedDistBytes: size,
     expandedLimitBytes: MAX_EXPANDED_BYTES, headroomBytes: MAX_EXPANDED_BYTES - size,
     workerBytes: Buffer.byteLength(source), workerSha256: sha(source),
-    textPacking: packed.counts, archives: archives.stats, configuredSecretsInBuild: false,
+    textPacking: packed.counts, losslessTransport: {savedBytes: transport.savedBytes, allByteExact: transport.allByteExact},
+    archives: archives.stats, configuredSecretsInBuild: false,
     verifiedStatusPaths: ['/api/crf/status', '/api/crf/functions11/status']};
   fs.writeFileSync(path.join(reports, 'build_verification.json'), JSON.stringify(report, null, 2) + '\n');
   fs.writeFileSync(path.join(reports, 'published_files.json'), JSON.stringify({schema: 'crf.published_files.v1.1', files: verification}, null, 2) + '\n');
