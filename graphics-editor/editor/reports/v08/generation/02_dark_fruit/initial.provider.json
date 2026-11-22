@@ -1,0 +1,185 @@
+{
+  "ok": true,
+  "runId": "crf08_ff7dd9a2-dd7c-43cb-b222-90c0dc007c5a",
+  "engine": "gaussian08",
+  "model": "deepseek-flash",
+  "action": "scene",
+  "message": "已按深灰底静物构图组合苹果、梨与半橙：苹果在左，梨紧靠并遮挡苹果右侧，半橙置于右前方；以三枚柔和接触阴影接地，整体居中并保留照片内原有光照。",
+  "qualityNotes": [
+    "检查梨是否自然遮挡苹果右侧缺口，且没有把苹果主体遮得过多。",
+    "检查半橙右下前位置是否与梨底部保持合理接触关系，不产生漂浮感。",
+    "检查三枚接触阴影的可见边缘是否柔化、没有矩形边界或过度叠加发黑。",
+    "确认苹果、梨与半橙的明暗对比自然，暗背景没有压暗果物高光与纹理。"
+  ],
+  "warnings": [
+    "仅使用已拟合的二维高斯函数，不能呈现未观察到的果物背面或生成新表面。",
+    "接触阴影为二维覆盖效果，最终接地感需在实际渲染中检查。",
+    "组合构图不代表物理正确的三维摆放或真实相机透视。"
+  ],
+  "scene": {
+    "schema": "crf.gaussian_scene.v0.8",
+    "id": "stilllife_apple_pear_orange_960x640",
+    "title": "深灰底苹果梨与半橙静物",
+    "width": 960,
+    "height": 640,
+    "background": [
+      42,
+      43,
+      46
+    ],
+    "objects": [
+      {
+        "id": "bg_studio_slate",
+        "label": "深灰摄影承托面",
+        "assetId": "studio.slate",
+        "x": 0,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 0,
+        "visible": true
+      },
+      {
+        "id": "shadow_apple_contact",
+        "label": "苹果柔和接触阴影",
+        "assetId": "studio.shadow",
+        "x": 193,
+        "y": 533,
+        "scaleX": 0.9,
+        "scaleY": 0.55,
+        "rotation": 0,
+        "opacity": 0.5,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 2,
+        "visible": true
+      },
+      {
+        "id": "shadow_pear_contact",
+        "label": "梨柔和接触阴影",
+        "assetId": "studio.shadow",
+        "x": 346,
+        "y": 530,
+        "scaleX": 1,
+        "scaleY": 0.6,
+        "rotation": 0,
+        "opacity": 0.45,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 3,
+        "visible": true
+      },
+      {
+        "id": "shadow_orange_contact",
+        "label": "半橙柔和接触阴影",
+        "assetId": "studio.shadow",
+        "x": 546,
+        "y": 582,
+        "scaleX": 0.8,
+        "scaleY": 0.5,
+        "rotation": 0,
+        "opacity": 0.35,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 4,
+        "visible": true
+      },
+      {
+        "id": "fruit_apple_main",
+        "label": "红苹果",
+        "assetId": "fruit.apple",
+        "x": 185,
+        "y": 247,
+        "scaleX": 1.2,
+        "scaleY": 1.2,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": -2,
+        "exposure": 0.05,
+        "zIndex": 10,
+        "visible": true
+      },
+      {
+        "id": "fruit_pear_main",
+        "label": "黄梨",
+        "assetId": "fruit.pear",
+        "x": 372,
+        "y": 125,
+        "scaleX": 1.05,
+        "scaleY": 1.05,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0.02,
+        "zIndex": 12,
+        "visible": true
+      },
+      {
+        "id": "fruit_orange_half",
+        "label": "横切橙子半",
+        "assetId": "learn.r01.c6657129fc5c.object",
+        "x": 552,
+        "y": 380,
+        "scaleX": 1.25,
+        "scaleY": 1.25,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0.03,
+        "zIndex": 14,
+        "visible": true
+      }
+    ]
+  },
+  "research": {
+    "searched": false,
+    "status": "disabled",
+    "sources": [],
+    "toolCalls": [],
+    "summary": "",
+    "nativeSearchObserved": false
+  },
+  "usage": {
+    "providerCalls": 1,
+    "prompt_tokens": 1375,
+    "completion_tokens": 3989,
+    "total_tokens": 5364,
+    "reasoning_tokens": 3195,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "0a46d784-55a7-416e-91b2-a853360cc921",
+        "model": "deepseek-flash",
+        "elapsedMs": 29221,
+        "prompt_tokens": 1375,
+        "completion_tokens": 3989,
+        "total_tokens": 5364,
+        "reasoning_tokens": 3195,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "vision": {
+    "renderedImageProvided": false
+  },
+  "validation": {
+    "schema": true,
+    "allowlistedAssets": true,
+    "renderer": false,
+    "repairUsed": false
+  },
+  "quality": {
+    "automaticRealismScore": false,
+    "pixelReconstructionMeasured": false,
+    "selection": "candidate_requires_render_and_review"
+  },
+  "rendered": false,
+  "elapsedMs": 29221
+}

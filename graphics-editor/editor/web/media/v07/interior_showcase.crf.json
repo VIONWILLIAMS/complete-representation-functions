@@ -1,0 +1,2357 @@
+{
+  "schema": "crf.image_program.v0.7",
+  "id": "interior",
+  "title": "窗边客厅",
+  "width": 960,
+  "height": 720,
+  "seed": 127,
+  "exposure": 1,
+  "camera": {
+    "aperture": 0.015,
+    "focusDistance": 9.8,
+    "position": [
+      5.8,
+      2.65,
+      6.8
+    ],
+    "target": [
+      -0.55,
+      1.35,
+      -0.55
+    ],
+    "fov": 39
+  },
+  "environment": {
+    "top": [
+      196,
+      218,
+      238
+    ],
+    "bottom": [
+      173,
+      166,
+      144
+    ],
+    "strength": 0.35
+  },
+  "lights": [
+    {
+      "id": "window",
+      "type": "area",
+      "position": [
+        -4.12,
+        2.1,
+        -0.3
+      ],
+      "target": [
+        0,
+        2.1,
+        -0.3
+      ],
+      "size": [
+        3.9,
+        2.85
+      ],
+      "color": [
+        220,
+        237,
+        255
+      ],
+      "intensity": 7.5
+    },
+    {
+      "id": "sun",
+      "type": "area",
+      "position": [
+        -6.5,
+        4.7,
+        1.8
+      ],
+      "target": [
+        1.2,
+        0,
+        -0.5
+      ],
+      "size": [
+        0.6,
+        0.6
+      ],
+      "color": [
+        255,
+        215,
+        160
+      ],
+      "intensity": 100
+    }
+  ],
+  "objects": [
+    {
+      "id": "floor",
+      "label": "橡木地板",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 14,
+        "height": 0.12,
+        "depth": 14
+      },
+      "material": {
+        "color": [
+          133,
+          86,
+          47
+        ],
+        "roughness": 0.36,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.65,
+          "strength": 0.78
+        },
+        "bump": 0.012
+      },
+      "transform": {
+        "position": [
+          0,
+          -0.12,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "back.wall",
+      "label": "后墙",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 18,
+        "height": 4.5,
+        "depth": 0.2
+      },
+      "material": {
+        "color": [
+          214,
+          207,
+          188
+        ],
+        "roughness": 0.88,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 3,
+          "strength": 0.1
+        },
+        "bump": 0.012
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          -3.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ceiling",
+      "label": "顶面",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 18,
+        "height": 0.15,
+        "depth": 14
+      },
+      "material": {
+        "color": [
+          225,
+          222,
+          207
+        ],
+        "roughness": 0.94,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0,
+          4.5,
+          2.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "left.sill",
+      "label": "窗下墙",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.18,
+        "height": 0.75,
+        "depth": 6.5
+      },
+      "material": {
+        "color": [
+          214,
+          207,
+          188
+        ],
+        "roughness": 0.88,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 3,
+          "strength": 0.1
+        },
+        "bump": 0.012
+      },
+      "transform": {
+        "position": [
+          -4,
+          0,
+          -0.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "left.head",
+      "label": "窗上墙",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.18,
+        "height": 1.05,
+        "depth": 6.5
+      },
+      "material": {
+        "color": [
+          214,
+          207,
+          188
+        ],
+        "roughness": 0.88,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 3,
+          "strength": 0.1
+        },
+        "bump": 0.012
+      },
+      "transform": {
+        "position": [
+          -4,
+          3.45,
+          -0.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "left.rear",
+      "label": "窗后侧墙",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.18,
+        "height": 2.7,
+        "depth": 1.15
+      },
+      "material": {
+        "color": [
+          214,
+          207,
+          188
+        ],
+        "roughness": 0.88,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 3,
+          "strength": 0.1
+        },
+        "bump": 0.012
+      },
+      "transform": {
+        "position": [
+          -4,
+          0.75,
+          -2.775
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "left.front",
+      "label": "窗前侧墙",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.18,
+        "height": 2.7,
+        "depth": 1.55
+      },
+      "material": {
+        "color": [
+          214,
+          207,
+          188
+        ],
+        "roughness": 0.88,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 3,
+          "strength": 0.1
+        },
+        "bump": 0.012
+      },
+      "transform": {
+        "position": [
+          -4,
+          0.75,
+          2.375
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.sill",
+      "label": "木窗台",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.44,
+        "height": 0.1,
+        "depth": 3.85
+      },
+      "material": {
+        "color": [
+          210,
+          209,
+          190
+        ],
+        "roughness": 0.35,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -3.91,
+          0.72,
+          -0.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.header",
+      "label": "窗上框",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.18,
+        "height": 0.08,
+        "depth": 3.85
+      },
+      "material": {
+        "color": [
+          210,
+          209,
+          190
+        ],
+        "roughness": 0.35,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -3.9,
+          3.43,
+          -0.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.mullion",
+      "label": "窗竖框",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.15,
+        "height": 2.75,
+        "depth": 0.07
+      },
+      "material": {
+        "color": [
+          210,
+          209,
+          190
+        ],
+        "roughness": 0.35,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -3.91,
+          0.75,
+          -0.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.crossbar",
+      "label": "窗横框",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.15,
+        "height": 0.07,
+        "depth": 3.85
+      },
+      "material": {
+        "color": [
+          210,
+          209,
+          190
+        ],
+        "roughness": 0.35,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -3.91,
+          2.2,
+          -0.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "rug",
+      "label": "羊毛地毯",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 4.5,
+        "height": 0.026,
+        "depth": 3.7
+      },
+      "material": {
+        "color": [
+          196,
+          185,
+          158
+        ],
+        "roughness": 0.96,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "fabric",
+          "scale": 0.7,
+          "strength": 0.6
+        },
+        "bump": 0.022,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.92
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.08
+                },
+                {
+                  "op": "sin",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "x"
+                        },
+                        {
+                          "op": "const",
+                          "value": 12
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          0,
+          0.012,
+          0.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sofa.base",
+      "label": "沙发木底座",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.35,
+        "height": 0.18,
+        "depth": 1.55
+      },
+      "material": {
+        "color": [
+          59,
+          38,
+          22
+        ],
+        "roughness": 0.43,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -1.1,
+          0.13,
+          -1.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sofa.seat",
+      "label": "沙发坐垫",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.06,
+        "height": 0.32,
+        "depth": 1.33,
+        "bevel": 0.1
+      },
+      "material": {
+        "color": [
+          176,
+          172,
+          151
+        ],
+        "roughness": 0.87,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "fabric",
+          "scale": 0.8,
+          "strength": 0.5
+        },
+        "bump": 0.02
+      },
+      "transform": {
+        "position": [
+          -1.1,
+          0.31,
+          -1.11
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sofa.back",
+      "label": "沙发靠背",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.35,
+        "height": 0.78,
+        "depth": 0.28,
+        "bevel": 0.1
+      },
+      "material": {
+        "color": [
+          176,
+          172,
+          151
+        ],
+        "roughness": 0.87,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "fabric",
+          "scale": 0.8,
+          "strength": 0.5
+        },
+        "bump": 0.02
+      },
+      "transform": {
+        "position": [
+          -1.1,
+          0.35,
+          -1.94
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sofa.arm.-2_67",
+      "label": "沙发扶手",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.22,
+        "height": 0.65,
+        "depth": 1.55,
+        "bevel": 0.09
+      },
+      "material": {
+        "color": [
+          176,
+          172,
+          151
+        ],
+        "roughness": 0.87,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "fabric",
+          "scale": 0.8,
+          "strength": 0.5
+        },
+        "bump": 0.02
+      },
+      "transform": {
+        "position": [
+          -2.67,
+          0.31,
+          -1.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sofa.arm.0_47",
+      "label": "沙发扶手",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.22,
+        "height": 0.65,
+        "depth": 1.55,
+        "bevel": 0.09
+      },
+      "material": {
+        "color": [
+          176,
+          172,
+          151
+        ],
+        "roughness": 0.87,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "fabric",
+          "scale": 0.8,
+          "strength": 0.5
+        },
+        "bump": 0.02
+      },
+      "transform": {
+        "position": [
+          0.47,
+          0.31,
+          -1.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sofa.leg.-2_35-1_85",
+      "label": "沙发脚",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.055,
+        "height": 0.17
+      },
+      "material": {
+        "color": [
+          59,
+          38,
+          22
+        ],
+        "roughness": 0.43,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -2.35,
+          0,
+          -1.85
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sofa.leg.-2_35-0_6",
+      "label": "沙发脚",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.055,
+        "height": 0.17
+      },
+      "material": {
+        "color": [
+          59,
+          38,
+          22
+        ],
+        "roughness": 0.43,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -2.35,
+          0,
+          -0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sofa.leg.0_15-1_85",
+      "label": "沙发脚",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.055,
+        "height": 0.17
+      },
+      "material": {
+        "color": [
+          59,
+          38,
+          22
+        ],
+        "roughness": 0.43,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.15,
+          0,
+          -1.85
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sofa.leg.0_15-0_6",
+      "label": "沙发脚",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.055,
+        "height": 0.17
+      },
+      "material": {
+        "color": [
+          59,
+          38,
+          22
+        ],
+        "roughness": 0.43,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.15,
+          0,
+          -0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cushion.a",
+      "label": "暖灰靠垫",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.77,
+        "height": 0.65,
+        "depth": 0.2,
+        "bevel": 0.095
+      },
+      "material": {
+        "color": [
+          154,
+          147,
+          130
+        ],
+        "roughness": 0.94,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "fabric",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0.02
+      },
+      "transform": {
+        "position": [
+          -1.8,
+          0.61,
+          -1.47
+        ],
+        "rotation": [
+          -12,
+          -4,
+          -8
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cushion.b",
+      "label": "赭色靠垫",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.68,
+        "height": 0.6,
+        "depth": 0.19,
+        "bevel": 0.09
+      },
+      "material": {
+        "color": [
+          158,
+          87,
+          45
+        ],
+        "roughness": 0.92,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "fabric",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0.02
+      },
+      "transform": {
+        "position": [
+          -0.55,
+          0.63,
+          -1.43
+        ],
+        "rotation": [
+          -9,
+          3,
+          8
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "table.top",
+      "label": "圆形胡桃木茶几",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 1.07,
+        "height": 0.1
+      },
+      "material": {
+        "color": [
+          105,
+          62,
+          31
+        ],
+        "roughness": 0.3,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0.008
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0.67,
+          0.92
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "table.leg.0",
+      "label": "茶几支脚",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.07,
+        "height": 0.68
+      },
+      "material": {
+        "color": [
+          105,
+          62,
+          31
+        ],
+        "roughness": 0.3,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0.008
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0,
+          1.62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "table.leg.1",
+      "label": "茶几支脚",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.07,
+        "height": 0.68
+      },
+      "material": {
+        "color": [
+          105,
+          62,
+          31
+        ],
+        "roughness": 0.3,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0.008
+      },
+      "transform": {
+        "position": [
+          1.4062177826491071,
+          0,
+          0.5700000000000003
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "table.leg.2",
+      "label": "茶几支脚",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.07,
+        "height": 0.68
+      },
+      "material": {
+        "color": [
+          105,
+          62,
+          31
+        ],
+        "roughness": 0.3,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0.008
+      },
+      "transform": {
+        "position": [
+          0.19378221735089318,
+          0,
+          0.5699999999999997
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "table.vase",
+      "label": "小陶器",
+      "visible": true,
+      "surface": {
+        "kind": "lathe",
+        "radius": 0.19,
+        "height": 0.42,
+        "profile": [
+          0.63,
+          0.82,
+          1,
+          0.9,
+          0.55,
+          0.44
+        ],
+        "thickness": 0.025
+      },
+      "material": {
+        "color": [
+          211,
+          197,
+          166
+        ],
+        "roughness": 0.54,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "ceramic",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.53,
+          0.77,
+          0.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "table.book",
+      "label": "桌上书册",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.46,
+        "height": 0.045,
+        "depth": 0.63
+      },
+      "material": {
+        "color": [
+          207,
+          197,
+          178
+        ],
+        "roughness": 0.8,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          1.17,
+          0.77,
+          0.95
+        ],
+        "rotation": [
+          0,
+          18,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "table.cup",
+      "label": "水杯",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.12,
+        "height": 0.23
+      },
+      "material": {
+        "color": [
+          226,
+          229,
+          222
+        ],
+        "roughness": 0.05,
+        "metalness": 0,
+        "transmission": 1,
+        "ior": 1.46,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          1.28,
+          0.82,
+          1.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "picture.frame",
+      "label": "画框",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 1.55,
+        "height": 1.88,
+        "depth": 0.065
+      },
+      "material": {
+        "color": [
+          59,
+          38,
+          22
+        ],
+        "roughness": 0.43,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 0.8,
+          "strength": 0.6
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.25,
+          1.58,
+          -3.15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "picture.canvas",
+      "label": "抽象画面",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 1.4,
+        "height": 1.73,
+        "depth": 0.02
+      },
+      "material": {
+        "color": [
+          169,
+          156,
+          117
+        ],
+        "roughness": 0.96,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.45
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.7
+                },
+                {
+                  "op": "fbm",
+                  "frequency": 1.4,
+                  "seed": 18
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          0.25,
+          1.66,
+          -3.102
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "plant.pot",
+      "label": "陶土花盆",
+      "visible": true,
+      "surface": {
+        "kind": "lathe",
+        "radius": 0.43,
+        "height": 0.63,
+        "profile": [
+          0.65,
+          0.74,
+          0.87,
+          1
+        ],
+        "thickness": 0.045
+      },
+      "material": {
+        "color": [
+          139,
+          80,
+          49
+        ],
+        "roughness": 0.7,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0.012
+      },
+      "transform": {
+        "position": [
+          2.37,
+          0,
+          -1.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "plant.stem",
+      "label": "植物茎",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.025,
+        "height": 1.55
+      },
+      "material": {
+        "color": [
+          71,
+          64,
+          30
+        ],
+        "roughness": 0.88,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          2.37,
+          0.55,
+          -1.78
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.0",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          45,
+          76,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.37,
+          0.82,
+          -1.56
+        ],
+        "rotation": [
+          -25,
+          0,
+          35
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.1",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          48,
+          81,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.5186018997212534,
+          0.94,
+          -1.942226617419074
+        ],
+        "rotation": [
+          -17,
+          140,
+          47
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.2",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          51,
+          86,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 2
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.1508437860561154,
+          1.06,
+          -1.760750223643322
+        ],
+        "rotation": [
+          -9,
+          280,
+          59
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.3",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          45,
+          76,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 3
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.5446069300468137,
+          1.18,
+          -1.646162710802904
+        ],
+        "rotation": [
+          -1,
+          420,
+          35
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.4",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          48,
+          81,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 4
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.3316481081309446,
+          1.2999999999999998,
+          -1.996631328274708
+        ],
+        "rotation": [
+          -25,
+          560,
+          47
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.5",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          51,
+          86,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 5
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.2519539580399046,
+          1.42,
+          -1.5943521290788518
+        ],
+        "rotation": [
+          -17,
+          700,
+          59
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.6",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          45,
+          76,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 6
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.582444710840841,
+          1.54,
+          -1.837159818367026
+        ],
+        "rotation": [
+          -9,
+          840,
+          35
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.7",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          48,
+          81,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 7
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.174735252612069,
+          1.66,
+          -1.8813492892304997
+        ],
+        "rotation": [
+          -1,
+          980,
+          47
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.8",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          51,
+          86,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 8
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.445529284340377,
+          1.7799999999999998,
+          -1.5733715237266885
+        ],
+        "rotation": [
+          -25,
+          1120,
+          59
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "plant.leaf.9",
+      "label": "植物叶片",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.3,
+        "height": 0.045
+      },
+      "material": {
+        "color": [
+          45,
+          76,
+          31
+        ],
+        "roughness": 0.47,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.8
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "noise",
+                  "frequency": 12,
+                  "seed": 9
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          2.4538751081640875,
+          1.9,
+          -1.9833837904811065
+        ],
+        "rotation": [
+          -17,
+          1260,
+          35
+        ],
+        "scale": [
+          1.1,
+          1,
+          1.5
+        ]
+      }
+    }
+  ]
+}

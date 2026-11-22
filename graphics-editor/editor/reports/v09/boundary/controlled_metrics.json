@@ -1,0 +1,128 @@
+{
+  "schema": "crf.boundary_controlled_validation.v0.9",
+  "scope": "Independent analytic coverage and held-out masked procedural surfaces; natural-photo alpha and hidden wall remain unknown.",
+  "tests": [
+    {
+      "id": "mixed_subpixel_circle",
+      "pixels": 228,
+      "mae": 0.32748538011695905,
+      "maxError": 2,
+      "unchangedOldBoundaryMAE": 44.75730994152047,
+      "thresholdMAE": 4,
+      "pass": true,
+      "foregroundEndpointsProvided": true
+    },
+    {
+      "id": "heldout_bright",
+      "pixels": 1296,
+      "mae": 1.329732510288066,
+      "maxError": 6,
+      "hiddenValueInfluence": 0,
+      "thresholdMAE": 5,
+      "pass": true,
+      "truthSeenByCompleter": false,
+      "fixtureKind": "independent procedural surface",
+      "allHiddenROIMetrics": {
+        "mae": 1.329732510288066,
+        "rmse": 1.693913092158511,
+        "psnr": 43.552981115281355,
+        "ssim": 0.9567674482948213,
+        "maxError": 6,
+        "exactRGBFraction": 0.08256172839506173,
+        "evaluatedPixels": 1296,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "thresholdSSIM": 0.95,
+      "jointMAE_SSIM_Pass": true
+    },
+    {
+      "id": "heldout_dark",
+      "pixels": 1296,
+      "mae": 1.3132716049382716,
+      "maxError": 6,
+      "hiddenValueInfluence": 0,
+      "thresholdMAE": 5,
+      "pass": true,
+      "truthSeenByCompleter": false,
+      "fixtureKind": "independent procedural surface",
+      "allHiddenROIMetrics": {
+        "mae": 1.3132716049382716,
+        "rmse": 1.6832508230603465,
+        "psnr": 43.607826898732796,
+        "ssim": 0.9573409730140939,
+        "maxError": 6,
+        "exactRGBFraction": 0.09490740740740741,
+        "evaluatedPixels": 1296,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "thresholdSSIM": 0.95,
+      "jointMAE_SSIM_Pass": true
+    },
+    {
+      "id": "heldout_joint",
+      "pixels": 1296,
+      "mae": 1.3215020576131686,
+      "maxError": 6,
+      "hiddenValueInfluence": 0,
+      "thresholdMAE": 8,
+      "pass": true,
+      "truthSeenByCompleter": false,
+      "fixtureKind": "independent procedural surface",
+      "jointMaxOffsetPx": 0,
+      "allHiddenROIMetrics": {
+        "mae": 1.3215020576131686,
+        "rmse": 1.691025695024936,
+        "psnr": 43.567799474196065,
+        "ssim": 0.9652575829497401,
+        "maxError": 6,
+        "exactRGBFraction": 0.0787037037037037,
+        "evaluatedPixels": 1296,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "thresholdSSIM": 0.95,
+      "jointMAE_SSIM_Pass": true
+    },
+    {
+      "id": "heldout_shadow",
+      "pixels": 1296,
+      "mae": 1.3739711934156378,
+      "maxError": 7,
+      "hiddenValueInfluence": 0,
+      "thresholdMAE": 5,
+      "pass": true,
+      "truthSeenByCompleter": false,
+      "fixtureKind": "independent procedural surface",
+      "allHiddenROIMetrics": {
+        "mae": 1.3739711934156378,
+        "rmse": 1.7617915498209702,
+        "psnr": 43.21171315619196,
+        "ssim": 0.9578376385937318,
+        "maxError": 7,
+        "exactRGBFraction": 0.0763888888888889,
+        "evaluatedPixels": 1296,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "thresholdSSIM": 0.95,
+      "jointMAE_SSIM_Pass": true
+    },
+    {
+      "id": "natural_street_scope_and_undo",
+      "protected": {
+        "pixels": 219140,
+        "changedPixels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1
+      },
+      "mixedEdgesChanged": 10797,
+      "editSequenceLength": 20,
+      "undoRGBExact": true,
+      "naturalEdgeAccuracyMeasured": false,
+      "pass": true
+    }
+  ],
+  "allPassed": true,
+  "hiddenWallJointGatePassed": true,
+  "naturalHiddenWallAccuracy": null,
+  "metricScope": "Every hidden pixel, fixed Gaussian-window RGB SSIM. Unchanged visible pixels are excluded from aggregation."
+}

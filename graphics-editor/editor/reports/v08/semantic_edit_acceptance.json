@@ -1,0 +1,265 @@
+{
+  "schema": "crf.semantic_edit_acceptance.v0.8",
+  "evaluatedAtUTC": "2026-11-21T13:45:59.489Z",
+  "reference": {
+    "scenePath": "web/assets/v08/street.scene.json",
+    "sceneSHA256": "f4294435aec4322873129916b7bf76ed67012f4f10cfb320604b6d0629ad412e",
+    "rendererPath": "web/crf-gaussian08.js",
+    "rendererSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+    "width": 667,
+    "height": 1000,
+    "parityWithSharedStreetPNG": {
+      "matchingRGBA": true,
+      "mismatchedChannels": 0,
+      "maxChannelDifference": 0,
+      "path": "web/assets/v08/renders/street.png",
+      "sha256": "3aac5bceee5e207f562f0a038f0f7ba72742608edef70f0985a7cc5548301e33"
+    }
+  },
+  "cases": [
+    {
+      "id": "04_street_teal",
+      "scenePath": "web/assets/v08/examples/04_street_teal.candidate.scene.json",
+      "sceneSHA256": "ae45c93c0f978b54d23e7a40e2d699e011e00754221603b0986eeae841cb3dcb",
+      "requestedObjectIds": [
+        "wall.main"
+      ],
+      "objects": {
+        "added": [],
+        "removed": [],
+        "changes": [
+          {
+            "id": "wall.main",
+            "requested": true,
+            "fields": {
+              "hue": {
+                "before": 0,
+                "after": -85
+              },
+              "exposure": {
+                "before": 0,
+                "after": -0.15
+              }
+            }
+          }
+        ],
+        "labelOnly": [],
+        "normalizationDefaults": {
+          "x": 0,
+          "y": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "opacity": 1,
+          "visible": true,
+          "hue": 0,
+          "exposure": 0,
+          "zIndex": 0
+        },
+        "labelsAffectRendering": false,
+        "allNonrequestedObjectsIdentical": true,
+        "globalRenderSettingsIdentical": true
+      },
+      "allPixels": {
+        "pixels": 667000,
+        "changedPixels": 447227,
+        "changedChannels": 1306454,
+        "mae": 8.461970014992504,
+        "maxError": 70,
+        "exactRGBFraction": 0.32949475262368816,
+        "allUnchanged": false
+      },
+      "protectedFullyOpaqueForeground": {
+        "definition": "Any later layer with exact effective alpha=1 fully blocks the edited wall.",
+        "blockingObjects": [
+          {
+            "id": "wall.base",
+            "fullyOpaquePixels": 16408
+          },
+          {
+            "id": "sidewalk.main",
+            "fullyOpaquePixels": 53024
+          },
+          {
+            "id": "road.main",
+            "fullyOpaquePixels": 103856
+          },
+          {
+            "id": "window.r0.c0",
+            "fullyOpaquePixels": 1965
+          },
+          {
+            "id": "window.r0.c1",
+            "fullyOpaquePixels": 2108
+          },
+          {
+            "id": "window.r1.c0",
+            "fullyOpaquePixels": 4266
+          },
+          {
+            "id": "window.r1.c1",
+            "fullyOpaquePixels": 4525
+          },
+          {
+            "id": "window.r2.c0",
+            "fullyOpaquePixels": 4464
+          },
+          {
+            "id": "window.r2.c1",
+            "fullyOpaquePixels": 4713
+          },
+          {
+            "id": "wall.fixtures",
+            "fullyOpaquePixels": 1313
+          },
+          {
+            "id": "pole.main",
+            "fullyOpaquePixels": 18622
+          },
+          {
+            "id": "pole.arm",
+            "fullyOpaquePixels": 2352
+          },
+          {
+            "id": "signal.support",
+            "fullyOpaquePixels": 1364
+          },
+          {
+            "id": "signal.side",
+            "fullyOpaquePixels": 2416
+          },
+          {
+            "id": "signal.main",
+            "fullyOpaquePixels": 3511
+          },
+          {
+            "id": "road.edge",
+            "fullyOpaquePixels": 2041
+          },
+          {
+            "id": "crosswalk.main",
+            "fullyOpaquePixels": 37742
+          }
+        ],
+        "pixels": 219695,
+        "changedPixels": 0,
+        "changedChannels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1,
+        "allUnchanged": true
+      },
+      "protectedOutsideWallCoverage": {
+        "definition": "Exact transformed wall alpha equals zero.",
+        "pixels": 175839,
+        "changedPixels": 0,
+        "changedChannels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1,
+        "allUnchanged": true
+      },
+      "publishedCandidateParity": {
+        "matchingRGBA": true,
+        "mismatchedChannels": 0,
+        "maxChannelDifference": 0,
+        "path": "web/assets/v08/examples/04_street_teal.candidate.png",
+        "sha256": "f9250b5e4158b53a6692a9e05f912ffa5b92318564f8c1388a9718fdd6234172"
+      },
+      "pass": true
+    },
+    {
+      "id": "05_street_context_fill",
+      "scenePath": "web/assets/v08/examples/05_street_context_fill.candidate.scene.json",
+      "sceneSHA256": "8d340b652650d4be26052c626f491cdc2fd72f181fb8830eca21cd000eabb146",
+      "requestedObjectIds": [
+        "signal.main"
+      ],
+      "objects": {
+        "added": [],
+        "removed": [],
+        "changes": [
+          {
+            "id": "signal.main",
+            "requested": true,
+            "fields": {
+              "visible": {
+                "before": true,
+                "after": false
+              }
+            }
+          }
+        ],
+        "labelOnly": [],
+        "normalizationDefaults": {
+          "x": 0,
+          "y": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "opacity": 1,
+          "visible": true,
+          "hue": 0,
+          "exposure": 0,
+          "zIndex": 0
+        },
+        "labelsAffectRendering": false,
+        "allNonrequestedObjectsIdentical": true,
+        "globalRenderSettingsIdentical": true
+      },
+      "signalCoverageBounds": [
+        274,
+        404,
+        325,
+        494
+      ],
+      "protectedOutsideExactSignalCoverage": {
+        "definition": "Exact transformed original signal alpha equals zero; this includes holes inside the bounding rectangle.",
+        "pixels": 662712,
+        "changedPixels": 0,
+        "changedChannels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1,
+        "allUnchanged": true
+      },
+      "insideOriginalSignalCoverage": {
+        "pixels": 4288,
+        "changedPixels": 4287,
+        "changedChannels": 12766,
+        "mae": 96.42630597014926,
+        "maxError": 232,
+        "exactRGBFraction": 0.0002332089552238806,
+        "allUnchanged": false
+      },
+      "allPixels": {
+        "pixels": 667000,
+        "changedPixels": 4287,
+        "changedChannels": 12766,
+        "mae": 0.619904047976012,
+        "maxError": 232,
+        "exactRGBFraction": 0.9935727136431785,
+        "allUnchanged": false
+      },
+      "outputFullyOpaque": true,
+      "publishedCandidateParity": {
+        "matchingRGBA": true,
+        "mismatchedChannels": 0,
+        "maxChannelDifference": 0,
+        "path": "web/assets/v08/examples/05_street_context_fill.candidate.png",
+        "sha256": "a82bf45408d8235b89ba5351d6472ffc9034f0280e4058a3514d3f3d0fe2c22e"
+      },
+      "hiddenWallGroundTruthAvailable": false,
+      "hiddenWallReconstructionAccuracy": null,
+      "wallContinuity": "not measured here; requires visual/structural review",
+      "pass": true
+    }
+  ],
+  "notes": [
+    "These are tests of actual exported DeepSeek candidate programs, not synthetic substitute edits.",
+    "All masks are transformed with the renderer’s pixel-centre and premultiplied bilinear coverage convention.",
+    "Exact protected-region equality is relative to the base Gaussian render, not an assertion of 100% reconstruction of the source photograph.",
+    "Signal removal reveals the previously inferred wall layer. No unobserved wall ground truth is available; this test does not measure hidden-wall correctness or continuity."
+  ],
+  "allPassed": true
+}

@@ -1,0 +1,38 @@
+{
+  "name": "crf-graphics-editor",
+  "version": "0.10.0",
+  "private": true,
+  "description": "CRF editor: frozen-model semantic compilation, direct Gaussian pixels, evidence-bound repair loops, preserved historical cases.",
+  "scripts": {
+    "dev": "node scripts/dev07.mjs",
+    "build": "node scripts/build_server10.cjs",
+    "test": "node --test tests/test_core.cjs tests/test_boundary_v05.cjs tests/test_fruit.cjs tests/test_program06.cjs tests/test_observation06.cjs tests/test_integration06.cjs",
+    "test:v06": "node --test tests/test_program06.cjs tests/test_observation06.cjs tests/test_integration06.cjs",
+    "test:legacy": "node --test tests/test_core.cjs tests/test_boundary_v05.cjs tests/test_fruit.cjs",
+    "verify:legacy": "node scripts/verify_delivery.cjs && node scripts/verify_v05.cjs",
+    "render:stills": "node scripts/render_v06.cjs stills",
+    "render:frames": "node scripts/render_v06.cjs frames common",
+    "render:courtyard-video": "node scripts/render_v06.cjs frames courtyard",
+    "fit:observations": "node scripts/build_observations06.cjs",
+    "test:v07": "node --test tests/test_deepseek07.mjs tests/test_worker_references07.mjs tests/test_radiance07.cjs",
+    "render:v07": "node scripts/run_program07.cjs",
+    "test:v08": "node --test tests/test_gaussian08.cjs tests/test_gaussian_provider08.mjs tests/test_learning08.mjs tests/test_references08.mjs tests/test_editor08_contract.cjs && npm run test:packing:v08",
+    "fit:v08": "python scripts/fit_v08_assets.py",
+    "catalog:v08": "python scripts/build_v08_catalog.py",
+    "learn:v08": "python scripts/run_private08.py run_learning08.mjs",
+    "render:v08": "node scripts/render_v08.cjs",
+    "test:packing:v08": "npm run build && node --test tests/test_packed_assets08.mjs",
+    "test:v09": "node --test tests/test_generative09.cjs tests/test_boundary09.cjs tests/test_pipeline09.mjs tests/test_experiment09.mjs tests/test_packed_archives09.mjs tests/test_editor09_contract.cjs tests/test_offline09.cjs tests/test_media09.cjs tests/test_video09.cjs",
+    "render:v09": "node scripts/render_v09.cjs",
+    "verify:v09": "node scripts/verify_v09.cjs --require-build --contracts",
+    "test:v10": "node --test tests/test_gaussian10.cjs tests/test_verifier10.cjs tests/test_task_runner10.cjs tests/test_provider10.mjs tests/test_storage10.mjs",
+    "generate:v10": "python3 scripts/private10.py run_generation10.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "pngjs": "7.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

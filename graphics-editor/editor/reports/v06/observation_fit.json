@@ -1,0 +1,414 @@
+{
+  "schema": "crf.observation_acceptance.v0.6",
+  "algorithmSha256": "26629c2120f01aa06df874cd260b5669c678eb9c7379c2c1f5529c5b7bb3c18c",
+  "source": {
+    "title": "Apple and pear",
+    "author": "Yves Geissbühler",
+    "url": "https://commons.wikimedia.org/wiki/File:Apple_and_pear.jpg",
+    "license": "CC0 1.0",
+    "canonicalDimensions": [
+      800,
+      600
+    ],
+    "canonicalSha256": "710c064d8802060e4cbd3b93859e40b81c213a35b21c4ac5ff99340b7238242e"
+  },
+  "assetFile": "dist/assets/v06/observed-fruit.js",
+  "assetFileBytes": 712491,
+  "assetFileSha256": "fbc3043656c7872dc59d4ff8391dfb5156ba33e368cbcd734c70f146aab3b012",
+  "pass": true,
+  "objects": [
+    {
+      "id": "observed.apple",
+      "schema": "crf.observation_fit.v0.6",
+      "pass": true,
+      "acceptance": {
+        "scope": "bounded fruit-hypothesis import, not exact reconstruction",
+        "minimumSilhouetteIoU": 0.65,
+        "requiresFiniteAppearanceError": true,
+        "pixelExactClaim": false
+      },
+      "kind": "apple",
+      "inputDimensions": [
+        800,
+        600
+      ],
+      "bbox": [
+        139,
+        209,
+        392,
+        470
+      ],
+      "roi": [
+        128,
+        202,
+        392,
+        470
+      ],
+      "budget": {
+        "maxInputPixels": 2000000,
+        "maxForegroundPixels": 200000
+      },
+      "sourceMaskPixels": 52711,
+      "segmentation": "color-connected-component-with-assisted-ROI",
+      "profile": {
+        "samples": 32,
+        "initialLoss": 0.005624266967764613,
+        "finalLoss": 0.000046197517542342395,
+        "lossCurve": [
+          {
+            "iteration": 0,
+            "objective": 0.005624266967764613,
+            "dataMSE": 0.005614487212666522,
+            "regularization": 0.000009779755098091417
+          },
+          {
+            "iteration": 1,
+            "objective": 0.00019099224622643254,
+            "dataMSE": 0.00018734112506849687,
+            "regularization": 0.0000036511211579356843
+          },
+          {
+            "iteration": 2,
+            "objective": 0.000051326787314637235,
+            "dataMSE": 0.00004873946530865854,
+            "regularization": 0.0000025873220059786948
+          },
+          {
+            "iteration": 3,
+            "objective": 0.000046391100004031915,
+            "dataMSE": 0.000044003834942453675,
+            "regularization": 0.00000238726506157824
+          },
+          {
+            "iteration": 4,
+            "objective": 0.00004620550721643344,
+            "dataMSE": 0.00004385909141398872,
+            "regularization": 0.0000023464158024447216
+          },
+          {
+            "iteration": 5,
+            "objective": 0.0000461978764832362,
+            "dataMSE": 0.000043861722922901235,
+            "regularization": 0.000002336153560334967
+          },
+          {
+            "iteration": 6,
+            "objective": 0.00004619753617367047,
+            "dataMSE": 0.000043862928622730023,
+            "regularization": 0.0000023346075509404494
+          },
+          {
+            "iteration": 7,
+            "objective": 0.000046197518632991864,
+            "dataMSE": 0.00004386310118981668,
+            "regularization": 0.0000023344174431751845
+          },
+          {
+            "iteration": 8,
+            "objective": 0.000046197517614642715,
+            "dataMSE": 0.0000438630914016266,
+            "regularization": 0.000002334426213016117
+          },
+          {
+            "iteration": 9,
+            "objective": 0.000046197517547228034,
+            "dataMSE": 0.000043863081941538485,
+            "regularization": 0.000002334435605689548
+          },
+          {
+            "iteration": 10,
+            "objective": 0.00004619751754267665,
+            "dataMSE": 0.00004386307726869409,
+            "regularization": 0.000002334440273982557
+          },
+          {
+            "iteration": 11,
+            "objective": 0.000046197517542342395,
+            "dataMSE": 0.0000438630758555405,
+            "regularization": 0.0000023344416868018944
+          }
+        ],
+        "silhouetteIoU": 0.9575925169815522,
+        "axisX": 264.3635614257831,
+        "radiusPixels": 126.5,
+        "heightPixels": 261,
+        "meanAxisAsymmetryPixels": 4.24955226555047
+      },
+      "appearance": {
+        "fieldWidth": 256,
+        "fieldHeight": 256,
+        "coefficientCount": 65536,
+        "storedRGBBytes": 196608,
+        "storedConfidenceBytes": 65536,
+        "trainingPixels": 42202,
+        "heldoutPixels": 10509,
+        "holdoutRule": "coordinate hash mod 5; RGB excluded from coefficient fitting, mean, and priors; segmentation/geometry use the full mask",
+        "trainRgbMAE": 2.060374414065854,
+        "holdoutRgbMAE": 3.7399613496864883,
+        "constantBaselineMAE": 23.5818354642456,
+        "observedCoverage": 0.4407806396484375,
+        "lossCurve": [
+          {
+            "iteration": 0,
+            "trainMAE": 2.691538224651688,
+            "holdoutMAE": 3.694455835410385,
+            "trainMSE": 30.10855645237082,
+            "holdoutMSE": 52.489359295868425
+          },
+          {
+            "iteration": 1,
+            "trainMAE": 2.3478753832190464,
+            "holdoutMAE": 3.6062520258614024,
+            "trainMSE": 24.017554846864222,
+            "holdoutMSE": 49.31762621462258
+          },
+          {
+            "iteration": 2,
+            "trainMAE": 2.1999570600742104,
+            "holdoutMAE": 3.6199127915625167,
+            "trainMSE": 21.62911362642079,
+            "holdoutMSE": 48.95713135387007
+          },
+          {
+            "iteration": 3,
+            "trainMAE": 2.1220547022840694,
+            "holdoutMAE": 3.655114186630659,
+            "trainMSE": 20.467161458998714,
+            "holdoutMSE": 49.37111272207895
+          },
+          {
+            "iteration": 4,
+            "trainMAE": 2.0749516605176703,
+            "holdoutMAE": 3.6958283744613794,
+            "trainMSE": 19.820078896458465,
+            "holdoutMSE": 50.06589960393292
+          },
+          {
+            "iteration": 5,
+            "trainMAE": 2.043922914992137,
+            "holdoutMAE": 3.735938395647902,
+            "trainMSE": 19.428218168460518,
+            "holdoutMSE": 50.843107229872224
+          }
+        ],
+        "backsideMethod": "front-hemisphere mirrored radiance, confidence 24/255; not observed"
+      },
+      "runtimeData": {
+        "fullSourceRGBStored": false,
+        "profileCoefficients": 32,
+        "fieldRGBBytes": 196608,
+        "fieldConfidenceBytes": 65536,
+        "sourceImagePixelCount": 480000
+      },
+      "warnings": [
+        "轮廓接近 ROI 边缘，物品可能被裁切。",
+        "参考苹果右侧被梨子遮挡；矩形 ROI 排除了邻物和接触阴影，剩余遮挡与果柄仍会影响单图外观。"
+      ],
+      "limitations": [
+        "Single image implies a rotational geometry hypothesis; no hidden-side ground truth.",
+        "Silhouette IoU compares against the extracted mask; it is not an independent measurement of segmentation accuracy.",
+        "UV colors include original illumination and specular highlights; not a recovered physical material.",
+        "Held-out pixels measure local appearance interpolation only, not novel-view or semantic generalization.",
+        "Automatic color segmentation is restricted to red apples and yellow/green pears with separable foreground; arbitrary image understanding is not implemented."
+      ],
+      "elapsedMs": 1241.022637,
+      "objectSerializedBytes": 351237,
+      "objectSha256": "ebf1d3849db1bb998b58747327bd6b349000c6c46e003763af4052dc92430c44"
+    },
+    {
+      "id": "observed.pear",
+      "schema": "crf.observation_fit.v0.6",
+      "pass": true,
+      "acceptance": {
+        "scope": "bounded fruit-hypothesis import, not exact reconstruction",
+        "minimumSilhouetteIoU": 0.65,
+        "requiresFiniteAppearanceError": true,
+        "pixelExactClaim": false
+      },
+      "kind": "pear",
+      "inputDimensions": [
+        800,
+        600
+      ],
+      "bbox": [
+        371,
+        89,
+        626,
+        503
+      ],
+      "roi": [
+        349,
+        72,
+        647,
+        515
+      ],
+      "budget": {
+        "maxInputPixels": 2000000,
+        "maxForegroundPixels": 200000
+      },
+      "sourceMaskPixels": 69439,
+      "segmentation": "color-connected-component-with-assisted-ROI",
+      "profile": {
+        "samples": 32,
+        "initialLoss": 0.06672481778637197,
+        "finalLoss": 0.00014936188656582155,
+        "lossCurve": [
+          {
+            "iteration": 0,
+            "objective": 0.06672481778637197,
+            "dataMSE": 0.06671503803127388,
+            "regularization": 0.000009779755098091417
+          },
+          {
+            "iteration": 1,
+            "objective": 0.0025393991750946323,
+            "dataMSE": 0.002532439611080275,
+            "regularization": 0.000006959564014357219
+          },
+          {
+            "iteration": 2,
+            "objective": 0.00022766601946829602,
+            "dataMSE": 0.00021563540208922486,
+            "regularization": 0.000012030617379071153
+          },
+          {
+            "iteration": 3,
+            "objective": 0.00015215792750733356,
+            "dataMSE": 0.00014054390440655223,
+            "regularization": 0.000011614023100781343
+          },
+          {
+            "iteration": 4,
+            "objective": 0.00014945777134447874,
+            "dataMSE": 0.0001376464263627285,
+            "regularization": 0.000011811344981750263
+          },
+          {
+            "iteration": 5,
+            "objective": 0.00014936542861063095,
+            "dataMSE": 0.00013756343156378866,
+            "regularization": 0.00001180199704684229
+          },
+          {
+            "iteration": 6,
+            "objective": 0.0001493620193328565,
+            "dataMSE": 0.0001375534853625382,
+            "regularization": 0.000011808533970318307
+          },
+          {
+            "iteration": 7,
+            "objective": 0.0001493618921503358,
+            "dataMSE": 0.00013755332086516753,
+            "regularization": 0.000011808571285168256
+          },
+          {
+            "iteration": 8,
+            "objective": 0.00014936188682718686,
+            "dataMSE": 0.00013755304984219542,
+            "regularization": 0.000011808836984991448
+          },
+          {
+            "iteration": 9,
+            "objective": 0.00014936188658013947,
+            "dataMSE": 0.0001375530131335175,
+            "regularization": 0.000011808873446621982
+          },
+          {
+            "iteration": 10,
+            "objective": 0.00014936188656666037,
+            "dataMSE": 0.00013755299887087408,
+            "regularization": 0.000011808887695786301
+          },
+          {
+            "iteration": 11,
+            "objective": 0.00014936188656582155,
+            "dataMSE": 0.00013755299425423684,
+            "regularization": 0.000011808892311584706
+          }
+        ],
+        "silhouetteIoU": 0.9270157039010044,
+        "axisX": 495.81984050439763,
+        "radiusPixels": 127,
+        "heightPixels": 414,
+        "meanAxisAsymmetryPixels": 6.264120919886233
+      },
+      "appearance": {
+        "fieldWidth": 256,
+        "fieldHeight": 256,
+        "coefficientCount": 65536,
+        "storedRGBBytes": 196608,
+        "storedConfidenceBytes": 65536,
+        "trainingPixels": 55648,
+        "heldoutPixels": 13791,
+        "holdoutRule": "coordinate hash mod 5; RGB excluded from coefficient fitting, mean, and priors; segmentation/geometry use the full mask",
+        "trainRgbMAE": 1.8767013808212156,
+        "holdoutRgbMAE": 2.94385643939309,
+        "constantBaselineMAE": 23.202077232281855,
+        "observedCoverage": 0.4248809814453125,
+        "lossCurve": [
+          {
+            "iteration": 0,
+            "trainMAE": 2.483509672787784,
+            "holdoutMAE": 3.119399177152775,
+            "trainMSE": 21.795244742152494,
+            "holdoutMSE": 33.10815162898761
+          },
+          {
+            "iteration": 1,
+            "trainMAE": 2.130944400631959,
+            "holdoutMAE": 2.917017498014202,
+            "trainMSE": 17.42818172229398,
+            "holdoutMSE": 30.087368983218262
+          },
+          {
+            "iteration": 2,
+            "trainMAE": 1.9925066690928062,
+            "holdoutMAE": 2.8796770094737765,
+            "trainMSE": 15.814668429383724,
+            "holdoutMSE": 29.504744472906804
+          },
+          {
+            "iteration": 3,
+            "trainMAE": 1.9258997241267175,
+            "holdoutMAE": 2.888725350694589,
+            "trainMSE": 15.063773807449845,
+            "holdoutMSE": 29.62153412140102
+          },
+          {
+            "iteration": 4,
+            "trainMAE": 1.8883905275439312,
+            "holdoutMAE": 2.912409277646366,
+            "trainMSE": 14.660946911680838,
+            "holdoutMSE": 29.955969197505752
+          },
+          {
+            "iteration": 5,
+            "trainMAE": 1.8653746054663052,
+            "holdoutMAE": 2.939724352017585,
+            "trainMSE": 14.422665509470102,
+            "holdoutMSE": 30.35116113994546
+          }
+        ],
+        "backsideMethod": "front-hemisphere mirrored radiance, confidence 24/255; not observed"
+      },
+      "runtimeData": {
+        "fullSourceRGBStored": false,
+        "profileCoefficients": 32,
+        "fieldRGBBytes": 196608,
+        "fieldConfidenceBytes": 65536,
+        "sourceImagePixelCount": 480000
+      },
+      "warnings": [],
+      "limitations": [
+        "Single image implies a rotational geometry hypothesis; no hidden-side ground truth.",
+        "Silhouette IoU compares against the extracted mask; it is not an independent measurement of segmentation accuracy.",
+        "UV colors include original illumination and specular highlights; not a recovered physical material.",
+        "Held-out pixels measure local appearance interpolation only, not novel-view or semantic generalization.",
+        "Automatic color segmentation is restricted to red apples and yellow/green pears with separable foreground; arbitrary image understanding is not implemented."
+      ],
+      "elapsedMs": 1263.309366,
+      "objectSerializedBytes": 351238,
+      "objectSha256": "e66e1502f31bb3a7974a31aebbd79e767270698bd013fabb76e437f74d44de49"
+    }
+  ]
+}

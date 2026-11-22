@@ -1,0 +1,818 @@
+{
+  "schema": "crf.actual_generation_trial.v0.9",
+  "id": "05_warm_coast",
+  "title": "暖色海岸与三块礁石",
+  "category": "landscape",
+  "prompt": "温暖傍晚的海岸，海平线较低，柔和浅橙天空，前景三块大小不同的海岸岩石。海面细小波纹，远处海岬有雾化层次。不要树木、建筑或水果。输出1024×768，使用CRF原生二维函数与共享高斯外观，保持共同光照、合理比例、材质细节和接触关系。",
+  "seed": 90105,
+  "protocolSha256": "299276050dd4890f52b74fa9e63ff0871716b5f12ad4fe433293a6616a963bc6",
+  "runId": "showcase-v1",
+  "taskId": "crf09_68bd59b2-9712-473b-9d56-e48e5ad7ecd2",
+  "status": "review_required",
+  "stage": "complete",
+  "error": null,
+  "completedAt": "2026-11-21T16:04:54.890Z",
+  "selection": {
+    "index": 2,
+    "reason": "Latest candidate without declared semantic-constraint regression; visual approval remains pending.",
+    "independentReview": false
+  },
+  "frameGate": {
+    "expected": [
+      1024,
+      768
+    ],
+    "actual": [
+      1024,
+      768
+    ],
+    "passed": true
+  },
+  "model": {
+    "id": "shared-1b02095c",
+    "sha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e",
+    "sourceRGBEmbedded": false,
+    "scope": "shared multi-image linear-color moments and Gaussian frequency-band amplitude estimates; procedural shape prior is hand-authored"
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "png": "reports/v09/generation/showcase-v1/05_warm_coast/candidate_00.png",
+      "jpeg": "reports/v09/generation/showcase-v1/05_warm_coast/candidate_00.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 458995,
+        "semanticObjects": 5,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 871,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 871,
+        "pixelSha256": "be908692f64298d429c2fd9d58e6915f0297a1898eaa07a9eb3b6e0175c7ef68",
+        "pngSha256": "06cdb51bcd25393053be506908a6b8698d83249595616e20357b0ea7905292f4",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 3,
+            "passed": true,
+            "observed": 3
+          },
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 5,
+        "passed": 5,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 3,
+            "passed": true,
+            "observed": 3
+          },
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 2,
+        "passed": 2,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_e899847c-5666-4971-b8ff-87072cff1dd6",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "画面整体符合低海平线暖色海岸的构图：浅橙天空、低平海平线、三块大小递增的前景岩石和远处海岬都已就位，也没有出现树木、建筑或水果。但从实际附图看，海岬轮廓带有明显的亮白色描边，像剪贴贴片，雾化层次未能融入天空；海面波纹呈规则重复的条纹，并有两条贯穿画面的白色弧带，程序化痕迹强；前景岩石边缘硬，底部缺少接触阴影，看起来像扁平形状贴在灰面。以上问题使画面更接近示意图，而非照片级渲染。",
+        "qualityNotes": [
+          "天空、海面、地面的色彩关系整体统一，暖色傍晚氛围可辨。",
+          "三块前景岩石的大小差异和左右分布合理，满足数量与比例约束。",
+          "海岬沿用了雾色，但边缘描边破坏了远近融合。"
+        ],
+        "warnings": [
+          "当前渲染不能作为照片级验收依据；海面波纹与海岬描边是主要失真来源。"
+        ],
+        "issues": [
+          {
+            "code": "edge",
+            "severity": "major",
+            "objectIds": [
+              "distant_headland_far",
+              "distant_headland_near"
+            ],
+            "description": "两座海岬的外轮廓有连续亮白色描边，像贴图边界或轮廓高光，未与天空和雾融合。建议降低 ridge 轮廓的亮度对比，让顶部高光随高度衰减，并把 fog 由 0.34 提高到约 0.45，同时让 ridge 颜色更接近天空远景色，使边缘变柔。"
+          },
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [],
+            "description": "海面波纹呈规则水平重复条纹，并出现两条横贯画面的亮白弧带，像把波纹画成了等高线。建议扩大波纹的空间尺度差，降低白色高光带的强度，使高光只在局部碎浪处出现，并减少整幅海面的周期性重复感。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "foreground_rock_large",
+              "foreground_rock_medium",
+              "foreground_rock_small"
+            ],
+            "description": "三块岩石底部与灰色地面之间缺少接触阴影和环境遮蔽，岩石像平面剪影贴在表面上。建议在岩石底部附近加深暗部，并把 y 值略微下移，使底部轮廓嵌入地面，形成接地感。"
+          },
+          {
+            "code": "lighting",
+            "severity": "minor",
+            "objectIds": [
+              "foreground_rock_large",
+              "foreground_rock_medium",
+              "foreground_rock_small"
+            ],
+            "description": "岩石整体偏暗偏冷，受光面没有体现夕阳低角度暖光，与天空的暖色不一致。建议提高 light.warmth 至约 0.8，并让岩石受光侧带暖色边缘、背光侧保留冷调，增强体积感。"
+          },
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [],
+            "description": "前景灰色地面与海面之间过渡生硬，缺少湿滩或浪缘的过渡带。建议在下部海面与地面交界加入一条渐窄的浅色浪缘，并让地面颜色向海面方向略微压暗。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "foreground_rock_large",
+              "foreground_rock_medium",
+              "foreground_rock_small"
+            ],
+            "description": "岩石表面颗粒噪声均匀，但缺少大尺度的起伏明暗，轮廓边缘过于锐利。建议在岩石内部增加低频明暗块面，并让粗糙度略作变化，减弱剪纸感。"
+          }
+        ],
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2384,
+          "completion_tokens": 1627,
+          "total_tokens": 4011,
+          "reasoning_tokens": 870,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "96208ee4-9e9e-41c3-8ae6-75267281dcac",
+              "model": "deepseek-flash",
+              "elapsedMs": 12479,
+              "prompt_tokens": 2384,
+              "completion_tokens": 1627,
+              "total_tokens": 4011,
+              "reasoning_tokens": 870,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:04:09.811Z",
+            "requestId": "96208ee4-9e9e-41c3-8ae6-75267281dcac"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 12481
+      }
+    },
+    {
+      "index": 1,
+      "png": "reports/v09/generation/showcase-v1/05_warm_coast/candidate_01.png",
+      "jpeg": "reports/v09/generation/showcase-v1/05_warm_coast/candidate_01.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 458995,
+        "semanticObjects": 5,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 645,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 645,
+        "pixelSha256": "4f81fc74f8e5be52a3760ef87309c227b1eafc23d66b874196b2f2639dd9d519",
+        "pngSha256": "8b18bd069db8e08eca0d55f5c260f910d9bb3234cc7b61317404495b9973477e",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 3,
+            "passed": true,
+            "observed": 3
+          },
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 5,
+        "passed": 5,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 3,
+            "passed": true,
+            "observed": 3
+          },
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 2,
+        "passed": 2,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_c2384b88-169b-4888-adaf-c2f1727910de",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "图像符合低海平线、浅橙天空与三块前景岩石的基本语义，也没有出现树木、建筑或水果；但海岬像带白描边的扁平纸片，海面浪线像描边、显得生硬，前景岩石缺少与地面的接触阴影和傍晚方向光，整体仍偏示意插图。",
+        "qualityNotes": [
+          "海平线位置与暖色天空基本符合傍晚低海平线构图。",
+          "三块岩石的大小节奏合理，但横向间距较均匀、缺少前后错落。",
+          "远处海岬的雾化融合不足，边缘直切与白色高光描边明显。",
+          "岩石受光方向不明确，暖色主光未在岩石亮面形成可辨的暖调与冷阴影对比。"
+        ],
+        "warnings": [
+          "该图为共享高斯/解析算子生成的示意性海岸场景，未达到照片级材质与大气散射精度。",
+          "当前相机为有限视差模型，不表示真实地形几何恢复。"
+        ],
+        "issues": [
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "distant_headland_far",
+              "distant_headland_near"
+            ],
+            "description": "远处海岬呈扁平灰色块，顶部有连续白色锯齿描边，左侧还有水平直切边，像贴纸而非雾化山体。建议降低 ridge 与天空对比、提高雾量或让 ridge 颜色更接近天空浅橙灰，弱化边缘轮廓，并把海岬高度压得更低、更不规则。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [
+              "foreground_rock_large",
+              "foreground_rock_medium",
+              "foreground_rock_small"
+            ],
+            "description": "傍晚低角度暖光未在岩石上形成明确的受光面和背光面，岩石整体近似均匀棕色噪点。建议提高 light.intensity 的方向性表现，让岩石朝光源一侧偏暖、背光侧偏冷，并增强 roughness 差异。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "foreground_rock_large",
+              "foreground_rock_medium",
+              "foreground_rock_small"
+            ],
+            "description": "三块岩石下缘直接贴到灰蓝地面，缺少接地暗部和接触阴影，视觉上略浮。建议在岩石底部增加更暗的接触带，并让地面颜色在岩石附近略微加深，使岩石与地面形成实地接触。"
+          },
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [],
+            "description": "海面波纹呈规则水平条带，且有两道非常平滑的白色弧线，像人工描边。建议打散波纹的规则性、降低白色浪线亮度与连续性，让浪花更碎、更贴合海岸透视。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "foreground_rock_large",
+              "foreground_rock_medium",
+              "foreground_rock_small"
+            ],
+            "description": "岩石表面纹理接近均匀噪点/皮革，缺少岩面节理、块面和自然磨损。可提高 roughness 并增加局部的明暗块面变化，避免统一颗粒感。"
+          },
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [
+              "foreground_rock_large",
+              "foreground_rock_medium",
+              "foreground_rock_small"
+            ],
+            "description": "三块岩石横向等距排列，缺少前后错落与景深层次。建议将中、小岩石在纵向和深度上错开，并缩小远处岩石，形成更自然的海岸前景。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [],
+            "description": "前景地面呈平滑灰蓝色，缺少沙砾或湿岩质感，与岩石的粗糙度不匹配。建议增加地面细微颗粒和潮线附近的湿暗变化。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 4,
+          "coherence": 3
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2384,
+          "completion_tokens": 1254,
+          "total_tokens": 3638,
+          "reasoning_tokens": 444,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "6734bc64-436c-4849-b6a8-fa30a82dcf47",
+              "model": "deepseek-flash",
+              "elapsedMs": 8526,
+              "prompt_tokens": 2384,
+              "completion_tokens": 1254,
+              "total_tokens": 3638,
+              "reasoning_tokens": 444,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:04:32.691Z",
+            "requestId": "6734bc64-436c-4849-b6a8-fa30a82dcf47"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 8527
+      }
+    },
+    {
+      "index": 2,
+      "png": "reports/v09/generation/showcase-v1/05_warm_coast/candidate_02.png",
+      "jpeg": "reports/v09/generation/showcase-v1/05_warm_coast/candidate_02.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 458995,
+        "semanticObjects": 5,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 698,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 698,
+        "pixelSha256": "53e5a9f9b2b56359282d4fa248a29b1a4e1022b405c4e7bcc5a881e56430d433",
+        "pngSha256": "4194eb861770fc03d30bb657002159b7c56e29e6ebe8804746d4835ec54f45cf",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 3,
+            "passed": true,
+            "observed": 3
+          },
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 5,
+        "passed": 5,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 3,
+            "passed": true,
+            "observed": 3
+          },
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 2,
+        "passed": 2,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": null
+    }
+  ],
+  "usage": [
+    {
+      "phase": "plan",
+      "providerCalls": 1,
+      "prompt_tokens": 1716,
+      "completion_tokens": 1195,
+      "total_tokens": 2911,
+      "reasoning_tokens": 921,
+      "requests": [
+        {
+          "phase": "native09_plan",
+          "requestId": "747097ce-4037-4181-a1e5-033c6cd2aebf",
+          "model": "deepseek-flash",
+          "elapsedMs": 8611,
+          "prompt_tokens": 1716,
+          "completion_tokens": 1195,
+          "total_tokens": 2911,
+          "reasoning_tokens": 921,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "generate",
+      "providerCalls": 1,
+      "prompt_tokens": 1831,
+      "completion_tokens": 2817,
+      "total_tokens": 4648,
+      "reasoning_tokens": 2123,
+      "requests": [
+        {
+          "phase": "native09_generate",
+          "requestId": "7f7ad23e-5d7f-4197-8de0-53a1e5c90219",
+          "model": "deepseek-flash",
+          "elapsedMs": 16996,
+          "prompt_tokens": 1831,
+          "completion_tokens": 2817,
+          "total_tokens": 4648,
+          "reasoning_tokens": 2123,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_0",
+      "providerCalls": 1,
+      "prompt_tokens": 2384,
+      "completion_tokens": 1627,
+      "total_tokens": 4011,
+      "reasoning_tokens": 870,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "96208ee4-9e9e-41c3-8ae6-75267281dcac",
+          "model": "deepseek-flash",
+          "elapsedMs": 12479,
+          "prompt_tokens": 2384,
+          "completion_tokens": 1627,
+          "total_tokens": 4011,
+          "reasoning_tokens": 870,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_1",
+      "providerCalls": 1,
+      "prompt_tokens": 3295,
+      "completion_tokens": 1686,
+      "total_tokens": 4981,
+      "reasoning_tokens": 690,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "7f271bce-097d-43d0-87bd-a33062500723",
+          "model": "deepseek-flash",
+          "elapsedMs": 9439,
+          "prompt_tokens": 3295,
+          "completion_tokens": 1686,
+          "total_tokens": 4981,
+          "reasoning_tokens": 690,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_1",
+      "providerCalls": 1,
+      "prompt_tokens": 2384,
+      "completion_tokens": 1254,
+      "total_tokens": 3638,
+      "reasoning_tokens": 444,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "6734bc64-436c-4849-b6a8-fa30a82dcf47",
+          "model": "deepseek-flash",
+          "elapsedMs": 8526,
+          "prompt_tokens": 2384,
+          "completion_tokens": 1254,
+          "total_tokens": 3638,
+          "reasoning_tokens": 444,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_2",
+      "providerCalls": 1,
+      "prompt_tokens": 3277,
+      "completion_tokens": 2123,
+      "total_tokens": 5400,
+      "reasoning_tokens": 1314,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "dc2aae6b-3c6e-4d33-a667-aef90606fb9f",
+          "model": "deepseek-flash",
+          "elapsedMs": 12668,
+          "prompt_tokens": 3277,
+          "completion_tokens": 2123,
+          "total_tokens": 5400,
+          "reasoning_tokens": 1314,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    }
+  ],
+  "apiOperations": [
+    {
+      "index": 0,
+      "phase": "plan",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:03:43.010Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_68bd59b2-9712-473b-9d56-e48e5ad7ecd2:0",
+      "finishedAt": "2026-11-21T16:03:51.627Z",
+      "runId": "crf09_4f67c56a-3939-4f5d-85e5-71305ef5b96a"
+    },
+    {
+      "index": 1,
+      "phase": "generate",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:03:51.644Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_68bd59b2-9712-473b-9d56-e48e5ad7ecd2:1",
+      "finishedAt": "2026-11-21T16:04:08.664Z",
+      "runId": "crf09_dc71dada-c8d8-4122-9b00-20f600c3e737"
+    },
+    {
+      "index": 2,
+      "phase": "critique_0",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:04:09.800Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_68bd59b2-9712-473b-9d56-e48e5ad7ecd2:2",
+      "finishedAt": "2026-11-21T16:04:22.292Z",
+      "runId": "crf09_e899847c-5666-4971-b8ff-87072cff1dd6"
+    },
+    {
+      "index": 3,
+      "phase": "revision_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:04:22.319Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_68bd59b2-9712-473b-9d56-e48e5ad7ecd2:3",
+      "finishedAt": "2026-11-21T16:04:31.772Z",
+      "runId": "crf09_18fe8960-0230-4e00-af49-c38637c51ffb"
+    },
+    {
+      "index": 4,
+      "phase": "critique_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:04:32.683Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_68bd59b2-9712-473b-9d56-e48e5ad7ecd2:4",
+      "finishedAt": "2026-11-21T16:04:41.220Z",
+      "runId": "crf09_c2384b88-169b-4888-adaf-c2f1727910de"
+    },
+    {
+      "index": 5,
+      "phase": "revision_2",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:04:41.251Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_68bd59b2-9712-473b-9d56-e48e5ad7ecd2:5",
+      "finishedAt": "2026-11-21T16:04:53.931Z",
+      "runId": "crf09_a6bdd0f8-a9a1-46ad-b76a-356819dbc3ea"
+    }
+  ],
+  "planningHistory": [],
+  "replanCount": 0,
+  "planEvidence": {
+    "qualityNotes": [
+      "输出尺寸明确为1024×768。",
+      "海面细小波纹与远景雾化海岬可由海岸地形、纹理和雾参数近似表达，属于程序化外观限制。",
+      "前景三块岩石需保持不同尺度、合理遮挡和地面接触关系，共享统一傍晚光照。"
+    ],
+    "warnings": [
+      "共享外观统计与原生二维高斯外观不保证照片级海水反射、真实海雾或岩石材质细节。",
+      "当前不支持以任意照片资产或三维网格补充海岸细节。"
+    ],
+    "runId": "crf09_4f67c56a-3939-4f5d-85e5-71305ef5b96a",
+    "requestIds": [
+      "747097ce-4037-4181-a1e5-033c6cd2aebf"
+    ]
+  },
+  "learning": null,
+  "quality": {
+    "releaseGate": "not_evaluated",
+    "independentHumanReview": false,
+    "scope": "Actual rendered candidates with bounded model feedback; not a photorealism certificate"
+  },
+  "artifact": {
+    "imageUrl": "assets/v09/generated/showcase-v1/05_warm_coast.png",
+    "thumbnailUrl": "assets/v09/generated/showcase-v1/05_warm_coast.jpg",
+    "sceneUrl": "assets/v09/generated/showcase-v1/05_warm_coast.scene.json",
+    "reportUrl": "assets/v09/generated/showcase-v1/05_warm_coast.record.json",
+    "width": 1024,
+    "height": 768,
+    "pixelSha256": "53e5a9f9b2b56359282d4fa248a29b1a4e1022b405c4e7bcc5a881e56430d433",
+    "modelId": "shared-1b02095c",
+    "modelSha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e"
+  },
+  "limits": [
+    "These are fixed showcase trials, not the unrun 180-task terminal benchmark.",
+    "Model critique is auxiliary; photoreal quality requires independent review.",
+    "Current renderer is a restricted procedural/statistical 2D Gaussian function generator."
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "assetId": "street.signal.main",
+  "source": "/workspace/scratch/4d869d6c27e5/crf_street_0_4/fitting/sources08/street.signal.main.png",
+  "sourceSHA256": "6b3319fbc56a9856e4fc702f53a2de4dcb25017e8d16191abec52b96679309a9",
+  "width": 53,
+  "height": 92,
+  "gaussians": 1072,
+  "assetBytes": 96183,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "renderedFromExportOnly": true,
+  "metrics": {
+    "mae": 3.3424284825870645,
+    "rmse": 9.4635617959451,
+    "psnr": 28.60971116142322,
+    "ssim": 0.9609227337576803,
+    "maxError": 165,
+    "exactRGBFraction": 0.03125,
+    "evaluatedPixels": 4288,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 90,
+      "bestFloatMSE": 9.732865281506054,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 65.24875887009718,
+          "bestFloatMSE": 65.24875887009718
+        },
+        {
+          "step": 10,
+          "floatMSE": 27.458794069741234,
+          "bestFloatMSE": 27.458794069741234
+        },
+        {
+          "step": 20,
+          "floatMSE": 19.41121991416637,
+          "bestFloatMSE": 19.41121991416637
+        },
+        {
+          "step": 30,
+          "floatMSE": 15.30383158283755,
+          "bestFloatMSE": 15.30383158283755
+        },
+        {
+          "step": 40,
+          "floatMSE": 13.031752844258499,
+          "bestFloatMSE": 13.031752844258499
+        },
+        {
+          "step": 50,
+          "floatMSE": 11.653878652698287,
+          "bestFloatMSE": 11.653878652698287
+        },
+        {
+          "step": 60,
+          "floatMSE": 10.775434522637138,
+          "bestFloatMSE": 10.775434522637138
+        },
+        {
+          "step": 70,
+          "floatMSE": 10.220370667540832,
+          "bestFloatMSE": 10.220370667540832
+        },
+        {
+          "step": 80,
+          "floatMSE": 9.908977522917022,
+          "bestFloatMSE": 9.908977522917022
+        },
+        {
+          "step": 90,
+          "floatMSE": 9.732865281506054,
+          "bestFloatMSE": 9.732865281506054
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 375,
+        "elapsedSeconds": 0.02,
+        "mae": 29.109219527363184,
+        "rmse": 43.2039420951629,
+        "psnr": 15.420336101979066,
+        "ssim": 0.5160296260754749,
+        "maxError": 251,
+        "exactRGBFraction": 0.0002332089552238806,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 375,
+        "elapsedSeconds": 0.031,
+        "mae": 20.50722947761194,
+        "rmse": 34.93997940854648,
+        "psnr": 17.26435071466317,
+        "ssim": 0.6815346133792886,
+        "maxError": 255,
+        "exactRGBFraction": 0.0002332089552238806,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 828,
+        "elapsedSeconds": 0.125,
+        "mae": 11.310167910447761,
+        "rmse": 22.3601513447294,
+        "psnr": 21.141308833730925,
+        "ssim": 0.8697492743113138,
+        "maxError": 252,
+        "exactRGBFraction": 0.0013992537313432835,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 1072,
+        "elapsedSeconds": 0.182,
+        "mae": 8.548662935323383,
+        "rmse": 17.529031533927164,
+        "psnr": 23.255645162547683,
+        "ssim": 0.9116452896153224,
+        "maxError": 224,
+        "exactRGBFraction": 0.0018656716417910447,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 1072,
+        "elapsedSeconds": 0.186,
+        "mae": 8.548662935323383,
+        "rmse": 17.529031533927164,
+        "psnr": 23.255645162547683,
+        "ssim": 0.9116452896153224,
+        "maxError": 224,
+        "exactRGBFraction": 0.0018656716417910447,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 1072,
+        "elapsedSeconds": 0.213,
+        "mae": 5.776974502487562,
+        "rmse": 13.636440265313112,
+        "psnr": 25.436783320889916,
+        "ssim": 0.9419846571772084,
+        "maxError": 178,
+        "exactRGBFraction": 0.003031716417910448,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 1072,
+        "elapsedSeconds": 0.24,
+        "mae": 4.811023009950249,
+        "rmse": 12.107510338299935,
+        "psnr": 26.46970663764071,
+        "ssim": 0.9504126521922078,
+        "maxError": 172,
+        "exactRGBFraction": 0.009328358208955223,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 1072,
+        "elapsedSeconds": 0.266,
+        "mae": 4.252098880597015,
+        "rmse": 11.26015641598454,
+        "psnr": 27.099915140953104,
+        "ssim": 0.9546158187456661,
+        "maxError": 178,
+        "exactRGBFraction": 0.010494402985074628,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 1072,
+        "elapsedSeconds": 0.292,
+        "mae": 3.9032182835820897,
+        "rmse": 10.644341482544373,
+        "psnr": 27.588427633433717,
+        "ssim": 0.9571513726701104,
+        "maxError": 173,
+        "exactRGBFraction": 0.01842350746268657,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 1072,
+        "elapsedSeconds": 0.321,
+        "mae": 3.6726523631840795,
+        "rmse": 10.191279287089658,
+        "psnr": 27.96622954101069,
+        "ssim": 0.9587550735378,
+        "maxError": 168,
+        "exactRGBFraction": 0.02028917910447761,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 1072,
+        "elapsedSeconds": 0.348,
+        "mae": 3.527596393034826,
+        "rmse": 9.869795215052067,
+        "psnr": 28.244640773919638,
+        "ssim": 0.9597512952214691,
+        "maxError": 167,
+        "exactRGBFraction": 0.026119402985074626,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 1072,
+        "elapsedSeconds": 0.376,
+        "mae": 3.4274720149253732,
+        "rmse": 9.652251915475528,
+        "psnr": 28.438230646734812,
+        "ssim": 0.9603975036679806,
+        "maxError": 166,
+        "exactRGBFraction": 0.029151119402985076,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_80",
+        "count": 1072,
+        "elapsedSeconds": 0.403,
+        "mae": 3.373212064676617,
+        "rmse": 9.533274242675999,
+        "psnr": 28.54596187858788,
+        "ssim": 0.9607323103916388,
+        "maxError": 166,
+        "exactRGBFraction": 0.028218283582089554,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_90",
+        "count": 1072,
+        "elapsedSeconds": 0.429,
+        "mae": 3.3424284825870645,
+        "rmse": 9.4635617959451,
+        "psnr": 28.60971116142322,
+        "ssim": 0.9609227337576803,
+        "maxError": 165,
+        "exactRGBFraction": 0.03125,
+        "evaluatedPixels": 4288,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 0.43,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "targets": {
+    "pilot": {
+      "psnr": 32,
+      "ssim": 0.95
+    },
+    "highFidelity": {
+      "psnr": 38,
+      "ssim": 0.98
+    }
+  },
+  "passedPilot": false,
+  "passedHighFidelity": false
+}

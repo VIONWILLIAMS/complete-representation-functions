@@ -1,0 +1,195 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 1,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.1.0",
+      "label": "红砖墙面上的复古拱形窗",
+      "category": "architectural facade window",
+      "role": "object",
+      "bbox": [
+        0.18,
+        0.15,
+        0.86,
+        0.9
+      ],
+      "palette": [
+        [
+          168,
+          72,
+          48
+        ],
+        [
+          205,
+          198,
+          183
+        ],
+        [
+          58,
+          52,
+          48
+        ],
+        [
+          126,
+          58,
+          40
+        ],
+        [
+          124,
+          119,
+          108
+        ]
+      ],
+      "lightDirection": "front",
+      "description": "近景正面拍摄的红砖建筑立面，中央是一扇高窄的拱顶窗。窗框是灰白色的旧漆金属或木质框，漆面斑驳起皮，边角有磨损；上部半圆扇形窗用放射状细条分隔，形似扇骨，玻璃色调深暗，并带反光和模糊的环境映影；下半部为两扇竖向窗格，玻璃同样深暗。窗户上方有向外挑出的砖砌檐口，檐下有齿状排列的凸砖，形成较清晰的凹凸阴影；下方是灰白色石质或抹灰的窗台与墙檐，表面粗糙并有风化污渍。砖体为暖橙红色，砖缝砂浆偏灰白，墙面可见明显颗粒、局部泛白与深浅不一的砖色变化。整体为均匀柔和的正面光，檐口处有轻微投影。",
+      "tags": [
+        "红砖墙",
+        "拱窗",
+        "扇形窗棂",
+        "旧窗框",
+        "砖缝砂浆",
+        "建筑立面",
+        "风化纹理",
+        "正面近景",
+        "暖橙红",
+        "复古建筑"
+      ],
+      "limitations": [
+        "只能看到立面局部，无法判断建筑整体尺度",
+        "窗框具体材质难以确认",
+        "玻璃映影内容模糊，不能用作环境证据",
+        "墙面有局部色偏，砖色还原受白平衡影响",
+        "不支持从其他视角复用",
+        "没有比例参照物"
+      ]
+    },
+    {
+      "id": "ref.1.1",
+      "label": "行人过街信号灯双灯面",
+      "category": "pedestrian traffic signal",
+      "role": "object",
+      "bbox": [
+        0.02,
+        0.02,
+        0.98,
+        0.98
+      ],
+      "palette": [
+        [
+          36,
+          46,
+          41
+        ],
+        [
+          220,
+          42,
+          46
+        ],
+        [
+          172,
+          180,
+          174
+        ],
+        [
+          72,
+          86,
+          96
+        ],
+        [
+          92,
+          112,
+          72
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "深墨绿近黑色外壳的行人信号灯正面近景特写，外壳四角圆润、边框带斜面倒角，下沿中央有一枚小圆形固定螺钉或铆钉，壳体表面较哑光，有轻微磨损迹象。灯面被竖条分为两格方形面板：左侧是点阵排列的站立行人形状，密集的红色LED点亮，颗粒状发光明显，边缘因点阵形成锯齿轮廓；右侧是同样由点阵构成的行走人形，几乎未点亮，呈浅灰白色的哑光点阵。两格面板表面略有反光，可见细小污渍或纹理。背景只露出画面边缘的一小部分，以暗蓝灰为主，左侧上方还有少量接近绿色的亮斑，可能是树叶或天空。光照均匀柔和，基本为漫射光。",
+      "tags": [
+        "行人信号灯",
+        "LED点阵",
+        "站立人形",
+        "行走人形",
+        "红色灯面",
+        "金属外壳",
+        "倒角边框",
+        "城市设施",
+        "正面特写",
+        "哑光表面"
+      ],
+      "limitations": [
+        "画面内看不到立柱及与壳体的连接结构",
+        "右侧人形未点亮，真实色彩与亮度不可判定",
+        "外壳究竟是金属还是塑料无法确认",
+        "背景占比极小，无法推断街道环境",
+        "没有尺寸参照与拍摄参数",
+        "面板污渍与反光层的情况不确定"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "两图都是城市户外构件的正面近距特写，主体居中、轮廓清晰",
+    "都有深色调外壳或背景与亮色区域的强烈对比",
+    "表面都能看到颗粒、风化或点阵状的细微质感",
+    "光线柔和均匀，主要依靠微弱阴影表现凹凸",
+    "画面中都没有出现人物",
+    "都缺少比例参照与拍摄参数信息"
+  ],
+  "missingEvidence": [
+    "两件实例的侧面与背面视角",
+    "真实尺寸、材料成分与构建年代",
+    "行人信号灯的立柱及安装连接部位",
+    "红砖墙所依附建筑的完整立面与周边环境",
+    "像素级分割掩膜与深度信息",
+    "拍摄时间、光源方向与强度等元数据",
+    "同实例在不同自然光条件下的对照样本"
+  ],
+  "images": [
+    {
+      "id": "ref.1.0",
+      "sourceUrl": "https://www.pexels.com/nb-no/bilde/rustikk-rod-murvegg-med-vintagevindu-36784216/",
+      "sha256": "b060e8c5ad10617c30ffcf3bff3f0b0359b2c6353ae9d275bac1b554c93f9bce",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.1.1",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Passage_pieton_rouge.JPG#1",
+      "sha256": "836afb40d9621684f39652df000a3077b5e26e288e731e940d038dcd8eba13c7",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "b3af8f51-33a2-44e4-a689-b8dbb975e2a3",
+        "model": "deepseek-flash",
+        "elapsedMs": 24742,
+        "prompt_tokens": 1054,
+        "completion_tokens": 2931,
+        "total_tokens": 3985,
+        "reasoning_tokens": 2034,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 2
+      }
+    ],
+    "prompt_tokens": 1054,
+    "completion_tokens": 2931,
+    "total_tokens": 3985,
+    "reasoning_tokens": 2034
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 24744
+}

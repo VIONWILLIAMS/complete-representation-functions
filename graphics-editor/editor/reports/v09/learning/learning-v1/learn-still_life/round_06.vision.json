@@ -1,0 +1,321 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 6,
+  "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "items": [
+    {
+      "id": "ref.6.0",
+      "label": "白色斜板前的浅盘与深色小果静物",
+      "category": "still_life",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          245,
+          245,
+          240
+        ],
+        [
+          27,
+          31,
+          31
+        ],
+        [
+          128,
+          134,
+          132
+        ],
+        [
+          88,
+          24,
+          31
+        ],
+        [
+          210,
+          211,
+          205
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "完整静物构图：左侧大面积白色斜置板形成明亮三角形，背景深灰黑；右下方浅色承托面上放椭圆形白盘，盘中可见数枚深红至黑紫色小果和细梗。强光从左上方照入，盘与果实向右下投出长阴影；低分辨率使果实种类和表面微纹理不清晰。",
+      "tags": [
+        "静物",
+        "白色斜板",
+        "浅盘",
+        "深色果实",
+        "长投影",
+        "高对比",
+        "承托面",
+        "低分辨率"
+      ],
+      "limitations": [
+        "深色小果的品种与数量难以确认",
+        "白色斜板材质无法判断",
+        "单张照片无法提供其他视角",
+        "bbox覆盖整幅构图，不是精确分割"
+      ]
+    },
+    {
+      "id": "ref.6.1",
+      "label": "多颈蓝褐釉陶瓶",
+      "category": "ceramic_vase",
+      "role": "object",
+      "bbox": [
+        0.08,
+        0.04,
+        0.96,
+        0.97
+      ],
+      "palette": [
+        [
+          91,
+          116,
+          151
+        ],
+        [
+          78,
+          51,
+          40
+        ],
+        [
+          220,
+          208,
+          181
+        ],
+        [
+          31,
+          29,
+          27
+        ],
+        [
+          176,
+          161,
+          139
+        ]
+      ],
+      "lightDirection": "front",
+      "description": "球腹多颈陶瓶，中央颈最高，数个侧颈向外张开，口沿外撇、内腔深暗；器身有深褐与蓝灰交错的釉色和斑驳纹理，表面高光明显，底部为深色圈足。瓶置于浅米色台面或展台上，背景为浅黄灰墙，下方有接触阴影。",
+      "tags": [
+        "陶瓶",
+        "多颈",
+        "蓝褐釉",
+        "光泽",
+        "圈足",
+        "博物馆陈列",
+        "浅色背景",
+        "器物",
+        "轮廓"
+      ],
+      "limitations": [
+        "低分辨率下釉面纹样细节不足",
+        "无法确认具体材质与工艺",
+        "缺少背面、底部和口径视图",
+        "展陈灯光颜色可能影响釉色判断"
+      ]
+    },
+    {
+      "id": "ref.6.2",
+      "label": "白釉彩绘人物纹瓷瓶",
+      "category": "ceramic_vase",
+      "role": "object",
+      "bbox": [
+        0.1,
+        0.05,
+        0.9,
+        0.96
+      ],
+      "palette": [
+        [
+          239,
+          239,
+          232
+        ],
+        [
+          194,
+          159,
+          93
+        ],
+        [
+          126,
+          154,
+          178
+        ],
+        [
+          170,
+          102,
+          67
+        ],
+        [
+          39,
+          35,
+          33
+        ]
+      ],
+      "lightDirection": "front",
+      "description": "卵形腹瓷瓶，短颈、外撇口，口沿和足部有金色细边，颈下有深色横向装饰带；肩腹部环绕蓝、橙、白等色的彩绘人物与纹样。白釉表面有明显高光，瓶身置于白色矩形展台上，背景深暗，瓶底有阴影。",
+      "tags": [
+        "瓷瓶",
+        "白釉",
+        "金边",
+        "人物纹",
+        "彩绘",
+        "展台",
+        "暗背景",
+        "光泽",
+        "器物",
+        "轮廓"
+      ],
+      "limitations": [
+        "低分辨率无法辨认人物细节与绘画笔触",
+        "不能确认胎体、釉上彩或金彩工艺",
+        "缺少背面和底部视图",
+        "白釉颜色受展陈灯光影响"
+      ]
+    },
+    {
+      "id": "ref.6.3",
+      "label": "深蓝地金彩人物纹瓶",
+      "category": "ceramic_vase",
+      "role": "object",
+      "bbox": [
+        0.09,
+        0.06,
+        0.92,
+        0.96
+      ],
+      "palette": [
+        [
+          33,
+          47,
+          79
+        ],
+        [
+          190,
+          152,
+          86
+        ],
+        [
+          224,
+          215,
+          194
+        ],
+        [
+          118,
+          79,
+          63
+        ],
+        [
+          55,
+          53,
+          50
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "卵形腹瓶，颈部外撇，口沿与足部有金色装饰；器身以深钴蓝为地，肩部及腹部有金彩纹样，正面开光内为人物场景，人物以浅色、红褐和金色表现。瓶置于暗色展台上，背景深灰，表面有柔和反光，暗部遮住侧面细节。",
+      "tags": [
+        "瓷瓶",
+        "钴蓝",
+        "金彩",
+        "人物纹",
+        "开光",
+        "展台",
+        "暗背景",
+        "光泽",
+        "器物",
+        "轮廓"
+      ],
+      "limitations": [
+        "低分辨率导致人物与金彩纹样难以细读",
+        "无法确认材质、年代与装饰工艺",
+        "缺少侧面、背面和底部视图",
+        "暗背景和高对比使边缘细节受限"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "均为单幅静态照片，不是多视角或可交互三维资产",
+    "主体或主体组合置于可见承托面，并有接触阴影",
+    "背景简洁，以浅色或暗色衬托主体轮廓",
+    "光影用于提示体积、反光和表面起伏",
+    "整体分辨率有限，细节受压缩影响",
+    "均未展示背面、底部或完整环绕信息",
+    "色板以中性白、灰、棕为主，局部有深红、蓝或金色强调"
+  ],
+  "missingEvidence": [
+    "本批没有可明确辨认为苹果、梨或整橙子的清晰实例",
+    "ref.6.0深色小果的品种、数量与果皮纹理无法可靠确认",
+    "缺少高分辨率近景，无法提取果皮毛孔、瑕疵或表面微纹理",
+    "缺少花瓶的背面、底部、口径及多角度视图",
+    "无法确认花瓶的实际材质、工艺、尺寸和重量",
+    "没有精确深度、尺度标定和照明参数",
+    "缺少普通日用陶瓷花瓶的明确样例",
+    "不能凭这些单张照片建立新视角或完整三维世界",
+    "bbox只是估计边界，不构成精确alpha分割"
+  ],
+  "images": [
+    {
+      "id": "ref.6.0",
+      "sourceUrl": "https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/",
+      "sha256": "da38cdcfa29bd5edb70082ee143743ad58638b85d3871c3a8a27513aeaf77b98",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.6.1",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+      "sha256": "9b8ac296f0d08349e56f72106d8a0825cc00137eab3d5d0052f8c0b7a736e15b",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.6.2",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+      "sha256": "dd1cbf8963da3361424d3140589426f5cdb61feef22130215df695b6ef46af27",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.6.3",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+      "sha256": "bbea21955647213eada89755dff3c4ff8c0282b6d15d988fad5d191e44d66bb3",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "41a9563b-60b2-4fe6-88e2-4b680a70bf05",
+        "model": "deepseek-flash",
+        "elapsedMs": 39576,
+        "prompt_tokens": 1738,
+        "completion_tokens": 5324,
+        "total_tokens": 7062,
+        "reasoning_tokens": 4129,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1738,
+    "completion_tokens": 5324,
+    "total_tokens": 7062,
+    "reasoning_tokens": 4129
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 39577
+}

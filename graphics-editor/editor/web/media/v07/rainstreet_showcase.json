@@ -1,0 +1,58 @@
+{
+  "schema": "crf.render_evidence.v0.7",
+  "id": "rainstreet",
+  "source": "showcase",
+  "phase": "final",
+  "width": 640,
+  "height": 480,
+  "samples": 32,
+  "elapsedMs": 77393,
+  "sha256": "80914a53df134ae484bcf47b7c15e4f126071750dd48ded40bb06ae20d8cbdfc",
+  "programSha256": "fe3b908e0953b06bca18df95ebd663c9d841d07b9fa5bd15bc4e579748816db7",
+  "rendererSha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a",
+  "stats": {
+    "backend": "cpu-analytic-ray-transport",
+    "schema": "crf.image_program.v0.7",
+    "samplesPerPixel": 32,
+    "maxBounces": 5,
+    "tracedPrimarySamples": 9830400,
+    "objects": 35,
+    "areaLights": 4,
+    "elapsedMs": 77336,
+    "sourceImageBlit": false,
+    "imageTextureReads": 0,
+    "proceduralFunctionMaterials": 0,
+    "reflection": true,
+    "refraction": true,
+    "softVisibility": true,
+    "deterministic": true,
+    "denoiser": "bounded-spatial-object-depth-bilateral",
+    "transportLimitations": [
+      "finite bounce budget",
+      "clamped sample radiance",
+      "approximate rough glass",
+      "no volumetric scattering",
+      "no spectral transport",
+      "spatial denoising can soften fine detail"
+    ]
+  },
+  "llmGenerated": false,
+  "programFile": "rainstreet_showcase.crf.json",
+  "hashesFile": "rainstreet_showcase.hashes.json",
+  "pixelSha256": "ef3f73c3938ec140c1f21d279ee22e06e81352b9eab0c35d58200a32fa098d8c",
+  "pngSha256": "80914a53df134ae484bcf47b7c15e4f126071750dd48ded40bb06ae20d8cbdfc",
+  "programFileSha256": "f738ec24ff7683a8e0833b447789246db569571255e65b0a3580ca0d740e7db5",
+  "renderOptions": {
+    "width": 640,
+    "height": 480,
+    "samples": 32,
+    "bounces": 5,
+    "denoise": true
+  },
+  "visualReview": {
+    "status": "reviewed_with_limitations",
+    "observed": "已人工检查灯杆、横臂、吊件连续关系及湿地反射；延伸地面后左侧背景漏空已消失。",
+    "remaining": "立面与城市布局仍为示意性的程序场景，非原始街景照片复刻。"
+  },
+  "qualityClaim": "code-native demonstration; no photoreal parity or exact-reference-reconstruction certification"
+}

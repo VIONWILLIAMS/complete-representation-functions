@@ -1,0 +1,65 @@
+{
+  "schema": "crf.browser_video_export.v0.9",
+  "caseId": "08_three_fruits",
+  "actualDeepSeekScene": true,
+  "formatPassed": true,
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp8",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "nb_read_frames": "120"
+      }
+    ],
+    "format": {
+      "duration": "5.000000"
+    }
+  },
+  "allFramesDecoded": true,
+  "bytes": 4916045,
+  "sha256": "a2f12496175b3182ce3dce9dae6a3474a42bf62de4043566b0fb7c61e79a9b1a",
+  "viewport": {
+    "width": 1440,
+    "height": 1080,
+    "x": 240,
+    "y": 0,
+    "padding": "opaque black"
+  },
+  "aspectRatioPreserved": true,
+  "lossless": false,
+  "productionAuthenticatedBrowserTask": false,
+  "browser": "managed-preview cloud Chrome",
+  "source": "Actual editor export, using same native scene and model snapshot as published case.",
+  "firstDecodedFrameComparison": {
+    "expectedScene": "08_three_fruits",
+    "contentViewportMAE": 10.774183599108367,
+    "contentViewportRMSE": 11.740424211105898,
+    "paddingMeanRGB": 0.0,
+    "paddingMaxRGB": 0.0,
+    "scope": "Lossy VP8 decode against independently evaluated first frame at identical contain viewport, not an exact-byte video claim."
+  },
+  "colourMetadataDiagnostic": [
+    {
+      "forcedDecoderInterpretation": {
+        "range": "full",
+        "matrix": "bt601"
+      },
+      "mae": 2.118817944101509,
+      "rmse": 3.080329179639454
+    },
+    {
+      "forcedDecoderInterpretation": {
+        "range": "full",
+        "matrix": "bt709"
+      },
+      "mae": 1.3683247599451303,
+      "rmse": 1.8297138560235462
+    }
+  ],
+  "colourRoundTripProblemObserved": true,
+  "superseded": true
+}

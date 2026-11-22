@@ -1,0 +1,911 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 7,
+  "query": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "checkpoint": {
+    "sessionId": "crf09_b59f3a06-8a8c-46de-ba82-44d05621b14e",
+    "round": 7,
+    "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+    "subtopic": "复合布局：多个主体的相互遮挡与尺度",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:55:49.783Z",
+    "runId": "crf07_45dc1f4a-e8e6-4c6a-b5af-00d8b0ce57c3",
+    "queries": [
+      "site:commons.wikimedia.org \"mountain lake\" \"pine\" file -category -candidates",
+      "site:commons.wikimedia.org \"rocky coast\" \"pine\" file -category -candidates",
+      "site:commons.wikimedia.org \"forest floor\" \"shadow\" \"pine\" file -category -candidates",
+      "site:pexels.com photo \"pine trees\" casting shadow on rocks",
+      "site:commons.wikimedia.org \"aerial\" \"coast\" \"forest\" file -category -candidates",
+      "site:pexels.com photo overhanging rock branch mountain lake",
+      "site:commons.wikimedia.org \"mountain lake\" \"rock\" file -category",
+      "site:commons.wikimedia.org \"coast\" \"rock\" \"forest\" file -category",
+      "site:commons.wikimedia.org \"pine\" \"shadow\" \"rock\" file -category",
+      "site:pexels.com photo pine tree shadow on rock",
+      "site:pexels.com photo rocky cliff pine branches",
+      "site:pexels.com photo mountain lake reflection pine forest"
+    ],
+    "requestIds": [
+      "5be8d52e-020b-43f7-ac9c-38943dabc93d"
+    ],
+    "sourceCount": 17,
+    "newSourceCount": 15,
+    "candidateCount": 15,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_rl_00_074a0a1a54414c58be10658a3ea5f4a1",
+        "type": "deepseek_read_url",
+        "kind": "read_link",
+        "status": "failed",
+        "action": {
+          "type": "read_link",
+          "url": "https://commons.m.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/June_2015#2"
+        },
+        "sourceUrls": []
+      },
+      {
+        "id": "srvtoolu_s_01_a667434b5f4946fd9e3efd34c48c6844",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"mountain lake\" \"pine\" file -category -candidates",
+            "site:commons.wikimedia.org \"rocky coast\" \"pine\" file -category -candidates",
+            "site:commons.wikimedia.org \"forest floor\" \"shadow\" \"pine\" file -category -candidates",
+            "site:pexels.com photo \"pine trees\" casting shadow on rocks",
+            "site:commons.wikimedia.org \"aerial\" \"coast\" \"forest\" file -category -candidates",
+            "site:pexels.com photo overhanging rock branch mountain lake"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+          "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+          "https://www.pexels.com/zh-tw/photo/34254426/"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_02_686ddfdf7c18437b8025ae376bcade18",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"mountain lake\" \"rock\" file -category",
+            "site:commons.wikimedia.org \"coast\" \"rock\" \"forest\" file -category",
+            "site:commons.wikimedia.org \"pine\" \"shadow\" \"rock\" file -category",
+            "site:pexels.com photo pine tree shadow on rock",
+            "site:pexels.com photo rocky cliff pine branches",
+            "site:pexels.com photo mountain lake reflection pine forest"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg#1",
+          "https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG",
+          "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+          "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+          "https://commons.wikimedia.org/wiki/File:Detailed_scale..JPG",
+          "https://commons.wikimedia.org/wiki/Image:The_Coastal_setting,_rocks_and_woods_of_the_Sieur_de_Monts_National_Monument_(IA_coastalsettingro00unitrich).pdf?uselang=zh-hant",
+          "https://www.pexels.com/photo/steps-in-park-18558163/",
+          "https://www.pexels.com/fr-fr/photo/falaises-rocheuses-pittoresques-avec-des-pins-en-surplomb-29117964/",
+          "https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/",
+          "https://commons.wikimedia.org/wiki/File:Marcy_Anorthosite_(Mesoproterozoic,_1.16_Ga;_Route_18_roadcut_west_of_Saranac_Lake,_New_York_State,_USA)_18.jpg#1",
+          "https://commons.wikimedia.org/wiki/Image:The_coastal_setting,_rocks,_and_woods_of_the_Sieur_de_Monts_national_monument_(IA_coastalsettingro01unit).pdf?uselang=zh-hant",
+          "https://www.pexels.com/zh-cn/photo/18623679/",
+          "https://www.pexels.com/photo/rocky-shore-with-wind-marks-and-tall-conifer-trees-by-water-26836669/",
+          "https://www.pexels.com/photo/smolyan-lakes-bulgaria-28143954/",
+          "https://commons.wikimedia.org/wiki/File:Rock_-_Helvellyn_Tuff_Formation.JPG"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+        "title": "File:Mountain Pine and Morskie Oko.JPG - Wikimedia Commons",
+        "snippet": "File:Mountain Pine and Morskie Oko.JPG ... Mountain_Pine_and_Morskie_Oko.JPG (640 × 480 pixels, file size: 182 KB, MIME type: image/jpeg)",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+        "title": "Photo by 坤林 刘 on Pexels",
+        "snippet": "7008x4672 Aspect Ratio 3 ... Aperture ƒ/5.6 ISO 2500 ... 2025 Software Adobe Photoshop Lightroom Classic 14.4 (Windows) Description # Lush green pine branches frame a rugged rocky cliff, capturing a serene natural landscape. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/34254426/",
+        "title": "Pexels 上由 Jean-Paul Wettstein 拍攝的相片",
+        "snippet": "Add filters, effects ... 1 Jean-Paul Wettstein ... 拍攝時間： Feb 14 ... Neuchâtel, Switzerland 說明 # 在冬天的景色中，冰冷的樹枝懸掛在納沙泰爾湖湛藍的湖面上。 ## 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg#1",
+        "title": "File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg - Wikimedia Commons - File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg",
+        "snippet": "Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg ... Gigantic stone sleeping still near the Borit lake, Upper Hunza, Pakistan. This giant rock giving meaning to its inevitable existence at a place where u can see the magnificent cathedral mountains on the left side.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG",
+        "title": "File:View looking up at trees in Castle Rock State Park.JPG - Wikimedia Commons",
+        "snippet": "Castle Rock State Park is a state park of California, USA, located along the crest of the Santa Cruz Mountains. It embraces coast redwood, Douglas fir, and madrone forest, most of which has been left in its wild, natural state.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+        "title": "Photo by zhiming long on Pexels",
+        "snippet": "Dimensions 3500x2333 Colors Date Jul 27 ... Taken At Sep 11, 2023 Software Adobe Photoshop 22.4 (Macintosh) Description # Peaceful mountain scene with lake reflection and pine forests under cloudy skies. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Detailed_scale..JPG",
+        "title": "File:Detailed scale..JPG - Wikimedia Commons",
+        "snippet": "English: Gigantic stone sleeping still near the Borit lake, Upper Hunza, Pakistan. This giant rock giving meaning to its inevitable existence at a place where u can see the magnificent cathedral mountains on the left side. ... This file contains additional information such as ... the digital camera, scanner...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Image:The_Coastal_setting,_rocks_and_woods_of_the_Sieur_de_Monts_National_Monument_(IA_coastalsettingro00unitrich).pdf?uselang=zh-hant",
+        "title": "File:The Coastal setting, rocks and woods of the Sieur de Monts National Monument (IA coastalsettingro00unitrich).pdf - Wikimedia Commons",
+        "snippet": "The Coastal setting, rocks and woods of the Sieur de Monts National Monument () 作者 United States. National Park Service ... PD-1923美國公有領域//commons.wikimedia.org/wiki/File:The_Coastal_setting,_rocks_and_woods_of_the_Sieur_de_Monts_National_Monument_(IA_coastalsettingro00unitrich).pdf",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/steps-in-park-18558163/",
+        "title": "Photo by Josh Wabe Pascual on Pexels",
+        "snippet": "Dimensions 5120x3840 Aspect Ratio 4:3 Colors Date Sep 30, 2023 Downloads 12 Views ... ISO 64 Shutter Speed 1/120 sec ... Software Adobe Photoshop Express (Android) Description # A tranquil forest pathway with sunlight filtering through tall pine trees, casting shadows on wooden steps. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/falaises-rocheuses-pittoresques-avec-des-pins-en-surplomb-29117964/",
+        "title": "Photo de novianadss sur Pexels",
+        "snippet": "3072x4096 Format 3:4 Couleurs Date Oct 27, 2024 ... Logiciel VSCO Android Version ... Description # Une vue imprenable sur des falaises rocheuses entourées de verdure luxuriante avec des branches de pin au-dessus. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/",
+        "title": "Photo by Dominique BOULAY on Pexels",
+        "snippet": "Choose your language: Add filters, effects Make presentations Create photo collages Add custom frames AB, Canada Description # Stunning view of pine trees and mountains reflecting in a tranquil lake in Canada. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Marcy_Anorthosite_(Mesoproterozoic,_1.16_Ga;_Route_18_roadcut_west_of_Saranac_Lake,_New_York_State,_USA)_18.jpg#1",
+        "title": "File:Marcy Anorthosite (Mesoproterozoic, 1.16 Ga; Route 18 roadcut west of Saranac Lake, New York State, USA) 18.jpg - Wikimedia Commons - File:Marcy Anorthosite (Mesoproterozoic, 1.16 Ga; Route 18 roadcut west of Saranac Lake, New York Sta",
+        "snippet": "Marcy Anorthosite (Mesoproterozoic, 1.16 Ga ... Anorthosite is a coarsely-crystalline, intrusive igneous rock dominated by plagioclase feldspar. A major occurrence of this uncommon rock is in the Adirondack Mountains of New York State. In this area...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Image:The_coastal_setting,_rocks,_and_woods_of_the_Sieur_de_Monts_national_monument_(IA_coastalsettingro01unit).pdf?uselang=zh-hant",
+        "title": "File:The coastal setting, rocks, and woods of the Sieur de Monts national monument (IA coastalsettingro01unit).pdf - Wikimedia Commons",
+        "snippet": "PD-1923美國公有領域//commons.wikimedia.org/wiki/File:The_coastal_setting,_rocks,_and_woods_of_the_Sieur_de_Monts_national_monument_(IA_coastalsettingro01unit).pdf ... The coastal setting, rocks, and woods of the Sieur de Monts national monument",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/18623679/",
+        "title": "Pexels Jan van der Wolf图片",
+        "snippet": "Brighten up ... 光圈 ƒ/8.0 ISO 110 快门速度 1/250秒 ... 2018 软件 Adobe Photoshop CC (Windows) 描述 # 树的艺术阴影投射在有纹理的石墙上，创造出独特的几何图案。 ## 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/rocky-shore-with-wind-marks-and-tall-conifer-trees-by-water-26836669/",
+        "title": "Photo by Alex Moliski on Pexels",
+        "snippet": "Adobe Lightroom 7.4.1 (Macintosh) Kamas, UT, United States Description # Breathtaking view of a rocky cliff with coniferous trees reflecting off a serene lake in Kamas, Utah. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/smolyan-lakes-bulgaria-28143954/",
+        "title": "Photo by Rainer Eck on Pexels",
+        "snippet": "5 Camera Canon EOS 5D Mark II ... Taken At Aug 17, 2024 Software Adobe Photoshop Lightroom Classic 7.1 (Windows) Bulgaria Description # Peaceful alpine lake reflecting mountains and forests in summer. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Rock_-_Helvellyn_Tuff_Formation.JPG",
+        "title": "File:Rock - Helvellyn Tuff Formation.JPG - Wikimedia Commons",
+        "snippet": ": Piece of dacitic lapilli-tuff rock of the Helvellyn Tuff Formation (part of the Borrowdale Volcanic Group), found on High Crag (Nethermost Pike) in the Helvellyn Range of the English Lake District",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮搜索能对应到“复合布局：多个主体的相互遮挡与尺度”的**具体照片详情页有限**，但仍有 3–4 个可用候选，覆盖“前景松枝遮挡岩壁”“巨石与湖/山的尺度对比”“树影投在石墙上”三类关系。以下均**未观察图像字节**，只依据页面文字与 EXIF 整理；Commons 部分文件页描述简略，光照方向需后续图像验证。\n\n### 候选来源与可转化细节\n\n**1. Pexels — 松枝前景遮挡岩壁（前景植物 vs. 背景岩壁，尺度由焦距与遮挡推断）**\n- 来源页：https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/ \n- 页面事实：7008×4672；ILCE-7M4；79mm；ƒ/5.6；ISO 2500；1/1000s；描述“茂密绿色松枝框住崎岖岩壁”。作者坤林刘。\n- 可转化细节：松枝位于前景并**框住/遮挡**岩壁，形成“前景针叶边缘 + 中远景岩壁承托面”的复合层次。79mm 中长焦会压缩前后景距离，适合提取“前景枝条硬边缘 vs. 岩壁层理低频纹理”的分离信号。松针可按高频锯齿边缘建模，岩壁按块状层理低频建模。\n- 局限：页面未写光照方向；松枝是“框住”还是部分遮挡岩壁需要图像确认；岩石是否受直射光未知。许可证页面未直接显示，需在 Pexels 页核验（通常为 Pexels License）。\n\n**2. Pexels — 石墙上的树影几何图案（投影主体 vs. 承托面，遮挡关系明确）**\n- 来源页：https://www.pexels.com/zh-cn/photo/18623679/ \n- 页面事实：5864×3908；NIKON D7100；105mm；ƒ/8.0；ISO 110；1/250s；描述“树的艺术阴影投射在有纹理的石墙上，创造出独特的几何图案”。\n- 可转化细节：这是本轮最接近“多个主体相互遮挡/投影关系”的候选：树冠作为投影源，石墙作为承托面，投影在石墙上形成几何图案。可把石墙建模为低频粗糙表面，树影边界作为硬边/半硬边阶跃；阴影区保留石墙纹理对比度，受光区提高亮度但不抹平纹理。105mm 焦段适合提取局部图案而非大场景。\n- 局限：页面未给光照方向与投影几何细节；石墙是自然岩壁还是人工石墙未知；不直接对应山湖/海岸大场景。许可证待核验。\n\n**3. Commons — 巨石与 Borit 湖、山体的尺度对比（尺度层级：巨石前景 vs. 湖/山远景）**\n- 来源页：https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg \n- 页面事实：2048×1360；描述“巨大的石头静卧在 Borit 湖旁，左侧可见 cathedral mountains”；作者 Umersajjad33；许可 CC BY-SA 3.0。\n- 可转化细节：巨石作为前景主体，湖面与山体作为中远景，形成“小尺度巨石—中尺度湖面—大尺度山体”的尺度嵌套。可把巨石建模为低粗糙度高对比的独立遮光体，湖面作为水平反射承托面，山体作为远景低频轮廓。适合提取“前景物体遮挡部分湖面/岸线”的布局关系。\n- 局限：页面未写光照方向、巨石材质细节、湖面反射状态；未观察图像，无法确认遮挡边界是否清晰。CC BY-SA 3.0 需署名与相同方式共享。\n\n**4. Commons — 仰视树木（针叶/阔叶混合林，树冠遮挡天空的布局参考）**\n- 来源页：https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG \n- 页面事实：Castle Rock State Park，加州；描述“仰视树木”；公园有 coast redwood、Douglas fir、madrone 森林与岩石地貌；**CC0**。\n- 可转化细节：仰视视角下，树冠/枝条相互遮挡并遮挡天空，适合提取“多层树冠遮挡”的轮廓函数：近层枝条硬边、远层树冠软边，天空作为高亮度背景。虽然不直接是山湖场景，但可用于针叶林树冠层的遮挡布局参考。\n- 局限：描述极简，无 EXIF 细节；是否包含针叶树冠清晰边缘、是否有光线穿透未知；需图像验证。CC0 使用限制少。\n\n### 对“复合布局”的可转化建议（基于页面文字，非像素观察）\n\n1. **前景遮挡的图形函数**：把前景松枝或巨石建模为独立遮罩层，边缘用高频扰动（松针锯齿）或低频硬边（巨石轮廓）；背景岩壁/湖面/山体作为被遮挡层。遮挡边界处保留背景低频纹理的连续性，但前景层可整体提亮/压暗以拉开尺度。\n2. **投影作为“隐形的遮挡主体”**：石墙上的树影实例  提示：投影几何可以独立于投影源（树冠）被建模。把投影边界视为沿光照方向的阶跃函数，石墙承托面保留纹理；阴影区降低亮度但保留对比度，避免均匀黑块。\n3. **尺度对比的锚点**：Borit 湖巨石实例  中，巨石是唯一可辨尺度锚点；在生成复合布局时，可在前景放置一个“已知尺度感”的物体（巨石、孤树、松枝），中远景用湖面/山体提供大尺度参照，避免所有元素尺度模糊。\n4. **焦距与压缩**：79mm/105mm 的实例  说明中长焦适合压缩前后景，把松枝/树影与岩壁/石墙压到同一视觉平面，适合提取“遮挡关系”而非“纵深关系”。\n\n### 尚未解决与下一步\n\n- **缺“针叶树冠在地面/岩石上的清晰硬边投影”的具体照片页**：本轮仅找到石墙树影 ，但投影源不明确。建议下一轮定向搜 Commons File 命名空间 “pine shadow rock” 或 Pexels “pine tree shadow ground”，避免分类页。\n- **缺海岸针叶林+岩壁复合布局**：Pexels 有“松枝框住岩壁” ，但无海岸语境。Commons 的 Bay of Fires 文件页此前未核验光照，本轮未返回更好海岸复合实例。\n- **许可证核验**：Pexels 候选页面未直接显示许可证文本，需打开页面核验；Commons 的 CC BY-SA 3.0 与 CC0 已标注，但作者/描述简略，光照方向需图像验证。\n\n### 来源\n1. Pexels — 松枝与岩壁：https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/ \n2. Pexels — 石墙树影：https://www.pexels.com/zh-cn/photo/18623679/ \n3. Commons — Borit 湖巨石：https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg \n4. Commons — Castle Rock 仰视树木：https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG ",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+        "title": "File:Mountain Pine and Morskie Oko.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG",
+        "title": "File:View looking up at trees in Castle Rock State Park.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Detailed_scale..JPG",
+        "title": "File:Detailed scale..JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Detailed_scale..JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rock_-_Helvellyn_Tuff_Formation.JPG",
+        "title": "File:Rock - Helvellyn Tuff Formation.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Rock_-_Helvellyn_Tuff_Formation.JPG"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+      "title": "File:Mountain Pine and Morskie Oko.JPG - Wikimedia Commons",
+      "snippet": "File:Mountain Pine and Morskie Oko.JPG ... Mountain_Pine_and_Morskie_Oko.JPG (640 × 480 pixels, file size: 182 KB, MIME type: image/jpeg)",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+      "title": "Photo by 坤林 刘 on Pexels",
+      "snippet": "7008x4672 Aspect Ratio 3 ... Aperture ƒ/5.6 ISO 2500 ... 2025 Software Adobe Photoshop Lightroom Classic 14.4 (Windows) Description # Lush green pine branches frame a rugged rocky cliff, capturing a serene natural landscape. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/34254426/",
+      "title": "Pexels 上由 Jean-Paul Wettstein 拍攝的相片",
+      "snippet": "Add filters, effects ... 1 Jean-Paul Wettstein ... 拍攝時間： Feb 14 ... Neuchâtel, Switzerland 說明 # 在冬天的景色中，冰冷的樹枝懸掛在納沙泰爾湖湛藍的湖面上。 ## 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg#1",
+      "title": "File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg - Wikimedia Commons - File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg",
+      "snippet": "Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg ... Gigantic stone sleeping still near the Borit lake, Upper Hunza, Pakistan. This giant rock giving meaning to its inevitable existence at a place where u can see the magnificent cathedral mountains on the left side.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG",
+      "title": "File:View looking up at trees in Castle Rock State Park.JPG - Wikimedia Commons",
+      "snippet": "Castle Rock State Park is a state park of California, USA, located along the crest of the Santa Cruz Mountains. It embraces coast redwood, Douglas fir, and madrone forest, most of which has been left in its wild, natural state.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+      "title": "Photo by zhiming long on Pexels",
+      "snippet": "Dimensions 3500x2333 Colors Date Jul 27 ... Taken At Sep 11, 2023 Software Adobe Photoshop 22.4 (Macintosh) Description # Peaceful mountain scene with lake reflection and pine forests under cloudy skies. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Detailed_scale..JPG",
+      "title": "File:Detailed scale..JPG - Wikimedia Commons",
+      "snippet": "English: Gigantic stone sleeping still near the Borit lake, Upper Hunza, Pakistan. This giant rock giving meaning to its inevitable existence at a place where u can see the magnificent cathedral mountains on the left side. ... This file contains additional information such as ... the digital camera, scanner...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Image:The_Coastal_setting,_rocks_and_woods_of_the_Sieur_de_Monts_National_Monument_(IA_coastalsettingro00unitrich).pdf?uselang=zh-hant",
+      "title": "File:The Coastal setting, rocks and woods of the Sieur de Monts National Monument (IA coastalsettingro00unitrich).pdf - Wikimedia Commons",
+      "snippet": "The Coastal setting, rocks and woods of the Sieur de Monts National Monument () 作者 United States. National Park Service ... PD-1923美國公有領域//commons.wikimedia.org/wiki/File:The_Coastal_setting,_rocks_and_woods_of_the_Sieur_de_Monts_National_Monument_(IA_coastalsettingro00unitrich).pdf",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/steps-in-park-18558163/",
+      "title": "Photo by Josh Wabe Pascual on Pexels",
+      "snippet": "Dimensions 5120x3840 Aspect Ratio 4:3 Colors Date Sep 30, 2023 Downloads 12 Views ... ISO 64 Shutter Speed 1/120 sec ... Software Adobe Photoshop Express (Android) Description # A tranquil forest pathway with sunlight filtering through tall pine trees, casting shadows on wooden steps. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/falaises-rocheuses-pittoresques-avec-des-pins-en-surplomb-29117964/",
+      "title": "Photo de novianadss sur Pexels",
+      "snippet": "3072x4096 Format 3:4 Couleurs Date Oct 27, 2024 ... Logiciel VSCO Android Version ... Description # Une vue imprenable sur des falaises rocheuses entourées de verdure luxuriante avec des branches de pin au-dessus. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/",
+      "title": "Photo by Dominique BOULAY on Pexels",
+      "snippet": "Choose your language: Add filters, effects Make presentations Create photo collages Add custom frames AB, Canada Description # Stunning view of pine trees and mountains reflecting in a tranquil lake in Canada. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Marcy_Anorthosite_(Mesoproterozoic,_1.16_Ga;_Route_18_roadcut_west_of_Saranac_Lake,_New_York_State,_USA)_18.jpg#1",
+      "title": "File:Marcy Anorthosite (Mesoproterozoic, 1.16 Ga; Route 18 roadcut west of Saranac Lake, New York State, USA) 18.jpg - Wikimedia Commons - File:Marcy Anorthosite (Mesoproterozoic, 1.16 Ga; Route 18 roadcut west of Saranac Lake, New York Sta",
+      "snippet": "Marcy Anorthosite (Mesoproterozoic, 1.16 Ga ... Anorthosite is a coarsely-crystalline, intrusive igneous rock dominated by plagioclase feldspar. A major occurrence of this uncommon rock is in the Adirondack Mountains of New York State. In this area...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Image:The_coastal_setting,_rocks,_and_woods_of_the_Sieur_de_Monts_national_monument_(IA_coastalsettingro01unit).pdf?uselang=zh-hant",
+      "title": "File:The coastal setting, rocks, and woods of the Sieur de Monts national monument (IA coastalsettingro01unit).pdf - Wikimedia Commons",
+      "snippet": "PD-1923美國公有領域//commons.wikimedia.org/wiki/File:The_coastal_setting,_rocks,_and_woods_of_the_Sieur_de_Monts_national_monument_(IA_coastalsettingro01unit).pdf ... The coastal setting, rocks, and woods of the Sieur de Monts national monument",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/18623679/",
+      "title": "Pexels Jan van der Wolf图片",
+      "snippet": "Brighten up ... 光圈 ƒ/8.0 ISO 110 快门速度 1/250秒 ... 2018 软件 Adobe Photoshop CC (Windows) 描述 # 树的艺术阴影投射在有纹理的石墙上，创造出独特的几何图案。 ## 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rocky-shore-with-wind-marks-and-tall-conifer-trees-by-water-26836669/",
+      "title": "Photo by Alex Moliski on Pexels",
+      "snippet": "Adobe Lightroom 7.4.1 (Macintosh) Kamas, UT, United States Description # Breathtaking view of a rocky cliff with coniferous trees reflecting off a serene lake in Kamas, Utah. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/smolyan-lakes-bulgaria-28143954/",
+      "title": "Photo by Rainer Eck on Pexels",
+      "snippet": "5 Camera Canon EOS 5D Mark II ... Taken At Aug 17, 2024 Software Adobe Photoshop Lightroom Classic 7.1 (Windows) Bulgaria Description # Peaceful alpine lake reflecting mountains and forests in summer. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Rock_-_Helvellyn_Tuff_Formation.JPG",
+      "title": "File:Rock - Helvellyn Tuff Formation.JPG - Wikimedia Commons",
+      "snippet": ": Piece of dacitic lapilli-tuff rock of the Helvellyn Tuff Formation (part of the Borrowdale Volcanic Group), found on High Crag (Nethermost Pike) in the Helvellyn Range of the English Lake District",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+      "title": "File:Mountain Pine and Morskie Oko.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+      "title": "Photo by 坤林 刘 on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34254426/",
+      "title": "Pexels 上由 Jean-Paul Wettstein 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg#1",
+      "title": "File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg - Wikimedia Commons - File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG",
+      "title": "File:View looking up at trees in Castle Rock State Park.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Detailed_scale..JPG",
+      "title": "File:Detailed scale..JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Image:The_Coastal_setting,_rocks_and_woods_of_the_Sieur_de_Monts_National_Monument_(IA_coastalsettingro00unitrich).pdf?uselang=zh-hant",
+      "title": "File:The Coastal setting, rocks and woods of the Sieur de Monts National Monument (IA coastalsettingro00unitrich).pdf - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/falaises-rocheuses-pittoresques-avec-des-pins-en-surplomb-29117964/",
+      "title": "Photo de novianadss sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/",
+      "title": "Photo by Dominique BOULAY on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marcy_Anorthosite_(Mesoproterozoic,_1.16_Ga;_Route_18_roadcut_west_of_Saranac_Lake,_New_York_State,_USA)_18.jpg#1",
+      "title": "File:Marcy Anorthosite (Mesoproterozoic, 1.16 Ga; Route 18 roadcut west of Saranac Lake, New York State, USA) 18.jpg - Wikimedia Commons - File:Marcy Anorthosite (Mesoproterozoic, 1.16 Ga; Route 18 roadcut west of Saranac Lake, New York Sta",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Image:The_coastal_setting,_rocks,_and_woods_of_the_Sieur_de_Monts_national_monument_(IA_coastalsettingro01unit).pdf?uselang=zh-hant",
+      "title": "File:The coastal setting, rocks, and woods of the Sieur de Monts national monument (IA coastalsettingro01unit).pdf - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/18623679/",
+      "title": "Pexels Jan van der Wolf图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/rocky-shore-with-wind-marks-and-tall-conifer-trees-by-water-26836669/",
+      "title": "Photo by Alex Moliski on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/smolyan-lakes-bulgaria-28143954/",
+      "title": "Photo by Rainer Eck on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rock_-_Helvellyn_Tuff_Formation.JPG",
+      "title": "File:Rock - Helvellyn Tuff Formation.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 185991,
+        "sha256": "90614ca0535bb270b8af3f3d1bd89eb82fc544efc705fc441e254c23c2822113"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mountain_Pine_and_Morskie_Oko.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+      "title": "File:Mountain Pine and Morskie Oko.JPG - Wikimedia Commons",
+      "sha256": "90614ca0535bb270b8af3f3d1bd89eb82fc544efc705fc441e254c23c2822113",
+      "bytes": 185991,
+      "mime": "image/jpeg",
+      "width": 640,
+      "height": 480,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "No machine-readable author provided. ChP94 assumed (based on copyright claims).",
+        "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mountain_Pine_and_Morskie_Oko.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 640,
+        "height": 480,
+        "bytes": 185991
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 81856,
+        "sha256": "29139eb6f6b799ecc974cd8423c560948c4cbb600093043d331c3225164f5e29"
+      },
+      "imageUrl": "https://images.pexels.com/photos/35500276/pexels-photo-35500276.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+      "title": "Photo by 坤林 刘 on Pexels",
+      "sha256": "29139eb6f6b799ecc974cd8423c560948c4cbb600093043d331c3225164f5e29",
+      "bytes": 81856,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 240222,
+        "sha256": "faecbd3deb4bb4e64a638d210e2e9d1fa64269ada338dc5fc300c2de7df8c5f9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/34254426/pexels-photo-34254426.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34254426/",
+      "title": "Pexels 上由 Jean-Paul Wettstein 拍攝的相片",
+      "sha256": "faecbd3deb4bb4e64a638d210e2e9d1fa64269ada338dc5fc300c2de7df8c5f9",
+      "bytes": 240222,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1153
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 258006,
+        "sha256": "c948a62b99a7b844d54ee37d3c40e28f56fa78164058a6d766ba77cbaf9426ad"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg/960px-Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg#1",
+      "title": "File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg - Wikimedia Commons - File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg",
+      "sha256": "c948a62b99a7b844d54ee37d3c40e28f56fa78164058a6d766ba77cbaf9426ad",
+      "bytes": 258006,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 637,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Umersajjad33",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2048,
+        "height": 1360,
+        "bytes": 1260044
+      }
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mountain_Pine_and_Morskie_Oko.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+      "title": "File:Mountain Pine and Morskie Oko.JPG - Wikimedia Commons",
+      "sha256": "90614ca0535bb270b8af3f3d1bd89eb82fc544efc705fc441e254c23c2822113",
+      "bytes": 185991,
+      "mime": "image/jpeg",
+      "width": 640,
+      "height": 480,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "No machine-readable author provided. ChP94 assumed (based on copyright claims).",
+        "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mountain_Pine_and_Morskie_Oko.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 640,
+        "height": 480,
+        "bytes": 185991
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/35500276/pexels-photo-35500276.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+      "title": "Photo by 坤林 刘 on Pexels",
+      "sha256": "29139eb6f6b799ecc974cd8423c560948c4cbb600093043d331c3225164f5e29",
+      "bytes": 81856,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/34254426/pexels-photo-34254426.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34254426/",
+      "title": "Pexels 上由 Jean-Paul Wettstein 拍攝的相片",
+      "sha256": "faecbd3deb4bb4e64a638d210e2e9d1fa64269ada338dc5fc300c2de7df8c5f9",
+      "bytes": 240222,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1153,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg/960px-Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg#1",
+      "title": "File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg - Wikimedia Commons - File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg",
+      "sha256": "c948a62b99a7b844d54ee37d3c40e28f56fa78164058a6d766ba77cbaf9426ad",
+      "bytes": 258006,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 637,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Umersajjad33",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2048,
+        "height": 1360,
+        "bytes": 1260044
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+        "title": "File:Mountain Pine and Morskie Oko.JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mountain_Pine_and_Morskie_Oko.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "Public domain",
+          "url": null,
+          "artist": "No machine-readable author provided. ChP94 assumed (based on copyright claims).",
+          "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+          "usageTerms": "Public domain",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AMountain_Pine_and_Morskie_Oko.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mountain_Pine_and_Morskie_Oko.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "bytes": 185991,
+        "mime": "image/jpeg",
+        "width": 640,
+        "height": 480,
+        "sha256": "90614ca0535bb270b8af3f3d1bd89eb82fc544efc705fc441e254c23c2822113"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+        "title": "Photo by 坤林 刘 on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/35500276/pexels-photo-35500276.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/35500276/pexels-photo-35500276.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 81856,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "29139eb6f6b799ecc974cd8423c560948c4cbb600093043d331c3225164f5e29"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/34254426/",
+        "title": "Pexels 上由 Jean-Paul Wettstein 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/34254426/pexels-photo-34254426.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/34254426/pexels-photo-34254426.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 240222,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1153,
+        "sha256": "faecbd3deb4bb4e64a638d210e2e9d1fa64269ada338dc5fc300c2de7df8c5f9"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg#1",
+        "title": "File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg - Wikimedia Commons - File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg/960px-Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Umersajjad33",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AGigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg/960px-Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 258006,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 637,
+        "sha256": "c948a62b99a7b844d54ee37d3c40e28f56fa78164058a6d766ba77cbaf9426ad"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG",
+        "title": "File:View looking up at trees in Castle Rock State Park.JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG/960px-View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC0",
+          "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Tomwsulcer",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AView_looking_up_at_trees_in_Castle_Rock_State_Park.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG/960px-View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 324974,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 720,
+        "sha256": "15bb52f6bba6e8db64cb1ec58a8231a1fcbd72bc6970cbd5ebf75cd8af74231b"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Detailed_scale..JPG",
+        "title": "File:Detailed scale..JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg/960px-Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Umersajjad33",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ADetailed_scale..JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg/960px-Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 258006,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 637,
+        "sha256": "c948a62b99a7b844d54ee37d3c40e28f56fa78164058a6d766ba77cbaf9426ad"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮搜索能对应到“复合布局：多个主体的相互遮挡与尺度”的**具体照片详情页有限**，但仍有 3–4 个可用候选，覆盖“前景松枝遮挡岩壁”“巨石与湖/山的尺度对比”“树影投在石墙上”三类关系。以下均**未观察图像字节**，只依据页面文字与 EXIF 整理；Commons 部分文件页描述简略，光照方向需后续图像验证。\n\n### 候选来源与可转化细节\n\n**1. Pexels — 松枝前景遮挡岩壁（前景植物 vs. 背景岩壁，尺度由焦距与遮挡推断）**\n- 来源页：https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/ \n- 页面事实：7008×4672；ILCE-7M4；79mm；ƒ/5.6；ISO 2500；1/1000s；描述“茂密绿色松枝框住崎岖岩壁”。作者坤林刘。\n- 可转化细节：松枝位于前景并**框住/遮挡**岩壁，形成“前景针叶边缘 + 中远景岩壁承托面”的复合层次。79mm 中长焦会压缩前后景距离，适合提取“前景枝条硬边缘 vs. 岩壁层理低频纹理”的分离信号。松针可按高频锯齿边缘建模，岩壁按块状层理低频建模。\n- 局限：页面未写光照方向；松枝是“框住”还是部分遮挡岩壁需要图像确认；岩石是否受直射光未知。许可证页面未直接显示，需在 Pexels 页核验（通常为 Pexels License）。\n\n**2. Pexels — 石墙上的树影几何图案（投影主体 vs. 承托面，遮挡关系明确）**\n- 来源页：https://www.pexels.com/zh-cn/photo/18623679/ \n- 页面事实：5864×3908；NIKON D7100；105mm；ƒ/8.0；ISO 110；1/250s；描述“树的艺术阴影投射在有纹理的石墙上，创造出独特的几何图案”。\n- 可转化细节：这是本轮最接近“多个主体相互遮挡/投影关系”的候选：树冠作为投影源，石墙作为承托面，投影在石墙上形成几何图案。可把石墙建模为低频粗糙表面，树影边界作为硬边/半硬边阶跃；阴影区保留石墙纹理对比度，受光区提高亮度但不抹平纹理。105mm 焦段适合提取局部图案而非大场景。\n- 局限：页面未给光照方向与投影几何细节；石墙是自然岩壁还是人工石墙未知；不直接对应山湖/海岸大场景。许可证待核验。\n\n**3. Commons — 巨石与 Borit 湖、山体的尺度对比（尺度层级：巨石前景 vs. 湖/山远景）**\n- 来源页：https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg \n- 页面事实：2048×1360；描述“巨大的石头静卧在 Borit 湖旁，左侧可见 cathedral mountains”；作者 Umersajjad33；许可 CC BY-SA 3.0。\n- 可转化细节：巨石作为前景主体，湖面与山体作为中远景，形成“小尺度巨石—中尺度湖面—大尺度山体”的尺度嵌套。可把巨石建模为低粗糙度高对比的独立遮光体，湖面作为水平反射承托面，山体作为远景低频轮廓。适合提取“前景物体遮挡部分湖面/岸线”的布局关系。\n- 局限：页面未写光照方向、巨石材质细节、湖面反射状态；未观察图像，无法确认遮挡边界是否清晰。CC BY-SA 3.0 需署名与相同方式共享。\n\n**4. Commons — 仰视树木（针叶/阔叶混合林，树冠遮挡天空的布局参考）**\n- 来源页：https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG \n- 页面事实：Castle Rock State Park，加州；描述“仰视树木”；公园有 coast redwood、Douglas fir、madrone 森林与岩石地貌；**CC0**。\n- 可转化细节：仰视视角下，树冠/枝条相互遮挡并遮挡天空，适合提取“多层树冠遮挡”的轮廓函数：近层枝条硬边、远层树冠软边，天空作为高亮度背景。虽然不直接是山湖场景，但可用于针叶林树冠层的遮挡布局参考。\n- 局限：描述极简，无 EXIF 细节；是否包含针叶树冠清晰边缘、是否有光线穿透未知；需图像验证。CC0 使用限制少。\n\n### 对“复合布局”的可转化建议（基于页面文字，非像素观察）\n\n1. **前景遮挡的图形函数**：把前景松枝或巨石建模为独立遮罩层，边缘用高频扰动（松针锯齿）或低频硬边（巨石轮廓）；背景岩壁/湖面/山体作为被遮挡层。遮挡边界处保留背景低频纹理的连续性，但前景层可整体提亮/压暗以拉开尺度。\n2. **投影作为“隐形的遮挡主体”**：石墙上的树影实例  提示：投影几何可以独立于投影源（树冠）被建模。把投影边界视为沿光照方向的阶跃函数，石墙承托面保留纹理；阴影区降低亮度但保留对比度，避免均匀黑块。\n3. **尺度对比的锚点**：Borit 湖巨石实例  中，巨石是唯一可辨尺度锚点；在生成复合布局时，可在前景放置一个“已知尺度感”的物体（巨石、孤树、松枝），中远景用湖面/山体提供大尺度参照，避免所有元素尺度模糊。\n4. **焦距与压缩**：79mm/105mm 的实例  说明中长焦适合压缩前后景，把松枝/树影与岩壁/石墙压到同一视觉平面，适合提取“遮挡关系”而非“纵深关系”。\n\n### 尚未解决与下一步\n\n- **缺“针叶树冠在地面/岩石上的清晰硬边投影”的具体照片页**：本轮仅找到石墙树影 ，但投影源不明确。建议下一轮定向搜 Commons File 命名空间 “pine shadow rock” 或 Pexels “pine tree shadow ground”，避免分类页。\n- **缺海岸针叶林+岩壁复合布局**：Pexels 有“松枝框住岩壁” ，但无海岸语境。Commons 的 Bay of Fires 文件页此前未核验光照，本轮未返回更好海岸复合实例。\n- **许可证核验**：Pexels 候选页面未直接显示许可证文本，需打开页面核验；Commons 的 CC BY-SA 3.0 与 CC0 已标注，但作者/描述简略，光照方向需图像验证。\n\n### 来源\n1. Pexels — 松枝与岩壁：https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/ \n2. Pexels — 石墙树影：https://www.pexels.com/zh-cn/photo/18623679/ \n3. Commons — Borit 湖巨石：https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg \n4. Commons — Castle Rock 仰视树木：https://commons.wikimedia.org/wiki/File:View_looking_up_at_trees_in_Castle_Rock_State_Park.JPG ",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 21912,
+    "completion_tokens": 1798,
+    "total_tokens": 23710,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "5be8d52e-020b-43f7-ac9c-38943dabc93d",
+        "model": "deepseek-flash",
+        "elapsedMs": 29534,
+        "prompt_tokens": 21912,
+        "completion_tokens": 1798,
+        "total_tokens": 23710,
+        "server_tool_use": {
+          "tool_search": 12,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 46996,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 185991,
+        "sha256": "90614ca0535bb270b8af3f3d1bd89eb82fc544efc705fc441e254c23c2822113"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mountain_Pine_and_Morskie_Oko.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+      "title": "File:Mountain Pine and Morskie Oko.JPG - Wikimedia Commons",
+      "sha256": "90614ca0535bb270b8af3f3d1bd89eb82fc544efc705fc441e254c23c2822113",
+      "bytes": 185991,
+      "mime": "image/jpeg",
+      "width": 640,
+      "height": 480,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "No machine-readable author provided. ChP94 assumed (based on copyright claims).",
+        "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mountain_Pine_and_Morskie_Oko.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 640,
+        "height": 480,
+        "bytes": 185991
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/90614ca0535bb270b8af3f3d1bd89eb82fc544efc705fc441e254c23c2822113.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 81856,
+        "sha256": "29139eb6f6b799ecc974cd8423c560948c4cbb600093043d331c3225164f5e29"
+      },
+      "imageUrl": "https://images.pexels.com/photos/35500276/pexels-photo-35500276.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+      "title": "Photo by 坤林 刘 on Pexels",
+      "sha256": "29139eb6f6b799ecc974cd8423c560948c4cbb600093043d331c3225164f5e29",
+      "bytes": 81856,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/29139eb6f6b799ecc974cd8423c560948c4cbb600093043d331c3225164f5e29.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 240222,
+        "sha256": "faecbd3deb4bb4e64a638d210e2e9d1fa64269ada338dc5fc300c2de7df8c5f9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/34254426/pexels-photo-34254426.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34254426/",
+      "title": "Pexels 上由 Jean-Paul Wettstein 拍攝的相片",
+      "sha256": "faecbd3deb4bb4e64a638d210e2e9d1fa64269ada338dc5fc300c2de7df8c5f9",
+      "bytes": 240222,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1153,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/faecbd3deb4bb4e64a638d210e2e9d1fa64269ada338dc5fc300c2de7df8c5f9.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 258006,
+        "sha256": "c948a62b99a7b844d54ee37d3c40e28f56fa78164058a6d766ba77cbaf9426ad"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg/960px-Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg#1",
+      "title": "File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg - Wikimedia Commons - File:Gigantic stone near the Borit lake, Upper Hunza, Pakistan..jpg",
+      "sha256": "c948a62b99a7b844d54ee37d3c40e28f56fa78164058a6d766ba77cbaf9426ad",
+      "bytes": 258006,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 637,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Umersajjad33",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Gigantic_stone_near_the_Borit_lake%2C_Upper_Hunza%2C_Pakistan..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2048,
+        "height": 1360,
+        "bytes": 1260044
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/c948a62b99a7b844d54ee37d3c40e28f56fa78164058a6d766ba77cbaf9426ad.jpeg"
+    }
+  ]
+}

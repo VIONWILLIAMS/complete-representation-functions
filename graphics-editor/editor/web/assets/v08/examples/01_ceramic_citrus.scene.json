@@ -1,0 +1,89 @@
+{
+  "schema": "crf.gaussian_scene.v0.8",
+  "id": "stilllife_vase_orange_960x640",
+  "title": "青蓝釉花瓶与横切橙子静物",
+  "width": 960,
+  "height": 640,
+  "background": [
+    240,
+    236,
+    230
+  ],
+  "objects": [
+    {
+      "id": "bg.paper",
+      "label": "浅灰暖白承托面",
+      "assetId": "studio.paper",
+      "x": 0,
+      "y": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "opacity": 1,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 0,
+      "visible": true
+    },
+    {
+      "id": "shadow.vase",
+      "label": "花瓶底部柔和接触阴影",
+      "assetId": "studio.shadow",
+      "x": 183,
+      "y": 556,
+      "scaleX": 0.95,
+      "scaleY": 0.7,
+      "rotation": 0,
+      "opacity": 0.42,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 10,
+      "visible": true
+    },
+    {
+      "id": "shadow.orange",
+      "label": "橙子底部柔和接触阴影",
+      "assetId": "studio.shadow",
+      "x": 491,
+      "y": 554,
+      "scaleX": 1,
+      "scaleY": 0.75,
+      "rotation": 0,
+      "opacity": 0.55,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 10,
+      "visible": true
+    },
+    {
+      "id": "object.vase.ceramic",
+      "label": "青蓝色釉陶瓷花瓶",
+      "assetId": "learn.r03.097cfbf071e3.object",
+      "x": 214,
+      "y": 85,
+      "scaleX": 1.4,
+      "scaleY": 1.4,
+      "rotation": 0,
+      "opacity": 1,
+      "hue": -8,
+      "exposure": 0.2,
+      "zIndex": 20,
+      "visible": true
+    },
+    {
+      "id": "object.orange.half",
+      "label": "横切橙子半",
+      "assetId": "learn.r01.c6657129fc5c.object",
+      "x": 526,
+      "y": 363,
+      "scaleX": 1.28,
+      "scaleY": 1.28,
+      "rotation": 0,
+      "opacity": 1,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 21,
+      "visible": true
+    }
+  ]
+}

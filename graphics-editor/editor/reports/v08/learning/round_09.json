@@ -1,0 +1,616 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 9,
+  "query": "海岸岩石与海浪实拍",
+  "checkpoint": {
+    "sessionId": "crf08-ten-rounds",
+    "round": 9,
+    "topic": "海岸岩石与海浪实拍",
+    "subtopic": "4–6张不同海岸、礁石、沙滩的照片，关注岩面、波纹和自然空间层次",
+    "status": "searched",
+    "completedAt": "2026-11-21T13:29:18.462Z",
+    "runId": "crf07_15748d84-988a-4ab0-b44a-eb279e5ea730",
+    "queries": [
+      "site:commons.wikimedia.org coast rocky shore waves photo",
+      "site:unsplash.com ocean waves crashing on rocks photo",
+      "site:pexels.com rocks and waves on the beach photo",
+      "site:commons.wikimedia.org beach sand ripples photo",
+      "site:commons.wikimedia.org coastal rocks texture photo",
+      "site:pexels.com rocky coast tide pools photo"
+    ],
+    "requestIds": [
+      "7c2c4f14-5214-4323-8160-0cc47be34f60"
+    ],
+    "sourceCount": 13,
+    "newSourceCount": 13,
+    "candidateCount": 13,
+    "downloadedImageCount": 5,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_c5448e79e1f547f398084b8087f9f330",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org coast rocky shore waves photo",
+            "site:unsplash.com ocean waves crashing on rocks photo",
+            "site:pexels.com rocks and waves on the beach photo",
+            "site:commons.wikimedia.org beach sand ripples photo",
+            "site:commons.wikimedia.org coastal rocks texture photo",
+            "site:pexels.com rocky coast tide pools photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+          "https://unsplash.com/photos/rocky-coastline-with-waves-crashing-on-shore-LfgOlvXhZvs",
+          "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+          "https://commons.wikimedia.org/wiki/Category:Sand_ripples_on_beaches#1",
+          "https://commons.wikimedia.org/wiki/File:Hilbre_Island_%e2%80%93_Intertidal_Sandstone_Shoreline.jpg#1",
+          "https://www.pexels.com/zh-cn/photo/33561680/",
+          "https://unsplash.com/photos/misty-coastal-cliffs-with-waves-crashing-on-rocks-fhVUmVvgAng",
+          "https://www.pexels.com/photo/scenic-beach-view-in-casablanca-morocco-34548031/",
+          "https://commons.wikimedia.org/wiki/Category:Sand_ripples_in_Indonesia",
+          "https://commons.wikimedia.org/wiki/Category:Shorelines_of_Namibia",
+          "https://unsplash.com/photos/a-rocky-beach-with-waves-coming-in-and-out-of-the-water-kM7hjlULe24",
+          "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+          "https://commons.wikimedia.org/wiki/Category:Theddlethorpe_beach"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+        "title": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG - Wikimedia Commons",
+        "snippet": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG Size of this preview: 688 × 600 pixels. Other resolutions ... Original file (977 × 852 pixels, file size: 145 KB, MIME type: image/jpeg",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/rocky-coastline-with-waves-crashing-on-shore-LfgOlvXhZvs",
+        "title": "Photo by Christopher Stites on Unsplash",
+        "snippet": "A plus sign ... More Actions Rocky coastline with waves crashing on shore Ocean waves on rocks Calendar outlined Published on October 16, 2025 Camera NORITSU KOKI ... Unsplash License waves film rocks film photography nostalgia vintage aesthetic moody",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+        "title": "Photo by Elchino portrait on Pexels",
+        "snippet": "Adobe Photoshop Lightroom Classic 15.5.1 (Macintosh) Santa María Huatulco, Oaxaca, México Description # Dynamic ocean waves crash against rocks on the beach in Santa María Huatulco, Mexico, capturing nature's power. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_on_beaches#1",
+        "title": "Category:Sand ripples on beaches - Wikimedia Commons - Category:Sand ripples on beaches",
+        "snippet": "Media in category \"Sand ripples on beaches\" The following 163 files are in this category, out of 163 total. - A Buan Beach - panoramio.jpg 2,048 × 1,536; 665 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Hilbre_Island_%e2%80%93_Intertidal_Sandstone_Shoreline.jpg#1",
+        "title": "File:Hilbre Island – Intertidal Sandstone Shoreline.jpg - Wikimedia Commons - File:Hilbre Island – Intertidal Sandstone Shoreline.jpg",
+        "snippet": "The image captures the weathered sandstone strata and algae-streaked rocks typical of this tidal island’s intertidal zone. During low tide, the island reveals its richly textured shore—home to seabirds, crustaceans, and salt-tolerant plant species. These formations...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/33561680/",
+        "title": "Pexels Phil Evenden图片",
+        "snippet": "日期 Aug 22, 2025 下载次数 ... 焦距 70.0mm 光圈 ƒ/11.0 ... (Macintosh) Isle of Muck, Scotland, United Kingdom 描述 # 苏格兰马克岛平静的岩石海岸线，有潮汐池和阴云密布的天空。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/misty-coastal-cliffs-with-waves-crashing-on-rocks-fhVUmVvgAng",
+        "title": "Photo by Griffin Wooldridge on Unsplash",
+        "snippet": "––– –––– –––– # Misty coastal cliffs with waves crashing on rocks. Download this free HD photo of travel, adventure, ocean waves, and moody by Griffin Wooldridge (@dzngriffin) Published on Free to use under the Unsplash License Browse",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/scenic-beach-view-in-casablanca-morocco-34548031/",
+        "title": "Photo by chabraoui el hachemi on Pexels",
+        "snippet": "Date Nov 1, 2025 Downloads 38 Views ... Taken At Oct 22, 2025 Casablanca, Casablanca-Settat, Morocco Description # Beautiful sea waves crashing against rocks on a sunny beach in Casablanca, Morocco. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_in_Indonesia",
+        "title": "Category:Sand ripples in Indonesia - Wikimedia Commons",
+        "snippet": "Media in category \"Sand ripples in Indonesia\" The following 3 files are in this category ... Legon Lele Beach Karimun Jawa 4.JPG ... 592; 7.5 MB Legon Lele Beach Karimun Jawa 5.JPG ... Legon Lele Beach Karimun Jawa 6.JPG",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Shorelines_of_Namibia",
+        "title": "Category:Shorelines of Namibia - Wikimedia Commons",
+        "snippet": "Langstrand namibia.jpg 3,992 × 2,242; 5.69 MB - Rocky Waves.jpg 4,032 × 3,024; 4.19 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-rocky-beach-with-waves-coming-in-and-out-of-the-water-kM7hjlULe24",
+        "title": "Photo by Sarah Duffin on Unsplash",
+        "snippet": "a rocky beach with waves coming in and out of the water Long exposure on a winter ocean - waves crashing into rocks at a the beach of a hidden gem in Wales, United Kingdom. An overcast day with surprisingly calm seas, but still some rough waves to break over the rocks.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+        "title": "Photo by V Bawa on Pexels",
+        "snippet": "V Bawa ... 4608x3072 Aspect Ratio 3 ... Date Aug 4, 2023 ... Software Adobe Lightroom 5.4 (Windows) Oaxaca, Oax., Mexico Description # Majestic rock formation with ocean waves at Zipolite Beach, Oaxaca, Mexico, perfect coastal scenery. ### More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Theddlethorpe_beach",
+        "title": "Category:Theddlethorpe beach - Wikimedia Commons",
+        "snippet": "640 × 426 ... 640 × 427; 199 KB ... 70 KB Sand ripples - geograph.org.uk - 736695.jpg ... 187 KB The beach at Theddlethorpe - geograph.org.uk - 735192.jpg",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮实际检索到 6 个可对应“海岸岩石与海浪”的公开照片详情页，覆盖 Wikimedia Commons、Unsplash 与 Pexels。**未获取图片字节，以下岩面、波纹、空间层次均基于来源页标题与描述推断，待原图核验。** 未找到同时具备“岩面纹理 + 沙滩波纹 + 自然空间层次”三项的单一来源；Wikimedia Commons 多个结果仅返回分类页或用户上传列表，未形成独立文件详情页，不列为正式候选。\n\n### 候选照片页面\n\n**1. Wikimedia Commons：Jersey shore 岩石与风浪**\n- 来源页：https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG \n- 作者：待核验；许可：待核验（页面返回文本未展示作者与许可字段）\n- 可转化细节（推断）：标题同时包含 rocks、waves、windy day、Atlantic Ocean，适合提取**风浪作用下的岩面湿区与碎浪边缘**。页面未描述岩石材质或色彩，原图核验时重点关注浪花高光是否过曝、岩石暗部纹理是否可辨。原始尺寸仅 977×852，分辨率偏低，适合作为构图与形态参考，不适合高精度材质提取。\n\n**2. Unsplash：Christopher Stites，礁石海岸碎浪**\n- 来源页：https://unsplash.com/photos/rocky-coastline-with-waves-crashing-on-shore-LfgOlvXhZvs \n- 作者：Christopher Stites；许可：Unsplash License（页面标注 Free to use）\n- 可转化细节（推断）：标题“Rocky coastline with waves crashing on shore”，标签含 film、rocks、foggy、stormy sea、coastline。胶片摄影提示可能存在**颗粒感与低饱和色彩**，适合提取阴天海况下的岩浪交界软边缘。页面未描述岩面材质与前景遮挡，需原图确认岩体是否占据足够画面比例，以及雾气是否削弱空间层次。\n\n**3. Pexels：墨西哥 Huatulco 海浪冲击岩石**\n- 来源页：https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/ \n- 作者：待核验；许可：待核验（Pexels 标准许可，页面未在返回文本中展示完整许可字段）\n- 可转化细节（推断）：描述“Dynamic ocean waves crash against rocks”，相机 ILCE-6700、24mm、f/4.5、ISO 100、1/250s。24mm 广角与 1/250s 快门提示**中近距离广角取景 + 中等程度浪花冻结**，适合观察浪峰与岩面接触点的形态。页面未描述岩面纹理或沙滩过渡，需原图确认前景是否有湿岩反光或泡沫覆盖。\n\n**4. Pexels：苏格兰马克岛岩石海岸与潮汐池**\n- 来源页：https://www.pexels.com/zh-cn/photo/33561680/ \n- 作者：Phil Evenden；许可：待核验（Pexels 标准许可，页面未在返回文本中展示完整许可字段）\n- 可转化细节（推断）：描述“平静的岩石海岸线，有潮汐池和阴云密布的天空”，Canon EOS R6m2、70mm、f/11、ISO 200、1/400s。70mm 中长焦与 f/11 小光圈提示**压缩空间层次 + 较大景深**，适合提取岩面纹理与潮汐池水面的反射关系。潮汐池是重要的**局部水面倒影与湿岩边界**参考。阴天光照柔和，岩面阴影较软。\n\n**5. Unsplash：Griffin Wooldridge，雾中海岸悬崖与碎浪**\n- 来源页：https://unsplash.com/photos/misty-coastal-cliffs-with-waves-crashing-on-rocks-fhVUmVvgAng \n- 作者：Griffin Wooldridge；许可：Unsplash License（Free to use）\n- 可转化细节（推断）：标题“Misty coastal cliffs with waves crashing on rocks”，标签含 moody。适合提取**远崖—中景浪区—近景岩壁**的三层纵深，雾气提供自然的空气透视衰减。页面未描述岩壁材质与色彩，原图核验时关注雾中岩体轮廓是否足够清晰以支持边缘提取，以及浪花在雾中是否呈现低对比软边缘。\n\n**6. Unsplash：Sarah Duffin，威尔士岩石海滩长曝光**\n- 来源页：https://unsplash.com/photos/a-rocky-beach-with-waves-coming-in-and-out-of-the-water-kM7hjlULe24 \n- 作者：Sarah Duffin；许可：Unsplash License（Free to use）\n- 可转化细节（推断）：描述明确“Long exposure on a winter ocean”“waves crashing into rocks at a the beach of a hidden gem in Wales”“overcast day”。长曝光意味着**浪花被拉丝化、水面呈现雾状平滑纹理**，与静态岩面形成软硬对比。阴天光照均匀，岩面阴影柔和。适合提取**运动模糊边缘与静态岩石边缘的分离关系**，但长曝光会削弱单朵浪花的形态细节。\n\n### 检索缺口与建议\n\n本轮未获得 Wikimedia Commons 独立沙滩波纹文件详情页；仅返回 Category:Sand ripples on beaches 与 Category:Sand ripples in Indonesia 分类页，未形成可列为正式候选的单文件页。Pexels 候选的作者与许可字段在返回文本中不完整，需后续核验。若需补足“沙滩波纹 + 岩面纹理”的组合参考，可在 Wikimedia Commons 分类内定向打开具体文件页，或搜索 `sand ripples beach close up` 并限定 Commons。上述 6 页均未在返回文本中给出原始图像直链，后续获取字节时以详情页内下载入口为准。已排除用户列出的水果、陶瓷、咖啡杯等不相关来源，本轮结果均匹配海岸岩石与海浪主体。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+        "title": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+      "title": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG - Wikimedia Commons",
+      "snippet": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG Size of this preview: 688 × 600 pixels. Other resolutions ... Original file (977 × 852 pixels, file size: 145 KB, MIME type: image/jpeg",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/rocky-coastline-with-waves-crashing-on-shore-LfgOlvXhZvs",
+      "title": "Photo by Christopher Stites on Unsplash",
+      "snippet": "A plus sign ... More Actions Rocky coastline with waves crashing on shore Ocean waves on rocks Calendar outlined Published on October 16, 2025 Camera NORITSU KOKI ... Unsplash License waves film rocks film photography nostalgia vintage aesthetic moody",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+      "title": "Photo by Elchino portrait on Pexels",
+      "snippet": "Adobe Photoshop Lightroom Classic 15.5.1 (Macintosh) Santa María Huatulco, Oaxaca, México Description # Dynamic ocean waves crash against rocks on the beach in Santa María Huatulco, Mexico, capturing nature's power. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_on_beaches#1",
+      "title": "Category:Sand ripples on beaches - Wikimedia Commons - Category:Sand ripples on beaches",
+      "snippet": "Media in category \"Sand ripples on beaches\" The following 163 files are in this category, out of 163 total. - A Buan Beach - panoramio.jpg 2,048 × 1,536; 665 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Hilbre_Island_%e2%80%93_Intertidal_Sandstone_Shoreline.jpg#1",
+      "title": "File:Hilbre Island – Intertidal Sandstone Shoreline.jpg - Wikimedia Commons - File:Hilbre Island – Intertidal Sandstone Shoreline.jpg",
+      "snippet": "The image captures the weathered sandstone strata and algae-streaked rocks typical of this tidal island’s intertidal zone. During low tide, the island reveals its richly textured shore—home to seabirds, crustaceans, and salt-tolerant plant species. These formations...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/33561680/",
+      "title": "Pexels Phil Evenden图片",
+      "snippet": "日期 Aug 22, 2025 下载次数 ... 焦距 70.0mm 光圈 ƒ/11.0 ... (Macintosh) Isle of Muck, Scotland, United Kingdom 描述 # 苏格兰马克岛平静的岩石海岸线，有潮汐池和阴云密布的天空。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/misty-coastal-cliffs-with-waves-crashing-on-rocks-fhVUmVvgAng",
+      "title": "Photo by Griffin Wooldridge on Unsplash",
+      "snippet": "––– –––– –––– # Misty coastal cliffs with waves crashing on rocks. Download this free HD photo of travel, adventure, ocean waves, and moody by Griffin Wooldridge (@dzngriffin) Published on Free to use under the Unsplash License Browse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/scenic-beach-view-in-casablanca-morocco-34548031/",
+      "title": "Photo by chabraoui el hachemi on Pexels",
+      "snippet": "Date Nov 1, 2025 Downloads 38 Views ... Taken At Oct 22, 2025 Casablanca, Casablanca-Settat, Morocco Description # Beautiful sea waves crashing against rocks on a sunny beach in Casablanca, Morocco. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_in_Indonesia",
+      "title": "Category:Sand ripples in Indonesia - Wikimedia Commons",
+      "snippet": "Media in category \"Sand ripples in Indonesia\" The following 3 files are in this category ... Legon Lele Beach Karimun Jawa 4.JPG ... 592; 7.5 MB Legon Lele Beach Karimun Jawa 5.JPG ... Legon Lele Beach Karimun Jawa 6.JPG",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Shorelines_of_Namibia",
+      "title": "Category:Shorelines of Namibia - Wikimedia Commons",
+      "snippet": "Langstrand namibia.jpg 3,992 × 2,242; 5.69 MB - Rocky Waves.jpg 4,032 × 3,024; 4.19 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-rocky-beach-with-waves-coming-in-and-out-of-the-water-kM7hjlULe24",
+      "title": "Photo by Sarah Duffin on Unsplash",
+      "snippet": "a rocky beach with waves coming in and out of the water Long exposure on a winter ocean - waves crashing into rocks at a the beach of a hidden gem in Wales, United Kingdom. An overcast day with surprisingly calm seas, but still some rough waves to break over the rocks.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+      "title": "Photo by V Bawa on Pexels",
+      "snippet": "V Bawa ... 4608x3072 Aspect Ratio 3 ... Date Aug 4, 2023 ... Software Adobe Lightroom 5.4 (Windows) Oaxaca, Oax., Mexico Description # Majestic rock formation with ocean waves at Zipolite Beach, Oaxaca, Mexico, perfect coastal scenery. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Theddlethorpe_beach",
+      "title": "Category:Theddlethorpe beach - Wikimedia Commons",
+      "snippet": "640 × 426 ... 640 × 427; 199 KB ... 70 KB Sand ripples - geograph.org.uk - 736695.jpg ... 187 KB The beach at Theddlethorpe - geograph.org.uk - 735192.jpg",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+      "title": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/rocky-coastline-with-waves-crashing-on-shore-LfgOlvXhZvs",
+      "title": "Photo by Christopher Stites on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+      "title": "Photo by Elchino portrait on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_on_beaches#1",
+      "title": "Category:Sand ripples on beaches - Wikimedia Commons - Category:Sand ripples on beaches",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilbre_Island_%e2%80%93_Intertidal_Sandstone_Shoreline.jpg#1",
+      "title": "File:Hilbre Island – Intertidal Sandstone Shoreline.jpg - Wikimedia Commons - File:Hilbre Island – Intertidal Sandstone Shoreline.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/33561680/",
+      "title": "Pexels Phil Evenden图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/misty-coastal-cliffs-with-waves-crashing-on-rocks-fhVUmVvgAng",
+      "title": "Photo by Griffin Wooldridge on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/scenic-beach-view-in-casablanca-morocco-34548031/",
+      "title": "Photo by chabraoui el hachemi on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_in_Indonesia",
+      "title": "Category:Sand ripples in Indonesia - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Shorelines_of_Namibia",
+      "title": "Category:Shorelines of Namibia - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-rocky-beach-with-waves-coming-in-and-out-of-the-water-kM7hjlULe24",
+      "title": "Photo by Sarah Duffin on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+      "title": "Photo by V Bawa on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Theddlethorpe_beach",
+      "title": "Category:Theddlethorpe beach - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+      "title": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG - Wikimedia Commons",
+      "sha256": "ac4e4abcbaf741b158d27b6181080b087172fa23dfe2e5b223f095a2e3c8ef84",
+      "bytes": 148969,
+      "mime": "image/jpeg",
+      "width": 977,
+      "height": 852,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/39525901/pexels-photo-39525901.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+      "title": "Photo by Elchino portrait on Pexels",
+      "sha256": "f4e32f1238be63e338d75356ef2d707ea5cca138c47505cb29cc3f54a058a223",
+      "bytes": 170312,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/33561680/pexels-photo-33561680.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/33561680/",
+      "title": "Pexels Phil Evenden图片",
+      "sha256": "17ca6bb42cb4f1b746a24a108a78f15f414e9a8df6af4e7a8e37aa0a7135e212",
+      "bytes": 86334,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/34548031/pexels-photo-34548031.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/scenic-beach-view-in-casablanca-morocco-34548031/",
+      "title": "Photo by chabraoui el hachemi on Pexels",
+      "sha256": "4c080a1da58ae6669346dd5b663bb91a222a8a01696c80d7c15b88617cb6760b",
+      "bytes": 160938,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/17859760/pexels-photo-17859760.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+      "title": "Photo by V Bawa on Pexels",
+      "sha256": "fd06c878ce46355a0baf3c560b740b01cd4de36ec7ee7dd196824112634c8fc8",
+      "bytes": 174700,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+        "title": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+        "bytes": 148969,
+        "mime": "image/jpeg",
+        "width": 977,
+        "height": 852,
+        "sha256": "ac4e4abcbaf741b158d27b6181080b087172fa23dfe2e5b223f095a2e3c8ef84"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/rocky-coastline-with-waves-crashing-on-shore-LfgOlvXhZvs",
+        "title": "Photo by Christopher Stites on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+        "title": "Photo by Elchino portrait on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/39525901/pexels-photo-39525901.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 170312,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "f4e32f1238be63e338d75356ef2d707ea5cca138c47505cb29cc3f54a058a223"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_on_beaches#1",
+        "title": "Category:Sand ripples on beaches - Wikimedia Commons - Category:Sand ripples on beaches",
+        "status": "unavailable",
+        "error": "no_supported_image"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilbre_Island_%e2%80%93_Intertidal_Sandstone_Shoreline.jpg#1",
+        "title": "File:Hilbre Island – Intertidal Sandstone Shoreline.jpg - Wikimedia Commons - File:Hilbre Island – Intertidal Sandstone Shoreline.jpg",
+        "status": "unavailable",
+        "error": "size_limit"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/33561680/",
+        "title": "Pexels Phil Evenden图片",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/33561680/pexels-photo-33561680.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 86334,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "17ca6bb42cb4f1b746a24a108a78f15f414e9a8df6af4e7a8e37aa0a7135e212"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/misty-coastal-cliffs-with-waves-crashing-on-rocks-fhVUmVvgAng",
+        "title": "Photo by Griffin Wooldridge on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/scenic-beach-view-in-casablanca-morocco-34548031/",
+        "title": "Photo by chabraoui el hachemi on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/34548031/pexels-photo-34548031.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 160938,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "4c080a1da58ae6669346dd5b663bb91a222a8a01696c80d7c15b88617cb6760b"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_in_Indonesia",
+        "title": "Category:Sand ripples in Indonesia - Wikimedia Commons",
+        "status": "unavailable",
+        "error": "no_supported_image"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Shorelines_of_Namibia",
+        "title": "Category:Shorelines of Namibia - Wikimedia Commons",
+        "status": "unavailable",
+        "error": "no_supported_image"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/a-rocky-beach-with-waves-coming-in-and-out-of-the-water-kM7hjlULe24",
+        "title": "Photo by Sarah Duffin on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+        "title": "Photo by V Bawa on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/17859760/pexels-photo-17859760.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 174700,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "fd06c878ce46355a0baf3c560b740b01cd4de36ec7ee7dd196824112634c8fc8"
+      }
+    ],
+    "downloadedCount": 5,
+    "method": "public source-page image metadata; container, dimensions and byte hash checked; not render textures"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮实际检索到 6 个可对应“海岸岩石与海浪”的公开照片详情页，覆盖 Wikimedia Commons、Unsplash 与 Pexels。**未获取图片字节，以下岩面、波纹、空间层次均基于来源页标题与描述推断，待原图核验。** 未找到同时具备“岩面纹理 + 沙滩波纹 + 自然空间层次”三项的单一来源；Wikimedia Commons 多个结果仅返回分类页或用户上传列表，未形成独立文件详情页，不列为正式候选。\n\n### 候选照片页面\n\n**1. Wikimedia Commons：Jersey shore 岩石与风浪**\n- 来源页：https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG \n- 作者：待核验；许可：待核验（页面返回文本未展示作者与许可字段）\n- 可转化细节（推断）：标题同时包含 rocks、waves、windy day、Atlantic Ocean，适合提取**风浪作用下的岩面湿区与碎浪边缘**。页面未描述岩石材质或色彩，原图核验时重点关注浪花高光是否过曝、岩石暗部纹理是否可辨。原始尺寸仅 977×852，分辨率偏低，适合作为构图与形态参考，不适合高精度材质提取。\n\n**2. Unsplash：Christopher Stites，礁石海岸碎浪**\n- 来源页：https://unsplash.com/photos/rocky-coastline-with-waves-crashing-on-shore-LfgOlvXhZvs \n- 作者：Christopher Stites；许可：Unsplash License（页面标注 Free to use）\n- 可转化细节（推断）：标题“Rocky coastline with waves crashing on shore”，标签含 film、rocks、foggy、stormy sea、coastline。胶片摄影提示可能存在**颗粒感与低饱和色彩**，适合提取阴天海况下的岩浪交界软边缘。页面未描述岩面材质与前景遮挡，需原图确认岩体是否占据足够画面比例，以及雾气是否削弱空间层次。\n\n**3. Pexels：墨西哥 Huatulco 海浪冲击岩石**\n- 来源页：https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/ \n- 作者：待核验；许可：待核验（Pexels 标准许可，页面未在返回文本中展示完整许可字段）\n- 可转化细节（推断）：描述“Dynamic ocean waves crash against rocks”，相机 ILCE-6700、24mm、f/4.5、ISO 100、1/250s。24mm 广角与 1/250s 快门提示**中近距离广角取景 + 中等程度浪花冻结**，适合观察浪峰与岩面接触点的形态。页面未描述岩面纹理或沙滩过渡，需原图确认前景是否有湿岩反光或泡沫覆盖。\n\n**4. Pexels：苏格兰马克岛岩石海岸与潮汐池**\n- 来源页：https://www.pexels.com/zh-cn/photo/33561680/ \n- 作者：Phil Evenden；许可：待核验（Pexels 标准许可，页面未在返回文本中展示完整许可字段）\n- 可转化细节（推断）：描述“平静的岩石海岸线，有潮汐池和阴云密布的天空”，Canon EOS R6m2、70mm、f/11、ISO 200、1/400s。70mm 中长焦与 f/11 小光圈提示**压缩空间层次 + 较大景深**，适合提取岩面纹理与潮汐池水面的反射关系。潮汐池是重要的**局部水面倒影与湿岩边界**参考。阴天光照柔和，岩面阴影较软。\n\n**5. Unsplash：Griffin Wooldridge，雾中海岸悬崖与碎浪**\n- 来源页：https://unsplash.com/photos/misty-coastal-cliffs-with-waves-crashing-on-rocks-fhVUmVvgAng \n- 作者：Griffin Wooldridge；许可：Unsplash License（Free to use）\n- 可转化细节（推断）：标题“Misty coastal cliffs with waves crashing on rocks”，标签含 moody。适合提取**远崖—中景浪区—近景岩壁**的三层纵深，雾气提供自然的空气透视衰减。页面未描述岩壁材质与色彩，原图核验时关注雾中岩体轮廓是否足够清晰以支持边缘提取，以及浪花在雾中是否呈现低对比软边缘。\n\n**6. Unsplash：Sarah Duffin，威尔士岩石海滩长曝光**\n- 来源页：https://unsplash.com/photos/a-rocky-beach-with-waves-coming-in-and-out-of-the-water-kM7hjlULe24 \n- 作者：Sarah Duffin；许可：Unsplash License（Free to use）\n- 可转化细节（推断）：描述明确“Long exposure on a winter ocean”“waves crashing into rocks at a the beach of a hidden gem in Wales”“overcast day”。长曝光意味着**浪花被拉丝化、水面呈现雾状平滑纹理**，与静态岩面形成软硬对比。阴天光照均匀，岩面阴影柔和。适合提取**运动模糊边缘与静态岩石边缘的分离关系**，但长曝光会削弱单朵浪花的形态细节。\n\n### 检索缺口与建议\n\n本轮未获得 Wikimedia Commons 独立沙滩波纹文件详情页；仅返回 Category:Sand ripples on beaches 与 Category:Sand ripples in Indonesia 分类页，未形成可列为正式候选的单文件页。Pexels 候选的作者与许可字段在返回文本中不完整，需后续核验。若需补足“沙滩波纹 + 岩面纹理”的组合参考，可在 Wikimedia Commons 分类内定向打开具体文件页，或搜索 `sand ripples beach close up` 并限定 Commons。上述 6 页均未在返回文本中给出原始图像直链，后续获取字节时以详情页内下载入口为准。已排除用户列出的水果、陶瓷、咖啡杯等不相关来源，本轮结果均匹配海岸岩石与海浪主体。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 11609,
+    "completion_tokens": 1384,
+    "total_tokens": 12993,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "7c2c4f14-5214-4323-8160-0cc47be34f60",
+        "model": "deepseek-flash",
+        "elapsedMs": 14167,
+        "prompt_tokens": 11609,
+        "completion_tokens": 1384,
+        "total_tokens": 12993,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 45575,
+  "downloads": [
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+      "title": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG - Wikimedia Commons",
+      "sha256": "ac4e4abcbaf741b158d27b6181080b087172fa23dfe2e5b223f095a2e3c8ef84",
+      "bytes": 148969,
+      "mime": "image/jpeg",
+      "width": 977,
+      "height": 852,
+      "id": "learn.r09.ac4e4abcbaf7",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.ac4e4abcbaf7.jpg",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/39525901/pexels-photo-39525901.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+      "title": "Photo by Elchino portrait on Pexels",
+      "sha256": "f4e32f1238be63e338d75356ef2d707ea5cca138c47505cb29cc3f54a058a223",
+      "bytes": 170312,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r09.f4e32f1238be",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.f4e32f1238be.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/33561680/pexels-photo-33561680.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/33561680/",
+      "title": "Pexels Phil Evenden图片",
+      "sha256": "17ca6bb42cb4f1b746a24a108a78f15f414e9a8df6af4e7a8e37aa0a7135e212",
+      "bytes": 86334,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r09.17ca6bb42cb4",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.17ca6bb42cb4.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/34548031/pexels-photo-34548031.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/scenic-beach-view-in-casablanca-morocco-34548031/",
+      "title": "Photo by chabraoui el hachemi on Pexels",
+      "sha256": "4c080a1da58ae6669346dd5b663bb91a222a8a01696c80d7c15b88617cb6760b",
+      "bytes": 160938,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r09.4c080a1da58a",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.4c080a1da58a.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/17859760/pexels-photo-17859760.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+      "title": "Photo by V Bawa on Pexels",
+      "sha256": "fd06c878ce46355a0baf3c560b740b01cd4de36ec7ee7dd196824112634c8fc8",
+      "bytes": 174700,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r09.fd06c878ce46",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.fd06c878ce46.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    }
+  ]
+}

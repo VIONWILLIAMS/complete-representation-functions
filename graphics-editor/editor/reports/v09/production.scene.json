@@ -1,0 +1,92 @@
+{
+  "schema": "crf.generative_scene.v0.9",
+  "id": "still_life_apple_pear_90909",
+  "title": "浅灰面上的红苹果与绿梨",
+  "category": "still_life",
+  "seed": 90909,
+  "width": 1024,
+  "height": 768,
+  "environment": {
+    "wallColor": [
+      198,
+      198,
+      196
+    ],
+    "skyColor": [
+      205,
+      205,
+      203
+    ],
+    "groundColor": [
+      188,
+      189,
+      187
+    ],
+    "horizon": 0.62,
+    "fog": 0.02,
+    "texture": 1,
+    "terrain": "coast"
+  },
+  "light": {
+    "azimuth": -62,
+    "elevation": 34,
+    "intensity": 1.08,
+    "warmth": 0.24
+  },
+  "camera": {
+    "panX": 0,
+    "panY": 0,
+    "zoom": 1
+  },
+  "objects": [
+    {
+      "depth": 0.56,
+      "rotation": 0,
+      "roughness": 0.48,
+      "visible": true,
+      "color": [
+        176,
+        38,
+        39
+      ],
+      "id": "apple_red_main",
+      "label": "红苹果",
+      "type": "apple",
+      "x": 0.41,
+      "y": 0.535,
+      "width": 0.25,
+      "height": 0.29,
+      "seed": 91001
+    },
+    {
+      "depth": 0.55,
+      "rotation": -3,
+      "roughness": 0.52,
+      "visible": true,
+      "color": [
+        145,
+        166,
+        74
+      ],
+      "id": "pear_green_main",
+      "label": "绿梨",
+      "type": "pear",
+      "x": 0.62,
+      "y": 0.52,
+      "width": 0.21,
+      "height": 0.32,
+      "seed": 91002
+    }
+  ],
+  "revision": 0,
+  "provenance": {
+    "kind": "generated",
+    "planner": "DeepSeek",
+    "plannerModel": "deepseek-flash",
+    "runId": "crf09_550c3ed8-ef25-4843-9bc3-b981af6880d5",
+    "representation": "native-2d-gaussian-and-analytic-fields",
+    "sharedModelId": "not_supplied",
+    "observedImageReplay": false,
+    "independentQualityPassed": false
+  }
+}

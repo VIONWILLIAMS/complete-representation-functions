@@ -1,0 +1,326 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 7,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.7.0",
+      "label": "蓝色行人指示牌与金属立柱",
+      "category": "pedestrian sign",
+      "role": "object",
+      "bbox": [
+        0.12,
+        0.02,
+        0.55,
+        1
+      ],
+      "palette": [
+        [
+          20,
+          95,
+          180
+        ],
+        [
+          235,
+          235,
+          235
+        ],
+        [
+          190,
+          190,
+          185
+        ],
+        [
+          90,
+          85,
+          70
+        ],
+        [
+          130,
+          130,
+          130
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "蓝色圆形标志牌上印有白色成人牵儿童图案，下挂白底黑字“50 m”距离牌，细金属立柱向下延伸。背景为密集无叶枯枝和浅灰天空，牌面有轻微反光与磨损，整体阴影柔和。该图可提供户外标志牌、金属立柱和树枝遮挡的材质与轮廓参考。",
+      "tags": [
+        "行人标志",
+        "蓝色圆牌",
+        "距离指示",
+        "金属立柱",
+        "枯树枝",
+        "浅灰天空",
+        "户外",
+        "低分辨率",
+        "遮挡",
+        "接触阴影"
+      ],
+      "limitations": [
+        "并非行人信号灯，不能提供信号灯灯组细节",
+        "低分辨率使标志边缘和文字模糊",
+        "无法看清立柱与牌面的固定连接方式",
+        "枯枝背景造成局部遮挡",
+        "缺少尺度参照"
+      ]
+    },
+    {
+      "id": "ref.7.1",
+      "label": "红砖建筑围合庭院立面",
+      "category": "architecture",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          190,
+          196,
+          202
+        ],
+        [
+          118,
+          66,
+          52
+        ],
+        [
+          85,
+          48,
+          42
+        ],
+        [
+          176,
+          176,
+          170
+        ],
+        [
+          32,
+          30,
+          28
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "画面为红砖建筑群围合成的庭院，左侧有高塔，建筑立面排列多层竖长窗框，前景是浅灰铺地、深色桌凳和低矮花池。天空呈均匀灰白色，阴影柔和，整体为阴天漫射光。可作为真实建筑立面、窗框排列和庭院场景的完整参考照片，但不能据此推断未展示的新视角。",
+      "tags": [
+        "红砖建筑",
+        "庭院",
+        "塔楼",
+        "竖窗",
+        "铺地",
+        "桌凳",
+        "阴天",
+        "建筑立面",
+        "低分辨率",
+        "遮挡"
+      ],
+      "limitations": [
+        "分辨率低，窗框截面和砖墙颗粒细节有限",
+        "多对象场景不能直接拆出单个窗框",
+        "桌凳和花池遮挡部分立面",
+        "无法确认建筑材质与真实尺寸",
+        "不能代表完整建筑或新视角"
+      ]
+    },
+    {
+      "id": "ref.7.2",
+      "label": "旧砖墙与深色窗洞",
+      "category": "brick facade",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          158,
+          108,
+          98
+        ],
+        [
+          104,
+          59,
+          53
+        ],
+        [
+          190,
+          178,
+          164
+        ],
+        [
+          16,
+          13,
+          12
+        ],
+        [
+          46,
+          38,
+          34
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "一面上世纪旧红砖墙占据全图，灰浆缝和砖块颗粒可见，中央偏右为深色矩形窗洞，下部有旧木板或门板，窗洞内隐约露出人脸局部。左侧有斜向细线和阴影，墙面散布黑色残件或金属锚件，整体光线较平。可提供旧砖墙、窗洞轮廓和木质旧板的视觉参考。",
+      "tags": [
+        "旧砖墙",
+        "灰浆缝",
+        "窗洞",
+        "木板",
+        "黑色构件",
+        "人物局部",
+        "平光",
+        "墙面颗粒",
+        "低分辨率",
+        "遮挡"
+      ],
+      "limitations": [
+        "窗洞内部很暗，人物身份与空间关系不可辨",
+        "低分辨率使窗框和砖缝细节有限",
+        "黑色构件功能不明",
+        "无法确认木材和墙体材质",
+        "缺少尺度与光照参数"
+      ]
+    },
+    {
+      "id": "ref.7.3",
+      "label": "红砖墙与拱形壁龛",
+      "category": "brick wall detail",
+      "role": "object",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          120,
+          52,
+          42
+        ],
+        [
+          165,
+          82,
+          60
+        ],
+        [
+          185,
+          170,
+          158
+        ],
+        [
+          155,
+          74,
+          50
+        ],
+        [
+          32,
+          28,
+          27
+        ]
+      ],
+      "lightDirection": "right",
+      "description": "红砖墙特写，顶部有红瓦挑檐，墙面砖块颗粒和浅灰灰缝清晰可见；墙中偏右有一个砖砌小拱形壁龛，靠下位置有灰色竖直管线，左下和墙脚出现浓重接触阴影，地面为粗糙石质或混凝土。可作为砖墙材质、拱形构造和自然光下阴影的参考，但不能确认管道功能。",
+      "tags": [
+        "红砖墙",
+        "灰缝",
+        "拱形壁龛",
+        "瓦檐",
+        "排水管",
+        "强阴影",
+        "粗糙地面",
+        "材质细节",
+        "低分辨率",
+        "自然光"
+      ],
+      "limitations": [
+        "低分辨率限制砖块颗粒和灰缝的精细观察",
+        "管道功能与连接方式不明",
+        "壁龛内部较暗",
+        "阴影来源的完整物体在画面外",
+        "缺少尺寸参照"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "均为真实户外静态场景的局部实拍",
+    "自然光下可见柔和或较明显的接触阴影",
+    "包含砖墙、铺地、金属、木材等粗糙材质表面",
+    "主体与背景存在遮挡关系",
+    "画面分辨率较低，细节有限",
+    "均缺少明确的尺度参照"
+  ],
+  "missingEvidence": [
+    "高分辨率砖墙颗粒、灰缝和窗框截面",
+    "行人信号灯本体及其立柱连接细节",
+    "图1标志牌与立柱的固定结构",
+    "图2单个窗框的构造和材质参数",
+    "图3窗洞内部人物身份与空间关系",
+    "图4竖直管线的功能与连接点",
+    "拍摄参数、光照强度和材料反射率",
+    "同一对象的多视角或连续视角证据"
+  ],
+  "images": [
+    {
+      "id": "ref.7.0",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/panneau-de-signalisation-pour-chemin-pietonnier-avec-indicateur-de-distance-36328939/",
+      "sha256": "20886cbf85150db2a1595a276658c6c2e5c340ec28d5c43b76aca64ada77e996",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.7.1",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Administration_Building_(Saint_Ignatius_Hall),_John_Carroll_University,_University_Heights,_OH_-_52997611078.jpg#1",
+      "sha256": "ef9e7610119d5a9be57ed310705b60434ec6be4f7be63831faf52c5dd64a87ab",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.7.2",
+      "sourceUrl": "https://www.pexels.com/photo/ethnic-person-looking-out-of-old-brick-house-5960338/",
+      "sha256": "5510f6040dd8e508316bb1d2f3ba61eaf92d57daf97a3c54f256fb4f7db78246",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.7.3",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36208665/",
+      "sha256": "ebdc7a17bdde7db673cd567b81b41a09546850fe59dfa7cd42f06ec11b6a04ac",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "b2ff95cc-41e8-43c9-927c-bffd57e618e9",
+        "model": "deepseek-flash",
+        "elapsedMs": 36760,
+        "prompt_tokens": 1630,
+        "completion_tokens": 4851,
+        "total_tokens": 6481,
+        "reasoning_tokens": 3696,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1630,
+    "completion_tokens": 4851,
+    "total_tokens": 6481,
+    "reasoning_tokens": 3696
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 36761
+}

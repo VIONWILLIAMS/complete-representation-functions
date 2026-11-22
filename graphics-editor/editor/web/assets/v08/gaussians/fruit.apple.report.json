@@ -1,0 +1,372 @@
+{
+  "assetId": "fruit.apple",
+  "source": "/workspace/scratch/4d869d6c27e5/crf_street_0_4/fitting/sources08/fruit.apple.png",
+  "sourceSHA256": "e63e436f5b883a98f640b593f9474a4bbdd5a538e3b0fb42e0997db6f6fb1a39",
+  "width": 253,
+  "height": 261,
+  "gaussians": 13177,
+  "assetBytes": 1058284,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "renderedFromExportOnly": true,
+  "metrics": {
+    "mae": 0.6702592521816676,
+    "rmse": 1.144371704417964,
+    "psnr": 46.95946138950748,
+    "ssim": 0.9704711571013878,
+    "maxError": 37,
+    "exactRGBFraction": 0.1941142747945729,
+    "evaluatedPixels": 52330,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 90,
+      "bestFloatMSE": 0.9660521227824808,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 5.983039973041785,
+          "bestFloatMSE": 5.983039973041785
+        },
+        {
+          "step": 10,
+          "floatMSE": 2.6391102678971676,
+          "bestFloatMSE": 2.6391102678971676
+        },
+        {
+          "step": 20,
+          "floatMSE": 1.8533622187447296,
+          "bestFloatMSE": 1.8533622187447296
+        },
+        {
+          "step": 30,
+          "floatMSE": 1.4770197548984114,
+          "bestFloatMSE": 1.4770197548984114
+        },
+        {
+          "step": 40,
+          "floatMSE": 1.2689752303369053,
+          "bestFloatMSE": 1.2689752303369053
+        },
+        {
+          "step": 50,
+          "floatMSE": 1.1429564469479663,
+          "bestFloatMSE": 1.1429564469479663
+        },
+        {
+          "step": 60,
+          "floatMSE": 1.0633709824773994,
+          "bestFloatMSE": 1.0633709824773994
+        },
+        {
+          "step": 70,
+          "floatMSE": 1.0124201954441727,
+          "bestFloatMSE": 1.0124201954441727
+        },
+        {
+          "step": 80,
+          "floatMSE": 0.9830184083522749,
+          "bestFloatMSE": 0.9830184083522749
+        },
+        {
+          "step": 90,
+          "floatMSE": 0.9660521227824808,
+          "bestFloatMSE": 0.9660521227824808
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 4611,
+        "elapsedSeconds": 0.302,
+        "mae": 4.756099114593286,
+        "rmse": 8.90382683822629,
+        "psnr": 29.13926950383086,
+        "ssim": 0.742520924122605,
+        "maxError": 128,
+        "exactRGBFraction": 0.012631377794763997,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 4611,
+        "elapsedSeconds": 0.443,
+        "mae": 3.9409643926364737,
+        "rmse": 7.052642544758062,
+        "psnr": 31.16376615516191,
+        "ssim": 0.79956956655842,
+        "maxError": 124,
+        "exactRGBFraction": 0.014523218039365564,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 10178,
+        "elapsedSeconds": 1.781,
+        "mae": 2.1837824065227083,
+        "rmse": 3.7718064614212725,
+        "psnr": 36.59981560549202,
+        "ssim": 0.9224417286327374,
+        "maxError": 91,
+        "exactRGBFraction": 0.03760749092298873,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 13177,
+        "elapsedSeconds": 2.551,
+        "mae": 1.6483533983056247,
+        "rmse": 2.773234112230393,
+        "psnr": 39.27107293650076,
+        "ssim": 0.944920533200314,
+        "maxError": 52,
+        "exactRGBFraction": 0.06193388113892605,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 13177,
+        "elapsedSeconds": 2.594,
+        "mae": 1.6483533983056247,
+        "rmse": 2.773234112230393,
+        "psnr": 39.27107293650076,
+        "ssim": 0.944920533200314,
+        "maxError": 52,
+        "exactRGBFraction": 0.06193388113892605,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 13177,
+        "elapsedSeconds": 2.939,
+        "mae": 1.1743486846295943,
+        "rmse": 1.85613709624548,
+        "psnr": 42.75860259834984,
+        "ssim": 0.9600605829952843,
+        "maxError": 45,
+        "exactRGBFraction": 0.05429008217083891,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 13177,
+        "elapsedSeconds": 3.279,
+        "mae": 0.9647748264220651,
+        "rmse": 1.565875184463323,
+        "psnr": 44.23566077683549,
+        "ssim": 0.9648567232951992,
+        "maxError": 45,
+        "exactRGBFraction": 0.08551500095547487,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 13177,
+        "elapsedSeconds": 3.635,
+        "mae": 0.8481814128288426,
+        "rmse": 1.4044508975805763,
+        "psnr": 45.18067240873642,
+        "ssim": 0.9671923463108714,
+        "maxError": 44,
+        "exactRGBFraction": 0.11769539461112173,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 13177,
+        "elapsedSeconds": 4.022,
+        "mae": 0.7779667494744889,
+        "rmse": 1.3046512117731586,
+        "psnr": 45.820915169040326,
+        "ssim": 0.9685164432899,
+        "maxError": 42,
+        "exactRGBFraction": 0.14727689661761895,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 13177,
+        "elapsedSeconds": 4.465,
+        "mae": 0.7331167590292376,
+        "rmse": 1.2406886137115098,
+        "psnr": 46.25754767758848,
+        "ssim": 0.9693225514573218,
+        "maxError": 41,
+        "exactRGBFraction": 0.16866042423084274,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 13177,
+        "elapsedSeconds": 4.825,
+        "mae": 0.7040894324479267,
+        "rmse": 1.1970274455480325,
+        "psnr": 46.5687214474445,
+        "ssim": 0.9698737525796621,
+        "maxError": 39,
+        "exactRGBFraction": 0.17959105675520734,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 13177,
+        "elapsedSeconds": 5.199,
+        "mae": 0.6866806802981081,
+        "rmse": 1.1703331138725366,
+        "psnr": 46.76461374254269,
+        "ssim": 0.9701818594228261,
+        "maxError": 38,
+        "exactRGBFraction": 0.18734951270781577,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_80",
+        "count": 13177,
+        "elapsedSeconds": 5.611,
+        "mae": 0.6764252500159246,
+        "rmse": 1.153961099097565,
+        "psnr": 46.886980235266265,
+        "ssim": 0.9703603902325522,
+        "maxError": 38,
+        "exactRGBFraction": 0.1915536021402637,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_90",
+        "count": 13177,
+        "elapsedSeconds": 5.992,
+        "mae": 0.6702592521816676,
+        "rmse": 1.144371704417964,
+        "psnr": 46.95946138950748,
+        "ssim": 0.9704711571013878,
+        "maxError": 37,
+        "exactRGBFraction": 0.1941142747945729,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 5.997,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "targets": {
+    "pilot": {
+      "psnr": 32,
+      "ssim": 0.95
+    },
+    "highFidelity": {
+      "psnr": 38,
+      "ssim": 0.98
+    }
+  },
+  "passedPilot": true,
+  "passedHighFidelity": false,
+  "assistedMaskRevision": {
+    "schema": "crf.assisted_mask_revision.v0.8",
+    "assetId": "fruit.apple",
+    "revision": "remove-bottom-table-strip-1",
+    "reason": "Inherited alpha included a flat grey-brown table strip below the visible fruit, producing rectangular protrusions in dark compositions.",
+    "assistance": "Human-reviewed lower silhouette control points; monotone cubic interpolation and a 0.8px coverage transition.",
+    "beforeSourcePath": "reports/v08/fruit.apple.mask_before.png",
+    "beforeSourceSHA256": "06c37f5ceda896a2a5750abd20804df9a3a3a49301008778ef351c5710addd6f",
+    "afterSourcePath": "fitting/sources08/fruit.apple.png",
+    "afterSourceSHA256": "e63e436f5b883a98f640b593f9474a4bbdd5a538e3b0fb42e0997db6f6fb1a39",
+    "originalRGB_SHA256": "b33abd05e66da7fde359ad8abcea3817df521ad663bd71705a7c52164435191d",
+    "revisedRGB_SHA256": "b33abd05e66da7fde359ad8abcea3817df521ad663bd71705a7c52164435191d",
+    "allRGBBytesUnchanged": true,
+    "alphaOnly": true,
+    "coverageProvenance": "inferred",
+    "pixelMaskVerified": false,
+    "controlPoints": [
+      [
+        70,
+        242.5
+      ],
+      [
+        80,
+        247.2
+      ],
+      [
+        90,
+        250.5
+      ],
+      [
+        100,
+        254.0
+      ],
+      [
+        110,
+        256.7
+      ],
+      [
+        125,
+        259.7
+      ],
+      [
+        140,
+        260.3
+      ],
+      [
+        155,
+        258.7
+      ],
+      [
+        170,
+        255.8
+      ],
+      [
+        185,
+        251.4
+      ],
+      [
+        200,
+        244.3
+      ]
+    ],
+    "coordinateSize": [
+      253,
+      261
+    ],
+    "affectedRegion": [
+      80,
+      244,
+      201,
+      261
+    ],
+    "changedPixels": 472,
+    "fullyRemovedPixels": 381,
+    "actualChangeBounds": [
+      80,
+      246,
+      197,
+      261
+    ],
+    "oldReferencePath": "web/assets/v06/apple-reference-mask.png",
+    "oldReferenceSHA256": "cc04cfeb84b9d0790a7cc346562b3e5e93e3181a8b3b6379c594bc2e6970ab44",
+    "fitConfiguration": {
+      "budget": 13177,
+      "iterations": 24,
+      "geometrySteps": 90,
+      "initialFraction": 0.35
+    },
+    "scope": "Observed apple front appearance only. This edit neither completes the pear-occluded right side nor infers another view."
+  }
+}

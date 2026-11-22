@@ -1,5 +1,18 @@
 # Complete Representation Functions / 完备表示函数
 
+## CRF 图形计算编辑器｜1.1 开发入口
+
+**完整工程已接入：可运行的产品 1.0 基线（历史 0.10.0/v10）＋最新 1.1 开发计划＋Codex 交接说明。1.1 尚未完成验收。**
+
+- **[打开 1.1 开发工作区](graphics-editor/README.md)**
+- [完整源码与历史资源](graphics-editor/editor/) · [1.1 开发计划](graphics-editor/plans/CRF_1_1_Implementation_Plan.md)
+- [1.1 执行任务](graphics-editor/plans/CRF_1_1_Execution_Plan.json) · [Codex 交接提示词](graphics-editor/CODEX_HANDOFF_PROMPT.md)
+- [本地启动](graphics-editor/README_START_HERE.md) · [验证报告](graphics-editor/verification/verification-summary.json)
+
+应用代码和资源位于 `graphics-editor/`，原有论文与研究对象资料继续保留。开发编辑器时，请让 Codex 打开 `graphics-editor/` 目录并阅读其中的 `AGENTS.md`。
+
+---
+
 > **Free Dancing in the Rabbit Hole.**  
 > **But first, fries at the pier.**
 
@@ -59,9 +72,10 @@ Executable evidence roadmap:
 
 ---
 
-## Graphics Editor Research / 图形计算编辑器研究
+## Graphics Editor History / 图形计算编辑器历史计划
 
-- [CRF 图形计算编辑器 0.8 研发计划](docs/graphics-editor/CRF_0_8_Development_Plan.md)
+- 最新完整工程与 1.1 计划：[graphics-editor/](graphics-editor/README.md)
+- 历史归档：[CRF 图形计算编辑器 0.8 研发计划](docs/graphics-editor/CRF_0_8_Development_Plan.md)
 
 The plan covers image-plane Gaussian reconstruction, semantic object editing, and bounded language-driven generation. Its milestones and metrics are proposed research targets; this document does not change the verification status of the paper or runtime.
 

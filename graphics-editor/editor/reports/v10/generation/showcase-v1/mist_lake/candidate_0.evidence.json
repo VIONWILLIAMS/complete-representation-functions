@@ -1,0 +1,261 @@
+{
+  "index": 0,
+  "critique": {
+    "ok": true,
+    "version": "0.10.0",
+    "runId": "crf10_0d721cec-0300-4143-891a-b1ce18082cfc",
+    "representation": "reference_gaussian",
+    "modelTraining": false,
+    "action": "critique",
+    "message": "已完成全帧参考变体的检查：画幅保持 768×447 并完整填满，山脉、湖岸、沙洲和倒影结构保留，未见新增物体、黑边、越界或明显光色断层。曝光约 +0.08EV、暖调约 ±2%，效果非常克制，符合“轻微晨光”的约束；源照片的雾化柔焦仍可见，但不是本次编辑新增的失真。",
+    "qualityNotes": [
+      "frame 仍按 1:1 原比例覆盖整个画幅，未留黑条，也未放大低分辨率源图。",
+      "山体轮廓、林线、湖岸、沙洲与水面倒影均保留，布局和拍摄方向未改变。",
+      "+0.08EV 与轻微暖调没有造成高光溢出、过饱和或大面积暗块；原雾湖低反差观感仍在。",
+      "对象仅一个全帧参考画面，且未添加接触阴影，符合风景全幅变体设定。"
+    ],
+    "warnings": [
+      "0.08EV 在低反差雾景中属于接近视觉阈值的微调，晨光感主要来自轻微的暖色偏移。",
+      "preserveHighlights=true 是基于亮度/中性色的启发式保留，并非物理逆渲染；部分白色雾层或水面高光可能被中性化。",
+      "本结果只进行光色变体，不包含新视角、新物体或未观察到的隐藏几何。"
+    ],
+    "capabilityGaps": [],
+    "issues": [],
+    "scores": {
+      "realism": 4,
+      "semantic": 5,
+      "coherence": 5
+    },
+    "attempts": [
+      {
+        "phase": "gaussian10_critique",
+        "status": "responded",
+        "startedAt": "2026-11-21T22:29:05.785Z",
+        "usageKnown": true,
+        "requestId": "501787cf-07e7-4140-92d6-9f34f1bb6dde",
+        "validation": "passed"
+      }
+    ],
+    "usage": {
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 1878,
+      "completion_tokens": 3291,
+      "total_tokens": 5169,
+      "reasoning_tokens": 2950,
+      "requests": [
+        {
+          "phase": "gaussian10_critique",
+          "requestId": "501787cf-07e7-4140-92d6-9f34f1bb6dde",
+          "model": "deepseek-flash",
+          "elapsedMs": 21728,
+          "prompt_tokens": 1878,
+          "completion_tokens": 3291,
+          "total_tokens": 5169,
+          "reasoning_tokens": 2950,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    },
+    "quality": {
+      "status": "requires_render_and_independent_verification",
+      "modelScoreIsProof": false
+    },
+    "imageEvidence": true,
+    "sourceFrameSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+    "submittedImageDataURLSha256": "e3f99782140604d9370f239d6c0cf395edffcea52a505fc1f29f6019398aeb13"
+  },
+  "verification": {
+    "schema": "crf.verification.v0.10",
+    "checkedAt": "2026-11-21T22:29:28.267Z",
+    "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+    "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+    "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403",
+    "checks": [
+      {
+        "id": "program.finite",
+        "kind": "program",
+        "type": "finite_parameters",
+        "required": true,
+        "status": "passed",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+        }
+      },
+      {
+        "id": "render.frame",
+        "kind": "pixel",
+        "type": "valid_frame",
+        "required": true,
+        "status": "passed",
+        "reason": "Actual finite RGBA8 samples provided.",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+        }
+      },
+      {
+        "id": "render.dimensions",
+        "kind": "pixel",
+        "type": "dimensions",
+        "required": true,
+        "status": "passed",
+        "observed": [
+          768,
+          447
+        ],
+        "evidence": {
+          "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+        }
+      },
+      {
+        "id": "visual.realism",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 4,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+        }
+      },
+      {
+        "id": "visual.semantic",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 5,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+        }
+      },
+      {
+        "id": "visual.coherence",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 5,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+        }
+      },
+      {
+        "id": "visual.major_issues",
+        "kind": "perceptual",
+        "type": "no_major_issues",
+        "required": true,
+        "status": "passed",
+        "observed": 0,
+        "issues": [],
+        "scope": "Model-assisted perception only.",
+        "evidence": {
+          "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+        }
+      },
+      {
+        "id": "visible.frame",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "status": "passed",
+        "observed": 343296,
+        "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+        "evidence": {
+          "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+        }
+      },
+      {
+        "id": "count.frame",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "status": "passed",
+        "observed": 1,
+        "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+        "evidence": {
+          "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+        }
+      }
+    ],
+    "summary": {
+      "passed": 9,
+      "failed": 0,
+      "unknown": 0,
+      "blocked": 0,
+      "total": 9,
+      "required": 9,
+      "requiredPassed": 9
+    },
+    "hardPassed": true,
+    "measurementPassed": true,
+    "perceptualPassed": true,
+    "allRequiredPassed": true,
+    "independentReview": null,
+    "photorealisticAccepted": false,
+    "referenceReconstructionAccepted": false,
+    "unknowns": [],
+    "blocked": [],
+    "diagnosis": [],
+    "scope": "Contract checks on this exact scene/frame; no universal correctness or unseen-world claim."
+  },
+  "render": {
+    "engine": "CRF10Gaussian",
+    "renderer": "direct_affine_anisotropic_gaussians",
+    "colorSpace": "linear_srgb_composite_then_srgb8",
+    "basisColorSpaces": [
+      "linear_srgb"
+    ],
+    "filter": "mip",
+    "pixelFilterVariance": 0.08333333333333333,
+    "gaussians": 32768,
+    "basisEvaluations": 11723229,
+    "visibleObjects": 1,
+    "elapsedMs": 412,
+    "sourceRGBBlit": false,
+    "colourRasterResampling": false,
+    "neuralModelTraining": false,
+    "referenceConditioned": true,
+    "geometry": "image_plane_affine",
+    "physicalRelighting": false,
+    "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+    "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+    "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+    "coverageSemantics": "visible_alpha_contribution",
+    "pixelSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+    "pngSha256": "6a9aef34b2cd7899e1b2090d3e4d88d48326b6b8f3d308d910c42d2eaa56016a"
+  }
+}

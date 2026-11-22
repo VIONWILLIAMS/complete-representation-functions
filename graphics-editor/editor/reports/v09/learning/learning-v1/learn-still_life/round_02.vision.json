@@ -1,0 +1,323 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 2,
+  "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "items": [
+    {
+      "id": "ref.2.0",
+      "label": "深色背景静物：书列上橙子、白瓷瓶与红苹果",
+      "category": "still-life scene",
+      "role": "reference-frame",
+      "bbox": [
+        0.03,
+        0.04,
+        0.96,
+        0.98
+      ],
+      "palette": [
+        [
+          18,
+          26,
+          22
+        ],
+        [
+          202,
+          192,
+          170
+        ],
+        [
+          232,
+          124,
+          48
+        ],
+        [
+          238,
+          236,
+          230
+        ],
+        [
+          152,
+          36,
+          30
+        ]
+      ],
+      "lightDirection": "front",
+      "description": "竖构图深色室内静物：上方挂着一幅木框鸟类图，中部是一排倾斜立起的浅米白书册，书上和右侧木框横杆上各放一颗亮橙色的整橙；右侧一只细颈白陶瓷花瓶插着深绿枝叶与小白花；左下角地板上有颗暗红苹果。整体基色近墨绿黑，物体受柔和的正面光，白色书脊与瓷瓶最亮，橙子有高光点，阴影轻、接触阴影弱，轮廓清晰。",
+      "tags": [
+        "静物",
+        "橙子",
+        "苹果",
+        "白瓷瓶",
+        "书",
+        "画框",
+        "深色背景",
+        "柔光",
+        "高光"
+      ],
+      "limitations": [
+        "橙色果实被书册与横杆部分遮挡，看不到完整轮廓",
+        "暗背景使苹果与地板边缘难以分开",
+        "无法确认真实光源方向与强度",
+        "缺少花瓶表面釉质近景与底部接触阴影细节",
+        "实为装置或合成布景，不代表自然光静物"
+      ]
+    },
+    {
+      "id": "ref.2.1",
+      "label": "市集水果摊：整橙、红苹果与黄色梨果堆叠",
+      "category": "market produce display",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          236,
+          146,
+          58
+        ],
+        [
+          142,
+          42,
+          52
+        ],
+        [
+          226,
+          214,
+          122
+        ],
+        [
+          38,
+          92,
+          56
+        ],
+        [
+          176,
+          146,
+          112
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "俯视近拍的市场水果堆：上半部大量橙黄色整橙密集堆叠，果皮有细孔与油点质感、带柔和圆形高光和暗部；中部一排深红苹果在绿色塑料筐中，带短果柄痕迹与斑驳红黄晕；下半部米黄色木箱里盛放亮黄绿色梨形果，果面有不规则褐斑。整体为漫射光，色彩饱和、层次紧密，果与果互相遮挡，接触阴影集中在缝隙处，没有清晰单一主体轮廓。",
+      "tags": [
+        "水果摊",
+        "整橙",
+        "红苹果",
+        "梨",
+        "果皮纹理",
+        "堆叠",
+        "漫射光",
+        "塑料筐",
+        "木箱",
+        "密集遮挡"
+      ],
+      "limitations": [
+        "高密度堆叠导致多数果实轮廓不完整",
+        "果皮细节受压缩分辨率限制，毛孔与蜡质难以细察",
+        "筐与箱边缘切割，无法判断整体承托结构",
+        "混杂品种难以逐一辨识",
+        "无法确认色温标定"
+      ]
+    },
+    {
+      "id": "ref.2.2",
+      "label": "暗背景中的带框静物油画：圆形盒与陶罐",
+      "category": "painting in frame",
+      "role": "reference-frame",
+      "bbox": [
+        0.02,
+        0.03,
+        0.97,
+        0.97
+      ],
+      "palette": [
+        [
+          38,
+          28,
+          20
+        ],
+        [
+          168,
+          130,
+          72
+        ],
+        [
+          200,
+          180,
+          146
+        ],
+        [
+          184,
+          70,
+          54
+        ],
+        [
+          58,
+          68,
+          50
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "一张深色木框油画的正面翻拍：外为黑褐色宽框，内有金色细边。画面暗褐背景中，左侧叠放两只浅米色圆形有盖盒，右侧一只墨绿陶罐口覆白布，中间下方一枚橙红小盖碗，上方悬挂带缎带的红色小袋。画面内光源似来自左上方，盒与罐有柔和体积阴影和接触阴影，笔触与颜料质感可见，整体低明度、暖调。",
+      "tags": [
+        "油画",
+        "画框",
+        "静物绘画",
+        "陶罐",
+        "圆盒",
+        "暖褐色调",
+        "金边",
+        "笔触",
+        "历史绘画"
+      ],
+      "limitations": [
+        "是绘画翻拍而非真实静物照片，果皮或釉面物理质感不可采信",
+        "画框反光与拍摄角度造成局部明度偏差",
+        "画面小、细节分辨率低",
+        "不能作为新旧视角或真实三维结构依据",
+        "画中光源为画家设定，非实际布光"
+      ]
+    },
+    {
+      "id": "ref.2.3",
+      "label": "白瓷碗中三颗红苹果",
+      "category": "fruit still life",
+      "role": "reference-frame",
+      "bbox": [
+        0.26,
+        0.24,
+        0.94,
+        0.96
+      ],
+      "palette": [
+        [
+          240,
+          238,
+          234
+        ],
+        [
+          172,
+          36,
+          46
+        ],
+        [
+          122,
+          26,
+          36
+        ],
+        [
+          212,
+          196,
+          196
+        ],
+        [
+          150,
+          60,
+          60
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "浅灰白无缝背景上，一只白色圆碗盛放三颗红苹果：中间一颗最大最正、带深色短果柄，左右各一颗略偏后；果皮深红带暗紫红斑纹，有弧形高光与细碎反光点，果形圆润、顶部凹陷。碗为素白、无纹饰，碗口椭圆、碗壁光滑，底部与台面间有淡淡接触阴影。光线柔和偏左，左亮右暗，整体明亮、低对比、背景干净。",
+      "tags": [
+        "红苹果",
+        "三颗",
+        "白瓷碗",
+        "无缝背景",
+        "柔光",
+        "高光",
+        "接触阴影",
+        "果柄",
+        "静物"
+      ],
+      "limitations": [
+        "苹果左右两侧轮廓被彼此与碗口部分遮挡",
+        "看不到碗底与被遮挡果面",
+        "白背景白碗对比低，边界分割困难",
+        "无尺度参照，实际大小不明",
+        "未呈现橙子或梨等同批其他果实"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "都涉及真实的苹果或橙子、陶瓷或陶质容器",
+    "物体置于承托面（地板、果箱、碗）上并有弱接触阴影",
+    "光源柔和、以漫射或大面积柔光为主，高光小而分散",
+    "果皮有可见斑点与高光，容器表面光滑",
+    "画面中多个物体互相遮挡，单一物体的完整轮廓往往被截断",
+    "色彩以红色果实与中性或深色背景形成对比"
+  ],
+  "missingEvidence": [
+    "没有同一组实物在多个视角下的拍摄，无法验证三维形状与遮挡关系",
+    "缺少近距离微距细节以分辨果皮毛孔、蜡质与陶瓷釉面质地",
+    "缺少色卡与曝光信息，无法进行可靠颜色标定",
+    "缺少明确的布光记录，光源方向与强度多为推断",
+    "没有梨与整橙和陶瓷花瓶同框的真实照片实例",
+    "没有精确分割掩码，bbox仅为粗略估计",
+    "缺少花瓶底部、碗底与桌面接触处的近景阴影证据",
+    "画作图为翻拍绘画，不能提供真实材质证据"
+  ],
+  "images": [
+    {
+      "id": "ref.2.0",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34775290/",
+      "sha256": "0f9adb8d84354b25c3fcd41b4823f76206e33826d94a19f2e14682860ff79ce3",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.2.1",
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fresh-fruits-display-at-market-33115591/",
+      "sha256": "39c863664b1c99c471d142583d9450fd8c248edf2268c0b47822f9fa8a11a34a",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.2.2",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+      "sha256": "c36ac48c51c4b51f037923dbe5a0f72bd8104eb4e075c6d3b06432b87c267100",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.2.3",
+      "sourceUrl": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "sha256": "bf173e93231dca96df37384c442af518d921884ce10acc8c779f2ba42764d0b7",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "4b9c76f8-91a1-4128-b692-5643d7364a87",
+        "model": "deepseek-flash",
+        "elapsedMs": 22754,
+        "prompt_tokens": 1626,
+        "completion_tokens": 2688,
+        "total_tokens": 4314,
+        "reasoning_tokens": 1254,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1626,
+    "completion_tokens": 2688,
+    "total_tokens": 4314,
+    "reasoning_tokens": 1254
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 22754
+}

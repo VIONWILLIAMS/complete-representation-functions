@@ -1,0 +1,209 @@
+{
+  "schema": "crf.browser_acceptance.v0.6",
+  "startedAt": "2026-11-21T09:26:24.914Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "url": "http://127.0.0.1:4173/verify-v06.html"
+  },
+  "tests": [
+    {
+      "name": "观测与生成进入同一程序",
+      "pass": true,
+      "evidence": {
+        "observed": "apple.observed",
+        "generated": "pear.generated",
+        "schema": "crf.program.v0.6",
+        "field": [
+          256,
+          256
+        ],
+        "sourceImageRequiredAtRuntime": false
+      },
+      "elapsedMs": 2
+    },
+    {
+      "name": "实际画布 = 当前程序渲染",
+      "pass": true,
+      "evidence": {
+        "width": 320,
+        "height": 240,
+        "hash": "4272abdd",
+        "same": true,
+        "changed": 0,
+        "mae": 0,
+        "max": 0
+      },
+      "elapsedMs": 493
+    },
+    {
+      "name": "同样的换色操作影响两种来源",
+      "pass": true,
+      "evidence": {
+        "apple.observed": {
+          "changedChannels": 23388,
+          "mae": 8.888092447916666
+        },
+        "pear.generated": {
+          "changedChannels": 17949,
+          "mae": 4.851331380208333
+        }
+      },
+      "elapsedMs": 614
+    },
+    {
+      "name": "同样的轮廓操作影响两种来源",
+      "pass": true,
+      "evidence": {
+        "apple.observed": {
+          "changedChannels": 21131,
+          "mae": 1.3621744791666666
+        },
+        "pear.generated": {
+          "changedChannels": 18449,
+          "mae": 1.054619140625
+        }
+      },
+      "elapsedMs": 738
+    },
+    {
+      "name": "空间旋转与新视角改变像素",
+      "pass": true,
+      "evidence": {
+        "changedChannels": 193143,
+        "mae": 9.009873046875,
+        "claim": "hypothesized geometry; not novel-view ground truth"
+      },
+      "elapsedMs": 351
+    },
+    {
+      "name": "JSON 导出 / 导入精确重现",
+      "pass": true,
+      "evidence": {
+        "jsonBytes": 356686,
+        "hash": "4272abdd",
+        "maxError": 0
+      },
+      "elapsedMs": 291
+    },
+    {
+      "name": "撤销恢复原始像素",
+      "pass": true,
+      "evidence": {
+        "maxError": 0,
+        "changedChannels": 0
+      },
+      "elapsedMs": 401
+    },
+    {
+      "name": "操作事务：拒绝后不部分修改",
+      "pass": true,
+      "evidence": {
+        "rejected": true,
+        "unchanged": true
+      },
+      "elapsedMs": 9
+    },
+    {
+      "name": "无效完整程序：字段与轨迹边界",
+      "pass": true,
+      "evidence": {
+        "cases": [
+          {
+            "type": "fieldBytes",
+            "rejected": true,
+            "unchanged": true
+          },
+          {
+            "type": "timelineTime",
+            "rejected": true,
+            "unchanged": true
+          }
+        ]
+      },
+      "elapsedMs": 15
+    },
+    {
+      "name": "删除后由空间背景重新求值",
+      "pass": true,
+      "evidence": {
+        "transparentPixels": 0,
+        "changedChannels": 78934,
+        "remainingObjects": 1,
+        "depthBuffer": 76800
+      },
+      "elapsedMs": 196
+    },
+    {
+      "name": "时间轨迹连续求值",
+      "pass": true,
+      "evidence": {
+        "duration": 5,
+        "firstHash": "4272abdd",
+        "middleHash": "a0819faa",
+        "changedChannels": 40420,
+        "videoTarget": {
+          "duration": 5,
+          "fps": 24,
+          "frameCount": 120,
+          "mediaEncodingNotTestedHere": true
+        }
+      },
+      "elapsedMs": 287
+    },
+    {
+      "name": "真实观测重新拟合并加入场景",
+      "pass": true,
+      "evidence": {
+        "input": [
+          253,
+          261
+        ],
+        "objectId": "qa.observed",
+        "profileCoefficients": 32,
+        "silhouetteIoU": 0.9608738119388407,
+        "holdoutRgbMAE": 4.159133990743545,
+        "warnings": []
+      },
+      "elapsedMs": 684
+    },
+    {
+      "name": "AI 适配器沿用原子操作",
+      "pass": true,
+      "evidence": {
+        "objectCount": 2,
+        "validChangedChannels": 23388,
+        "invalidRejected": true,
+        "browserRegistration": {
+          "supported": false,
+          "registered": [],
+          "errors": []
+        }
+      },
+      "elapsedMs": 962
+    },
+    {
+      "name": "AI 视角参数先校验再提交",
+      "pass": true,
+      "evidence": {
+        "invalidRejected": true,
+        "invalidProgramUnchanged": true,
+        "validCameraYaw": 14,
+        "frame": {
+          "width": 640,
+          "height": 480,
+          "time": 2.5,
+          "objectPixelCoverage": {
+            "pear.generated": 23884,
+            "apple.observed": 30271
+          }
+        }
+      },
+      "elapsedMs": 520
+    }
+  ],
+  "elapsedMs": 7969,
+  "finishedAt": "2026-11-21T09:26:32.883Z",
+  "passed": 14,
+  "failed": 0,
+  "pass": true
+}

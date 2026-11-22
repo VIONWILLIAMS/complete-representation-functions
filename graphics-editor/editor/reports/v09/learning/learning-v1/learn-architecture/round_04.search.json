@@ -1,0 +1,700 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 4,
+  "query": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "checkpoint": {
+    "sessionId": "crf09_0e3e9918-4a7c-4a89-b65f-9def0581418c",
+    "round": 4,
+    "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+    "subtopic": "柔和照明：自然侧光、低对比阴影与高光",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:48:46.373Z",
+    "runId": "crf07_67cad355-3ed2-49cb-bbc1-819f07be2fa1",
+    "queries": [
+      "site:commons.wikimedia.org brick wall window sunlight shadow photo",
+      "site:pexels.com brick wall window soft sunlight shadow",
+      "site:commons.wikimedia.org pedestrian signal pole sunlight photo",
+      "site:pexels.com pedestrian traffic light pole daylight photo",
+      "site:commons.wikimedia.org building facade side light shadow photo",
+      "site:pexels.com building facade soft shadow sunlight photo"
+    ],
+    "requestIds": [
+      "2a919aea-cc14-4f83-b4f9-e17ed7ff7179"
+    ],
+    "sourceCount": 13,
+    "newSourceCount": 10,
+    "candidateCount": 10,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_059034b7cf1641559be685fc91b8305a",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org brick wall window sunlight shadow photo",
+            "site:pexels.com brick wall window soft sunlight shadow",
+            "site:commons.wikimedia.org pedestrian signal pole sunlight photo",
+            "site:pexels.com pedestrian traffic light pole daylight photo",
+            "site:commons.wikimedia.org building facade side light shadow photo",
+            "site:pexels.com building facade soft shadow sunlight photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/zh-cn/photo/13322184/",
+          "https://www.pexels.com/zh-tw/photo/37147703/",
+          "https://www.pexels.com/photo/gray-concrete-building-under-the-blue-sky-12289125/",
+          "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+          "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+          "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+          "https://www.pexels.com/photo/modern-red-building-facade-with-window-30711596/",
+          "https://commons.wikimedia.org/wiki/Category:Brick_walls_in_Finland",
+          "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+          "https://www.pexels.com/zh-tw/photo/7891699/",
+          "https://commons.wikimedia.org/wiki/Commons:Propositions_d'images_remarquables#15",
+          "https://www.pexels.com/photo/tree-and-building-20283864/",
+          "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/13322184/",
+        "title": "Pexels Mabel Amber图片",
+        "snippet": "描述 低角度视图，展示六边形窗户在砖墙上的影子，树木的阴影投射在表面上。 更多相似内容 查找适合下一个创意项目的理想图片。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/37147703/",
+        "title": "Pexels 上由 Catarina 拍攝的相片",
+        "snippet": "色彩 日期 Apr 18, 2026 下載次數 ... 80.0mm 光圈 ƒ/7.1 ISO ... 說明 # 在陽光明媚的日子裡，奧地利維也納，一名行人站在交通錐旁。 ## 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/gray-concrete-building-under-the-blue-sky-12289125/",
+        "title": "Photo by David Underland on Pexels",
+        "snippet": "2268x4032 Aspect Ratio 9 ... Date May 28, 2022 ... 2022 Software ProCamera 15.4 Alkmaar, NH, Netherlands Description # Corrugated metal facade with shadows and blue sky in Alkmaar, Netherlands. ### More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+        "title": "File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg - Wikimedia Commons - File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg",
+        "snippet": "Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg ... An eight-storey part of the Wall with characteristic patterned brick, small kitchen and bathroom windows, and bright ventilators. ... part of the Wall with characteristic patterned brick, small kitchen and bathroom windows, and bright ventilators.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+        "title": "Photo by Steffen Rühlmann on Pexels",
+        "snippet": "Dimensions 4242x2828 Aspect Ratio 3:2 Colors Date Mar 6 ... Shutter Speed 1/400 sec Taken At Mar 1 ... Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+        "title": "Photo by Clarissa Schwarz on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/modern-red-building-facade-with-window-30711596/",
+        "title": "Photo by Jan van der Wolf on Pexels",
+        "snippet": "Afterglow Street Festive ... 6000x4000 Aspect Ratio 3:2 Colors Date Feb 13 ... Software Adobe Photoshop CC 2019 (Windows) Description # Minimalist red building facade with a window and strong shadows under a clear blue sky. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Brick_walls_in_Finland",
+        "title": "Category:Brick walls in Finland - Wikimedia Commons",
+        "snippet": "Media in category \"Brick walls in Finland\" The following 28 files are in this category, out of 28 total. ... - Ventilation shadows.jpg 5,504 × 8,256; 22.85 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+        "title": "Photo by Аlex Ugolkov on Pexels",
+        "snippet": "Afterglow Street ... Dimensions 2270x4032 Aspect Ratio 1135:2016 ... Vladivostok, Primorskiy kray, Russia Description # A shadow cast on a white brick wall creating a silhouette effect during daylight. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/7891699/",
+        "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+        "snippet": "尺寸 5069x3378 色彩 ... 焦點 56.0mm 光圈 ƒ/1.4 ISO ... 說明 # 交通燈顯示行人和自行車信號，背景是阿布達比的天際線。 ### 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Commons:Propositions_d'images_remarquables#15",
+        "title": "Commons:Propositions d'images remarquables - Wikimedia Commons - - Gallery: Commons:Featured pictures/Places/Architecture/Exteriors#Tunisia",
+        "snippet": "Musee d'Orsay and Pont Royal, North-West view 140402 1.jpg is an example of a well-done sidelit building ... - Hello @The NMI User this duality light and shadow on the gates of the temple shows that there are three gates in the back of the temple when we entred in the archeologic site that day the gates where dark and when we are going out the sun showed up the gates.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/tree-and-building-20283864/",
+        "title": "Photo by Büşra TÜRK on Pexels",
+        "snippet": "Dimensions 3095x4638 Colors Date Feb 16, 2024 Downloads 11 Views ... Aperture ƒ/1.9 ISO 100 Shutter Speed 1/2000 sec İstanbul, İstanbul, Türkiye Description # A traditional İstanbul building facade with trees casting shadows, showcasing historic architecture. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/",
+        "title": "Photo by Hans Heemsbergen on Pexels",
+        "snippet": "Dimensions 5472x3648 Aspect Ratio 3:2 Colors Date Jun 14 ... Camera DSC-RX100 ... DSC-RX100 v1.10 Haarlem, Noord-Holland, Nederland Description # Sunlit bicycles casting shadows on a brick wall in Haarlem, Netherlands. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "{\"summary\":\"本轮实际检索以 Pexels 具体照片页为主，Wikimedia Commons 仅获得分类页与少量文件页，未取得可确认的 CC0/CC BY 新文件详情页；所有图像均未下载，形态与光照判断仅来自页面标题/描述/元数据，待字节核验。\",\"features\":[\"砖墙或砌块墙面在自然侧光下应呈现颗粒起伏与灰缝凹陷的微阴影，低对比时高光不应完全过曝\",\"窗框/窗户投影在墙面上形成几何或异形暗区，边缘柔和度取决于云层或遮挡物，适合提取边缘与接触阴影\",\"行人信号灯立柱与灯头连接处需关注金属/塑料杆件与地面或墙面的接触阴影，弱光下阴影密度低但方向仍可辨\",\"建筑立面侧光可拉出材质纹理深度，金色时段云层半遮时阴影更软，适合低对比高光控制参考\",\"现代红立面窗洞的强阴影不宜作为本轮柔和照明主参考，仅作对比排除；波纹金属立面阴影方向明确但材质颗粒不同于砖墙\",\"伊斯坦布尔传统立面树影投射在墙面，可提供自然遮挡形成的软边阴影与墙面颗粒叠加\",\"自行车靠砖墙的日照阴影实例可辅助判断立柱/杆件类物体与墙面的接触阴影形状与方向\"],\"selectionCriteria\":[\"优先选择阴影边界不硬、高光无明显溢出的侧光照片，便于提取低对比接触阴影参数\",\"主体应包含可分离的墙面颗粒/灰缝、窗框或杆件连接处，避免大面积纯色或极端逆光\",\"同一场景不同光照实例优先，但来源页必须可独立核验，重复裁切不计新实例\",\"分辨率与镜头信息完整、地理与时间元数据可读的照片优先，用于估算太阳高度与阴影方向\"],\"uncertainties\":[\"Wikimedia Commons 本轮未返回可确认的 CC0/CC BY 具体文件详情页，需下一轮定向检索文件命名空间\",\"Pexels 各候选页面的许可证字段与作者信息未在摘要中完整返回，需逐页核验\",\"所有描述中的“柔和侧光”“低对比”未经像素确认，可能存在阴影硬度过高或高光裁切\",\"行人信号灯候选是否包含立柱连接细节与接触阴影，页面标题未明确\"],\"nextFocus\":\"下一轮定向补齐 Wikimedia Commons 具体文件页（File: 命名空间）并以 Pexels 具体照片页为补充；重点筛选窗框投影边缘、砖墙灰缝颗粒、信号灯杆件与地面/墙面接触阴影三类实例，逐页记录作者、许可证与原始图像 URL。\"}",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/13322184/",
+      "title": "Pexels Mabel Amber图片",
+      "snippet": "描述 低角度视图，展示六边形窗户在砖墙上的影子，树木的阴影投射在表面上。 更多相似内容 查找适合下一个创意项目的理想图片。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/37147703/",
+      "title": "Pexels 上由 Catarina 拍攝的相片",
+      "snippet": "色彩 日期 Apr 18, 2026 下載次數 ... 80.0mm 光圈 ƒ/7.1 ISO ... 說明 # 在陽光明媚的日子裡，奧地利維也納，一名行人站在交通錐旁。 ## 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/gray-concrete-building-under-the-blue-sky-12289125/",
+      "title": "Photo by David Underland on Pexels",
+      "snippet": "2268x4032 Aspect Ratio 9 ... Date May 28, 2022 ... 2022 Software ProCamera 15.4 Alkmaar, NH, Netherlands Description # Corrugated metal facade with shadows and blue sky in Alkmaar, Netherlands. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+      "title": "File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg - Wikimedia Commons - File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg",
+      "snippet": "Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg ... An eight-storey part of the Wall with characteristic patterned brick, small kitchen and bathroom windows, and bright ventilators. ... part of the Wall with characteristic patterned brick, small kitchen and bathroom windows, and bright ventilators.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "snippet": "Dimensions 4242x2828 Aspect Ratio 3:2 Colors Date Mar 6 ... Shutter Speed 1/400 sec Taken At Mar 1 ... Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/modern-red-building-facade-with-window-30711596/",
+      "title": "Photo by Jan van der Wolf on Pexels",
+      "snippet": "Afterglow Street Festive ... 6000x4000 Aspect Ratio 3:2 Colors Date Feb 13 ... Software Adobe Photoshop CC 2019 (Windows) Description # Minimalist red building facade with a window and strong shadows under a clear blue sky. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Brick_walls_in_Finland",
+      "title": "Category:Brick walls in Finland - Wikimedia Commons",
+      "snippet": "Media in category \"Brick walls in Finland\" The following 28 files are in this category, out of 28 total. ... - Ventilation shadows.jpg 5,504 × 8,256; 22.85 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "snippet": "Afterglow Street ... Dimensions 2270x4032 Aspect Ratio 1135:2016 ... Vladivostok, Primorskiy kray, Russia Description # A shadow cast on a white brick wall creating a silhouette effect during daylight. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/7891699/",
+      "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+      "snippet": "尺寸 5069x3378 色彩 ... 焦點 56.0mm 光圈 ƒ/1.4 ISO ... 說明 # 交通燈顯示行人和自行車信號，背景是阿布達比的天際線。 ### 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Commons:Propositions_d'images_remarquables#15",
+      "title": "Commons:Propositions d'images remarquables - Wikimedia Commons - - Gallery: Commons:Featured pictures/Places/Architecture/Exteriors#Tunisia",
+      "snippet": "Musee d'Orsay and Pont Royal, North-West view 140402 1.jpg is an example of a well-done sidelit building ... - Hello @The NMI User this duality light and shadow on the gates of the temple shows that there are three gates in the back of the temple when we entred in the archeologic site that day the gates where dark and when we are going out the sun showed up the gates.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/tree-and-building-20283864/",
+      "title": "Photo by Büşra TÜRK on Pexels",
+      "snippet": "Dimensions 3095x4638 Colors Date Feb 16, 2024 Downloads 11 Views ... Aperture ƒ/1.9 ISO 100 Shutter Speed 1/2000 sec İstanbul, İstanbul, Türkiye Description # A traditional İstanbul building facade with trees casting shadows, showcasing historic architecture. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/",
+      "title": "Photo by Hans Heemsbergen on Pexels",
+      "snippet": "Dimensions 5472x3648 Aspect Ratio 3:2 Colors Date Jun 14 ... Camera DSC-RX100 ... DSC-RX100 v1.10 Haarlem, Noord-Holland, Nederland Description # Sunlit bicycles casting shadows on a brick wall in Haarlem, Netherlands. ## More like this",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/13322184/",
+      "title": "Pexels Mabel Amber图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/37147703/",
+      "title": "Pexels 上由 Catarina 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/gray-concrete-building-under-the-blue-sky-12289125/",
+      "title": "Photo by David Underland on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+      "title": "File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg - Wikimedia Commons - File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/modern-red-building-facade-with-window-30711596/",
+      "title": "Photo by Jan van der Wolf on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Brick_walls_in_Finland",
+      "title": "Category:Brick walls in Finland - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Commons:Propositions_d'images_remarquables#15",
+      "title": "Commons:Propositions d'images remarquables - Wikimedia Commons - - Gallery: Commons:Featured pictures/Places/Architecture/Exteriors#Tunisia",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/tree-and-building-20283864/",
+      "title": "Photo by Büşra TÜRK on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/",
+      "title": "Photo by Hans Heemsbergen on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 103548,
+        "sha256": "361a8d70c4382fd2649e878f43dcd4d8ef7c5cdcf7d087664518b19f7b1162b0"
+      },
+      "imageUrl": "https://images.pexels.com/photos/13322184/pexels-photo-13322184.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/13322184/",
+      "title": "Pexels Mabel Amber图片",
+      "sha256": "361a8d70c4382fd2649e878f43dcd4d8ef7c5cdcf7d087664518b19f7b1162b0",
+      "bytes": 103548,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 142592,
+        "sha256": "5dbc598cf61064df817a6a9e78fec616452007e985375bcb71dceb20e49c86fb"
+      },
+      "imageUrl": "https://images.pexels.com/photos/37147703/pexels-photo-37147703.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/37147703/",
+      "title": "Pexels 上由 Catarina 拍攝的相片",
+      "sha256": "5dbc598cf61064df817a6a9e78fec616452007e985375bcb71dceb20e49c86fb",
+      "bytes": 142592,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 128566,
+        "sha256": "1a66d9648ee026a51aa44bde3a79ef2f790d2e74aad3fae48a9153ddc1f42b5a"
+      },
+      "imageUrl": "https://images.pexels.com/photos/12289125/pexels-photo-12289125.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/gray-concrete-building-under-the-blue-sky-12289125/",
+      "title": "Photo by David Underland on Pexels",
+      "sha256": "1a66d9648ee026a51aa44bde3a79ef2f790d2e74aad3fae48a9153ddc1f42b5a",
+      "bytes": 128566,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1365
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 141164,
+        "sha256": "738e1eeda6966c3398faad8f3cb18d69cb3c6d3e4ad11c11396cd98e85b3701e"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg/960px-Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+      "title": "File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg - Wikimedia Commons - File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg",
+      "sha256": "738e1eeda6966c3398faad8f3cb18d69cb3c6d3e4ad11c11396cd98e85b3701e",
+      "bytes": 141164,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 721,
+      "license": {
+        "name": "CC BY-SA 2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "Andrew Curtis",
+        "credit": "From geograph.org.uk",
+        "usageTerms": "Creative Commons Attribution-Share Alike 2.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1024,
+        "height": 769,
+        "bytes": 192332
+      }
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/13322184/pexels-photo-13322184.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/13322184/",
+      "title": "Pexels Mabel Amber图片",
+      "sha256": "361a8d70c4382fd2649e878f43dcd4d8ef7c5cdcf7d087664518b19f7b1162b0",
+      "bytes": 103548,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/37147703/pexels-photo-37147703.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/37147703/",
+      "title": "Pexels 上由 Catarina 拍攝的相片",
+      "sha256": "5dbc598cf61064df817a6a9e78fec616452007e985375bcb71dceb20e49c86fb",
+      "bytes": 142592,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/12289125/pexels-photo-12289125.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/gray-concrete-building-under-the-blue-sky-12289125/",
+      "title": "Photo by David Underland on Pexels",
+      "sha256": "1a66d9648ee026a51aa44bde3a79ef2f790d2e74aad3fae48a9153ddc1f42b5a",
+      "bytes": 128566,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1365,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg/960px-Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+      "title": "File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg - Wikimedia Commons - File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg",
+      "sha256": "738e1eeda6966c3398faad8f3cb18d69cb3c6d3e4ad11c11396cd98e85b3701e",
+      "bytes": 141164,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 721,
+      "license": {
+        "name": "CC BY-SA 2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "Andrew Curtis",
+        "credit": "From geograph.org.uk",
+        "usageTerms": "Creative Commons Attribution-Share Alike 2.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1024,
+        "height": 769,
+        "bytes": 192332
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/13322184/",
+        "title": "Pexels Mabel Amber图片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/13322184/pexels-photo-13322184.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/13322184/pexels-photo-13322184.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 103548,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "361a8d70c4382fd2649e878f43dcd4d8ef7c5cdcf7d087664518b19f7b1162b0"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/37147703/",
+        "title": "Pexels 上由 Catarina 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/37147703/pexels-photo-37147703.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/37147703/pexels-photo-37147703.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 142592,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "5dbc598cf61064df817a6a9e78fec616452007e985375bcb71dceb20e49c86fb"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/gray-concrete-building-under-the-blue-sky-12289125/",
+        "title": "Photo by David Underland on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/12289125/pexels-photo-12289125.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/12289125/pexels-photo-12289125.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 128566,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1365,
+        "sha256": "1a66d9648ee026a51aa44bde3a79ef2f790d2e74aad3fae48a9153ddc1f42b5a"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+        "title": "File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg - Wikimedia Commons - File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg/960px-Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 2.0",
+          "url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "artist": "Andrew Curtis",
+          "credit": "From geograph.org.uk",
+          "usageTerms": "Creative Commons Attribution-Share Alike 2.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AByker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg/960px-Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 141164,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 721,
+        "sha256": "738e1eeda6966c3398faad8f3cb18d69cb3c6d3e4ad11c11396cd98e85b3701e"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/modern-red-building-facade-with-window-30711596/",
+        "title": "Photo by Jan van der Wolf on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/30711596/pexels-photo-30711596.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/30711596/pexels-photo-30711596.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 14450,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "bdf3f4978e4f9b2b2b94e7b765798356a838d8e275ce6da82d136a2e24142e22"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Brick_walls_in_Finland",
+        "title": "Category:Brick walls in Finland - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "model_semantic_plan",
+    "summary": "本轮实际检索以 Pexels 具体照片页为主，Wikimedia Commons 仅获得分类页与少量文件页，未取得可确认的 CC0/CC BY 新文件详情页；所有图像均未下载，形态与光照判断仅来自页面标题/描述/元数据，待字节核验。",
+    "features": [
+      "砖墙或砌块墙面在自然侧光下应呈现颗粒起伏与灰缝凹陷的微阴影，低对比时高光不应完全过曝",
+      "窗框/窗户投影在墙面上形成几何或异形暗区，边缘柔和度取决于云层或遮挡物，适合提取边缘与接触阴影",
+      "行人信号灯立柱与灯头连接处需关注金属/塑料杆件与地面或墙面的接触阴影，弱光下阴影密度低但方向仍可辨",
+      "建筑立面侧光可拉出材质纹理深度，金色时段云层半遮时阴影更软，适合低对比高光控制参考",
+      "现代红立面窗洞的强阴影不宜作为本轮柔和照明主参考，仅作对比排除；波纹金属立面阴影方向明确但材质颗粒不同于砖墙",
+      "伊斯坦布尔传统立面树影投射在墙面，可提供自然遮挡形成的软边阴影与墙面颗粒叠加",
+      "自行车靠砖墙的日照阴影实例可辅助判断立柱/杆件类物体与墙面的接触阴影形状与方向"
+    ],
+    "selectionCriteria": [
+      "优先选择阴影边界不硬、高光无明显溢出的侧光照片，便于提取低对比接触阴影参数",
+      "主体应包含可分离的墙面颗粒/灰缝、窗框或杆件连接处，避免大面积纯色或极端逆光",
+      "同一场景不同光照实例优先，但来源页必须可独立核验，重复裁切不计新实例",
+      "分辨率与镜头信息完整、地理与时间元数据可读的照片优先，用于估算太阳高度与阴影方向"
+    ],
+    "uncertainties": [
+      "Wikimedia Commons 本轮未返回可确认的 CC0/CC BY 具体文件详情页，需下一轮定向检索文件命名空间",
+      "Pexels 各候选页面的许可证字段与作者信息未在摘要中完整返回，需逐页核验",
+      "所有描述中的“柔和侧光”“低对比”未经像素确认，可能存在阴影硬度过高或高光裁切",
+      "行人信号灯候选是否包含立柱连接细节与接触阴影，页面标题未明确"
+    ],
+    "nextFocus": "下一轮定向补齐 Wikimedia Commons 具体文件页（File: 命名空间）并以 Pexels 具体照片页为补充；重点筛选窗框投影边缘、砖墙灰缝颗粒、信号灯杆件与地面/墙面接触阴影三类实例，逐页记录作者、许可证与原始图像 URL。",
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 7060,
+    "completion_tokens": 629,
+    "total_tokens": 7689,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "2a919aea-cc14-4f83-b4f9-e17ed7ff7179",
+        "model": "deepseek-flash",
+        "elapsedMs": 9811,
+        "prompt_tokens": 7060,
+        "completion_tokens": 629,
+        "total_tokens": 7689,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 27562,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 103548,
+        "sha256": "361a8d70c4382fd2649e878f43dcd4d8ef7c5cdcf7d087664518b19f7b1162b0"
+      },
+      "imageUrl": "https://images.pexels.com/photos/13322184/pexels-photo-13322184.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/13322184/",
+      "title": "Pexels Mabel Amber图片",
+      "sha256": "361a8d70c4382fd2649e878f43dcd4d8ef7c5cdcf7d087664518b19f7b1162b0",
+      "bytes": 103548,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/361a8d70c4382fd2649e878f43dcd4d8ef7c5cdcf7d087664518b19f7b1162b0.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 142592,
+        "sha256": "5dbc598cf61064df817a6a9e78fec616452007e985375bcb71dceb20e49c86fb"
+      },
+      "imageUrl": "https://images.pexels.com/photos/37147703/pexels-photo-37147703.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/37147703/",
+      "title": "Pexels 上由 Catarina 拍攝的相片",
+      "sha256": "5dbc598cf61064df817a6a9e78fec616452007e985375bcb71dceb20e49c86fb",
+      "bytes": 142592,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/5dbc598cf61064df817a6a9e78fec616452007e985375bcb71dceb20e49c86fb.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 128566,
+        "sha256": "1a66d9648ee026a51aa44bde3a79ef2f790d2e74aad3fae48a9153ddc1f42b5a"
+      },
+      "imageUrl": "https://images.pexels.com/photos/12289125/pexels-photo-12289125.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/gray-concrete-building-under-the-blue-sky-12289125/",
+      "title": "Photo by David Underland on Pexels",
+      "sha256": "1a66d9648ee026a51aa44bde3a79ef2f790d2e74aad3fae48a9153ddc1f42b5a",
+      "bytes": 128566,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1365,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/1a66d9648ee026a51aa44bde3a79ef2f790d2e74aad3fae48a9153ddc1f42b5a.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 141164,
+        "sha256": "738e1eeda6966c3398faad8f3cb18d69cb3c6d3e4ad11c11396cd98e85b3701e"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg/960px-Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+      "title": "File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg - Wikimedia Commons - File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg",
+      "sha256": "738e1eeda6966c3398faad8f3cb18d69cb3c6d3e4ad11c11396cd98e85b3701e",
+      "bytes": 141164,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 721,
+      "license": {
+        "name": "CC BY-SA 2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "Andrew Curtis",
+        "credit": "From geograph.org.uk",
+        "usageTerms": "Creative Commons Attribution-Share Alike 2.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1024,
+        "height": 769,
+        "bytes": 192332
+      },
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/738e1eeda6966c3398faad8f3cb18d69cb3c6d3e4ad11c11396cd98e85b3701e.jpeg"
+    }
+  ]
+}

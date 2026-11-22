@@ -1,0 +1,314 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 1,
+  "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "items": [
+    {
+      "id": "ref.1.0",
+      "label": "高山岩坡与湖面",
+      "category": "mountain-lake",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          75,
+          115,
+          165
+        ],
+        [
+          230,
+          232,
+          228
+        ],
+        [
+          96,
+          88,
+          76
+        ],
+        [
+          45,
+          64,
+          54
+        ],
+        [
+          63,
+          82,
+          48
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "完整的高山湖景：左侧灰褐色岩坡向上延伸，前景散布深色碎石与少量低矮绿色植被，近景水面呈暗绿并映出天空和云层；上方为蓝天白云，空气较通透。适合作为山湖、岩石岸线与水面反射的整体参考，不是可单独拆出的素材。",
+      "tags": [
+        "高山湖",
+        "岩坡",
+        "碎石",
+        "水面反射",
+        "蓝天白云",
+        "自然景观"
+      ],
+      "limitations": [
+        "分辨率低，岩石与植被细节不足",
+        "bbox为整图范围，不是精确分割",
+        "无法确认地理位置与季节",
+        "不能据此生成全新视角或重建地形",
+        "水面倒影受压缩影响"
+      ]
+    },
+    {
+      "id": "ref.1.1",
+      "label": "雾中海崖与海面",
+      "category": "coastal-cliff",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          206,
+          211,
+          214
+        ],
+        [
+          64,
+          78,
+          86
+        ],
+        [
+          92,
+          78,
+          68
+        ],
+        [
+          46,
+          48,
+          48
+        ],
+        [
+          168,
+          180,
+          184
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "雾气弥漫的海岸：右侧陡峭海崖占据画面，岩体呈棕灰与深褐色，可见层叠裂隙与块状轮廓；左侧海面灰蓝，近岸有白色浪花与柔化水痕，远处海天被薄雾融合。适合海岸岩壁、雾气与海水层次的整体参考。",
+      "tags": [
+        "海岸",
+        "海崖",
+        "薄雾",
+        "礁石",
+        "浪花",
+        "灰蓝色海面",
+        "大气透视"
+      ],
+      "limitations": [
+        "雾使远景边界不清晰",
+        "低分辨率，岩壁纹理与植被细节有限",
+        "无法判断曝光时长，水痕效果不能据此确证",
+        "bbox是整图场景范围",
+        "不能代表该海岸的其他视角"
+      ]
+    },
+    {
+      "id": "ref.1.2",
+      "label": "礁石间的拍岸浪花",
+      "category": "wave-splash",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          236,
+          241,
+          240
+        ],
+        [
+          89,
+          130,
+          138
+        ],
+        [
+          38,
+          39,
+          43
+        ],
+        [
+          92,
+          68,
+          53
+        ],
+        [
+          119,
+          119,
+          113
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "近景海浪猛烈撞击深色礁石，白色泡沫在画面中央翻卷，海水呈青灰并布满碎浪纹理；周围岩块呈深黑、灰褐与局部锈色，轮廓粗粝。适合表现岸浪冲击、泡沫形态和湿岩对比，但整体为不可拆分的自然瞬间。",
+      "tags": [
+        "海浪",
+        "礁石",
+        "泡沫",
+        "拍岸",
+        "青灰海水",
+        "湿岩",
+        "自然力量"
+      ],
+      "limitations": [
+        "高速动态瞬间凝固，无法据此推断连续运动",
+        "低分辨率，泡沫与岩石细部不足",
+        "bbox为整图，不是浪花或岩石的精确分割",
+        "无法确认拍摄参数、位置与潮汐"
+      ]
+    },
+    {
+      "id": "ref.1.3",
+      "label": "暮色湖面与孤石",
+      "category": "lake-dusk",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          222,
+          158,
+          116
+        ],
+        [
+          140,
+          161,
+          174
+        ],
+        [
+          20,
+          27,
+          33
+        ],
+        [
+          84,
+          100,
+          112
+        ],
+        [
+          15,
+          19,
+          23
+        ]
+      ],
+      "lightDirection": "back",
+      "description": "黄昏或黎明时分的平静湖面：两侧山体呈深色剪影，远处云层透出橙粉霞光；湖心一块黑色孤石露出水面，周围水面近乎镜面，映出天光、远山和石影。整体宁静、层次清晰，适合暮色湖面、剪影与倒影参考。",
+      "tags": [
+        "暮色",
+        "湖面",
+        "孤石",
+        "山体剪影",
+        "倒影",
+        "霞光",
+        "平静水面"
+      ],
+      "limitations": [
+        "山体与岩石细节被剪影压暗",
+        "低分辨率，石面纹理不可见",
+        "无法确认具体时段、地点与镜头信息",
+        "倒影受水面微纹影响，不能视为完美镜像",
+        "bbox为整图场景范围"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "四张均为自然风景摄影，包含水体与岩石",
+    "画面以完整场景呈现，主体难以直接拆成独立素材",
+    "均呈现近景岩石或水面、远景山体或海天的层次",
+    "色调以蓝灰、褐黑等自然色为主",
+    "未明确可见人物或人工建筑",
+    "均为低分辨率压缩图，细节受限",
+    "光线均为自然光，包含漫射光或逆光",
+    "均不能据此重建三维地形或推断其他视角"
+  ],
+  "missingEvidence": [
+    "无法从这些单张图确定地理位置、拍摄时间与相机参数",
+    "缺少原始高分辨率图像、EXIF与未压缩纹理",
+    "没有alpha遮罩或对象级精确分割",
+    "缺少多视角、深度图或LiDAR等三维数据",
+    "无法测量真实尺度、距离与地形高度",
+    "无法确证薄雾、长曝光等成因仅凭可见效果",
+    "无法确认水体运动状态、潮汐或风速",
+    "针叶林树冠细节未在四张图中清晰呈现，森林主题证据不足"
+  ],
+  "images": [
+    {
+      "id": "ref.1.0",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/39267274/",
+      "sha256": "492fc94f3e7fbdee96bd34536c70abf13ad7a6adbe546d3edafe915db47bbf38",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.1.1",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/33453958/",
+      "sha256": "c807ad2c0038866ee2217d3ba3b535cceb4ecc1300b7a15dcbfe140ab80af0c7",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.1.2",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapwave.JPG",
+      "sha256": "1962dfb5de1fd6a347d884f9bb7d0f7a50c7ee659b79125461a249b4bbe43448",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.1.3",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/25650391/",
+      "sha256": "0550603a2016066a5a83044de21538a032f19ac3061c90657f4648163cfcb786",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "446fa78f-523c-42ea-87e2-4f4fe49b2dc5",
+        "model": "deepseek-flash",
+        "elapsedMs": 29521,
+        "prompt_tokens": 1569,
+        "completion_tokens": 3977,
+        "total_tokens": 5546,
+        "reasoning_tokens": 2852,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1569,
+    "completion_tokens": 3977,
+    "total_tokens": 5546,
+    "reasoning_tokens": 2852
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 29523
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "crf.generation_summary.v0.10",
+  "runId": "polish-v3",
+  "cases": [
+    {
+      "id": "fruit_trio",
+      "status": "review_required",
+      "selectedCandidate": 0,
+      "candidateCount": 3,
+      "quality": {
+        "releaseGate": "not_passed",
+        "independentHumanReview": false,
+        "allCandidatesEvaluated": true,
+        "selectedCandidateEvaluated": true,
+        "trainingPerformed": false,
+        "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+      },
+      "usageTotals": {
+        "providerRequests": 7,
+        "tokens": 41205,
+        "uncertainRequestsReserved": 0
+      },
+      "artifact": {
+        "imageUrl": "assets/v10/generated/polish-v3/fruit_trio.png",
+        "thumbnailUrl": "assets/v10/generated/polish-v3/fruit_trio.jpg",
+        "sceneUrl": "assets/v10/generated/polish-v3/fruit_trio.scene.json",
+        "reportUrl": "assets/v10/generated/polish-v3/fruit_trio.report.json",
+        "width": 1024,
+        "height": 768,
+        "pixelSha256": "cb87adc15783c283c5baf113bde1862e06b7971f9ff0dd1c40f5844714a05fe4"
+      }
+    },
+    {
+      "id": "ceramic_citrus",
+      "status": "review_required",
+      "selectedCandidate": 1,
+      "candidateCount": 3,
+      "quality": {
+        "releaseGate": "not_passed",
+        "independentHumanReview": false,
+        "allCandidatesEvaluated": true,
+        "selectedCandidateEvaluated": true,
+        "trainingPerformed": false,
+        "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+      },
+      "usageTotals": {
+        "providerRequests": 7,
+        "tokens": 48994,
+        "uncertainRequestsReserved": 0
+      },
+      "artifact": {
+        "imageUrl": "assets/v10/generated/polish-v3/ceramic_citrus.png",
+        "thumbnailUrl": "assets/v10/generated/polish-v3/ceramic_citrus.jpg",
+        "sceneUrl": "assets/v10/generated/polish-v3/ceramic_citrus.scene.json",
+        "reportUrl": "assets/v10/generated/polish-v3/ceramic_citrus.report.json",
+        "width": 1024,
+        "height": 768,
+        "pixelSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde"
+      }
+    }
+  ],
+  "requests": 14,
+  "totalTokens": 90199,
+  "modelTraining": false,
+  "sharedModelUnchanged": true
+}

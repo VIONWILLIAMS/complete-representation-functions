@@ -1,0 +1,241 @@
+{
+  "schema": "crf.geometry_visibility_diagnostic.v0.7",
+  "phase": "refined",
+  "source": "actual_llm_programs",
+  "geometryDiagnosticOnly": true,
+  "photoQualityScore": false,
+  "rendererSha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a",
+  "diagnosticScriptSha256": "ba30646840e35ebf6b2f92264e6e4592d6eb30c2e07cc83a5762d84ed9329ac0",
+  "renderOptions": {
+    "width": 160,
+    "height": 120,
+    "samples": 1,
+    "bounces": 1,
+    "denoise": false
+  },
+  "method": {
+    "fullScene": "Render the actual saved program and count its first-hit object-ID map. Counts are camera geometry coverage, not final RGB segmentation.",
+    "isolatedFootprint": "In an in-memory clone, hide all other objects and remove area-light rectangles. Force the target visible; retain every object record/index, camera, transform, surface, image dimensions and seed. Count the same target ID.",
+    "ratio": "visiblePixels / isolatedFootprintPixels; null if the isolated footprint is empty.",
+    "sampling": "One deterministic jittered primary ray per pixel at 160 x 120. Source aperture and focus are preserved. One bounce suffices because IDs record the first geometric intersection.",
+    "maskEncoding": "One unsigned byte per pixel, row-major: 1 for this object ID and 0 otherwise. SHA256 hashes the exact mask bytes.",
+    "limitations": [
+      "A transparent surface still receives the first-hit ID; this is not semantic visibility after transmission.",
+      "An intentionally hidden object has zero full-scene coverage; declaredVisible is recorded separately.",
+      "One sample and low resolution approximate the boundary; this is not a pixel-perfect full-resolution segmentation.",
+      "Coverage does not measure realism, material quality, perceptual similarity, or fidelity to a photograph.",
+      "No generated candidate is replaced, and no input program or renderer is modified."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "citrus",
+      "programSourceFile": "dist/assets/v07/generated/citrus_refined.crf.json",
+      "programFileSha256": "3424b9d20e6afab6ef87191ee208317aabb40c65ea26e3550a4ebc6d7a6567f3",
+      "programCanonicalSha256": "fe466a3a9210cb182059be56968bb4637410aa52cba6afc17bef1b23c0528f32",
+      "seed": 42731,
+      "camera": {
+        "position": [
+          1.55,
+          1.28,
+          2.25
+        ],
+        "target": [
+          0.02,
+          0.28,
+          0
+        ],
+        "fov": 42,
+        "aperture": 0.025,
+        "focusDistance": 2.35
+      },
+      "objects": [
+        {
+          "id": "orange_large",
+          "status": "measured",
+          "sourceObjectIndex": 5,
+          "declaredVisible": true,
+          "visiblePixels": 928,
+          "isolatedFootprintPixels": 974,
+          "visibleFraction": 0.952772,
+          "visibleBoundsInclusive": [
+            46,
+            35,
+            81,
+            69
+          ],
+          "isolatedBoundsInclusive": [
+            46,
+            35,
+            82,
+            69
+          ],
+          "visibleMaskSha256": "d2c55056877b6ebc3fff86a8953c80854a8b65c6ec1ca4136ecf794a6a70f834",
+          "isolatedMaskSha256": "d01fde8dac73075022e206eb8f2a6a6b4a29edca0dfd2435557f75b22caef6e1"
+        },
+        {
+          "id": "orange_medium",
+          "status": "measured",
+          "sourceObjectIndex": 6,
+          "declaredVisible": true,
+          "visiblePixels": 892,
+          "isolatedFootprintPixels": 898,
+          "visibleFraction": 0.993318,
+          "visibleBoundsInclusive": [
+            76,
+            45,
+            110,
+            78
+          ],
+          "isolatedBoundsInclusive": [
+            76,
+            45,
+            110,
+            79
+          ],
+          "visibleMaskSha256": "10c07cb6fd4943ff6186b60fa62e0e0bd9c403536be7b183982e2f6f828d2931",
+          "isolatedMaskSha256": "a79dd0f6e1e993461242f614923618a0ae3f51dcda708d2e9d3f3a290f0ca180"
+        },
+        {
+          "id": "orange_small",
+          "status": "measured",
+          "sourceObjectIndex": 7,
+          "declaredVisible": true,
+          "visiblePixels": 8,
+          "isolatedFootprintPixels": 443,
+          "visibleFraction": 0.018059,
+          "visibleBoundsInclusive": [
+            99,
+            47,
+            108,
+            55
+          ],
+          "isolatedBoundsInclusive": [
+            85,
+            46,
+            109,
+            69
+          ],
+          "visibleMaskSha256": "b12c2d184c9f0815e6ff1d1cda49f51ad3781ea585762ece2161203de0ffb5e6",
+          "isolatedMaskSha256": "fcb1ae3af766f529c941188393b56edef9eb9c076c18f9ef275440bc94b22dc1"
+        }
+      ]
+    },
+    {
+      "id": "ceramics",
+      "programSourceFile": "dist/assets/v07/generated/ceramics_refined.crf.json",
+      "programFileSha256": "0014b9120ef8568ca53e5818f0c0b7669233b80455dedd084a1511b1f2499090",
+      "programCanonicalSha256": "2f69805ca3a12b238baedd427995e14f8d30f63f5d2243dbacdf3c5ef1842ed5",
+      "seed": 20250712,
+      "camera": {
+        "position": [
+          3,
+          2.2,
+          4
+        ],
+        "target": [
+          0,
+          1.45,
+          0
+        ],
+        "fov": 34,
+        "aperture": 0.02,
+        "focusDistance": 5.1
+      },
+      "objects": [
+        {
+          "id": "window_glass",
+          "status": "measured",
+          "sourceObjectIndex": 7,
+          "declaredVisible": true,
+          "visiblePixels": 2576,
+          "isolatedFootprintPixels": 2576,
+          "visibleFraction": 1,
+          "visibleBoundsInclusive": [
+            7,
+            0,
+            69,
+            43
+          ],
+          "isolatedBoundsInclusive": [
+            7,
+            0,
+            69,
+            43
+          ],
+          "visibleMaskSha256": "0fadafd80b231ad47940ed84d048d304510b7874aaf4a2d47d8f3196d698b8b5",
+          "isolatedMaskSha256": "0fadafd80b231ad47940ed84d048d304510b7874aaf4a2d47d8f3196d698b8b5"
+        },
+        {
+          "id": "celadon_body",
+          "status": "measured",
+          "sourceObjectIndex": 9,
+          "declaredVisible": true,
+          "visiblePixels": 160,
+          "isolatedFootprintPixels": 161,
+          "visibleFraction": 0.993789,
+          "visibleBoundsInclusive": [
+            61,
+            48,
+            72,
+            69
+          ],
+          "isolatedBoundsInclusive": [
+            61,
+            48,
+            72,
+            69
+          ],
+          "visibleMaskSha256": "a03a06815a230ade533f628c0b365bc7e70aa7cd7048f91075eeb76728217661",
+          "isolatedMaskSha256": "11d12f508e3dcb56c854aa43043d014949eab339798718b9f7274ac2a420f625"
+        },
+        {
+          "id": "smoke_glass_ball",
+          "status": "measured",
+          "sourceObjectIndex": 12,
+          "declaredVisible": true,
+          "visiblePixels": 87,
+          "isolatedFootprintPixels": 90,
+          "visibleFraction": 0.966667,
+          "visibleBoundsInclusive": [
+            88,
+            63,
+            99,
+            73
+          ],
+          "isolatedBoundsInclusive": [
+            88,
+            63,
+            99,
+            73
+          ],
+          "visibleMaskSha256": "2fb2105faf8c3dba43cfa3f645fd40c7e190cd82356c3895fd3f425eabe1f571",
+          "isolatedMaskSha256": "eac76a2cadf4b9a45b501d56abd0c6846c21ac9f614d0eaf88e280a8f711e2a5"
+        },
+        {
+          "id": "brass_ball",
+          "status": "measured",
+          "sourceObjectIndex": 13,
+          "declaredVisible": true,
+          "visiblePixels": 28,
+          "isolatedFootprintPixels": 28,
+          "visibleFraction": 1,
+          "visibleBoundsInclusive": [
+            95,
+            71,
+            100,
+            77
+          ],
+          "isolatedBoundsInclusive": [
+            95,
+            71,
+            100,
+            77
+          ],
+          "visibleMaskSha256": "5ba93b576ffc7ddda975352570a96ad3d08761a3a25789d954be240ba52b79c8",
+          "isolatedMaskSha256": "5ba93b576ffc7ddda975352570a96ad3d08761a3a25789d954be240ba52b79c8"
+        }
+      ]
+    }
+  ]
+}

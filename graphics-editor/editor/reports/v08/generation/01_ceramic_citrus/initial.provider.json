@@ -1,0 +1,155 @@
+{
+  "ok": true,
+  "runId": "crf08_a137181b-71f2-40d8-b9bc-3a71739fad85",
+  "engine": "gaussian08",
+  "model": "deepseek-flash",
+  "action": "scene",
+  "message": "已组合浅色承托面、青蓝釉花瓶、横切橙子半及两枚接触阴影；物体等比例缩放，底部对齐在同一承托水平线约 y=596，花瓶稍靠左，橙子半在右前方。",
+  "qualityNotes": [
+    "检查花瓶与橙子底部是否落在同一承托水平线 y≈596。",
+    "检查两枚阴影的可见中心是否贴合主体底部，透明填充是否未形成明显灰块。",
+    "确认花瓶釉面高光与橙子切面纤维未被过度调色或压扁。",
+    "确认主体总占比接近目标、四周留白均衡，橙子未与花瓶穿插。"
+  ],
+  "warnings": [
+    "仅使用目录中已拟合的二维高斯资产，未生成新表面或新相机视角。",
+    "阴影为二维覆盖效果，非物理光照，接触感需实际渲染检查。",
+    "颜色与曝光需在渲染器中复核，避免过亮或偏色。"
+  ],
+  "scene": {
+    "schema": "crf.gaussian_scene.v0.8",
+    "id": "stilllife_vase_orange_960x640",
+    "title": "青蓝釉花瓶与横切橙子静物",
+    "width": 960,
+    "height": 640,
+    "background": [
+      234,
+      230,
+      224
+    ],
+    "objects": [
+      {
+        "id": "bg.paper",
+        "label": "浅灰暖白承托面",
+        "assetId": "studio.paper",
+        "x": 0,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 0,
+        "visible": true
+      },
+      {
+        "id": "shadow.vase",
+        "label": "花瓶底部柔和接触阴影",
+        "assetId": "studio.shadow",
+        "x": 212,
+        "y": 558,
+        "scaleX": 0.8,
+        "scaleY": 0.8,
+        "rotation": 0,
+        "opacity": 0.45,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 10,
+        "visible": true
+      },
+      {
+        "id": "shadow.orange",
+        "label": "橙子底部柔和接触阴影",
+        "assetId": "studio.shadow",
+        "x": 507,
+        "y": 554,
+        "scaleX": 0.9,
+        "scaleY": 0.9,
+        "rotation": 0,
+        "opacity": 0.42,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 10,
+        "visible": true
+      },
+      {
+        "id": "object.vase.ceramic",
+        "label": "青蓝色釉陶瓷花瓶",
+        "assetId": "learn.r03.097cfbf071e3.object",
+        "x": 201,
+        "y": 30,
+        "scaleX": 1.55,
+        "scaleY": 1.55,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 20,
+        "visible": true
+      },
+      {
+        "id": "object.orange.half",
+        "label": "横切橙子半",
+        "assetId": "learn.r01.c6657129fc5c.object",
+        "x": 500,
+        "y": 314,
+        "scaleX": 1.55,
+        "scaleY": 1.55,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0.02,
+        "zIndex": 21,
+        "visible": true
+      }
+    ]
+  },
+  "research": {
+    "searched": false,
+    "status": "disabled",
+    "sources": [],
+    "toolCalls": [],
+    "summary": "",
+    "nativeSearchObserved": false
+  },
+  "usage": {
+    "providerCalls": 1,
+    "prompt_tokens": 1405,
+    "completion_tokens": 4077,
+    "total_tokens": 5482,
+    "reasoning_tokens": 3425,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "bc41c0f3-1bb1-4bae-8816-09291a60f2b1",
+        "model": "deepseek-flash",
+        "elapsedMs": 27816,
+        "prompt_tokens": 1405,
+        "completion_tokens": 4077,
+        "total_tokens": 5482,
+        "reasoning_tokens": 3425,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "vision": {
+    "renderedImageProvided": false
+  },
+  "validation": {
+    "schema": true,
+    "allowlistedAssets": true,
+    "renderer": false,
+    "repairUsed": false
+  },
+  "quality": {
+    "automaticRealismScore": false,
+    "pixelReconstructionMeasured": false,
+    "selection": "candidate_requires_render_and_review"
+  },
+  "rendered": false,
+  "elapsedMs": 27818
+}

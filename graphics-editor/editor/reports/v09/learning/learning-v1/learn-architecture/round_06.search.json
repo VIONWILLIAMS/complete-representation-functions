@@ -1,0 +1,653 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 6,
+  "query": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "checkpoint": {
+    "sessionId": "crf09_0e3e9918-4a7c-4a89-b65f-9def0581418c",
+    "round": 6,
+    "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+    "subtopic": "背景与承托面：桌面、墙面、地面、局部环境",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:51:10.180Z",
+    "runId": "crf07_fb271bf1-2ef9-4675-be7e-5c28c57c04d5",
+    "queries": [
+      "site:pexels.com photo brick wall window shadow sunlight",
+      "site:commons.wikimedia.org brick wall window sunlight shadow file",
+      "site:pexels.com photo pedestrian traffic light pole shadow",
+      "site:commons.wikimedia.org pedestrian signal pole shadow file",
+      "site:pexels.com photo table texture natural light shadow",
+      "site:commons.wikimedia.org concrete wall texture raking light file"
+    ],
+    "requestIds": [
+      "373ebc6a-c6f1-472a-a7b1-dc1cdf706d60"
+    ],
+    "sourceCount": 15,
+    "newSourceCount": 6,
+    "candidateCount": 6,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_d7475e32346f42cbb13ec96811eb4d54",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com photo brick wall window shadow sunlight",
+            "site:commons.wikimedia.org brick wall window sunlight shadow file",
+            "site:pexels.com photo pedestrian traffic light pole shadow",
+            "site:commons.wikimedia.org pedestrian signal pole shadow file",
+            "site:pexels.com photo table texture natural light shadow",
+            "site:commons.wikimedia.org concrete wall texture raking light file"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+          "https://commons.wikimedia.org/wiki/File:Hue_Vietnam_Citadel-of-Hu%E1%BA%BF-11.jpg#1",
+          "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+          "https://www.pexels.com/photo/minimalist-shadow-and-glass-composition-34313659/",
+          "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+          "https://commons.wikimedia.org/wiki/Category:Brick_walls_in_Finland",
+          "https://www.pexels.com/photo/black-and-white-dark-photo-of-a-street-in-city-18971796/",
+          "https://www.pexels.com/fr-fr/photo/mur-en-brique-avec-fenetre-et-ombres-a-new-york-32409122/",
+          "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+          "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+          "https://www.pexels.com/zh-cn/photo/587994/",
+          "https://www.pexels.com/zh-cn/photo/13322184/",
+          "https://www.pexels.com/fr-fr/photo/noir-et-blanc-mur-fenetres-grillage-6490106/",
+          "https://www.pexels.com/photo/brown-brick-building-9100891/",
+          "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+        "title": "Photo by Steffen Rühlmann on Pexels",
+        "snippet": "4242x2828 Aspect Ratio 3 ... Camera X-E5 Focal 56.0mm Aperture ƒ/5.0 ISO 125 Shutter Speed 1/400 sec Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Hue_Vietnam_Citadel-of-Hu%E1%BA%BF-11.jpg#1",
+        "title": "File:Hue Vietnam Citadel-of-Huế-11.jpg - Wikimedia Commons - File:Hue Vietnam Citadel-of-Huế-11.jpg",
+        "snippet": "Hue Vietnam Citadel-of-Huế-11.jpg ... DescriptionHue Vietnam Citadel-of-Huế-11.jpg | English: Hue, Vietnam: Brick wall with round, decorated window in the Imperial palace in Hue ... Brick wall with round, decorated ... |author=CEphoto, Uwe Aranas |permission={{User...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+        "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+        "snippet": "6000x3720 Format 50 ... Appareil photo ILCE-7C Focale 70.0mm Ouverture ƒ/5.0 ISO ... Description # Vue aérienne d'une rue à New York montrant des feux de signalisation et des ombres projetées sur la route.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/minimalist-shadow-and-glass-composition-34313659/",
+        "title": "Photo by Ánh Đặng on Pexels",
+        "snippet": "Use filters Change focus Brighten up Add frames Description # Glass on table with dramatic shadow patterns, creating a minimalist and moody aesthetic. ## More like this Use filters Change focus Brighten up Add frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+        "title": "Photo by Аlex Ugolkov on Pexels",
+        "snippet": "Afterglow ... 2270x4032 Aspect Ratio 1135 ... Focal 6.0mm Aperture ƒ/2.0 ... Taken At Jul 19, 2021 Software VSCO Vladivostok, Primorskiy kray, Russia Description # A shadow cast on a white brick wall creating a silhouette effect during daylight. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Brick_walls_in_Finland",
+        "title": "Category:Brick walls in Finland - Wikimedia Commons",
+        "snippet": "Media in category \"Brick walls in Finland\" The following 28 files are in this category, out of 28 total. ... - Ventilation shadows.jpg 5,504 × 8,256; 22.85 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/black-and-white-dark-photo-of-a-street-in-city-18971796/",
+        "title": "Photo by 棘宇 冷 on Pexels",
+        "snippet": "60.6K views • 197 downloads License Free Dimensions 6000x4000 Aspect Ratio 3:2 Colors Date Nov 2 ... Software Adobe Photoshop CS6 (Windows) Description # A solitary silhouette of a pedestrian casting a long shadow on urban street steps in a cityscape. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/mur-en-brique-avec-fenetre-et-ombres-a-new-york-32409122/",
+        "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+        "snippet": "Willian Justen de Vasconcellos ... New York, New York, United States Description # Un mur en brique baigné de soleil avec une fenêtre projetant des ombres complexes, capturant l'essence de l'urbain à New York.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+        "title": "File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg - Wikimedia Commons - File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg",
+        "snippet": "Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg ... An eight-storey part of the Wall with characteristic patterned brick, small kitchen and bathroom windows, and bright ventilators. ... part of the Wall with characteristic patterned brick...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+        "title": "Photo by Clarissa Schwarz on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/587994/",
+        "title": "Pexels SevenStorm JUHASZIMRUS图片",
+        "snippet": "尺寸 3648x2736 宽高比 4:3 颜色 medium ... 软件 DSC-HX60 v2.10 描述 # 低角度视角下的砖石建筑，带有阳台和窗户，投射出戏剧性的阴影。 ### 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/13322184/",
+        "title": "Pexels Mabel Amber图片",
+        "snippet": "描述 低角度视图，展示六边形窗户在砖墙上的影子，树木的阴影投射在表面上。 更多相似内容 查找适合下一个创意项目的理想图片。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/noir-et-blanc-mur-fenetres-grillage-6490106/",
+        "title": "Photo de Sonny Sixteen sur Pexels",
+        "snippet": "4928x3080 Format 8:5 Couleurs Date Jan 13, 2021 ... Description # Image en noir et blanc d'un mur de briques avec des fenêtres couvertes de treillis métallique projetant des ombres. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/brown-brick-building-9100891/",
+        "title": "Photo by Garrison Gao on Pexels",
+        "snippet": "Date Aug 7, 2021 ... ISO 400 Shutter Speed 1/500 sec ... 2021 Software Capture One 21 Windows Description # A brick building exterior featuring distinctive orange window awnings and glass windows under sunlight. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/",
+        "title": "Photo by Hans Heemsbergen on Pexels",
+        "snippet": "5472x3648 Aspect Ratio 3:2 Colors Date Jun 14 ... 0 Camera DSC-RX100 Focal 37.1mm Aperture ƒ/5.6 ISO 125 Shutter Speed 1/125 sec ... DSC-RX100 v1.10 Haarlem, Noord-Holland, Nederland Description # Sunlit bicycles casting shadows on a brick wall in Haarlem, Netherlands. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "{\"summary\":\"本轮实际搜索到若干可点击的具体照片页，覆盖砖墙+窗影（Pexels、Commons）、行人信号灯（Pexels）及桌面/承托面局部（Pexels）。尚未下载任何图像字节，形态、光照方向与投影锐度仅依据页面标题/元数据，待后续独立视觉核验。Wikimedia Commons 新增一个砖墙+装饰窗的具体文件页，但无行人信号灯立柱连接的特写。\",\"features\":[\"Pexels 36450164：红砖墙近景，复古窗投射阴影，页面标题明确含 casting shadows\",\"Pexels 32409122：纽约砖墙被阳光照射，窗投下复杂阴影，适合观察窗框边缘与墙面颗粒在硬光下的关系\",\"Pexels 8806467：白砖墙上的行人剪影投影，可用于提取投影硬边与砖墙纹理保留\",\"Pexels 19901332：阿姆斯特丹红色行人信号灯带倒计时，页面仅描述灯头，立柱连接与投影未在文本中确认\",\"Pexels 34313659：桌面上的玻璃与戏剧性阴影，适合承托面/接触阴影的局部参考\",\"Commons Hue Vietnam Citadel-of-Huế-11：砖墙与圆形装饰窗，Imperial palace 内，适合提取窗框边缘与砖墙颗粒\"],\"selectionCriteria\":[\"优先选页面描述明确含 shadow/casting shadows 且主体为砖墙+窗框或行人信号灯的画面\",\"承托面候选需含明确接触阴影（桌面物体投影）\",\"信号灯候选需后续字节核验立柱与灯头连接是否可辨、投影方向是否落在路面或墙面\",\"砖墙纹理需在阴影区仍保留可提取的颗粒与砖缝对比\"],\"uncertainties\":[\"Pexels 页面仅标 Free，具体 CC 类型未在文本中给出，待核验\",\"Pexels 32409122 的窗影“complex”但硬边锐度与光照方向未验证\",\"Pexels 19901332 为信号灯正面描述，立柱连接细节与投影是否存在未知\",\"Pexels 34313659 页面仅一句描述，作者与许可证信息在返回文本中缺失\",\"Commons Hue 文件许可证类型未在返回文本中显示，需打开页面核验\"],\"nextFocus\":\"对 Pexels 32409122、36450164 做字节级亮暗交界与砖墙颗粒核验；寻找行人信号灯立柱连接+强投影的更具体 Commons/Pexels 照片；补充桌面/墙面承托面接触阴影的候选并核验许可证。\"}",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "snippet": "4242x2828 Aspect Ratio 3 ... Camera X-E5 Focal 56.0mm Aperture ƒ/5.0 ISO 125 Shutter Speed 1/400 sec Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Hue_Vietnam_Citadel-of-Hu%E1%BA%BF-11.jpg#1",
+      "title": "File:Hue Vietnam Citadel-of-Huế-11.jpg - Wikimedia Commons - File:Hue Vietnam Citadel-of-Huế-11.jpg",
+      "snippet": "Hue Vietnam Citadel-of-Huế-11.jpg ... DescriptionHue Vietnam Citadel-of-Huế-11.jpg | English: Hue, Vietnam: Brick wall with round, decorated window in the Imperial palace in Hue ... Brick wall with round, decorated ... |author=CEphoto, Uwe Aranas |permission={{User...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "snippet": "6000x3720 Format 50 ... Appareil photo ILCE-7C Focale 70.0mm Ouverture ƒ/5.0 ISO ... Description # Vue aérienne d'une rue à New York montrant des feux de signalisation et des ombres projetées sur la route.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/minimalist-shadow-and-glass-composition-34313659/",
+      "title": "Photo by Ánh Đặng on Pexels",
+      "snippet": "Use filters Change focus Brighten up Add frames Description # Glass on table with dramatic shadow patterns, creating a minimalist and moody aesthetic. ## More like this Use filters Change focus Brighten up Add frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "snippet": "Afterglow ... 2270x4032 Aspect Ratio 1135 ... Focal 6.0mm Aperture ƒ/2.0 ... Taken At Jul 19, 2021 Software VSCO Vladivostok, Primorskiy kray, Russia Description # A shadow cast on a white brick wall creating a silhouette effect during daylight. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Brick_walls_in_Finland",
+      "title": "Category:Brick walls in Finland - Wikimedia Commons",
+      "snippet": "Media in category \"Brick walls in Finland\" The following 28 files are in this category, out of 28 total. ... - Ventilation shadows.jpg 5,504 × 8,256; 22.85 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/black-and-white-dark-photo-of-a-street-in-city-18971796/",
+      "title": "Photo by 棘宇 冷 on Pexels",
+      "snippet": "60.6K views • 197 downloads License Free Dimensions 6000x4000 Aspect Ratio 3:2 Colors Date Nov 2 ... Software Adobe Photoshop CS6 (Windows) Description # A solitary silhouette of a pedestrian casting a long shadow on urban street steps in a cityscape. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/mur-en-brique-avec-fenetre-et-ombres-a-new-york-32409122/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "snippet": "Willian Justen de Vasconcellos ... New York, New York, United States Description # Un mur en brique baigné de soleil avec une fenêtre projetant des ombres complexes, capturant l'essence de l'urbain à New York.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+      "title": "File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg - Wikimedia Commons - File:Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg",
+      "snippet": "Byker Wall from Dalton Street - geograph.org.uk - 1776778.jpg ... An eight-storey part of the Wall with characteristic patterned brick, small kitchen and bathroom windows, and bright ventilators. ... part of the Wall with characteristic patterned brick...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/587994/",
+      "title": "Pexels SevenStorm JUHASZIMRUS图片",
+      "snippet": "尺寸 3648x2736 宽高比 4:3 颜色 medium ... 软件 DSC-HX60 v2.10 描述 # 低角度视角下的砖石建筑，带有阳台和窗户，投射出戏剧性的阴影。 ### 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/13322184/",
+      "title": "Pexels Mabel Amber图片",
+      "snippet": "描述 低角度视图，展示六边形窗户在砖墙上的影子，树木的阴影投射在表面上。 更多相似内容 查找适合下一个创意项目的理想图片。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/noir-et-blanc-mur-fenetres-grillage-6490106/",
+      "title": "Photo de Sonny Sixteen sur Pexels",
+      "snippet": "4928x3080 Format 8:5 Couleurs Date Jan 13, 2021 ... Description # Image en noir et blanc d'un mur de briques avec des fenêtres couvertes de treillis métallique projetant des ombres. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/brown-brick-building-9100891/",
+      "title": "Photo by Garrison Gao on Pexels",
+      "snippet": "Date Aug 7, 2021 ... ISO 400 Shutter Speed 1/500 sec ... 2021 Software Capture One 21 Windows Description # A brick building exterior featuring distinctive orange window awnings and glass windows under sunlight. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/",
+      "title": "Photo by Hans Heemsbergen on Pexels",
+      "snippet": "5472x3648 Aspect Ratio 3:2 Colors Date Jun 14 ... 0 Camera DSC-RX100 Focal 37.1mm Aperture ƒ/5.6 ISO 125 Shutter Speed 1/125 sec ... DSC-RX100 v1.10 Haarlem, Noord-Holland, Nederland Description # Sunlit bicycles casting shadows on a brick wall in Haarlem, Netherlands. ## More like this",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-shadow-and-glass-composition-34313659/",
+      "title": "Photo by Ánh Đặng on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/black-and-white-dark-photo-of-a-street-in-city-18971796/",
+      "title": "Photo by 棘宇 冷 on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mur-en-brique-avec-fenetre-et-ombres-a-new-york-32409122/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/587994/",
+      "title": "Pexels SevenStorm JUHASZIMRUS图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/noir-et-blanc-mur-fenetres-grillage-6490106/",
+      "title": "Photo de Sonny Sixteen sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/brown-brick-building-9100891/",
+      "title": "Photo by Garrison Gao on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 14696,
+        "sha256": "baa97d912d15f8be1294c39a10c8175ad001a3d1df33ad0d72218047fe5dcc34"
+      },
+      "imageUrl": "https://images.pexels.com/photos/34313659/pexels-photo-34313659.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-shadow-and-glass-composition-34313659/",
+      "title": "Photo by Ánh Đặng on Pexels",
+      "sha256": "baa97d912d15f8be1294c39a10c8175ad001a3d1df33ad0d72218047fe5dcc34",
+      "bytes": 14696,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 15692,
+        "sha256": "cb0dc56ef755e236d2d66fc874438af4eab0244a44c52308c13383474280ac65"
+      },
+      "imageUrl": "https://images.pexels.com/photos/18971796/pexels-photo-18971796.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-white-dark-photo-of-a-street-in-city-18971796/",
+      "title": "Photo by 棘宇 冷 on Pexels",
+      "sha256": "cb0dc56ef755e236d2d66fc874438af4eab0244a44c52308c13383474280ac65",
+      "bytes": 15692,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 134610,
+        "sha256": "dc983c723e5cec4ef1c072e1a84ff5402ef2ba81100f981d50151f1326c9e45c"
+      },
+      "imageUrl": "https://images.pexels.com/photos/32409122/pexels-photo-32409122.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mur-en-brique-avec-fenetre-et-ombres-a-new-york-32409122/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "sha256": "dc983c723e5cec4ef1c072e1a84ff5402ef2ba81100f981d50151f1326c9e45c",
+      "bytes": 134610,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1171
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 79046,
+        "sha256": "1e611a300c1aa9bc29515167051337f9f461bdb51eed03099bea6b20963fceb5"
+      },
+      "imageUrl": "https://images.pexels.com/photos/587994/pexels-photo-587994.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/587994/",
+      "title": "Pexels SevenStorm JUHASZIMRUS图片",
+      "sha256": "1e611a300c1aa9bc29515167051337f9f461bdb51eed03099bea6b20963fceb5",
+      "bytes": 79046,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/34313659/pexels-photo-34313659.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-shadow-and-glass-composition-34313659/",
+      "title": "Photo by Ánh Đặng on Pexels",
+      "sha256": "baa97d912d15f8be1294c39a10c8175ad001a3d1df33ad0d72218047fe5dcc34",
+      "bytes": 14696,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1024,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/18971796/pexels-photo-18971796.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-white-dark-photo-of-a-street-in-city-18971796/",
+      "title": "Photo by 棘宇 冷 on Pexels",
+      "sha256": "cb0dc56ef755e236d2d66fc874438af4eab0244a44c52308c13383474280ac65",
+      "bytes": 15692,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32409122/pexels-photo-32409122.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mur-en-brique-avec-fenetre-et-ombres-a-new-york-32409122/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "sha256": "dc983c723e5cec4ef1c072e1a84ff5402ef2ba81100f981d50151f1326c9e45c",
+      "bytes": 134610,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1171,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/587994/pexels-photo-587994.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/587994/",
+      "title": "Pexels SevenStorm JUHASZIMRUS图片",
+      "sha256": "1e611a300c1aa9bc29515167051337f9f461bdb51eed03099bea6b20963fceb5",
+      "bytes": 79046,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/photo/minimalist-shadow-and-glass-composition-34313659/",
+        "title": "Photo by Ánh Đặng on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/34313659/pexels-photo-34313659.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/34313659/pexels-photo-34313659.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 14696,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1024,
+        "sha256": "baa97d912d15f8be1294c39a10c8175ad001a3d1df33ad0d72218047fe5dcc34"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/black-and-white-dark-photo-of-a-street-in-city-18971796/",
+        "title": "Photo by 棘宇 冷 on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/18971796/pexels-photo-18971796.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/18971796/pexels-photo-18971796.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 15692,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "cb0dc56ef755e236d2d66fc874438af4eab0244a44c52308c13383474280ac65"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/mur-en-brique-avec-fenetre-et-ombres-a-new-york-32409122/",
+        "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/32409122/pexels-photo-32409122.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/32409122/pexels-photo-32409122.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 134610,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1171,
+        "sha256": "dc983c723e5cec4ef1c072e1a84ff5402ef2ba81100f981d50151f1326c9e45c"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/587994/",
+        "title": "Pexels SevenStorm JUHASZIMRUS图片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/587994/pexels-photo-587994.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/587994/pexels-photo-587994.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 79046,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 576,
+        "sha256": "1e611a300c1aa9bc29515167051337f9f461bdb51eed03099bea6b20963fceb5"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/noir-et-blanc-mur-fenetres-grillage-6490106/",
+        "title": "Photo de Sonny Sixteen sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/6490106/pexels-photo-6490106.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/6490106/pexels-photo-6490106.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 93278,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 480,
+        "sha256": "3828bc4d3a60c259ec272876c2952fb8d4e1c3d20f5076c0a2d37771f99958af"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/brown-brick-building-9100891/",
+        "title": "Photo by Garrison Gao on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/9100891/pexels-photo-9100891.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/9100891/pexels-photo-9100891.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 218584,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "efd3b339a5744626e0c2ab71ad84d6fc7fe5f21779bd85c73a06f22f998fa446"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "model_semantic_plan",
+    "summary": "本轮实际搜索到若干可点击的具体照片页，覆盖砖墙+窗影（Pexels、Commons）、行人信号灯（Pexels）及桌面/承托面局部（Pexels）。尚未下载任何图像字节，形态、光照方向与投影锐度仅依据页面标题/元数据，待后续独立视觉核验。Wikimedia Commons 新增一个砖墙+装饰窗的具体文件页，但无行人信号灯立柱连接的特写。",
+    "features": [
+      "Pexels 36450164：红砖墙近景，复古窗投射阴影，页面标题明确含 casting shadows",
+      "Pexels 32409122：纽约砖墙被阳光照射，窗投下复杂阴影，适合观察窗框边缘与墙面颗粒在硬光下的关系",
+      "Pexels 8806467：白砖墙上的行人剪影投影，可用于提取投影硬边与砖墙纹理保留",
+      "Pexels 19901332：阿姆斯特丹红色行人信号灯带倒计时，页面仅描述灯头，立柱连接与投影未在文本中确认",
+      "Pexels 34313659：桌面上的玻璃与戏剧性阴影，适合承托面/接触阴影的局部参考",
+      "Commons Hue Vietnam Citadel-of-Huế-11：砖墙与圆形装饰窗，Imperial palace 内，适合提取窗框边缘与砖墙颗粒"
+    ],
+    "selectionCriteria": [
+      "优先选页面描述明确含 shadow/casting shadows 且主体为砖墙+窗框或行人信号灯的画面",
+      "承托面候选需含明确接触阴影（桌面物体投影）",
+      "信号灯候选需后续字节核验立柱与灯头连接是否可辨、投影方向是否落在路面或墙面",
+      "砖墙纹理需在阴影区仍保留可提取的颗粒与砖缝对比"
+    ],
+    "uncertainties": [
+      "Pexels 页面仅标 Free，具体 CC 类型未在文本中给出，待核验",
+      "Pexels 32409122 的窗影“complex”但硬边锐度与光照方向未验证",
+      "Pexels 19901332 为信号灯正面描述，立柱连接细节与投影是否存在未知",
+      "Pexels 34313659 页面仅一句描述，作者与许可证信息在返回文本中缺失",
+      "Commons Hue 文件许可证类型未在返回文本中显示，需打开页面核验"
+    ],
+    "nextFocus": "对 Pexels 32409122、36450164 做字节级亮暗交界与砖墙颗粒核验；寻找行人信号灯立柱连接+强投影的更具体 Commons/Pexels 照片；补充桌面/墙面承托面接触阴影的候选并核验许可证。",
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 9901,
+    "completion_tokens": 614,
+    "total_tokens": 10515,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "373ebc6a-c6f1-472a-a7b1-dc1cdf706d60",
+        "model": "deepseek-flash",
+        "elapsedMs": 9579,
+        "prompt_tokens": 9901,
+        "completion_tokens": 614,
+        "total_tokens": 10515,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 27701,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 14696,
+        "sha256": "baa97d912d15f8be1294c39a10c8175ad001a3d1df33ad0d72218047fe5dcc34"
+      },
+      "imageUrl": "https://images.pexels.com/photos/34313659/pexels-photo-34313659.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-shadow-and-glass-composition-34313659/",
+      "title": "Photo by Ánh Đặng on Pexels",
+      "sha256": "baa97d912d15f8be1294c39a10c8175ad001a3d1df33ad0d72218047fe5dcc34",
+      "bytes": 14696,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1024,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/baa97d912d15f8be1294c39a10c8175ad001a3d1df33ad0d72218047fe5dcc34.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 15692,
+        "sha256": "cb0dc56ef755e236d2d66fc874438af4eab0244a44c52308c13383474280ac65"
+      },
+      "imageUrl": "https://images.pexels.com/photos/18971796/pexels-photo-18971796.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-white-dark-photo-of-a-street-in-city-18971796/",
+      "title": "Photo by 棘宇 冷 on Pexels",
+      "sha256": "cb0dc56ef755e236d2d66fc874438af4eab0244a44c52308c13383474280ac65",
+      "bytes": 15692,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/cb0dc56ef755e236d2d66fc874438af4eab0244a44c52308c13383474280ac65.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 134610,
+        "sha256": "dc983c723e5cec4ef1c072e1a84ff5402ef2ba81100f981d50151f1326c9e45c"
+      },
+      "imageUrl": "https://images.pexels.com/photos/32409122/pexels-photo-32409122.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mur-en-brique-avec-fenetre-et-ombres-a-new-york-32409122/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "sha256": "dc983c723e5cec4ef1c072e1a84ff5402ef2ba81100f981d50151f1326c9e45c",
+      "bytes": 134610,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1171,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/dc983c723e5cec4ef1c072e1a84ff5402ef2ba81100f981d50151f1326c9e45c.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 79046,
+        "sha256": "1e611a300c1aa9bc29515167051337f9f461bdb51eed03099bea6b20963fceb5"
+      },
+      "imageUrl": "https://images.pexels.com/photos/587994/pexels-photo-587994.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/587994/",
+      "title": "Pexels SevenStorm JUHASZIMRUS图片",
+      "sha256": "1e611a300c1aa9bc29515167051337f9f461bdb51eed03099bea6b20963fceb5",
+      "bytes": 79046,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/1e611a300c1aa9bc29515167051337f9f461bdb51eed03099bea6b20963fceb5.webp"
+    }
+  ]
+}

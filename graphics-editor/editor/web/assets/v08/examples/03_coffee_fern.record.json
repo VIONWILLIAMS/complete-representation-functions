@@ -1,0 +1,214 @@
+{
+  "id": "03_coffee_fern",
+  "title": "咖啡与蕨叶",
+  "scope": "new_composition_of_observed_objects",
+  "prompt": "生成一张960×640自然光俯拍静物照片：左侧一只完整白色咖啡杯，右上角一枝蕨叶伸入画面，右下有一片橙子切面形成色彩点缀。用已学独立物体高斯函数，不能使用完整照片矩形贴图。咖啡图本身是俯拍视角，应保持原姿态；叶片不能穿过杯体；不要把茎插进咖啡。杯体约画面宽30%，橙片约15%，以背景留白维持安静构图。保证物体有合理尺度和柔和贴近的投影。叶片自带景深虚化，避免过度放大。",
+  "complete": true,
+  "assetIds": [
+    "studio.paper",
+    "studio.shadow",
+    "learn.r04.c2f1cb0642a5.object",
+    "learn.r05.67fd559a57f5.object",
+    "learn.r01.c6657129fc5c.object"
+  ],
+  "initial": {
+    "providerCalls": 1,
+    "prompt_tokens": 1575,
+    "completion_tokens": 6500,
+    "total_tokens": 8075,
+    "reasoning_tokens": 5804,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "1836fba7-82d5-4cbf-b56c-b2f98bd8f51b",
+        "model": "deepseek-flash",
+        "elapsedMs": 39988,
+        "prompt_tokens": 1575,
+        "completion_tokens": 6500,
+        "total_tokens": 8075,
+        "reasoning_tokens": 5804,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "critique": {
+    "providerCalls": 1,
+    "prompt_tokens": 2478,
+    "completion_tokens": 4846,
+    "total_tokens": 7324,
+    "reasoning_tokens": 4064,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "19714d38-834d-4b4a-8dbd-216b7c326cce",
+        "model": "deepseek-flash",
+        "elapsedMs": 35227,
+        "prompt_tokens": 2478,
+        "completion_tokens": 4846,
+        "total_tokens": 7324,
+        "reasoning_tokens": 4064,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": true,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "candidate": {
+    "providerCalls": 1,
+    "prompt_tokens": 3106,
+    "completion_tokens": 3986,
+    "total_tokens": 7092,
+    "reasoning_tokens": 3203,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "d471553b-64bd-4cd5-bbf3-d39e9216f97f",
+        "model": "deepseek-flash",
+        "elapsedMs": 25452,
+        "prompt_tokens": 3106,
+        "completion_tokens": 3986,
+        "total_tokens": 7092,
+        "reasoning_tokens": 3203,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": true,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "actualRenders": [
+    {
+      "schema": "crf.actual_render.v0.8",
+      "sceneId": "still_life_cup_fern_orange_960x640",
+      "width": 960,
+      "height": 640,
+      "objectCount": 5,
+      "gaussianCount": 18481,
+      "elapsedMs": 108.82570000000123,
+      "rgbaSHA256": "cfd8894ee8763c181ad5ebe9a03644b1070e5a29c0ff5362be25ecea3bc5d5ea",
+      "pngSHA256": "fdfdb8497696cdaf6582f6635a4297a70e5b5e08848ded855fcb66359e66ebd2",
+      "engine": "web/crf-gaussian08.js",
+      "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+      "sourceRasterReadByRenderer": false,
+      "assetIds": [
+        "studio.shadow",
+        "learn.r05.67fd559a57f5.object",
+        "learn.r04.c2f1cb0642a5.object",
+        "learn.r01.c6657129fc5c.object"
+      ],
+      "metrics": null
+    },
+    {
+      "schema": "crf.actual_render.v0.8",
+      "sceneId": "still_life_cup_fern_orange_960x640",
+      "width": 960,
+      "height": 640,
+      "objectCount": 5,
+      "gaussianCount": 18481,
+      "elapsedMs": 135.75281899998663,
+      "rgbaSHA256": "c7ded024bf4bc69c892e5bf28da2ea3649e9ad4370c6bda13eb39b303f2ffa3d",
+      "pngSHA256": "9ec2a60304e96a4dfba3a190f6c037d8381b77f7e34c87bd7dad45c064ca668f",
+      "engine": "web/crf-gaussian08.js",
+      "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+      "sourceRasterReadByRenderer": false,
+      "assetIds": [
+        "studio.shadow",
+        "learn.r05.67fd559a57f5.object",
+        "learn.r04.c2f1cb0642a5.object",
+        "learn.r01.c6657129fc5c.object"
+      ],
+      "metrics": null
+    },
+    {
+      "schema": "crf.actual_render.v0.8",
+      "sceneId": "still_life_cup_fern_960x640",
+      "width": 960,
+      "height": 640,
+      "objectCount": 5,
+      "gaussianCount": 14045,
+      "elapsedMs": 106.19221600001038,
+      "rgbaSHA256": "34be0dce471754fc7528762c286ce2c30d9ba515c9ffb79fcedff3de6a59d98d",
+      "pngSHA256": "3b3adc8e06b4fb4b6e1a558521d5fc7d60b3bc45270bc64caae23c72a495a795",
+      "engine": "web/crf-gaussian08.js",
+      "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+      "sourceRasterReadByRenderer": false,
+      "assetIds": [
+        "studio.shadow",
+        "learn.r05.67fd559a57f5.object",
+        "learn.r04.c2f1cb0642a5.object",
+        "learn.r01.c6657129fc5c.object"
+      ],
+      "metrics": null
+    }
+  ],
+  "selection": {
+    "chosen": "polish",
+    "status": "visually_reviewed",
+    "reviewer": "assistant visual inspection",
+    "reason": "移除了与咖啡视角不一致的橙片；保留杯体和入画蕨叶。叶片虚化来自观测，未重新推断景深。",
+    "photorealismIndependentlyProven": false,
+    "referenceReconstructionScoreUsedAsGenerationScore": false,
+    "finalAssetStateRerendered": true
+  },
+  "modelWeightsUpdated": false,
+  "polish": {
+    "usage": {
+      "providerCalls": 1,
+      "prompt_tokens": 2717,
+      "completion_tokens": 6583,
+      "total_tokens": 9300,
+      "reasoning_tokens": 5796,
+      "requests": [
+        {
+          "phase": "gaussian_compose",
+          "requestId": "2cd7f48c-f447-48dd-bbf7-00572b8f08ed",
+          "model": "deepseek-flash",
+          "elapsedMs": 38889,
+          "prompt_tokens": 2717,
+          "completion_tokens": 6583,
+          "total_tokens": 9300,
+          "reasoning_tokens": 5796,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop"
+        }
+      ]
+    },
+    "feedback": "实际图中右侧橙片是前视切面，杯子是俯视/斜俯视，视角不统一。当前二维表示不能重建橙片新视角，故删除或隐藏橙片与它的阴影，以一只咖啡杯和右上角蕨叶构成更一致的照片构图。杯体覆盖已修复，当前尺寸261×226；控制杯子约画面宽30–35%，保持有留白但不太空，叶片可以自然裁出右上边缘，别显示悬空叶柄。不宣称解决了物理重新打光。",
+    "source": "independent visual review and alpha-derived support hints",
+    "selection": "visually_reviewed"
+  },
+  "finalRender": {
+    "schema": "crf.actual_render.v0.8",
+    "sceneId": "still_life_cup_fern_960x640",
+    "width": 960,
+    "height": 640,
+    "objectCount": 5,
+    "gaussianCount": 14045,
+    "elapsedMs": 123.05641100000001,
+    "rgbaSHA256": "34be0dce471754fc7528762c286ce2c30d9ba515c9ffb79fcedff3de6a59d98d",
+    "pngSHA256": "3b3adc8e06b4fb4b6e1a558521d5fc7d60b3bc45270bc64caae23c72a495a795",
+    "engine": "web/crf-gaussian08.js",
+    "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+    "sourceRasterReadByRenderer": false,
+    "assetIds": [
+      "studio.shadow",
+      "learn.r05.67fd559a57f5.object",
+      "learn.r04.c2f1cb0642a5.object",
+      "learn.r01.c6657129fc5c.object"
+    ],
+    "metrics": null,
+    "assetSHA256": {
+      "learn.r01.c6657129fc5c.object": "dc72fa0cc485de435d4404b576747c06beb197dcdffe7fc10429acfe3df2ee1b",
+      "learn.r04.c2f1cb0642a5.object": "53f6c602426f509733be6c5b9dca4812f63b49827f2c6eb0190fd123ba869c12",
+      "learn.r05.67fd559a57f5.object": "00392034133617e1cc3adc9ae0544934c32e74d53287e54641a96ea210529108",
+      "studio.shadow": "ce0236e339c11a232105b2aa20c87c90508ce9f71a5571c46099cff5a1177e42"
+    },
+    "sceneSHA256": "d0bd32d5b184dd8da41162fdbfd600cc3975847a7e2e5a935ff3cf70a66a782a"
+  }
+}

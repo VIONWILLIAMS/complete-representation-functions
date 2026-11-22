@@ -1,0 +1,642 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 5,
+  "query": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "checkpoint": {
+    "sessionId": "crf09_0e3e9918-4a7c-4a89-b65f-9def0581418c",
+    "round": 5,
+    "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+    "subtopic": "强光照明：明确投影、亮暗交界、保留纹理",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:49:49.519Z",
+    "runId": "crf07_d44f1adf-b7c5-4aaf-96f6-fc6815638dbd",
+    "queries": [
+      "site:commons.wikimedia.org \"strong sunlight\" \"brick wall\" window shadow file",
+      "site:pexels.com photo \"pedestrian traffic light\" pole sunlight shadow",
+      "site:commons.wikimedia.org file \"brick wall\" \"window\" \"harsh sunlight\" shadow",
+      "site:pexels.com photo \"brick wall\" window sunlight shadow texture",
+      "site:pexels.com photo \"pedestrian signal\" pole \"hard shadow\"",
+      "site:commons.wikimedia.org file \"pedestrian signal\" \"traffic light\" pole shadow"
+    ],
+    "requestIds": [
+      "74f19d5d-defe-4eb1-aca7-6168378ae889"
+    ],
+    "sourceCount": 14,
+    "newSourceCount": 9,
+    "candidateCount": 9,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_fe0dd4a1980241748645085f2580c363",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"strong sunlight\" \"brick wall\" window shadow file",
+            "site:pexels.com photo \"pedestrian traffic light\" pole sunlight shadow",
+            "site:commons.wikimedia.org file \"brick wall\" \"window\" \"harsh sunlight\" shadow",
+            "site:pexels.com photo \"brick wall\" window sunlight shadow texture",
+            "site:pexels.com photo \"pedestrian signal\" pole \"hard shadow\"",
+            "site:commons.wikimedia.org file \"pedestrian signal\" \"traffic light\" pole shadow"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+          "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+          "https://www.pexels.com/zh-cn/photo/37769093/",
+          "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+          "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+          "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+          "https://www.pexels.com/zh-tw/photo/7891699/",
+          "https://www.pexels.com/photo/sculpture-in-dramatic-light-against-brick-wall-32080142/",
+          "https://www.pexels.com/photo/a-light-casting-a-shadow-of-lines-on-a-brown-brick-wall-9843688/",
+          "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/",
+          "https://www.pexels.com/photo/aged-brick-wall-with-arched-windows-and-opening-38261639/",
+          "https://www.pexels.com/photo/rustic-brick-wall-with-iron-barred-window-38334778/",
+          "https://www.pexels.com/photo/an-old-brick-wall-with-vines-growing-around-it-28242865/",
+          "https://www.pexels.com/photo/red-brick-wall-texture-for-urban-design-33654366/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+        "title": "Photo by Clarissa Schwarz on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+        "title": "Photo by Steffen Rühlmann on Pexels",
+        "snippet": "4242x2828 Aspect Ratio 3:2 Colors Date Mar 6 ... Camera X-E5 Focal 56.0mm ... Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/37769093/",
+        "title": "Pexels Aashish Tamang图片",
+        "snippet": "May 26, 2026 软件 Adobe Lightroom 11.3.3 (Android) 描述 # 一名行人独自走过错综复杂的架空电线，电线在阳光照耀的街道上投下阴影。 ### 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+        "title": "Photo by Аlex Ugolkov on Pexels",
+        "snippet": "Afterglow Street ... 2270x4032 Aspect Ratio 1135 ... Focal 6.0mm Aperture ƒ/2.0 ... Taken At Jul 19, 2021 Software VSCO Vladivostok, Primorskiy kray, Russia Description # A shadow cast on a white brick wall creating a silhouette effect during daylight. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+        "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+        "snippet": "Appareil photo ILCE-7C Focale 70.0mm Ouverture ƒ/5.0 ISO ... New York, New York, United States Description # Vue aérienne d'une rue à New York montrant des feux de signalisation et des ombres projetées sur la route.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+        "title": "Photo by Müca 🇩🇪 on Pexels",
+        "snippet": "Dimensions 3984x2656 Aspect Ratio 3:2 Colors Date Mar 7 ... 4 Camera Canon EOS 250D Focal 105.0mm Aperture ƒ/2.8 ISO 250 Shutter Speed 1/1250 sec ... 2026 Software Snapseed 2.0 Description # Rustic brick wall with an aged window, showcasing urban decay and architectural texture. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/7891699/",
+        "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+        "snippet": "5069x3378 色彩 ... 焦點 56.0mm 光圈 ƒ/1.4 ISO ... 說明 # 交通燈顯示行人和自行車信號，背景是阿布達比的天際線。 ### 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/sculpture-in-dramatic-light-against-brick-wall-32080142/",
+        "title": "Photo by Milena Matias on Pexels",
+        "snippet": "Choose your language: Afterglow Street Festive Summer Description # Intricate sculpture in warm sunlight, casting shadows on a rustic brick wall. ## More like this Afterglow Street Festive Summer",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/a-light-casting-a-shadow-of-lines-on-a-brown-brick-wall-9843688/",
+        "title": "Photo by Jan van der Wolf on Pexels",
+        "snippet": "5927x3951 ... Jun 19, 2016 Software Adobe Photoshop CC 2015.5 (Windows) Description # Photo of a brick wall with interesting shadow patterns from stairs. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/",
+        "title": "Photo by Hans Heemsbergen on Pexels",
+        "snippet": "5472x3648 Aspect Ratio 3:2 Colors Date Jun 14 ... 0 Camera DSC-RX100 Focal 37.1mm Aperture ƒ/5.6 ISO 125 Shutter Speed 1/125 sec ... DSC-RX100 v1.10 Haarlem, Noord-Holland, Nederland Description # Sunlit bicycles casting shadows on a brick wall in Haarlem, Netherlands. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/aged-brick-wall-with-arched-windows-and-opening-38261639/",
+        "title": "Photo by Shubhra Dhar on Pexels",
+        "snippet": "Dimensions 3984x2656 Aspect Ratio 3:2 Colors Date Jun 24 ... 6 Views 1.3K ... ISO 200 ... Software Snapseed 2.0 Description # Rustic aged brick wall with arched windows and opening, revealing greenery outside. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/rustic-brick-wall-with-iron-barred-window-38334778/",
+        "title": "Photo by Shaqeeb Al Hasan on Pexels",
+        "snippet": "Dimensions 4000x6000 Aspect Ratio 2:3 Colors Date Jun 29 ... Ver.1.01 Sonargaon, Dhaka Division, Bangladesh Description # An aged brick wall with an iron-barred window in Sonargaon, Bangladesh. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/an-old-brick-wall-with-vines-growing-around-it-28242865/",
+        "title": "Photo by Pratik Patil on Pexels",
+        "snippet": "##### Choose your language:  Add filters, effects  Make presentations  Create photo collages  Add custom frames  License  Free  Dimensions  4000x6000  Aspect Ratio  2:3  Colors  Date  Sep 5, 2024  Dow",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/red-brick-wall-texture-for-urban-design-33654366/",
+        "title": "Photo by Engin Akyurt on Pexels",
+        "snippet": "##### Choose your language:  Use filters  Change focus  Brighten up  Add frames  License  Free  Dimensions  7826x5870  Aspect Ratio  3913:2935  Colors  Date  Aug 28, 2025  Downloads  321  Views  42.5K",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮检索得到的 Pexels 照片页中，能同时对应“强光、明确投影、砖墙/窗框纹理”的候选很少；行人信号灯与立柱连接且带强投影的具体照片未在结果中出现。以下为可用的实际来源，但均未下载，形态与光照判断仅依据页面标题/描述/元数据，待字节核验。\n\n### 候选来源\n\n1. **Pexels — 红砖墙与复古窗，窗影投射**  \n   URL: https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/  \n   页面描述为“Close-up of a red brick wall featuring a vintage window casting shadows”。可对应“墙面颗粒 + 窗框 + 明确投影”的组合；强光方向与亮暗交界需图片字节确认。作者 Steffen Rühlmann，许可证页面标 Free，具体 CC 类型待核验。\n\n2. **Pexels — 老旧砖墙与旧窗，建筑纹理**  \n   URL: https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/  \n   页面描述为“Rustic brick wall with an aged window, showcasing urban decay and architectural texture”。适合提取窗框边缘与砖墙颗粒，但“强光照明”在描述中未明示，需图像验证是否为硬光。作者 Müca 🇩🇪，许可证待核验。\n\n3. **Pexels — 白砖墙上的行人投影**  \n   URL: https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/  \n   描述为“A shadow cast on a white brick wall creating a silhouette effect during daylight”。这是明确的“强光投影 + 砖墙”实例，但缺少窗框或信号灯立柱；可用于研究投影边缘与墙面纹理保留。作者 Аlex Ugolkov，许可证待核验。\n\n4. **Pexels — 砖墙上的楼梯投影线条**  \n   URL: https://www.pexels.com/photo/a-light-casting-a-shadow-of-lines-on-a-brown-brick-wall-9843688/  \n   描述为“brick wall with interesting shadow patterns from stairs”。投影为硬边线状，适合观察亮暗交界与砖缝颗粒的互动；无窗框/信号灯。作者 Jan van der Wolf，许可证待核验。\n\n5. **Pexels — 纽约街道行人信号灯与投影**  \n   URL: https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/  \n   描述为“Vue aérienne d'une rue à New York montrant des feux de signalisation et des ombres projetées sur la route”。这是本轮唯一同时含“信号灯”和“投影”的页面，但为俯视街道，信号灯与立柱连接细节可能不突出；需图像字节判断是否可提取。作者 Willian Justen de Vasconcellos，许可证待核验。\n\n### 研究建议\n\n- 优先用第 1、2 张验证“窗框边缘 + 砖墙颗粒 + 硬光投影”是否在同一画面中形成可拟合的亮度阶跃；第 3、4 张可辅助确定投影边界函数（硬边/半影比例）。\n- 第 5 张作为信号灯/立柱的补充参考，但若图片中信号灯过小或俯视角度下立柱连接不可辨，则不应作为“立柱连接”主参考。\n- 所有来源许可证未在页面文本中明确到 CC 类型，引用前需打开页面核验；不得把 Pexels “Free” 直接等同于 CC BY/CC0。\n\n### JSON 语义摘要\n\n```json\n{\n  \"summary\": \"本轮实际检索以 Pexels 具体照片页为主，获得 5 个可点击来源：其中 2 个含砖墙+窗框+投影描述，2 个含砖墙+硬投影，1 个含街道信号灯+投影但俯视角度可能不适合立柱连接细节；Wikimedia Commons 本轮未获得可确认的新文件详情页。所有图像未下载，形态与光照仅来自页面描述/元数据。\",\n  \"features\": [\n    \"红砖墙表面颗粒与砖缝在硬光下的明暗对比\",\n    \"复古窗框在砖墙上投射的硬边阴影\",\n    \"白砖墙上的行人剪影投影边缘\",\n    \"楼梯投影在砖墙上的线状硬边阴影\",\n    \"街道行人信号灯及其路面投影（俯视视角）\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择页面描述明确含 shadow/casting shadows 且主体为砖墙或窗框的图片\",\n    \"信号灯类候选需确认立柱与灯头连接在画面中可辨、投影方向明确\",\n    \"后续字节核验时检查直方图是否有明显亮暗交界、砖墙纹理在阴影区是否保留\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 页面仅标 Free，具体 CC 许可证类型待核验\",\n    \"窗框投影照片中强光方向与亮暗交界锐度未验证\",\n    \"信号灯照片的立柱连接细节可能因俯视角度不可用\",\n    \"未获得 Wikimedia Commons CC0/CC BY 新文件详情页\"\n  ],\n  \"nextFocus\": \"下一轮补齐 Commons CC0/CC BY 具体文件页（砖墙窗框强光、行人信号灯立柱连接），并对本轮候选做字节级光照方向与投影边缘验证\"\n}\n```",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "snippet": "4242x2828 Aspect Ratio 3:2 Colors Date Mar 6 ... Camera X-E5 Focal 56.0mm ... Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/37769093/",
+      "title": "Pexels Aashish Tamang图片",
+      "snippet": "May 26, 2026 软件 Adobe Lightroom 11.3.3 (Android) 描述 # 一名行人独自走过错综复杂的架空电线，电线在阳光照耀的街道上投下阴影。 ### 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "snippet": "Afterglow Street ... 2270x4032 Aspect Ratio 1135 ... Focal 6.0mm Aperture ƒ/2.0 ... Taken At Jul 19, 2021 Software VSCO Vladivostok, Primorskiy kray, Russia Description # A shadow cast on a white brick wall creating a silhouette effect during daylight. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "snippet": "Appareil photo ILCE-7C Focale 70.0mm Ouverture ƒ/5.0 ISO ... New York, New York, United States Description # Vue aérienne d'une rue à New York montrant des feux de signalisation et des ombres projetées sur la route.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+      "title": "Photo by Müca 🇩🇪 on Pexels",
+      "snippet": "Dimensions 3984x2656 Aspect Ratio 3:2 Colors Date Mar 7 ... 4 Camera Canon EOS 250D Focal 105.0mm Aperture ƒ/2.8 ISO 250 Shutter Speed 1/1250 sec ... 2026 Software Snapseed 2.0 Description # Rustic brick wall with an aged window, showcasing urban decay and architectural texture. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/7891699/",
+      "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+      "snippet": "5069x3378 色彩 ... 焦點 56.0mm 光圈 ƒ/1.4 ISO ... 說明 # 交通燈顯示行人和自行車信號，背景是阿布達比的天際線。 ### 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/sculpture-in-dramatic-light-against-brick-wall-32080142/",
+      "title": "Photo by Milena Matias on Pexels",
+      "snippet": "Choose your language: Afterglow Street Festive Summer Description # Intricate sculpture in warm sunlight, casting shadows on a rustic brick wall. ## More like this Afterglow Street Festive Summer",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/a-light-casting-a-shadow-of-lines-on-a-brown-brick-wall-9843688/",
+      "title": "Photo by Jan van der Wolf on Pexels",
+      "snippet": "5927x3951 ... Jun 19, 2016 Software Adobe Photoshop CC 2015.5 (Windows) Description # Photo of a brick wall with interesting shadow patterns from stairs. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/bicycles-against-brick-wall-in-haarlem-32560936/",
+      "title": "Photo by Hans Heemsbergen on Pexels",
+      "snippet": "5472x3648 Aspect Ratio 3:2 Colors Date Jun 14 ... 0 Camera DSC-RX100 Focal 37.1mm Aperture ƒ/5.6 ISO 125 Shutter Speed 1/125 sec ... DSC-RX100 v1.10 Haarlem, Noord-Holland, Nederland Description # Sunlit bicycles casting shadows on a brick wall in Haarlem, Netherlands. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/aged-brick-wall-with-arched-windows-and-opening-38261639/",
+      "title": "Photo by Shubhra Dhar on Pexels",
+      "snippet": "Dimensions 3984x2656 Aspect Ratio 3:2 Colors Date Jun 24 ... 6 Views 1.3K ... ISO 200 ... Software Snapseed 2.0 Description # Rustic aged brick wall with arched windows and opening, revealing greenery outside. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rustic-brick-wall-with-iron-barred-window-38334778/",
+      "title": "Photo by Shaqeeb Al Hasan on Pexels",
+      "snippet": "Dimensions 4000x6000 Aspect Ratio 2:3 Colors Date Jun 29 ... Ver.1.01 Sonargaon, Dhaka Division, Bangladesh Description # An aged brick wall with an iron-barred window in Sonargaon, Bangladesh. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/an-old-brick-wall-with-vines-growing-around-it-28242865/",
+      "title": "Photo by Pratik Patil on Pexels",
+      "snippet": "##### Choose your language:  Add filters, effects  Make presentations  Create photo collages  Add custom frames  License  Free  Dimensions  4000x6000  Aspect Ratio  2:3  Colors  Date  Sep 5, 2024  Dow",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/red-brick-wall-texture-for-urban-design-33654366/",
+      "title": "Photo by Engin Akyurt on Pexels",
+      "snippet": "##### Choose your language:  Use filters  Change focus  Brighten up  Add frames  License  Free  Dimensions  7826x5870  Aspect Ratio  3913:2935  Colors  Date  Aug 28, 2025  Downloads  321  Views  42.5K",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37769093/",
+      "title": "Pexels Aashish Tamang图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+      "title": "Photo by Müca 🇩🇪 on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/sculpture-in-dramatic-light-against-brick-wall-32080142/",
+      "title": "Photo by Milena Matias on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/a-light-casting-a-shadow-of-lines-on-a-brown-brick-wall-9843688/",
+      "title": "Photo by Jan van der Wolf on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/aged-brick-wall-with-arched-windows-and-opening-38261639/",
+      "title": "Photo by Shubhra Dhar on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/rustic-brick-wall-with-iron-barred-window-38334778/",
+      "title": "Photo by Shaqeeb Al Hasan on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/an-old-brick-wall-with-vines-growing-around-it-28242865/",
+      "title": "Photo by Pratik Patil on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/red-brick-wall-texture-for-urban-design-33654366/",
+      "title": "Photo by Engin Akyurt on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 47388,
+        "sha256": "88afd138c0875a2dee213609b94bf6334f850162b7057588435fa778e767734d"
+      },
+      "imageUrl": "https://images.pexels.com/photos/37769093/pexels-photo-37769093.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37769093/",
+      "title": "Pexels Aashish Tamang图片",
+      "sha256": "88afd138c0875a2dee213609b94bf6334f850162b7057588435fa778e767734d",
+      "bytes": 47388,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1111
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 32430,
+        "sha256": "54803b27a66cafe6f1d758697d5dcb537ba954da2edf96404aaee61d030b08d3"
+      },
+      "imageUrl": "https://images.pexels.com/photos/33261389/pexels-photo-33261389.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "sha256": "54803b27a66cafe6f1d758697d5dcb537ba954da2edf96404aaee61d030b08d3",
+      "bytes": 32430,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 476
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 103908,
+        "sha256": "85c50fa21bccb8f6ef821225f713eb50f6106db34ae47bd8605404f9817f6e5f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36470808/pexels-photo-36470808.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+      "title": "Photo by Müca 🇩🇪 on Pexels",
+      "sha256": "85c50fa21bccb8f6ef821225f713eb50f6106db34ae47bd8605404f9817f6e5f",
+      "bytes": 103908,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 134256,
+        "sha256": "c38c14a2f5289ea7b64c28b5548ce0dc1c5e8b84cdccd51b2fa9b704631d3ace"
+      },
+      "imageUrl": "https://images.pexels.com/photos/32080142/pexels-photo-32080142.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/sculpture-in-dramatic-light-against-brick-wall-32080142/",
+      "title": "Photo by Milena Matias on Pexels",
+      "sha256": "c38c14a2f5289ea7b64c28b5548ce0dc1c5e8b84cdccd51b2fa9b704631d3ace",
+      "bytes": 134256,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/37769093/pexels-photo-37769093.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37769093/",
+      "title": "Pexels Aashish Tamang图片",
+      "sha256": "88afd138c0875a2dee213609b94bf6334f850162b7057588435fa778e767734d",
+      "bytes": 47388,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1111,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/33261389/pexels-photo-33261389.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "sha256": "54803b27a66cafe6f1d758697d5dcb537ba954da2edf96404aaee61d030b08d3",
+      "bytes": 32430,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 476,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/36470808/pexels-photo-36470808.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+      "title": "Photo by Müca 🇩🇪 on Pexels",
+      "sha256": "85c50fa21bccb8f6ef821225f713eb50f6106db34ae47bd8605404f9817f6e5f",
+      "bytes": 103908,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32080142/pexels-photo-32080142.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/sculpture-in-dramatic-light-against-brick-wall-32080142/",
+      "title": "Photo by Milena Matias on Pexels",
+      "sha256": "c38c14a2f5289ea7b64c28b5548ce0dc1c5e8b84cdccd51b2fa9b704631d3ace",
+      "bytes": 134256,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/37769093/",
+        "title": "Pexels Aashish Tamang图片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/37769093/pexels-photo-37769093.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/37769093/pexels-photo-37769093.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 47388,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1111,
+        "sha256": "88afd138c0875a2dee213609b94bf6334f850162b7057588435fa778e767734d"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+        "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/33261389/pexels-photo-33261389.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/33261389/pexels-photo-33261389.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 32430,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 476,
+        "sha256": "54803b27a66cafe6f1d758697d5dcb537ba954da2edf96404aaee61d030b08d3"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+        "title": "Photo by Müca 🇩🇪 on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/36470808/pexels-photo-36470808.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/36470808/pexels-photo-36470808.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 103908,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "85c50fa21bccb8f6ef821225f713eb50f6106db34ae47bd8605404f9817f6e5f"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/sculpture-in-dramatic-light-against-brick-wall-32080142/",
+        "title": "Photo by Milena Matias on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/32080142/pexels-photo-32080142.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/32080142/pexels-photo-32080142.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 134256,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "c38c14a2f5289ea7b64c28b5548ce0dc1c5e8b84cdccd51b2fa9b704631d3ace"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/a-light-casting-a-shadow-of-lines-on-a-brown-brick-wall-9843688/",
+        "title": "Photo by Jan van der Wolf on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/9843688/pexels-photo-9843688.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/9843688/pexels-photo-9843688.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 106588,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "d55c7371bd1809fff802cd4e786c54d4aff7c8f7f541682182c30633b1acb791"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/aged-brick-wall-with-arched-windows-and-opening-38261639/",
+        "title": "Photo by Shubhra Dhar on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/38261639/pexels-photo-38261639.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/38261639/pexels-photo-38261639.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 81216,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "e50b0838ef55aeea0487bc46b23c83ff2f9494de78df0a225b4ff4a2c2ed6e13"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮检索得到的 Pexels 照片页中，能同时对应“强光、明确投影、砖墙/窗框纹理”的候选很少；行人信号灯与立柱连接且带强投影的具体照片未在结果中出现。以下为可用的实际来源，但均未下载，形态与光照判断仅依据页面标题/描述/元数据，待字节核验。\n\n### 候选来源\n\n1. **Pexels — 红砖墙与复古窗，窗影投射**  \n   URL: https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/  \n   页面描述为“Close-up of a red brick wall featuring a vintage window casting shadows”。可对应“墙面颗粒 + 窗框 + 明确投影”的组合；强光方向与亮暗交界需图片字节确认。作者 Steffen Rühlmann，许可证页面标 Free，具体 CC 类型待核验。\n\n2. **Pexels — 老旧砖墙与旧窗，建筑纹理**  \n   URL: https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/  \n   页面描述为“Rustic brick wall with an aged window, showcasing urban decay and architectural texture”。适合提取窗框边缘与砖墙颗粒，但“强光照明”在描述中未明示，需图像验证是否为硬光。作者 Müca 🇩🇪，许可证待核验。\n\n3. **Pexels — 白砖墙上的行人投影**  \n   URL: https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/  \n   描述为“A shadow cast on a white brick wall creating a silhouette effect during daylight”。这是明确的“强光投影 + 砖墙”实例，但缺少窗框或信号灯立柱；可用于研究投影边缘与墙面纹理保留。作者 Аlex Ugolkov，许可证待核验。\n\n4. **Pexels — 砖墙上的楼梯投影线条**  \n   URL: https://www.pexels.com/photo/a-light-casting-a-shadow-of-lines-on-a-brown-brick-wall-9843688/  \n   描述为“brick wall with interesting shadow patterns from stairs”。投影为硬边线状，适合观察亮暗交界与砖缝颗粒的互动；无窗框/信号灯。作者 Jan van der Wolf，许可证待核验。\n\n5. **Pexels — 纽约街道行人信号灯与投影**  \n   URL: https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/  \n   描述为“Vue aérienne d'une rue à New York montrant des feux de signalisation et des ombres projetées sur la route”。这是本轮唯一同时含“信号灯”和“投影”的页面，但为俯视街道，信号灯与立柱连接细节可能不突出；需图像字节判断是否可提取。作者 Willian Justen de Vasconcellos，许可证待核验。\n\n### 研究建议\n\n- 优先用第 1、2 张验证“窗框边缘 + 砖墙颗粒 + 硬光投影”是否在同一画面中形成可拟合的亮度阶跃；第 3、4 张可辅助确定投影边界函数（硬边/半影比例）。\n- 第 5 张作为信号灯/立柱的补充参考，但若图片中信号灯过小或俯视角度下立柱连接不可辨，则不应作为“立柱连接”主参考。\n- 所有来源许可证未在页面文本中明确到 CC 类型，引用前需打开页面核验；不得把 Pexels “Free” 直接等同于 CC BY/CC0。\n\n### JSON 语义摘要\n\n```json\n{\n  \"summary\": \"本轮实际检索以 Pexels 具体照片页为主，获得 5 个可点击来源：其中 2 个含砖墙+窗框+投影描述，2 个含砖墙+硬投影，1 个含街道信号灯+投影但俯视角度可能不适合立柱连接细节；Wikimedia Commons 本轮未获得可确认的新文件详情页。所有图像未下载，形态与光照仅来自页面描述/元数据。\",\n  \"features\": [\n    \"红砖墙表面颗粒与砖缝在硬光下的明暗对比\",\n    \"复古窗框在砖墙上投射的硬边阴影\",\n    \"白砖墙上的行人剪影投影边缘\",\n    \"楼梯投影在砖墙上的线状硬边阴影\",\n    \"街道行人信号灯及其路面投影（俯视视角）\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择页面描述明确含 shadow/casting shadows 且主体为砖墙或窗框的图片\",\n    \"信号灯类候选需确认立柱与灯头连接在画面中可辨、投影方向明确\",\n    \"后续字节核验时检查直方图是否有明显亮暗交界、砖墙纹理在阴影区是否保留\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 页面仅标 Free，具体 CC 许可证类型待核验\",\n    \"窗框投影照片中强光方向与亮暗交界锐度未验证\",\n    \"信号灯照片的立柱连接细节可能因俯视角度不可用\",\n    \"未获得 Wikimedia Commons CC0/CC BY 新文件详情页\"\n  ],\n  \"nextFocus\": \"下一轮补齐 Commons CC0/CC BY 具体文件页（砖墙窗框强光、行人信号灯立柱连接），并对本轮候选做字节级光照方向与投影边缘验证\"\n}\n```",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 6856,
+    "completion_tokens": 1239,
+    "total_tokens": 8095,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "74f19d5d-defe-4eb1-aca7-6168378ae889",
+        "model": "deepseek-flash",
+        "elapsedMs": 13637,
+        "prompt_tokens": 6856,
+        "completion_tokens": 1239,
+        "total_tokens": 8095,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 22485,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 47388,
+        "sha256": "88afd138c0875a2dee213609b94bf6334f850162b7057588435fa778e767734d"
+      },
+      "imageUrl": "https://images.pexels.com/photos/37769093/pexels-photo-37769093.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37769093/",
+      "title": "Pexels Aashish Tamang图片",
+      "sha256": "88afd138c0875a2dee213609b94bf6334f850162b7057588435fa778e767734d",
+      "bytes": 47388,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1111,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/88afd138c0875a2dee213609b94bf6334f850162b7057588435fa778e767734d.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 32430,
+        "sha256": "54803b27a66cafe6f1d758697d5dcb537ba954da2edf96404aaee61d030b08d3"
+      },
+      "imageUrl": "https://images.pexels.com/photos/33261389/pexels-photo-33261389.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+      "title": "Photo de Willian Justen de Vasconcellos sur Pexels",
+      "sha256": "54803b27a66cafe6f1d758697d5dcb537ba954da2edf96404aaee61d030b08d3",
+      "bytes": 32430,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 476,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/54803b27a66cafe6f1d758697d5dcb537ba954da2edf96404aaee61d030b08d3.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 103908,
+        "sha256": "85c50fa21bccb8f6ef821225f713eb50f6106db34ae47bd8605404f9817f6e5f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36470808/pexels-photo-36470808.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+      "title": "Photo by Müca 🇩🇪 on Pexels",
+      "sha256": "85c50fa21bccb8f6ef821225f713eb50f6106db34ae47bd8605404f9817f6e5f",
+      "bytes": 103908,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/85c50fa21bccb8f6ef821225f713eb50f6106db34ae47bd8605404f9817f6e5f.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 134256,
+        "sha256": "c38c14a2f5289ea7b64c28b5548ce0dc1c5e8b84cdccd51b2fa9b704631d3ace"
+      },
+      "imageUrl": "https://images.pexels.com/photos/32080142/pexels-photo-32080142.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/sculpture-in-dramatic-light-against-brick-wall-32080142/",
+      "title": "Photo by Milena Matias on Pexels",
+      "sha256": "c38c14a2f5289ea7b64c28b5548ce0dc1c5e8b84cdccd51b2fa9b704631d3ace",
+      "bytes": 134256,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/c38c14a2f5289ea7b64c28b5548ce0dc1c5e8b84cdccd51b2fa9b704631d3ace.webp"
+    }
+  ]
+}

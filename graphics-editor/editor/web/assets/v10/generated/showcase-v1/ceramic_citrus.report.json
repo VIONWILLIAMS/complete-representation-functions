@@ -1,0 +1,809 @@
+{
+  "schema": "crf.actual_generation_trial.v0.10",
+  "id": "ceramic_citrus",
+  "title": "青釉与柑橘",
+  "category": "still_life",
+  "prompt": "生成一幅极简陶瓷静物：一个青釉花瓶和一个橙子切面。花瓶偏左、橙子偏右，青灰色纯色背景，接触地面合理，阴影轻柔，照片原有釉面高光和橙子细节清晰。保留ceramic、orange标识。输出1024×768，不加不存在的物体，不声称恢复新视角。",
+  "representation": "reference_gaussian",
+  "scope": "new_layout_of_observed_gaussian_objects",
+  "at": "2026-11-21T22:28:43.532Z",
+  "taskId": "crf10_30a4d12e-42dc-43e0-ba13-9c06b1eb55a9",
+  "status": "review_required",
+  "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+  "error": null,
+  "selectedCandidate": 0,
+  "selectionReason": "Best evaluated candidate under hard constraints, observed reconstruction checks and advisory visual scores; ties retain the earlier candidate.",
+  "contract": {
+    "schema": "crf.goal_contract.v0.10",
+    "id": "fixed-ceramic_citrus",
+    "representation": "reference_gaussian",
+    "checks": [
+      {
+        "id": "program.finite",
+        "kind": "program",
+        "type": "finite_parameters",
+        "required": true
+      },
+      {
+        "id": "render.frame",
+        "kind": "pixel",
+        "type": "valid_frame",
+        "required": true
+      },
+      {
+        "id": "render.dimensions",
+        "kind": "pixel",
+        "type": "dimensions",
+        "required": true,
+        "value": [
+          1024,
+          768
+        ]
+      },
+      {
+        "id": "visual.realism",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "metric": "realism",
+        "threshold": 4
+      },
+      {
+        "id": "visual.semantic",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "metric": "semantic",
+        "threshold": 4
+      },
+      {
+        "id": "visual.coherence",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "metric": "coherence",
+        "threshold": 4
+      },
+      {
+        "id": "visual.major_issues",
+        "kind": "perceptual",
+        "type": "no_major_issues",
+        "required": true
+      },
+      {
+        "id": "visible.ceramic",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "objectId": "ceramic",
+        "minimumPixels": 500
+      },
+      {
+        "id": "count.ceramic",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "constraint": {
+          "type": "count",
+          "subject": "ceramic",
+          "value": 1
+        }
+      },
+      {
+        "id": "visible.orange",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "objectId": "orange",
+        "minimumPixels": 500
+      },
+      {
+        "id": "count.orange",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "constraint": {
+          "type": "count",
+          "subject": "orange",
+          "value": 1
+        }
+      }
+    ],
+    "requirements": [],
+    "acceptancePolicy": "all_required_checks_and_independent_visual_review_for_photorealism",
+    "revision": 1
+  },
+  "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970",
+  "quality": {
+    "releaseGate": "not_passed",
+    "independentHumanReview": false,
+    "allCandidatesEvaluated": true,
+    "selectedCandidateEvaluated": true,
+    "trainingPerformed": false,
+    "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+  },
+  "usageTotals": {
+    "providerRequests": 3,
+    "tokens": 31661,
+    "uncertainRequestsReserved": 2
+  },
+  "usage": [
+    {
+      "phase": "plan",
+      "providerCalls": 1,
+      "prompt_tokens": 1643,
+      "completion_tokens": 1342,
+      "total_tokens": 2985,
+      "reasoning_tokens": 901,
+      "requests": [
+        {
+          "phase": "gaussian10_plan",
+          "requestId": "6571b1b2-5817-45c9-a0d6-aa165d9986cc",
+          "model": "deepseek-flash",
+          "elapsedMs": 17540,
+          "prompt_tokens": 1643,
+          "completion_tokens": 1342,
+          "total_tokens": 2985,
+          "reasoning_tokens": 901,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    },
+    {
+      "phase": "generate",
+      "providerCalls": 1,
+      "prompt_tokens": 1925,
+      "completion_tokens": 10640,
+      "total_tokens": 12565,
+      "reasoning_tokens": 10044,
+      "requests": [
+        {
+          "phase": "gaussian10_generate",
+          "requestId": "1954cf98-467e-4cee-bb45-49025de4afd1",
+          "model": "deepseek-flash",
+          "elapsedMs": 62813,
+          "prompt_tokens": 1925,
+          "completion_tokens": 10640,
+          "total_tokens": 12565,
+          "reasoning_tokens": 10044,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    },
+    {
+      "phase": "critique_0",
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 2149,
+      "completion_tokens": 13962,
+      "total_tokens": 16111,
+      "reasoning_tokens": 13355,
+      "requests": [
+        {
+          "phase": "gaussian10_critique",
+          "requestId": "961a9902-82e6-4a2d-ae3c-403b476acdbe",
+          "model": "deepseek-flash",
+          "elapsedMs": 96853,
+          "prompt_tokens": 2149,
+          "completion_tokens": 13962,
+          "total_tokens": 16111,
+          "reasoning_tokens": 13355,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    }
+  ],
+  "taskGraph": {
+    "schema": "crf.task_graph.v0.10",
+    "nodes": [
+      {
+        "id": "plan",
+        "type": "plan",
+        "dependsOn": [],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:21:53.849Z",
+        "evidence": {
+          "runId": "crf10_2c284e83-8b24-4de1-b3a4-7066af76ae19"
+        }
+      },
+      {
+        "id": "propose.0",
+        "type": "generate",
+        "dependsOn": [
+          "plan"
+        ],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:22:57.071Z",
+        "evidence": {
+          "runId": "crf10_839adeba-a906-4344-a528-2ed5b655f16f"
+        }
+      },
+      {
+        "id": "render.0",
+        "type": "render",
+        "dependsOn": [
+          "propose.0"
+        ],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:22:58.159Z",
+        "evidence": {
+          "renderKey": "render:crf10_30a4d12e-42dc-43e0-ba13-9c06b1eb55a9:0"
+        }
+      },
+      {
+        "id": "critique.0",
+        "type": "critique",
+        "dependsOn": [
+          "render.0"
+        ],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:28:42.358Z",
+        "evidence": {
+          "runId": "crf10_7138ab37-250c-4008-83d8-fd6b2f11a30c"
+        }
+      },
+      {
+        "id": "verify.0",
+        "type": "verify",
+        "dependsOn": [
+          "render.0",
+          "critique.0"
+        ],
+        "status": "passed",
+        "updatedAt": "2026-11-21T22:28:42.650Z",
+        "evidence": {
+          "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+          "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970",
+          "summary": {
+            "passed": 11,
+            "failed": 0,
+            "unknown": 0,
+            "blocked": 0,
+            "total": 11,
+            "required": 11,
+            "requiredPassed": 11
+          }
+        }
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "parentIndex": null,
+      "status": "verified",
+      "render": {
+        "width": 1024,
+        "height": 768,
+        "elapsedMs": 760,
+        "report": {
+          "engine": "CRF10Gaussian",
+          "renderer": "direct_affine_anisotropic_gaussians",
+          "colorSpace": "linear_srgb_then_srgb8",
+          "filter": "mip",
+          "pixelFilterVariance": 0.08333333333333333,
+          "gaussians": 8192,
+          "basisEvaluations": 3052457,
+          "visibleObjects": 2,
+          "elapsedMs": 239,
+          "sourceRGBBlit": false,
+          "colourRasterResampling": false,
+          "neuralModelTraining": false,
+          "referenceConditioned": true,
+          "geometry": "image_plane_affine",
+          "physicalRelighting": false,
+          "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+          "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+          "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+          "coverageSemantics": "visible_alpha_contribution"
+        },
+        "rgbaProvided": true
+      },
+      "critique": {
+        "ok": true,
+        "version": "0.10.0",
+        "runId": "crf10_7138ab37-250c-4008-83d8-fd6b2f11a30c",
+        "representation": "reference_gaussian",
+        "modelTraining": false,
+        "action": "critique",
+        "message": "当前候选已满足主要语义与版式要求：青灰纯色背景、左侧青釉花瓶、右侧橙子切面，均保留原ID，且没有新增物体或宣称恢复新视角。可见不足集中在物体间距偏紧、橙子底缘与程序化阴影的接触精细度，以及高斯资产边缘的轻微毛边；都可用现有位置、缩放和 shadow 参数小幅改善，不构成能力阻塞。",
+        "qualityNotes": [
+          "1024×768画幅和青灰纯色背景成立；仅使用 ceramic 与 orange 两个资产，原标识、左右关系与基本基线对齐均保留。",
+          "花瓶釉面高光、橙子切面果肉与皮缘细节均清晰可辨，接触阴影大致与左上光源方向一致。",
+          "未添加不存在物体，也未宣称恢复未观察到的背面或新视角。"
+        ],
+        "warnings": [
+          "接触阴影由代码高斯近似生成，不是物理全局光照；不能据此推导真实遮挡、桌面反射或完整投影。",
+          "花瓶深青蓝色与高光形态来自源照片的显式高斯编码；只能通过 exposure/albedoTint 做轻微观感修正，不能恢复未观察到的釉面结构或重算真实反射。",
+          "本次评分为基于当前附图的模型意见，不是独立照片级验证。"
+        ],
+        "capabilityGaps": [],
+        "issues": [
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [
+              "ceramic",
+              "orange"
+            ],
+            "description": "花瓶右侧轮廓与橙子左缘几乎相贴，视觉间隔很小；两件物体集中在画面中右部，整体重心略偏右，左侧留白明显大于右侧，极简构图略显拥挤。可在保持基线一致的前提下把花瓶略微左移、橙子向右移少量，并同步重算接触阴影。"
+          },
+          {
+            "code": "contact",
+            "severity": "minor",
+            "objectIds": [
+              "orange"
+            ],
+            "description": "橙子作为直立切面落在深色椭圆阴影上，底缘与阴影中央局部黏连，接触点不够清楚；橙子阴影视觉上比花瓶阴影更重，与“阴影轻柔”略不一致。可在现有 shadow 上降低 strength 到约 0.18–0.20、略增 spread 或微调 dx，使底缘接触线清楚但阴影仍柔。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "ceramic",
+              "orange"
+            ],
+            "description": "沿花瓶右缘和底缘可见轻微暗边与锯齿，橙子右下轮廓有橙色毛边/光晕，局部釉面高光及果肉纹理带高斯颗粒。这属于源照片外观的高斯编码边界表现，可通过轻微缩放及小幅曝光、照明梯度调整缓解；不能用调色冒充更细的真实釉面结晶或果粒几何。"
+          }
+        ],
+        "scores": {
+          "realism": 4,
+          "semantic": 5,
+          "coherence": 4
+        },
+        "attempts": [
+          {
+            "phase": "gaussian10_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T22:27:05.420Z",
+            "usageKnown": true,
+            "requestId": "961a9902-82e6-4a2d-ae3c-403b476acdbe",
+            "validation": "passed"
+          }
+        ],
+        "usage": {
+          "providerCalls": 1,
+          "usageComplete": true,
+          "unknownUsageCalls": 0,
+          "totalsScope": "known_provider_reports_only",
+          "prompt_tokens": 2149,
+          "completion_tokens": 13962,
+          "total_tokens": 16111,
+          "reasoning_tokens": 13355,
+          "requests": [
+            {
+              "phase": "gaussian10_critique",
+              "requestId": "961a9902-82e6-4a2d-ae3c-403b476acdbe",
+              "model": "deepseek-flash",
+              "elapsedMs": 96853,
+              "prompt_tokens": 2149,
+              "completion_tokens": 13962,
+              "total_tokens": 16111,
+              "reasoning_tokens": 13355,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0,
+              "reasoningEffort": "max"
+            }
+          ]
+        },
+        "quality": {
+          "status": "requires_render_and_independent_verification",
+          "modelScoreIsProof": false
+        },
+        "imageEvidence": true,
+        "sourceFrameSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+        "submittedImageDataURLSha256": "40e1c21fc2c3a1161e6ecb3dd1466ef6ca975d091d0645d54122ad00397336ae"
+      },
+      "verification": {
+        "schema": "crf.verification.v0.10",
+        "checkedAt": "2026-11-21T22:28:42.650Z",
+        "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+        "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+        "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970",
+        "checks": [
+          {
+            "id": "program.finite",
+            "kind": "program",
+            "type": "finite_parameters",
+            "required": true,
+            "status": "passed",
+            "observed": true,
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "render.frame",
+            "kind": "pixel",
+            "type": "valid_frame",
+            "required": true,
+            "status": "passed",
+            "reason": "Actual finite RGBA8 samples provided.",
+            "observed": true,
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "render.dimensions",
+            "kind": "pixel",
+            "type": "dimensions",
+            "required": true,
+            "status": "passed",
+            "observed": [
+              1024,
+              768
+            ],
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "visual.realism",
+            "kind": "perceptual",
+            "type": "visual_score",
+            "required": true,
+            "status": "passed",
+            "observed": 4,
+            "threshold": 4,
+            "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "visual.semantic",
+            "kind": "perceptual",
+            "type": "visual_score",
+            "required": true,
+            "status": "passed",
+            "observed": 5,
+            "threshold": 4,
+            "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "visual.coherence",
+            "kind": "perceptual",
+            "type": "visual_score",
+            "required": true,
+            "status": "passed",
+            "observed": 4,
+            "threshold": 4,
+            "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "visual.major_issues",
+            "kind": "perceptual",
+            "type": "no_major_issues",
+            "required": true,
+            "status": "passed",
+            "observed": 0,
+            "issues": [],
+            "scope": "Model-assisted perception only.",
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "visible.ceramic",
+            "kind": "pixel",
+            "type": "visible_coverage",
+            "required": true,
+            "status": "passed",
+            "observed": 62109,
+            "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "count.ceramic",
+            "kind": "declaration",
+            "type": "declaration",
+            "required": true,
+            "status": "passed",
+            "observed": 1,
+            "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "visible.orange",
+            "kind": "pixel",
+            "type": "visible_coverage",
+            "required": true,
+            "status": "passed",
+            "observed": 20668,
+            "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          },
+          {
+            "id": "count.orange",
+            "kind": "declaration",
+            "type": "declaration",
+            "required": true,
+            "status": "passed",
+            "observed": 1,
+            "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+            "evidence": {
+              "sceneSha256": "ad51ce9f987ba5afe7ffa61e40c2e802370516262737d4454889545d46b97862",
+              "imageSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2",
+              "contractSha256": "e39da11ad8c84e3c0d33c1e17d3e46151c28ae3c083cba25b71c2983bfd96970"
+            }
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 0,
+          "unknown": 0,
+          "blocked": 0,
+          "total": 11,
+          "required": 11,
+          "requiredPassed": 11
+        },
+        "hardPassed": true,
+        "measurementPassed": true,
+        "perceptualPassed": true,
+        "allRequiredPassed": true,
+        "independentReview": null,
+        "photorealisticAccepted": false,
+        "referenceReconstructionAccepted": false,
+        "unknowns": [],
+        "blocked": [],
+        "diagnosis": [
+          {
+            "module": "layout",
+            "status": "actionable",
+            "severity": "minor",
+            "objectIds": [
+              "ceramic",
+              "orange"
+            ],
+            "reason": "花瓶右侧轮廓与橙子左缘几乎相贴，视觉间隔很小；两件物体集中在画面中右部，整体重心略偏右，左侧留白明显大于右侧，极简构图略显拥挤。可在保持基线一致的前提下把花瓶略微左移、橙子向右移少量，并同步重算接触阴影。",
+            "requiredCapability": null,
+            "requiredForGoal": null
+          },
+          {
+            "module": "attachment_and_occlusion",
+            "status": "actionable",
+            "severity": "minor",
+            "objectIds": [
+              "orange"
+            ],
+            "reason": "橙子作为直立切面落在深色椭圆阴影上，底缘与阴影中央局部黏连，接触点不够清楚；橙子阴影视觉上比花瓶阴影更重，与“阴影轻柔”略不一致。可在现有 shadow 上降低 strength 到约 0.18–0.20、略增 spread 或微调 dx，使底缘接触线清楚但阴影仍柔。",
+            "requiredCapability": null,
+            "requiredForGoal": null
+          },
+          {
+            "module": "appearance",
+            "status": "actionable",
+            "severity": "minor",
+            "objectIds": [
+              "ceramic",
+              "orange"
+            ],
+            "reason": "沿花瓶右缘和底缘可见轻微暗边与锯齿，橙子右下轮廓有橙色毛边/光晕，局部釉面高光及果肉纹理带高斯颗粒。这属于源照片外观的高斯编码边界表现，可通过轻微缩放及小幅曝光、照明梯度调整缓解；不能用调色冒充更细的真实釉面结晶或果粒几何。",
+            "requiredCapability": null,
+            "requiredForGoal": null
+          }
+        ],
+        "scope": "Contract checks on this exact scene/frame; no universal correctness or unseen-world claim."
+      },
+      "imageUrl": "assets/v10/generated/showcase-v1/ceramic_citrus.candidate_0.jpg",
+      "sceneUrl": "assets/v10/generated/showcase-v1/ceramic_citrus.candidate_0.scene.json"
+    }
+  ],
+  "assets": [
+    {
+      "id": "ceramic",
+      "label": "青釉陶瓷花瓶",
+      "width": 180,
+      "height": 365,
+      "role": "object",
+      "visibleBounds": [
+        4,
+        4,
+        176,
+        361
+      ],
+      "contactPoint": [
+        89.5,
+        361
+      ],
+      "sourceKind": "observed_photo_gaussian",
+      "limitations": "源照片外观由显式高斯参数拟合，继承原光照与视角；没有隐藏几何。",
+      "url": "assets/v10/objects/ceramic.json",
+      "gaussians": 4096,
+      "sha256": "d00dbbacdaa101b9463adf2d73582ad849bfd242e12881b3136effdc49cb2a85",
+      "provenance": {
+        "kind": "observed_gaussian_reconstruction",
+        "algorithm": "crf10-structure-irls-pixel-footprint-adam",
+        "sourceRGBEmbedded": false,
+        "losslessResidualEmbedded": false,
+        "neuralModelTraining": false,
+        "pretrainedInitializerUsed": false,
+        "optimizationScope": "this_observation_only",
+        "budget": 4096,
+        "illumination": "inherited_from_observation",
+        "sourceSHA256": "f064b22dda4e2a4bd004da181b3d82fad6dab6fa7505065812185f60ff80d598",
+        "originalSize": [
+          180,
+          365
+        ],
+        "fittedSize": [
+          180,
+          365
+        ],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+        "limitations": [
+          "仅有正面单视角，无法确认背面、底部与口沿内侧结构",
+          "边界框为目测估计，不是精确alpha分割",
+          "缺少尺寸、重量与真实材质成分信息",
+          "图像可能经过白平衡或色彩处理，釉色不能视为绝对色",
+          "无法判断是否空心、透光或是否有隐藏裂纹",
+          "由模型框选和GrabCut推断alpha，未以真值分割验收。",
+          "光照与高光来自该观测视角；缩放和二维变换不生成未观察到的背面。"
+        ],
+        "pixelMaskVerified": false,
+        "sourceCatalogId": "learn.r03.097cfbf071e3.object",
+        "alphaOrigin": "inherited_observed_semantic_coverage_not_recovered_geometry"
+      }
+    },
+    {
+      "id": "orange",
+      "label": "橙子切面",
+      "width": 195,
+      "height": 182,
+      "role": "object",
+      "visibleBounds": [
+        4,
+        4,
+        191,
+        178
+      ],
+      "contactPoint": [
+        97,
+        178
+      ],
+      "sourceKind": "observed_photo_gaussian",
+      "limitations": "源照片外观由显式高斯参数拟合，继承原光照与视角；没有隐藏几何。",
+      "url": "assets/v10/objects/orange.json",
+      "gaussians": 4096,
+      "sha256": "fe41dee1b4b94c80d412de40b5ced46c35dfc8e95432dd65f2b0fa3ba7a3729a",
+      "provenance": {
+        "kind": "observed_gaussian_reconstruction",
+        "algorithm": "crf10-structure-irls-pixel-footprint-adam",
+        "sourceRGBEmbedded": false,
+        "losslessResidualEmbedded": false,
+        "neuralModelTraining": false,
+        "pretrainedInitializerUsed": false,
+        "optimizationScope": "this_observation_only",
+        "budget": 4096,
+        "illumination": "inherited_from_observation",
+        "sourceSHA256": "b634d9724b22acf4cb383fa6f5338c2b82f9bfb61ec96ac9777099b20966f57b",
+        "originalSize": [
+          195,
+          182
+        ],
+        "fittedSize": [
+          195,
+          182
+        ],
+        "sourceUrl": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+        "limitations": [
+          "只能看到切面与部分外轮廓，无法确认完整球形和背面",
+          "下方投影与浅色背景边界较柔，不适合作为精确抠图依据",
+          "没有尺寸参照",
+          "仅凭外观不能确定具体品种",
+          "由模型框选和GrabCut推断alpha，未以真值分割验收。",
+          "光照与高光来自该观测视角；缩放和二维变换不生成未观察到的背面。"
+        ],
+        "pixelMaskVerified": false,
+        "sourceCatalogId": "learn.r01.c6657129fc5c.object",
+        "alphaOrigin": "inherited_observed_semantic_coverage_not_recovered_geometry"
+      }
+    }
+  ],
+  "modelTraining": false,
+  "sharedModelBefore": "c1ae52b759ca5b39a6672142ae94eedf050ede5a91a7c95853b0e22048628a4c",
+  "sharedModelAfter": "c1ae52b759ca5b39a6672142ae94eedf050ede5a91a7c95853b0e22048628a4c",
+  "artifact": {
+    "imageUrl": "assets/v10/generated/showcase-v1/ceramic_citrus.png",
+    "thumbnailUrl": "assets/v10/generated/showcase-v1/ceramic_citrus.jpg",
+    "sceneUrl": "assets/v10/generated/showcase-v1/ceramic_citrus.scene.json",
+    "reportUrl": "assets/v10/generated/showcase-v1/ceramic_citrus.report.json",
+    "width": 1024,
+    "height": 768,
+    "pixelSha256": "68760d4d8a329ebcd0da42ebf853e9fe2720a53713c55512eeed11869262fdc2"
+  },
+  "apiOperations": [
+    {
+      "index": 0,
+      "phase": "plan",
+      "path": "/api/crf/native10/generate",
+      "status": "completed",
+      "startedAt": "2026-11-21T22:21:36.007Z",
+      "resultKey": "operation:crf10_30a4d12e-42dc-43e0-ba13-9c06b1eb55a9:0",
+      "finishedAt": "2026-11-21T22:21:53.743Z",
+      "runId": "crf10_2c284e83-8b24-4de1-b3a4-7066af76ae19"
+    },
+    {
+      "index": 1,
+      "phase": "generate",
+      "path": "/api/crf/native10/generate",
+      "status": "completed",
+      "startedAt": "2026-11-21T22:21:53.933Z",
+      "resultKey": "operation:crf10_30a4d12e-42dc-43e0-ba13-9c06b1eb55a9:1",
+      "finishedAt": "2026-11-21T22:22:56.830Z",
+      "runId": "crf10_839adeba-a906-4344-a528-2ed5b655f16f"
+    },
+    {
+      "index": 2,
+      "phase": "critique_0",
+      "path": "/api/crf/native10/generate",
+      "status": "interrupted_outcome_unknown",
+      "startedAt": "2026-11-21T22:22:58.273Z"
+    },
+    {
+      "index": 3,
+      "phase": "critique_0",
+      "path": "/api/crf/native10/generate",
+      "status": "completed",
+      "startedAt": "2026-11-21T22:27:05.347Z",
+      "resultKey": "operation:crf10_30a4d12e-42dc-43e0-ba13-9c06b1eb55a9:3",
+      "finishedAt": "2026-11-21T22:28:42.276Z",
+      "runId": "crf10_7138ab37-250c-4008-83d8-fd6b2f11a30c"
+    }
+  ],
+  "unresolvedProviderAttempts": 1,
+  "usageComplete": false
+}

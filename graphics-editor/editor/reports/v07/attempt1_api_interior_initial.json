@@ -1,0 +1,217 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:01:20.722Z",
+  "id": "interior",
+  "phase": "initial",
+  "prompt": "生成一张真实自然采光客厅的室内摄影：米灰色亚麻沙发、两个靠垫、圆形胡桃木茶几、陶杯与书，木地板和浅色地毯，左侧窗户照入柔和日光，墙角一盆绿植。相机处于人眼高度，看不到墙顶外的空洞，家具尺度正常，接触真实，窗框与墙正确连接。请实际搜索Pexels或Unsplash的公开室内照片页，从图像中提取可用形态、织物纹理、木纹、光照与构图；代码表达完整场景。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 502,
+  "elapsedMs": 58806,
+  "inputImageProvided": false,
+  "response": {
+    "ok": false,
+    "runId": "crf07_bd32dcc2-986b-4fe7-8f4b-186a5e6cfb47",
+    "model": "deepseek-flash",
+    "error": {
+      "code": "INVALID_MODEL_PROGRAM",
+      "message": "物体材质无效。",
+      "retryable": false
+    },
+    "httpStatus": 502,
+    "research": {
+      "searched": true,
+      "toolCalls": [
+        {
+          "id": "srvtoolu_s_00_65d7e466cb8f4df0b459eebc2be5222e",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com linen sofa cushions living room window daylight",
+              "site:unsplash.com living room linen sofa wooden coffee table plant daylight",
+              "site:commons.wikimedia.org living room interior daylight window",
+              "亚麻织物 纹理 光影 摄影 参考",
+              "胡桃木 木纹 材质 参考"
+            ]
+          },
+          "sourceUrls": [
+            "https://unsplash.com/photos/modern-living-room-with-neutral-tones-and-natural-elements-tPz3Lhh3z_4",
+            "https://www.meshy.ai/zh/textures/wood/walnut-wood-grain",
+            "https://unsplash.com/photos/a-modern-inviting-living-room-is-well-lit-EMxd6-q7IHo",
+            "https://m-tu.96weixin.com/design/84953.html",
+            "https://www.taipeibex.com.tw/zh-tw/product/CBA4659B8C39B7F712C906C2478D2874BAAB5F637A478A0B/info.html?lt=data&cr=2&cate1=7605&cate2=760505",
+            "https://unsplash.com/photos/a-living-room-with-a-couch-and-a-potted-plant-_9WTLhclqGU",
+            "https://www.droitstock.com/image/detail/846814928",
+            "https://forest.toppan.com/chinese/designandtrend/insight/overview-of-psc-premium-surface-collection-wood-pattern-types.html",
+            "https://www.vcg.com/creative/1428838982.html",
+            "https://www.pfleiderer.com/cn-zh/%E8%A3%BD%E5%93%81/%E8%A3%85%E9%A5%B0%E5%93%81/%E8%A9%B3%E7%B4%B0/r30175",
+            "https://www.huitu.com/photo/show/20251202/160326126385.html",
+            "https://www.schattdecor.com/zh/%E8%8A%B1%E8%89%B2/detail/14-20121-001",
+            "https://www.vcg.com/creative/1080923948.html",
+            "https://www.pfleiderer.com/cn-zh/%E8%A3%BD%E5%93%81/%E8%A1%A8%E9%9D%A2%E7%BA%B9%E7%90%86/%E7%B4%B0%E7%AF%80/ti"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://unsplash.com/photos/modern-living-room-with-neutral-tones-and-natural-elements-tPz3Lhh3z_4",
+          "title": "Photo by Brian Zajac on Unsplash",
+          "snippet": "This beautifully rendered interior features a comfortable off-white sofa facing a rustic wooden coffee table, complemented by a matching sideboard and two stylish gray accent chairs. Large indoor plants, including a prominent fiddle-leaf fig, add a touch of nature to the serene, neutral color palette.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.meshy.ai/zh/textures/wood/walnut-wood-grain",
+          "title": "胡桃木木纹贴图 · 免费无缝 4K PBR 下载 | Meshy",
+          "snippet": "胡桃木木纹纹理 深色美国黑胡桃，巧克力色和浅棕色纹理流畅交错，适合中古风家具、书桌和护墙板 ... 想换个风格，可以试试日晒褪色灰木贴图或桦木胶合板贴图。",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-modern-inviting-living-room-is-well-lit-EMxd6-q7IHo",
+          "title": "Photo by Interlock Singapore on Unsplash",
+          "snippet": "A modern, inviting living room is well-lit. A minimalist living room with natural light streaming through a large window. The space features a smart thermostat, a sleek black digital lock, and modern furnishings including a light gray sofa, wooden coffee table, and indoor plant.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://m-tu.96weixin.com/design/84953.html",
+          "title": "亚麻布料卷元素图片下载_亚麻布料卷元素素材下载_透明png素材-96作图",
+          "snippet": "一张高清摄影图，展示了一卷米色亚麻布料，斜放在纯黑色背景上。布料质感粗糙，具有清晰的编织纹路和天然的纤维纹理，一端卷起成圆柱形，另一端自然铺开。侧向柔和的光影突显了织物的立体感和细节。微距特写镜头...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.taipeibex.com.tw/zh-tw/product/CBA4659B8C39B7F712C906C2478D2874BAAB5F637A478A0B/info.html?lt=data&cr=2&cate1=7605&cate2=760505",
+          "title": "台北國際建築建材暨產品展-產品資訊-北美胡桃木一枚板 (局部含環氧樹脂)-愛木者工坊設計有限公司",
+          "snippet": "其木紋豐富、色澤獨特美觀，邊材呈現由白色漸層至淡棕色的過渡，而乾燥後的心材則展現 深棕黑色調，帶來沉穩而優雅的視覺效果。",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-living-room-with-a-couch-and-a-potted-plant-_9WTLhclqGU",
+          "title": "Photo by Ashe Walker on Unsplash",
+          "snippet": "Featured in Editorial # a living room with a couch and a potted plant Download this free HD photo of sunlight, golden hour, light bokeh, and looks like film by Ashe Walker (@marsupialpudding) ... X-T4Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.droitstock.com/image/detail/846814928",
+          "title": "一块织物的纹理和褶皱，可能是亚麻或类似材料。",
+          "snippet": "一块织物的纹理和褶皱 ... 这张图片展示了一块可能是亚麻或类似材料的织物，其纹理细腻，褶皱自然。近景特写呈现出丰富的细节 ... 织物展现出天然、柔软、粗糙等特质，光影交错，线条交织。适用于服装设计...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://forest.toppan.com/chinese/designandtrend/insight/overview-of-psc-premium-surface-collection-wood-pattern-types.html",
+          "title": "PSC（Premium Surface Collection）木纹类型概述 | INSIGHT | 设计与潮流 | TOPPAN Inc. | 环境设计",
+          "snippet": "胡桃木通常分为两类：黑胡桃木，以其深邃的紫褐色调著称；以及欧洲胡桃木，其色泽则较为浅淡。 黑胡桃木通常会用油或深色木器漆进行表面处理 ... 欧洲胡桃木纹理柔和流畅，作为一种稀有且高端的木材，同样因制作精美家具而备受推崇。",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.vcg.com/creative/1428838982.html",
+          "title": "天然亚麻织物纹理，亚麻纺织品背景",
+          "snippet": "天然亚麻织物纹理，亚麻纺织品背景 天然亚麻织物纹理，亚麻纺织品背景图片素材作品是由视觉中国旗下网站（VCG.COM）的图片品牌合作方：iStock提供 ... 的摄影纺织柔和",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pfleiderer.com/cn-zh/%E8%A3%BD%E5%93%81/%E8%A3%85%E9%A5%B0%E5%93%81/%E8%A9%B3%E7%B4%B0/r30175",
+          "title": "美洲胡桃木，纹理同步自然呈现",
+          "snippet": "木纹种类 ... 美国胡桃木 Timberton Walnut 采用丰富多彩的全覆盖设计；条纹部分和切花部分和谐地结合在一起 ... 同步结构中锋利的细长孔隙突出了木材的自然特性。丝质哑光饰面完美地突出了胡桃木的特性。 Timberton Walnut 作为同步结构，适用于 Deep Flow 下的 MFB。推荐与",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.huitu.com/photo/show/20251202/160326126385.html",
+          "title": "亚麻织物纹理背景特写",
+          "snippet": "汇图网提供优质精美的亚麻织物纹理背景特写高清原创图片下载，由摄影师TPGimages上传，像素尺寸5616×3744（PX），分辨率为300DPI，格式为JPG，源文件总共6.21 MB，建议使用图片查看器软件打开。浏览本次作品的您可能还对白色高清图片...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.schattdecor.com/zh/%E8%8A%B1%E8%89%B2/detail/14-20121-001",
+          "title": "Baltimore Walnut",
+          "snippet": "Baltimore Walnut 是一款极富装饰性的心材花色。纹理精细的部分和带状或花纹 纹理分布均匀。强烈的对比使这款花色显得尤为生动和质朴。 - 花色种类: 木纹花色 - 木种: 胡桃木 - 应用类型...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.vcg.com/creative/1080923948.html",
+          "title": "亚麻织物纹理背景图片素材",
+          "snippet": "留白水平画幅纹理效果纺织品过大的无人平视角巨大的格子纤维长方形斑驳的摇滚乐铁丝网晕影效果工业彩色背景彩色图片艺术文化和娱乐纺织工业米色背景大特写机织织物撒出不平坦的制造玷污的纹理高清格式式样点状抽象斑点帆布材料粗糙的摄影设计元素黄色满画幅亚麻布大特写简单背景",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pfleiderer.com/cn-zh/%E8%A3%BD%E5%93%81/%E8%A1%A8%E9%9D%A2%E7%BA%B9%E7%90%86/%E7%B4%B0%E7%AF%80/ti",
+          "title": "TI 蒂姆伯顿胡桃木",
+          "snippet": "蒂姆伯顿胡桃木 TI ... 美國胡桃木 Timberton Walnut 採用多變的整體設計；條紋部分與切花區域和諧地結合在一起 ... Timberton Walnut 作為同步紋理，適用於 MFB 的 Deep Flow 系列。若作為搭配紋理，建議選用 Rochester RO 或 Florence FL。",
+          "via": "server_tool"
+        }
+      ],
+      "summary": "**研究结论**：在指定图库中找到了少量构图/光照方向接近的 Unsplash 公开照片页，但**没有一张完全匹配**“米灰色亚麻沙发 + 两个靠垫 + 圆形胡桃木茶几 + 陶杯与书 + 左侧窗日光 + 墙角绿植”的组合。可用照片仅能作为构图与光比参考，织物、木纹与物体形态需结合材质文字资料进行代码表达。以下建议区分**照片页参考**与**材质推断**，不声称已查看任何未提供的图像字节。\n\n---\n\n### 可用摄影照片页（构图/光照参考）\n\n1. **Unsplash：Modern living room with neutral tones and natural elements**\n   页面描述包含 off-white 沙发、rustic 木茶几、大型绿植、French doors 自然光入射。可作为“沙发+木茶几+绿植+侧窗日光”的布局与光感参考。**局限**：页面提到“rendered interior”，可能是渲染图而非实拍；茶几形状、靠垫数量、陶杯书本未在描述中确认。\n\n2. **Unsplash：A modern, inviting living room is well-lit**\n   描述包含 large window 自然光、浅灰沙发、木茶几、室内绿植。可作为“浅色沙发 + 木茶几 + 窗光”的构图参考。**局限**：未说明沙发材质是否为亚麻、茶几是否为圆形胡桃木、是否有陶杯与书。\n\n3. **Unsplash：a living room with a couch and a potted plant**\n   标注 sunlight、golden hour、film look，相机为 FUJIFILM X-T4。可作为“真实摄影光照氛围、人眼高度构图”的参考。**局限**：页面描述极简，无法确认沙发颜色/材质、茶几形态与靠垫细节。\n\n> 未找到 Pexels 或 Wikimedia Commons 中同时覆盖“米灰亚麻沙发 + 胡桃木圆茶几 + 陶杯书 + 左侧窗”的公开照片详情页。上述三个 Unsplash 页面可作为相机高度、窗光方向与家具组合的起点，但**不应**据页面描述直接复刻具体物体。\n\n---\n\n### 织物纹理：亚麻沙发与靠垫的代码表达建议\n\n**来源性质**：小红书织物拍摄经验帖为公开用户内容，非摄影图库照片；它提供的是纹理观察方法，不是场景照片。\n\n可转化为图形函数的细节：\n- **纤维感**：亚麻表面有细密的不规则编织纹，不是平滑噪声。代码中可用**各向异性高频噪声**叠加微弱正弦条纹来模拟经纬编织，避免过度均匀。\n- **褶皱形态**：亚麻褶皱是**自然垂坠、堆叠**，而非规则波纹。可用低频 Perlin 噪声偏移法线，在靠垫边缘与沙发坐垫交界处增加褶皱密度。\n- **颜色**：米灰色不是单一 RGB，需在基础色中混入**低饱和度暖灰与极少量冷灰纤维斑驳**，避免平涂。\n- **光照响应**：亚麻粗糙度偏高，高光应**宽而弱**，不宜出现塑料感锐利高光。柔和窗光下，褶皱的明暗过渡应缓慢。\n\n**局限**：未获得亚麻织物的高清照片字节，无法从图像中直接提取织物纹理频谱；上述为基于材质描述与拍摄经验的推断。\n\n---\n\n### 胡桃木纹理：圆形茶几的代码表达建议\n\n**来源性质**：Meshy 的胡桃木贴图页为 **AI 生成 PBR 贴图**，非实拍照片；台北建材展与 Pfleiderer 页面为木材产品描述，非室内摄影参考。\n\n可转化为图形函数的细节：\n- **底色**：黑胡桃心材为**深棕至紫褐色**，不是均匀棕色；边材有浅色过渡。代码中可用低频色斑混合深棕、巧克力色与浅棕条纹。\n- **纹理走向**：胡桃木纹理**流畅交错**，有细长孔隙与零星树枝状斑点。圆形茶几台面可沿半径方向做**旋转拉伸的条纹噪声**，桌面边缘保持纹理连续，避免接缝。\n- **表面反射**：哑光丝质饰面，粗糙度中低，但不宜镜面。窗光在台面上应形成**柔和长条高光**，随圆形轮廓弯曲。\n\n**局限**：未查看任何胡桃木实拍照片字节；AI 生成贴图仅可作为程序化纹理的参数方向参考，不应直接视为真实木纹样本。\n\n---\n\n### 光照与构图：左侧窗光的代码参数建议\n\n基于 Unsplash 页面的“natural light floods / large window / golden hour film look”描述：\n\n- **光源方向**：左侧窗户。主光从画面左中高度射入，色温偏中性微暖（约 5200–5600K），强度柔和，避免直射硬阴影。\n- **阴影形态**：沙发右侧、茶几下方、绿植后方应有**低对比软阴影**；接触阴影（家具与地板、地毯交接处）应存在但边缘模糊，以体现接触真实。\n- **相机高度**：人眼高度约 **1.4–1.6 m**，水平视线，窗框与墙的连接处应可见完整窗台或窗框下沿，避免相机过低导致天花空洞。\n- **尺度校验**：沙发坐高与茶几高度差约 10–15 cm；圆形茶几直径应小于沙发座宽；靠垫两个，松散放置在沙发两端，不悬空、不穿透扶手。\n- **窗框连接**：代码中窗框应内嵌于墙体厚度，窗台板与墙面之间无缝隙；窗框下沿有微小投影，证明窗框与墙的接触。\n\n**局限**：以上光照参数为基于页面文字描述与常规摄影经验的推断，未从任何指定照片像素中测量。\n\n---\n\n### 总体局限与执行建议\n\n1. **没有完全匹配的照片**：搜索结果中的 Unsplash 页面仅覆盖部分元素；Pexels 与 Wikimedia Commons 未出现符合主体与场景的详情页。因此代码表达不应宣称“复刻某张照片”，而应标注为“基于公开构图参考与材质描述的程序化场景”。\n2. **材质参考的层级**：亚麻褶皱与胡桃木纹理建议来自材质描述与拍摄方法，不是从照片字节中提取的纹理统计。若后续视觉模型获得照片，应优先用图像中的真实纹理校正程序化参数。\n3. **验证接触与尺度**：代码渲染后需检查：靠垫是否与沙发座面/靠背有接触阴影；茶几脚是否落在地毯上而非悬浮；绿植盆底与地板/地毯的接触是否自然；窗框与墙交界是否有结构缝隙。\n4. **推荐优先获取的照片页**：Unsplash 的与可作为构图起点；可作为真实摄影光照氛围参考。织物与木纹细节建议依赖后续提交的图像字节，而非上述贴图或产品页。",
+      "status": "completed",
+      "nativeSearchObserved": true,
+      "referenceImageCandidates": [],
+      "referenceImages": [],
+      "referenceImagesSubmitted": 0,
+      "inputImageProvided": false,
+      "referenceCollection": {
+        "method": "public source-page image metadata, verified image bytes; not render textures",
+        "sourcePageCount": 3,
+        "downloadedCount": 0,
+        "attempts": [
+          {
+            "sourceUrl": "https://unsplash.com/photos/modern-living-room-with-neutral-tones-and-natural-elements-tPz3Lhh3z_4",
+            "title": "Photo by Brian Zajac on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-modern-inviting-living-room-is-well-lit-EMxd6-q7IHo",
+            "title": "Photo by Interlock Singapore on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-living-room-with-a-couch-and-a-potted-plant-_9WTLhclqGU",
+            "title": "Photo by Ashe Walker on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          }
+        ],
+        "submittedToVision": false,
+        "submittedCount": 0
+      }
+    },
+    "usage": {
+      "prompt_tokens": 10381,
+      "completion_tokens": 7666,
+      "total_tokens": 18047,
+      "providerCalls": 2,
+      "requests": [
+        {
+          "phase": "research",
+          "requestId": "a31f1541-55c4-4b3a-a9a1-fcaa91e5c4e5",
+          "model": "deepseek-flash",
+          "elapsedMs": 23421,
+          "prompt_tokens": 5673,
+          "completion_tokens": 1565,
+          "total_tokens": 7238,
+          "server_tool_use": {
+            "tool_search": 5,
+            "tool_fetch": 0,
+            "tool_image_search": 0
+          }
+        },
+        {
+          "phase": "compose",
+          "requestId": "0b256d5d-94f7-499c-9ff1-9cad42dcea0f",
+          "model": "deepseek-flash",
+          "elapsedMs": 27728,
+          "prompt_tokens": 4708,
+          "completion_tokens": 6101,
+          "total_tokens": 10809,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "warnings": [],
+    "vision": {
+      "renderedImageProvided": false,
+      "referenceImagesProvided": 0,
+      "referenceSourceUrls": []
+    }
+  }
+}

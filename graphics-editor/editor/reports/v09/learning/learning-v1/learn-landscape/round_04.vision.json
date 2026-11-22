@@ -1,0 +1,313 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 4,
+  "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "items": [
+    {
+      "id": "ref.4.0",
+      "label": "山湖全景与山体倒影",
+      "category": "mountain-lake-landscape",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          38,
+          58,
+          88
+        ],
+        [
+          92,
+          132,
+          158
+        ],
+        [
+          152,
+          176,
+          206
+        ],
+        [
+          196,
+          178,
+          172
+        ],
+        [
+          24,
+          48,
+          72
+        ]
+      ],
+      "lightDirection": "back",
+      "description": "宽幅全景：远处山脊呈深蓝灰色剪影，主峰居中偏左、体量最高，两侧有较矮山脊向画面右缘延伸。山体下方为平静湖面，倒映山形，倒影轮廓被水波轻微拉宽变软；近景水面偏深蓝并有细碎波纹与浅色斑驳，中景水面偏青蓝。天空由左缘的淡暖色余光过渡到上部的灰蓝色，地平线附近有薄雾感的分层。整体冷调、低饱和、明暗对比集中在地平线一带；可复用为‘山体+水面镜像+大气分层’的构图范本，复用时应保留长宽比与倒影的垂直对称关系。",
+      "tags": [
+        "山湖",
+        "倒影",
+        "全景",
+        "黄昏",
+        "剪影山脊",
+        "水面波纹",
+        "冷色调",
+        "大气透视"
+      ],
+      "limitations": [
+        "分辨率低，山体岩层与植被纹理不可辨",
+        "无法确认真实焦距、曝光与是否多张合成",
+        "倒影区受波浪影响，不构成精确镜面",
+        "薄雾与眩光边界模糊，无法量化"
+      ]
+    },
+    {
+      "id": "ref.4.1",
+      "label": "浓雾海岸岩崖与碎浪",
+      "category": "coastal-cliff",
+      "role": "object",
+      "bbox": [
+        0.3,
+        0.28,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          206,
+          212,
+          214
+        ],
+        [
+          142,
+          122,
+          92
+        ],
+        [
+          224,
+          230,
+          230
+        ],
+        [
+          112,
+          126,
+          120
+        ],
+        [
+          72,
+          82,
+          62
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "竖向构图的海岸：右侧为褐色至土黄色的岩崖，块状岩体层层堆叠、表面粗糙多棱角，崖顶覆有暗绿色低矮灌草，崖线由画面右中向右下斜切。左侧为灰绿色海面，近岸白浪与泡沫密集、呈条带状冲刷岩脚，远处海面在雾中迅速淡出。上半部被浓白雾覆盖，天空与海面几乎无缝融合，仅顶部露出极淡的蓝灰。光照均匀漫射、无明显投影，色彩低饱和、对比偏软；适合提取‘雾中海岸+岩崖+碎浪’的材质与遮挡关系。",
+      "tags": [
+        "海岸",
+        "岩崖",
+        "海雾",
+        "碎浪",
+        "泡沫",
+        "粗糙岩石",
+        "低饱和",
+        "漫射光"
+      ],
+      "limitations": [
+        "雾气遮挡远景，海岸线走向与远岸不可辨",
+        "分辨率低，岩石节理与植被细节缺失",
+        "无法判断潮位、浪高与拍摄时刻",
+        "色彩可能受白平衡与雾散射影响"
+      ]
+    },
+    {
+      "id": "ref.4.2",
+      "label": "浓雾针叶林与隐约树干",
+      "category": "foggy-forest",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          28,
+          42,
+          32
+        ],
+        [
+          124,
+          136,
+          136
+        ],
+        [
+          152,
+          162,
+          156
+        ],
+        [
+          16,
+          24,
+          20
+        ],
+        [
+          170,
+          180,
+          178
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "近方形画面为浓雾中的暗色林地：前景至中景是低矮密集的暗绿植被与灌丛，轮廓模糊成片；中景隐约可见数根浅灰竖直树干与树冠团块，轮廓在雾中逐层变淡。上部被灰白雾幕吞没，几乎没有天空与地平线，形成自上而下的亮度梯度（上亮下暗）。整体近乎单色、对比低、细节被雾散射削弱，属于‘多层雾幕+树干竖线’的典型层次结构，可复用为雾林氛围与深度衰减参考。",
+      "tags": [
+        "针叶林",
+        "浓雾",
+        "树干",
+        "前景灌丛",
+        "层次衰减",
+        "暗调",
+        "低对比",
+        "灰绿"
+      ],
+      "limitations": [
+        "雾极浓，树种、枝叶形态与地面无法确认",
+        "画面存在噪点与压缩痕迹，纹理不可靠",
+        "缺少天空参照，无法判断光照方向",
+        "不能据此推断林分密度或地形起伏"
+      ]
+    },
+    {
+      "id": "ref.4.3",
+      "label": "晨雾湖面与多层山影",
+      "category": "lake-mountain-dawn",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          112,
+          140,
+          166
+        ],
+        [
+          140,
+          160,
+          182
+        ],
+        [
+          162,
+          176,
+          186
+        ],
+        [
+          40,
+          56,
+          66
+        ],
+        [
+          190,
+          172,
+          160
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "横向风景：远景为浅蓝灰色圆缓山体，山脊柔和、被薄雾削弱细节，山脚与中景深色林带之间过渡模糊；中景为成排暗色针叶林剪影，左右两侧林带较高、中央较低，露出后方水面与浅滩。近景湖面平静，反射上方山影与天色，呈灰蓝至淡暖的柔光，水面有轻微水平纹理与浅色反光带。天空为灰蓝云层，接近地平线处透出淡暖粉光，暗示清晨。层次清晰（天—远山—林带—水面倒影），适合做分层雾景与低对比水面反射的参考。",
+      "tags": [
+        "湖面",
+        "远山",
+        "针叶林剪影",
+        "晨雾",
+        "倒影",
+        "分层景深",
+        "灰蓝",
+        "柔光"
+      ],
+      "limitations": [
+        "整体失焦偏软，山体与林木细节不可辨",
+        "分辨率低，无法提取真实树冠或岸线形状",
+        "薄雾与云层压缩了明暗层次",
+        "无法确认真实时间、方位与是否长曝光"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "均为自然风景实拍，非合成图或分割图",
+    "采用远—中—近多层景深结构，层间由雾或水面过渡",
+    "低饱和冷调为主，明暗对比集中在远景交界带",
+    "都存在水面反射或雾散射造成的柔化与细节衰减",
+    "画面文字信息缺失，仅能依据可见像素判断"
+  ],
+  "missingEvidence": [
+    "无EXIF、镜头与曝光参数，无法核对真实焦距与时长",
+    "原始分辨率不足，纹理与边缘不可定量",
+    "每处景观仅单视角单时刻，无多角度与季节对照",
+    "无地理坐标与拍摄方位，山体与海岸朝向不确定",
+    "雾、云与水面反射的真实物理参数（能见度、波高、反照率）无法测得",
+    "无地面采样，岩石与植被材质只能定性描述",
+    "色彩未经色卡校准，存在白平衡与压缩偏色可能",
+    "缺少尺度参照物，无法估计山高、崖高与树高"
+  ],
+  "images": [
+    {
+      "id": "ref.4.0",
+      "sourceUrl": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+      "sha256": "48ae9f427029f3415f6ea1f2929a3efb14ade3f077baf09a13e45f0cfb1e47e1",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.4.1",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calima.JPG#1",
+      "sha256": "2cb02d0531adc5e5f59be08d32b780c452017d15eb91279763a3f04403b2115c",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.4.2",
+      "sourceUrl": "https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/",
+      "sha256": "e6fe814e8511d436dda6e63a4611bea08f9443985591cf178fedb53f570d9cb2",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.4.3",
+      "sourceUrl": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+      "sha256": "30b9bf7e466046a33e38d6ccf7f1bfc208c5ab6f57222a97a964d121c2019996",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "9e087762-6dcd-4cc0-9d31-2b908afcfdda",
+        "model": "deepseek-flash",
+        "elapsedMs": 21800,
+        "prompt_tokens": 1610,
+        "completion_tokens": 2489,
+        "total_tokens": 4099,
+        "reasoning_tokens": 1007,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1610,
+    "completion_tokens": 2489,
+    "total_tokens": 4099,
+    "reasoning_tokens": 1007
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 21802
+}

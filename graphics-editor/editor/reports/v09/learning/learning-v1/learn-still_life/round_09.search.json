@@ -1,0 +1,955 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 9,
+  "query": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "checkpoint": {
+    "sessionId": "crf09_e5ccf6cd-5556-4a02-a656-53316025d65f",
+    "round": 9,
+    "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+    "subtopic": "不同实例：避免同一摄影作品的重复裁切",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:57:10.385Z",
+    "runId": "crf07_def57e02-7c8e-4372-8128-faf48226590c",
+    "queries": [
+      "site:commons.wikimedia.org \"Apples, Pears, Oranges.jpg\"",
+      "site:commons.wikimedia.org apple pear orange still life photograph",
+      "site:pexels.com ceramic vase apples pears oranges still life photo",
+      "site:commons.wikimedia.org ceramic vase still life apples photograph",
+      "site:pexels.com apple pear orange ceramic vase still life photo",
+      "site:commons.wikimedia.org pear skin close-up photograph",
+      "site:commons.wikimedia.org russet apple skin close-up photograph",
+      "site:pexels.com photo ceramic vase apples still life",
+      "site:pexels.com photo \"still life\" vase fruit",
+      "site:commons.wikimedia.org \"ceramic vase\" still life fruit photograph",
+      "site:commons.wikimedia.org orange fruit close-up photograph",
+      "site:commons.wikimedia.org pear fruit close-up photograph",
+      "site:pexels.com photo orange fruit close up peel",
+      "site:pexels.com photo pear close up skin"
+    ],
+    "requestIds": [
+      "57ee6e1a-d583-4db6-9e42-6fe0279b95c0"
+    ],
+    "sourceCount": 24,
+    "newSourceCount": 12,
+    "candidateCount": 12,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_b6a7c21509ff4fff8de01cd01cc8d092",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"Apples, Pears, Oranges.jpg\"",
+            "site:commons.wikimedia.org apple pear orange still life photograph",
+            "site:pexels.com ceramic vase apples pears oranges still life photo",
+            "site:commons.wikimedia.org ceramic vase still life apples photograph",
+            "site:pexels.com apple pear orange ceramic vase still life photo",
+            "site:commons.wikimedia.org pear skin close-up photograph",
+            "site:commons.wikimedia.org russet apple skin close-up photograph"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+          "https://commons.wikimedia.org/wiki/Category:Pyrus_bretschneideri?uselang=zh-hk",
+          "https://commons.wikimedia.org/wiki/Category:Russet_apples",
+          "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+          "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+          "https://commons.wikimedia.org/wiki/Category:Beauvais_(pear)",
+          "https://commons.wikimedia.org/wiki/Category:Golden_Russet",
+          "https://commons.wikimedia.org/wiki/Category:1770s_paintings_of_flowers#1",
+          "https://commons.wikimedia.org/wiki/Category:Focus_stacking_images_of_fruits#1",
+          "https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg#1"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_01_f2aa9710edf443dd86b4e347a7dfaff2",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com photo ceramic vase apples still life",
+            "site:pexels.com photo \"still life\" vase fruit",
+            "site:commons.wikimedia.org \"ceramic vase\" still life fruit photograph",
+            "site:commons.wikimedia.org orange fruit close-up photograph",
+            "site:commons.wikimedia.org pear fruit close-up photograph",
+            "site:pexels.com photo orange fruit close up peel",
+            "site:pexels.com photo pear close up skin"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+          "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+          "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+          "https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg#1",
+          "https://www.pexels.com/photo/close-up-of-fruits-in-bowl-327098/",
+          "https://www.pexels.com/fr-fr/photo/bol-rustique-de-fruits-avec-pommes-et-raisins-35581351/",
+          "https://www.pexels.com/photo/wooden-bowls-and-a-jar-with-mix-of-herbs-and-spices-for-digestion-25349354/",
+          "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+          "https://commons.wikimedia.org/wiki/File:Orange_ungesch%C3%A4ltl.JPG#1",
+          "https://commons.wikimedia.org/wiki/File:Deveci_(pear)_jm123505_ji.jpg#1",
+          "https://www.pexels.com/photo/orange-fruit-hanging-from-a-stem-6021680/",
+          "https://www.pexels.com/de-de/foto/rustikales-vintage-stillleben-bei-gedampftem-licht-30453418/",
+          "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+        "title": "Category:Apples with other fruit - Wikimedia Commons",
+        "snippet": "Media in category \"Apples with other fruit\" ... 5.48 MB - Apples, Pears, Oranges.jpg 1,280 × 960; 291 KB ... - Pears & Apples.jpg 1,024 × 768; 361 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+        "title": "Photo by Evgeniy Alekseyev on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 6016x4016 ... Date Mar 31, 2021 ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+        "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+        "snippet": "Pissarro - Still Life with Apples and Pitcher.JPG ... Camille Pissarro: 'Ghâtaignier' Apples and Glazed Earthenware on a Table Artist Author | painting of Pissarro ... Pissarro - Still Life with Apples and Pitcher.JPG",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pyrus_bretschneideri?uselang=zh-hk",
+        "title": "Category:Pyrus bretschneideri - Wikimedia Commons",
+        "snippet": "Nashi.jpg 1,851 × 1,828；605 KB - Papple 3 copy.jpg 252 × 199；37 KB - Pyrus bretschneideri Leaf.jpg 1,840 × 3,264；1.79 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Russet_apples",
+        "title": "Category:Russet apples - Wikimedia Commons",
+        "snippet": "Russeting on apples is a particular type of skin, slightly rough, usually with a greenish-brown to yellowish-brown colour. ... - Cień jabłka - 27.02.2026.jpg 1 ... - Egremont Russet Apple.jpg 650 × 650; 277 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+        "title": "Category:2 fruit - Wikimedia Commons - Category:2 fruit",
+        "snippet": "2 apples (1 C, 57 F) ### O - 2 oranges (1 C, 3 F) ... The following 146 files are in this category ... - Pears-2.jpg 1,402 × 1,402; 822 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+        "title": "Category:Grasset Collection - Wikimedia Commons",
+        "snippet": "Peter Binoit - Still Life of Grapes and Peaches on a Porcelain Bowl.jpg ... Jan Davidsz de Heem - Still life of flowers in a glass vase with insects and fruits in a stone niche l22036-58kpv-01-t1.jpg",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Beauvais_(pear)",
+        "title": "Category:Beauvais (pear) - Wikimedia Commons",
+        "snippet": "Ailly-le-Haut-Clocher, Apple festival 04 et 05-11-2023 (pears) (67) - Beauvais.jpg 3,398 × 4,581; 1.62 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Golden_Russet",
+        "title": "Category:Golden Russet - Wikimedia Commons",
+        "snippet": "Golden russet apple.jpg 1,024 × 683; 115 KB - Golden Russet Apple.JPG 3,072 × 2,304; 1.44 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:1770s_paintings_of_flowers#1",
+        "title": "Category:1770s paintings of flowers - Wikimedia Commons - Help",
+        "snippet": "'Fruit and Flowers in a Terracotta Vase' by Jan van Os, 1777-8.jpg ... Luis Meléndez - Still Life with Apples, Grapes, Melons, Bread, Jug and Bottle - Google Art Project.jpg 6,145 × 4,325; 5.62 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Focus_stacking_images_of_fruits#1",
+        "title": "Category:Focus stacking images of fruits - Wikimedia Commons - Category:Focus stacking images of fruits",
+        "snippet": "Media in category \"Focus stacking images of fruits\" The following 116 files are in this category ... 4.13 MB - 2019-09-25 Pear.jpg 4,288 × 2,848; 1.72 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg#1",
+        "title": "File:Egremont Russet Apple.jpg - Wikimedia Commons - File:Egremont Russet Apple.jpg",
+        "snippet": "Egremont Russet Apple.jpg ... DescriptionEgremont Russet Apple.jpg | ... Egremont Russet apple, on my kitchen worktop. Photo taken and edited by me and originally uploaded to en.wikipedia in 2006.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+        "title": "Photo by Vadim Bocharov on Pexels",
+        "snippet": "4524x6643 Aspect Ratio 348 ... Date Apr 10, 2019 Downloads 1.6K Views 317.1K ... Россия Description # Elegant still life featuring a flower in a patterned vase and a citrus fruit on a plate. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+        "title": "Category:Close-up photographs of oranges - Wikimedia Commons",
+        "snippet": "Orange close-up (24464006143).jpg 6,016 × 4,000 ... - Orange fruit of Thailand.JPG 1,616 × 1,078...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg#1",
+        "title": "File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg - Wikimedia Commons - File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg",
+        "snippet": "Pyrus - Pears, Giresun 2017-07-05 01-4.jpg ... DescriptionPyrus - Pears, Giresun 2017-07-05 01-4.jpg | English: A early small pear variety (Pyrus sp.) in Espiye - Giresun,Turkey.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/close-up-of-fruits-in-bowl-327098/",
+        "title": "Photo by Pixabay on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames ##### Pixabay ... Camera Canon EOS 5D Mark III ... Taken At Nov 27, 2016 Description # Vibrant peeled and whole tangerines in a rustic bowl highlighting freshness and health. ### More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/bol-rustique-de-fruits-avec-pommes-et-raisins-35581351/",
+        "title": "Photo de nic godsell sur Pexels",
+        "snippet": "Create photo collages Add custom frames nic godsell ... Dimensions 2608x2607 Couleurs Date Jan 8 ... Appareil photo Pixel 6 Focale 6.81mm ... Greater London, England, United Kingdom Description # Un bol en céramique rustique rempli de pommes et de raisins frais, baigné de lumière naturelle. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/wooden-bowls-and-a-jar-with-mix-of-herbs-and-spices-for-digestion-25349354/",
+        "title": "Photo by Cameraman Surojit on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 3936x2624 Aspect Ratio 3 ... 2024 Downloads 54 Views ... Software Adobe Photoshop 23.1 (Windows) Description # Warm still life featuring organic spices in bowls, fresh tangerines, and conscious food branding. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+        "title": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg - Wikimedia Commons - File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg",
+        "snippet": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg ... Lit,\"natura morta con cesto di fiori, brocca di porcellana cinese e frutta\"",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Orange_ungesch%C3%A4ltl.JPG#1",
+        "title": "File:Orange ungeschältl.JPG - Wikimedia Commons - File:Orange ungeschältl.JPG",
+        "snippet": "File:Orange ungeschältl.JPG ... DescriptionOrange ungeschältl.JPG | Deutsch: ungeschälte Orange English: A close-up photograph of an orange ---|--- Source | Own work Author | 3268zauber ... Orange Category:Fruits",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Deveci_(pear)_jm123505_ji.jpg#1",
+        "title": "File:Deveci (pear) jm123505 ji.jpg - Wikimedia Commons - File:Deveci (pear) jm123505 ji.jpg",
+        "snippet": "Deveci (pear) jm123505 ji.jpg ... DescriptionDeveci (pear) jm123505 ji.jpg | Deutsch: Querschnitte durch die Früchte ... //commons.wikimedia.org/wiki/File:Deveci_(pear)_jm123505_ji.jpg ... Keywords | cross section of fruits",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/orange-fruit-hanging-from-a-stem-6021680/",
+        "title": "Photo by Eugen Proskouriakov on Pexels",
+        "snippet": "4000x5000 Aspect Ratio 4 ... Date Nov 29, 2020 ... 2020 Software Adobe Photoshop Lightroom Classic 7.0 (Windows) Description # Close-up of a single ripe orange fruit hanging from a lush green branch outdoors. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/de-de/foto/rustikales-vintage-stillleben-bei-gedampftem-licht-30453418/",
+        "title": "Foto von quang vinh auf Pexels",
+        "snippet": "Wähle Deine Sprache: Use filters Change focus Brighten up Add frames Beschreibung # Vintage-Stillleben mit Töpferwaren und Obst auf einem rustikalen Holztisch bei gedämpftem Licht. ### Mehr davon Use filters Change focus Brighten up Add",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+        "title": "Photo by Townsend Walton on Pexels",
+        "snippet": "Date Jul 25, 2025 Downloads 37 Views ... 2025 Software Luminar Neo Lacey, Washington, United States Description # A beautiful still life featuring fresh plums in a patterned bowl with a vibrant dahlia flower. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮实际搜索未能找到可核验的、同时包含“苹果、梨、整橙子、普通陶瓷花瓶”的摄影详情页。搜索结果仍以 Commons 分类页、文件名列表和绘画为主。不过，本轮成功定位了前轮线索中 `Apples, Pears, Oranges.jpg` 所在的分类页，并找到几张可用于独立材质/果皮细节的 Commons 与 Pexels 具体照片页。以下按“可记录线索”与“待核验缺口”分开整理。\n\n---\n\n## 一、可记录的新线索（非完整场景，需取图后确认）\n\n### 1. `Apples, Pears, Oranges.jpg` 仍无文件详情页\n\n该文件名出现在 Commons 的 `Category:Apples with other fruit` 分类页中，尺寸标注为 1,280 × 960 。但该分类页本身不是 `File:` 详情页，无法确认作者、许可证、是否为摄影、是否包含花瓶。前轮提到的“Mark and Allegra Jaroski-Biava，CC BY-SA 2.0”线索本轮未在 Commons 内得到直接印证。**该文件仍不能作为已核实来源使用。**\n\n### 2. Commons 果皮纹理：Egremont Russet Apple（具体文件页）\n\n- **来源页**：https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg \n- **元数据**：作者 AJR，来源为 Own work，相机 E2000，f/2.8，焦距 5.8 mm，拍摄于 2006 年。描述为“在厨房台面上拍摄的 Egremont Russet 苹果”。\n- **可转化用途**：Russet 苹果表皮具有典型的粗糙、褐绿色锈斑纹理。若取图后确认纹理可见，可用于图形函数中**苹果果皮“非均匀漫反射 + 局部粗糙度变化”** 的参考，区别于光滑红苹果的均匀高光。\n- **局限**：该文件为 650×650 低分辨率早期数码照片，f/2.8 浅景深，纹理细节可能不足；许可证需在文件页进一步确认（搜索结果未显示许可模板）。\n\n### 3. Commons 橙子近景：Orange ungeschältl.JPG（具体文件页）\n\n- **来源页**：https://commons.wikimedia.org/wiki/File:Orange_ungesch%C3%A4ltl.JPG \n- **元数据**：作者 3268zauber，来源 Own work，原始尺寸 3,456 × 2,592，描述为“未剥皮橙子的近景照片”。\n- **可转化用途**：用于提取**整橙子果皮的油胞点状纹理与球形高光**。橙皮表面不是光滑镜面，高光应呈现为**宽而柔和的漫反射亮区**，而非锐利点光。\n- **局限**：无相机参数与光圈信息；许可证需在文件页核验。\n\n### 4. Commons 梨的近景：Pyrus - Pears, Giresun（具体文件页）\n\n- **来源页**：https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg \n- **元数据**：作者 Zeynel Cebeci，来源 Own work，Canon EOS 7D Mark II，f/9，1/200s，ISO 640，焦距 400 mm。描述为土耳其 Giresun 的早熟小梨品种。\n- **可转化用途**：梨的轮廓具有**顶部窄、底部宽的钟形/葫芦形不对称性**，与苹果的近似球形、橙子的正球形形成形态区分。f/9 光圈在 400 mm 焦距下景深较浅，但若梨主体在焦平面内，边缘轮廓可用于提取**梨的肩部曲线与果梗凹陷**。\n- **局限**：拍摄距离较远（400 mm），果皮表面微观纹理可能不可见；许可证需在文件页确认。\n\n### 5. Pexels 白瓷碗与红苹果（前轮已记录，本轮再次出现）\n\n- **来源页**：https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/ \n- **元数据**：Nikon D750，62 mm，f/14.0，1/160s，ISO 100，Photoshop 22.0。\n- **用途**：白瓷碗的**素面釉面高光与碗沿硬边**可作为“普通陶瓷”材质的局部替代参考；苹果与碗壁的接触处可观察**硬质陶瓷对软质果皮的局部挤压阴影**。\n- **局限**：无梨、橙子或花瓶；碗的形态不是花瓶。取图前不能声称已确认接触细节。\n\n### 6. Pexels 橙子与花纹花瓶（有限参考）\n\n- **来源页**：https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/ \n- **元数据**：描述为“花纹花瓶中的花与盘中的柑橘类水果”，ACDSee 18 处理，尺寸 4524×6643。花瓶为**有花纹的装饰花瓶**，不是“普通陶瓷花瓶”；水果为柑橘类，未确认为整橙子。\n- **用途**：可提供**花瓶竖向轮廓与盘/台面接触**的构图参考，但材质与形态均不匹配目标场景。**不建议作为主参考纳入。**\n\n---\n\n## 二、对图形函数可转化的细节（基于网页文本描述，待取图验证）\n\n**果皮粗糙度分层**：光滑苹果、Russet 苹果、梨皮、橙皮应使用不同的粗糙度/法线策略。Russet 苹果文件页的文本确认了“锈斑表皮”的存在 ，但纹理强度需取图后目视确认，不能仅凭文本设定数值。\n\n**橙皮高光形态**：未剥皮橙子的近景文件页  提示存在球形表面，但文本未描述光照方向。若后续取图确认光源为柔和漫射，橙皮高光应表现为**大面积、低强度、边缘渐变**的亮区，而非陶瓷釉面那种锐利高光。\n\n**陶瓷与水果的接触**：Alekseyev 页的 f/14 光圈  在 62 mm 焦距下景深较大，碗沿与近处苹果边缘可能相对清晰，适合提取**接触阴影的硬边过渡**。但该页为白背景棚拍，接触面的暗部可能被高调布光压缩，实际可提取的明暗层次有限。\n\n---\n\n## 三、局限与下一轮定向建议\n\n- **核心组合仍缺失**：没有任何一页可确认同时包含苹果、梨、整橙子与普通陶瓷花瓶。`Apples, Pears, Oranges.jpg` 即使定位到文件页，也需确认是否含花瓶。\n- **图片字节未获取**：上述纹理、边缘、接触阴影均无法从文本确认，不得声称已看过图像。\n- **下一轮优先动作（按可行性排序）**：\n  1. 在 Commons 搜索框直接输入 `File:Apples, Pears, Oranges.jpg`，定位文件详情页并核验摄影属性与许可。\n  2. 在 Commons 搜索 `File:` 命名空间下的 `ceramic vase fruit` 或 `earthenware vase still life`，排除绘画分类。\n  3. 在 Pexels 搜索 `white ceramic vase apples` 或 `ceramic vase orange fruit`，寻找素面花瓶与水果同框的具体照片页，避免已收集链接。\n  4. 若 `Egremont Russet Apple.jpg` 的许可证可核验，可将其作为苹果粗糙果皮的**唯一独立纹理参考**，但仍不解决场景组合问题。\n\n**已排除的重复来源**：本轮搜索结果中出现的 Pissarro 绘画页 、Grasset Collection 分类页 、Cristoforo Munari 绘画页  均为绘画，不符合“真实静物摄影”要求，不再纳入。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+      "title": "Category:Apples with other fruit - Wikimedia Commons",
+      "snippet": "Media in category \"Apples with other fruit\" ... 5.48 MB - Apples, Pears, Oranges.jpg 1,280 × 960; 291 KB ... - Pears & Apples.jpg 1,024 × 768; 361 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 6016x4016 ... Date Mar 31, 2021 ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+      "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+      "snippet": "Pissarro - Still Life with Apples and Pitcher.JPG ... Camille Pissarro: 'Ghâtaignier' Apples and Glazed Earthenware on a Table Artist Author | painting of Pissarro ... Pissarro - Still Life with Apples and Pitcher.JPG",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pyrus_bretschneideri?uselang=zh-hk",
+      "title": "Category:Pyrus bretschneideri - Wikimedia Commons",
+      "snippet": "Nashi.jpg 1,851 × 1,828；605 KB - Papple 3 copy.jpg 252 × 199；37 KB - Pyrus bretschneideri Leaf.jpg 1,840 × 3,264；1.79 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Russet_apples",
+      "title": "Category:Russet apples - Wikimedia Commons",
+      "snippet": "Russeting on apples is a particular type of skin, slightly rough, usually with a greenish-brown to yellowish-brown colour. ... - Cień jabłka - 27.02.2026.jpg 1 ... - Egremont Russet Apple.jpg 650 × 650; 277 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+      "title": "Category:2 fruit - Wikimedia Commons - Category:2 fruit",
+      "snippet": "2 apples (1 C, 57 F) ### O - 2 oranges (1 C, 3 F) ... The following 146 files are in this category ... - Pears-2.jpg 1,402 × 1,402; 822 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+      "title": "Category:Grasset Collection - Wikimedia Commons",
+      "snippet": "Peter Binoit - Still Life of Grapes and Peaches on a Porcelain Bowl.jpg ... Jan Davidsz de Heem - Still life of flowers in a glass vase with insects and fruits in a stone niche l22036-58kpv-01-t1.jpg",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Beauvais_(pear)",
+      "title": "Category:Beauvais (pear) - Wikimedia Commons",
+      "snippet": "Ailly-le-Haut-Clocher, Apple festival 04 et 05-11-2023 (pears) (67) - Beauvais.jpg 3,398 × 4,581; 1.62 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Golden_Russet",
+      "title": "Category:Golden Russet - Wikimedia Commons",
+      "snippet": "Golden russet apple.jpg 1,024 × 683; 115 KB - Golden Russet Apple.JPG 3,072 × 2,304; 1.44 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:1770s_paintings_of_flowers#1",
+      "title": "Category:1770s paintings of flowers - Wikimedia Commons - Help",
+      "snippet": "'Fruit and Flowers in a Terracotta Vase' by Jan van Os, 1777-8.jpg ... Luis Meléndez - Still Life with Apples, Grapes, Melons, Bread, Jug and Bottle - Google Art Project.jpg 6,145 × 4,325; 5.62 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Focus_stacking_images_of_fruits#1",
+      "title": "Category:Focus stacking images of fruits - Wikimedia Commons - Category:Focus stacking images of fruits",
+      "snippet": "Media in category \"Focus stacking images of fruits\" The following 116 files are in this category ... 4.13 MB - 2019-09-25 Pear.jpg 4,288 × 2,848; 1.72 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg#1",
+      "title": "File:Egremont Russet Apple.jpg - Wikimedia Commons - File:Egremont Russet Apple.jpg",
+      "snippet": "Egremont Russet Apple.jpg ... DescriptionEgremont Russet Apple.jpg | ... Egremont Russet apple, on my kitchen worktop. Photo taken and edited by me and originally uploaded to en.wikipedia in 2006.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+      "title": "Photo by Vadim Bocharov on Pexels",
+      "snippet": "4524x6643 Aspect Ratio 348 ... Date Apr 10, 2019 Downloads 1.6K Views 317.1K ... Россия Description # Elegant still life featuring a flower in a patterned vase and a citrus fruit on a plate. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+      "title": "Category:Close-up photographs of oranges - Wikimedia Commons",
+      "snippet": "Orange close-up (24464006143).jpg 6,016 × 4,000 ... - Orange fruit of Thailand.JPG 1,616 × 1,078...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg#1",
+      "title": "File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg - Wikimedia Commons - File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg",
+      "snippet": "Pyrus - Pears, Giresun 2017-07-05 01-4.jpg ... DescriptionPyrus - Pears, Giresun 2017-07-05 01-4.jpg | English: A early small pear variety (Pyrus sp.) in Espiye - Giresun,Turkey.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-of-fruits-in-bowl-327098/",
+      "title": "Photo by Pixabay on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames ##### Pixabay ... Camera Canon EOS 5D Mark III ... Taken At Nov 27, 2016 Description # Vibrant peeled and whole tangerines in a rustic bowl highlighting freshness and health. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/bol-rustique-de-fruits-avec-pommes-et-raisins-35581351/",
+      "title": "Photo de nic godsell sur Pexels",
+      "snippet": "Create photo collages Add custom frames nic godsell ... Dimensions 2608x2607 Couleurs Date Jan 8 ... Appareil photo Pixel 6 Focale 6.81mm ... Greater London, England, United Kingdom Description # Un bol en céramique rustique rempli de pommes et de raisins frais, baigné de lumière naturelle. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/wooden-bowls-and-a-jar-with-mix-of-herbs-and-spices-for-digestion-25349354/",
+      "title": "Photo by Cameraman Surojit on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 3936x2624 Aspect Ratio 3 ... 2024 Downloads 54 Views ... Software Adobe Photoshop 23.1 (Windows) Description # Warm still life featuring organic spices in bowls, fresh tangerines, and conscious food branding. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+      "title": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg - Wikimedia Commons - File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg",
+      "snippet": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg ... Lit,\"natura morta con cesto di fiori, brocca di porcellana cinese e frutta\"",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Orange_ungesch%C3%A4ltl.JPG#1",
+      "title": "File:Orange ungeschältl.JPG - Wikimedia Commons - File:Orange ungeschältl.JPG",
+      "snippet": "File:Orange ungeschältl.JPG ... DescriptionOrange ungeschältl.JPG | Deutsch: ungeschälte Orange English: A close-up photograph of an orange ---|--- Source | Own work Author | 3268zauber ... Orange Category:Fruits",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Deveci_(pear)_jm123505_ji.jpg#1",
+      "title": "File:Deveci (pear) jm123505 ji.jpg - Wikimedia Commons - File:Deveci (pear) jm123505 ji.jpg",
+      "snippet": "Deveci (pear) jm123505 ji.jpg ... DescriptionDeveci (pear) jm123505 ji.jpg | Deutsch: Querschnitte durch die Früchte ... //commons.wikimedia.org/wiki/File:Deveci_(pear)_jm123505_ji.jpg ... Keywords | cross section of fruits",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/orange-fruit-hanging-from-a-stem-6021680/",
+      "title": "Photo by Eugen Proskouriakov on Pexels",
+      "snippet": "4000x5000 Aspect Ratio 4 ... Date Nov 29, 2020 ... 2020 Software Adobe Photoshop Lightroom Classic 7.0 (Windows) Description # Close-up of a single ripe orange fruit hanging from a lush green branch outdoors. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/de-de/foto/rustikales-vintage-stillleben-bei-gedampftem-licht-30453418/",
+      "title": "Foto von quang vinh auf Pexels",
+      "snippet": "Wähle Deine Sprache: Use filters Change focus Brighten up Add frames Beschreibung # Vintage-Stillleben mit Töpferwaren und Obst auf einem rustikalen Holztisch bei gedämpftem Licht. ### Mehr davon Use filters Change focus Brighten up Add",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+      "title": "Photo by Townsend Walton on Pexels",
+      "snippet": "Date Jul 25, 2025 Downloads 37 Views ... 2025 Software Luminar Neo Lacey, Washington, United States Description # A beautiful still life featuring fresh plums in a patterned bowl with a vibrant dahlia flower. ## More like this",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Beauvais_(pear)",
+      "title": "Category:Beauvais (pear) - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Golden_Russet",
+      "title": "Category:Golden Russet - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:1770s_paintings_of_flowers#1",
+      "title": "Category:1770s paintings of flowers - Wikimedia Commons - Help",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg#1",
+      "title": "File:Egremont Russet Apple.jpg - Wikimedia Commons - File:Egremont Russet Apple.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+      "title": "Category:Close-up photographs of oranges - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg#1",
+      "title": "File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg - Wikimedia Commons - File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-fruits-in-bowl-327098/",
+      "title": "Photo by Pixabay on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/bol-rustique-de-fruits-avec-pommes-et-raisins-35581351/",
+      "title": "Photo de nic godsell sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orange_ungesch%C3%A4ltl.JPG#1",
+      "title": "File:Orange ungeschältl.JPG - Wikimedia Commons - File:Orange ungeschältl.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deveci_(pear)_jm123505_ji.jpg#1",
+      "title": "File:Deveci (pear) jm123505 ji.jpg - Wikimedia Commons - File:Deveci (pear) jm123505 ji.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/orange-fruit-hanging-from-a-stem-6021680/",
+      "title": "Photo by Eugen Proskouriakov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/de-de/foto/rustikales-vintage-stillleben-bei-gedampftem-licht-30453418/",
+      "title": "Foto von quang vinh auf Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 283447,
+        "sha256": "4bd707fb222988987dbfc6accd0303c2ba536764fab5e39b1cb962fcf1a30fb5"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Egremont_Russet_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg#1",
+      "title": "File:Egremont Russet Apple.jpg - Wikimedia Commons - File:Egremont Russet Apple.jpg",
+      "sha256": "4bd707fb222988987dbfc6accd0303c2ba536764fab5e39b1cb962fcf1a30fb5",
+      "bytes": 283447,
+      "mime": "image/jpeg",
+      "width": 650,
+      "height": 650,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "AJR",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Egremont_Russet_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 650,
+        "height": 650,
+        "bytes": 283447
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 145400,
+        "sha256": "697fe5251b53151f51025ad33fd144f4e9dff36f87ea0104dc529611b9a5b62b"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg/960px-Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg#1",
+      "title": "File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg - Wikimedia Commons - File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg",
+      "sha256": "697fe5251b53151f51025ad33fd144f4e9dff36f87ea0104dc529611b9a5b62b",
+      "bytes": 145400,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 677,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Zeynel Cebeci",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2750,
+        "height": 1938,
+        "bytes": 3599096
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 43824,
+        "sha256": "01638baaffa2d4153d0d065f6b04afbedd344706aec7101ea9e6cb5dbf9d0504"
+      },
+      "imageUrl": "https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-fruits-in-bowl-327098/",
+      "title": "Photo by Pixabay on Pexels",
+      "sha256": "01638baaffa2d4153d0d065f6b04afbedd344706aec7101ea9e6cb5dbf9d0504",
+      "bytes": 43824,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 617
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 72896,
+        "sha256": "41803285cc1830cf333b3d9f1b02e002e4881c735c982a07ce43c7c92917922f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/35581351/pexels-photo-35581351.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/bol-rustique-de-fruits-avec-pommes-et-raisins-35581351/",
+      "title": "Photo de nic godsell sur Pexels",
+      "sha256": "41803285cc1830cf333b3d9f1b02e002e4881c735c982a07ce43c7c92917922f",
+      "bytes": 72896,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 768
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Egremont_Russet_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg#1",
+      "title": "File:Egremont Russet Apple.jpg - Wikimedia Commons - File:Egremont Russet Apple.jpg",
+      "sha256": "4bd707fb222988987dbfc6accd0303c2ba536764fab5e39b1cb962fcf1a30fb5",
+      "bytes": 283447,
+      "mime": "image/jpeg",
+      "width": 650,
+      "height": 650,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "AJR",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Egremont_Russet_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 650,
+        "height": 650,
+        "bytes": 283447
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg/960px-Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg#1",
+      "title": "File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg - Wikimedia Commons - File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg",
+      "sha256": "697fe5251b53151f51025ad33fd144f4e9dff36f87ea0104dc529611b9a5b62b",
+      "bytes": 145400,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 677,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Zeynel Cebeci",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2750,
+        "height": 1938,
+        "bytes": 3599096
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-fruits-in-bowl-327098/",
+      "title": "Photo by Pixabay on Pexels",
+      "sha256": "01638baaffa2d4153d0d065f6b04afbedd344706aec7101ea9e6cb5dbf9d0504",
+      "bytes": 43824,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 617,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/35581351/pexels-photo-35581351.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/bol-rustique-de-fruits-avec-pommes-et-raisins-35581351/",
+      "title": "Photo de nic godsell sur Pexels",
+      "sha256": "41803285cc1830cf333b3d9f1b02e002e4881c735c982a07ce43c7c92917922f",
+      "bytes": 72896,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 768,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Beauvais_(pear)",
+        "title": "Category:Beauvais (pear) - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Golden_Russet",
+        "title": "Category:Golden Russet - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:1770s_paintings_of_flowers#1",
+        "title": "Category:1770s paintings of flowers - Wikimedia Commons - Help",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg#1",
+        "title": "File:Egremont Russet Apple.jpg - Wikimedia Commons - File:Egremont Russet Apple.jpg",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Egremont_Russet_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "AJR",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AEgremont_Russet_Apple.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Egremont_Russet_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "bytes": 283447,
+        "mime": "image/jpeg",
+        "width": 650,
+        "height": 650,
+        "sha256": "4bd707fb222988987dbfc6accd0303c2ba536764fab5e39b1cb962fcf1a30fb5"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+        "title": "Category:Close-up photographs of oranges - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg#1",
+        "title": "File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg - Wikimedia Commons - File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg/960px-Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Zeynel Cebeci",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3APyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg/960px-Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 145400,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 677,
+        "sha256": "697fe5251b53151f51025ad33fd144f4e9dff36f87ea0104dc529611b9a5b62b"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/close-up-of-fruits-in-bowl-327098/",
+        "title": "Photo by Pixabay on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 43824,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 617,
+        "sha256": "01638baaffa2d4153d0d065f6b04afbedd344706aec7101ea9e6cb5dbf9d0504"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/bol-rustique-de-fruits-avec-pommes-et-raisins-35581351/",
+        "title": "Photo de nic godsell sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/35581351/pexels-photo-35581351.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/35581351/pexels-photo-35581351.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 72896,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 768,
+        "sha256": "41803285cc1830cf333b3d9f1b02e002e4881c735c982a07ce43c7c92917922f"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orange_ungesch%C3%A4ltl.JPG#1",
+        "title": "File:Orange ungeschältl.JPG - Wikimedia Commons - File:Orange ungeschältl.JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Orange_ungesch%C3%A4ltl.JPG/960px-Orange_ungesch%C3%A4ltl.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "3268zauber",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AOrange_ungesch%C3%A4ltl.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Orange_ungesch%C3%A4ltl.JPG/960px-Orange_ungesch%C3%A4ltl.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 129433,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 720,
+        "sha256": "6385b3ca7f3078bfee0925dd798d30847b0da4ed3dd330c94f30b48c32c194a9"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮实际搜索未能找到可核验的、同时包含“苹果、梨、整橙子、普通陶瓷花瓶”的摄影详情页。搜索结果仍以 Commons 分类页、文件名列表和绘画为主。不过，本轮成功定位了前轮线索中 `Apples, Pears, Oranges.jpg` 所在的分类页，并找到几张可用于独立材质/果皮细节的 Commons 与 Pexels 具体照片页。以下按“可记录线索”与“待核验缺口”分开整理。\n\n---\n\n## 一、可记录的新线索（非完整场景，需取图后确认）\n\n### 1. `Apples, Pears, Oranges.jpg` 仍无文件详情页\n\n该文件名出现在 Commons 的 `Category:Apples with other fruit` 分类页中，尺寸标注为 1,280 × 960 。但该分类页本身不是 `File:` 详情页，无法确认作者、许可证、是否为摄影、是否包含花瓶。前轮提到的“Mark and Allegra Jaroski-Biava，CC BY-SA 2.0”线索本轮未在 Commons 内得到直接印证。**该文件仍不能作为已核实来源使用。**\n\n### 2. Commons 果皮纹理：Egremont Russet Apple（具体文件页）\n\n- **来源页**：https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg \n- **元数据**：作者 AJR，来源为 Own work，相机 E2000，f/2.8，焦距 5.8 mm，拍摄于 2006 年。描述为“在厨房台面上拍摄的 Egremont Russet 苹果”。\n- **可转化用途**：Russet 苹果表皮具有典型的粗糙、褐绿色锈斑纹理。若取图后确认纹理可见，可用于图形函数中**苹果果皮“非均匀漫反射 + 局部粗糙度变化”** 的参考，区别于光滑红苹果的均匀高光。\n- **局限**：该文件为 650×650 低分辨率早期数码照片，f/2.8 浅景深，纹理细节可能不足；许可证需在文件页进一步确认（搜索结果未显示许可模板）。\n\n### 3. Commons 橙子近景：Orange ungeschältl.JPG（具体文件页）\n\n- **来源页**：https://commons.wikimedia.org/wiki/File:Orange_ungesch%C3%A4ltl.JPG \n- **元数据**：作者 3268zauber，来源 Own work，原始尺寸 3,456 × 2,592，描述为“未剥皮橙子的近景照片”。\n- **可转化用途**：用于提取**整橙子果皮的油胞点状纹理与球形高光**。橙皮表面不是光滑镜面，高光应呈现为**宽而柔和的漫反射亮区**，而非锐利点光。\n- **局限**：无相机参数与光圈信息；许可证需在文件页核验。\n\n### 4. Commons 梨的近景：Pyrus - Pears, Giresun（具体文件页）\n\n- **来源页**：https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg \n- **元数据**：作者 Zeynel Cebeci，来源 Own work，Canon EOS 7D Mark II，f/9，1/200s，ISO 640，焦距 400 mm。描述为土耳其 Giresun 的早熟小梨品种。\n- **可转化用途**：梨的轮廓具有**顶部窄、底部宽的钟形/葫芦形不对称性**，与苹果的近似球形、橙子的正球形形成形态区分。f/9 光圈在 400 mm 焦距下景深较浅，但若梨主体在焦平面内，边缘轮廓可用于提取**梨的肩部曲线与果梗凹陷**。\n- **局限**：拍摄距离较远（400 mm），果皮表面微观纹理可能不可见；许可证需在文件页确认。\n\n### 5. Pexels 白瓷碗与红苹果（前轮已记录，本轮再次出现）\n\n- **来源页**：https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/ \n- **元数据**：Nikon D750，62 mm，f/14.0，1/160s，ISO 100，Photoshop 22.0。\n- **用途**：白瓷碗的**素面釉面高光与碗沿硬边**可作为“普通陶瓷”材质的局部替代参考；苹果与碗壁的接触处可观察**硬质陶瓷对软质果皮的局部挤压阴影**。\n- **局限**：无梨、橙子或花瓶；碗的形态不是花瓶。取图前不能声称已确认接触细节。\n\n### 6. Pexels 橙子与花纹花瓶（有限参考）\n\n- **来源页**：https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/ \n- **元数据**：描述为“花纹花瓶中的花与盘中的柑橘类水果”，ACDSee 18 处理，尺寸 4524×6643。花瓶为**有花纹的装饰花瓶**，不是“普通陶瓷花瓶”；水果为柑橘类，未确认为整橙子。\n- **用途**：可提供**花瓶竖向轮廓与盘/台面接触**的构图参考，但材质与形态均不匹配目标场景。**不建议作为主参考纳入。**\n\n---\n\n## 二、对图形函数可转化的细节（基于网页文本描述，待取图验证）\n\n**果皮粗糙度分层**：光滑苹果、Russet 苹果、梨皮、橙皮应使用不同的粗糙度/法线策略。Russet 苹果文件页的文本确认了“锈斑表皮”的存在 ，但纹理强度需取图后目视确认，不能仅凭文本设定数值。\n\n**橙皮高光形态**：未剥皮橙子的近景文件页  提示存在球形表面，但文本未描述光照方向。若后续取图确认光源为柔和漫射，橙皮高光应表现为**大面积、低强度、边缘渐变**的亮区，而非陶瓷釉面那种锐利高光。\n\n**陶瓷与水果的接触**：Alekseyev 页的 f/14 光圈  在 62 mm 焦距下景深较大，碗沿与近处苹果边缘可能相对清晰，适合提取**接触阴影的硬边过渡**。但该页为白背景棚拍，接触面的暗部可能被高调布光压缩，实际可提取的明暗层次有限。\n\n---\n\n## 三、局限与下一轮定向建议\n\n- **核心组合仍缺失**：没有任何一页可确认同时包含苹果、梨、整橙子与普通陶瓷花瓶。`Apples, Pears, Oranges.jpg` 即使定位到文件页，也需确认是否含花瓶。\n- **图片字节未获取**：上述纹理、边缘、接触阴影均无法从文本确认，不得声称已看过图像。\n- **下一轮优先动作（按可行性排序）**：\n  1. 在 Commons 搜索框直接输入 `File:Apples, Pears, Oranges.jpg`，定位文件详情页并核验摄影属性与许可。\n  2. 在 Commons 搜索 `File:` 命名空间下的 `ceramic vase fruit` 或 `earthenware vase still life`，排除绘画分类。\n  3. 在 Pexels 搜索 `white ceramic vase apples` 或 `ceramic vase orange fruit`，寻找素面花瓶与水果同框的具体照片页，避免已收集链接。\n  4. 若 `Egremont Russet Apple.jpg` 的许可证可核验，可将其作为苹果粗糙果皮的**唯一独立纹理参考**，但仍不解决场景组合问题。\n\n**已排除的重复来源**：本轮搜索结果中出现的 Pissarro 绘画页 、Grasset Collection 分类页 、Cristoforo Munari 绘画页  均为绘画，不符合“真实静物摄影”要求，不再纳入。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 24622,
+    "completion_tokens": 1817,
+    "total_tokens": 26439,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "57ee6e1a-d583-4db6-9e42-6fe0279b95c0",
+        "model": "deepseek-flash",
+        "elapsedMs": 23808,
+        "prompt_tokens": 24622,
+        "completion_tokens": 1817,
+        "total_tokens": 26439,
+        "server_tool_use": {
+          "tool_search": 14,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 40561,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 283447,
+        "sha256": "4bd707fb222988987dbfc6accd0303c2ba536764fab5e39b1cb962fcf1a30fb5"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Egremont_Russet_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg#1",
+      "title": "File:Egremont Russet Apple.jpg - Wikimedia Commons - File:Egremont Russet Apple.jpg",
+      "sha256": "4bd707fb222988987dbfc6accd0303c2ba536764fab5e39b1cb962fcf1a30fb5",
+      "bytes": 283447,
+      "mime": "image/jpeg",
+      "width": 650,
+      "height": 650,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "AJR",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Egremont_Russet_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 650,
+        "height": 650,
+        "bytes": 283447
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/4bd707fb222988987dbfc6accd0303c2ba536764fab5e39b1cb962fcf1a30fb5.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 145400,
+        "sha256": "697fe5251b53151f51025ad33fd144f4e9dff36f87ea0104dc529611b9a5b62b"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg/960px-Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg#1",
+      "title": "File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg - Wikimedia Commons - File:Pyrus - Pears, Giresun 2017-07-05 01-4.jpg",
+      "sha256": "697fe5251b53151f51025ad33fd144f4e9dff36f87ea0104dc529611b9a5b62b",
+      "bytes": 145400,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 677,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Zeynel Cebeci",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Pyrus_-_Pears%2C_Giresun_2017-07-05_01-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2750,
+        "height": 1938,
+        "bytes": 3599096
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/697fe5251b53151f51025ad33fd144f4e9dff36f87ea0104dc529611b9a5b62b.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 43824,
+        "sha256": "01638baaffa2d4153d0d065f6b04afbedd344706aec7101ea9e6cb5dbf9d0504"
+      },
+      "imageUrl": "https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-fruits-in-bowl-327098/",
+      "title": "Photo by Pixabay on Pexels",
+      "sha256": "01638baaffa2d4153d0d065f6b04afbedd344706aec7101ea9e6cb5dbf9d0504",
+      "bytes": 43824,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 617,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/01638baaffa2d4153d0d065f6b04afbedd344706aec7101ea9e6cb5dbf9d0504.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 72896,
+        "sha256": "41803285cc1830cf333b3d9f1b02e002e4881c735c982a07ce43c7c92917922f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/35581351/pexels-photo-35581351.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/bol-rustique-de-fruits-avec-pommes-et-raisins-35581351/",
+      "title": "Photo de nic godsell sur Pexels",
+      "sha256": "41803285cc1830cf333b3d9f1b02e002e4881c735c982a07ce43c7c92917922f",
+      "bytes": 72896,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 768,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/41803285cc1830cf333b3d9f1b02e002e4881c735c982a07ce43c7c92917922f.webp"
+    }
+  ]
+}

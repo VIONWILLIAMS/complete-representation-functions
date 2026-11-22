@@ -1,0 +1,459 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 5,
+  "query": "植物近景与自然物品实拍",
+  "checkpoint": {
+    "sessionId": "crf08-ten-rounds",
+    "round": 5,
+    "topic": "植物近景与自然物品实拍",
+    "subtopic": "4–6张蘑菇、蕨叶或花朵的近景照片，清晰主体与叶脉、菌褶、细节",
+    "status": "searched",
+    "completedAt": "2026-11-21T13:26:08.103Z",
+    "runId": "crf07_eab2cc2b-aad4-4b25-abbd-29389467aca7",
+    "queries": [
+      "Wikimedia Commons close-up photograph mushroom gills detail",
+      "Unsplash close-up photo mushroom gills macro",
+      "Pexels close-up mushroom gills photo",
+      "Wikimedia Commons close-up photo fern frond veins detail",
+      "site:unsplash.com close-up fern leaf veins photo",
+      "site:pexels.com close-up fern leaf veins photo"
+    ],
+    "requestIds": [
+      "794b30ff-e1b4-4cf6-bfbd-3006683e9d9c"
+    ],
+    "sourceCount": 11,
+    "newSourceCount": 11,
+    "candidateCount": 8,
+    "downloadedImageCount": 3,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_e30fe7babbb54d7ba497f4bc14ae9b6c",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons close-up photograph mushroom gills detail",
+            "Unsplash close-up photo mushroom gills macro",
+            "Pexels close-up mushroom gills photo",
+            "Wikimedia Commons close-up photo fern frond veins detail",
+            "site:unsplash.com close-up fern leaf veins photo",
+            "site:pexels.com close-up fern leaf veins photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://unsplash.com/photos/underside-view-of-a-large-white-mushroom-with-gills--vIwrT6Kcbo",
+          "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+          "https://unsplash.com/photos/dusty-miller-plant-with-white-leaves-XFKhJdoEMA8",
+          "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+          "https://arcabc.ca/islandora/object/au%3A51056?solr_nav%5Bid%5D=0dc6a735c3557f5bcfe4&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=21",
+          "https://unsplash.com/photos/close-up-of-a-delicate-mushroom-with-detailed-gills-4pVQdcqShqg",
+          "https://unsplash.com/photos/a-close-up-of-a-large-green-leaf-QKExHYkKQ5I",
+          "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+          "https://hic.bbg.org/detail/02000",
+          "https://unsplash.com/photos/close-up-of-mushroom-gills-in-green-grass-evzYIAemB5A",
+          "https://elements.envato.com/freshly-picked-mushrooms-ZQX95NJ"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://unsplash.com/photos/underside-view-of-a-large-white-mushroom-with-gills--vIwrT6Kcbo",
+        "title": "Photo by CGabriel on Unsplash",
+        "snippet": "Underside view of a large white mushroom with gills Mushroom slumped over in the woods Calendar outlined Published on January 22, 2026 ... Unsplash License texture green pattern natural wildlife mushroom woodland organic mycelium macro photography forest floor stem detail earthy botany fungus natural world mushrooms in the forest forest ecosystem mushroom gills",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+        "title": "Photo by Skyler Ewing on Pexels",
+        "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Description # Extreme close-up of mushroom gills highlighting texture and detail. ### More like this Use filters Change focus Brighten up Add frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/dusty-miller-plant-with-white-leaves-XFKhJdoEMA8",
+        "title": "Photo by Sebastian Schuster on Unsplash",
+        "snippet": "A dusty miller plant with intricate silvery white fern-like leaves Foliage texture Calendar outlined Published on September 16, 2026 ... Unsplash License texture green pattern plant leaves natural beauty gardening botanical close up silver texture organic foliage botanical garden ... leaf pattern leaf veins plant science garden plant",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+        "title": "Photo by Bảo Minh on Pexels",
+        "snippet": "Date Feb 10, 2025 Downloads 48 Views ... Camera Canon EOS 5D Mark II Focal 50.0mm ISO 250 Shutter Speed 1/1250 sec ... 2025 Software Adobe Photoshop Lightroom Classic 14.1.1 (Windows) Description # Close-up of vibrant green fern leaves in a natural environment, showcasing intricate textures. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://arcabc.ca/islandora/object/au%3A51056?solr_nav%5Bid%5D=0dc6a735c3557f5bcfe4&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=21",
+        "title": "Gilled Mushroom",
+        "snippet": "Photograph - The underside of the cap showing the gills where spores are produced and released Gilled Mushroom R.G. Holmberg photographs Basidiomycota Athabasca County Fungi still image English ... Athabasca University Digital Library arbriimge00637",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/close-up-of-a-delicate-mushroom-with-detailed-gills-4pVQdcqShqg",
+        "title": "Photo by Sofie D. on Unsplash",
+        "snippet": "––– –––– –––– # Close-up of a delicate mushroom with detailed gills Download this free HD photo of forest, texture, natural, and mushroom by Sofie D. (@needeeja) Published on Free to use under the Unsplash License Browse",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-close-up-of-a-large-green-leaf-QKExHYkKQ5I",
+        "title": "Photo by Matt Richmond on Unsplash",
+        "snippet": "––– –––– –––– # a close up of a large green leaf Macro shot of a vibrant green fern leaf, highlighting its detailed structure and the intricate pattern of its veins. Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+        "title": "Photo by cottonbro studio on Pexels",
+        "snippet": "Add filters, effects ... Dimensions 4160x6240 Aspect Ratio 2:3 Colors Date Nov 26 ... Taken At Sep 5, 2020 Software Adobe Photoshop Lightroom Classic 9.2.1 (Macintosh) Description # A close-up view of vibrant green fern leaves showcasing intricate patterns and textures. ### More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://hic.bbg.org/detail/02000",
+        "title": "Image Detail",
+        "snippet": "Image Detail ## Pleurotus Ostryatus (Oyster mushroom) Close-up of underside gills of mushroom on black background. - Negative number ... - 06/25/1916 - Photograph by - Louis Buhle All rights reserved.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/close-up-of-mushroom-gills-in-green-grass-evzYIAemB5A",
+        "title": "Photo by Elisa Stone on Unsplash",
+        "snippet": "––– –––– –––– # Close-up of mushroom gills in green grass Download this free HD photo of forest, autumn, grass, and growth by Elisa Stone (@elisastonephotography) Published on Free to use under the Unsplash License Browse ... Save 20% with code UNSPLASH20",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://elements.envato.com/freshly-picked-mushrooms-ZQX95NJ",
+        "title": "Extreme Close-Up View Inside Mushroom Cap",
+        "snippet": "Extreme Close-Up View Inside Mushroom Cap ... An extreme close-up view shows the inside of a mushroom cap. The mushroom has a white stem and cap, and brown gills. The photo is tightly cropped and focuses on the gills, showing their structure in detail. This natural...",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "```json\n{\n  \"summary\": \"本轮实际发现：在 Unsplash、Pexels 与 Wikimedia Commons 检索到若干蘑菇菌褶与蕨叶近景的摄影详情页，其中 Unsplash 的蘑菇菌褶页面与 Pexels 的蕨叶页面在标题/描述中直接提及 gills、leaf veins、intricate textures 等细节，可作为后续提取菌褶辐射结构、叶脉分叉与材质纹理的候选。Wikimedia Commons 的搜索结果以分类页、书籍扫描页和植物名录为主，未出现满足‘近景、清晰主体、细节可见’条件的单张蘑菇/蕨叶/花朵照片详情页；Brooklyn Botanic Garden 的蘑菇菌褶页面虽描述清楚，但为 1916 年黑白/历史照片，且平台非优先图库，暂不列为首选。未获取图片字节，以下特征均基于页面标题与描述推断，待原图验证。\",\n  \"features\": [\n    \"菌褶辐射几何：Unsplash 页面标题为‘Underside view of a large white mushroom with gills’，描述提及 texture、pattern、macro photography，可推断菌褶呈从中心向外辐射的细密条状结构，适合提取辐射线密度、条带间距与边缘分叉形态。\",\n    \"菌褶纵深与遮挡：Unsplash 的‘Close-up of a delicate mushroom with detailed gills’页面标签含 forest、texture、natural，标题强调 detailed gills，可能呈现菌盖下方纵深结构，适合观察菌褶在焦平面内的清晰段与失焦段的过渡。\",\n    \"菌褶近距纹理：Pexels 的‘Extreme close-up of mushroom gills highlighting texture and detail’页面描述极简但直接指向菌褶纹理，可作为提取细密平行/辐射线纹理的候选，但需原图确认是否过近导致结构不完整。\",\n    \"蕨叶叶脉分叉：Unsplash 的‘a close up of a large green leaf’页面描述为 Macro shot of a vibrant green fern leaf, highlighting its detailed structure and the intricate pattern of its veins，可推断叶脉呈羽状分叉，主脉与侧脉的粗细对比、分叉角度可转化为分支函数参数。\",\n    \"蕨叶纹理与边缘：Pexels 的‘Close-up of vibrant green fern leaves in a natural environment, showcasing intricate textures’页面提供相机参数（Canon EOS 5D Mark II，50mm，ISO 250，1/1250s），描述强调 intricate textures，适合观察叶片表面光泽与边缘锯齿形态。\",\n    \"花朵候选缺口：本轮未检索到符合‘近景、清晰主体、细节可见’的花朵照片详情页；Pexels 与 Unsplash 的花朵结果多被排除或未在返回结果中呈现，需下一轮定向补充。\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择页面标题或描述直接包含 gills、leaf veins、intricate texture、macro 等词的详情页，确保搜索意图与摄影内容匹配，而非仅靠文件名推断。\",\n    \"蘑菇菌褶候选需确认菌褶在画面中占据可辨识比例：Unsplash 的 underside view 与 detailed gills 页面在标题层面满足，Pexels 的 extreme close-up 需原图确认是否因过近导致菌褶走向不完整。\",\n    \"蕨叶候选需确认叶脉在画面中清晰可辨且主体单一：Unsplash 的 fern leaf macro 描述提及 vein pattern，Pexels 的 fern leaves close-up 描述提及 intricate textures，均需原图验证背景是否杂乱、叶片是否重叠。\",\n    \"避免使用 Wikimedia Commons 的分类页、书籍扫描页或植物名录页作为候选；Brooklyn Botanic Garden 的历史照片虽描述清楚，但非优先平台且可能为黑白影像，暂不纳入首选。\",\n    \"Unsplash 页面标注‘Free to use under the Unsplash License’，Pexels 页面为 Pexels 标准许可；Wikimedia Commons 候选需进一步查找文件详情页并核验 CC 许可与作者信息。\"\n  ],\n  \"uncertainties\": [\n    \"Unsplash 的‘Underside view of a large white mushroom with gills’页面未提供光照方向、背景复杂度或菌褶是否被茎部遮挡的文本描述，需原图确认。\",\n    \"Unsplash 的‘Close-up of a delicate mushroom with detailed gills’页面仅给出标签 forest、texture、natural，未说明菌褶是否处于画面中心、是否有前景草叶干扰。\",\n    \"Pexels 的‘Extreme close-up of mushroom gills’页面无作者、无光照描述、无背景信息，仅凭标题无法判断菌褶结构是否完整可提取。\",\n    \"Unsplash 的 fern leaf macro 页面未提供相机参数或光照描述，叶脉清晰度与背景分离度待原图验证。\",\n    \"Pexels 的 fern leaves close-up 页面虽提供相机参数，但描述未提及叶脉清晰度，且 ISO 250、1/1250s 提示户外自然光，可能存在高光溢出或阴影过重。\",\n    \"本轮未找到满足条件的 Wikimedia Commons 单张蘑菇/蕨叶/花朵近景照片详情页；花朵类候选完全缺失。\"\n  ],\n  \"nextFocus\": \"下一轮定向补齐：1）在 Wikimedia Commons 检索‘mushroom gills close-up’‘fern frond veins macro’‘flower stamen close-up’的具体文件详情页，优先寻找背景简洁、主体居中、标注 CC BY/CC BY-SA 且作者与许可信息完整的照片；2）在 Unsplash 补充搜索花朵近景（如‘flower macro veins’‘petal texture close-up’），并确认页面是否提及柔光或简单背景；3）对已列出的 Unsplash 蘑菇菌褶候选与 Pexels 蕨叶候选，后续获取原图后核验：菌褶是否呈完整辐射结构、叶脉分叉是否清晰、背景是否有杂物干扰、高光是否过曝；4）Pexels 的蘑菇菌褶候选需确认画面是否包含菌盖边缘或仅剩纹理，避免结构信息不足。\"\n}\n```\n\n**补充研究建议（非 JSON 部分）**：本轮可优先将 Unsplash 的蘑菇菌褶页面（`--vIwrT6Kcbo`、`4pVQdcqShqg`）与 Pexels 的蕨叶页面（`30659564`、`5993687`）作为下一阶段原图核验对象；Unsplash 的 fern leaf macro（`QKExHYkKQ5I`）在描述层面最贴合“叶脉细节”要求，但需确认背景是否单一。花朵类参考本轮完全缺失，建议下一轮使用更具体的花卉近景关键词（如“flower macro petal veins”“stamen close-up”）在 Unsplash 与 Wikimedia Commons 定向检索，避免再次返回分类页或名录页。所有候选的许可证信息以来源页实际标注为准，Unsplash 页面显示 Unsplash License，Pexels 页面未在返回文本中展示完整许可字段，需后续核验。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://unsplash.com/photos/underside-view-of-a-large-white-mushroom-with-gills--vIwrT6Kcbo",
+      "title": "Photo by CGabriel on Unsplash",
+      "snippet": "Underside view of a large white mushroom with gills Mushroom slumped over in the woods Calendar outlined Published on January 22, 2026 ... Unsplash License texture green pattern natural wildlife mushroom woodland organic mycelium macro photography forest floor stem detail earthy botany fungus natural world mushrooms in the forest forest ecosystem mushroom gills",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+      "title": "Photo by Skyler Ewing on Pexels",
+      "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Description # Extreme close-up of mushroom gills highlighting texture and detail. ### More like this Use filters Change focus Brighten up Add frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/dusty-miller-plant-with-white-leaves-XFKhJdoEMA8",
+      "title": "Photo by Sebastian Schuster on Unsplash",
+      "snippet": "A dusty miller plant with intricate silvery white fern-like leaves Foliage texture Calendar outlined Published on September 16, 2026 ... Unsplash License texture green pattern plant leaves natural beauty gardening botanical close up silver texture organic foliage botanical garden ... leaf pattern leaf veins plant science garden plant",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+      "title": "Photo by Bảo Minh on Pexels",
+      "snippet": "Date Feb 10, 2025 Downloads 48 Views ... Camera Canon EOS 5D Mark II Focal 50.0mm ISO 250 Shutter Speed 1/1250 sec ... 2025 Software Adobe Photoshop Lightroom Classic 14.1.1 (Windows) Description # Close-up of vibrant green fern leaves in a natural environment, showcasing intricate textures. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://arcabc.ca/islandora/object/au%3A51056?solr_nav%5Bid%5D=0dc6a735c3557f5bcfe4&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=21",
+      "title": "Gilled Mushroom",
+      "snippet": "Photograph - The underside of the cap showing the gills where spores are produced and released Gilled Mushroom R.G. Holmberg photographs Basidiomycota Athabasca County Fungi still image English ... Athabasca University Digital Library arbriimge00637",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/close-up-of-a-delicate-mushroom-with-detailed-gills-4pVQdcqShqg",
+      "title": "Photo by Sofie D. on Unsplash",
+      "snippet": "––– –––– –––– # Close-up of a delicate mushroom with detailed gills Download this free HD photo of forest, texture, natural, and mushroom by Sofie D. (@needeeja) Published on Free to use under the Unsplash License Browse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-close-up-of-a-large-green-leaf-QKExHYkKQ5I",
+      "title": "Photo by Matt Richmond on Unsplash",
+      "snippet": "––– –––– –––– # a close up of a large green leaf Macro shot of a vibrant green fern leaf, highlighting its detailed structure and the intricate pattern of its veins. Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+      "title": "Photo by cottonbro studio on Pexels",
+      "snippet": "Add filters, effects ... Dimensions 4160x6240 Aspect Ratio 2:3 Colors Date Nov 26 ... Taken At Sep 5, 2020 Software Adobe Photoshop Lightroom Classic 9.2.1 (Macintosh) Description # A close-up view of vibrant green fern leaves showcasing intricate patterns and textures. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://hic.bbg.org/detail/02000",
+      "title": "Image Detail",
+      "snippet": "Image Detail ## Pleurotus Ostryatus (Oyster mushroom) Close-up of underside gills of mushroom on black background. - Negative number ... - 06/25/1916 - Photograph by - Louis Buhle All rights reserved.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/close-up-of-mushroom-gills-in-green-grass-evzYIAemB5A",
+      "title": "Photo by Elisa Stone on Unsplash",
+      "snippet": "––– –––– –––– # Close-up of mushroom gills in green grass Download this free HD photo of forest, autumn, grass, and growth by Elisa Stone (@elisastonephotography) Published on Free to use under the Unsplash License Browse ... Save 20% with code UNSPLASH20",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://elements.envato.com/freshly-picked-mushrooms-ZQX95NJ",
+      "title": "Extreme Close-Up View Inside Mushroom Cap",
+      "snippet": "Extreme Close-Up View Inside Mushroom Cap ... An extreme close-up view shows the inside of a mushroom cap. The mushroom has a white stem and cap, and brown gills. The photo is tightly cropped and focuses on the gills, showing their structure in detail. This natural...",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://unsplash.com/photos/underside-view-of-a-large-white-mushroom-with-gills--vIwrT6Kcbo",
+      "title": "Photo by CGabriel on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+      "title": "Photo by Skyler Ewing on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/dusty-miller-plant-with-white-leaves-XFKhJdoEMA8",
+      "title": "Photo by Sebastian Schuster on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+      "title": "Photo by Bảo Minh on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/close-up-of-a-delicate-mushroom-with-detailed-gills-4pVQdcqShqg",
+      "title": "Photo by Sofie D. on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-close-up-of-a-large-green-leaf-QKExHYkKQ5I",
+      "title": "Photo by Matt Richmond on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+      "title": "Photo by cottonbro studio on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/close-up-of-mushroom-gills-in-green-grass-evzYIAemB5A",
+      "title": "Photo by Elisa Stone on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/12458501/pexels-photo-12458501.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+      "title": "Photo by Skyler Ewing on Pexels",
+      "sha256": "92830dd7cdf261f59cfcb5e1d9246069b1a557d964c82dc34f0d974a091e9070",
+      "bytes": 37748,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/30659564/pexels-photo-30659564.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+      "title": "Photo by Bảo Minh on Pexels",
+      "sha256": "67fd559a57f55edff8630a236fcc232192ed86c3dee5c5edbe121ce8c51ed8aa",
+      "bytes": 53844,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5993687/pexels-photo-5993687.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+      "title": "Photo by cottonbro studio on Pexels",
+      "sha256": "a5353610c87581c1f3a83fec5fbdbebe9ba0cff71dcbba84682ed0eb9391dc32",
+      "bytes": 68818,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://unsplash.com/photos/underside-view-of-a-large-white-mushroom-with-gills--vIwrT6Kcbo",
+        "title": "Photo by CGabriel on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+        "title": "Photo by Skyler Ewing on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/12458501/pexels-photo-12458501.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 37748,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "92830dd7cdf261f59cfcb5e1d9246069b1a557d964c82dc34f0d974a091e9070"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/dusty-miller-plant-with-white-leaves-XFKhJdoEMA8",
+        "title": "Photo by Sebastian Schuster on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+        "title": "Photo by Bảo Minh on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/30659564/pexels-photo-30659564.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 53844,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "67fd559a57f55edff8630a236fcc232192ed86c3dee5c5edbe121ce8c51ed8aa"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/close-up-of-a-delicate-mushroom-with-detailed-gills-4pVQdcqShqg",
+        "title": "Photo by Sofie D. on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/a-close-up-of-a-large-green-leaf-QKExHYkKQ5I",
+        "title": "Photo by Matt Richmond on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+        "title": "Photo by cottonbro studio on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/5993687/pexels-photo-5993687.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 68818,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "a5353610c87581c1f3a83fec5fbdbebe9ba0cff71dcbba84682ed0eb9391dc32"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/close-up-of-mushroom-gills-in-green-grass-evzYIAemB5A",
+        "title": "Photo by Elisa Stone on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      }
+    ],
+    "downloadedCount": 3,
+    "method": "public source-page image metadata; container, dimensions and byte hash checked; not render textures"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "```json\n{\n  \"summary\": \"本轮实际发现：在 Unsplash、Pexels 与 Wikimedia Commons 检索到若干蘑菇菌褶与蕨叶近景的摄影详情页，其中 Unsplash 的蘑菇菌褶页面与 Pexels 的蕨叶页面在标题/描述中直接提及 gills、leaf veins、intricate textures 等细节，可作为后续提取菌褶辐射结构、叶脉分叉与材质纹理的候选。Wikimedia Commons 的搜索结果以分类页、书籍扫描页和植物名录为主，未出现满足‘近景、清晰主体、细节可见’条件的单张蘑菇/蕨叶/花朵照片详情页；Brooklyn Botanic Garden 的蘑菇菌褶页面虽描述清楚，但为 1916 年黑白/历史照片，且平台非优先图库，暂不列为首选。未获取图片字节，以下特征均基于页面标题与描述推断，待原图验证。\",\n  \"features\": [\n    \"菌褶辐射几何：Unsplash 页面标题为‘Underside view of a large white mushroom with gills’，描述提及 texture、pattern、macro photography，可推断菌褶呈从中心向外辐射的细密条状结构，适合提取辐射线密度、条带间距与边缘分叉形态。\",\n    \"菌褶纵深与遮挡：Unsplash 的‘Close-up of a delicate mushroom with detailed gills’页面标签含 forest、texture、natural，标题强调 detailed gills，可能呈现菌盖下方纵深结构，适合观察菌褶在焦平面内的清晰段与失焦段的过渡。\",\n    \"菌褶近距纹理：Pexels 的‘Extreme close-up of mushroom gills highlighting texture and detail’页面描述极简但直接指向菌褶纹理，可作为提取细密平行/辐射线纹理的候选，但需原图确认是否过近导致结构不完整。\",\n    \"蕨叶叶脉分叉：Unsplash 的‘a close up of a large green leaf’页面描述为 Macro shot of a vibrant green fern leaf, highlighting its detailed structure and the intricate pattern of its veins，可推断叶脉呈羽状分叉，主脉与侧脉的粗细对比、分叉角度可转化为分支函数参数。\",\n    \"蕨叶纹理与边缘：Pexels 的‘Close-up of vibrant green fern leaves in a natural environment, showcasing intricate textures’页面提供相机参数（Canon EOS 5D Mark II，50mm，ISO 250，1/1250s），描述强调 intricate textures，适合观察叶片表面光泽与边缘锯齿形态。\",\n    \"花朵候选缺口：本轮未检索到符合‘近景、清晰主体、细节可见’的花朵照片详情页；Pexels 与 Unsplash 的花朵结果多被排除或未在返回结果中呈现，需下一轮定向补充。\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择页面标题或描述直接包含 gills、leaf veins、intricate texture、macro 等词的详情页，确保搜索意图与摄影内容匹配，而非仅靠文件名推断。\",\n    \"蘑菇菌褶候选需确认菌褶在画面中占据可辨识比例：Unsplash 的 underside view 与 detailed gills 页面在标题层面满足，Pexels 的 extreme close-up 需原图确认是否因过近导致菌褶走向不完整。\",\n    \"蕨叶候选需确认叶脉在画面中清晰可辨且主体单一：Unsplash 的 fern leaf macro 描述提及 vein pattern，Pexels 的 fern leaves close-up 描述提及 intricate textures，均需原图验证背景是否杂乱、叶片是否重叠。\",\n    \"避免使用 Wikimedia Commons 的分类页、书籍扫描页或植物名录页作为候选；Brooklyn Botanic Garden 的历史照片虽描述清楚，但非优先平台且可能为黑白影像，暂不纳入首选。\",\n    \"Unsplash 页面标注‘Free to use under the Unsplash License’，Pexels 页面为 Pexels 标准许可；Wikimedia Commons 候选需进一步查找文件详情页并核验 CC 许可与作者信息。\"\n  ],\n  \"uncertainties\": [\n    \"Unsplash 的‘Underside view of a large white mushroom with gills’页面未提供光照方向、背景复杂度或菌褶是否被茎部遮挡的文本描述，需原图确认。\",\n    \"Unsplash 的‘Close-up of a delicate mushroom with detailed gills’页面仅给出标签 forest、texture、natural，未说明菌褶是否处于画面中心、是否有前景草叶干扰。\",\n    \"Pexels 的‘Extreme close-up of mushroom gills’页面无作者、无光照描述、无背景信息，仅凭标题无法判断菌褶结构是否完整可提取。\",\n    \"Unsplash 的 fern leaf macro 页面未提供相机参数或光照描述，叶脉清晰度与背景分离度待原图验证。\",\n    \"Pexels 的 fern leaves close-up 页面虽提供相机参数，但描述未提及叶脉清晰度，且 ISO 250、1/1250s 提示户外自然光，可能存在高光溢出或阴影过重。\",\n    \"本轮未找到满足条件的 Wikimedia Commons 单张蘑菇/蕨叶/花朵近景照片详情页；花朵类候选完全缺失。\"\n  ],\n  \"nextFocus\": \"下一轮定向补齐：1）在 Wikimedia Commons 检索‘mushroom gills close-up’‘fern frond veins macro’‘flower stamen close-up’的具体文件详情页，优先寻找背景简洁、主体居中、标注 CC BY/CC BY-SA 且作者与许可信息完整的照片；2）在 Unsplash 补充搜索花朵近景（如‘flower macro veins’‘petal texture close-up’），并确认页面是否提及柔光或简单背景；3）对已列出的 Unsplash 蘑菇菌褶候选与 Pexels 蕨叶候选，后续获取原图后核验：菌褶是否呈完整辐射结构、叶脉分叉是否清晰、背景是否有杂物干扰、高光是否过曝；4）Pexels 的蘑菇菌褶候选需确认画面是否包含菌盖边缘或仅剩纹理，避免结构信息不足。\"\n}\n```\n\n**补充研究建议（非 JSON 部分）**：本轮可优先将 Unsplash 的蘑菇菌褶页面（`--vIwrT6Kcbo`、`4pVQdcqShqg`）与 Pexels 的蕨叶页面（`30659564`、`5993687`）作为下一阶段原图核验对象；Unsplash 的 fern leaf macro（`QKExHYkKQ5I`）在描述层面最贴合“叶脉细节”要求，但需确认背景是否单一。花朵类参考本轮完全缺失，建议下一轮使用更具体的花卉近景关键词（如“flower macro petal veins”“stamen close-up”）在 Unsplash 与 Wikimedia Commons 定向检索，避免再次返回分类页或名录页。所有候选的许可证信息以来源页实际标注为准，Unsplash 页面显示 Unsplash License，Pexels 页面未在返回文本中展示完整许可字段，需后续核验。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 10044,
+    "completion_tokens": 1577,
+    "total_tokens": 11621,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "794b30ff-e1b4-4cf6-bfbd-3006683e9d9c",
+        "model": "deepseek-flash",
+        "elapsedMs": 15654,
+        "prompt_tokens": 10044,
+        "completion_tokens": 1577,
+        "total_tokens": 11621,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 40654,
+  "downloads": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/12458501/pexels-photo-12458501.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+      "title": "Photo by Skyler Ewing on Pexels",
+      "sha256": "92830dd7cdf261f59cfcb5e1d9246069b1a557d964c82dc34f0d974a091e9070",
+      "bytes": 37748,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r05.92830dd7cdf2",
+      "round": 5,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r05.92830dd7cdf2.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "植物近景与自然物品实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/30659564/pexels-photo-30659564.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+      "title": "Photo by Bảo Minh on Pexels",
+      "sha256": "67fd559a57f55edff8630a236fcc232192ed86c3dee5c5edbe121ce8c51ed8aa",
+      "bytes": 53844,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r05.67fd559a57f5",
+      "round": 5,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r05.67fd559a57f5.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "植物近景与自然物品实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5993687/pexels-photo-5993687.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+      "title": "Photo by cottonbro studio on Pexels",
+      "sha256": "a5353610c87581c1f3a83fec5fbdbebe9ba0cff71dcbba84682ed0eb9391dc32",
+      "bytes": 68818,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r05.a5353610c875",
+      "round": 5,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r05.a5353610c875.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "植物近景与自然物品实拍"
+    }
+  ]
+}

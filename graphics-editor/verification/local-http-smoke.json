@@ -1,0 +1,82 @@
+{
+  "checks": [
+    {
+      "path": "/api/crf/status",
+      "status": 200,
+      "version": "0.10.0",
+      "configured": false,
+      "model": "deepseek-flash",
+      "connection": "configuration_only"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 15602,
+      "contentType": "text/html; charset=utf-8",
+      "byteIdenticalToStudio10": true
+    },
+    {
+      "path": "/studio10.html",
+      "status": 200,
+      "bytes": 15602,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/editor10.js",
+      "status": 200,
+      "bytes": 65914,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/crf-gaussian10.js",
+      "status": 200,
+      "bytes": 19020,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/crf-verifier10.js",
+      "status": 200,
+      "bytes": 21344,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/task-runner10.js",
+      "status": 200,
+      "bytes": 28753,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/studio09.html",
+      "status": 200,
+      "bytes": 11717,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/gaussian08.html",
+      "status": 200,
+      "bytes": 17594,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/server/worker07.mjs",
+      "status": 404,
+      "bytes": 9,
+      "contentType": "text/plain;charset=UTF-8"
+    },
+    {
+      "path": "/api/crf/native10/generate",
+      "status": 503,
+      "body": {
+        "ok": false,
+        "error": {
+          "code": "not_configured",
+          "message": "服务端尚未配置 DeepSeek 密钥。",
+          "retryable": false
+        }
+      },
+      "scope": "configuration boundary only; no provider request"
+    }
+  ],
+  "providerCalls": 0,
+  "sourceModified": false
+}

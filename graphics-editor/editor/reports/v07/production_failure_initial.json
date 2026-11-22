@@ -1,0 +1,94 @@
+{
+  "schema": "crf.production_smoke.v0.7",
+  "url": "https://crf-street-04-lab-4d86.laterafter950.chatgpt.site",
+  "recordedAt": "2026-11-21T10:58:26.068253+00:00",
+  "checks": [
+    {
+      "name": "runtime configuration",
+      "pass": true,
+      "status": {
+        "ok": true,
+        "version": "0.7.0",
+        "configured": true,
+        "model": "deepseek-flash",
+        "connection": "configuration_only",
+        "capabilities": {
+          "search": true,
+          "vision": true,
+          "programOutput": true
+        },
+        "secretLocation": "server",
+        "message": "服务端已配置；实际调用结果将显示在对话记录中。"
+      }
+    },
+    {
+      "name": "static HTML through ASSETS",
+      "pass": true
+    },
+    {
+      "name": "deployed renderer SHA-256",
+      "pass": true,
+      "sha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a"
+    },
+    {
+      "name": "four actual model comparisons",
+      "pass": true
+    },
+    {
+      "name": "download CRF_Graphics_0_7_Source.zip",
+      "pass": true,
+      "bytes": 20028078,
+      "sha256": "80414eb90a803eacdab01a4b5465d9b0a31cc6fab907d06cfcbc64f1aa1fc7be"
+    },
+    {
+      "name": "download CRF_Graphics_0_7_Images.zip",
+      "pass": true,
+      "bytes": 6404321,
+      "sha256": "9a2231a8e0346d3708f7aaeba2042decb8a7585aca4a545fc5318bd6885f0d9e"
+    }
+  ],
+  "liveEdit": {
+    "httpStatus": 502,
+    "elapsedMs": 4785,
+    "ok": false,
+    "response": {
+      "ok": false,
+      "runId": "crf07_94ef766d-6f74-4f33-8b8e-b66b51aa19ab",
+      "model": "deepseek-flash",
+      "error": {
+        "code": "UPSTREAM_NETWORK",
+        "message": "无法连接 DeepSeek 服务。",
+        "retryable": true
+      },
+      "httpStatus": 502,
+      "research": {
+        "searched": false,
+        "status": "disabled",
+        "toolCalls": [],
+        "sources": [],
+        "summary": "",
+        "nativeSearchObserved": false,
+        "referenceImages": [],
+        "referenceImagesSubmitted": 0
+      },
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "providerCalls": 0,
+        "requests": []
+      },
+      "warnings": [],
+      "vision": {
+        "renderedImageProvided": false,
+        "referenceImagesProvided": 0,
+        "referenceSourceUrls": []
+      },
+      "repair": {
+        "attempted": false,
+        "passes": [],
+        "recovered": false
+      }
+    }
+  }
+}

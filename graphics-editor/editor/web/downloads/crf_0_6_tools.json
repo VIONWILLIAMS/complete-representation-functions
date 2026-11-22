@@ -1,0 +1,93 @@
+{
+  "schema": "crf.ai_tools.v0.6",
+  "interface": "document.modelContext, when supported; CRFEditor06 public API otherwise",
+  "tools": [
+    {
+      "name": "crf_read_scene",
+      "description": "Read the current CRF 0.6 scene, persistent object IDs, sources, capabilities and rendering state. Set includeProgram to receive the complete executable JSON including declared field coefficients.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "includeProgram": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "crf_apply_operations",
+      "description": "Apply a validated atomic array of CRF scene edits to the current program, then render and return the updated state. Supported op names are set, add, remove, replace, camera and light. Read the current program first for object IDs.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "operations": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 100,
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "operations"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "crf_set_program",
+      "description": "Replace the current scene with a validated crf.program.v0.6 JSON program and render it. This creates an undo entry. The program is declarative; arbitrary JavaScript is not executed.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "program": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "program"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "crf_render_view",
+      "description": "Render the current program at a requested time and optional camera parameters. Camera changes are explicit editable scene operations. Return frame diagnostics and visible object coverage.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 30
+          },
+          "camera": {
+            "type": "object"
+          },
+          "quality": {
+            "type": "string",
+            "enum": [
+              "preview",
+              "final"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "crf_undo",
+      "description": "Undo the last scene transaction and render the restored program.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  ]
+}

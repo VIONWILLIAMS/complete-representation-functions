@@ -1,0 +1,1840 @@
+{
+  "schema": "crf.render_evidence.v0.6",
+  "records": [
+    {
+      "scene": "common",
+      "view": "reference",
+      "file": "dist/downloads/crf_0_6_common_reference.png",
+      "bytes": 314997,
+      "sha256": "7e1e3665740fe02b082c50c57ad67f5cdf291f26f11f388980f4ce3c8fc88fa4",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 287472,
+        "visibleSamples": 139069,
+        "contributions": 2516636,
+        "observedSamples": 169414,
+        "generatedSamples": 118058,
+        "objectPixels": 120298,
+        "inferredPixels": 2175,
+        "elapsedMs": 2290,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.observed",
+            "samples": 169414,
+            "visibleSamples": 81381,
+            "source": "observed_fit",
+            "material": "field"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 57688,
+            "source": "generated",
+            "material": "pear"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "common",
+      "view": "left",
+      "file": "dist/downloads/crf_0_6_common_left.png",
+      "bytes": 323134,
+      "sha256": "1317a683c4e63e719bc7e296c03f5c179b43fe948fa03f8d5fa4a1886a475639",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 287472,
+        "visibleSamples": 138879,
+        "contributions": 2587919,
+        "observedSamples": 169414,
+        "generatedSamples": 118058,
+        "objectPixels": 122869,
+        "inferredPixels": 3168,
+        "elapsedMs": 904,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.observed",
+            "samples": 169414,
+            "visibleSamples": 81030,
+            "source": "observed_fit",
+            "material": "field"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 57849,
+            "source": "generated",
+            "material": "pear"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "common",
+      "view": "right",
+      "file": "dist/downloads/crf_0_6_common_right.png",
+      "bytes": 312449,
+      "sha256": "4d0e38eea5a00dfdc2c86cd5439c609000e7a90948d9bf0411e2a18a35eacc7f",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 287472,
+        "visibleSamples": 139166,
+        "contributions": 2474090,
+        "observedSamples": 169414,
+        "generatedSamples": 118058,
+        "objectPixels": 118294,
+        "inferredPixels": 5853,
+        "elapsedMs": 847,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.observed",
+            "samples": 169414,
+            "visibleSamples": 81696,
+            "source": "observed_fit",
+            "material": "field"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 57470,
+            "source": "generated",
+            "material": "pear"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "common",
+      "view": "elevated",
+      "file": "dist/downloads/crf_0_6_common_elevated.png",
+      "bytes": 432713,
+      "sha256": "2d00e47e34ed4c980fa677ea4298da92dc7f26db8ad633c516cbaceb7c305c91",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 287472,
+        "visibleSamples": 143195,
+        "contributions": 2525734,
+        "observedSamples": 169414,
+        "generatedSamples": 118058,
+        "objectPixels": 115864,
+        "inferredPixels": 6252,
+        "elapsedMs": 883,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.observed",
+            "samples": 169414,
+            "visibleSamples": 86538,
+            "source": "observed_fit",
+            "material": "field"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 56657,
+            "source": "generated",
+            "material": "pear"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "common",
+      "view": "edited",
+      "file": "dist/downloads/crf_0_6_common_edited.png",
+      "bytes": 314207,
+      "sha256": "0c2616633f953f306c1aa180cc3058d28100cf30d878226d7d7e0eeff8708806",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 285962,
+        "visibleSamples": 137022,
+        "contributions": 2479087,
+        "observedSamples": 167904,
+        "generatedSamples": 118058,
+        "objectPixels": 120373,
+        "inferredPixels": 2142,
+        "elapsedMs": 871,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.observed",
+            "samples": 167904,
+            "visibleSamples": 79334,
+            "source": "observed_fit",
+            "material": "field"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 57688,
+            "source": "generated",
+            "material": "pear"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "common",
+      "view": "overlap",
+      "file": "dist/downloads/crf_0_6_common_overlap.png",
+      "bytes": 273942,
+      "sha256": "7f30368272420988dbd8f5549239f29159efa68b174cbdf5abc91260db273398",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 287472,
+        "visibleSamples": 138389,
+        "contributions": 1853820,
+        "observedSamples": 169414,
+        "generatedSamples": 118058,
+        "objectPixels": 84075,
+        "inferredPixels": 1135,
+        "elapsedMs": 717,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.observed",
+            "samples": 169414,
+            "visibleSamples": 81381,
+            "source": "observed_fit",
+            "material": "field"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 57008,
+            "source": "generated",
+            "material": "pear"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "stilllife",
+      "view": "reference",
+      "file": "dist/downloads/crf_0_6_stilllife_reference.png",
+      "bytes": 277616,
+      "sha256": "fff214c91d15f0e507b4afb9f3bfd62d5358e58bf81f6650295d82600bed9d71",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 395122,
+        "visibleSamples": 199528,
+        "contributions": 2310656,
+        "observedSamples": 0,
+        "generatedSamples": 395122,
+        "objectPixels": 110884,
+        "inferredPixels": 0,
+        "elapsedMs": 1079,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.generated",
+            "samples": 159405,
+            "visibleSamples": 80031,
+            "source": "generated",
+            "material": "apple"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 58038,
+            "source": "generated",
+            "material": "pear"
+          },
+          {
+            "id": "vase.generated",
+            "samples": 117659,
+            "visibleSamples": 61459,
+            "source": "generated",
+            "material": "ceramic"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "stilllife",
+      "view": "left",
+      "file": "dist/downloads/crf_0_6_stilllife_left.png",
+      "bytes": 296392,
+      "sha256": "64a0f942965013b230d43fb223f8626f75cba71253258056d1dfef8aace441ea",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 395122,
+        "visibleSamples": 199288,
+        "contributions": 2029871,
+        "observedSamples": 0,
+        "generatedSamples": 395122,
+        "objectPixels": 95794,
+        "inferredPixels": 0,
+        "elapsedMs": 978,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.generated",
+            "samples": 159405,
+            "visibleSamples": 79634,
+            "source": "generated",
+            "material": "apple"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 58118,
+            "source": "generated",
+            "material": "pear"
+          },
+          {
+            "id": "vase.generated",
+            "samples": 117659,
+            "visibleSamples": 61536,
+            "source": "generated",
+            "material": "ceramic"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "stilllife",
+      "view": "right",
+      "file": "dist/downloads/crf_0_6_stilllife_right.png",
+      "bytes": 274030,
+      "sha256": "3e34ccf6b0cfe31092ad2640bfe4cab91832d78391dd04599c68eef53a0ee983",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 395122,
+        "visibleSamples": 199749,
+        "contributions": 2546929,
+        "observedSamples": 0,
+        "generatedSamples": 395122,
+        "objectPixels": 119721,
+        "inferredPixels": 0,
+        "elapsedMs": 743,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.generated",
+            "samples": 159405,
+            "visibleSamples": 80464,
+            "source": "generated",
+            "material": "apple"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 57945,
+            "source": "generated",
+            "material": "pear"
+          },
+          {
+            "id": "vase.generated",
+            "samples": 117659,
+            "visibleSamples": 61340,
+            "source": "generated",
+            "material": "ceramic"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "stilllife",
+      "view": "elevated",
+      "file": "dist/downloads/crf_0_6_stilllife_elevated.png",
+      "bytes": 387478,
+      "sha256": "f11fb7dccf3d1f44d233a11b818a2a3c182443b1aad408d8a6fef32f7c552668",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 395122,
+        "visibleSamples": 199507,
+        "contributions": 2436571,
+        "observedSamples": 0,
+        "generatedSamples": 395122,
+        "objectPixels": 111541,
+        "inferredPixels": 0,
+        "elapsedMs": 1060,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "apple.generated",
+            "samples": 159405,
+            "visibleSamples": 80645,
+            "source": "generated",
+            "material": "apple"
+          },
+          {
+            "id": "pear.generated",
+            "samples": 118058,
+            "visibleSamples": 57032,
+            "source": "generated",
+            "material": "pear"
+          },
+          {
+            "id": "vase.generated",
+            "samples": 117659,
+            "visibleSamples": 61830,
+            "source": "generated",
+            "material": "ceramic"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "courtyard",
+      "view": "reference",
+      "file": "dist/downloads/crf_0_6_courtyard_reference.png",
+      "bytes": 422524,
+      "sha256": "5c549e86f2f2898de12b34d1284e5d85cda520d1e0fd0946c5e34c50c5ad8e93",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 1155694,
+        "visibleSamples": 604410,
+        "contributions": 4548461,
+        "observedSamples": 0,
+        "generatedSamples": 1155694,
+        "objectPixels": 219281,
+        "inferredPixels": 0,
+        "elapsedMs": 3245,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "wall.back",
+            "samples": 233662,
+            "visibleSamples": 113516,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "wall.left",
+            "samples": 234766,
+            "visibleSamples": 117383,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "plinth.back",
+            "samples": 63200,
+            "visibleSamples": 31200,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.0",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.0",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.0",
+            "samples": 8416,
+            "visibleSamples": 6688,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.0.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.0.r",
+            "samples": 9018,
+            "visibleSamples": 7407,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.0",
+            "samples": 3864,
+            "visibleSamples": 2880,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.0",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.1",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.1",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.1",
+            "samples": 8416,
+            "visibleSamples": 6688,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.1.l",
+            "samples": 9018,
+            "visibleSamples": 7407,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.1.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.1",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.1",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.2",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.2",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.2",
+            "samples": 8416,
+            "visibleSamples": 6688,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.2.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.2.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.2",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.2",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.seat",
+            "samples": 28032,
+            "visibleSamples": 14016,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.leg.l",
+            "samples": 5070,
+            "visibleSamples": 4110,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.leg.r",
+            "samples": 5070,
+            "visibleSamples": 2535,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "planter.0",
+            "samples": 21502,
+            "visibleSamples": 13105,
+            "source": "generated",
+            "material": "ceramic"
+          },
+          {
+            "id": "trunk.0",
+            "samples": 4678,
+            "visibleSamples": 2490,
+            "source": "generated",
+            "material": "wood"
+          },
+          {
+            "id": "foliage.0.0",
+            "samples": 20191,
+            "visibleSamples": 10719,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.1",
+            "samples": 20191,
+            "visibleSamples": 10751,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.2",
+            "samples": 20191,
+            "visibleSamples": 10749,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.3",
+            "samples": 20191,
+            "visibleSamples": 10724,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.4",
+            "samples": 20191,
+            "visibleSamples": 10756,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.5",
+            "samples": 20191,
+            "visibleSamples": 10734,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.6",
+            "samples": 20191,
+            "visibleSamples": 10739,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "planter.1",
+            "samples": 21502,
+            "visibleSamples": 13187,
+            "source": "generated",
+            "material": "ceramic"
+          },
+          {
+            "id": "trunk.1",
+            "samples": 4678,
+            "visibleSamples": 2490,
+            "source": "generated",
+            "material": "wood"
+          },
+          {
+            "id": "foliage.1.0",
+            "samples": 20191,
+            "visibleSamples": 10774,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.1",
+            "samples": 20191,
+            "visibleSamples": 10815,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.2",
+            "samples": 20191,
+            "visibleSamples": 10803,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.3",
+            "samples": 20191,
+            "visibleSamples": 10791,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.4",
+            "samples": 20191,
+            "visibleSamples": 10816,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.5",
+            "samples": 20191,
+            "visibleSamples": 10792,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.6",
+            "samples": 20191,
+            "visibleSamples": 10801,
+            "source": "generated",
+            "material": "foliage"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "courtyard",
+      "view": "left",
+      "file": "dist/downloads/crf_0_6_courtyard_left.png",
+      "bytes": 437417,
+      "sha256": "8be9509dbc387f6b74ad1f17274b6d252663b00d7525fbbb21c68baa89311e3e",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 1155694,
+        "visibleSamples": 701314,
+        "contributions": 3756757,
+        "observedSamples": 0,
+        "generatedSamples": 1155694,
+        "objectPixels": 181796,
+        "inferredPixels": 0,
+        "elapsedMs": 2987,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "wall.back",
+            "samples": 233662,
+            "visibleSamples": 116831,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "wall.left",
+            "samples": 234766,
+            "visibleSamples": 218968,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "plinth.back",
+            "samples": 63200,
+            "visibleSamples": 31600,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.0",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.0",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.0",
+            "samples": 8416,
+            "visibleSamples": 6688,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.0.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.0.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.0",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.0",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.1",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.1",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.1",
+            "samples": 8416,
+            "visibleSamples": 6688,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.1.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.1.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.1",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.1",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.2",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.2",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.2",
+            "samples": 8416,
+            "visibleSamples": 6688,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.2.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.2.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.2",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.2",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.seat",
+            "samples": 28032,
+            "visibleSamples": 14016,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.leg.l",
+            "samples": 5070,
+            "visibleSamples": 2535,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.leg.r",
+            "samples": 5070,
+            "visibleSamples": 2535,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "planter.0",
+            "samples": 21502,
+            "visibleSamples": 13071,
+            "source": "generated",
+            "material": "ceramic"
+          },
+          {
+            "id": "trunk.0",
+            "samples": 4678,
+            "visibleSamples": 2490,
+            "source": "generated",
+            "material": "wood"
+          },
+          {
+            "id": "foliage.0.0",
+            "samples": 20191,
+            "visibleSamples": 10683,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.1",
+            "samples": 20191,
+            "visibleSamples": 10729,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.2",
+            "samples": 20191,
+            "visibleSamples": 10724,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.3",
+            "samples": 20191,
+            "visibleSamples": 10698,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.4",
+            "samples": 20191,
+            "visibleSamples": 10723,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.5",
+            "samples": 20191,
+            "visibleSamples": 10700,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.6",
+            "samples": 20191,
+            "visibleSamples": 10711,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "planter.1",
+            "samples": 21502,
+            "visibleSamples": 13210,
+            "source": "generated",
+            "material": "ceramic"
+          },
+          {
+            "id": "trunk.1",
+            "samples": 4678,
+            "visibleSamples": 2490,
+            "source": "generated",
+            "material": "wood"
+          },
+          {
+            "id": "foliage.1.0",
+            "samples": 20191,
+            "visibleSamples": 10804,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.1",
+            "samples": 20191,
+            "visibleSamples": 10834,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.2",
+            "samples": 20191,
+            "visibleSamples": 10821,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.3",
+            "samples": 20191,
+            "visibleSamples": 10813,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.4",
+            "samples": 20191,
+            "visibleSamples": 10829,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.5",
+            "samples": 20191,
+            "visibleSamples": 10807,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.6",
+            "samples": 20191,
+            "visibleSamples": 10822,
+            "source": "generated",
+            "material": "foliage"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "courtyard",
+      "view": "right",
+      "file": "dist/downloads/crf_0_6_courtyard_right.png",
+      "bytes": 452487,
+      "sha256": "127a3cad091a6fcbfcba44f4512609816ef0fe431f9161ced496e924967e424f",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 1155694,
+        "visibleSamples": 599629,
+        "contributions": 3910581,
+        "observedSamples": 0,
+        "generatedSamples": 1155694,
+        "objectPixels": 243419,
+        "inferredPixels": 0,
+        "elapsedMs": 2576,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "wall.back",
+            "samples": 233662,
+            "visibleSamples": 116831,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "wall.left",
+            "samples": 234766,
+            "visibleSamples": 117383,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "plinth.back",
+            "samples": 63200,
+            "visibleSamples": 31600,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.0",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.0",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.0",
+            "samples": 8416,
+            "visibleSamples": 6688,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.0.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.0.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.0",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.0",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.1",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.1",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.1",
+            "samples": 8416,
+            "visibleSamples": 6688,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.1.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.1.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.1",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.1",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.2",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.2",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.2",
+            "samples": 8416,
+            "visibleSamples": 6688,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.2.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.2.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.2",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.2",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.seat",
+            "samples": 28032,
+            "visibleSamples": 14016,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.leg.l",
+            "samples": 5070,
+            "visibleSamples": 2535,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.leg.r",
+            "samples": 5070,
+            "visibleSamples": 2535,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "planter.0",
+            "samples": 21502,
+            "visibleSamples": 13182,
+            "source": "generated",
+            "material": "ceramic"
+          },
+          {
+            "id": "trunk.0",
+            "samples": 4678,
+            "visibleSamples": 2339,
+            "source": "generated",
+            "material": "wood"
+          },
+          {
+            "id": "foliage.0.0",
+            "samples": 20191,
+            "visibleSamples": 10773,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.1",
+            "samples": 20191,
+            "visibleSamples": 10812,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.2",
+            "samples": 20191,
+            "visibleSamples": 10807,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.3",
+            "samples": 20191,
+            "visibleSamples": 10783,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.4",
+            "samples": 20191,
+            "visibleSamples": 10803,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.5",
+            "samples": 20191,
+            "visibleSamples": 10793,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.6",
+            "samples": 20191,
+            "visibleSamples": 10783,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "planter.1",
+            "samples": 21502,
+            "visibleSamples": 13113,
+            "source": "generated",
+            "material": "ceramic"
+          },
+          {
+            "id": "trunk.1",
+            "samples": 4678,
+            "visibleSamples": 2490,
+            "source": "generated",
+            "material": "wood"
+          },
+          {
+            "id": "foliage.1.0",
+            "samples": 20191,
+            "visibleSamples": 10717,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.1",
+            "samples": 20191,
+            "visibleSamples": 10753,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.2",
+            "samples": 20191,
+            "visibleSamples": 10755,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.3",
+            "samples": 20191,
+            "visibleSamples": 10720,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.4",
+            "samples": 20191,
+            "visibleSamples": 10757,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.5",
+            "samples": 20191,
+            "visibleSamples": 10737,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.6",
+            "samples": 20191,
+            "visibleSamples": 10742,
+            "source": "generated",
+            "material": "foliage"
+          }
+        ]
+      }
+    },
+    {
+      "scene": "courtyard",
+      "view": "elevated",
+      "file": "dist/downloads/crf_0_6_courtyard_elevated.png",
+      "bytes": 488710,
+      "sha256": "021a02a0f25f9f6ec31d1293a79573df1209b730521df05697c8aeef0dcc151f",
+      "width": 960,
+      "height": 720,
+      "stats": {
+        "backend": "cpu-perspective-gaussian",
+        "quality": "final",
+        "sampleCount": 1155694,
+        "visibleSamples": 592275,
+        "contributions": 4323124,
+        "observedSamples": 0,
+        "generatedSamples": 1155694,
+        "objectPixels": 249779,
+        "inferredPixels": 0,
+        "elapsedMs": 2341,
+        "sourceImageBlit": false,
+        "sharedGeometryAndVisibility": true,
+        "perspectiveCamera": true,
+        "groundMethod": "analytic_ray_plane",
+        "shadowMethod": "approximate_soft_contact_ellipses",
+        "physicalRelighting": false,
+        "perObject": [
+          {
+            "id": "wall.back",
+            "samples": 233662,
+            "visibleSamples": 113516,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "wall.left",
+            "samples": 234766,
+            "visibleSamples": 115299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "plinth.back",
+            "samples": 63200,
+            "visibleSamples": 31200,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.0",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.0",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.0",
+            "samples": 8416,
+            "visibleSamples": 4208,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.0.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.0.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.0",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.0",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.1",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.1",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.1",
+            "samples": 8416,
+            "visibleSamples": 4208,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.1.l",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.1.r",
+            "samples": 9018,
+            "visibleSamples": 7407,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.1",
+            "samples": 3864,
+            "visibleSamples": 1932,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.1",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "window.2",
+            "samples": 38598,
+            "visibleSamples": 19299,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "sill.2",
+            "samples": 12042,
+            "visibleSamples": 6021,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "lintel.2",
+            "samples": 8416,
+            "visibleSamples": 4208,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.2.l",
+            "samples": 9018,
+            "visibleSamples": 7407,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "jamb.2.r",
+            "samples": 9018,
+            "visibleSamples": 4509,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "mullion.2",
+            "samples": 3864,
+            "visibleSamples": 2880,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "crossbar.2",
+            "samples": 2664,
+            "visibleSamples": 1332,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.seat",
+            "samples": 28032,
+            "visibleSamples": 14016,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.leg.l",
+            "samples": 5070,
+            "visibleSamples": 2535,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "bench.leg.r",
+            "samples": 5070,
+            "visibleSamples": 4110,
+            "source": "generated",
+            "material": "plaster"
+          },
+          {
+            "id": "planter.0",
+            "samples": 21502,
+            "visibleSamples": 12752,
+            "source": "generated",
+            "material": "ceramic"
+          },
+          {
+            "id": "trunk.0",
+            "samples": 4678,
+            "visibleSamples": 2402,
+            "source": "generated",
+            "material": "wood"
+          },
+          {
+            "id": "foliage.0.0",
+            "samples": 20191,
+            "visibleSamples": 10627,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.1",
+            "samples": 20191,
+            "visibleSamples": 10659,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.2",
+            "samples": 20191,
+            "visibleSamples": 10659,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.3",
+            "samples": 20191,
+            "visibleSamples": 10627,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.4",
+            "samples": 20191,
+            "visibleSamples": 10667,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.5",
+            "samples": 20191,
+            "visibleSamples": 10642,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.0.6",
+            "samples": 20191,
+            "visibleSamples": 10634,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "planter.1",
+            "samples": 21502,
+            "visibleSamples": 12748,
+            "source": "generated",
+            "material": "ceramic"
+          },
+          {
+            "id": "trunk.1",
+            "samples": 4678,
+            "visibleSamples": 2490,
+            "source": "generated",
+            "material": "wood"
+          },
+          {
+            "id": "foliage.1.0",
+            "samples": 20191,
+            "visibleSamples": 10636,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.1",
+            "samples": 20191,
+            "visibleSamples": 10663,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.2",
+            "samples": 20191,
+            "visibleSamples": 10652,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.3",
+            "samples": 20191,
+            "visibleSamples": 10633,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.4",
+            "samples": 20191,
+            "visibleSamples": 10665,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.5",
+            "samples": 20191,
+            "visibleSamples": 10631,
+            "source": "generated",
+            "material": "foliage"
+          },
+          {
+            "id": "foliage.1.6",
+            "samples": 20191,
+            "visibleSamples": 10638,
+            "source": "generated",
+            "material": "foliage"
+          }
+        ]
+      }
+    }
+  ],
+  "rendererSha256": "9960895d0b93b734aaae3778363157160fb1f1d31f910349049811593cc57008"
+}

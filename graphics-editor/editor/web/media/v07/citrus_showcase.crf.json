@@ -1,0 +1,613 @@
+{
+  "schema": "crf.image_program.v0.7",
+  "id": "citrus",
+  "title": "晴日柑橘",
+  "width": 960,
+  "height": 720,
+  "seed": 127,
+  "exposure": 1,
+  "camera": {
+    "aperture": 0.055,
+    "focusDistance": 8.3,
+    "position": [
+      4.5,
+      3.5,
+      6.8
+    ],
+    "target": [
+      0,
+      0.72,
+      0
+    ],
+    "fov": 34
+  },
+  "environment": {
+    "top": [
+      215,
+      226,
+      237
+    ],
+    "bottom": [
+      218,
+      206,
+      185
+    ],
+    "strength": 0.32
+  },
+  "lights": [
+    {
+      "id": "window",
+      "type": "area",
+      "position": [
+        -3.5,
+        5.8,
+        2
+      ],
+      "target": [
+        0,
+        0.7,
+        0
+      ],
+      "size": [
+        3.2,
+        3.7
+      ],
+      "color": [
+        255,
+        244,
+        224
+      ],
+      "intensity": 7
+    },
+    {
+      "id": "fill",
+      "type": "area",
+      "position": [
+        4,
+        3,
+        -2
+      ],
+      "target": [
+        0,
+        1,
+        0
+      ],
+      "size": [
+        2,
+        3
+      ],
+      "color": [
+        210,
+        229,
+        255
+      ],
+      "intensity": 2.3
+    }
+  ],
+  "objects": [
+    {
+      "id": "table",
+      "label": "浅色石台",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 100,
+        "height": 0.18,
+        "depth": 100
+      },
+      "material": {
+        "color": [
+          194,
+          185,
+          164
+        ],
+        "roughness": 0.62,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 1.6,
+          "strength": 0.32
+        },
+        "bump": 0.025
+      },
+      "transform": {
+        "position": [
+          0,
+          -0.18,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          4,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "id": "platter",
+      "label": "白釉浅盘",
+      "visible": true,
+      "surface": {
+        "kind": "lathe",
+        "radius": 2.04,
+        "height": 0.18,
+        "profile": [
+          0.9,
+          0.99,
+          1,
+          0.97,
+          0.92
+        ],
+        "thickness": 0.04
+      },
+      "material": {
+        "color": [
+          229,
+          227,
+          216
+        ],
+        "roughness": 0.19,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "ceramic",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orange.a",
+      "label": "橙子",
+      "visible": true,
+      "surface": {
+        "kind": "lathe",
+        "radius": 0.73,
+        "height": 1.4,
+        "profile": [
+          0.13,
+          0.4020063829044604,
+          0.5589235002479714,
+          0.6714562810919001,
+          0.7583959078040708,
+          0.8267859170475029,
+          0.8801999478665222,
+          0.920891246463371,
+          0.9505692153855474,
+          0.9707053360365007,
+          0.9826310513658469,
+          0.9875301261144556,
+          0.9863775550844573,
+          0.9798576321313062,
+          0.9682836062154563,
+          0.9515332966946546,
+          0.929006384107285,
+          0.8995982456397437,
+          0.8616697472307142,
+          0.8129657285520764,
+          0.7503757580124645,
+          0.6692598319632521,
+          0.561402283262567,
+          0.4067205396678207,
+          0.13
+        ],
+        "thickness": 0
+      },
+      "material": {
+        "color": [
+          234,
+          106,
+          13
+        ],
+        "roughness": 0.37,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "orange",
+          "scale": 1,
+          "strength": 0.64
+        },
+        "bump": 0.12
+      },
+      "transform": {
+        "position": [
+          -0.7,
+          0.045,
+          0.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orange.a.stem",
+      "label": "果蒂",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.045,
+        "height": 0.055
+      },
+      "material": {
+        "color": [
+          72,
+          67,
+          22
+        ],
+        "roughness": 0.8,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -0.7,
+          1.43,
+          0.67
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orange.b",
+      "label": "橙子",
+      "visible": true,
+      "surface": {
+        "kind": "lathe",
+        "radius": 0.68,
+        "height": 1.34,
+        "profile": [
+          0.13,
+          0.4020063829044604,
+          0.5589235002479714,
+          0.6714562810919001,
+          0.7583959078040708,
+          0.8267859170475029,
+          0.8801999478665222,
+          0.920891246463371,
+          0.9505692153855474,
+          0.9707053360365007,
+          0.9826310513658469,
+          0.9875301261144556,
+          0.9863775550844573,
+          0.9798576321313062,
+          0.9682836062154563,
+          0.9515332966946546,
+          0.929006384107285,
+          0.8995982456397437,
+          0.8616697472307142,
+          0.8129657285520764,
+          0.7503757580124645,
+          0.6692598319632521,
+          0.561402283262567,
+          0.4067205396678207,
+          0.13
+        ],
+        "thickness": 0
+      },
+      "material": {
+        "color": [
+          244,
+          145,
+          24
+        ],
+        "roughness": 0.37,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "orange",
+          "scale": 1,
+          "strength": 0.64
+        },
+        "bump": 0.12
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0.045,
+          0.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orange.b.stem",
+      "label": "果蒂",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.045,
+        "height": 0.055
+      },
+      "material": {
+        "color": [
+          72,
+          67,
+          22
+        ],
+        "roughness": 0.8,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.8,
+          1.37,
+          0.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orange.c",
+      "label": "橙子",
+      "visible": true,
+      "surface": {
+        "kind": "lathe",
+        "radius": 0.75,
+        "height": 1.52,
+        "profile": [
+          0.13,
+          0.4020063829044604,
+          0.5589235002479714,
+          0.6714562810919001,
+          0.7583959078040708,
+          0.8267859170475029,
+          0.8801999478665222,
+          0.920891246463371,
+          0.9505692153855474,
+          0.9707053360365007,
+          0.9826310513658469,
+          0.9875301261144556,
+          0.9863775550844573,
+          0.9798576321313062,
+          0.9682836062154563,
+          0.9515332966946546,
+          0.929006384107285,
+          0.8995982456397437,
+          0.8616697472307142,
+          0.8129657285520764,
+          0.7503757580124645,
+          0.6692598319632521,
+          0.561402283262567,
+          0.4067205396678207,
+          0.13
+        ],
+        "thickness": 0
+      },
+      "material": {
+        "color": [
+          222,
+          121,
+          16
+        ],
+        "roughness": 0.37,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "orange",
+          "scale": 1,
+          "strength": 0.64
+        },
+        "bump": 0.12
+      },
+      "transform": {
+        "position": [
+          -0.43,
+          0.045,
+          -0.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orange.c.stem",
+      "label": "果蒂",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.045,
+        "height": 0.055
+      },
+      "material": {
+        "color": [
+          72,
+          67,
+          22
+        ],
+        "roughness": 0.8,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "wood",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -0.43,
+          1.55,
+          -0.74
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "leaf",
+      "label": "柑橘叶",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.26,
+        "height": 0.035
+      },
+      "material": {
+        "color": [
+          40,
+          79,
+          27
+        ],
+        "roughness": 0.44,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "function": {
+          "op": "add",
+          "args": [
+            {
+              "op": "const",
+              "value": 0.78
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.3
+                },
+                {
+                  "op": "sin",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "x"
+                        },
+                        {
+                          "op": "const",
+                          "value": 70
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "position": [
+          -0.87,
+          1.48,
+          0.72
+        ],
+        "rotation": [
+          -12,
+          65,
+          12
+        ],
+        "scale": [
+          0.76,
+          1,
+          2
+        ]
+      }
+    }
+  ]
+}

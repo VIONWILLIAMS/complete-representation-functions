@@ -1,0 +1,3423 @@
+{
+  "schema": "crf.pixel_acceptance.v1",
+  "checker_sha256": "ae2828a2211e3f8c66e81066868f97ecba1fd111ff468f34e9d3a91193cfeee2",
+  "checker_contract": {
+    "schema": "crf.pixel_acceptance.v1",
+    "implementation_sha256": "215cdfc207225e4e4eaa82b49cc9c5e79e9992046d202c4f71202a9f5f752be6",
+    "reference_file_sha256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+    "reference_rgb_sha256": "ce66923ff7c0bd64cc3aaec19ffe951dd30b3c3834843d711dd6ad86aadcf922",
+    "size": [
+      667,
+      1000
+    ],
+    "thresholds": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      20,
+      32
+    ],
+    "tile_size": 64,
+    "exact_rule": "dimensions match AND every original RGB8 channel equals; diagnostic thresholds never substitute",
+    "alignment": "none; no resizing, registration, cropping, or preblur",
+    "rois": {
+      "wall.main": {
+        "bbox": [
+          0,
+          0,
+          667,
+          742
+        ],
+        "requested_bbox": [
+          0,
+          0,
+          667,
+          742
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "wall",
+        "max_mae_regression": 0.5
+      },
+      "wall.base": {
+        "bbox": [
+          0,
+          739,
+          667,
+          766
+        ],
+        "requested_bbox": [
+          0,
+          739,
+          667,
+          766
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "wall",
+        "max_mae_regression": 0.5
+      },
+      "road.main": {
+        "bbox": [
+          0,
+          840,
+          667,
+          1000
+        ],
+        "requested_bbox": [
+          0,
+          840,
+          667,
+          1000
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "road",
+        "max_mae_regression": 0.5
+      },
+      "road.edge": {
+        "bbox": [
+          0,
+          845,
+          600,
+          985
+        ],
+        "requested_bbox": [
+          0,
+          845,
+          600,
+          985
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "road",
+        "max_mae_regression": 0.5
+      },
+      "sidewalk.main": {
+        "bbox": [
+          0,
+          764,
+          667,
+          848
+        ],
+        "requested_bbox": [
+          0,
+          764,
+          667,
+          848
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "sidewalk",
+        "max_mae_regression": 0.5
+      },
+      "crosswalk.main": {
+        "bbox": [
+          52,
+          848,
+          667,
+          1000
+        ],
+        "requested_bbox": [
+          52,
+          848,
+          667,
+          1000
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "crosswalk",
+        "max_mae_regression": 0.5
+      },
+      "pole.main": {
+        "bbox": [
+          161,
+          59,
+          197,
+          834
+        ],
+        "requested_bbox": [
+          161,
+          59,
+          197,
+          834
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "pole",
+        "max_mae_regression": 0.5
+      },
+      "pole.arm": {
+        "bbox": [
+          72,
+          0,
+          186,
+          103
+        ],
+        "requested_bbox": [
+          72,
+          0,
+          186,
+          103
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "pole",
+        "max_mae_regression": 0.5
+      },
+      "signal.support": {
+        "bbox": [
+          189,
+          376,
+          315,
+          407
+        ],
+        "requested_bbox": [
+          189,
+          376,
+          315,
+          407
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "signal",
+        "max_mae_regression": 0.5
+      },
+      "signal.main": {
+        "bbox": [
+          274,
+          404,
+          325,
+          494
+        ],
+        "requested_bbox": [
+          274,
+          404,
+          325,
+          494
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "signal",
+        "max_mae_regression": 0.5
+      },
+      "window.r0.c0": {
+        "bbox": [
+          39,
+          0,
+          112,
+          39
+        ],
+        "requested_bbox": [
+          39,
+          0,
+          112,
+          39
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "window",
+        "max_mae_regression": 0.5
+      },
+      "window.r0.c1": {
+        "bbox": [
+          183,
+          0,
+          255,
+          38
+        ],
+        "requested_bbox": [
+          183,
+          0,
+          255,
+          38
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "window",
+        "max_mae_regression": 0.5
+      },
+      "window.r1.c0": {
+        "bbox": [
+          40,
+          254,
+          112,
+          330
+        ],
+        "requested_bbox": [
+          40,
+          254,
+          112,
+          330
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "window",
+        "max_mae_regression": 0.5
+      },
+      "window.r1.c1": {
+        "bbox": [
+          193,
+          255,
+          255,
+          329
+        ],
+        "requested_bbox": [
+          193,
+          255,
+          255,
+          329
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "window",
+        "max_mae_regression": 0.5
+      },
+      "window.r2.c0": {
+        "bbox": [
+          39,
+          540,
+          113,
+          617
+        ],
+        "requested_bbox": [
+          39,
+          540,
+          113,
+          617
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "window",
+        "max_mae_regression": 0.5
+      },
+      "window.r2.c1": {
+        "bbox": [
+          195,
+          541,
+          255,
+          616
+        ],
+        "requested_bbox": [
+          195,
+          541,
+          255,
+          616
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "window",
+        "max_mae_regression": 0.5
+      },
+      "signal.side": {
+        "bbox": [
+          192,
+          402,
+          238,
+          497
+        ],
+        "requested_bbox": [
+          192,
+          402,
+          238,
+          497
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "signal",
+        "max_mae_regression": 0.5
+      },
+      "wall.fixtures": {
+        "bbox": [
+          0,
+          78,
+          17,
+          696
+        ],
+        "requested_bbox": [
+          0,
+          78,
+          17,
+          696
+        ],
+        "scope": "overlapping_entity_roi",
+        "role": "wall",
+        "max_mae_regression": 0.5
+      }
+    },
+    "connections": [],
+    "diagnostics": {
+      "ssim_sigma_px": 1.5,
+      "low_frequency_sigma_px": 4.0,
+      "texture_sigma_px": 2.0,
+      "edge_threshold_255": 12.0,
+      "edge_tolerance_px": 1.5
+    }
+  },
+  "valid": true,
+  "exact100": true,
+  "status": "exact100",
+  "reference": {
+    "path": "/workspace/scratch/4d869d6c27e5/crf_street_0_4/dist/assets/reference.png",
+    "file_sha256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+    "rgb_sha256": "ce66923ff7c0bd64cc3aaec19ffe951dd30b3c3834843d711dd6ad86aadcf922",
+    "source_mode": "RGB",
+    "width": 667,
+    "height": 1000,
+    "conversion": "Opaque RGBA alpha discarded if present; no ICC transform or spatial transform"
+  },
+  "candidate": {
+    "path": "/workspace/scratch/4d869d6c27e5/crf_street_0_4/dist/downloads/crf_street_0_4_reference.png",
+    "file_sha256": "85a314044f57477f51263052685632717073c411242f2bc2ca0eabe1dde8fe11",
+    "rgb_sha256": "ce66923ff7c0bd64cc3aaec19ffe951dd30b3c3834843d711dd6ad86aadcf922",
+    "source_mode": "RGBA",
+    "width": 667,
+    "height": 1000,
+    "conversion": "Opaque RGBA alpha discarded if present; no ICC transform or spatial transform"
+  },
+  "dimensions": {
+    "expected": [
+      667,
+      1000
+    ],
+    "match": true
+  },
+  "global": {
+    "rgb_mae_255": 0.0,
+    "rgb_rmse_255": 0.0,
+    "max_abs_channel_error": 0,
+    "psnr_db": null,
+    "psnr_infinite": true,
+    "luminance_ssim_gaussian_1_5": 1.0,
+    "exact_pixel_fraction": 1.0,
+    "exact_channel_fraction": 1.0,
+    "pixels_evaluated": 667000
+  },
+  "exact_pixel_fraction": 1.0,
+  "exact_channel_fraction": 1.0,
+  "threshold_hits": {
+    "0": {
+      "pixels": 667000,
+      "fraction": 1.0,
+      "rule": "all three channel absolute differences <= threshold",
+      "threshold_255": 0
+    },
+    "1": {
+      "pixels": 667000,
+      "fraction": 1.0,
+      "rule": "all three channel absolute differences <= threshold",
+      "threshold_255": 1
+    },
+    "2": {
+      "pixels": 667000,
+      "fraction": 1.0,
+      "rule": "all three channel absolute differences <= threshold",
+      "threshold_255": 2
+    },
+    "5": {
+      "pixels": 667000,
+      "fraction": 1.0,
+      "rule": "all three channel absolute differences <= threshold",
+      "threshold_255": 5
+    },
+    "10": {
+      "pixels": 667000,
+      "fraction": 1.0,
+      "rule": "all three channel absolute differences <= threshold",
+      "threshold_255": 10
+    },
+    "20": {
+      "pixels": 667000,
+      "fraction": 1.0,
+      "rule": "all three channel absolute differences <= threshold",
+      "threshold_255": 20
+    },
+    "32": {
+      "pixels": 667000,
+      "fraction": 1.0,
+      "rule": "all three channel absolute differences <= threshold",
+      "threshold_255": 32
+    }
+  },
+  "diagnostics": {
+    "edge": {
+      "gradient_mae_255": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "threshold_255": 12.0,
+      "tolerance_px": 1.5,
+      "scope": "Diagnostic edge matching only; never used for exact100"
+    },
+    "low_frequency": {
+      "sigma_px": 4.0,
+      "rgb_mae_255": 0.0
+    },
+    "texture": {
+      "reference_detail_std_255": 11.460665969239578,
+      "candidate_detail_std_255": 11.460665969239578,
+      "std_abs_gap_255": 0.0,
+      "std_ratio": 1.0,
+      "detail_mae_255": 0.0,
+      "sample_correlation": 0.9999999999999999,
+      "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+    }
+  },
+  "rois": {
+    "wall.main": {
+      "bbox": [
+        0,
+        0,
+        667,
+        742
+      ],
+      "requested_bbox": [
+        0,
+        0,
+        667,
+        742
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "wall",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 494914
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 9.931105210200188,
+        "candidate_detail_std_255": 9.931105210200188,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "wall.base": {
+      "bbox": [
+        0,
+        739,
+        667,
+        766
+      ],
+      "requested_bbox": [
+        0,
+        739,
+        667,
+        766
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "wall",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 18009
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 4.744128872083187,
+        "candidate_detail_std_255": 4.744128872083187,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 0.9999999999999998,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "road.main": {
+      "bbox": [
+        0,
+        840,
+        667,
+        1000
+      ],
+      "requested_bbox": [
+        0,
+        840,
+        667,
+        1000
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "road",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 106720
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 18.589260500564748,
+        "candidate_detail_std_255": 18.589260500564748,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "road.edge": {
+      "bbox": [
+        0,
+        845,
+        600,
+        985
+      ],
+      "requested_bbox": [
+        0,
+        845,
+        600,
+        985
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "road",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 84000
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 19.24457828778409,
+        "candidate_detail_std_255": 19.24457828778409,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 0.9999999999999998,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "sidewalk.main": {
+      "bbox": [
+        0,
+        764,
+        667,
+        848
+      ],
+      "requested_bbox": [
+        0,
+        764,
+        667,
+        848
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "sidewalk",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 56028
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 6.991918889621269,
+        "candidate_detail_std_255": 6.991918889621269,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "crosswalk.main": {
+      "bbox": [
+        52,
+        848,
+        667,
+        1000
+      ],
+      "requested_bbox": [
+        52,
+        848,
+        667,
+        1000
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "crosswalk",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 93480
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 19.426877948113106,
+        "candidate_detail_std_255": 19.426877948113106,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "pole.main": {
+      "bbox": [
+        161,
+        59,
+        197,
+        834
+      ],
+      "requested_bbox": [
+        161,
+        59,
+        197,
+        834
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "pole",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 27900
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 21.491035942172868,
+        "candidate_detail_std_255": 21.491035942172868,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "pole.arm": {
+      "bbox": [
+        72,
+        0,
+        186,
+        103
+      ],
+      "requested_bbox": [
+        72,
+        0,
+        186,
+        103
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "pole",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 11742
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 11.763881593321974,
+        "candidate_detail_std_255": 11.763881593321974,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 0.9999999999999999,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "signal.support": {
+      "bbox": [
+        189,
+        376,
+        315,
+        407
+      ],
+      "requested_bbox": [
+        189,
+        376,
+        315,
+        407
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "signal",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 3906
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 26.142119949000946,
+        "candidate_detail_std_255": 26.142119949000946,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "signal.main": {
+      "bbox": [
+        274,
+        404,
+        325,
+        494
+      ],
+      "requested_bbox": [
+        274,
+        404,
+        325,
+        494
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "signal",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 4590
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 26.455622023399354,
+        "candidate_detail_std_255": 26.455622023399354,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "window.r0.c0": {
+      "bbox": [
+        39,
+        0,
+        112,
+        39
+      ],
+      "requested_bbox": [
+        39,
+        0,
+        112,
+        39
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "window",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 2847
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 24.859106994524637,
+        "candidate_detail_std_255": 24.859106994524637,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "window.r0.c1": {
+      "bbox": [
+        183,
+        0,
+        255,
+        38
+      ],
+      "requested_bbox": [
+        183,
+        0,
+        255,
+        38
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "window",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 2736
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 33.967545534251954,
+        "candidate_detail_std_255": 33.967545534251954,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "window.r1.c0": {
+      "bbox": [
+        40,
+        254,
+        112,
+        330
+      ],
+      "requested_bbox": [
+        40,
+        254,
+        112,
+        330
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "window",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 5472
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 19.631138414822182,
+        "candidate_detail_std_255": 19.631138414822182,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "window.r1.c1": {
+      "bbox": [
+        193,
+        255,
+        255,
+        329
+      ],
+      "requested_bbox": [
+        193,
+        255,
+        255,
+        329
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "window",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 4588
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 33.023478352881,
+        "candidate_detail_std_255": 33.023478352881,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "window.r2.c0": {
+      "bbox": [
+        39,
+        540,
+        113,
+        617
+      ],
+      "requested_bbox": [
+        39,
+        540,
+        113,
+        617
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "window",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 5698
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 15.65319630299653,
+        "candidate_detail_std_255": 15.65319630299653,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 0.9999999999999999,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "window.r2.c1": {
+      "bbox": [
+        195,
+        541,
+        255,
+        616
+      ],
+      "requested_bbox": [
+        195,
+        541,
+        255,
+        616
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "window",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 4500
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 32.15300474197264,
+        "candidate_detail_std_255": 32.15300474197264,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 0.9999999999999998,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "signal.side": {
+      "bbox": [
+        192,
+        402,
+        238,
+        497
+      ],
+      "requested_bbox": [
+        192,
+        402,
+        238,
+        497
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "signal",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 4370
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 24.42466260851744,
+        "candidate_detail_std_255": 24.42466260851744,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 0.9999999999999999,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    },
+    "wall.fixtures": {
+      "bbox": [
+        0,
+        78,
+        17,
+        696
+      ],
+      "requested_bbox": [
+        0,
+        78,
+        17,
+        696
+      ],
+      "scope": "overlapping_entity_roi",
+      "role": "wall",
+      "max_mae_regression": 0.5,
+      "metrics": {
+        "rgb_mae_255": 0.0,
+        "rgb_rmse_255": 0.0,
+        "max_abs_channel_error": 0,
+        "psnr_db": null,
+        "psnr_infinite": true,
+        "luminance_ssim_gaussian_1_5": 1.0,
+        "exact_pixel_fraction": 1.0,
+        "exact_channel_fraction": 1.0,
+        "pixels_evaluated": 10506
+      },
+      "low_frequency_mae_255": 0.0,
+      "edge": {
+        "gradient_mae_255": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "threshold_255": 12.0,
+        "tolerance_px": 1.5,
+        "scope": "Diagnostic edge matching only; never used for exact100"
+      },
+      "texture": {
+        "reference_detail_std_255": 5.933062099414622,
+        "candidate_detail_std_255": 5.933062099414622,
+        "std_abs_gap_255": 0.0,
+        "std_ratio": 1.0,
+        "detail_mae_255": 0.0,
+        "sample_correlation": 1.0,
+        "scope": "sigma2 high-pass diagnostic; region boxes can also contain edges"
+      }
+    }
+  },
+  "connections": {},
+  "tiles": [
+    {
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        0,
+        128,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        0,
+        192,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        0,
+        256,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        0,
+        320,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        0,
+        384,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        0,
+        448,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        0,
+        512,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        0,
+        576,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        0,
+        640,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        0,
+        667,
+        64
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        64,
+        64,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        64,
+        128,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        64,
+        192,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        64,
+        256,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        64,
+        320,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        64,
+        384,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        64,
+        448,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        64,
+        512,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        64,
+        576,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        64,
+        640,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        64,
+        667,
+        128
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        128,
+        64,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        128,
+        128,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        128,
+        192,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        128,
+        256,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        128,
+        320,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        128,
+        448,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        128,
+        512,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        128,
+        576,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        128,
+        640,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        128,
+        667,
+        192
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        192,
+        64,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        192,
+        128,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        192,
+        192,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        192,
+        256,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        192,
+        320,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        192,
+        384,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        192,
+        448,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        192,
+        512,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        192,
+        576,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        192,
+        640,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        192,
+        667,
+        256
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        256,
+        64,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        256,
+        128,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        256,
+        192,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        256,
+        256,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        256,
+        320,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        256,
+        384,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        256,
+        448,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        256,
+        512,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        256,
+        576,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        256,
+        640,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        256,
+        667,
+        320
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        320,
+        64,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        320,
+        128,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        320,
+        192,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        320,
+        256,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        320,
+        320,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        320,
+        384,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        320,
+        448,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        320,
+        512,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        320,
+        576,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        320,
+        640,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        320,
+        667,
+        384
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        384,
+        64,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        384,
+        128,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        384,
+        192,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        384,
+        256,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        384,
+        320,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        384,
+        384,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        384,
+        448,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        384,
+        512,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        384,
+        576,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        384,
+        640,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        384,
+        667,
+        448
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        448,
+        64,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        448,
+        128,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        448,
+        192,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        448,
+        256,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        448,
+        320,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        448,
+        384,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        448,
+        448,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        448,
+        512,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        448,
+        576,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        448,
+        640,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        448,
+        667,
+        512
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        512,
+        64,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        512,
+        128,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        512,
+        192,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        512,
+        256,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        512,
+        320,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        512,
+        384,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        512,
+        448,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        512,
+        512,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        512,
+        576,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        512,
+        640,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        512,
+        667,
+        576
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        576,
+        64,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        576,
+        128,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        576,
+        192,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        576,
+        256,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        576,
+        320,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        576,
+        384,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        576,
+        448,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        576,
+        512,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        576,
+        576,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        576,
+        640,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        576,
+        667,
+        640
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        640,
+        64,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        640,
+        128,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        640,
+        192,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        640,
+        256,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        640,
+        320,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        640,
+        384,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        640,
+        448,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        640,
+        512,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        640,
+        576,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        640,
+        640,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        640,
+        667,
+        704
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        704,
+        64,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        704,
+        128,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        704,
+        192,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        704,
+        256,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        704,
+        512,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        704,
+        576,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        704,
+        667,
+        768
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        768,
+        64,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        768,
+        128,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        768,
+        192,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        768,
+        256,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        768,
+        320,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        768,
+        384,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        768,
+        448,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        768,
+        512,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        768,
+        576,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        768,
+        640,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        768,
+        667,
+        832
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        832,
+        64,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        832,
+        128,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        832,
+        192,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        832,
+        256,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        832,
+        320,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        832,
+        384,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        832,
+        448,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        832,
+        512,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        832,
+        576,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        832,
+        640,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        832,
+        667,
+        896
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        896,
+        64,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        896,
+        128,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        896,
+        192,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        896,
+        256,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        896,
+        320,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        896,
+        384,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        896,
+        448,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        896,
+        512,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        896,
+        576,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        896,
+        640,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        896,
+        667,
+        960
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        0,
+        960,
+        64,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        64,
+        960,
+        128,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        128,
+        960,
+        192,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        192,
+        960,
+        256,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        256,
+        960,
+        320,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        320,
+        960,
+        384,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        384,
+        960,
+        448,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        448,
+        960,
+        512,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        512,
+        960,
+        576,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        576,
+        960,
+        640,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    },
+    {
+      "bbox": [
+        640,
+        960,
+        667,
+        1000
+      ],
+      "mae_255": 0.0,
+      "exact_pixel_fraction": 1.0,
+      "max_error_255": 0,
+      "priority": 0.0
+    }
+  ],
+  "scoring_note": "Only strict original RGB8 equality can pass exact100; multiscale fields are diagnostic",
+  "roi_note": "Entity boxes may overlap; their scores are not summed into the global metric",
+  "outputs": {
+    "error_map": "/workspace/scratch/4d869d6c27e5/crf_street_0_4/reports/pixel_gate/error_max_channel.png",
+    "tile_priority_map": "/workspace/scratch/4d869d6c27e5/crf_street_0_4/reports/pixel_gate/tile_priority.png",
+    "error_map_scale": "max absolute original channel error, 0..255",
+    "tile_display_scale": "red=min(255,4*tile_MAE); exact values are in tiles",
+    "analysis_only_never_renderer_input": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "crf.browser_verification.v0.4",
+  "provenance": "Observed JSON from the actual verify.html page in the managed cloud browser; copied after the final core and data were frozen.",
+  "coreSha256": "ae9364668e5277b6924e94f04771ed0a1f958362e555ddf403ebd4b0a8bf22d2",
+  "sceneDataSha256": "95df9a865bbae0b9e523fa32c312c086eb487e71e868dec3c71dacc924658d8d",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "pass": true,
+  "baseline": {"exactPixels": 667000, "totalPixels": 667000, "mae": 0, "maxAbsChannelError": 0},
+  "recolor": {"changedWallPixels": 437133, "changedOtherPixels": 0},
+  "angleDifference": {"exactPixels": 21391, "totalPixels": 667000, "mae": 22.142478260869566, "maxAbsChannelError": 247},
+  "restore": {"exactPixels": 667000, "totalPixels": 667000, "mae": 0, "maxAbsChannelError": 0},
+  "picking": [
+    {"x": 300, "y": 425, "id": "signal.main"},
+    {"x": 179, "y": 600, "id": "pole.main"},
+    {"x": 450, "y": 500, "id": "wall.main"},
+    {"x": 330, "y": 900, "id": "road.main"}
+  ],
+  "renders": {
+    "first": {"backend": "cpu-gaussian", "quality": "exact", "width": 667, "height": 1000, "lod": 1, "sigmaReferencePx": 0.18, "gaussianCount": 766023, "inferredGaussianCount": 99023, "observedPixelCount": 667000, "layerCount": 18, "sourceImageBlit": false, "contributions": 766023, "visibleInferredPixels": 0, "elapsedMs": 766.0999999996275, "fallbackReason": "WebGL 2 is unavailable"},
+    "blue": {"backend": "cpu-gaussian", "quality": "exact", "width": 667, "height": 1000, "lod": 1, "gaussianCount": 766023, "inferredGaussianCount": 99023, "visibleInferredPixels": 0, "elapsedMs": 221.90000000037253, "fallbackReason": "WebGL 2 is unavailable"},
+    "angle": {"backend": "cpu-gaussian", "quality": "interactive", "width": 667, "height": 1000, "lod": 2, "sigmaReferencePx": 1.24, "gaussianCount": 191769, "inferredGaussianCount": 24769, "observedPixelCount": 667000, "layerCount": 18, "sourceImageBlit": false, "contributions": 6219848, "visibleInferredPixels": 26170, "elapsedMs": 288.5, "fallbackReason": "WebGL 2 is unavailable"},
+    "restored": {"backend": "cpu-gaussian", "quality": "exact", "width": 667, "height": 1000, "lod": 1, "gaussianCount": 766023, "inferredGaussianCount": 99023, "visibleInferredPixels": 0, "elapsedMs": 209.10000000149012, "fallbackReason": "WebGL 2 is unavailable"}
+  },
+  "mediaRecorderSupported": true,
+  "gpuExecutedInThisEnvironment": false,
+  "scope": "Measured browser CPU fallback only; timings are observations, not guaranteed frame rates. Single-view hypotheses are not certified by pixel equality."
+}

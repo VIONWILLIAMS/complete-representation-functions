@@ -1,0 +1,494 @@
+{
+  "id": "learn.r04.ba8ec1aa482e.object",
+  "assetId": "learn.r04.ba8ec1aa482e.object",
+  "status": "fitted",
+  "round": 4,
+  "topic": "咖啡与餐桌静物实拍",
+  "sourceUrl": "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+  "imageUrl": "https://images.pexels.com/photos/39187955/pexels-photo-39187955.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo de Cut Nanda Oemar sur Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r04.ba8ec1aa482e.webp",
+  "sourceSHA256": "ba8ec1aa482ec288e21ecdede970e21bd38d39b4f99c1e1db15a6b26a2950b68",
+  "normalizedRGBA_SHA256": "e311a8f64f8af0a812005f82d5c39ff03e736b38a36787cbc1665d2a0ead349e",
+  "dHash64": "4389b9d2f8f6fdff",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    194,
+    214
+  ],
+  "assetURL": "assets/v08/learned/learn.r04.ba8ec1aa482e.object.json",
+  "renderURL": "assets/v08/learned/learn.r04.ba8ec1aa482e.object.png",
+  "reportURL": "assets/v08/learned/learn.r04.ba8ec1aa482e.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r04.ba8ec1aa482e.object.png",
+  "referenceThumbnailURL": "assets/v08/references/learn.r04.ba8ec1aa482e.object.jpg",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 5189,
+  "pixelToGaussianRatio": 8.000770861437656,
+  "assetBytes": 429354,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 0.8197860396144476,
+    "rmse": 1.5919908641559408,
+    "psnr": 44.09199218559643,
+    "ssim": 0.9775965374852572,
+    "maxError": 52,
+    "exactRGBFraction": 0.15036542739116618,
+    "evaluatedPixels": 31470,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 1.0981945685493737,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 6.573656100325803,
+          "bestFloatMSE": 6.573656100325803
+        },
+        {
+          "step": 10,
+          "floatMSE": 2.88017515026216,
+          "bestFloatMSE": 2.88017515026216
+        },
+        {
+          "step": 20,
+          "floatMSE": 1.9362313194556182,
+          "bestFloatMSE": 1.9362313194556182
+        },
+        {
+          "step": 30,
+          "floatMSE": 1.504382395030735,
+          "bestFloatMSE": 1.504382395030735
+        },
+        {
+          "step": 40,
+          "floatMSE": 1.2926980714893315,
+          "bestFloatMSE": 1.2926980714893315
+        },
+        {
+          "step": 50,
+          "floatMSE": 1.1814964024082022,
+          "bestFloatMSE": 1.1814964024082022
+        },
+        {
+          "step": 60,
+          "floatMSE": 1.1242558216244471,
+          "bestFloatMSE": 1.1242558216244471
+        },
+        {
+          "step": 70,
+          "floatMSE": 1.0981945685493737,
+          "bestFloatMSE": 1.0981945685493737
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 1816,
+        "elapsedSeconds": 0.173,
+        "mae": 6.43795148818981,
+        "rmse": 11.888665017339108,
+        "psnr": 26.62814180335902,
+        "ssim": 0.7950878570924733,
+        "maxError": 153,
+        "exactRGBFraction": 0.017032094057832858,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 1816,
+        "elapsedSeconds": 0.285,
+        "mae": 4.68979980934223,
+        "rmse": 8.716927905818771,
+        "psnr": 29.323534526145014,
+        "ssim": 0.83438345873696,
+        "maxError": 150,
+        "exactRGBFraction": 0.020591039084842708,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 4008,
+        "elapsedSeconds": 0.892,
+        "mae": 2.4383328037284184,
+        "rmse": 4.763004208272373,
+        "psnr": 34.573184304171996,
+        "ssim": 0.9375895045770721,
+        "maxError": 109,
+        "exactRGBFraction": 0.03902129011757229,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 5189,
+        "elapsedSeconds": 1.216,
+        "mae": 1.9054337464251667,
+        "rmse": 3.711309247828261,
+        "psnr": 36.7402607328073,
+        "ssim": 0.954930539250855,
+        "maxError": 83,
+        "exactRGBFraction": 0.055926278995869085,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 5189,
+        "elapsedSeconds": 1.251,
+        "mae": 1.9054337464251667,
+        "rmse": 3.711309247828261,
+        "psnr": 36.7402607328073,
+        "ssim": 0.954930539250855,
+        "maxError": 83,
+        "exactRGBFraction": 0.055926278995869085,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 5189,
+        "elapsedSeconds": 1.476,
+        "mae": 1.373636267344561,
+        "rmse": 2.612978371255183,
+        "psnr": 39.788087310676026,
+        "ssim": 0.9687095511638384,
+        "maxError": 70,
+        "exactRGBFraction": 0.057260883380997774,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 5189,
+        "elapsedSeconds": 1.673,
+        "mae": 1.114765385022773,
+        "rmse": 2.1549867285023323,
+        "psnr": 41.46191161067868,
+        "ssim": 0.973034152665121,
+        "maxError": 63,
+        "exactRGBFraction": 0.08376231331426756,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 5189,
+        "elapsedSeconds": 1.881,
+        "mae": 0.9742612011439467,
+        "rmse": 1.900540398902201,
+        "psnr": 42.55326149602318,
+        "ssim": 0.9751984259616872,
+        "maxError": 57,
+        "exactRGBFraction": 0.10803940260565618,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 5189,
+        "elapsedSeconds": 2.089,
+        "mae": 0.8998199343289905,
+        "rmse": 1.7528163667507217,
+        "psnr": 43.25607521360582,
+        "ssim": 0.9763757240184694,
+        "maxError": 54,
+        "exactRGBFraction": 0.1256116936765173,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 5189,
+        "elapsedSeconds": 2.32,
+        "mae": 0.8529287151784769,
+        "rmse": 1.663081622470672,
+        "psnr": 43.712532318591585,
+        "ssim": 0.9770616137160616,
+        "maxError": 52,
+        "exactRGBFraction": 0.13975214489990467,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 5189,
+        "elapsedSeconds": 2.511,
+        "mae": 0.8302616248278784,
+        "rmse": 1.6165093335921414,
+        "psnr": 43.95923927796935,
+        "ssim": 0.9774324827741734,
+        "maxError": 52,
+        "exactRGBFraction": 0.148109310454401,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 5189,
+        "elapsedSeconds": 2.703,
+        "mae": 0.8197754475161529,
+        "rmse": 1.5919875374693373,
+        "psnr": 44.092010335991354,
+        "ssim": 0.9775966999654121,
+        "maxError": 52,
+        "exactRGBFraction": 0.15036542739116618,
+        "evaluatedPixels": 31470,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 2.708,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 2.995,
+  "passedPilot": true,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.4,
+      0.16,
+      0.79,
+      0.95
+    ],
+    "proposalPixels": [
+      184,
+      34,
+      425,
+      290
+    ],
+    "cropPixels": [
+      204,
+      50,
+      398,
+      264
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 30958,
+    "pixelMaskVerified": false,
+    "reviewedCorrections": [
+      "Manually reviewed closed cubic contour on the original reference restores the complete visible cup body; four-times supersampled coverage replaces the failed GrabCut boundary."
+    ],
+    "reviewedContour": {
+      "coordinateSize": [
+        1100,
+        627
+      ],
+      "points": [
+        [
+          617,
+          120
+        ],
+        [
+          656,
+          121
+        ],
+        [
+          694,
+          127
+        ],
+        [
+          739,
+          140
+        ],
+        [
+          777,
+          162
+        ],
+        [
+          805,
+          196
+        ],
+        [
+          818,
+          238
+        ],
+        [
+          826,
+          286
+        ],
+        [
+          837,
+          341
+        ],
+        [
+          844,
+          394
+        ],
+        [
+          836,
+          440
+        ],
+        [
+          816,
+          478
+        ],
+        [
+          776,
+          512
+        ],
+        [
+          724,
+          539
+        ],
+        [
+          669,
+          553
+        ],
+        [
+          615,
+          555
+        ],
+        [
+          562,
+          544
+        ],
+        [
+          518,
+          520
+        ],
+        [
+          481,
+          484
+        ],
+        [
+          458,
+          439
+        ],
+        [
+          449,
+          382
+        ],
+        [
+          450,
+          332
+        ],
+        [
+          451,
+          280
+        ],
+        [
+          454,
+          242
+        ],
+        [
+          470,
+          202
+        ],
+        [
+          504,
+          162
+        ],
+        [
+          553,
+          136
+        ]
+      ],
+      "interpolation": "periodic cubic spline",
+      "coverageSamplesPerAxis": 4
+    },
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r04.ba8ec1aa482e.object.png"
+  },
+  "semantics": {
+    "id": "learn.r04.ba8ec1aa482e",
+    "label": "木桌拿铁咖啡杯",
+    "category": "latte cup",
+    "role": "object",
+    "bbox": [
+      0.4,
+      0.16,
+      0.79,
+      0.95
+    ],
+    "palette": [
+      [
+        160,
+        111,
+        68
+      ],
+      [
+        226,
+        213,
+        193
+      ],
+      [
+        181,
+        130,
+        86
+      ],
+      [
+        236,
+        232,
+        223
+      ],
+      [
+        85,
+        57,
+        37
+      ]
+    ],
+    "lightDirection": "left",
+    "description": "中近景里，一只米色杯身、白色杯口与侧面白色带片的咖啡杯置于圆形木杯垫上，杯中为带奶泡的拿铁，表面有浅色拉花。桌面为暖棕色木板，左侧投射斑驳树影，背景被浅景深柔化。适合提取为暖光咖啡静物；复用时保留木色、杯口椭圆、拉花和树影，但不要把背景虚化部补成确定环境。",
+    "tags": [
+      "拿铁",
+      "咖啡杯",
+      "拉花",
+      "木桌",
+      "木杯垫",
+      "树影",
+      "暖光",
+      "近景",
+      "静物",
+      "陶瓷杯",
+      "浅景深",
+      "棕色"
+    ],
+    "limitations": [
+      "拉花细节受反光与景深影响",
+      "杯身侧面结构无法完全确认",
+      "木质纹理和阴影只覆盖局部",
+      "背景被虚化，不能还原环境",
+      "无尺度参照",
+      "无法确认饮品配方与温度"
+    ]
+  },
+  "sourceId": "learn.r04.ba8ec1aa482e"
+}

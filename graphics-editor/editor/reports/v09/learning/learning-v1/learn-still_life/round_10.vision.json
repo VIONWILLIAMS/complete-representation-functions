@@ -1,0 +1,271 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 10,
+  "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "items": [
+    {
+      "id": "ref.10.0",
+      "label": "带框花卉静物画",
+      "category": "framed-still-life",
+      "role": "reference-frame",
+      "bbox": [
+        0.05,
+        0.06,
+        0.95,
+        0.94
+      ],
+      "palette": [
+        [
+          78,
+          96,
+          74
+        ],
+        [
+          43,
+          35,
+          27
+        ],
+        [
+          222,
+          214,
+          190
+        ],
+        [
+          66,
+          88,
+          132
+        ],
+        [
+          176,
+          91,
+          62
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "深绿色墙面悬挂带框花卉静物画，深棕/黑色雕花外框与金色内边；画面为米白底，花束含浅色郁金香、蓝紫色穗状花和白色团花，插在蓝金纹饰高足花瓶内，置于浅色石台，台上散有橙红小果。观看对象是画作表面，光照较均匀，细节受低分辨率影响。",
+      "tags": [
+        "带框画",
+        "花卉静物",
+        "花瓶",
+        "郁金香",
+        "樱桃",
+        "画作",
+        "framed artwork",
+        "still life",
+        "vase",
+        "painting",
+        "ornate frame",
+        "低分辨率"
+      ],
+      "limitations": [
+        "分辨率低，花瓣与果实细节模糊",
+        "画面为绘画而非真实静物",
+        "无法从画中提取真实果皮或陶瓷材质",
+        "花瓶、花果与桌面不能精确分割",
+        "边界框仅为近似范围",
+        "无法验证画中物体的真实三维接触",
+        "无多视角或尺度信息"
+      ]
+    },
+    {
+      "id": "ref.10.1",
+      "label": "深色场景中的花瓶与橙色圆球",
+      "category": "still-life-installation",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          30,
+          58,
+          64
+        ],
+        [
+          85,
+          46,
+          52
+        ],
+        [
+          236,
+          146,
+          28
+        ],
+        [
+          215,
+          210,
+          195
+        ],
+        [
+          35,
+          54,
+          55
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "深青色墙面与地面中，白色窄搁板从左侧伸入；酒红/紫褐色细颈瓶状花瓶置于搁板上，瓶口伸出细灰茎，顶端为橙黄色球体；其余橙黄色球体悬在右侧空间，底部地面散落多枚。球体光滑圆润、带高光，深色背景形成强对比；左侧有较亮光带。",
+      "tags": [
+        "花瓶",
+        "橙色球体",
+        "装置静物",
+        "深色背景",
+        "悬浮",
+        "搁板",
+        "vase",
+        "orange spheres",
+        "still life",
+        "minimalist",
+        "dark teal",
+        "installation"
+      ],
+      "limitations": [
+        "橙黄色球体是否为橙子无法确认",
+        "悬浮与散落可能为布景或合成",
+        "低分辨率，缺乏果皮纹理",
+        "花瓶材质与真实尺寸不明",
+        "搁板/地面接触阴影较弱",
+        "完整场景不能作为单一物体分割",
+        "无多视角或深度信息"
+      ]
+    },
+    {
+      "id": "ref.10.2",
+      "label": "柑橘与切面水果平铺静物",
+      "category": "citrus-still-life",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          242,
+          241,
+          235
+        ],
+        [
+          240,
+          141,
+          28
+        ],
+        [
+          215,
+          60,
+          66
+        ],
+        [
+          245,
+          188,
+          50
+        ],
+        [
+          68,
+          164,
+          176
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "俯拍白色台面上的柑橘类静物：左侧橙色碗盛整橙与半切橙，中央黄圈盘放粉红/红色切面柚或血橙，右上有蓝边盘及切面柑橘，周围散落橙瓣、剥皮橘和整颗黄绿柑橘；果皮有油胞纹理，切面湿润有光泽，器皿与台面有柔和浅影。",
+      "tags": [
+        "柑橘",
+        "切面水果",
+        "平铺静物",
+        "橙色",
+        "红柚",
+        "果皮纹理",
+        "citrus",
+        "flatlay",
+        "still life",
+        "grapefruit",
+        "orange",
+        "tableware"
+      ],
+      "limitations": [
+        "柑橘具体种类不确定",
+        "部分果实被裁切或遮挡",
+        "俯视角度隐藏三维轮廓与接触关系",
+        "图内未见明确苹果或梨",
+        "低分辨率限制果皮细节",
+        "无法获得真实尺度与多视角",
+        "器皿和水果相互遮挡，不能精确分割"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "三张图都是人工布置的静物/摆放式构图",
+    "均包含容器与圆形果物或球体元素",
+    "画面均有多对象、相互遮挡或裁切",
+    "均呈现柔和、均匀或不可判定的光照",
+    "均非单一物体，无法直接提取独立alpha",
+    "图像分辨率有限，细节可辨度受限"
+  ],
+  "missingEvidence": [
+    "没有明确的苹果或梨实例，无法提取其轮廓与果皮细节",
+    "没有真实陶瓷花瓶与水果的清晰材质对照",
+    "图0为画作，不能提供真实静物接触阴影",
+    "图1球体身份和悬浮真实性无法核实",
+    "缺少深度、尺度、多视角与分割掩膜",
+    "无法确认任何图片可代表新视角或完整三维世界",
+    "缺少未裁切原始分辨率和拍摄参数"
+  ],
+  "images": [
+    {
+      "id": "ref.10.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lorenzo_todini,_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano,_1670-85_ca._01.JPG#1",
+      "sha256": "46af2a50b1bb9f92adb3f8a578e227ab88ec9930dc98dab3362738e9764fc52e",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.10.1",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/",
+      "sha256": "0740d779b5960fbf4bb43859a4fdf590b8c2ae89d53dca64f5b4073d18adaef8",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.10.2",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/fruits-oranges-photo-de-nourriture-photographie-de-nourriture-9960543/",
+      "sha256": "cd7fa52099e3f775d189d8aa89e87dd4f47f40866d1e7aebd29f7e99dd2b4ef9",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "49542b80-55e1-4f78-992a-c453ae033365",
+        "model": "deepseek-flash",
+        "elapsedMs": 37095,
+        "prompt_tokens": 1387,
+        "completion_tokens": 5308,
+        "total_tokens": 6695,
+        "reasoning_tokens": 4292,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 3
+      }
+    ],
+    "prompt_tokens": 1387,
+    "completion_tokens": 5308,
+    "total_tokens": 6695,
+    "reasoning_tokens": 4292
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 37098
+}

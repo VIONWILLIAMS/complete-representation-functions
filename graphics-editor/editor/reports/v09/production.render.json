@@ -1,0 +1,46 @@
+{
+  "schema": "crf.offline_render.v0.9",
+  "sceneId": "still_life_apple_pear_90909",
+  "kind": "native",
+  "width": 1024,
+  "height": 768,
+  "view": "front",
+  "time": 0,
+  "camera": {
+    "panX": 0,
+    "panY": 0,
+    "zoom": 1
+  },
+  "viewport": {
+    "fit": "native",
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 768
+  },
+  "rgbaSHA256": "4e2b6f7bfc9ce51ebeb4a9ec2b4e9c03864f6f27dfedf981207117b45531f34a",
+  "rgbSHA256": "325093e3dd35bb9c4a7b9680d6e8cab32bcc563cf86517238a8346daa53657b2",
+  "pngSHA256": "c4e46d85620d6b4827289fe6ced51e165a9db84b60d50f109a0109f33bf1d058",
+  "bytes": 446331,
+  "elapsedMs": 670.063535,
+  "engineSourceSHA256": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+  "diagnostics": {
+    "engine": "CRF09",
+    "schema": "crf.generative_scene.v0.9",
+    "renderer": "analytic_image_plane_plus_sampled_gaussian_fields",
+    "colorSpace": "linear_srgb_illumination_then_srgb8",
+    "gaussianBasisEvaluations": 197190,
+    "semanticObjects": 2,
+    "learnedModel": "shared-1b02095c",
+    "learnedSources": 124,
+    "time": 0,
+    "elapsedMs": 574,
+    "sourceImageBlit": false,
+    "embeddedPixelResidual": false,
+    "meshUsed": false,
+    "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+    "realWorldReconstructionClaim": false,
+    "photorealQualityGate": "not_evaluated"
+  },
+  "sourcePhotoReadByRenderer": false
+}

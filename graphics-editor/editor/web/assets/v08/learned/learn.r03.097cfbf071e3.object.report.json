@@ -1,0 +1,373 @@
+{
+  "id": "learn.r03.097cfbf071e3.object",
+  "assetId": "learn.r03.097cfbf071e3.object",
+  "status": "fitted",
+  "round": 3,
+  "topic": "陶瓷杯与花瓶的实拍",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Japanese_-_Vase_%28kabin%29_-_Walters_491668_-_Profile.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "title": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+  "sourceFile": "fitting/learning08/originals/learn.r03.097cfbf071e3.jpg",
+  "sourceSHA256": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+  "normalizedRGBA_SHA256": "5736f59830d1eb958dfe346b4036a0351044c6ed1f132bab8e16d4185b095650",
+  "dHash64": "333b71797d3f0fff",
+  "originalSize": [
+    1427,
+    1799
+  ],
+  "orientedSize": [
+    1427,
+    1799
+  ],
+  "fittedSize": [
+    180,
+    365
+  ],
+  "assetURL": "assets/v08/learned/learn.r03.097cfbf071e3.object.json",
+  "renderURL": "assets/v08/learned/learn.r03.097cfbf071e3.object.png",
+  "reportURL": "assets/v08/learned/learn.r03.097cfbf071e3.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r03.097cfbf071e3.object.png",
+  "referenceThumbnailURL": "assets/v08/references/learn.r03.097cfbf071e3.object.jpg",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 8192,
+  "pixelToGaussianRatio": 8.02001953125,
+  "assetBytes": 676095,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 0.9099708731287679,
+    "rmse": 1.4281903576282942,
+    "psnr": 45.03508167615253,
+    "ssim": 0.9696961298462482,
+    "maxError": 30,
+    "exactRGBFraction": 0.1349725665515139,
+    "evaluatedPixels": 49210,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 1.3335857341259658,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 4.281052633690805,
+          "bestFloatMSE": 4.281052633690805
+        },
+        {
+          "step": 10,
+          "floatMSE": 2.5013286854647823,
+          "bestFloatMSE": 2.5013286854647823
+        },
+        {
+          "step": 20,
+          "floatMSE": 1.954642382962722,
+          "bestFloatMSE": 1.954642382962722
+        },
+        {
+          "step": 30,
+          "floatMSE": 1.6722957452755174,
+          "bestFloatMSE": 1.6722957452755174
+        },
+        {
+          "step": 40,
+          "floatMSE": 1.507935988124132,
+          "bestFloatMSE": 1.507935988124132
+        },
+        {
+          "step": 50,
+          "floatMSE": 1.410989852753617,
+          "bestFloatMSE": 1.410989852753617
+        },
+        {
+          "step": 60,
+          "floatMSE": 1.3584278697037855,
+          "bestFloatMSE": 1.3584278697037855
+        },
+        {
+          "step": 70,
+          "floatMSE": 1.3335857341259658,
+          "bestFloatMSE": 1.3335857341259658
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2867,
+        "elapsedSeconds": 0.282,
+        "mae": 3.6890469416785208,
+        "rmse": 6.819448938968574,
+        "psnr": 31.455817970195827,
+        "ssim": 0.826944349132685,
+        "maxError": 145,
+        "exactRGBFraction": 0.019325340377971956,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2867,
+        "elapsedSeconds": 0.454,
+        "mae": 3.120442999390368,
+        "rmse": 5.53317202736493,
+        "psnr": 33.2713201542463,
+        "ssim": 0.8432725452535426,
+        "maxError": 91,
+        "exactRGBFraction": 0.026559642349116033,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 6328,
+        "elapsedSeconds": 1.503,
+        "mae": 2.010634694845221,
+        "rmse": 3.217195804592205,
+        "psnr": 37.98125373495974,
+        "ssim": 0.9192465134780817,
+        "maxError": 62,
+        "exactRGBFraction": 0.044543791912212964,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 8192,
+        "elapsedSeconds": 2.081,
+        "mae": 1.6902594323646956,
+        "rmse": 2.5823679566167765,
+        "psnr": 39.89044112626937,
+        "ssim": 0.9372003045601682,
+        "maxError": 47,
+        "exactRGBFraction": 0.06210119894330421,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 8192,
+        "elapsedSeconds": 2.12,
+        "mae": 1.6902662060556797,
+        "rmse": 2.582385006412464,
+        "psnr": 39.890383778843564,
+        "ssim": 0.9371998564012128,
+        "maxError": 47,
+        "exactRGBFraction": 0.06210119894330421,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 8192,
+        "elapsedSeconds": 2.384,
+        "mae": 1.3097744360902255,
+        "rmse": 1.9497862262263823,
+        "psnr": 42.331063646655245,
+        "ssim": 0.9564435994278508,
+        "maxError": 30,
+        "exactRGBFraction": 0.05765088396667344,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 8192,
+        "elapsedSeconds": 2.725,
+        "mae": 1.1297703718756351,
+        "rmse": 1.719333150504076,
+        "psnr": 43.42360287066804,
+        "ssim": 0.9625158376114462,
+        "maxError": 32,
+        "exactRGBFraction": 0.08118268644584434,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 8192,
+        "elapsedSeconds": 3.07,
+        "mae": 1.0310370520896837,
+        "rmse": 1.5935077930890416,
+        "psnr": 44.08371977382337,
+        "ssim": 0.9656843159781457,
+        "maxError": 32,
+        "exactRGBFraction": 0.10337329811014022,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 8192,
+        "elapsedSeconds": 3.354,
+        "mae": 0.9723972092393145,
+        "rmse": 1.5152882082274286,
+        "psnr": 44.52089873622108,
+        "ssim": 0.9676196690329876,
+        "maxError": 33,
+        "exactRGBFraction": 0.11881731355415566,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 8192,
+        "elapsedSeconds": 3.681,
+        "mae": 0.9380139538034274,
+        "rmse": 1.466986380823873,
+        "psnr": 44.802281969311686,
+        "ssim": 0.9687915223444599,
+        "maxError": 31,
+        "exactRGBFraction": 0.1281446860394229,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 8192,
+        "elapsedSeconds": 3.991,
+        "mae": 0.9181805866016393,
+        "rmse": 1.4409203445747216,
+        "psnr": 44.9580041432366,
+        "ssim": 0.9694043590506777,
+        "maxError": 31,
+        "exactRGBFraction": 0.13393619183092867,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 8192,
+        "elapsedSeconds": 4.269,
+        "mae": 0.9099708731287679,
+        "rmse": 1.4281903576282942,
+        "psnr": 45.03508167615253,
+        "ssim": 0.9696961298462482,
+        "maxError": 30,
+        "exactRGBFraction": 0.1349725665515139,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 4.275,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 4.699,
+  "passedPilot": true,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.28,
+      0.16,
+      0.69,
+      0.92
+    ],
+    "proposalPixels": [
+      97,
+      61,
+      297,
+      492
+    ],
+    "cropPixels": [
+      115,
+      115,
+      295,
+      480
+    ],
+    "workingSize": [
+      406,
+      512
+    ],
+    "foregroundPixels": 48034,
+    "pixelMaskVerified": false,
+    "reviewedCorrections": [
+      "Visually reviewed blue-vase chroma constraint B-R>7 removes the neutral floor shadow; holes filled inside the body."
+    ],
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r03.097cfbf071e3.object.png"
+  },
+  "semantics": {
+    "id": "learn.r03.097cfbf071e3",
+    "label": "青蓝色釉陶瓷花瓶",
+    "category": "ceramic vase",
+    "role": "object",
+    "bbox": [
+      0.28,
+      0.16,
+      0.69,
+      0.92
+    ],
+    "palette": [
+      [
+        38,
+        86,
+        113
+      ],
+      [
+        61,
+        113,
+        137
+      ],
+      [
+        17,
+        43,
+        62
+      ],
+      [
+        164,
+        210,
+        214
+      ],
+      [
+        99,
+        140,
+        157
+      ]
+    ],
+    "lightDirection": "left",
+    "description": "单件陶瓷花瓶居中放置在灰色渐变背景前。器形为外撇小口、短颈、卵形腹部并向下收窄，轮廓圆润对称。表面施青蓝色亮釉，釉面有细小黑点和微小凹坑，腹部偏左上方可见纵向高光，底部与背景接触处有柔和阴影。整体呈较明显的镜面反射，适合提取陶瓷容器、釉面高光与柔和棚拍背景的视觉特征。",
+    "tags": [
+      "陶瓷",
+      "花瓶",
+      "青蓝色",
+      "亮釉",
+      "高光",
+      "卵形器身",
+      "外撇口",
+      "灰色背景",
+      "棚拍",
+      "静物"
+    ],
+    "limitations": [
+      "仅有正面单视角，无法确认背面、底部与口沿内侧结构",
+      "边界框为目测估计，不是精确alpha分割",
+      "缺少尺寸、重量与真实材质成分信息",
+      "图像可能经过白平衡或色彩处理，釉色不能视为绝对色",
+      "无法判断是否空心、透光或是否有隐藏裂纹"
+    ]
+  },
+  "sourceId": "learn.r03.097cfbf071e3"
+}

@@ -1,0 +1,196 @@
+{
+  "schema": "crf.gaussian_fit_report.v0.10",
+  "assetId": "pear",
+  "width": 255,
+  "height": 414,
+  "gaussians": 4096,
+  "assetBytes": 431683,
+  "sourceSHA256": "40adc24268ee9fa0f3ed270bcf0f5da2ef85b27245642b99806ca923840bc82a",
+  "metrics": {
+    "mae": 2.7065001896148657,
+    "rmse": 4.094393325273653,
+    "psnr": 35.88701239764097,
+    "ssim": 0.8847234178720308,
+    "maxError": 59,
+    "exactRGBFraction": 0.005371621135096992,
+    "evaluatedPixels": 69439,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fit": {
+    "iterationsPerStage": 20,
+    "irlsIterationsPerStage": 3,
+    "geometryOptimization": {
+      "steps": 30,
+      "history": [
+        {
+          "step": 0,
+          "perceptualMSE": 0.00026082389596954463,
+          "bestPerceptualMSE": 0.00026082389596954463
+        },
+        {
+          "step": 10,
+          "perceptualMSE": 0.0003629874264090774,
+          "bestPerceptualMSE": 0.00026082389596954463
+        },
+        {
+          "step": 20,
+          "perceptualMSE": 0.0002174939866766387,
+          "bestPerceptualMSE": 0.0002174939866766387
+        },
+        {
+          "step": 30,
+          "perceptualMSE": 0.0001741490813193969,
+          "bestPerceptualMSE": 0.0001741490813193969
+        }
+      ],
+      "bestPerceptualMSE": 0.0001741490813193969,
+      "parameters": "centre_xy,log_sigma_xy,rotation,linear_rgb_coefficients",
+      "pixelFootprintGradient": true
+    },
+    "history": [
+      {
+        "phase": "uniform_coverage_and_structure_initialization",
+        "count": 1405,
+        "elapsedSeconds": 0.185,
+        "mae": 24.559263046222824,
+        "rmse": 31.333313467939803,
+        "psnr": 18.210677137950842,
+        "ssim": 0.5011279354048976,
+        "maxError": 180,
+        "exactRGBFraction": 0.0,
+        "evaluatedPixels": 69439,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_0",
+        "count": 1405,
+        "elapsedSeconds": 1.465,
+        "mae": 4.89286040025538,
+        "rmse": 8.098264457274661,
+        "psnr": 29.96296450861172,
+        "ssim": 0.7255187876982133,
+        "maxError": 106,
+        "exactRGBFraction": 0.0035714800040323163,
+        "evaluatedPixels": 69439,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_1",
+        "count": 3154,
+        "elapsedSeconds": 3.11,
+        "mae": 3.6985747682618317,
+        "rmse": 6.002310936176786,
+        "psnr": 32.564433822330365,
+        "ssim": 0.8217257825647636,
+        "maxError": 88,
+        "exactRGBFraction": 0.004809977102204813,
+        "evaluatedPixels": 69439,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_2",
+        "count": 4096,
+        "elapsedSeconds": 4.486,
+        "mae": 3.154620122217582,
+        "rmse": 5.067769439438614,
+        "psnr": 34.0344666441088,
+        "ssim": 0.8661783669446891,
+        "maxError": 88,
+        "exactRGBFraction": 0.006566914846123936,
+        "evaluatedPixels": 69439,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_0",
+        "count": 4096,
+        "elapsedSeconds": 4.793,
+        "mae": 3.154620122217582,
+        "rmse": 5.067769439438614,
+        "psnr": 34.0344666441088,
+        "ssim": 0.8661783669446891,
+        "maxError": 88,
+        "exactRGBFraction": 0.006566914846123936,
+        "evaluatedPixels": 69439,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_10",
+        "count": 4096,
+        "elapsedSeconds": 7.884,
+        "mae": 3.4881934743683907,
+        "rmse": 5.308245464712538,
+        "psnr": 33.631783661284345,
+        "ssim": 0.8262567226124464,
+        "maxError": 71,
+        "exactRGBFraction": 0.002001756937743919,
+        "evaluatedPixels": 69439,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_20",
+        "count": 4096,
+        "elapsedSeconds": 10.824,
+        "mae": 3.0012192955927746,
+        "rmse": 4.492346892723156,
+        "psnr": 35.08133791878429,
+        "ssim": 0.8590402990932767,
+        "maxError": 61,
+        "exactRGBFraction": 0.0031538472616253112,
+        "evaluatedPixels": 69439,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_30",
+        "count": 4096,
+        "elapsedSeconds": 13.977,
+        "mae": 2.7065001896148657,
+        "rmse": 4.094393325273653,
+        "psnr": 35.88701239764097,
+        "ssim": 0.8847234178720308,
+        "maxError": 59,
+        "exactRGBFraction": 0.005371621135096992,
+        "evaluatedPixels": 69439,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 14.002,
+    "bestCheckpointRule": "lowest_observed_srgb_mse",
+    "initializer": "uniform_coverage_plus_variance_partition_and_structure_tensor_no_neural_network"
+  },
+  "renderedFromExportOnly": true,
+  "modelTraining": false,
+  "qualityScope": "reference_observation_reconstruction_not_new_image_generation",
+  "provenance": {
+    "kind": "observed_gaussian_reconstruction",
+    "algorithm": "crf10-structure-irls-pixel-footprint-adam",
+    "sourceRGBEmbedded": false,
+    "losslessResidualEmbedded": false,
+    "neuralModelTraining": false,
+    "pretrainedInitializerUsed": false,
+    "optimizationScope": "this_observation_only",
+    "budget": 4096,
+    "illumination": "inherited_from_observation",
+    "sourceSHA256": "40adc24268ee9fa0f3ed270bcf0f5da2ef85b27245642b99806ca923840bc82a",
+    "originalSize": [
+      255,
+      414
+    ],
+    "fittedSize": [
+      255,
+      414
+    ],
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_and_pear.jpg",
+    "license": "CC0 1.0",
+    "author": "Yves Geissbühler",
+    "sourceCatalogId": "fruit.pear",
+    "alphaOrigin": "inherited_observed_semantic_coverage_not_recovered_geometry"
+  },
+  "crossRuntimeParity": {
+    "id": "pear",
+    "visiblePixels": 69439,
+    "maximumVisibleRGBDifference": 0,
+    "differentVisibleRGBValues": 0,
+    "alphaExactlyEqual": true,
+    "processAndRenderSeconds": 0.452
+  }
+}

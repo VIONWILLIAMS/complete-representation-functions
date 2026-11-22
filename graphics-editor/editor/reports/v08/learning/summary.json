@@ -1,0 +1,1913 @@
+{
+  "schema": "crf.learning_evidence.v0.8",
+  "rounds": [
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 1,
+      "topic": "橙子与柑橘的单体实拍",
+      "subtopic": "4–6张不同橙子、整果和切面照片，优先干净背景，用于轮廓、果皮、瓣片材质学习",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:23:42.300Z",
+      "runId": "crf07_3a988450-89b5-4cf1-90ef-bd32280a1b59",
+      "queries": [
+        "Wikimedia Commons whole orange and orange cross-section photographs",
+        "site:commons.wikimedia.org orange cross section",
+        "Wikimedia Commons orange fruit photographs by different photographers",
+        "site:pexels.com orange whole fruit cross section photo",
+        "site:unsplash.com orange fruit cross section photo",
+        "site:pexels.com orange peel texture photo"
+      ],
+      "requestIds": [
+        "15b1725e-8178-4023-a665-c6d868052f03"
+      ],
+      "sourceCount": 9,
+      "newSourceCount": 9,
+      "candidateCount": 7,
+      "downloadedImageCount": 4,
+      "fittedFunctionCount": 0
+    },
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 2,
+      "topic": "苹果与梨的实拍形态",
+      "subtopic": "4–6张不同真实苹果和梨，侧光、果柄清楚，观察实例差异，不能重复第一轮柑橘。本轮前次来源无法访问，实际改用 site:pexels.com/photo/ 或 site:commons.wikimedia.org/wiki/File: 搜索，找到至少4张可下载作品；不要再次提供 Unsplash。",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:33:22.175Z",
+      "runId": "crf07_43f77a31-b528-40cf-b1c8-3d353ec71a16",
+      "queries": [
+        "Wikimedia Commons apple pear fruit photographs side lighting stems"
+      ],
+      "requestIds": [
+        "15a291b0-e300-4cd2-a3b6-5167b1c7c94e",
+        "fccfcd0b-774f-4610-8bc7-e3984ca9437f"
+      ],
+      "sourceCount": 21,
+      "newSourceCount": 1,
+      "candidateCount": 1,
+      "downloadedImageCount": 6,
+      "fittedFunctionCount": 0,
+      "extraSearchAPIRequests": 2
+    },
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 3,
+      "topic": "陶瓷杯与花瓶的实拍",
+      "subtopic": "4–6张不同陶瓷杯或花瓶的具体照片，简单背景，关注口沿、釉面、柔光",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:24:47.862Z",
+      "runId": "crf07_21064488-5887-48c9-890b-a4db1e20ac71",
+      "queries": [
+        "site:commons.wikimedia.org ceramic cup rim glaze soft light white background",
+        "site:unsplash.com ceramic cup soft light plain background",
+        "site:pexels.com ceramic vase rim glaze close up soft light",
+        "site:commons.wikimedia.org ceramic vase glaze Wikimedia Commons",
+        "What are the visual characteristics of ceramic cup rims and glaze reflections under soft light?"
+      ],
+      "requestIds": [
+        "71b56f39-d669-481d-94d6-2b8fbda6d233"
+      ],
+      "sourceCount": 14,
+      "newSourceCount": 14,
+      "candidateCount": 9,
+      "downloadedImageCount": 1,
+      "fittedFunctionCount": 0
+    },
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 4,
+      "topic": "咖啡与餐桌静物实拍",
+      "subtopic": "4–6张不同咖啡杯、木桌或餐桌照片，关注接触阴影、承托面、光照一致性",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:25:27.446Z",
+      "runId": "crf07_46c47b28-74e6-4a14-95d1-fa0e9f4d8986",
+      "queries": [
+        "site:unsplash.com coffee cup on wooden table contact shadow natural light",
+        "site:pexels.com coffee cup on wooden table natural light shadow",
+        "site:commons.wikimedia.org coffee cup saucer wooden table photograph",
+        "site:unsplash.com coffee cup saucer close up wooden table",
+        "site:pexels.com coffee cup saucer wooden table close up",
+        "site:commons.wikimedia.org coffee cup and saucer photograph file",
+        "still life photograph coffee cup wooden table window light shadow caustics"
+      ],
+      "requestIds": [
+        "120cd380-3167-40fe-acae-aa70d97cec69"
+      ],
+      "sourceCount": 14,
+      "newSourceCount": 14,
+      "candidateCount": 12,
+      "downloadedImageCount": 4,
+      "fittedFunctionCount": 0
+    },
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 5,
+      "topic": "植物近景与自然物品实拍",
+      "subtopic": "4–6张蘑菇、蕨叶或花朵的近景照片，清晰主体与叶脉、菌褶、细节",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:26:08.103Z",
+      "runId": "crf07_eab2cc2b-aad4-4b25-abbd-29389467aca7",
+      "queries": [
+        "Wikimedia Commons close-up photograph mushroom gills detail",
+        "Unsplash close-up photo mushroom gills macro",
+        "Pexels close-up mushroom gills photo",
+        "Wikimedia Commons close-up photo fern frond veins detail",
+        "site:unsplash.com close-up fern leaf veins photo",
+        "site:pexels.com close-up fern leaf veins photo"
+      ],
+      "requestIds": [
+        "794b30ff-e1b4-4cf6-bfbd-3006683e9d9c"
+      ],
+      "sourceCount": 11,
+      "newSourceCount": 11,
+      "candidateCount": 8,
+      "downloadedImageCount": 3,
+      "fittedFunctionCount": 0
+    },
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 6,
+      "topic": "真实交通灯与街角实拍",
+      "subtopic": "4–6张不同交通灯、行人灯或街角，关注灯体、立柱、支架衔接和遮挡",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:26:45.908Z",
+      "runId": "crf07_ef95fde1-2b3d-4e94-b50f-ccb40d86019b",
+      "queries": [
+        "Wikimedia Commons traffic light pole close up photo with license and author",
+        "Wikimedia Commons pedestrian signal push button pole photo with license and author",
+        "site:unsplash.com traffic light close up photo",
+        "site:pexels.com traffic light on pole close up photo",
+        "site:pexels.com pedestrian crossing signal photo",
+        "Wikimedia Commons street corner traffic light photo CC BY license"
+      ],
+      "requestIds": [
+        "8dfe6cf4-d15a-44ca-be72-360ee6c814d5"
+      ],
+      "sourceCount": 11,
+      "newSourceCount": 11,
+      "candidateCount": 9,
+      "downloadedImageCount": 5,
+      "fittedFunctionCount": 0
+    },
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 7,
+      "topic": "墙面与建筑窗户的实拍",
+      "subtopic": "4–6张阳光投射墙面、窗框或建筑立面的照片，关注材质、直线、阴影与光照",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:27:33.303Z",
+      "runId": "crf07_05c6c6fc-88f1-4cd4-8888-6ed509184134",
+      "queries": [
+        "site:commons.wikimedia.org sunlit wall window shadow \"sunlight\" file -category -Wikimedia Commons search",
+        "site:unsplash.com sunlit wall window shadow architecture photos",
+        "site:pexels.com sunlight on wall window frame shadow architecture photo",
+        "Wikimedia Commons sunlit wall window shadow file -category -Wikimedia Commons search",
+        "site:unsplash.com sunlight and shadow on building facade close up",
+        "site:pexels.com sunlight shadow on building facade close up"
+      ],
+      "requestIds": [
+        "aa43c0c9-73bd-46b0-81c7-1bc9247a8f4a"
+      ],
+      "sourceCount": 15,
+      "newSourceCount": 15,
+      "candidateCount": 15,
+      "downloadedImageCount": 6,
+      "fittedFunctionCount": 0
+    },
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 8,
+      "topic": "高山湖泊与水面反射实拍",
+      "subtopic": "4–6张不同阿尔卑斯湖泊或山水照片，关注远近层次、岸线和水面反射",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:28:32.872Z",
+      "runId": "crf07_a1ba1efe-757a-46af-a025-74fdf467b682",
+      "queries": [
+        "site:commons.wikimedia.org \"Alpine lake\" reflection file -category",
+        "site:unsplash.com alpine lake reflection mountains photo",
+        "site:pexels.com alpine lake reflection shore photo",
+        "site:commons.wikimedia.org \"Lac\" Alpes reflet montagne file",
+        "site:unsplash.com \"Lake Brienz\" reflection shore photo"
+      ],
+      "requestIds": [
+        "9f8a9d59-5629-41a8-bf7d-4b18b3a24374"
+      ],
+      "sourceCount": 15,
+      "newSourceCount": 15,
+      "candidateCount": 15,
+      "downloadedImageCount": 3,
+      "fittedFunctionCount": 0
+    },
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 9,
+      "topic": "海岸岩石与海浪实拍",
+      "subtopic": "4–6张不同海岸、礁石、沙滩的照片，关注岩面、波纹和自然空间层次",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:29:18.462Z",
+      "runId": "crf07_15748d84-988a-4ab0-b44a-eb279e5ea730",
+      "queries": [
+        "site:commons.wikimedia.org coast rocky shore waves photo",
+        "site:unsplash.com ocean waves crashing on rocks photo",
+        "site:pexels.com rocks and waves on the beach photo",
+        "site:commons.wikimedia.org beach sand ripples photo",
+        "site:commons.wikimedia.org coastal rocks texture photo",
+        "site:pexels.com rocky coast tide pools photo"
+      ],
+      "requestIds": [
+        "7c2c4f14-5214-4323-8160-0cc47be34f60"
+      ],
+      "sourceCount": 13,
+      "newSourceCount": 13,
+      "candidateCount": 13,
+      "downloadedImageCount": 5,
+      "fittedFunctionCount": 0
+    },
+    {
+      "sessionId": "crf08-ten-rounds",
+      "round": 10,
+      "topic": "树林与自然光影实拍",
+      "subtopic": "4–6张不同森林、树叶和林间光影照片，补充植物材质与深浅背景，避免以上已收集作品",
+      "status": "searched",
+      "completedAt": "2026-11-21T13:30:14.352Z",
+      "runId": "crf07_0089af70-f5c7-41da-8b0d-226221d750b2",
+      "queries": [
+        "site:commons.wikimedia.org forest sunlight rays photo",
+        "site:unsplash.com forest sunlight photo",
+        "site:pexels.com forest sunlight photo",
+        "site:commons.wikimedia.org forest leaves close-up texture photo",
+        "site:unsplash.com forest leaves texture photo",
+        "site:pexels.com forest leaves close-up photo"
+      ],
+      "requestIds": [
+        "f9bbff58-62e5-417c-9023-845f19fa89c8"
+      ],
+      "sourceCount": 14,
+      "newSourceCount": 14,
+      "candidateCount": 14,
+      "downloadedImageCount": 5,
+      "fittedFunctionCount": 0
+    }
+  ],
+  "counts": {
+    "requestedRounds": 10,
+    "completedSearchRounds": 10,
+    "distinctSourcePages": 137,
+    "downloadedDistinctImages": 42,
+    "fittedFunctions": 0,
+    "providerCalls": 11
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+      "title": "Photo by Ricardo Utsumi on Pexels",
+      "snippet": "Add custom frames License Free Dimensions 5184x3456 Aspect Ratio 3:2 Colors Date Aug 29, 2020 Downloads 186 Views ... 2020 Software Adobe Photoshop 21.2 (Macintosh) ... Description # A vibrant sliced orange showcasing its juicy interior on a plain white background. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/illustrations/a-slice-of-kumquat-on-a-dark-green-background-gJV6yLL487c",
+      "title": "Illustration by Studio Humi on Unsplash",
+      "snippet": "A flat vector illustration of a sliced orange shown from the top view, revealing its juicy segments arranged in a circular pattern. The orange peel is bright and textured with small dots, while the inner flesh appears fresh and vibrant",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/boire-jus-d-orange-oranges-fruit-15560947/",
+      "title": "Photo de Pablo de Haro sur Pexels",
+      "snippet": "3722x2792 Format 1861:1396 ... Appareil photo Canon EOS 1100D Focale 30.0mm Ouverture ƒ/11.0 ISO ... Description # Gros plan de jus d'orange frais dans un verre avec des oranges entières et tranchées, mettant en avant la vitamine C.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/an-orange-cut-in-half-sitting-on-a-table-74aJ-QmFFsg",
+      "title": "Photo by NATHAN MULLET on Unsplash",
+      "snippet": "– –– –––– ––– – ––– – – – –– –––– ––– – ––– – – # an orange cut in half sitting on a table Orange cut in half. The inside of an orange. Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://etc.usf.edu/clipart/49600/49624/49624_orange.htm",
+      "title": "Orange",
+      "snippet": "Orange “Cross-section of an orange. a, axis of fruit with dots showing cut-off ends of fibro-vascular bundles; p, partition between cells of ovary; S, seed; c, cell of ovary filled with a pulp composed of irregular tubes full of juice; o, oil ... corky layer of epidermis.” -Bergen...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/12267666/",
+      "title": "Pexels 上由 Sherali Khan 拍攝的相片",
+      "snippet": "瀏覽次數 117.8 千 按讚數 5 說明 在木板上展示切片橙子和血橙的鮮豔陳列，突顯它們多汁的質感。 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/close-up-photography-of-orange-fruit-xUY3p0SqovM",
+      "title": "Photo by Angelo Pantazis on Unsplash",
+      "snippet": "close up photography of orange fruit Download this free HD photo of orange, fruit, plant, and food by Angelo Pantazis (@angelopantazis) Published on NIKON CORPORATION, NIKON D700Free to use under the Unsplash",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/File:Orange_and_cross_section.jpg",
+      "title": "File:Orange and cross section.jpg - 维基百科，自由的百科全书",
+      "snippet": "Orange and cross section.jpg ... 当前 | 2009年1月22日 (四) 01:07 | 2,752 × 998 （796 KB） | Fir0002 | Orange and its cross section isolated on a white background {{Fir0002 150}} Category:Orange Category...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/5945786/",
+      "title": "Pexels 上由 Any Lane 拍攝的相片",
+      "snippet": "尺寸 3360x5040 長寬比 2:3 色彩 日期 ... 說明 # 鮮豔的血橙切片特寫，展現出活潑的色彩和多汁的質感。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/grapes-apple-and-pears-in-close-up-view-h4hdqB9TlTY",
+      "title": "Photo by Zed Can on Unsplash",
+      "snippet": "––– –––– –––– # Grapes, apple, and pears in close-up view. Fresh seasonal fruits placed on a clean dishcloth. A vibrant fruit arrangement on a textured tea towel. Natural still life with mixed fruits on cotton fabric. Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/sliced-pears-and-apples-backlit-on-white-background-bdvmrKdBMjk",
+      "title": "Photo by Zuzana Rainet on Unsplash",
+      "snippet": "Sliced pears and apples backlit on white background Download this HD photo of green, orange, still life, and food photography by Zuzana Rainet (@zuzana_rainet) Published on Licensed under the Unsplash+ License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-few-apples-on-a-table-Xc8FyE1NLsE",
+      "title": "Photo by Garreth Paul on Unsplash",
+      "snippet": "a few apples on a table Download this free HD photo of light painting photography, light painting, pears, and still life photos by Garreth Paul (@garrethpb) Published on FUJIFILM, X-T4Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://video.58pic.com/newpic/69989630.html",
+      "title": "https://video.58pic.com/newpic/69989630.html",
+      "snippet": "成熟的梨，茎在白色背景下与剪切路径隔离是由千图正版高清摄影图库提供下载服务，本次苹果梨蕉摄影图编号是69989630，格式是jpg，摄影图源文件大小是3.6 MB。成熟的梨...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-close-up-of-an-apple-on-a-tree-branch-m2gYipYdyWY",
+      "title": "Photo by Mikhail Seleznev on Unsplash",
+      "snippet": "––– –––– –––– # a close up of an apple on a tree branch Download this free HD photo of flower, food, plant, and rose by Mikhail Seleznev (@mihmihfoto) Published on Canon, EOS 90DFree to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-couple-of-pears-sitting-on-top-of-each-other-xBcpP3eoftM",
+      "title": "Photo by Karolina Grabowska on Unsplash",
+      "snippet": "More Actions a couple of pears sitting on top of each other Download this HD photo of aesthetic, green, apple, and fruits by Karolina Grabowska (@kaboompics) ... Unsplash+ License aesthetic green apple fruits nutrition green aesthetic pear diet green apple fruit still life pears food styling studio shot",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://pxhere.com/zh/photo/561434",
+      "title": "图片素材 : 苹果, 性质, 科, 厂, 白色, 水果, 孤立, 成熟, 叶子, 餐饮, 绿色, 生产, 热带, 工作室, 特写, 梨, 片, 切, 青柠, 充分, 背景, 生的, 酒, 柑橘, 半, 没有人, 部分, 宏观摄影, 整个, 开花植物, 静物摄影, 奶奶史密斯, 陆地植物, 甜柠檬, 曼萨纳佛得角 2448x3264 - - 561434 - 素材中国, 高清壁纸 - PxHere摄影图库",
+      "snippet": "苹果, 性质, 科, 厂, 白色, 水果, 孤立, 成熟, 叶子, 餐饮, 绿色, 生产, 热带, 工作室, 特写, 梨, 片, 切, 青柠, 充分, 背景, 生的, 酒, 柑橘, 半, 没有人, 部分, 宏观摄影, 整个, 开花植物, 静物摄影, 奶奶史密斯, 陆地植物, 甜柠檬, 曼萨纳佛得角 2448x3264 ... 免费的高分辨率照片 苹果...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://tu.96weixin.com/picture/9479.html",
+      "title": "黑色背景家常水果厄尔勒香梨图版权图片下载",
+      "snippet": "画面左侧的一颗梨只展示了一部分，居中的梨带有长长的绿色果柄。前方散落着两片翠绿的叶子。光线从侧面照射，突显了梨表面的纹理和晶莹的水滴。背景为深色木质桌面。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.paixin.com/media/photo/standard/%e8%8b%b9%e6%9e%9c%e4%b8%93%e9%97%a8%e5%ba%97/5?f=______4a7feb_",
+      "title": "【苹果专门店】高清图片素材苹果专门店_139,700张摄影设计源文件免费下载-拍信创意",
+      "snippet": "©正版 | 苹果丰收 空箱苹果和梨的收获，在 betuwe，荷兰 ... ©正版 | 苹果与梨 ... ©正版 | 苹果和梨 苹果和梨叶片上孤立的白色背景 ... ©正版 | 榨汁苹果 苹果和梨果汁在榨汁机厨房里的女人",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.bigstockphoto.com/zh/image-355660172/",
+      "title": "Soraz 的库存照片",
+      "snippet": "关闭  全部图片  - 全部图片 - 影片  图片  图片  # Ripe appetizing red apples on an apple tree branch in the garden in the sun. Orchard with ripe apples on apple tree branches. Fruits on a fruit tree branch in backligh",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://m-tu.96weixin.com/picture/19982.html",
+      "title": "夏季水果香梨实拍图版权图片下载",
+      "snippet": "创作指令  复制内容  一张高清静物摄影，画面中心是两颗新鲜的香梨，外皮呈现青黄色并带有细微的褐色斑点，表面有晶莹的水珠。其中一颗梨横卧，另一颗斜靠在其后方，露出棕色的果柄。背景是简约且带有纹理的莫兰迪蓝色墙面和同色调桌面。光线从左上方照射，形成柔和的阴影。微距镜头捕捉，景深浅，纵横比为2:3。  选择尺寸  - jpg 大图 3335×5000 117.65 cm x 176.39 cm - j",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Apples?uselang=bn#2",
+      "title": "Category:Apples - Wikimedia Commons - ৬৪ কিলোবাইট",
+      "snippet": "৯২০ ... - Apple on red background.jpg ২,৯৭৬ × ৩,৯৬৮ ... Best fruit for our health.jpg ৫,৪৫৫ × ৩,৭৬৭; ১.১৬ মেগাবাইট ... - Development of apple fruit.jpg ৬০০ × ৬০৬...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/green-apple-lot-693794/",
+      "title": "Photo by RP Photography on Pexels",
+      "snippet": "# A vibrant close-up of shiny green apples showcasing freshness and abundance.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/fresh-red-apples-on-wooden-surface-30668750/",
+      "title": "Photo by Polat Eyyüp Albayrak on Pexels",
+      "snippet": "# High-quality image of fresh red apples on a rustic wooden background.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-photo-of-apples-13705758/",
+      "title": "Photo by Marcello Mastrodicasa on Pexels",
+      "snippet": "# A close-up view of fresh apples sitting on a red checkered cloth indoors.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-photo-of-red-apples-9938585/",
+      "title": "Photo by Deden Dicky Ramdhani on Pexels",
+      "snippet": "# Three fresh red apples displayed in a close-up shot against a neutral background.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/crop-person-showing-ripe-apples-at-home-8416545/",
+      "title": "Photo by hissetmehurriyeti on Pexels",
+      "snippet": "# Fresh organic apples being held in hand, highlighting rustic and natural textures, with a blurred background.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "snippet": "# Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-of-green-apple-with-dew-drops-34809856/",
+      "title": "Photo by Emre Ayata on Pexels",
+      "snippet": "# Fresh green apple with dewdrops on black background. Perfect for healthy living and freshness themes.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/fresh-fruits-display-with-apples-and-kiwis-34583602/",
+      "title": "Photo by Ivett M on Pexels",
+      "snippet": "# A vibrant display of apples, kiwis, and plums at a market stall, showcasing fresh produce.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-photo-of-sliced-pears-on-a-plate-5430664/",
+      "title": "Photo by Polina ⠀ on Pexels",
+      "snippet": "# A rustic composition featuring sliced pears, almonds, and an open book, creating a cozy still life scene.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://unsplash.com/photos/two-handmade-ceramic-bowls-on-a-white-surface-HQZTJxfMVfE",
+      "title": "Photo by Olivie Strauss on Unsplash",
+      "snippet": "Set of neutral-toned ceramic cups in soft lighting. Useful for stock photo projects about slow living, craftsmanship, minimal interiors, and design-forward tableware. From this series",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+      "title": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+      "snippet": "Japanese - Vase (kabin) - Walters 491668 - Profile.jpg ... This vase, with its restrained shape and overall turquoise enamel glaze, follows Qing [Ch'ing] dynasty ceramic models. The design of the four-character mark, \"Made at Kairakuen,\" imitates enamel ... [Ch'ing] imperial wares. ... Medium | porcelain with turquoise enamel glaze on the biscuit",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://stockcake.com/i/ancient-glaze-landscape_4204755_1873673",
+      "title": "Free Ancient Glaze Landscape Image - Ceramic, Porcelain, Weathered | Download at StockCake",
+      "snippet": "The worn rim becomes a luminous landscape of ridges and valleys, decorated with sparkling crystalline glaze formations and shimmering mineral deposits. Golden hour light streams through translucent layers, creating magical rainbow halos that dance across the surface. Tiny cracks form geometric web patterns like topographic maps, while dust particles float in the warm glow.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/coffee-beans-in-a-white-cup-H78FjJ0BEfU",
+      "title": "Photo by Pascal on Unsplash",
+      "snippet": "Coffee beans in a white cup. A crisp, minimalist photograph featuring a white ceramic cup filled with whole coffee beans, set against a pure white background. The natural lighting casts a soft, rounded shadow, highlighting the cup’s handle and enhancing the image’s clean aesthetic.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Vase,_China,_Qing_Dynasty,_Qianlong_period,_1736-1795,_porcelain_with_pale_blue_glaze_-_Chazen_Museum_of_Art_-_DSC01663.JPG",
+      "title": "File:Vase, China, Qing Dynasty, Qianlong period, 1736-1795, porcelain with pale blue glaze - Chazen Museum of Art - DSC01663.JPG - Wikimedia Commons",
+      "snippet": "Vase, China, Qing Dynasty, Qianlong period, 1736-1795, porcelain with pale blue glaze - Chazen Museum of Art - DSC01663.JPG From Wikimedia Commons, the free media repository",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://stockcake.com/i/ancient-glaze-landscape_4204754_1873673",
+      "title": "Free Ancient Glaze Landscape Image - Macro, Ceramic, Pottery | Download at StockCake",
+      "snippet": "close-up photography transforms an ancient ceramic cup's weathered rim into an ethereal landscape of crystalline beauty. Golden hour backlight illuminates iridescent mineral deposits and translucent glaze layers, creating prismatic rainbow halos that dance across the curved surface. Micro-fractures form ... while erosion reveals pearlescent shimmer on worn porcelain. ... The mundane edge becomes a luminous study in texture, where ridges and valleys catch dramatic rim lighting, revealing hidden beauty in material imperfections and the passage of time.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/dried-thistle-flower-in-a-textured-vase-UGOVKgymeVQ",
+      "title": "Photo by Anya Chernykh on Unsplash",
+      "snippet": "Dried thistle flower in a textured vase A single dried thistle in a ribbed ceramic cup, photographed against a soft, muted background. The stark form and fine details of the flower contrast gently with the minimal, neutral-toned environment. Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://stockcake.com/i/weathered-cup-landscape_4204757_1873673",
+      "title": "Free Weathered Cup Landscape Image - Ceramic, Porcelain, Pottery | Download at StockCake",
+      "snippet": "Crystalline glaze formations line the curved edge like tiny mountain ridges, while iridescent mineral deposits catch golden hour light to create shimmering rainbow halos. ... Soft bokeh melts the background into dreamy blur as warm backlight refracts through translucent glaze layers, making dust particles dance in the luminous glow.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-textured-black-mug-on-a-light-background-GblECKqAk_4",
+      "title": "Photo by Olivie Strauss on Unsplash",
+      "snippet": "A textured black mug on a light background. Minimalist stoneware cup in neutral tones. Stock applications in lifestyle, slow living, home decor, ceramics, and modern tableware. Published on Licensed under the Unsplash+ License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pair_of_Hexagonal_Vases,_c._1752-1755,_Chelsea,_soft-paste_porcelain_with_overglaze_enamels_-_Gardiner_Museum,_Toronto_-_DSC00614.JPG",
+      "title": "File:Pair of Hexagonal Vases, c. 1752-1755, Chelsea, soft-paste porcelain with overglaze enamels - Gardiner Museum, Toronto - DSC00614.JPG - Wikimedia Commons",
+      "snippet": "Pair of Hexagonal Vases, c. 1752-1755, Chelsea, soft-paste porcelain with overglaze enamels - Gardiner Museum, Toronto - DSC00614.JPG From Wikimedia Commons, the free media repository",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://limnboard.com/110855/3",
+      "title": "Attimo Tea Set",
+      "snippet": "the glaze finish appears smooth and slightly reflective suggesting cool porcelain under soft illumination ... lighting arrives from an elevated frontal position creating soft diffused illumination without harsh shadows, gentle highlights gleam along the upper rims of cups and the curved surfaces of handles suggesting the coolness of glazed ceramic under even studio lights...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/white-and-black-ceramic-mug-with-coffee-GBysETtVUIw",
+      "title": "Photo by Sylwia Bartyzel on Unsplash",
+      "snippet": "Editorial # white and black ceramic mug with coffee Download this free HD photo of cup, minimalism, lessismore, and home by Sylwia Bartyzel (@sylwiabartyzel) ... plain background 342 photos · Curated by Julia Morales",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Glazed_pottery",
+      "title": "Category:Glazed pottery - Wikimedia Commons",
+      "snippet": "Media in category \"Glazed pottery\" The following 46 files are in this category, out of 46 total. ... - Vase (3278023254).jpg 681 × 1,024; 530 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://curiosityartandframing.com/products/stained-glass-raku-vessel?pr_prod_strat=e5_desc&pr_rec_id=ce4f5f69d&pr_rec_pid=7800637456426&pr_ref_pid=7800736350250&pr_seq=uniform",
+      "title": "\"Stained Glass\" Raku Vessel",
+      "snippet": "The interior is uniformly dark, appearing glazed and smooth compared with the exterior’s rougher surface. Soft, even lighting casts a short, gentle shadow in front of the cup, emphasizing its rounded form and giving a quiet, handcrafted character to the piece.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-cup-of-coffee-sitting-on-top-of-a-wooden-table-wXyc8vQLPTo",
+      "title": "Photo by Zach Camp on Unsplash",
+      "snippet": "a cup of coffee sitting on top of a wooden table Download this free HD photo of shadows, filmmaking, film, and noise by Zach Camp (@zachccamp) Published on Apple, iPhone 13 miniFree to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+      "title": "Photo by James Collington on Pexels",
+      "snippet": "Use filters Change focus Brighten up Add frames License Free Dimensions 4293x6440 ... Description # A warm cup of coffee bathed in morning sunlight casting a gentle shadow on the table. ## More like this Use filters Change focus Brighten up Add",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=pl",
+      "title": "Category:Saucers – Wikimedia Commons",
+      "snippet": "Drinking cups and saucers (8 kategorii, 135 plików) ... - 20190524 mango 04.jpg 1200 × 1703; 447 KB ... - CoffeeSet.jpg 2779 × 3146; 1...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-shelf-filled-with-cups-and-saucers-on-top-of-a-wooden-table-sPbr3dR2v-Y",
+      "title": "Photo by sehoon ye on Unsplash",
+      "snippet": "Editorial # a shelf filled with cups and saucers on top of a wooden table Download this free HD photo of saucer, pottery, coffee cup, and cup by sehoon ye (@_3bread) Published on FUJIFILM, X-E4Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/person-writing-on-a-notebook-5588395/",
+      "title": "Photo by Tony Schnagl on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 8134x5423 ... Software Adobe Photoshop CC (Windows) Description # Aerial view of a wooden table workspace with stationery, notebook, and coffee cup. ## More like this Add filters, effects",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.skillshare.com/de/projects/AI-for-Designers-Project/744010?via=user-profile",
+      "title": "AI for Designers: Project",
+      "snippet": "To the left of the plate is a white cup of black coffee on a saucer, with soft caustic light reflections forming on the surface of the coffee. ... Sunlight streams in from a large window behind the setup, creating gentle highlights, soft shadows, and visible caustic light patterns on the table.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/the-shadow-of-a-coffee-cup-on-a-table-dpq9_bbAPdA",
+      "title": "Photo by Tunmike Adebayo on Unsplash",
+      "snippet": "the shadow of a coffee cup on a table Download this free HD photo of reflection, wallpaper, cup, and coffee by Tunmike Adebayo (@2mike_a) Published on samsung, SM-A127FFree to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+      "title": "Photo de Cut Nanda Oemar sur Pexels",
+      "snippet": "Afterglow ... 2044x2592 ... Logiciel Adobe Lightroom 11.5.01 (Android) Description # Une tasse à café minimaliste en céramique projette une ombre douce sur une table en bois, baignée de lumière naturelle. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=hy",
+      "title": "Category:Saucers — Wikimedia Commons",
+      "snippet": "20190524 mango 04.jpg 1200 × 1703 ... - CoffeeSet.jpg 2779 × 3146; 1,56 ՄԲ - Crumbs saucer fork.jpg 800 × 600; 66 ԿԲ",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-bowl-and-a-glass-on-a-wooden-table-p8N4lRytlQ8",
+      "title": "Photo by Hümâ H. Yardım on Unsplash",
+      "snippet": "––– –––– –––– # a bowl and a glass on a wooden table Download this free HD photo of coffee cup, cup, pottery, and saucer by Hümâ H. Yardım (@humayardim) Published on Canon, EOS 700DFree to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+      "title": "Foto de Israyosoy S. no Pexels",
+      "snippet": "Use filters Change focus Brighten up Add frames ... 4000x6000 ... Descrição # Um coador de café Hario V60 e uma caneca de cerâmica sobre uma mesa de madeira em ambiente interno. ## Ver mais desse tipo",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Crown_Works,_Burslem#1",
+      "title": "Category:Crown Works, Burslem - Wikimedia Commons - Help",
+      "snippet": "5,152 × 3,864; 2.82 MB ... -2019-09-14 Coffee cup and saucer, ΄Parrot Tulip΄ (E2396), Susie Cooper.JPG ... 6.6 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://blenderbench.realityreprojector.com/tasks/hyperreal-still",
+      "title": "Blender-Bench — which robot blends best?",
+      "snippet": "a half-finished breakfast on a small café table at eight in the morning, lit by low sunlight through a window. ... Light: one low, warm sun from the window raking across the table, casting long, sharp shadows, with the juice throwing a coloured caustic onto the wood.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-cup-of-cappuccino-on-a-wooden-table-pezwxLK99zA",
+      "title": "Photo by Valeriia Svitlini on Unsplash",
+      "snippet": "– –– –––– ––– – ––– – – ... ––– – ––– – – # a cup of cappuccino on a wooden table Cup of cappuccino with latte art on a wooden table with shadows. Top view. Published on Apple, iPhone 11 Pro MaxFree to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/underside-view-of-a-large-white-mushroom-with-gills--vIwrT6Kcbo",
+      "title": "Photo by CGabriel on Unsplash",
+      "snippet": "Underside view of a large white mushroom with gills Mushroom slumped over in the woods Calendar outlined Published on January 22, 2026 ... Unsplash License texture green pattern natural wildlife mushroom woodland organic mycelium macro photography forest floor stem detail earthy botany fungus natural world mushrooms in the forest forest ecosystem mushroom gills",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+      "title": "Photo by Skyler Ewing on Pexels",
+      "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Description # Extreme close-up of mushroom gills highlighting texture and detail. ### More like this Use filters Change focus Brighten up Add frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/dusty-miller-plant-with-white-leaves-XFKhJdoEMA8",
+      "title": "Photo by Sebastian Schuster on Unsplash",
+      "snippet": "A dusty miller plant with intricate silvery white fern-like leaves Foliage texture Calendar outlined Published on September 16, 2026 ... Unsplash License texture green pattern plant leaves natural beauty gardening botanical close up silver texture organic foliage botanical garden ... leaf pattern leaf veins plant science garden plant",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+      "title": "Photo by Bảo Minh on Pexels",
+      "snippet": "Date Feb 10, 2025 Downloads 48 Views ... Camera Canon EOS 5D Mark II Focal 50.0mm ISO 250 Shutter Speed 1/1250 sec ... 2025 Software Adobe Photoshop Lightroom Classic 14.1.1 (Windows) Description # Close-up of vibrant green fern leaves in a natural environment, showcasing intricate textures. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://arcabc.ca/islandora/object/au%3A51056?solr_nav%5Bid%5D=0dc6a735c3557f5bcfe4&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=21",
+      "title": "Gilled Mushroom",
+      "snippet": "Photograph - The underside of the cap showing the gills where spores are produced and released Gilled Mushroom R.G. Holmberg photographs Basidiomycota Athabasca County Fungi still image English ... Athabasca University Digital Library arbriimge00637",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/close-up-of-a-delicate-mushroom-with-detailed-gills-4pVQdcqShqg",
+      "title": "Photo by Sofie D. on Unsplash",
+      "snippet": "––– –––– –––– # Close-up of a delicate mushroom with detailed gills Download this free HD photo of forest, texture, natural, and mushroom by Sofie D. (@needeeja) Published on Free to use under the Unsplash License Browse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-close-up-of-a-large-green-leaf-QKExHYkKQ5I",
+      "title": "Photo by Matt Richmond on Unsplash",
+      "snippet": "––– –––– –––– # a close up of a large green leaf Macro shot of a vibrant green fern leaf, highlighting its detailed structure and the intricate pattern of its veins. Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+      "title": "Photo by cottonbro studio on Pexels",
+      "snippet": "Add filters, effects ... Dimensions 4160x6240 Aspect Ratio 2:3 Colors Date Nov 26 ... Taken At Sep 5, 2020 Software Adobe Photoshop Lightroom Classic 9.2.1 (Macintosh) Description # A close-up view of vibrant green fern leaves showcasing intricate patterns and textures. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://hic.bbg.org/detail/02000",
+      "title": "Image Detail",
+      "snippet": "Image Detail ## Pleurotus Ostryatus (Oyster mushroom) Close-up of underside gills of mushroom on black background. - Negative number ... - 06/25/1916 - Photograph by - Louis Buhle All rights reserved.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/close-up-of-mushroom-gills-in-green-grass-evzYIAemB5A",
+      "title": "Photo by Elisa Stone on Unsplash",
+      "snippet": "––– –––– –––– # Close-up of mushroom gills in green grass Download this free HD photo of forest, autumn, grass, and growth by Elisa Stone (@elisastonephotography) Published on Free to use under the Unsplash License Browse ... Save 20% with code UNSPLASH20",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://elements.envato.com/freshly-picked-mushrooms-ZQX95NJ",
+      "title": "Extreme Close-Up View Inside Mushroom Cap",
+      "snippet": "Extreme Close-Up View Inside Mushroom Cap ... An extreme close-up view shows the inside of a mushroom cap. The mushroom has a white stem and cap, and brown gills. The photo is tightly cropped and focuses on the gills, showing their structure in detail. This natural...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-close-up-of-a-traffic-light-KfjNXTnBWGM",
+      "title": "Photo by Red Camera on Unsplash",
+      "snippet": "––– – ––– – – # a close-up of a traffic light Download this free HD photo of grey, building, office building, and urban by Red Camera (@camerared) Published on Free to use under the Unsplash License Browse ... Save 20% with code UNSPLASH20",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/urban-traffic-light-against-historic-building-38078925/",
+      "title": "Photo by Dirk Baker on Pexels",
+      "snippet": "Afterglow Street Festive Summer ##### Dirk Baker 160.4K views • 560 downloads Oslo, Norway Description # Close-up of a traffic light with a green signal in front of a historic building facade. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "snippet": "your language: Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://openverse.org/image/a840c180-a090-4351-a41f-c3c729078af0",
+      "title": "Traffic light at Main Street and Dover Road (50759062651)",
+      "snippet": "curid=101291893\">Traffic light at Main Street and Dover Road ... \"Traffic light at Main Street and Dover Road (50759062651)\" by Ben Schumin from Montgomery Village, Maryland, USA is licensed under CC BY-SA 2.0. To view a copy of this license...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-close-up-of-a-traffic-light-on-a-rainy-day-J444iiGRDj4",
+      "title": "Photo by Limi change on Unsplash",
+      "snippet": "a close up of a traffic light on a rainy day Download this free HD photo of pattern, texture, lighting, and light by Limi change (@limichange) Published on SONY, ILCE-7M4Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/new-york-city-traffic-light-against-urban-skyline-35912156/",
+      "title": "Photo by Optical Chemist on Pexels",
+      "snippet": "Choose your language: Use filters Change focus Brighten up Add frames New York, NY, United States Description # Classic New York traffic light with green signal in front of urban buildings. ## More like this Use filters Change focus Brighten up Add frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/texte-nature-morte-panneau-panneau-de-signalisation-7837387/",
+      "title": "Photo de Nathaniel B. Gerhart sur Pexels",
+      "snippet": "Afterglow ... 4928x3264 Format 77 ... Appareil photo NIKON D7000 Focale 120.0mm Ouverture ƒ/8.0 ISO 140 ... Logiciel Adobe Photoshop Lightroom Classic 10.2 (Macintosh) Description # Gros plan d'un signal de traversée piétonne avec des directions textuelles dans un environnement urbain.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://openverse.org/sv/image/81a4c832-136d-4b6f-b6e3-82ae43182bad?q=Conic+Hill&p=7",
+      "title": "Perfect cutaway house under a green traffic light, view looking southwest from at the corner of a junction where Fuxing 1st Road joins Changmin Street in Kaohsiung on 23 December 2021",
+      "snippet": "curid=114803304\">Perfect cutaway house under a green traffic light, view looking southwest from at the corner of a junction where Fuxing 1st Road joins Changmin Street in Kaohsiung on 23 December 2021</a>” ... under CC BY-SA 4.0.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_the_United_States",
+      "title": "Category:Pedestrian signal push buttons in the United States - Wikimedia Commons",
+      "snippet": "Pedestrian signal push buttons in the United States ... The following 15 files are in this category, out of 15 total. - MUTCD R10-25 (2012).svg 820 × 1,090 ... - Pedestrian crossing button.jpg 2,912 × 4,368; 4.89 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-close-up-of-a-traffic-light-in-the-dark-s1CBokLQ8XI",
+      "title": "Photo by Alan Alves on Unsplash",
+      "snippet": "––– – ––– ––– # a close up of a traffic light in the dark Download this free HD photo of light, candles, night, and dark by Alan Alves (@alanalves) Published on Free to use under the Unsplash License Browse ... Save 20% with code UNSPLASH20",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+      "title": "Photo de Katia Miasoed sur Pexels",
+      "snippet": "Choisissez votre langue: Add filters, effects Make presentations Create photo collages Add custom frames Poland Description # Feux de circulation à un passage piéton en ville avec des signaux pour vélos et piétons pendant l'automne. ## Médias similaires Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/orange-building-wall-with-window-and-lantern-shadow-Ky81JOMNd8k",
+      "title": "Photo by Aaryan Kohli on Unsplash",
+      "snippet": "Orange building wall with window and lantern shadow Download this free HD photo of wall, sunlight, light and shadow, and building facade in Varenna, Italy by Aaryan Kohli (@aaryankohli) Varenna, Province of Lecco...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/",
+      "title": "Photo by Lara on Pexels",
+      "snippet": "Choose your language: Afterglow Street Festive Summer Description # Sunlight casts intricate plant shadows on an urban wall beneath a classical window. ## More like this Afterglow Street Festive Summer",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/shadows-of-a-structure-cast-on-a-wall-_B5IInGVakY",
+      "title": "Photo by Md Arif Hasan on Unsplash",
+      "snippet": "Shadows of a structure cast on a wall A striking black and white photo capturing the dramatic interplay of light and shadow on a modern building in Bedford, UK. The strong sunlight casts intricate geometric patterns on the facade, highlighting the building's architectural lines and creating a dynamic, abstract composition.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/22820358/",
+      "title": "Pexels Matthew Jackson图片",
+      "snippet": "4000x6000 ... Adobe Photoshop Lightroom Classic 13.2 (Windows) ... 描述 # 一栋阳光照射的建筑外立面，在芝加哥的一条街道上投射出戏剧性的阴影。 ## 更多相似内容 Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/stone-wall-illuminated-by-warm-sunset-light-bAZ_FV5_-X0",
+      "title": "Photo by Josip Ivankovic on Unsplash",
+      "snippet": "Stone wall illuminated by warm sunset light Download this free HD photo of window, golden hour, shadows, and stone wall in Stari Grad, Kroatien by Josip Ivankovic (@piak) ... Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/37152155/",
+      "title": "Pexels Matthew Jesús图片",
+      "snippet": "4000x6000 宽高比 2 ... 软件 Adobe Lightroom 11.1.0 (iOS) 描述 # 特写石头建筑的角落，配有黄色框架的窗户投射出阴影。 ### 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/abstract-pattern-of-light-and-shadow-on-textured-surface-KgtOr1cCECw",
+      "title": "Photo by Dmytro Yarish on Unsplash",
+      "snippet": "This image features a close-up, abstract view of a building's facade with a repetitive pattern of curved, wave-like panels in grayscale. The focus is on texture and form, emphasizing the interplay of light and shadow across the undulating surface.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "snippet": "Afterglow Street Festive ... Dimensions 2270x4032 Aspect Ratio 1135:2016 ... VSCO Vladivostok, Primorskiy kray, Russia Description # A shadow cast on a white brick wall creating a silhouette effect during daylight. ## More like this Afterglow",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/window-with-greenery-against-a-tiled-wall-Z0lEv5exgAE",
+      "title": "Photo by Alexander Zaytsev on Unsplash",
+      "snippet": "––– –––– –––– # Window with greenery against a tiled wall. Download this free HD photo of building, plant, wall, and shadow in Lisbon, Portugal by Alexander Zaytsev (@anwaltzzz) Lisbon, Portugal Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/32560039/",
+      "title": "Pexels 上由 Zehra İslamoğlu 拍攝的相片",
+      "snippet": "瀏覽次數 11.9 千 按讚數 1 說明 在陽光下，格柵窗在有紋理的牆壁上投射出複雜的陰影。 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/sunlight-casts-street-lamp-shadow-on-building-wall-ay6UbwexLK8",
+      "title": "Photo by T on Unsplash",
+      "snippet": "Sunlight casts street lamp shadow on building wall Download this HD photo of blue, summer, architecture, and wall by T (@tanyabarrow) Published on Licensed under the Unsplash+ License Upgrade to Unsplash+ and start creating with exclusive, royalty-free images.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/32609760/",
+      "title": "Pexels Willian Justen de Vasconcellos图片",
+      "snippet": "filters, effects Make presentations Create photo collages Add custom frames ... 3639x5459 ... Adobe Lightroom 8.4 (Macintosh) New York, New York, United States 描述 # 温暖的阳光在纽约市的一座艺术装饰风格建筑上投下阴影。 ### 更多相似内容 Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/the-shadow-of-a-tree-on-the-wall-of-a-building-qfcFPVOXMOQ",
+      "title": "Photo by Anthamone on Unsplash",
+      "snippet": "––– –––– –––– # The shadow of a tree on the wall of a building window with reflections of trees and soft shadows of leaves cast on the wall. The sunlight creates a minimalist and natural atmosphere. Published on Free to use under the Unsplash License Browse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "snippet": "4242x2828 Aspect Ratio 3 ... Camera X-E5 Focal 56.0mm ... Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/modern-building-facade-with-warm-sunset-light-and-shadows-UtPcEr_B22M",
+      "title": "Photo by Jason Leung on Unsplash",
+      "snippet": "––– –––– –––– # Modern building facade with warm sunset light and shadows. Download this free HD photo of sunlight, geometric pattern, modern architecture, and shadows by Jason Leung (@ninjason) Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lake_Pukaki_and_Mt_Cook.NZ_(15577767068).jpg#1",
+      "title": "File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg - Wikimedia Commons - File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg",
+      "snippet": "Lake Pukaki and Mt Cook.NZ (15577767068).jpg ... Lake Pukaki is a shimmering blue jewel set into a grand alpine playground - an iconic New Zealand landscape of high mountain peaks, glacier fed alpine lakes and golden tussocks stretched beneath an endless sky.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/snow-capped-mountains-reflecting-in-alpine-lake-0-LgP3r_UOg",
+      "title": "Photo by Praneeth Peiris on Unsplash",
+      "snippet": "Downloads 13 # Snow-capped mountains reflecting in a calm alpine lake under a bright blue sky Download this free HD photo of snow-capped mountains reflecting in a lake by @gnomezgrave Published on Free to use under the Unsplash License Browse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/",
+      "title": "Photo by Christopher Beck on Pexels",
+      "snippet": "Date Nov 19, 2020 Downloads ... Taken At Apr 19, 2019 Software Adobe ... (Macintosh) Tirol, Österreich Description # Scenic view of an Alpine lake with mountains reflecting in calm waters in Tirol, Austria. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Reflets_de_Tignes_-_Val_Claret_sur_le_lac_de_nuit_(%C3%A9t%C3%A9_2018).JPG",
+      "title": "File:Reflets de Tignes - Val Claret sur le lac de nuit (été 2018).JPG - Wikimedia Commons",
+      "snippet": "in a summer night, of the ''lac de Tignes'' lake, with visible at the background ''Tignes - Val Claret'' village ... France.}} {{fr|1=Vue, une nuit d'été, du ''lac de Tignes'' avec les reflets du village de ''Tignes - Val Claret''...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/landscape-photography-of-mountains-surrounded-by-body-of-water-8FNFEj9EcIs",
+      "title": "Photo by Andreas Gücklhorn on Unsplash",
+      "snippet": "landscape photography of mountains surrounded by body of water Download this free HD photo of shore, lake brienz, brienz, and switzerland in Brienz, Switzerland by Andreas Gücklhorn (@draufsicht) Published on Free to use under the Unsplash",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Granite_Bound_Tenaya_Lake,_Yosemite_NP_10-9-18_(44750481264).jpg#1",
+      "title": "File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg - Wikimedia Commons - File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg",
+      "snippet": "Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg ... There may not be a more spectacular setting for an alpine lake than that of Tenaya Lake in the high country of Yosemite.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/snow-capped-mountain-reflected-in-a-calm-lake-s2xR0QmZVI4",
+      "title": "Photo by Thierry Lemaitre on Unsplash",
+      "snippet": "Snow-capped mountain reflected in a calm lake Snow-covered peaks of Schreckhorn and Eiger rise behind Bachalpsee. The alpine lake reflects the sunlight on the peak of First First, Grindelwald, Switzerland Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/tranquil-alpine-lake-with-majestic-mountains-32481616/",
+      "title": "Photo by VISHNEVA on Pexels",
+      "snippet": "Add custom frames ##### VISHNEVA 384.6K views • 3.5K downloads Austria Description # Peaceful alpine lake reflecting mountains under a partly cloudy sky, perfect for nature lovers. ### More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-building-on-a-hill-by-a-body-of-water-IlaosFtLRmY",
+      "title": "Photo by Yasintha Perera on Unsplash",
+      "snippet": "a building on a hill by a body of water Iseltwald is a pretty village on the shores of Lake Brienz. Published on DJI, FC3411Free to use under the Unsplash License Browse ... 20% with code UNSPLASH20",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lac_de_Plan_du_Lac_%c3%a0_Termignon_c%c3%b4t%c3%a9_nord_au_matin_(ao%c3%bbt_2022).JPG",
+      "title": "File:Lac de Plan du Lac à Termignon côté nord au matin (août 2022).JPG - Wikimedia Commons",
+      "snippet": "{{Information |Description={{en|1=Sight, in a summer morning, of the north side of the lake of ''Plan du Lac'' locality on the heights of ''Termignon'', with ''Grande Casse'' mountain relecting on it, in Savoie, France.}} {{fr|1=Vue...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/reflections-of-mountains-on-water-OCGXUCCQblw",
+      "title": "Photo by Alec Olson on Unsplash",
+      "snippet": "Downloads 104 # reflections of mountains on water A mountain reflection on a glassy alpine lake in Banff National Park. Location: Lake Louise. Photo by Alec Olson (www.alecolson.com). Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/lac-alpin-pittoresque-avec-vue-majestueuse-sur-les-montagnes-35259426/",
+      "title": "Photo de Mauro Morandini sur Pexels",
+      "snippet": "4032x2268 Format 16:9 Couleurs Date Dec 17, 2025 Téléchargements ... Selva di Val Gardena, Italy Description # Lac alpin aux eaux cristallines, avec de superbes montagnes se reflétant sous un ciel bleu.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-body-of-water-with-boats-and-houses-along-it-nBhjD_eSZ94",
+      "title": "Photo by Yasintha Perera on Unsplash",
+      "snippet": "a body of water with boats and houses along it Iseltwald is a pretty village on the shores of Lake Brienz. Published on DJI, FC3411Free to use under the Unsplash License ... 520 images · Curated by",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-lakeside-town-is-nestled-among-mountain-ranges-qJVqL9wnGoA",
+      "title": "Photo by Fajar Al Hadi on Unsplash",
+      "snippet": "A lakeside town is nestled among mountain ranges. A stunning view of Hallstatt, Austria ... The picturesque village, nestled between steep alpine mountains and the calm lake, showcases its iconic church steeple ... The reflection on the water adds tranquility, while the misty blue mountains in the background enhance the dreamy atmosphere.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/smolyan-lakes-bulgaria-28143954/",
+      "title": "Photo by Rainer Eck on Pexels",
+      "snippet": "Date Aug 31, 2024 Downloads ... 5 Camera Canon EOS 5D Mark II ... Taken At Aug 17, 2024 Software Adobe Photoshop Lightroom Classic 7.1 (Windows) Bulgaria Description # Peaceful alpine lake reflecting mountains and forests in summer. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+      "title": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG - Wikimedia Commons",
+      "snippet": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG Size of this preview: 688 × 600 pixels. Other resolutions ... Original file (977 × 852 pixels, file size: 145 KB, MIME type: image/jpeg",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/rocky-coastline-with-waves-crashing-on-shore-LfgOlvXhZvs",
+      "title": "Photo by Christopher Stites on Unsplash",
+      "snippet": "A plus sign ... More Actions Rocky coastline with waves crashing on shore Ocean waves on rocks Calendar outlined Published on October 16, 2025 Camera NORITSU KOKI ... Unsplash License waves film rocks film photography nostalgia vintage aesthetic moody",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+      "title": "Photo by Elchino portrait on Pexels",
+      "snippet": "Adobe Photoshop Lightroom Classic 15.5.1 (Macintosh) Santa María Huatulco, Oaxaca, México Description # Dynamic ocean waves crash against rocks on the beach in Santa María Huatulco, Mexico, capturing nature's power. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_on_beaches#1",
+      "title": "Category:Sand ripples on beaches - Wikimedia Commons - Category:Sand ripples on beaches",
+      "snippet": "Media in category \"Sand ripples on beaches\" The following 163 files are in this category, out of 163 total. - A Buan Beach - panoramio.jpg 2,048 × 1,536; 665 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Hilbre_Island_%e2%80%93_Intertidal_Sandstone_Shoreline.jpg#1",
+      "title": "File:Hilbre Island – Intertidal Sandstone Shoreline.jpg - Wikimedia Commons - File:Hilbre Island – Intertidal Sandstone Shoreline.jpg",
+      "snippet": "The image captures the weathered sandstone strata and algae-streaked rocks typical of this tidal island’s intertidal zone. During low tide, the island reveals its richly textured shore—home to seabirds, crustaceans, and salt-tolerant plant species. These formations...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/33561680/",
+      "title": "Pexels Phil Evenden图片",
+      "snippet": "日期 Aug 22, 2025 下载次数 ... 焦距 70.0mm 光圈 ƒ/11.0 ... (Macintosh) Isle of Muck, Scotland, United Kingdom 描述 # 苏格兰马克岛平静的岩石海岸线，有潮汐池和阴云密布的天空。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/misty-coastal-cliffs-with-waves-crashing-on-rocks-fhVUmVvgAng",
+      "title": "Photo by Griffin Wooldridge on Unsplash",
+      "snippet": "––– –––– –––– # Misty coastal cliffs with waves crashing on rocks. Download this free HD photo of travel, adventure, ocean waves, and moody by Griffin Wooldridge (@dzngriffin) Published on Free to use under the Unsplash License Browse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/scenic-beach-view-in-casablanca-morocco-34548031/",
+      "title": "Photo by chabraoui el hachemi on Pexels",
+      "snippet": "Date Nov 1, 2025 Downloads 38 Views ... Taken At Oct 22, 2025 Casablanca, Casablanca-Settat, Morocco Description # Beautiful sea waves crashing against rocks on a sunny beach in Casablanca, Morocco. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Sand_ripples_in_Indonesia",
+      "title": "Category:Sand ripples in Indonesia - Wikimedia Commons",
+      "snippet": "Media in category \"Sand ripples in Indonesia\" The following 3 files are in this category ... Legon Lele Beach Karimun Jawa 4.JPG ... 592; 7.5 MB Legon Lele Beach Karimun Jawa 5.JPG ... Legon Lele Beach Karimun Jawa 6.JPG",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Shorelines_of_Namibia",
+      "title": "Category:Shorelines of Namibia - Wikimedia Commons",
+      "snippet": "Langstrand namibia.jpg 3,992 × 2,242; 5.69 MB - Rocky Waves.jpg 4,032 × 3,024; 4.19 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-rocky-beach-with-waves-coming-in-and-out-of-the-water-kM7hjlULe24",
+      "title": "Photo by Sarah Duffin on Unsplash",
+      "snippet": "a rocky beach with waves coming in and out of the water Long exposure on a winter ocean - waves crashing into rocks at a the beach of a hidden gem in Wales, United Kingdom. An overcast day with surprisingly calm seas, but still some rough waves to break over the rocks.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+      "title": "Photo by V Bawa on Pexels",
+      "snippet": "V Bawa ... 4608x3072 Aspect Ratio 3 ... Date Aug 4, 2023 ... Software Adobe Lightroom 5.4 (Windows) Oaxaca, Oax., Mexico Description # Majestic rock formation with ocean waves at Zipolite Beach, Oaxaca, Mexico, perfect coastal scenery. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Theddlethorpe_beach",
+      "title": "Category:Theddlethorpe beach - Wikimedia Commons",
+      "snippet": "640 × 426 ... 640 × 427; 199 KB ... 70 KB Sand ripples - geograph.org.uk - 736695.jpg ... 187 KB The beach at Theddlethorpe - geograph.org.uk - 735192.jpg",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/sunlight-in-misty-forest-with-trees-yDH7nZ-Lue4",
+      "title": "Photo by Pascal Debrunner on Unsplash",
+      "snippet": "Downloads # Sunlight filtering through tall trees in a misty forest with lush green undergrowth There is something truly magical about the way morning sunlight finds its way through a misty forest. I stood there for a while ... woodland to life. ... Schweiz Published Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/serene-forest-scene-with-sunlit-trees-38042886/",
+      "title": "Photo by Vizi Kata on Pexels",
+      "snippet": "Jun 9, 2026 Downloads 11 Views ... Camera ILCE-7M4 Focal 200.0mm Aperture ƒ/5.6 ISO 1000 Shutter Speed 1/160 sec Taken At Jun 9, 2026 Software Adobe Lightroom 11.3.3 (Android) Description # Peaceful forest scene featuring tall trees and sunlight filtering through leaves. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Forest_Road_-_Black_Oak_(Quercus_velutina)_leaves_-_Flickr_-_Jay_Sturner.jpg",
+      "title": "File:Forest Road - Black Oak (Quercus velutina) leaves - Flickr - Jay Sturner.jpg - Wikimedia Commons",
+      "snippet": "Forest Road - Black Oak (Quercus velutina) leaves - Flickr - Jay Sturner.jpg Size of this preview: 960 × 720 pixels. Other resolutions: 330 × 248 pixels | 1 ... Original file (1,600 × 1,200 pixels, file size...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/textured-green-leaf-on-stem-25wotdHanME",
+      "title": "Photo by My Koiwang on Unsplash",
+      "snippet": "––– –––– –––– # A textured green leaf with jagged edges on a thin stem Download this free HD photo of forest, texture, green, and outdoor by My Koiwang (@mykoiwang) Published on Free to use under the Unsplash License Browse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/green-plants-with-small-long-leaves-4261763/",
+      "title": "Photo by Diana ✨ on Pexels",
+      "snippet": "Aspect Ratio 3:4 Colors Date Apr 28, 2020 Downloads ... Apr 29, 2020 Software VSCO Description # Close-up of vibrant green foliage covering forest floor, showcasing lush growth and natural beauty. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Sunlight_filters_through_autumn_forest_at_mara_provincial_park.JPG",
+      "title": "File:Sunlight filters through autumn forest at mara provincial park.JPG - Wikimedia Commons",
+      "snippet": "File:Sunlight filters through autumn forest at mara provincial park.JPG From Wikimedia Commons, the free media repository ... Original file (4,608 × 3,456 pixels, file size: 5.05 MB, MIME type...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/sunlight-streaming-through-misty-forest-o7_pjm0V9-A",
+      "title": "Photo by Pascal Debrunner on Unsplash",
+      "snippet": "Downloads # Sunlight streaming through tall trees in a misty forest with lush green undergrowth It is moments like these that make me want to get up early and explore the forest with my camera. Watching the golden sunbeams cut through the morning mist between the tall trees was absolutely mesmerizing. For a brief moment ... Published Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/serene-forest-landscape-in-dappled-sunlight-36004349/",
+      "title": "Photo by Every Stuff on Pexels",
+      "snippet": "2592x3888 Aspect Ratio 2 ... Camera Canon EOS 40D Focal 55.0mm Aperture ƒ/4.0 ISO 1600 Shutter Speed 1/180 sec Taken At Dec 9, 2025 Software Adobe Photoshop Lightroom Classic 11.0 (Windows) Description # Tranquil forest scene with sunlight filtering through tall trees, creating a serene atmosphere. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:2014-08-27_11_32_34_Scrub_Oak_foliage_near_the_north_edge_of_Wharton_State_Forest_in_Tabernacle_Township,_New_Jersey.JPG",
+      "title": "File:2014-08-27 11 32 34 Scrub Oak foliage near the north edge of Wharton State Forest in Tabernacle Township, New Jersey.JPG - Wikimedia Commons",
+      "snippet": "2014-08-27 11 32 34 Scrub Oak foliage near the north edge of Wharton State Forest in Tabernacle Township, New Jersey.JPG ... Original file (3,264 × 2,448 pixels, file size...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/green-leaves-are-illuminated-by-sunlight-E_sHeWbAf-k",
+      "title": "Photo by Annie Spratt on Unsplash",
+      "snippet": "Green leaves are illuminated by sunlight Download this HD photo of forest, texture, plant, and leaves by Annie Spratt (@anniespratt) Calendar outlined Published on May 28, 2025 ... natural beauty sunlight greenery outdoors green leaves woodland organic branch foliage",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/autumn-leaves-in-a-natural-forest-setting-40595499/",
+      "title": "Photo by neilstha firman on Pexels",
+      "snippet": "5328x4000 Aspect Ratio 333 ... Date Oct 28, 2026 Downloads 0 Views ... 0 Camera ILCE-7C Focal 85.0mm Aperture ƒ/2.5 ISO 50 Shutter Speed 1/100 sec Taken At Oct 25, 2026 Software ILCE-7C v1.00 Description # Close-up of brown autumn leaves scattered on the forest floor. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Trees_and_sunshine.JPG#1",
+      "title": "File:Trees and sunshine.JPG - Wikimedia Commons - File:Trees and sunshine.JPG",
+      "snippet": "File:Trees and sunshine.JPG ... This is a beautiful picture of sunlight shining through sequoia trees in Muir Woods. ... 5 January 2007 | 2 ... 536 (1.27 MB) | Richs5812 (talk | contribs) | this is a picture of sunlight shining through sequoia trees in Muir Woods Category...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/sunlight-filtering-through-green-leaves-in-a-forest-QvEN-llkKJE",
+      "title": "Photo by Earl McKenzie on Unsplash",
+      "snippet": "Sunlight filtering through green leaves in a forest Leaves illuminated in dappled light in a forest A map marker Sturgeon County, AB, Canada Calendar outlined Published on May 6, 2026 (UTC) ... Unsplash License forest green dark forest leaves natural beauty",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/sunlit-forest-with-tall-pine-trees-in-spring-36664480/",
+      "title": "Photo by Elina Volkova on Pexels",
+      "snippet": "3648x5472 Aspect Ratio 2 ... 71 Views 14K ... 3 Camera Canon EOS R6 Focal 70.0mm ... Mar 14, 2026 Software Adobe Photoshop Lightroom Classic 15.1.1 (Windows) Description # A serene forest view with tall pine trees illuminated by sunlight, capturing the essence of spring. ### More like this",
+      "via": "server_tool"
+    }
+  ],
+  "downloads": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/5223989/pexels-photo-5223989.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+      "title": "Photo by Ricardo Utsumi on Pexels",
+      "sha256": "c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+      "bytes": 19046,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r01.c6657129fc5c",
+      "round": 1,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r01.c6657129fc5c.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "橙子与柑橘的单体实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/15560947/pexels-photo-15560947.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/boire-jus-d-orange-oranges-fruit-15560947/",
+      "title": "Photo de Pablo de Haro sur Pexels",
+      "sha256": "adaf478e57c6dc6f47179c22b12f2fc7c8b9db3c505fa1505c5eb8ef2579889c",
+      "bytes": 39110,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r01.adaf478e57c6",
+      "round": 1,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r01.adaf478e57c6.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "橙子与柑橘的单体实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/12267666/pexels-photo-12267666.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/12267666/",
+      "title": "Pexels 上由 Sherali Khan 拍攝的相片",
+      "sha256": "08d209b8092dee3fc3ec9d8fabc32a88dfcf9d583fd6f2193e5acc61d8525bf0",
+      "bytes": 93374,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r01.08d209b8092d",
+      "round": 1,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r01.08d209b8092d.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "橙子与柑橘的单体实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5945786/pexels-photo-5945786.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/5945786/",
+      "title": "Pexels 上由 Any Lane 拍攝的相片",
+      "sha256": "9b10968eb8dbb0adcc6cfd60d472b321d62808e624eed86ed0b8dec0fa263290",
+      "bytes": 87150,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r01.9b10968eb8db",
+      "round": 1,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r01.9b10968eb8db.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "橙子与柑橘的单体实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/693794/pexels-photo-693794.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/green-apple-lot-693794/",
+      "title": "Photo by RP Photography on Pexels",
+      "sha256": "bad8c208b25c8aa07da97e41ae8a1db540ad3a8235224df9eecce84843152e95",
+      "bytes": 37216,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 535,
+      "id": "learn.r02.bad8c208b25c",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.bad8c208b25c.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/30668750/pexels-photo-30668750.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/fresh-red-apples-on-wooden-surface-30668750/",
+      "title": "Photo by Polat Eyyüp Albayrak on Pexels",
+      "sha256": "886f81c7ec274a62422c9133ff0b79d7e42b9e2db16ceed531314d1ca6e3cc9c",
+      "bytes": 43980,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "id": "learn.r02.886f81c7ec27",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.886f81c7ec27.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/13705758/pexels-photo-13705758.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-photo-of-apples-13705758/",
+      "title": "Photo by Marcello Mastrodicasa on Pexels",
+      "sha256": "41ed6a3fcd6516a1a014249226548425aedcc87dc4d27ac7b985f22ff8d40b3c",
+      "bytes": 31378,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "id": "learn.r02.41ed6a3fcd65",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.41ed6a3fcd65.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/9938585/pexels-photo-9938585.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-photo-of-red-apples-9938585/",
+      "title": "Photo by Deden Dicky Ramdhani on Pexels",
+      "sha256": "43ba7b3b608de2c45e86f377ed9f048198fac074d5807fe27b5b079a4079bcfb",
+      "bytes": 35606,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "id": "learn.r02.43ba7b3b608d",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.43ba7b3b608d.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/8416545/pexels-photo-8416545.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/crop-person-showing-ripe-apples-at-home-8416545/",
+      "title": "Photo by hissetmehurriyeti on Pexels",
+      "sha256": "c13e8dd521c2469b3a3b64ad0c7ecabd01902fd4b9f2ed3c729daff41e2cec53",
+      "bytes": 50582,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1367,
+      "id": "learn.r02.c13e8dd521c2",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.c13e8dd521c2.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/7333128/pexels-photo-7333128.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "sha256": "0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a",
+      "bytes": 13820,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 513,
+      "id": "learn.r02.0095427d2cd5",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.0095427d2cd5.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Japanese_-_Vase_%28kabin%29_-_Walters_491668_-_Profile.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+      "title": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+      "sha256": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "bytes": 1403013,
+      "mime": "image/jpeg",
+      "width": 1427,
+      "height": 1799,
+      "id": "learn.r03.097cfbf071e3",
+      "round": 3,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r03.097cfbf071e3.jpg",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "陶瓷杯与花瓶的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/35970499/pexels-photo-35970499.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+      "title": "Photo by James Collington on Pexels",
+      "sha256": "c2f1cb0642a55d680a61fe9bccb241889793cb30b4f6c1d9a2901ab01cd89931",
+      "bytes": 15216,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r04.c2f1cb0642a5",
+      "round": 4,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r04.c2f1cb0642a5.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "咖啡与餐桌静物实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5588395/pexels-photo-5588395.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/person-writing-on-a-notebook-5588395/",
+      "title": "Photo by Tony Schnagl on Pexels",
+      "sha256": "9abbc6edf6d6e677bfc3115bf27e7f7c58b6254ac42a385c1d2cf8f8f7f99679",
+      "bytes": 77616,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r04.9abbc6edf6d6",
+      "round": 4,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r04.9abbc6edf6d6.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "咖啡与餐桌静物实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/39187955/pexels-photo-39187955.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+      "title": "Photo de Cut Nanda Oemar sur Pexels",
+      "sha256": "ba8ec1aa482ec288e21ecdede970e21bd38d39b4f99c1e1db15a6b26a2950b68",
+      "bytes": 38264,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r04.ba8ec1aa482e",
+      "round": 4,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r04.ba8ec1aa482e.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "咖啡与餐桌静物实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/29507972/pexels-photo-29507972.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+      "title": "Foto de Israyosoy S. no Pexels",
+      "sha256": "8fa1d7612d73a6335cc8f372d8abca431a838643446a92e90292b99925228a0f",
+      "bytes": 35022,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r04.8fa1d7612d73",
+      "round": 4,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r04.8fa1d7612d73.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "咖啡与餐桌静物实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/12458501/pexels-photo-12458501.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+      "title": "Photo by Skyler Ewing on Pexels",
+      "sha256": "92830dd7cdf261f59cfcb5e1d9246069b1a557d964c82dc34f0d974a091e9070",
+      "bytes": 37748,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r05.92830dd7cdf2",
+      "round": 5,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r05.92830dd7cdf2.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "植物近景与自然物品实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/30659564/pexels-photo-30659564.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+      "title": "Photo by Bảo Minh on Pexels",
+      "sha256": "67fd559a57f55edff8630a236fcc232192ed86c3dee5c5edbe121ce8c51ed8aa",
+      "bytes": 53844,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r05.67fd559a57f5",
+      "round": 5,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r05.67fd559a57f5.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "植物近景与自然物品实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5993687/pexels-photo-5993687.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+      "title": "Photo by cottonbro studio on Pexels",
+      "sha256": "a5353610c87581c1f3a83fec5fbdbebe9ba0cff71dcbba84682ed0eb9391dc32",
+      "bytes": 68818,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r05.a5353610c875",
+      "round": 5,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r05.a5353610c875.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "植物近景与自然物品实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/38078925/pexels-photo-38078925.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/urban-traffic-light-against-historic-building-38078925/",
+      "title": "Photo by Dirk Baker on Pexels",
+      "sha256": "6cabbc1ac49e521d201aeb568a43234e7901da96c31afa49d92c8375fc49d4d2",
+      "bytes": 31328,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r06.6cabbc1ac49e",
+      "round": 6,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r06.6cabbc1ac49e.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "真实交通灯与街角实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/19901332/pexels-photo-19901332.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "sha256": "a23c10c20c8a5feded65d4e6d8404831123f200d854856c901a8965d8ea60946",
+      "bytes": 33948,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r06.a23c10c20c8a",
+      "round": 6,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r06.a23c10c20c8a.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "真实交通灯与街角实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/35912156/pexels-photo-35912156.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/new-york-city-traffic-light-against-urban-skyline-35912156/",
+      "title": "Photo by Optical Chemist on Pexels",
+      "sha256": "8fc2a8a52e2193edda81a376b7e5a4a7bc039805da9426d7983f2b7f5b62e85f",
+      "bytes": 47380,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r06.8fc2a8a52e21",
+      "round": 6,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r06.8fc2a8a52e21.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "真实交通灯与街角实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/7837387/pexels-photo-7837387.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/texte-nature-morte-panneau-panneau-de-signalisation-7837387/",
+      "title": "Photo de Nathaniel B. Gerhart sur Pexels",
+      "sha256": "bae383fa0e3ca9a75fdbd87d1f976f123a35ff2f44d9f73e9dfbc40cdbc4fa33",
+      "bytes": 87234,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r06.bae383fa0e3c",
+      "round": 6,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r06.bae383fa0e3c.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "真实交通灯与街角实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/18794032/pexels-photo-18794032.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+      "title": "Photo de Katia Miasoed sur Pexels",
+      "sha256": "9e74278ca93506a59e4317bd1c76161ad0ff0a34d46ad746201a3781065c7a33",
+      "bytes": 44070,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r06.9e74278ca935",
+      "round": 6,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r06.9e74278ca935.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "真实交通灯与街角实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/33794191/pexels-photo-33794191.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/",
+      "title": "Photo by Lara on Pexels",
+      "sha256": "7be8fd8c005aca1be328a3935e812f0f117dd2ac1fa4b231abefc5da4b11e5ae",
+      "bytes": 37512,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.7be8fd8c005a",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.7be8fd8c005a.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/22820358/pexels-photo-22820358.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/22820358/",
+      "title": "Pexels Matthew Jackson图片",
+      "sha256": "b29b99c456f076de21a9f384f171a90ee64557eb75f07e9715f93eed8920a1a1",
+      "bytes": 55556,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.b29b99c456f0",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.b29b99c456f0.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/37152155/pexels-photo-37152155.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37152155/",
+      "title": "Pexels Matthew Jesús图片",
+      "sha256": "97c1ada5f6737a81f1134f7662ed4b651930bfb3270b63eff08b7a2a9e5a0b80",
+      "bytes": 87610,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.97c1ada5f673",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.97c1ada5f673.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/8806467/pexels-photo-8806467.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "sha256": "e5b9718f97b03932394a1f7c6a1bd19b3ef1feb4b12cf314a9f7a8a5f4f37ed0",
+      "bytes": 36998,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.e5b9718f97b0",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.e5b9718f97b0.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32560039/pexels-photo-32560039.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/32560039/",
+      "title": "Pexels 上由 Zehra İslamoğlu 拍攝的相片",
+      "sha256": "d52e20c8a6219a547bec911053d74d04d732d91d4a2fce623bad91036cbd4d4a",
+      "bytes": 111878,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.d52e20c8a621",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.d52e20c8a621.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32609760/pexels-photo-32609760.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/32609760/",
+      "title": "Pexels Willian Justen de Vasconcellos图片",
+      "sha256": "f753d14554eb3ffd802504870549ea12f82dc908f7f2df10e34bd81758b8526f",
+      "bytes": 28172,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.f753d14554eb",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.f753d14554eb.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5930143/pexels-photo-5930143.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/",
+      "title": "Photo by Christopher Beck on Pexels",
+      "sha256": "af5435d030242e9b98cc3aef5277a15a190ac5f4846f65f237b4a18d62a02025",
+      "bytes": 79736,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r08.af5435d03024",
+      "round": 8,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r08.af5435d03024.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "高山湖泊与水面反射实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32481616/pexels-photo-32481616.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/tranquil-alpine-lake-with-majestic-mountains-32481616/",
+      "title": "Photo by VISHNEVA on Pexels",
+      "sha256": "149daf39fcc3d71896c0787a0619a190a81acbb4b4fbf9c943026fb1b8eeb68d",
+      "bytes": 81618,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r08.149daf39fcc3",
+      "round": 8,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r08.149daf39fcc3.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "高山湖泊与水面反射实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/35259426/pexels-photo-35259426.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/lac-alpin-pittoresque-avec-vue-majestueuse-sur-les-montagnes-35259426/",
+      "title": "Photo de Mauro Morandini sur Pexels",
+      "sha256": "6cc4b3bbcdee256a7dec51dead7dae1b1a4527e33b8b68d0ec9ba0193aa23c84",
+      "bytes": 193806,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r08.6cc4b3bbcdee",
+      "round": 8,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r08.6cc4b3bbcdee.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "高山湖泊与水面反射实拍"
+    },
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_and_waves_windy_day_Jersey_shore_Atlantic_Ocean.JPG",
+      "title": "File:Rocks and waves windy day Jersey shore Atlantic Ocean.JPG - Wikimedia Commons",
+      "sha256": "ac4e4abcbaf741b158d27b6181080b087172fa23dfe2e5b223f095a2e3c8ef84",
+      "bytes": 148969,
+      "mime": "image/jpeg",
+      "width": 977,
+      "height": 852,
+      "id": "learn.r09.ac4e4abcbaf7",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.ac4e4abcbaf7.jpg",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/39525901/pexels-photo-39525901.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+      "title": "Photo by Elchino portrait on Pexels",
+      "sha256": "f4e32f1238be63e338d75356ef2d707ea5cca138c47505cb29cc3f54a058a223",
+      "bytes": 170312,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r09.f4e32f1238be",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.f4e32f1238be.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/33561680/pexels-photo-33561680.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/33561680/",
+      "title": "Pexels Phil Evenden图片",
+      "sha256": "17ca6bb42cb4f1b746a24a108a78f15f414e9a8df6af4e7a8e37aa0a7135e212",
+      "bytes": 86334,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r09.17ca6bb42cb4",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.17ca6bb42cb4.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/34548031/pexels-photo-34548031.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/scenic-beach-view-in-casablanca-morocco-34548031/",
+      "title": "Photo by chabraoui el hachemi on Pexels",
+      "sha256": "4c080a1da58ae6669346dd5b663bb91a222a8a01696c80d7c15b88617cb6760b",
+      "bytes": 160938,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r09.4c080a1da58a",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.4c080a1da58a.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/17859760/pexels-photo-17859760.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+      "title": "Photo by V Bawa on Pexels",
+      "sha256": "fd06c878ce46355a0baf3c560b740b01cd4de36ec7ee7dd196824112634c8fc8",
+      "bytes": 174700,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r09.fd06c878ce46",
+      "round": 9,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r09.fd06c878ce46.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "海岸岩石与海浪实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/38042886/pexels-photo-38042886.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/serene-forest-scene-with-sunlit-trees-38042886/",
+      "title": "Photo by Vizi Kata on Pexels",
+      "sha256": "5b0dd12af418089f24034cb3cff7808f0030a160cf7bbd92cb6d0b8193b8052a",
+      "bytes": 64148,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r10.5b0dd12af418",
+      "round": 10,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r10.5b0dd12af418.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "树林与自然光影实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/4261763/pexels-photo-4261763.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/green-plants-with-small-long-leaves-4261763/",
+      "title": "Photo by Diana ✨ on Pexels",
+      "sha256": "20ded35e203e5ad267884dce986b6086d9fd7d3aadea6f25034cfa454b67ecdf",
+      "bytes": 154032,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r10.20ded35e203e",
+      "round": 10,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r10.20ded35e203e.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "树林与自然光影实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/36004349/pexels-photo-36004349.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/serene-forest-landscape-in-dappled-sunlight-36004349/",
+      "title": "Photo by Every Stuff on Pexels",
+      "sha256": "1a6326953bf2be525e992461b579b519ace4350fa0985b1ac7fc67d989477e9d",
+      "bytes": 145794,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r10.1a6326953bf2",
+      "round": 10,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r10.1a6326953bf2.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "树林与自然光影实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/40595499/pexels-photo-40595499.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/autumn-leaves-in-a-natural-forest-setting-40595499/",
+      "title": "Photo by neilstha firman on Pexels",
+      "sha256": "5cbf8dbb8c7179514d79ad1a692963545445c9816afd27948d8993e3fb8ddb31",
+      "bytes": 83168,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r10.5cbf8dbb8c71",
+      "round": 10,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r10.5cbf8dbb8c71.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "树林与自然光影实拍"
+    },
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Trees_and_sunshine.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trees_and_sunshine.JPG#1",
+      "title": "File:Trees and sunshine.JPG - Wikimedia Commons - File:Trees and sunshine.JPG",
+      "sha256": "12d831e2492fc69c9195f925470f1d0da7d551f7286547047bf7229c3a8766e1",
+      "bytes": 1336617,
+      "mime": "image/jpeg",
+      "width": 2048,
+      "height": 1536,
+      "id": "learn.r10.12d831e2492f",
+      "round": 10,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r10.12d831e2492f.jpg",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "树林与自然光影实拍"
+    }
+  ],
+  "fits": [],
+  "usage": {
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "15b1725e-8178-4023-a665-c6d868052f03",
+        "model": "deepseek-flash",
+        "elapsedMs": 16040,
+        "prompt_tokens": 7319,
+        "completion_tokens": 1137,
+        "total_tokens": 8456,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "15a291b0-e300-4cd2-a3b6-5167b1c7c94e",
+        "model": "deepseek-flash",
+        "elapsedMs": 13444,
+        "prompt_tokens": 9124,
+        "completion_tokens": 1195,
+        "total_tokens": 10319,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "fccfcd0b-774f-4610-8bc7-e3984ca9437f",
+        "model": "deepseek-flash",
+        "elapsedMs": 15486,
+        "prompt_tokens": 8654,
+        "completion_tokens": 722,
+        "total_tokens": 9376,
+        "server_tool_use": {
+          "tool_search": 1,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "71b56f39-d669-481d-94d6-2b8fbda6d233",
+        "model": "deepseek-flash",
+        "elapsedMs": 13466,
+        "prompt_tokens": 10849,
+        "completion_tokens": 1071,
+        "total_tokens": 11920,
+        "server_tool_use": {
+          "tool_search": 5,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "120cd380-3167-40fe-acae-aa70d97cec69",
+        "model": "deepseek-flash",
+        "elapsedMs": 11656,
+        "prompt_tokens": 10439,
+        "completion_tokens": 779,
+        "total_tokens": 11218,
+        "server_tool_use": {
+          "tool_search": 7,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "794b30ff-e1b4-4cf6-bfbd-3006683e9d9c",
+        "model": "deepseek-flash",
+        "elapsedMs": 15654,
+        "prompt_tokens": 10044,
+        "completion_tokens": 1577,
+        "total_tokens": 11621,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "8dfe6cf4-d15a-44ca-be72-360ee6c814d5",
+        "model": "deepseek-flash",
+        "elapsedMs": 16299,
+        "prompt_tokens": 11096,
+        "completion_tokens": 1625,
+        "total_tokens": 12721,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "aa43c0c9-73bd-46b0-81c7-1bc9247a8f4a",
+        "model": "deepseek-flash",
+        "elapsedMs": 12015,
+        "prompt_tokens": 9466,
+        "completion_tokens": 925,
+        "total_tokens": 10391,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "9f8a9d59-5629-41a8-bf7d-4b18b3a24374",
+        "model": "deepseek-flash",
+        "elapsedMs": 16582,
+        "prompt_tokens": 11185,
+        "completion_tokens": 1750,
+        "total_tokens": 12935,
+        "server_tool_use": {
+          "tool_search": 5,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "7c2c4f14-5214-4323-8160-0cc47be34f60",
+        "model": "deepseek-flash",
+        "elapsedMs": 14167,
+        "prompt_tokens": 11609,
+        "completion_tokens": 1384,
+        "total_tokens": 12993,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "f9bbff58-62e5-417c-9023-845f19fa89c8",
+        "model": "deepseek-flash",
+        "elapsedMs": 17020,
+        "prompt_tokens": 10879,
+        "completion_tokens": 1867,
+        "total_tokens": 12746,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ],
+    "total_tokens": 124696
+  },
+  "modelWeightsUpdated": false,
+  "summary": "运行时参考采集与高斯函数拟合；并非语言模型权重训练。"
+}

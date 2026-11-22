@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f7f4">
+  <title>CRF 图形计算编辑器 · 二维代码生图</title>
+  <meta name="description" content="由模型编写二维图像程序，经 CRF 图形计算编辑器渲染、修改与导出。">
+  <link rel="stylesheet" href="canvas-editor07.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">C</span><span><strong>CRF 图形计算编辑器</strong><small>二维原生生成管线 <b>0.7</b></small></span></a>
+    <span class="pipeline-label">视觉意图 <i>→</i> 图像程序 <i>→</i> 像素结果</span>
+    <a class="button quiet" href="./">返回全部案例</a>
+    <button class="button" id="importButton">导入程序</button>
+    <button class="button primary" id="exportPNGButton" disabled>导出 PNG</button>
+  </header>
+  <div class="workspace">
+    <aside class="gallery-panel" aria-label="二维生成案例">
+      <div class="panel-title"><span class="eyebrow">DIRECT / 2D</span><h2>程序画廊 <span id="caseCount">0</span></h2><p>每幅画面都有独立、可重算的图像程序。</p></div>
+      <nav class="gallery" id="gallery" aria-label="选择二维场景"><p class="gallery-note">正在读取场景…</p></nav>
+      <div class="gallery-footer"><span class="status-dot"></span> 原有街景与案例持续保留</div>
+    </aside>
+    <main class="canvas-panel">
+      <div class="canvas-heading"><div><span class="eyebrow" id="sceneKind">二维图像程序</span><h1 id="sceneTitle">准备绘制</h1></div><div class="canvas-actions"><button class="button quiet" id="undoButton" disabled>撤销</button><button class="button" id="renderButton" disabled>重新渲染</button></div></div>
+      <div class="canvas-stage" id="canvasStage">
+        <canvas id="artCanvas" width="1200" height="800" aria-label="CRF 二维程序实际渲染结果"></canvas>
+        <div class="empty-state" id="emptyState"><span>✦</span><h2>从代码到画面</h2><p>打开一个场景，或描述想生成的画面。</p></div>
+        <div class="render-overlay" id="renderOverlay" hidden><span class="spinner"></span><strong id="renderMessage">正在绘制像素</strong><button class="button" id="cancelButton">停止</button></div>
+      </div>
+      <div class="render-status" aria-live="polite"><span id="statusText">准备就绪</span><span id="dimensions">1200 × 800</span><span id="renderTime">—</span></div>
+      <div class="controls"><label>随机种子<input id="seedInput" type="number" min="0" max="2147483647" step="1" value="1139"></label><button class="button" id="variationButton" disabled>生成同场景变体</button><span>路径 · 色彩场 · 笔触 · 像素合成</span><button class="text-button" id="exportJSONButton" disabled>保存图像程序</button></div>
+      <div class="error-banner" id="errorBanner" role="alert" hidden></div>
+    </main>
+    <aside class="author-panel" aria-label="模型协作与图像程序">
+      <div class="author-heading"><span class="eyebrow">MODEL × CRF</span><h2>用语言编排像素</h2><p>模型编写图像程序，编辑器执行并呈现真实结果。</p></div>
+      <form id="generateForm" class="generate-form">
+        <label for="promptInput">画面描述</label>
+        <textarea id="promptInput" rows="5" placeholder="例如：晨雾笼罩山间湖泊，浅金色天空，水面细密涟漪，近处有松树与芦苇…"></textarea>
+        <div class="generation-options"><select id="generationMode" aria-label="生成或修改"><option value="generate">生成新图片</option><option value="edit">修改当前图片</option></select><label><input type="checkbox" id="searchEnabled" checked>搜索参考</label></div>
+        <button class="button primary full" id="generateButton" type="submit">通过编辑器生成</button>
+        <p class="service-note" id="serviceNote">调用已配置的 DeepSeek 服务。</p>
+      </form>
+      <div class="run-message" id="modelMessage" hidden></div>
+      <details class="source-details" id="sourceDetails"><summary>图像程序 <span id="sourceSize">—</span></summary><p>修改绘制函数后，重新计算当前画面。</p><textarea id="sourceInput" spellcheck="false" aria-label="二维 Canvas 图像源程序"></textarea><button class="button full" id="applySourceButton" disabled>应用代码并渲染</button></details>
+      <details class="evidence-details"><summary>本次执行记录</summary><pre id="evidenceText">尚无记录</pre></details>
+      <p class="quality-note">以实际画面检验质量。能运行的程序，不等于已经达到照片真实感。</p>
+    </aside>
+  </div>
+</div>
+<input type="file" id="programFile" accept="application/json,.json" hidden>
+<script src="crf-canvas07.js"></script><script src="canvas-editor07.js"></script>
+</body>
+</html>

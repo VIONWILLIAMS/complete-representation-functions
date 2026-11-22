@@ -1,0 +1,33 @@
+{
+  "schema": "crf.boundary_improvement.v0.9",
+  "evaluationRole": "development fixtures; not untouched final generalization test",
+  "fixedSSIMThreshold": 0.95,
+  "changes": [
+    {
+      "id": "full_variance_texture",
+      "observedSSIM": {
+        "bright": 0.9472831108313148,
+        "dark": 0.9472764264449723,
+        "joint": 0.9573893497803676,
+        "shadow": 0.9477521151495313
+      },
+      "jointPass": false,
+      "reason": "Full independent microtexture variance increases expected error when phase is unobserved."
+    },
+    {
+      "id": "confidence_shrunk_texture",
+      "hypothesis": "Shrink unpredictable microtexture toward the known-context conditional mean using donor confidence; keep seam and visible texture unchanged.",
+      "confidenceRule": "1/(1+known_donor_span/96); multiply inferred texture amplitude only",
+      "thresholdChanged": false,
+      "groundTruthUsedByCompleter": false,
+      "observedSSIM": {
+        "bright": 0.9567674482948213,
+        "dark": 0.9573409730140939,
+        "joint": 0.9652575829497401,
+        "shadow": 0.9578376385937318
+      },
+      "jointPass": true
+    }
+  ],
+  "naturalHiddenTruthAvailable": false
+}

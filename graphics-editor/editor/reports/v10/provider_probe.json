@@ -1,0 +1,25 @@
+{
+  "schema": "crf.provider_probe.v0.10",
+  "at": "2026-11-21T22:15:45.106Z",
+  "httpStatus": 200,
+  "ok": true,
+  "model": "deepseek-flash",
+  "requestId": "1c5601ae-5249-454a-9438-528f00d08b6d",
+  "elapsedMs": 7854,
+  "usage": {
+    "prompt_tokens": 80,
+    "completion_tokens": 95,
+    "total_tokens": 175,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 76
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 80
+  },
+  "reasoningObserved": true,
+  "finishReason": "stop",
+  "content": "{\"ready\":true,\"task\":\"CRF 0.10 frozen-model Gaussian compiler\"}"
+}

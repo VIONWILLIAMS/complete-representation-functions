@@ -1,0 +1,63 @@
+'use strict';
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const crypto = require('node:crypto');
+const F = require('../web/crf-fruit.js');
+const C = require('../web/crf-core.js');
+const hash = a => crypto.createHash('sha256').update(Buffer.from(a.buffer,a.byteOffset,a.byteLength)).digest('hex');
+const data = F.createStudioData({width:400,height:300});
+const initial = C.applyOperations(C.initialState(data),data.initialOps);
+const hierarchy = {a:[1,0,0,1],b:[0,0],depthShift:0,hidden:false};
+test('fruit case is wholly procedural and source data contains only necessary numeric backdrop fields',()=>{
+  assert.equal(data.schema,'crf.scene.v0.5');
+  assert.equal(data.source.type,'procedural_code');
+  assert.equal(data.metadata.observedPhoto,false);
+  assert.equal(data.backgroundRgbBase64,undefined);
+  assert.equal(C.validateState(initial).valid,true);
+  assert.deepEqual(initial.objects.filter(o=>o.prototype).map(o=>o.prototype),['apple','pear']);
+});
+test('fruit surfaces are deterministic, volumetric and seed-editable',()=>{
+  const apple=initial.objects.find(o=>o.id==='apple.main');
+  const a=F.prepareLayer(apple,hierarchy,initial,{width:400,height:300,step:2});
+  const b=F.prepareLayer(apple,hierarchy,initial,{width:400,height:300,step:2});
+  assert.equal(hash(a.values),hash(b.values));
+  assert.ok(a.count>2000);
+  assert.ok(a.values.every(Number.isFinite));
+  assert.ok(Math.max(...a.depths)-Math.min(...a.depths)>45);
+  const seeded=C.applyOperations(initial,[{op:'set',id:'apple.main',path:'generator.seed',value:29}]);
+  const c=F.prepareLayer(seeded.objects.find(o=>o.id==='apple.main'),hierarchy,seeded,{width:400,height:300,step:2});
+  assert.notEqual(hash(a.values),hash(c.values));
+  assert.equal(hash(a.depths),hash(c.depths));
+});
+test('camera movement changes projected geometry and roughness changes shading only',()=>{
+  const apple=initial.objects.find(o=>o.id==='apple.main');
+  const a=F.prepareLayer(apple,hierarchy,initial,{step:2});
+  const rotated=C.applyOperations(initial,[{op:'setCamera',values:{yaw:15,pitch:7}}]);
+  const b=F.prepareLayer(apple,hierarchy,rotated,{step:2});
+  assert.notEqual(hash(a.depths),hash(b.depths));
+  const rough=C.applyOperations(initial,[{op:'set',id:'apple.main',path:'generator.roughness',value:.85}]);
+  const c=F.prepareLayer(rough.objects.find(o=>o.id==='apple.main'),hierarchy,rough,{step:2});
+  assert.equal(hash(a.depths),hash(c.depths));
+  assert.notEqual(hash(a.values),hash(c.values));
+});
+test('apple to pear replacement preserves transforms while rebuilding a distinct volume',()=>{
+  const edited=C.applyOperations(initial,[{op:'set',id:'apple.main',path:'transform.x',value:14},{op:'set',id:'apple.main',path:'generator.shape',value:.6}]);
+  const replaced=C.applyOperations(edited,[{op:'replace',id:'apple.main',prototype:'pear'}]);
+  const a=edited.objects.find(o=>o.id==='apple.main'),b=replaced.objects.find(o=>o.id==='apple.main');
+  assert.deepEqual(a.transform,b.transform);assert.deepEqual(a.generator,b.generator);
+  assert.equal(b.prototype,'pear');assert.equal(a.prototype,'apple');
+  const ga=F._internals.geometry(a,2),gb=F._internals.geometry(b,2);
+  assert.notEqual(hash(ga.values),hash(gb.values));
+});
+test('contact shadows are multiplicative, do not claim object IDs, and render repeatably',()=>{
+  const apple=initial.objects.find(o=>o.id==='apple.main');
+  const a=F.prepareLayer(apple,hierarchy,initial,{step:2});
+  assert.equal(a.underlay.blendMode,'multiply');
+  for(let i=2;i<a.underlay.values.length;i+=6) assert.ok(a.underlay.values[i]>=0&&a.underlay.values[i]<=255);
+  const first=C.CPUrender(data,initial,{quality:'interactive',lod:2,time:null});
+  const second=C.CPUrender(data,initial,{quality:'interactive',lod:2,time:null});
+  assert.equal(hash(first.rgba),hash(second.rgba));
+  const below=260*400+138;
+  assert.equal(first.ids[below],0,'floor under shadow remains backdrop-owned');
+  assert.ok(first.stats.proceduralSampleCount>0);
+});

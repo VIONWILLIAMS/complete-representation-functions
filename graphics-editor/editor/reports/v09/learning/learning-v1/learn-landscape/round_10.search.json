@@ -1,0 +1,276 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 10,
+  "query": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "checkpoint": {
+    "sessionId": "crf09_b59f3a06-8a8c-46de-ba82-44d05621b14e",
+    "round": 10,
+    "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+    "subtopic": "难例补齐：前几轮缺失的形态、材质、背景与失败来源",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:58:57.990Z",
+    "runId": "crf07_fc80ec50-e073-4836-8f21-31ca38e3f33a",
+    "queries": [
+      "Wikimedia Commons file coastline with sea stacks and coniferous forest Oregon coast",
+      "Wikimedia Commons file alpine lake reflection rocky shore conifers fog",
+      "Wikimedia Commons file close-up rock texture moss conifer forest floor",
+      "site:pexels.com photo mountain lake reflection pine forest",
+      "site:pexels.com photo rocky coastline waves coniferous trees",
+      "site:commons.wikimedia.org file coniferous forest fog mountain lake"
+    ],
+    "requestIds": [
+      "a3ba88ca-3566-435d-a36d-5f64f6757f25"
+    ],
+    "sourceCount": 6,
+    "newSourceCount": 3,
+    "candidateCount": 2,
+    "downloadedImageCount": 1,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_fb82f2166f9f42458a8bee0eb4c499e6",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons file coastline with sea stacks and coniferous forest Oregon coast",
+            "Wikimedia Commons file alpine lake reflection rocky shore conifers fog",
+            "Wikimedia Commons file close-up rock texture moss conifer forest floor",
+            "site:pexels.com photo mountain lake reflection pine forest",
+            "site:pexels.com photo rocky coastline waves coniferous trees",
+            "site:commons.wikimedia.org file coniferous forest fog mountain lake"
+          ]
+        },
+        "sourceUrls": [
+          "https://m.wikidata.org/wiki/Q5138204",
+          "https://commons.wikimedia.org/wiki/Category:Opabin_Lake?uselang=de",
+          "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+          "https://www.pexels.com/photo/tree-by-seashore-18844843/",
+          "https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/",
+          "https://www.pexels.com/photo/cloudy-sky-over-rocky-coast-11429206/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://m.wikidata.org/wiki/Q5138204",
+        "title": "Coast Range",
+        "snippet": "Coast Range Temperate coniferous forest ecoregion in the United States 1-Coast Range ... Oregon coastline looking south from Ecola State Park.jpg 2,882 × 1,200; 1.65 MB 1 reference imported from Wikimedia project",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Opabin_Lake?uselang=de",
+        "title": "Category:Opabin Lake – Wikimedia Commons",
+        "snippet": "Opabin Lake Reflections.jpg 5.312 × 3.361; 10,74 MB - Opabin Plateau Alpine Tarn.jpg 5.472 × 3.648; 15...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+        "title": "Photo by zhiming long on Pexels",
+        "snippet": "Dimensions 3500x2333 Colors Date Jul 27 ... Taken At Sep 11, 2023 Software Adobe Photoshop 22.4 (Macintosh) Description # Peaceful mountain scene with lake reflection and pine forests under cloudy skies. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/tree-by-seashore-18844843/",
+        "title": "Photo by christine roy on Pexels",
+        "snippet": "Oct 22, 2023 ... Oct 21, 2023 Software Adobe Photoshop Lightroom Classic 13.0 (Windows) Description # Stunning view of a rocky coast with waves crashing, framed by lush trees and a vibrant blue sky. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/",
+        "title": "Photo by Dominique BOULAY on Pexels",
+        "snippet": "Choose your language: Add filters, effects Make presentations Create photo collages Add custom frames AB, Canada Description # Stunning view of pine trees and mountains reflecting in a tranquil lake in Canada. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/cloudy-sky-over-rocky-coast-11429206/",
+        "title": "Photo by Nguyễn Vũ on Pexels",
+        "snippet": "2022 Software Adobe Photoshop Lightroom Classic 10.4 (Windows) Ninh Thuan Province, Vietnam Description # Explore the rocky coastline of Ninh Thuan, Vietnam with waves crashing against the shore. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮实际联网搜索后，可确证为**独立摄影作品详情页**的结果以 Pexels 的 3 个页面为主；Wikimedia Commons 返回的多为分类页、搜索列表页或 Wikidata 条目，不符合“具体照片详情页”的要求，因此不纳入候选。以下来源均未出现在你的避免重复清单中，但其中两个 Pexels 页面在搜索前轮建议中曾以“已收集来源”身份被提及，需要标注并排除或降级使用。\n\n## 可用的独立摄影实例（Pexels 详情页）\n\n### 1. 山湖 + 针叶林 + 湖面反射\n- 来源页：https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/\n- 页面可见信息：标题描述为“Peaceful mountain scene with lake reflection and pine forests under cloudy skies”；尺寸 3500×2333；相机 Canon EOS 5D Mark III；焦距 70.0mm；光圈 ƒ/4.0；ISO 100；快门 1/500 sec；拍摄日期 2023-09-11；作者 zhiming long 。\n- 许可：页面返回内容未显示具体许可条款，**待核验**（Pexels 通常为 Pexels License，但需以页面实际显示为准）。\n- 可转化建议（基于文字与 EXIF，非图像观察）：\n  - **湖面反射**：1/500 s 短曝光 + f/4，提示水面反射以**波纹调制**为主而非长曝镜面；可将反射建模为低频山体轮廓 + 中频方向性噪声扰动，高光沿波纹局部增强。\n  - **针叶林树冠**：70mm 中焦压缩前后景，树冠在湖岸形成**连续暗色边缘带**，适合用中频锯齿状遮罩分离林地与水面。\n  - **阴天光照**：cloudy skies + ISO 100，暗示高散射、低对比光照；阴影边界偏软，适合用大半径低频 AO 模拟环境光遮蔽。\n- **注意**：该 URL 已出现在你提供的“避免重复”清单中（第 20 条），因此**不应作为本轮新实例**。此处仅记录其页面信息以备核验，实际选取时应排除。\n\n### 2. 海岸岩壁 + 树木框景 + 波浪\n- 来源页：https://www.pexels.com/photo/tree-by-seashore-18844843/\n- 页面可见信息：描述为“Stunning view of a rocky coast with waves crashing, framed by lush trees and a vibrant blue sky”；尺寸 5504×8256（竖幅）；相机 Nikon D850；焦距 24.0mm；光圈 ƒ/10.0；ISO 100；快门 1/400 sec；拍摄日期 2023-10-21；作者 christine roy 。\n- 许可：页面返回内容未显示许可条款，**待核验**。\n- 可转化建议（基于文字与 EXIF，非图像观察）：\n  - **海岸硬边结构**：f/10 小光圈 + 24mm 广角，提示前景到远景**大景深**，岩壁边缘锐利，适合用高频边缘函数提取岩石轮廓。\n  - **波浪形态**：1/400 s 凝固碎浪，白色浪花呈**离散斑点/短脊线**，可用稀疏噪声 + 局部高值阈值模拟，而非连续泡沫纹理。\n  - **树木框景**：描述中的“framed by lush trees”暗示前景有枝叶遮挡，形成**天然暗角/框架遮罩**，可用于分层时遮挡海岸与天空交界处。\n- **注意**：该 URL 同样出现在你提供的避免重复清单中（第 27 条），**不应作为本轮新实例**。\n\n### 3. 针叶林与湖（加拿大，描述明确但技术信息有限）\n- 来源页：https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/\n- 页面可见信息：描述为“Stunning view of pine trees and mountains reflecting in a tranquil lake in Canada”；作者 Dominique BOULAY；日期 2022-08-27 。页面返回内容**未给出相机参数、尺寸或许可条款**，均**待核验**。\n- 可转化建议（仅基于标题描述，不涉及像素观察）：\n  - **“tranquil lake”** 暗示水面平静，反射以**竖向拉伸 + 轻微模糊**为主，适合用低频镜像 + 小幅水平抖动模拟微风扰动。\n  - **pine trees near a lake** 提供“针叶林—湖岸—山体”三层空间关系，可作为**分层遮罩模板**：近岸树冠高频、湖面中频反射、远山低频轮廓。\n- 局限：无 EXIF，无法推断快门/光圈对水面纹理的影响；无尺寸与许可信息，需后续核验页面全文。\n\n## 本轮未满足的缺口与失败来源\n\n**未找到合格来源的缺口：**\n- **针叶树冠在地面/岩石上的清晰硬边投影**：搜索结果中无对应具体照片页。Pexels 返回项多为远景山湖或海岸，缺少“树冠投影特写”。\n- **海岸针叶林 + 岩壁近景连接结构**：Pexels 18844843 虽描述“rocky coast + trees”，但属于竖幅广角框景，不是近景材质连接；且已被排除。\n- **Commons 近景苔藓/岩石/树皮的新实例**：Commons 搜索返回大量苔藓植物学照片（如 *Fontinalis*、*Bazzania* 等），但多数为**物种鉴定照**，构图以标本特写为主，不适合作为“山湖/海岸/森林”场景的材质参考；且返回的是搜索列表页而非具体文件详情页，无法确证许可与作者 。\n\n**失败来源类型：**\n- **Wikidata 条目**（Q5138204）：仅包含一张 Commons 图片的缩略信息，不是照片详情页 。\n- **Commons 分类页**（Category:Opabin Lake）：列出文件名与尺寸，但不是具体照片页，无作者/许可详情 。\n- **Commons 搜索列表页**：返回大量文件条目片段，但无法确认每个文件的独立详情页 URL 与许可，不满足“可点击来源页”要求 。\n- **Alamy 库存页**：虽描述匹配（山溪入湖、雾、针叶树反射），但属于商业图库，且非 CC 许可，不符合优先来源要求 。\n\n## 对 CRF 0.8 第 10/10 轮的落地建议（标注依据强度）\n\n1. **短曝光湖面反射模型**（依据：Pexels 33178316 的 EXIF 1/500 s、f/4、ISO 100）：将反射拆为“低频镜像山体 + 中频波纹法线扰动 + 局部高光脊线”，反射强度随视角 Fresnel 衰减，**不建模为镜面**。依据强度：中（EXIF 可信，但无图像验证）。\n2. **广角海岸硬边与碎浪**（依据：Pexels 18844843 的 24mm、f/10、1/400 s）：岩壁边缘用高频梯度提取，浪花用稀疏阈值噪声，景深大所以前后景边缘均保持锐利。依据强度：中（EXIF 可信，但该来源应排除，仅方法可参考）。\n3. **针叶林—湖岸分层遮罩**（依据：Pexels 13406737 标题描述）：近岸树冠高频、湖面中频反射、远山低频，三层分离。依据强度：低（仅标题文字，无技术参数）。\n4. **不据描述补细节**：未观察任何图像字节，不描述具体树冠形状、岩石颜色、雾浓度。所有颜色与纹理建议仅为**可测试的图形函数假设**，需后续视觉模型验证。\n\n## 来源清单（可点击）\n\n1. Pexels — zhiming long，山湖反射与松林，2023-09-11，Canon 5D Mark III，70mm，f/4，1/500s，ISO 100（**已在你避免清单中，仅备核验**）：https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/ \n2. Pexels — christine roy，岩石海岸与树木框景，2023-10-21，Nikon D850，24mm，f/10，1/400s，ISO 100（**已在你避免清单中，仅备核验**）：https://www.pexels.com/photo/tree-by-seashore-18844843/ \n3. Pexels — Dominique BOULAY，加拿大松树与湖，2022-08-27（技术信息与许可待核验）：https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/ \n\n**结论**：本轮实际可用的**新独立实例仅 1 个**（Pexels 13406737），且技术信息不足；另 2 个虽为独立照片页但已在你避免清单中。Wikimedia Commons 未能返回符合“具体照片详情页”要求的新候选。若需真正补齐“难例”缺口（树冠硬边投影、海岸针叶林近景连接），当前搜索工具返回的 Commons 结果以植物学特写和列表页为主，建议下一轮改用更精确的 Commons 搜索词（如具体拍摄地 + “canopy shadow” 或 “forest floor light”）或接受 Pexels 的近景替代。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://m.wikidata.org/wiki/Q5138204",
+      "title": "Coast Range",
+      "snippet": "Coast Range Temperate coniferous forest ecoregion in the United States 1-Coast Range ... Oregon coastline looking south from Ecola State Park.jpg 2,882 × 1,200; 1.65 MB 1 reference imported from Wikimedia project",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Opabin_Lake?uselang=de",
+      "title": "Category:Opabin Lake – Wikimedia Commons",
+      "snippet": "Opabin Lake Reflections.jpg 5.312 × 3.361; 10,74 MB - Opabin Plateau Alpine Tarn.jpg 5.472 × 3.648; 15...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+      "title": "Photo by zhiming long on Pexels",
+      "snippet": "Dimensions 3500x2333 Colors Date Jul 27 ... Taken At Sep 11, 2023 Software Adobe Photoshop 22.4 (Macintosh) Description # Peaceful mountain scene with lake reflection and pine forests under cloudy skies. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/tree-by-seashore-18844843/",
+      "title": "Photo by christine roy on Pexels",
+      "snippet": "Oct 22, 2023 ... Oct 21, 2023 Software Adobe Photoshop Lightroom Classic 13.0 (Windows) Description # Stunning view of a rocky coast with waves crashing, framed by lush trees and a vibrant blue sky. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/",
+      "title": "Photo by Dominique BOULAY on Pexels",
+      "snippet": "Choose your language: Add filters, effects Make presentations Create photo collages Add custom frames AB, Canada Description # Stunning view of pine trees and mountains reflecting in a tranquil lake in Canada. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/cloudy-sky-over-rocky-coast-11429206/",
+      "title": "Photo by Nguyễn Vũ on Pexels",
+      "snippet": "2022 Software Adobe Photoshop Lightroom Classic 10.4 (Windows) Ninh Thuan Province, Vietnam Description # Explore the rocky coastline of Ninh Thuan, Vietnam with waves crashing against the shore. ## More like this",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Opabin_Lake?uselang=de",
+      "title": "Category:Opabin Lake – Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/cloudy-sky-over-rocky-coast-11429206/",
+      "title": "Photo by Nguyễn Vũ on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 93192,
+        "sha256": "a1c0470f3b3c0ca3ae4e31c210ca98783e758d5238ce0964a99b367bcb40e5f3"
+      },
+      "imageUrl": "https://images.pexels.com/photos/11429206/pexels-photo-11429206.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/cloudy-sky-over-rocky-coast-11429206/",
+      "title": "Photo by Nguyễn Vũ on Pexels",
+      "sha256": "a1c0470f3b3c0ca3ae4e31c210ca98783e758d5238ce0964a99b367bcb40e5f3",
+      "bytes": 93192,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/11429206/pexels-photo-11429206.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/cloudy-sky-over-rocky-coast-11429206/",
+      "title": "Photo by Nguyễn Vũ on Pexels",
+      "sha256": "a1c0470f3b3c0ca3ae4e31c210ca98783e758d5238ce0964a99b367bcb40e5f3",
+      "bytes": 93192,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Opabin_Lake?uselang=de",
+        "title": "Category:Opabin Lake – Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/cloudy-sky-over-rocky-coast-11429206/",
+        "title": "Photo by Nguyễn Vũ on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/11429206/pexels-photo-11429206.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/11429206/pexels-photo-11429206.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 93192,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "a1c0470f3b3c0ca3ae4e31c210ca98783e758d5238ce0964a99b367bcb40e5f3"
+      }
+    ],
+    "downloadedCount": 1,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮实际联网搜索后，可确证为**独立摄影作品详情页**的结果以 Pexels 的 3 个页面为主；Wikimedia Commons 返回的多为分类页、搜索列表页或 Wikidata 条目，不符合“具体照片详情页”的要求，因此不纳入候选。以下来源均未出现在你的避免重复清单中，但其中两个 Pexels 页面在搜索前轮建议中曾以“已收集来源”身份被提及，需要标注并排除或降级使用。\n\n## 可用的独立摄影实例（Pexels 详情页）\n\n### 1. 山湖 + 针叶林 + 湖面反射\n- 来源页：https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/\n- 页面可见信息：标题描述为“Peaceful mountain scene with lake reflection and pine forests under cloudy skies”；尺寸 3500×2333；相机 Canon EOS 5D Mark III；焦距 70.0mm；光圈 ƒ/4.0；ISO 100；快门 1/500 sec；拍摄日期 2023-09-11；作者 zhiming long 。\n- 许可：页面返回内容未显示具体许可条款，**待核验**（Pexels 通常为 Pexels License，但需以页面实际显示为准）。\n- 可转化建议（基于文字与 EXIF，非图像观察）：\n  - **湖面反射**：1/500 s 短曝光 + f/4，提示水面反射以**波纹调制**为主而非长曝镜面；可将反射建模为低频山体轮廓 + 中频方向性噪声扰动，高光沿波纹局部增强。\n  - **针叶林树冠**：70mm 中焦压缩前后景，树冠在湖岸形成**连续暗色边缘带**，适合用中频锯齿状遮罩分离林地与水面。\n  - **阴天光照**：cloudy skies + ISO 100，暗示高散射、低对比光照；阴影边界偏软，适合用大半径低频 AO 模拟环境光遮蔽。\n- **注意**：该 URL 已出现在你提供的“避免重复”清单中（第 20 条），因此**不应作为本轮新实例**。此处仅记录其页面信息以备核验，实际选取时应排除。\n\n### 2. 海岸岩壁 + 树木框景 + 波浪\n- 来源页：https://www.pexels.com/photo/tree-by-seashore-18844843/\n- 页面可见信息：描述为“Stunning view of a rocky coast with waves crashing, framed by lush trees and a vibrant blue sky”；尺寸 5504×8256（竖幅）；相机 Nikon D850；焦距 24.0mm；光圈 ƒ/10.0；ISO 100；快门 1/400 sec；拍摄日期 2023-10-21；作者 christine roy 。\n- 许可：页面返回内容未显示许可条款，**待核验**。\n- 可转化建议（基于文字与 EXIF，非图像观察）：\n  - **海岸硬边结构**：f/10 小光圈 + 24mm 广角，提示前景到远景**大景深**，岩壁边缘锐利，适合用高频边缘函数提取岩石轮廓。\n  - **波浪形态**：1/400 s 凝固碎浪，白色浪花呈**离散斑点/短脊线**，可用稀疏噪声 + 局部高值阈值模拟，而非连续泡沫纹理。\n  - **树木框景**：描述中的“framed by lush trees”暗示前景有枝叶遮挡，形成**天然暗角/框架遮罩**，可用于分层时遮挡海岸与天空交界处。\n- **注意**：该 URL 同样出现在你提供的避免重复清单中（第 27 条），**不应作为本轮新实例**。\n\n### 3. 针叶林与湖（加拿大，描述明确但技术信息有限）\n- 来源页：https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/\n- 页面可见信息：描述为“Stunning view of pine trees and mountains reflecting in a tranquil lake in Canada”；作者 Dominique BOULAY；日期 2022-08-27 。页面返回内容**未给出相机参数、尺寸或许可条款**，均**待核验**。\n- 可转化建议（仅基于标题描述，不涉及像素观察）：\n  - **“tranquil lake”** 暗示水面平静，反射以**竖向拉伸 + 轻微模糊**为主，适合用低频镜像 + 小幅水平抖动模拟微风扰动。\n  - **pine trees near a lake** 提供“针叶林—湖岸—山体”三层空间关系，可作为**分层遮罩模板**：近岸树冠高频、湖面中频反射、远山低频轮廓。\n- 局限：无 EXIF，无法推断快门/光圈对水面纹理的影响；无尺寸与许可信息，需后续核验页面全文。\n\n## 本轮未满足的缺口与失败来源\n\n**未找到合格来源的缺口：**\n- **针叶树冠在地面/岩石上的清晰硬边投影**：搜索结果中无对应具体照片页。Pexels 返回项多为远景山湖或海岸，缺少“树冠投影特写”。\n- **海岸针叶林 + 岩壁近景连接结构**：Pexels 18844843 虽描述“rocky coast + trees”，但属于竖幅广角框景，不是近景材质连接；且已被排除。\n- **Commons 近景苔藓/岩石/树皮的新实例**：Commons 搜索返回大量苔藓植物学照片（如 *Fontinalis*、*Bazzania* 等），但多数为**物种鉴定照**，构图以标本特写为主，不适合作为“山湖/海岸/森林”场景的材质参考；且返回的是搜索列表页而非具体文件详情页，无法确证许可与作者 。\n\n**失败来源类型：**\n- **Wikidata 条目**（Q5138204）：仅包含一张 Commons 图片的缩略信息，不是照片详情页 。\n- **Commons 分类页**（Category:Opabin Lake）：列出文件名与尺寸，但不是具体照片页，无作者/许可详情 。\n- **Commons 搜索列表页**：返回大量文件条目片段，但无法确认每个文件的独立详情页 URL 与许可，不满足“可点击来源页”要求 。\n- **Alamy 库存页**：虽描述匹配（山溪入湖、雾、针叶树反射），但属于商业图库，且非 CC 许可，不符合优先来源要求 。\n\n## 对 CRF 0.8 第 10/10 轮的落地建议（标注依据强度）\n\n1. **短曝光湖面反射模型**（依据：Pexels 33178316 的 EXIF 1/500 s、f/4、ISO 100）：将反射拆为“低频镜像山体 + 中频波纹法线扰动 + 局部高光脊线”，反射强度随视角 Fresnel 衰减，**不建模为镜面**。依据强度：中（EXIF 可信，但无图像验证）。\n2. **广角海岸硬边与碎浪**（依据：Pexels 18844843 的 24mm、f/10、1/400 s）：岩壁边缘用高频梯度提取，浪花用稀疏阈值噪声，景深大所以前后景边缘均保持锐利。依据强度：中（EXIF 可信，但该来源应排除，仅方法可参考）。\n3. **针叶林—湖岸分层遮罩**（依据：Pexels 13406737 标题描述）：近岸树冠高频、湖面中频反射、远山低频，三层分离。依据强度：低（仅标题文字，无技术参数）。\n4. **不据描述补细节**：未观察任何图像字节，不描述具体树冠形状、岩石颜色、雾浓度。所有颜色与纹理建议仅为**可测试的图形函数假设**，需后续视觉模型验证。\n\n## 来源清单（可点击）\n\n1. Pexels — zhiming long，山湖反射与松林，2023-09-11，Canon 5D Mark III，70mm，f/4，1/500s，ISO 100（**已在你避免清单中，仅备核验**）：https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/ \n2. Pexels — christine roy，岩石海岸与树木框景，2023-10-21，Nikon D850，24mm，f/10，1/400s，ISO 100（**已在你避免清单中，仅备核验**）：https://www.pexels.com/photo/tree-by-seashore-18844843/ \n3. Pexels — Dominique BOULAY，加拿大松树与湖，2022-08-27（技术信息与许可待核验）：https://www.pexels.com/photo/green-pine-trees-near-a-lake-13406737/ \n\n**结论**：本轮实际可用的**新独立实例仅 1 个**（Pexels 13406737），且技术信息不足；另 2 个虽为独立照片页但已在你避免清单中。Wikimedia Commons 未能返回符合“具体照片详情页”要求的新候选。若需真正补齐“难例”缺口（树冠硬边投影、海岸针叶林近景连接），当前搜索工具返回的 Commons 结果以植物学特写和列表页为主，建议下一轮改用更精确的 Commons 搜索词（如具体拍摄地 + “canopy shadow” 或 “forest floor light”）或接受 Pexels 的近景替代。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 16213,
+    "completion_tokens": 2228,
+    "total_tokens": 18441,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "a3ba88ca-3566-435d-a36d-5f64f6757f25",
+        "model": "deepseek-flash",
+        "elapsedMs": 15863,
+        "prompt_tokens": 16213,
+        "completion_tokens": 2228,
+        "total_tokens": 18441,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 24653,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 93192,
+        "sha256": "a1c0470f3b3c0ca3ae4e31c210ca98783e758d5238ce0964a99b367bcb40e5f3"
+      },
+      "imageUrl": "https://images.pexels.com/photos/11429206/pexels-photo-11429206.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/cloudy-sky-over-rocky-coast-11429206/",
+      "title": "Photo by Nguyễn Vũ on Pexels",
+      "sha256": "a1c0470f3b3c0ca3ae4e31c210ca98783e758d5238ce0964a99b367bcb40e5f3",
+      "bytes": 93192,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/a1c0470f3b3c0ca3ae4e31c210ca98783e758d5238ce0964a99b367bcb40e5f3.webp"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "crf.gaussian_scene.v0.8",
+  "id": "still_life_cup_fern_orange_960x640",
+  "title": "自然光俯拍咖啡杯与蕨叶橙片",
+  "width": 960,
+  "height": 640,
+  "background": [
+    246,
+    242,
+    234
+  ],
+  "objects": [
+    {
+      "id": "shadow.cup",
+      "label": "杯下柔影",
+      "assetId": "studio.shadow",
+      "x": 46,
+      "y": 420,
+      "scaleX": 1.12,
+      "scaleY": 0.9,
+      "rotation": 0,
+      "opacity": 0.66,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 10,
+      "visible": true
+    },
+    {
+      "id": "shadow.orange",
+      "label": "橙片柔影",
+      "assetId": "studio.shadow",
+      "x": 682,
+      "y": 531,
+      "scaleX": 0.75,
+      "scaleY": 0.75,
+      "rotation": 0,
+      "opacity": 0.58,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 11,
+      "visible": true
+    },
+    {
+      "id": "fern.frond",
+      "label": "蕨类羽状叶",
+      "assetId": "learn.r05.67fd559a57f5.object",
+      "x": 700,
+      "y": 8,
+      "scaleX": 0.88,
+      "scaleY": 0.88,
+      "rotation": 10,
+      "opacity": 1,
+      "hue": 0,
+      "exposure": -0.15,
+      "zIndex": 20,
+      "visible": true
+    },
+    {
+      "id": "cup.white.coffee",
+      "label": "白色咖啡杯",
+      "assetId": "learn.r04.c2f1cb0642a5.object",
+      "x": 90,
+      "y": 230,
+      "scaleX": 1.05,
+      "scaleY": 1.05,
+      "rotation": 0,
+      "opacity": 1,
+      "hue": 0,
+      "exposure": 0.1,
+      "zIndex": 30,
+      "visible": true
+    },
+    {
+      "id": "orange.half",
+      "label": "橙子横切面",
+      "assetId": "learn.r01.c6657129fc5c.object",
+      "x": 733,
+      "y": 437,
+      "scaleX": 0.71,
+      "scaleY": 0.71,
+      "rotation": -8,
+      "opacity": 1,
+      "hue": 0,
+      "exposure": -0.05,
+      "zIndex": 40,
+      "visible": true
+    }
+  ]
+}

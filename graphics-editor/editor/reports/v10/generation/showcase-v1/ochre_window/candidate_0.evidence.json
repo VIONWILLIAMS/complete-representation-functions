@@ -1,0 +1,280 @@
+{
+  "index": 0,
+  "critique": {
+    "ok": true,
+    "version": "0.10.0",
+    "runId": "crf10_83a4abb3-2bd7-45bb-a8db-ade119a05328",
+    "representation": "reference_gaussian",
+    "modelTraining": false,
+    "action": "critique",
+    "message": "候选保持同一参考帧的全幅比例与建筑几何，窗框、双扇窗、栏杆及墙面颗粒均清楚；主要不足是黄色墙面的去饱和幅度过小，视觉上仍接近原图的高饱和橙黄。可通过现有全帧 albedo/exposure 轻微修正，不需要新视角或隐藏几何。",
+    "qualityNotes": [
+      "全幅 512×768，与参考比例一致，画面填满、无黑边，也没有新增或删除建筑元素。",
+      "檐口、窗套、双扇窗、阳台栏杆和墙面颗粒均保留；原拍摄方向与暖侧光一致。",
+      "仅对既有参考帧高斯做全幅色彩与曝光微调，没有声称新视角或恢复未观察几何。"
+    ],
+    "warnings": [
+      "资产为整幅单一对象，albedo tint 会同时影响黄墙、浅色窗套与金属栏杆，无法只选择性去饱和黄色墙面。",
+      "窗内明亮区域接近裁切白，preserveHighlights 仅做中性高亮保护，不能恢复源图中已缺失的窗内细节。"
+    ],
+    "capabilityGaps": [],
+    "issues": [
+      {
+        "code": "semantic",
+        "severity": "minor",
+        "objectIds": [
+          "frame"
+        ],
+        "description": "黄色墙面依然呈强橙黄高饱和；当前约红 0.96、蓝 1.03 的 albedo 乘数与 -0.05 EV 曝光只带来接近视觉阈值的变化，未明显体现“略降低过强黄色饱和感”。可在现有参数上略降红通道、微升蓝通道并保留 preserveHighlights=true，避免破坏窗框中性高亮。"
+      }
+    ],
+    "scores": {
+      "realism": 5,
+      "semantic": 4,
+      "coherence": 5
+    },
+    "attempts": [
+      {
+        "phase": "gaussian10_critique",
+        "status": "responded",
+        "startedAt": "2026-11-21T22:29:32.812Z",
+        "usageKnown": true,
+        "requestId": "403736ef-b6af-4702-92dd-d16791008417",
+        "validation": "passed"
+      }
+    ],
+    "usage": {
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 1924,
+      "completion_tokens": 5122,
+      "total_tokens": 7046,
+      "reasoning_tokens": 4752,
+      "requests": [
+        {
+          "phase": "gaussian10_critique",
+          "requestId": "403736ef-b6af-4702-92dd-d16791008417",
+          "model": "deepseek-flash",
+          "elapsedMs": 37660,
+          "prompt_tokens": 1924,
+          "completion_tokens": 5122,
+          "total_tokens": 7046,
+          "reasoning_tokens": 4752,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    },
+    "quality": {
+      "status": "requires_render_and_independent_verification",
+      "modelScoreIsProof": false
+    },
+    "imageEvidence": true,
+    "sourceFrameSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+    "submittedImageDataURLSha256": "0e2bedfb74397270105e2abd3312d470e8598ba77342d8a583c9a4614ab58f2f"
+  },
+  "verification": {
+    "schema": "crf.verification.v0.10",
+    "checkedAt": "2026-11-21T22:30:11.025Z",
+    "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+    "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+    "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe",
+    "checks": [
+      {
+        "id": "program.finite",
+        "kind": "program",
+        "type": "finite_parameters",
+        "required": true,
+        "status": "passed",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+        }
+      },
+      {
+        "id": "render.frame",
+        "kind": "pixel",
+        "type": "valid_frame",
+        "required": true,
+        "status": "passed",
+        "reason": "Actual finite RGBA8 samples provided.",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+        }
+      },
+      {
+        "id": "render.dimensions",
+        "kind": "pixel",
+        "type": "dimensions",
+        "required": true,
+        "status": "passed",
+        "observed": [
+          512,
+          768
+        ],
+        "evidence": {
+          "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+        }
+      },
+      {
+        "id": "visual.realism",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 5,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+        }
+      },
+      {
+        "id": "visual.semantic",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 4,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+        }
+      },
+      {
+        "id": "visual.coherence",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 5,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+        }
+      },
+      {
+        "id": "visual.major_issues",
+        "kind": "perceptual",
+        "type": "no_major_issues",
+        "required": true,
+        "status": "passed",
+        "observed": 0,
+        "issues": [],
+        "scope": "Model-assisted perception only.",
+        "evidence": {
+          "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+        }
+      },
+      {
+        "id": "visible.frame",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "status": "passed",
+        "observed": 393216,
+        "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+        "evidence": {
+          "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+        }
+      },
+      {
+        "id": "count.frame",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "status": "passed",
+        "observed": 1,
+        "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+        "evidence": {
+          "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+        }
+      }
+    ],
+    "summary": {
+      "passed": 9,
+      "failed": 0,
+      "unknown": 0,
+      "blocked": 0,
+      "total": 9,
+      "required": 9,
+      "requiredPassed": 9
+    },
+    "hardPassed": true,
+    "measurementPassed": true,
+    "perceptualPassed": true,
+    "allRequiredPassed": true,
+    "independentReview": null,
+    "photorealisticAccepted": false,
+    "referenceReconstructionAccepted": false,
+    "unknowns": [],
+    "blocked": [],
+    "diagnosis": [
+      {
+        "module": "semantic_program",
+        "status": "actionable",
+        "severity": "minor",
+        "objectIds": [
+          "frame"
+        ],
+        "reason": "黄色墙面依然呈强橙黄高饱和；当前约红 0.96、蓝 1.03 的 albedo 乘数与 -0.05 EV 曝光只带来接近视觉阈值的变化，未明显体现“略降低过强黄色饱和感”。可在现有参数上略降红通道、微升蓝通道并保留 preserveHighlights=true，避免破坏窗框中性高亮。",
+        "requiredCapability": null,
+        "requiredForGoal": null
+      }
+    ],
+    "scope": "Contract checks on this exact scene/frame; no universal correctness or unseen-world claim."
+  },
+  "render": {
+    "engine": "CRF10Gaussian",
+    "renderer": "direct_affine_anisotropic_gaussians",
+    "colorSpace": "linear_srgb_composite_then_srgb8",
+    "basisColorSpaces": [
+      "linear_srgb"
+    ],
+    "filter": "mip",
+    "pixelFilterVariance": 0.08333333333333333,
+    "gaussians": 32768,
+    "basisEvaluations": 12874354,
+    "visibleObjects": 1,
+    "elapsedMs": 384,
+    "sourceRGBBlit": false,
+    "colourRasterResampling": false,
+    "neuralModelTraining": false,
+    "referenceConditioned": true,
+    "geometry": "image_plane_affine",
+    "physicalRelighting": false,
+    "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+    "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+    "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+    "coverageSemantics": "visible_alpha_contribution",
+    "pixelSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+    "pngSha256": "5d70d444383b46d867ceb6483e04b9ed38926b69928b0a57d8d60ac68b7bd3c1"
+  }
+}

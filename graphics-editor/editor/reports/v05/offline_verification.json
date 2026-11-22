@@ -1,0 +1,25 @@
+{
+  "schema": "crf.offline_smoke.v0.5",
+  "scope": "Generated standalone bundle exercised in managed HTTP preview; embedded data and syntax also checked independently.",
+  "standaloneFile": "CRF_Graphics_0_5_Offline.html",
+  "bytes": 15150458,
+  "sha256": "4b375d65b2d99653b8eb8ad1563c2ca5d27366c9bd318848c85650a0646f6745",
+  "checks": {
+    "fourCaseGlobalsEmbeddedBeforeEditor": true,
+    "fourReferencePngsByteIdentical": true,
+    "externalJsCssDependencies": 0,
+    "executableInlineScriptsCompile": 5,
+    "streetLoadedAndReferenceCheckPassed": true,
+    "fruitLoadedAndAppleReplacedWithPear": true,
+    "orchardLoadedAndReferenceCheckPassed": true,
+    "alpineLoadedAndReferenceCheckPassed": true,
+    "qualityChangeInvalidatesCurrentScore": true,
+    "initialBaselinePreserved": true,
+    "onlineGalleryFourViewsVisuallyInspected": true
+  },
+  "limits": [
+    "file URI launch itself was not tested; tests served the same standalone HTML through HTTP.",
+    "Pre-rendered gallery and pre-encoded video links remain online; editable cases and reference PNGs are embedded."
+  ],
+  "pass": true
+}

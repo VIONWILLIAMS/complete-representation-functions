@@ -1,0 +1,76 @@
+{
+  "schema": "crf.canvas_gallery.v0.7",
+  "title": "二维代码生图 · 10 个场景",
+  "cases": [
+    {
+      "id": "misty_lake",
+      "title": "晨雾湖泊",
+      "seed": 1139,
+      "prompt": "A quiet blue-green mountain lake at first light, direct 2D naturalistic image. Horizon around y=350; pale warm apricot light slightly right of center. Four irregular overlapping blue-gray ridgelines separated by translucent mist bands. Small broken distant pine shore, not a sawtooth row. Lower half water reflects ridge colors with gently wavy, horizontally broken strokes, widening toward the foreground. Preserve a pale quiet corridor under the dawn glow. Delicately branched pine cluster frames far-left; a few detailed reeds and stones on lower-left bank. Organic cloud wisps, fine restrained water texture, broad atmosphere, nuanced photographic colors. No text. Build solely with CRF Canvas 2D drawing functions and procedural pixels.",
+      "program": "misty_lake.json"
+    },
+    {
+      "id": "ocean_coast",
+      "title": "浪花海岸",
+      "seed": 2273,
+      "prompt": "Elevated view of a rugged ocean shore. Pale overcast sky upper quarter, deep teal sea becoming translucent turquoise at a diagonal rocky coastline from lower-left to mid-right. Sea has correlated color fields and thousands of short directional strokes, not random dots. Three sweeping irregular wave fronts: translucent green bodies, broken lace-like white foam with branching threads and small holes. Wet rocks have jagged 2D polygon silhouettes, layered cool/warm mottling and narrow wet highlights. Foam bends around rock contours, without covering the whole water. Hazy nearly horizontal horizon. Foreground curling wave focal point. Rich naturalistic lighting and texture, fine coastal spray. Paint entirely in 2D, no 3D scene or imported images.",
+      "program": "ocean_coast.json"
+    },
+    {
+      "id": "autumn_stream",
+      "title": "秋日林间溪流",
+      "seed": 3391,
+      "prompt": "Narrow stream winding from lower-center to a bright opening at upper-center in an autumn forest. Tall irregular trunks overlap at varied sizes. Near bark has fissures, knots and broken vertical marks; distant trunks softened by amber-gray haze. Uneven leaf clusters in ochre, muted orange, olive and red accents; small leaf-shaped strokes rather than identical circles. Dappled warm light enters from upper-left. Mossy banks and leaf litter. Stream reflects canopy in amber and slate-blue short horizontal ripples, becoming broader near viewer. A few irregular rocks interrupt the water. Detailed foreground, quiet luminous distance, balanced naturalistic woodland color. Direct CRF Canvas 2D program only.",
+      "program": "autumn_stream.json"
+    },
+    {
+      "id": "rainy_street",
+      "title": "雨夜霓虹街道",
+      "seed": 4417,
+      "prompt": "Cinematic rain-soaked narrow city street at blue hour. Vanishing region near (640,320), tall dark facades frame both sides, composed directly as 2D perspective polygons. Irregular windows, awnings, cables and luminous vertical sign shapes WITHOUT TEXT. Restrained cyan left, amber/coral right, blue-gray distance. Wet pavement lower half has elongated fractured reflections built with many horizontal streaks and dark puddle gaps, tapering toward distance. Two or three small anonymous umbrella silhouettes provide scale. Local soft lamp/sign glow, fine slanting rain visible selectively against darkness. Keep midtones legible and rich, no huge black empty area. Detailed coherent moody photographic composition, entirely 2D pixels and paths.",
+      "program": "rainy_street.json"
+    },
+    {
+      "id": "snow_valley",
+      "title": "雪山峡谷",
+      "seed": 5531,
+      "prompt": "Bright winter alpine valley beneath pale icy sky. Asymmetric snow peaks fill upper two thirds, tallest peak offset left. Use irregular 2D silhouettes, then richly varied snow and contour-following strokes to avoid flat low-poly triangles. Cool blue-violet shadow slopes, sunlit ivory ridges, thin exposed slate rock seams. Three layers soften toward valley center. Undulating foreground snowbank and sparse dark evergreen cluster at lower-right; varied tree heights and natural branch rhythm. Fine snow texture only in nearer slopes, wispy clouds and crisp winter daylight. No lake, no oversized sun, no text. Direct CRF Canvas 2D, no mesh or 3D modeling.",
+      "program": "snow_valley.json"
+    },
+    {
+      "id": "sunset_terraces",
+      "title": "夕阳梯田",
+      "seed": 6653,
+      "prompt": "Richly layered rural hillside rice terraces at sunset. Warm peach and cream sky, distant muted lavender hills. Nested irregular flowing terrace contours span lower two thirds, never perfect concentric ellipses. Narrow earthen banks alternate with flooded fields reflecting amber, pale sky, olive and lavender. Bands narrow and soften in distance, widen toward foreground. Short clustered rice shoots on selected borders, tiny rural roofs mid-left and sparse dark slender trees. Low side light picks out a few glowing terrace edges while others remain earthy. Fine bank texture, calm water with sparse horizontal ripples. Luminous balanced naturalistic color. Paint directly in CRF Canvas 2D, no 3D pipeline.",
+      "program": "sunset_terraces.json"
+    },
+    {
+      "id": "cherry_river",
+      "title": "春日樱花水岸",
+      "seed": 7757,
+      "prompt": "Spring riverside, a graceful irregular cherry branch entering upper-right and crossing upper half. Many small irregular five-petal blossoms clustered with varied density: white, blush pink and muted rose, darker tiny centers, small buds and sparse pale leaves. Preserve air between twigs; no giant identical flowers or heavy outlines. Lower half pale turquoise water with fine soft ripples; far bank low-contrast spring green, small distant arched bridge. Near blossoms sharp and delicate, distant scenery softened through 2D compositing. A few falling petals and faint reflected streaks. Luminous pastel photographic color with subtle shadow depth. Code-generated Canvas 2D only, no external images.",
+      "program": "cherry_river.json"
+    },
+    {
+      "id": "aurora_snow",
+      "title": "极光雪原",
+      "seed": 8873,
+      "prompt": "Winter night sky occupies top 70 percent, with an asymmetric flowing aurora curtain in translucent turquoise-green, faint violet upper fringe. Build luminosity with many softly layered narrow translucent vertical strokes whose upper/lower bounds undulate smoothly; never an opaque flat neon stripe. Sparse stars vary naturally in brightness, no uniform confetti. Low jagged blue-black mountains and undulating blue-gray snow foreground in bottom 30 percent, gently illuminated by sky. A small uneven evergreen cluster at lower-left gives scale. Readable blue shadows, delicate luminous curtain gradients, fine atmospheric texture, balanced magical but naturalistic aurora. Direct 2D program, no volumetric 3D renderer.",
+      "program": "aurora_snow.json"
+    },
+    {
+      "id": "coastal_village",
+      "title": "暖阳海滨村落",
+      "seed": 9919,
+      "prompt": "Mediterranean-like coastal village in warm late-afternoon light. White/cream stucco houses and terracotta roofs cluster on hillside descending toward cobalt sea on right. Buildings drawn as overlapping 2D perspective polygons with varied scale, uneven roof lines, dark window recesses, balconies and plants. Irregular low-contrast wall mottling, golden sunlit edges and blue-violet painted shadow regions. Narrow stone stair lane zigzags from lower-left into village, small irregular stones detailed in foreground. Luminous sea with thin horizontal glitters and hazy distant horizon. Foreground bougainvillea adds clustered magenta accents. Spacious clear sky, balanced rich composition. No text, no 3D model; direct CRF 2D drawing.",
+      "program": "coastal_village.json"
+    },
+    {
+      "id": "flower_meadow",
+      "title": "夏日花野",
+      "seed": 10163,
+      "prompt": "Sunlit wildflower meadow, pale blue sky with broad irregular softly layered clouds, low green hills. Foreground varied bending grasses, clustered daisies/buttercups and a few violet wildflowers. Nearest stems and irregular petals individually drawn; middle-distance flowers small flecks; distant hills smooth muted greens. Avoid identical repeated flowers and uniform random dot scatter. Gently curved narrow earth path from lower-right toward left-third horizon. Warm side light glows on selected grass tips; soft natural shadow regions. Rich correlated texture for grass masses, nuanced sky and cloud tones. Fresh luminous naturalistic summer composition with sharp foreground and soft distance. All pixels generated using CRF Canvas 2D functions.",
+      "program": "flower_meadow.json"
+    }
+  ]
+}

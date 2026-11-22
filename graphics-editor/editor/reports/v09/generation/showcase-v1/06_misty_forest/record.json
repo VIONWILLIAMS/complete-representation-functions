@@ -1,0 +1,747 @@
+{
+  "schema": "crf.actual_generation_trial.v0.9",
+  "id": "06_misty_forest",
+  "title": "六棵树的林间晨雾",
+  "category": "landscape",
+  "prompt": "安静的雾中森林，共六棵可辨认的针叶树，按前中后景错落分布，树冠尺度随距离变化。地面为暗绿林地，晨光从左上透入，空气湿润，有真实深浅层次。输出1024×768，使用CRF原生二维函数与共享高斯外观，保持共同光照、合理比例、材质细节和接触关系。",
+  "seed": 90106,
+  "protocolSha256": "299276050dd4890f52b74fa9e63ff0871716b5f12ad4fe433293a6616a963bc6",
+  "runId": "showcase-v1",
+  "taskId": "crf09_cee0bc9d-23c4-4404-ae78-c88a0d156c52",
+  "status": "review_required",
+  "stage": "complete",
+  "error": null,
+  "completedAt": "2026-11-21T16:06:39.344Z",
+  "selection": {
+    "index": 2,
+    "reason": "Latest candidate without declared semantic-constraint regression; visual approval remains pending.",
+    "independentReview": false
+  },
+  "frameGate": {
+    "expected": [
+      1024,
+      768
+    ],
+    "actual": [
+      1024,
+      768
+    ],
+    "passed": true
+  },
+  "model": {
+    "id": "shared-1b02095c",
+    "sha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e",
+    "sourceRGBEmbedded": false,
+    "scope": "shared multi-image linear-color moments and Gaussian frequency-band amplitude estimates; procedural shape prior is hand-authored"
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "png": "reports/v09/generation/showcase-v1/06_misty_forest/candidate_00.png",
+      "jpeg": "reports/v09/generation/showcase-v1/06_misty_forest/candidate_00.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 155364,
+        "semanticObjects": 6,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 673,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 673,
+        "pixelSha256": "347c79fbadab62a75028cd8fcda47dd51fd51802a43a412bb6141a15a03614f7",
+        "pngSha256": "243488b9b32897e88cfdee95ee03142b69f49b8936f11ae9d380c4be36a8f0bc",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 6,
+            "target": "",
+            "passed": true,
+            "observed": 6
+          }
+        ],
+        "evaluated": 1,
+        "passed": 1,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 6,
+            "passed": true,
+            "observed": 6
+          }
+        ],
+        "evaluated": 1,
+        "passed": 1,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_94aedaaa-a311-4739-a6fc-eb2a48bc4300",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "附图是雾林场景，六株主树的尺度能随距离变化，但画面中可见大量额外垂直树干，与“共六棵”冲突；树冠稀疏扁平，中央出现不自然的棕褐色楔形路径，地面接触阴影和左上晨光方向性不足，整体更像程序化示意而非湿润晨雾森林。",
+        "qualityNotes": [
+          "雾的深度衰减已形成一定层次，后景树明显变淡；但前后景对比、空气透视梯度仍偏平，远景与地面过渡过于统一。",
+          "树干和水平枝片的边缘较硬，针叶簇缺少体积与自然分枝密度，近景树干呈规则条纹，材质可信度有限。",
+          "中央棕色路径与暗绿林地语义不符，并抢占了纵深消失点；建议移除或在后续编辑中改为林下腐殖土/苔藓过渡。",
+          "当前critique分数为模型辅助意见，不代表独立人工验收。"
+        ],
+        "warnings": [
+          "画面中可见的垂直树干数量明显超过场景声明的六株树，提示共享外观算子可能补充了未声明的背景几何，需按“共六棵可辨认针叶树”约束复核并抑制额外树干。",
+          "六株主树虽可辨认，但树冠形态与真实针叶树仍有明显差距，不能将本图宽松视为照片级通过。"
+        ],
+        "issues": [
+          {
+            "code": "semantic",
+            "severity": "major",
+            "objectIds": [
+              "tree_fg_left",
+              "tree_fg_right",
+              "tree_mid_left",
+              "tree_mid_right",
+              "tree_bg_left",
+              "tree_bg_right"
+            ],
+            "description": "画面可见大量细直背景树干，远超“共六棵”条件；应移除或合并未声明的后景树干，仅保留六株可辨认主树，并调整其前后分布。"
+          },
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "tree_fg_left",
+              "tree_fg_right",
+              "tree_mid_left",
+              "tree_mid_right"
+            ],
+            "description": "近中景树冠由稀疏水平片状枝组成，缺少针叶簇体积、自然下垂与分枝密度；树干呈规则条纹。应增加针叶簇层次、降低条纹规律性，并让枝冠轮廓更接近真实针叶树。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [],
+            "description": "整体光照近乎均匀绿雾平涂，左上晨光方向性弱，缺少树干受光侧、背光侧和地面亮暗梯度。应增强左上方向光、降低整体雾色覆盖，并保留湿润暗绿地面的漫反射层次。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "tree_fg_left",
+              "tree_fg_right",
+              "tree_mid_left",
+              "tree_mid_right",
+              "tree_bg_left",
+              "tree_bg_right"
+            ],
+            "description": "树干底部与地面缺少接触阴影、根盘过渡和地被遮挡，近景树像直接插入地面。应在地面与树干交界处加入柔和暗部和苔藓/腐殖土过渡。"
+          },
+          {
+            "code": "composition",
+            "severity": "major",
+            "objectIds": [],
+            "description": "画面中央出现棕褐色楔形路径，与“暗绿林地”设定不符，且形成不自然的强引导线。应移除该路径或将其改为低对比的林下地表过渡，避免破坏林地纵深感。"
+          },
+          {
+            "code": "edge",
+            "severity": "minor",
+            "objectIds": [
+              "tree_fg_left",
+              "tree_fg_right",
+              "tree_mid_left",
+              "tree_mid_right"
+            ],
+            "description": "部分枝片与雾气、背景树干交叠处边缘偏硬，局部枝条像漂浮片状物。应柔化远景边缘并加强前景枝条与树干的连接关系。"
+          },
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [
+              "tree_mid_left",
+              "tree_mid_right",
+              "tree_bg_left",
+              "tree_bg_right"
+            ],
+            "description": "中后景树干排列较均匀、重复感强，削弱了自然林分的错落感。应调整中后景树的位置、倾斜与尺度差异，并增加适度遮挡。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 2,
+          "coherence": 3
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2432,
+          "completion_tokens": 1512,
+          "total_tokens": 3944,
+          "reasoning_tokens": 645,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "3b3e307c-cf63-4ea3-9b67-7610b4147fee",
+              "model": "deepseek-flash",
+              "elapsedMs": 12218,
+              "prompt_tokens": 2432,
+              "completion_tokens": 1512,
+              "total_tokens": 3944,
+              "reasoning_tokens": 645,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:05:26.640Z",
+            "requestId": "3b3e307c-cf63-4ea3-9b67-7610b4147fee"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 12221
+      }
+    },
+    {
+      "index": 1,
+      "png": "reports/v09/generation/showcase-v1/06_misty_forest/candidate_01.png",
+      "jpeg": "reports/v09/generation/showcase-v1/06_misty_forest/candidate_01.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 155364,
+        "semanticObjects": 6,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 587,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 587,
+        "pixelSha256": "33034fa41f1145f41f09a31b4a78e5daf7550e1e20a41513d7885d4c18cb41cb",
+        "pngSha256": "786ef3603584b5c37888d55e361343a2849cfb6c33c1ad58955e579c18b41be4",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 6,
+            "target": "",
+            "passed": true,
+            "observed": 6
+          }
+        ],
+        "evaluated": 1,
+        "passed": 1,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 6,
+            "passed": true,
+            "observed": 6
+          }
+        ],
+        "evaluated": 1,
+        "passed": 1,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_e0d348b1-5f5a-4f23-a80b-11728d04897d",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "附图呈现的是一片雾林，但更像稀疏的插画式针叶林，写实度偏弱。六棵主要树能通过尺度和左右错落分辨前、中、后景，可是画面里还有大量细直树干，使“共六棵”在视觉上被稀释。左侧晨光、湿润空气和深色林地层次几乎不可见；树冠多为平伸的稀疏枝片，枝片与树干有脱节感；地面中央被一条亮褐色楔形亮带占据，读起来像道路，与“暗绿林地”要求冲突。",
+        "qualityNotes": [
+          "雾层整体近似均匀的绿色幕布，缺少近浓远淡、局部透光的空气透视层次。",
+          "针叶树冠可辨但枝片扁平、重复，材质与树皮缺少湿润森林的细节。",
+          "前景树干尺度尚可，但中后景树干数量过多，削弱六棵主树的构图主导性。",
+          "左上光方向在树冠和地面几乎没有投影或高光呼应，光照统一性不足。"
+        ],
+        "warnings": [
+          "当前分数只反映模型对附图的辅助判断，不等同于人工照片级验收。"
+        ],
+        "issues": [
+          {
+            "code": "semantic",
+            "severity": "major",
+            "objectIds": [
+              "tree_fg_left",
+              "tree_fg_right",
+              "tree_mid_left",
+              "tree_mid_right",
+              "tree_bg_left",
+              "tree_bg_right"
+            ],
+            "description": "要求六棵可辨认针叶树，但背景出现大量未纳入六棵主体的细直树干，视觉计数被破坏。建议减少无关树影密度，确保只有六棵具有完整冠形的针叶树。"
+          },
+          {
+            "code": "composition",
+            "severity": "major",
+            "objectIds": [],
+            "description": "画面中央亮褐色楔形亮带像一条道路，与暗绿林地及“无道路”的安静雾林语义冲突。建议压低该区域亮度，统一地面色相并弱化中心汇聚线。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "tree_fg_left",
+              "tree_fg_right",
+              "tree_mid_left",
+              "tree_mid_right"
+            ],
+            "description": "多处横向枝片与树干没有连续接触，枝冠悬浮，像贴片而非完整树体。建议收紧枝片相对树干的位置，减少枝片间空隙并统一树干与枝叶的材质色。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [],
+            "description": "晨光从左上透入的方向性没有体现，树冠没有定向受光，雾中也没有局部亮度梯度。建议增强左上方向光在树冠的明暗差，降低整体雾亮度并增强近暗远亮的空气透视。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [],
+            "description": "地面纹理呈规则颗粒，缺少湿润林地的暗绿层次和苔藓、落叶尺度变化。建议降低纹理频率，增加近景暗部层次与中景低对比细节。"
+          },
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [
+              "tree_fg_left",
+              "tree_fg_right"
+            ],
+            "description": "前景树干在画面底部过于笔直、同宽，缺少自然粗细变化，左重右轻的视觉平衡也偏弱。建议微调前景树的宽度、旋转和横向位置，使两侧留白更有节奏。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 2,
+          "coherence": 2
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2443,
+          "completion_tokens": 1128,
+          "total_tokens": 3571,
+          "reasoning_tokens": 413,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "bb4a1120-4303-4671-8d88-fdabb5abe378",
+              "model": "deepseek-flash",
+              "elapsedMs": 9000,
+              "prompt_tokens": 2443,
+              "completion_tokens": 1128,
+              "total_tokens": 3571,
+              "reasoning_tokens": 413,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:06:00.904Z",
+            "requestId": "bb4a1120-4303-4671-8d88-fdabb5abe378"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 9001
+      }
+    },
+    {
+      "index": 2,
+      "png": "reports/v09/generation/showcase-v1/06_misty_forest/candidate_02.png",
+      "jpeg": "reports/v09/generation/showcase-v1/06_misty_forest/candidate_02.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 155364,
+        "semanticObjects": 6,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 580,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 580,
+        "pixelSha256": "8dcd83421a5275d81e0d4ea54654f813146183fd544fbf805f783b9bfe2f7c3c",
+        "pngSha256": "55de59d38650594e62a93979c6f1ee1d596169d8f92ccd3b6dcd4b2c49ce2637",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 6,
+            "target": "",
+            "passed": true,
+            "observed": 6
+          }
+        ],
+        "evaluated": 1,
+        "passed": 1,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 6,
+            "passed": true,
+            "observed": 6
+          }
+        ],
+        "evaluated": 1,
+        "passed": 1,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": null
+    }
+  ],
+  "usage": [
+    {
+      "phase": "plan",
+      "providerCalls": 2,
+      "prompt_tokens": 3736,
+      "completion_tokens": 1796,
+      "total_tokens": 5532,
+      "reasoning_tokens": 1252,
+      "requests": [
+        {
+          "phase": "native09_plan",
+          "requestId": "4a82bff0-9a47-4907-ad0f-b7ad07bde131",
+          "model": "deepseek-flash",
+          "elapsedMs": 9861,
+          "prompt_tokens": 1724,
+          "completion_tokens": 1373,
+          "total_tokens": 3097,
+          "reasoning_tokens": 1116,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        },
+        {
+          "phase": "native09_schema_repair",
+          "requestId": "a1d8dff6-e18a-42a9-acef-8db8ad3c4a7e",
+          "model": "deepseek-flash",
+          "elapsedMs": 3251,
+          "prompt_tokens": 2012,
+          "completion_tokens": 423,
+          "total_tokens": 2435,
+          "reasoning_tokens": 136,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "generate",
+      "providerCalls": 1,
+      "prompt_tokens": 1808,
+      "completion_tokens": 2773,
+      "total_tokens": 4581,
+      "reasoning_tokens": 1993,
+      "requests": [
+        {
+          "phase": "native09_generate",
+          "requestId": "f162d2d8-2e50-43be-9933-84777dcb22af",
+          "model": "deepseek-flash",
+          "elapsedMs": 17454,
+          "prompt_tokens": 1808,
+          "completion_tokens": 2773,
+          "total_tokens": 4581,
+          "reasoning_tokens": 1993,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_0",
+      "providerCalls": 1,
+      "prompt_tokens": 2432,
+      "completion_tokens": 1512,
+      "total_tokens": 3944,
+      "reasoning_tokens": 645,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "3b3e307c-cf63-4ea3-9b67-7610b4147fee",
+          "model": "deepseek-flash",
+          "elapsedMs": 12218,
+          "prompt_tokens": 2432,
+          "completion_tokens": 1512,
+          "total_tokens": 3944,
+          "reasoning_tokens": 645,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_1",
+      "providerCalls": 1,
+      "prompt_tokens": 3321,
+      "completion_tokens": 3450,
+      "total_tokens": 6771,
+      "reasoning_tokens": 2582,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "6548bfca-6e1c-47cb-a674-8b2f11b336b0",
+          "model": "deepseek-flash",
+          "elapsedMs": 21166,
+          "prompt_tokens": 3321,
+          "completion_tokens": 3450,
+          "total_tokens": 6771,
+          "reasoning_tokens": 2582,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_1",
+      "providerCalls": 1,
+      "prompt_tokens": 2443,
+      "completion_tokens": 1128,
+      "total_tokens": 3571,
+      "reasoning_tokens": 413,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "bb4a1120-4303-4671-8d88-fdabb5abe378",
+          "model": "deepseek-flash",
+          "elapsedMs": 9000,
+          "prompt_tokens": 2443,
+          "completion_tokens": 1128,
+          "total_tokens": 3571,
+          "reasoning_tokens": 413,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_2",
+      "providerCalls": 1,
+      "prompt_tokens": 3316,
+      "completion_tokens": 4441,
+      "total_tokens": 7757,
+      "reasoning_tokens": 3586,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "0222f335-7796-4a3a-ba00-776ae0829ec1",
+          "model": "deepseek-flash",
+          "elapsedMs": 28533,
+          "prompt_tokens": 3316,
+          "completion_tokens": 4441,
+          "total_tokens": 7757,
+          "reasoning_tokens": 3586,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    }
+  ],
+  "apiOperations": [
+    {
+      "index": 0,
+      "phase": "plan",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:04:55.067Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_cee0bc9d-23c4-4404-ae78-c88a0d156c52:0",
+      "finishedAt": "2026-11-21T16:05:08.184Z",
+      "runId": "crf09_9abfed2c-06ef-4207-b58a-a3b7c2e2b8e6"
+    },
+    {
+      "index": 1,
+      "phase": "generate",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:05:08.200Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_cee0bc9d-23c4-4404-ae78-c88a0d156c52:1",
+      "finishedAt": "2026-11-21T16:05:25.664Z",
+      "runId": "crf09_bf510e15-8a26-40a8-b7dd-cf3cfa007b78"
+    },
+    {
+      "index": 2,
+      "phase": "critique_0",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:05:26.626Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_cee0bc9d-23c4-4404-ae78-c88a0d156c52:2",
+      "finishedAt": "2026-11-21T16:05:38.861Z",
+      "runId": "crf09_94aedaaa-a311-4739-a6fc-eb2a48bc4300"
+    },
+    {
+      "index": 3,
+      "phase": "revision_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:05:38.881Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_cee0bc9d-23c4-4404-ae78-c88a0d156c52:3",
+      "finishedAt": "2026-11-21T16:06:00.057Z",
+      "runId": "crf09_e3626dbc-ab05-43f4-bd33-f6c128fc01b3"
+    },
+    {
+      "index": 4,
+      "phase": "critique_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:00.895Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_cee0bc9d-23c4-4404-ae78-c88a0d156c52:4",
+      "finishedAt": "2026-11-21T16:06:09.910Z",
+      "runId": "crf09_e0d348b1-5f5a-4f23-a80b-11728d04897d"
+    },
+    {
+      "index": 5,
+      "phase": "revision_2",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:09.938Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_cee0bc9d-23c4-4404-ae78-c88a0d156c52:5",
+      "finishedAt": "2026-11-21T16:06:38.481Z",
+      "runId": "crf09_d6d0ce74-6f43-48f9-9c49-a47c14925af5"
+    }
+  ],
+  "planningHistory": [],
+  "replanCount": 0,
+  "planEvidence": {
+    "qualityNotes": [
+      "暗绿林地由 environment.groundColor 与地形/雾参数表达，不属于独立对象，因此不写成对象颜色约束。",
+      "六棵树将通过不同 depth、width/height 与 y 位置形成前中后景错落与树冠尺度递减，并保持统一光照与遮挡接触关系。",
+      "树为程序化二维高斯外观，可表达针叶树轮廓、尺度层次和遮挡，但枝叶细节与真实照片仍有差距；渲染候选不代表照片级验收通过。"
+    ],
+    "warnings": [
+      "针叶树为程序化类型，无法保证植物学精确的针叶纹理与随机枝干结构。"
+    ],
+    "runId": "crf09_9abfed2c-06ef-4207-b58a-a3b7c2e2b8e6",
+    "requestIds": [
+      "4a82bff0-9a47-4907-ad0f-b7ad07bde131",
+      "a1d8dff6-e18a-42a9-acef-8db8ad3c4a7e"
+    ]
+  },
+  "learning": null,
+  "quality": {
+    "releaseGate": "not_evaluated",
+    "independentHumanReview": false,
+    "scope": "Actual rendered candidates with bounded model feedback; not a photorealism certificate"
+  },
+  "artifact": {
+    "imageUrl": "assets/v09/generated/showcase-v1/06_misty_forest.png",
+    "thumbnailUrl": "assets/v09/generated/showcase-v1/06_misty_forest.jpg",
+    "sceneUrl": "assets/v09/generated/showcase-v1/06_misty_forest.scene.json",
+    "reportUrl": "assets/v09/generated/showcase-v1/06_misty_forest.record.json",
+    "width": 1024,
+    "height": 768,
+    "pixelSha256": "8dcd83421a5275d81e0d4ea54654f813146183fd544fbf805f783b9bfe2f7c3c",
+    "modelId": "shared-1b02095c",
+    "modelSha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e"
+  },
+  "limits": [
+    "These are fixed showcase trials, not the unrun 180-task terminal benchmark.",
+    "Model critique is auxiliary; photoreal quality requires independent review.",
+    "Current renderer is a restricted procedural/statistical 2D Gaussian function generator."
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "schema": "crf.packing_integration.v0.9",
+  "checkedAt": "2026-11-21T16:50:37.789Z",
+  "workerSHA256": "33413ece98febd1208d6047af17fea0aac3393841ee3a29df8800f9e84f3bd49",
+  "suite": {
+    "command": "node --test tests/test_packed_assets08.mjs tests/test_packed_archives09.mjs",
+    "tests": 14,
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "observedDurationMs": 4605.263011
+  },
+  "fixtureCorrection": {
+    "scope": "Local static-assets binding only; no production artifact change",
+    "cause": "The small uncompressed studio09.html reached the native ASSETS branch, whose initial mock did not resolve extensionless HTML URLs.",
+    "change": "Added native /page -> page.html lookup in the local fixture. All full-byte, SHA, HEAD and Range assertions retained.",
+    "contract": "Canonical studio09.html is the published link. Local extensionless content lookup is checked; production redirect policy remains a separate G5 check.",
+    "source": "https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/"
+  },
+  "actualArchiveChecks": [
+    {
+      "url": "/downloads/CRF_0_8_Render_Kit.zip",
+      "bytes": 13302600,
+      "sha256": "8928f57dae71514e3c5b8e07269eb3338aaea4e9cc10ed75c49e3034a4895ca1",
+      "expectedSha256": "8928f57dae71514e3c5b8e07269eb3338aaea4e9cc10ed75c49e3034a4895ca1",
+      "ranges": [
+        {
+          "name": "prefix",
+          "start": 0,
+          "end": 1023,
+          "header": "bytes=0-1023",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "a503be094982ee9f1c876e48752030a6cab1b19f9960a7592ca03276211694ba",
+          "byteExact": true
+        },
+        {
+          "name": "suffix",
+          "start": 13301576,
+          "end": 13302599,
+          "header": "bytes=-1024",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "962ff6818b8423162b13d8110c348ba9cf2403f933faca19f4cfc13d901bda48",
+          "byteExact": true
+        },
+        {
+          "name": "cross_pack_boundary",
+          "start": 4182499,
+          "end": 4183522,
+          "header": "bytes=4182499-4183522",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "3fc8fdc19ab3f3fd654853353a22e7f9a89aa0264daf69bc94f5477b06946901",
+          "byteExact": true
+        }
+      ],
+      "head": {
+        "status": 200,
+        "contentLength": "13302600",
+        "contentType": "application/zip",
+        "acceptRanges": "bytes"
+      }
+    },
+    {
+      "url": "/downloads/CRF_0_9_Render_Kit.zip",
+      "bytes": 13349993,
+      "sha256": "7c51b0a28e701a68b0e9973a9ffafcee6fef89102b738a7e5e128b6f5d8224c2",
+      "expectedSha256": "7c51b0a28e701a68b0e9973a9ffafcee6fef89102b738a7e5e128b6f5d8224c2",
+      "ranges": [
+        {
+          "name": "prefix",
+          "start": 0,
+          "end": 1023,
+          "header": "bytes=0-1023",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "a7febf911d215ec6a341b1719e0298fc50c070088feafcb0ca4bdd3c68532fc2",
+          "byteExact": true
+        },
+        {
+          "name": "suffix",
+          "start": 13348969,
+          "end": 13349992,
+          "header": "bytes=-1024",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "323974c787d274994d4b1aa32a38b9f0f372a324e5625ef30581bcf75a6b9952",
+          "byteExact": true
+        },
+        {
+          "name": "cross_pack_boundary",
+          "start": 22694,
+          "end": 23717,
+          "header": "bytes=22694-23717",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "aa2ff2c8c5c8f6ce957114e0e3216de0ac6805581da90ea1f6bf7ea89f43a246",
+          "byteExact": true
+        }
+      ],
+      "head": {
+        "status": 200,
+        "contentLength": "13349993",
+        "contentType": "application/zip",
+        "acceptRanges": "bytes"
+      }
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_5_Showcase.zip",
+      "bytes": 20993543,
+      "sha256": "d89f2dd4cd25b7203a1445d4d5148f844eda89ea1cd772fe9a88ed3714a63bd1",
+      "expectedSha256": "d89f2dd4cd25b7203a1445d4d5148f844eda89ea1cd772fe9a88ed3714a63bd1",
+      "ranges": [
+        {
+          "name": "prefix",
+          "start": 0,
+          "end": 1023,
+          "header": "bytes=0-1023",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "d62adb711fc78c449cb1f699c2b5b5d600322d342d80afd76df9051c0c31995a",
+          "byteExact": true
+        },
+        {
+          "name": "suffix",
+          "start": 20992519,
+          "end": 20993542,
+          "header": "bytes=-1024",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "a6ea5ae3af2a764f5fb9d105d0709d8d12795e7159590cda737921a3aeaff407",
+          "byteExact": true
+        },
+        {
+          "name": "cross_pack_boundary",
+          "start": 700370,
+          "end": 701393,
+          "header": "bytes=700370-701393",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "8909b3e9a5e0405793accc725dfba8146cc33a79f891f277e69b4c3d5323a1e0",
+          "byteExact": true
+        }
+      ],
+      "head": {
+        "status": 200,
+        "contentLength": "20993543",
+        "contentType": "application/zip",
+        "acceptRanges": "bytes"
+      }
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_5_Source.zip",
+      "bytes": 12999456,
+      "sha256": "54a0ec272ce4467bf2491f0139317dd795186d2c65f666a449b83b62b4c2e840",
+      "expectedSha256": "54a0ec272ce4467bf2491f0139317dd795186d2c65f666a449b83b62b4c2e840",
+      "ranges": [
+        {
+          "name": "prefix",
+          "start": 0,
+          "end": 1023,
+          "header": "bytes=0-1023",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "7285ffa55786a4decc3b3b7000c5ee21d776998d6b6490c536ca0227b2db93fc",
+          "byteExact": true
+        },
+        {
+          "name": "suffix",
+          "start": 12998432,
+          "end": 12999455,
+          "header": "bytes=-1024",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "4ff19228a56e30756c7e03cabc78741bada1cafa1ceab31996791eaea81418b9",
+          "byteExact": true
+        },
+        {
+          "name": "cross_pack_boundary",
+          "start": 330351,
+          "end": 331374,
+          "header": "bytes=330351-331374",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "8e24f8bc96b3f003f1620ca3a4cbc67a77bc8d9f92aa0896748e9a9efe04416c",
+          "byteExact": true
+        }
+      ],
+      "head": {
+        "status": 200,
+        "contentLength": "12999456",
+        "contentType": "application/zip",
+        "acceptRanges": "bytes"
+      }
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_6_Showcase.zip",
+      "bytes": 8229179,
+      "sha256": "f202f35f7fc4c051d6de013bd9a68d569fcea15f47fdeadfe60ea904ab07fc20",
+      "expectedSha256": "f202f35f7fc4c051d6de013bd9a68d569fcea15f47fdeadfe60ea904ab07fc20",
+      "ranges": [
+        {
+          "name": "prefix",
+          "start": 0,
+          "end": 1023,
+          "header": "bytes=0-1023",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "7bcf6eb8afa191c794eae42a6de586af8f9f0c7ee795dc5210c62df839c6f11e",
+          "byteExact": true
+        },
+        {
+          "name": "suffix",
+          "start": 8228155,
+          "end": 8229178,
+          "header": "bytes=-1024",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "195c180f97fa1ec6d15fa047f44251a7a41f9e6ed58e3588360bb0213f03053f",
+          "byteExact": true
+        },
+        {
+          "name": "cross_pack_boundary",
+          "start": 1693831,
+          "end": 1694854,
+          "header": "bytes=1693831-1694854",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "3063544284b86f7bca5e0d66db4a2474c66f19337bcdd69c1e8f019430c14577",
+          "byteExact": true
+        }
+      ],
+      "head": {
+        "status": 200,
+        "contentLength": "8229179",
+        "contentType": "application/zip",
+        "acceptRanges": "bytes"
+      }
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_6_Source.zip",
+      "bytes": 15260507,
+      "sha256": "14c74aceb609747aba5ca6bd59bf4dcade5537b2c0157e19e5f34575bc7da290",
+      "expectedSha256": "14c74aceb609747aba5ca6bd59bf4dcade5537b2c0157e19e5f34575bc7da290",
+      "ranges": [
+        {
+          "name": "prefix",
+          "start": 0,
+          "end": 1023,
+          "header": "bytes=0-1023",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "3bf72b2e8ad9b317319ad70ab38f27f5e5f78d5d3266d8ae63ed27b7c472e424",
+          "byteExact": true
+        },
+        {
+          "name": "suffix",
+          "start": 15259483,
+          "end": 15260506,
+          "header": "bytes=-1024",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "ff3997937716e24f6b037a58feabe1dc4042759b00852eeae76baa815772596e",
+          "byteExact": true
+        },
+        {
+          "name": "cross_pack_boundary",
+          "start": 0,
+          "end": 568,
+          "header": "bytes=0-568",
+          "status": 206,
+          "bytes": 569,
+          "sha256": "6da8c90f1b28e5f244be915b107399124f57130c6fb6b892d265f09e3465c95e",
+          "byteExact": true
+        }
+      ],
+      "head": {
+        "status": 200,
+        "contentLength": "15260507",
+        "contentType": "application/zip",
+        "acceptRanges": "bytes"
+      }
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_7_Images.zip",
+      "bytes": 6405530,
+      "sha256": "80ded1b8bf0f80e6ffd02d86c32ea834280a72b129b7062c374a03a27ff36ad5",
+      "expectedSha256": "80ded1b8bf0f80e6ffd02d86c32ea834280a72b129b7062c374a03a27ff36ad5",
+      "ranges": [
+        {
+          "name": "prefix",
+          "start": 0,
+          "end": 1023,
+          "header": "bytes=0-1023",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "defce72af17f26548d5e4a338189ab43eb83cd8094c8a27e4207ddb8c1dfb237",
+          "byteExact": true
+        },
+        {
+          "name": "suffix",
+          "start": 6404506,
+          "end": 6405529,
+          "header": "bytes=-1024",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "f8c3793c0e070005a9cf6624c448e5b6cdc0110029358bef2a7c76aa7b9ee8c2",
+          "byteExact": true
+        },
+        {
+          "name": "cross_pack_boundary",
+          "start": 2985131,
+          "end": 2986154,
+          "header": "bytes=2985131-2986154",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "8d66b74a2b2c0463bd797c45b20cdc57dab40c41f9a40877b275af1e963bae9d",
+          "byteExact": true
+        }
+      ],
+      "head": {
+        "status": 200,
+        "contentLength": "6405530",
+        "contentType": "application/zip",
+        "acceptRanges": "bytes"
+      }
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_7_Source.zip",
+      "bytes": 20136964,
+      "sha256": "5165b0b355fbf52317e71955ca0ef4981cab0a6c39bce677a04b481e9c14eab2",
+      "expectedSha256": "5165b0b355fbf52317e71955ca0ef4981cab0a6c39bce677a04b481e9c14eab2",
+      "ranges": [
+        {
+          "name": "prefix",
+          "start": 0,
+          "end": 1023,
+          "header": "bytes=0-1023",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "6969923ef5f476dcf4444216e17e939e248440f362ad25fc3c0a4f56c00094ad",
+          "byteExact": true
+        },
+        {
+          "name": "suffix",
+          "start": 20135940,
+          "end": 20136963,
+          "header": "bytes=-1024",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "d9801a8e1d55e4ddc06263356a8ba6396bd93294de839beddab978d8ced5bfa4",
+          "byteExact": true
+        },
+        {
+          "name": "cross_pack_boundary",
+          "start": 2602,
+          "end": 3625,
+          "header": "bytes=2602-3625",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "832bdac5d9f864edf073ff37d8a40c68f2e4959eec0e7363c6f2739011dcb83b",
+          "byteExact": true
+        }
+      ],
+      "head": {
+        "status": 200,
+        "contentLength": "20136964",
+        "contentType": "application/zip",
+        "acceptRanges": "bytes"
+      }
+    },
+    {
+      "url": "/downloads/crf_street_0_4_source.zip",
+      "bytes": 14332756,
+      "sha256": "f0a82c8bc378f81a5e70a0c1a8d6cfc8cedccc48573ed90b68c4792ec5ea053b",
+      "expectedSha256": "f0a82c8bc378f81a5e70a0c1a8d6cfc8cedccc48573ed90b68c4792ec5ea053b",
+      "ranges": [
+        {
+          "name": "prefix",
+          "start": 0,
+          "end": 1023,
+          "header": "bytes=0-1023",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "3bdaa40bf89734b6c79389aa4934fa7a4e1770a749e6480ed9750864370b31db",
+          "byteExact": true
+        },
+        {
+          "name": "suffix",
+          "start": 14331732,
+          "end": 14332755,
+          "header": "bytes=-1024",
+          "status": 206,
+          "bytes": 1024,
+          "sha256": "5800bb3fc0e7b3445bb242ae3b537522fabddf4d134ec089124885844c8b9686",
+          "byteExact": true
+        },
+        {
+          "name": "cross_pack_boundary",
+          "start": 0,
+          "end": 566,
+          "header": "bytes=0-566",
+          "status": 206,
+          "bytes": 567,
+          "sha256": "54dc063e3d1478156f7e7390cbf740067db516d357faa81b602ec088715e0eba",
+          "byteExact": true
+        }
+      ],
+      "head": {
+        "status": 200,
+        "contentLength": "14332756",
+        "contentType": "application/zip",
+        "acceptRanges": "bytes"
+      }
+    }
+  ],
+  "actualArchiveCount": 9,
+  "totalActualRangeChecks": 27,
+  "packReads": 14,
+  "allActualArchiveChecksPassed": true,
+  "productionNetworkRequests": 0
+}

@@ -1,0 +1,157 @@
+{
+  "ok": true,
+  "runId": "crf08_2b115d22-fb82-46ad-b1d4-6523169d3ae5",
+  "engine": "gaussian08",
+  "model": "deepseek-flash",
+  "action": "scene",
+  "message": "已按反馈做局部调整：蕨叶缩至0.88、轻转10°并略向右上移；杯下影下移并加深，橙片影下移并加深；杯与橙片微缩并局部曝光，未改变整体三角布局或添加整图贴图。",
+  "qualityNotes": [
+    "蕨叶缩小并轻转后仍需检查左上茎截断端是否仍显眼，浅绿色雾块和粗糙alpha边缘只能减弱不能去除",
+    "杯下影已下移并提高不透明度，需确认杯底与阴影有自然接触，不出现完全遮没或脱地间隙",
+    "橙片白边来自资产本身，缩小至0.71并下移4px后仍需检查轮廓是否仍有贴纸感和台阶裁切感",
+    "杯外壁仍带资产自带的灰棕桌面污染和手柄暗块，曝光+0.10只能减轻，不能改成真正的白色陶瓷材质",
+    "杯液面高光、橙片高光和蕨叶受光方向仍不完全统一，局部曝光微调无法统一光向或重算相机视角"
+  ],
+  "warnings": [
+    "未使用完整照片矩形贴图，主体均来自目录中的独立资产",
+    "现有高斯参数无法根治蕨叶边缘雾块、橙片白边和杯体深色污染",
+    "透视差异来自资产本身，叶片缩小与轻转只能降低冲突，不能统一相机视角",
+    "质量需以实际渲染检查，不能保证照片级像素重建或物理正确3D"
+  ],
+  "scene": {
+    "schema": "crf.gaussian_scene.v0.8",
+    "id": "still_life_cup_fern_orange_960x640",
+    "title": "自然光俯拍咖啡杯与蕨叶橙片",
+    "width": 960,
+    "height": 640,
+    "background": [
+      246,
+      242,
+      234
+    ],
+    "objects": [
+      {
+        "id": "shadow.cup",
+        "label": "杯下柔影",
+        "assetId": "studio.shadow",
+        "x": 46,
+        "y": 420,
+        "scaleX": 1.12,
+        "scaleY": 0.9,
+        "rotation": 0,
+        "opacity": 0.66,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 10,
+        "visible": true
+      },
+      {
+        "id": "shadow.orange",
+        "label": "橙片柔影",
+        "assetId": "studio.shadow",
+        "x": 682,
+        "y": 531,
+        "scaleX": 0.75,
+        "scaleY": 0.75,
+        "rotation": 0,
+        "opacity": 0.58,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 11,
+        "visible": true
+      },
+      {
+        "id": "fern.frond",
+        "label": "蕨类羽状叶",
+        "assetId": "learn.r05.67fd559a57f5.object",
+        "x": 700,
+        "y": 8,
+        "scaleX": 0.88,
+        "scaleY": 0.88,
+        "rotation": 10,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": -0.15,
+        "zIndex": 20,
+        "visible": true
+      },
+      {
+        "id": "cup.white.coffee",
+        "label": "白色咖啡杯",
+        "assetId": "learn.r04.c2f1cb0642a5.object",
+        "x": 90,
+        "y": 230,
+        "scaleX": 1.05,
+        "scaleY": 1.05,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0.1,
+        "zIndex": 30,
+        "visible": true
+      },
+      {
+        "id": "orange.half",
+        "label": "橙子横切面",
+        "assetId": "learn.r01.c6657129fc5c.object",
+        "x": 733,
+        "y": 437,
+        "scaleX": 0.71,
+        "scaleY": 0.71,
+        "rotation": -8,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": -0.05,
+        "zIndex": 40,
+        "visible": true
+      }
+    ]
+  },
+  "research": {
+    "searched": false,
+    "status": "disabled",
+    "sources": [],
+    "toolCalls": [],
+    "summary": "",
+    "nativeSearchObserved": false
+  },
+  "usage": {
+    "providerCalls": 1,
+    "prompt_tokens": 3106,
+    "completion_tokens": 3986,
+    "total_tokens": 7092,
+    "reasoning_tokens": 3203,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "d471553b-64bd-4cd5-bbf3-d39e9216f97f",
+        "model": "deepseek-flash",
+        "elapsedMs": 25452,
+        "prompt_tokens": 3106,
+        "completion_tokens": 3986,
+        "total_tokens": 7092,
+        "reasoning_tokens": 3203,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": true,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "vision": {
+    "renderedImageProvided": true
+  },
+  "validation": {
+    "schema": true,
+    "allowlistedAssets": true,
+    "renderer": false,
+    "repairUsed": false
+  },
+  "quality": {
+    "automaticRealismScore": false,
+    "pixelReconstructionMeasured": false,
+    "selection": "candidate_requires_render_and_review"
+  },
+  "rendered": false,
+  "elapsedMs": 25453
+}

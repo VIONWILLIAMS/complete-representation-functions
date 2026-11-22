@@ -1,0 +1,324 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 8,
+  "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "items": [
+    {
+      "id": "ref.8.0",
+      "label": "松树树皮近景",
+      "category": "bark",
+      "role": "material",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          112,
+          80,
+          56
+        ],
+        [
+          158,
+          123,
+          93
+        ],
+        [
+          94,
+          99,
+          92
+        ],
+        [
+          191,
+          164,
+          134
+        ],
+        [
+          62,
+          57,
+          49
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "画面几乎被松树树皮填满，呈不规则鳞片状和块状开裂，裂缝深暗；表层有灰褐、赭褐、浅米色和灰绿色斑驳，纹理粗粝，局部可见地衣或风化痕迹。适合作为树皮材质、森林近景和粗糙自然表面的参考。",
+      "tags": [
+        "松树",
+        "树皮",
+        "树皮纹理",
+        "鳞片状裂纹",
+        "自然材质",
+        "粗糙表面",
+        "灰褐色",
+        "森林近景",
+        "地衣",
+        "特写"
+      ],
+      "limitations": [
+        "仅见局部树皮，无法判断树干形态与尺寸",
+        "颜色受拍摄与压缩影响，不宜作为准确色卡",
+        "光照方向不明确",
+        "低分辨率细节有限",
+        "不能据此识别具体松树种类"
+      ]
+    },
+    {
+      "id": "ref.8.1",
+      "label": "岩石草坡与远山虚景",
+      "category": "landscape",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          35,
+          38,
+          33
+        ],
+        [
+          92,
+          112,
+          44
+        ],
+        [
+          102,
+          77,
+          57
+        ],
+        [
+          195,
+          207,
+          209
+        ],
+        [
+          232,
+          236,
+          231
+        ]
+      ],
+      "lightDirection": "back",
+      "description": "浅景深自然景观：前景是深色、棱角分明的岩石群，缝隙与低处覆有亮绿色苔藓或草；中远景被强烈虚化成棕褐色坡地和浅蓝灰色天光，形成前后层次。前景岩石边缘有轮廓高光，背景整体偏亮。",
+      "tags": [
+        "岩石",
+        "苔藓",
+        "草地",
+        "远山虚景",
+        "浅景深",
+        "逆光",
+        "自然景观",
+        "前后层次",
+        "棕色坡地",
+        "散景"
+      ],
+      "limitations": [
+        "背景严重虚化，无法辨认植被与地形细节",
+        "不能确定地点、季节和天气",
+        "缺少岩石尺度和材质特写",
+        "主体边界不是精确分割",
+        "单张照片不能推断周边完整地貌"
+      ]
+    },
+    {
+      "id": "ref.8.2",
+      "label": "装框的松树与岩石绘画",
+      "category": "framed_painting",
+      "role": "reference-frame",
+      "bbox": [
+        0.04,
+        0.03,
+        0.96,
+        0.97
+      ],
+      "palette": [
+        [
+          150,
+          105,
+          50
+        ],
+        [
+          97,
+          124,
+          140
+        ],
+        [
+          79,
+          99,
+          67
+        ],
+        [
+          156,
+          111,
+          66
+        ],
+        [
+          54,
+          61,
+          55
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "木色或金褐色画框内是一幅后印象派风格的油画，描绘高瘦松树、蓝灰绿色树冠和下部棕赭色岩石山坡；笔触明显，画面呈蓝绿与暖褐对比。照片同时包含画框、墙面色调和表面反光，不是可直接当作真实自然照片的素材。",
+      "tags": [
+        "油画",
+        "画框",
+        "松树",
+        "岩石",
+        "蓝绿色树冠",
+        "后印象派风格",
+        "博物馆陈列",
+        "笔触",
+        "暖褐色",
+        "装框作品"
+      ],
+      "limitations": [
+        "为绘画而非真实自然照片，不能提取真实山湖细节",
+        "画框与表面可能反光，颜色受展厅和拍摄影响",
+        "低分辨率无法看清笔触与签名",
+        "画中内容不是可分离的三维对象",
+        "不能从画面推断实际地点或真实尺度"
+      ]
+    },
+    {
+      "id": "ref.8.3",
+      "label": "松枝与球果特写",
+      "category": "conifer_branch",
+      "role": "object",
+      "bbox": [
+        0.04,
+        0.03,
+        0.98,
+        0.98
+      ],
+      "palette": [
+        [
+          39,
+          81,
+          35
+        ],
+        [
+          70,
+          112,
+          48
+        ],
+        [
+          109,
+          71,
+          49
+        ],
+        [
+          181,
+          144,
+          105
+        ],
+        [
+          28,
+          40,
+          28
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "针叶松枝特写：细长深绿色针叶在中央形成放射状簇，数个红褐色球果或芽体位于画面中部，鳞片纹理可见；背景为虚化的深绿针叶与枝条，浅景深突出前景主体。",
+      "tags": [
+        "松枝",
+        "针叶",
+        "松果",
+        "球果",
+        "嫩芽",
+        "特写",
+        "浅景深",
+        "深绿色",
+        "红褐色",
+        "自然植物"
+      ],
+      "limitations": [
+        "背景虚化，无法判断整株树形",
+        "球果种类与发育阶段难以仅凭此图确定",
+        "局部高光与压缩影响颜色",
+        "主体边缘与背景针叶交错，不适合精确抠图",
+        "缺少比例参照"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "均以自然或自然题材再现为核心",
+    "主色调偏向绿色、棕色、灰色，并含少量浅色天光或浅色背景",
+    "突出表面纹理或细节：树皮、岩石苔藓、油画笔触、针叶与球果鳞片",
+    "景深和媒介差异明显：微距材质、浅景深景观、绘画、植物特写",
+    "可建立松树、岩石坡地与针叶林相关的视觉语义联系"
+  ],
+  "missingEvidence": [
+    "缺少 EXIF、相机参数、拍摄时间和精确地点",
+    "无法确认具体松树或球果物种",
+    "无法从单张局部图恢复完整树干、森林或地貌结构",
+    "缺少同一地点的多视角、尺度参照和季节变化",
+    "无法验证 ref.8.2 画作原作色彩、材质与保存状态",
+    "本批缺少明确的湖面反射、海岸线和自然薄雾细节",
+    "没有高分辨率原图与 alpha 分割，bbox 仅为估计"
+  ],
+  "images": [
+    {
+      "id": "ref.8.0",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/",
+      "sha256": "93ade5149351e105cf01f48aff9e00ed18498ef3e16d3bc3eda59f1e1ea03476",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.8.1",
+      "sourceUrl": "https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/",
+      "sha256": "00ce0b4ae7e2fab6a969cac007cb553ca25ebe4a097e26f83ddf2fd8fab8ceff",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.8.2",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg#1",
+      "sha256": "798f8cb0194748f30392af93e4a5067ceb27a59a93f0d0e76b2947e920da4455",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.8.3",
+      "sourceUrl": "https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/",
+      "sha256": "fa81fbd529cc3ff4a0ca0be48e282b842e346ee50bdc02906ab8acd412c02a40",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "ddfb8340-d78a-4a8e-af39-b3de6336ad30",
+        "model": "deepseek-flash",
+        "elapsedMs": 34378,
+        "prompt_tokens": 1632,
+        "completion_tokens": 4857,
+        "total_tokens": 6489,
+        "reasoning_tokens": 3682,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1632,
+    "completion_tokens": 4857,
+    "total_tokens": 6489,
+    "reasoning_tokens": 3682
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 34380
+}

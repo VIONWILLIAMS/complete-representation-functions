@@ -1,0 +1,368 @@
+{
+  "id": "learn.r01.c6657129fc5c.object",
+  "assetId": "learn.r01.c6657129fc5c.object",
+  "status": "fitted",
+  "round": 1,
+  "topic": "橙子与柑橘的单体实拍",
+  "sourceUrl": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+  "imageUrl": "https://images.pexels.com/photos/5223989/pexels-photo-5223989.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo by Ricardo Utsumi on Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r01.c6657129fc5c.webp",
+  "sourceSHA256": "c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+  "normalizedRGBA_SHA256": "bf701722608bba295546af2c7ac95b538d97af5c5724aa4eb446f92b7834a6fa",
+  "dHash64": "d88f332d0b339681",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    195,
+    182
+  ],
+  "assetURL": "assets/v08/learned/learn.r01.c6657129fc5c.object.json",
+  "renderURL": "assets/v08/learned/learn.r01.c6657129fc5c.object.png",
+  "reportURL": "assets/v08/learned/learn.r01.c6657129fc5c.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r01.c6657129fc5c.object.png",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 4436,
+  "pixelToGaussianRatio": 8.000450856627593,
+  "assetBytes": 371581,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 2.1183338354926184,
+    "rmse": 3.0626431504811187,
+    "psnr": 38.40887566605291,
+    "ssim": 0.9648593425810511,
+    "maxError": 57,
+    "exactRGBFraction": 0.012579090087375715,
+    "evaluatedPixels": 26552,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 5.43687255487498,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 23.245760226030548,
+          "bestFloatMSE": 23.245760226030548
+        },
+        {
+          "step": 10,
+          "floatMSE": 11.271508989873423,
+          "bestFloatMSE": 11.271508989873423
+        },
+        {
+          "step": 20,
+          "floatMSE": 8.432442874730542,
+          "bestFloatMSE": 8.432442874730542
+        },
+        {
+          "step": 30,
+          "floatMSE": 7.034104640105334,
+          "bestFloatMSE": 7.034104640105334
+        },
+        {
+          "step": 40,
+          "floatMSE": 6.248644826271597,
+          "bestFloatMSE": 6.248644826271597
+        },
+        {
+          "step": 50,
+          "floatMSE": 5.7929533539479925,
+          "bestFloatMSE": 5.7929533539479925
+        },
+        {
+          "step": 60,
+          "floatMSE": 5.549601987920651,
+          "bestFloatMSE": 5.549601987920651
+        },
+        {
+          "step": 70,
+          "floatMSE": 5.43687255487498,
+          "bestFloatMSE": 5.43687255487498
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 1552,
+        "elapsedSeconds": 0.081,
+        "mae": 11.394408456362358,
+        "rmse": 16.526472611449822,
+        "psnr": 23.767200244276545,
+        "ssim": 0.5544988756673557,
+        "maxError": 168,
+        "exactRGBFraction": 0.0004142814100632721,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 1552,
+        "elapsedSeconds": 0.149,
+        "mae": 8.683275585015567,
+        "rmse": 12.687988343598498,
+        "psnr": 26.062948188895128,
+        "ssim": 0.6522863960366369,
+        "maxError": 161,
+        "exactRGBFraction": 0.0005272672491714372,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 3426,
+        "elapsedSeconds": 0.588,
+        "mae": 5.263909812192427,
+        "rmse": 7.407531474583951,
+        "psnr": 30.737333499234115,
+        "ssim": 0.8588731336742431,
+        "maxError": 109,
+        "exactRGBFraction": 0.001431153962036758,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 4436,
+        "elapsedSeconds": 0.825,
+        "mae": 4.296801245355026,
+        "rmse": 6.017998430706136,
+        "psnr": 32.541762205588746,
+        "ssim": 0.9030705303749319,
+        "maxError": 83,
+        "exactRGBFraction": 0.0025986742994877974,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 4436,
+        "elapsedSeconds": 0.85,
+        "mae": 4.296801245355026,
+        "rmse": 6.017998430706136,
+        "psnr": 32.541762205588746,
+        "ssim": 0.9030705303749319,
+        "maxError": 83,
+        "exactRGBFraction": 0.0025986742994877974,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 4436,
+        "elapsedSeconds": 0.997,
+        "mae": 3.074846841418098,
+        "rmse": 4.29816404069448,
+        "psnr": 35.46514387971246,
+        "ssim": 0.9407795563436405,
+        "maxError": 76,
+        "exactRGBFraction": 0.0036155468514612837,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 4436,
+        "elapsedSeconds": 1.151,
+        "mae": 2.648676810284222,
+        "rmse": 3.7545376115453934,
+        "psnr": 36.63967442299029,
+        "ssim": 0.9517447673043449,
+        "maxError": 68,
+        "exactRGBFraction": 0.0061765592045796925,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 4436,
+        "elapsedSeconds": 1.309,
+        "mae": 2.412611730440896,
+        "rmse": 3.452250722458913,
+        "psnr": 37.36875702525319,
+        "ssim": 0.9575428225549554,
+        "maxError": 64,
+        "exactRGBFraction": 0.00783368484483278,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 4436,
+        "elapsedSeconds": 1.47,
+        "mae": 2.272095008536708,
+        "rmse": 3.2677770698144974,
+        "psnr": 37.84575518912035,
+        "ssim": 0.9610571163254348,
+        "maxError": 61,
+        "exactRGBFraction": 0.01016872551973486,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 4436,
+        "elapsedSeconds": 1.63,
+        "mae": 2.186012353118409,
+        "rmse": 3.1539318047581464,
+        "psnr": 38.1537576356535,
+        "ssim": 0.9631876562873309,
+        "maxError": 59,
+        "exactRGBFraction": 0.011486893642663453,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 4436,
+        "elapsedSeconds": 1.788,
+        "mae": 2.1388972582103043,
+        "rmse": 3.0925271240939836,
+        "psnr": 38.32453325967981,
+        "ssim": 0.9643594887939991,
+        "maxError": 57,
+        "exactRGBFraction": 0.011675203374510395,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 4436,
+        "elapsedSeconds": 1.985,
+        "mae": 2.118346389474741,
+        "rmse": 3.062649299076746,
+        "psnr": 38.40885822818411,
+        "ssim": 0.9648591456882765,
+        "maxError": 57,
+        "exactRGBFraction": 0.012579090087375715,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 1.989,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 2.208,
+  "passedPilot": true,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.3,
+      0.14,
+      0.67,
+      0.84
+    ],
+    "proposalPixels": [
+      133,
+      28,
+      364,
+      258
+    ],
+    "cropPixels": [
+      149,
+      58,
+      344,
+      240
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 25826,
+    "pixelMaskVerified": false,
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r01.c6657129fc5c.object.png"
+  },
+  "semantics": {
+    "id": "learn.r01.c6657129fc5c",
+    "label": "横切橙子半",
+    "category": "citrus fruit",
+    "role": "object",
+    "bbox": [
+      0.3,
+      0.14,
+      0.67,
+      0.84
+    ],
+    "palette": [
+      [
+        246,
+        246,
+        244
+      ],
+      [
+        238,
+        173,
+        47
+      ],
+      [
+        224,
+        122,
+        26
+      ],
+      [
+        248,
+        239,
+        205
+      ],
+      [
+        198,
+        192,
+        177
+      ]
+    ],
+    "lightDirection": "diffuse",
+    "description": "白色纯净背景中放置一个切面朝上的橙子半，整体近似圆形。切面中心偏白，橙黄色果肉以放射状囊瓣排列，外圈有白色海绵层和黄色外皮。切面局部湿润反光，橙子下方与右侧有柔和投影。",
+    "tags": [
+      "橙子半",
+      "横切面",
+      "柑橘",
+      "果肉",
+      "白背景",
+      "单体",
+      "静物",
+      "湿润",
+      "放射状囊瓣"
+    ],
+    "limitations": [
+      "只能看到切面与部分外轮廓，无法确认完整球形和背面",
+      "下方投影与浅色背景边界较柔，不适合作为精确抠图依据",
+      "没有尺寸参照",
+      "仅凭外观不能确定具体品种"
+    ]
+  },
+  "sourceId": "learn.r01.c6657129fc5c",
+  "referenceThumbnailURL": "assets/v08/references/learn.r01.c6657129fc5c.object.jpg"
+}

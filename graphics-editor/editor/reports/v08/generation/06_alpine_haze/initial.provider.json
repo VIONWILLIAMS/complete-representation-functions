@@ -1,0 +1,109 @@
+{
+  "ok": true,
+  "runId": "crf08_b627f7e3-b916-498e-9adc-11568455bcfb",
+  "engine": "gaussian08",
+  "model": "deepseek-flash",
+  "action": "scene",
+  "message": "在保留阿尔卑斯湖畔函数原有山体、树林、湖岸线与倒影结构的前提下，仅叠加低透明度解析薄雾，重点柔化远岸和上半湖面；地平线不旋转，近处水纹保持清晰，并做极轻微曝光调整。",
+  "qualityNotes": [
+    "检查薄雾是否仅柔化远岸与上半湖面，近处水纹仍清楚。",
+    "检查薄雾资产左上阴影中心是否已移出画布，避免出现异常暗斑。",
+    "检查地平线保持水平，山体、树林、湖岸线与倒影结构未被移动或遮挡。",
+    "检查薄雾透明度是否克制，远山没有被明显遮白，整体曝光自然。"
+  ],
+  "warnings": [
+    "该场景是对完整湖畔参考帧的变体，不表示生成新地貌或新相机视角。",
+    "薄雾为二维高斯覆盖效果，不是三维体积雾，需实际渲染检查。"
+  ],
+  "scene": {
+    "schema": "crf.gaussian_scene.v0.8",
+    "id": "alpine_morning_mist_variant",
+    "title": "阿尔卑斯湖畔晨雾光色变体",
+    "width": 800,
+    "height": 531,
+    "background": [
+      12,
+      18,
+      22
+    ],
+    "objects": [
+      {
+        "id": "bg_alpine_lake",
+        "label": "阿尔卑斯湖畔完整背景",
+        "assetId": "landscape.alpine",
+        "x": 0,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0.03,
+        "zIndex": 0,
+        "visible": true
+      },
+      {
+        "id": "mist_far_shore",
+        "label": "远岸解析高斯薄雾",
+        "assetId": "atmosphere.haze",
+        "x": 0,
+        "y": -71,
+        "scaleX": 0.83,
+        "scaleY": 0.83,
+        "rotation": 0,
+        "opacity": 0.2,
+        "hue": 0,
+        "exposure": -0.05,
+        "zIndex": 1,
+        "visible": true
+      }
+    ]
+  },
+  "research": {
+    "searched": false,
+    "status": "disabled",
+    "sources": [],
+    "toolCalls": [],
+    "summary": "",
+    "nativeSearchObserved": false
+  },
+  "usage": {
+    "providerCalls": 1,
+    "prompt_tokens": 1050,
+    "completion_tokens": 2264,
+    "total_tokens": 3314,
+    "reasoning_tokens": 1848,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "24a50f93-eeed-4533-8cf3-d8e4113533f8",
+        "model": "deepseek-flash",
+        "elapsedMs": 14959,
+        "prompt_tokens": 1050,
+        "completion_tokens": 2264,
+        "total_tokens": 3314,
+        "reasoning_tokens": 1848,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "vision": {
+    "renderedImageProvided": false
+  },
+  "validation": {
+    "schema": true,
+    "allowlistedAssets": true,
+    "renderer": false,
+    "repairUsed": false
+  },
+  "quality": {
+    "automaticRealismScore": false,
+    "pixelReconstructionMeasured": false,
+    "selection": "candidate_requires_render_and_review"
+  },
+  "rendered": false,
+  "elapsedMs": 14959
+}

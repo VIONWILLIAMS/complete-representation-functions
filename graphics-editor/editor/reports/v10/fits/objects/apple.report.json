@@ -1,0 +1,195 @@
+{
+  "schema": "crf.gaussian_fit_report.v0.10",
+  "assetId": "apple",
+  "width": 253,
+  "height": 261,
+  "gaussians": 4096,
+  "assetBytes": 425041,
+  "sourceSHA256": "e63e436f5b883a98f640b593f9474a4bbdd5a538e3b0fb42e0997db6f6fb1a39",
+  "metrics": {
+    "mae": 3.0135167845085675,
+    "rmse": 4.89219275045837,
+    "psnr": 34.34073241403784,
+    "ssim": 0.8863962563693767,
+    "maxError": 103,
+    "exactRGBFraction": 0.00399388496082553,
+    "evaluatedPixels": 52330,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fit": {
+    "iterationsPerStage": 20,
+    "geometryOptimization": {
+      "steps": 30,
+      "history": [
+        {
+          "step": 0,
+          "perceptualMSE": 0.0005202409568238671,
+          "bestPerceptualMSE": 0.0005202409568238671
+        },
+        {
+          "step": 10,
+          "perceptualMSE": 0.0007400461206691656,
+          "bestPerceptualMSE": 0.0005202409568238671
+        },
+        {
+          "step": 20,
+          "perceptualMSE": 0.00040370217513169846,
+          "bestPerceptualMSE": 0.00040370217513169846
+        },
+        {
+          "step": 30,
+          "perceptualMSE": 0.00029218670707312303,
+          "bestPerceptualMSE": 0.00029218670707312303
+        }
+      ],
+      "bestPerceptualMSE": 0.00029218670707312303,
+      "parameters": "centre_xy,log_sigma_xy,rotation,linear_rgb_coefficients",
+      "pixelFootprintGradient": true
+    },
+    "history": [
+      {
+        "phase": "structure_variance_initialization",
+        "count": 1392,
+        "elapsedSeconds": 0.136,
+        "mae": 28.205159564303457,
+        "rmse": 35.875837082212435,
+        "psnr": 17.034762745715742,
+        "ssim": 0.4336373869661281,
+        "maxError": 223,
+        "exactRGBFraction": 0.0,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_0",
+        "count": 1392,
+        "elapsedSeconds": 0.92,
+        "mae": 5.238932416077457,
+        "rmse": 9.930389607040967,
+        "psnr": 28.191477851523352,
+        "ssim": 0.7140542500301177,
+        "maxError": 130,
+        "exactRGBFraction": 0.00408943244792662,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_1",
+        "count": 3149,
+        "elapsedSeconds": 2.167,
+        "mae": 3.9968214535957705,
+        "rmse": 7.424525649482029,
+        "psnr": 30.717429369818518,
+        "ssim": 0.8135776019318188,
+        "maxError": 106,
+        "exactRGBFraction": 0.008637492833938467,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_2",
+        "count": 4096,
+        "elapsedSeconds": 3.21,
+        "mae": 3.538505637301739,
+        "rmse": 6.560041333868061,
+        "psnr": 31.79267209246388,
+        "ssim": 0.8512431817227238,
+        "maxError": 104,
+        "exactRGBFraction": 0.011351041467609402,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_0",
+        "count": 4096,
+        "elapsedSeconds": 3.432,
+        "mae": 3.538505637301739,
+        "rmse": 6.560041333868061,
+        "psnr": 31.79267209246388,
+        "ssim": 0.8512431817227238,
+        "maxError": 104,
+        "exactRGBFraction": 0.011351041467609402,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_10",
+        "count": 4096,
+        "elapsedSeconds": 5.545,
+        "mae": 4.809236257086439,
+        "rmse": 7.019176956693183,
+        "psnr": 31.205079782384836,
+        "ssim": 0.7867820694474275,
+        "maxError": 104,
+        "exactRGBFraction": 0.00042040894324479265,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_20",
+        "count": 4096,
+        "elapsedSeconds": 7.676,
+        "mae": 3.701770813427607,
+        "rmse": 5.628823590224981,
+        "psnr": 33.12245085076157,
+        "ssim": 0.8544138857306535,
+        "maxError": 106,
+        "exactRGBFraction": 0.0016243072807185172,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_30",
+        "count": 4096,
+        "elapsedSeconds": 9.601,
+        "mae": 3.0135167845085675,
+        "rmse": 4.89219275045837,
+        "psnr": 34.34073241403784,
+        "ssim": 0.8863962563693767,
+        "maxError": 103,
+        "exactRGBFraction": 0.00399388496082553,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 9.619,
+    "bestCheckpointRule": "lowest_observed_srgb_mse",
+    "initializer": "variance_partition_and_structure_tensor_no_neural_network"
+  },
+  "renderedFromExportOnly": true,
+  "modelTraining": false,
+  "qualityScope": "reference_observation_reconstruction_not_new_image_generation",
+  "provenance": {
+    "kind": "observed_gaussian_reconstruction",
+    "algorithm": "crf10-structure-irls-pixel-footprint-adam",
+    "sourceRGBEmbedded": false,
+    "losslessResidualEmbedded": false,
+    "neuralModelTraining": false,
+    "pretrainedInitializerUsed": false,
+    "optimizationScope": "this_observation_only",
+    "budget": 4096,
+    "illumination": "inherited_from_observation",
+    "sourceSHA256": "e63e436f5b883a98f640b593f9474a4bbdd5a538e3b0fb42e0997db6f6fb1a39",
+    "originalSize": [
+      253,
+      261
+    ],
+    "fittedSize": [
+      253,
+      261
+    ],
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_and_pear.jpg",
+    "license": "CC0 1.0",
+    "author": "Yves Geissbühler",
+    "sourceCatalogId": "fruit.apple",
+    "alphaOrigin": "inherited_observed_semantic_coverage_not_recovered_geometry"
+  },
+  "crossRuntimeParity": {
+    "id": "apple",
+    "visiblePixels": 52330,
+    "maximumVisibleRGBDifference": 0,
+    "differentVisibleRGBValues": 0,
+    "alphaExactlyEqual": true,
+    "processAndRenderSeconds": 0.393
+  }
+}

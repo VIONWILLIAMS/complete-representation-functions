@@ -1,0 +1,23 @@
+{
+  "schema": "crf.release_validation.v0.9",
+  "unitTests": {
+    "command": "npm run test:v09",
+    "passed": 62,
+    "failed": 0,
+    "skipped": 0
+  },
+  "experimentSummaryTests": {
+    "command": "python -m unittest tests/test_experiment_summary09.py",
+    "passed": 9,
+    "failed": 0
+  },
+  "controlledWallValidation": "reports/v09/boundary/controlled_validation.json",
+  "browserPNGAndRestore": "reports/v09/browser/actual_generation_export.json",
+  "browserVideo": "reports/v09/browser/video_export.json",
+  "browserDownloads": "reports/v09/browser/published_downloads.json",
+  "independentRenderKit": "reports/v09/render_kit_verification.json",
+  "builtPublicURLs": "reports/v09/build_verification.json",
+  "overallPhotoQualityAccepted": false,
+  "terminalBenchmarkExecuted": false,
+  "scope": "Engineering validation only; no change to failed or unfinished quality gates."
+}

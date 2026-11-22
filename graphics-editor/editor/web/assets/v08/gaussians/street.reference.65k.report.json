@@ -1,0 +1,93 @@
+{
+  "assetId": "street.reference",
+  "source": "web/assets/reference.png",
+  "sourceSHA256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+  "width": 667,
+  "height": 1000,
+  "gaussians": 65536,
+  "assetBytes": 4672716,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "renderedFromExportOnly": true,
+  "metrics": {
+    "mae": 3.235552223888056,
+    "rmse": 5.433407774130339,
+    "psnr": 33.42935761251748,
+    "ssim": 0.9100502252269337,
+    "maxError": 120,
+    "exactRGBFraction": 0.07974362818590705,
+    "evaluatedPixels": 667000,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fit": {
+    "iterationsPerStage": 32,
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 44564,
+        "elapsedSeconds": 2.261,
+        "mae": 6.727112943528236,
+        "rmse": 13.823626158859694,
+        "psnr": 25.31836400086076,
+        "ssim": 0.7828181223742664,
+        "maxError": 217,
+        "exactRGBFraction": 0.05696551724137931,
+        "evaluatedPixels": 667000,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 44564,
+        "elapsedSeconds": 4.338,
+        "mae": 5.502855072463768,
+        "rmse": 10.246598904292451,
+        "psnr": 27.91920888076564,
+        "ssim": 0.8093915957746088,
+        "maxError": 149,
+        "exactRGBFraction": 0.0637616191904048,
+        "evaluatedPixels": 667000,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 58195,
+        "elapsedSeconds": 9.821,
+        "mae": 3.762881059470265,
+        "rmse": 6.58115678947525,
+        "psnr": 31.764758857584845,
+        "ssim": 0.888251497832572,
+        "maxError": 127,
+        "exactRGBFraction": 0.07383208395802099,
+        "evaluatedPixels": 667000,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 65536,
+        "elapsedSeconds": 14.6,
+        "mae": 3.235552223888056,
+        "rmse": 5.433404462946875,
+        "psnr": 33.42936290580377,
+        "ssim": 0.9100503029468443,
+        "maxError": 120,
+        "exactRGBFraction": 0.07974062968515742,
+        "evaluatedPixels": 667000,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 14.629,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "targets": {
+    "pilot": {
+      "psnr": 32,
+      "ssim": 0.95
+    },
+    "highFidelity": {
+      "psnr": 38,
+      "ssim": 0.98
+    }
+  },
+  "passedPilot": false,
+  "passedHighFidelity": false
+}

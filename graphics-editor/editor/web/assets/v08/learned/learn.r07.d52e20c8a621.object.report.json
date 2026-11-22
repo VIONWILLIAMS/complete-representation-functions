@@ -1,0 +1,368 @@
+{
+  "id": "learn.r07.d52e20c8a621.object",
+  "assetId": "learn.r07.d52e20c8a621.object",
+  "status": "fitted",
+  "round": 7,
+  "topic": "墙面与建筑窗户的实拍",
+  "sourceUrl": "https://www.pexels.com/zh-tw/photo/32560039/",
+  "imageUrl": "https://images.pexels.com/photos/32560039/pexels-photo-32560039.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Pexels 上由 Zehra İslamoğlu 拍攝的相片",
+  "sourceFile": "fitting/learning08/originals/learn.r07.d52e20c8a621.webp",
+  "sourceSHA256": "d52e20c8a6219a547bec911053d74d04d732d91d4a2fce623bad91036cbd4d4a",
+  "normalizedRGBA_SHA256": "2f3e08d6dec3a06aae83bbc64112d7721737c2163ca410e697d3d2c629c9f01e",
+  "dHash64": "d4b6a6b686aa6259",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    385,
+    198
+  ],
+  "assetURL": "assets/v08/learned/learn.r07.d52e20c8a621.object.json",
+  "renderURL": "assets/v08/learned/learn.r07.d52e20c8a621.object.png",
+  "reportURL": "assets/v08/learned/learn.r07.d52e20c8a621.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r07.d52e20c8a621.object.png",
+  "referenceThumbnailURL": "assets/v08/references/learn.r07.d52e20c8a621.object.jpg",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 8192,
+  "pixelToGaussianRatio": 9.305419921875,
+  "assetBytes": 686183,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 3.476811736367699,
+    "rmse": 5.945021816231648,
+    "psnr": 32.647734555231196,
+    "ssim": 0.9571883748532789,
+    "maxError": 134,
+    "exactRGBFraction": 0.03385867965863388,
+    "evaluatedPixels": 61166,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 24.249986498099112,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 158.1031772991301,
+          "bestFloatMSE": 158.1031772991301
+        },
+        {
+          "step": 10,
+          "floatMSE": 67.4482770228254,
+          "bestFloatMSE": 67.4482770228254
+        },
+        {
+          "step": 20,
+          "floatMSE": 47.760615498382435,
+          "bestFloatMSE": 47.760615498382435
+        },
+        {
+          "step": 30,
+          "floatMSE": 37.23624079875552,
+          "bestFloatMSE": 37.23624079875552
+        },
+        {
+          "step": 40,
+          "floatMSE": 30.9759172940518,
+          "bestFloatMSE": 30.9759172940518
+        },
+        {
+          "step": 50,
+          "floatMSE": 27.20710962468111,
+          "bestFloatMSE": 27.20710962468111
+        },
+        {
+          "step": 60,
+          "floatMSE": 25.178935471392393,
+          "bestFloatMSE": 25.178935471392393
+        },
+        {
+          "step": 70,
+          "floatMSE": 24.249986498099112,
+          "bestFloatMSE": 24.249986498099112
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2867,
+        "elapsedSeconds": 0.13,
+        "mae": 29.112224656399526,
+        "rmse": 42.17794747471564,
+        "psnr": 15.629094775855808,
+        "ssim": 0.37106854176952847,
+        "maxError": 210,
+        "exactRGBFraction": 0.007357028414478632,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2867,
+        "elapsedSeconds": 0.325,
+        "mae": 23.59539613510774,
+        "rmse": 32.85885241547443,
+        "psnr": 17.797755773216757,
+        "ssim": 0.4515743886049433,
+        "maxError": 176,
+        "exactRGBFraction": 0.0027139260373410063,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 6328,
+        "elapsedSeconds": 1.326,
+        "mae": 12.990136132273921,
+        "rmse": 19.127681658999293,
+        "psnr": 22.49755690412662,
+        "ssim": 0.7822429203784976,
+        "maxError": 147,
+        "exactRGBFraction": 0.007307981558382108,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 8192,
+        "elapsedSeconds": 1.858,
+        "mae": 9.89411873698896,
+        "rmse": 14.73511945041273,
+        "psnr": 24.763730392412086,
+        "ssim": 0.8532685138825935,
+        "maxError": 142,
+        "exactRGBFraction": 0.011068240525782298,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 8192,
+        "elapsedSeconds": 1.914,
+        "mae": 9.89411873698896,
+        "rmse": 14.73511945041273,
+        "psnr": 24.763730392412086,
+        "ssim": 0.8532685138825935,
+        "maxError": 142,
+        "exactRGBFraction": 0.011068240525782298,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 8192,
+        "elapsedSeconds": 2.306,
+        "mae": 6.169985503929198,
+        "rmse": 9.770625757100483,
+        "psnr": 28.332356031022012,
+        "ssim": 0.9154751474698162,
+        "maxError": 135,
+        "exactRGBFraction": 0.012752182585096295,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 8192,
+        "elapsedSeconds": 2.726,
+        "mae": 5.006730318586579,
+        "rmse": 8.232990909436857,
+        "psnr": 29.819650891080517,
+        "ssim": 0.9337539306294605,
+        "maxError": 138,
+        "exactRGBFraction": 0.017869404571166987,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 8192,
+        "elapsedSeconds": 3.154,
+        "mae": 4.3330336025460765,
+        "rmse": 7.291383189791126,
+        "psnr": 30.87460515559256,
+        "ssim": 0.9439320009126776,
+        "maxError": 130,
+        "exactRGBFraction": 0.02192394467514632,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 8192,
+        "elapsedSeconds": 3.588,
+        "mae": 3.9229800869764246,
+        "rmse": 6.675751447691954,
+        "psnr": 31.640800436507757,
+        "ssim": 0.9502779029542467,
+        "maxError": 133,
+        "exactRGBFraction": 0.02771147369453618,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 8192,
+        "elapsedSeconds": 4.059,
+        "mae": 3.674426969231272,
+        "rmse": 6.275020653816401,
+        "psnr": 32.178500416537965,
+        "ssim": 0.9541442060852187,
+        "maxError": 134,
+        "exactRGBFraction": 0.030327306019684138,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 8192,
+        "elapsedSeconds": 4.571,
+        "mae": 3.538049461029548,
+        "rmse": 6.049308825461076,
+        "psnr": 32.496688480707576,
+        "ssim": 0.9562365950645438,
+        "maxError": 134,
+        "exactRGBFraction": 0.03291044044076775,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 8192,
+        "elapsedSeconds": 4.951,
+        "mae": 3.476800837066344,
+        "rmse": 5.945013566154249,
+        "psnr": 32.647746608897904,
+        "ssim": 0.9571884184007058,
+        "maxError": 134,
+        "exactRGBFraction": 0.03385867965863388,
+        "evaluatedPixels": 61166,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 4.953,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 5.43,
+  "passedPilot": true,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.17,
+      0,
+      0.93,
+      0.84
+    ],
+    "proposalPixels": [
+      67,
+      1,
+      497,
+      258
+    ],
+    "cropPixels": [
+      108,
+      0,
+      493,
+      198
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 59692,
+    "pixelMaskVerified": false,
+    "reviewedCorrections": [],
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r07.d52e20c8a621.object.png"
+  },
+  "semantics": {
+    "id": "learn.r07.d52e20c8a621",
+    "label": "铁栅窗与网格投影",
+    "category": "grille-window",
+    "role": "object",
+    "bbox": [
+      0.17,
+      0,
+      0.93,
+      0.84
+    ],
+    "palette": [
+      [
+        190,
+        126,
+        58
+      ],
+      [
+        160,
+        101,
+        44
+      ],
+      [
+        34,
+        30,
+        26
+      ],
+      [
+        116,
+        94,
+        66
+      ],
+      [
+        224,
+        177,
+        112
+      ]
+    ],
+    "lightDirection": "right",
+    "description": "浅赭色或橙色墙面上嵌有方形小窗，窗外覆盖粗黑金属格栅，格栅投下清晰的网格状硬阴影到墙面和下方。窗内较暗，可见更细密的金属网或遮挡物；墙面有粗糙涂层质感，明暗对比强。适合提取铁栅窗、防护网和投影图案。",
+    "tags": [
+      "铁栅窗",
+      "金属格栅",
+      "小窗",
+      "网格投影",
+      "橙色墙面",
+      "硬阴影",
+      "防护网",
+      "建筑局部"
+    ],
+    "limitations": [
+      "窗内细节因遮挡和暗部不清晰",
+      "网格尺寸与安装方式无法确定",
+      "投影会随光位变化",
+      "bbox主要覆盖格栅与窗口，不含完整投影"
+    ]
+  },
+  "sourceId": "learn.r07.d52e20c8a621"
+}

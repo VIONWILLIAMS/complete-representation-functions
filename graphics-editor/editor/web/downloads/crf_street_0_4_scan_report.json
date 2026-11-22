@@ -1,0 +1,2200 @@
+{
+  "schema": "crf.pixel_scan_report.v0.4",
+  "reference": {
+    "id": "reference.street.001",
+    "asset": "assets/reference.png",
+    "fileSha256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+    "rgbSha256": "ce66923ff7c0bd64cc3aaec19ffe951dd30b3c3834843d711dd6ad86aadcf922",
+    "mode": "RGB8",
+    "scanCoverage": "all original pixels exactly once in observed layer",
+    "canonicalization": "Pillow ImageOps.exif_transpose; RGB8; row-major interleaved RGB",
+    "segmentation": "assistant-assisted segmentation of source pixels; not model-rendered labels",
+    "auxiliaryAnnotation": "CRF Street 0.3 observed regions and stripe boundary fits",
+    "auxiliaryAnnotationSha256": "a17198f902bd70af4a0bebb39e40890e051d654fb304b8a1fe2f7e5cc937bde3",
+    "notCompression": true,
+    "learnedAutomaticSegmentation": false
+  },
+  "pixelScanInterface": "scanner.scene_scan.scan_pixels(input_path, labels=None); used for this scan",
+  "statistics": {
+    "sourcePixelCount": 667000,
+    "assignedPixelCount": 667000,
+    "unassignedPixelCount": 0,
+    "objectCount": 18,
+    "observedRgbByteCount": 2001000,
+    "labelByteCount": 667000,
+    "backgroundRgbByteCount": 2001000,
+    "backgroundInferredPixelCount": 99023,
+    "backgroundInferredFraction": 0.14846026986506747,
+    "visibleBasePixelCount": 567977,
+    "backgroundInferredMaskByteCount": 667000,
+    "backgroundLabelByteCount": 667000,
+    "storedRasterParameterBytes": 6003000,
+    "rgbRoundTripExact": true,
+    "edgeDefinition": "luminance Sobel magnitude / 8 >= 12 in 0..255 units",
+    "edgePixelCount": 55467
+  },
+  "objects": [
+    {
+      "id": "wall.main",
+      "index": 0,
+      "label": "主墙面",
+      "kind": "wall",
+      "group": "建筑",
+      "parent": null,
+      "bbox": [
+        0,
+        0,
+        667,
+        742
+      ],
+      "pivot": [
+        354.82998652583996,
+        369.77407448076445
+      ],
+      "depth": 0.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        124,
+        157,
+        170
+      ],
+      "statistics": {
+        "pixelCount": 437133,
+        "fraction": 0.6553718140929535,
+        "meanRGB": [
+          134.7676,
+          133.7539,
+          116.77941
+        ],
+        "stdRGB": [
+          64.49111,
+          54.79497,
+          40.9669
+        ],
+        "medianRGB": [
+          97.0,
+          106.0,
+          100.0
+        ],
+        "minRGB": [
+          0,
+          1,
+          0
+        ],
+        "maxRGB": [
+          254,
+          239,
+          200
+        ],
+        "meanLuminance": 132.74385257850585,
+        "gradientMean": 3.2287109326201793,
+        "gradientP95": 6.993300365349682,
+        "edgePixelCount": 8547,
+        "edgeFraction": 0.019552401671802402
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_surface_boundaries",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "wall.base",
+      "index": 1,
+      "label": "墙脚带",
+      "kind": "wall_base",
+      "group": "建筑",
+      "parent": "wall.main",
+      "bbox": [
+        0,
+        739,
+        667,
+        766
+      ],
+      "pivot": [
+        336.57971153232495,
+        752.4961707830748
+      ],
+      "depth": 0.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        127,
+        102,
+        84
+      ],
+      "statistics": {
+        "pixelCount": 15669,
+        "fraction": 0.02349175412293853,
+        "meanRGB": [
+          63.0741,
+          60.44712,
+          44.73738
+        ],
+        "stdRGB": [
+          54.46806,
+          43.59208,
+          26.9837
+        ],
+        "medianRGB": [
+          27.0,
+          33.0,
+          30.0
+        ],
+        "minRGB": [
+          10,
+          14,
+          11
+        ],
+        "maxRGB": [
+          169,
+          148,
+          104
+        ],
+        "meanLuminance": 59.871375199438376,
+        "gradientMean": 1.9531448344437436,
+        "gradientP95": 6.685201555658642,
+        "edgePixelCount": 354,
+        "edgeFraction": 0.022592379858318974
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_surface_boundaries",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "road.main",
+      "index": 2,
+      "label": "沥青道路",
+      "kind": "road",
+      "group": "地面",
+      "parent": null,
+      "bbox": [
+        0,
+        840,
+        667,
+        1000
+      ],
+      "pivot": [
+        294.6557286220405,
+        918.7729230721209
+      ],
+      "depth": 425.23511128363947,
+      "depthSlope": [
+        0.0,
+        2.7474774194546225
+      ],
+      "normal": [
+        0.0,
+        0.9396926207859084,
+        0.3420201433256687
+      ],
+      "displayColor": [
+        80,
+        87,
+        98
+      ],
+      "statistics": {
+        "pixelCount": 64073,
+        "fraction": 0.09606146926536732,
+        "meanRGB": [
+          33.94391,
+          35.98725,
+          27.82648
+        ],
+        "stdRGB": [
+          19.85257,
+          17.32139,
+          15.17254
+        ],
+        "medianRGB": [
+          26.0,
+          29.0,
+          23.0
+        ],
+        "minRGB": [
+          0,
+          6,
+          0
+        ],
+        "maxRGB": [
+          188,
+          160,
+          132
+        ],
+        "meanLuminance": 34.96362700669549,
+        "gradientMean": 9.966786398395273,
+        "gradientP95": 53.00553538727696,
+        "edgePixelCount": 13186,
+        "edgeFraction": 0.20579651335195792
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_surface_boundaries",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "road.edge",
+      "index": 3,
+      "label": "路缘线与白漆碎片",
+      "kind": "road_marking",
+      "group": "地面",
+      "parent": "road.main",
+      "bbox": [
+        0,
+        845,
+        600,
+        985
+      ],
+      "pivot": [
+        155.38878000979912,
+        917.0521803037726
+      ],
+      "depth": 421.3074093829128,
+      "depthSlope": [
+        0.0,
+        2.7474774194546225
+      ],
+      "normal": [
+        0.0,
+        0.9396926207859084,
+        0.3420201433256687
+      ],
+      "displayColor": [
+        255,
+        214,
+        70
+      ],
+      "statistics": {
+        "pixelCount": 2041,
+        "fraction": 0.0030599700149925037,
+        "meanRGB": [
+          133.44145,
+          137.61881,
+          130.80451
+        ],
+        "stdRGB": [
+          34.37056,
+          27.55222,
+          22.41127
+        ],
+        "medianRGB": [
+          116.0,
+          127.0,
+          129.0
+        ],
+        "minRGB": [
+          95,
+          106,
+          63
+        ],
+        "maxRGB": [
+          236,
+          229,
+          201
+        ],
+        "meanLuminance": 136.23871376776088,
+        "gradientMean": 17.497853076161586,
+        "gradientP95": 60.94122786033278,
+        "edgePixelCount": 866,
+        "edgeFraction": 0.4243018128368447
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_seeded_source_luminance_region_growing",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "sidewalk.main",
+      "index": 4,
+      "label": "人行道与后排地面",
+      "kind": "sidewalk",
+      "group": "地面",
+      "parent": null,
+      "bbox": [
+        0,
+        764,
+        667,
+        848
+      ],
+      "pivot": [
+        344.2831591718524,
+        804.7970725216234
+      ],
+      "depth": 112.08903553301285,
+      "depthSlope": [
+        0.0,
+        2.7474774194546225
+      ],
+      "normal": [
+        0.0,
+        0.9396926207859084,
+        0.3420201433256687
+      ],
+      "displayColor": [
+        225,
+        165,
+        89
+      ],
+      "statistics": {
+        "pixelCount": 51102,
+        "fraction": 0.07661469265367317,
+        "meanRGB": [
+          63.05438,
+          56.13563,
+          37.41497
+        ],
+        "stdRGB": [
+          38.18556,
+          27.72967,
+          18.58285
+        ],
+        "medianRGB": [
+          45.0,
+          44.0,
+          35.0
+        ],
+        "minRGB": [
+          2,
+          3,
+          0
+        ],
+        "maxRGB": [
+          217,
+          173,
+          102
+        ],
+        "meanLuminance": 56.25492568979688,
+        "gradientMean": 4.053130195246489,
+        "gradientP95": 12.72322751592543,
+        "edgePixelCount": 3032,
+        "edgeFraction": 0.05933231576063559
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_surface_boundaries",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "crosswalk.main",
+      "index": 5,
+      "label": "斑马线白漆",
+      "kind": "crosswalk",
+      "group": "地面",
+      "parent": "road.main",
+      "bbox": [
+        52,
+        848,
+        667,
+        1000
+      ],
+      "pivot": [
+        401.21827142175823,
+        928.102485294897
+      ],
+      "depth": 451.6678728241136,
+      "depthSlope": [
+        0.0,
+        2.7474774194546225
+      ],
+      "normal": [
+        0.0,
+        0.9396926207859084,
+        0.3420201433256687
+      ],
+      "displayColor": [
+        241,
+        232,
+        177
+      ],
+      "statistics": {
+        "pixelCount": 37742,
+        "fraction": 0.05658470764617691,
+        "meanRGB": [
+          135.23409,
+          141.10135,
+          137.9239
+        ],
+        "stdRGB": [
+          29.99402,
+          24.48151,
+          18.45399
+        ],
+        "medianRGB": [
+          122.0,
+          131.0,
+          133.0
+        ],
+        "minRGB": [
+          91,
+          98,
+          66
+        ],
+        "maxRGB": [
+          248,
+          234,
+          208
+        ],
+        "meanLuminance": 139.62455593768215,
+        "gradientMean": 12.07745871589684,
+        "gradientP95": 54.33001847960123,
+        "edgePixelCount": 9601,
+        "edgeFraction": 0.254385035239256
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_seeded_source_luminance_region_growing",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "pole.main",
+      "index": 6,
+      "label": "前景主杆",
+      "kind": "pole",
+      "group": "信号设施",
+      "parent": null,
+      "bbox": [
+        161,
+        59,
+        197,
+        834
+      ],
+      "pivot": [
+        180.17474556213017,
+        469.2441420118343
+      ],
+      "depth": 200.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        233,
+        74,
+        73
+      ],
+      "statistics": {
+        "pixelCount": 21125,
+        "fraction": 0.031671664167916044,
+        "meanRGB": [
+          51.81652,
+          46.99962,
+          32.82703
+        ],
+        "stdRGB": [
+          58.89332,
+          53.28645,
+          44.48554
+        ],
+        "medianRGB": [
+          27.0,
+          26.0,
+          16.0
+        ],
+        "minRGB": [
+          0,
+          0,
+          0
+        ],
+        "maxRGB": [
+          255,
+          252,
+          223
+        ],
+        "meanLuminance": 47.000432994082836,
+        "gradientMean": 13.672103401948927,
+        "gradientP95": 68.62814321202562,
+        "edgePixelCount": 5798,
+        "edgeFraction": 0.2744615384615385
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_silhouette",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "pole.arm",
+      "index": 7,
+      "label": "顶部斜臂与弯管",
+      "kind": "pole_arm",
+      "group": "信号设施",
+      "parent": "pole.main",
+      "bbox": [
+        72,
+        0,
+        186,
+        103
+      ],
+      "pivot": [
+        131.40989226248774,
+        42.79742082925237
+      ],
+      "depth": 210.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        233,
+        133,
+        67
+      ],
+      "statistics": {
+        "pixelCount": 3063,
+        "fraction": 0.004592203898050974,
+        "meanRGB": [
+          47.84754,
+          48.67548,
+          36.84427
+        ],
+        "stdRGB": [
+          32.35248,
+          34.33963,
+          34.43013
+        ],
+        "medianRGB": [
+          37.0,
+          36.0,
+          22.0
+        ],
+        "minRGB": [
+          0,
+          0,
+          0
+        ],
+        "maxRGB": [
+          157,
+          154,
+          144
+        ],
+        "meanLuminance": 47.6452466862553,
+        "gradientMean": 11.2637699807512,
+        "gradientP95": 33.98925757028633,
+        "edgePixelCount": 968,
+        "edgeFraction": 0.31603003591250406
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_polyline_silhouette",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "signal.support",
+      "index": 8,
+      "label": "横臂与吊架",
+      "kind": "support_arm",
+      "group": "信号设施",
+      "parent": "pole.main",
+      "bbox": [
+        189,
+        376,
+        315,
+        407
+      ],
+      "pivot": [
+        250.69885277246655,
+        389.43833652007646
+      ],
+      "depth": 210.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        206,
+        85,
+        210
+      ],
+      "statistics": {
+        "pixelCount": 2092,
+        "fraction": 0.003136431784107946,
+        "meanRGB": [
+          118.93738,
+          106.69407,
+          80.46558
+        ],
+        "stdRGB": [
+          88.48236,
+          80.6525,
+          68.65826
+        ],
+        "medianRGB": [
+          115.5,
+          96.0,
+          62.5
+        ],
+        "minRGB": [
+          0,
+          0,
+          0
+        ],
+        "maxRGB": [
+          255,
+          232,
+          209
+        ],
+        "meanLuminance": 107.40330296367114,
+        "gradientMean": 23.347620063657416,
+        "gradientP95": 88.1975210581327,
+        "edgePixelCount": 879,
+        "edgeFraction": 0.4201720841300191
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_silhouette",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "signal.main",
+      "index": 9,
+      "label": "正面行人信号灯",
+      "kind": "pedestrian_signal",
+      "group": "信号设施",
+      "parent": "signal.support",
+      "bbox": [
+        274,
+        404,
+        325,
+        494
+      ],
+      "pivot": [
+        299.10204324067473,
+        448.9856260394393
+      ],
+      "depth": 220.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        80,
+        210,
+        150
+      ],
+      "statistics": {
+        "pixelCount": 4209,
+        "fraction": 0.006310344827586207,
+        "meanRGB": [
+          134.66025,
+          102.70373,
+          85.40033
+        ],
+        "stdRGB": [
+          78.78949,
+          71.54621,
+          67.70691
+        ],
+        "medianRGB": [
+          128.0,
+          91.0,
+          65.0
+        ],
+        "minRGB": [
+          0,
+          0,
+          0
+        ],
+        "maxRGB": [
+          255,
+          255,
+          249
+        ],
+        "meanLuminance": 108.24838132573058,
+        "gradientMean": 21.459509695152665,
+        "gradientP95": 66.88788761159914,
+        "edgePixelCount": 2279,
+        "edgeFraction": 0.5414587788073176
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_rounded_silhouette",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      },
+      "signalPanels": {
+        "upper": [
+          282,
+          410,
+          316,
+          446
+        ],
+        "lower": [
+          282,
+          454,
+          316,
+          488
+        ]
+      }
+    },
+    {
+      "id": "window.r0.c0",
+      "index": 10,
+      "label": "左上窗（部分可见）",
+      "kind": "window",
+      "group": "建筑",
+      "parent": "wall.main",
+      "bbox": [
+        39,
+        0,
+        112,
+        39
+      ],
+      "pivot": [
+        71.41210374639769,
+        18.67675312199808
+      ],
+      "depth": 3.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        87,
+        168,
+        255
+      ],
+      "statistics": {
+        "pixelCount": 2082,
+        "fraction": 0.00312143928035982,
+        "meanRGB": [
+          72.45293,
+          79.58021,
+          68.58405
+        ],
+        "stdRGB": [
+          38.31525,
+          39.53689,
+          40.51363
+        ],
+        "medianRGB": [
+          62.0,
+          69.0,
+          56.0
+        ],
+        "minRGB": [
+          0,
+          3,
+          0
+        ],
+        "maxRGB": [
+          203,
+          206,
+          191
+        ],
+        "meanLuminance": 77.27102872238233,
+        "gradientMean": 17.76089011452547,
+        "gradientP95": 63.778460705678256,
+        "edgePixelCount": 908,
+        "edgeFraction": 0.43611911623439004
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_polygon",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "window.r0.c1",
+      "index": 11,
+      "label": "右上窗（部分可见）",
+      "kind": "window",
+      "group": "建筑",
+      "parent": "wall.main",
+      "bbox": [
+        183,
+        0,
+        255,
+        38
+      ],
+      "pivot": [
+        218.71890359168242,
+        18.435727788279774
+      ],
+      "depth": 3.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        119,
+        94,
+        237
+      ],
+      "statistics": {
+        "pixelCount": 2645,
+        "fraction": 0.003965517241379311,
+        "meanRGB": [
+          189.91078,
+          177.82911,
+          138.60189
+        ],
+        "stdRGB": [
+          45.60429,
+          46.83244,
+          47.89371
+        ],
+        "medianRGB": [
+          199.0,
+          186.0,
+          143.0
+        ],
+        "minRGB": [
+          17,
+          11,
+          0
+        ],
+        "maxRGB": [
+          255,
+          255,
+          241
+        ],
+        "meanLuminance": 177.56546782608694,
+        "gradientMean": 21.383788152024152,
+        "gradientP95": 80.98038499833645,
+        "edgePixelCount": 1181,
+        "edgeFraction": 0.44650283553875236
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_polygon",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "window.r1.c0",
+      "index": 12,
+      "label": "左中窗",
+      "kind": "window",
+      "group": "建筑",
+      "parent": "wall.main",
+      "bbox": [
+        40,
+        254,
+        112,
+        330
+      ],
+      "pivot": [
+        76.13323182337267,
+        291.88028169014086
+      ],
+      "depth": 3.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        42,
+        183,
+        207
+      ],
+      "statistics": {
+        "pixelCount": 5254,
+        "fraction": 0.007877061469265367,
+        "meanRGB": [
+          45.69242,
+          47.29711,
+          37.02646
+        ],
+        "stdRGB": [
+          41.25916,
+          40.858,
+          38.993
+        ],
+        "medianRGB": [
+          29.0,
+          28.0,
+          14.0
+        ],
+        "minRGB": [
+          0,
+          0,
+          0
+        ],
+        "maxRGB": [
+          236,
+          222,
+          193
+        ],
+        "meanLuminance": 46.21441054434716,
+        "gradientMean": 11.359297040290349,
+        "gradientP95": 45.492956027815964,
+        "edgePixelCount": 1586,
+        "edgeFraction": 0.3018652455272174
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_polygon",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "window.r1.c1",
+      "index": 13,
+      "label": "右中窗",
+      "kind": "window",
+      "group": "建筑",
+      "parent": "wall.main",
+      "bbox": [
+        193,
+        255,
+        255,
+        329
+      ],
+      "pivot": [
+        223.91047074351079,
+        291.68037835459745
+      ],
+      "depth": 3.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        76,
+        122,
+        207
+      ],
+      "statistics": {
+        "pixelCount": 4546,
+        "fraction": 0.006815592203898051,
+        "meanRGB": [
+          135.48306,
+          120.05807,
+          79.34998
+        ],
+        "stdRGB": [
+          62.4077,
+          62.58767,
+          63.06879
+        ],
+        "medianRGB": [
+          101.0,
+          85.0,
+          43.0
+        ],
+        "minRGB": [
+          16,
+          0,
+          0
+        ],
+        "maxRGB": [
+          255,
+          255,
+          224
+        ],
+        "meanLuminance": 120.39830123185219,
+        "gradientMean": 17.840822534182763,
+        "gradientP95": 85.22710571442,
+        "edgePixelCount": 1388,
+        "edgeFraction": 0.30532336119665643
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_polygon",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "window.r2.c0",
+      "index": 14,
+      "label": "左下窗",
+      "kind": "window",
+      "group": "建筑",
+      "parent": "wall.main",
+      "bbox": [
+        39,
+        540,
+        113,
+        617
+      ],
+      "pivot": [
+        76.03737185461324,
+        578.334109972041
+      ],
+      "depth": 3.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        88,
+        207,
+        236
+      ],
+      "statistics": {
+        "pixelCount": 5365,
+        "fraction": 0.008043478260869565,
+        "meanRGB": [
+          39.11966,
+          42.54296,
+          36.9877
+        ],
+        "stdRGB": [
+          33.34674,
+          33.33066,
+          31.36476
+        ],
+        "medianRGB": [
+          39.0,
+          45.0,
+          38.0
+        ],
+        "minRGB": [
+          0,
+          0,
+          0
+        ],
+        "maxRGB": [
+          164,
+          150,
+          121
+        ],
+        "meanLuminance": 41.41408007455731,
+        "gradientMean": 10.28136941225554,
+        "gradientP95": 35.6089,
+        "edgePixelCount": 1710,
+        "edgeFraction": 0.31873252562907733
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_polygon",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "window.r2.c1",
+      "index": 15,
+      "label": "右下窗",
+      "kind": "window",
+      "group": "建筑",
+      "parent": "wall.main",
+      "bbox": [
+        195,
+        541,
+        255,
+        616
+      ],
+      "pivot": [
+        225.77170868347338,
+        577.8022875816994
+      ],
+      "depth": 3.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        140,
+        109,
+        209
+      ],
+      "statistics": {
+        "pixelCount": 4284,
+        "fraction": 0.006422788605697152,
+        "meanRGB": [
+          118.45565,
+          109.52241,
+          81.90196
+        ],
+        "stdRGB": [
+          81.84391,
+          79.86018,
+          73.69259
+        ],
+        "medianRGB": [
+          78.0,
+          68.0,
+          44.5
+        ],
+        "minRGB": [
+          10,
+          8,
+          0
+        ],
+        "maxRGB": [
+          255,
+          255,
+          227
+        ],
+        "meanLuminance": 109.42741942110176,
+        "gradientMean": 20.534742362136363,
+        "gradientP95": 80.62341767054521,
+        "edgePixelCount": 1788,
+        "edgeFraction": 0.4173669467787115
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_polygon",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "signal.side",
+      "index": 16,
+      "label": "侧向灯背与遮罩",
+      "kind": "signal_back_housings",
+      "group": "信号设施",
+      "parent": "pole.main",
+      "bbox": [
+        192,
+        402,
+        238,
+        497
+      ],
+      "pivot": [
+        209.34296091317884,
+        448.68817018332754
+      ],
+      "depth": 216.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        202,
+        172,
+        225
+      ],
+      "statistics": {
+        "pixelCount": 2891,
+        "fraction": 0.004334332833583208,
+        "meanRGB": [
+          49.23936,
+          47.2992,
+          37.67312
+        ],
+        "stdRGB": [
+          69.5867,
+          64.20042,
+          55.03536
+        ],
+        "medianRGB": [
+          15.0,
+          17.0,
+          12.0
+        ],
+        "minRGB": [
+          0,
+          0,
+          0
+        ],
+        "maxRGB": [
+          255,
+          244,
+          220
+        ],
+        "meanLuminance": 47.01667921134556,
+        "gradientMean": 16.927601727313533,
+        "gradientP95": 80.35748545450397,
+        "edgePixelCount": 957,
+        "edgeFraction": 0.33102732618471115
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_silhouette",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    },
+    {
+      "id": "wall.fixtures",
+      "index": 17,
+      "label": "左缘裁切设施",
+      "kind": "cropped_wall_fixtures",
+      "group": "建筑",
+      "parent": "wall.main",
+      "bbox": [
+        0,
+        78,
+        17,
+        696
+      ],
+      "pivot": [
+        7.269002375296912,
+        357.7880047505938
+      ],
+      "depth": 12.0,
+      "depthSlope": [
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "displayColor": [
+        131,
+        188,
+        94
+      ],
+      "statistics": {
+        "pixelCount": 1684,
+        "fraction": 0.0025247376311844077,
+        "meanRGB": [
+          27.85154,
+          31.10986,
+          24.53029
+        ],
+        "stdRGB": [
+          20.48165,
+          20.73751,
+          19.88852
+        ],
+        "medianRGB": [
+          27.0,
+          30.0,
+          22.5
+        ],
+        "minRGB": [
+          0,
+          1,
+          0
+        ],
+        "maxRGB": [
+          105,
+          107,
+          102
+        ],
+        "meanLuminance": 29.94209489311164,
+        "gradientMean": 8.206365107570072,
+        "gradientP95": 22.582283385104116,
+        "edgePixelCount": 439,
+        "edgeFraction": 0.26068883610451304
+      },
+      "provenance": {
+        "segmentation": "assistant_assisted_source_segmentation",
+        "method": "assistant_assisted_source_polygon",
+        "rgb": "observed_reference_RGB8_samples",
+        "depth": "editable_single_view_hypothesis_not_measured_depth",
+        "referenceId": "reference.street.001"
+      }
+    }
+  ],
+  "relations": [
+    {
+      "type": "attached_to",
+      "parent": "wall.main",
+      "child": "wall.base",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "road.main",
+      "child": "road.edge",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "road.main",
+      "child": "crosswalk.main",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "pole.main",
+      "child": "pole.arm",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "pole.main",
+      "child": "signal.support",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "signal.support",
+      "child": "signal.main",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "wall.main",
+      "child": "window.r0.c0",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "wall.main",
+      "child": "window.r0.c1",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "wall.main",
+      "child": "window.r1.c0",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "wall.main",
+      "child": "window.r1.c1",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "wall.main",
+      "child": "window.r2.c0",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "wall.main",
+      "child": "window.r2.c1",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "pole.main",
+      "child": "signal.side",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "attached_to",
+      "parent": "wall.main",
+      "child": "wall.fixtures",
+      "provenance": "assistant_assisted_attachment_hypothesis"
+    },
+    {
+      "type": "stands_on",
+      "parent": "sidewalk.main",
+      "child": "pole.main",
+      "provenance": "assistant_assisted_contact_hypothesis"
+    }
+  ],
+  "segmentationAnnotations": {
+    "window.r0.c0": {
+      "method": "assistant_assisted_source_polygon",
+      "definition": {
+        "polygon_px": [
+          [
+            40,
+            0
+          ],
+          [
+            110,
+            0
+          ],
+          [
+            109,
+            35
+          ],
+          [
+            41,
+            37
+          ]
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "window.r0.c1": {
+      "method": "assistant_assisted_source_polygon",
+      "definition": {
+        "polygon_px": [
+          [
+            184,
+            0
+          ],
+          [
+            253,
+            0
+          ],
+          [
+            252,
+            35
+          ],
+          [
+            184,
+            36
+          ]
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "window.r1.c0": {
+      "method": "assistant_assisted_source_polygon",
+      "definition": {
+        "polygon_px": [
+          [
+            42,
+            256
+          ],
+          [
+            110,
+            255
+          ],
+          [
+            110,
+            326
+          ],
+          [
+            41,
+            328
+          ]
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "window.r1.c1": {
+      "method": "assistant_assisted_source_polygon",
+      "definition": {
+        "polygon_px": [
+          [
+            184,
+            256
+          ],
+          [
+            253,
+            256
+          ],
+          [
+            253,
+            326
+          ],
+          [
+            183,
+            328
+          ]
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "window.r2.c0": {
+      "method": "assistant_assisted_source_polygon",
+      "definition": {
+        "polygon_px": [
+          [
+            42,
+            542
+          ],
+          [
+            110,
+            541
+          ],
+          [
+            111,
+            612
+          ],
+          [
+            40,
+            615
+          ]
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "window.r2.c1": {
+      "method": "assistant_assisted_source_polygon",
+      "definition": {
+        "polygon_px": [
+          [
+            183,
+            542
+          ],
+          [
+            253,
+            542
+          ],
+          [
+            253,
+            612
+          ],
+          [
+            182,
+            615
+          ]
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "wall.fixtures": {
+      "method": "assistant_assisted_source_polygon",
+      "definition": {
+        "polygons_px": [
+          [
+            [
+              0,
+              79
+            ],
+            [
+              9,
+              80
+            ],
+            [
+              14,
+              85
+            ],
+            [
+              14,
+              113
+            ],
+            [
+              6,
+              116
+            ],
+            [
+              0,
+              114
+            ]
+          ],
+          [
+            [
+              0,
+              366
+            ],
+            [
+              13,
+              367
+            ],
+            [
+              15,
+              371
+            ],
+            [
+              15,
+              400
+            ],
+            [
+              10,
+              407
+            ],
+            [
+              0,
+              409
+            ]
+          ],
+          [
+            [
+              0,
+              656
+            ],
+            [
+              7,
+              657
+            ],
+            [
+              9,
+              661
+            ],
+            [
+              9,
+              688
+            ],
+            [
+              5,
+              693
+            ],
+            [
+              0,
+              694
+            ]
+          ]
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "crosswalk.main": {
+      "method": "assistant_seeded_source_luminance_region_growing",
+      "definition": {
+        "borrowed_seeds": "0.3 observed stripe boundary fits, not rendered masks",
+        "luminance_threshold": 99.0,
+        "seed_threshold": 135.0,
+        "seed_expansion_px": 3,
+        "bottom_cropping": "observed pixels only"
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "road.edge": {
+      "method": "assistant_seeded_source_luminance_region_growing",
+      "definition": {
+        "road_edge_centerline": [
+          [
+            0,
+            844.8
+          ],
+          [
+            667,
+            851.87
+          ]
+        ],
+        "fragment_semantics": "road paint fragment; crosswalk membership unresolved"
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "pole.main": {
+      "method": "assistant_assisted_source_silhouette",
+      "definition": {
+        "polygon_px": [
+          [
+            174,
+            62
+          ],
+          [
+            190,
+            62
+          ],
+          [
+            194,
+            68
+          ],
+          [
+            193,
+            103
+          ],
+          [
+            191,
+            111
+          ],
+          [
+            192,
+            538
+          ],
+          [
+            195,
+            548
+          ],
+          [
+            195,
+            733
+          ],
+          [
+            191,
+            735
+          ],
+          [
+            190,
+            831
+          ],
+          [
+            165,
+            832
+          ],
+          [
+            165,
+            552
+          ],
+          [
+            168,
+            545
+          ],
+          [
+            169,
+            113
+          ],
+          [
+            163,
+            104
+          ],
+          [
+            162,
+            95
+          ],
+          [
+            170,
+            87
+          ],
+          [
+            170,
+            69
+          ]
+        ],
+        "top_cap_ellipse_px": [
+          170,
+          60,
+          194,
+          72
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "pole.arm": {
+      "method": "assistant_assisted_source_polyline_silhouette",
+      "definition": {
+        "main_centerline_px": [
+          [
+            98,
+            -40
+          ],
+          [
+            177.56,
+            97
+          ]
+        ],
+        "width_px": 17,
+        "curved_tube": "assistant traced; cropped upper return unobserved",
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "signal.support": {
+      "method": "assistant_assisted_source_silhouette",
+      "definition": {
+        "polygons_px": [
+          [
+            [
+              190,
+              378
+            ],
+            [
+              197,
+              378
+            ],
+            [
+              199,
+              382
+            ],
+            [
+              312,
+              383
+            ],
+            [
+              312,
+              390
+            ],
+            [
+              302,
+              393
+            ],
+            [
+              203,
+              392
+            ],
+            [
+              201,
+              401
+            ],
+            [
+              192,
+              406
+            ]
+          ],
+          [
+            [
+              294,
+              390
+            ],
+            [
+              298,
+              390
+            ],
+            [
+              298,
+              402
+            ],
+            [
+              305,
+              402
+            ],
+            [
+              305,
+              407
+            ],
+            [
+              287,
+              407
+            ],
+            [
+              287,
+              402
+            ],
+            [
+              293,
+              402
+            ]
+          ]
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false,
+      "sourceEdgeRefinement": {
+        "method": "assistant_source_crop_inspection; local backplate/shoe outline plus1px",
+        "added_pixels": 327,
+        "previous_owner_required": "wall.main",
+        "other_object_pixels_overwritten": 0
+      }
+    },
+    "signal.side": {
+      "method": "assistant_assisted_source_silhouette",
+      "definition": {
+        "polygons_px": [
+          [
+            [
+              193,
+              409
+            ],
+            [
+              204,
+              408
+            ],
+            [
+              206,
+              413
+            ],
+            [
+              231,
+              417
+            ],
+            [
+              235,
+              420
+            ],
+            [
+              233,
+              425
+            ],
+            [
+              218,
+              443
+            ],
+            [
+              208,
+              445
+            ],
+            [
+              202,
+              440
+            ],
+            [
+              194,
+              441
+            ]
+          ],
+          [
+            [
+              193,
+              453
+            ],
+            [
+              204,
+              453
+            ],
+            [
+              207,
+              457
+            ],
+            [
+              232,
+              459
+            ],
+            [
+              234,
+              463
+            ],
+            [
+              218,
+              483
+            ],
+            [
+              208,
+              486
+            ],
+            [
+              201,
+              481
+            ],
+            [
+              201,
+              493
+            ],
+            [
+              193,
+              493
+            ]
+          ]
+        ],
+        "backplate_px": [
+          193,
+          404,
+          202,
+          491
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false,
+      "sourceEdgeRefinement": {
+        "method": "assistant_source_crop_inspection; local backplate/shoe outline plus1px",
+        "added_pixels": 270,
+        "previous_owner_required": "wall.main",
+        "other_object_pixels_overwritten": 0
+      }
+    },
+    "signal.main": {
+      "method": "assistant_assisted_source_rounded_silhouette",
+      "definition": {
+        "upper_outline_px": [
+          277,
+          405,
+          321,
+          451
+        ],
+        "lower_outline_px": [
+          276,
+          448,
+          320,
+          492
+        ],
+        "source_contour_margin_px": 1
+      },
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false
+    },
+    "wall.main": {
+      "method": "assistant_assisted_source_surface_boundaries",
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false,
+      "definition": {
+        "occlusion": "visible ownership after foreground silhouette priority"
+      }
+    },
+    "wall.base": {
+      "method": "assistant_assisted_source_surface_boundaries",
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false,
+      "definition": {
+        "occlusion": "visible ownership after foreground silhouette priority"
+      }
+    },
+    "road.main": {
+      "method": "assistant_assisted_source_surface_boundaries",
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false,
+      "definition": {
+        "occlusion": "visible ownership after foreground silhouette priority"
+      }
+    },
+    "sidewalk.main": {
+      "method": "assistant_assisted_source_surface_boundaries",
+      "source": "original_reference_rgb",
+      "rendered_semantic_map_used": false,
+      "definition": {
+        "occlusion": "visible ownership after foreground silhouette priority"
+      }
+    }
+  },
+  "backgroundInference": {
+    "method": "wall: normalized visible-facade convolution; ground: directional interpolation; first hidden window: same-window visible continuation",
+    "surfaces": [
+      {
+        "id": "wall.main",
+        "observed_donor_pixels": 420586,
+        "inferred_pixels": 54028,
+        "foreground_donors": 0,
+        "method": "same-surface normalized Gaussian continuation; sigma18px; donor exclusion5px"
+      },
+      {
+        "id": "wall.base",
+        "observed_donor_pixels": 15414,
+        "inferred_pixels": 739,
+        "foreground_donors": 0,
+        "method": "same-surface directional interpolation; donor exclusion5px"
+      },
+      {
+        "id": "sidewalk.main",
+        "observed_donor_pixels": 49920,
+        "inferred_pixels": 1922,
+        "foreground_donors": 0,
+        "method": "same-surface directional interpolation; donor exclusion5px"
+      },
+      {
+        "id": "road.main",
+        "observed_donor_pixels": 25465,
+        "inferred_pixels": 39783,
+        "foreground_donors": 0,
+        "method": "same-surface directional interpolation; donor exclusion5px"
+      },
+      {
+        "id": "window.r0.c0",
+        "observed_donor_pixels": 1764,
+        "inferred_pixels": 618,
+        "foreground_donors": 0,
+        "method": "same-window directional continuation; visible donor erosion1px"
+      },
+      {
+        "id": "window.r1.c1",
+        "observed_donor_pixels": 4282,
+        "inferred_pixels": 780,
+        "foreground_donors": 0,
+        "method": "same-window directional continuation; visible donor erosion1px"
+      },
+      {
+        "id": "window.r2.c1",
+        "observed_donor_pixels": 4024,
+        "inferred_pixels": 1153,
+        "foreground_donors": 0,
+        "method": "same-window directional continuation; visible donor erosion1px"
+      }
+    ],
+    "visiblePixelsPreserved": true,
+    "foregroundDonorCount": 0,
+    "hiddenGroundTruthAvailable": false,
+    "castShadowRecomputation": false
+  },
+  "payload": {
+    "path": "dist/assets/scene-data.js",
+    "bytes": 8025325,
+    "sha256": "95df9a865bbae0b9e523fa32c312c086eb487e71e868dec3c71dacc924658d8d",
+    "compressionClaim": false,
+    "denseObservationDataExplicitlyStored": true
+  },
+  "qaArtifacts": {
+    "overlay": "scanner/previews/semantic_overlay.png",
+    "comparison": "scanner/previews/mask_preview.png",
+    "background": "scanner/previews/background_inferred.png",
+    "masks": "scanner/masks/"
+  },
+  "claims": {
+    "all667000PixelsScanned": true,
+    "automaticSegmentation": false,
+    "true3DRecovered": false,
+    "unobservedBackgroundVerified": false,
+    "sourceImageUsedAsBlenderTexture": false,
+    "BlenderUsed": false,
+    "observationRGBIsInputToFrontendReconstruction": true
+  },
+  "validation": {
+    "independentDecodedRgbExactPixels": 667000,
+    "independentDecodedRgbMaxError": 0,
+    "referenceFileHashMatches": true,
+    "allPayloadArrayLengthsCorrect": true,
+    "labelsCoverEveryPixelExactlyOnce": true,
+    "objectStatisticsAndBoundsChecked": true,
+    "inferredMaskExactlyDifferentHost": true,
+    "unchangedVisibleBackgroundPixels": 567977,
+    "inferredDepthBehindObservedAtEveryPixel": true,
+    "minimumDepthMarginReferencePixels": 0.7999999999999545,
+    "foregroundColorPerturbationLeavesInfillUnchanged": true,
+    "scope": "Array/label/depth/data-source contracts only; not a WebGL or semantic ground-truth validation"
+  }
+}

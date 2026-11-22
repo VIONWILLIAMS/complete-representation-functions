@@ -1,0 +1,365 @@
+{
+  "id": "learn.r06.a23c10c20c8a.object",
+  "assetId": "learn.r06.a23c10c20c8a.object",
+  "status": "fitted",
+  "round": 6,
+  "topic": "真实交通灯与街角实拍",
+  "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+  "imageUrl": "https://images.pexels.com/photos/19901332/pexels-photo-19901332.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo by Clarissa Schwarz on Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r06.a23c10c20c8a.webp",
+  "sourceSHA256": "a23c10c20c8a5feded65d4e6d8404831123f200d854856c901a8965d8ea60946",
+  "normalizedRGBA_SHA256": "d2c1eb26bc31c0b5ad0c5f6c284ba6518af30cd93dc537e27989cab0f700b1dc",
+  "dHash64": "56149792d6939ecc",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    201,
+    291
+  ],
+  "assetURL": "assets/v08/learned/learn.r06.a23c10c20c8a.object.json",
+  "renderURL": "assets/v08/learned/learn.r06.a23c10c20c8a.object.png",
+  "reportURL": "assets/v08/learned/learn.r06.a23c10c20c8a.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r06.a23c10c20c8a.object.png",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 7311,
+  "pixelToGaussianRatio": 8.000410340582684,
+  "assetBytes": 610204,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 0.885105751666713,
+    "rmse": 2.3058007722308203,
+    "psnr": 40.87436800274599,
+    "ssim": 0.9750573924525934,
+    "maxError": 66,
+    "exactRGBFraction": 0.23060446743998442,
+    "evaluatedPixels": 35949,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 1.6464621854141415,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 18.115778178880323,
+          "bestFloatMSE": 18.115778178880323
+        },
+        {
+          "step": 10,
+          "floatMSE": 5.555861818125384,
+          "bestFloatMSE": 5.555861818125384
+        },
+        {
+          "step": 20,
+          "floatMSE": 3.4197951348105065,
+          "bestFloatMSE": 3.4197951348105065
+        },
+        {
+          "step": 30,
+          "floatMSE": 2.4998029176941343,
+          "bestFloatMSE": 2.4998029176941343
+        },
+        {
+          "step": 40,
+          "floatMSE": 2.049498316469796,
+          "bestFloatMSE": 2.049498316469796
+        },
+        {
+          "step": 50,
+          "floatMSE": 1.8169537636138104,
+          "bestFloatMSE": 1.8169537636138104
+        },
+        {
+          "step": 60,
+          "floatMSE": 1.6993321498354603,
+          "bestFloatMSE": 1.6993321498354603
+        },
+        {
+          "step": 70,
+          "floatMSE": 1.6464621854141415,
+          "bestFloatMSE": 1.6464621854141415
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2558,
+        "elapsedSeconds": 0.104,
+        "mae": 11.703654250929558,
+        "rmse": 23.60226315741487,
+        "psnr": 20.671730642791594,
+        "ssim": 0.6936406961141101,
+        "maxError": 196,
+        "exactRGBFraction": 0.023032629558541268,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2558,
+        "elapsedSeconds": 0.2,
+        "mae": 9.327797713427355,
+        "rmse": 17.594958540520476,
+        "psnr": 23.223038652028855,
+        "ssim": 0.7368929284356837,
+        "maxError": 151,
+        "exactRGBFraction": 0.019889287601880443,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 5647,
+        "elapsedSeconds": 0.924,
+        "mae": 4.360214006880117,
+        "rmse": 9.309060085899333,
+        "psnr": 28.75268693881415,
+        "ssim": 0.9099031264723055,
+        "maxError": 143,
+        "exactRGBFraction": 0.04753956994631283,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 7311,
+        "elapsedSeconds": 1.435,
+        "mae": 3.0791769822062736,
+        "rmse": 6.594684974151231,
+        "psnr": 31.746922523102697,
+        "ssim": 0.9401420184083227,
+        "maxError": 127,
+        "exactRGBFraction": 0.06951514645748143,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 7311,
+        "elapsedSeconds": 1.47,
+        "mae": 3.0791769822062736,
+        "rmse": 6.594684974151231,
+        "psnr": 31.746922523102697,
+        "ssim": 0.9401420184083227,
+        "maxError": 127,
+        "exactRGBFraction": 0.06951514645748143,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 7311,
+        "elapsedSeconds": 1.753,
+        "mae": 1.8163416692165752,
+        "rmse": 3.9076839178786384,
+        "psnr": 36.29241505775872,
+        "ssim": 0.9641109341403331,
+        "maxError": 79,
+        "exactRGBFraction": 0.07855573173106345,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 7311,
+        "elapsedSeconds": 2.053,
+        "mae": 1.376440698396803,
+        "rmse": 3.1602083238989125,
+        "psnr": 38.13648935544003,
+        "ssim": 0.9697987382470019,
+        "maxError": 68,
+        "exactRGBFraction": 0.11571949150184985,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 7311,
+        "elapsedSeconds": 2.371,
+        "mae": 1.1412185781709274,
+        "rmse": 2.766083667632413,
+        "psnr": 39.293497361170466,
+        "ssim": 0.972361703555447,
+        "maxError": 68,
+        "exactRGBFraction": 0.159976633564216,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 7311,
+        "elapsedSeconds": 2.646,
+        "mae": 1.0112752325053085,
+        "rmse": 2.5327456637298282,
+        "psnr": 40.058971999086,
+        "ssim": 0.9737613624073825,
+        "maxError": 66,
+        "exactRGBFraction": 0.1930234498873404,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 7311,
+        "elapsedSeconds": 2.947,
+        "mae": 0.9378842248741273,
+        "rmse": 2.4070199089808537,
+        "psnr": 40.50120996001468,
+        "ssim": 0.9745082933352441,
+        "maxError": 66,
+        "exactRGBFraction": 0.21627861692953906,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 7311,
+        "elapsedSeconds": 3.207,
+        "mae": 0.9019166040779993,
+        "rmse": 2.3376846525180612,
+        "psnr": 40.75508509669832,
+        "ssim": 0.9748724638236369,
+        "maxError": 66,
+        "exactRGBFraction": 0.22534701938857826,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 7311,
+        "elapsedSeconds": 3.485,
+        "mae": 0.885105751666713,
+        "rmse": 2.3058007722308203,
+        "psnr": 40.87436800274599,
+        "ssim": 0.9750573924525934,
+        "maxError": 66,
+        "exactRGBFraction": 0.23060446743998442,
+        "evaluatedPixels": 35949,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 3.487,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 3.843,
+  "passedPilot": true,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.54,
+      0.01,
+      0.91,
+      0.99
+    ],
+    "proposalPixels": [
+      256,
+      1,
+      486,
+      291
+    ],
+    "cropPixels": [
+      280,
+      0,
+      481,
+      291
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 34729,
+    "pixelMaskVerified": false,
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r06.a23c10c20c8a.object.png"
+  },
+  "semantics": {
+    "id": "learn.r06.a23c10c20c8a",
+    "label": "红色行人过街信号灯与倒计时",
+    "category": "pedestrian-signal",
+    "role": "object",
+    "bbox": [
+      0.54,
+      0.01,
+      0.91,
+      0.99
+    ],
+    "palette": [
+      [
+        230,
+        45,
+        30
+      ],
+      [
+        18,
+        18,
+        20
+      ],
+      [
+        212,
+        171,
+        52
+      ],
+      [
+        120,
+        105,
+        82
+      ],
+      [
+        210,
+        210,
+        205
+      ]
+    ],
+    "lightDirection": "front",
+    "description": "近景黑色行人信号灯正面：上方红色站立人形图标发光，下方红色倒计时数字“9”；灯体右侧有突出的黑色长遮光罩，顶部可见编号“021”。背景虚化，石砌建筑墙面与金色大字招牌可见，红灯与数字形成强烈暖红色发光点。",
+    "tags": [
+      "行人信号灯",
+      "红灯",
+      "倒计时",
+      "数字9",
+      "遮光罩",
+      "建筑招牌",
+      "近景"
+    ],
+    "limitations": [
+      "背景文字被裁切且失焦，无法完整辨认",
+      "倒计时具体机制与侧面结构不可见",
+      "强发光导致局部过曝"
+    ]
+  },
+  "sourceId": "learn.r06.a23c10c20c8a",
+  "referenceThumbnailURL": "assets/v08/references/learn.r06.a23c10c20c8a.object.jpg"
+}

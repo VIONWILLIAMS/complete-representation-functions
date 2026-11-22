@@ -1,0 +1,29 @@
+{
+  "schema": "crf.packed_assets_report.v0.8",
+  "builtAt": "2026-11-21T14:06:39.834Z",
+  "sourceRoot": "web",
+  "outputRoot": "dist",
+  "algorithm": "gzip-9 and exact-byte aliases; original URLs restored by streaming Worker",
+  "sourcePreserved": true,
+  "sourceFiles": 722,
+  "sourceBytes": 333924508,
+  "packedStorageFiles": 148,
+  "mappedPublicURLs": 169,
+  "duplicateAliases": 21,
+  "deduplicatedBytes": 7338645,
+  "gzipSavedBytes": 67327087,
+  "clientBytes": 259258776,
+  "workerBytes": 383675,
+  "expandedDistBytes": 259642713,
+  "expandedLimitBytes": 262144000,
+  "headroomBytes": 2501287,
+  "allMappedURLsByteEqual": true,
+  "originalURLCount": 722,
+  "runWorkerFirst": true,
+  "manifest": "reports/v08/packed_assets_manifest.json",
+  "officialDocs": [
+    "https://developers.cloudflare.com/workers/runtime-apis/web-standards/#compression-streams",
+    "https://developers.cloudflare.com/workers/runtime-apis/response/#set-the-content-length-header",
+    "https://developers.cloudflare.com/workers/static-assets/binding/#run_worker_first"
+  ]
+}

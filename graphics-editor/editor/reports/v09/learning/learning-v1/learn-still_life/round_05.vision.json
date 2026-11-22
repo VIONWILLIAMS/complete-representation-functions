@@ -1,0 +1,325 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 5,
+  "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "items": [
+    {
+      "id": "ref.5.0",
+      "label": "湿润陶土花瓶（拉坯中）",
+      "category": "pottery-vase",
+      "role": "object",
+      "bbox": [
+        0.17,
+        0.16,
+        0.78,
+        0.91
+      ],
+      "palette": [
+        [
+          140,
+          100,
+          70
+        ],
+        [
+          210,
+          170,
+          130
+        ],
+        [
+          180,
+          100,
+          125
+        ],
+        [
+          80,
+          65,
+          55
+        ],
+        [
+          195,
+          180,
+          150
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "一只刚拉坯的湿陶土花瓶/瓶形器，锥形器身带密集水平旋纹，口沿外翻，底部与陶轮盘面接触；表面呈湿润土褐色，局部有浅色泥痕。背景为虚化粉色墙面，左侧有模糊工具或手部残影，盘面散布泥浆。整体低分辨率、浅景深，可提取器形轮廓、旋纹、湿润黏土质感和与轮盘的接触阴影；不能据此确定成品花瓶的釉色或背面。",
+      "tags": [
+        "陶土花瓶",
+        "拉坯",
+        "陶轮",
+        "旋纹",
+        "湿黏土",
+        "粉色背景",
+        "浅景深",
+        "承托面",
+        "接触阴影"
+      ],
+      "limitations": [
+        "仅单视角",
+        "分辨率低",
+        "主体边缘与轮盘或背景局部融合",
+        "不能确认最终烧制材质与釉色",
+        "不能确认尺寸和内部结构",
+        "背景工具有局部遮挡"
+      ]
+    },
+    {
+      "id": "ref.5.1",
+      "label": "带叶黄绿色苹果（或类似仁果）",
+      "category": "fruit",
+      "role": "object",
+      "bbox": [
+        0.1,
+        0.04,
+        0.82,
+        0.88
+      ],
+      "palette": [
+        [
+          185,
+          180,
+          75
+        ],
+        [
+          60,
+          100,
+          55
+        ],
+        [
+          95,
+          115,
+          140
+        ],
+        [
+          225,
+          230,
+          235
+        ],
+        [
+          30,
+          40,
+          50
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "黄绿色仁果（形似苹果或榅桲）带短果梗与一片卷曲绿叶，果皮光滑并带黄绿渐变和柔和斑点；果实置于蓝灰色台沿或挡板边缘，左上方有窗棂状明暗条纹，右侧投下深色长影。轮廓、叶脉、高光和与承托面接触点可见，但果种与底部结构仍不确定。",
+      "tags": [
+        "黄绿色苹果",
+        "带叶果实",
+        "果梗",
+        "叶脉",
+        "窗棂光影",
+        "蓝灰背景",
+        "台沿",
+        "接触阴影",
+        "静物"
+      ],
+      "limitations": [
+        "分辨率低",
+        "疑似苹果或榅桲，无法确定品种",
+        "仅见单面",
+        "承托面被裁切",
+        "叶部有失焦",
+        "无尺度参照",
+        "强条纹光可能改变果皮颜色感知"
+      ]
+    },
+    {
+      "id": "ref.5.2",
+      "label": "金框古典水果静物画",
+      "category": "still-life-painting",
+      "role": "reference-frame",
+      "bbox": [
+        0.01,
+        0.02,
+        0.99,
+        0.98
+      ],
+      "palette": [
+        [
+          190,
+          150,
+          60
+        ],
+        [
+          35,
+          42,
+          25
+        ],
+        [
+          230,
+          170,
+          50
+        ],
+        [
+          200,
+          100,
+          40
+        ],
+        [
+          160,
+          130,
+          90
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "金色画框内的古典静物油画：深色枝叶间散布橙色圆形果实和黄色长形果实，下部中央为带装饰的浅色果盆/盆形承托物，画面有暗绿背景与油彩反光。可提取整体构图、色块和果实的绘画化轮廓，但无法据此判断真实果皮纹理或单个果实的三维形态。",
+      "tags": [
+        "静物油画",
+        "金框",
+        "柑橘",
+        "梨形果",
+        "果盆",
+        "暗色背景",
+        "油彩反光",
+        "古典构图"
+      ],
+      "limitations": [
+        "艺术品复制图而非真实静物照片",
+        "分辨率低",
+        "画中果实种类与数量模糊",
+        "画笔与清漆反光干扰",
+        "无法可靠分离单个物体",
+        "不能代表真实材质或新视角"
+      ]
+    },
+    {
+      "id": "ref.5.3",
+      "label": "多只破损斑驳陶瓷瓶",
+      "category": "ceramic-vases",
+      "role": "reference-frame",
+      "bbox": [
+        0.04,
+        0.04,
+        0.96,
+        0.99
+      ],
+      "palette": [
+        [
+          190,
+          185,
+          175
+        ],
+        [
+          120,
+          115,
+          105
+        ],
+        [
+          230,
+          225,
+          210
+        ],
+        [
+          80,
+          75,
+          65
+        ],
+        [
+          150,
+          100,
+          70
+        ]
+      ],
+      "lightDirection": "top",
+      "description": "多只破损、斑驳的陶瓷瓶/小瓶密集摆放在灰色粗糙台面上，包含细长颈瓶、梨形瓶和矮口罐等不同器形；表面有灰白釉斑、裂纹、缺口和剥落痕迹，后方瓶体虚化，整体呈冷灰低饱和色调。可提取群组布局、破损边缘、粗糙釉面和接触阴影，但不宜把它们当作单一完整花瓶。",
+      "tags": [
+        "破损陶瓷",
+        "多瓶群组",
+        "灰色台面",
+        "裂纹",
+        "缺口",
+        "斑驳釉面",
+        "浅景深",
+        "冷灰调"
+      ],
+      "limitations": [
+        "多实例无法直接拆分",
+        "部分瓶体被裁切或失焦",
+        "破损细节低分辨率",
+        "不能确认釉料成分与烧成状态",
+        "无背面视角",
+        "不能代表单只普通花瓶的完整轮廓"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "四图均为单视角静物或静物画图像，主体位于画面中心附近。",
+    "均强调主体与承托面或背景的接触关系，如陶轮、台沿、画中果盆和灰色台面。",
+    "多图含陶土或陶瓷容器，并可见器形轮廓、表面纹理或破损边缘。",
+    "低饱和土色、灰白或暗绿背景中，暖黄或橙色果实在部分图中形成色彩焦点。",
+    "景深较浅或整体分辨率有限，主体轮廓可见但细微纹理不足。",
+    "接触阴影或投影帮助判断物体落位，但不能据此还原完整三维结构。"
+  ],
+  "missingEvidence": [
+    "缺少一张同时包含苹果、梨、整橙子和普通陶瓷花瓶的真实高分辨率静物照片。",
+    "缺少各主体的多视角、背面、顶部和底部视图。",
+    "缺少可校准的尺度、光源位置、曝光和白平衡信息。",
+    "缺少高分辨率果皮毛孔与斑点、叶片脉络、陶土釉面的微观纹理。",
+    "缺少精确alpha分割或深度图，边界框不能当作掩膜。",
+    "无法确认ref.5.1果实的具体种类，也无法确认ref.5.2画中果实的真实种类。",
+    "ref.5.3多只破损瓶无法拆成独立完整实例，缺少无破损普通花瓶对照。",
+    "不能从来源标题或画作推断未见的材质、制作工艺或完整场景。"
+  ],
+  "images": [
+    {
+      "id": "ref.5.0",
+      "sourceUrl": "https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/",
+      "sha256": "e3ccaf6c456a3ea8d2ae72e27451b77a3fe33548d326002002b1d607445ce281",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.5.1",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/14045574/",
+      "sha256": "b3df69177ee932af71592c42c7145e3096c23b756f7658421927d2a92da9c63e",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.5.2",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_arance,_bergamotti,_cedri,_limoni_e_lumie,_1715,_01.JPG#1",
+      "sha256": "0937bb107050cffbeb0ffe6fd9c3639d45a034f55fff153b92d9652fa0d37558",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.5.3",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/",
+      "sha256": "40521f33383690b967b91dcdf0f0404d5cec01c02facfd7a76cb979dc9459fc5",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "1f80c794-1d56-460c-92d0-44652ddeb532",
+        "model": "deepseek-flash",
+        "elapsedMs": 36680,
+        "prompt_tokens": 1616,
+        "completion_tokens": 4973,
+        "total_tokens": 6589,
+        "reasoning_tokens": 3600,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1616,
+    "completion_tokens": 4973,
+    "total_tokens": 6589,
+    "reasoning_tokens": 3600
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 36682
+}

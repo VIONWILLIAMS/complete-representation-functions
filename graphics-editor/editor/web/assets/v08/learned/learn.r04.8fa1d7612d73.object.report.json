@@ -1,0 +1,373 @@
+{
+  "id": "learn.r04.8fa1d7612d73.object",
+  "assetId": "learn.r04.8fa1d7612d73.object",
+  "status": "fitted",
+  "round": 4,
+  "topic": "咖啡与餐桌静物实拍",
+  "sourceUrl": "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+  "imageUrl": "https://images.pexels.com/photos/29507972/pexels-photo-29507972.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Foto de Israyosoy S. no Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r04.8fa1d7612d73.webp",
+  "sourceSHA256": "8fa1d7612d73a6335cc8f372d8abca431a838643446a92e90292b99925228a0f",
+  "normalizedRGBA_SHA256": "931a98be7f5a1a50c211768ffbabce0cb5a137197f1364c4b29f20bbea268048",
+  "dHash64": "8613030c8916248c",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    332,
+    258
+  ],
+  "assetURL": "assets/v08/learned/learn.r04.8fa1d7612d73.object.json",
+  "renderURL": "assets/v08/learned/learn.r04.8fa1d7612d73.object.png",
+  "reportURL": "assets/v08/learned/learn.r04.8fa1d7612d73.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r04.8fa1d7612d73.object.png",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 8192,
+  "pixelToGaussianRatio": 10.4560546875,
+  "assetBytes": 678985,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 0.6536761353499713,
+    "rmse": 1.524656771297672,
+    "psnr": 44.46736187087285,
+    "ssim": 0.9843410116480142,
+    "maxError": 103,
+    "exactRGBFraction": 0.27815330941384026,
+    "evaluatedPixels": 50447,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 0.6711600106262038,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 5.128491079434937,
+          "bestFloatMSE": 5.128491079434937
+        },
+        {
+          "step": 10,
+          "floatMSE": 1.9949854260228943,
+          "bestFloatMSE": 1.9949854260228943
+        },
+        {
+          "step": 20,
+          "floatMSE": 1.2863329914653097,
+          "bestFloatMSE": 1.2863329914653097
+        },
+        {
+          "step": 30,
+          "floatMSE": 0.9742580362254746,
+          "bestFloatMSE": 0.9742580362254746
+        },
+        {
+          "step": 40,
+          "floatMSE": 0.8171390360838173,
+          "bestFloatMSE": 0.8171390360838173
+        },
+        {
+          "step": 50,
+          "floatMSE": 0.7329071104271847,
+          "bestFloatMSE": 0.7329071104271847
+        },
+        {
+          "step": 60,
+          "floatMSE": 0.6902898834747657,
+          "bestFloatMSE": 0.6902898834747657
+        },
+        {
+          "step": 70,
+          "floatMSE": 0.6711600106262038,
+          "bestFloatMSE": 0.6711600106262038
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2867,
+        "elapsedSeconds": 0.129,
+        "mae": 5.973153342451814,
+        "rmse": 11.5042383501264,
+        "psnr": 26.913646187763316,
+        "ssim": 0.7724784205345715,
+        "maxError": 158,
+        "exactRGBFraction": 0.052887188534501556,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2867,
+        "elapsedSeconds": 0.269,
+        "mae": 4.876147243641842,
+        "rmse": 8.971663874171847,
+        "psnr": 29.073343723583335,
+        "ssim": 0.8118021687000122,
+        "maxError": 120,
+        "exactRGBFraction": 0.048109897516205126,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 6328,
+        "elapsedSeconds": 1.164,
+        "mae": 2.36941080077441,
+        "rmse": 4.8228864295563865,
+        "psnr": 34.46466290516867,
+        "ssim": 0.9413688442987617,
+        "maxError": 111,
+        "exactRGBFraction": 0.0903522508771582,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 8192,
+        "elapsedSeconds": 1.665,
+        "mae": 1.7977745620816568,
+        "rmse": 3.784554622148955,
+        "psnr": 36.570508053616734,
+        "ssim": 0.9601113126942614,
+        "maxError": 103,
+        "exactRGBFraction": 0.12274268043689417,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 8192,
+        "elapsedSeconds": 1.709,
+        "mae": 1.7977745620816568,
+        "rmse": 3.784554622148955,
+        "psnr": 36.570508053616734,
+        "ssim": 0.9601113126942614,
+        "maxError": 103,
+        "exactRGBFraction": 0.12274268043689417,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 8192,
+        "elapsedSeconds": 2.009,
+        "mae": 1.19649004565848,
+        "rmse": 2.534210982883321,
+        "psnr": 40.05394823366061,
+        "ssim": 0.9759264235429918,
+        "maxError": 102,
+        "exactRGBFraction": 0.12333736396614269,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 8192,
+        "elapsedSeconds": 2.3,
+        "mae": 0.9378753939778381,
+        "rmse": 2.072848481662764,
+        "psnr": 41.799452453272906,
+        "ssim": 0.9802221163404168,
+        "maxError": 96,
+        "exactRGBFraction": 0.18014946379368446,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 8192,
+        "elapsedSeconds": 2.614,
+        "mae": 0.8041046378707687,
+        "rmse": 1.813948840985084,
+        "psnr": 42.95830291992176,
+        "ssim": 0.9822497419140851,
+        "maxError": 101,
+        "exactRGBFraction": 0.21927964001823697,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 8192,
+        "elapsedSeconds": 2.93,
+        "mae": 0.7271724119703187,
+        "rmse": 1.6701386451250613,
+        "psnr": 43.67575310412947,
+        "ssim": 0.9833475468366324,
+        "maxError": 104,
+        "exactRGBFraction": 0.2478640949907824,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 8192,
+        "elapsedSeconds": 3.271,
+        "mae": 0.6849168434198267,
+        "rmse": 1.5883635036330483,
+        "psnr": 44.11180561718156,
+        "ssim": 0.9839156734566556,
+        "maxError": 103,
+        "exactRGBFraction": 0.26413860090788355,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 8192,
+        "elapsedSeconds": 3.616,
+        "mae": 0.6636205654779603,
+        "rmse": 1.5443631649286433,
+        "psnr": 44.355814916940176,
+        "ssim": 0.9842035006291302,
+        "maxError": 103,
+        "exactRGBFraction": 0.27301920827799475,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 8192,
+        "elapsedSeconds": 3.956,
+        "mae": 0.6536761353499713,
+        "rmse": 1.524656771297672,
+        "psnr": 44.46736187087285,
+        "ssim": 0.9843410116480142,
+        "maxError": 103,
+        "exactRGBFraction": 0.27815330941384026,
+        "evaluatedPixels": 50447,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 3.959,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 4.336,
+  "passedPilot": true,
+  "passedHighFidelity": true,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.08,
+      0,
+      0.78,
+      0.98
+    ],
+    "proposalPixels": [
+      20,
+      1,
+      420,
+      291
+    ],
+    "cropPixels": [
+      50,
+      6,
+      382,
+      264
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 48843,
+    "pixelMaskVerified": false,
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r04.8fa1d7612d73.object.png"
+  },
+  "semantics": {
+    "id": "learn.r04.8fa1d7612d73",
+    "label": "手冲滤杯与玻璃壶",
+    "category": "pour-over coffee set",
+    "role": "object",
+    "bbox": [
+      0.08,
+      0,
+      0.78,
+      0.98
+    ],
+    "palette": [
+      [
+        24,
+        25,
+        27
+      ],
+      [
+        198,
+        198,
+        190
+      ],
+      [
+        181,
+        139,
+        98
+      ],
+      [
+        233,
+        233,
+        228
+      ],
+      [
+        91,
+        95,
+        92
+      ]
+    ],
+    "lightDirection": "unknown",
+    "description": "近景呈现手冲咖啡组合：黑色锥形滤杯放在木色环托上，下接带黑色提手的玻璃分享壶；壶身可见冷凝水珠/水汽，滤杯与壶体形成上下叠置的轮廓。右下露出白色杯口，背景为虚化的室内环境。适合作为手冲器具局部参考；复用时需保留黑色滤杯、木环、玻璃质感和水汽，但不应推断壶内液体状态或完整厨房空间。",
+    "tags": [
+      "手冲咖啡",
+      "滤杯",
+      "玻璃壶",
+      "木环",
+      "水汽",
+      "咖啡器具",
+      "黑色",
+      "近景",
+      "虚化背景",
+      "静物",
+      "玻璃质感",
+      "冲煮"
+    ],
+    "limitations": [
+      "背景深度虚化，环境信息不足",
+      "壶内液体与咖啡粉不可见",
+      "滤杯品牌/型号不可读",
+      "右下杯体仅部分入镜",
+      "玻璃与水汽遮挡内部结构",
+      "无法确认器具尺寸和材质参数"
+    ]
+  },
+  "sourceId": "learn.r04.8fa1d7612d73",
+  "referenceThumbnailURL": "assets/v08/references/learn.r04.8fa1d7612d73.object.jpg"
+}

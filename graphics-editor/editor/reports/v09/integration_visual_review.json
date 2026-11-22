@@ -1,0 +1,84 @@
+{
+  "schema": "crf.independent_visual_review.v0.9",
+  "reviewedAt": "2026-11-21T15:48:18.398936+00:00",
+  "reviewer": "Independent integration subagent, direct image inspection",
+  "scope": "Qualitative observations of the actual files listed; no blind human ratings or universal quality score. H1/H2/H3 are development outputs, not terminal benchmark evidence.",
+  "numericRatings": null,
+  "photorealismGate": "not_passed",
+  "causalAttribution": "No controlled causal improvement claim. H3 has a different output resolution and structural changes in addition to appearance changes.",
+  "historicalReproducibility": "H1 and H2 output files are retained; their earlier code snapshots were not available in the reviewed core report.",
+  "observations": [
+    {
+      "hypothesis": "H1",
+      "file": "reports/v09/core-preview/fruit-window.png",
+      "sha256": "1ec66a4cb8f9a281b3137014c09f453d78cfc13a5e3834130efd65f097683a47",
+      "observed": true,
+      "notes": [
+        "The apple, pear and orange are recognizable, but smooth silhouettes, simple stems and broad uniform highlights give a rendered illustration appearance.",
+        "Contact shadows are very shallow and the fruit-to-table relationship looks weak."
+      ]
+    },
+    {
+      "hypothesis": "H2",
+      "file": "reports/v09/hypothesis02/fruit-window.png",
+      "sha256": "e3eeed45e1ff0d191c22b13f45b17160d3c0e552e12f2fd358699d642752773d",
+      "observed": true,
+      "notes": [
+        "Fruit surface variation is more prominent than the H1 viewed image, but the yellow-green pear has large repeated stripe-like lobes and the orange shows large blotches.",
+        "The additional surface variation does not establish photographic material behavior; silhouettes and simple lighting remain conspicuous."
+      ]
+    },
+    {
+      "hypothesis": "H1",
+      "file": "reports/v09/core-preview/alpine-morning.png",
+      "sha256": "e2c13f809ab9ff2e491dd9320e741c196f183a4c81c41cb9405bf4e89894522f",
+      "observed": true,
+      "notes": [
+        "Snowy mountain and water layers are identifiable, but near-vertical edge discontinuities and repeated tree silhouettes are plainly visible.",
+        "Foreground trees, rocks and lake reflections do not form a convincing contact/occlusion arrangement."
+      ]
+    },
+    {
+      "hypothesis": "H2",
+      "file": "reports/v09/hypothesis02/alpine-morning.png",
+      "sha256": "8fd80a870613cc6575e5c10068e906213814b243ac281af9e8d0d01954c1e9ca",
+      "observed": true,
+      "notes": [
+        "The viewed landscape retains the sharp layer discontinuity near the left mountain edge and repeated tree patterns.",
+        "More rock texture does not resolve the geometric grounding or the flat mountain-layer appearance."
+      ]
+    },
+    {
+      "hypothesis": "H3",
+      "file": "reports/v09/hypothesis03/facade-golden.png",
+      "sha256": "d0895d134fb52a8971c619718a6ceb2da5931be500e9db074efcd1ede8aeca7b",
+      "observed": true,
+      "notes": [
+        "Pole, horizontal support and signal are connected in the inspected view.",
+        "Repeated simple window frames and dark glass stripes, very uniform wall response, simplified signal glyphs and a sparse pavement pattern still look procedural.",
+        "The pole base and wall-ground relationship lack the rich contact and material detail visible in a natural photo."
+      ]
+    },
+    {
+      "hypothesis": "H3",
+      "file": "reports/v09/hypothesis03/alpine-morning.png",
+      "sha256": "f59d76c06d406641cd017c064d27864647416a0ea8249ba7f935fc468c9d8bd4",
+      "observed": true,
+      "notes": [
+        "The large left mountain discontinuity visible in the earlier viewed landscape is reduced, and shoreline objects are more clearly arranged.",
+        "Repeated tree silhouettes, broad flat mountain layers, synthetic snow patches and near-mirrored lake patterns still give a generated illustration appearance.",
+        "The foreground rock edge and ground contact remain weak."
+      ]
+    },
+    {
+      "hypothesis": "H3",
+      "file": "reports/v09/hypothesis03/fruit-window.png",
+      "sha256": "0a52e8c3134831726c4ea55db2cf590def8b8f36a8cd370a418a8655e2ed0550",
+      "observed": true,
+      "notes": [
+        "The pear silhouette and surface variation are less striped than the H2 viewed result.",
+        "Fruit remain recognizable, but broad soft highlights, simplified stem attachment and shallow contact shadows do not yet resemble a high-quality photographic still life."
+      ]
+    }
+  ]
+}

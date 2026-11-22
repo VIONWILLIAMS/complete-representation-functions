@@ -1,0 +1,924 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 6,
+  "query": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "checkpoint": {
+    "sessionId": "crf09_e5ccf6cd-5556-4a02-a656-53316025d65f",
+    "round": 6,
+    "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+    "subtopic": "背景与承托面：桌面、墙面、地面、局部环境",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:53:32.860Z",
+    "runId": "crf07_5bf2dcd8-4b11-4b38-84c3-9d806296bab0",
+    "queries": [
+      "Wikimedia Commons still life apples pears orange ceramic vase photograph",
+      "site:pexels.com still life apples pears oranges vase",
+      "site:commons.wikimedia.org still life fruit ceramic vase photograph",
+      "Wikimedia Commons ceramic vase still life photograph window light",
+      "Pexels ceramic vase still life on table with shadow",
+      "site:pexels.com pears apples oranges still life photograph",
+      "site:pexels.com photo ceramic vase apples pears oranges",
+      "site:pexels.com photo still life fruit ceramic vase strong shadow",
+      "site:commons.wikimedia.org photo still life ceramic vase fruit",
+      "site:commons.wikimedia.org ceramic vase glaze highlight photograph",
+      "Pexels still life fruit bowl ceramic vase natural light",
+      "Wikimedia Commons Category Still life photographs of fruit"
+    ],
+    "requestIds": [
+      "fd0c88ed-f524-4152-95b4-9dda6a12537c"
+    ],
+    "sourceCount": 24,
+    "newSourceCount": 15,
+    "candidateCount": 5,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_f254a8b127a747dd9291e0630a7c0770",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons still life apples pears orange ceramic vase photograph",
+            "site:pexels.com still life apples pears oranges vase",
+            "site:commons.wikimedia.org still life fruit ceramic vase photograph",
+            "Wikimedia Commons ceramic vase still life photograph window light",
+            "Pexels ceramic vase still life on table with shadow",
+            "site:pexels.com pears apples oranges still life photograph"
+          ]
+        },
+        "sourceUrls": [
+          "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+          "https://stockcake.com/i/ceramics-in-sunlight_2670048_1536610",
+          "https://elements.envato.com/stylish-composition-at-fancy-interior-V2DV6LB?utm_source=photodune.net&utm_medium=promos&utm_campaign=elements_mkt-search-apiblock_DEC2025&utm_content=elements_api_block",
+          "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+          "https://archivelane.com/still-life-with-a-basket-of-fruit-pears-apples-pomegranates-and-a-vase-of-flowers-wall-art",
+          "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+          "https://digital.library.ucla.edu/catalog?f%5Bgenre_sim%5D%5B%5D=black-and-white+photographs&f%5Blocation_sim%5D%5B%5D=California--Santa+Monica&page=71&range%5Byear_isim%5D%5Bbegin%5D=1930&range%5Byear_isim%5D%5Bend%5D=1939#1",
+          "https://elements.envato.com/beautiful-vases-on-wooden-table-near-beige-wall-in-MWCX4YG",
+          "https://create.vista.com/photos/apples-pears/",
+          "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+          "https://www.rawpixel.com/search/still%20life%20with%20apples%20public%20domain",
+          "https://stockcake.com/s/ceramic-vase/photos#1"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_01_0a10d2c8c23d4e059f78854194549ab0",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com photo ceramic vase apples pears oranges",
+            "site:pexels.com photo still life fruit ceramic vase strong shadow",
+            "site:commons.wikimedia.org photo still life ceramic vase fruit",
+            "site:commons.wikimedia.org ceramic vase glaze highlight photograph",
+            "Pexels still life fruit bowl ceramic vase natural light",
+            "Wikimedia Commons Category Still life photographs of fruit"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/",
+          "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+          "https://elements.envato.com/modern-light-homemade-still-life-ripe-juicy-green--PQ6TA83",
+          "https://commons.wikimedia.org/wiki/Category:Still-life_clich%C3%A9-verre#1",
+          "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+          "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+          "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+          "https://elements.envato.com/front-view-sweet-pears-on-dark-background-mellow-t-HBRHAFE",
+          "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+          "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+          "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+          "https://asifabrar.net/Pexels/CollectionMedia/u7rwalf"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+        "title": "Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)",
+        "snippet": "<p class=\"attribution\">\"<a rel=\"noopener noreferrer\" href=\"https://www.flickr.com/photos/84263736@N00/52660190645\">Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)</a>\"",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://stockcake.com/i/ceramics-in-sunlight_2670048_1536610",
+        "title": "Ceramics in sunlight",
+        "snippet": "A serene still life composition featuring elegant mint green ceramic pieces alongside warm amber glassware, all arranged thoughtfully on a wooden table. Soft natural light streams in from a window on the left, casting gentle shadows and highlighting the smooth, glossy surfaces of the pottery. The arrangement includes teacups...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://elements.envato.com/stylish-composition-at-fancy-interior-V2DV6LB?utm_source=photodune.net&utm_medium=promos&utm_campaign=elements_mkt-search-apiblock_DEC2025&utm_content=elements_api_block",
+        "title": "Ceramic Art and Floral Display on Table",
+        "snippet": "A captivating still life features a glazed ceramic vase with painted white flowers holding dark foliage, alongside a carved face sculpture. A small, matching ceramic cup sits next to the sculpture on a black marble table. The light creates shadows on the beige wall.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+        "title": "Photo de Hans Heemsbergen sur Pexels",
+        "snippet": "Create photo collages ... Date Jun 11, 2025 ... Appareil photo NIKON D7000 ... ISO 400 ... Logiciel Adobe Photoshop Elements 12.0 Windows Description # Un assortiment coloré de pommes, de poires et d'un avocat dans un panier. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://archivelane.com/still-life-with-a-basket-of-fruit-pears-apples-pomegranates-and-a-vase-of-flowers-wall-art",
+        "title": "Still life with a basket of fruit, pears, apples, pomegranates and a vase of flowers Wall Art",
+        "snippet": "pomegranates and a vase of flowers Wall Art # Still life with a basket of fruit, pears, apples, pomegranates and a vase of flowers Wall Art ... Still life with a basket of fruit, pears, apples, pomegranates and a vase of flowers is a painting by Master of the Acquavella Still-Life from 1622. Source...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+        "title": "Category:Grasset Collection - Wikimedia Commons",
+        "snippet": "Peter Binoit - Still Life of Grapes and Peaches on a Porcelain Bowl.jpg ... Jan Davidsz de Heem - Still life of flowers in a glass vase with insects and fruits in a stone niche l22036-58kpv-01-t1.jpg",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://digital.library.ucla.edu/catalog?f%5Bgenre_sim%5D%5B%5D=black-and-white+photographs&f%5Blocation_sim%5D%5B%5D=California--Santa+Monica&page=71&range%5Byear_isim%5D%5Bbegin%5D=1930&range%5Byear_isim%5D%5Bend%5D=1939#1",
+        "title": "Genre: black-and-white photographs / Location: California--Santa Monica - Photograph of a still life set-up comprised of a bowl of fruit, a ceramic vase, and a floral element",
+        "snippet": "Photograph of a still life set-up comprised of a bowl of fruit, a ceramic vase, and a floral element. The objects are arranged on the edge of a table set near a window. Photographed by Carolyn Bartlett, Santa Monica High School.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://elements.envato.com/beautiful-vases-on-wooden-table-near-beige-wall-in-MWCX4YG",
+        "title": "Collection of Modern Ceramic Vases on a Wooden Table",
+        "snippet": "Collection of Modern Ceramic Vases on a Wooden Table ... A sophisticated and minimalist arrangement of four unique ceramic vases sits atop a dark wooden console table against a neutral beige background. ... Soft, diffused lighting creates gentle shadows on the wall, highlighting the smooth and tactile surfaces of the pottery. This elegant still life captures a contemporary interior design aesthetic.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/photos/apples-pears/",
+        "title": "Apples pears Free Stock Photos, Images, and Pictures of Apples pears",
+        "snippet": "apples, pears and oranges. Still life: apples, pears, plums in a ceramic plate. Presented in close-up on a dark background. Front view, copy space ... Glass round vase plate of fruits, bananas, grapes, apples, pears against turquoise blue background",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+        "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+        "snippet": "Pissarro - Still Life with Apples and Pitcher.JPG ... Camille Pissarro: 'Ghâtaignier' Apples and Glazed Earthenware on a Table Artist Author | painting of Pissarro ... Genre | still life ... Pissarro - Still Life with Apples and Pitcher.JPG",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.rawpixel.com/search/still%20life%20with%20apples%20public%20domain",
+        "title": "Still Life With Apples Public Domain Images | Free Photos, PNG Stickers, Wallpapers & Backgrounds - rawpixel",
+        "snippet": "Still life with ceramic pots and apples (1925–1927), vintage painting by Mikulas Galanda. ... Camille Pissarro's Still Life: Apples and Pears in a Round Basket (1872) ... //www.rawpixel.com/image/21980755/camille-piss ... Apples and a Pear) (1863) by Léon Bonvin",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://stockcake.com/s/ceramic-vase/photos#1",
+        "title": "Ceramic vase - Start 7-day free trial · 500 credits · $0 today",
+        "snippet": "Elegant ceramic vase with flowing organic curves catches dramatic side lighting creating deep shadows across minimal white studio backdrop with dried branch accent. ... Minimalist studio still life showcasing a matte black ceramic vase with dried pampas stem, surrounded by expansive white space and bold shadows. ... Dramatic black and white scene shows an old Chinese vase on wooden table with sharp parallel shadows and mysterious smoke wisps.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+        "title": "Photo by Evgeniy Alekseyev on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 6016x4016 ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/",
+        "title": "Foto von Leeloo The First auf Pexels",
+        "snippet": "Add filters, effects ... 4016x6016 Seitenverhältnis 251 ... Farben Datum Feb 24, 2021 ... 2021 Software Adobe ... Beschreibung # Künstlerisches Stillleben mit Trauben auf einem Keramikteller im sanften, natürlichen Licht mit kräftigen Schatten. ### Mehr davon",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+        "title": "File:Flower Vase, Iran, Safavid period, 2nd half of 17th century, earthenware with overglaze luster painting - Cincinnati Art Museum - DSC04130.JPG",
+        "snippet": ": Exhibit in the Cincinnati Art Museum, Cincinnati, Ohio, USA. This artwork is in the public domain because the artist died more than 70 years ago. Photography was permitted in the museum without restriction. ... http://creativecommons.org/publicdomain/zero/1.0/deed.enCC0Creative Commons Zero, Public Domain Dedicationfalsefalse",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://elements.envato.com/modern-light-homemade-still-life-ripe-juicy-green--PQ6TA83",
+        "title": "modern Light homemade still life - ripe juicy green grapes in a white bowl",
+        "snippet": "modern Light homemade still life - ripe juicy green grapes in a white bowl ... An inviting still life presents a variety of fruit and a charming ceramic vessel arranged on a draped surface against a white wall. A bowl filled with yellow and green pears and a tray of green grapes rest on a cream-colored cloth, casting soft shadows that suggest daytime lighting.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Still-life_clich%C3%A9-verre#1",
+        "title": "Category:Still-life cliché-verre - Wikimedia Commons - Help",
+        "snippet": "Still-life cliché-verre ... Media in category \"Still-life cliché-verre\" The following 22 files are in this category, out of 22 total. ... Cactus fruit cut in half, NINO F Scholten Tel Aviv 21 8.tiff ... Fruit, NINO F Scholten Varia 10 08.tiff",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+        "title": "Photo by Lucas Pezeta on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A still life scene with fruit casting dramatic shadows in warm lighting. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+        "title": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG - Wikimedia Commons",
+        "snippet": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://elements.envato.com/front-view-sweet-pears-on-dark-background-mellow-t-HBRHAFE",
+        "title": "Pears and Flowers Still Life on Dark Table",
+        "snippet": "Pears and Flowers Still Life on Dark Table ... Ripe pears are arranged with small tan ceramic vases and sprigs of baby's breath flowers, creating a tranquil still life. A wooden bowl filled with pears sits in the blurred background, set against a textured maroon wall. ... The natural light and fresh composition evoke feelings of serenity and simple pleasures.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+        "title": "Photo by Fatih Güney on Pexels",
+        "snippet": "4 Fatih Güney 47.2M views • 152.9K downloads Ankara, Ankara, Türkiye Description # A beautiful flower arrangement with berries in a ceramic vase against a textured backdrop. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+        "title": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg - Wikimedia Commons - File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg",
+        "snippet": "Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg ... Lit,\"natura morta con cesto di fiori, brocca di porcellana cinese e frutta\"",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+        "title": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG - Wikimedia Commons",
+        "snippet": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG From Wikimedia Commons ... Original file (1,929 × 2,523 pixels, file size: 1.07 MB...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://asifabrar.net/Pexels/CollectionMedia/u7rwalf",
+        "title": "Pexels Collection Media",
+        "snippet": "A close-up shot of fresh raspberries in a ceramic bowl on a soft linen fabric. Ideal for healthy eating concepts. ... A vibrant pile of fresh raspberries under natural light, highlighting their rich red color and ripe texture. ... A pink bowl filled with fresh raspberries next to a melon on a light background.",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮实际检索未找到同时含苹果、梨、整橙子与普通陶瓷花瓶的**摄影**详情页；Commons 返回结果仍以绘画、文物或分类页为主，Pexels 侧则多为单一水果或纯花瓶。以下只记录可核实的公开来源与可转化线索，不声称已查看图像。\n\n### 可用的新来源与用途\n\n**1. Pexels：Lucas Pezeta，水果在暖光下投下戏剧性阴影**\n- 来源页：https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/ \n- 网页描述明确为“fruit casting dramatic shadows in warm lighting” 。\n- 用途：**承托面与投影方向**的候选参考。适合提取“水果底部接触阴影 + 单侧暖光造成的长投影”的明暗关系。但无法确认画面是否含苹果、梨、整橙子及陶瓷花瓶；需取图验证投影是硬边还是暖柔边。\n\n**2. Pexels：Leeloo The First，葡萄在陶瓷盘上，柔和自然光与强烈阴影**\n- 来源页：https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/ \n- 元数据：Nikon D750，50mm，f/1.8，ISO 64，1/4000s 。\n- 网页描述为“sanftem, natürlichen Licht mit kräftigen Schatten”（柔和自然光与强烈阴影）。\n- 用途：**陶瓷承托面 + 投影**的候选。虽主体是葡萄而非苹果/梨/橙子，但陶瓷盘与水果的接触面、盘缘投影、浅景深下的背景墙关系可作构图与光影函数参考。f/1.8 意味着背景墙面会明显虚化，适合参考“墙面与桌面的分离度”。\n\n**3. UCLA 数字图书馆：Carolyn Bartlett，水果碗 + 陶瓷花瓶 + 花卉的静物布置**\n- 来源页：https://digital.library.ucla.edu/catalog?f%5Bgenre_sim%5D%5B%5D=black-and-white+photographs&f%5Blocation_sim%5D%5B%5D=California--Santa+Monica&page=71&range%5Byear_isim%5D%5Bbegin%5D=1930&range%5Byear_isim%5D%5Bend%5D=1939 \n- 描述：一张静物布置照片，包含“a bowl of fruit, a ceramic vase, and a floral element”，物体摆在“edge of a table set near a window” 。\n- 用途：**本轮最接近“水果 + 普通陶瓷花瓶 + 窗光 + 桌面边缘”构图的摄影记录**。但它是黑白照片，无法验证果皮颜色与橙子表皮质感；许可与作者信息在结果页中未完整显示，**待核验**。可参考的是：物体集中于桌边、窗光从侧面进入时的承托面接触关系与背景墙面的灰度层次。\n\n**4. Pexels：Evgeniy Alekseyev，白陶瓷碗中的红苹果**\n- 来源页：https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/ \n- 元数据：Nikon D750，62mm，f/14.0，ISO 100，1/160s 。\n- 描述：白背景中白陶瓷碗盛红苹果 。\n- 用途：**白背景 + 白陶瓷承托面**的候选。f/14 的小光圈意味着边缘相对清晰，适合参考“苹果与陶瓷碗内壁的接触边缘”以及“白背景下的弱投影”。但它是高调白背景，与用户目标中的“墙面/桌面/地面局部环境”中的暖光或自然窗光不同，可作为**承托面接触边缘的对照参考**，不宜直接作为光照主参考。\n\n### 给图形函数的可转化建议（基于网页描述，待取图验证）\n\n- **投影方向与硬度**：Lucas Pezeta 页描述“dramatic shadows in warm lighting” ，可先假定单侧偏高暖光，投影边缘保留中等硬度；Leeloo The First 页的 f/1.8 + “kräftigen Schatten”  提示近摄时投影可能因浅景深而软化，不宜一律设为锐利硬边。\n- **承托面接触**：UCLA 黑白照片的“桌边 + 窗光”构图  可作为物体集中于承托面前缘的参考——水果与花瓶底部应有独立的接触暗带，而非整片死黑；白陶瓷碗与苹果的接触边缘可参考 Evgeniy Alekseyev 页的“白对红”明度反差 。\n- **背景墙面**：Leeloo 的 f/1.8 结果  提示若需要墙面虚化，应把墙面处理为低频渐变而非锐利纹理；若需要可辨纹理，则应对应更小光圈或更远距离，但本轮没有可直接验证的摄影页。\n- **普通陶瓷花瓶**：本轮未获得新的、可核实的普通陶瓷花瓶摄影详情页；前几轮已收集的 Pexels 花瓶页仍需取图验证釉面高光形态。Commons 返回的 vase 页面多为文物摄影（如 CC0 的 Flower Vase, Iran ），其布光与静物承托面关系较弱，不宜直接作为“花瓶 + 桌面接触”的参考。\n\n### 局限与待办\n\n- **四要素组合仍缺失**：本轮未找到同时含苹果、梨、整橙子、普通陶瓷花瓶的摄影详情页。\n- **图像字节未获取**：以上来源的果皮凹坑、高光连续性、投影边缘硬度、接触阴影分离度均无法在文本层面确认。\n- **UCLA 来源许可待核验**：该页面为图书馆目录记录，作者与许可信息不完整，使用前需另查。\n- **Unsplash 未使用**：按环境限制未检索 Unsplash，无新增链接。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+        "title": "File:Flower Vase, Iran, Safavid period, 2nd half of 17th century, earthenware with overglaze luster painting - Cincinnati Art Museum - DSC04130.JPG",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+        "title": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+        "title": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+      "title": "Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)",
+      "snippet": "<p class=\"attribution\">\"<a rel=\"noopener noreferrer\" href=\"https://www.flickr.com/photos/84263736@N00/52660190645\">Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)</a>\"",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://stockcake.com/i/ceramics-in-sunlight_2670048_1536610",
+      "title": "Ceramics in sunlight",
+      "snippet": "A serene still life composition featuring elegant mint green ceramic pieces alongside warm amber glassware, all arranged thoughtfully on a wooden table. Soft natural light streams in from a window on the left, casting gentle shadows and highlighting the smooth, glossy surfaces of the pottery. The arrangement includes teacups...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://elements.envato.com/stylish-composition-at-fancy-interior-V2DV6LB?utm_source=photodune.net&utm_medium=promos&utm_campaign=elements_mkt-search-apiblock_DEC2025&utm_content=elements_api_block",
+      "title": "Ceramic Art and Floral Display on Table",
+      "snippet": "A captivating still life features a glazed ceramic vase with painted white flowers holding dark foliage, alongside a carved face sculpture. A small, matching ceramic cup sits next to the sculpture on a black marble table. The light creates shadows on the beige wall.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+      "title": "Photo de Hans Heemsbergen sur Pexels",
+      "snippet": "Create photo collages ... Date Jun 11, 2025 ... Appareil photo NIKON D7000 ... ISO 400 ... Logiciel Adobe Photoshop Elements 12.0 Windows Description # Un assortiment coloré de pommes, de poires et d'un avocat dans un panier. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://archivelane.com/still-life-with-a-basket-of-fruit-pears-apples-pomegranates-and-a-vase-of-flowers-wall-art",
+      "title": "Still life with a basket of fruit, pears, apples, pomegranates and a vase of flowers Wall Art",
+      "snippet": "pomegranates and a vase of flowers Wall Art # Still life with a basket of fruit, pears, apples, pomegranates and a vase of flowers Wall Art ... Still life with a basket of fruit, pears, apples, pomegranates and a vase of flowers is a painting by Master of the Acquavella Still-Life from 1622. Source...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+      "title": "Category:Grasset Collection - Wikimedia Commons",
+      "snippet": "Peter Binoit - Still Life of Grapes and Peaches on a Porcelain Bowl.jpg ... Jan Davidsz de Heem - Still life of flowers in a glass vase with insects and fruits in a stone niche l22036-58kpv-01-t1.jpg",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://digital.library.ucla.edu/catalog?f%5Bgenre_sim%5D%5B%5D=black-and-white+photographs&f%5Blocation_sim%5D%5B%5D=California--Santa+Monica&page=71&range%5Byear_isim%5D%5Bbegin%5D=1930&range%5Byear_isim%5D%5Bend%5D=1939#1",
+      "title": "Genre: black-and-white photographs / Location: California--Santa Monica - Photograph of a still life set-up comprised of a bowl of fruit, a ceramic vase, and a floral element",
+      "snippet": "Photograph of a still life set-up comprised of a bowl of fruit, a ceramic vase, and a floral element. The objects are arranged on the edge of a table set near a window. Photographed by Carolyn Bartlett, Santa Monica High School.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://elements.envato.com/beautiful-vases-on-wooden-table-near-beige-wall-in-MWCX4YG",
+      "title": "Collection of Modern Ceramic Vases on a Wooden Table",
+      "snippet": "Collection of Modern Ceramic Vases on a Wooden Table ... A sophisticated and minimalist arrangement of four unique ceramic vases sits atop a dark wooden console table against a neutral beige background. ... Soft, diffused lighting creates gentle shadows on the wall, highlighting the smooth and tactile surfaces of the pottery. This elegant still life captures a contemporary interior design aesthetic.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/photos/apples-pears/",
+      "title": "Apples pears Free Stock Photos, Images, and Pictures of Apples pears",
+      "snippet": "apples, pears and oranges. Still life: apples, pears, plums in a ceramic plate. Presented in close-up on a dark background. Front view, copy space ... Glass round vase plate of fruits, bananas, grapes, apples, pears against turquoise blue background",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+      "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+      "snippet": "Pissarro - Still Life with Apples and Pitcher.JPG ... Camille Pissarro: 'Ghâtaignier' Apples and Glazed Earthenware on a Table Artist Author | painting of Pissarro ... Genre | still life ... Pissarro - Still Life with Apples and Pitcher.JPG",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.rawpixel.com/search/still%20life%20with%20apples%20public%20domain",
+      "title": "Still Life With Apples Public Domain Images | Free Photos, PNG Stickers, Wallpapers & Backgrounds - rawpixel",
+      "snippet": "Still life with ceramic pots and apples (1925–1927), vintage painting by Mikulas Galanda. ... Camille Pissarro's Still Life: Apples and Pears in a Round Basket (1872) ... //www.rawpixel.com/image/21980755/camille-piss ... Apples and a Pear) (1863) by Léon Bonvin",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://stockcake.com/s/ceramic-vase/photos#1",
+      "title": "Ceramic vase - Start 7-day free trial · 500 credits · $0 today",
+      "snippet": "Elegant ceramic vase with flowing organic curves catches dramatic side lighting creating deep shadows across minimal white studio backdrop with dried branch accent. ... Minimalist studio still life showcasing a matte black ceramic vase with dried pampas stem, surrounded by expansive white space and bold shadows. ... Dramatic black and white scene shows an old Chinese vase on wooden table with sharp parallel shadows and mysterious smoke wisps.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 6016x4016 ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/",
+      "title": "Foto von Leeloo The First auf Pexels",
+      "snippet": "Add filters, effects ... 4016x6016 Seitenverhältnis 251 ... Farben Datum Feb 24, 2021 ... 2021 Software Adobe ... Beschreibung # Künstlerisches Stillleben mit Trauben auf einem Keramikteller im sanften, natürlichen Licht mit kräftigen Schatten. ### Mehr davon",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+      "title": "File:Flower Vase, Iran, Safavid period, 2nd half of 17th century, earthenware with overglaze luster painting - Cincinnati Art Museum - DSC04130.JPG",
+      "snippet": ": Exhibit in the Cincinnati Art Museum, Cincinnati, Ohio, USA. This artwork is in the public domain because the artist died more than 70 years ago. Photography was permitted in the museum without restriction. ... http://creativecommons.org/publicdomain/zero/1.0/deed.enCC0Creative Commons Zero, Public Domain Dedicationfalsefalse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://elements.envato.com/modern-light-homemade-still-life-ripe-juicy-green--PQ6TA83",
+      "title": "modern Light homemade still life - ripe juicy green grapes in a white bowl",
+      "snippet": "modern Light homemade still life - ripe juicy green grapes in a white bowl ... An inviting still life presents a variety of fruit and a charming ceramic vessel arranged on a draped surface against a white wall. A bowl filled with yellow and green pears and a tray of green grapes rest on a cream-colored cloth, casting soft shadows that suggest daytime lighting.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Still-life_clich%C3%A9-verre#1",
+      "title": "Category:Still-life cliché-verre - Wikimedia Commons - Help",
+      "snippet": "Still-life cliché-verre ... Media in category \"Still-life cliché-verre\" The following 22 files are in this category, out of 22 total. ... Cactus fruit cut in half, NINO F Scholten Tel Aviv 21 8.tiff ... Fruit, NINO F Scholten Varia 10 08.tiff",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A still life scene with fruit casting dramatic shadows in warm lighting. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+      "title": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG - Wikimedia Commons",
+      "snippet": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://elements.envato.com/front-view-sweet-pears-on-dark-background-mellow-t-HBRHAFE",
+      "title": "Pears and Flowers Still Life on Dark Table",
+      "snippet": "Pears and Flowers Still Life on Dark Table ... Ripe pears are arranged with small tan ceramic vases and sprigs of baby's breath flowers, creating a tranquil still life. A wooden bowl filled with pears sits in the blurred background, set against a textured maroon wall. ... The natural light and fresh composition evoke feelings of serenity and simple pleasures.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+      "title": "Photo by Fatih Güney on Pexels",
+      "snippet": "4 Fatih Güney 47.2M views • 152.9K downloads Ankara, Ankara, Türkiye Description # A beautiful flower arrangement with berries in a ceramic vase against a textured backdrop. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+      "title": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg - Wikimedia Commons - File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg",
+      "snippet": "Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg ... Lit,\"natura morta con cesto di fiori, brocca di porcellana cinese e frutta\"",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+      "title": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG - Wikimedia Commons",
+      "snippet": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG From Wikimedia Commons ... Original file (1,929 × 2,523 pixels, file size: 1.07 MB...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://asifabrar.net/Pexels/CollectionMedia/u7rwalf",
+      "title": "Pexels Collection Media",
+      "snippet": "A close-up shot of fresh raspberries in a ceramic bowl on a soft linen fabric. Ideal for healthy eating concepts. ... A vibrant pile of fresh raspberries under natural light, highlighting their rich red color and ripe texture. ... A pink bowl filled with fresh raspberries next to a melon on a light background.",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/",
+      "title": "Foto von Leeloo The First auf Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+      "title": "File:Flower Vase, Iran, Safavid period, 2nd half of 17th century, earthenware with overglaze luster painting - Cincinnati Art Museum - DSC04130.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Still-life_clich%C3%A9-verre#1",
+      "title": "Category:Still-life cliché-verre - Wikimedia Commons - Help",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+      "title": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+      "title": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 25676,
+        "sha256": "1cd9b0723fea20db0a3eee07bf4edc5a5f7e5e528b972fb1214906676c2797e1"
+      },
+      "imageUrl": "https://images.pexels.com/photos/6944877/pexels-photo-6944877.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/",
+      "title": "Foto von Leeloo The First auf Pexels",
+      "sha256": "1cd9b0723fea20db0a3eee07bf4edc5a5f7e5e528b972fb1214906676c2797e1",
+      "bytes": 25676,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1150
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 145849,
+        "sha256": "45cd42cc608afbdcf70aac9c7b88105259b1e943c6a4a7bcab825cecfc2b9a5f"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG/960px-Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+      "title": "File:Flower Vase, Iran, Safavid period, 2nd half of 17th century, earthenware with overglaze luster painting - Cincinnati Art Museum - DSC04130.JPG",
+      "sha256": "45cd42cc608afbdcf70aac9c7b88105259b1e943c6a4a7bcab825cecfc2b9a5f",
+      "bytes": 145849,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1151,
+      "license": {
+        "name": "CC0",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 3133,
+        "height": 3756,
+        "bytes": 2197376
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 170508,
+        "sha256": "dd48951d81d675bd695981bb82b5c0eb16fbdc6e6035354021557b27738a0180"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG/960px-Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+      "title": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG - Wikimedia Commons",
+      "sha256": "dd48951d81d675bd695981bb82b5c0eb16fbdc6e6035354021557b27738a0180",
+      "bytes": 170508,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1304,
+      "license": {
+        "name": "CC0",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2157,
+        "height": 2929,
+        "bytes": 1134914
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 246661,
+        "sha256": "327c8a52f99318432edf74ba7318d867e7fdaddee77cad97aa487475f8258e80"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG/960px-Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+      "title": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG - Wikimedia Commons",
+      "sha256": "327c8a52f99318432edf74ba7318d867e7fdaddee77cad97aa487475f8258e80",
+      "bytes": 246661,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1256,
+      "license": {
+        "name": "CC0",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1929,
+        "height": 2523,
+        "bytes": 1117484
+      }
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/6944877/pexels-photo-6944877.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/",
+      "title": "Foto von Leeloo The First auf Pexels",
+      "sha256": "1cd9b0723fea20db0a3eee07bf4edc5a5f7e5e528b972fb1214906676c2797e1",
+      "bytes": 25676,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1150,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG/960px-Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+      "title": "File:Flower Vase, Iran, Safavid period, 2nd half of 17th century, earthenware with overglaze luster painting - Cincinnati Art Museum - DSC04130.JPG",
+      "sha256": "45cd42cc608afbdcf70aac9c7b88105259b1e943c6a4a7bcab825cecfc2b9a5f",
+      "bytes": 145849,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1151,
+      "license": {
+        "name": "CC0",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 3133,
+        "height": 3756,
+        "bytes": 2197376
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG/960px-Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+      "title": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG - Wikimedia Commons",
+      "sha256": "dd48951d81d675bd695981bb82b5c0eb16fbdc6e6035354021557b27738a0180",
+      "bytes": 170508,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1304,
+      "license": {
+        "name": "CC0",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2157,
+        "height": 2929,
+        "bytes": 1134914
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG/960px-Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+      "title": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG - Wikimedia Commons",
+      "sha256": "327c8a52f99318432edf74ba7318d867e7fdaddee77cad97aa487475f8258e80",
+      "bytes": 246661,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1256,
+      "license": {
+        "name": "CC0",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1929,
+        "height": 2523,
+        "bytes": 1117484
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/",
+        "title": "Foto von Leeloo The First auf Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/6944877/pexels-photo-6944877.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/6944877/pexels-photo-6944877.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 25676,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1150,
+        "sha256": "1cd9b0723fea20db0a3eee07bf4edc5a5f7e5e528b972fb1214906676c2797e1"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+        "title": "File:Flower Vase, Iran, Safavid period, 2nd half of 17th century, earthenware with overglaze luster painting - Cincinnati Art Museum - DSC04130.JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG/960px-Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC0",
+          "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Daderot",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AFlower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG/960px-Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 145849,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 1151,
+        "sha256": "45cd42cc608afbdcf70aac9c7b88105259b1e943c6a4a7bcab825cecfc2b9a5f"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Still-life_clich%C3%A9-verre#1",
+        "title": "Category:Still-life cliché-verre - Wikimedia Commons - Help",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+        "title": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG/960px-Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC0",
+          "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Daderot",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AVase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG/960px-Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 170508,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 1304,
+        "sha256": "dd48951d81d675bd695981bb82b5c0eb16fbdc6e6035354021557b27738a0180"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+        "title": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG/960px-Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC0",
+          "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Daderot",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AOvoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG/960px-Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 246661,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 1256,
+        "sha256": "327c8a52f99318432edf74ba7318d867e7fdaddee77cad97aa487475f8258e80"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮实际检索未找到同时含苹果、梨、整橙子与普通陶瓷花瓶的**摄影**详情页；Commons 返回结果仍以绘画、文物或分类页为主，Pexels 侧则多为单一水果或纯花瓶。以下只记录可核实的公开来源与可转化线索，不声称已查看图像。\n\n### 可用的新来源与用途\n\n**1. Pexels：Lucas Pezeta，水果在暖光下投下戏剧性阴影**\n- 来源页：https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/ \n- 网页描述明确为“fruit casting dramatic shadows in warm lighting” 。\n- 用途：**承托面与投影方向**的候选参考。适合提取“水果底部接触阴影 + 单侧暖光造成的长投影”的明暗关系。但无法确认画面是否含苹果、梨、整橙子及陶瓷花瓶；需取图验证投影是硬边还是暖柔边。\n\n**2. Pexels：Leeloo The First，葡萄在陶瓷盘上，柔和自然光与强烈阴影**\n- 来源页：https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/ \n- 元数据：Nikon D750，50mm，f/1.8，ISO 64，1/4000s 。\n- 网页描述为“sanftem, natürlichen Licht mit kräftigen Schatten”（柔和自然光与强烈阴影）。\n- 用途：**陶瓷承托面 + 投影**的候选。虽主体是葡萄而非苹果/梨/橙子，但陶瓷盘与水果的接触面、盘缘投影、浅景深下的背景墙关系可作构图与光影函数参考。f/1.8 意味着背景墙面会明显虚化，适合参考“墙面与桌面的分离度”。\n\n**3. UCLA 数字图书馆：Carolyn Bartlett，水果碗 + 陶瓷花瓶 + 花卉的静物布置**\n- 来源页：https://digital.library.ucla.edu/catalog?f%5Bgenre_sim%5D%5B%5D=black-and-white+photographs&f%5Blocation_sim%5D%5B%5D=California--Santa+Monica&page=71&range%5Byear_isim%5D%5Bbegin%5D=1930&range%5Byear_isim%5D%5Bend%5D=1939 \n- 描述：一张静物布置照片，包含“a bowl of fruit, a ceramic vase, and a floral element”，物体摆在“edge of a table set near a window” 。\n- 用途：**本轮最接近“水果 + 普通陶瓷花瓶 + 窗光 + 桌面边缘”构图的摄影记录**。但它是黑白照片，无法验证果皮颜色与橙子表皮质感；许可与作者信息在结果页中未完整显示，**待核验**。可参考的是：物体集中于桌边、窗光从侧面进入时的承托面接触关系与背景墙面的灰度层次。\n\n**4. Pexels：Evgeniy Alekseyev，白陶瓷碗中的红苹果**\n- 来源页：https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/ \n- 元数据：Nikon D750，62mm，f/14.0，ISO 100，1/160s 。\n- 描述：白背景中白陶瓷碗盛红苹果 。\n- 用途：**白背景 + 白陶瓷承托面**的候选。f/14 的小光圈意味着边缘相对清晰，适合参考“苹果与陶瓷碗内壁的接触边缘”以及“白背景下的弱投影”。但它是高调白背景，与用户目标中的“墙面/桌面/地面局部环境”中的暖光或自然窗光不同，可作为**承托面接触边缘的对照参考**，不宜直接作为光照主参考。\n\n### 给图形函数的可转化建议（基于网页描述，待取图验证）\n\n- **投影方向与硬度**：Lucas Pezeta 页描述“dramatic shadows in warm lighting” ，可先假定单侧偏高暖光，投影边缘保留中等硬度；Leeloo The First 页的 f/1.8 + “kräftigen Schatten”  提示近摄时投影可能因浅景深而软化，不宜一律设为锐利硬边。\n- **承托面接触**：UCLA 黑白照片的“桌边 + 窗光”构图  可作为物体集中于承托面前缘的参考——水果与花瓶底部应有独立的接触暗带，而非整片死黑；白陶瓷碗与苹果的接触边缘可参考 Evgeniy Alekseyev 页的“白对红”明度反差 。\n- **背景墙面**：Leeloo 的 f/1.8 结果  提示若需要墙面虚化，应把墙面处理为低频渐变而非锐利纹理；若需要可辨纹理，则应对应更小光圈或更远距离，但本轮没有可直接验证的摄影页。\n- **普通陶瓷花瓶**：本轮未获得新的、可核实的普通陶瓷花瓶摄影详情页；前几轮已收集的 Pexels 花瓶页仍需取图验证釉面高光形态。Commons 返回的 vase 页面多为文物摄影（如 CC0 的 Flower Vase, Iran ），其布光与静物承托面关系较弱，不宜直接作为“花瓶 + 桌面接触”的参考。\n\n### 局限与待办\n\n- **四要素组合仍缺失**：本轮未找到同时含苹果、梨、整橙子、普通陶瓷花瓶的摄影详情页。\n- **图像字节未获取**：以上来源的果皮凹坑、高光连续性、投影边缘硬度、接触阴影分离度均无法在文本层面确认。\n- **UCLA 来源许可待核验**：该页面为图书馆目录记录，作者与许可信息不完整，使用前需另查。\n- **Unsplash 未使用**：按环境限制未检索 Unsplash，无新增链接。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 27803,
+    "completion_tokens": 1416,
+    "total_tokens": 29219,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "fd0c88ed-f524-4152-95b4-9dda6a12537c",
+        "model": "deepseek-flash",
+        "elapsedMs": 15802,
+        "prompt_tokens": 27803,
+        "completion_tokens": 1416,
+        "total_tokens": 29219,
+        "server_tool_use": {
+          "tool_search": 12,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 33452,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 25676,
+        "sha256": "1cd9b0723fea20db0a3eee07bf4edc5a5f7e5e528b972fb1214906676c2797e1"
+      },
+      "imageUrl": "https://images.pexels.com/photos/6944877/pexels-photo-6944877.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/de-de/foto/fruchte-trauben-schatten-stillleben-6944877/",
+      "title": "Foto von Leeloo The First auf Pexels",
+      "sha256": "1cd9b0723fea20db0a3eee07bf4edc5a5f7e5e528b972fb1214906676c2797e1",
+      "bytes": 25676,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1150,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/1cd9b0723fea20db0a3eee07bf4edc5a5f7e5e528b972fb1214906676c2797e1.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 145849,
+        "sha256": "45cd42cc608afbdcf70aac9c7b88105259b1e943c6a4a7bcab825cecfc2b9a5f"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG/960px-Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_Vase,_Iran,_Safavid_period,_2nd_half_of_17th_century,_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG",
+      "title": "File:Flower Vase, Iran, Safavid period, 2nd half of 17th century, earthenware with overglaze luster painting - Cincinnati Art Museum - DSC04130.JPG",
+      "sha256": "45cd42cc608afbdcf70aac9c7b88105259b1e943c6a4a7bcab825cecfc2b9a5f",
+      "bytes": 145849,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1151,
+      "license": {
+        "name": "CC0",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flower_Vase%2C_Iran%2C_Safavid_period%2C_2nd_half_of_17th_century%2C_earthenware_with_overglaze_luster_painting_-_Cincinnati_Art_Museum_-_DSC04130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 3133,
+        "height": 3756,
+        "bytes": 2197376
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/45cd42cc608afbdcf70aac9c7b88105259b1e943c6a4a7bcab825cecfc2b9a5f.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 170508,
+        "sha256": "dd48951d81d675bd695981bb82b5c0eb16fbdc6e6035354021557b27738a0180"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG/960px-Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_Japan_(Kyoto),_Kinkozan_workshop,_1870s-1920s,_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG",
+      "title": "File:Vase, Japan (Kyoto), Kinkozan workshop, 1870s-1920s, earthenware with overglaze and gold - Chazen Museum of Art - DSC02422.JPG - Wikimedia Commons",
+      "sha256": "dd48951d81d675bd695981bb82b5c0eb16fbdc6e6035354021557b27738a0180",
+      "bytes": 170508,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1304,
+      "license": {
+        "name": "CC0",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Vase%2C_Japan_%28Kyoto%29%2C_Kinkozan_workshop%2C_1870s-1920s%2C_earthenware_with_overglaze_and_gold_-_Chazen_Museum_of_Art_-_DSC02422.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2157,
+        "height": 2929,
+        "bytes": 1134914
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/dd48951d81d675bd695981bb82b5c0eb16fbdc6e6035354021557b27738a0180.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 246661,
+        "sha256": "327c8a52f99318432edf74ba7318d867e7fdaddee77cad97aa487475f8258e80"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG/960px-Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ovoid_Vase,_Japan,_undated,_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG",
+      "title": "File:Ovoid Vase, Japan, undated, earthenware with overglaze and gold on dark cobalt - Chazen Museum of Art - DSC02380.JPG - Wikimedia Commons",
+      "sha256": "327c8a52f99318432edf74ba7318d867e7fdaddee77cad97aa487475f8258e80",
+      "bytes": 246661,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1256,
+      "license": {
+        "name": "CC0",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "artist": "Daderot",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Zero, Public Domain Dedication",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Ovoid_Vase%2C_Japan%2C_undated%2C_earthenware_with_overglaze_and_gold_on_dark_cobalt_-_Chazen_Museum_of_Art_-_DSC02380.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1929,
+        "height": 2523,
+        "bytes": 1117484
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/327c8a52f99318432edf74ba7318d867e7fdaddee77cad97aa487475f8258e80.jpeg"
+    }
+  ]
+}

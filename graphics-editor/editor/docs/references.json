@@ -1,0 +1,26 @@
+[
+  {
+    "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+    "year": 2023,
+    "url": "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/",
+    "relationship": "Primary reference for anisotropic Gaussian radiance primitives and visibility-aware splatting; CRF 0.4 does not reproduce its multi-view training."
+  },
+  {
+    "title": "2D Gaussian Splatting for Geometrically Accurate Radiance Fields",
+    "year": 2024,
+    "url": "https://surfsplatting.github.io/",
+    "relationship": "Oriented surface Gaussian disks in 3D and multiview geometric constraints; distinct from Gaussian image coding."
+  },
+  {
+    "title": "GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian Splatting",
+    "year": 2024,
+    "url": "https://xingtongge.github.io/GaussianImage-page/",
+    "relationship": "2D Gaussian image representation and accumulation; our dense observation mode does not claim their compression or performance results."
+  },
+  {
+    "title": "Gaussian Grouping: Segment and Edit Anything in 3D Scenes",
+    "year": 2024,
+    "url": "https://github.com/lkeab/gaussian-grouping",
+    "relationship": "Semantic grouping of Gaussians and object editing; our labels are assisted annotations, not trained identity encodings."
+  }
+]

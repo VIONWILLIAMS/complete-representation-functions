@@ -1,0 +1,112 @@
+{
+  "ok": true,
+  "runId": "crf08_aa72a6ae-2389-4d99-9dc9-243e138221bf",
+  "engine": "gaussian08",
+  "model": "deepseek-flash",
+  "action": "scene",
+  "message": "已把薄雾修正到远岸线附近：水平居中并收窄，避免右侧截断；垂直尺度缩小，使雾带主要柔化远岸，近处水纹仍保留，画面不旋转，也不整体提亮。",
+  "qualityNotes": [
+    "需检查薄雾中心是否贴合远岸线附近，形成“远岸稍柔、近水清楚”的层次。",
+    "需检查远岸建筑、树林是否被雾压成漂浮白块或丢失细节。",
+    "需检查近处水纹与倒影是否仍然清楚，不被雾层明显覆盖。",
+    "需检查薄雾左右及上下边缘是否自然衰减、无硬接缝。",
+    "需检查天空高光是否因曝光保留而未裁切。",
+    "薄雾资产内的阴影子场无法单独隐藏，定位下移后需检查树林处是否出现不自然暗斑。"
+  ],
+  "warnings": [
+    "薄雾是二维高斯叠加，不生成新地貌、新相机角度或物理正确三维效果。",
+    "薄雾资产内部阴影子场不可独立关闭，实际渲染后若形成暗斑，可再降低不透明度或缩小垂直尺度。",
+    "质量待实际渲染检查。"
+  ],
+  "scene": {
+    "schema": "crf.gaussian_scene.v0.8",
+    "id": "alpine_morning_mist_variant",
+    "title": "阿尔卑斯湖畔晨雾光色变体",
+    "width": 800,
+    "height": 531,
+    "background": [
+      12,
+      18,
+      22
+    ],
+    "objects": [
+      {
+        "id": "bg_alpine_lake",
+        "label": "阿尔卑斯湖畔完整背景",
+        "assetId": "landscape.alpine",
+        "x": 0,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0.03,
+        "zIndex": 0,
+        "visible": true
+      },
+      {
+        "id": "mist_far_shore",
+        "label": "远岸解析高斯薄雾",
+        "assetId": "atmosphere.haze",
+        "x": 16,
+        "y": 198,
+        "scaleX": 0.8,
+        "scaleY": 0.45,
+        "rotation": 0,
+        "opacity": 0.23,
+        "hue": 0,
+        "exposure": -0.05,
+        "zIndex": 1,
+        "visible": true
+      }
+    ]
+  },
+  "research": {
+    "searched": false,
+    "status": "disabled",
+    "sources": [],
+    "toolCalls": [],
+    "summary": "",
+    "nativeSearchObserved": false
+  },
+  "usage": {
+    "providerCalls": 1,
+    "prompt_tokens": 2056,
+    "completion_tokens": 3153,
+    "total_tokens": 5209,
+    "reasoning_tokens": 2686,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "e521fd14-80ca-4499-9886-fa56691fc948",
+        "model": "deepseek-flash",
+        "elapsedMs": 24262,
+        "prompt_tokens": 2056,
+        "completion_tokens": 3153,
+        "total_tokens": 5209,
+        "reasoning_tokens": 2686,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": true,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "vision": {
+    "renderedImageProvided": true
+  },
+  "validation": {
+    "schema": true,
+    "allowlistedAssets": true,
+    "renderer": false,
+    "repairUsed": false
+  },
+  "quality": {
+    "automaticRealismScore": false,
+    "pixelReconstructionMeasured": false,
+    "selection": "candidate_requires_render_and_review"
+  },
+  "rendered": false,
+  "elapsedMs": 24268
+}

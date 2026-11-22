@@ -1,0 +1,265 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 9,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.9.0",
+      "label": "行人过街按钮与黄色立柱",
+      "category": "pedestrian-button",
+      "role": "object",
+      "bbox": [
+        0.22,
+        0.18,
+        0.84,
+        0.9
+      ],
+      "palette": [
+        [
+          24,
+          27,
+          24
+        ],
+        [
+          25,
+          51,
+          115
+        ],
+        [
+          202,
+          137,
+          34
+        ],
+        [
+          204,
+          143,
+          113
+        ],
+        [
+          224,
+          222,
+          212
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "近景可见黑色行人过街按钮装置固定在黄色纹理立柱上，正面为蓝色圆角面板与白色上行箭头，下方有圆形金属按压钮；一只手的手指正触碰按钮，形成局部遮挡与接触阴影。立柱表面有颗粒、磨损和反光，背景为虚化的灰色街面，景深较浅。",
+      "tags": [
+        "行人按钮",
+        "黄色立柱",
+        "蓝色面板",
+        "白色箭头",
+        "手指按压",
+        "接触阴影",
+        "浅景深",
+        "街景",
+        "磨损纹理"
+      ],
+      "limitations": [
+        "画面裁切了立柱与按钮装置的整体结构",
+        "背景虚化且信息不足",
+        "手部遮挡按压钮细节",
+        "无法确认按钮背面、接线与安装方式",
+        "无法判断精确光源方向",
+        "bbox为估计范围，不是精确alpha分割"
+      ]
+    },
+    {
+      "id": "ref.9.1",
+      "label": "砖拱长廊与行人",
+      "category": "brick-arcade",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          212,
+          157,
+          104
+        ],
+        [
+          76,
+          49,
+          38
+        ],
+        [
+          231,
+          205,
+          171
+        ],
+        [
+          141,
+          82,
+          55
+        ],
+        [
+          32,
+          28,
+          25
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "室内或半室外的旧砖石拱廊，左侧有连续砖砌立柱与拱形开口，顶部为带抹灰残迹的拱顶，向深处层层收进。地面与局部墙面被自然光照亮，形成明亮光斑和深重阴影；画面中可见坐着的浅色人影与远处站立者，整体呈暖褐、橙红色调，具有颗粒感和陈旧表面。",
+      "tags": [
+        "砖拱",
+        "拱廊",
+        "砖柱",
+        "抹灰",
+        "纵深透视",
+        "行人",
+        "自然光",
+        "接触阴影",
+        "旧建筑",
+        "暖色"
+      ],
+      "limitations": [
+        "低分辨率且部分区域偏暗",
+        "人物与人影辨识度有限",
+        "多个对象交织，不能直接拆分单个实例",
+        "画面裁切了拱廊完整边界",
+        "无法确认砖缝深度与真实尺度",
+        "光源方位只能粗略估计",
+        "bbox覆盖全图，不是对象级分割"
+      ]
+    },
+    {
+      "id": "ref.9.2",
+      "label": "砖砌拱廊透视走廊",
+      "category": "brick-corridor",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          223,
+          126,
+          55
+        ],
+        [
+          71,
+          42,
+          31
+        ],
+        [
+          245,
+          218,
+          164
+        ],
+        [
+          148,
+          87,
+          55
+        ],
+        [
+          18,
+          18,
+          17
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "狭长的砖砌拱廊走廊，拱券与砖柱按纵深重复排列，形成明显的收敛透视。左侧近处有铁栅栏，右侧墙面带小壁挂构件；强烈自然光从侧面照入，在地面和墙面形成亮带与拱形阴影，远处入口较暗。砖墙与地面有颗粒、斑驳和暖橙色反光。",
+      "tags": [
+        "砖拱廊",
+        "重复拱券",
+        "透视",
+        "铁栅栏",
+        "砖墙",
+        "侧光",
+        "地面阴影",
+        "暖橙色调",
+        "旧建筑",
+        "走廊"
+      ],
+      "limitations": [
+        "画面整体偏小，纹理细节不足",
+        "远端过暗，结构看不清",
+        "强光区域有局部过曝",
+        "无法判断完整走廊布局与出口环境",
+        "不能确认光源精确方位与时间",
+        "bbox覆盖全图，不是单对象裁剪"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "均为竖幅构图，包含真实户外或半户外建成环境",
+    "暖橙、黄褐与深色阴影构成主要色调",
+    "砖石、金属或塑料表面均可见颗粒、磨损或污渍",
+    "自然光形成明显的亮部与接触阴影",
+    "画面均存在不同程度的裁切、遮挡或景深限制",
+    "近景细节与背景空间之间存在清晰或虚化的层次差异"
+  ],
+  "missingEvidence": [
+    "各场景完整空间布局与未入镜区域",
+    "行人信号灯背面、接线及按钮内部结构",
+    "砖缝深度、灰缝成分与真实尺度",
+    "精确光源方位、天气、时间与色温",
+    "高分辨率纹理及法线、粗糙度等材质信息",
+    "人物身份与运动连续性",
+    "背景文字或标志的完整可读内容",
+    "同一实例的多视角、多光照对照",
+    "精确alpha分割与完整遮挡关系",
+    "色彩校准参考卡"
+  ],
+  "images": [
+    {
+      "id": "ref.9.0",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/personne-appuyant-sur-le-bouton-de-passage-pour-pietons-au-feu-de-circulation-33159181/",
+      "sha256": "9bb00db9e5e2e5923f3a8ff14b35e1c0c13cff097bfa816528b0289e52b7f17a",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.9.1",
+      "sourceUrl": "https://www.pexels.com/photo/brick-pillars-and-arches-8136587/",
+      "sha256": "806afee5be59d665a97b5315c236b27ea8e93bbfb9445a9de6e137c54a8aaca2",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.9.2",
+      "sourceUrl": "https://www.pexels.com/photo/old-red-brick-passage-in-diminishing-perspective-19756123/",
+      "sha256": "adc35dd53b8915822faa1df968ca795130c7919745bc410d8ee7ea86a0b334e3",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "7e83829a-78c1-41ca-809d-e840982fb87c",
+        "model": "deepseek-flash",
+        "elapsedMs": 26344,
+        "prompt_tokens": 1357,
+        "completion_tokens": 2997,
+        "total_tokens": 4354,
+        "reasoning_tokens": 2044,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 3
+      }
+    ],
+    "prompt_tokens": 1357,
+    "completion_tokens": 2997,
+    "total_tokens": 4354,
+    "reasoning_tokens": 2044
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 26344
+}

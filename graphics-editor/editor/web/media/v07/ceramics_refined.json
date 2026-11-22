@@ -1,0 +1,39 @@
+{
+  "schema": "crf.render_evidence.v0.7",
+  "id": "ceramics",
+  "source": "live",
+  "phase": "refined",
+  "width": 640,
+  "height": 480,
+  "samples": 24,
+  "elapsedMs": 86612,
+  "sha256": "7634f96fface77b3a327369c4c859ea04155c214aee98253140843522b148793",
+  "programSha256": "2f69805ca3a12b238baedd427995e14f8d30f63f5d2243dbacdf3c5ef1842ed5",
+  "rendererSha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a",
+  "stats": {
+    "backend": "cpu-analytic-ray-transport",
+    "schema": "crf.image_program.v0.7",
+    "samplesPerPixel": 24,
+    "maxBounces": 5,
+    "tracedPrimarySamples": 7372800,
+    "objects": 20,
+    "areaLights": 2,
+    "elapsedMs": 86567,
+    "sourceImageBlit": false,
+    "imageTextureReads": 0,
+    "proceduralFunctionMaterials": 5,
+    "reflection": true,
+    "refraction": true,
+    "softVisibility": true,
+    "deterministic": true,
+    "denoiser": "bounded-spatial-object-depth-bilateral",
+    "transportLimitations": [
+      "finite bounce budget",
+      "clamped sample radiance",
+      "approximate rough glass",
+      "no volumetric scattering",
+      "no spectral transport",
+      "spatial denoising can soften fine detail"
+    ]
+  }
+}

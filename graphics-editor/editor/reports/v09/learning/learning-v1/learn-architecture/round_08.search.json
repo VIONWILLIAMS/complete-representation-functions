@@ -1,0 +1,445 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 8,
+  "query": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "checkpoint": {
+    "sessionId": "crf09_0e3e9918-4a7c-4a89-b65f-9def0581418c",
+    "round": 8,
+    "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+    "subtopic": "局部细节：近景纹理、连接结构、细小部件",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:53:47.858Z",
+    "runId": "crf07_789fb65d-339e-40f9-9551-e3569acbbdab",
+    "queries": [
+      "site:commons.wikimedia.org pedestrian signal push button pole close up",
+      "site:commons.wikimedia.org traffic light mounting bracket pole close up",
+      "site:pexels.com pedestrian signal close up pole",
+      "site:pexels.com close up window frame brick wall texture",
+      "site:pexels.com traffic light pole connection",
+      "site:commons.wikimedia.org wall texture close up brick plaster",
+      "site:images.pexels.com photo JPEG"
+    ],
+    "requestIds": [
+      "cf7b0480-15cc-414a-a986-4ffac7da6524"
+    ],
+    "sourceCount": 10,
+    "newSourceCount": 5,
+    "candidateCount": 5,
+    "downloadedImageCount": 2,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_8e157a6e1179466cba374e09eb966196",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org pedestrian signal push button pole close up",
+            "site:commons.wikimedia.org traffic light mounting bracket pole close up",
+            "site:pexels.com pedestrian signal close up pole",
+            "site:pexels.com close up window frame brick wall texture",
+            "site:pexels.com traffic light pole connection",
+            "site:commons.wikimedia.org wall texture close up brick plaster",
+            "site:images.pexels.com photo JPEG"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Signal_button_Korea.JPG#1",
+          "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+          "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Canada",
+          "https://www.pexels.com/photo/window-in-red-brick-house-10254304/",
+          "https://www.pexels.com/zh-tw/photo/11159844/",
+          "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_the_United_States",
+          "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+          "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Turkey",
+          "https://www.pexels.com/zh-tw/photo/38633803/",
+          "https://commons.wikimedia.org/wiki/Category:SVG_brick_wall_textures"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Signal_button_Korea.JPG#1",
+        "title": "File:Signal button Korea.JPG - Wikimedia Commons - File:Signal button Korea.JPG",
+        "snippet": "Signal button Korea.JPG ... DescriptionSignal button Korea.JPG | 한국어: 보행자작동식신호기(전라남도 여수시) 日本語: 押しボタン式信号機（全羅南道麗水市） ... {{ja|1=押しボタン式信号機（全羅南道麗水市）}}",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+        "title": "Photo by Müca 🇩🇪 on Pexels",
+        "snippet": "Dimensions 3984x2656 Aspect Ratio 3:2 Colors Date Mar 7 ... Camera Canon EOS 250D ... Description # Rustic brick wall with an aged window, showcasing urban decay and architectural texture. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Canada",
+        "title": "Category:Pedestrian signal push buttons in Canada - Wikimedia Commons",
+        "snippet": "Media in category \"Pedestrian signal push buttons in Canada\" The following 12 files are in this category, out of 12 total. - Crosswalk button ne.JPG 2,592 × 1,944; 2.45 MB - Ontario APS-only ped button.jpg 2,592 × 1,944 ... - Ontario button calls phase.jpg 2...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/window-in-red-brick-house-10254304/",
+        "title": "Photo by Fadime Demirtaş on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A rustic red brick wall featuring a white-framed window with a potted plant inside, creating a charming vintage vibe. ### More like this ... Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/11159844/",
+        "title": "Pexels 上由 1ndex 拍攝的相片",
+        "snippet": "瀏覽次數 57.2 千 按讚數 3 說明 帶有鐵條的古樸窗戶，背景是粉刷過的白色磚牆的細節視圖。 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_the_United_States",
+        "title": "Category:Pedestrian signal push buttons in the United States - Wikimedia Commons",
+        "snippet": "Pedestrian signal push buttons in the United States ## Media in category \"Pedestrian signal push buttons in the United States\" The following 15 files are in this category, out of 15 total. ... 912 × 4,368...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+        "title": "Photo by BREAKS OUT on Pexels",
+        "snippet": "Dimensions 4000x6000 Aspect Ratio 2:3 Colors Date Apr 15 ... Aperture ƒ/4.5 ... Software ILCE-6500 v1.06 Description # Close-up of a vintage red brick building facade with arched windows and peeling walls. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Turkey",
+        "title": "Category:Pedestrian signal push buttons in Turkey - Wikimedia Commons",
+        "snippet": "Pedestrian signal push buttons in Turkey ... Media in category \"Pedestrian signal push buttons in Turkey\" The following 2 files are in this category, out of 2 total. İsbak yaya butonu.jpg ... İstanbul yaya düğmesi.jpg ... Pedestrian signal push buttons by country",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/38633803/",
+        "title": "Pexels 上由 Onur 拍攝的相片",
+        "snippet": "Create photo collages Add custom frames ... 軟體 Adobe Lightroom 11.4.10 (iOS) 說明 # 一面古老的磚牆與華麗的鐵窗欄增添了復古建築的魅力。 ## 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:SVG_brick_wall_textures",
+        "title": "Category:SVG brick wall textures - Wikimedia Commons",
+        "snippet": "SVG brick wall textures ... Media in category \"SVG brick wall textures\" The following 8 files are in this category, out of 8 total. - American bond.svg 400 × 400; 12 KB - Basketweave bond.svg 512 × 512...",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "{\"summary\":\"本轮实际检索到可用于近景纹理与细小部件参考的 Pexels 与 Wikimedia Commons 具体照片页/文件页；未新增 Unsplash。行人信号按钮与立柱连接方面只定位到按钮特写候选，未找到同时清晰展示“立柱连接结构 + 行人信号灯本体 + 自然光接触阴影”的单一照片，需下一轮继续补。\",\"features\":[\"砖墙近景应关注灰缝深度、砖面颗粒、局部剥落与边缘磨损，可作为墙面高频纹理函数依据\",\"旧窗与砖墙交界处存在窗框厚度、窗台积灰、框边阴影线，适合提取边缘与接触阴影\",\"行人信号按钮候选可观察按钮外壳、金属面板、螺栓/螺钉固定点及周边立柱表面\",\"信号灯与建筑立面同框时，需区分信号灯立柱、支架、灯箱与墙面的前后遮挡关系\",\"自然光下的小部件阴影通常短而硬，连接处有局部暗部与反光差异，可作为接触阴影函数参考\"],\"selectionCriteria\":[\"优先选择局部近景且主体边缘清晰的 Pexels 具体照片页或 Commons 文件页\",\"砖墙/窗框类需能分辨灰缝、砖面颗粒与窗框厚度\",\"行人信号按钮类需能分辨按钮外壳、固定螺栓与立柱接触关系\",\"避免重复使用前几轮已收集来源；同一照片的裁切不计为新实例\",\"来源页若缺少作者或许可证信息，标注待核验\"],\"uncertainties\":[\"本轮文本搜索结果未提供多数 Pexels 页面的作者、许可证与原始图像直链，需后续打开页面核验\",\"Commons 部分按钮文件页未展示足够说明以判断是否包含立柱连接特写与自然光阴影\",\"尚未定位到理想的行人信号灯立柱连接 + 多主体遮挡 + 自然光接触阴影综合照片\",\"部分 Pexels 页面仅有描述，无法确认近景尺度是否满足细小部件提取\"],\"nextFocus\":\"补齐行人信号灯立柱连接特写：继续检索 Commons 的 pedestrian signal push buttons 子分类与 Pexels 按钮/立柱近景；核验候选页作者与许可证；补充窗框与墙面颗粒的高分辨率近景具体页面。\"}",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Signal_button_Korea.JPG#1",
+      "title": "File:Signal button Korea.JPG - Wikimedia Commons - File:Signal button Korea.JPG",
+      "snippet": "Signal button Korea.JPG ... DescriptionSignal button Korea.JPG | 한국어: 보행자작동식신호기(전라남도 여수시) 日本語: 押しボタン式信号機（全羅南道麗水市） ... {{ja|1=押しボタン式信号機（全羅南道麗水市）}}",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+      "title": "Photo by Müca 🇩🇪 on Pexels",
+      "snippet": "Dimensions 3984x2656 Aspect Ratio 3:2 Colors Date Mar 7 ... Camera Canon EOS 250D ... Description # Rustic brick wall with an aged window, showcasing urban decay and architectural texture. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Canada",
+      "title": "Category:Pedestrian signal push buttons in Canada - Wikimedia Commons",
+      "snippet": "Media in category \"Pedestrian signal push buttons in Canada\" The following 12 files are in this category, out of 12 total. - Crosswalk button ne.JPG 2,592 × 1,944; 2.45 MB - Ontario APS-only ped button.jpg 2,592 × 1,944 ... - Ontario button calls phase.jpg 2...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/window-in-red-brick-house-10254304/",
+      "title": "Photo by Fadime Demirtaş on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A rustic red brick wall featuring a white-framed window with a potted plant inside, creating a charming vintage vibe. ### More like this ... Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/11159844/",
+      "title": "Pexels 上由 1ndex 拍攝的相片",
+      "snippet": "瀏覽次數 57.2 千 按讚數 3 說明 帶有鐵條的古樸窗戶，背景是粉刷過的白色磚牆的細節視圖。 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_the_United_States",
+      "title": "Category:Pedestrian signal push buttons in the United States - Wikimedia Commons",
+      "snippet": "Pedestrian signal push buttons in the United States ## Media in category \"Pedestrian signal push buttons in the United States\" The following 15 files are in this category, out of 15 total. ... 912 × 4,368...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+      "title": "Photo by BREAKS OUT on Pexels",
+      "snippet": "Dimensions 4000x6000 Aspect Ratio 2:3 Colors Date Apr 15 ... Aperture ƒ/4.5 ... Software ILCE-6500 v1.06 Description # Close-up of a vintage red brick building facade with arched windows and peeling walls. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Turkey",
+      "title": "Category:Pedestrian signal push buttons in Turkey - Wikimedia Commons",
+      "snippet": "Pedestrian signal push buttons in Turkey ... Media in category \"Pedestrian signal push buttons in Turkey\" The following 2 files are in this category, out of 2 total. İsbak yaya butonu.jpg ... İstanbul yaya düğmesi.jpg ... Pedestrian signal push buttons by country",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/38633803/",
+      "title": "Pexels 上由 Onur 拍攝的相片",
+      "snippet": "Create photo collages Add custom frames ... 軟體 Adobe Lightroom 11.4.10 (iOS) 說明 # 一面古老的磚牆與華麗的鐵窗欄增添了復古建築的魅力。 ## 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:SVG_brick_wall_textures",
+      "title": "Category:SVG brick wall textures - Wikimedia Commons",
+      "snippet": "SVG brick wall textures ... Media in category \"SVG brick wall textures\" The following 8 files are in this category, out of 8 total. - American bond.svg 400 × 400; 12 KB - Basketweave bond.svg 512 × 512...",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Canada",
+      "title": "Category:Pedestrian signal push buttons in Canada - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/11159844/",
+      "title": "Pexels 上由 1ndex 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Turkey",
+      "title": "Category:Pedestrian signal push buttons in Turkey - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/38633803/",
+      "title": "Pexels 上由 Onur 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:SVG_brick_wall_textures",
+      "title": "Category:SVG brick wall textures - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 46678,
+        "sha256": "f8618d87ad5c11afbe10ca396879e178f1c533eae5484df70c575d67a9151278"
+      },
+      "imageUrl": "https://images.pexels.com/photos/11159844/pexels-photo-11159844.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/11159844/",
+      "title": "Pexels 上由 1ndex 拍攝的相片",
+      "sha256": "f8618d87ad5c11afbe10ca396879e178f1c533eae5484df70c575d67a9151278",
+      "bytes": 46678,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 528
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 189744,
+        "sha256": "69525f41c56540ab99e9ac606f5b398850195aeffbfc9df74ff68d7d32a272b0"
+      },
+      "imageUrl": "https://images.pexels.com/photos/38633803/pexels-photo-38633803.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/38633803/",
+      "title": "Pexels 上由 Onur 拍攝的相片",
+      "sha256": "69525f41c56540ab99e9ac606f5b398850195aeffbfc9df74ff68d7d32a272b0",
+      "bytes": 189744,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/11159844/pexels-photo-11159844.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/11159844/",
+      "title": "Pexels 上由 1ndex 拍攝的相片",
+      "sha256": "f8618d87ad5c11afbe10ca396879e178f1c533eae5484df70c575d67a9151278",
+      "bytes": 46678,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 528,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/38633803/pexels-photo-38633803.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/38633803/",
+      "title": "Pexels 上由 Onur 拍攝的相片",
+      "sha256": "69525f41c56540ab99e9ac606f5b398850195aeffbfc9df74ff68d7d32a272b0",
+      "bytes": 189744,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Canada",
+        "title": "Category:Pedestrian signal push buttons in Canada - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/11159844/",
+        "title": "Pexels 上由 1ndex 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/11159844/pexels-photo-11159844.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/11159844/pexels-photo-11159844.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 46678,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 528,
+        "sha256": "f8618d87ad5c11afbe10ca396879e178f1c533eae5484df70c575d67a9151278"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_Turkey",
+        "title": "Category:Pedestrian signal push buttons in Turkey - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/38633803/",
+        "title": "Pexels 上由 Onur 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/38633803/pexels-photo-38633803.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/38633803/pexels-photo-38633803.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 189744,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "69525f41c56540ab99e9ac606f5b398850195aeffbfc9df74ff68d7d32a272b0"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:SVG_brick_wall_textures",
+        "title": "Category:SVG brick wall textures - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      }
+    ],
+    "downloadedCount": 2,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "model_semantic_plan",
+    "summary": "本轮实际检索到可用于近景纹理与细小部件参考的 Pexels 与 Wikimedia Commons 具体照片页/文件页；未新增 Unsplash。行人信号按钮与立柱连接方面只定位到按钮特写候选，未找到同时清晰展示“立柱连接结构 + 行人信号灯本体 + 自然光接触阴影”的单一照片，需下一轮继续补。",
+    "features": [
+      "砖墙近景应关注灰缝深度、砖面颗粒、局部剥落与边缘磨损，可作为墙面高频纹理函数依据",
+      "旧窗与砖墙交界处存在窗框厚度、窗台积灰、框边阴影线，适合提取边缘与接触阴影",
+      "行人信号按钮候选可观察按钮外壳、金属面板、螺栓/螺钉固定点及周边立柱表面",
+      "信号灯与建筑立面同框时，需区分信号灯立柱、支架、灯箱与墙面的前后遮挡关系",
+      "自然光下的小部件阴影通常短而硬，连接处有局部暗部与反光差异，可作为接触阴影函数参考"
+    ],
+    "selectionCriteria": [
+      "优先选择局部近景且主体边缘清晰的 Pexels 具体照片页或 Commons 文件页",
+      "砖墙/窗框类需能分辨灰缝、砖面颗粒与窗框厚度",
+      "行人信号按钮类需能分辨按钮外壳、固定螺栓与立柱接触关系",
+      "避免重复使用前几轮已收集来源；同一照片的裁切不计为新实例",
+      "来源页若缺少作者或许可证信息，标注待核验"
+    ],
+    "uncertainties": [
+      "本轮文本搜索结果未提供多数 Pexels 页面的作者、许可证与原始图像直链，需后续打开页面核验",
+      "Commons 部分按钮文件页未展示足够说明以判断是否包含立柱连接特写与自然光阴影",
+      "尚未定位到理想的行人信号灯立柱连接 + 多主体遮挡 + 自然光接触阴影综合照片",
+      "部分 Pexels 页面仅有描述，无法确认近景尺度是否满足细小部件提取"
+    ],
+    "nextFocus": "补齐行人信号灯立柱连接特写：继续检索 Commons 的 pedestrian signal push buttons 子分类与 Pexels 按钮/立柱近景；核验候选页作者与许可证；补充窗框与墙面颗粒的高分辨率近景具体页面。",
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 8657,
+    "completion_tokens": 478,
+    "total_tokens": 9135,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "cf7b0480-15cc-414a-a986-4ffac7da6524",
+        "model": "deepseek-flash",
+        "elapsedMs": 9649,
+        "prompt_tokens": 8657,
+        "completion_tokens": 478,
+        "total_tokens": 9135,
+        "server_tool_use": {
+          "tool_search": 7,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 24667,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 46678,
+        "sha256": "f8618d87ad5c11afbe10ca396879e178f1c533eae5484df70c575d67a9151278"
+      },
+      "imageUrl": "https://images.pexels.com/photos/11159844/pexels-photo-11159844.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/11159844/",
+      "title": "Pexels 上由 1ndex 拍攝的相片",
+      "sha256": "f8618d87ad5c11afbe10ca396879e178f1c533eae5484df70c575d67a9151278",
+      "bytes": 46678,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 528,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/f8618d87ad5c11afbe10ca396879e178f1c533eae5484df70c575d67a9151278.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 189744,
+        "sha256": "69525f41c56540ab99e9ac606f5b398850195aeffbfc9df74ff68d7d32a272b0"
+      },
+      "imageUrl": "https://images.pexels.com/photos/38633803/pexels-photo-38633803.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/38633803/",
+      "title": "Pexels 上由 Onur 拍攝的相片",
+      "sha256": "69525f41c56540ab99e9ac606f5b398850195aeffbfc9df74ff68d7d32a272b0",
+      "bytes": 189744,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/69525f41c56540ab99e9ac606f5b398850195aeffbfc9df74ff68d7d32a272b0.webp"
+    }
+  ]
+}

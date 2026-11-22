@@ -1,0 +1,1117 @@
+{
+  "schema": "crf.actual_generation_trial.v0.9",
+  "id": "02_ochre_corner",
+  "title": "赭石墙面的四扇窗",
+  "category": "architecture",
+  "prompt": "赭石色墙面，四扇窗按两行两列排列，右侧一根墨绿立柱承接行人信号灯。午后光从左上方射入，墙面有细颗粒，窗内深暗，构图整洁但保留真实磨损。输出1024×768，使用CRF原生二维函数与共享高斯外观，保持共同光照、合理比例、材质细节和接触关系。",
+  "seed": 90102,
+  "protocolSha256": "299276050dd4890f52b74fa9e63ff0871716b5f12ad4fe433293a6616a963bc6",
+  "runId": "showcase-v1",
+  "taskId": "crf09_96f3f71c-2a72-4bfe-9a2f-c3f19078da77",
+  "status": "review_required",
+  "stage": "complete",
+  "error": null,
+  "completedAt": "2026-11-21T16:08:11.064Z",
+  "selection": {
+    "index": 2,
+    "reason": "Latest candidate without declared semantic-constraint regression; visual approval remains pending.",
+    "independentReview": false
+  },
+  "frameGate": {
+    "expected": [
+      1024,
+      768
+    ],
+    "actual": [
+      1024,
+      768
+    ],
+    "passed": true
+  },
+  "model": {
+    "id": "shared-1b02095c",
+    "sha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e",
+    "sourceRGBEmbedded": false,
+    "scope": "shared multi-image linear-color moments and Gaussian frequency-band amplitude estimates; procedural shape prior is hand-authored"
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "png": "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_00.png",
+      "jpeg": "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_00.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 65544,
+        "semanticObjects": 6,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 478,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 478,
+        "pixelSha256": "06899203162537db5a3ca4d138d77300e03d74004855b0befdaf1218af69b3ec",
+        "pngSha256": "ad2d7c1772228f42ca98f07cc47d8317bd1afe5cc349f29ce63d328589b21082",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "window",
+            "value": 4,
+            "passed": true,
+            "observed": 4
+          },
+          {
+            "type": "count",
+            "subject": "pole",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "signal",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "color",
+            "subject": "pole",
+            "value": [
+              31,
+              73,
+              52
+            ],
+            "passed": true,
+            "observed": [
+              [
+                31,
+                73,
+                52
+              ]
+            ]
+          },
+          {
+            "type": "right_of",
+            "subject": "pole",
+            "target": "window",
+            "value": true,
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.82,
+              "targetMean": 0.32
+            }
+          },
+          {
+            "type": "above",
+            "subject": "signal",
+            "target": "pole",
+            "value": true,
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.19,
+              "targetMean": 0.59
+            }
+          }
+        ],
+        "evaluated": 6,
+        "passed": 6,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "window",
+            "value": 4,
+            "passed": true,
+            "observed": 4
+          },
+          {
+            "type": "count",
+            "subject": "pole",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "signal",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          }
+        ],
+        "evaluated": 3,
+        "passed": 3,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_1c04e1d1-7916-4577-ad19-83c478b7ff09",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "画面已具备赭石墙、四扇两行两列窗户、右侧墨绿立柱及行人信号灯，但整体仍明显是程序化示意；墙面细颗粒、真实磨损、窗洞深度和接触阴影不足。",
+        "qualityNotes": [
+          "四扇窗、墨绿立柱和行人信号灯均可见，窗户两行两列以及立柱位于窗户右侧、信号灯位于立柱上方的空间关系成立。",
+          "午后侧光方向大致为左上至右下，但墙面大块阴影与窗、杆之间缺少一致的投影关系。"
+        ],
+        "warnings": [
+          "该图为程序化示意渲染，墙面颗粒与磨损、窗框细节和杆底接触关系尚未达到照片级验收标准。",
+          "共享外观先验有限，不能据此认为已恢复真实建筑材质或通过独立人工验收。"
+        ],
+        "issues": [
+          {
+            "code": "edge",
+            "severity": "major",
+            "objectIds": [
+              "window-1",
+              "window-2",
+              "window-3",
+              "window-4"
+            ],
+            "description": "四扇窗框呈均匀亮灰描边，缺少窗框厚度、内凹窗洞、下缘窗台和局部磨损，边缘过于平切。建议降低整圈亮边对比，增加窗框内侧暗面与下缘接触阴影，并让窗洞内凹以产生深度。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "pole-1",
+              "signal-1"
+            ],
+            "description": "立柱底部与地面交界处缺少明确接触阴影和收口，杆身与灯箱连接处也像直接贴合，缺少接缝遮挡。建议将杆底压入地面并增加底部及灯箱下方的接触阴影，强化承托关系。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [
+              "window-1",
+              "window-2",
+              "window-3",
+              "window-4",
+              "pole-1",
+              "signal-1"
+            ],
+            "description": "墙面斜向大阴影方向接近左上光，但窗户、立柱和信号灯没有对应的方向性投影，暗部与亮面关系像平涂。建议让窗框、杆身和灯箱产生与azimuth/elevation一致的低对比投影，并统一受光面亮度。"
+          },
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "window-1",
+              "window-2",
+              "window-3",
+              "window-4",
+              "pole-1",
+              "signal-1"
+            ],
+            "description": "赭石墙面呈大面积平滑色块，细颗粒和真实磨损几乎不可见；窗框、杆身和信号灯外壳也偏干净。建议提高墙面细粒噪声频率与局部污渍变化，在窗框边角与杆底加入轻微磨损和粗糙度差异。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "pole-1"
+            ],
+            "description": "墨绿立柱中段出现一块较深的矩形色带，像粗糙度或材质被截断拼接。建议让杆身粗糙度和颜色沿高度渐变，避免明显横向分段。"
+          },
+          {
+            "code": "semantic",
+            "severity": "minor",
+            "objectIds": [
+              "signal-1"
+            ],
+            "description": "行人信号灯上下两个灯面同时显得发亮，红色行人和青蓝行人图案都较突出，与真实行人信号灯通常只显示单一通行状态不符。建议降低非激活灯面的亮度或只保留一个高亮状态。"
+          },
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [
+              "window-1",
+              "window-2",
+              "window-3",
+              "window-4",
+              "pole-1"
+            ],
+            "description": "四窗整体偏左集中，右侧墙面留白较大，立柱与窗组之间缺少中景联系，构图略显分区。建议轻微调整窗组横向位置或压缩右侧空墙比例，使窗、杆和信号灯在同一画面节奏中更均衡。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 4,
+          "coherence": 3
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2558,
+          "completion_tokens": 3744,
+          "total_tokens": 6302,
+          "reasoning_tokens": 2936,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "44e3c0ca-3c72-4f55-ab8c-7682a9bef7e9",
+              "model": "deepseek-flash",
+              "elapsedMs": 27428,
+              "prompt_tokens": 2558,
+              "completion_tokens": 3744,
+              "total_tokens": 6302,
+              "reasoning_tokens": 2936,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:06:36.112Z",
+            "requestId": "44e3c0ca-3c72-4f55-ab8c-7682a9bef7e9"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 27429
+      }
+    },
+    {
+      "index": 1,
+      "png": "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_01.png",
+      "jpeg": "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_01.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 65544,
+        "semanticObjects": 6,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 322,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 322,
+        "pixelSha256": "a470e68aa2cc27773d6bda92a2acbcb04bc5d25c56a2ee0ac2d354870ea6ae4d",
+        "pngSha256": "03277fdddee3134f0303dadf455475b6ca764cbfb52720c2d5fe4250bd09e128",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "window",
+            "value": 4,
+            "passed": true,
+            "observed": 4
+          },
+          {
+            "type": "count",
+            "subject": "pole",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "signal",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "color",
+            "subject": "pole",
+            "value": [
+              31,
+              73,
+              52
+            ],
+            "passed": true,
+            "observed": [
+              [
+                31,
+                73,
+                52
+              ]
+            ]
+          },
+          {
+            "type": "right_of",
+            "subject": "pole",
+            "target": "window",
+            "value": true,
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.79,
+              "targetMean": 0.3375
+            }
+          },
+          {
+            "type": "above",
+            "subject": "signal",
+            "target": "pole",
+            "value": true,
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.19,
+              "targetMean": 0.59
+            }
+          }
+        ],
+        "evaluated": 6,
+        "passed": 6,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "window",
+            "value": 4,
+            "passed": true,
+            "observed": 4
+          },
+          {
+            "type": "count",
+            "subject": "pole",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "signal",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          }
+        ],
+        "evaluated": 3,
+        "passed": 3,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_1f480f50-78e2-4503-b547-920ddc16313e",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "附图基本兑现“赭石墙+两行两列四窗+右侧墨绿立柱承接行人信号灯”的语义，但信号灯两个行人图形同时点亮、灯箱顶部有杆体尖端外露、杆身中下部出现异常色带、墙面斜向阴影边界过于笔直且未影响窗面，整体仍呈明显程序化示意而非照片级。",
+        "qualityNotes": [
+          "四扇窗与立柱的位置、数量、颜色关系与计划一致，构图整洁。",
+          "墙面颜色与午后侧光方向大体成立，但光影为整幅平涂式暗带，缺少墙与窗、杆的分层响应。",
+          "木纹、颗粒、磨损等材质细节偏弱，窗框高光均匀，更像示意插图而非真实照片。"
+        ],
+        "warnings": [
+          "行人信号灯内置图案已实现，但当前双图案同时点亮不符合真实信号灯状态语义。",
+          "当前有限视差相机与程序化外观不构成真实世界恢复或照片级验收。"
+        ],
+        "issues": [
+          {
+            "code": "semantic",
+            "severity": "major",
+            "objectIds": [
+              "signal-1"
+            ],
+            "description": "信号灯顶部红色行人图形与下方青蓝色行人图形同时点亮，真实行人信号灯同一时刻只显示一种通行状态；应将其中一面改为熄灭深暗色，仅保留单一状态点亮。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [
+              "window-1",
+              "window-2",
+              "window-3",
+              "window-4",
+              "signal-1"
+            ],
+            "description": "墙面斜向阴影带边界过于笔直平滑，且穿过窗区时窗面亮度未随之变化，说明阴影未覆盖窗户与灯杆；应柔化阴影边缘并让窗户、杆体在同一光照层中接受遮挡。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "signal-1",
+              "pole-1"
+            ],
+            "description": "灯箱顶部有细杆尖端外露，灯箱像被杆体穿透悬挂，接触关系不自然；应收齐杆顶与灯箱顶部，或添加明确的抱箍/支架连接结构。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "pole-1"
+            ],
+            "description": "杆身中下部出现一段颜色与粗糙度突变的矩形色带，像材质分段拼接瑕疵；应统一杆身颜色与粗糙度，使磨砂范围连续过渡。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "window-1",
+              "window-2",
+              "window-3",
+              "window-4"
+            ],
+            "description": "四扇窗的边框高光均匀一致、边框像描边，玻璃呈偏蓝灰反光而非深暗；应降低边框高光一致性并降低窗内亮度、削弱蓝色反光。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "window-1",
+              "window-2",
+              "window-3",
+              "window-4"
+            ],
+            "description": "墙面细颗粒与磨损不足，整体平滑均匀，未体现题目要求的细颗粒与真实磨损；应提高墙面粗糙度变化并加入低频污渍斑块。"
+          },
+          {
+            "code": "contact",
+            "severity": "minor",
+            "objectIds": [
+              "pole-1"
+            ],
+            "description": "杆底与地面交接处缺少接触阴影，杆体略显插入地面无落脚暗部；应补充杆底暗部与地面接触阴影。"
+          },
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [
+              "window-1",
+              "window-2",
+              "window-3",
+              "window-4",
+              "pole-1"
+            ],
+            "description": "窗组整体偏左上，右侧仅一根立柱，右下墙面大面积空白，构图略失衡；可整体微移窗组或调整相机取景平衡。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 3,
+          "coherence": 3
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2560,
+          "completion_tokens": 1943,
+          "total_tokens": 4503,
+          "reasoning_tokens": 1155,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "0a2f1f07-47a7-47f2-9480-f88c6b6a48fb",
+              "model": "deepseek-flash",
+              "elapsedMs": 13868,
+              "prompt_tokens": 2560,
+              "completion_tokens": 1943,
+              "total_tokens": 4503,
+              "reasoning_tokens": 1155,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:07:23.757Z",
+            "requestId": "0a2f1f07-47a7-47f2-9480-f88c6b6a48fb"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 13869
+      }
+    },
+    {
+      "index": 2,
+      "png": "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_02.png",
+      "jpeg": "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_02.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 65544,
+        "semanticObjects": 6,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 323,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 323,
+        "pixelSha256": "136f6172d747dfbc8f01c498126dcd45ac770ad1fae3b0d4bd944e12f3d600ac",
+        "pngSha256": "eff9486dae3a5d4dab7dcf529931e7c3763070a8d0d0e961fa56937d75c87beb",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "window",
+            "value": 4,
+            "passed": true,
+            "observed": 4
+          },
+          {
+            "type": "count",
+            "subject": "pole",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "signal",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "color",
+            "subject": "pole",
+            "value": [
+              31,
+              73,
+              52
+            ],
+            "passed": true,
+            "observed": [
+              [
+                31,
+                73,
+                52
+              ]
+            ]
+          },
+          {
+            "type": "right_of",
+            "subject": "pole",
+            "target": "window",
+            "value": true,
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.79,
+              "targetMean": 0.39249999999999996
+            }
+          },
+          {
+            "type": "above",
+            "subject": "signal",
+            "target": "pole",
+            "value": true,
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.17,
+              "targetMean": 0.57
+            }
+          }
+        ],
+        "evaluated": 6,
+        "passed": 6,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "window",
+            "value": 4,
+            "passed": true,
+            "observed": 4
+          },
+          {
+            "type": "count",
+            "subject": "pole",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "signal",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          }
+        ],
+        "evaluated": 3,
+        "passed": 3,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": null
+    }
+  ],
+  "usage": [
+    {
+      "phase": "plan",
+      "providerCalls": 2,
+      "prompt_tokens": 3593,
+      "completion_tokens": 2984,
+      "total_tokens": 6577,
+      "reasoning_tokens": 2181,
+      "requests": [
+        {
+          "phase": "native09_plan",
+          "requestId": "b72d1e74-7882-4cb8-ac43-3fd472a9f61a",
+          "model": "deepseek-flash",
+          "elapsedMs": 16022,
+          "prompt_tokens": 1584,
+          "completion_tokens": 2390,
+          "total_tokens": 3974,
+          "reasoning_tokens": 1996,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        },
+        {
+          "phase": "native09_schema_repair",
+          "requestId": "11954750-5ba0-423d-b63a-1293b3cd7a7a",
+          "model": "deepseek-flash",
+          "elapsedMs": 4213,
+          "prompt_tokens": 2009,
+          "completion_tokens": 594,
+          "total_tokens": 2603,
+          "reasoning_tokens": 185,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "plan_replan_1",
+      "providerCalls": 1,
+      "prompt_tokens": 1765,
+      "completion_tokens": 1551,
+      "total_tokens": 3316,
+      "reasoning_tokens": 1180,
+      "requests": [
+        {
+          "phase": "native09_plan",
+          "requestId": "3dc506a3-3b07-4ca7-ba4a-d19d96b51772",
+          "model": "deepseek-flash",
+          "elapsedMs": 10504,
+          "prompt_tokens": 1765,
+          "completion_tokens": 1551,
+          "total_tokens": 3316,
+          "reasoning_tokens": 1180,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "generate",
+      "providerCalls": 1,
+      "prompt_tokens": 1931,
+      "completion_tokens": 3449,
+      "total_tokens": 5380,
+      "reasoning_tokens": 2642,
+      "requests": [
+        {
+          "phase": "native09_generate",
+          "requestId": "cf464062-c155-4d83-b620-3744ccc3fadb",
+          "model": "deepseek-flash",
+          "elapsedMs": 21229,
+          "prompt_tokens": 1931,
+          "completion_tokens": 3449,
+          "total_tokens": 5380,
+          "reasoning_tokens": 2642,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_0",
+      "providerCalls": 1,
+      "prompt_tokens": 2558,
+      "completion_tokens": 3744,
+      "total_tokens": 6302,
+      "reasoning_tokens": 2936,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "44e3c0ca-3c72-4f55-ab8c-7682a9bef7e9",
+          "model": "deepseek-flash",
+          "elapsedMs": 27428,
+          "prompt_tokens": 2558,
+          "completion_tokens": 3744,
+          "total_tokens": 6302,
+          "reasoning_tokens": 2936,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_1",
+      "providerCalls": 1,
+      "prompt_tokens": 3437,
+      "completion_tokens": 3253,
+      "total_tokens": 6690,
+      "reasoning_tokens": 2408,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "66c6a9dc-0ed9-4b89-92ef-9eb6e535fddf",
+          "model": "deepseek-flash",
+          "elapsedMs": 19581,
+          "prompt_tokens": 3437,
+          "completion_tokens": 3253,
+          "total_tokens": 6690,
+          "reasoning_tokens": 2408,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_1",
+      "providerCalls": 1,
+      "prompt_tokens": 2560,
+      "completion_tokens": 1943,
+      "total_tokens": 4503,
+      "reasoning_tokens": 1155,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "0a2f1f07-47a7-47f2-9480-f88c6b6a48fb",
+          "model": "deepseek-flash",
+          "elapsedMs": 13868,
+          "prompt_tokens": 2560,
+          "completion_tokens": 1943,
+          "total_tokens": 4503,
+          "reasoning_tokens": 1155,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_2",
+      "providerCalls": 1,
+      "prompt_tokens": 3419,
+      "completion_tokens": 5398,
+      "total_tokens": 8817,
+      "reasoning_tokens": 4456,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "118f30c7-83d2-44aa-b390-7a932e10190a",
+          "model": "deepseek-flash",
+          "elapsedMs": 32772,
+          "prompt_tokens": 3419,
+          "completion_tokens": 5398,
+          "total_tokens": 8817,
+          "reasoning_tokens": 4456,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    }
+  ],
+  "apiOperations": [
+    {
+      "index": 0,
+      "phase": "plan",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T15:56:52.008Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_96f3f71c-2a72-4bfe-9a2f-c3f19078da77:0",
+      "finishedAt": "2026-11-21T15:57:12.249Z",
+      "runId": "crf09_79eab308-6b26-4d58-98d2-a05429936df0"
+    },
+    {
+      "index": 1,
+      "phase": "plan_replan_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:03.632Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_96f3f71c-2a72-4bfe-9a2f-c3f19078da77:1",
+      "finishedAt": "2026-11-21T16:06:14.139Z",
+      "runId": "crf09_ffca5578-2698-4c60-ac6e-7a017c34dd67"
+    },
+    {
+      "index": 2,
+      "phase": "generate",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:14.152Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_96f3f71c-2a72-4bfe-9a2f-c3f19078da77:2",
+      "finishedAt": "2026-11-21T16:06:35.393Z",
+      "runId": "crf09_84f7fe56-83f7-43d6-b44c-fc4a9e407488"
+    },
+    {
+      "index": 3,
+      "phase": "critique_0",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:36.104Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_96f3f71c-2a72-4bfe-9a2f-c3f19078da77:3",
+      "finishedAt": "2026-11-21T16:07:03.542Z",
+      "runId": "crf09_1c04e1d1-7916-4577-ad19-83c478b7ff09"
+    },
+    {
+      "index": 4,
+      "phase": "revision_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:03.559Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_96f3f71c-2a72-4bfe-9a2f-c3f19078da77:4",
+      "finishedAt": "2026-11-21T16:07:23.156Z",
+      "runId": "crf09_f405e2f6-6f30-46bf-af5c-e6c4f072f767"
+    },
+    {
+      "index": 5,
+      "phase": "critique_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:23.749Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_96f3f71c-2a72-4bfe-9a2f-c3f19078da77:5",
+      "finishedAt": "2026-11-21T16:07:37.626Z",
+      "runId": "crf09_1f480f50-78e2-4503-b547-920ddc16313e"
+    },
+    {
+      "index": 6,
+      "phase": "revision_2",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:37.645Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_96f3f71c-2a72-4bfe-9a2f-c3f19078da77:6",
+      "finishedAt": "2026-11-21T16:08:10.430Z",
+      "runId": "crf09_9a1bb2b4-402e-4eb0-a49f-2199612dba3a"
+    }
+  ],
+  "planningHistory": [
+    {
+      "at": "2026-11-21T16:06:03.629Z",
+      "reason": "编译器能力描述修正：已有类型的照片真实感、纹理和阴影精度限制应保留为质量说明；signal 已有简化行人 glyph。重新核对必要对象和算子，真正未实现的语义仍必须明确拒绝。",
+      "plan": {
+        "category": "architecture",
+        "requiredTypes": [
+          "window",
+          "pole",
+          "signal"
+        ],
+        "learningTopic": "午后左上方侧光下的赭石墙面细颗粒与真实磨损、深暗窗洞、窗格整齐排列，以及立柱与信号灯的比例和接触关系",
+        "requestedChanges": [
+          "生成赭石色墙面",
+          "布置两行两列共四扇窗",
+          "右侧设置一根墨绿立柱承接行人信号灯",
+          "采用午后左上方入射光",
+          "墙面保留细颗粒与真实磨损感",
+          "输出1024×768并使用共享高斯外观与共同光照"
+        ],
+        "unknownRequirements": [
+          "行人信号灯内部具体行人图标或灯面图案",
+          "完全照片级的真实磨损纹理细节"
+        ],
+        "constraints": [
+          {
+            "type": "count",
+            "subject": "window",
+            "value": 4,
+            "target": ""
+          },
+          {
+            "type": "count",
+            "subject": "pole",
+            "value": 1,
+            "target": ""
+          },
+          {
+            "type": "count",
+            "subject": "signal",
+            "value": 1,
+            "target": ""
+          },
+          {
+            "type": "color",
+            "subject": "pole",
+            "value": [
+              22,
+              62,
+              45
+            ],
+            "target": ""
+          },
+          {
+            "type": "color",
+            "subject": "window",
+            "value": [
+              14,
+              16,
+              18
+            ],
+            "target": ""
+          },
+          {
+            "type": "right_of",
+            "subject": "pole",
+            "value": true,
+            "target": "window"
+          },
+          {
+            "type": "above",
+            "subject": "signal",
+            "value": true,
+            "target": "pole"
+          }
+        ]
+      },
+      "planEvidence": null,
+      "error": {
+        "code": "UNSUPPORTED_REQUIREMENTS",
+        "message": "当前形态函数不能表达：行人信号灯内部具体行人图标或灯面图案；完全照片级的真实磨损纹理细节",
+        "at": "2026-11-21T15:57:12.256Z"
+      },
+      "finishedAt": "2026-11-21T15:57:12.256Z",
+      "phase": "plan",
+      "apiOperationCount": 1,
+      "providerRequestIds": [
+        "b72d1e74-7882-4cb8-ac43-3fd472a9f61a",
+        "11954750-5ba0-423d-b63a-1293b3cd7a7a"
+      ],
+      "budget": {
+        "maxCandidates": 3,
+        "maxQualityFeedback": 2,
+        "learningRounds": 10,
+        "imagesPerRound": 4,
+        "maxApiOperations": 40,
+        "maxProviderRequests": 80,
+        "maxReferencePixels": 192
+      }
+    }
+  ],
+  "replanCount": 1,
+  "planEvidence": {
+    "qualityNotes": [
+      "可生成四窗、立柱和行人信号灯的共享光照二维建筑候选；赭石墙面细颗粒、局部磨损和窗内深暗可通过环境纹理与粗糙度近似表达。",
+      "真实磨损的微观纹理、窗洞透光/反射细节与接触阴影精度仍受程序化外观限制，需要渲染后质检。"
+    ],
+    "warnings": [
+      "结果属于可渲染候选，不代表照片级验收已通过。",
+      "行人信号灯仅包含已实现的简化行人glyph图案，不包含独立人物细节。"
+    ],
+    "runId": "crf09_ffca5578-2698-4c60-ac6e-7a017c34dd67",
+    "requestIds": [
+      "3dc506a3-3b07-4ca7-ba4a-d19d96b51772"
+    ]
+  },
+  "learning": null,
+  "quality": {
+    "releaseGate": "not_evaluated",
+    "independentHumanReview": false,
+    "scope": "Actual rendered candidates with bounded model feedback; not a photorealism certificate"
+  },
+  "artifact": {
+    "imageUrl": "assets/v09/generated/showcase-v1/02_ochre_corner.png",
+    "thumbnailUrl": "assets/v09/generated/showcase-v1/02_ochre_corner.jpg",
+    "sceneUrl": "assets/v09/generated/showcase-v1/02_ochre_corner.scene.json",
+    "reportUrl": "assets/v09/generated/showcase-v1/02_ochre_corner.record.json",
+    "width": 1024,
+    "height": 768,
+    "pixelSha256": "136f6172d747dfbc8f01c498126dcd45ac770ad1fae3b0d4bd944e12f3d600ac",
+    "modelId": "shared-1b02095c",
+    "modelSha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e"
+  },
+  "additionalRunnerFailures": [
+    {
+      "at": "2026-11-21T15:57:12.259Z",
+      "code": "ERR_INVALID_ARG_TYPE",
+      "message": "The \"data\" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined",
+      "kind": "previous_runner_or_export_failure",
+      "recoveredTaskEvidence": true
+    }
+  ],
+  "limits": [
+    "These are fixed showcase trials, not the unrun 180-task terminal benchmark.",
+    "Model critique is auxiliary; photoreal quality requires independent review.",
+    "Current renderer is a restricted procedural/statistical 2D Gaussian function generator."
+  ]
+}

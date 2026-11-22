@@ -1,0 +1,204 @@
+{
+  "schema": "crf.gaussian_fit_report.v0.10",
+  "assetId": "ceramic",
+  "width": 180,
+  "height": 365,
+  "gaussians": 4096,
+  "assetBytes": 439052,
+  "sourceSHA256": "f064b22dda4e2a4bd004da181b3d82fad6dab6fa7505065812185f60ff80d598",
+  "metrics": {
+    "mae": 2.04158368895211,
+    "rmse": 3.0616583655653287,
+    "psnr": 38.41166904033309,
+    "ssim": 0.9217125736245403,
+    "maxError": 46,
+    "exactRGBFraction": 0.025950010160536476,
+    "evaluatedPixels": 49210,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fit": {
+    "iterationsPerStage": 20,
+    "irlsIterationsPerStage": 3,
+    "geometryOptimization": {
+      "steps": 30,
+      "history": [
+        {
+          "step": 0,
+          "perceptualMSE": 0.00016412714622651532,
+          "bestPerceptualMSE": 0.00016412714622651532
+        },
+        {
+          "step": 10,
+          "perceptualMSE": 0.0001639254056221772,
+          "bestPerceptualMSE": 0.0001639254056221772
+        },
+        {
+          "step": 20,
+          "perceptualMSE": 0.00011091506485626916,
+          "bestPerceptualMSE": 0.00011091506485626916
+        },
+        {
+          "step": 30,
+          "perceptualMSE": 9.484251370781805e-05,
+          "bestPerceptualMSE": 9.484251370781805e-05
+        }
+      ],
+      "bestPerceptualMSE": 9.484251370781805e-05,
+      "parameters": "centre_xy,log_sigma_xy,rotation,linear_rgb_coefficients",
+      "pixelFootprintGradient": true
+    },
+    "history": [
+      {
+        "phase": "uniform_coverage_and_structure_initialization",
+        "count": 1427,
+        "elapsedSeconds": 0.151,
+        "mae": 24.877822935717674,
+        "rmse": 31.200811290921234,
+        "psnr": 18.24748587280418,
+        "ssim": 0.7216414147994585,
+        "maxError": 201,
+        "exactRGBFraction": 0.0,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_0",
+        "count": 1427,
+        "elapsedSeconds": 0.956,
+        "mae": 3.292609903136219,
+        "rmse": 5.764899970133967,
+        "psnr": 32.91496808827893,
+        "ssim": 0.8400188029055342,
+        "maxError": 118,
+        "exactRGBFraction": 0.01881731355415566,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_1",
+        "count": 3161,
+        "elapsedSeconds": 2.15,
+        "mae": 2.728463049515681,
+        "rmse": 4.569975701357032,
+        "psnr": 34.932525790190695,
+        "ssim": 0.873344686549295,
+        "maxError": 98,
+        "exactRGBFraction": 0.0245884982727088,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_2",
+        "count": 4096,
+        "elapsedSeconds": 3.12,
+        "mae": 2.4626092257671206,
+        "rmse": 3.9854617938479224,
+        "psnr": 36.121230605201376,
+        "ssim": 0.8925019341995494,
+        "maxError": 81,
+        "exactRGBFraction": 0.029018492176386912,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_0",
+        "count": 4096,
+        "elapsedSeconds": 3.353,
+        "mae": 2.4626092257671206,
+        "rmse": 3.9854617938479224,
+        "psnr": 36.121230605201376,
+        "ssim": 0.8925019341995494,
+        "maxError": 81,
+        "exactRGBFraction": 0.029018492176386912,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_10",
+        "count": 4096,
+        "elapsedSeconds": 5.616,
+        "mae": 2.830170019643704,
+        "rmse": 3.9607947957715766,
+        "psnr": 36.17515675490077,
+        "ssim": 0.904913478212639,
+        "maxError": 52,
+        "exactRGBFraction": 0.0049583418004470635,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_20",
+        "count": 4096,
+        "elapsedSeconds": 7.829,
+        "mae": 2.270161891214523,
+        "rmse": 3.3035115220544142,
+        "psnr": 37.751287090917685,
+        "ssim": 0.9175340793687103,
+        "maxError": 47,
+        "exactRGBFraction": 0.013025807762649867,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_30",
+        "count": 4096,
+        "elapsedSeconds": 10.062,
+        "mae": 2.04158368895211,
+        "rmse": 3.0616583655653287,
+        "psnr": 38.41166904033309,
+        "ssim": 0.9217125736245403,
+        "maxError": 46,
+        "exactRGBFraction": 0.025950010160536476,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 10.083,
+    "bestCheckpointRule": "lowest_observed_srgb_mse",
+    "initializer": "uniform_coverage_plus_variance_partition_and_structure_tensor_no_neural_network"
+  },
+  "renderedFromExportOnly": true,
+  "modelTraining": false,
+  "qualityScope": "reference_observation_reconstruction_not_new_image_generation",
+  "provenance": {
+    "kind": "observed_gaussian_reconstruction",
+    "algorithm": "crf10-structure-irls-pixel-footprint-adam",
+    "sourceRGBEmbedded": false,
+    "losslessResidualEmbedded": false,
+    "neuralModelTraining": false,
+    "pretrainedInitializerUsed": false,
+    "optimizationScope": "this_observation_only",
+    "budget": 4096,
+    "illumination": "inherited_from_observation",
+    "sourceSHA256": "f064b22dda4e2a4bd004da181b3d82fad6dab6fa7505065812185f60ff80d598",
+    "originalSize": [
+      180,
+      365
+    ],
+    "fittedSize": [
+      180,
+      365
+    ],
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+    "limitations": [
+      "仅有正面单视角，无法确认背面、底部与口沿内侧结构",
+      "边界框为目测估计，不是精确alpha分割",
+      "缺少尺寸、重量与真实材质成分信息",
+      "图像可能经过白平衡或色彩处理，釉色不能视为绝对色",
+      "无法判断是否空心、透光或是否有隐藏裂纹",
+      "由模型框选和GrabCut推断alpha，未以真值分割验收。",
+      "光照与高光来自该观测视角；缩放和二维变换不生成未观察到的背面。"
+    ],
+    "pixelMaskVerified": false,
+    "sourceCatalogId": "learn.r03.097cfbf071e3.object",
+    "alphaOrigin": "inherited_observed_semantic_coverage_not_recovered_geometry"
+  },
+  "crossRuntimeParity": {
+    "id": "ceramic",
+    "visiblePixels": 49210,
+    "maximumVisibleRGBDifference": 0,
+    "differentVisibleRGBValues": 0,
+    "alphaExactlyEqual": true,
+    "processAndRenderSeconds": 0.352
+  }
+}

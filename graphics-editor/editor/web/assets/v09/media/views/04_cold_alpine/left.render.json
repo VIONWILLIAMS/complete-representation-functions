@@ -1,0 +1,46 @@
+{
+  "schema": "crf.offline_render.v0.9",
+  "sceneId": "alpine_lake_morning_90104",
+  "kind": "native",
+  "width": 1024,
+  "height": 768,
+  "view": "left",
+  "time": 0,
+  "camera": {
+    "panX": -0.042,
+    "panY": 0,
+    "zoom": 1
+  },
+  "viewport": {
+    "fit": "native",
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 768
+  },
+  "rgbaSHA256": "91e855ca915962f6e16e3aa194ffccb2cc7d879929340b8372b552037abdf564",
+  "rgbSHA256": "f018590b8f2464237d2d2ce1ef2120d20b7c447bd235965284f2dbbfb159f959",
+  "pngSHA256": "09a7edda2b60471bf7f533344e781469b4c80765d66cc2b119571a95effdba66",
+  "bytes": 656144,
+  "elapsedMs": 762.4380150000001,
+  "engineSourceSHA256": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+  "diagnostics": {
+    "engine": "CRF09",
+    "schema": "crf.generative_scene.v0.9",
+    "renderer": "analytic_image_plane_plus_sampled_gaussian_fields",
+    "colorSpace": "linear_srgb_illumination_then_srgb8",
+    "gaussianBasisEvaluations": 278393,
+    "semanticObjects": 5,
+    "learnedModel": "shared-1b02095c",
+    "learnedSources": 124,
+    "time": 0,
+    "elapsedMs": 632,
+    "sourceImageBlit": false,
+    "embeddedPixelResidual": false,
+    "meshUsed": false,
+    "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+    "realWorldReconstructionClaim": false,
+    "photorealQualityGate": "not_evaluated"
+  },
+  "sourcePhotoReadByRenderer": false
+}

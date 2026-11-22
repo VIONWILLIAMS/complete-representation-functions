@@ -1,0 +1,103 @@
+{
+  "schema": "crf.independent_integration_freeze.v0.9",
+  "frozenAt": "2026-11-21T16:51:02.444071+00:00",
+  "scope": "Final local compiled-artifact and editor contract audit. No rebuilding, web/core mutation, deployment or provider requests.",
+  "engineeringPassed": true,
+  "legacyRequiredUnchanged": 721,
+  "legacyByteExact": 721,
+  "publishedURLsByteExact": 813,
+  "editorContracts": {
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "sourcesUnchangedDuringRun": true
+  },
+  "packingSuite": {
+    "command": "node --test tests/test_packed_assets08.mjs tests/test_packed_archives09.mjs",
+    "tests": 14,
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "observedDurationMs": 4605.263011
+  },
+  "actualArchiveCount": 9,
+  "actualRangeChecks": 27,
+  "historicalH3RendersExact": 8,
+  "historicalH3Renders": 8,
+  "expandedDistBytes": 255879841,
+  "headroomBytes": 6264159,
+  "gates": {
+    "G1": "partial",
+    "G2": "not_passed",
+    "G3": "partial",
+    "G4": "partial",
+    "G5": "partial"
+  },
+  "productionReview": "Separate root-owned verification; this local freeze does not upgrade G5.",
+  "files": {
+    "reports/v09/integration_contracts.json": {
+      "bytes": 3306,
+      "sha256": "920a52cbadd463aebebc5ac35877623676f275abfe0edc9b7640e8dae8927c56"
+    },
+    "reports/v09/integration_packing.json": {
+      "bytes": 13595,
+      "sha256": "739cea2d93154e8bf378f52de1ff50b9bfd01980443dd3e5c512b98f7741a2d1"
+    },
+    "reports/v09/integration_retention.json": {
+      "bytes": 313580,
+      "sha256": "7fdad01c50f36787a0053547cb7f80a24655beace9d5c6ff4207834714ed8ed5"
+    },
+    "reports/v09/integration_review.json": {
+      "bytes": 36326,
+      "sha256": "2a12c33bd71b2260e3c2d0fdd8793e53eeb997d6a50095a1b6b5478f3fbbea33"
+    },
+    "reports/v09/integration_routes.json": {
+      "bytes": 336384,
+      "sha256": "1f11abac369ebba1a708e6b383ec4633335d1ff0405d5182ef1b781ef04edc39"
+    },
+    "reports/v09/integration_visual_review.json": {
+      "bytes": 4499,
+      "sha256": "98d8249c3131dd5ea80b015bb6dbdf0d5d25148d2146c743971f780e01e585d9"
+    },
+    "scripts/verify_v09.cjs": {
+      "bytes": 21022,
+      "sha256": "8d2257626074c09cf24caa5c602554fb61c1d07666a684038f67cc8d8ca02909"
+    },
+    "tests/test_editor09_contract.cjs": {
+      "bytes": 17583,
+      "sha256": "6711375369b3b898ceded195983af79c72fec8f2c92ecc645e14a5dd496d602f"
+    },
+    "tests/test_packed_assets08.mjs": {
+      "bytes": 13365,
+      "sha256": "2373aba7c9aaaa3916b31cc327cb1c3d373e2f9d1b6a07f1ba47645537b2033a"
+    },
+    "tests/test_packed_archives09.mjs": {
+      "bytes": 5556,
+      "sha256": "e7457d167a8c64b7594e36fc76564b5a3b1fcbc4c6b84dc06f14761a3066e82c"
+    },
+    "web/crf-video09.js": {
+      "bytes": 23359,
+      "sha256": "cfe939684ed4385acdaae5bf4b730130502c50024b08661fd824cebedf2305c3"
+    },
+    "dist/server/index.js": {
+      "bytes": 633456,
+      "sha256": "33413ece98febd1208d6047af17fea0aac3393841ee3a29df8800f9e84f3bd49"
+    },
+    "reports/v09/build_verification.json": {
+      "bytes": 1054,
+      "sha256": "0954750d1cc2e3a872e5a5a1c8c0d10226de5e2bbe459e551d0368592f0470d5"
+    },
+    "reports/v09/published_files.json": {
+      "bytes": 165354,
+      "sha256": "c805692c08c11784db0b5b195085f4adf8597e8b38e5642ee83f68fd02dcdd48"
+    },
+    "reports/v09/archive_packing.json": {
+      "bytes": 261083,
+      "sha256": "4b19359507d117500052aa6232d66979b4ba98b11a7b04af2892948a605d0486"
+    },
+    "benchmarks/v09/protocol.json": {
+      "bytes": 38104,
+      "sha256": "299276050dd4890f52b74fa9e63ff0871716b5f12ad4fe433293a6616a963bc6"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "schema": "crf.kernel_evidence.v0.10",
+  "tests": {
+    "python": {
+      "passed": 4,
+      "command": "python -m unittest discover -s tests -p 'test_gaussian10.py'"
+    },
+    "node": {
+      "passed": 10,
+      "command": "node --test tests/test_gaussian10.cjs"
+    }
+  },
+  "sourceSHA256": {
+    "scripts/fit_gaussian10.py": "6322f7ad5ca78f5710873201c3bc1df40f0367b4aabc3e9c08921b131515db1e",
+    "web/crf-gaussian10.js": "2bbcc1971122f676621e9d580d0775351d3c3d06f6d0be995f7488b723e1b1d4"
+  },
+  "objects": [
+    {
+      "id": "pear",
+      "width": 255,
+      "height": 414,
+      "gaussians": 4096,
+      "metrics": {
+        "mae": 2.7065001896148657,
+        "rmse": 4.094393325273653,
+        "psnr": 35.88701239764097,
+        "ssim": 0.8847234178720308,
+        "maxError": 59,
+        "exactRGBFraction": 0.005371621135096992,
+        "evaluatedPixels": 69439,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "seconds": 14.002,
+      "assetBytes": 431683
+    },
+    {
+      "id": "apple",
+      "width": 253,
+      "height": 261,
+      "gaussians": 4096,
+      "metrics": {
+        "mae": 3.0135167845085675,
+        "rmse": 4.89219275045837,
+        "psnr": 34.34073241403784,
+        "ssim": 0.8863962563693767,
+        "maxError": 103,
+        "exactRGBFraction": 0.00399388496082553,
+        "evaluatedPixels": 52330,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "seconds": 9.619,
+      "assetBytes": 425041
+    },
+    {
+      "id": "ceramic",
+      "width": 180,
+      "height": 365,
+      "gaussians": 4096,
+      "metrics": {
+        "mae": 2.04158368895211,
+        "rmse": 3.0616583655653287,
+        "psnr": 38.41166904033309,
+        "ssim": 0.9217125736245403,
+        "maxError": 46,
+        "exactRGBFraction": 0.025950010160536476,
+        "evaluatedPixels": 49210,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "seconds": 10.083,
+      "assetBytes": 439052
+    },
+    {
+      "id": "orange",
+      "width": 195,
+      "height": 182,
+      "gaussians": 4096,
+      "metrics": {
+        "mae": 4.048998192226574,
+        "rmse": 6.021680265744628,
+        "psnr": 32.53644976916696,
+        "ssim": 0.912927459351701,
+        "maxError": 96,
+        "exactRGBFraction": 0.0018830973184694184,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "seconds": 5.998,
+      "assetBytes": 430897
+    }
+  ],
+  "sameBudgetStreet": {
+    "gaussians": 8192,
+    "size": [
+      667,
+      1000
+    ],
+    "v08": {
+      "gaussians": 8192,
+      "metrics": {
+        "mae": 5.572197901049475,
+        "rmse": 10.002114868820266,
+        "psnr": 28.12896685118013,
+        "ssim": 0.8273019443036788,
+        "maxError": 128,
+        "exactRGBFraction": 0.03196101949025487,
+        "evaluatedPixels": 667000,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "seconds": 18.862
+    },
+    "v10": {
+      "metrics": {
+        "mae": 7.045858570714643,
+        "rmse": 12.755128100241613,
+        "psnr": 26.0171071166015,
+        "ssim": 0.7954847015753002,
+        "maxError": 156,
+        "exactRGBFraction": 0.02157721139430285,
+        "evaluatedPixels": 667000,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "seconds": 121.7
+    },
+    "v10Polished": {
+      "metrics": {
+        "mae": 6.040978010994503,
+        "rmse": 10.78335310318298,
+        "psnr": 27.475727078535176,
+        "ssim": 0.8110772468858283,
+        "maxError": 175,
+        "exactRGBFraction": 0.034170914542728636,
+        "evaluatedPixels": 667000,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "seconds": 170.94
+    },
+    "qualityUpgradePassed": false,
+    "reason": "new_linear_light_fitting_is_worse_at_same_point_budget; optical_encoding_and_initialization_are_not_solved_by_more_reasoning",
+    "sameComputeClaim": false
+  },
+  "productionFallback": {
+    "asset": "web/assets/v08/gaussians/street.optimized.json",
+    "width": 667,
+    "height": 1000,
+    "gaussians": 65536,
+    "legacyMs": 368,
+    "v10ImportAndRenderMs": 470,
+    "maximumByteDifference": 0,
+    "differentBytes": 0,
+    "exactPixels": 667000,
+    "totalPixels": 667000,
+    "exactFraction": 1,
+    "diagnostics": {
+      "engine": "CRF10Gaussian",
+      "renderer": "direct_affine_anisotropic_gaussians",
+      "colorSpace": "linear_srgb_composite_then_srgb8",
+      "basisColorSpaces": [
+        "srgb_encoded_0_1"
+      ],
+      "filter": "mip",
+      "pixelFilterVariance": 0.08333333333333333,
+      "gaussians": 65536,
+      "basisEvaluations": 12818726,
+      "visibleObjects": 1,
+      "elapsedMs": 444,
+      "sourceRGBBlit": false,
+      "colourRasterResampling": false,
+      "neuralModelTraining": false,
+      "referenceConditioned": true,
+      "geometry": "image_plane_affine",
+      "physicalRelighting": false,
+      "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+      "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+      "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+      "coverageSemantics": null
+    }
+  },
+  "pixelFilter": {
+    "scope": "synthetic_single_gaussian_4x_minification_not_photo_quality_claim",
+    "reference": "independent_64_by_64_subpixel_box_integration_per_output_pixel",
+    "pixels": 144,
+    "pointLinearMSE": 0.003199814544879558,
+    "mipLinearMSE": 2.834596701978073e-06,
+    "relativeMSE": 0.0008858628093037711,
+    "cutoffSigma": 4,
+    "variance": 0.08333333333333333,
+    "method": "covariance_plus_pixel_variance_with_determinant_compensation"
+  },
+  "limitations": [
+    "per_observation_parameter_optimization_not_neural_training",
+    "source_illumination_is_inherited_not_recovered",
+    "optional_highlight_residual_is_heuristic_not_inverse_rendering",
+    "2D_affine_viewing_not_true_3D",
+    "alpha_is_observed_semantic_coverage_not_Gaussian_geometry",
+    "pixel_variance_filter_is_a_box_approximation_not_full_MipSplatting",
+    "legacy_profile_filters_encoded_colour_not_physical_linear_radiance"
+  ]
+}

@@ -1,0 +1,841 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 4,
+  "query": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "checkpoint": {
+    "sessionId": "crf09_e5ccf6cd-5556-4a02-a656-53316025d65f",
+    "round": 4,
+    "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+    "subtopic": "柔和照明：自然侧光、低对比阴影与高光",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:50:59.180Z",
+    "runId": "crf07_04c692e9-c4ee-497a-a67b-02305e19d5c0",
+    "queries": [
+      "site:pexels.com photo apples pears oranges ceramic vase still life natural window light",
+      "site:commons.wikimedia.org apples pears oranges ceramic vase still life photograph",
+      "site:pexels.com photo still life fruit bowl natural light soft shadows",
+      "site:commons.wikimedia.org still life fruit ceramic vase photograph",
+      "低对比柔光侧光 静物摄影 布光 水果 陶瓷花瓶",
+      "how to photograph fruit still life natural window light soft shadows high key",
+      "\"Apples, Pears, Oranges.jpg\" Wikimedia Commons",
+      "site:commons.wikimedia.org File Apples Pears Oranges still life",
+      "site:pexels.com photo apples pears oranges still life",
+      "site:pexels.com photo fruit and vase natural light",
+      "site:commons.wikimedia.org still life with fruit and ceramic vase photograph",
+      "site:pexels.com photo ceramic vase fruit arrangement"
+    ],
+    "requestIds": [
+      "a297ba3a-b3be-4ba1-bab8-eadfb778c65c"
+    ],
+    "sourceCount": 23,
+    "newSourceCount": 14,
+    "candidateCount": 9,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_8675c07a86c943b7a1ae8917cd4d11e3",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com photo apples pears oranges ceramic vase still life natural window light",
+            "site:commons.wikimedia.org apples pears oranges ceramic vase still life photograph",
+            "site:pexels.com photo still life fruit bowl natural light soft shadows",
+            "site:commons.wikimedia.org still life fruit ceramic vase photograph",
+            "低对比柔光侧光 静物摄影 布光 水果 陶瓷花瓶",
+            "how to photograph fruit still life natural window light soft shadows high key"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/zh-tw/photo/30876394/",
+          "https://dp.pconline.com.cn/qa/10089.html?ad=9708",
+          "https://flagpolephotographers.com/wp-content/uploads/10-Tips-for-Beautiful-Fruit-Photography.pdf#1#1#1",
+          "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+          "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+          "https://www.fengniao.com/pe/0_197187.html",
+          "https://www.dpreview.com/forums/post/36585402#1",
+          "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+          "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+          "https://academy.fengniao.com/147/1471925_all.html",
+          "https://www.pexels.com/photo/a-bowl-of-cherries-8463557/",
+          "https://academy.fengniao.com/147/1471925_3.html"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_01_aecb08204bee4ddc98a291cd6e961af0",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "\"Apples, Pears, Oranges.jpg\" Wikimedia Commons",
+            "site:commons.wikimedia.org File Apples Pears Oranges still life",
+            "site:pexels.com photo apples pears oranges still life",
+            "site:pexels.com photo fruit and vase natural light",
+            "site:commons.wikimedia.org still life with fruit and ceramic vase photograph",
+            "site:pexels.com photo ceramic vase fruit arrangement"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/Category:Pyrus_communis?uselang=th#2",
+          "https://commons.wikimedia.org/wiki/Category:19th-century_still-life_paintings_of_fruits",
+          "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+          "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+          "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+          "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+          "https://www.pexels.com/photo/bowl-of-fruits-on-a-wooden-stool-and-a-goblet-on-the-floor-27786194/",
+          "https://www.pexels.com/photo/a-plant-in-a-vase-14682155/",
+          "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+          "https://www.pexels.com/fr-fr/photo/nourriture-aliments-apple-pomme-26466932/",
+          "https://www.pexels.com/photo/elegant-red-vase-with-white-berries-in-warm-light-35782952/",
+          "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+          "https://www.pexels.com/photo/fruits-on-cutting-board-and-in-bowl-20346391/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/30876394/",
+        "title": "Pexels 上由 The Wizard LiSarD 拍攝的相片",
+        "snippet": "13.7 千 按讚數 2 說明 廚房檯面上的橘色碗裡放著切成丁的蘋果，陽光照射下來，投射出藝術的光影。 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://dp.pconline.com.cn/qa/10089.html?ad=9708",
+        "title": "想拍出立体感强的静物，侧光拍摄技巧中光源角度该怎么选？ - 太平洋科技摄影部落",
+        "snippet": "推荐45度至90度侧光 ... 无论是陶瓷的光泽还是水果的表皮，侧光都能利用阴影深度来欺骗视觉，从而在二维照片中营造出强烈的三维立体效果，这是提升静物摄影质感的关键原理。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://flagpolephotographers.com/wp-content/uploads/10-Tips-for-Beautiful-Fruit-Photography.pdf#1#1#1",
+        "title": "10 Tips for Beautiful Fruit Photography",
+        "snippet": "gorgeous diffused light. Set up your fruits on a table near the window. I'd recommend ensuring that the light hits your arrangement from the side, but feel free to move the table backward and forward until you get a look you like. And if you find that the shadows are a little too heavy ... of white poster board to bounce some light back into the darkness.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+        "title": "Photo by Lucas Pezeta on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A still life scene with fruit casting dramatic shadows in warm lighting. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+        "title": "Category:Grasset Collection - Wikimedia Commons",
+        "snippet": "Peter Binoit - Still Life of Grapes and Peaches on a Porcelain Bowl.jpg ... Jan Davidsz de Heem - Still life of flowers in a glass vase with insects and fruits in a stone niche l22036-58kpv-01-t1.jpg",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.fengniao.com/pe/0_197187.html",
+        "title": "静物广告摄影布光技巧有哪些",
+        "snippet": "衣服、布料、食品、水果、粗陶 ... 为了再现吸光体表面的层次质感，布光的灯位要以侧光、顺光、侧顺光为主，而且光比较小，这样使其层次和色彩表现得都更加丰富。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.dpreview.com/forums/post/36585402#1",
+        "title": "Still Life (Pears) for class - C&C Please - NewsReviewsArticlesBuying GuidesCompareSample ImagesVideosCamerasLensesForumsGalleriesChallenges",
+        "snippet": "You are limited to natural light so find a window (generally you want a large north facing window, although compared to a pear anything is large). You will be playing with distance to the window, angle of the light on the subject ... Hint if you bring your subject up close to your light source (within inches) the transitions between highlight and shadow will be soft...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+        "title": "Photo by Townsend Walton on Pexels",
+        "snippet": "Date Jul 25, 2025 Downloads 37 Views ... 2025 Software Luminar Neo Lacey, Washington, United States Description # A beautiful still life featuring fresh plums in a patterned bowl with a vibrant dahlia flower. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+        "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+        "snippet": "Pissarro - Still Life with Apples and Pitcher.JPG ... Camille Pissarro: 'Ghâtaignier' Apples and Glazed Earthenware on a Table Artist Author | painting of Pissarro ... Genre | still life ... Pissarro - Still Life with Apples and Pitcher.JPG",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://academy.fengniao.com/147/1471925_all.html",
+        "title": "静物广告摄影的布光技巧",
+        "snippet": "毛皮、衣服、布料、食品、水果、粗陶 ... 为了再现吸光体表面的层次质感，布光的灯位要以侧光、顺光、侧顺光为主，而且光比较小，这样使其层次和色彩表现得都更加丰富。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/a-bowl-of-cherries-8463557/",
+        "title": "Photo by Micheile Henderson on Pexels",
+        "snippet": "Brighten up Add frames 4 Micheile Henderson 203.1M views • 368.1K downloads ... Adobe Photoshop Lightroom Classic 10.3 (Windows) Description # Close-up of a hand holding a bowl filled with fresh ripe cherries against a soft background. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://academy.fengniao.com/147/1471925_3.html",
+        "title": "静物广告摄影的布光技巧",
+        "snippet": "图14、图15都采用了侧光光位，其中图14用的是柔光灯，光线较柔和，光比小，所以苹果的明暗对比较弱；图15用的是泛光灯 ... 侧光使产品色彩在明暗度上产生明显的对比，而且过渡自然丰富...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pyrus_communis?uselang=th#2",
+        "title": "Category:Pyrus communis - Wikimedia Commons - 2.21 เมกะไบต์",
+        "snippet": "Pears (9276174252).jpg 1,600 × 1,200; 696 กิโลไบต์ ... - Peras - Pears.jpg 960 × 1 ... - Poires, fruits.jpg 618 × 1,024...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:19th-century_still-life_paintings_of_fruits",
+        "title": "Category:19th-century still-life paintings of fruits - Wikimedia Commons",
+        "snippet": "19th-century still-life paintings of fruits ... Media in category \"19th-century still-life paintings of fruits\" ... - Apples MET DT1940.jpg 3,811 × 2,671; 2.45 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+        "title": "Photo de Hans Heemsbergen sur Pexels",
+        "snippet": "Create photo collages ... Appareil photo NIKON D7000 ... ISO 400 ... Logiciel Adobe Photoshop Elements 12.0 Windows Description # Un assortiment coloré de pommes, de poires et d'un avocat dans un panier.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+        "title": "Photo by Vadim Bocharov on Pexels",
+        "snippet": "4524x6643 Aspect Ratio 348:511 Colors Date Apr 10, 2019 Downloads ... Description # Elegant still life featuring a flower in a patterned vase and a citrus fruit on a plate. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+        "title": "Photo by Fatih Güney on Pexels",
+        "snippet": "4 Fatih Güney 47.2M views • 152.9K downloads Ankara, Ankara, Türkiye Description # A beautiful flower arrangement with berries in a ceramic vase against a textured backdrop. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/bowl-of-fruits-on-a-wooden-stool-and-a-goblet-on-the-floor-27786194/",
+        "title": "Photo by Sydney Sang on Pexels",
+        "snippet": "Afterglow ... Sydney Sang ... Date Aug 15, 2024 ... Taken At Jul 24, 2024 ... Description # Elegant still life with fruits on a wooden stool in a bright studio. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/a-plant-in-a-vase-14682155/",
+        "title": "Photo by id23 on Pexels",
+        "snippet": "6.3M views • 18.8K downloads License Free Dimensions 3000x4000 Aspect Ratio 3:4 Colors Date Dec 6 ... Aperture ƒ/1.8 ISO 800 ... Taken At Nov 1, 2022 Description # Simple, elegant vase holding vibrant red berry branch against a white background. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+        "title": "Photo de simon wang sur Pexels",
+        "snippet": "585,8 millier vues \\ 6,5 millier téléchargements Description # Composition créative d'agrumes « main de Bouddha » dans un vase en céramique, entourée de kumquats. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/nourriture-aliments-apple-pomme-26466932/",
+        "title": "Photo de TLK GentooExpressions sur Pexels",
+        "snippet": "4032x3024 Format 4:3 Couleurs Date Jun 17, 2024 Téléchargements 246 Vues 25,3 millier ... Description # Composition artistique de nature morte présentant des pommes et une poire sur un fond texturé.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/elegant-red-vase-with-white-berries-in-warm-light-35782952/",
+        "title": "Photo by Valentin Ivantsov on Pexels",
+        "snippet": "Afterglow Street Festive Summer 1 Valentin Ivantsov ... 3468x5202 Aspect Ratio 2 ... 3 Camera Canon EOS 6D Focal 100.0mm ... ISO 100 Shutter Speed 2.5 sec ... Software Adobe Photoshop CS6 (Windows) Description # A tall red vase with white berries on branches casting shadows in a warm light setting. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/fruits-on-cutting-board-and-in-bowl-20346391/",
+        "title": "Photo by Dagmara Dombrovska on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages ... Feb 21, 2024 ... Adobe Photoshop Lightroom 6.10.1 (Windows) Description # Vibrant fresh strawberries arranged in a ceramic cup and on a wooden board with a yellow fabric backdrop. ## More like this Add filters...",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "{\"summary\":\"本轮实际搜索未发现同时包含苹果、梨、整橙子和普通陶瓷花瓶的单一摄影详情页。Wikimedia Commons 与 Pexels 的结果仍以绘画、单一水果或花器为主；仅有的“苹果+梨”组合来自 Pexels 静物，但无橙子与花瓶。照明资料可支撑“自然侧光、低对比、柔化阴影”的布光参数，但无法替代目标静物照片。\",\"features\":[\"苹果、梨、整橙子与陶瓷花瓶的完整组合尚未在可点击摄影页中确认；需后续字节核验是否存在。\",\"可参考 Pexels 静物页的构图线索：苹果与梨放在有纹理背景前，可能适合提取轮廓与果皮明暗过渡，但橙子和花瓶未知。\",\"柑橘类与陶瓷器皿同框的页面存在，但主体为佛手柑/金桔与花瓶，不是整橙子+苹果+梨。\",\"侧光 45–90 度可形成明暗交界线；低对比需用柔光布/白纸柔化窗光，并在暗侧加白卡补光。\",\"水果属吸光体，侧光或侧顺光、小光比更适合表现表皮纹理与固有色；陶瓷反光体则需柔光避免硬高光。\",\"自然窗光宜选无直射阳光的大窗，阴天或加薄窗帘可降低对比；主体靠近光源可增大柔和高光、软化明暗过渡。\"],\"selectionCriteria\":[\"优先选取真实照片而非绘画，且详情页含作者、许可证、原始尺寸与图像 URL。\",\"优先 CC0/CC BY/CC BY-SA 的 Wikimedia Commons 文件页，或 Pexels 具体照片页；排除图库首页与集合页。\",\"照片应能区分苹果、梨、整橙子的独立轮廓，并至少有普通陶瓷花瓶或罐体与承托面。\",\"光照应为侧窗自然光、阴影边缘柔和、高光不溢出，便于提取低对比明暗函数。\",\"需能看出果皮纹理（苹果点状皮孔、梨的哑光颗粒、橙子凹点）和陶瓷釉面高光形态。\"],\"uncertainties\":[\"Commons 文件名“Apples, Pears, Oranges.jpg”未被本轮工具返回详情页；是否为照片、是否含陶瓷花瓶、具体光照均待核验。\",\"Pexels 苹果+梨页未描述橙子与花瓶；仅凭标题不能确认画面无其他器皿。\",\"“佛手柑与陶瓷花瓶”页不是整橙子，不能替代橙子实例。\",\"多页为绘画或历史静物，不能作为摄影光照与材质的直接像素参考。\",\"尚未下载任何图片字节；所有外观特征均为待验证假设，不是已观察结果。\"],\"nextFocus\":\"下一轮优先定位并核验 Commons 的 Apples, Pears, Oranges.jpg 详情页；若不含花瓶，则转向“整橙子+陶瓷花瓶”具体摄影页，再与苹果、梨独立实例组合使用。同时补一张自然侧窗光下陶瓷器皿与水果同框的低对比照片，以验证阴影边缘与釉面高光。\"}",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/30876394/",
+      "title": "Pexels 上由 The Wizard LiSarD 拍攝的相片",
+      "snippet": "13.7 千 按讚數 2 說明 廚房檯面上的橘色碗裡放著切成丁的蘋果，陽光照射下來，投射出藝術的光影。 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://dp.pconline.com.cn/qa/10089.html?ad=9708",
+      "title": "想拍出立体感强的静物，侧光拍摄技巧中光源角度该怎么选？ - 太平洋科技摄影部落",
+      "snippet": "推荐45度至90度侧光 ... 无论是陶瓷的光泽还是水果的表皮，侧光都能利用阴影深度来欺骗视觉，从而在二维照片中营造出强烈的三维立体效果，这是提升静物摄影质感的关键原理。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://flagpolephotographers.com/wp-content/uploads/10-Tips-for-Beautiful-Fruit-Photography.pdf#1#1#1",
+      "title": "10 Tips for Beautiful Fruit Photography",
+      "snippet": "gorgeous diffused light. Set up your fruits on a table near the window. I'd recommend ensuring that the light hits your arrangement from the side, but feel free to move the table backward and forward until you get a look you like. And if you find that the shadows are a little too heavy ... of white poster board to bounce some light back into the darkness.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A still life scene with fruit casting dramatic shadows in warm lighting. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+      "title": "Category:Grasset Collection - Wikimedia Commons",
+      "snippet": "Peter Binoit - Still Life of Grapes and Peaches on a Porcelain Bowl.jpg ... Jan Davidsz de Heem - Still life of flowers in a glass vase with insects and fruits in a stone niche l22036-58kpv-01-t1.jpg",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.fengniao.com/pe/0_197187.html",
+      "title": "静物广告摄影布光技巧有哪些",
+      "snippet": "衣服、布料、食品、水果、粗陶 ... 为了再现吸光体表面的层次质感，布光的灯位要以侧光、顺光、侧顺光为主，而且光比较小，这样使其层次和色彩表现得都更加丰富。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.dpreview.com/forums/post/36585402#1",
+      "title": "Still Life (Pears) for class - C&C Please - NewsReviewsArticlesBuying GuidesCompareSample ImagesVideosCamerasLensesForumsGalleriesChallenges",
+      "snippet": "You are limited to natural light so find a window (generally you want a large north facing window, although compared to a pear anything is large). You will be playing with distance to the window, angle of the light on the subject ... Hint if you bring your subject up close to your light source (within inches) the transitions between highlight and shadow will be soft...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+      "title": "Photo by Townsend Walton on Pexels",
+      "snippet": "Date Jul 25, 2025 Downloads 37 Views ... 2025 Software Luminar Neo Lacey, Washington, United States Description # A beautiful still life featuring fresh plums in a patterned bowl with a vibrant dahlia flower. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+      "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+      "snippet": "Pissarro - Still Life with Apples and Pitcher.JPG ... Camille Pissarro: 'Ghâtaignier' Apples and Glazed Earthenware on a Table Artist Author | painting of Pissarro ... Genre | still life ... Pissarro - Still Life with Apples and Pitcher.JPG",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://academy.fengniao.com/147/1471925_all.html",
+      "title": "静物广告摄影的布光技巧",
+      "snippet": "毛皮、衣服、布料、食品、水果、粗陶 ... 为了再现吸光体表面的层次质感，布光的灯位要以侧光、顺光、侧顺光为主，而且光比较小，这样使其层次和色彩表现得都更加丰富。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/a-bowl-of-cherries-8463557/",
+      "title": "Photo by Micheile Henderson on Pexels",
+      "snippet": "Brighten up Add frames 4 Micheile Henderson 203.1M views • 368.1K downloads ... Adobe Photoshop Lightroom Classic 10.3 (Windows) Description # Close-up of a hand holding a bowl filled with fresh ripe cherries against a soft background. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://academy.fengniao.com/147/1471925_3.html",
+      "title": "静物广告摄影的布光技巧",
+      "snippet": "图14、图15都采用了侧光光位，其中图14用的是柔光灯，光线较柔和，光比小，所以苹果的明暗对比较弱；图15用的是泛光灯 ... 侧光使产品色彩在明暗度上产生明显的对比，而且过渡自然丰富...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pyrus_communis?uselang=th#2",
+      "title": "Category:Pyrus communis - Wikimedia Commons - 2.21 เมกะไบต์",
+      "snippet": "Pears (9276174252).jpg 1,600 × 1,200; 696 กิโลไบต์ ... - Peras - Pears.jpg 960 × 1 ... - Poires, fruits.jpg 618 × 1,024...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:19th-century_still-life_paintings_of_fruits",
+      "title": "Category:19th-century still-life paintings of fruits - Wikimedia Commons",
+      "snippet": "19th-century still-life paintings of fruits ... Media in category \"19th-century still-life paintings of fruits\" ... - Apples MET DT1940.jpg 3,811 × 2,671; 2.45 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+      "title": "Photo de Hans Heemsbergen sur Pexels",
+      "snippet": "Create photo collages ... Appareil photo NIKON D7000 ... ISO 400 ... Logiciel Adobe Photoshop Elements 12.0 Windows Description # Un assortiment coloré de pommes, de poires et d'un avocat dans un panier.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+      "title": "Photo by Vadim Bocharov on Pexels",
+      "snippet": "4524x6643 Aspect Ratio 348:511 Colors Date Apr 10, 2019 Downloads ... Description # Elegant still life featuring a flower in a patterned vase and a citrus fruit on a plate. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+      "title": "Photo by Fatih Güney on Pexels",
+      "snippet": "4 Fatih Güney 47.2M views • 152.9K downloads Ankara, Ankara, Türkiye Description # A beautiful flower arrangement with berries in a ceramic vase against a textured backdrop. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/bowl-of-fruits-on-a-wooden-stool-and-a-goblet-on-the-floor-27786194/",
+      "title": "Photo by Sydney Sang on Pexels",
+      "snippet": "Afterglow ... Sydney Sang ... Date Aug 15, 2024 ... Taken At Jul 24, 2024 ... Description # Elegant still life with fruits on a wooden stool in a bright studio. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/a-plant-in-a-vase-14682155/",
+      "title": "Photo by id23 on Pexels",
+      "snippet": "6.3M views • 18.8K downloads License Free Dimensions 3000x4000 Aspect Ratio 3:4 Colors Date Dec 6 ... Aperture ƒ/1.8 ISO 800 ... Taken At Nov 1, 2022 Description # Simple, elegant vase holding vibrant red berry branch against a white background. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+      "title": "Photo de simon wang sur Pexels",
+      "snippet": "585,8 millier vues \\ 6,5 millier téléchargements Description # Composition créative d'agrumes « main de Bouddha » dans un vase en céramique, entourée de kumquats. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/nourriture-aliments-apple-pomme-26466932/",
+      "title": "Photo de TLK GentooExpressions sur Pexels",
+      "snippet": "4032x3024 Format 4:3 Couleurs Date Jun 17, 2024 Téléchargements 246 Vues 25,3 millier ... Description # Composition artistique de nature morte présentant des pommes et une poire sur un fond texturé.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/elegant-red-vase-with-white-berries-in-warm-light-35782952/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "snippet": "Afterglow Street Festive Summer 1 Valentin Ivantsov ... 3468x5202 Aspect Ratio 2 ... 3 Camera Canon EOS 6D Focal 100.0mm ... ISO 100 Shutter Speed 2.5 sec ... Software Adobe Photoshop CS6 (Windows) Description # A tall red vase with white berries on branches casting shadows in a warm light setting. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/fruits-on-cutting-board-and-in-bowl-20346391/",
+      "title": "Photo by Dagmara Dombrovska on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages ... Feb 21, 2024 ... Adobe Photoshop Lightroom 6.10.1 (Windows) Description # Vibrant fresh strawberries arranged in a ceramic cup and on a wooden board with a yellow fabric backdrop. ## More like this Add filters...",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/30876394/",
+      "title": "Pexels 上由 The Wizard LiSarD 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+      "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/a-bowl-of-cherries-8463557/",
+      "title": "Photo by Micheile Henderson on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pyrus_communis?uselang=th#2",
+      "title": "Category:Pyrus communis - Wikimedia Commons - 2.21 เมกะไบต์",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:19th-century_still-life_paintings_of_fruits",
+      "title": "Category:19th-century still-life paintings of fruits - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/bowl-of-fruits-on-a-wooden-stool-and-a-goblet-on-the-floor-27786194/",
+      "title": "Photo by Sydney Sang on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/a-plant-in-a-vase-14682155/",
+      "title": "Photo by id23 on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/elegant-red-vase-with-white-berries-in-warm-light-35782952/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 68438,
+        "sha256": "97018f38a92876dab4e76932174f081efda39651449d1c48f997fb391040901d"
+      },
+      "imageUrl": "https://images.pexels.com/photos/30876394/pexels-photo-30876394.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/30876394/",
+      "title": "Pexels 上由 The Wizard LiSarD 拍攝的相片",
+      "sha256": "97018f38a92876dab4e76932174f081efda39651449d1c48f997fb391040901d",
+      "bytes": 68438,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1365
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 22594,
+        "sha256": "79264c0dc74073891bb35ef2c7b562b428f6cf7302ddfb64d55a2b2d65e010e9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/7536327/pexels-photo-7536327.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "sha256": "79264c0dc74073891bb35ef2c7b562b428f6cf7302ddfb64d55a2b2d65e010e9",
+      "bytes": 22594,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 285013,
+        "sha256": "59d6091ba3454e42e276faaa04552efeec1c461db895658f5adf68658ff34e18"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG/960px-Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+      "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+      "sha256": "59d6091ba3454e42e276faaa04552efeec1c461db895658f5adf68658ff34e18",
+      "bytes": 285013,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 785,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "Camille Pissarro",
+        "credit": "Metropolitan Museum of Art",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1841,
+        "height": 1505,
+        "bytes": 1287712
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 37666,
+        "sha256": "6d2a15e98e08f4dd2bac326499cef908cf5aad81cc450c6b22dc67496c8b5d3e"
+      },
+      "imageUrl": "https://images.pexels.com/photos/8463557/pexels-photo-8463557.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/a-bowl-of-cherries-8463557/",
+      "title": "Photo by Micheile Henderson on Pexels",
+      "sha256": "6d2a15e98e08f4dd2bac326499cef908cf5aad81cc450c6b22dc67496c8b5d3e",
+      "bytes": 37666,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/30876394/pexels-photo-30876394.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/30876394/",
+      "title": "Pexels 上由 The Wizard LiSarD 拍攝的相片",
+      "sha256": "97018f38a92876dab4e76932174f081efda39651449d1c48f997fb391040901d",
+      "bytes": 68438,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1365,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/7536327/pexels-photo-7536327.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "sha256": "79264c0dc74073891bb35ef2c7b562b428f6cf7302ddfb64d55a2b2d65e010e9",
+      "bytes": 22594,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG/960px-Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+      "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+      "sha256": "59d6091ba3454e42e276faaa04552efeec1c461db895658f5adf68658ff34e18",
+      "bytes": 285013,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 785,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "Camille Pissarro",
+        "credit": "Metropolitan Museum of Art",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1841,
+        "height": 1505,
+        "bytes": 1287712
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/8463557/pexels-photo-8463557.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/a-bowl-of-cherries-8463557/",
+      "title": "Photo by Micheile Henderson on Pexels",
+      "sha256": "6d2a15e98e08f4dd2bac326499cef908cf5aad81cc450c6b22dc67496c8b5d3e",
+      "bytes": 37666,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/30876394/",
+        "title": "Pexels 上由 The Wizard LiSarD 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/30876394/pexels-photo-30876394.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/30876394/pexels-photo-30876394.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 68438,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1365,
+        "sha256": "97018f38a92876dab4e76932174f081efda39651449d1c48f997fb391040901d"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+        "title": "Photo by Lucas Pezeta on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/7536327/pexels-photo-7536327.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/7536327/pexels-photo-7536327.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 22594,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "79264c0dc74073891bb35ef2c7b562b428f6cf7302ddfb64d55a2b2d65e010e9"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+        "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG/960px-Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "Public domain",
+          "url": null,
+          "artist": "Camille Pissarro",
+          "credit": "Metropolitan Museum of Art",
+          "usageTerms": "Public domain",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3APissarro_-_Still_Life_with_Apples_and_Pitcher.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG/960px-Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 285013,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 785,
+        "sha256": "59d6091ba3454e42e276faaa04552efeec1c461db895658f5adf68658ff34e18"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/a-bowl-of-cherries-8463557/",
+        "title": "Photo by Micheile Henderson on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/8463557/pexels-photo-8463557.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/8463557/pexels-photo-8463557.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 37666,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "6d2a15e98e08f4dd2bac326499cef908cf5aad81cc450c6b22dc67496c8b5d3e"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pyrus_communis?uselang=th#2",
+        "title": "Category:Pyrus communis - Wikimedia Commons - 2.21 เมกะไบต์",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:19th-century_still-life_paintings_of_fruits",
+        "title": "Category:19th-century still-life paintings of fruits - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "model_semantic_plan",
+    "summary": "本轮实际搜索未发现同时包含苹果、梨、整橙子和普通陶瓷花瓶的单一摄影详情页。Wikimedia Commons 与 Pexels 的结果仍以绘画、单一水果或花器为主；仅有的“苹果+梨”组合来自 Pexels 静物，但无橙子与花瓶。照明资料可支撑“自然侧光、低对比、柔化阴影”的布光参数，但无法替代目标静物照片。",
+    "features": [
+      "苹果、梨、整橙子与陶瓷花瓶的完整组合尚未在可点击摄影页中确认；需后续字节核验是否存在。",
+      "可参考 Pexels 静物页的构图线索：苹果与梨放在有纹理背景前，可能适合提取轮廓与果皮明暗过渡，但橙子和花瓶未知。",
+      "柑橘类与陶瓷器皿同框的页面存在，但主体为佛手柑/金桔与花瓶，不是整橙子+苹果+梨。",
+      "侧光 45–90 度可形成明暗交界线；低对比需用柔光布/白纸柔化窗光，并在暗侧加白卡补光。",
+      "水果属吸光体，侧光或侧顺光、小光比更适合表现表皮纹理与固有色；陶瓷反光体则需柔光避免硬高光。",
+      "自然窗光宜选无直射阳光的大窗，阴天或加薄窗帘可降低对比；主体靠近光源可增大柔和高光、软化明暗过渡。"
+    ],
+    "selectionCriteria": [
+      "优先选取真实照片而非绘画，且详情页含作者、许可证、原始尺寸与图像 URL。",
+      "优先 CC0/CC BY/CC BY-SA 的 Wikimedia Commons 文件页，或 Pexels 具体照片页；排除图库首页与集合页。",
+      "照片应能区分苹果、梨、整橙子的独立轮廓，并至少有普通陶瓷花瓶或罐体与承托面。",
+      "光照应为侧窗自然光、阴影边缘柔和、高光不溢出，便于提取低对比明暗函数。",
+      "需能看出果皮纹理（苹果点状皮孔、梨的哑光颗粒、橙子凹点）和陶瓷釉面高光形态。"
+    ],
+    "uncertainties": [
+      "Commons 文件名“Apples, Pears, Oranges.jpg”未被本轮工具返回详情页；是否为照片、是否含陶瓷花瓶、具体光照均待核验。",
+      "Pexels 苹果+梨页未描述橙子与花瓶；仅凭标题不能确认画面无其他器皿。",
+      "“佛手柑与陶瓷花瓶”页不是整橙子，不能替代橙子实例。",
+      "多页为绘画或历史静物，不能作为摄影光照与材质的直接像素参考。",
+      "尚未下载任何图片字节；所有外观特征均为待验证假设，不是已观察结果。"
+    ],
+    "nextFocus": "下一轮优先定位并核验 Commons 的 Apples, Pears, Oranges.jpg 详情页；若不含花瓶，则转向“整橙子+陶瓷花瓶”具体摄影页，再与苹果、梨独立实例组合使用。同时补一张自然侧窗光下陶瓷器皿与水果同框的低对比照片，以验证阴影边缘与釉面高光。",
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 28022,
+    "completion_tokens": 727,
+    "total_tokens": 28749,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "a297ba3a-b3be-4ba1-bab8-eadfb778c65c",
+        "model": "deepseek-flash",
+        "elapsedMs": 8897,
+        "prompt_tokens": 28022,
+        "completion_tokens": 727,
+        "total_tokens": 28749,
+        "server_tool_use": {
+          "tool_search": 12,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 17562,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 68438,
+        "sha256": "97018f38a92876dab4e76932174f081efda39651449d1c48f997fb391040901d"
+      },
+      "imageUrl": "https://images.pexels.com/photos/30876394/pexels-photo-30876394.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/30876394/",
+      "title": "Pexels 上由 The Wizard LiSarD 拍攝的相片",
+      "sha256": "97018f38a92876dab4e76932174f081efda39651449d1c48f997fb391040901d",
+      "bytes": 68438,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1365,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/97018f38a92876dab4e76932174f081efda39651449d1c48f997fb391040901d.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 22594,
+        "sha256": "79264c0dc74073891bb35ef2c7b562b428f6cf7302ddfb64d55a2b2d65e010e9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/7536327/pexels-photo-7536327.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "sha256": "79264c0dc74073891bb35ef2c7b562b428f6cf7302ddfb64d55a2b2d65e010e9",
+      "bytes": 22594,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/79264c0dc74073891bb35ef2c7b562b428f6cf7302ddfb64d55a2b2d65e010e9.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 285013,
+        "sha256": "59d6091ba3454e42e276faaa04552efeec1c461db895658f5adf68658ff34e18"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG/960px-Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+      "title": "File:Pissarro - Still Life with Apples and Pitcher.JPG - Wikimedia Commons - File:Pissarro - Still Life with Apples and Pitcher.JPG",
+      "sha256": "59d6091ba3454e42e276faaa04552efeec1c461db895658f5adf68658ff34e18",
+      "bytes": 285013,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 785,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "Camille Pissarro",
+        "credit": "Metropolitan Museum of Art",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1841,
+        "height": 1505,
+        "bytes": 1287712
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/59d6091ba3454e42e276faaa04552efeec1c461db895658f5adf68658ff34e18.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 37666,
+        "sha256": "6d2a15e98e08f4dd2bac326499cef908cf5aad81cc450c6b22dc67496c8b5d3e"
+      },
+      "imageUrl": "https://images.pexels.com/photos/8463557/pexels-photo-8463557.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/a-bowl-of-cherries-8463557/",
+      "title": "Photo by Micheile Henderson on Pexels",
+      "sha256": "6d2a15e98e08f4dd2bac326499cef908cf5aad81cc450c6b22dc67496c8b5d3e",
+      "bytes": 37666,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/6d2a15e98e08f4dd2bac326499cef908cf5aad81cc450c6b22dc67496c8b5d3e.webp"
+    }
+  ]
+}

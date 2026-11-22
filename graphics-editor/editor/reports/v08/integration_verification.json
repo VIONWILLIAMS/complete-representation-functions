@@ -1,0 +1,291 @@
+{
+  "schema": "crf.integration_verification.v0.8",
+  "createdAt": "2026-11-21T13:43:14.422Z",
+  "status": "passed",
+  "scope": "Requested code integration gates; browser and live model experiments are verified separately.",
+  "commands": [
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "stdout": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.\n\n> crf-graphics-editor@0.8.0 test\n> node --test tests/test_core.cjs tests/test_boundary_v05.cjs tests/test_fruit.cjs tests/test_program06.cjs tests/test_observation06.cjs tests/test_integration06.cjs\n\n{\"case\":\"wall_mixed_edge\",\"declaredMixturePixels\":10319,\"edgeChanged\":10318,\"undeclaredChanges\":0,\"baselineErrors\":0}\n{\"case\":\"signal_removed\",\"allHousingPixelsRevealedAsInferredWall\":4288,\"staleHousingSeamTicks\":0}\n✔ a known mixed edge has exact default observation and follows the background material delta (27.215361ms)\n✔ malformed boundary payload and invalid generator operations are rejected atomically (4.182677ms)\n✔ Street recoloring only changes the wall and its declared mixed-edge influence band (2099.722068ms)\n✔ removing the front signal reveals inferred wall at every housing pixel, including the bridge (412.941608ms)\n{\"test\":\"full_observation\",\"exact100\":true,\"width\":667,\"height\":1000,\"stats\":{\"backend\":\"cpu-gaussian\",\"quality\":\"exact\",\"width\":667,\"height\":1000,\"lod\":1,\"sigmaReferencePx\":0.18,\"gaussianCount\":766102,\"inferredGaussianCount\":99102,\"observedPixelCount\":667000,\"layerCount\":18,\"representation\":\"dense-observation-gaussians-with-inferred-layer-depths\",\"physicalRelighting\":false,\"sourceImageBlit\":false,\"boundaryMaterialSampleCount\":0,\"proceduralSampleCount\":0,\"contributions\":766102,\"visibleInferredPixels\":0,\"elapsedMs\":978.5660849999999}}\n✔ every arbitrary RGB byte is recovered through Gaussian accumulation at its reference center (16.745042ms)\n✔ Gaussian kernel uses exp and normalized sums at an actual subpixel translation (22.747574ms)\n✔ a local color function leaves all other original object pixels unchanged (10.169697ms)\n✔ moving an observed object reveals marked inferred host samples and performs depth occlusion (3.331664ms)\n✔ inferred samples move with their host and do not become a fixed image background (3.517525ms)\n✔ hierarchical transforms carry attached child Gaussians (1.465139ms)\n✔ camera yaw produces depth parallax and transforms the actual Gaussian covariance (0.501436ms)\n✔ operations are atomic and reject unknown fields, NaN, bad IDs and attachment cycles (2.481903ms)\n✔ duplicate and delete create independent editable identities (0.999457ms)\n✔ new primitives generate their own samples without a source object (13.235269ms)\n✔ identity light is exact and exposure is a separate monotonic calibrated function (2.792521ms)\n✔ timeline interpolation is deterministic, immutable, and time:null bypasses it (8.64716ms)\n✔ inferred highlights expose assumptions rather than altering the observed source data (2.991071ms)\n✔ step trajectories select the new value exactly at the keyframe timestamp (0.694357ms)\n✔ full 667x1000 street observation passes independent RGB8 comparison through the CPU kernel (1583.368579ms)\n✔ fruit case is wholly procedural and source data contains only necessary numeric backdrop fields (2.346118ms)\n✔ fruit surfaces are deterministic, volumetric and seed-editable (470.281555ms)\n✔ camera movement changes projected geometry and roughness changes shading only (70.978267ms)\n✔ apple to pear replacement preserves transforms while rebuilding a distinct volume (91.497931ms)\n✔ contact shadows are multiplicative, do not claim object IDs, and render repeatably (894.795484ms)\n✔ common scene contains fitted and generated functions using one editable geometry protocol (3403.879046ms)\n✔ common objects occlude each other according to their shared spatial positions (406.061721ms)\n✔ serialized scene renders identically in an isolated directory without reference images or asset globals (803.548857ms)\n✔ multi-view and time are scene evaluations with deterministic frame pixels (716.704998ms)\n✔ invalid compound operations and source program imports do not partially mutate the source (9.360424ms)\n✔ real profile optimization lowers its declared objective and follows image shape (844.455848ms)\n✔ held-out UV colors are predicted from fitting coefficients and outperform constant color (116.944425ms)\n✔ changing held-out RGB cannot change fitted coefficients, mean, or back prior (331.689408ms)\n✔ background perturbations cannot become fitted appearance donors with a supplied mask (297.771509ms)\n✔ fitted fields explicitly distinguish observed front from inferred back (86.282694ms)\n✔ bounded automatic color segmentation is reproducible without supplied labels (180.011141ms)\n✔ invalid and unsupported image inputs fail clearly instead of fabricating objects (5.795757ms)\n✔ an observed fit accepts the same CRFProgram edits and timeline as a generated object (148.91013ms)\n✔ the shared renderer evaluates the fitted radius function with the same interpolation (92.970956ms)\n✔ runtime observed rendering needs no source image and uses the same Gaussian path (422.232899ms)\n✔ all native presets are validated programs with explicit generated provenance (39.192683ms)\n✔ serialized object program renders deterministically without original image resources (707.510357ms)\n✔ same material/shape operations apply to both observation and procedural generation (690.256603ms)\n✔ perspective depth resolves real object occlusion independently of list order (778.888071ms)\n✔ object rotation changes observed UV appearance and camera time changes projection (589.691654ms)\n✔ opaque sampled lathe has no interior coverage holes, including the steep cap (40.598548ms)\n✔ field cache respects confidence, reference color and dimensions with unchanged RGB bytes (0.483429ms)\n✔ observed recolor preserves neutral highlights and additive achromatic reflection (0.909511ms)\n✔ unmodified observed tint retains baseline floating-point arithmetic exactly (59.222793ms)\n✔ linear observation coefficients match the actual runtime radius function (0.651231ms)\n✔ invalid operations are atomic and malformed program paths, fields and relations reject (2.415441ms)\n✔ timeline keyframes reject wrong ranges and vector types at import (0.538742ms)\n✔ local intent compiler states partial support and preserves edited observations (2.008567ms)\nℹ tests 52\nℹ suites 0\nℹ pass 52\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 5591.128579\n",
+      "tests": 52,
+      "status": "passed",
+      "toolWaitWallSeconds": 1.001351431,
+      "runnerReportedDurationMs": 5591.128579
+    },
+    {
+      "command": "npm run test:v07",
+      "exitCode": 0,
+      "stdout": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.\n\n> crf-graphics-editor@0.8.0 test:v07\n> node --test tests/test_deepseek07.mjs tests/test_worker_references07.mjs tests/test_radiance07.cjs\n\n✔ provider redirects are not followed and cannot forward credentials to a new host (5.578242ms)\n✔ research and JSON composition are separate and preserve actual tool evidence (28.976648ms)\n✔ model search claims and citations alone never become searched=true (2.192045ms)\n✔ explicit fallback runs once and records even an empty real search honestly (20.761479ms)\n✔ failed search fallback remains unavailable without a fabricated completion (2.358206ms)\n✔ verified reference collection feeds vision and returns metadata without image bytes (2.278226ms)\n✔ reference collection failure is visible and does not prevent text-only composition (9.65552ms)\n✔ zero-photo references trigger one real alternate-source search and one recollection (6.743539ms)\n✔ edit plus image and original intent produces genuine vision feedback with no search (6.06108ms)\n✔ legacy observation fields are retained locally and omitted from provider context (1.039207ms)\n✔ legacy invalid object IDs, operation names, and camera bounds are rejected (8.046405ms)\n✔ retained 0.6 operation protocol remains distinct from 0.5 (0.457119ms)\n✔ invalid input is refused before any paid request (0.505943ms)\n✔ bad JSON and truncation do not commit partial programs and retain paid usage (0.986328ms)\n✔ invalid AST, degenerate geometry, and renderer veto stop model programs (2.019595ms)\n✔ renderer optional material defaults are accepted without adding or clamping values (0.632594ms)\n✔ material AST accepts actual multi-term arithmetic and rejects over-budget arity (7.442123ms)\n✔ one schema repair uses exact field errors and preserves both paid responses (2.521933ms)\n✔ schema repair is bounded at one additional model call (1.271548ms)\n✔ nonempty malformed JSON gets one syntax repair with its parse error (1.973086ms)\n✔ provider error formats and model credential echo never leak authentication (1.590909ms)\n✔ caller cancellation and bounded response size are respected (27.309354ms)\n✔ bounded upstream timeout returns a retryable error without looping (1018.047652ms)\n✔ public JSON composition cannot forge trusted research evidence (0.752695ms)\nPASS all four varied procedural cases validate\nPASS expression, transform, geometry and resource budgets reject malformed programs\nPASS invalid compound edits are atomic; prototype paths cannot execute\nPASS n-ary add and mul preserve nested binary order and enforce operand bounds\nPASS same code and seed produce identical complete RGBA and object visibility\nPASS model-authored function changes actual pixels\nPASS object removal re-evaluates a real background with opaque pixels\nPASS glass and metal take distinct rendered transport paths\nPASS hollow lathe exposes its internal floor, rim stays connected\nPASS box bevel changes geometric silhouette rather than painting a highlight\nPASS denoising is explicit, deterministic, and retains object/depth maps\nPASS asynchronous and synchronous rendering agree\nPASS progressive rendering cancels without committing a completed frame\n{\"suite\":\"CRF Radiance 0.7\",\"checks\":13,\"status\":\"passed\"}\n✔ tests/test_radiance07.cjs (2241.617854ms)\n✔ Worker delegates non-API requests to the asset binding (9.395969ms)\n✔ Worker status exposes configuration only, never credentials or a different model (1.307402ms)\n✔ Worker rejects malformed, cross-origin, and unconfigured API requests locally (8.872049ms)\n✔ Worker enforces actual streamed body size without relying on Content-Length (1.590168ms)\n✔ collector refuses an already-cancelled operation before any page or image request (1.474834ms)\n✔ collector propagates cancellation between page and image without continuing downloads (2.199036ms)\n✔ collector rejects truncated magic-prefix payloads instead of reporting a usable photo (1.128823ms)\n✔ collector reports actual attempted pages separately from planned candidates (48.597195ms)\n✔ collector rejects off-list source hosts and never forwards authorization to public images (1.745152ms)\nℹ tests 34\nℹ suites 0\nℹ pass 34\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 2261.739738\n",
+      "tests": 34,
+      "status": "passed",
+      "toolWaitWallSeconds": 1.001098157,
+      "runnerReportedDurationMs": 2261.739738
+    },
+    {
+      "command": "npm run test:v08",
+      "exitCode": 0,
+      "stdout": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.\n\n> crf-graphics-editor@0.8.0 test:v08\n> node --test tests/test_gaussian08.cjs tests/test_gaussian_provider08.mjs tests/test_learning08.mjs tests/test_references08.mjs tests/test_editor08_contract.cjs\n\n✔ Gaussian Worker caches functions without retaining a source bitmap (12.740032ms)\n✔ opening the learning tab never starts paid model calls (26.721576ms)\n✔ ten-round learning uses actual per-round requests and never counts missing images as fitted (36.473743ms)\n✔ retry history deduplicates a logical round, source and downloaded image (2.392828ms)\n✔ a failed round remains resumable and does not erase its evidence (26.672913ms)\n✔ downloaded pixels are semantically inspected then fitted into reusable Gaussian coefficients (196.671856ms)\n✔ direct Gaussian equation uses pixel centres and signed coefficients (22.74532ms)\n✔ Python and browser independent renderers agree for exported parameters (1154.461604ms)\n✔ native view of opaque asset equals direct reconstruction exactly (3.319845ms)\n✔ semantic alpha protects the outside region during colour edits (2.754563ms)\n✔ transparent boundary resampling uses premultiplied colour (0.238299ms)\n✔ invalid coefficient, coverage and operations fail atomically (0.533224ms)\n✔ browser fitting optimizes a compact Gaussian field without source RGB data (231.764795ms)\n✔ composition enables reasoning and uses only catalogue functions; no private reasoning returned (32.179958ms)\n✔ scene bounds and allowlists reject unknown assets and nonfinite transforms before use (11.926595ms)\n✔ invalid current state and invalid images do not call the provider (17.342392ms)\n✔ a failed model candidate leaves the input scene unmodified and has no renderable result (13.639729ms)\n✔ one schema repair can replace only the invalid candidate, and records both calls (2.211855ms)\n✔ targeted edits reject changes to protected objects and background (51.676279ms)\n✔ critique requires an actual image and cannot return an unexpected mutation (10.913007ms)\n✔ search evidence is separate from reasoning-enabled composition and does not claim pixel learning (11.916781ms)\n✔ HTTP redirects and upstream errors do not leak credentials or trigger silent mode downgrade (5.235175ms)\n✔ truncated provider output retains token accounting and current state (30.714428ms)\n✔ browser-local fitted assets can be used in generation before they are placed in a scene (1.436647ms)\n✔ missing and duplicate catalogues fail locally (0.138419ms)\n✔ one request does one real search round with source dedupe, semantic uncertainty and checkpoint (13.579698ms)\n✔ no actual tool invocation means the round is not counted as searched (1.083594ms)\n✔ downloaded images are separately recorded and never marked fitted (2.192507ms)\n✔ collection failure does not discard successful research evidence (4.68806ms)\n✔ invalid round and asset request is rejected before calling provider (0.273021ms)\n✔ aggregate deduplicates retry rounds, source pages, requests and downloaded image hashes (0.60361ms)\n✔ semantic learning submits real image bytes and returns bounded descriptors tied to source IDs (3.166665ms)\n✔ semantic model cannot substitute source IDs or return invalid bounding boxes (3.090791ms)\n✔ semantic validation rejects remote URLs in place of provided bytes and oversized inputs (19.608429ms)\n✔ Commons uses imageinfo-returned 768px thumbnail and keeps source attribution (34.883526ms)\n✔ Pexels gets proportional 768px image without forced OG height or crop (18.754733ms)\n✔ 401 or 403 source denial is terminal, no image or alternate metadata request follows (5.315315ms)\n✔ off-list hosts and redirect destinations cannot receive secrets or requests (0.916111ms)\n✔ unknown image hosts inside public source metadata are never fetched (0.710852ms)\n✔ image byte limit and invalid containers remain enforced (33.936537ms)\n✔ Commons category pages cannot accidentally collect gallery icons as photographs (0.263607ms)\n✔ source-provided Commons previews are restricted to the actual file (0.323498ms)\n✔ cancelled download is rejected before any network activity (0.621537ms)\n✔ documented Wikimedia thumbnail CDN is permitted but lookalike and non-HTTPS hosts are rejected (0.164578ms)\nℹ tests 44\nℹ suites 0\nℹ pass 44\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1732.000998\n",
+      "tests": 44,
+      "status": "passed",
+      "toolWaitWallSeconds": 1.0010486840000001,
+      "runnerReportedDurationMs": 1732.000998
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "stdout": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.\n\n> crf-graphics-editor@0.8.0 build\n> node scripts/build_server07.cjs\n\n{\n  \"workerBytes\": 312721,\n  \"staticRoot\": \"dist/client\",\n  \"status\": \"ready\"\n}\n",
+      "status": "passed",
+      "toolWaitWallSeconds": 0.927435374,
+      "runnerReportedDurationMs": null
+    }
+  ],
+  "totalNodeTests": 130,
+  "legacyBaselineReport": "reports/v08/legacy_verification.json",
+  "legacyExpectedFiles": 223,
+  "legacyIndexRelocation": {
+    "from": "web/index.html",
+    "to": "web/studio07.html"
+  },
+  "learningDatasetSchema": {
+    "status": "passed",
+    "checkedAt": "2026-11-21T13:48:18.018Z",
+    "path": "web/assets/v08/learning.json",
+    "sha256": "a7a3d09aeff55734d22dd7372c04a179e32e2237761f6b4ea4a782e9733fb72b",
+    "schema": "crf.learning_evidence.v0.8",
+    "displayedCounts": {
+      "rounds": 10,
+      "sources": 137,
+      "images": 42,
+      "fits": 56
+    },
+    "details": {
+      "visuallyDescribedImages": 42,
+      "fullFrameFunctions": 42,
+      "objectFunctions": 14
+    },
+    "checks": {
+      "summaryMatchesCounts": true,
+      "roundsArrayMatches": true,
+      "uniqueRounds": true,
+      "downloadsArrayMatches": true,
+      "assetsArrayMatches": true,
+      "fitSplitMatches": true,
+      "roundCardFieldsAvailable": true,
+      "metricsAndSourceFieldsAvailable": true,
+      "explicitFitLabels": true,
+      "entrySynchronized": true,
+      "allFullFrameCardsEditable": true,
+      "exactlyFiveLowQualityObjectFunctionsExcluded": true,
+      "excludedRecordsPreservedWithReadOnlyReportAndPNG": true
+    },
+    "expectedExclusions": [
+      {
+        "assetId": "learn.r04.8fa1d7612d73.object",
+        "reason": "Inferred segmentation requires repair; intentionally excluded from composition catalogue."
+      },
+      {
+        "assetId": "learn.r06.8fc2a8a52e21.object",
+        "reason": "Inferred segmentation requires repair; intentionally excluded from composition catalogue."
+      },
+      {
+        "assetId": "learn.r06.bae383fa0e3c.object",
+        "reason": "Inferred segmentation requires repair; intentionally excluded from composition catalogue."
+      },
+      {
+        "assetId": "learn.r07.d52e20c8a621.object",
+        "reason": "Inferred segmentation requires repair; intentionally excluded from composition catalogue."
+      },
+      {
+        "assetId": "learn.r09.fd06c878ce46.object",
+        "reason": "Inferred segmentation requires repair; intentionally excluded from composition catalogue."
+      }
+    ],
+    "uiBindingVerification": {
+      "status": "passed",
+      "method": "actual published data bound to learning-client08 DOM contract, no model or browser calls",
+      "rendered": {
+        "rounds": 10,
+        "sources": 137,
+        "images": 42,
+        "fittedFunctions": 56
+      },
+      "cards": {
+        "total": 56,
+        "compositionEligible": 51,
+        "fullFrameEditable": 42,
+        "eligibleObjects": 9,
+        "excludedObjects": 5,
+        "excludedHaveStatusAndReportAndPNG": true,
+        "excludedOpenAssetCalls": 0
+      }
+    }
+  },
+  "legacy": {
+    "totalFiles": 223,
+    "matchingFiles": 223,
+    "allMatch": true,
+    "reportSha256": "67f03e4fd4d5c1b9451d2ce87ce3de0b04a85f87c132e3f3a73734bbd740cf17"
+  },
+  "artifactHashesCollectedAt": "2026-11-21T13:43:15.648132+00:00",
+  "artifacts": [
+    {
+      "path": "package.json",
+      "bytes": 1794,
+      "sha256": "6b1cb83af1672df6d4bbd7df43d09e4b9d54b9aaf1ef7440fc0d5b35f5b2eb57"
+    },
+    {
+      "path": "web/gaussian08.html",
+      "bytes": 17485,
+      "sha256": "90ac27e51f2909298baee66a42baece6d0a81d08afffdd7e27540d99da7d972b",
+      "hashStage": "post_gate_accessibility_and_eligibility_display"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 17485,
+      "sha256": "90ac27e51f2909298baee66a42baece6d0a81d08afffdd7e27540d99da7d972b",
+      "hashStage": "post_gate_accessibility_and_eligibility_display"
+    },
+    {
+      "path": "web/studio07.html",
+      "bytes": 13230,
+      "sha256": "6d327687566ca27dce424bf38861afd3fb0e5bd0a2034509948e6cf81d532c8c"
+    },
+    {
+      "path": "web/editor08.js",
+      "bytes": 39257,
+      "sha256": "3f2c14b6e426edfcb99680a5ec2795df32aca1b38b31709c95f72513ca4f5c08"
+    },
+    {
+      "path": "web/editor08.css",
+      "bytes": 27770,
+      "sha256": "5b77a8613370371149bee094e8fe2b0d973031cf06a8ac35e4e4d4730aaaa72a",
+      "hashStage": "post_gate_accessibility_and_eligibility_display"
+    },
+    {
+      "path": "web/learning-client08.js",
+      "bytes": 20586,
+      "sha256": "8083a4ac95e50fe73bb8ff7048a68739271c9e5d42520629f8c380bafe624e69",
+      "hashStage": "post_gate_accessibility_and_eligibility_display"
+    },
+    {
+      "path": "web/gaussian-worker08.js",
+      "bytes": 1376,
+      "sha256": "e133ef8904d649dd5196ee498fb9127a5b27741a063bb3fdea8f80741030ef25"
+    },
+    {
+      "path": "web/crf-gaussian08.js",
+      "bytes": 17811,
+      "sha256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a"
+    },
+    {
+      "path": "server/worker07.mjs",
+      "bytes": 4346,
+      "sha256": "dd2fe447a5df4a90b087e73333ce848c8a3fa8404fda204ae9ed57e82719450e"
+    },
+    {
+      "path": "server/gaussian08.mjs",
+      "bytes": 22684,
+      "sha256": "396a0042c17bbe319b7c4ce3dd55074ec57b1293bc163fa644aab8d766bf2038"
+    },
+    {
+      "path": "server/learning08.mjs",
+      "bytes": 18807,
+      "sha256": "b68ef674d2d509f6ca1ffe22daf693c0693ead8b1b247c92c4f3dfc2ca2e5365"
+    },
+    {
+      "path": "server/references08.mjs",
+      "bytes": 11145,
+      "sha256": "3353c2d376489b7b689647cf8de22d38e94dc5bfc0157fb0a8eb00ead99aecc8"
+    },
+    {
+      "path": "server/catalog08.json",
+      "bytes": 58595,
+      "sha256": "3fab3d2bdd4c2aeb1f12bf9bb9a5ce29cff00fcbc0174e3b6ce563bcca8a84b4"
+    },
+    {
+      "path": "dist/server/index.js",
+      "bytes": 312721,
+      "sha256": "0706ef4315451a119465acbb381c2206e5746ce0f8adc3489498264c9e467ca7"
+    },
+    {
+      "path": "tests/test_editor08_contract.cjs",
+      "bytes": 8403,
+      "sha256": "7199eb80478368ffd1c0d6be0ce4e618cb9dab1ee9ec27955741582ff8b99352"
+    },
+    {
+      "path": "tests/test_gaussian08.cjs",
+      "bytes": 3987,
+      "sha256": "7e44c9b3bc96c65d711ea322b58b1aac0493e907240d961a555d08995a9d6c2e"
+    },
+    {
+      "path": "tests/test_gaussian08_gradient.py",
+      "bytes": 1820,
+      "sha256": "4d528244468f4145b252537053a95093e20ec72bc629dd48d475f52458102d47"
+    },
+    {
+      "path": "tests/test_gaussian_provider08.mjs",
+      "bytes": 9888,
+      "sha256": "3a0116054a8d4306d28fc611ff274edac48654129e307c403811d573e32f3ee2"
+    },
+    {
+      "path": "tests/test_learning08.mjs",
+      "bytes": 9053,
+      "sha256": "37dc18446179c3f3a4b1741ff1367dc51ade6da0632bea17d7dbafa844b113c8"
+    },
+    {
+      "path": "tests/test_references08.mjs",
+      "bytes": 6431,
+      "sha256": "a453b5b0249106009fabe42375b4b2048ebffd1af9489eab15b898bcdcd75240"
+    }
+  ],
+  "entryMatchesGaussianPage": true,
+  "postGateChanges": [
+    {
+      "kind": "accessibility",
+      "files": [
+        "web/gaussian08.html",
+        "web/index.html"
+      ],
+      "change": "Explicit for associations added for fitBudget, fitSize and fitIterations. Entry synchronized. Tests and build not rerun per requested bounded verification; final build is owned by root."
+    },
+    {
+      "kind": "eligibility_display",
+      "files": [
+        "web/learning-client08.js",
+        "web/editor08.css"
+      ],
+      "change": "Intentional five low-quality object exclusions remain in learning evidence, with repair label, read-only report and rendered PNG links. No edit or loadAsset action for excluded functions."
+    }
+  ],
+  "postGateChecks": [
+    {
+      "command": "node --check web/learning-client08.js",
+      "exitCode": 0
+    },
+    {
+      "kind": "actual_learning_data_binding",
+      "result": {
+        "status": "passed",
+        "method": "actual published data bound to learning-client08 DOM contract, no model or browser calls",
+        "rendered": {
+          "rounds": 10,
+          "sources": 137,
+          "images": 42,
+          "fittedFunctions": 56
+        },
+        "cards": {
+          "total": 56,
+          "compositionEligible": 51,
+          "fullFrameEditable": 42,
+          "eligibleObjects": 9,
+          "excludedObjects": 5,
+          "excludedHaveStatusAndReportAndPNG": true,
+          "excludedOpenAssetCalls": 0
+        }
+      },
+      "fullTestSuitesRerun": false,
+      "buildRerun": false
+    }
+  ]
+}

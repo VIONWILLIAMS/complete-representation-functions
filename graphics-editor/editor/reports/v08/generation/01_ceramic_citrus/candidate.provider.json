@@ -1,0 +1,159 @@
+{
+  "ok": true,
+  "runId": "crf08_36bffe02-0b22-4538-8548-31cc65dd538b",
+  "engine": "gaussian08",
+  "model": "deepseek-flash",
+  "action": "scene",
+  "message": "按反馈缩小花瓶与橙子，底部统一在约 y=596；把花瓶阴影调得更宽更薄，把橙子阴影加深并横向放宽；把背景提亮到暖白，并微调釉色曝光与色相。遮罩白边、底边平切和视角差异只能减轻，无法在现有函数内重做。",
+  "qualityNotes": [
+    "检查花瓶底缘是否仍有平切硬边，以及与接触阴影宽薄化的衔接是否自然。",
+    "检查橙子底部是否仍有轻微悬浮感，阴影核心是否对准橙子底部中心。",
+    "检查花瓶釉色经曝光与色相调整后是否更接近青蓝而不偏紫。",
+    "检查橙子切面高光与饱和度是否仍抢眼，确认橙色略小于花瓶宽度以保持主次。",
+    "检查两件物体的抠图白边和锯齿是否减轻；这些边缘残留只能靠背景提亮降低对比。",
+    "检查整体占据约60%画幅、顶部留白和同一承托线是否合理。"
+  ],
+  "warnings": [
+    "现有函数无法重做源资产遮罩，白边、锯齿和花瓶底边平切不能彻底消除。",
+    "花瓶为平视正面、橙子切面接近俯视，共用同一底部接触线仍会有视角冲突。",
+    "没有方向性投影或光照字段，不能生成统一侧向投影，也未新增此类参数。",
+    "橙子缩小到约1.28以保持不宽于花瓶，优先满足尺度关系而非反馈中的1.4–1.45数值。",
+    "质量需实际渲染检查。"
+  ],
+  "scene": {
+    "schema": "crf.gaussian_scene.v0.8",
+    "id": "stilllife_vase_orange_960x640",
+    "title": "青蓝釉花瓶与横切橙子静物",
+    "width": 960,
+    "height": 640,
+    "background": [
+      240,
+      236,
+      230
+    ],
+    "objects": [
+      {
+        "id": "bg.paper",
+        "label": "浅灰暖白承托面",
+        "assetId": "studio.paper",
+        "x": 0,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 0,
+        "visible": true
+      },
+      {
+        "id": "shadow.vase",
+        "label": "花瓶底部柔和接触阴影",
+        "assetId": "studio.shadow",
+        "x": 188,
+        "y": 561,
+        "scaleX": 0.95,
+        "scaleY": 0.7,
+        "rotation": 0,
+        "opacity": 0.35,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 10,
+        "visible": true
+      },
+      {
+        "id": "shadow.orange",
+        "label": "橙子底部柔和接触阴影",
+        "assetId": "studio.shadow",
+        "x": 491,
+        "y": 559,
+        "scaleX": 1,
+        "scaleY": 0.75,
+        "rotation": 0,
+        "opacity": 0.5,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 10,
+        "visible": true
+      },
+      {
+        "id": "object.vase.ceramic",
+        "label": "青蓝色釉陶瓷花瓶",
+        "assetId": "learn.r03.097cfbf071e3.object",
+        "x": 214,
+        "y": 85,
+        "scaleX": 1.4,
+        "scaleY": 1.4,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": -8,
+        "exposure": 0.2,
+        "zIndex": 20,
+        "visible": true
+      },
+      {
+        "id": "object.orange.half",
+        "label": "横切橙子半",
+        "assetId": "learn.r01.c6657129fc5c.object",
+        "x": 526,
+        "y": 363,
+        "scaleX": 1.28,
+        "scaleY": 1.28,
+        "rotation": 0,
+        "opacity": 1,
+        "hue": 0,
+        "exposure": 0,
+        "zIndex": 21,
+        "visible": true
+      }
+    ]
+  },
+  "research": {
+    "searched": false,
+    "status": "disabled",
+    "sources": [],
+    "toolCalls": [],
+    "summary": "",
+    "nativeSearchObserved": false
+  },
+  "usage": {
+    "providerCalls": 1,
+    "prompt_tokens": 2881,
+    "completion_tokens": 2147,
+    "total_tokens": 5028,
+    "reasoning_tokens": 1364,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "3a0f4ab3-9d03-4664-8e3e-8073ddbf6ade",
+        "model": "deepseek-flash",
+        "elapsedMs": 12951,
+        "prompt_tokens": 2881,
+        "completion_tokens": 2147,
+        "total_tokens": 5028,
+        "reasoning_tokens": 1364,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": true,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "vision": {
+    "renderedImageProvided": true
+  },
+  "validation": {
+    "schema": true,
+    "allowlistedAssets": true,
+    "renderer": false,
+    "repairUsed": false
+  },
+  "quality": {
+    "automaticRealismScore": false,
+    "pixelReconstructionMeasured": false,
+    "selection": "candidate_requires_render_and_review"
+  },
+  "rendered": false,
+  "elapsedMs": 12956
+}

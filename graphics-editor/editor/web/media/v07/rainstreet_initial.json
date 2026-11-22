@@ -1,0 +1,39 @@
+{
+  "schema": "crf.render_evidence.v0.7",
+  "id": "rainstreet",
+  "source": "live",
+  "phase": "initial",
+  "width": 640,
+  "height": 480,
+  "samples": 24,
+  "elapsedMs": 50372,
+  "sha256": "3a6e44180793eb745b36c8270d9b06f07f76f21368fdb9e246f5c93e1b32f257",
+  "programSha256": "e31299711d848367f77fe2e8584ada980ed95fb0925e821294bd8f52fa715355",
+  "rendererSha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a",
+  "stats": {
+    "backend": "cpu-analytic-ray-transport",
+    "schema": "crf.image_program.v0.7",
+    "samplesPerPixel": 24,
+    "maxBounces": 5,
+    "tracedPrimarySamples": 7372800,
+    "objects": 26,
+    "areaLights": 4,
+    "elapsedMs": 50311,
+    "sourceImageBlit": false,
+    "imageTextureReads": 0,
+    "proceduralFunctionMaterials": 6,
+    "reflection": true,
+    "refraction": true,
+    "softVisibility": true,
+    "deterministic": true,
+    "denoiser": "bounded-spatial-object-depth-bilateral",
+    "transportLimitations": [
+      "finite bounce budget",
+      "clamped sample radiance",
+      "approximate rough glass",
+      "no volumetric scattering",
+      "no spectral transport",
+      "spatial denoising can soften fine detail"
+    ]
+  }
+}

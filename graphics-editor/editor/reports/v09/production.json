@@ -1,0 +1,139 @@
+{
+  "schema": "crf.production_service_verification.v0.9",
+  "origin": "https://crf-street-04-lab-4d86.laterafter950.chatgpt.site",
+  "accessMethod": "Official Site service access header; no browser identity bypass",
+  "checks": [
+    {
+      "path": "/api/crf/status",
+      "status": 200,
+      "version": "0.9.0",
+      "configured": true,
+      "passed": true
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "redirects": [],
+      "bytes": 17638,
+      "expectedSHA256": "a7c41ad63ca159bc3db17787eca1af9506921c8b2bf1fed821d8fff2fd0f54ef",
+      "actualSHA256": "a7c41ad63ca159bc3db17787eca1af9506921c8b2bf1fed821d8fff2fd0f54ef",
+      "passed": true
+    },
+    {
+      "path": "/gaussian08.html",
+      "status": 200,
+      "redirects": [],
+      "bytes": 17594,
+      "expectedSHA256": "832ec91e99ca904660ccf0638c3c2a095525f20a23203b316ed9e883a155908b",
+      "actualSHA256": "832ec91e99ca904660ccf0638c3c2a095525f20a23203b316ed9e883a155908b",
+      "passed": true
+    },
+    {
+      "path": "/assets/v09/acceptance.json",
+      "status": 200,
+      "redirects": [],
+      "bytes": 2607,
+      "expectedSHA256": "fc2fd88d6616fc01d327b41a24d17e9bede7b444ca2161d2f52b9ab119970929",
+      "actualSHA256": "fc2fd88d6616fc01d327b41a24d17e9bede7b444ca2161d2f52b9ab119970929",
+      "passed": true
+    },
+    {
+      "path": "/assets/v09/generated/index.json",
+      "status": 200,
+      "redirects": [],
+      "bytes": 13448,
+      "expectedSHA256": "b07162b94374956bd0e6d28d9be86e5bb3ab30f75be3f6d2326cebf6c89e213c",
+      "actualSHA256": "b07162b94374956bd0e6d28d9be86e5bb3ab30f75be3f6d2326cebf6c89e213c",
+      "passed": true
+    },
+    {
+      "path": "/downloads/CRF_0_9_Render_Kit.zip",
+      "status": 200,
+      "redirects": [],
+      "bytes": 13349993,
+      "expectedSHA256": "7c51b0a28e701a68b0e9973a9ffafcee6fef89102b738a7e5e128b6f5d8224c2",
+      "actualSHA256": "7c51b0a28e701a68b0e9973a9ffafcee6fef89102b738a7e5e128b6f5d8224c2",
+      "passed": true
+    },
+    {
+      "path": "/downloads/CRF_0_9_Report.md",
+      "status": 200,
+      "redirects": [],
+      "bytes": 22840,
+      "expectedSHA256": "c9390da7240ee4601df9459d71c75e79498b30f7a78e556d6a77ecff2ed5d3bd",
+      "actualSHA256": "c9390da7240ee4601df9459d71c75e79498b30f7a78e556d6a77ecff2ed5d3bd",
+      "passed": true
+    },
+    {
+      "path": "/studio09.html",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 307,
+          "fromPath": "/studio09.html",
+          "toPath": "/studio09"
+        }
+      ],
+      "bytes": 11717,
+      "expectedSHA256": "681b48ec9b3bbe84162548c8e731e12205f9f7ab800c0b8fe327981f272ed40c",
+      "actualSHA256": "681b48ec9b3bbe84162548c8e731e12205f9f7ab800c0b8fe327981f272ed40c",
+      "passed": true
+    }
+  ],
+  "provider": {
+    "ok": true,
+    "model": "deepseek-flash",
+    "runId": "crf09_550c3ed8-ef25-4843-9bc3-b981af6880d5",
+    "action": "scene",
+    "usage": {
+      "providerCalls": 1,
+      "prompt_tokens": 1537,
+      "completion_tokens": 1295,
+      "total_tokens": 2832,
+      "reasoning_tokens": 841,
+      "requests": [
+        {
+          "phase": "native09_generate",
+          "requestId": "f54af240-64c6-465d-9418-dd64310fdf9d",
+          "model": "deepseek-flash",
+          "elapsedMs": 7926,
+          "prompt_tokens": 1537,
+          "completion_tokens": 1295,
+          "total_tokens": 2832,
+          "reasoning_tokens": 841,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "phase": "native09_generate",
+        "status": "responded",
+        "startedAt": "2026-11-21T16:56:04.448Z",
+        "requestId": "f54af240-64c6-465d-9418-dd64310fdf9d"
+      }
+    ],
+    "elapsedMs": 7926,
+    "qualityNotes": [
+      "当前使用共享解析形态与高斯成像，苹果和梨的表皮纹理、自然斑点、果柄细节及接触阴影仍为简化表现。",
+      "侧光方向与明暗关系由统一光照参数生成，未进行逐材质法线或焦散级物理渲染。",
+      "两个水果底部已按同一承托线对齐，但遮挡与投影精度受有限二维场景内核限制。"
+    ],
+    "warnings": [],
+    "error": null,
+    "httpStatus": 200,
+    "passed": true,
+    "scope": "Actual published server endpoint request; does not certify an authenticated browser task or image quality.",
+    "reusedFromExplicitEvidence": "reports/v09/production_initial_redirect.json"
+  },
+  "allPassed": true,
+  "productionAuthenticatedBrowserTasks": 0,
+  "focusedRecheck": {
+    "path": "/studio09.html",
+    "otherChecks": "Preserved actual preceding checks for this same unchanged published origin; no additional provider call."
+  }
+}

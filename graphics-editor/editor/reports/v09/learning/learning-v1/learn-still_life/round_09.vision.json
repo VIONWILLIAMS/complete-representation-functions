@@ -1,0 +1,317 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 9,
+  "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "items": [
+    {
+      "id": "ref.9.0",
+      "label": "青褐色锈斑苹果",
+      "category": "apple",
+      "role": "object",
+      "bbox": [
+        0.1,
+        0.1,
+        0.9,
+        0.88
+      ],
+      "palette": [
+        [
+          116,
+          111,
+          56
+        ],
+        [
+          154,
+          136,
+          75
+        ],
+        [
+          83,
+          88,
+          40
+        ],
+        [
+          198,
+          194,
+          157
+        ],
+        [
+          219,
+          220,
+          210
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "单一青褐色苹果置于浅灰带细点的平面上，果形近圆，顶部可见短果梗和凹陷，表皮有锈斑及细小浅色点状纹理。光线柔和，果实底部和左侧有轻微阴影，轮廓完整，适合提取苹果外皮、果梗与承托面接触的视觉特征。",
+      "tags": [
+        "苹果",
+        "青褐色果皮",
+        "锈斑",
+        "果梗",
+        "静物",
+        "柔和光照",
+        "承托面",
+        "表皮纹理"
+      ],
+      "limitations": [
+        "仅单视角，无法看到背面纹理",
+        "分辨率有限，锈斑细节不足",
+        "背景并非纯色，不能直接作精确分割",
+        "未出现花瓶或其他尺寸参照物"
+      ]
+    },
+    {
+      "id": "ref.9.1",
+      "label": "枝头梨果与叶片",
+      "category": "pear-branch",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          94,
+          112,
+          52
+        ],
+        [
+          54,
+          72,
+          42
+        ],
+        [
+          199,
+          181,
+          101
+        ],
+        [
+          166,
+          172,
+          180
+        ],
+        [
+          118,
+          128,
+          139
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "户外梨树枝条横跨画面，叶片和数枚小梨果垂挂，梨皮呈黄绿色，部分被叶片遮挡。背景为虚化的山坡和天空，整体呈现自然散射光，果实与枝条处于同一画面，适合提取梨的轮廓以及叶片与果实的关系。",
+      "tags": [
+        "梨",
+        "枝条",
+        "叶片",
+        "黄绿色果实",
+        "户外",
+        "虚化背景",
+        "自然光",
+        "遮挡"
+      ],
+      "limitations": [
+        "梨果较小且被叶片遮挡",
+        "承托面不可见",
+        "分辨率低，果皮细节不足",
+        "非独立静物，不宜直接作为单品分割",
+        "背景地物难以确认"
+      ]
+    },
+    {
+      "id": "ref.9.2",
+      "label": "剥皮柑橘与金属果碗",
+      "category": "citrus-bowl",
+      "role": "reference-frame",
+      "bbox": [
+        0.05,
+        0.04,
+        0.95,
+        0.96
+      ],
+      "palette": [
+        [
+          236,
+          143,
+          41
+        ],
+        [
+          248,
+          196,
+          119
+        ],
+        [
+          147,
+          101,
+          45
+        ],
+        [
+          47,
+          76,
+          35
+        ],
+        [
+          38,
+          31,
+          27
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "深色台面上放置一只金属果碗，碗内堆叠剥去外皮的柑橘瓣，果肉表面湿润、呈橙黄色，碗沿和把手有金属反光。周围散落带叶的整只柑橘，背景偏暗并局部有卡片等杂物。光线从画面左侧偏上照入，果肉高光明显，适合提取柑橘瓣质感与碗的承托关系。",
+      "tags": [
+        "柑橘",
+        "剥皮果肉",
+        "金属碗",
+        "整橙",
+        "叶片",
+        "高光",
+        "静物",
+        "承托"
+      ],
+      "limitations": [
+        "以剥皮柑橘瓣为主，整橙子外皮细节不足",
+        "金属碗并非普通陶瓷花瓶",
+        "背景杂物和卡片造成干扰",
+        "分辨率低，碗体纹饰与果肉细节有限",
+        "多对象重叠，无法直接拆分单个橙子"
+      ]
+    },
+    {
+      "id": "ref.9.3",
+      "label": "苹果葡萄果碗静物",
+      "category": "fruit-bowl-still-life",
+      "role": "reference-frame",
+      "bbox": [
+        0.22,
+        0.26,
+        0.82,
+        0.83
+      ],
+      "palette": [
+        [
+          202,
+          183,
+          151
+        ],
+        [
+          178,
+          52,
+          41
+        ],
+        [
+          211,
+          168,
+          67
+        ],
+        [
+          80,
+          52,
+          70
+        ],
+        [
+          104,
+          72,
+          40
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "米色布面上放一只棕色浅碗，碗中盛有红黄相间的苹果和深紫色葡萄，苹果表皮带红晕与浅绿黄底，葡萄成串并带粉霜感。光源从画面左上方指向右侧，碗与水果在布面右侧形成明显长阴影，适合提取整果轮廓、混合果碗组合与承托面阴影。",
+      "tags": [
+        "苹果",
+        "葡萄",
+        "果碗",
+        "布面",
+        "静物",
+        "长阴影",
+        "红黄果皮",
+        "混合水果"
+      ],
+      "limitations": [
+        "苹果与葡萄相互重叠，单个苹果轮廓不完整",
+        "碗为浅陶风格，并非普通陶瓷花瓶",
+        "强投影与布面褶皱干扰分割",
+        "低分辨率，果皮细节和葡萄颗粒有限",
+        "仅单视角"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "四张图均围绕真实水果的形态与表面展开",
+    "均可见果皮或果肉的高光、阴影或颜色变化",
+    "均采用接近自然光或可用光的照明",
+    "均为低分辨率网络图像，细节有限",
+    "均未出现普通陶瓷花瓶这一目标物",
+    "果实均处于某种承托关系，如枝、碗或布面"
+  ],
+  "missingEvidence": [
+    "缺少普通陶瓷花瓶的独立图像与材质细节",
+    "缺少同一水果的多视角或环绕视角",
+    "缺少可精确分割的alpha蒙版",
+    "ref.9.1梨果太小且被叶片遮挡，无法确认完整果形与果皮纹理",
+    "ref.9.2以剥皮柑橘瓣为主，缺少整橙子外皮特写",
+    "ref.9.3苹果与葡萄相互遮挡，缺少单个苹果完整轮廓",
+    "缺少明确的尺寸比例参照与拍摄参数",
+    "承托面的材质与接触阴影仅局部可见"
+  ],
+  "images": [
+    {
+      "id": "ref.9.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egremont_Russet_Apple.jpg#1",
+      "sha256": "9a91ade8262bab462b9a5021f30da046092ddc597216fde3969a00bc09caf8d2",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.9.1",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrus_-_Pears,_Giresun_2017-07-05_01-4.jpg#1",
+      "sha256": "24e2d50b7663646d9ab1779f0c8eb3ac159c343d4cdcbe14e9eb398b2766c3a7",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.9.2",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-fruits-in-bowl-327098/",
+      "sha256": "1acee5b44bebd8495749145b9422af5457bcd035ce036fd6c9ea5d786e940dad",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.9.3",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/bol-rustique-de-fruits-avec-pommes-et-raisins-35581351/",
+      "sha256": "7ceb81a6f721642f218ef74c1bd7364173eece170698db95c58fc625c01aa2d8",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "81cc320e-5ca6-4599-a0a8-388574149f6e",
+        "model": "deepseek-flash",
+        "elapsedMs": 42616,
+        "prompt_tokens": 1598,
+        "completion_tokens": 6285,
+        "total_tokens": 7883,
+        "reasoning_tokens": 5133,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1598,
+    "completion_tokens": 6285,
+    "total_tokens": 7883,
+    "reasoning_tokens": 5133
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 42618
+}

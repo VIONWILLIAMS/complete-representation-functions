@@ -1,0 +1,988 @@
+{
+  "schema": "crf.actual_generation_trial.v0.9",
+  "id": "09_celadon_citrus",
+  "title": "青釉花瓶与两只柑橘",
+  "category": "still_life",
+  "prompt": "青绿色陶瓷花瓶居中稍后，两只完整橙子在前方左右错落，不出现苹果和梨。浅石灰色背景，温暖柔侧光，花瓶底部和橙子与承托面接触。釉面高光克制。输出1024×768，使用CRF原生二维函数与共享高斯外观，保持共同光照、合理比例、材质细节和接触关系。",
+  "seed": 90109,
+  "protocolSha256": "299276050dd4890f52b74fa9e63ff0871716b5f12ad4fe433293a6616a963bc6",
+  "runId": "showcase-v1",
+  "taskId": "crf09_d6042525-3a93-4327-90ed-480fc2b99607",
+  "status": "review_required",
+  "stage": "complete",
+  "error": null,
+  "completedAt": "2026-11-21T16:06:43.009Z",
+  "selection": {
+    "index": 2,
+    "reason": "Latest candidate without declared semantic-constraint regression; visual approval remains pending.",
+    "independentReview": false
+  },
+  "frameGate": {
+    "expected": [
+      1024,
+      768
+    ],
+    "actual": [
+      1024,
+      768
+    ],
+    "passed": true
+  },
+  "model": {
+    "id": "shared-1b02095c",
+    "sha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e",
+    "sourceRGBEmbedded": false,
+    "scope": "shared multi-image linear-color moments and Gaussian frequency-band amplitude estimates; procedural shape prior is hand-authored"
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "png": "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_00.png",
+      "jpeg": "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_00.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 262730,
+        "semanticObjects": 3,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 577,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 577,
+        "pixelSha256": "59a0d71fcef6deeae2c8034d75b18e1767489c55cd70ea6084fa3591c90630e9",
+        "pngSha256": "b2d940e14bc0ec71d6463f33cb7c9d76754a9964e720952b85cab2e0a9e0baf3",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "color",
+            "subject": "vase",
+            "value": [
+              64,
+              148,
+              142
+            ],
+            "passed": true,
+            "observed": [
+              [
+                64,
+                148,
+                142
+              ]
+            ]
+          },
+          {
+            "type": "color",
+            "subject": "orange",
+            "value": [
+              232,
+              132,
+              36
+            ],
+            "passed": true,
+            "observed": [
+              [
+                232,
+                132,
+                36
+              ],
+              [
+                226,
+                126,
+                32
+              ]
+            ]
+          },
+          {
+            "type": "above",
+            "subject": "vase",
+            "value": true,
+            "target": "orange",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.515,
+              "targetMean": 0.6325000000000001
+            }
+          }
+        ],
+        "evaluated": 7,
+        "passed": 7,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 4,
+        "passed": 4,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_fda956e3-e7d3-43ee-9d98-cd03594862e3",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "图中基本满足语义要求：居中稍后的青绿色陶瓶，前方左右各一只完整橙子，无苹果、梨，浅石灰色背景与承托面，接触线大致一致。但整体呈明显的示意性CGI观感，尚非照片级：橙子表面纹理呈斑驳噪点，更像程序化噪声而非自然果皮；陶瓶釉面偏哑光，克制得接近磨砂，缺少陶瓷应有的细腻高光与随形体的明暗过渡；暖侧光不明显，画面偏冷中性，物体暗部与转折缺少方向性；接触阴影过淡，落点感偏弱；背景有可见的纹理噪点与轻微渐变带；两橙子左右近似对称、大小接近，错落感不足。",
+        "qualityNotes": [
+          "橙子与花瓶轮廓、比例和前后关系合理，无双苹果/梨残留。",
+          "若需接近照片级，应加强釉面反射与接触阴影的层次，并让暖侧光更明确。"
+        ],
+        "warnings": [
+          "当前为共享高斯外观与解析几何的程序化渲染结果，局部纹理与阴影为推断，并非真实摄影测量。"
+        ],
+        "issues": [
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "orange-left",
+              "orange-right"
+            ],
+            "description": "橙皮呈大片斑驳噪声，颗粒尺度与对比都过大，缺乏细密毛孔。建议降低橙子 roughness 至 .38~.44，减小噪声振幅与对比，加入细微点状凹凸而非块状色斑。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [
+              "teal-vase",
+              "orange-left",
+              "orange-right"
+            ],
+            "description": "未体现“温暖柔和侧光”：整体偏冷中性，物体明暗转折缺少方向性。建议 light.warmth 提至 .7~.78，azimuth 保持约 -35 到 -45，使左侧受光、右侧进入柔和暗部，并统一两橙与瓶身的受光方向。"
+          },
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "teal-vase"
+            ],
+            "description": "釉面过于哑光，几乎无高光，失去陶瓷质感。建议花瓶 roughness 降至 .16~.20，在肩部及瓶颈一侧形成克制的条状柔和高光，保留大面积漫反射釉色。"
+          },
+          {
+            "code": "contact",
+            "severity": "minor",
+            "objectIds": [
+              "teal-vase",
+              "orange-left",
+              "orange-right"
+            ],
+            "description": "底部接触阴影过淡，物体有轻微悬空感。建议在瓶底与橙子底部加深小范围环境遮蔽与柔和投影，投影方向与侧光一致（朝右后方）。"
+          },
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [
+              "orange-left",
+              "orange-right"
+            ],
+            "description": "两橙子近似等距、等大、等高，左右对称，错落感不足。建议将右侧橙子 x 移至 .64~.66、depth 提至 .74 左右并略减 width 至 .165，左橙稍后移，强化前后错落与遮挡层次。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [],
+            "description": "背景上半部可见纵向纹理噪点与轻微渐变带。建议 environment.texture 降至 0 或 1 并平滑背景渐变，保持浅石灰色纯净感。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 4,
+          "coherence": 3
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2353,
+          "completion_tokens": 1802,
+          "total_tokens": 4155,
+          "reasoning_tokens": 1073,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "3643075a-fe31-4a22-af0d-d9b93187ee5d",
+              "model": "deepseek-flash",
+              "elapsedMs": 13276,
+              "prompt_tokens": 2353,
+              "completion_tokens": 1802,
+              "total_tokens": 4155,
+              "reasoning_tokens": 1073,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:05:26.838Z",
+            "requestId": "3643075a-fe31-4a22-af0d-d9b93187ee5d"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 13277
+      }
+    },
+    {
+      "index": 1,
+      "png": "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_01.png",
+      "jpeg": "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_01.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 262730,
+        "semanticObjects": 3,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 556,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 556,
+        "pixelSha256": "15fbe879fcb7328be23bf20f536c145ff07757a060d66996faa58e3367ef4161",
+        "pngSha256": "065aef3f1a2a3eb89ba150624584ba7c9fd46281420846c85182347b92b1748b",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "color",
+            "subject": "vase",
+            "value": [
+              64,
+              148,
+              142
+            ],
+            "passed": true,
+            "observed": [
+              [
+                64,
+                148,
+                142
+              ]
+            ]
+          },
+          {
+            "type": "color",
+            "subject": "orange",
+            "value": [
+              232,
+              132,
+              36
+            ],
+            "passed": true,
+            "observed": [
+              [
+                231,
+                131,
+                35
+              ],
+              [
+                226,
+                125,
+                31
+              ]
+            ]
+          },
+          {
+            "type": "above",
+            "subject": "vase",
+            "value": true,
+            "target": "orange",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.52,
+              "targetMean": 0.6425000000000001
+            }
+          }
+        ],
+        "evaluated": 7,
+        "passed": 7,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 4,
+        "passed": 4,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_b2cd9f06-e1fc-415e-837c-d9a7e1e9c42d",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "画面已满足单只青绿色花瓶、两只橙子、无苹果梨、浅石灰色背景与1024×768输出；但橙子体量偏大且左右过于对称，未形成明确的前后错落，花瓶的居中稍后关系不够清楚。接触阴影偏弱且方向感不足，暖侧光更像正面柔光。橙皮斑驳感偏绘画化，釉面高光较克制但材质仍偏示意插图。",
+        "qualityNotes": [
+          "构图中两只橙子几乎等大等高，左右对称地夹住花瓶，缺少用户要求的前后错落层次。",
+          "花瓶主体与橙子在同一视觉平面上，花瓶居中稍后的空间关系主要靠遮挡和尺寸暗示，深度感较弱。",
+          "橙子表皮呈现较粗的斑驳色块，接近海绵涂抹而非细密果皮微纹理。",
+          "花瓶釉面高光柔和克制，方向性尚可，但瓶身高频噪声与背景轻微竖向条带削弱了陶瓷光滑感。",
+          "阴影整体偏弱且近乎垂直居中，暖侧光没有形成一致的方向性投影。",
+          "当前结果属于程序化示意级静物，未达到照片级真实材质与阴影精度。"
+        ],
+        "warnings": [
+          "若需接近照片级，需要更强的前后深度区分、连续的方向性阴影和更细密的果皮微纹理；现有二维解析与共享高斯外观仅能提供受限近似。"
+        ],
+        "issues": [
+          {
+            "code": "composition",
+            "severity": "major",
+            "objectIds": [
+              "teal-vase",
+              "orange-left",
+              "orange-right"
+            ],
+            "description": "两只橙子体量接近、接触线高度几乎一致，呈左右对称列队，未形成“前左与前右错落”。建议缩小橙子宽度/高度约10%–15%，将左侧橙子x调至0.34、y调至0.66、depth调至0.78，右侧橙子x调至0.66、y调至0.625、depth调至0.68，并增加细微前后遮挡，使花瓶的居中稍后关系更清楚。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "teal-vase",
+              "orange-left",
+              "orange-right"
+            ],
+            "description": "花瓶底部与承托面的接触阴影很弱，两只橙子的落影偏对称且接近正下方，接触感不足。建议增强底部接触暗部，并让落影统一偏向画面右侧；同时略微下移橙子使底部接触线更实，避免悬浮感。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [
+              "teal-vase",
+              "orange-left",
+              "orange-right"
+            ],
+            "description": "暖侧光方向性不足，橙子高光偏正面居中，阴影方向与光源不统一，整体更像均匀柔光。建议将light.azimuth调至约-55°、elevation约30°，适度提高强度，并把高光中心略向左侧偏移，形成一致的暖侧光与向右投影。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "orange-left",
+              "orange-right"
+            ],
+            "description": "橙皮出现较大块状明暗斑驳，缺少细密均匀的果皮微纹理。建议降低斑块对比、将粗糙度调至约0.46–0.52，并使微纹理尺度更细，避免海绵涂抹感。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "teal-vase"
+            ],
+            "description": "花瓶釉面高光克制，但瓶身可见细碎噪声和轻微竖向条纹，陶瓷釉面不够连续光滑。建议降低表面高频起伏，将roughness调至约0.12–0.16，同时保留一条窄而柔的高光。"
+          },
+          {
+            "code": "edge",
+            "severity": "minor",
+            "objectIds": [
+              "teal-vase",
+              "orange-left",
+              "orange-right"
+            ],
+            "description": "花瓶轮廓与橙子边缘整体偏软，尤其橙子轮廓缺乏清晰的焦内边缘。建议略收紧对象边缘并减少全局雾化/模糊，使主体轮廓更利落但仍保留柔和光照过渡。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 4,
+          "coherence": 3
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2351,
+          "completion_tokens": 2144,
+          "total_tokens": 4495,
+          "reasoning_tokens": 1269,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "fb94bd6b-2f8f-4f60-bc9e-934e3fda3126",
+              "model": "deepseek-flash",
+              "elapsedMs": 16229,
+              "prompt_tokens": 2351,
+              "completion_tokens": 2144,
+              "total_tokens": 4495,
+              "reasoning_tokens": 1269,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:05:57.214Z",
+            "requestId": "fb94bd6b-2f8f-4f60-bc9e-934e3fda3126"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 16229
+      }
+    },
+    {
+      "index": 2,
+      "png": "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_02.png",
+      "jpeg": "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_02.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 262730,
+        "semanticObjects": 3,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 379,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 379,
+        "pixelSha256": "228d6084674f3869849853e1e02bc7c8560c98bf91542e525b43690c5db5c771",
+        "pngSha256": "ab9443c9b38695588e6e87b4950577f9a3825afcc4675086a583260aee7379a7",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "color",
+            "subject": "vase",
+            "value": [
+              64,
+              148,
+              142
+            ],
+            "passed": true,
+            "observed": [
+              [
+                64,
+                148,
+                142
+              ]
+            ]
+          },
+          {
+            "type": "color",
+            "subject": "orange",
+            "value": [
+              232,
+              132,
+              36
+            ],
+            "passed": true,
+            "observed": [
+              [
+                232,
+                132,
+                36
+              ],
+              [
+                227,
+                124,
+                31
+              ]
+            ]
+          },
+          {
+            "type": "above",
+            "subject": "vase",
+            "value": true,
+            "target": "orange",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.509,
+              "targetMean": 0.656
+            }
+          }
+        ],
+        "evaluated": 7,
+        "passed": 7,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 4,
+        "passed": 4,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": null
+    }
+  ],
+  "usage": [
+    {
+      "phase": "plan",
+      "providerCalls": 1,
+      "prompt_tokens": 1724,
+      "completion_tokens": 1731,
+      "total_tokens": 3455,
+      "reasoning_tokens": 1339,
+      "requests": [
+        {
+          "phase": "native09_plan",
+          "requestId": "24f836a4-feec-4dff-88e0-85ad84ddfcc7",
+          "model": "deepseek-flash",
+          "elapsedMs": 11761,
+          "prompt_tokens": 1724,
+          "completion_tokens": 1731,
+          "total_tokens": 3455,
+          "reasoning_tokens": 1339,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "generate",
+      "providerCalls": 1,
+      "prompt_tokens": 1970,
+      "completion_tokens": 2939,
+      "total_tokens": 4909,
+      "reasoning_tokens": 2358,
+      "requests": [
+        {
+          "phase": "native09_generate",
+          "requestId": "bd9a5b4b-448e-4155-8e13-6200cf78ea9d",
+          "model": "deepseek-flash",
+          "elapsedMs": 18864,
+          "prompt_tokens": 1970,
+          "completion_tokens": 2939,
+          "total_tokens": 4909,
+          "reasoning_tokens": 2358,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_0",
+      "providerCalls": 1,
+      "prompt_tokens": 2353,
+      "completion_tokens": 1802,
+      "total_tokens": 4155,
+      "reasoning_tokens": 1073,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "3643075a-fe31-4a22-af0d-d9b93187ee5d",
+          "model": "deepseek-flash",
+          "elapsedMs": 13276,
+          "prompt_tokens": 2353,
+          "completion_tokens": 1802,
+          "total_tokens": 4155,
+          "reasoning_tokens": 1073,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_1",
+      "providerCalls": 1,
+      "prompt_tokens": 3251,
+      "completion_tokens": 2491,
+      "total_tokens": 5742,
+      "reasoning_tokens": 1960,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "654f5f91-1b42-45d9-9ca4-4cd08018acc3",
+          "model": "deepseek-flash",
+          "elapsedMs": 16287,
+          "prompt_tokens": 3251,
+          "completion_tokens": 2491,
+          "total_tokens": 5742,
+          "reasoning_tokens": 1960,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_1",
+      "providerCalls": 1,
+      "prompt_tokens": 2351,
+      "completion_tokens": 2144,
+      "total_tokens": 4495,
+      "reasoning_tokens": 1269,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "fb94bd6b-2f8f-4f60-bc9e-934e3fda3126",
+          "model": "deepseek-flash",
+          "elapsedMs": 16229,
+          "prompt_tokens": 2351,
+          "completion_tokens": 2144,
+          "total_tokens": 4495,
+          "reasoning_tokens": 1269,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_2",
+      "providerCalls": 1,
+      "prompt_tokens": 3371,
+      "completion_tokens": 4682,
+      "total_tokens": 8053,
+      "reasoning_tokens": 4005,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "044f3311-1275-499b-b9bc-a4ee7833b474",
+          "model": "deepseek-flash",
+          "elapsedMs": 28981,
+          "prompt_tokens": 3371,
+          "completion_tokens": 4682,
+          "total_tokens": 8053,
+          "reasoning_tokens": 4005,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    }
+  ],
+  "apiOperations": [
+    {
+      "index": 0,
+      "phase": "plan",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:04:55.391Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_d6042525-3a93-4327-90ed-480fc2b99607:0",
+      "finishedAt": "2026-11-21T16:05:07.155Z",
+      "runId": "crf09_1dbe403e-1789-4b4f-aac9-cf32c7ae4182"
+    },
+    {
+      "index": 1,
+      "phase": "generate",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:05:07.168Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_d6042525-3a93-4327-90ed-480fc2b99607:1",
+      "finishedAt": "2026-11-21T16:05:26.046Z",
+      "runId": "crf09_62ab11aa-080d-4f30-8b88-2ff7d6caa796"
+    },
+    {
+      "index": 2,
+      "phase": "critique_0",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:05:26.828Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_d6042525-3a93-4327-90ed-480fc2b99607:2",
+      "finishedAt": "2026-11-21T16:05:40.115Z",
+      "runId": "crf09_fda956e3-e7d3-43ee-9d98-cd03594862e3"
+    },
+    {
+      "index": 3,
+      "phase": "revision_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:05:40.140Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_d6042525-3a93-4327-90ed-480fc2b99607:3",
+      "finishedAt": "2026-11-21T16:05:56.441Z",
+      "runId": "crf09_69a5dc22-e2fe-4b91-920a-a4a1f2f740eb"
+    },
+    {
+      "index": 4,
+      "phase": "critique_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:05:57.206Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_d6042525-3a93-4327-90ed-480fc2b99607:4",
+      "finishedAt": "2026-11-21T16:06:13.445Z",
+      "runId": "crf09_b2cd9f06-e1fc-415e-837c-d9a7e1e9c42d"
+    },
+    {
+      "index": 5,
+      "phase": "revision_2",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:13.465Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_d6042525-3a93-4327-90ed-480fc2b99607:5",
+      "finishedAt": "2026-11-21T16:06:42.457Z",
+      "runId": "crf09_ce281b6e-70f6-4e26-b1e0-2f06ab9df807"
+    }
+  ],
+  "planningHistory": [],
+  "replanCount": 0,
+  "planEvidence": {
+    "qualityNotes": [
+      "场景可由 vase、orange 对象及 environment/light 参数表达；釉面微裂纹、橙皮真实毛孔与精确接触阴影受程序化二维与共享高斯外观质量上限影响，需渲染后复核。"
+    ],
+    "warnings": [
+      "共享外观统计仅为有限先验，不构成照片级验收；克制釉面高光需通过受控光强与适当粗糙度实现。"
+    ],
+    "runId": "crf09_1dbe403e-1789-4b4f-aac9-cf32c7ae4182",
+    "requestIds": [
+      "24f836a4-feec-4dff-88e0-85ad84ddfcc7"
+    ]
+  },
+  "learning": null,
+  "quality": {
+    "releaseGate": "not_evaluated",
+    "independentHumanReview": false,
+    "scope": "Actual rendered candidates with bounded model feedback; not a photorealism certificate"
+  },
+  "artifact": {
+    "imageUrl": "assets/v09/generated/showcase-v1/09_celadon_citrus.png",
+    "thumbnailUrl": "assets/v09/generated/showcase-v1/09_celadon_citrus.jpg",
+    "sceneUrl": "assets/v09/generated/showcase-v1/09_celadon_citrus.scene.json",
+    "reportUrl": "assets/v09/generated/showcase-v1/09_celadon_citrus.record.json",
+    "width": 1024,
+    "height": 768,
+    "pixelSha256": "228d6084674f3869849853e1e02bc7c8560c98bf91542e525b43690c5db5c771",
+    "modelId": "shared-1b02095c",
+    "modelSha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e"
+  },
+  "limits": [
+    "These are fixed showcase trials, not the unrun 180-task terminal benchmark.",
+    "Model critique is auxiliary; photoreal quality requires independent review.",
+    "Current renderer is a restricted procedural/statistical 2D Gaussian function generator."
+  ]
+}

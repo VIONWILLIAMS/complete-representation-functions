@@ -1,0 +1,38 @@
+{
+  "schema": "crf.test_acceptance.v0.6",
+  "recordedAt": "2026-11-21T09:26:03.051Z",
+  "command": [
+    "node",
+    "--test",
+    "--test-reporter=tap",
+    "tests/test_core.cjs",
+    "tests/test_boundary_v05.cjs",
+    "tests/test_fruit.cjs",
+    "tests/test_program06.cjs",
+    "tests/test_observation06.cjs",
+    "tests/test_integration06.cjs"
+  ],
+  "exitCode": 0,
+  "total": 52,
+  "passed": 52,
+  "failed": 0,
+  "skipped": 0,
+  "durationMs": 5049.704771,
+  "pass": true,
+  "sourceHashes": {
+    "dist/crf-program.js": "9f4a09ed4adaf8038afb2c296be3ddfb38d9a58a05855a2c68289adf7bcef29e",
+    "dist/crf-program-renderer.js": "9960895d0b93b734aaae3778363157160fb1f1d31f910349049811593cc57008",
+    "dist/crf-observation.js": "26629c2120f01aa06df874cd260b5669c678eb9c7379c2c1f5529c5b7bb3c18c",
+    "dist/crf-scenes06.js": "b58b8265ce0bd5b7d41d160e1b26bdd0f3bf7fc6f8e6b050aa171a95734e6c5e",
+    "dist/crf-ai-tools06.js": "2bda958026092558262c581881ca16b7bdd4abf791885aa0054b05e44bc723d4",
+    "dist/editor06.js": "81d1d87be84b459ce5d570ad0ebffc7c9b9825f452cd38971cf563dc26730e50",
+    "dist/crf-video.js": "6b56aecce1bcb60f233e5573cd8565e25a6c41e5579b2eb150c354056a98dd48",
+    "dist/assets/v06/observed-fruit.js": "fbc3043656c7872dc59d4ff8391dfb5156ba33e368cbcd734c70f146aab3b012",
+    "tests/test_core.cjs": "ebe97b75ac950defbaf394d41c0023e37acb2570adba9a33ed216d78aa9dc5a6",
+    "tests/test_boundary_v05.cjs": "01302e1e54af3ab17da3f720ada5f65b06aa90ae30cc61a105dc7b972fffc4ed",
+    "tests/test_fruit.cjs": "0bacdf4ee7c394d521a11a046c0bc377d214125e2eda6cdb6e1e8ba8a8e7cb33",
+    "tests/test_program06.cjs": "aa0e8178de9ab533ba9cb09395cab3154f984c63eba1b3ab4fc3f6e622fda31c",
+    "tests/test_observation06.cjs": "090566161d4e676a1abdb57adec57b3478a6fcfa5549c8e987dfd18fccd4feac",
+    "tests/test_integration06.cjs": "564f04c90ab10181a1d2d0ac5b9e6d1470437d15747cf4d66131b3ec8121599e"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "schema": "crf.visual_semantics.v0.8",
+  "round": 3,
+  "items": [
+    {
+      "id": "learn.r03.097cfbf071e3",
+      "label": "青蓝色釉陶瓷花瓶",
+      "category": "ceramic vase",
+      "role": "object",
+      "bbox": [
+        0.28,
+        0.16,
+        0.69,
+        0.92
+      ],
+      "palette": [
+        [
+          38,
+          86,
+          113
+        ],
+        [
+          61,
+          113,
+          137
+        ],
+        [
+          17,
+          43,
+          62
+        ],
+        [
+          164,
+          210,
+          214
+        ],
+        [
+          99,
+          140,
+          157
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "单件陶瓷花瓶居中放置在灰色渐变背景前。器形为外撇小口、短颈、卵形腹部并向下收窄，轮廓圆润对称。表面施青蓝色亮釉，釉面有细小黑点和微小凹坑，腹部偏左上方可见纵向高光，底部与背景接触处有柔和阴影。整体呈较明显的镜面反射，适合提取陶瓷容器、釉面高光与柔和棚拍背景的视觉特征。",
+      "tags": [
+        "陶瓷",
+        "花瓶",
+        "青蓝色",
+        "亮釉",
+        "高光",
+        "卵形器身",
+        "外撇口",
+        "灰色背景",
+        "棚拍",
+        "静物"
+      ],
+      "limitations": [
+        "仅有正面单视角，无法确认背面、底部与口沿内侧结构",
+        "边界框为目测估计，不是精确alpha分割",
+        "缺少尺寸、重量与真实材质成分信息",
+        "图像可能经过白平衡或色彩处理，釉色不能视为绝对色",
+        "无法判断是否空心、透光或是否有隐藏裂纹"
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "ok": true,
+      "engine": "gaussian08-semantic-learning",
+      "model": "deepseek-flash",
+      "round": 3,
+      "topic": "陶瓷杯与花瓶的实拍",
+      "items": [
+        {
+          "id": "learn.r03.097cfbf071e3",
+          "label": "青蓝色釉陶瓷花瓶",
+          "category": "ceramic vase",
+          "role": "object",
+          "bbox": [
+            0.28,
+            0.16,
+            0.69,
+            0.92
+          ],
+          "palette": [
+            [
+              38,
+              86,
+              113
+            ],
+            [
+              61,
+              113,
+              137
+            ],
+            [
+              17,
+              43,
+              62
+            ],
+            [
+              164,
+              210,
+              214
+            ],
+            [
+              99,
+              140,
+              157
+            ]
+          ],
+          "lightDirection": "left",
+          "description": "单件陶瓷花瓶居中放置在灰色渐变背景前。器形为外撇小口、短颈、卵形腹部并向下收窄，轮廓圆润对称。表面施青蓝色亮釉，釉面有细小黑点和微小凹坑，腹部偏左上方可见纵向高光，底部与背景接触处有柔和阴影。整体呈较明显的镜面反射，适合提取陶瓷容器、釉面高光与柔和棚拍背景的视觉特征。",
+          "tags": [
+            "陶瓷",
+            "花瓶",
+            "青蓝色",
+            "亮釉",
+            "高光",
+            "卵形器身",
+            "外撇口",
+            "灰色背景",
+            "棚拍",
+            "静物"
+          ],
+          "limitations": [
+            "仅有正面单视角，无法确认背面、底部与口沿内侧结构",
+            "边界框为目测估计，不是精确alpha分割",
+            "缺少尺寸、重量与真实材质成分信息",
+            "图像可能经过白平衡或色彩处理，釉色不能视为绝对色",
+            "无法判断是否空心、透光或是否有隐藏裂纹"
+          ]
+        }
+      ],
+      "sharedFeatures": [
+        "单件陶瓷器皿为主体",
+        "青蓝色亮釉与柔和镜面高光",
+        "中性灰色渐变棚拍背景",
+        "主体居中、轮廓完整"
+      ],
+      "missingEvidence": [
+        "花瓶背面、底部、口沿内侧及多角度视图",
+        "尺寸比例、重量、烧制工艺与釉料成分",
+        "标准色卡或中性光下的准确颜色信息",
+        "透明/透光性、内部结构与瑕疵细节",
+        "拍摄参数与后期处理记录"
+      ],
+      "images": [
+        {
+          "id": "learn.r03.097cfbf071e3",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+          "sha256": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+          "submittedToVision": true
+        }
+      ],
+      "usage": {
+        "providerCalls": 1,
+        "requests": [
+          {
+            "phase": "gaussian_semantic_learning",
+            "requestId": "c4456f8e-23f5-407f-84cc-95e90630f636",
+            "model": "deepseek-flash",
+            "elapsedMs": 7719,
+            "prompt_tokens": 759,
+            "completion_tokens": 945,
+            "total_tokens": 1704,
+            "reasoning_tokens": 549,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": false,
+            "finishReason": "stop",
+            "referenceImagesProvided": 1
+          }
+        ],
+        "prompt_tokens": 759,
+        "completion_tokens": 945,
+        "total_tokens": 1704,
+        "reasoning_tokens": 549
+      },
+      "validation": {
+        "schema": true,
+        "allImageIdsMatched": true,
+        "repairUsed": false,
+        "pixelMaskVerified": false
+      },
+      "modelWeightsUpdated": false,
+      "pixelFitPerformed": false,
+      "elapsedMs": 7720
+    }
+  ],
+  "actualInputImageCount": 1
+}

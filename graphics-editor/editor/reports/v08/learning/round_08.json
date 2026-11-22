@@ -1,0 +1,593 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 8,
+  "query": "高山湖泊与水面反射实拍",
+  "checkpoint": {
+    "sessionId": "crf08-ten-rounds",
+    "round": 8,
+    "topic": "高山湖泊与水面反射实拍",
+    "subtopic": "4–6张不同阿尔卑斯湖泊或山水照片，关注远近层次、岸线和水面反射",
+    "status": "searched",
+    "completedAt": "2026-11-21T13:28:32.872Z",
+    "runId": "crf07_a1ba1efe-757a-46af-a025-74fdf467b682",
+    "queries": [
+      "site:commons.wikimedia.org \"Alpine lake\" reflection file -category",
+      "site:unsplash.com alpine lake reflection mountains photo",
+      "site:pexels.com alpine lake reflection shore photo",
+      "site:commons.wikimedia.org \"Lac\" Alpes reflet montagne file",
+      "site:unsplash.com \"Lake Brienz\" reflection shore photo"
+    ],
+    "requestIds": [
+      "9f8a9d59-5629-41a8-bf7d-4b18b3a24374"
+    ],
+    "sourceCount": 15,
+    "newSourceCount": 15,
+    "candidateCount": 15,
+    "downloadedImageCount": 3,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_93014291111b4bc5b1573be1ea4245d4",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"Alpine lake\" reflection file -category",
+            "site:unsplash.com alpine lake reflection mountains photo",
+            "site:pexels.com alpine lake reflection shore photo",
+            "site:commons.wikimedia.org \"Lac\" Alpes reflet montagne file",
+            "site:unsplash.com \"Lake Brienz\" reflection shore photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Lake_Pukaki_and_Mt_Cook.NZ_(15577767068).jpg#1",
+          "https://unsplash.com/photos/snow-capped-mountains-reflecting-in-alpine-lake-0-LgP3r_UOg",
+          "https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/",
+          "https://commons.wikimedia.org/wiki/File:Reflets_de_Tignes_-_Val_Claret_sur_le_lac_de_nuit_(%C3%A9t%C3%A9_2018).JPG",
+          "https://unsplash.com/photos/landscape-photography-of-mountains-surrounded-by-body-of-water-8FNFEj9EcIs",
+          "https://commons.wikimedia.org/wiki/File:Granite_Bound_Tenaya_Lake,_Yosemite_NP_10-9-18_(44750481264).jpg#1",
+          "https://unsplash.com/photos/snow-capped-mountain-reflected-in-a-calm-lake-s2xR0QmZVI4",
+          "https://www.pexels.com/photo/tranquil-alpine-lake-with-majestic-mountains-32481616/",
+          "https://unsplash.com/photos/a-building-on-a-hill-by-a-body-of-water-IlaosFtLRmY",
+          "https://commons.wikimedia.org/wiki/File:Lac_de_Plan_du_Lac_%c3%a0_Termignon_c%c3%b4t%c3%a9_nord_au_matin_(ao%c3%bbt_2022).JPG",
+          "https://unsplash.com/photos/reflections-of-mountains-on-water-OCGXUCCQblw",
+          "https://www.pexels.com/fr-fr/photo/lac-alpin-pittoresque-avec-vue-majestueuse-sur-les-montagnes-35259426/",
+          "https://unsplash.com/photos/a-body-of-water-with-boats-and-houses-along-it-nBhjD_eSZ94",
+          "https://unsplash.com/photos/a-lakeside-town-is-nestled-among-mountain-ranges-qJVqL9wnGoA",
+          "https://www.pexels.com/photo/smolyan-lakes-bulgaria-28143954/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Lake_Pukaki_and_Mt_Cook.NZ_(15577767068).jpg#1",
+        "title": "File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg - Wikimedia Commons - File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg",
+        "snippet": "Lake Pukaki and Mt Cook.NZ (15577767068).jpg ... Lake Pukaki is a shimmering blue jewel set into a grand alpine playground - an iconic New Zealand landscape of high mountain peaks, glacier fed alpine lakes and golden tussocks stretched beneath an endless sky.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/snow-capped-mountains-reflecting-in-alpine-lake-0-LgP3r_UOg",
+        "title": "Photo by Praneeth Peiris on Unsplash",
+        "snippet": "Downloads 13 # Snow-capped mountains reflecting in a calm alpine lake under a bright blue sky Download this free HD photo of snow-capped mountains reflecting in a lake by @gnomezgrave Published on Free to use under the Unsplash License Browse",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/",
+        "title": "Photo by Christopher Beck on Pexels",
+        "snippet": "Date Nov 19, 2020 Downloads ... Taken At Apr 19, 2019 Software Adobe ... (Macintosh) Tirol, Österreich Description # Scenic view of an Alpine lake with mountains reflecting in calm waters in Tirol, Austria. ### More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Reflets_de_Tignes_-_Val_Claret_sur_le_lac_de_nuit_(%C3%A9t%C3%A9_2018).JPG",
+        "title": "File:Reflets de Tignes - Val Claret sur le lac de nuit (été 2018).JPG - Wikimedia Commons",
+        "snippet": "in a summer night, of the ''lac de Tignes'' lake, with visible at the background ''Tignes - Val Claret'' village ... France.}} {{fr|1=Vue, une nuit d'été, du ''lac de Tignes'' avec les reflets du village de ''Tignes - Val Claret''...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/landscape-photography-of-mountains-surrounded-by-body-of-water-8FNFEj9EcIs",
+        "title": "Photo by Andreas Gücklhorn on Unsplash",
+        "snippet": "landscape photography of mountains surrounded by body of water Download this free HD photo of shore, lake brienz, brienz, and switzerland in Brienz, Switzerland by Andreas Gücklhorn (@draufsicht) Published on Free to use under the Unsplash",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Granite_Bound_Tenaya_Lake,_Yosemite_NP_10-9-18_(44750481264).jpg#1",
+        "title": "File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg - Wikimedia Commons - File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg",
+        "snippet": "Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg ... There may not be a more spectacular setting for an alpine lake than that of Tenaya Lake in the high country of Yosemite.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/snow-capped-mountain-reflected-in-a-calm-lake-s2xR0QmZVI4",
+        "title": "Photo by Thierry Lemaitre on Unsplash",
+        "snippet": "Snow-capped mountain reflected in a calm lake Snow-covered peaks of Schreckhorn and Eiger rise behind Bachalpsee. The alpine lake reflects the sunlight on the peak of First First, Grindelwald, Switzerland Published on Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/tranquil-alpine-lake-with-majestic-mountains-32481616/",
+        "title": "Photo by VISHNEVA on Pexels",
+        "snippet": "Add custom frames ##### VISHNEVA 384.6K views • 3.5K downloads Austria Description # Peaceful alpine lake reflecting mountains under a partly cloudy sky, perfect for nature lovers. ### More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-building-on-a-hill-by-a-body-of-water-IlaosFtLRmY",
+        "title": "Photo by Yasintha Perera on Unsplash",
+        "snippet": "a building on a hill by a body of water Iseltwald is a pretty village on the shores of Lake Brienz. Published on DJI, FC3411Free to use under the Unsplash License Browse ... 20% with code UNSPLASH20",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Lac_de_Plan_du_Lac_%c3%a0_Termignon_c%c3%b4t%c3%a9_nord_au_matin_(ao%c3%bbt_2022).JPG",
+        "title": "File:Lac de Plan du Lac à Termignon côté nord au matin (août 2022).JPG - Wikimedia Commons",
+        "snippet": "{{Information |Description={{en|1=Sight, in a summer morning, of the north side of the lake of ''Plan du Lac'' locality on the heights of ''Termignon'', with ''Grande Casse'' mountain relecting on it, in Savoie, France.}} {{fr|1=Vue...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/reflections-of-mountains-on-water-OCGXUCCQblw",
+        "title": "Photo by Alec Olson on Unsplash",
+        "snippet": "Downloads 104 # reflections of mountains on water A mountain reflection on a glassy alpine lake in Banff National Park. Location: Lake Louise. Photo by Alec Olson (www.alecolson.com). Published on Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/lac-alpin-pittoresque-avec-vue-majestueuse-sur-les-montagnes-35259426/",
+        "title": "Photo de Mauro Morandini sur Pexels",
+        "snippet": "4032x2268 Format 16:9 Couleurs Date Dec 17, 2025 Téléchargements ... Selva di Val Gardena, Italy Description # Lac alpin aux eaux cristallines, avec de superbes montagnes se reflétant sous un ciel bleu.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-body-of-water-with-boats-and-houses-along-it-nBhjD_eSZ94",
+        "title": "Photo by Yasintha Perera on Unsplash",
+        "snippet": "a body of water with boats and houses along it Iseltwald is a pretty village on the shores of Lake Brienz. Published on DJI, FC3411Free to use under the Unsplash License ... 520 images · Curated by",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-lakeside-town-is-nestled-among-mountain-ranges-qJVqL9wnGoA",
+        "title": "Photo by Fajar Al Hadi on Unsplash",
+        "snippet": "A lakeside town is nestled among mountain ranges. A stunning view of Hallstatt, Austria ... The picturesque village, nestled between steep alpine mountains and the calm lake, showcases its iconic church steeple ... The reflection on the water adds tranquility, while the misty blue mountains in the background enhance the dreamy atmosphere.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/smolyan-lakes-bulgaria-28143954/",
+        "title": "Photo by Rainer Eck on Pexels",
+        "snippet": "Date Aug 31, 2024 Downloads ... 5 Camera Canon EOS 5D Mark II ... Taken At Aug 17, 2024 Software Adobe Photoshop Lightroom Classic 7.1 (Windows) Bulgaria Description # Peaceful alpine lake reflecting mountains and forests in summer. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮实际检索到 6 个可对应“高山湖泊 + 水面反射”的照片详情页，覆盖 Wikimedia Commons（含 CC0 / CC BY-SA）、Unsplash、Pexels。**未获取图片字节，以下远近层次、岸线、反射特征均基于来源页标题与描述推断，待原图核验。** 未发现可直接确认“岸线细节”的独立描述页，Commons 结果以文件页为主，Unsplash/Pexels 页面文本较简。\n\n### 候选照片页面\n\n**1. Wikimedia Commons：Lake Pukaki 与 Mt Cook（新西兰南阿尔卑斯）**\n- 来源页：https://commons.wikimedia.org/wiki/File:Lake_Pukaki_and_Mt_Cook.NZ_(15577767068).jpg\n- 作者：Bernard Spragg. NZ；许可：**CC0 1.0**（页面明确标注公共领域贡献）\n- 可转化细节（推断）：描述强调“冰川补给的高山湖泊”“绿松石色湖面”“狭长冰川谷”以及主峰对湖面的支配关系。适合提取**远山—湖面—天空**的三层纵深；湖岸为“金色草丛”暗示，但页面未给出近景岸线结构。曝光 1/1600s，推测为日光下高反射场景，水面可能偏亮、需注意高光裁切。原始尺寸 2400×1594，适合作为中远景层次参考。\n\n**2. Unsplash：雪山倒映在平静高山湖（Praneeth Peiris）**\n- 来源页：https://unsplash.com/photos/snow-capped-mountains-reflecting-in-alpine-lake-0-LgP3r_UOg\n- 作者：@gnomezgrave；许可：Unsplash License（页面标注 Free to use）\n- 可转化细节（推断）：标题直接给出“雪山倒映 + 平静湖面 + 亮蓝天空”，适合提取**对称倒影构图**与远山轮廓在水面的镜像边缘。页面未描述岸线或前景遮挡物，需原图确认湖岸是否有岩石/植被作为近景锚点。若水面平静，反射边缘较锐利，适合转化为“边缘响应—反射衰减”关系。\n\n**3. Pexels：奥地利蒂罗尔高山湖倒影（Christopher Beck）**\n- 来源页：https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/\n- 作者：Christopher Beck；许可：待核验（Pexels 标准许可，页面未在返回文本中展示完整许可字段）\n- 可转化细节（推断）：页面标题“Alpine lake with mountains reflecting in calm waters in Tirol, Austria”，相机 ILCE-7M3、24mm、f/4.5、ISO 50、1/640s。24mm 广角适合表现**远山—湖面—岸线**的空间纵深；f/4.5 中小光圈使远山与倒影均处于可接受清晰范围。ISO 50 与 1/640s 提示充足日光，水面反射可能包含天空亮部与山体暗部的强对比。岸线形态未描述，需原图确认是否有砾石/草甸过渡带。\n\n**4. Unsplash：Lake Brienz 山水（Andreas Gücklhorn）**\n- 来源页：https://unsplash.com/photos/landscape-photography-of-mountains-surrounded-by-body-of-water-8FNFEj9EcIs\n- 作者：Andreas Gücklhorn；许可：Unsplash License（Free to use）\n- 可转化细节（推断）：标题“mountains surrounded by body of water”，地点 Brienz, Switzerland，标签含 shore、lake brienz。适合提取**湖泊被山体环抱**的封闭水域形态与岸线走向；但页面未说明水面反射强度、是否有波纹或前景。需原图确认反射是否完整、岸线是否清晰可辨。该图可作为“湖泊—山体边界”的构图参考。\n\n**5. Wikimedia Commons：Tenaya Lake，Yosemite（花岗岩高山湖）**\n- 来源页：https://commons.wikimedia.org/wiki/File:Granite_Bound_Tenaya_Lake,_Yosemite_NP_10-9-18_(44750481264).jpg\n- 作者：Don Graham；许可：**CC BY-SA 2.0**（页面明确标注）\n- 可转化细节（推断）：描述明确“完全被花岗岩穹丘环绕”“岸线花岗岩巨石保持冰川遗留位置”。这是本轮**岸线材质信息最具体**的候选：近景岸线为浅色花岗岩块体，边缘硬朗、纹理粗粒；湖面反射与岩石边界形成高对比。曝光 1/640s，日期 10 月 11:52，光照角度可能偏侧，岩石投影与水面高光可同时出现。原始 2800×1985，适合提取岩石—水面接触边缘。但页面未说明湖面是否平静，反射清晰度待原图确认。\n\n**6. Unsplash：Lake Louise 玻璃般高山湖倒影（Alec Olson）**\n- 来源页：https://unsplash.com/photos/reflections-of-mountains-on-water-OCGXUCCQblw\n- 作者：Alec Olson；许可：Unsplash License（Free to use）\n- 可转化细节（推断）：标题“reflections of mountains on water”，描述明确“a mountain reflection on a glassy alpine lake in Banff National Park. Location: Lake Louise”。**“glassy”直接指向平静水面**，反射应较完整、边缘较锐利，适合提取远山倒影的垂直对称关系。页面未描述岸线细节或前景，需原图确认是否有近岸岩石/树木作为尺度锚点。可作为“理想平静反射”与第 3 张蒂罗尔湖的“实拍反射”对比参考。\n\n### 检索缺口与局限\n- **岸线信息不均**：6 张中仅 Tenaya Lake 的页面描述明确提到岸线为花岗岩巨石；其余页面以“lake”“calm waters”“shore”标签为主，未给出岸线材质、坡度或植被过渡细节。若本轮重点包含“岸线”，需优先获取 Tenaya Lake 原图，并对其他候选原图专门核验近景 10–20% 画面内容。\n- **反射强度分级不足**：Unsplash 的 Lake Louise 标注“glassy”，Pexels 蒂罗尔湖标注“calm waters”，但未说明是否有微风波纹、反射边缘是否破碎。需原图判断“镜面反射—波纹调制”的过渡。\n- **Wikimedia Commons 单张文件页已获取**：本轮获得 3 个独立 Commons 文件页（Pukaki、Tignes 夜景、Tenaya），其中 Pukaki 为 CC0、Tenaya 为 CC BY-SA 2.0，Tignes 夜景为 CC BY-SA 4.0 但以夜间村庄反射为主，与本轮“山水实拍”白天场景匹配度较低，故未列为正式候选。\n- **未获取图片字节**：所有形态、材质、光照判断均基于页面文本，待后续原图验证。\n\n### 下一轮定向建议\n1. 优先获取 **Tenaya Lake** 原图，核验花岗岩岸线与水面接触边缘的明度对比、岩石纹理尺度。\n2. 获取 **Lake Louise** 与 **蒂罗尔湖** 原图，对比“glassy”与“calm”两种描述下的实际反射边缘锐度，确认是否存在波纹调制。\n3. 若需补充岸线植被/砾石过渡，可在 Commons 用 `alpine lake shore boulders` 或 `lac d'altitude rive` 检索独立 File 页，避免分类页。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reflets_de_Tignes_-_Val_Claret_sur_le_lac_de_nuit_(%C3%A9t%C3%A9_2018).JPG",
+        "title": "File:Reflets de Tignes - Val Claret sur le lac de nuit (été 2018).JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Reflets_de_Tignes_-_Val_Claret_sur_le_lac_de_nuit_(%C3%A9t%C3%A9_2018).JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lac_de_Plan_du_Lac_%c3%a0_Termignon_c%c3%b4t%c3%a9_nord_au_matin_(ao%c3%bbt_2022).JPG",
+        "title": "File:Lac de Plan du Lac à Termignon côté nord au matin (août 2022).JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Lac_de_Plan_du_Lac_%c3%a0_Termignon_c%c3%b4t%c3%a9_nord_au_matin_(ao%c3%bbt_2022).JPG"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lake_Pukaki_and_Mt_Cook.NZ_(15577767068).jpg#1",
+      "title": "File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg - Wikimedia Commons - File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg",
+      "snippet": "Lake Pukaki and Mt Cook.NZ (15577767068).jpg ... Lake Pukaki is a shimmering blue jewel set into a grand alpine playground - an iconic New Zealand landscape of high mountain peaks, glacier fed alpine lakes and golden tussocks stretched beneath an endless sky.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/snow-capped-mountains-reflecting-in-alpine-lake-0-LgP3r_UOg",
+      "title": "Photo by Praneeth Peiris on Unsplash",
+      "snippet": "Downloads 13 # Snow-capped mountains reflecting in a calm alpine lake under a bright blue sky Download this free HD photo of snow-capped mountains reflecting in a lake by @gnomezgrave Published on Free to use under the Unsplash License Browse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/",
+      "title": "Photo by Christopher Beck on Pexels",
+      "snippet": "Date Nov 19, 2020 Downloads ... Taken At Apr 19, 2019 Software Adobe ... (Macintosh) Tirol, Österreich Description # Scenic view of an Alpine lake with mountains reflecting in calm waters in Tirol, Austria. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Reflets_de_Tignes_-_Val_Claret_sur_le_lac_de_nuit_(%C3%A9t%C3%A9_2018).JPG",
+      "title": "File:Reflets de Tignes - Val Claret sur le lac de nuit (été 2018).JPG - Wikimedia Commons",
+      "snippet": "in a summer night, of the ''lac de Tignes'' lake, with visible at the background ''Tignes - Val Claret'' village ... France.}} {{fr|1=Vue, une nuit d'été, du ''lac de Tignes'' avec les reflets du village de ''Tignes - Val Claret''...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/landscape-photography-of-mountains-surrounded-by-body-of-water-8FNFEj9EcIs",
+      "title": "Photo by Andreas Gücklhorn on Unsplash",
+      "snippet": "landscape photography of mountains surrounded by body of water Download this free HD photo of shore, lake brienz, brienz, and switzerland in Brienz, Switzerland by Andreas Gücklhorn (@draufsicht) Published on Free to use under the Unsplash",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Granite_Bound_Tenaya_Lake,_Yosemite_NP_10-9-18_(44750481264).jpg#1",
+      "title": "File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg - Wikimedia Commons - File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg",
+      "snippet": "Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg ... There may not be a more spectacular setting for an alpine lake than that of Tenaya Lake in the high country of Yosemite.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/snow-capped-mountain-reflected-in-a-calm-lake-s2xR0QmZVI4",
+      "title": "Photo by Thierry Lemaitre on Unsplash",
+      "snippet": "Snow-capped mountain reflected in a calm lake Snow-covered peaks of Schreckhorn and Eiger rise behind Bachalpsee. The alpine lake reflects the sunlight on the peak of First First, Grindelwald, Switzerland Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/tranquil-alpine-lake-with-majestic-mountains-32481616/",
+      "title": "Photo by VISHNEVA on Pexels",
+      "snippet": "Add custom frames ##### VISHNEVA 384.6K views • 3.5K downloads Austria Description # Peaceful alpine lake reflecting mountains under a partly cloudy sky, perfect for nature lovers. ### More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-building-on-a-hill-by-a-body-of-water-IlaosFtLRmY",
+      "title": "Photo by Yasintha Perera on Unsplash",
+      "snippet": "a building on a hill by a body of water Iseltwald is a pretty village on the shores of Lake Brienz. Published on DJI, FC3411Free to use under the Unsplash License Browse ... 20% with code UNSPLASH20",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lac_de_Plan_du_Lac_%c3%a0_Termignon_c%c3%b4t%c3%a9_nord_au_matin_(ao%c3%bbt_2022).JPG",
+      "title": "File:Lac de Plan du Lac à Termignon côté nord au matin (août 2022).JPG - Wikimedia Commons",
+      "snippet": "{{Information |Description={{en|1=Sight, in a summer morning, of the north side of the lake of ''Plan du Lac'' locality on the heights of ''Termignon'', with ''Grande Casse'' mountain relecting on it, in Savoie, France.}} {{fr|1=Vue...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/reflections-of-mountains-on-water-OCGXUCCQblw",
+      "title": "Photo by Alec Olson on Unsplash",
+      "snippet": "Downloads 104 # reflections of mountains on water A mountain reflection on a glassy alpine lake in Banff National Park. Location: Lake Louise. Photo by Alec Olson (www.alecolson.com). Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/lac-alpin-pittoresque-avec-vue-majestueuse-sur-les-montagnes-35259426/",
+      "title": "Photo de Mauro Morandini sur Pexels",
+      "snippet": "4032x2268 Format 16:9 Couleurs Date Dec 17, 2025 Téléchargements ... Selva di Val Gardena, Italy Description # Lac alpin aux eaux cristallines, avec de superbes montagnes se reflétant sous un ciel bleu.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-body-of-water-with-boats-and-houses-along-it-nBhjD_eSZ94",
+      "title": "Photo by Yasintha Perera on Unsplash",
+      "snippet": "a body of water with boats and houses along it Iseltwald is a pretty village on the shores of Lake Brienz. Published on DJI, FC3411Free to use under the Unsplash License ... 520 images · Curated by",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-lakeside-town-is-nestled-among-mountain-ranges-qJVqL9wnGoA",
+      "title": "Photo by Fajar Al Hadi on Unsplash",
+      "snippet": "A lakeside town is nestled among mountain ranges. A stunning view of Hallstatt, Austria ... The picturesque village, nestled between steep alpine mountains and the calm lake, showcases its iconic church steeple ... The reflection on the water adds tranquility, while the misty blue mountains in the background enhance the dreamy atmosphere.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/smolyan-lakes-bulgaria-28143954/",
+      "title": "Photo by Rainer Eck on Pexels",
+      "snippet": "Date Aug 31, 2024 Downloads ... 5 Camera Canon EOS 5D Mark II ... Taken At Aug 17, 2024 Software Adobe Photoshop Lightroom Classic 7.1 (Windows) Bulgaria Description # Peaceful alpine lake reflecting mountains and forests in summer. ## More like this",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Pukaki_and_Mt_Cook.NZ_(15577767068).jpg#1",
+      "title": "File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg - Wikimedia Commons - File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/snow-capped-mountains-reflecting-in-alpine-lake-0-LgP3r_UOg",
+      "title": "Photo by Praneeth Peiris on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/",
+      "title": "Photo by Christopher Beck on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reflets_de_Tignes_-_Val_Claret_sur_le_lac_de_nuit_(%C3%A9t%C3%A9_2018).JPG",
+      "title": "File:Reflets de Tignes - Val Claret sur le lac de nuit (été 2018).JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/landscape-photography-of-mountains-surrounded-by-body-of-water-8FNFEj9EcIs",
+      "title": "Photo by Andreas Gücklhorn on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Granite_Bound_Tenaya_Lake,_Yosemite_NP_10-9-18_(44750481264).jpg#1",
+      "title": "File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg - Wikimedia Commons - File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/snow-capped-mountain-reflected-in-a-calm-lake-s2xR0QmZVI4",
+      "title": "Photo by Thierry Lemaitre on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/tranquil-alpine-lake-with-majestic-mountains-32481616/",
+      "title": "Photo by VISHNEVA on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-building-on-a-hill-by-a-body-of-water-IlaosFtLRmY",
+      "title": "Photo by Yasintha Perera on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lac_de_Plan_du_Lac_%c3%a0_Termignon_c%c3%b4t%c3%a9_nord_au_matin_(ao%c3%bbt_2022).JPG",
+      "title": "File:Lac de Plan du Lac à Termignon côté nord au matin (août 2022).JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/reflections-of-mountains-on-water-OCGXUCCQblw",
+      "title": "Photo by Alec Olson on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/lac-alpin-pittoresque-avec-vue-majestueuse-sur-les-montagnes-35259426/",
+      "title": "Photo de Mauro Morandini sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-body-of-water-with-boats-and-houses-along-it-nBhjD_eSZ94",
+      "title": "Photo by Yasintha Perera on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-lakeside-town-is-nestled-among-mountain-ranges-qJVqL9wnGoA",
+      "title": "Photo by Fajar Al Hadi on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/smolyan-lakes-bulgaria-28143954/",
+      "title": "Photo by Rainer Eck on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/5930143/pexels-photo-5930143.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/",
+      "title": "Photo by Christopher Beck on Pexels",
+      "sha256": "af5435d030242e9b98cc3aef5277a15a190ac5f4846f65f237b4a18d62a02025",
+      "bytes": 79736,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32481616/pexels-photo-32481616.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/tranquil-alpine-lake-with-majestic-mountains-32481616/",
+      "title": "Photo by VISHNEVA on Pexels",
+      "sha256": "149daf39fcc3d71896c0787a0619a190a81acbb4b4fbf9c943026fb1b8eeb68d",
+      "bytes": 81618,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/35259426/pexels-photo-35259426.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/lac-alpin-pittoresque-avec-vue-majestueuse-sur-les-montagnes-35259426/",
+      "title": "Photo de Mauro Morandini sur Pexels",
+      "sha256": "6cc4b3bbcdee256a7dec51dead7dae1b1a4527e33b8b68d0ec9ba0193aa23c84",
+      "bytes": 193806,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Pukaki_and_Mt_Cook.NZ_(15577767068).jpg#1",
+        "title": "File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg - Wikimedia Commons - File:Lake Pukaki and Mt Cook.NZ (15577767068).jpg",
+        "status": "unavailable",
+        "error": "size_limit"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/snow-capped-mountains-reflecting-in-alpine-lake-0-LgP3r_UOg",
+        "title": "Photo by Praneeth Peiris on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/",
+        "title": "Photo by Christopher Beck on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/5930143/pexels-photo-5930143.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 79736,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "af5435d030242e9b98cc3aef5277a15a190ac5f4846f65f237b4a18d62a02025"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reflets_de_Tignes_-_Val_Claret_sur_le_lac_de_nuit_(%C3%A9t%C3%A9_2018).JPG",
+        "title": "File:Reflets de Tignes - Val Claret sur le lac de nuit (été 2018).JPG - Wikimedia Commons",
+        "status": "unavailable",
+        "error": "size_limit"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/landscape-photography-of-mountains-surrounded-by-body-of-water-8FNFEj9EcIs",
+        "title": "Photo by Andreas Gücklhorn on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Granite_Bound_Tenaya_Lake,_Yosemite_NP_10-9-18_(44750481264).jpg#1",
+        "title": "File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg - Wikimedia Commons - File:Granite Bound Tenaya Lake, Yosemite NP 10-9-18 (44750481264).jpg",
+        "status": "unavailable",
+        "error": "size_limit"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/snow-capped-mountain-reflected-in-a-calm-lake-s2xR0QmZVI4",
+        "title": "Photo by Thierry Lemaitre on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/tranquil-alpine-lake-with-majestic-mountains-32481616/",
+        "title": "Photo by VISHNEVA on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/32481616/pexels-photo-32481616.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 81618,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "149daf39fcc3d71896c0787a0619a190a81acbb4b4fbf9c943026fb1b8eeb68d"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/a-building-on-a-hill-by-a-body-of-water-IlaosFtLRmY",
+        "title": "Photo by Yasintha Perera on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lac_de_Plan_du_Lac_%c3%a0_Termignon_c%c3%b4t%c3%a9_nord_au_matin_(ao%c3%bbt_2022).JPG",
+        "title": "File:Lac de Plan du Lac à Termignon côté nord au matin (août 2022).JPG - Wikimedia Commons",
+        "status": "unavailable",
+        "error": "size_limit"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/reflections-of-mountains-on-water-OCGXUCCQblw",
+        "title": "Photo by Alec Olson on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/lac-alpin-pittoresque-avec-vue-majestueuse-sur-les-montagnes-35259426/",
+        "title": "Photo de Mauro Morandini sur Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/35259426/pexels-photo-35259426.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 193806,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "6cc4b3bbcdee256a7dec51dead7dae1b1a4527e33b8b68d0ec9ba0193aa23c84"
+      }
+    ],
+    "downloadedCount": 3,
+    "method": "public source-page image metadata; container, dimensions and byte hash checked; not render textures"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮实际检索到 6 个可对应“高山湖泊 + 水面反射”的照片详情页，覆盖 Wikimedia Commons（含 CC0 / CC BY-SA）、Unsplash、Pexels。**未获取图片字节，以下远近层次、岸线、反射特征均基于来源页标题与描述推断，待原图核验。** 未发现可直接确认“岸线细节”的独立描述页，Commons 结果以文件页为主，Unsplash/Pexels 页面文本较简。\n\n### 候选照片页面\n\n**1. Wikimedia Commons：Lake Pukaki 与 Mt Cook（新西兰南阿尔卑斯）**\n- 来源页：https://commons.wikimedia.org/wiki/File:Lake_Pukaki_and_Mt_Cook.NZ_(15577767068).jpg\n- 作者：Bernard Spragg. NZ；许可：**CC0 1.0**（页面明确标注公共领域贡献）\n- 可转化细节（推断）：描述强调“冰川补给的高山湖泊”“绿松石色湖面”“狭长冰川谷”以及主峰对湖面的支配关系。适合提取**远山—湖面—天空**的三层纵深；湖岸为“金色草丛”暗示，但页面未给出近景岸线结构。曝光 1/1600s，推测为日光下高反射场景，水面可能偏亮、需注意高光裁切。原始尺寸 2400×1594，适合作为中远景层次参考。\n\n**2. Unsplash：雪山倒映在平静高山湖（Praneeth Peiris）**\n- 来源页：https://unsplash.com/photos/snow-capped-mountains-reflecting-in-alpine-lake-0-LgP3r_UOg\n- 作者：@gnomezgrave；许可：Unsplash License（页面标注 Free to use）\n- 可转化细节（推断）：标题直接给出“雪山倒映 + 平静湖面 + 亮蓝天空”，适合提取**对称倒影构图**与远山轮廓在水面的镜像边缘。页面未描述岸线或前景遮挡物，需原图确认湖岸是否有岩石/植被作为近景锚点。若水面平静，反射边缘较锐利，适合转化为“边缘响应—反射衰减”关系。\n\n**3. Pexels：奥地利蒂罗尔高山湖倒影（Christopher Beck）**\n- 来源页：https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/\n- 作者：Christopher Beck；许可：待核验（Pexels 标准许可，页面未在返回文本中展示完整许可字段）\n- 可转化细节（推断）：页面标题“Alpine lake with mountains reflecting in calm waters in Tirol, Austria”，相机 ILCE-7M3、24mm、f/4.5、ISO 50、1/640s。24mm 广角适合表现**远山—湖面—岸线**的空间纵深；f/4.5 中小光圈使远山与倒影均处于可接受清晰范围。ISO 50 与 1/640s 提示充足日光，水面反射可能包含天空亮部与山体暗部的强对比。岸线形态未描述，需原图确认是否有砾石/草甸过渡带。\n\n**4. Unsplash：Lake Brienz 山水（Andreas Gücklhorn）**\n- 来源页：https://unsplash.com/photos/landscape-photography-of-mountains-surrounded-by-body-of-water-8FNFEj9EcIs\n- 作者：Andreas Gücklhorn；许可：Unsplash License（Free to use）\n- 可转化细节（推断）：标题“mountains surrounded by body of water”，地点 Brienz, Switzerland，标签含 shore、lake brienz。适合提取**湖泊被山体环抱**的封闭水域形态与岸线走向；但页面未说明水面反射强度、是否有波纹或前景。需原图确认反射是否完整、岸线是否清晰可辨。该图可作为“湖泊—山体边界”的构图参考。\n\n**5. Wikimedia Commons：Tenaya Lake，Yosemite（花岗岩高山湖）**\n- 来源页：https://commons.wikimedia.org/wiki/File:Granite_Bound_Tenaya_Lake,_Yosemite_NP_10-9-18_(44750481264).jpg\n- 作者：Don Graham；许可：**CC BY-SA 2.0**（页面明确标注）\n- 可转化细节（推断）：描述明确“完全被花岗岩穹丘环绕”“岸线花岗岩巨石保持冰川遗留位置”。这是本轮**岸线材质信息最具体**的候选：近景岸线为浅色花岗岩块体，边缘硬朗、纹理粗粒；湖面反射与岩石边界形成高对比。曝光 1/640s，日期 10 月 11:52，光照角度可能偏侧，岩石投影与水面高光可同时出现。原始 2800×1985，适合提取岩石—水面接触边缘。但页面未说明湖面是否平静，反射清晰度待原图确认。\n\n**6. Unsplash：Lake Louise 玻璃般高山湖倒影（Alec Olson）**\n- 来源页：https://unsplash.com/photos/reflections-of-mountains-on-water-OCGXUCCQblw\n- 作者：Alec Olson；许可：Unsplash License（Free to use）\n- 可转化细节（推断）：标题“reflections of mountains on water”，描述明确“a mountain reflection on a glassy alpine lake in Banff National Park. Location: Lake Louise”。**“glassy”直接指向平静水面**，反射应较完整、边缘较锐利，适合提取远山倒影的垂直对称关系。页面未描述岸线细节或前景，需原图确认是否有近岸岩石/树木作为尺度锚点。可作为“理想平静反射”与第 3 张蒂罗尔湖的“实拍反射”对比参考。\n\n### 检索缺口与局限\n- **岸线信息不均**：6 张中仅 Tenaya Lake 的页面描述明确提到岸线为花岗岩巨石；其余页面以“lake”“calm waters”“shore”标签为主，未给出岸线材质、坡度或植被过渡细节。若本轮重点包含“岸线”，需优先获取 Tenaya Lake 原图，并对其他候选原图专门核验近景 10–20% 画面内容。\n- **反射强度分级不足**：Unsplash 的 Lake Louise 标注“glassy”，Pexels 蒂罗尔湖标注“calm waters”，但未说明是否有微风波纹、反射边缘是否破碎。需原图判断“镜面反射—波纹调制”的过渡。\n- **Wikimedia Commons 单张文件页已获取**：本轮获得 3 个独立 Commons 文件页（Pukaki、Tignes 夜景、Tenaya），其中 Pukaki 为 CC0、Tenaya 为 CC BY-SA 2.0，Tignes 夜景为 CC BY-SA 4.0 但以夜间村庄反射为主，与本轮“山水实拍”白天场景匹配度较低，故未列为正式候选。\n- **未获取图片字节**：所有形态、材质、光照判断均基于页面文本，待后续原图验证。\n\n### 下一轮定向建议\n1. 优先获取 **Tenaya Lake** 原图，核验花岗岩岸线与水面接触边缘的明度对比、岩石纹理尺度。\n2. 获取 **Lake Louise** 与 **蒂罗尔湖** 原图，对比“glassy”与“calm”两种描述下的实际反射边缘锐度，确认是否存在波纹调制。\n3. 若需补充岸线植被/砾石过渡，可在 Commons 用 `alpine lake shore boulders` 或 `lac d'altitude rive` 检索独立 File 页，避免分类页。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 11185,
+    "completion_tokens": 1750,
+    "total_tokens": 12935,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "9f8a9d59-5629-41a8-bf7d-4b18b3a24374",
+        "model": "deepseek-flash",
+        "elapsedMs": 16582,
+        "prompt_tokens": 11185,
+        "completion_tokens": 1750,
+        "total_tokens": 12935,
+        "server_tool_use": {
+          "tool_search": 5,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 59565,
+  "downloads": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/5930143/pexels-photo-5930143.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-calm-lake-5930143/",
+      "title": "Photo by Christopher Beck on Pexels",
+      "sha256": "af5435d030242e9b98cc3aef5277a15a190ac5f4846f65f237b4a18d62a02025",
+      "bytes": 79736,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r08.af5435d03024",
+      "round": 8,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r08.af5435d03024.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "高山湖泊与水面反射实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32481616/pexels-photo-32481616.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/tranquil-alpine-lake-with-majestic-mountains-32481616/",
+      "title": "Photo by VISHNEVA on Pexels",
+      "sha256": "149daf39fcc3d71896c0787a0619a190a81acbb4b4fbf9c943026fb1b8eeb68d",
+      "bytes": 81618,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r08.149daf39fcc3",
+      "round": 8,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r08.149daf39fcc3.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "高山湖泊与水面反射实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/35259426/pexels-photo-35259426.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/lac-alpin-pittoresque-avec-vue-majestueuse-sur-les-montagnes-35259426/",
+      "title": "Photo de Mauro Morandini sur Pexels",
+      "sha256": "6cc4b3bbcdee256a7dec51dead7dae1b1a4527e33b8b68d0ec9ba0193aa23c84",
+      "bytes": 193806,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r08.6cc4b3bbcdee",
+      "round": 8,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r08.6cc4b3bbcdee.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "高山湖泊与水面反射实拍"
+    }
+  ]
+}

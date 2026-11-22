@@ -1,0 +1,115 @@
+{
+  "schema": "crf.release_acceptance.v0.8",
+  "version": "0.8.0",
+  "status": "working_prototype_with_open_quality_gates",
+  "learning": {
+    "requestedRounds": 10,
+    "completedSearchRounds": 10,
+    "recordedRoundAttempts": 12,
+    "nativeSearchProviderRequests": 11,
+    "directSearchAPIRequests": 2,
+    "totalSearchProviderRequests": 13,
+    "semanticProviderRequests": 10,
+    "totalProviderRequests": 23,
+    "learningProviderRequests": 23,
+    "distinctSourcePages": 137,
+    "downloadedDistinctImages": 42,
+    "visuallyDescribedImages": 42,
+    "pendingSemanticImages": 0,
+    "fullFrameFittedFunctions": 42,
+    "objectFittedFunctions": 14,
+    "fittedFunctions": 56,
+    "pendingFullFrameFits": 0,
+    "failedFullFrameFits": 0,
+    "duplicateFullFrameObservations": 0,
+    "failedObjectFits": 0,
+    "pendingObjectFits": 0,
+    "semanticObjectCandidates": 16,
+    "candidateNotExtracted": 2,
+    "compositionEligibleObjectFunctions": 9,
+    "catalogAssets": 77,
+    "verifiedDownloadFiles": 42,
+    "missingOrMismatchedDownloadFiles": 0,
+    "missingFitArtifacts": 0,
+    "manuallyCorrectedObjectFunctions": 3,
+    "collectionAttempts": 111,
+    "failedCollectionAttempts": 69,
+    "downloadVariants": {
+      "proportional_source_resize": 6,
+      "source_og_crop": 33,
+      "source_raster_or_unknown": 3
+    }
+  },
+  "generation": {
+    "completedCases": 6,
+    "distinctProviderRequests": 21,
+    "observedImageCritiqueRequests": 6,
+    "retainedCandidateRenders": 15,
+    "finalRenders": 6
+  },
+  "nativeReference": {
+    "width": 667,
+    "height": 1000,
+    "completeImage": {
+      "mae": 1.151816091954023,
+      "rmse": 1.71318023183395,
+      "psnr": 43.45474251897208,
+      "ssim": 0.9755363189227315,
+      "maxError": 33,
+      "exactRGBFraction": 0.15825337331334333,
+      "evaluatedPixels": 667000,
+      "rounding": "floor(x+0.5), clamp 0..255"
+    },
+    "editable18Layers": {
+      "mae": 1.5152653673163419,
+      "rmse": 2.21480367580037,
+      "psnr": 41.22409889632681,
+      "ssim": 0.9551302603493509,
+      "maxError": 60,
+      "exactRGBFraction": 0.13908845577211396,
+      "evaluatedPixels": 667000,
+      "rounding": "floor(x+0.5), clamp 0..255"
+    },
+    "highFidelityGatePassed": false,
+    "exact100PercentPassed": false
+  },
+  "implementationTests": {
+    "uniqueNodeTestsPassed": 130,
+    "legacyFilesRetained": 223,
+    "pythonJSNative65KMatchingRGBA": true,
+    "localBrowserActionsObserved": [
+      "load eighteen-layer street",
+      "hide pedestrian signal and undo",
+      "run actual 1024-Gaussian fit",
+      "display 10-round learning ledger and 56 fitted functions"
+    ],
+    "browserLowBudgetFit": {
+      "width": 512,
+      "height": 768,
+      "gaussians": 1024,
+      "coefficientPasses": 2,
+      "maeDisplayed": 13.48,
+      "psnrDisplayed": 20.62
+    },
+    "actualBrowserPNGExportMatchesOfflineRGBA": true,
+    "isolatedRenderKitMatchesRGBA": true
+  },
+  "scope": {
+    "reconstruction": true,
+    "semanticFunctionComposition": true,
+    "genericPhotorealisticTextToImageProven": false,
+    "newUnobservedViewsReconstructed": false,
+    "modelWeightsUpdated": false,
+    "depthProWeightsIntegrated": false
+  },
+  "evidence": {
+    "gaussian": "reports/v08/gaussian_acceptance.json",
+    "protectedPixels": "reports/v08/semantic_edit_acceptance.json",
+    "learning": "web/assets/v08/learning.json",
+    "generation": "reports/v08/generation/summary.json",
+    "regression": "reports/v08/integration_verification.json",
+    "appleBoundaryRepair": "reports/v08/fruit.apple.mask_revision.json",
+    "browserDownload": "reports/v08/browser_download_verification.json",
+    "renderKit": "reports/v08/render_kit_verification.json"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "crf.actual_render.v0.8",
+  "sceneId": "street.full",
+  "width": 667,
+  "height": 1000,
+  "objectCount": 1,
+  "gaussianCount": 65536,
+  "elapsedMs": 473.99179300000014,
+  "rgbaSHA256": "1c4f59230a8702dde2e84b4ddaf919e1c52e1c642fa5e16693015962a23e05ba",
+  "pngSHA256": "cb29f5f38a342b4ded8f1027578a1eeada581015a635614c6af9263983ae0d8e",
+  "engine": "web/crf-gaussian08.js",
+  "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+  "sourceRasterReadByRenderer": false,
+  "assetIds": [
+    "street.reference"
+  ],
+  "metrics": {
+    "mae": 1.151816091954023,
+    "rmse": 1.71318023183395,
+    "psnr": 43.45474251897208,
+    "maxError": 33,
+    "exactRGBFraction": 0.15825337331334333,
+    "evaluatedPixels": 667000,
+    "ssim": null,
+    "ssimNote": "Full Gaussian-window SSIM is reported by the offline verifier."
+  }
+}

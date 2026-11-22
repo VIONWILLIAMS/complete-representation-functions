@@ -1,0 +1,683 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 7,
+  "query": "墙面与建筑窗户的实拍",
+  "checkpoint": {
+    "sessionId": "crf08-ten-rounds",
+    "round": 7,
+    "topic": "墙面与建筑窗户的实拍",
+    "subtopic": "4–6张阳光投射墙面、窗框或建筑立面的照片，关注材质、直线、阴影与光照",
+    "status": "searched",
+    "completedAt": "2026-11-21T13:27:33.303Z",
+    "runId": "crf07_05c6c6fc-88f1-4cd4-8888-6ed509184134",
+    "queries": [
+      "site:commons.wikimedia.org sunlit wall window shadow \"sunlight\" file -category -Wikimedia Commons search",
+      "site:unsplash.com sunlit wall window shadow architecture photos",
+      "site:pexels.com sunlight on wall window frame shadow architecture photo",
+      "Wikimedia Commons sunlit wall window shadow file -category -Wikimedia Commons search",
+      "site:unsplash.com sunlight and shadow on building facade close up",
+      "site:pexels.com sunlight shadow on building facade close up"
+    ],
+    "requestIds": [
+      "aa43c0c9-73bd-46b0-81c7-1bc9247a8f4a"
+    ],
+    "sourceCount": 15,
+    "newSourceCount": 15,
+    "candidateCount": 15,
+    "downloadedImageCount": 6,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_3b48df268c1d47a28fd6ef4bd545410b",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org sunlit wall window shadow \"sunlight\" file -category -Wikimedia Commons search",
+            "site:unsplash.com sunlit wall window shadow architecture photos",
+            "site:pexels.com sunlight on wall window frame shadow architecture photo",
+            "Wikimedia Commons sunlit wall window shadow file -category -Wikimedia Commons search",
+            "site:unsplash.com sunlight and shadow on building facade close up",
+            "site:pexels.com sunlight shadow on building facade close up"
+          ]
+        },
+        "sourceUrls": [
+          "https://unsplash.com/photos/orange-building-wall-with-window-and-lantern-shadow-Ky81JOMNd8k",
+          "https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/",
+          "https://unsplash.com/photos/shadows-of-a-structure-cast-on-a-wall-_B5IInGVakY",
+          "https://www.pexels.com/zh-cn/photo/22820358/",
+          "https://unsplash.com/photos/stone-wall-illuminated-by-warm-sunset-light-bAZ_FV5_-X0",
+          "https://www.pexels.com/zh-cn/photo/37152155/",
+          "https://unsplash.com/photos/abstract-pattern-of-light-and-shadow-on-textured-surface-KgtOr1cCECw",
+          "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+          "https://unsplash.com/photos/window-with-greenery-against-a-tiled-wall-Z0lEv5exgAE",
+          "https://www.pexels.com/zh-tw/photo/32560039/",
+          "https://unsplash.com/photos/sunlight-casts-street-lamp-shadow-on-building-wall-ay6UbwexLK8",
+          "https://www.pexels.com/zh-cn/photo/32609760/",
+          "https://unsplash.com/photos/the-shadow-of-a-tree-on-the-wall-of-a-building-qfcFPVOXMOQ",
+          "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+          "https://unsplash.com/photos/modern-building-facade-with-warm-sunset-light-and-shadows-UtPcEr_B22M"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://unsplash.com/photos/orange-building-wall-with-window-and-lantern-shadow-Ky81JOMNd8k",
+        "title": "Photo by Aaryan Kohli on Unsplash",
+        "snippet": "Orange building wall with window and lantern shadow Download this free HD photo of wall, sunlight, light and shadow, and building facade in Varenna, Italy by Aaryan Kohli (@aaryankohli) Varenna, Province of Lecco...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/",
+        "title": "Photo by Lara on Pexels",
+        "snippet": "Choose your language: Afterglow Street Festive Summer Description # Sunlight casts intricate plant shadows on an urban wall beneath a classical window. ## More like this Afterglow Street Festive Summer",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/shadows-of-a-structure-cast-on-a-wall-_B5IInGVakY",
+        "title": "Photo by Md Arif Hasan on Unsplash",
+        "snippet": "Shadows of a structure cast on a wall A striking black and white photo capturing the dramatic interplay of light and shadow on a modern building in Bedford, UK. The strong sunlight casts intricate geometric patterns on the facade, highlighting the building's architectural lines and creating a dynamic, abstract composition.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/22820358/",
+        "title": "Pexels Matthew Jackson图片",
+        "snippet": "4000x6000 ... Adobe Photoshop Lightroom Classic 13.2 (Windows) ... 描述 # 一栋阳光照射的建筑外立面，在芝加哥的一条街道上投射出戏剧性的阴影。 ## 更多相似内容 Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/stone-wall-illuminated-by-warm-sunset-light-bAZ_FV5_-X0",
+        "title": "Photo by Josip Ivankovic on Unsplash",
+        "snippet": "Stone wall illuminated by warm sunset light Download this free HD photo of window, golden hour, shadows, and stone wall in Stari Grad, Kroatien by Josip Ivankovic (@piak) ... Published on Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/37152155/",
+        "title": "Pexels Matthew Jesús图片",
+        "snippet": "4000x6000 宽高比 2 ... 软件 Adobe Lightroom 11.1.0 (iOS) 描述 # 特写石头建筑的角落，配有黄色框架的窗户投射出阴影。 ### 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/abstract-pattern-of-light-and-shadow-on-textured-surface-KgtOr1cCECw",
+        "title": "Photo by Dmytro Yarish on Unsplash",
+        "snippet": "This image features a close-up, abstract view of a building's facade with a repetitive pattern of curved, wave-like panels in grayscale. The focus is on texture and form, emphasizing the interplay of light and shadow across the undulating surface.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+        "title": "Photo by Аlex Ugolkov on Pexels",
+        "snippet": "Afterglow Street Festive ... Dimensions 2270x4032 Aspect Ratio 1135:2016 ... VSCO Vladivostok, Primorskiy kray, Russia Description # A shadow cast on a white brick wall creating a silhouette effect during daylight. ## More like this Afterglow",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/window-with-greenery-against-a-tiled-wall-Z0lEv5exgAE",
+        "title": "Photo by Alexander Zaytsev on Unsplash",
+        "snippet": "––– –––– –––– # Window with greenery against a tiled wall. Download this free HD photo of building, plant, wall, and shadow in Lisbon, Portugal by Alexander Zaytsev (@anwaltzzz) Lisbon, Portugal Published on Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/32560039/",
+        "title": "Pexels 上由 Zehra İslamoğlu 拍攝的相片",
+        "snippet": "瀏覽次數 11.9 千 按讚數 1 說明 在陽光下，格柵窗在有紋理的牆壁上投射出複雜的陰影。 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/sunlight-casts-street-lamp-shadow-on-building-wall-ay6UbwexLK8",
+        "title": "Photo by T on Unsplash",
+        "snippet": "Sunlight casts street lamp shadow on building wall Download this HD photo of blue, summer, architecture, and wall by T (@tanyabarrow) Published on Licensed under the Unsplash+ License Upgrade to Unsplash+ and start creating with exclusive, royalty-free images.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/32609760/",
+        "title": "Pexels Willian Justen de Vasconcellos图片",
+        "snippet": "filters, effects Make presentations Create photo collages Add custom frames ... 3639x5459 ... Adobe Lightroom 8.4 (Macintosh) New York, New York, United States 描述 # 温暖的阳光在纽约市的一座艺术装饰风格建筑上投下阴影。 ### 更多相似内容 Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/the-shadow-of-a-tree-on-the-wall-of-a-building-qfcFPVOXMOQ",
+        "title": "Photo by Anthamone on Unsplash",
+        "snippet": "––– –––– –––– # The shadow of a tree on the wall of a building window with reflections of trees and soft shadows of leaves cast on the wall. The sunlight creates a minimalist and natural atmosphere. Published on Free to use under the Unsplash License Browse",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+        "title": "Photo by Steffen Rühlmann on Pexels",
+        "snippet": "4242x2828 Aspect Ratio 3 ... Camera X-E5 Focal 56.0mm ... Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/modern-building-facade-with-warm-sunset-light-and-shadows-UtPcEr_B22M",
+        "title": "Photo by Jason Leung on Unsplash",
+        "snippet": "––– –––– –––– # Modern building facade with warm sunset light and shadows. Download this free HD photo of sunlight, geometric pattern, modern architecture, and shadows by Jason Leung (@ninjason) Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮实际检索到 6 个可对应“阳光投射墙面/窗框/建筑立面”的照片详情页，集中在 Unsplash 与 Pexels。**未获取图片字节，材质、直线与阴影细节均基于来源页标题与描述推断，待原图核验**。Wikimedia Commons 未返回独立文件详情页，故不列为正式候选。\n\n### 候选照片页面\n\n**1. Unsplash：橙色墙面、窗户与灯笼阴影**\n- 来源页：https://unsplash.com/photos/orange-building-wall-with-window-and-lantern-shadow-Ky81JOMNd8k\n- 作者：Aaryan Kohli；许可：Unsplash License \n- 可转化细节（推断）：标题同时包含 wall、window、shadow，适合提取墙面暖色主调、窗框矩形边缘与投射阴影的几何关系。页面未说明光照角度与阴影硬度。\n\n**2. Pexels：阳光墙面上的窗影与植物阴影**\n- 来源页：https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/\n- 作者：Lara；许可：待核验 \n- 可转化细节（推断）：描述提及“intricate plant shadows on an urban wall beneath a classical window”，适合观察窗下墙面上的柔化植物影与建筑直线并置。古典窗暗示可能存在线脚或窗套层次，但需原图确认。\n\n**3. Unsplash：结构阴影投射在墙面上（黑白）**\n- 来源页：https://unsplash.com/photos/shadows-of-a-structure-cast-on-a-wall-_B5IInGVakY\n- 作者：Md Arif Hasan；许可：Unsplash License \n- 可转化细节（推断）：页面明确描述“strong sunlight casts intricate geometric patterns on the facade, highlighting architectural lines”，适合提取高对比光影下的建筑直线与几何阴影分割。黑白影像便于分离明暗边界，但颜色信息缺失，材质仅能通过灰度纹理推断。\n\n**4. Pexels：芝加哥阳光建筑立面与街道阴影**\n- 来源页：https://www.pexels.com/zh-cn/photo/22820358/\n- 作者：Matthew Jackson；许可：待核验 \n- 可转化细节（推断）：标题强调“阳光照射的建筑外立面”与“戏剧性的阴影”，适合提取立面体块转折处的受光面与背光面交界。城市街道背景可能引入干扰，需确认主体立面是否占据足够画面比例。\n\n**5. Unsplash：暖色夕照下的石墙与窗**\n- 来源页：https://unsplash.com/photos/stone-wall-illuminated-by-warm-sunset-light-bAZ_FV5_-X0\n- 作者：Josip Ivankovic；许可：Unsplash License \n- 可转化细节（推断）：标签含 window、golden hour、shadows、stone wall，适合观察低角度暖光下石材表面粗糙度与窗洞深度的表现。黄昏光比大，阴影区域细节可能压缩，需原图核验石材纹理是否可辨。\n\n**6. Unsplash：窗与绿植，瓷砖墙面**\n- 来源页：https://unsplash.com/photos/window-with-greenery-against-a-tiled-wall-Z0lEv5exgAE\n- 作者：Alexander Zaytsev；许可：Unsplash License \n- 可转化细节（推断）：标题含 window、wall、shadow、tiled，适合提取瓷砖规则网格与窗框直线之间的尺度对比。绿植可能产生不规则阴影或遮挡窗缘，需确认是否干扰直线提取。\n\n### 检索缺口与建议\n\n本轮未获得 Wikimedia Commons 单张文件详情页；Pexels 候选的作者与许可字段在返回文本中不完整，需后续核验。若需补足“窗框与墙体交接的构造细节”，可在 Unsplash/Pexels 定向搜索 `window frame stone wall shadow`、`window recess sunlight`，避免只搜 `facade` 返回远景建筑。上述 6 页均未在返回文本中给出原始图像直链，后续获取字节时以详情页内下载入口为准。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://unsplash.com/photos/orange-building-wall-with-window-and-lantern-shadow-Ky81JOMNd8k",
+      "title": "Photo by Aaryan Kohli on Unsplash",
+      "snippet": "Orange building wall with window and lantern shadow Download this free HD photo of wall, sunlight, light and shadow, and building facade in Varenna, Italy by Aaryan Kohli (@aaryankohli) Varenna, Province of Lecco...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/",
+      "title": "Photo by Lara on Pexels",
+      "snippet": "Choose your language: Afterglow Street Festive Summer Description # Sunlight casts intricate plant shadows on an urban wall beneath a classical window. ## More like this Afterglow Street Festive Summer",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/shadows-of-a-structure-cast-on-a-wall-_B5IInGVakY",
+      "title": "Photo by Md Arif Hasan on Unsplash",
+      "snippet": "Shadows of a structure cast on a wall A striking black and white photo capturing the dramatic interplay of light and shadow on a modern building in Bedford, UK. The strong sunlight casts intricate geometric patterns on the facade, highlighting the building's architectural lines and creating a dynamic, abstract composition.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/22820358/",
+      "title": "Pexels Matthew Jackson图片",
+      "snippet": "4000x6000 ... Adobe Photoshop Lightroom Classic 13.2 (Windows) ... 描述 # 一栋阳光照射的建筑外立面，在芝加哥的一条街道上投射出戏剧性的阴影。 ## 更多相似内容 Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/stone-wall-illuminated-by-warm-sunset-light-bAZ_FV5_-X0",
+      "title": "Photo by Josip Ivankovic on Unsplash",
+      "snippet": "Stone wall illuminated by warm sunset light Download this free HD photo of window, golden hour, shadows, and stone wall in Stari Grad, Kroatien by Josip Ivankovic (@piak) ... Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/37152155/",
+      "title": "Pexels Matthew Jesús图片",
+      "snippet": "4000x6000 宽高比 2 ... 软件 Adobe Lightroom 11.1.0 (iOS) 描述 # 特写石头建筑的角落，配有黄色框架的窗户投射出阴影。 ### 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/abstract-pattern-of-light-and-shadow-on-textured-surface-KgtOr1cCECw",
+      "title": "Photo by Dmytro Yarish on Unsplash",
+      "snippet": "This image features a close-up, abstract view of a building's facade with a repetitive pattern of curved, wave-like panels in grayscale. The focus is on texture and form, emphasizing the interplay of light and shadow across the undulating surface.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "snippet": "Afterglow Street Festive ... Dimensions 2270x4032 Aspect Ratio 1135:2016 ... VSCO Vladivostok, Primorskiy kray, Russia Description # A shadow cast on a white brick wall creating a silhouette effect during daylight. ## More like this Afterglow",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/window-with-greenery-against-a-tiled-wall-Z0lEv5exgAE",
+      "title": "Photo by Alexander Zaytsev on Unsplash",
+      "snippet": "––– –––– –––– # Window with greenery against a tiled wall. Download this free HD photo of building, plant, wall, and shadow in Lisbon, Portugal by Alexander Zaytsev (@anwaltzzz) Lisbon, Portugal Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/32560039/",
+      "title": "Pexels 上由 Zehra İslamoğlu 拍攝的相片",
+      "snippet": "瀏覽次數 11.9 千 按讚數 1 說明 在陽光下，格柵窗在有紋理的牆壁上投射出複雜的陰影。 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/sunlight-casts-street-lamp-shadow-on-building-wall-ay6UbwexLK8",
+      "title": "Photo by T on Unsplash",
+      "snippet": "Sunlight casts street lamp shadow on building wall Download this HD photo of blue, summer, architecture, and wall by T (@tanyabarrow) Published on Licensed under the Unsplash+ License Upgrade to Unsplash+ and start creating with exclusive, royalty-free images.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/32609760/",
+      "title": "Pexels Willian Justen de Vasconcellos图片",
+      "snippet": "filters, effects Make presentations Create photo collages Add custom frames ... 3639x5459 ... Adobe Lightroom 8.4 (Macintosh) New York, New York, United States 描述 # 温暖的阳光在纽约市的一座艺术装饰风格建筑上投下阴影。 ### 更多相似内容 Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/the-shadow-of-a-tree-on-the-wall-of-a-building-qfcFPVOXMOQ",
+      "title": "Photo by Anthamone on Unsplash",
+      "snippet": "––– –––– –––– # The shadow of a tree on the wall of a building window with reflections of trees and soft shadows of leaves cast on the wall. The sunlight creates a minimalist and natural atmosphere. Published on Free to use under the Unsplash License Browse",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "snippet": "4242x2828 Aspect Ratio 3 ... Camera X-E5 Focal 56.0mm ... Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/modern-building-facade-with-warm-sunset-light-and-shadows-UtPcEr_B22M",
+      "title": "Photo by Jason Leung on Unsplash",
+      "snippet": "––– –––– –––– # Modern building facade with warm sunset light and shadows. Download this free HD photo of sunlight, geometric pattern, modern architecture, and shadows by Jason Leung (@ninjason) Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://unsplash.com/photos/orange-building-wall-with-window-and-lantern-shadow-Ky81JOMNd8k",
+      "title": "Photo by Aaryan Kohli on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/",
+      "title": "Photo by Lara on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/shadows-of-a-structure-cast-on-a-wall-_B5IInGVakY",
+      "title": "Photo by Md Arif Hasan on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/22820358/",
+      "title": "Pexels Matthew Jackson图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/stone-wall-illuminated-by-warm-sunset-light-bAZ_FV5_-X0",
+      "title": "Photo by Josip Ivankovic on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37152155/",
+      "title": "Pexels Matthew Jesús图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/abstract-pattern-of-light-and-shadow-on-textured-surface-KgtOr1cCECw",
+      "title": "Photo by Dmytro Yarish on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/window-with-greenery-against-a-tiled-wall-Z0lEv5exgAE",
+      "title": "Photo by Alexander Zaytsev on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/32560039/",
+      "title": "Pexels 上由 Zehra İslamoğlu 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/sunlight-casts-street-lamp-shadow-on-building-wall-ay6UbwexLK8",
+      "title": "Photo by T on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/32609760/",
+      "title": "Pexels Willian Justen de Vasconcellos图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/the-shadow-of-a-tree-on-the-wall-of-a-building-qfcFPVOXMOQ",
+      "title": "Photo by Anthamone on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/modern-building-facade-with-warm-sunset-light-and-shadows-UtPcEr_B22M",
+      "title": "Photo by Jason Leung on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/33794191/pexels-photo-33794191.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/",
+      "title": "Photo by Lara on Pexels",
+      "sha256": "7be8fd8c005aca1be328a3935e812f0f117dd2ac1fa4b231abefc5da4b11e5ae",
+      "bytes": 37512,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/22820358/pexels-photo-22820358.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/22820358/",
+      "title": "Pexels Matthew Jackson图片",
+      "sha256": "b29b99c456f076de21a9f384f171a90ee64557eb75f07e9715f93eed8920a1a1",
+      "bytes": 55556,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/37152155/pexels-photo-37152155.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37152155/",
+      "title": "Pexels Matthew Jesús图片",
+      "sha256": "97c1ada5f6737a81f1134f7662ed4b651930bfb3270b63eff08b7a2a9e5a0b80",
+      "bytes": 87610,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/8806467/pexels-photo-8806467.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "sha256": "e5b9718f97b03932394a1f7c6a1bd19b3ef1feb4b12cf314a9f7a8a5f4f37ed0",
+      "bytes": 36998,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32560039/pexels-photo-32560039.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/32560039/",
+      "title": "Pexels 上由 Zehra İslamoğlu 拍攝的相片",
+      "sha256": "d52e20c8a6219a547bec911053d74d04d732d91d4a2fce623bad91036cbd4d4a",
+      "bytes": 111878,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32609760/pexels-photo-32609760.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/32609760/",
+      "title": "Pexels Willian Justen de Vasconcellos图片",
+      "sha256": "f753d14554eb3ffd802504870549ea12f82dc908f7f2df10e34bd81758b8526f",
+      "bytes": 28172,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://unsplash.com/photos/orange-building-wall-with-window-and-lantern-shadow-Ky81JOMNd8k",
+        "title": "Photo by Aaryan Kohli on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/",
+        "title": "Photo by Lara on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/33794191/pexels-photo-33794191.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 37512,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "7be8fd8c005aca1be328a3935e812f0f117dd2ac1fa4b231abefc5da4b11e5ae"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/shadows-of-a-structure-cast-on-a-wall-_B5IInGVakY",
+        "title": "Photo by Md Arif Hasan on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/22820358/",
+        "title": "Pexels Matthew Jackson图片",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/22820358/pexels-photo-22820358.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 55556,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "b29b99c456f076de21a9f384f171a90ee64557eb75f07e9715f93eed8920a1a1"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/stone-wall-illuminated-by-warm-sunset-light-bAZ_FV5_-X0",
+        "title": "Photo by Josip Ivankovic on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/37152155/",
+        "title": "Pexels Matthew Jesús图片",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/37152155/pexels-photo-37152155.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 87610,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "97c1ada5f6737a81f1134f7662ed4b651930bfb3270b63eff08b7a2a9e5a0b80"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/abstract-pattern-of-light-and-shadow-on-textured-surface-KgtOr1cCECw",
+        "title": "Photo by Dmytro Yarish on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+        "title": "Photo by Аlex Ugolkov on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/8806467/pexels-photo-8806467.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 36998,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "e5b9718f97b03932394a1f7c6a1bd19b3ef1feb4b12cf314a9f7a8a5f4f37ed0"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/window-with-greenery-against-a-tiled-wall-Z0lEv5exgAE",
+        "title": "Photo by Alexander Zaytsev on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/32560039/",
+        "title": "Pexels 上由 Zehra İslamoğlu 拍攝的相片",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/32560039/pexels-photo-32560039.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 111878,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "d52e20c8a6219a547bec911053d74d04d732d91d4a2fce623bad91036cbd4d4a"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/sunlight-casts-street-lamp-shadow-on-building-wall-ay6UbwexLK8",
+        "title": "Photo by T on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/32609760/",
+        "title": "Pexels Willian Justen de Vasconcellos图片",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/32609760/pexels-photo-32609760.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 28172,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "f753d14554eb3ffd802504870549ea12f82dc908f7f2df10e34bd81758b8526f"
+      }
+    ],
+    "downloadedCount": 6,
+    "method": "public source-page image metadata; container, dimensions and byte hash checked; not render textures"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮实际检索到 6 个可对应“阳光投射墙面/窗框/建筑立面”的照片详情页，集中在 Unsplash 与 Pexels。**未获取图片字节，材质、直线与阴影细节均基于来源页标题与描述推断，待原图核验**。Wikimedia Commons 未返回独立文件详情页，故不列为正式候选。\n\n### 候选照片页面\n\n**1. Unsplash：橙色墙面、窗户与灯笼阴影**\n- 来源页：https://unsplash.com/photos/orange-building-wall-with-window-and-lantern-shadow-Ky81JOMNd8k\n- 作者：Aaryan Kohli；许可：Unsplash License \n- 可转化细节（推断）：标题同时包含 wall、window、shadow，适合提取墙面暖色主调、窗框矩形边缘与投射阴影的几何关系。页面未说明光照角度与阴影硬度。\n\n**2. Pexels：阳光墙面上的窗影与植物阴影**\n- 来源页：https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/\n- 作者：Lara；许可：待核验 \n- 可转化细节（推断）：描述提及“intricate plant shadows on an urban wall beneath a classical window”，适合观察窗下墙面上的柔化植物影与建筑直线并置。古典窗暗示可能存在线脚或窗套层次，但需原图确认。\n\n**3. Unsplash：结构阴影投射在墙面上（黑白）**\n- 来源页：https://unsplash.com/photos/shadows-of-a-structure-cast-on-a-wall-_B5IInGVakY\n- 作者：Md Arif Hasan；许可：Unsplash License \n- 可转化细节（推断）：页面明确描述“strong sunlight casts intricate geometric patterns on the facade, highlighting architectural lines”，适合提取高对比光影下的建筑直线与几何阴影分割。黑白影像便于分离明暗边界，但颜色信息缺失，材质仅能通过灰度纹理推断。\n\n**4. Pexels：芝加哥阳光建筑立面与街道阴影**\n- 来源页：https://www.pexels.com/zh-cn/photo/22820358/\n- 作者：Matthew Jackson；许可：待核验 \n- 可转化细节（推断）：标题强调“阳光照射的建筑外立面”与“戏剧性的阴影”，适合提取立面体块转折处的受光面与背光面交界。城市街道背景可能引入干扰，需确认主体立面是否占据足够画面比例。\n\n**5. Unsplash：暖色夕照下的石墙与窗**\n- 来源页：https://unsplash.com/photos/stone-wall-illuminated-by-warm-sunset-light-bAZ_FV5_-X0\n- 作者：Josip Ivankovic；许可：Unsplash License \n- 可转化细节（推断）：标签含 window、golden hour、shadows、stone wall，适合观察低角度暖光下石材表面粗糙度与窗洞深度的表现。黄昏光比大，阴影区域细节可能压缩，需原图核验石材纹理是否可辨。\n\n**6. Unsplash：窗与绿植，瓷砖墙面**\n- 来源页：https://unsplash.com/photos/window-with-greenery-against-a-tiled-wall-Z0lEv5exgAE\n- 作者：Alexander Zaytsev；许可：Unsplash License \n- 可转化细节（推断）：标题含 window、wall、shadow、tiled，适合提取瓷砖规则网格与窗框直线之间的尺度对比。绿植可能产生不规则阴影或遮挡窗缘，需确认是否干扰直线提取。\n\n### 检索缺口与建议\n\n本轮未获得 Wikimedia Commons 单张文件详情页；Pexels 候选的作者与许可字段在返回文本中不完整，需后续核验。若需补足“窗框与墙体交接的构造细节”，可在 Unsplash/Pexels 定向搜索 `window frame stone wall shadow`、`window recess sunlight`，避免只搜 `facade` 返回远景建筑。上述 6 页均未在返回文本中给出原始图像直链，后续获取字节时以详情页内下载入口为准。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 9466,
+    "completion_tokens": 925,
+    "total_tokens": 10391,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "aa43c0c9-73bd-46b0-81c7-1bc9247a8f4a",
+        "model": "deepseek-flash",
+        "elapsedMs": 12015,
+        "prompt_tokens": 9466,
+        "completion_tokens": 925,
+        "total_tokens": 10391,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 47391,
+  "downloads": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/33794191/pexels-photo-33794191.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/elegant-window-shadow-play-on-sunlit-wall-33794191/",
+      "title": "Photo by Lara on Pexels",
+      "sha256": "7be8fd8c005aca1be328a3935e812f0f117dd2ac1fa4b231abefc5da4b11e5ae",
+      "bytes": 37512,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.7be8fd8c005a",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.7be8fd8c005a.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/22820358/pexels-photo-22820358.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/22820358/",
+      "title": "Pexels Matthew Jackson图片",
+      "sha256": "b29b99c456f076de21a9f384f171a90ee64557eb75f07e9715f93eed8920a1a1",
+      "bytes": 55556,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.b29b99c456f0",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.b29b99c456f0.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/37152155/pexels-photo-37152155.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37152155/",
+      "title": "Pexels Matthew Jesús图片",
+      "sha256": "97c1ada5f6737a81f1134f7662ed4b651930bfb3270b63eff08b7a2a9e5a0b80",
+      "bytes": 87610,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.97c1ada5f673",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.97c1ada5f673.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/8806467/pexels-photo-8806467.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/shadow-of-person-on-a-brick-wall-8806467/",
+      "title": "Photo by Аlex Ugolkov on Pexels",
+      "sha256": "e5b9718f97b03932394a1f7c6a1bd19b3ef1feb4b12cf314a9f7a8a5f4f37ed0",
+      "bytes": 36998,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.e5b9718f97b0",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.e5b9718f97b0.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32560039/pexels-photo-32560039.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/32560039/",
+      "title": "Pexels 上由 Zehra İslamoğlu 拍攝的相片",
+      "sha256": "d52e20c8a6219a547bec911053d74d04d732d91d4a2fce623bad91036cbd4d4a",
+      "bytes": 111878,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.d52e20c8a621",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.d52e20c8a621.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/32609760/pexels-photo-32609760.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/32609760/",
+      "title": "Pexels Willian Justen de Vasconcellos图片",
+      "sha256": "f753d14554eb3ffd802504870549ea12f82dc908f7f2df10e34bd81758b8526f",
+      "bytes": 28172,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r07.f753d14554eb",
+      "round": 7,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r07.f753d14554eb.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "墙面与建筑窗户的实拍"
+    }
+  ]
+}

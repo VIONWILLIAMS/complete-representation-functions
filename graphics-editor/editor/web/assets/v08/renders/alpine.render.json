@@ -1,0 +1,27 @@
+{
+  "schema": "crf.actual_render.v0.8",
+  "sceneId": "alpine",
+  "width": 800,
+  "height": 531,
+  "objectCount": 1,
+  "gaussianCount": 65536,
+  "elapsedMs": 366.4134479999998,
+  "rgbaSHA256": "0ccd58c9430699ec4e887b795f6e881c9a158df297cacf5bd65feb59bbb1a4ac",
+  "pngSHA256": "3f30ac9315ba812410e08cb6280610fb3807eee2b069dd14f019cce1dda8389f",
+  "engine": "web/crf-gaussian08.js",
+  "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+  "sourceRasterReadByRenderer": false,
+  "assetIds": [
+    "landscape.alpine"
+  ],
+  "metrics": {
+    "mae": 2.2323822975517893,
+    "rmse": 3.911144081032923,
+    "psnr": 36.28472730781614,
+    "maxError": 101,
+    "exactRGBFraction": 0.1291337099811676,
+    "evaluatedPixels": 424800,
+    "ssim": null,
+    "ssimNote": "Full Gaussian-window SSIM is reported by the offline verifier."
+  }
+}

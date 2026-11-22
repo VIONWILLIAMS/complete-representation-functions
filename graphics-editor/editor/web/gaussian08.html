@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#132f32">
+  <title>CRF 图形计算编辑器 · 0.8</title>
+  <meta name="description" content="把照片拟合为可编辑的二维高斯函数，让语言模型通过同一套表示组合、修改并生成图片。">
+  <link rel="stylesheet" href="editor08.css">
+</head>
+<body>
+<div class="studio08">
+  <header class="topbar">
+    <a class="brand" href="./"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>CRF 图形计算编辑器 <b>0.8</b></strong><small>从观测像素，到可编辑的视觉函数</small></span></a>
+    <nav class="toplinks" aria-label="编辑器版本"><a href="editor05.html?case=street">红绿灯旧案例</a><a href="studio07.html">全部历史案例</a><a href="canvas07.html">0.7 代码画布</a></nav>
+    <button class="status-button" id="connectionButton"><span id="connectionText">检查模型配置</span></button>
+    <button class="button mobile-only" id="panelToggle" aria-expanded="false" aria-controls="assistantPanel">编辑与对话</button>
+  </header>
+
+  <div class="workspace">
+    <aside class="library" aria-label="案例与视觉函数库">
+      <div class="section-heading"><h2>工作空间</h2><span class="quiet-label">GAUSSIAN</span></div>
+      <button class="button upload-button" id="uploadButton"><span aria-hidden="true">＋</span> 导入照片并拟合</button>
+      <p class="library-note">实际像素优化 · 本地函数渲染</p>
+      <div class="library-scroll">
+        <h3 class="group-label">观测与重建</h3><div class="case-list" id="referenceList"><p class="empty-copy">正在读取案例…</p></div>
+        <h3 class="group-label">DeepSeek 实测</h3><div class="case-list" id="exampleList"><p class="empty-copy">正在读取实测结果…</p></div>
+        <h3 class="group-label">本次工作</h3><div class="case-list" id="sessionList"><p class="empty-copy">导入与生成结果会出现在这里。</p></div>
+      </div>
+      <div class="library-footer"><button class="text-button" id="importSceneButton">导入 CRF 程序</button><button class="text-button" id="guideButton">表示、来源与能力说明</button><a class="text-button" href="downloads/CRF_0_8_Render_Kit.zip" download>下载六组作品与重绘代码</a></div>
+    </aside>
+
+    <main class="editor" aria-label="高斯图像工作区">
+      <div class="canvas-heading"><div><span class="eyebrow" id="sceneKind">二维高斯函数</span><h1 id="sceneTitle">正在打开工作空间</h1></div><div class="main-actions"><button class="button quiet" id="undoButton" disabled>撤销</button><button class="button quiet" id="sourceButton">查看程序</button><button class="button primary" id="exportPNGButton" disabled>导出 PNG</button></div></div>
+      <div class="viewbar"><div class="segmented" role="group" aria-label="画布查看模式"><button data-view="render" aria-pressed="true">函数渲染</button><button data-view="reference" aria-pressed="false" disabled>参考原图</button><button data-view="difference" aria-pressed="false" disabled>像素差异</button></div><span id="viewHint">每个像素由高斯参数计算</span><button class="text-button" id="fitAgainButton" hidden>重新拟合</button></div>
+      <div class="stage" id="stage">
+        <canvas id="mainCanvas" width="667" height="1000" aria-label="当前 CRF 高斯函数渲染结果"></canvas>
+        <div class="empty-stage" id="emptyStage"><span class="field-symbol" aria-hidden="true">∑</span><h2>让图像成为函数</h2><p>选择案例，或导入一张照片开始重建。</p></div>
+        <div class="stage-busy" id="stageBusy" hidden><span class="spinner"></span><span id="stageBusyText">正在计算像素</span></div>
+        <div class="stage-caption" id="stageCaption" hidden>参考与差异仅用于检验，不参与重建渲染</div>
+      </div>
+      <section class="quality-strip" aria-label="当前重建指标"><div><span>高斯数</span><strong id="metricCount">—</strong></div><div><span>MAE / 255</span><strong id="metricMAE">—</strong></div><div><span>PSNR</span><strong id="metricPSNR">—</strong></div><div><span>实际渲染</span><strong id="metricTime">—</strong></div><button class="text-button" id="reportButton">查看检验记录</button></section>
+      <div class="progress-panel" id="progressPanel" hidden role="status"><div><strong id="progressTitle">正在拟合</strong><button class="text-button" id="cancelButton">取消</button></div><progress id="progressBar" max="1" value="0"></progress><span id="progressDetail">正在初始化</span></div>
+      <div class="candidate-bar" id="candidateBar" hidden><div><strong>反馈候选已渲染</strong><span id="candidateDescription">查看实际结果，再决定是否采用。</span></div><button class="button" id="compareCandidateButton">并排比较</button><button class="button" id="rejectCandidateButton">保留上一版</button><button class="button primary" id="acceptCandidateButton">采用候选</button></div>
+      <footer class="canvas-footer"><span id="canvasStatus" role="status">等待案例载入</span><button class="text-button" id="exportSceneButton" disabled>保存完整 CRF</button></footer>
+    </main>
+
+    <aside class="inspector" id="assistantPanel" aria-label="对象编辑与模型协作">
+      <div class="inspector-tabs" role="tablist"><button role="tab" id="objectsTab" aria-selected="true" aria-controls="objectsPanel" data-panel="objects">对象与函数</button><button role="tab" id="chatTab" aria-selected="false" aria-controls="chatPanel" data-panel="chat">DeepSeek</button><button role="tab" id="learningTab" aria-selected="false" aria-controls="learningPanel" data-panel="learning">参考学习</button></div>
+      <section class="objects-panel" id="objectsPanel" role="tabpanel" aria-labelledby="objectsTab">
+        <div class="panel-intro"><span class="eyebrow">共同表示</span><h2>直接修改视觉函数</h2><p>对象的变换、颜色与透明度，统一进入同一个渲染器。</p></div>
+        <div class="object-list" id="objectList"><p class="empty-copy">当前没有可编辑对象。</p></div>
+        <form id="objectForm" class="properties" hidden>
+          <div class="property-heading"><strong id="objectTitle">对象</strong><label class="toggle"><input type="checkbox" id="objectVisible" checked>显示</label></div>
+          <div class="property-row"><label>水平位置<input id="objectX" type="number" step="1"></label><label>垂直位置<input id="objectY" type="number" step="1"></label></div>
+          <div class="property-row"><label>横向比例<input id="objectScaleX" type="number" min="0.05" max="8" step="0.05"></label><label>纵向比例<input id="objectScaleY" type="number" min="0.05" max="8" step="0.05"></label></div>
+          <label class="range-field"><span>旋转<output id="rotationValue">0°</output></span><input id="objectRotation" type="range" min="-180" max="180" step="1" value="0"></label>
+          <label class="range-field"><span>色相<output id="hueValue">0°</output></span><input id="objectHue" class="hue-range" type="range" min="-180" max="180" step="1" value="0"></label>
+          <label class="range-field"><span>曝光<output id="exposureValue">0 EV</output></span><input id="objectExposure" type="range" min="-2" max="2" step="0.05" value="0"></label>
+          <label class="range-field"><span>不透明度<output id="opacityValue">100%</output></span><input id="objectOpacity" type="range" min="0" max="1" step="0.01" value="1"></label>
+          <p class="property-note" id="objectNote">更改的是对象的函数参数。源照片不会用于纹理回贴。</p>
+        </form>
+        <div class="add-asset"><label for="assetSelect">添加已有视觉函数</label><div><select id="assetSelect"><option value="">选择资产</option></select><button class="button" id="addAssetButton">添加</button></div></div>
+        <div class="observation-note"><strong>重建 ≠ 未见场景生成</strong><p>已拟合照片携带观测外观。新场景通过组合与修改这些函数生成；本版会明确记录资产来源。</p></div>
+      </section>
+
+      <section class="chat-panel" id="chatPanel" role="tabpanel" aria-labelledby="chatTab" hidden>
+        <div class="panel-intro"><span class="eyebrow">语言 → 场景程序 → 高斯像素</span><h2>描述你想改变的画面</h2><p>模型使用已拟合的视觉资产编排场景，实际结果在中间的画布计算。</p></div>
+        <div class="chat-scroll" id="chatScroll"><div class="prompt-options"><button data-prompt="把当前场景的构图重新安排得更有摄影感，保留主体的真实纹理。" data-mode="edit">调整当前构图</button><button data-prompt="利用可用的水果视觉函数，生成一张简洁自然的水果静物图片。" data-mode="generate">生成水果静物</button><button data-prompt="检查这张实际渲染图的边缘、遮挡和接触关系，给出具体的问题。" data-mode="critique">检查实际画面</button></div><div id="messages" aria-live="polite"></div></div>
+        <form id="chatForm" class="composer"><div class="composer-options"><select id="chatMode" aria-label="对话模式"><option value="generate">生成新图片</option><option value="edit">修改当前图</option><option value="critique">检查当前图</option></select><label><input id="searchEnabled" type="checkbox" checked>搜索参考</label></div><label class="sr-only" for="promptInput">场景描述</label><textarea id="promptInput" rows="4" placeholder="例如：把苹果移到左侧，梨子放在后方，保留细腻的纹理和自然颜色…"></textarea><div class="composer-bottom"><span id="feedbackCount">本轮反馈 0 / 3</span><button type="submit" class="button primary" id="sendButton">发送并渲染</button></div></form>
+        <button class="text-button feedback-button" id="feedbackButton" disabled>检查实际画面并生成反馈候选</button>
+        <button class="text-button evidence-button" id="evidenceButton">查看模型调用与搜索证据</button>
+      </section>
+      <section class="learning-panel" id="learningPanel" role="tabpanel" aria-labelledby="learningTab" hidden>
+        <div class="panel-intro"><span class="eyebrow">搜索 → 观察 → 函数拟合</span><h2>把参考变成可调用外观</h2><p>每一轮记录真实搜索、下载与拟合结果。搜索到图片后，还需要实际像素优化。</p></div>
+        <div class="learning-scroll">
+          <div class="learning-summary" id="learningSummary"><div><strong id="learningRounds">—</strong><span>已完成检索轮次</span></div><div><strong id="learningSources">—</strong><span>不同来源页</span></div><div><strong id="learningImages">—</strong><span>已下载图片</span></div><div><strong id="learningFits">—</strong><span>已拟合函数</span></div></div>
+          <p class="learning-note" id="learningNote">正在读取实测学习记录。</p>
+          <form class="learning-form" id="learningForm"><label for="learningTopic">研究主题</label><input id="learningTopic" type="text" maxlength="700" value="自然摄影中的水果静物、建筑街景与山水景观" placeholder="例如：成熟橙子的表皮纹理与自然光"><label for="learningBatch">执行范围</label><select id="learningBatch"><option value="1">下一轮真实检索与拟合</option><option value="10">新的 10 轮参考学习</option></select><label class="learning-option"><input id="learningFitEnabled" type="checkbox" checked>下载成功后在本机拟合（每图 4,096 高斯）</label><button class="button primary full" id="startLearningButton" type="submit">开始参考学习</button></form>
+          <h3 class="group-label">可核验的学习轮次</h3><div id="learningRoundList" class="learning-round-list"></div>
+          <h3 class="group-label">提炼的函数与来源</h3><div id="learningAssetList" class="learning-asset-list"></div>
+        </div>
+        <div class="learning-footer"><button class="text-button" id="exportLearningButton">导出学习证据</button><p>累计拟合可复用的外观函数，不更新语言模型权重。</p></div>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<dialog id="fitDialog" class="small-dialog"><div class="dialog-header"><div><span class="eyebrow">照片 → 二维高斯函数</span><h2>拟合参考图像</h2></div><button class="close-button" data-close="fitDialog" aria-label="关闭拟合设置">×</button></div><div class="dialog-body"><p id="fitImageDescription">选择预算后，由当前浏览器优化高斯系数。</p><div class="fit-settings"><label for="fitBudget">高斯预算<select id="fitBudget"><option value="1024">1,024 · 快速试验</option><option value="4096" selected>4,096 · 标准</option><option value="16384">16,384 · 精细</option></select></label><label for="fitSize">拟合尺寸<select id="fitSize"><option value="768" selected>长边最多 768 像素</option><option value="1024">长边最多 1,024 像素</option><option value="original">原始尺寸（最多 2 百万像素）</option></select></label><label for="fitIterations">优化轮数<select id="fitIterations"><option value="2">2 轮</option><option value="3" selected>3 轮</option><option value="5">5 轮</option></select></label></div><p class="muted">原图只参与拟合和误差检验。导出的高斯资产包含函数参数，不包含用于渲染的原图 RGB 数组。大图与高预算需要更长时间，可随时取消。</p></div><div class="dialog-footer"><button class="button" data-close="fitDialog">取消</button><button class="button primary" id="startFitButton">开始拟合</button></div></dialog>
+<dialog id="sourceDialog"><div class="dialog-header"><div><span class="eyebrow">CRF SCENE 0.8</span><h2>可编辑场景程序</h2></div><button class="close-button" data-close="sourceDialog" aria-label="关闭程序">×</button></div><p class="dialog-description">下方仅编辑场景语义参数；已有高斯资产仍保留。保存完整 CRF 可导出包含全部函数系数的文件。</p><textarea id="sourceEditor" spellcheck="false" aria-label="场景 JSON"></textarea><p id="sourceError" class="error-copy" role="alert"></p><div class="dialog-footer"><button class="button" id="downloadDSLButton">导出场景参数</button><button class="button primary" id="applySourceButton">应用程序</button></div></dialog>
+<dialog id="reportDialog"><div class="dialog-header"><div><span class="eyebrow">实际测量</span><h2 id="reportTitle">重建与渲染记录</h2></div><button class="close-button" data-close="reportDialog" aria-label="关闭记录">×</button></div><div class="dialog-body"><p id="reportIntro">重建误差只比较同尺寸参考图与当前函数渲染。用户修改后的差异包含主动编辑，不代表编辑失败。</p><pre id="reportContent">暂无记录。</pre></div></dialog>
+<dialog id="guideDialog"><div class="dialog-header"><div><span class="eyebrow">CRF 0.8</span><h2>这一版如何工作</h2></div><button class="close-button" data-close="guideDialog" aria-label="关闭说明">×</button></div><div class="dialog-body guide"><h3>真正的高斯拟合</h3><p>参考照片经过数值拟合，转换为有位置、尺度、方向和颜色系数的二维高斯函数。画布只读取这些参数并计算像素；不把源 RGB 数组当作新图重新播放。</p><h3>一个共同的场景程序</h3><p>观测重建、对象编辑、DeepSeek 编排使用同一个资产与场景接口。移动、缩放、色相、曝光和透明度均可直接修改，也可导出 JSON 供其他模型操作。</p><h3>生成质量的边界</h3><p>这里的生成采用已拟合视觉资产的组合与修改。高斯表示提供可计算的外观，并不凭空提供所有物体的知识。参考照片里没有出现的表面、真实三维和任意新视角并未因此被解决。</p><h3>反馈不会自动等于变好</h3><p>模型可以检查实际画布并提出修改候选。最多三轮，保留上一版与候选供你比较，由你决定采用；模型自评不作为照片质量分数。</p><h3>历史案例</h3><p>红绿灯场景、0.5 对象编辑与视频、0.6 和 0.7 案例继续保留在顶部入口。它们的原有能力与本版新的高斯拟合路径分别标明。</p></div></dialog>
+<dialog id="compareDialog" class="wide-dialog"><div class="dialog-header"><div><span class="eyebrow">相同画布 · 实际输出</span><h2>保留版与反馈候选</h2></div><button class="close-button" data-close="compareDialog" aria-label="关闭对比">×</button></div><div class="compare-grid"><figure><figcaption>保留版</figcaption><img id="beforeImage" alt="反馈前的实际渲染"></figure><figure><figcaption>反馈候选</figcaption><img id="afterImage" alt="反馈候选的实际渲染"></figure></div><div class="dialog-footer"><button class="button" id="compareReject">保留上一版</button><button class="button primary" id="compareAccept">采用候选</button></div></dialog>
+<input id="imageFile" type="file" accept="image/png,image/jpeg,image/webp" hidden><input id="sceneFile" type="file" accept="application/json,.json,.crf" hidden>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="crf-gaussian08.js"></script><script src="learning-client08.js"></script><script src="editor08.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+{
+  "schema": "crf.street_runtime.v0.9",
+  "elapsedMilliseconds": 1757.2437920000002,
+  "referenceParity": {
+    "pixels": 667000,
+    "changedPixels": 0,
+    "mae": 0,
+    "maxError": 0,
+    "exactRGBFraction": 1
+  },
+  "cases": [
+    {
+      "id": "reference",
+      "state": {},
+      "renderMilliseconds": 0.31417399999997997,
+      "renderExportAndScopeCheckMilliseconds": 138.31504599999994,
+      "protected": {
+        "pixels": 667000,
+        "changedPixels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1
+      },
+      "stats": {
+        "engine": "crf-boundary09",
+        "baselineGaussians": 65536,
+        "observedDetailGaussians": 100000,
+        "mixedEdgePixels": 0,
+        "inferredGaussianCount": 0,
+        "hiddenGroundTruthAvailable": false,
+        "signalAttachmentRecomputed": false,
+        "spatialMode": "observed image plane; inferred connector on bounded translation"
+      },
+      "pass": true
+    },
+    {
+      "id": "wall-blue",
+      "state": {
+        "wallColor": [
+          72,
+          142,
+          181
+        ],
+        "wallStrength": 0.76
+      },
+      "renderMilliseconds": 66.48797000000002,
+      "renderExportAndScopeCheckMilliseconds": 196.7453220000001,
+      "protected": {
+        "pixels": 219140,
+        "changedPixels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1
+      },
+      "stats": {
+        "engine": "crf-boundary09",
+        "baselineGaussians": 65536,
+        "observedDetailGaussians": 100000,
+        "mixedEdgePixels": 10806,
+        "inferredGaussianCount": 0,
+        "hiddenGroundTruthAvailable": false,
+        "signalAttachmentRecomputed": false,
+        "spatialMode": "observed image plane; inferred connector on bounded translation"
+      },
+      "pass": true
+    },
+    {
+      "id": "wall-sage",
+      "state": {
+        "wallColor": [
+          108,
+          145,
+          112
+        ],
+        "wallStrength": 0.68
+      },
+      "renderMilliseconds": 76.0405159999998,
+      "renderExportAndScopeCheckMilliseconds": 205.37943399999995,
+      "protected": {
+        "pixels": 219140,
+        "changedPixels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1
+      },
+      "stats": {
+        "engine": "crf-boundary09",
+        "baselineGaussians": 65536,
+        "observedDetailGaussians": 100000,
+        "mixedEdgePixels": 10806,
+        "inferredGaussianCount": 0,
+        "hiddenGroundTruthAvailable": false,
+        "signalAttachmentRecomputed": false,
+        "spatialMode": "observed image plane; inferred connector on bounded translation"
+      },
+      "pass": true
+    },
+    {
+      "id": "signal-removed",
+      "state": {
+        "signalVisible": false
+      },
+      "renderMilliseconds": 15.761882999999898,
+      "renderExportAndScopeCheckMilliseconds": 157.1892089999999,
+      "protected": {
+        "pixels": 662712,
+        "changedPixels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1
+      },
+      "stats": {
+        "engine": "crf-boundary09",
+        "baselineGaussians": 65536,
+        "observedDetailGaussians": 100000,
+        "mixedEdgePixels": 0,
+        "inferredGaussianCount": 4506,
+        "hiddenGroundTruthAvailable": false,
+        "signalAttachmentRecomputed": false,
+        "spatialMode": "observed image plane; inferred connector on bounded translation"
+      },
+      "pass": true
+    },
+    {
+      "id": "blue-signal-removed",
+      "state": {
+        "wallColor": [
+          72,
+          142,
+          181
+        ],
+        "wallStrength": 0.76,
+        "signalVisible": false
+      },
+      "renderMilliseconds": 46.9577670000001,
+      "renderExportAndScopeCheckMilliseconds": 205.23457000000008,
+      "protected": {
+        "pixels": 215687,
+        "changedPixels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1
+      },
+      "stats": {
+        "engine": "crf-boundary09",
+        "baselineGaussians": 65536,
+        "observedDetailGaussians": 100000,
+        "mixedEdgePixels": 10806,
+        "inferredGaussianCount": 4506,
+        "hiddenGroundTruthAvailable": false,
+        "signalAttachmentRecomputed": false,
+        "spatialMode": "observed image plane; inferred connector on bounded translation"
+      },
+      "pass": true
+    },
+    {
+      "id": "signal-moved",
+      "state": {
+        "signalOffsetX": 46,
+        "signalOffsetY": 15
+      },
+      "renderMilliseconds": 36.043728999999985,
+      "renderExportAndScopeCheckMilliseconds": 178.25746000000004,
+      "protected": {
+        "pixels": 657813,
+        "changedPixels": 0,
+        "mae": 0,
+        "maxError": 0,
+        "exactRGBFraction": 1
+      },
+      "stats": {
+        "engine": "crf-boundary09",
+        "baselineGaussians": 65536,
+        "observedDetailGaussians": 100000,
+        "mixedEdgePixels": 0,
+        "inferredGaussianCount": 4506,
+        "hiddenGroundTruthAvailable": false,
+        "signalAttachmentRecomputed": true,
+        "spatialMode": "observed image plane; inferred connector on bounded translation"
+      },
+      "pass": true
+    }
+  ],
+  "hiddenWallGroundTruthAvailable": false,
+  "photoMatteGroundTruthAvailable": false,
+  "interpretation": "Observed Gaussian editing; protected pixels are verified, estimated natural edges still require visual review."
+}

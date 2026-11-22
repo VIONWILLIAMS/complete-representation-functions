@@ -1,0 +1,29 @@
+{
+  "schema": "crf.gaussian_scene.v0.8",
+  "id": "alpine",
+  "title": "阿尔卑斯湖畔 · 高斯拟合",
+  "width": 800,
+  "height": 531,
+  "background": [
+    232,
+    232,
+    225
+  ],
+  "objects": [
+    {
+      "id": "lake",
+      "label": "lake",
+      "assetId": "landscape.alpine",
+      "x": 0,
+      "y": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "opacity": 1,
+      "visible": true,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 0
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "06_alpine_haze",
+  "title": "湖畔薄雾光色实验",
+  "scope": "reference_conditioned_atmosphere_variant",
+  "prompt": "在原800×531阿尔卑斯湖畔高斯函数上，生成一幅克制的晨雾光色变体：保留山体、树林、湖岸线与倒影全部空间结构；叠加少量解析高斯薄雾，使远岸稍柔和，近处水纹仍然清楚。薄雾函数原960×640，位置需映射到场景；不要明显遮白，不要旋转地平线。轻微曝光调整可以，但不要把它描述成新的地貌、全新世界或新相机角度。",
+  "complete": true,
+  "assetIds": [
+    "landscape.alpine",
+    "atmosphere.haze"
+  ],
+  "initial": {
+    "providerCalls": 1,
+    "prompt_tokens": 1050,
+    "completion_tokens": 2264,
+    "total_tokens": 3314,
+    "reasoning_tokens": 1848,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "24a50f93-eeed-4533-8cf3-d8e4113533f8",
+        "model": "deepseek-flash",
+        "elapsedMs": 14959,
+        "prompt_tokens": 1050,
+        "completion_tokens": 2264,
+        "total_tokens": 3314,
+        "reasoning_tokens": 1848,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "critique": {
+    "providerCalls": 1,
+    "prompt_tokens": 1605,
+    "completion_tokens": 2097,
+    "total_tokens": 3702,
+    "reasoning_tokens": 1574,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "21760a89-36a5-4a37-9757-39723c77939c",
+        "model": "deepseek-flash",
+        "elapsedMs": 26940,
+        "prompt_tokens": 1605,
+        "completion_tokens": 2097,
+        "total_tokens": 3702,
+        "reasoning_tokens": 1574,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": true,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "candidate": {
+    "providerCalls": 1,
+    "prompt_tokens": 2056,
+    "completion_tokens": 3153,
+    "total_tokens": 5209,
+    "reasoning_tokens": 2686,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "e521fd14-80ca-4499-9886-fa56691fc948",
+        "model": "deepseek-flash",
+        "elapsedMs": 24262,
+        "prompt_tokens": 2056,
+        "completion_tokens": 3153,
+        "total_tokens": 5209,
+        "reasoning_tokens": 2686,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": true,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "actualRenders": [
+    {
+      "schema": "crf.actual_render.v0.8",
+      "sceneId": "alpine_morning_mist_variant",
+      "width": 800,
+      "height": 531,
+      "objectCount": 2,
+      "gaussianCount": 65536,
+      "elapsedMs": 542.8614809999999,
+      "rgbaSHA256": "fcb3049d221efb44c7d585165f3d89148836cbcb5d94b28f145a0b0ec6260e17",
+      "pngSHA256": "3413de80abddbbc8f057a4bbdbd3bbb19e97536bb54bac967a9aba68ec852193",
+      "engine": "web/crf-gaussian08.js",
+      "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+      "sourceRasterReadByRenderer": false,
+      "assetIds": [
+        "landscape.alpine",
+        "atmosphere.haze"
+      ],
+      "metrics": null
+    },
+    {
+      "schema": "crf.actual_render.v0.8",
+      "sceneId": "alpine_morning_mist_variant",
+      "width": 800,
+      "height": 531,
+      "objectCount": 2,
+      "gaussianCount": 65536,
+      "elapsedMs": 364.9959309999831,
+      "rgbaSHA256": "232620f69d752fb017d3d75232220b76efd50e96c32b6539b1d87afe9ecf8948",
+      "pngSHA256": "9389ca7ec669d3cab591fdef422cf378718f68098786222c3780b055bcbc6423",
+      "engine": "web/crf-gaussian08.js",
+      "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+      "sourceRasterReadByRenderer": false,
+      "assetIds": [
+        "landscape.alpine",
+        "atmosphere.haze"
+      ],
+      "metrics": null
+    }
+  ],
+  "selection": {
+    "chosen": "candidate",
+    "status": "visually_reviewed",
+    "reviewer": "assistant visual inspection",
+    "reason": "减弱并收窄二维雾带，保留近水纹理；这是参考条件下光色变体。",
+    "photorealismIndependentlyProven": false,
+    "referenceReconstructionScoreUsedAsGenerationScore": false,
+    "finalAssetStateRerendered": true
+  },
+  "modelWeightsUpdated": false,
+  "finalRender": {
+    "schema": "crf.actual_render.v0.8",
+    "sceneId": "alpine_morning_mist_variant",
+    "width": 800,
+    "height": 531,
+    "objectCount": 2,
+    "gaussianCount": 65536,
+    "elapsedMs": 403.784752,
+    "rgbaSHA256": "232620f69d752fb017d3d75232220b76efd50e96c32b6539b1d87afe9ecf8948",
+    "pngSHA256": "9389ca7ec669d3cab591fdef422cf378718f68098786222c3780b055bcbc6423",
+    "engine": "web/crf-gaussian08.js",
+    "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+    "sourceRasterReadByRenderer": false,
+    "assetIds": [
+      "landscape.alpine",
+      "atmosphere.haze"
+    ],
+    "metrics": null,
+    "assetSHA256": {
+      "atmosphere.haze": "bc43682a8dbc263d1ebbdd4f1e1d7623569f6b03b8a1df3e51467aee7481b47f",
+      "landscape.alpine": "1797213bb6b0ff1eb42215f7700e18d46d32fd72f0b84fa4d9fa4276864ee380"
+    },
+    "sceneSHA256": "578c156f74f89c3055ec7d75e9104a7ce151e490872eb939c5ceabdc94129876"
+  }
+}

@@ -1,0 +1,787 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 5,
+  "query": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "checkpoint": {
+    "sessionId": "crf09_b59f3a06-8a8c-46de-ba82-44d05621b14e",
+    "round": 5,
+    "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+    "subtopic": "强光照明：明确投影、亮暗交界、保留纹理",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:53:02.645Z",
+    "runId": "crf07_b3914b35-8476-4a40-904c-918e43fe22ec",
+    "queries": [
+      "Wikimedia Commons strong sunlight mountain lake sharp shadows texture photograph",
+      "Wikimedia Commons coastal rocks in bright sun sharp shadows texture photograph",
+      "Wikimedia Commons sunlit pine forest hard light dappled shadows tree crown texture photograph",
+      "Pexels mountain lake hard sunlight mountains reflection detailed texture photo",
+      "Pexels coastal rocks bright sunlight sharp shadows sea photo",
+      "Pexels pine forest sunlight shadows tree crown needles texture photo",
+      "Wikimedia Commons \"Castle Mountain\" Banff sunlight shadow reflection lake file",
+      "Wikimedia Commons Cannon Beach Haystack Rock sunlight clear sky file",
+      "Pexels sunlight mountain lake reflection sharp peaks photo",
+      "Pexels sea rocks bright sun sharp shadow texture photo",
+      "site:commons.wikimedia.org pine forest sunlight shadows trunk \"CC BY\" file",
+      "Pexels \"Banff\" lake mountains photo sunlight"
+    ],
+    "requestIds": [
+      "a506e604-303f-4e0e-9cc9-594cb8f587ca"
+    ],
+    "sourceCount": 19,
+    "newSourceCount": 17,
+    "candidateCount": 7,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_rl_00_4ebe5131c6b54180997cb4804d87fda7",
+        "type": "deepseek_read_url",
+        "kind": "read_link",
+        "status": "completed",
+        "action": {
+          "type": "read_link",
+          "url": "https://www.pexels.com/photo/misty-pine-forest-in-tranquil-landscape-35151768/"
+        },
+        "sourceUrls": []
+      },
+      {
+        "id": "srvtoolu_s_01_5ddfc532d39942878f5afe9b038ec767",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons strong sunlight mountain lake sharp shadows texture photograph",
+            "Wikimedia Commons coastal rocks in bright sun sharp shadows texture photograph",
+            "Wikimedia Commons sunlit pine forest hard light dappled shadows tree crown texture photograph",
+            "Pexels mountain lake hard sunlight mountains reflection detailed texture photo",
+            "Pexels coastal rocks bright sunlight sharp shadows sea photo",
+            "Pexels pine forest sunlight shadows tree crown needles texture photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/October_2024-2#13",
+          "https://www.pexels.com/zh-tw/photo/39267274/",
+          "https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/",
+          "https://huggingface.co/datasets/CaptionEmporium/pexels-568k-internvl2/viewer/default/train?p=5630#10",
+          "https://digicoll.lib.berkeley.edu/record/46673?ln=en&v=uv#?xywh=-323%2C-38%2C2145%2C1292",
+          "https://create.vista.com/similar-photos/542269848/?page=4",
+          "http://imtaweb.net/en/MountainAnecdotes/MountainExplorer/202606/20260604_79521231.shtml",
+          "https://www.pexels.com/zh-tw/photo/36764009/",
+          "https://elements.envato.com/evergreen-tree-spruce-or-pine-branch-green-plant-UU7PVL9",
+          "https://commons.m.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/June_2015#2"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_02_e24fb199b60645d09675a36101e93130",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons \"Castle Mountain\" Banff sunlight shadow reflection lake file",
+            "Wikimedia Commons Cannon Beach Haystack Rock sunlight clear sky file",
+            "Pexels sunlight mountain lake reflection sharp peaks photo",
+            "Pexels sea rocks bright sun sharp shadow texture photo",
+            "site:commons.wikimedia.org pine forest sunlight shadows trunk \"CC BY\" file",
+            "Pexels \"Banff\" lake mountains photo sunlight"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.m.wikimedia.org/wiki/Category:Water_reflections_of_mountains_of_Alberta",
+          "https://www.pexels.com/zh-tw/photo/39267274/",
+          "https://www.pexels.com/zh-tw/photo/36764009/",
+          "https://www.pexels.com/nb-no/bilde/majesteti[credential removed]/",
+          "https://photoclub.canadiangeographic.ca/media/34010416-Follow%20the%20creek%20to%20the%20gold!",
+          "https://commons.wikimedia.org/wiki/File:Ecola_State_Park_Haystack_Rock.JPG#1",
+          "https://huggingface.co/datasets/bghira/photo-concept-bucket/viewer/default/train?p=5671#7",
+          "https://wallnesthd.com/wallpaper.html?src=pexels&id=px_22376816",
+          "https://commons.wikimedia.org/wiki/File:Furuskog.JPG#1",
+          "https://www.pexels.com/el-gr/photo/herbert-banff-30972051/",
+          "https://create.vista.com/similar-photos/581701258/",
+          "http://imtaweb.net/en/MountainAnecdotes/MountainExplorer/202606/20260604_79521231.shtml"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/photo/misty-pine-forest-in-tranquil-landscape-35151768/",
+        "title": "Photo by Arto Suraj on Pexels",
+        "snippet": "",
+        "via": "server_page"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/October_2024-2#13",
+        "title": "Commons:Featured picture candidates/Log/October 2024-2 - Wikimedia Commons - - Support --Thi (talk) 15:52, 10 October 2024 (UTC)",
+        "snippet": "Oppose Interesting motif but such harsh lighting just isn't working for me, sorry. ... This image will be added to the FP gallery: Objects/Rocks_and_minerals#Others ... - I think the lack of sharpness in some places is more likely because this picture was taken using a much higher ISO than most of Poco's church interiors. ... - Support The photos are a bit small ... are really interesting.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/39267274/",
+        "title": "Pexels 上由 the_mountainb0y 拍攝的相片",
+        "snippet": "the_mountainb0y ... 尺寸 3024x4032 長寬比 3:4 色彩 ... 說明 # 雄偉的山峰，藍天白雲倒映在高山湖泊中，營造出寧靜祥和的自然氛圍。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/",
+        "title": "Photo by Emilio Sánchez Hernández on Pexels",
+        "snippet": "Afterglow ... Taken At Nov 6, 2026 Software Adobe Photoshop Lightroom Classic 15.1 (Windows) Región de Murcia, España Description # Stunning rocky coastline of Región de Murcia, Spain with vibrant sky and ocean. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://huggingface.co/datasets/CaptionEmporium/pexels-568k-internvl2/viewer/default/train?p=5630#10",
+        "title": "CaptionEmporium/pexels-568k-internvl2 · Datasets at Hugging Face - A serene winter scene set in a snowy forest clearing",
+        "snippet": "Рига, Латвия ... 0.666667 ... A serene winter landscape with tall pine trees standing amidst a snow-covered forest floor, under a cloudy sky. ... Tall pine trees stand amidst a snowy forest landscape. ... their dark green needles offering a stark contrast to the snowy surroundings. ... adding texture to the scene. ... creating a natural mix of textures ... the background is dominated by a dense cluster of pine trees, their dark green needles standing out against ... their dark green needles contrast beautifully",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://digicoll.lib.berkeley.edu/record/46673?ln=en&v=uv#?xywh=-323%2C-38%2C2145%2C1292",
+        "title": "The Rotunda, Enchanted Gorge.",
+        "snippet": "This black-and-white landscape photograph captures a wide mountain basin featuring a prominent lake. In the foreground ... Surrounding the lake, several sharp ... The overhead lighting creates high contrast, casting deep, dark shadows into the rock faces and gullies while brightly illuminating the flat surfaces.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/similar-photos/542269848/?page=4",
+        "title": "Similar Free Stock Images of Beautiful view of conifer forest at sunset",
+        "snippet": "Sunset or sunrise in the autumn pine forest. ... Sunny morning, a delicate mist floats among the crowns illuminated by the light of the rising sun. ... Beautiful pine forest pine park with pines, firs and birches in a sunny day with hard shadows and sunlight, lots of green trees.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/36764009/",
+        "title": "Pexels 上由 Adrien Olichon 拍攝的相片",
+        "snippet": "尺寸 6336x9520 長寬比 396:595 色彩 ... 2026 下載次數 4 瀏覽次數 2.5 千 ... 軟體 Adobe Photoshop Lightroom Classic 14.2 (Macintosh) 說明 # 在明亮藍天下的海洋旁，展現崎嶇的海岸岩石風景。 ### 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://elements.envato.com/evergreen-tree-spruce-or-pine-branch-green-plant-UU7PVL9",
+        "title": "Lush Green Pine Tree Branches in Sunlight",
+        "snippet": "Lush Green Pine Tree Branches in Sunlight ... This image showcases the verdant beauty of lush pine tree branches basking in sunlight. The needles are a vibrant green, creating a sense of freshness and vitality. The light filters through the foliage, casting dappled shadows and highlighting the textures of the bark and needles.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.m.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/June_2015#2",
+        "title": "Commons:Featured picture candidates/Log/June 2015 - Wikimedia Commons - - Comment Hubertl - you've reviewed a different image :) For me the photo is sharp enough - a lot of details are visible on the ...",
+        "snippet": "The very bright snow opposing the very dark shadows leave very little range for everything in-between, and the colours are very muted as a result. ... - Support For me it has wow and I think a reasonable tradeoff has been made regarding the light, presence of shadows and time of day.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.m.wikimedia.org/wiki/Category:Water_reflections_of_mountains_of_Alberta",
+        "title": "Category:Water reflections of mountains of Alberta - Wikimedia Commons",
+        "snippet": "1 moraine lake pano 2019.jpg 14,949 × 7,983 ... - Castle Mountain.jpg 4,928 × 3,264; 10.91 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/nb-no/bilde/majesteti[credential removed]/",
+        "title": "Bilde av Nunzio Guerrera på Pexels",
+        "snippet": "Afterglow ... Programvare Adobe Photoshop Lightroom 6.0 (Windows) Banff, Alberta, Canada Beskrivelse # Fantastisk soloppgangsutsikt over Peyto Lake og de kanadiske Rocky Mountains i Banff nasjonalpark, Alberta.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://photoclub.canadiangeographic.ca/media/34010416-Follow%20the%20creek%20to%20the%20gold!",
+        "title": "Reflecting pool",
+        "snippet": "Reflecting pool ##### Description Last light of the evening on the mountain reflecting in a pool of water ##### Taken By Raymond O'Connor ##### Taken On February 7, 2019 ##### Tagged castle mountain banff alberta canada ##### Assignments",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Ecola_State_Park_Haystack_Rock.JPG#1",
+        "title": "File:Ecola State Park Haystack Rock.JPG - Wikimedia Commons - to share – to copy, distribute and transmit the work",
+        "snippet": "2008-07-12 21:56 Brmuchim ... |Description=Taken from [[Ecola State Park]], a photograph looking south along the [[Pacific Ocean]] coast toward [[Haystack Rock]] in [[Cannon Beach, Oregon]].",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://huggingface.co/datasets/bghira/photo-concept-bucket/viewer/default/train?p=5671#7",
+        "title": "bghira/photo-concept-bucket · Data Studio · Datasets at Hugging Face - https://images",
+        "snippet": "The mountains ... adventure, beach, daylight, desert, hill, landscape, light, mountain, outdoors, people, scenic, snow, sun, travel, water ... A lone skier makes their way down a snow-covered slope under a clear sky with the sun shining brightly. In the distance, mountain ranges and a few other skiers can be seen.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://wallnesthd.com/wallpaper.html?src=pexels&id=px_22376816",
+        "title": "Detailed View Wet — 4K Mobile Wallpaper — WallNest HD",
+        "snippet": "Pexels # Detailed View Wet — 4K Mobile Wallpaper Detailed view of wet rocks on a beach during summer with sunlight reflections creating a textured surface.. Ali Arapoğlu's lens turns your screen into a breathtaking escape. Free 4K download — 3677x5515. ... Photo by Ali Arapoğlu on Pexels",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Furuskog.JPG#1",
+        "title": "File:Furuskog.JPG - Wikimedia Commons - File:Furuskog.JPG",
+        "snippet": "Furuskog.JPG ... Summary [edit] DescriptionFuruskog.JPG | Young Pinus sylvestris forest in rendalen, Norway in autumn ... Source | Own work Author | User:Orland ... | CC-BY-SA ... |Description= Young pine forest in rendalen...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/el-gr/photo/herbert-banff-30972051/",
+        "title": "Φωτογραφία από Nunzio Guerrera στο Pexels",
+        "snippet": "Banff, Alberta, Canada Εκπληκτική αντανάκλαση ηλιοβασιλέματος στη λίμνη Herbert, με τα χιονισμένα Βραχώδη Όρη στο Εθνικό Πάρκο Banff του Καναδά.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/similar-photos/581701258/",
+        "title": "Similar Free Stock Images of A mesmerizing view of rocky lake and snowy mountains",
+        "snippet": "Castle Mountain in Banff National Park, Alberta, Canada. A large mountain is reflected in the water of a lake. ... Beautifull sunset under Castle Mountain Castle Mountain and Bow River in summer sunny day. Castle Mountain viewpoint. Banff National Park, Canadian Rockies, Alberta, Canada.",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮搜索未能直接返回 4–6 个全部满足“强光照明 + 明确投影 + 纹理保留”且可核验的具体照片详情页。Commons 大量返回的是搜索列表或分类页，不是独立作品详情页；部分 Pexels 结果缺少可确认的强光方向信息。以下只列出可追溯到具体照片页或作品记录的候选，未下载图像，所有光照与材质描述均来自页面文字/EXIF 或作品说明，不是像素观察。\n\n```json\n{\n  \"summary\": \"本轮针对‘强光照明：明确投影、亮暗交界、保留纹理’检索 Pexels、Wikimedia Commons 与公开摄影记录。可直接核验的具体照片页有限：Pexels 海岸岩壁 40885441 具备强光高对比的页面线索；Commons 可追溯到海岸岩石与针叶林的具体文件页，但部分作者/许可字段需下一轮打开文件页核验。另有 Berkeley 馆藏的高对比山湖黑白作品记录，可作为‘强光下岩壁暗部保留纹理’的参考记录，但不是 Commons/Pexels 照片页。未发现同时覆盖山湖、海岸、针叶林且均为强光投影的完整 5 张独立实例，缺口仍在针叶林树冠强光投影与山湖岩石强光明暗交界。\",\n  \"candidates\": [\n    {\n      \"title\": \"Dramatic rocky coastline in Murcia, Spain\",\n      \"source_page\": \"https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/\",\n      \"page_facts\": \"Pexels 具体照片页；9377×6251；Sony ILCE-7RM5；14mm；ƒ/16；ISO 100；1/50s；2026-11-06 拍摄；页面描述为‘Stunning rocky coastline of Región de Murcia, Spain with vibrant sky and ocean’。\",\n      \"lighting_form\": \"页面未直接写‘投影’，但 f/16 与海岸岩壁题材通常意味着大景深、硬边缘岩脊与受光面/背光面分离；可作为海岸岩壁强光明暗交界候选。\",\n      \"texture_hint\": \"岩石节理、层理与海蚀边缘的硬质纹理，适合提取高频边缘与受光面粗糙度差异；水面高光需后续图像验证是否溢出。\",\n      \"license\": \"待核验（Pexels 免费许可原文未在返回内容中显示）\",\n      \"limitation\": \"未观察图像；‘强光方向’与‘暗部纹理保留’来自 EXIF 与题材推断，不是像素证据。\"\n    },\n    {\n      \"title\": \"Haystack Rock and Needles at Cannon Beach（Commons 文件候选）\",\n      \"source_page\": \"https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg\",\n      \"page_facts\": \"此前轮已收集但本轮作为强光对照需注意：该页描述为晨雾中的 Cannon Beach 巨岩；5,744×3,829；Sony ILCE-6000；30mm；1/1,600s；2018-05-13；作者 Lianguanlun。\",\n      \"lighting_form\": \"该实例本身是雾景低对比，不适合‘强光明确投影’；但同一地点的其他 Commons 文件如 ‘Haystack Rock at Cannon Beach, Oregon, U.S.’ 与 ‘Cannon Beach October 2019 panorama 2’ 出现在搜索结果中，可作为后续查找同地点强光版本的线索。\",\n      \"texture_hint\": \"玄武岩柱状节理与海岸巨岩轮廓；强光版本可能呈现岩壁裂隙暗部与受光柱面的硬过渡。\",\n      \"license\": \"待核验（文件页许可字段未在返回内容中完整显示）\",\n      \"limitation\": \"本页不是强光实例；仅用于定位同地点其他文件，不宣称已见强光投影。\"\n    },\n    {\n      \"title\": \"Castle Mountain.jpg（Commons 分类中的具体文件线索）\",\n      \"source_page\": \"https://commons.wikimedia.org/wiki/Category:Water_reflections_of_mountains_of_Alberta\",\n      \"page_facts\": \"分类页列出 ‘Castle Mountain.jpg’ 4,928×3,264 与 ‘1 moraine lake pano 2019.jpg’ 等具体文件。分类页不是文件详情页，需下一轮打开 File: Castle Mountain.jpg 核验作者、许可与描述。\",\n      \"lighting_form\": \"Castle Mountain 为班夫典型强光山体，岩层受光面与沟槽阴影方向明确；但本分类页未提供光照描述，不能仅凭文件名断言投影形态。\",\n      \"texture_hint\": \"沉积岩层理、陡壁沟槽与湖面倒影的垂直对应；强光下岩壁暗部沟槽可保留层理纹理，适合提取‘受光面—阴影沟槽’的边缘梯度。\",\n      \"license\": \"待核验\",\n      \"limitation\": \"分类页非作品详情页；文件名与尺寸来自分类列表，未打开文件页，不编造直链。\"\n    },\n    {\n      \"title\": \"The Rotunda, Enchanted Gorge（Berkeley 馆藏作品记录）\",\n      \"source_page\": \"https://digicoll.lib.berkeley.edu/record/46673?ln=en&v=uv#?xywh=-323%2C-38%2C2145%2C1292\",\n      \"page_facts\": \"加州大学伯克利馆藏黑白风景摄影记录；描述为宽山盆、湖面倒影、浅色碎裂花岗岩巨石与陡峭岩坡；明确写有‘overhead lighting creates high contrast, casting deep, dark shadows into the rock faces and gullies while brightly illuminating the flat surfaces’。\",\n      \"lighting_form\": \"顶光强对比：平坦面高亮、岩壁与沟壑深阴影；明确记录‘深阴影’与‘高对比’，是强光投影的文本证据。\",\n      \"texture_hint\": \"碎裂花岗岩巨石、垂直裂隙与岩脊；强光下平坦岩面与沟槽阴影形成硬交界，适合提取岩壁法线变化导致的明暗分段。\",\n      \"license\": \"馆藏记录，许可与使用条款待核验\",\n      \"limitation\": \"不是 Pexels/Commons 照片页；黑白记录无颜色信息；未观察图像，纹理描述来自作品说明。\"\n    },\n    {\n      \"title\": \"Coastal Rock Formation (7080785973).jpg（Commons 搜索结果文件线索）\",\n      \"source_page\": \"https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&ns0=1&ns6=1&ns9=1&ns11=1&ns12=1&ns14=1&ns100=1&ns106=1&search=coastal+rocks+-geograph.org.uk#4\",\n      \"page_facts\": \"Commons 搜索结果列出具体文件 ‘Coastal Rock Formation (7080785973).jpg’，4,592×2,496，作者 xlibber，日期 2012-04-15。这是搜索列表中的文件条目，不是文件详情页；需下一轮定位 File 页。\",\n      \"lighting_form\": \"仅凭搜索结果无法确认强光投影；列为海岸岩石纹理候选，待文件页描述与图像验证。\",\n      \"texture_hint\": \"海岸岩层与风化面；若为强光，可提供受光岩脊与裂隙阴影的硬边缘。\",\n      \"license\": \"搜索列表显示来源 Flickr/xlibber，许可待文件页核验\",\n      \"limitation\": \"不是可直接引用的详情页；不能宣称已确认强光形态。\"\n    }\n  ],\n  \"semantic_suggestions\": [\n    \"强光山湖：优先找‘顶光/侧顶光 + 岩壁沟槽阴影 + 湖面倒影不溢出’的实例；图形函数上可把山体明暗交界建模为沿岩层法线的分段阶跃，阴影区保留低频层理纹理与高频裂隙边缘，而不是整体压暗。\",\n    \"海岸岩石：强光下玄武岩/花岗岩的受光柱面与背光裂隙形成硬边缘；可将岩石表面拆成‘受光面粗糙度’与‘阴影裂隙方向性暗线’，避免把阴影写成均匀黑色。\",\n    \"针叶林：本轮未找到可核验的‘强光树冠投影 + 枝干暗部纹理’具体照片页。下一轮应专门搜 Commons/Pexels 的‘sunlit pine forest shadow trunks texture’具体文件页，目标是有明确地面/树干投影与树冠锯齿边缘的实例，而非雾景漫射光。\",\n    \"水面反射：强光下水面高光易溢出；参考函数应引入高光压缩（roll-off）与倒影边缘的垂直模糊，保留山脊线倒影的硬边缘但压低镜面亮部。\",\n    \"薄雾与强光互斥：强光场景通常雾薄或无雾；若需要‘强光 + 薄雾’，应把雾建模为局部体积散射，压低远景对比但保留前景硬投影，而不是全幅低对比。\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 40885441 的许可证原文与强光方向未在返回内容中直接显示；ƒ/16 与海岸题材仅为推断线索。\",\n    \"Commons 多个结果为搜索列表/分类页，不是文件详情页；作者、许可、描述字段需下一轮打开 File 页补全。\",\n    \"Berkeley 馆藏记录为黑白作品，不能提供颜色与水面高光信息；许可待核验。\",\n    \"本轮未找到针叶林强光投影的具体照片详情页；Pexels 35151768 为雾中松林，EXIF 为 f/4.0、1/60s、ISO 500，页面描述强调‘misty’，不符合强光明确投影目标。\",\n    \"所有光照形态与纹理建议均来自页面文字、EXIF 或作品说明，未下载图像字节，未做边缘提取或像素级验证。\"\n  ],\n  \"next_focus\": \"下一轮定向搜索：1) Commons File 页 ‘Castle Mountain.jpg’ 与 ‘Coastal Rock Formation (7080785973).jpg’ 的作者/许可/描述；2) Pexels 搜 ‘sunlit pine forest shadows trunk texture’ 具体照片页，补针叶林强光投影缺口；3) 山湖强光找‘顶光岩壁沟槽 + 湖面倒影’的 Commons Featured picture 文件页，避免分类页。\"\n}\n```\n\n**本轮可点击来源页（仅列可追溯到具体作品记录或具体照片页的条目）**：\n\n1. Pexels — Murcia 海岸岩壁：https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/  \n   页面事实：ƒ/16，ISO 100，1/50s，14mm；描述为崎岖海岸岩石。许可待核验。\n\n2. Wikimedia Commons — Haystack Rock and Needles in fog（同地点强光对照线索）：https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg  \n   页面事实：晨雾巨岩；同地点其他文件出现在搜索列表，但本页不是强光实例。\n\n3. Wikimedia Commons — Water reflections of mountains of Alberta 分类（含 Castle Mountain.jpg 文件线索）：https://commons.wikimedia.org/wiki/Category:Water_reflections_of_mountains_of_Alberta  \n   分类页，非文件详情页；列出具体文件名与尺寸。\n\n4. UC Berkeley 馆藏 — The Rotunda, Enchanted Gorge：https://digicoll.lib.berkeley.edu/record/46673?ln=en&v=uv#?xywh=-323%2C-38%2C2145%2C1292  \n   作品说明明确写有顶光高对比与岩壁/沟壑深阴影；黑白记录，许可待核验。\n\n5. Commons 搜索列表中的 Coastal Rock Formation 文件线索：https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&ns0=1&ns6=1&ns9=1&ns11=1&ns12=1&ns14=1&ns100=1&ns106=1&search=coastal+rocks+-geograph.org.uk#4  \n   列出具体文件条目与作者 xlibber；非文件详情页，需下一轮定位 File 页。\n\n**局限**：未下载图像，不能确认投影方向、暗部纹理保留程度、水面高光是否溢出；以上为搜索与语义整理，照片字节由后续独立步骤获取并提交视觉模型。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/misty-pine-forest-in-tranquil-landscape-35151768/",
+      "title": "Photo by Arto Suraj on Pexels",
+      "snippet": "",
+      "via": "server_page"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/October_2024-2#13",
+      "title": "Commons:Featured picture candidates/Log/October 2024-2 - Wikimedia Commons - - Support --Thi (talk) 15:52, 10 October 2024 (UTC)",
+      "snippet": "Oppose Interesting motif but such harsh lighting just isn't working for me, sorry. ... This image will be added to the FP gallery: Objects/Rocks_and_minerals#Others ... - I think the lack of sharpness in some places is more likely because this picture was taken using a much higher ISO than most of Poco's church interiors. ... - Support The photos are a bit small ... are really interesting.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/39267274/",
+      "title": "Pexels 上由 the_mountainb0y 拍攝的相片",
+      "snippet": "the_mountainb0y ... 尺寸 3024x4032 長寬比 3:4 色彩 ... 說明 # 雄偉的山峰，藍天白雲倒映在高山湖泊中，營造出寧靜祥和的自然氛圍。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/",
+      "title": "Photo by Emilio Sánchez Hernández on Pexels",
+      "snippet": "Afterglow ... Taken At Nov 6, 2026 Software Adobe Photoshop Lightroom Classic 15.1 (Windows) Región de Murcia, España Description # Stunning rocky coastline of Región de Murcia, Spain with vibrant sky and ocean. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://huggingface.co/datasets/CaptionEmporium/pexels-568k-internvl2/viewer/default/train?p=5630#10",
+      "title": "CaptionEmporium/pexels-568k-internvl2 · Datasets at Hugging Face - A serene winter scene set in a snowy forest clearing",
+      "snippet": "Рига, Латвия ... 0.666667 ... A serene winter landscape with tall pine trees standing amidst a snow-covered forest floor, under a cloudy sky. ... Tall pine trees stand amidst a snowy forest landscape. ... their dark green needles offering a stark contrast to the snowy surroundings. ... adding texture to the scene. ... creating a natural mix of textures ... the background is dominated by a dense cluster of pine trees, their dark green needles standing out against ... their dark green needles contrast beautifully",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://digicoll.lib.berkeley.edu/record/46673?ln=en&v=uv#?xywh=-323%2C-38%2C2145%2C1292",
+      "title": "The Rotunda, Enchanted Gorge.",
+      "snippet": "This black-and-white landscape photograph captures a wide mountain basin featuring a prominent lake. In the foreground ... Surrounding the lake, several sharp ... The overhead lighting creates high contrast, casting deep, dark shadows into the rock faces and gullies while brightly illuminating the flat surfaces.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/similar-photos/542269848/?page=4",
+      "title": "Similar Free Stock Images of Beautiful view of conifer forest at sunset",
+      "snippet": "Sunset or sunrise in the autumn pine forest. ... Sunny morning, a delicate mist floats among the crowns illuminated by the light of the rising sun. ... Beautiful pine forest pine park with pines, firs and birches in a sunny day with hard shadows and sunlight, lots of green trees.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/36764009/",
+      "title": "Pexels 上由 Adrien Olichon 拍攝的相片",
+      "snippet": "尺寸 6336x9520 長寬比 396:595 色彩 ... 2026 下載次數 4 瀏覽次數 2.5 千 ... 軟體 Adobe Photoshop Lightroom Classic 14.2 (Macintosh) 說明 # 在明亮藍天下的海洋旁，展現崎嶇的海岸岩石風景。 ### 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://elements.envato.com/evergreen-tree-spruce-or-pine-branch-green-plant-UU7PVL9",
+      "title": "Lush Green Pine Tree Branches in Sunlight",
+      "snippet": "Lush Green Pine Tree Branches in Sunlight ... This image showcases the verdant beauty of lush pine tree branches basking in sunlight. The needles are a vibrant green, creating a sense of freshness and vitality. The light filters through the foliage, casting dappled shadows and highlighting the textures of the bark and needles.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.m.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/June_2015#2",
+      "title": "Commons:Featured picture candidates/Log/June 2015 - Wikimedia Commons - - Comment Hubertl - you've reviewed a different image :) For me the photo is sharp enough - a lot of details are visible on the ...",
+      "snippet": "The very bright snow opposing the very dark shadows leave very little range for everything in-between, and the colours are very muted as a result. ... - Support For me it has wow and I think a reasonable tradeoff has been made regarding the light, presence of shadows and time of day.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.m.wikimedia.org/wiki/Category:Water_reflections_of_mountains_of_Alberta",
+      "title": "Category:Water reflections of mountains of Alberta - Wikimedia Commons",
+      "snippet": "1 moraine lake pano 2019.jpg 14,949 × 7,983 ... - Castle Mountain.jpg 4,928 × 3,264; 10.91 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/nb-no/bilde/majesteti[credential removed]/",
+      "title": "Bilde av Nunzio Guerrera på Pexels",
+      "snippet": "Afterglow ... Programvare Adobe Photoshop Lightroom 6.0 (Windows) Banff, Alberta, Canada Beskrivelse # Fantastisk soloppgangsutsikt over Peyto Lake og de kanadiske Rocky Mountains i Banff nasjonalpark, Alberta.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://photoclub.canadiangeographic.ca/media/34010416-Follow%20the%20creek%20to%20the%20gold!",
+      "title": "Reflecting pool",
+      "snippet": "Reflecting pool ##### Description Last light of the evening on the mountain reflecting in a pool of water ##### Taken By Raymond O'Connor ##### Taken On February 7, 2019 ##### Tagged castle mountain banff alberta canada ##### Assignments",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Ecola_State_Park_Haystack_Rock.JPG#1",
+      "title": "File:Ecola State Park Haystack Rock.JPG - Wikimedia Commons - to share – to copy, distribute and transmit the work",
+      "snippet": "2008-07-12 21:56 Brmuchim ... |Description=Taken from [[Ecola State Park]], a photograph looking south along the [[Pacific Ocean]] coast toward [[Haystack Rock]] in [[Cannon Beach, Oregon]].",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://huggingface.co/datasets/bghira/photo-concept-bucket/viewer/default/train?p=5671#7",
+      "title": "bghira/photo-concept-bucket · Data Studio · Datasets at Hugging Face - https://images",
+      "snippet": "The mountains ... adventure, beach, daylight, desert, hill, landscape, light, mountain, outdoors, people, scenic, snow, sun, travel, water ... A lone skier makes their way down a snow-covered slope under a clear sky with the sun shining brightly. In the distance, mountain ranges and a few other skiers can be seen.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://wallnesthd.com/wallpaper.html?src=pexels&id=px_22376816",
+      "title": "Detailed View Wet — 4K Mobile Wallpaper — WallNest HD",
+      "snippet": "Pexels # Detailed View Wet — 4K Mobile Wallpaper Detailed view of wet rocks on a beach during summer with sunlight reflections creating a textured surface.. Ali Arapoğlu's lens turns your screen into a breathtaking escape. Free 4K download — 3677x5515. ... Photo by Ali Arapoğlu on Pexels",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Furuskog.JPG#1",
+      "title": "File:Furuskog.JPG - Wikimedia Commons - File:Furuskog.JPG",
+      "snippet": "Furuskog.JPG ... Summary [edit] DescriptionFuruskog.JPG | Young Pinus sylvestris forest in rendalen, Norway in autumn ... Source | Own work Author | User:Orland ... | CC-BY-SA ... |Description= Young pine forest in rendalen...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/el-gr/photo/herbert-banff-30972051/",
+      "title": "Φωτογραφία από Nunzio Guerrera στο Pexels",
+      "snippet": "Banff, Alberta, Canada Εκπληκτική αντανάκλαση ηλιοβασιλέματος στη λίμνη Herbert, με τα χιονισμένα Βραχώδη Όρη στο Εθνικό Πάρκο Banff του Καναδά.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/similar-photos/581701258/",
+      "title": "Similar Free Stock Images of A mesmerizing view of rocky lake and snowy mountains",
+      "snippet": "Castle Mountain in Banff National Park, Alberta, Canada. A large mountain is reflected in the water of a lake. ... Beautifull sunset under Castle Mountain Castle Mountain and Bow River in summer sunny day. Castle Mountain viewpoint. Banff National Park, Canadian Rockies, Alberta, Canada.",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/October_2024-2#13",
+      "title": "Commons:Featured picture candidates/Log/October 2024-2 - Wikimedia Commons - - Support --Thi (talk) 15:52, 10 October 2024 (UTC)",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/",
+      "title": "Photo by Emilio Sánchez Hernández on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36764009/",
+      "title": "Pexels 上由 Adrien Olichon 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/nb-no/bilde/majesteti[credential removed]/",
+      "title": "Bilde av Nunzio Guerrera på Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ecola_State_Park_Haystack_Rock.JPG#1",
+      "title": "File:Ecola State Park Haystack Rock.JPG - Wikimedia Commons - to share – to copy, distribute and transmit the work",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Furuskog.JPG#1",
+      "title": "File:Furuskog.JPG - Wikimedia Commons - File:Furuskog.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/el-gr/photo/herbert-banff-30972051/",
+      "title": "Φωτογραφία από Nunzio Guerrera στο Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 77144,
+        "sha256": "caac6e5f649bab911dce73923abb726074ed59477e64187196e881c194a32764"
+      },
+      "imageUrl": "https://images.pexels.com/photos/40885441/pexels-photo-40885441.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/",
+      "title": "Photo by Emilio Sánchez Hernández on Pexels",
+      "sha256": "caac6e5f649bab911dce73923abb726074ed59477e64187196e881c194a32764",
+      "bytes": 77144,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 245100,
+        "sha256": "099815a65b09494a42bd878a6ac7dc97ee536c6f8a8263f03b340b9500409d4f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36764009/pexels-photo-36764009.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36764009/",
+      "title": "Pexels 上由 Adrien Olichon 拍攝的相片",
+      "sha256": "099815a65b09494a42bd878a6ac7dc97ee536c6f8a8263f03b340b9500409d4f",
+      "bytes": 245100,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1154
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 50048,
+        "sha256": "fa2501485a0c459a8ae9fcf2eafe08ef98f2d859a5e1dd87efc521bec110e72b"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36185626/pexels-photo-36185626.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/nb-no/bilde/majesteti[credential removed]/",
+      "title": "Bilde av Nunzio Guerrera på Pexels",
+      "sha256": "fa2501485a0c459a8ae9fcf2eafe08ef98f2d859a5e1dd87efc521bec110e72b",
+      "bytes": 50048,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 513
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 153536,
+        "sha256": "cc9fb5454410a187429bb9e88ec165d1914b2b7f900fca4680da240f8fbe258b"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ecola_State_Park_Haystack_Rock.JPG/960px-Ecola_State_Park_Haystack_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ecola_State_Park_Haystack_Rock.JPG#1",
+      "title": "File:Ecola State Park Haystack Rock.JPG - Wikimedia Commons - to share – to copy, distribute and transmit the work",
+      "sha256": "cc9fb5454410a187429bb9e88ec165d1914b2b7f900fca4680da240f8fbe258b",
+      "bytes": 153536,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Brmuchim ( talk )",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Ecola_State_Park_Haystack_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4000,
+        "height": 3000,
+        "bytes": 2795767
+      }
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/40885441/pexels-photo-40885441.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/",
+      "title": "Photo by Emilio Sánchez Hernández on Pexels",
+      "sha256": "caac6e5f649bab911dce73923abb726074ed59477e64187196e881c194a32764",
+      "bytes": 77144,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/36764009/pexels-photo-36764009.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36764009/",
+      "title": "Pexels 上由 Adrien Olichon 拍攝的相片",
+      "sha256": "099815a65b09494a42bd878a6ac7dc97ee536c6f8a8263f03b340b9500409d4f",
+      "bytes": 245100,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1154,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/36185626/pexels-photo-36185626.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/nb-no/bilde/majesteti[credential removed]/",
+      "title": "Bilde av Nunzio Guerrera på Pexels",
+      "sha256": "fa2501485a0c459a8ae9fcf2eafe08ef98f2d859a5e1dd87efc521bec110e72b",
+      "bytes": 50048,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 513,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ecola_State_Park_Haystack_Rock.JPG/960px-Ecola_State_Park_Haystack_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ecola_State_Park_Haystack_Rock.JPG#1",
+      "title": "File:Ecola State Park Haystack Rock.JPG - Wikimedia Commons - to share – to copy, distribute and transmit the work",
+      "sha256": "cc9fb5454410a187429bb9e88ec165d1914b2b7f900fca4680da240f8fbe258b",
+      "bytes": 153536,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Brmuchim ( talk )",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Ecola_State_Park_Haystack_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4000,
+        "height": 3000,
+        "bytes": 2795767
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Commons:Featured_picture_candidates/Log/October_2024-2#13",
+        "title": "Commons:Featured picture candidates/Log/October 2024-2 - Wikimedia Commons - - Support --Thi (talk) 15:52, 10 October 2024 (UTC)",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/",
+        "title": "Photo by Emilio Sánchez Hernández on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/40885441/pexels-photo-40885441.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/40885441/pexels-photo-40885441.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 77144,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "caac6e5f649bab911dce73923abb726074ed59477e64187196e881c194a32764"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/36764009/",
+        "title": "Pexels 上由 Adrien Olichon 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/36764009/pexels-photo-36764009.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/36764009/pexels-photo-36764009.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 245100,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1154,
+        "sha256": "099815a65b09494a42bd878a6ac7dc97ee536c6f8a8263f03b340b9500409d4f"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/nb-no/bilde/majesteti[credential removed]/",
+        "title": "Bilde av Nunzio Guerrera på Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/36185626/pexels-photo-36185626.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/36185626/pexels-photo-36185626.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 50048,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 513,
+        "sha256": "fa2501485a0c459a8ae9fcf2eafe08ef98f2d859a5e1dd87efc521bec110e72b"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ecola_State_Park_Haystack_Rock.JPG#1",
+        "title": "File:Ecola State Park Haystack Rock.JPG - Wikimedia Commons - to share – to copy, distribute and transmit the work",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ecola_State_Park_Haystack_Rock.JPG/960px-Ecola_State_Park_Haystack_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Brmuchim ( talk )",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AEcola_State_Park_Haystack_Rock.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ecola_State_Park_Haystack_Rock.JPG/960px-Ecola_State_Park_Haystack_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 153536,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 720,
+        "sha256": "cc9fb5454410a187429bb9e88ec165d1914b2b7f900fca4680da240f8fbe258b"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Furuskog.JPG#1",
+        "title": "File:Furuskog.JPG - Wikimedia Commons - File:Furuskog.JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Furuskog.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 2.5",
+          "url": "https://creativecommons.org/licenses/by-sa/2.5",
+          "artist": "User:Orland",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 2.5",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AFuruskog.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Furuskog.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "bytes": 115080,
+        "mime": "image/jpeg",
+        "width": 640,
+        "height": 480,
+        "sha256": "f3457648d3bc6222d91eb6686f7cadf276705bc4a08ba6c128fd1ade183a1f77"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮搜索未能直接返回 4–6 个全部满足“强光照明 + 明确投影 + 纹理保留”且可核验的具体照片详情页。Commons 大量返回的是搜索列表或分类页，不是独立作品详情页；部分 Pexels 结果缺少可确认的强光方向信息。以下只列出可追溯到具体照片页或作品记录的候选，未下载图像，所有光照与材质描述均来自页面文字/EXIF 或作品说明，不是像素观察。\n\n```json\n{\n  \"summary\": \"本轮针对‘强光照明：明确投影、亮暗交界、保留纹理’检索 Pexels、Wikimedia Commons 与公开摄影记录。可直接核验的具体照片页有限：Pexels 海岸岩壁 40885441 具备强光高对比的页面线索；Commons 可追溯到海岸岩石与针叶林的具体文件页，但部分作者/许可字段需下一轮打开文件页核验。另有 Berkeley 馆藏的高对比山湖黑白作品记录，可作为‘强光下岩壁暗部保留纹理’的参考记录，但不是 Commons/Pexels 照片页。未发现同时覆盖山湖、海岸、针叶林且均为强光投影的完整 5 张独立实例，缺口仍在针叶林树冠强光投影与山湖岩石强光明暗交界。\",\n  \"candidates\": [\n    {\n      \"title\": \"Dramatic rocky coastline in Murcia, Spain\",\n      \"source_page\": \"https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/\",\n      \"page_facts\": \"Pexels 具体照片页；9377×6251；Sony ILCE-7RM5；14mm；ƒ/16；ISO 100；1/50s；2026-11-06 拍摄；页面描述为‘Stunning rocky coastline of Región de Murcia, Spain with vibrant sky and ocean’。\",\n      \"lighting_form\": \"页面未直接写‘投影’，但 f/16 与海岸岩壁题材通常意味着大景深、硬边缘岩脊与受光面/背光面分离；可作为海岸岩壁强光明暗交界候选。\",\n      \"texture_hint\": \"岩石节理、层理与海蚀边缘的硬质纹理，适合提取高频边缘与受光面粗糙度差异；水面高光需后续图像验证是否溢出。\",\n      \"license\": \"待核验（Pexels 免费许可原文未在返回内容中显示）\",\n      \"limitation\": \"未观察图像；‘强光方向’与‘暗部纹理保留’来自 EXIF 与题材推断，不是像素证据。\"\n    },\n    {\n      \"title\": \"Haystack Rock and Needles at Cannon Beach（Commons 文件候选）\",\n      \"source_page\": \"https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg\",\n      \"page_facts\": \"此前轮已收集但本轮作为强光对照需注意：该页描述为晨雾中的 Cannon Beach 巨岩；5,744×3,829；Sony ILCE-6000；30mm；1/1,600s；2018-05-13；作者 Lianguanlun。\",\n      \"lighting_form\": \"该实例本身是雾景低对比，不适合‘强光明确投影’；但同一地点的其他 Commons 文件如 ‘Haystack Rock at Cannon Beach, Oregon, U.S.’ 与 ‘Cannon Beach October 2019 panorama 2’ 出现在搜索结果中，可作为后续查找同地点强光版本的线索。\",\n      \"texture_hint\": \"玄武岩柱状节理与海岸巨岩轮廓；强光版本可能呈现岩壁裂隙暗部与受光柱面的硬过渡。\",\n      \"license\": \"待核验（文件页许可字段未在返回内容中完整显示）\",\n      \"limitation\": \"本页不是强光实例；仅用于定位同地点其他文件，不宣称已见强光投影。\"\n    },\n    {\n      \"title\": \"Castle Mountain.jpg（Commons 分类中的具体文件线索）\",\n      \"source_page\": \"https://commons.wikimedia.org/wiki/Category:Water_reflections_of_mountains_of_Alberta\",\n      \"page_facts\": \"分类页列出 ‘Castle Mountain.jpg’ 4,928×3,264 与 ‘1 moraine lake pano 2019.jpg’ 等具体文件。分类页不是文件详情页，需下一轮打开 File: Castle Mountain.jpg 核验作者、许可与描述。\",\n      \"lighting_form\": \"Castle Mountain 为班夫典型强光山体，岩层受光面与沟槽阴影方向明确；但本分类页未提供光照描述，不能仅凭文件名断言投影形态。\",\n      \"texture_hint\": \"沉积岩层理、陡壁沟槽与湖面倒影的垂直对应；强光下岩壁暗部沟槽可保留层理纹理，适合提取‘受光面—阴影沟槽’的边缘梯度。\",\n      \"license\": \"待核验\",\n      \"limitation\": \"分类页非作品详情页；文件名与尺寸来自分类列表，未打开文件页，不编造直链。\"\n    },\n    {\n      \"title\": \"The Rotunda, Enchanted Gorge（Berkeley 馆藏作品记录）\",\n      \"source_page\": \"https://digicoll.lib.berkeley.edu/record/46673?ln=en&v=uv#?xywh=-323%2C-38%2C2145%2C1292\",\n      \"page_facts\": \"加州大学伯克利馆藏黑白风景摄影记录；描述为宽山盆、湖面倒影、浅色碎裂花岗岩巨石与陡峭岩坡；明确写有‘overhead lighting creates high contrast, casting deep, dark shadows into the rock faces and gullies while brightly illuminating the flat surfaces’。\",\n      \"lighting_form\": \"顶光强对比：平坦面高亮、岩壁与沟壑深阴影；明确记录‘深阴影’与‘高对比’，是强光投影的文本证据。\",\n      \"texture_hint\": \"碎裂花岗岩巨石、垂直裂隙与岩脊；强光下平坦岩面与沟槽阴影形成硬交界，适合提取岩壁法线变化导致的明暗分段。\",\n      \"license\": \"馆藏记录，许可与使用条款待核验\",\n      \"limitation\": \"不是 Pexels/Commons 照片页；黑白记录无颜色信息；未观察图像，纹理描述来自作品说明。\"\n    },\n    {\n      \"title\": \"Coastal Rock Formation (7080785973).jpg（Commons 搜索结果文件线索）\",\n      \"source_page\": \"https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&ns0=1&ns6=1&ns9=1&ns11=1&ns12=1&ns14=1&ns100=1&ns106=1&search=coastal+rocks+-geograph.org.uk#4\",\n      \"page_facts\": \"Commons 搜索结果列出具体文件 ‘Coastal Rock Formation (7080785973).jpg’，4,592×2,496，作者 xlibber，日期 2012-04-15。这是搜索列表中的文件条目，不是文件详情页；需下一轮定位 File 页。\",\n      \"lighting_form\": \"仅凭搜索结果无法确认强光投影；列为海岸岩石纹理候选，待文件页描述与图像验证。\",\n      \"texture_hint\": \"海岸岩层与风化面；若为强光，可提供受光岩脊与裂隙阴影的硬边缘。\",\n      \"license\": \"搜索列表显示来源 Flickr/xlibber，许可待文件页核验\",\n      \"limitation\": \"不是可直接引用的详情页；不能宣称已确认强光形态。\"\n    }\n  ],\n  \"semantic_suggestions\": [\n    \"强光山湖：优先找‘顶光/侧顶光 + 岩壁沟槽阴影 + 湖面倒影不溢出’的实例；图形函数上可把山体明暗交界建模为沿岩层法线的分段阶跃，阴影区保留低频层理纹理与高频裂隙边缘，而不是整体压暗。\",\n    \"海岸岩石：强光下玄武岩/花岗岩的受光柱面与背光裂隙形成硬边缘；可将岩石表面拆成‘受光面粗糙度’与‘阴影裂隙方向性暗线’，避免把阴影写成均匀黑色。\",\n    \"针叶林：本轮未找到可核验的‘强光树冠投影 + 枝干暗部纹理’具体照片页。下一轮应专门搜 Commons/Pexels 的‘sunlit pine forest shadow trunks texture’具体文件页，目标是有明确地面/树干投影与树冠锯齿边缘的实例，而非雾景漫射光。\",\n    \"水面反射：强光下水面高光易溢出；参考函数应引入高光压缩（roll-off）与倒影边缘的垂直模糊，保留山脊线倒影的硬边缘但压低镜面亮部。\",\n    \"薄雾与强光互斥：强光场景通常雾薄或无雾；若需要‘强光 + 薄雾’，应把雾建模为局部体积散射，压低远景对比但保留前景硬投影，而不是全幅低对比。\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 40885441 的许可证原文与强光方向未在返回内容中直接显示；ƒ/16 与海岸题材仅为推断线索。\",\n    \"Commons 多个结果为搜索列表/分类页，不是文件详情页；作者、许可、描述字段需下一轮打开 File 页补全。\",\n    \"Berkeley 馆藏记录为黑白作品，不能提供颜色与水面高光信息；许可待核验。\",\n    \"本轮未找到针叶林强光投影的具体照片详情页；Pexels 35151768 为雾中松林，EXIF 为 f/4.0、1/60s、ISO 500，页面描述强调‘misty’，不符合强光明确投影目标。\",\n    \"所有光照形态与纹理建议均来自页面文字、EXIF 或作品说明，未下载图像字节，未做边缘提取或像素级验证。\"\n  ],\n  \"next_focus\": \"下一轮定向搜索：1) Commons File 页 ‘Castle Mountain.jpg’ 与 ‘Coastal Rock Formation (7080785973).jpg’ 的作者/许可/描述；2) Pexels 搜 ‘sunlit pine forest shadows trunk texture’ 具体照片页，补针叶林强光投影缺口；3) 山湖强光找‘顶光岩壁沟槽 + 湖面倒影’的 Commons Featured picture 文件页，避免分类页。\"\n}\n```\n\n**本轮可点击来源页（仅列可追溯到具体作品记录或具体照片页的条目）**：\n\n1. Pexels — Murcia 海岸岩壁：https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/  \n   页面事实：ƒ/16，ISO 100，1/50s，14mm；描述为崎岖海岸岩石。许可待核验。\n\n2. Wikimedia Commons — Haystack Rock and Needles in fog（同地点强光对照线索）：https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg  \n   页面事实：晨雾巨岩；同地点其他文件出现在搜索列表，但本页不是强光实例。\n\n3. Wikimedia Commons — Water reflections of mountains of Alberta 分类（含 Castle Mountain.jpg 文件线索）：https://commons.wikimedia.org/wiki/Category:Water_reflections_of_mountains_of_Alberta  \n   分类页，非文件详情页；列出具体文件名与尺寸。\n\n4. UC Berkeley 馆藏 — The Rotunda, Enchanted Gorge：https://digicoll.lib.berkeley.edu/record/46673?ln=en&v=uv#?xywh=-323%2C-38%2C2145%2C1292  \n   作品说明明确写有顶光高对比与岩壁/沟壑深阴影；黑白记录，许可待核验。\n\n5. Commons 搜索列表中的 Coastal Rock Formation 文件线索：https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=500&offset=0&ns0=1&ns6=1&ns9=1&ns11=1&ns12=1&ns14=1&ns100=1&ns106=1&search=coastal+rocks+-geograph.org.uk#4  \n   列出具体文件条目与作者 xlibber；非文件详情页，需下一轮定位 File 页。\n\n**局限**：未下载图像，不能确认投影方向、暗部纹理保留程度、水面高光是否溢出；以上为搜索与语义整理，照片字节由后续独立步骤获取并提交视觉模型。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 37743,
+    "completion_tokens": 2906,
+    "total_tokens": 40649,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "a506e604-303f-4e0e-9cc9-594cb8f587ca",
+        "model": "deepseek-flash",
+        "elapsedMs": 42291,
+        "prompt_tokens": 37743,
+        "completion_tokens": 2906,
+        "total_tokens": 40649,
+        "server_tool_use": {
+          "tool_search": 12,
+          "tool_fetch": 1,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 60166,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 77144,
+        "sha256": "caac6e5f649bab911dce73923abb726074ed59477e64187196e881c194a32764"
+      },
+      "imageUrl": "https://images.pexels.com/photos/40885441/pexels-photo-40885441.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-in-murcia-spain-40885441/",
+      "title": "Photo by Emilio Sánchez Hernández on Pexels",
+      "sha256": "caac6e5f649bab911dce73923abb726074ed59477e64187196e881c194a32764",
+      "bytes": 77144,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/caac6e5f649bab911dce73923abb726074ed59477e64187196e881c194a32764.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 245100,
+        "sha256": "099815a65b09494a42bd878a6ac7dc97ee536c6f8a8263f03b340b9500409d4f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36764009/pexels-photo-36764009.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36764009/",
+      "title": "Pexels 上由 Adrien Olichon 拍攝的相片",
+      "sha256": "099815a65b09494a42bd878a6ac7dc97ee536c6f8a8263f03b340b9500409d4f",
+      "bytes": 245100,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1154,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/099815a65b09494a42bd878a6ac7dc97ee536c6f8a8263f03b340b9500409d4f.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 50048,
+        "sha256": "fa2501485a0c459a8ae9fcf2eafe08ef98f2d859a5e1dd87efc521bec110e72b"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36185626/pexels-photo-36185626.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/nb-no/bilde/majesteti[credential removed]/",
+      "title": "Bilde av Nunzio Guerrera på Pexels",
+      "sha256": "fa2501485a0c459a8ae9fcf2eafe08ef98f2d859a5e1dd87efc521bec110e72b",
+      "bytes": 50048,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 513,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/fa2501485a0c459a8ae9fcf2eafe08ef98f2d859a5e1dd87efc521bec110e72b.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 153536,
+        "sha256": "cc9fb5454410a187429bb9e88ec165d1914b2b7f900fca4680da240f8fbe258b"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ecola_State_Park_Haystack_Rock.JPG/960px-Ecola_State_Park_Haystack_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ecola_State_Park_Haystack_Rock.JPG#1",
+      "title": "File:Ecola State Park Haystack Rock.JPG - Wikimedia Commons - to share – to copy, distribute and transmit the work",
+      "sha256": "cc9fb5454410a187429bb9e88ec165d1914b2b7f900fca4680da240f8fbe258b",
+      "bytes": 153536,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Brmuchim ( talk )",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Ecola_State_Park_Haystack_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4000,
+        "height": 3000,
+        "bytes": 2795767
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/cc9fb5454410a187429bb9e88ec165d1914b2b7f900fca4680da240f8fbe258b.jpeg"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+/** Run fixed, preselected DeepSeek → CRF09Tasks → native-renderer trials. */
+import {args,verifyProtocol,readCredential,runOneTrial,recordRunnerFailure,safeName,progress} from './experiment_runtime09.mjs';
+const options=args();if(options.help){console.log('run_generation09.mjs --start 1 --limit 10 --resume --replan --run-id showcase-v1 --model path --learning auto --candidates 3 --feedback 2\n--replan: once only, failed planning with zero candidates; preserves original task and paid request history.\nPass {"apiKey":"..."} through hidden stdin.');process.exit(0);}
+const {protocol,hash}=await verifyProtocol(),runId=safeName(options['run-id']||'showcase-v1'),start=Number(options.start||1),limit=Number(options.limit||10);
+if(!Number.isInteger(start)||start<1||start>10||!Number.isInteger(limit)||limit<1||limit>10)throw new Error('start/limit must select the frozen ten-task showcase');
+const specs=protocol.showcase.slice(start-1,start-1+limit),apiKey=await readCredential();progress({runId,protocolSha256:hash,selectedTasks:specs.map(s=>s.id),scope:'fixed_showcase_not_terminal_benchmark'});
+let failures=0;for(const spec of specs){try{const result=await runOneTrial({apiKey,spec,runId,protocolHash:hash,options});if(['failed','cancelled'].includes(result.status))failures++;}catch(error){failures++;await recordRunnerFailure({spec,runId,protocolHash:hash,error});progress({experiment:spec.id,status:'runner_failed',error:String(error.message).replace(/sk-[A-Za-z0-9_-]{12,}/g,'[credential removed]')});}}
+progress({runId,finished:true,requestedTasks:specs.length,failedTasks:failures,terminalBenchmarkExecuted:false});process.exitCode=failures?2:0;

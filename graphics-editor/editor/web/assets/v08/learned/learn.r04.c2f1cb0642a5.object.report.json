@@ -1,0 +1,550 @@
+{
+  "id": "learn.r04.c2f1cb0642a5.object",
+  "assetId": "learn.r04.c2f1cb0642a5.object",
+  "status": "fitted",
+  "round": 4,
+  "topic": "咖啡与餐桌静物实拍",
+  "sourceUrl": "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+  "imageUrl": "https://images.pexels.com/photos/35970499/pexels-photo-35970499.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo by James Collington on Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r04.c2f1cb0642a5.webp",
+  "sourceSHA256": "c2f1cb0642a55d680a61fe9bccb241889793cb30b4f6c1d9a2901ab01cd89931",
+  "normalizedRGBA_SHA256": "e08abc9a25bc9d2bb4be31e9230a7401cb6e8f639b7374289e86c2d681c2b0de",
+  "dHash64": "9b1f4e4c3d3ba766",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    261,
+    226
+  ],
+  "assetURL": "assets/v08/learned/learn.r04.c2f1cb0642a5.object.json",
+  "renderURL": "assets/v08/learned/learn.r04.c2f1cb0642a5.object.png",
+  "reportURL": "assets/v08/learned/learn.r04.c2f1cb0642a5.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r04.c2f1cb0642a5.object.png",
+  "referenceThumbnailURL": "assets/v08/references/learn.r04.c2f1cb0642a5.object.jpg",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 7373,
+  "pixelToGaussianRatio": 8.000271260002712,
+  "assetBytes": 606502,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 0.46116190768078186,
+    "rmse": 1.3899285524343012,
+    "psnr": 45.27095407958319,
+    "ssim": 0.9796964013534355,
+    "maxError": 77,
+    "exactRGBFraction": 0.34203401951269347,
+    "evaluatedPixels": 39154,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 0.33532791217335955,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 2.846963393003099,
+          "bestFloatMSE": 2.846963393003099
+        },
+        {
+          "step": 10,
+          "floatMSE": 1.182491859110461,
+          "bestFloatMSE": 1.182491859110461
+        },
+        {
+          "step": 20,
+          "floatMSE": 0.6823744383451904,
+          "bestFloatMSE": 0.6823744383451904
+        },
+        {
+          "step": 30,
+          "floatMSE": 0.4921138240002076,
+          "bestFloatMSE": 0.4921138240002076
+        },
+        {
+          "step": 40,
+          "floatMSE": 0.4066158540915859,
+          "bestFloatMSE": 0.4066158540915859
+        },
+        {
+          "step": 50,
+          "floatMSE": 0.36452164781264157,
+          "bestFloatMSE": 0.36452164781264157
+        },
+        {
+          "step": 60,
+          "floatMSE": 0.3441760562871537,
+          "bestFloatMSE": 0.3441760562871537
+        },
+        {
+          "step": 70,
+          "floatMSE": 0.33532791217335955,
+          "bestFloatMSE": 0.33532791217335955
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2580,
+        "elapsedSeconds": 0.225,
+        "mae": 6.006946927516984,
+        "rmse": 13.065049178525454,
+        "psnr": 25.808582632544955,
+        "ssim": 0.8545105931255464,
+        "maxError": 184,
+        "exactRGBFraction": 0.06653215507994074,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2580,
+        "elapsedSeconds": 0.348,
+        "mae": 4.081064514481279,
+        "rmse": 9.145962787117174,
+        "psnr": 28.906215008661732,
+        "ssim": 0.8897684791530331,
+        "maxError": 174,
+        "exactRGBFraction": 0.0758032384941513,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 5695,
+        "elapsedSeconds": 1.138,
+        "mae": 1.7831639168411912,
+        "rmse": 4.696093464912775,
+        "psnr": 34.69606896956116,
+        "ssim": 0.9576279506957,
+        "maxError": 123,
+        "exactRGBFraction": 0.12823721714256525,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 7373,
+        "elapsedSeconds": 1.579,
+        "mae": 1.2594881748991162,
+        "rmse": 3.500800775300632,
+        "psnr": 37.24745567872243,
+        "ssim": 0.9681300429064637,
+        "maxError": 114,
+        "exactRGBFraction": 0.16751800582315984,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 7373,
+        "elapsedSeconds": 1.62,
+        "mae": 1.2594881748991162,
+        "rmse": 3.500800775300632,
+        "psnr": 37.24745567872243,
+        "ssim": 0.9681300429064637,
+        "maxError": 114,
+        "exactRGBFraction": 0.16751800582315984,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 7373,
+        "elapsedSeconds": 1.871,
+        "mae": 0.9573393948681276,
+        "rmse": 2.5507015822273997,
+        "psnr": 39.99761057739238,
+        "ssim": 0.9735127283165035,
+        "maxError": 107,
+        "exactRGBFraction": 0.12366552587219697,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 7373,
+        "elapsedSeconds": 2.169,
+        "mae": 0.7129624899967649,
+        "rmse": 2.0875183145444325,
+        "psnr": 41.73819772081714,
+        "ssim": 0.9766641461808842,
+        "maxError": 99,
+        "exactRGBFraction": 0.19821729580630332,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 7373,
+        "elapsedSeconds": 2.405,
+        "mae": 0.5862406565527575,
+        "rmse": 1.789036647414992,
+        "psnr": 43.078418869918636,
+        "ssim": 0.978199719848777,
+        "maxError": 92,
+        "exactRGBFraction": 0.2630893395310824,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 7373,
+        "elapsedSeconds": 2.637,
+        "mae": 0.5204832201052255,
+        "rmse": 1.606850003574435,
+        "psnr": 44.01129684703143,
+        "ssim": 0.9789562758259783,
+        "maxError": 86,
+        "exactRGBFraction": 0.30132298104919036,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 7373,
+        "elapsedSeconds": 2.87,
+        "mae": 0.48427576577957127,
+        "rmse": 1.4873139001060627,
+        "psnr": 44.68275087311426,
+        "ssim": 0.9793971782947644,
+        "maxError": 80,
+        "exactRGBFraction": 0.3273484190631864,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 7373,
+        "elapsedSeconds": 3.145,
+        "mae": 0.4681343753724609,
+        "rmse": 1.421574773312052,
+        "psnr": 45.07540944763264,
+        "ssim": 0.9796112964356486,
+        "maxError": 78,
+        "exactRGBFraction": 0.33695152474842927,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 7373,
+        "elapsedSeconds": 3.416,
+        "mae": 0.46116190768078186,
+        "rmse": 1.3899285524343012,
+        "psnr": 45.27095407958319,
+        "ssim": 0.9796964013534355,
+        "maxError": 77,
+        "exactRGBFraction": 0.34203401951269347,
+        "evaluatedPixels": 39154,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 3.419,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 3.812,
+  "passedPilot": true,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.3,
+      0.18,
+      0.79,
+      0.92
+    ],
+    "proposalPixels": [
+      133,
+      40,
+      425,
+      281
+    ],
+    "cropPixels": [
+      143,
+      52,
+      404,
+      278
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 38547,
+    "pixelMaskVerified": false,
+    "reviewedCorrections": [
+      "Manually reviewed closed cubic contour on the original reference restores the complete visible cup body; four-times supersampled coverage replaces the failed GrabCut boundary."
+    ],
+    "reviewedContour": {
+      "coordinateSize": [
+        1100,
+        627
+      ],
+      "points": [
+        [
+          530,
+          124
+        ],
+        [
+          560,
+          125
+        ],
+        [
+          600,
+          133
+        ],
+        [
+          640,
+          149
+        ],
+        [
+          680,
+          177
+        ],
+        [
+          710,
+          211
+        ],
+        [
+          735,
+          257
+        ],
+        [
+          744,
+          296
+        ],
+        [
+          745,
+          325
+        ],
+        [
+          742,
+          349
+        ],
+        [
+          763,
+          378
+        ],
+        [
+          817,
+          401
+        ],
+        [
+          845,
+          424
+        ],
+        [
+          856,
+          450
+        ],
+        [
+          850,
+          482
+        ],
+        [
+          832,
+          516
+        ],
+        [
+          810,
+          542
+        ],
+        [
+          790,
+          550
+        ],
+        [
+          742,
+          535
+        ],
+        [
+          693,
+          519
+        ],
+        [
+          661,
+          551
+        ],
+        [
+          616,
+          575
+        ],
+        [
+          569,
+          585
+        ],
+        [
+          524,
+          586
+        ],
+        [
+          475,
+          578
+        ],
+        [
+          430,
+          560
+        ],
+        [
+          395,
+          537
+        ],
+        [
+          370,
+          500
+        ],
+        [
+          348,
+          454
+        ],
+        [
+          332,
+          405
+        ],
+        [
+          321,
+          358
+        ],
+        [
+          318,
+          321
+        ],
+        [
+          321,
+          281
+        ],
+        [
+          332,
+          244
+        ],
+        [
+          349,
+          211
+        ],
+        [
+          375,
+          183
+        ],
+        [
+          400,
+          164
+        ],
+        [
+          425,
+          149
+        ],
+        [
+          450,
+          137
+        ],
+        [
+          475,
+          130
+        ],
+        [
+          500,
+          126
+        ]
+      ],
+      "interpolation": "periodic cubic spline",
+      "coverageSamplesPerAxis": 4
+    },
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r04.c2f1cb0642a5.object.png"
+  },
+  "semantics": {
+    "id": "learn.r04.c2f1cb0642a5",
+    "label": "白色马克杯与深棕咖啡",
+    "category": "coffee cup",
+    "role": "object",
+    "bbox": [
+      0.3,
+      0.18,
+      0.79,
+      0.92
+    ],
+    "palette": [
+      [
+        237,
+        229,
+        213
+      ],
+      [
+        120,
+        76,
+        46
+      ],
+      [
+        173,
+        124,
+        77
+      ],
+      [
+        82,
+        77,
+        71
+      ],
+      [
+        241,
+        190,
+        119
+      ]
+    ],
+    "lightDirection": "left",
+    "description": "俯视近景中，一只白色陶瓷马克杯占据中心偏右，右侧有耳柄；杯内为深棕色咖啡液，液面靠左有明亮的圆形反光。桌面呈灰褐色，斜向硬光形成亮带与深阴影，整体暖调且对比明显。适合提取为咖啡静物/晨光氛围参考；复用时需保留杯口椭圆、液面高光和斜向光影，但不应据此推断杯外完整桌面或咖啡配方。",
+    "tags": [
+      "咖啡杯",
+      "陶瓷杯",
+      "深棕咖啡",
+      "液面高光",
+      "斜射光",
+      "桌面静物",
+      "暖色调",
+      "俯视",
+      "阴影",
+      "晨光",
+      "饮品",
+      "杯柄"
+    ],
+    "limitations": [
+      "强反光遮住部分液面细节",
+      "俯视角度看不到杯身完整侧面",
+      "桌面材质与范围不完整",
+      "无尺度参照",
+      "暖色光可能改变真实色彩",
+      "不能据此判断咖啡温度或配方"
+    ]
+  },
+  "sourceId": "learn.r04.c2f1cb0642a5"
+}

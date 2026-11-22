@@ -1,0 +1,953 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 2,
+  "query": "苹果与梨的实拍形态",
+  "checkpoint": {
+    "sessionId": "crf08-ten-rounds",
+    "round": 2,
+    "topic": "苹果与梨的实拍形态",
+    "subtopic": "4–6张不同真实苹果和梨，侧光、果柄清楚，观察实例差异，不能重复第一轮柑橘。本轮前次来源无法访问，实际改用 site:pexels.com/photo/ 或 site:commons.wikimedia.org/wiki/File: 搜索，找到至少4张可下载作品；不要再次提供 Unsplash。",
+    "status": "searched",
+    "completedAt": "2026-11-21T13:33:22.175Z",
+    "runId": "crf07_43f77a31-b528-40cf-b1c8-3d353ec71a16",
+    "queries": [
+      "Wikimedia Commons apple pear fruit photographs side lighting stems"
+    ],
+    "requestIds": [
+      "15a291b0-e300-4cd2-a3b6-5167b1c7c94e",
+      "fccfcd0b-774f-4610-8bc7-e3984ca9437f"
+    ],
+    "sourceCount": 21,
+    "newSourceCount": 1,
+    "candidateCount": 1,
+    "downloadedImageCount": 6,
+    "fittedFunctionCount": 0,
+    "extraSearchAPIRequests": 2
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_9642f00bda924f399ca4cf86ef4c4819",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons apple pear fruit photographs side lighting stems"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/Category:Apples?uselang=bn#2"
+        ]
+      },
+      {
+        "type": "search_api",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com/photo/ apple fruit"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/green-apple-lot-693794/",
+          "https://www.pexels.com/photo/fresh-red-apples-on-wooden-surface-30668750/",
+          "https://www.pexels.com/photo/close-up-photo-of-apples-13705758/",
+          "https://www.pexels.com/photo/close-up-photo-of-red-apples-9938585/",
+          "https://www.pexels.com/photo/crop-person-showing-ripe-apples-at-home-8416545/",
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://www.pexels.com/photo/close-up-of-green-apple-with-dew-drops-34809856/",
+          "https://www.pexels.com/photo/fresh-fruits-display-with-apples-and-kiwis-34583602/"
+        ]
+      },
+      {
+        "type": "search_api",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com/photo/ pear fruit"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/close-up-photo-of-sliced-pears-on-a-plate-5430664/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://unsplash.com/photos/grapes-apple-and-pears-in-close-up-view-h4hdqB9TlTY",
+        "title": "Photo by Zed Can on Unsplash",
+        "snippet": "––– –––– –––– # Grapes, apple, and pears in close-up view. Fresh seasonal fruits placed on a clean dishcloth. A vibrant fruit arrangement on a textured tea towel. Natural still life with mixed fruits on cotton fabric. Published on Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/sliced-pears-and-apples-backlit-on-white-background-bdvmrKdBMjk",
+        "title": "Photo by Zuzana Rainet on Unsplash",
+        "snippet": "Sliced pears and apples backlit on white background Download this HD photo of green, orange, still life, and food photography by Zuzana Rainet (@zuzana_rainet) Published on Licensed under the Unsplash+ License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-few-apples-on-a-table-Xc8FyE1NLsE",
+        "title": "Photo by Garreth Paul on Unsplash",
+        "snippet": "a few apples on a table Download this free HD photo of light painting photography, light painting, pears, and still life photos by Garreth Paul (@garrethpb) Published on FUJIFILM, X-T4Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://video.58pic.com/newpic/69989630.html",
+        "title": "https://video.58pic.com/newpic/69989630.html",
+        "snippet": "成熟的梨，茎在白色背景下与剪切路径隔离是由千图正版高清摄影图库提供下载服务，本次苹果梨蕉摄影图编号是69989630，格式是jpg，摄影图源文件大小是3.6 MB。成熟的梨...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-close-up-of-an-apple-on-a-tree-branch-m2gYipYdyWY",
+        "title": "Photo by Mikhail Seleznev on Unsplash",
+        "snippet": "––– –––– –––– # a close up of an apple on a tree branch Download this free HD photo of flower, food, plant, and rose by Mikhail Seleznev (@mihmihfoto) Published on Canon, EOS 90DFree to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-couple-of-pears-sitting-on-top-of-each-other-xBcpP3eoftM",
+        "title": "Photo by Karolina Grabowska on Unsplash",
+        "snippet": "More Actions a couple of pears sitting on top of each other Download this HD photo of aesthetic, green, apple, and fruits by Karolina Grabowska (@kaboompics) ... Unsplash+ License aesthetic green apple fruits nutrition green aesthetic pear diet green apple fruit still life pears food styling studio shot",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://pxhere.com/zh/photo/561434",
+        "title": "图片素材 : 苹果, 性质, 科, 厂, 白色, 水果, 孤立, 成熟, 叶子, 餐饮, 绿色, 生产, 热带, 工作室, 特写, 梨, 片, 切, 青柠, 充分, 背景, 生的, 酒, 柑橘, 半, 没有人, 部分, 宏观摄影, 整个, 开花植物, 静物摄影, 奶奶史密斯, 陆地植物, 甜柠檬, 曼萨纳佛得角 2448x3264 - - 561434 - 素材中国, 高清壁纸 - PxHere摄影图库",
+        "snippet": "苹果, 性质, 科, 厂, 白色, 水果, 孤立, 成熟, 叶子, 餐饮, 绿色, 生产, 热带, 工作室, 特写, 梨, 片, 切, 青柠, 充分, 背景, 生的, 酒, 柑橘, 半, 没有人, 部分, 宏观摄影, 整个, 开花植物, 静物摄影, 奶奶史密斯, 陆地植物, 甜柠檬, 曼萨纳佛得角 2448x3264 ... 免费的高分辨率照片 苹果...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://tu.96weixin.com/picture/9479.html",
+        "title": "黑色背景家常水果厄尔勒香梨图版权图片下载",
+        "snippet": "画面左侧的一颗梨只展示了一部分，居中的梨带有长长的绿色果柄。前方散落着两片翠绿的叶子。光线从侧面照射，突显了梨表面的纹理和晶莹的水滴。背景为深色木质桌面。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.paixin.com/media/photo/standard/%e8%8b%b9%e6%9e%9c%e4%b8%93%e9%97%a8%e5%ba%97/5?f=______4a7feb_",
+        "title": "【苹果专门店】高清图片素材苹果专门店_139,700张摄影设计源文件免费下载-拍信创意",
+        "snippet": "©正版 | 苹果丰收 空箱苹果和梨的收获，在 betuwe，荷兰 ... ©正版 | 苹果与梨 ... ©正版 | 苹果和梨 苹果和梨叶片上孤立的白色背景 ... ©正版 | 榨汁苹果 苹果和梨果汁在榨汁机厨房里的女人",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.bigstockphoto.com/zh/image-355660172/",
+        "title": "Soraz 的库存照片",
+        "snippet": "关闭  全部图片  - 全部图片 - 影片  图片  图片  # Ripe appetizing red apples on an apple tree branch in the garden in the sun. Orchard with ripe apples on apple tree branches. Fruits on a fruit tree branch in backligh",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://m-tu.96weixin.com/picture/19982.html",
+        "title": "夏季水果香梨实拍图版权图片下载",
+        "snippet": "创作指令  复制内容  一张高清静物摄影，画面中心是两颗新鲜的香梨，外皮呈现青黄色并带有细微的褐色斑点，表面有晶莹的水珠。其中一颗梨横卧，另一颗斜靠在其后方，露出棕色的果柄。背景是简约且带有纹理的莫兰迪蓝色墙面和同色调桌面。光线从左上方照射，形成柔和的阴影。微距镜头捕捉，景深浅，纵横比为2:3。  选择尺寸  - jpg 大图 3335×5000 117.65 cm x 176.39 cm - j",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Apples?uselang=bn#2",
+        "title": "Category:Apples - Wikimedia Commons - ৬৪ কিলোবাইট",
+        "snippet": "৯২০ ... - Apple on red background.jpg ২,৯৭৬ × ৩,৯৬৮ ... Best fruit for our health.jpg ৫,৪৫৫ × ৩,৭৬৭; ১.১৬ মেগাবাইট ... - Development of apple fruit.jpg ৬০০ × ৬০৬...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/green-apple-lot-693794/",
+        "title": "Photo by RP Photography on Pexels",
+        "snippet": "# A vibrant close-up of shiny green apples showcasing freshness and abundance.",
+        "via": "deepseek_search_api"
+      },
+      {
+        "url": "https://www.pexels.com/photo/fresh-red-apples-on-wooden-surface-30668750/",
+        "title": "Photo by Polat Eyyüp Albayrak on Pexels",
+        "snippet": "# High-quality image of fresh red apples on a rustic wooden background.",
+        "via": "deepseek_search_api"
+      },
+      {
+        "url": "https://www.pexels.com/photo/close-up-photo-of-apples-13705758/",
+        "title": "Photo by Marcello Mastrodicasa on Pexels",
+        "snippet": "# A close-up view of fresh apples sitting on a red checkered cloth indoors.",
+        "via": "deepseek_search_api"
+      },
+      {
+        "url": "https://www.pexels.com/photo/close-up-photo-of-red-apples-9938585/",
+        "title": "Photo by Deden Dicky Ramdhani on Pexels",
+        "snippet": "# Three fresh red apples displayed in a close-up shot against a neutral background.",
+        "via": "deepseek_search_api"
+      },
+      {
+        "url": "https://www.pexels.com/photo/crop-person-showing-ripe-apples-at-home-8416545/",
+        "title": "Photo by hissetmehurriyeti on Pexels",
+        "snippet": "# Fresh organic apples being held in hand, highlighting rustic and natural textures, with a blurred background.",
+        "via": "deepseek_search_api"
+      },
+      {
+        "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+        "title": "Photo by Evgeniy Alekseyev on Pexels",
+        "snippet": "# Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity.",
+        "via": "deepseek_search_api"
+      },
+      {
+        "url": "https://www.pexels.com/photo/close-up-of-green-apple-with-dew-drops-34809856/",
+        "title": "Photo by Emre Ayata on Pexels",
+        "snippet": "# Fresh green apple with dewdrops on black background. Perfect for healthy living and freshness themes.",
+        "via": "deepseek_search_api"
+      },
+      {
+        "url": "https://www.pexels.com/photo/fresh-fruits-display-with-apples-and-kiwis-34583602/",
+        "title": "Photo by Ivett M on Pexels",
+        "snippet": "# A vibrant display of apples, kiwis, and plums at a market stall, showcasing fresh produce.",
+        "via": "deepseek_search_api"
+      },
+      {
+        "url": "https://www.pexels.com/photo/close-up-photo-of-sliced-pears-on-a-plate-5430664/",
+        "title": "Photo by Polina ⠀ on Pexels",
+        "snippet": "# A rustic composition featuring sliced pears, almonds, and an open book, creating a cozy still life scene.",
+        "via": "deepseek_search_api"
+      }
+    ],
+    "summary": "本轮工具仅返回了 Wikimedia Commons 的 **Category:Apples** 分类页（非具体照片详情页），未返回可核验的苹果/梨具体照片详情页、原始图像 URL、作者或许可证信息。因此**不能**把分类页中的文件名当作本轮已找到的候选照片，也不编造文件详情页 URL。\n\n**本轮实际状态**：0 张可确认为“具体摄影作品详情页”的候选；未下载图片；未进行视觉观察或像素级分析。以下特征仅为待验证的搜索方向，不是从图像中提炼的结论。\n\n```json\n{\n  \"summary\": \"本轮实际调用联网搜索，但工具仅返回 Wikimedia Commons Category:Apples 分类页，未返回苹果或梨的具体照片详情页、原始图像 URL、作者或许可证全文。未获得可下载且符合‘侧光、果柄清楚、4–6张不同真实苹果与梨’要求的候选。未下载图片，未进行视觉观察。\",\n  \"features\": [\n    \"待验证：苹果果柄凹陷处的侧光阴影形态，以及果柄与果皮边缘的高光过渡\",\n    \"待验证：梨的梨梗细长形态、果肩与果腹过渡曲线在侧光下的明暗分界\",\n    \"待验证：苹果果皮蜡质高光与梨果皮哑光/微颗粒纹理的反射差异\",\n    \"待验证：侧光角度是否足以呈现果柄投影、果蒂凹陷深度与轮廓边缘\",\n    \"待验证：不同品种苹果（红/黄/青）与梨（西洋梨/亚洲梨）的轮廓非对称性\"\n  ],\n  \"selectionCriteria\": [\n    \"具体照片详情页而非分类页或图库首页\",\n    \"画面中果柄清晰可见，侧光方向明确，果柄投影不被裁切\",\n    \"主体单一或少量，背景干净或可控，便于轮廓与材质分区\",\n    \"分辨率足够支持果柄、果蒂凹陷和果皮纹理观察\",\n    \"Wikimedia Commons 优先 CC0/CC BY/CC BY-SA，并记录作者与许可证；Pexels 需记录具体照片页与 Pexels License\"\n  ],\n  \"uncertainties\": [\n    \"本轮未获得任何具体照片详情页，无法确认苹果/梨实例差异\",\n    \"Category:Apples 页仅列出部分文件名与尺寸，未提供作者、许可证或拍摄照明信息\",\n    \"梨的具体照片来源在本轮搜索结果中完全缺失\",\n    \"需确认后续搜索工具能否返回 site:commons.wikimedia.org/wiki/File: 或 site:pexels.com/photo/ 的具体页面\"\n  ],\n  \"nextFocus\": \"下一轮优先使用更具体的查询词与 site 限制，分别检索 Wikimedia Commons 的 File: 命名空间与 Pexels 的 /photo/ 路径；补齐至少 4 张不同苹果/梨照片的具体详情页、原始图像 URL、作者与许可证；避免使用 Unsplash。\"\n}\n```\n\n**可点击来源（本轮唯一工具返回页，非候选照片）**  \n- Wikimedia Commons — Category:Apples：https://commons.wikimedia.org/wiki/Category:Apples   \n  该页为分类页，包含多个文件名与尺寸，但**不是**本轮所需的单张照片详情页，也不含作者/许可证全文，暂不作为候选。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://unsplash.com/photos/grapes-apple-and-pears-in-close-up-view-h4hdqB9TlTY",
+      "title": "Photo by Zed Can on Unsplash",
+      "snippet": "––– –––– –––– # Grapes, apple, and pears in close-up view. Fresh seasonal fruits placed on a clean dishcloth. A vibrant fruit arrangement on a textured tea towel. Natural still life with mixed fruits on cotton fabric. Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/sliced-pears-and-apples-backlit-on-white-background-bdvmrKdBMjk",
+      "title": "Photo by Zuzana Rainet on Unsplash",
+      "snippet": "Sliced pears and apples backlit on white background Download this HD photo of green, orange, still life, and food photography by Zuzana Rainet (@zuzana_rainet) Published on Licensed under the Unsplash+ License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-few-apples-on-a-table-Xc8FyE1NLsE",
+      "title": "Photo by Garreth Paul on Unsplash",
+      "snippet": "a few apples on a table Download this free HD photo of light painting photography, light painting, pears, and still life photos by Garreth Paul (@garrethpb) Published on FUJIFILM, X-T4Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://video.58pic.com/newpic/69989630.html",
+      "title": "https://video.58pic.com/newpic/69989630.html",
+      "snippet": "成熟的梨，茎在白色背景下与剪切路径隔离是由千图正版高清摄影图库提供下载服务，本次苹果梨蕉摄影图编号是69989630，格式是jpg，摄影图源文件大小是3.6 MB。成熟的梨...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-close-up-of-an-apple-on-a-tree-branch-m2gYipYdyWY",
+      "title": "Photo by Mikhail Seleznev on Unsplash",
+      "snippet": "––– –––– –––– # a close up of an apple on a tree branch Download this free HD photo of flower, food, plant, and rose by Mikhail Seleznev (@mihmihfoto) Published on Canon, EOS 90DFree to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-couple-of-pears-sitting-on-top-of-each-other-xBcpP3eoftM",
+      "title": "Photo by Karolina Grabowska on Unsplash",
+      "snippet": "More Actions a couple of pears sitting on top of each other Download this HD photo of aesthetic, green, apple, and fruits by Karolina Grabowska (@kaboompics) ... Unsplash+ License aesthetic green apple fruits nutrition green aesthetic pear diet green apple fruit still life pears food styling studio shot",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://pxhere.com/zh/photo/561434",
+      "title": "图片素材 : 苹果, 性质, 科, 厂, 白色, 水果, 孤立, 成熟, 叶子, 餐饮, 绿色, 生产, 热带, 工作室, 特写, 梨, 片, 切, 青柠, 充分, 背景, 生的, 酒, 柑橘, 半, 没有人, 部分, 宏观摄影, 整个, 开花植物, 静物摄影, 奶奶史密斯, 陆地植物, 甜柠檬, 曼萨纳佛得角 2448x3264 - - 561434 - 素材中国, 高清壁纸 - PxHere摄影图库",
+      "snippet": "苹果, 性质, 科, 厂, 白色, 水果, 孤立, 成熟, 叶子, 餐饮, 绿色, 生产, 热带, 工作室, 特写, 梨, 片, 切, 青柠, 充分, 背景, 生的, 酒, 柑橘, 半, 没有人, 部分, 宏观摄影, 整个, 开花植物, 静物摄影, 奶奶史密斯, 陆地植物, 甜柠檬, 曼萨纳佛得角 2448x3264 ... 免费的高分辨率照片 苹果...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://tu.96weixin.com/picture/9479.html",
+      "title": "黑色背景家常水果厄尔勒香梨图版权图片下载",
+      "snippet": "画面左侧的一颗梨只展示了一部分，居中的梨带有长长的绿色果柄。前方散落着两片翠绿的叶子。光线从侧面照射，突显了梨表面的纹理和晶莹的水滴。背景为深色木质桌面。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.paixin.com/media/photo/standard/%e8%8b%b9%e6%9e%9c%e4%b8%93%e9%97%a8%e5%ba%97/5?f=______4a7feb_",
+      "title": "【苹果专门店】高清图片素材苹果专门店_139,700张摄影设计源文件免费下载-拍信创意",
+      "snippet": "©正版 | 苹果丰收 空箱苹果和梨的收获，在 betuwe，荷兰 ... ©正版 | 苹果与梨 ... ©正版 | 苹果和梨 苹果和梨叶片上孤立的白色背景 ... ©正版 | 榨汁苹果 苹果和梨果汁在榨汁机厨房里的女人",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.bigstockphoto.com/zh/image-355660172/",
+      "title": "Soraz 的库存照片",
+      "snippet": "关闭  全部图片  - 全部图片 - 影片  图片  图片  # Ripe appetizing red apples on an apple tree branch in the garden in the sun. Orchard with ripe apples on apple tree branches. Fruits on a fruit tree branch in backligh",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://m-tu.96weixin.com/picture/19982.html",
+      "title": "夏季水果香梨实拍图版权图片下载",
+      "snippet": "创作指令  复制内容  一张高清静物摄影，画面中心是两颗新鲜的香梨，外皮呈现青黄色并带有细微的褐色斑点，表面有晶莹的水珠。其中一颗梨横卧，另一颗斜靠在其后方，露出棕色的果柄。背景是简约且带有纹理的莫兰迪蓝色墙面和同色调桌面。光线从左上方照射，形成柔和的阴影。微距镜头捕捉，景深浅，纵横比为2:3。  选择尺寸  - jpg 大图 3335×5000 117.65 cm x 176.39 cm - j",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Apples?uselang=bn#2",
+      "title": "Category:Apples - Wikimedia Commons - ৬৪ কিলোবাইট",
+      "snippet": "৯২০ ... - Apple on red background.jpg ২,৯৭৬ × ৩,৯৬৮ ... Best fruit for our health.jpg ৫,৪৫৫ × ৩,৭৬৭; ১.১৬ মেগাবাইট ... - Development of apple fruit.jpg ৬০০ × ৬০৬...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/green-apple-lot-693794/",
+      "title": "Photo by RP Photography on Pexels",
+      "snippet": "# A vibrant close-up of shiny green apples showcasing freshness and abundance.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/fresh-red-apples-on-wooden-surface-30668750/",
+      "title": "Photo by Polat Eyyüp Albayrak on Pexels",
+      "snippet": "# High-quality image of fresh red apples on a rustic wooden background.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-photo-of-apples-13705758/",
+      "title": "Photo by Marcello Mastrodicasa on Pexels",
+      "snippet": "# A close-up view of fresh apples sitting on a red checkered cloth indoors.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-photo-of-red-apples-9938585/",
+      "title": "Photo by Deden Dicky Ramdhani on Pexels",
+      "snippet": "# Three fresh red apples displayed in a close-up shot against a neutral background.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/crop-person-showing-ripe-apples-at-home-8416545/",
+      "title": "Photo by hissetmehurriyeti on Pexels",
+      "snippet": "# Fresh organic apples being held in hand, highlighting rustic and natural textures, with a blurred background.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "snippet": "# Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-of-green-apple-with-dew-drops-34809856/",
+      "title": "Photo by Emre Ayata on Pexels",
+      "snippet": "# Fresh green apple with dewdrops on black background. Perfect for healthy living and freshness themes.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/fresh-fruits-display-with-apples-and-kiwis-34583602/",
+      "title": "Photo by Ivett M on Pexels",
+      "snippet": "# A vibrant display of apples, kiwis, and plums at a market stall, showcasing fresh produce.",
+      "via": "deepseek_search_api"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-photo-of-sliced-pears-on-a-plate-5430664/",
+      "title": "Photo by Polina ⠀ on Pexels",
+      "snippet": "# A rustic composition featuring sliced pears, almonds, and an open book, creating a cozy still life scene.",
+      "via": "deepseek_search_api"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Apples?uselang=bn#2",
+      "title": "Category:Apples - Wikimedia Commons - ৬৪ কিলোবাইট",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "imageMetadata": [],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Apples?uselang=bn#2",
+        "title": "Category:Apples - Wikimedia Commons - ৬৪ কিলোবাইট",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      }
+    ],
+    "downloadedCount": 0,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮工具仅返回了 Wikimedia Commons 的 **Category:Apples** 分类页（非具体照片详情页），未返回可核验的苹果/梨具体照片详情页、原始图像 URL、作者或许可证信息。因此**不能**把分类页中的文件名当作本轮已找到的候选照片，也不编造文件详情页 URL。\n\n**本轮实际状态**：0 张可确认为“具体摄影作品详情页”的候选；未下载图片；未进行视觉观察或像素级分析。以下特征仅为待验证的搜索方向，不是从图像中提炼的结论。\n\n```json\n{\n  \"summary\": \"本轮实际调用联网搜索，但工具仅返回 Wikimedia Commons Category:Apples 分类页，未返回苹果或梨的具体照片详情页、原始图像 URL、作者或许可证全文。未获得可下载且符合‘侧光、果柄清楚、4–6张不同真实苹果与梨’要求的候选。未下载图片，未进行视觉观察。\",\n  \"features\": [\n    \"待验证：苹果果柄凹陷处的侧光阴影形态，以及果柄与果皮边缘的高光过渡\",\n    \"待验证：梨的梨梗细长形态、果肩与果腹过渡曲线在侧光下的明暗分界\",\n    \"待验证：苹果果皮蜡质高光与梨果皮哑光/微颗粒纹理的反射差异\",\n    \"待验证：侧光角度是否足以呈现果柄投影、果蒂凹陷深度与轮廓边缘\",\n    \"待验证：不同品种苹果（红/黄/青）与梨（西洋梨/亚洲梨）的轮廓非对称性\"\n  ],\n  \"selectionCriteria\": [\n    \"具体照片详情页而非分类页或图库首页\",\n    \"画面中果柄清晰可见，侧光方向明确，果柄投影不被裁切\",\n    \"主体单一或少量，背景干净或可控，便于轮廓与材质分区\",\n    \"分辨率足够支持果柄、果蒂凹陷和果皮纹理观察\",\n    \"Wikimedia Commons 优先 CC0/CC BY/CC BY-SA，并记录作者与许可证；Pexels 需记录具体照片页与 Pexels License\"\n  ],\n  \"uncertainties\": [\n    \"本轮未获得任何具体照片详情页，无法确认苹果/梨实例差异\",\n    \"Category:Apples 页仅列出部分文件名与尺寸，未提供作者、许可证或拍摄照明信息\",\n    \"梨的具体照片来源在本轮搜索结果中完全缺失\",\n    \"需确认后续搜索工具能否返回 site:commons.wikimedia.org/wiki/File: 或 site:pexels.com/photo/ 的具体页面\"\n  ],\n  \"nextFocus\": \"下一轮优先使用更具体的查询词与 site 限制，分别检索 Wikimedia Commons 的 File: 命名空间与 Pexels 的 /photo/ 路径；补齐至少 4 张不同苹果/梨照片的具体详情页、原始图像 URL、作者与许可证；避免使用 Unsplash。\"\n}\n```\n\n**可点击来源（本轮唯一工具返回页，非候选照片）**  \n- Wikimedia Commons — Category:Apples：https://commons.wikimedia.org/wiki/Category:Apples   \n  该页为分类页，包含多个文件名与尺寸，但**不是**本轮所需的单张照片详情页，也不含作者/许可证全文，暂不作为候选。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 17778,
+    "completion_tokens": 1917,
+    "total_tokens": 19695,
+    "providerCalls": 2,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "15a291b0-e300-4cd2-a3b6-5167b1c7c94e",
+        "model": "deepseek-flash",
+        "elapsedMs": 13444,
+        "prompt_tokens": 9124,
+        "completion_tokens": 1195,
+        "total_tokens": 10319,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      },
+      {
+        "phase": "research",
+        "requestId": "fccfcd0b-774f-4610-8bc7-e3984ca9437f",
+        "model": "deepseek-flash",
+        "elapsedMs": 15486,
+        "prompt_tokens": 8654,
+        "completion_tokens": 722,
+        "total_tokens": 9376,
+        "server_tool_use": {
+          "tool_search": 1,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 15491,
+  "downloads": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/693794/pexels-photo-693794.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/green-apple-lot-693794/",
+      "title": "Photo by RP Photography on Pexels",
+      "sha256": "bad8c208b25c8aa07da97e41ae8a1db540ad3a8235224df9eecce84843152e95",
+      "bytes": 37216,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 535,
+      "id": "learn.r02.bad8c208b25c",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.bad8c208b25c.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/30668750/pexels-photo-30668750.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/fresh-red-apples-on-wooden-surface-30668750/",
+      "title": "Photo by Polat Eyyüp Albayrak on Pexels",
+      "sha256": "886f81c7ec274a62422c9133ff0b79d7e42b9e2db16ceed531314d1ca6e3cc9c",
+      "bytes": 43980,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "id": "learn.r02.886f81c7ec27",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.886f81c7ec27.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/13705758/pexels-photo-13705758.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-photo-of-apples-13705758/",
+      "title": "Photo by Marcello Mastrodicasa on Pexels",
+      "sha256": "41ed6a3fcd6516a1a014249226548425aedcc87dc4d27ac7b985f22ff8d40b3c",
+      "bytes": 31378,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "id": "learn.r02.41ed6a3fcd65",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.41ed6a3fcd65.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/9938585/pexels-photo-9938585.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-photo-of-red-apples-9938585/",
+      "title": "Photo by Deden Dicky Ramdhani on Pexels",
+      "sha256": "43ba7b3b608de2c45e86f377ed9f048198fac074d5807fe27b5b079a4079bcfb",
+      "bytes": 35606,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "id": "learn.r02.43ba7b3b608d",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.43ba7b3b608d.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/8416545/pexels-photo-8416545.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/crop-person-showing-ripe-apples-at-home-8416545/",
+      "title": "Photo by hissetmehurriyeti on Pexels",
+      "sha256": "c13e8dd521c2469b3a3b64ad0c7ecabd01902fd4b9f2ed3c729daff41e2cec53",
+      "bytes": 50582,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1367,
+      "id": "learn.r02.c13e8dd521c2",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.c13e8dd521c2.webp",
+      "topic": "苹果与梨的实拍形态"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/7333128/pexels-photo-7333128.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "sha256": "0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a",
+      "bytes": 13820,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 513,
+      "id": "learn.r02.0095427d2cd5",
+      "round": 2,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r02.0095427d2cd5.webp",
+      "topic": "苹果与梨的实拍形态"
+    }
+  ],
+  "previousAttempts": [
+    {
+      "checkpoint": {
+        "sessionId": "crf08-ten-rounds",
+        "round": 2,
+        "topic": "苹果与梨的实拍形态",
+        "subtopic": "4–6张不同真实苹果和梨，侧光、果柄清楚，观察实例差异，不能重复第一轮柑橘",
+        "status": "searched",
+        "completedAt": "2026-11-21T13:24:06.774Z",
+        "runId": "crf07_83dcc940-c117-4ba3-8dd0-a80fcd365e74",
+        "queries": [
+          "site:commons.wikimedia.org apple pear side light stem fruit photo",
+          "site:unsplash.com apple pear side light stem fruit close up",
+          "site:pexels.com apple pear side light stem fruit photo",
+          "site:commons.wikimedia.org apple pear fruit still life side light",
+          "site:unsplash.com apple and pear fruit still life lighting",
+          "苹果 梨 侧光 果柄 实拍 摄影 参考 来源"
+        ],
+        "requestIds": [
+          "15a291b0-e300-4cd2-a3b6-5167b1c7c94e"
+        ],
+        "sourceCount": 11,
+        "newSourceCount": 11,
+        "candidateCount": 5,
+        "downloadedImageCount": 0,
+        "fittedFunctionCount": 0
+      },
+      "sources": [
+        {
+          "url": "https://unsplash.com/photos/grapes-apple-and-pears-in-close-up-view-h4hdqB9TlTY",
+          "title": "Photo by Zed Can on Unsplash",
+          "snippet": "––– –––– –––– # Grapes, apple, and pears in close-up view. Fresh seasonal fruits placed on a clean dishcloth. A vibrant fruit arrangement on a textured tea towel. Natural still life with mixed fruits on cotton fabric. Published on Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/sliced-pears-and-apples-backlit-on-white-background-bdvmrKdBMjk",
+          "title": "Photo by Zuzana Rainet on Unsplash",
+          "snippet": "Sliced pears and apples backlit on white background Download this HD photo of green, orange, still life, and food photography by Zuzana Rainet (@zuzana_rainet) Published on Licensed under the Unsplash+ License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-few-apples-on-a-table-Xc8FyE1NLsE",
+          "title": "Photo by Garreth Paul on Unsplash",
+          "snippet": "a few apples on a table Download this free HD photo of light painting photography, light painting, pears, and still life photos by Garreth Paul (@garrethpb) Published on FUJIFILM, X-T4Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://video.58pic.com/newpic/69989630.html",
+          "title": "https://video.58pic.com/newpic/69989630.html",
+          "snippet": "成熟的梨，茎在白色背景下与剪切路径隔离是由千图正版高清摄影图库提供下载服务，本次苹果梨蕉摄影图编号是69989630，格式是jpg，摄影图源文件大小是3.6 MB。成熟的梨...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-close-up-of-an-apple-on-a-tree-branch-m2gYipYdyWY",
+          "title": "Photo by Mikhail Seleznev on Unsplash",
+          "snippet": "––– –––– –––– # a close up of an apple on a tree branch Download this free HD photo of flower, food, plant, and rose by Mikhail Seleznev (@mihmihfoto) Published on Canon, EOS 90DFree to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-couple-of-pears-sitting-on-top-of-each-other-xBcpP3eoftM",
+          "title": "Photo by Karolina Grabowska on Unsplash",
+          "snippet": "More Actions a couple of pears sitting on top of each other Download this HD photo of aesthetic, green, apple, and fruits by Karolina Grabowska (@kaboompics) ... Unsplash+ License aesthetic green apple fruits nutrition green aesthetic pear diet green apple fruit still life pears food styling studio shot",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://pxhere.com/zh/photo/561434",
+          "title": "图片素材 : 苹果, 性质, 科, 厂, 白色, 水果, 孤立, 成熟, 叶子, 餐饮, 绿色, 生产, 热带, 工作室, 特写, 梨, 片, 切, 青柠, 充分, 背景, 生的, 酒, 柑橘, 半, 没有人, 部分, 宏观摄影, 整个, 开花植物, 静物摄影, 奶奶史密斯, 陆地植物, 甜柠檬, 曼萨纳佛得角 2448x3264 - - 561434 - 素材中国, 高清壁纸 - PxHere摄影图库",
+          "snippet": "苹果, 性质, 科, 厂, 白色, 水果, 孤立, 成熟, 叶子, 餐饮, 绿色, 生产, 热带, 工作室, 特写, 梨, 片, 切, 青柠, 充分, 背景, 生的, 酒, 柑橘, 半, 没有人, 部分, 宏观摄影, 整个, 开花植物, 静物摄影, 奶奶史密斯, 陆地植物, 甜柠檬, 曼萨纳佛得角 2448x3264 ... 免费的高分辨率照片 苹果...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://tu.96weixin.com/picture/9479.html",
+          "title": "黑色背景家常水果厄尔勒香梨图版权图片下载",
+          "snippet": "画面左侧的一颗梨只展示了一部分，居中的梨带有长长的绿色果柄。前方散落着两片翠绿的叶子。光线从侧面照射，突显了梨表面的纹理和晶莹的水滴。背景为深色木质桌面。",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.paixin.com/media/photo/standard/%e8%8b%b9%e6%9e%9c%e4%b8%93%e9%97%a8%e5%ba%97/5?f=______4a7feb_",
+          "title": "【苹果专门店】高清图片素材苹果专门店_139,700张摄影设计源文件免费下载-拍信创意",
+          "snippet": "©正版 | 苹果丰收 空箱苹果和梨的收获，在 betuwe，荷兰 ... ©正版 | 苹果与梨 ... ©正版 | 苹果和梨 苹果和梨叶片上孤立的白色背景 ... ©正版 | 榨汁苹果 苹果和梨果汁在榨汁机厨房里的女人",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.bigstockphoto.com/zh/image-355660172/",
+          "title": "Soraz 的库存照片",
+          "snippet": "关闭  全部图片  - 全部图片 - 影片  图片  图片  # Ripe appetizing red apples on an apple tree branch in the garden in the sun. Orchard with ripe apples on apple tree branches. Fruits on a fruit tree branch in backligh",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://m-tu.96weixin.com/picture/19982.html",
+          "title": "夏季水果香梨实拍图版权图片下载",
+          "snippet": "创作指令  复制内容  一张高清静物摄影，画面中心是两颗新鲜的香梨，外皮呈现青黄色并带有细微的褐色斑点，表面有晶莹的水珠。其中一颗梨横卧，另一颗斜靠在其后方，露出棕色的果柄。背景是简约且带有纹理的莫兰迪蓝色墙面和同色调桌面。光线从左上方照射，形成柔和的阴影。微距镜头捕捉，景深浅，纵横比为2:3。  选择尺寸  - jpg 大图 3335×5000 117.65 cm x 176.39 cm - j",
+          "via": "server_tool"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 9124,
+        "completion_tokens": 1195,
+        "total_tokens": 10319,
+        "providerCalls": 1,
+        "requests": [
+          {
+            "phase": "research",
+            "requestId": "15a291b0-e300-4cd2-a3b6-5167b1c7c94e",
+            "model": "deepseek-flash",
+            "elapsedMs": 13444,
+            "prompt_tokens": 9124,
+            "completion_tokens": 1195,
+            "total_tokens": 10319,
+            "server_tool_use": {
+              "tool_search": 6,
+              "tool_fetch": 0,
+              "tool_image_search": 0
+            }
+          }
+        ]
+      },
+      "collection": {
+        "attempts": [
+          {
+            "sourceUrl": "https://unsplash.com/photos/grapes-apple-and-pears-in-close-up-view-h4hdqB9TlTY",
+            "title": "Photo by Zed Can on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/sliced-pears-and-apples-backlit-on-white-background-bdvmrKdBMjk",
+            "title": "Photo by Zuzana Rainet on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-few-apples-on-a-table-Xc8FyE1NLsE",
+            "title": "Photo by Garreth Paul on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-close-up-of-an-apple-on-a-tree-branch-m2gYipYdyWY",
+            "title": "Photo by Mikhail Seleznev on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-couple-of-pears-sitting-on-top-of-each-other-xBcpP3eoftM",
+            "title": "Photo by Karolina Grabowska on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          }
+        ],
+        "downloadedCount": 0,
+        "method": "public source-page image metadata; container, dimensions and byte hash checked; not render textures"
+      },
+      "semanticPlan": {
+        "format": "unstructured_model_summary",
+        "summary": "```json\n{\n  \"summary\": \"本轮实际检索到 3 个可用的公开照片来源页，分别对应苹果与梨的实拍形态，但均未满足‘4–6 张不同真实苹果和梨、侧光、果柄清楚’的全部数量与照明条件。其中 Unsplash 2 个（混放苹果与梨的近景、盘中苹果），PxHere 1 个（CC0，苹果与梨同框静物）。另发现 Unsplash+ 与商业图库来源因许可证限制或页面信息不完整，不作为正式候选。未下载图片，未进行像素级观察，以下特征基于页面文字描述与主题推断，待原图验证。\",\n  \"features\": [\n    \"苹果形态：页面描述为红色或绿色整果，部分可推断果柄与果顶凹陷结构，但具体轮廓曲率与果柄清晰度待原图确认\",\n    \"梨形态：页面描述为青黄色或绿色梨，长果柄在部分描述中被强调，但侧光下果柄与果皮纹理的可见度未知\",\n    \"混放构图：苹果与梨同框时，不同果实的轮廓差异（球形 vs 梨形）可作为形状对比参考，但单果独立边缘提取可能受相邻果实干扰\",\n    \"表面材质：页面文字提及‘clean dishcloth’‘textured tea towel’等背景，暗示果皮可能呈哑光或自然光泽，但侧光高光分布待验证\",\n    \"照明条件：仅 PxHere 页面记录拍摄参数（f/4.8，1/25s，ISO 200），未明确说明侧光；Unsplash 页面未提供照明信息\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择单果或同品种多角度照片，便于分离苹果与梨的独立轮廓\",\n    \"侧光条件需能清晰勾勒果柄与果顶/果蒂凹陷，避免果柄与背景或相邻果实融合\",\n    \"背景简洁或与果皮色差明显，便于边缘提取\",\n    \"许可证明确且允许后续使用：Unsplash License 与 CC0 可优先，但 Unsplash+ 需排除\",\n    \"分辨率足够支持果皮纹理与果柄细节辨识\"\n  ],\n  \"uncertainties\": [\n    \"Unsplash 页面未提供明确侧光信息，实际照明方向与果柄清晰度需获取原图验证\",\n    \"Unsplash 混放照片中苹果与梨的具体品种、数量、果柄可见性未知\",\n    \"PxHere CC0 照片的构图是否以苹果与梨为主体、果柄是否清楚，页面描述不充分\",\n    \"Unsplash+ 来源（Zuzana Rainet、Karolina Grabowska）许可证不满足 CC 系列要求，且非免费使用，已排除但需记录\",\n    \"商业图库（千图网、找图网、Bigstock）来源需付费或授权不明，不作为公开可用候选\"\n  ],\n  \"nextFocus\": \"下一轮需针对‘侧光 + 果柄清楚’补充定向搜索，优先查找 Wikimedia Commons 中苹果/梨单果侧光照片的具体文件页，并验证 Unsplash 候选原图的实际照明方向与果柄可见度；同时补充至少 2–3 个不同品种的苹果与梨独立照片来源，避免混放构图导致的边缘干扰\"\n}\n```\n\n### 本轮可点击来源\n\n1. **Unsplash — Zed Can：Grapes, apple, and pears in close-up view**  \n   https://unsplash.com/photos/grapes-apple-and-pears-in-close-up-view-h4hdqB9TlTY  \n   苹果与梨同框近景，背景为棉质布。Unsplash License。未提供侧光说明，果柄清晰度待原图验证。页面含葡萄，主体不纯。\n\n2. **Unsplash — Garreth Paul：a few apples on a table**  \n   https://unsplash.com/photos/a-few-apples-on-a-table-Xc8FyE1NLsE  \n   盘中苹果，FUJIFILM X-T4 拍摄。Unsplash License。照明方向与果柄可见性页面未说明。\n\n3. **PxHere — 苹果与梨静物（CC0）**  \n   https://pxhere.com/zh/photo/561434  \n   页面描述含“苹果”“梨”“白色背景”“静物摄影”，标注 CC0。拍摄参数 f/4.8，1/25s，ISO 200。具体构图、侧光与否、果柄是否清楚需原图核验。\n\n### 排除项说明\n\n- **Unsplash+ 来源**：Zuzana Rainet 的切片梨与苹果逆光照片、Karolina Grabowska 的梨堆叠照片，均为 Unsplash+ License，非免费 CC 系列，不满足本轮优先条件。\n- **商业/授权不明来源**：千图网、找图网、Bigstock、大图网、拍信等页面涉及付费或授权范围不明，不作为公开可用候选。\n\n### 检索局限\n\n- 本轮搜索结果中严格匹配“苹果与梨、侧光、果柄清楚”的免费 CC 照片数量不足 4–6 张，多数结果偏向混放静物或切片。\n- 未获取图片字节，所有形态描述均来自页面文字，不能替代像素级观察。",
+        "features": [],
+        "selectionCriteria": [],
+        "uncertainties": [],
+        "pixelAnalysisPerformed": false
+      }
+    }
+  ],
+  "directRecovery": {
+    "reason": "native search yielded no downloadable photo; same round retried with bounded explicit DeepSeek Search API",
+    "calls": [
+      {
+        "query": "site:pexels.com/photo/ apple fruit",
+        "elapsedMs": 6071,
+        "requestId": null,
+        "ok": true,
+        "results": [
+          {
+            "title": "Photo by RP Photography on Pexels",
+            "site_name": "Pexels",
+            "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+            "authority": 2,
+            "rerank_score": 0.5223826766014099,
+            "date": "2017-11-19T16:00:00+00:00",
+            "url": "https://www.pexels.com/photo/green-apple-lot-693794/",
+            "summary": "# A vibrant close-up of shiny green apples showcasing freshness and abundance.",
+            "snippet": "Choose your language: Use filters Change focus Brighten up Add frames ... 4017x2796 ... Date Nov 19, 2017 ... 2017 Software Lightroom Description # A vibrant close-up of shiny green apples showcasing freshness and abundance. ### More like this Use filters",
+            "content": "##### Choose your language:\n\nUse filters\n\nChange focus\n\nBrighten up\n\nAdd frames\n\nLicense\n\nFree\n\nDimensions\n\n4017x2796\n\nAspect Ratio\n\n1339:932\n\nColors\n\nDate\n\nNov 19, 2017\n\nDownloads\n\n38K\n\nViews\n\n5.7M\n\nLikes\n\n369\n\nCamera\n\nSM-N950F\n\nTaken At\n\nNov 19, 2017\n\nSoftware\n\nLightroom\n\nDescription\n\n# A vibrant close-up of shiny green apples showcasing freshness and abundance.\n\n### More like this\n\nUse filters\n\nChange focus\n\nBrighten up\n\nAdd frames"
+          },
+          {
+            "title": "Photo by Polat Eyyüp Albayrak on Pexels",
+            "site_name": "Pexels",
+            "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+            "authority": 2,
+            "rerank_score": 0.4910321831703186,
+            "date": "2025-02-10T16:00:00+00:00",
+            "url": "https://www.pexels.com/photo/fresh-red-apples-on-wooden-surface-30668750/",
+            "summary": "# High-quality image of fresh red apples on a rustic wooden background.",
+            "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License ... Date Feb 10, 2025 ... Camera Canon EOS 5D Mark II ... Türkiye Description # High-quality image of fresh red apples on a rustic wooden background. ## More like this Add filters, effects",
+            "content": "##### Choose your language:\n\nAdd filters, effects\n\nMake presentations\n\nCreate photo collages\n\nAdd custom frames\n\nLicense\n\nFree\n\nDimensions\n\n3349x5024\n\nColors\n\nDate\n\nFeb 10, 2025\n\nDownloads\n\n356\n\nViews\n\n73.6K\n\nLikes\n\n3\n\nCamera\n\nCanon EOS 5D Mark II\n\nFocal\n\n50.0mm\n\nAperture\n\nƒ/2.8\n\nISO\n\n500\n\nShutter Speed\n\n1/30 sec\n\nTaken At\n\nSep 16, 2018\n\nSoftware\n\nAdobe Lightroom 10.1.3 (iOS)\n\nİstanbul, İstanbul, Türkiye\n\nDescription\n\n# High-quality image of fresh red apples on a rustic wooden background.\n\n## More like this\n\nAdd filters, effects\n\nMake presentations\n\nCreate photo collages\n\nAdd custom frames"
+          },
+          {
+            "title": "Photo by Marcello Mastrodicasa on Pexels",
+            "site_name": "Pexels",
+            "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+            "authority": 2,
+            "rerank_score": 0.4362908005714417,
+            "date": "2022-09-20T16:00:00+00:00",
+            "url": "https://www.pexels.com/photo/close-up-photo-of-apples-13705758/",
+            "summary": "# A close-up view of fresh apples sitting on a red checkered cloth indoors.",
+            "snippet": "Choose your language: Afterglow Street Festive Summer Description # A close-up view of fresh apples sitting on a red checkered cloth indoors. ## More like this Afterglow Street Festive Summer",
+            "content": "##### Choose your language:\n\nAfterglow\n\nStreet\n\nFestive\n\nSummer\n\nDescription\n\n# A close-up view of fresh apples sitting on a red checkered cloth indoors.\n\n## More like this\n\nAfterglow\n\nStreet\n\nFestive\n\nSummer"
+          },
+          {
+            "title": "Photo by Deden Dicky Ramdhani on Pexels",
+            "site_name": "Pexels",
+            "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+            "authority": 2,
+            "rerank_score": 0.4211108684539795,
+            "date": "2021-10-17T16:00:00+00:00",
+            "url": "https://www.pexels.com/photo/close-up-photo-of-red-apples-9938585/",
+            "summary": "# Three fresh red apples displayed in a close-up shot against a neutral background.",
+            "snippet": "Camera Canon EOS 600D ... Taken At Oct 8, 2021 Bandung, West Java, Indonesia Description # Three fresh red apples displayed in a close-up shot against a neutral background. ## More like this Afterglow",
+            "content": "##### Choose your language:\n\nAfterglow\n\nStreet\n\nFestive\n\nSummer\n\nLicense\n\nFree\n\nDimensions\n\n3456x5184\n\nAspect Ratio\n\n2:3\n\nColors\n\nDate\n\nOct 18, 2021\n\nDownloads\n\n223\n\nViews\n\n104.8K\n\nLikes\n\n5\n\nCamera\n\nCanon EOS 600D\n\nFocal\n\n55.0mm\n\nAperture\n\nƒ/10.0\n\nISO\n\n400\n\nShutter Speed\n\n1/125 sec\n\nTaken At\n\nOct 8, 2021\n\nBandung, West Java, Indonesia\n\nDescription\n\n# Three fresh red apples displayed in a close-up shot against a neutral background.\n\n## More like this\n\nAfterglow\n\nStreet\n\nFestive\n\nSummer"
+          },
+          {
+            "title": "Photo by hissetmehurriyeti on Pexels",
+            "site_name": "Pexels",
+            "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+            "authority": 2,
+            "rerank_score": 0.3901677429676056,
+            "date": "2021-06-21T16:00:00+00:00",
+            "url": "https://www.pexels.com/photo/crop-person-showing-ripe-apples-at-home-8416545/",
+            "summary": "# Fresh organic apples being held in hand, highlighting rustic and natural textures, with a blurred background.",
+            "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License ... Software Adobe Photoshop Express (Android) Description # Fresh organic apples being held in hand, highlighting rustic and natural textures, with a blurred background. ## More like this Add filters...",
+            "content": "##### Choose your language:\n\nAdd filters, effects\n\nMake presentations\n\nCreate photo collages\n\nAdd custom frames\n\nLicense\n\nFree\n\nDimensions\n\n2912x5184\n\nAspect Ratio\n\n91:162\n\nColors\n\nDate\n\nJun 20, 2021\n\nDownloads\n\n271\n\nViews\n\n273.7K\n\nLikes\n\n13\n\nCamera\n\nCanon EOS 650D\n\nFocal\n\n50.0mm\n\nAperture\n\nƒ/1.8\n\nISO\n\n100\n\nShutter Speed\n\n1/640 sec\n\nTaken At\n\nOct 24, 2019\n\nSoftware\n\nAdobe Photoshop Express (Android)\n\nDescription\n\n# Fresh organic apples being held in hand, highlighting rustic and natural textures, with a blurred background.\n\n## More like this\n\nAdd filters, effects\n\nMake presentations\n\nCreate photo collages\n\nAdd custom frames"
+          },
+          {
+            "title": "Photo by Evgeniy Alekseyev on Pexels",
+            "site_name": "Pexels",
+            "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+            "authority": 2,
+            "rerank_score": 0.332414835691452,
+            "date": "2021-04-01T16:00:00+00:00",
+            "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+            "summary": "# Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity.",
+            "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License ... Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters, effects Make presentations Create photo collages",
+            "content": "##### Choose your language:\n\nAdd filters, effects\n\nMake presentations\n\nCreate photo collages\n\nAdd custom frames\n\nLicense\n\nFree\n\nDimensions\n\n6016x4016\n\nAspect Ratio\n\n376:251\n\nColors\n\nDate\n\nMar 31, 2021\n\nDownloads\n\n249\n\nViews\n\n58.4K\n\nLikes\n\n9\n\nCamera\n\nNIKON D750\n\nFocal\n\n62.0mm\n\nAperture\n\nƒ/14.0\n\nISO\n\n100\n\nShutter Speed\n\n1/160 sec\n\nTaken At\n\nJan 26, 2021\n\nSoftware\n\nAdobe Photoshop 22.0 (Windows)\n\nDescription\n\n# Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity.\n\n## More like this\n\nAdd filters, effects\n\nMake presentations\n\nCreate photo collages\n\nAdd custom frames"
+          },
+          {
+            "title": "Photo by Emre Ayata on Pexels",
+            "site_name": "Pexels",
+            "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+            "authority": 2,
+            "rerank_score": 0.32491275668144226,
+            "date": "2025-11-19T16:00:00+00:00",
+            "url": "https://www.pexels.com/photo/close-up-of-green-apple-with-dew-drops-34809856/",
+            "summary": "# Fresh green apple with dewdrops on black background. Perfect for healthy living and freshness themes.",
+            "snippet": "Afterglow Street Festive ... Date Nov 20, 2025 ... 2021 Software Adobe Photoshop Lightroom Classic 8.4 (Windows) Description # Fresh green apple with dewdrops on black background. Perfect for healthy living and freshness themes. ## More like this",
+            "content": "##### Choose your language:\n\nAfterglow\n\nStreet\n\nFestive\n\nSummer\n\nLicense\n\nFree\n\nDimensions\n\n3929x5893\n\nColors\n\nDate\n\nNov 20, 2025\n\nDownloads\n\n81\n\nViews\n\n22.4K\n\nLikes\n\n1\n\nCamera\n\nNIKON D3400\n\nFocal\n\n150.0mm\n\nAperture\n\nƒ/25.0\n\nISO\n\n800\n\nShutter Speed\n\n1/60 sec\n\nTaken At\n\nJan 22, 2021\n\nSoftware\n\nAdobe Photoshop Lightroom Classic 8.4 (Windows)\n\nDescription\n\n# Fresh green apple with dewdrops on black background. Perfect for healthy living and freshness themes.\n\n## More like this\n\nAfterglow\n\nStreet\n\nFestive\n\nSummer"
+          },
+          {
+            "title": "Photo by Ivett M on Pexels",
+            "site_name": "Pexels",
+            "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+            "authority": 2,
+            "rerank_score": 0.040146540850400925,
+            "date": "2025-11-02T16:00:00+00:00",
+            "url": "https://www.pexels.com/photo/fresh-fruits-display-with-apples-and-kiwis-34583602/",
+            "summary": "# A vibrant display of apples, kiwis, and plums at a market stall, showcasing fresh produce.",
+            "snippet": "Nov 3, 2025 ... Taken At Oct 25, 2025 ... Adobe Lightroom 11.0.1 (Android) Description # A vibrant display of apples, kiwis, and plums at a market stall, showcasing fresh produce. ### More like this Afterglow",
+            "content": "##### Choose your language:\n\nAfterglow\n\nStreet\n\nFestive\n\nSummer\n\nLicense\n\nFree\n\nDimensions\n\n4592x3328\n\nAspect Ratio\n\n287:208\n\nColors\n\nDate\n\nNov 3, 2025\n\nDownloads\n\n179\n\nViews\n\n74.3K\n\nLikes\n\n3\n\nCamera\n\nGalaxy S23\n\nFocal\n\n5.4mm\n\nAperture\n\nƒ/1.8\n\nISO\n\n80\n\nShutter Speed\n\n1/182 sec\n\nTaken At\n\nOct 25, 2025\n\nSoftware\n\nAdobe Lightroom 11.0.1 (Android)\n\nDescription\n\n# A vibrant display of apples, kiwis, and plums at a market stall, showcasing fresh produce.\n\n### More like this\n\nAfterglow\n\nStreet\n\nFestive\n\nSummer"
+          }
+        ],
+        "usage": null
+      },
+      {
+        "query": "site:pexels.com/photo/ pear fruit",
+        "elapsedMs": 6050,
+        "requestId": null,
+        "ok": true,
+        "results": [
+          {
+            "title": "Photo by Polina ⠀ on Pexels",
+            "site_name": "Pexels",
+            "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+            "authority": 2,
+            "rerank_score": 0.09700319916009904,
+            "date": "2020-10-16T16:00:00+00:00",
+            "url": "https://www.pexels.com/photo/close-up-photo-of-sliced-pears-on-a-plate-5430664/",
+            "summary": "# A rustic composition featuring sliced pears, almonds, and an open book, creating a cozy still life scene.",
+            "snippet": "Choose your language: Add filters, effects Make presentations Create photo collages Add custom frames Polina ⠀ ... Description # A rustic composition featuring sliced pears, almonds, and an open book, creating a cozy still life scene. ## More like this Add filters...",
+            "content": "##### Choose your language:\n\nAdd filters, effects\n\nMake presentations\n\nCreate photo collages\n\nAdd custom frames\n\nPolina ⠀\n\n2.8B views • 7.6M downloads\n\nLicense\n\nFree\n\nDimensions\n\n2821x4180\n\nColors\n\nDate\n\nSep 23, 2020\n\nDownloads\n\n371\n\nViews\n\n220.7K\n\nLikes\n\n38\n\nCamera\n\nCanon EOS 5D\n\nFocal\n\n85.0mm\n\nAperture\n\nƒ/2.2\n\nISO\n\n100\n\nShutter Speed\n\n1/160 sec\n\nTaken At\n\nSep 20, 2020\n\nSoftware\n\nAdobe Photoshop Lightroom Classic 8.3.1 (Windows)\n\nDescription\n\n# A rustic composition featuring sliced pears, almonds, and an open book, creating a cozy still life scene.\n\n## More like this\n\nAdd filters, effects\n\nMake presentations\n\nCreate photo collages\n\nAdd custom frames"
+          }
+        ],
+        "usage": null
+      }
+    ],
+    "collection": {
+      "attempts": [
+        {
+          "sourceUrl": "https://unsplash.com/photos/grapes-apple-and-pears-in-close-up-view-h4hdqB9TlTY",
+          "title": "Photo by Zed Can on Unsplash",
+          "status": "unavailable",
+          "imageAttempts": [],
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/sliced-pears-and-apples-backlit-on-white-background-bdvmrKdBMjk",
+          "title": "Photo by Zuzana Rainet on Unsplash",
+          "status": "unavailable",
+          "imageAttempts": [],
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/a-few-apples-on-a-table-Xc8FyE1NLsE",
+          "title": "Photo by Garreth Paul on Unsplash",
+          "status": "unavailable",
+          "imageAttempts": [],
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/a-close-up-of-an-apple-on-a-tree-branch-m2gYipYdyWY",
+          "title": "Photo by Mikhail Seleznev on Unsplash",
+          "status": "unavailable",
+          "imageAttempts": [],
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/a-couple-of-pears-sitting-on-top-of-each-other-xBcpP3eoftM",
+          "title": "Photo by Karolina Grabowska on Unsplash",
+          "status": "unavailable",
+          "imageAttempts": [],
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Apples?uselang=bn#2",
+          "title": "Category:Apples - Wikimedia Commons - ৬৪ কিলোবাইট",
+          "status": "unavailable",
+          "imageAttempts": [],
+          "error": "source_is_not_photo_detail"
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/green-apple-lot-693794/",
+          "title": "Photo by RP Photography on Pexels",
+          "status": "downloaded",
+          "imageAttempts": [
+            {
+              "url": "https://images.pexels.com/photos/693794/pexels-photo-693794.jpeg?auto=compress&cs=tinysrgb&w=768",
+              "status": "downloaded"
+            }
+          ],
+          "imageUrl": "https://images.pexels.com/photos/693794/pexels-photo-693794.jpeg?auto=compress&cs=tinysrgb&w=768",
+          "bytes": 37216,
+          "mime": "image/webp",
+          "width": 768,
+          "height": 535,
+          "sha256": "bad8c208b25c8aa07da97e41ae8a1db540ad3a8235224df9eecce84843152e95"
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/fresh-red-apples-on-wooden-surface-30668750/",
+          "title": "Photo by Polat Eyyüp Albayrak on Pexels",
+          "status": "downloaded",
+          "imageAttempts": [
+            {
+              "url": "https://images.pexels.com/photos/30668750/pexels-photo-30668750.jpeg?auto=compress&cs=tinysrgb&w=768",
+              "status": "downloaded"
+            }
+          ],
+          "imageUrl": "https://images.pexels.com/photos/30668750/pexels-photo-30668750.jpeg?auto=compress&cs=tinysrgb&w=768",
+          "bytes": 43980,
+          "mime": "image/webp",
+          "width": 768,
+          "height": 1152,
+          "sha256": "886f81c7ec274a62422c9133ff0b79d7e42b9e2db16ceed531314d1ca6e3cc9c"
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/close-up-photo-of-apples-13705758/",
+          "title": "Photo by Marcello Mastrodicasa on Pexels",
+          "status": "downloaded",
+          "imageAttempts": [
+            {
+              "url": "https://images.pexels.com/photos/13705758/pexels-photo-13705758.jpeg?auto=compress&cs=tinysrgb&w=768",
+              "status": "downloaded"
+            }
+          ],
+          "imageUrl": "https://images.pexels.com/photos/13705758/pexels-photo-13705758.jpeg?auto=compress&cs=tinysrgb&w=768",
+          "bytes": 31378,
+          "mime": "image/webp",
+          "width": 768,
+          "height": 512,
+          "sha256": "41ed6a3fcd6516a1a014249226548425aedcc87dc4d27ac7b985f22ff8d40b3c"
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/close-up-photo-of-red-apples-9938585/",
+          "title": "Photo by Deden Dicky Ramdhani on Pexels",
+          "status": "downloaded",
+          "imageAttempts": [
+            {
+              "url": "https://images.pexels.com/photos/9938585/pexels-photo-9938585.jpeg?auto=compress&cs=tinysrgb&w=768",
+              "status": "downloaded"
+            }
+          ],
+          "imageUrl": "https://images.pexels.com/photos/9938585/pexels-photo-9938585.jpeg?auto=compress&cs=tinysrgb&w=768",
+          "bytes": 35606,
+          "mime": "image/webp",
+          "width": 768,
+          "height": 1152,
+          "sha256": "43ba7b3b608de2c45e86f377ed9f048198fac074d5807fe27b5b079a4079bcfb"
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/crop-person-showing-ripe-apples-at-home-8416545/",
+          "title": "Photo by hissetmehurriyeti on Pexels",
+          "status": "downloaded",
+          "imageAttempts": [
+            {
+              "url": "https://images.pexels.com/photos/8416545/pexels-photo-8416545.jpeg?auto=compress&cs=tinysrgb&w=768",
+              "status": "downloaded"
+            }
+          ],
+          "imageUrl": "https://images.pexels.com/photos/8416545/pexels-photo-8416545.jpeg?auto=compress&cs=tinysrgb&w=768",
+          "bytes": 50582,
+          "mime": "image/webp",
+          "width": 768,
+          "height": 1367,
+          "sha256": "c13e8dd521c2469b3a3b64ad0c7ecabd01902fd4b9f2ed3c729daff41e2cec53"
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "title": "Photo by Evgeniy Alekseyev on Pexels",
+          "status": "downloaded",
+          "imageAttempts": [
+            {
+              "url": "https://images.pexels.com/photos/7333128/pexels-photo-7333128.jpeg?auto=compress&cs=tinysrgb&w=768",
+              "status": "downloaded"
+            }
+          ],
+          "imageUrl": "https://images.pexels.com/photos/7333128/pexels-photo-7333128.jpeg?auto=compress&cs=tinysrgb&w=768",
+          "bytes": 13820,
+          "mime": "image/webp",
+          "width": 768,
+          "height": 513,
+          "sha256": "0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a"
+        }
+      ],
+      "downloadedCount": 6
+    }
+  }
+}

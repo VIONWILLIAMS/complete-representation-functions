@@ -1,0 +1,581 @@
+{
+  "schema": "crf.browser_verification.v0.5",
+  "status": "passed",
+  "startedAt": "2026-11-21T08:13:59.333Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "pageUrl": "http://127.0.0.1:4173/verify-v05.html",
+  "independentReferenceDecode": true,
+  "videoEncodeIncluded": false,
+  "claims": {
+    "referenceRGBOnly": true,
+    "generatedFruitReferenceIsPhoto": false,
+    "novelViewsHaveGroundTruth": false,
+    "gpuVerified": false
+  },
+  "checks": [
+    {
+      "id": "reference_street",
+      "label": "street：实际画布与独立参考 PNG 逐像素比较",
+      "pass": true,
+      "detail": {
+        "referenceKind": "observed_photo",
+        "metrics": {
+          "dimensionsMatch": true,
+          "width": 667,
+          "height": 1000,
+          "totalPixels": 667000,
+          "exactPixels": 667000,
+          "changedPixels": 0,
+          "exact100": true,
+          "mae": 0,
+          "rmse": 0,
+          "maxAbsChannelError": 0,
+          "opaquePixels": 667000,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        },
+        "stats": {
+          "backend": "cpu-gaussian",
+          "quality": "exact",
+          "width": 667,
+          "height": 1000,
+          "lod": 1,
+          "sigmaReferencePx": 0.18,
+          "gaussianCount": 766102,
+          "inferredGaussianCount": 99102,
+          "observedPixelCount": 667000,
+          "layerCount": 18,
+          "representation": "dense-observation-gaussians-with-inferred-layer-depths",
+          "physicalRelighting": false,
+          "sourceImageBlit": false,
+          "boundaryMaterialSampleCount": 0,
+          "proceduralSampleCount": 0,
+          "contributions": 766102,
+          "visibleInferredPixels": 0,
+          "elapsedMs": 137.30000000074506,
+          "fallbackReason": "WebGL 2 is unavailable",
+          "actualWidth": 667,
+          "actualHeight": 1000,
+          "editorTime": null,
+          "frameNumber": 2
+        }
+      },
+      "elapsedMs": 197
+    },
+    {
+      "id": "reference_orchard",
+      "label": "orchard：实际画布与独立参考 PNG 逐像素比较",
+      "pass": true,
+      "detail": {
+        "referenceKind": "observed_photo",
+        "metrics": {
+          "dimensionsMatch": true,
+          "width": 800,
+          "height": 600,
+          "totalPixels": 480000,
+          "exactPixels": 480000,
+          "changedPixels": 0,
+          "exact100": true,
+          "mae": 0,
+          "rmse": 0,
+          "maxAbsChannelError": 0,
+          "opaquePixels": 480000,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        },
+        "stats": {
+          "backend": "cpu-gaussian",
+          "quality": "exact",
+          "width": 800,
+          "height": 600,
+          "lod": 1,
+          "sigmaReferencePx": 0.18,
+          "gaussianCount": 604610,
+          "inferredGaussianCount": 124610,
+          "observedPixelCount": 480000,
+          "layerCount": 4,
+          "representation": "dense-observation-gaussians-with-inferred-layer-depths",
+          "physicalRelighting": false,
+          "sourceImageBlit": false,
+          "boundaryMaterialSampleCount": 0,
+          "proceduralSampleCount": 0,
+          "contributions": 604610,
+          "visibleInferredPixels": 0,
+          "elapsedMs": 105.69999999925494,
+          "fallbackReason": "WebGL 2 is unavailable",
+          "actualWidth": 800,
+          "actualHeight": 600,
+          "editorTime": null,
+          "frameNumber": 4
+        }
+      },
+      "elapsedMs": 733
+    },
+    {
+      "id": "reference_alpine",
+      "label": "alpine：实际画布与独立参考 PNG 逐像素比较",
+      "pass": true,
+      "detail": {
+        "referenceKind": "observed_photo",
+        "metrics": {
+          "dimensionsMatch": true,
+          "width": 800,
+          "height": 531,
+          "totalPixels": 424800,
+          "exactPixels": 424800,
+          "changedPixels": 0,
+          "exact100": true,
+          "mae": 0,
+          "rmse": 0,
+          "maxAbsChannelError": 0,
+          "opaquePixels": 424800,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        },
+        "stats": {
+          "backend": "cpu-gaussian",
+          "quality": "exact",
+          "width": 800,
+          "height": 531,
+          "lod": 1,
+          "sigmaReferencePx": 0.18,
+          "gaussianCount": 597868,
+          "inferredGaussianCount": 173068,
+          "observedPixelCount": 424800,
+          "layerCount": 6,
+          "representation": "dense-observation-gaussians-with-inferred-layer-depths",
+          "physicalRelighting": false,
+          "sourceImageBlit": false,
+          "boundaryMaterialSampleCount": 0,
+          "proceduralSampleCount": 0,
+          "contributions": 597868,
+          "visibleInferredPixels": 0,
+          "elapsedMs": 127.09999999776483,
+          "fallbackReason": "WebGL 2 is unavailable",
+          "actualWidth": 800,
+          "actualHeight": 531,
+          "editorTime": null,
+          "frameNumber": 6
+        }
+      },
+      "elapsedMs": 1547
+    },
+    {
+      "id": "reference_fruit_lab",
+      "label": "水果：实际渲染与独立生成基准逐像素比较",
+      "pass": true,
+      "detail": {
+        "referenceKind": "generated_golden_not_photograph",
+        "metrics": {
+          "dimensionsMatch": true,
+          "width": 800,
+          "height": 600,
+          "totalPixels": 480000,
+          "exactPixels": 480000,
+          "changedPixels": 0,
+          "exact100": true,
+          "mae": 0,
+          "rmse": 0,
+          "maxAbsChannelError": 0,
+          "opaquePixels": 480000,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        },
+        "deterministicRepeat": {
+          "dimensionsMatch": true,
+          "width": 800,
+          "height": 600,
+          "totalPixels": 480000,
+          "exactPixels": 480000,
+          "changedPixels": 0,
+          "exact100": true,
+          "mae": 0,
+          "rmse": 0,
+          "maxAbsChannelError": 0,
+          "opaquePixels": 480000,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        },
+        "stats": {
+          "backend": "cpu-gaussian",
+          "quality": "interactive",
+          "width": 800,
+          "height": 600,
+          "lod": 1,
+          "sigmaReferencePx": 0.62,
+          "gaussianCount": 837742,
+          "inferredGaussianCount": 0,
+          "observedPixelCount": 480000,
+          "layerCount": 5,
+          "representation": "dense-observation-gaussians-with-inferred-layer-depths",
+          "physicalRelighting": false,
+          "sourceImageBlit": false,
+          "boundaryMaterialSampleCount": 0,
+          "proceduralSampleCount": 357742,
+          "contributions": 7170513,
+          "visibleInferredPixels": 0,
+          "elapsedMs": 370.19999999925494,
+          "fallbackReason": "WebGL 2 is unavailable",
+          "actualWidth": 800,
+          "actualHeight": 600,
+          "editorTime": null,
+          "frameNumber": 8
+        }
+      },
+      "elapsedMs": 3271
+    },
+    {
+      "id": "hidden_signal",
+      "label": "隐藏正面行人信号灯：选择框消失、填充不透明并报告推断像素",
+      "pass": true,
+      "detail": {
+        "selectionBefore": true,
+        "selectionAfter": false,
+        "difference": {
+          "dimensionsMatch": true,
+          "width": 667,
+          "height": 1000,
+          "totalPixels": 667000,
+          "exactPixels": 662712,
+          "changedPixels": 4288,
+          "exact100": false,
+          "mae": 0.6212443778110944,
+          "rmse": 9.454858265864498,
+          "maxAbsChannelError": 234,
+          "opaquePixels": 667000,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        },
+        "inferredGaussianCount": 99102,
+        "visibleInferredPixels": 4288,
+        "backend": "cpu-gaussian",
+        "limitation": "Alpha coverage and inferred-sample reporting do not establish hidden-wall ground truth or texture quality."
+      },
+      "elapsedMs": 619
+    },
+    {
+      "id": "case_restore",
+      "label": "切换案例后恢复各自修改，并保持参考尺寸独立",
+      "pass": true,
+      "detail": {
+        "streetStateRestored": true,
+        "orchardStateRestored": true,
+        "streetPixelRepeat": {
+          "dimensionsMatch": true,
+          "width": 667,
+          "height": 1000,
+          "totalPixels": 667000,
+          "exactPixels": 667000,
+          "changedPixels": 0,
+          "exact100": true,
+          "mae": 0,
+          "rmse": 0,
+          "maxAbsChannelError": 0,
+          "opaquePixels": 667000,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        },
+        "independentDimensions": [
+          [
+            667,
+            1000
+          ],
+          [
+            800,
+            600
+          ]
+        ]
+      },
+      "elapsedMs": 1948
+    },
+    {
+      "id": "apple_to_pear",
+      "label": "苹果替换为梨子：保留对象 ID，实际画布变化",
+      "pass": true,
+      "detail": {
+        "stableId": "apple.main",
+        "beforePrototype": "apple",
+        "afterPrototype": "pear",
+        "actualPixelDifference": {
+          "dimensionsMatch": true,
+          "width": 800,
+          "height": 600,
+          "totalPixels": 480000,
+          "exactPixels": 396680,
+          "changedPixels": 83320,
+          "exact100": false,
+          "mae": 10.6991875,
+          "rmse": 38.52586313835883,
+          "maxAbsChannelError": 237,
+          "opaquePixels": 480000,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        }
+      },
+      "elapsedMs": 1509
+    },
+    {
+      "id": "generator_and_undo",
+      "label": "生成参数改变实际画布，撤销精确恢复上一画面",
+      "pass": true,
+      "detail": {
+        "parameter": "generator.shape",
+        "changedPixels": 42533,
+        "undoStateEqual": true,
+        "undoPixelComparison": {
+          "dimensionsMatch": true,
+          "width": 800,
+          "height": 600,
+          "totalPixels": 480000,
+          "exactPixels": 480000,
+          "changedPixels": 0,
+          "exact100": true,
+          "mae": 0,
+          "rmse": 0,
+          "maxAbsChannelError": 0,
+          "opaquePixels": 480000,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        }
+      },
+      "elapsedMs": 956
+    },
+    {
+      "id": "atomic_invalid_operation",
+      "label": "非法操作数组整体拒绝，状态与实际画布保持不变",
+      "pass": true,
+      "detail": {
+        "rejected": true,
+        "rejection": "CRF: unknown object missing.object.for.acceptance",
+        "stateUnchanged": true,
+        "actualPixelComparison": {
+          "dimensionsMatch": true,
+          "width": 667,
+          "height": 1000,
+          "totalPixels": 667000,
+          "exactPixels": 667000,
+          "changedPixels": 0,
+          "exact100": true,
+          "mae": 0,
+          "rmse": 0,
+          "maxAbsChannelError": 0,
+          "opaquePixels": 667000,
+          "alphaHolePixels": 0,
+          "colorSpace": "decoded-sRGB-RGB8",
+          "resized": false,
+          "aligned": false,
+          "blurred": false
+        }
+      },
+      "elapsedMs": 508
+    },
+    {
+      "id": "all_timelines",
+      "label": "四个案例均包含 5 秒运镜与 120 帧的导出配置",
+      "pass": true,
+      "detail": {
+        "cases": [
+          {
+            "caseId": "street",
+            "duration": 5,
+            "frameCountAt24fps": 120,
+            "cameraTracks": 3
+          },
+          {
+            "caseId": "fruit_lab",
+            "duration": 5,
+            "frameCountAt24fps": 120,
+            "cameraTracks": 3
+          },
+          {
+            "caseId": "orchard",
+            "duration": 5,
+            "frameCountAt24fps": 120,
+            "cameraTracks": 3
+          },
+          {
+            "caseId": "alpine",
+            "duration": 5,
+            "frameCountAt24fps": 120,
+            "cameraTracks": 3
+          }
+        ],
+        "encodingActuallyPerformed": false,
+        "note": "Frame count is the timeline configuration; encoded video metadata is checked separately."
+      },
+      "elapsedMs": 1108
+    }
+  ],
+  "caseIds": [
+    "street",
+    "fruit_lab",
+    "orchard",
+    "alpine"
+  ],
+  "artifactDigests": [
+    {
+      "path": "crf-core.js",
+      "bytes": 40203,
+      "sha256": "6d47917158336251491d61d8ddd7575a6d0a6fcb9f6eac92f96f90641b0495e1"
+    },
+    {
+      "path": "crf-renderer.js",
+      "bytes": 19871,
+      "sha256": "cbdd2da34e72c8ee17d479692a5b45b0c9aa30859e4e1e2f7716c81de1c41941"
+    },
+    {
+      "path": "crf-fruit.js",
+      "bytes": 17750,
+      "sha256": "8ea015c2e758ac924f8e8960aa3b888bd382c938173916a97466f111636fa497"
+    },
+    {
+      "path": "editor.js",
+      "bytes": 77031,
+      "sha256": "48a3efc538b7d1def0249045de481fcacf0959391f7d0e562e75cd59e373f9d5"
+    },
+    {
+      "path": "assets/cases.js",
+      "bytes": 12779,
+      "sha256": "b8d266bd93cd60cd789b1859c185c98aabe1488e5e8d9222bdb02d6062ef7ee5"
+    }
+  ],
+  "rendererBackends": [
+    "cpu-gaussian"
+  ],
+  "editorFinalStatus": {
+    "initialized": true,
+    "caseId": "street",
+    "switching": false,
+    "selectionVisible": true,
+    "renderer": "cpu-gaussian",
+    "fallbackReason": "WebGL 2 is unavailable",
+    "desiredQuality": "exact",
+    "activeQuality": "exact",
+    "dimensions": {
+      "width": 667,
+      "height": 1000
+    },
+    "referenceLoaded": true,
+    "referenceError": null,
+    "recording": false,
+    "playing": false,
+    "selectedId": "signal.main",
+    "frameNumber": 41,
+    "baseline": {
+      "schema": "crf.pixel-check.v0.5",
+      "case_id": "street",
+      "reference_kind": "observed_photo",
+      "reference_source": "independently-decoded-reference-png",
+      "reference_width": 667,
+      "reference_height": 1000,
+      "actual_width": 667,
+      "actual_height": 1000,
+      "dimensions_match": true,
+      "resized": false,
+      "registered": false,
+      "blurred": false,
+      "status": "measured",
+      "pixel_count": 667000,
+      "channel_count": 2001000,
+      "exact_pixel_count": 667000,
+      "exact_channel_count": 2001000,
+      "exact_pixel_fraction": 1,
+      "exact100": true,
+      "mae": 0,
+      "rmse": 0,
+      "max_channel_error": 0,
+      "quality": "exact",
+      "time": null,
+      "initial_observation_only": true,
+      "true_3d_recovery": false
+    },
+    "pixelReport": {
+      "schema": "crf.pixel-check.v0.5",
+      "case_id": "street",
+      "reference_kind": "observed_photo",
+      "reference_source": "independently-decoded-reference-png",
+      "reference_width": 667,
+      "reference_height": 1000,
+      "actual_width": 667,
+      "actual_height": 1000,
+      "dimensions_match": true,
+      "resized": false,
+      "registered": false,
+      "blurred": false,
+      "status": "measured",
+      "pixel_count": 667000,
+      "channel_count": 2001000,
+      "exact_pixel_count": 667000,
+      "exact_channel_count": 2001000,
+      "exact_pixel_fraction": 1,
+      "exact100": true,
+      "mae": 0,
+      "rmse": 0,
+      "max_channel_error": 0
+    },
+    "video": {
+      "supported": true,
+      "preferred": "framewise-webcodecs",
+      "framewise": {
+        "supported": null,
+        "status": "not_checked",
+        "moduleLoaded": true
+      },
+      "realtime": {
+        "supported": true,
+        "mimeType": "video/webm;codecs=vp9"
+      }
+    },
+    "videoExport": null
+  },
+  "capabilities": {
+    "VideoEncoder": true,
+    "VideoFrame": true,
+    "MediaRecorder": true,
+    "browserVideoProbe": {
+      "supported": true,
+      "preferred": "framewise-webcodecs",
+      "framewise": {
+        "supported": null,
+        "status": "not_checked",
+        "moduleLoaded": true
+      },
+      "realtime": {
+        "supported": true,
+        "mimeType": "video/webm;codecs=vp9"
+      }
+    }
+  },
+  "pass": true,
+  "completedAt": "2026-11-21T08:14:15.370Z",
+  "elapsedMs": 16037,
+  "passedChecks": 10,
+  "totalChecks": 10
+}

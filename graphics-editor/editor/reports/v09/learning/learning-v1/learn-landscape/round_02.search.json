@@ -1,0 +1,671 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 2,
+  "query": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "checkpoint": {
+    "sessionId": "crf09_b59f3a06-8a8c-46de-ba82-44d05621b14e",
+    "round": 2,
+    "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+    "subtopic": "自然颜色与材质：不同表面、微纹理和真实缺陷",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:49:13.421Z",
+    "runId": "crf07_6c507c25-9466-4a0a-ab4b-263c8d4f079f",
+    "queries": [
+      "site:commons.wikimedia.org \"fog\" \"coniferous forest\" file -category|-incategory",
+      "Wikimedia Commons foggy coniferous forest close-up tree bark needles photo",
+      "site:commons.wikimedia.org moss lichen rock texture close-up file",
+      "site:pexels.com foggy pine forest close-up tree trunk moss photo",
+      "site:pexels.com rocky coast tide pool seaweed barnacle photo",
+      "site:commons.wikimedia.org \"morning mist\" lake pine forest file"
+    ],
+    "requestIds": [
+      "2562869a-7308-4568-be09-ff40ccb671c8"
+    ],
+    "sourceCount": 8,
+    "newSourceCount": 8,
+    "candidateCount": 7,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_61ac2ad6804e484386253e9e50f8716e",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"fog\" \"coniferous forest\" file -category|-incategory",
+            "Wikimedia Commons foggy coniferous forest close-up tree bark needles photo",
+            "site:commons.wikimedia.org moss lichen rock texture close-up file",
+            "site:pexels.com foggy pine forest close-up tree trunk moss photo",
+            "site:pexels.com rocky coast tide pool seaweed barnacle photo",
+            "site:commons.wikimedia.org \"morning mist\" lake pine forest file"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+          "https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/",
+          "https://commons.wikimedia.org/wiki/Category:Autumn_in_Montana",
+          "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG",
+          "https://www.pexels.com/zh-cn/photo/29356694/",
+          "https://commons.wikimedia.org/wiki/File:Moss_and_lichen_(16995367219).jpg#1",
+          "https://www.pexels.com/photo/serene-sunrise-in-dalat-s-misty-forest-32700427/",
+          "https://www.rawpixel.com/image/3304304/free-photo-image-green-forrest-abies-camping"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "snippet": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef ... Original file (2,560 × 1,920 pixels, file size: 7.13 MB...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/",
+        "title": "Photo by Peter Lahnsteiner on Pexels",
+        "snippet": "Dimensions 5584x8368 Aspect Ratio 349 ... 2024 Software Adobe Lightroom 8.2 (Macintosh) Description # A close-up of a moss-covered tree trunk in a foggy forest, creating a serene natural scene. ### More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Autumn_in_Montana",
+        "title": "Category:Autumn in Montana - Wikimedia Commons",
+        "snippet": "The following 57 files are in this category, out of 57 total. ... 8.76 MB - Misty Morning (5559543414).jpg 1,543 × 2,101; 1.11 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG",
+        "title": "File:Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG - Wikimedia Commons",
+        "snippet": "Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG ... Original file (3,264 × 2,448 pixels, file size: 3.93 MB...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/29356694/",
+        "title": "Pexels Surdu Horia图片",
+        "snippet": "Afterglow ... 3941x5911 颜色 medium ... 软件 Adobe Lightroom 7.5 (Windows) 描述 # 雾蒙蒙的森林景观，松树上刻有神秘的符文，周围是充满活力的绿色苔藓。 ### 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Moss_and_lichen_(16995367219).jpg#1",
+        "title": "File:Moss and lichen (16995367219).jpg - Wikimedia Commons - File:Moss and lichen (16995367219).jpg",
+        "snippet": "Moss and lichen (16995367219).jpg ... DescriptionMoss and lichen (16995367219).jpg | Moss and lichen ... Source | Moss and lichen Author | David Elliott from UK ... - Moss and lichen",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/serene-sunrise-in-dalat-s-misty-forest-32700427/",
+        "title": "Photo by nhavantuonglai on Pexels",
+        "snippet": "Software Adobe Photoshop Lightroom Classic 9.4 (Windows) Dalat, Lam Dong, Vietnam Description # Experience the tranquil beauty of Dalat's misty forest at sunrise, capturing the serene glow through pine trees. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.rawpixel.com/image/3304304/free-photo-image-green-forrest-abies-camping",
+        "title": "A dark green coniferous forest with mist obscuring the horizon. Original public domain image from Wikimedia Commons",
+        "snippet": "Edit ImageCrop3SaveSaveEdit Imageforrestforrest trees creative commonsforrest treepine forrestmountain images & pictureslandscape photosA dark green coniferous forest with mist obscuring the horizon. Original public domain image from Wikimedia CommonsMoreFree for Personal and",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "**本轮实际检索结果：新增 4 个可核验的具体照片详情页，但仍未补上“岩石海岸”与“山湖”的新实例。** 针叶林薄雾与树皮/苔藓微纹理有合格候选；海岸岩石与水面反射的独立照片页仍只有上轮已收集的 Kapwave.JPG 与 Pexels 长曝光海岸。以下区分“页面事实”与“待后续图片验证的外观特征”。\n\n```json\n{\n  \"summary\": \"本轮实际发现 4 个新的独立照片详情页：Wikimedia Commons 2 个（岩石与树皮上的地衣苔藓微纹理、苔藓地衣特写），Pexels 2 个（雾林中的苔藓树干特写、松林薄雾日出）。针叶林薄雾与微纹理缺口部分补齐；但岩石海岸与山湖水面反射未找到新的合格具体照片页，仍沿用上轮已收集来源，不重复计入。\",\n  \"features\": [\n    \"雾林树干微纹理：苔藓覆盖的树干在雾中呈低对比、软边缘，树皮纵向裂纹被苔藓填充，适合提取纵向条纹与颗粒噪声；雾使背景树冠退化为灰绿色渐变，边缘锐度下降。\",\n    \"树皮与地衣材质：树皮与岩石表面的地衣呈不规则斑块，苔藓呈细密绒状纹理，两者边界呈分形、非平滑；颜色为深绿、灰绿与黄绿混合，高光弱，适合建模为多尺度噪声叠加。\",\n    \"松林薄雾光照：松林薄雾日出场景中，光线穿过树冠形成局部暖色光斑，雾气使远处树干与树冠边缘柔化，近景树干保留硬边缘；适合提取距离相关的边缘模糊与暖冷色温分层。\",\n    \"水面反射（沿用上轮，待图片验证）：平静湖面倒影边缘较清晰，海岸水面波纹与泡沫使反射破碎；尚未逐像素观察。\"\n  ],\n  \"selectionCriteria\": [\n    \"针叶林薄雾照片需保留至少一棵近景树干或树冠的清晰结构，雾气不遮蔽全部边缘，便于分离软雾层与硬树干层。\",\n    \"微纹理照片应包含树皮或岩石的近距离特写，苔藓/地衣斑块边界可辨，避免整幅均匀绿毯。\",\n    \"海岸岩石照片仍需同时包含岩石硬边缘与浪花软边缘，岩体不占满画面。\",\n    \"优先 Wikimedia Commons 有明确 CC BY / CC BY-SA 许可与作者信息的文件页；Pexels 页面许可证原文需后续核验。\",\n    \"同一来源的裁切或不同尺寸版本不计为新实例。\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 两个新页面（31346974、32700427）的许可证原文未在返回内容中显示，仅可确认是具体照片页，CC 条款待核验。\",\n    \"Wikimedia Commons 的 Lichens and mosses 页面与 Moss and lichen 页面的原始图像直链未在本次结果中返回，需后续从详情页获取。\",\n    \"针叶林薄雾的“树冠锯齿状轮廓”与“远景低对比”仍为页面文字推断，未逐像素观察。\",\n    \"岩石海岸与山湖水面反射本轮未新增独立实例，相关外观特征仍待图片验证。\"\n  ],\n  \"nextFocus\": \"下一轮补搜 Wikimedia Commons 或 Pexels 的岩石海岸具体照片详情页（至少 1 个新实例），并核验本轮 Pexels 页面的许可证原文；从已确认的 Commons 文件页获取原始图像 URL 后再交后续视觉步骤。\"\n}\n```\n\n**可点击来源页与检索事实（本轮新增，不含已收集重复项）：**\n\n1. **Wikimedia Commons — File:Lichens and mosses can be spotted on tree bark and rocks...**\n   - 来源页：https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG \n   - 页面事实：原始文件 2,560 × 1,920，JPEG，7.13 MB。描述为树皮与岩石上的地衣和苔藓，形态类似珊瑚礁。许可证与作者信息在返回内容中未完整显示，**待核验**。\n   - 用途：树皮/岩石微纹理与地衣斑块边界。\n\n2. **Wikimedia Commons — File:Moss and lichen (16995367219).jpg**\n   - 来源页：https://commons.wikimedia.org/wiki/File:Moss_and_lichen_(16995367219).jpg \n   - 页面事实：作者 David Elliott（英国），来源 Flickr，原始文件 2,970 × 2,230，1.7 MB。许可 **CC BY 2.0**，已由 FlickreviewR 2 核验。拍摄地点冰岛。\n   - 用途：苔藓与地衣的近景材质，适合提取绒状纹理与不规则斑块边缘。\n\n3. **Pexels — Peter Lahnsteiner 的雾林苔藓树干特写**\n   - 来源页：https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/ \n   - 页面事实：5584 × 8368，Leica Q2，28 mm，ƒ/3.5，ISO 100，1/160 s。描述为雾林中苔藓覆盖的树干特写。\n   - 许可证：页面未返回 CC 条款原文，**待核验**。\n   - 用途：雾中树皮/苔藓的软边缘与纵向纹理。\n\n4. **Pexels — nhavantuonglai 的 Dalat 松林薄雾日出**\n   - 来源页：https://www.pexels.com/photo/serene-sunrise-in-dalat-s-misty-forest-32700427/ \n   - 页面事实：2667 × 4000，Fujifilm X-T3，39.3 mm，ƒ/5.0，ISO 320，1/30 s。描述为越南 Dalat 松林薄雾日出，光线穿过松树。\n   - 许可证：页面未返回 CC 条款原文，**待核验**。\n   - 用途：薄雾中松树冠层的光照分层与距离相关边缘模糊。\n\n**本轮未达标项：**\n- Wikimedia Commons 搜索 “Coniferous forests” 返回的是文件列表/搜索页片段 ，不是独立照片详情页，未计入候选。\n- Rawpixel 页面为聚合/转载页 ，不能作为独立摄影实例。\n- 岩石海岸与山湖水面反射本轮无新合格具体照片页。\n\n**局限说明：** 以上外观特征均来自页面文字描述，未下载图像、未逐像素观察、未做边缘提取或函数拟合；后续独立步骤获取图像字节后再验证。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG",
+        "title": "File:Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "snippet": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef ... Original file (2,560 × 1,920 pixels, file size: 7.13 MB...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/",
+      "title": "Photo by Peter Lahnsteiner on Pexels",
+      "snippet": "Dimensions 5584x8368 Aspect Ratio 349 ... 2024 Software Adobe Lightroom 8.2 (Macintosh) Description # A close-up of a moss-covered tree trunk in a foggy forest, creating a serene natural scene. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Autumn_in_Montana",
+      "title": "Category:Autumn in Montana - Wikimedia Commons",
+      "snippet": "The following 57 files are in this category, out of 57 total. ... 8.76 MB - Misty Morning (5559543414).jpg 1,543 × 2,101; 1.11 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG",
+      "title": "File:Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG - Wikimedia Commons",
+      "snippet": "Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG ... Original file (3,264 × 2,448 pixels, file size: 3.93 MB...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/29356694/",
+      "title": "Pexels Surdu Horia图片",
+      "snippet": "Afterglow ... 3941x5911 颜色 medium ... 软件 Adobe Lightroom 7.5 (Windows) 描述 # 雾蒙蒙的森林景观，松树上刻有神秘的符文，周围是充满活力的绿色苔藓。 ### 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Moss_and_lichen_(16995367219).jpg#1",
+      "title": "File:Moss and lichen (16995367219).jpg - Wikimedia Commons - File:Moss and lichen (16995367219).jpg",
+      "snippet": "Moss and lichen (16995367219).jpg ... DescriptionMoss and lichen (16995367219).jpg | Moss and lichen ... Source | Moss and lichen Author | David Elliott from UK ... - Moss and lichen",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/serene-sunrise-in-dalat-s-misty-forest-32700427/",
+      "title": "Photo by nhavantuonglai on Pexels",
+      "snippet": "Software Adobe Photoshop Lightroom Classic 9.4 (Windows) Dalat, Lam Dong, Vietnam Description # Experience the tranquil beauty of Dalat's misty forest at sunrise, capturing the serene glow through pine trees. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.rawpixel.com/image/3304304/free-photo-image-green-forrest-abies-camping",
+      "title": "A dark green coniferous forest with mist obscuring the horizon. Original public domain image from Wikimedia Commons",
+      "snippet": "Edit ImageCrop3SaveSaveEdit Imageforrestforrest trees creative commonsforrest treepine forrestmountain images & pictureslandscape photosA dark green coniferous forest with mist obscuring the horizon. Original public domain image from Wikimedia CommonsMoreFree for Personal and",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/",
+      "title": "Photo by Peter Lahnsteiner on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Autumn_in_Montana",
+      "title": "Category:Autumn in Montana - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG",
+      "title": "File:Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/29356694/",
+      "title": "Pexels Surdu Horia图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moss_and_lichen_(16995367219).jpg#1",
+      "title": "File:Moss and lichen (16995367219).jpg - Wikimedia Commons - File:Moss and lichen (16995367219).jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/serene-sunrise-in-dalat-s-misty-forest-32700427/",
+      "title": "Photo by nhavantuonglai on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 240027,
+        "sha256": "638833bfa97b9b1cc7b0027cd1e9b8da2750e63fe43b84b42642beac365798b5"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG/960px-Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "sha256": "638833bfa97b9b1cc7b0027cd1e9b8da2750e63fe43b84b42642beac365798b5",
+      "bytes": 240027,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "National Park Service",
+        "credit": "NPGallery",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2560,
+        "height": 1920,
+        "bytes": 7471733
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 167192,
+        "sha256": "7035f4608db237d5cb36f440d42363b9c4d22d95f7550ea05f6bd1ccd8a74f72"
+      },
+      "imageUrl": "https://images.pexels.com/photos/31346974/pexels-photo-31346974.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/",
+      "title": "Photo by Peter Lahnsteiner on Pexels",
+      "sha256": "7035f4608db237d5cb36f440d42363b9c4d22d95f7550ea05f6bd1ccd8a74f72",
+      "bytes": 167192,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1151
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 374019,
+        "sha256": "94bb94bc17cd4440a8ed9c856d423881f38b2d30ddbc7a7ae2e290279f26a5a3"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG/960px-Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG",
+      "title": "File:Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG - Wikimedia Commons",
+      "sha256": "94bb94bc17cd4440a8ed9c856d423881f38b2d30ddbc7a7ae2e290279f26a5a3",
+      "bytes": 374019,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "そらみみ",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 3264,
+        "height": 2448,
+        "bytes": 4116871
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 196980,
+        "sha256": "2fd0219a85f26072e0656d50077a79ea630ecfb41d1b74d9555e8a7a4aa54668"
+      },
+      "imageUrl": "https://images.pexels.com/photos/29356694/pexels-photo-29356694.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/29356694/",
+      "title": "Pexels Surdu Horia图片",
+      "sha256": "2fd0219a85f26072e0656d50077a79ea630ecfb41d1b74d9555e8a7a4aa54668",
+      "bytes": 196980,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG/960px-Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "sha256": "638833bfa97b9b1cc7b0027cd1e9b8da2750e63fe43b84b42642beac365798b5",
+      "bytes": 240027,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "National Park Service",
+        "credit": "NPGallery",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2560,
+        "height": 1920,
+        "bytes": 7471733
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/31346974/pexels-photo-31346974.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/",
+      "title": "Photo by Peter Lahnsteiner on Pexels",
+      "sha256": "7035f4608db237d5cb36f440d42363b9c4d22d95f7550ea05f6bd1ccd8a74f72",
+      "bytes": 167192,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1151,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG/960px-Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG",
+      "title": "File:Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG - Wikimedia Commons",
+      "sha256": "94bb94bc17cd4440a8ed9c856d423881f38b2d30ddbc7a7ae2e290279f26a5a3",
+      "bytes": 374019,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "そらみみ",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 3264,
+        "height": 2448,
+        "bytes": 4116871
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/29356694/pexels-photo-29356694.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/29356694/",
+      "title": "Pexels Surdu Horia图片",
+      "sha256": "2fd0219a85f26072e0656d50077a79ea630ecfb41d1b74d9555e8a7a4aa54668",
+      "bytes": 196980,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG/960px-Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "Public domain",
+          "url": null,
+          "artist": "National Park Service",
+          "credit": "NPGallery",
+          "usageTerms": "Public domain",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ALichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG/960px-Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 240027,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 720,
+        "sha256": "638833bfa97b9b1cc7b0027cd1e9b8da2750e63fe43b84b42642beac365798b5"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/",
+        "title": "Photo by Peter Lahnsteiner on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/31346974/pexels-photo-31346974.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/31346974/pexels-photo-31346974.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 167192,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1151,
+        "sha256": "7035f4608db237d5cb36f440d42363b9c4d22d95f7550ea05f6bd1ccd8a74f72"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Autumn_in_Montana",
+        "title": "Category:Autumn in Montana - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG",
+        "title": "File:Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG/960px-Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "そらみみ",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ARocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG/960px-Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 374019,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 720,
+        "sha256": "94bb94bc17cd4440a8ed9c856d423881f38b2d30ddbc7a7ae2e290279f26a5a3"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/29356694/",
+        "title": "Pexels Surdu Horia图片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/29356694/pexels-photo-29356694.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/29356694/pexels-photo-29356694.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 196980,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "2fd0219a85f26072e0656d50077a79ea630ecfb41d1b74d9555e8a7a4aa54668"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moss_and_lichen_(16995367219).jpg#1",
+        "title": "File:Moss and lichen (16995367219).jpg - Wikimedia Commons - File:Moss and lichen (16995367219).jpg",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Moss_and_lichen_%2816995367219%29.jpg/960px-Moss_and_lichen_%2816995367219%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY 2.0",
+          "url": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "David Elliott from UK",
+          "credit": "Moss and lichen",
+          "usageTerms": "Creative Commons Attribution 2.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AMoss_and_lichen_%2816995367219%29.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Moss_and_lichen_%2816995367219%29.jpg/960px-Moss_and_lichen_%2816995367219%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 296316,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 721,
+        "sha256": "de842b080808dfea4fbf798a02f5de49aba84cdf79d2af61031a9745f8972e22"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "**本轮实际检索结果：新增 4 个可核验的具体照片详情页，但仍未补上“岩石海岸”与“山湖”的新实例。** 针叶林薄雾与树皮/苔藓微纹理有合格候选；海岸岩石与水面反射的独立照片页仍只有上轮已收集的 Kapwave.JPG 与 Pexels 长曝光海岸。以下区分“页面事实”与“待后续图片验证的外观特征”。\n\n```json\n{\n  \"summary\": \"本轮实际发现 4 个新的独立照片详情页：Wikimedia Commons 2 个（岩石与树皮上的地衣苔藓微纹理、苔藓地衣特写），Pexels 2 个（雾林中的苔藓树干特写、松林薄雾日出）。针叶林薄雾与微纹理缺口部分补齐；但岩石海岸与山湖水面反射未找到新的合格具体照片页，仍沿用上轮已收集来源，不重复计入。\",\n  \"features\": [\n    \"雾林树干微纹理：苔藓覆盖的树干在雾中呈低对比、软边缘，树皮纵向裂纹被苔藓填充，适合提取纵向条纹与颗粒噪声；雾使背景树冠退化为灰绿色渐变，边缘锐度下降。\",\n    \"树皮与地衣材质：树皮与岩石表面的地衣呈不规则斑块，苔藓呈细密绒状纹理，两者边界呈分形、非平滑；颜色为深绿、灰绿与黄绿混合，高光弱，适合建模为多尺度噪声叠加。\",\n    \"松林薄雾光照：松林薄雾日出场景中，光线穿过树冠形成局部暖色光斑，雾气使远处树干与树冠边缘柔化，近景树干保留硬边缘；适合提取距离相关的边缘模糊与暖冷色温分层。\",\n    \"水面反射（沿用上轮，待图片验证）：平静湖面倒影边缘较清晰，海岸水面波纹与泡沫使反射破碎；尚未逐像素观察。\"\n  ],\n  \"selectionCriteria\": [\n    \"针叶林薄雾照片需保留至少一棵近景树干或树冠的清晰结构，雾气不遮蔽全部边缘，便于分离软雾层与硬树干层。\",\n    \"微纹理照片应包含树皮或岩石的近距离特写，苔藓/地衣斑块边界可辨，避免整幅均匀绿毯。\",\n    \"海岸岩石照片仍需同时包含岩石硬边缘与浪花软边缘，岩体不占满画面。\",\n    \"优先 Wikimedia Commons 有明确 CC BY / CC BY-SA 许可与作者信息的文件页；Pexels 页面许可证原文需后续核验。\",\n    \"同一来源的裁切或不同尺寸版本不计为新实例。\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 两个新页面（31346974、32700427）的许可证原文未在返回内容中显示，仅可确认是具体照片页，CC 条款待核验。\",\n    \"Wikimedia Commons 的 Lichens and mosses 页面与 Moss and lichen 页面的原始图像直链未在本次结果中返回，需后续从详情页获取。\",\n    \"针叶林薄雾的“树冠锯齿状轮廓”与“远景低对比”仍为页面文字推断，未逐像素观察。\",\n    \"岩石海岸与山湖水面反射本轮未新增独立实例，相关外观特征仍待图片验证。\"\n  ],\n  \"nextFocus\": \"下一轮补搜 Wikimedia Commons 或 Pexels 的岩石海岸具体照片详情页（至少 1 个新实例），并核验本轮 Pexels 页面的许可证原文；从已确认的 Commons 文件页获取原始图像 URL 后再交后续视觉步骤。\"\n}\n```\n\n**可点击来源页与检索事实（本轮新增，不含已收集重复项）：**\n\n1. **Wikimedia Commons — File:Lichens and mosses can be spotted on tree bark and rocks...**\n   - 来源页：https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG \n   - 页面事实：原始文件 2,560 × 1,920，JPEG，7.13 MB。描述为树皮与岩石上的地衣和苔藓，形态类似珊瑚礁。许可证与作者信息在返回内容中未完整显示，**待核验**。\n   - 用途：树皮/岩石微纹理与地衣斑块边界。\n\n2. **Wikimedia Commons — File:Moss and lichen (16995367219).jpg**\n   - 来源页：https://commons.wikimedia.org/wiki/File:Moss_and_lichen_(16995367219).jpg \n   - 页面事实：作者 David Elliott（英国），来源 Flickr，原始文件 2,970 × 2,230，1.7 MB。许可 **CC BY 2.0**，已由 FlickreviewR 2 核验。拍摄地点冰岛。\n   - 用途：苔藓与地衣的近景材质，适合提取绒状纹理与不规则斑块边缘。\n\n3. **Pexels — Peter Lahnsteiner 的雾林苔藓树干特写**\n   - 来源页：https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/ \n   - 页面事实：5584 × 8368，Leica Q2，28 mm，ƒ/3.5，ISO 100，1/160 s。描述为雾林中苔藓覆盖的树干特写。\n   - 许可证：页面未返回 CC 条款原文，**待核验**。\n   - 用途：雾中树皮/苔藓的软边缘与纵向纹理。\n\n4. **Pexels — nhavantuonglai 的 Dalat 松林薄雾日出**\n   - 来源页：https://www.pexels.com/photo/serene-sunrise-in-dalat-s-misty-forest-32700427/ \n   - 页面事实：2667 × 4000，Fujifilm X-T3，39.3 mm，ƒ/5.0，ISO 320，1/30 s。描述为越南 Dalat 松林薄雾日出，光线穿过松树。\n   - 许可证：页面未返回 CC 条款原文，**待核验**。\n   - 用途：薄雾中松树冠层的光照分层与距离相关边缘模糊。\n\n**本轮未达标项：**\n- Wikimedia Commons 搜索 “Coniferous forests” 返回的是文件列表/搜索页片段 ，不是独立照片详情页，未计入候选。\n- Rawpixel 页面为聚合/转载页 ，不能作为独立摄影实例。\n- 岩石海岸与山湖水面反射本轮无新合格具体照片页。\n\n**局限说明：** 以上外观特征均来自页面文字描述，未下载图像、未逐像素观察、未做边缘提取或函数拟合；后续独立步骤获取图像字节后再验证。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 8518,
+    "completion_tokens": 1614,
+    "total_tokens": 10132,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "2562869a-7308-4568-be09-ff40ccb671c8",
+        "model": "deepseek-flash",
+        "elapsedMs": 15362,
+        "prompt_tokens": 8518,
+        "completion_tokens": 1614,
+        "total_tokens": 10132,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 32222,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 240027,
+        "sha256": "638833bfa97b9b1cc7b0027cd1e9b8da2750e63fe43b84b42642beac365798b5"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG/960px-Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "sha256": "638833bfa97b9b1cc7b0027cd1e9b8da2750e63fe43b84b42642beac365798b5",
+      "bytes": 240027,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "National Park Service",
+        "credit": "NPGallery",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together%2C_they_seemingly_resemble_a_coral_reef%21_%28b5139cc5-2b04-4936-a46c-87d306e29160%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2560,
+        "height": 1920,
+        "bytes": 7471733
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/638833bfa97b9b1cc7b0027cd1e9b8da2750e63fe43b84b42642beac365798b5.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 167192,
+        "sha256": "7035f4608db237d5cb36f440d42363b9c4d22d95f7550ea05f6bd1ccd8a74f72"
+      },
+      "imageUrl": "https://images.pexels.com/photos/31346974/pexels-photo-31346974.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/moss-covered-tree-in-foggy-forest-landscape-31346974/",
+      "title": "Photo by Peter Lahnsteiner on Pexels",
+      "sha256": "7035f4608db237d5cb36f440d42363b9c4d22d95f7550ea05f6bd1ccd8a74f72",
+      "bytes": 167192,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1151,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/7035f4608db237d5cb36f440d42363b9c4d22d95f7550ea05f6bd1ccd8a74f72.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 374019,
+        "sha256": "94bb94bc17cd4440a8ed9c856d423881f38b2d30ddbc7a7ae2e290279f26a5a3"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG/960px-Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG",
+      "title": "File:Rocks with moss and cryptomeria japonica trees in “Auberge Kaedenoki” in Shin-Yabakei Valley 1.JPG - Wikimedia Commons",
+      "sha256": "94bb94bc17cd4440a8ed9c856d423881f38b2d30ddbc7a7ae2e290279f26a5a3",
+      "bytes": 374019,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "そらみみ",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Rocks_with_moss_and_cryptomeria_japonica_trees_in_%E2%80%9CAuberge_Kaedenoki%E2%80%9D_in_Shin-Yabakei_Valley_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 3264,
+        "height": 2448,
+        "bytes": 4116871
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/94bb94bc17cd4440a8ed9c856d423881f38b2d30ddbc7a7ae2e290279f26a5a3.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 196980,
+        "sha256": "2fd0219a85f26072e0656d50077a79ea630ecfb41d1b74d9555e8a7a4aa54668"
+      },
+      "imageUrl": "https://images.pexels.com/photos/29356694/pexels-photo-29356694.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/29356694/",
+      "title": "Pexels Surdu Horia图片",
+      "sha256": "2fd0219a85f26072e0656d50077a79ea630ecfb41d1b74d9555e8a7a4aa54668",
+      "bytes": 196980,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/2fd0219a85f26072e0656d50077a79ea630ecfb41d1b74d9555e8a7a4aa54668.webp"
+    }
+  ]
+}

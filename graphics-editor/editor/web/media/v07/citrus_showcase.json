@@ -1,0 +1,58 @@
+{
+  "schema": "crf.render_evidence.v0.7",
+  "id": "citrus",
+  "source": "showcase",
+  "phase": "final",
+  "width": 960,
+  "height": 720,
+  "samples": 32,
+  "elapsedMs": 145054,
+  "sha256": "83db0846a3b1017743cc4b80f491742597cd9f3178145ef2ad56e949ee0ad274",
+  "programSha256": "e912d44f8fd9e764c950965e1539c0b93dbe5f620051c2b7efc378875f4b0902",
+  "rendererSha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a",
+  "stats": {
+    "backend": "cpu-analytic-ray-transport",
+    "schema": "crf.image_program.v0.7",
+    "samplesPerPixel": 32,
+    "maxBounces": 5,
+    "tracedPrimarySamples": 22118400,
+    "objects": 9,
+    "areaLights": 2,
+    "elapsedMs": 144963,
+    "sourceImageBlit": false,
+    "imageTextureReads": 0,
+    "proceduralFunctionMaterials": 1,
+    "reflection": true,
+    "refraction": true,
+    "softVisibility": true,
+    "deterministic": true,
+    "denoiser": "bounded-spatial-object-depth-bilateral",
+    "transportLimitations": [
+      "finite bounce budget",
+      "clamped sample radiance",
+      "approximate rough glass",
+      "no volumetric scattering",
+      "no spectral transport",
+      "spatial denoising can soften fine detail"
+    ]
+  },
+  "llmGenerated": false,
+  "programFile": "citrus_showcase.crf.json",
+  "hashesFile": "citrus_showcase.hashes.json",
+  "pixelSha256": "adaad084c6ba7f0d896d4ffe4dbe9086829fb4f8ab87a3b1d12c58e86413135d",
+  "pngSha256": "83db0846a3b1017743cc4b80f491742597cd9f3178145ef2ad56e949ee0ad274",
+  "programFileSha256": "7e1d4dd404228398fce444204bceaf564a84763373fde7b44b9b172d8b70060f",
+  "renderOptions": {
+    "width": 960,
+    "height": 720,
+    "samples": 32,
+    "bounces": 5,
+    "denoise": true
+  },
+  "visualReview": {
+    "status": "reviewed_with_limitations",
+    "observed": "已人工检查果皮纹理、盘内接触、背景连续性及柔和投影。",
+    "remaining": "叶片、果蒂与整体形体仍较简化，不能据此认定已达到任意生成模型的照片质量。"
+  },
+  "qualityClaim": "code-native demonstration; no photoreal parity or exact-reference-reconstruction certification"
+}

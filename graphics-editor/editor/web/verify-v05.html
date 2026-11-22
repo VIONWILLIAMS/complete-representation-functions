@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRF 0.5 · 浏览器独立验收</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#0b1420;color:#e3eef5;font-size:16px}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 24px;border-bottom:1px solid #304454;background:#101d2bf5;backdrop-filter:blur(10px)}h1{font-size:21px;margin:0 0 6px;font-weight:600}p{margin:0;font-size:14px;line-height:1.7;color:#a5bbca}button{font:inherit;border:1px solid #4d7569;border-radius:6px;padding:10px 15px;cursor:pointer;white-space:nowrap;background:#76d6b9;color:#09251c;font-size:14px;font-weight:600}button:disabled{opacity:.45;cursor:default}button.secondary{background:#192c3b;color:#c5dfd6;border-color:#355448}.actions{display:flex;gap:9px}main{max-width:1450px;margin:0 auto;padding:20px 24px 30px}#status{font-size:16px;padding:13px 16px;border:1px solid #35574e;border-radius:7px;background:#152d29;margin-bottom:16px;color:#c0eada}#status[data-state=failed]{border-color:#9b5d67;background:#34212c;color:#ffd4dc}#status[data-state=running]{border-color:#77704d;background:#2b2b21;color:#e6dbad}#checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;list-style:none;margin:0 0 20px;padding:0}.check{padding:10px 12px;border:1px solid #2d4352;border-radius:5px;font-size:14px;line-height:1.6;background:#10202d}.check[data-pass=true]{border-color:#316e57;color:#b6e3cd}.check[data-pass=false]{border-color:#99515e;color:#ffc3cf}.note{margin:12px 0 16px;font-size:14px}iframe{display:block;width:100%;height:740px;border:1px solid #324a5d;border-radius:8px;background:#101b29}details{margin-top:20px;border:1px solid #2b4657;border-radius:7px;background:#0e1d2a}summary{padding:14px 16px;font-size:15px;cursor:pointer}pre{padding:0 16px 18px;margin:0;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;max-height:700px;overflow:auto;color:#b8d7c9}a{color:#a8dfcc}button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #95e4cc;outline-offset:3px}@media(max-width:760px){header{align-items:flex-start;flex-direction:column;padding:15px}main{padding:16px 12px}#checks{grid-template-columns:1fr}iframe{height:720px}h1{font-size:19px}.actions{width:100%}.actions button{flex:1}}
+  </style>
+</head>
+<body>
+  <header>
+    <div><h1>CRF 0.5 · 浏览器独立验收</h1><p>对实际画布读回 RGB，独立解码参考 PNG，并检验编辑、案例切换与撤销。</p></div>
+    <div class="actions"><button id="run" type="button">运行浏览器验收</button><button id="download" class="secondary" type="button" disabled>下载验收 JSON</button></div>
+  </header>
+  <main>
+    <div id="status" role="status" aria-live="polite" data-state="idle">尚未运行。请点击“运行浏览器验收”。</div>
+    <ul id="checks" aria-label="逐项检查结果"></ul>
+    <p class="note">照片仅核验各自的原视角。水果与独立生成基准比较；其他空间视角没有真实场景的像素真值。本页不录制视频，也不根据 CPU 结果声称 GPU 已通过。</p>
+    <iframe id="editor" title="接受独立验收的 CRF 图形计算编辑器" src="editor05.html"></iframe>
+    <details open><summary>完整结果 JSON</summary><pre id="results">{ "status": "not_run" }</pre></details>
+  </main>
+  <script src="verify-v05.js"></script>
+</body>
+</html>

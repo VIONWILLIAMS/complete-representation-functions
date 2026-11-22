@@ -1,0 +1,717 @@
+{
+  "schema": "crf.model_experiment.v0.7",
+  "id": "interior",
+  "prompt": "生成一张真实自然采光客厅的室内摄影：米灰色亚麻沙发、两个靠垫、圆形胡桃木茶几、陶杯与书，木地板和浅色地毯，左侧窗户照入柔和日光，墙角一盆绿植。相机处于人眼高度，看不到墙顶外的空洞，家具尺度正常，接触真实，窗框与墙正确连接。请实际搜索Pexels或Unsplash的公开室内照片页，从图像中提取可用形态、织物纹理、木纹、光照与构图；代码表达完整场景。",
+  "llmGenerated": true,
+  "selection": {
+    "id": "interior",
+    "title": "自然采光客厅",
+    "selectedPhase": "refined3",
+    "notes": [
+      "选用第三轮反馈：墙体空洞、桌腿悬浮与天花灯板得到修正，采光相对第二轮恢复，盆栽进入画面。",
+      "第二轮虽然HTTP与程序校验成功，实际图像更暗且噪点增加；该退步轮次保留，没有作为质量提升隐藏。",
+      "窗边几何、织物/木材层次和噪点仍有不足。未通过照片级质量验收。"
+    ]
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_8a715cefb0654c3e892ea59c8579aad7",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com linen sofa living room window natural light walnut coffee table",
+            "site:unsplash.com living room linen sofa coffee table natural light",
+            "site:unsplash.com walnut wood grain texture close up",
+            "site:pexels.com linen fabric texture close up",
+            "site:unsplash.com indoor plant in living room corner natural light",
+            "site:commons.wikimedia.org living room interior window natural light",
+            "site:unsplash.com window frame wall interior daylight streaming in"
+          ]
+        },
+        "sourceUrls": [
+          "https://unsplash.com/photos/Od8ZrIlzI8Q",
+          "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+          "https://unsplash.com/photos/a-potted-plant-with-green-leaves-on-a-window-sill-6BhQ7iWwMmM",
+          "https://unsplash.com/photos/sunlight-streaming-through-a-diamond-paned-window-g4rnNp_Ge9g",
+          "https://unsplash.com/photos/JWfOBwUNbR8",
+          "https://www.pexels.com/ru-ru/photo/6850480/",
+          "https://unsplash.com/photos/sun-drenched-porch-overflowing-with-lush-green-plants-W83HRDSkaL4",
+          "https://unsplash.com/photos/sunlight-streams-through-a-wooden-shuttered-window-0oj8ajN1PCY",
+          "https://unsplash.com/photos/cross-section-of-a-walnut-shell-with-intricate-interior-detail-QnoV5Q-uoDE",
+          "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/",
+          "https://unsplash.com/photos/a-white-pot-filled-with-green-succulents-on-a-windowsill-ak3gS5JE-rw",
+          "https://unsplash.com/photos/rustic-wooden-room-with-sunlight-streaming-through-window-j1WtsUZn4ZI",
+          "https://unsplash.com/photos/aXH0m8YE7oc",
+          "https://www.pexels.com/fr-fr/photo/couvertures-literie-linge-de-maison-30618181/",
+          "https://unsplash.com/photos/hand-holding-a-potted-plant-with-blue-floral-design-RhRFcldFb68"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_01_b0e1c2ce544c4a6a8d3d3294c9de3c0c",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com photo living room sofa coffee table natural light interior",
+            "site:unsplash.com photo living room sofa coffee table interior natural light",
+            "site:pexels.com photo interior window frame wall daylight room",
+            "site:unsplash.com photo ceramic cup and book on table still life",
+            "site:pexels.com photo light wood floor texture interior",
+            "site:unsplash.com photo light rug floor interior texture",
+            "site:commons.wikimedia.org interior living room sofa window sunlight"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/interior-design-of-living-room-4221393/",
+          "https://unsplash.com/photos/modern-living-room-with-neutral-tones-and-natural-elements-tPz3Lhh3z_4",
+          "https://www.pexels.com/photo/closed-windows-in-room-20741339/",
+          "https://unsplash.com/photos/white-ceramic-cup-on-brown-book-page-2Vf6qY1UWVk",
+          "https://www.pexels.com/fr-fr/photo/plancher-de-bois-brun-368755/",
+          "https://unsplash.com/photos/dU3--peZpkM",
+          "https://www.pexels.com/photo/a-room-in-a-hotel-in-elegant-style-15867752/",
+          "https://unsplash.com/photos/a-modern-inviting-living-room-is-well-lit-EMxd6-q7IHo",
+          "https://www.pexels.com/photo/cozy-library-with-city-view-in-istanbul-32560389/",
+          "https://unsplash.com/photos/white-ceramic-mug-on-brown-wooden-table-WehiNLwZrEA",
+          "https://www.pexels.com/photo/attic-open-space-apartment-20290965/",
+          "https://unsplash.com/photos/Jn_Ycc7kdTU",
+          "https://www.pexels.com/photo/a-gray-and-white-themed-living-room-8031929/",
+          "https://unsplash.com/photos/modern-living-room-with-white-sectional-sofa-and-pink-pillows-4-W8efSOL_8",
+          "https://www.pexels.com/photo/sunlit-vintage-interior-of-historical-building-29055864/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://unsplash.com/photos/Od8ZrIlzI8Q",
+        "title": "Photo by Sándor Szabó on Unsplash",
+        "snippet": "––– – ––– – – Download this free HD photo of black walnut, brown walnut, woodgrain, and walnut texture by Sándor Szabó (@verzum) Published on SONY, ILCE-5100Free to use under the Unsplash License ... Save 20% with code UNSPLASH20",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+        "title": "Photo by Engin Akyurt on Pexels",
+        "snippet": "6720x4480 Aspect Ratio 3:2 Colors Date Jun 3, 2020 ... Software Adobe Photoshop Camera Raw 12.1 (Macintosh) Description # Close-up of brown linen fabric texture, ideal for backgrounds or textiles projects. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-potted-plant-with-green-leaves-on-a-window-sill-6BhQ7iWwMmM",
+        "title": "Photo by Georgia Visacri on Unsplash",
+        "snippet": "a potted plant with green leaves on a window sill Download this free HD photo of pilea peperomioides, green, natural light interior, and natural light by Georgia Visacri (@georgia_vis) Published on Canon, EOS Rebel T7Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/sunlight-streaming-through-a-diamond-paned-window-g4rnNp_Ge9g",
+        "title": "Photo by Ignat Kushnarev on Unsplash",
+        "snippet": "––– –––– –––– # Sunlight streaming through a diamond-paned window Download this free HD photo of interior design, interior, vintage, and window by Ignat Kushnarev (@ignatkushanrev) Published on Free to use under the Unsplash License Browse",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/JWfOBwUNbR8",
+        "title": "Photo by Sandra Pattetsom on Unsplash",
+        "snippet": "––– – ––– ––– Download this free HD photo of wood, texture, walnut logs, and lumber by Sandra Pattetsom (@spatterson266) Published on LG Electronics, LG-US996Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/ru-ru/photo/6850480/",
+        "title": "Автор фото на Pexels: Teona Swift",
+        "snippet": "Adobe Photoshop Lightroom Classic 10.1.1 (Macintosh) Описание # Детальный снимок аккуратно сложенной льняной ткани, демонстрирующей свою текстуру и мастерство на плетёной поверхности.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/sun-drenched-porch-overflowing-with-lush-green-plants-W83HRDSkaL4",
+        "title": "Photo by Brett Wharton on Unsplash",
+        "snippet": "Sun-drenched porch overflowing with lush, green plants. Sunlight streams through the tall windows of a lush indoor conservatory at the Winchester Mystery House, illuminating a colorful mix of potted plants. Purple heart vines, red geraniums, spider plants, and tropical foliage thrive in this warm, enclosed corner.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/sunlight-streams-through-a-wooden-shuttered-window-0oj8ajN1PCY",
+        "title": "Photo by Büsra Aksoy on Unsplash",
+        "snippet": "––– –––– –––– # Sunlight streams through a wooden shuttered window. Download this free HD photo of architecture, interior design, interior, and vintage in Konya, Türkiye by Büsra Aksoy (@busraaksoy00) Konya, Türkiye Published on Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/cross-section-of-a-walnut-shell-with-intricate-interior-detail-QnoV5Q-uoDE",
+        "title": "Photo by Sebastian Schuster on Unsplash",
+        "snippet": "Cross-section of a walnut shell with intricate interior detail Details of the internal structure of a walnut Calendar outlined Published on August 28 ... Unsplash License pattern fruit beauty object structure wooden walnut isolated complicated internal ornamental pockets",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/",
+        "title": "Foto door https://kaboompics.com/ op Pexels",
+        "snippet": "Brighten up Add frames ... Adobe Photoshop Lightroom Classic 9.2.1 (Macintosh) Beschrijving # Gedetailleerde close-up van beige linnen stof die de textuur en plooien toont. ### Meer van dit Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-white-pot-filled-with-green-succulents-on-a-windowsill-ak3gS5JE-rw",
+        "title": "Photo by Grooveland Designs on Unsplash",
+        "snippet": "A white pot filled with green succulents on a windowsill. A close-up of a Haworthia succulent in a white ceramic pot placed on a bright windowsill. Clean, minimalist home decor with fresh green leaves and soft natural light.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/rustic-wooden-room-with-sunlight-streaming-through-window-j1WtsUZn4ZI",
+        "title": "Photo by Frederick Shaw on Unsplash",
+        "snippet": "––– –––– –––– # Rustic wooden room with sunlight streaming through window Download this free HD photo of building, interior design, window, and floor by Frederick Shaw (@dropfastcollective) Published on Free to use under the Unsplash License Browse ... Save 20% with code UNSPLASH20",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/aXH0m8YE7oc",
+        "title": "Photo by Rumman Amin on Unsplash",
+        "snippet": "––– – ––– – – Just look at that beautiful grain! You can find our Wooden Cutting Board / Serving Board made from solid American Black Walnut on @Etsy via londonwood.co Published on Nikon, NIKON D3500Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/couvertures-literie-linge-de-maison-30618181/",
+        "title": "Photo de Kate L sur Pexels",
+        "snippet": "5080x7620 Format 2 ... Logiciel Adobe Photoshop Lightroom Classic 14.1.1 (Windows) Description # Tissu de literie en lin beige doux et texturé formant des plis naturels, parfait pour les thèmes de décoration intérieure. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/hand-holding-a-potted-plant-with-blue-floral-design-RhRFcldFb68",
+        "title": "Photo by Tatyana Rubleva on Unsplash",
+        "snippet": "A cozy indoor moment: a hand holds a potted satin pothos (Scindapsus) in a painted ceramic pot by a bright window, with soft bokeh and natural, airy light. Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/interior-design-of-living-room-4221393/",
+        "title": "Photo by Curtis Adams on Pexels",
+        "snippet": "820.9M views • 3.7M downloads License Free Dimensions 5000x3333 Colors Date Apr 23, 2020 ... Apr 22, 2020 Software Adobe Lightroom 3.2.1 (Windows) Description # Inviting living room featuring classic furniture, a fireplace, and natural lighting. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/modern-living-room-with-neutral-tones-and-natural-elements-tPz3Lhh3z_4",
+        "title": "Photo by Brian Zajac on Unsplash",
+        "snippet": "Modern living room with neutral tones and natural elements. ... This beautifully rendered interior features a comfortable off-white sofa facing a rustic wooden coffee table, complemented by a matching sideboard and two stylish gray accent chairs. ... Natural light floods the space through large French doors that open to a patio, enhancing the airy and relaxed atmosphere.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/closed-windows-in-room-20741339/",
+        "title": "Photo by Ezgi Gözütok on Pexels",
+        "snippet": "Use filters Change focus Brighten up Add frames İstanbul, İstanbul, Türkiye Description # Soft sunlight streams through a window in a cozy İstanbul room. ## More like this Use filters Change focus Brighten up Add frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/white-ceramic-cup-on-brown-book-page-2Vf6qY1UWVk",
+        "title": "Photo by Kateryna Hliznitsova on Unsplash",
+        "snippet": "white ceramic cup on brown book page Download this free HD photo of brown, purple, text, and plant by Kateryna Hliznitsova (@kate_gliz) ... NIKON D3000Free to use under the Unsplash",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/plancher-de-bois-brun-368755/",
+        "title": "Photo de Digital Buggu sur Pexels",
+        "snippet": "5312x2988 Format 16:9 Couleurs ... Appareil photo SM-N910G Focale 4.8mm Ouverture ƒ/2.2 ... Description # Texture de parquet en bois clair de haute qualité, parfaite pour les projets de design d'intérieur.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/dU3--peZpkM",
+        "title": "Photo by Thomas Louis Camy on Unsplash",
+        "snippet": "––– – ––– ––– Download this free HD photo of rug, texture, light, and floor by Thomas Louis Camy (@saucissedeluxe) Published on Apple, iPhone SEFree to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/a-room-in-a-hotel-in-elegant-style-15867752/",
+        "title": "Photo by Thới Nam Cao on Pexels",
+        "snippet": "1 ##### Thới Nam Cao 18.9M views • 64.6K downloads Description # A minimalist living room with a beige sofa, modern table, and soft lighting. ### More like this Use filters Change focus Brighten up",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-modern-inviting-living-room-is-well-lit-EMxd6-q7IHo",
+        "title": "Photo by Interlock Singapore on Unsplash",
+        "snippet": "A modern, inviting living room is well-lit. A minimalist living room with natural light streaming through a large window. The space features a smart thermostat, a sleek black digital lock, and modern furnishings including a light gray sofa, wooden coffee table, and indoor plant.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/cozy-library-with-city-view-in-istanbul-32560389/",
+        "title": "Photo by Rumeyda Tutak on Pexels",
+        "snippet": "Dimensions 2678x4044 Aspect Ratio 1339:2022 Colors Date Jun 14 ... Camera NIKON D5100 Focal ... Adobe Lightroom 10.3.2 (Android) İstanbul, İstanbul, Türkiye Description # Library interior with window view of bustling Istanbul waterfront on a sunny day. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "**结论：现有公开照片页能提供织物、木纹、绿植和窗光参考，但没有找到与“米灰色亚麻沙发 + 圆形胡桃木茶几 + 陶杯与书 + 浅色地毯 + 人眼高度客厅”完全逐项匹配的单张照片。** 代码生成时建议以“局部材质照片 + 近似客厅照片”组合提取参数，而不是依赖一张全景参考。\n\n### 可用参考与可转化细节\n\n**1. 亚麻织物纹理**\n- Pexels 棕色亚麻近摄：标题明确为 brown linen fabric texture，适合提取经纬交织起伏与软阴影 。建议代码中沙发表面用低频法线扰动 + 高频纬线细条带，避免均匀噪声。\n- Pexels 米色亚麻折叠近摄：米色/米灰倾向更接近目标，可参考褶皱形态与纤维柔光 。靠垫建议用大尺度低幅褶皱法线，褶皱走向随靠垫体积弯曲。\n- 局限：以上是织物局部，不含沙发形态与尺度信息。\n\n**2. 胡桃木纹理**\n- Unsplash 胡桃木纹理页：标签含 black walnut、woodgrain、walnut texture 。建议代码中将胡桃木分为深棕底 + 较浅纵纹 + 少量短节疤，纵纹方向沿茶几圆面半径或板面长轴，不要全表面同向拉丝。\n- Unsplash 胡桃木砧板页：文字提及 solid American Black Walnut 与 beautiful grain，可辅助木纹颜色与抛光感 。局限：茶几圆面需要曲面 UV，纹理在边缘应轻微弯曲而非平面平铺。\n\n**3. 陶杯与书**\n- Unsplash 白陶杯放在棕色书页上：页面标题直接匹配“白色陶瓷杯 + 棕色书” 。代码建议：陶杯用高光偏哑的釉面，杯口内壁略暗；书用几片薄盒体，书页侧面用细密横线，封面与杯底接触处加短软阴影。\n- 局限：没有提供目标客厅中的相对位置与尺度，需自行按人眼高度设置桌面视平线。\n\n**4. 窗户日光与室内光**\n- Unsplash 阳光穿过多格窗：可参考窗光入射方向与光斑形态 。建议代码中把左侧窗户作为主光源，用面积光/矩形光从窗框外侧向室内投射，光斑在地毯和沙发扶手上有明确方向性。\n- Pexels 伊斯坦布尔房间软窗光：标题提到 soft sunlight streams through a window，适合参考低对比室内漫射感 。建议日光色温略偏暖，窗口附近照度高，向墙角绿植方向衰减，避免整体均匀提亮。\n\n**5. 绿植与墙角**\n- Unsplash 窗台盆栽：标签含 natural light interior、potted plant，可参考叶片受窗光后的透光感与轮廓 。墙角绿植建议放在窗户侧面而非正对窗口，叶片朝光轻微倾斜；盆底接触地面处加接触阴影。\n- 局限：窗台盆栽不等于落地墙角大盆，形态和盆径需自行放大。\n\n**6. 客厅构图与尺度近似参考**\n- Unsplash 中性色调客厅：描述含 off-white sofa、rustic wooden coffee table、large indoor plants、natural light through French doors 。可用于参考家具间距、沙发与茶几的相对高度、植物作为角落体块的布局。\n- Pexels 灰白主题客厅：标题与描述为 neutral-toned furniture + abundant natural light 。可参考人眼高度下的沙发坐面、茶几顶面与地毯边缘的透视关系。\n- 局限：上述客厅并非目标材质组合，不能直接照搬颜色与具体家具形态；只能用于构图和尺度校准。\n\n**7. 木地板与浅色地毯**\n- Pexels 浅色木地板纹理：标题为浅色木地板纹理，适合提取板缝与纵向纹理 。代码中地板板缝应细而暗，颜色比胡桃木茶几浅，反射低。\n- Unsplash 地毯纹理页：标签含 rug、texture、light、floor 。浅色地毯建议用高频短绒噪声 + 低频压痕，地毯边缘与木地板交界处加细窄接触阴影。\n- 局限：地毯参考较泛，无法确认厚度与绒毛长度。\n\n### 代码表达建议（按图形函数拆分）\n\n- **窗户**：左侧墙面开矩形窗洞，窗框用薄盒体与墙体咬合，窗台向内略伸；光源从窗框中心偏外上方射入。\n- **沙发**：底座 + 坐垫 + 靠背 + 两个靠垫；亚麻纹理用程序化经纬法线，坐垫边缘下垂，扶手圆角。\n- **茶几**：圆柱/圆台桌面 + 三条或四条腿；胡桃木纹沿桌面半径方向，桌面边缘略深。\n- **陶杯与书**：陶杯用旋转体，书用 3–4 层薄盒体；二者放在茶几靠近窗户一侧，投射短软阴影。\n- **绿植**：墙角位置，盆体圆锥/圆柱，叶片用弯曲薄片分布，受光面偏亮、背光面偏深。\n- **光照**：矩形面积光 + 低强度环境光；窗口附近高光柔和，远离窗户的墙角逐渐变暗，接触阴影集中在沙发脚、茶几脚、花盆底。\n\n### 来源\n- 亚麻纹理 \n- 胡桃木纹理 \n- 陶杯与书 \n- 窗光与室内日光 \n- 绿植 \n- 客厅构图近似 \n- 木地板/地毯 ",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [
+      {
+        "sourceUrl": "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+        "title": "Photo by Engin Akyurt on Pexels",
+        "imageUrl": "https://images.pexels.com/photos/4554339/pexels-photo-4554339.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "sha256": "f1a62730b38b5de0ed84f5eea0e328d9d1f6b900da9a010b0743d6af4b74160d",
+        "bytes": 197670,
+        "mime": "image/webp",
+        "submittedToVision": true
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/ru-ru/photo/6850480/",
+        "title": "Автор фото на Pexels: Teona Swift",
+        "imageUrl": "https://images.pexels.com/photos/6850480/pexels-photo-6850480.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "sha256": "b35db16a5a57d1e9a6a262f5ef4d91d328843ea4015f218b5b1d1b733ef0613b",
+        "bytes": 39680,
+        "mime": "image/webp",
+        "submittedToVision": true
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/",
+        "title": "Foto door https://kaboompics.com/ op Pexels",
+        "imageUrl": "https://images.pexels.com/photos/4862928/pexels-photo-4862928.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "sha256": "de65daa286a9ab169bc04262d898135565587bf063fb79b24319d289b2aa78be",
+        "bytes": 112224,
+        "mime": "image/webp",
+        "submittedToVision": true
+      }
+    ],
+    "referenceImagesSubmitted": 3,
+    "inputImageProvided": false,
+    "referenceCollection": {
+      "method": "public source-page image metadata, verified image bytes; not render textures",
+      "sourcePageCount": 12,
+      "downloadedCount": 3,
+      "attempts": [
+        {
+          "sourceUrl": "https://unsplash.com/photos/Od8ZrIlzI8Q",
+          "title": "Photo by Sándor Szabó on Unsplash",
+          "status": "unavailable",
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+          "title": "Photo by Engin Akyurt on Pexels",
+          "status": "downloaded",
+          "imageUrl": "https://images.pexels.com/photos/4554339/pexels-photo-4554339.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "bytes": 197670,
+          "mime": "image/webp",
+          "sha256": "f1a62730b38b5de0ed84f5eea0e328d9d1f6b900da9a010b0743d6af4b74160d"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/a-potted-plant-with-green-leaves-on-a-window-sill-6BhQ7iWwMmM",
+          "title": "Photo by Georgia Visacri on Unsplash",
+          "status": "unavailable",
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/sunlight-streaming-through-a-diamond-paned-window-g4rnNp_Ge9g",
+          "title": "Photo by Ignat Kushnarev on Unsplash",
+          "status": "unavailable",
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/JWfOBwUNbR8",
+          "title": "Photo by Sandra Pattetsom on Unsplash",
+          "status": "unavailable",
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/ru-ru/photo/6850480/",
+          "title": "Автор фото на Pexels: Teona Swift",
+          "status": "downloaded",
+          "imageUrl": "https://images.pexels.com/photos/6850480/pexels-photo-6850480.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "bytes": 39680,
+          "mime": "image/webp",
+          "sha256": "b35db16a5a57d1e9a6a262f5ef4d91d328843ea4015f218b5b1d1b733ef0613b"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/sun-drenched-porch-overflowing-with-lush-green-plants-W83HRDSkaL4",
+          "title": "Photo by Brett Wharton on Unsplash",
+          "status": "unavailable",
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/sunlight-streams-through-a-wooden-shuttered-window-0oj8ajN1PCY",
+          "title": "Photo by Büsra Aksoy on Unsplash",
+          "status": "unavailable",
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/cross-section-of-a-walnut-shell-with-intricate-interior-detail-QnoV5Q-uoDE",
+          "title": "Photo by Sebastian Schuster on Unsplash",
+          "status": "unavailable",
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/",
+          "title": "Foto door https://kaboompics.com/ op Pexels",
+          "status": "downloaded",
+          "imageUrl": "https://images.pexels.com/photos/4862928/pexels-photo-4862928.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "bytes": 112224,
+          "mime": "image/webp",
+          "sha256": "de65daa286a9ab169bc04262d898135565587bf063fb79b24319d289b2aa78be"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/a-white-pot-filled-with-green-succulents-on-a-windowsill-ak3gS5JE-rw",
+          "title": "Photo by Grooveland Designs on Unsplash",
+          "status": "unavailable",
+          "error": "http_401"
+        },
+        {
+          "sourceUrl": "https://unsplash.com/photos/rustic-wooden-room-with-sunlight-streaming-through-window-j1WtsUZn4ZI",
+          "title": "Photo by Frederick Shaw on Unsplash",
+          "status": "unavailable",
+          "error": "http_401"
+        }
+      ],
+      "submittedToVision": true,
+      "submittedCount": 3
+    }
+  },
+  "phases": [
+    {
+      "phase": "initial",
+      "image": "media/v07/interior_initial.png",
+      "program": "assets/v07/generated/interior_initial.crf.json",
+      "apiRecord": "reports/v07/api_interior_initial.json",
+      "endpoint": "/api/crf/generate",
+      "httpStatus": 200,
+      "recordedAt": "2026-11-21T10:05:14.584Z",
+      "elapsedMs": 59421,
+      "inputImageProvided": false,
+      "model": "deepseek-flash",
+      "ok": true,
+      "programFileSha256": "3a4210a43d4a6ac259e7d8c76b5cc7cd1a4a8f1db196f6539e797a1a6e4651af",
+      "vision": {
+        "renderedImageProvided": false,
+        "referenceImagesProvided": 3,
+        "referenceSourceUrls": [
+          "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+          "https://www.pexels.com/ru-ru/photo/6850480/",
+          "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/"
+        ]
+      },
+      "repair": {
+        "attempted": false,
+        "passes": [],
+        "recovered": false
+      },
+      "usage": {
+        "prompt_tokens": 15662,
+        "completion_tokens": 6288,
+        "total_tokens": 21950,
+        "providerCalls": 2,
+        "requests": [
+          {
+            "phase": "research",
+            "requestId": "8616ca6b-15fd-4787-b72e-0d61486136cd",
+            "model": "deepseek-flash",
+            "elapsedMs": 19849,
+            "prompt_tokens": 8624,
+            "completion_tokens": 1314,
+            "total_tokens": 9938,
+            "server_tool_use": {
+              "tool_search": 14,
+              "tool_fetch": 0,
+              "tool_image_search": 0
+            }
+          },
+          {
+            "phase": "compose",
+            "requestId": "0e5ea4b1-6d12-429f-b51a-093b6f1324a6",
+            "model": "deepseek-flash",
+            "elapsedMs": 23136,
+            "prompt_tokens": 7038,
+            "completion_tokens": 4974,
+            "total_tokens": 12012,
+            "server_tool_use": {}
+          }
+        ]
+      },
+      "recovery": null,
+      "render": {
+        "schema": "crf.render_evidence.v0.7",
+        "id": "interior",
+        "source": "live",
+        "phase": "initial",
+        "width": 640,
+        "height": 480,
+        "samples": 24,
+        "elapsedMs": 82072,
+        "sha256": "995f490f7dbe37c0f03f59b42495e91bc605b1842bfa25407b496b93d1797e3d",
+        "programSha256": "7c3014808d2453077f71800fc3a772199a93e9723304c615273db7dd8ebc66e0",
+        "rendererSha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a",
+        "stats": {
+          "backend": "cpu-analytic-ray-transport",
+          "schema": "crf.image_program.v0.7",
+          "samplesPerPixel": 24,
+          "maxBounces": 5,
+          "tracedPrimarySamples": 7372800,
+          "objects": 35,
+          "areaLights": 4,
+          "elapsedMs": 82018,
+          "sourceImageBlit": false,
+          "imageTextureReads": 0,
+          "proceduralFunctionMaterials": 5,
+          "reflection": true,
+          "refraction": true,
+          "softVisibility": true,
+          "deterministic": true,
+          "denoiser": "bounded-spatial-object-depth-bilateral",
+          "transportLimitations": [
+            "finite bounce budget",
+            "clamped sample radiance",
+            "approximate rough glass",
+            "no volumetric scattering",
+            "no spectral transport",
+            "spatial denoising can soften fine detail"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "refined",
+      "image": "media/v07/interior_refined.png",
+      "program": "assets/v07/generated/interior_refined.crf.json",
+      "apiRecord": "reports/v07/api_interior_refined.json",
+      "endpoint": "/api/crf/generate",
+      "httpStatus": 200,
+      "recordedAt": "2026-11-21T10:09:51.696Z",
+      "elapsedMs": 22042,
+      "inputImageProvided": true,
+      "model": "deepseek-flash",
+      "ok": true,
+      "programFileSha256": "279917e1f546ef77490035262f5aee0fb610b30bcb51f82f02b37cf3f47e0cd2",
+      "vision": {
+        "renderedImageProvided": true,
+        "referenceImagesProvided": 0,
+        "referenceSourceUrls": []
+      },
+      "repair": {
+        "attempted": false,
+        "passes": [],
+        "recovered": false
+      },
+      "usage": {
+        "prompt_tokens": 6748,
+        "completion_tokens": 5159,
+        "total_tokens": 11907,
+        "providerCalls": 1,
+        "requests": [
+          {
+            "phase": "compose",
+            "requestId": "fae6ef65-f75c-4b1d-8c0f-028843c6bd4e",
+            "model": "deepseek-flash",
+            "elapsedMs": 22018,
+            "prompt_tokens": 6748,
+            "completion_tokens": 5159,
+            "total_tokens": 11907,
+            "server_tool_use": {}
+          }
+        ]
+      },
+      "recovery": null,
+      "render": {
+        "schema": "crf.render_evidence.v0.7",
+        "id": "interior",
+        "source": "live",
+        "phase": "refined",
+        "width": 640,
+        "height": 480,
+        "samples": 24,
+        "elapsedMs": 124095,
+        "sha256": "8d91b4bc296303552ce4c7e94bf08cbe72b72e42b7c14fd9224eab1a0646c14f",
+        "programSha256": "57299f019b5792e0ad492eb08d6481d89767ea9e2e51f25a1b0f88777998ca6c",
+        "rendererSha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a",
+        "stats": {
+          "backend": "cpu-analytic-ray-transport",
+          "schema": "crf.image_program.v0.7",
+          "samplesPerPixel": 24,
+          "maxBounces": 5,
+          "tracedPrimarySamples": 7372800,
+          "objects": 38,
+          "areaLights": 4,
+          "elapsedMs": 124043,
+          "sourceImageBlit": false,
+          "imageTextureReads": 0,
+          "proceduralFunctionMaterials": 5,
+          "reflection": true,
+          "refraction": true,
+          "softVisibility": true,
+          "deterministic": true,
+          "denoiser": "bounded-spatial-object-depth-bilateral",
+          "transportLimitations": [
+            "finite bounce budget",
+            "clamped sample radiance",
+            "approximate rough glass",
+            "no volumetric scattering",
+            "no spectral transport",
+            "spatial denoising can soften fine detail"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "refined2",
+      "image": "media/v07/interior_refined2.png",
+      "program": "assets/v07/generated/interior_refined2.crf.json",
+      "apiRecord": "reports/v07/api_interior_refined2.json",
+      "endpoint": "/api/crf/generate",
+      "httpStatus": 200,
+      "recordedAt": "2026-11-21T10:15:44.890Z",
+      "elapsedMs": 21509,
+      "inputImageProvided": true,
+      "model": "deepseek-flash",
+      "ok": true,
+      "programFileSha256": "2f50f354054b8ec07cb0e141d8bb3693819fb2c333038a161861788d73758c06",
+      "vision": {
+        "renderedImageProvided": true,
+        "referenceImagesProvided": 0,
+        "referenceSourceUrls": []
+      },
+      "repair": {
+        "attempted": false,
+        "passes": [],
+        "recovered": false
+      },
+      "usage": {
+        "prompt_tokens": 7189,
+        "completion_tokens": 5032,
+        "total_tokens": 12221,
+        "providerCalls": 1,
+        "requests": [
+          {
+            "phase": "compose",
+            "requestId": "c2f1dc9a-3cd1-4a06-8e2c-ce23d7fde340",
+            "model": "deepseek-flash",
+            "elapsedMs": 21474,
+            "prompt_tokens": 7189,
+            "completion_tokens": 5032,
+            "total_tokens": 12221,
+            "server_tool_use": {}
+          }
+        ]
+      },
+      "recovery": null,
+      "render": {
+        "schema": "crf.render_evidence.v0.7",
+        "id": "interior",
+        "source": "live",
+        "phase": "refined2",
+        "width": 640,
+        "height": 480,
+        "samples": 24,
+        "elapsedMs": 104761,
+        "sha256": "2c123ad89010fac0d106f01a8238afadfa5ab41d0723a825bdb31a38aeaed6df",
+        "programSha256": "b7d80f40e9aa3553f1493656a7c3cc9c5de0a015f85a4b4dea61403a3882f49f",
+        "rendererSha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a",
+        "stats": {
+          "backend": "cpu-analytic-ray-transport",
+          "schema": "crf.image_program.v0.7",
+          "samplesPerPixel": 24,
+          "maxBounces": 5,
+          "tracedPrimarySamples": 7372800,
+          "objects": 38,
+          "areaLights": 1,
+          "elapsedMs": 104696,
+          "sourceImageBlit": false,
+          "imageTextureReads": 0,
+          "proceduralFunctionMaterials": 5,
+          "reflection": true,
+          "refraction": true,
+          "softVisibility": true,
+          "deterministic": true,
+          "denoiser": "bounded-spatial-object-depth-bilateral",
+          "transportLimitations": [
+            "finite bounce budget",
+            "clamped sample radiance",
+            "approximate rough glass",
+            "no volumetric scattering",
+            "no spectral transport",
+            "spatial denoising can soften fine detail"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "refined3",
+      "image": "media/v07/interior_refined3.png",
+      "program": "assets/v07/generated/interior_refined3.crf.json",
+      "apiRecord": "reports/v07/api_interior_refined3.json",
+      "endpoint": "/api/crf/generate",
+      "httpStatus": 200,
+      "recordedAt": "2026-11-21T10:21:56.104Z",
+      "elapsedMs": 22230,
+      "inputImageProvided": true,
+      "model": "deepseek-flash",
+      "ok": true,
+      "programFileSha256": "25cb47fb273e476e7eb2762fec0a6e1f755fba8894b08a244ad151dcf59b7cc2",
+      "vision": {
+        "renderedImageProvided": true,
+        "referenceImagesProvided": 0,
+        "referenceSourceUrls": []
+      },
+      "repair": {
+        "attempted": false,
+        "passes": [],
+        "recovered": false
+      },
+      "usage": {
+        "prompt_tokens": 7044,
+        "completion_tokens": 5084,
+        "total_tokens": 12128,
+        "providerCalls": 1,
+        "requests": [
+          {
+            "phase": "compose",
+            "requestId": "55085a17-ab93-4a93-b85a-ca044aa3595b",
+            "model": "deepseek-flash",
+            "elapsedMs": 22190,
+            "prompt_tokens": 7044,
+            "completion_tokens": 5084,
+            "total_tokens": 12128,
+            "server_tool_use": {}
+          }
+        ]
+      },
+      "recovery": null,
+      "render": {
+        "schema": "crf.render_evidence.v0.7",
+        "id": "interior",
+        "source": "live",
+        "phase": "refined3",
+        "width": 640,
+        "height": 480,
+        "samples": 24,
+        "elapsedMs": 97473,
+        "sha256": "6c44b1e6ebf69a84b5633e0413c8a514a4173e8079bc3ba484bc9f0f165b11e9",
+        "programSha256": "0316d7dbafbee7040db35a62303ff3fd8c2a339f34839a5da026530d8d6efb08",
+        "rendererSha256": "a7f5ce68c1bc7178ee94f1a936a6fc9efbe9c54986616df87a0d614bd5bb633a",
+        "stats": {
+          "backend": "cpu-analytic-ray-transport",
+          "schema": "crf.image_program.v0.7",
+          "samplesPerPixel": 24,
+          "maxBounces": 5,
+          "tracedPrimarySamples": 7372800,
+          "objects": 37,
+          "areaLights": 2,
+          "elapsedMs": 97414,
+          "sourceImageBlit": false,
+          "imageTextureReads": 0,
+          "proceduralFunctionMaterials": 5,
+          "reflection": true,
+          "refraction": true,
+          "softVisibility": true,
+          "deterministic": true,
+          "denoiser": "bounded-spatial-object-depth-bilateral",
+          "transportLimitations": [
+            "finite bounce budget",
+            "clamped sample radiance",
+            "approximate rough glass",
+            "no volumetric scattering",
+            "no spectral transport",
+            "spatial denoising can soften fine detail"
+          ]
+        }
+      }
+    }
+  ],
+  "photorealismTargetPassed": false,
+  "externalFlagshipComparisonPerformed": false,
+  "notes": [
+    "所有图片来自所附场景程序的执行；未使用原生示例替代模型输出。",
+    "人工提供了基于实际画面的定向反馈；不是全自动质量达标记录。",
+    "初稿恢复标记只代表同一模型候选经表示协议扩展后通过本地校验。"
+  ]
+}

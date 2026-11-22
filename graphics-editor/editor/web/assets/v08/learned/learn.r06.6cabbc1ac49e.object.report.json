@@ -1,0 +1,365 @@
+{
+  "id": "learn.r06.6cabbc1ac49e.object",
+  "assetId": "learn.r06.6cabbc1ac49e.object",
+  "status": "fitted",
+  "round": 6,
+  "topic": "真实交通灯与街角实拍",
+  "sourceUrl": "https://www.pexels.com/photo/urban-traffic-light-against-historic-building-38078925/",
+  "imageUrl": "https://images.pexels.com/photos/38078925/pexels-photo-38078925.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo by Dirk Baker on Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r06.6cabbc1ac49e.webp",
+  "sourceSHA256": "6cabbc1ac49e521d201aeb568a43234e7901da96c31afa49d92c8375fc49d4d2",
+  "normalizedRGBA_SHA256": "3caede10606844dc0d8d8f71b59e8289edc7a7431787048183d195161cade844",
+  "dHash64": "472b3b2b3b4948a8",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    166,
+    172
+  ],
+  "assetURL": "assets/v08/learned/learn.r06.6cabbc1ac49e.object.json",
+  "renderURL": "assets/v08/learned/learn.r06.6cabbc1ac49e.object.png",
+  "reportURL": "assets/v08/learned/learn.r06.6cabbc1ac49e.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r06.6cabbc1ac49e.object.png",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 3569,
+  "pixelToGaussianRatio": 8.0,
+  "assetBytes": 302907,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 0.5199779895983102,
+    "rmse": 1.2670058392897372,
+    "psnr": 46.07523127998475,
+    "ssim": 0.9787051297444292,
+    "maxError": 35,
+    "exactRGBFraction": 0.3942701954310666,
+    "evaluatedPixels": 18779,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 0.5355229761922046,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 5.610859662240704,
+          "bestFloatMSE": 5.610859662240704
+        },
+        {
+          "step": 10,
+          "floatMSE": 2.0907362570337527,
+          "bestFloatMSE": 2.0907362570337527
+        },
+        {
+          "step": 20,
+          "floatMSE": 1.281540052257432,
+          "bestFloatMSE": 1.281540052257432
+        },
+        {
+          "step": 30,
+          "floatMSE": 0.922244486973784,
+          "bestFloatMSE": 0.922244486973784
+        },
+        {
+          "step": 40,
+          "floatMSE": 0.7279757403426205,
+          "bestFloatMSE": 0.7279757403426205
+        },
+        {
+          "step": 50,
+          "floatMSE": 0.6162622927565153,
+          "bestFloatMSE": 0.6162622927565153
+        },
+        {
+          "step": 60,
+          "floatMSE": 0.5598706921988877,
+          "bestFloatMSE": 0.5598706921988877
+        },
+        {
+          "step": 70,
+          "floatMSE": 0.5355229761922046,
+          "bestFloatMSE": 0.5355229761922046
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 1249,
+        "elapsedSeconds": 0.049,
+        "mae": 5.720609901130696,
+        "rmse": 10.263830672244952,
+        "psnr": 27.904614035800442,
+        "ssim": 0.7400831381121991,
+        "maxError": 122,
+        "exactRGBFraction": 0.08126098301293999,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 1249,
+        "elapsedSeconds": 0.092,
+        "mae": 4.488843921401566,
+        "rmse": 7.8557223570350905,
+        "psnr": 30.227081091050245,
+        "ssim": 0.8047077317988671,
+        "maxError": 78,
+        "exactRGBFraction": 0.09031364822408008,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 2757,
+        "elapsedSeconds": 0.439,
+        "mae": 2.406180662797096,
+        "rmse": 4.853149966097156,
+        "psnr": 34.41032937750143,
+        "ssim": 0.9254794253669746,
+        "maxError": 101,
+        "exactRGBFraction": 0.14377762394163693,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 3569,
+        "elapsedSeconds": 0.679,
+        "mae": 1.7528799900598186,
+        "rmse": 3.6668175413161186,
+        "psnr": 36.845017603473266,
+        "ssim": 0.9500690036337794,
+        "maxError": 76,
+        "exactRGBFraction": 0.17998828478619736,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 3569,
+        "elapsedSeconds": 0.702,
+        "mae": 1.7528799900598186,
+        "rmse": 3.6668175413161186,
+        "psnr": 36.845017603473266,
+        "ssim": 0.9500690036337794,
+        "maxError": 76,
+        "exactRGBFraction": 0.17998828478619736,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 3569,
+        "elapsedSeconds": 0.824,
+        "mae": 1.107549212773133,
+        "rmse": 2.3874193223690576,
+        "psnr": 40.572229519307406,
+        "ssim": 0.9670494547234205,
+        "maxError": 58,
+        "exactRGBFraction": 0.1809468022791416,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 3569,
+        "elapsedSeconds": 0.944,
+        "mae": 0.8263130802137139,
+        "rmse": 1.9002869263350322,
+        "psnr": 42.55441999892773,
+        "ssim": 0.9733888223957124,
+        "maxError": 44,
+        "exactRGBFraction": 0.25123808509505297,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 3569,
+        "elapsedSeconds": 1.064,
+        "mae": 0.6815414381312459,
+        "rmse": 1.6136609065112664,
+        "psnr": 43.97455805552005,
+        "ssim": 0.9760834972482972,
+        "maxError": 38,
+        "exactRGBFraction": 0.3133287182491081,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 3569,
+        "elapsedSeconds": 1.201,
+        "mae": 0.603386761808403,
+        "rmse": 1.4498926218662618,
+        "psnr": 44.9040868116727,
+        "ssim": 0.9773409235837195,
+        "maxError": 35,
+        "exactRGBFraction": 0.3495926300654987,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 3569,
+        "elapsedSeconds": 1.322,
+        "mae": 0.5551413813302093,
+        "rmse": 1.3460023454408352,
+        "psnr": 45.54988727553919,
+        "ssim": 0.9781265695368728,
+        "maxError": 34,
+        "exactRGBFraction": 0.37472708876937005,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 3569,
+        "elapsedSeconds": 1.441,
+        "mae": 0.5302021761897154,
+        "rmse": 1.291221292945868,
+        "psnr": 45.91079002486384,
+        "ssim": 0.9785350514625486,
+        "maxError": 35,
+        "exactRGBFraction": 0.38825283561424995,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 3569,
+        "elapsedSeconds": 1.555,
+        "mae": 0.5199779895983102,
+        "rmse": 1.2670058392897372,
+        "psnr": 46.07523127998475,
+        "ssim": 0.9787051297444292,
+        "maxError": 35,
+        "exactRGBFraction": 0.3942701954310666,
+        "evaluatedPixels": 18779,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 1.556,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 1.716,
+  "passedPilot": true,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.35,
+      0.2,
+      0.65,
+      0.79
+    ],
+    "proposalPixels": [
+      159,
+      46,
+      353,
+      243
+    ],
+    "cropPixels": [
+      189,
+      65,
+      355,
+      237
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 17565,
+    "pixelMaskVerified": false,
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r06.6cabbc1ac49e.object.png"
+  },
+  "semantics": {
+    "id": "learn.r06.6cabbc1ac49e",
+    "label": "悬挂式黑色交通信号灯组",
+    "category": "traffic-signal",
+    "role": "object",
+    "bbox": [
+      0.35,
+      0.2,
+      0.65,
+      0.79
+    ],
+    "palette": [
+      [
+        232,
+        232,
+        230
+      ],
+      [
+        28,
+        31,
+        31
+      ],
+      [
+        120,
+        205,
+        170
+      ],
+      [
+        90,
+        100,
+        105
+      ],
+      [
+        195,
+        198,
+        195
+      ]
+    ],
+    "lightDirection": "diffuse",
+    "description": "黑色多灯位交通信号灯组由钢索悬吊，正对镜头，多个圆形遮光罩呈阵列排列；下方一个灯位亮青绿色，灯体边缘有金属支架和固定件。背景为浅灰白色历史建筑立面，带竖向长窗与古典线脚，整体处于柔和阴天光下，灯体与亮灯的轮廓清晰。",
+    "tags": [
+      "交通灯",
+      "悬挂",
+      "绿灯",
+      "钢索",
+      "历史建筑",
+      "城市街景",
+      "遮光罩"
+    ],
+    "limitations": [
+      "无法确认灯组背面、接线与内部结构",
+      "亮灯颜色受白平衡影响",
+      "悬索连接点被局部遮挡"
+    ]
+  },
+  "sourceId": "learn.r06.6cabbc1ac49e",
+  "referenceThumbnailURL": "assets/v08/references/learn.r06.6cabbc1ac49e.object.jpg"
+}

@@ -1,0 +1,326 @@
+TAP version 13
+# {"case":"wall_mixed_edge","declaredMixturePixels":10319,"edgeChanged":10318,"undeclaredChanges":0,"baselineErrors":0}
+# {"case":"signal_removed","allHousingPixelsRevealedAsInferredWall":4288,"staleHousingSeamTicks":0}
+# Subtest: a known mixed edge has exact default observation and follows the background material delta
+ok 1 - a known mixed edge has exact default observation and follows the background material delta
+  ---
+  duration_ms: 8.215617
+  type: 'test'
+  ...
+# Subtest: malformed boundary payload and invalid generator operations are rejected atomically
+ok 2 - malformed boundary payload and invalid generator operations are rejected atomically
+  ---
+  duration_ms: 1.089393
+  type: 'test'
+  ...
+# Subtest: Street recoloring only changes the wall and its declared mixed-edge influence band
+ok 3 - Street recoloring only changes the wall and its declared mixed-edge influence band
+  ---
+  duration_ms: 1809.872035
+  type: 'test'
+  ...
+# Subtest: removing the front signal reveals inferred wall at every housing pixel, including the bridge
+ok 4 - removing the front signal reveals inferred wall at every housing pixel, including the bridge
+  ---
+  duration_ms: 490.96211
+  type: 'test'
+  ...
+# {"test":"full_observation","exact100":true,"width":667,"height":1000,"stats":{"backend":"cpu-gaussian","quality":"exact","width":667,"height":1000,"lod":1,"sigmaReferencePx":0.18,"gaussianCount":766102,"inferredGaussianCount":99102,"observedPixelCount":667000,"layerCount":18,"representation":"dense-observation-gaussians-with-inferred-layer-depths","physicalRelighting":false,"sourceImageBlit":false,"boundaryMaterialSampleCount":0,"proceduralSampleCount":0,"contributions":766102,"visibleInferredPixels":0,"elapsedMs":1061.994615}}
+# Subtest: every arbitrary RGB byte is recovered through Gaussian accumulation at its reference center
+ok 5 - every arbitrary RGB byte is recovered through Gaussian accumulation at its reference center
+  ---
+  duration_ms: 11.326318
+  type: 'test'
+  ...
+# Subtest: Gaussian kernel uses exp and normalized sums at an actual subpixel translation
+ok 6 - Gaussian kernel uses exp and normalized sums at an actual subpixel translation
+  ---
+  duration_ms: 2.448772
+  type: 'test'
+  ...
+# Subtest: a local color function leaves all other original object pixels unchanged
+ok 7 - a local color function leaves all other original object pixels unchanged
+  ---
+  duration_ms: 16.897998
+  type: 'test'
+  ...
+# Subtest: moving an observed object reveals marked inferred host samples and performs depth occlusion
+ok 8 - moving an observed object reveals marked inferred host samples and performs depth occlusion
+  ---
+  duration_ms: 1.674866
+  type: 'test'
+  ...
+# Subtest: inferred samples move with their host and do not become a fixed image background
+ok 9 - inferred samples move with their host and do not become a fixed image background
+  ---
+  duration_ms: 1.632321
+  type: 'test'
+  ...
+# Subtest: hierarchical transforms carry attached child Gaussians
+ok 10 - hierarchical transforms carry attached child Gaussians
+  ---
+  duration_ms: 2.337104
+  type: 'test'
+  ...
+# Subtest: camera yaw produces depth parallax and transforms the actual Gaussian covariance
+ok 11 - camera yaw produces depth parallax and transforms the actual Gaussian covariance
+  ---
+  duration_ms: 0.807007
+  type: 'test'
+  ...
+# Subtest: operations are atomic and reject unknown fields, NaN, bad IDs and attachment cycles
+ok 12 - operations are atomic and reject unknown fields, NaN, bad IDs and attachment cycles
+  ---
+  duration_ms: 1.238157
+  type: 'test'
+  ...
+# Subtest: duplicate and delete create independent editable identities
+ok 13 - duplicate and delete create independent editable identities
+  ---
+  duration_ms: 1.742787
+  type: 'test'
+  ...
+# Subtest: new primitives generate their own samples without a source object
+ok 14 - new primitives generate their own samples without a source object
+  ---
+  duration_ms: 5.234101
+  type: 'test'
+  ...
+# Subtest: identity light is exact and exposure is a separate monotonic calibrated function
+ok 15 - identity light is exact and exposure is a separate monotonic calibrated function
+  ---
+  duration_ms: 5.316236
+  type: 'test'
+  ...
+# Subtest: timeline interpolation is deterministic, immutable, and time:null bypasses it
+ok 16 - timeline interpolation is deterministic, immutable, and time:null bypasses it
+  ---
+  duration_ms: 7.112824
+  type: 'test'
+  ...
+# Subtest: inferred highlights expose assumptions rather than altering the observed source data
+ok 17 - inferred highlights expose assumptions rather than altering the observed source data
+  ---
+  duration_ms: 2.006235
+  type: 'test'
+  ...
+# Subtest: step trajectories select the new value exactly at the keyframe timestamp
+ok 18 - step trajectories select the new value exactly at the keyframe timestamp
+  ---
+  duration_ms: 1.066948
+  type: 'test'
+  ...
+# Subtest: full 667x1000 street observation passes independent RGB8 comparison through the CPU kernel
+ok 19 - full 667x1000 street observation passes independent RGB8 comparison through the CPU kernel
+  ---
+  duration_ms: 1492.339266
+  type: 'test'
+  ...
+# Subtest: fruit case is wholly procedural and source data contains only necessary numeric backdrop fields
+ok 20 - fruit case is wholly procedural and source data contains only necessary numeric backdrop fields
+  ---
+  duration_ms: 1.987978
+  type: 'test'
+  ...
+# Subtest: fruit surfaces are deterministic, volumetric and seed-editable
+ok 21 - fruit surfaces are deterministic, volumetric and seed-editable
+  ---
+  duration_ms: 423.66845
+  type: 'test'
+  ...
+# Subtest: camera movement changes projected geometry and roughness changes shading only
+ok 22 - camera movement changes projected geometry and roughness changes shading only
+  ---
+  duration_ms: 59.754397
+  type: 'test'
+  ...
+# Subtest: apple to pear replacement preserves transforms while rebuilding a distinct volume
+ok 23 - apple to pear replacement preserves transforms while rebuilding a distinct volume
+  ---
+  duration_ms: 84.576214
+  type: 'test'
+  ...
+# Subtest: contact shadows are multiplicative, do not claim object IDs, and render repeatably
+ok 24 - contact shadows are multiplicative, do not claim object IDs, and render repeatably
+  ---
+  duration_ms: 733.93986
+  type: 'test'
+  ...
+# Subtest: common scene contains fitted and generated functions using one editable geometry protocol
+ok 25 - common scene contains fitted and generated functions using one editable geometry protocol
+  ---
+  duration_ms: 2683.108236
+  type: 'test'
+  ...
+# Subtest: common objects occlude each other according to their shared spatial positions
+ok 26 - common objects occlude each other according to their shared spatial positions
+  ---
+  duration_ms: 292.243303
+  type: 'test'
+  ...
+# Subtest: serialized scene renders identically in an isolated directory without reference images or asset globals
+ok 27 - serialized scene renders identically in an isolated directory without reference images or asset globals
+  ---
+  duration_ms: 1090.303901
+  type: 'test'
+  ...
+# Subtest: multi-view and time are scene evaluations with deterministic frame pixels
+ok 28 - multi-view and time are scene evaluations with deterministic frame pixels
+  ---
+  duration_ms: 749.531916
+  type: 'test'
+  ...
+# Subtest: invalid compound operations and source program imports do not partially mutate the source
+ok 29 - invalid compound operations and source program imports do not partially mutate the source
+  ---
+  duration_ms: 14.44324
+  type: 'test'
+  ...
+# Subtest: real profile optimization lowers its declared objective and follows image shape
+ok 30 - real profile optimization lowers its declared objective and follows image shape
+  ---
+  duration_ms: 386.394138
+  type: 'test'
+  ...
+# Subtest: held-out UV colors are predicted from fitting coefficients and outperform constant color
+ok 31 - held-out UV colors are predicted from fitting coefficients and outperform constant color
+  ---
+  duration_ms: 198.116478
+  type: 'test'
+  ...
+# Subtest: changing held-out RGB cannot change fitted coefficients, mean, or back prior
+ok 32 - changing held-out RGB cannot change fitted coefficients, mean, or back prior
+  ---
+  duration_ms: 419.387235
+  type: 'test'
+  ...
+# Subtest: background perturbations cannot become fitted appearance donors with a supplied mask
+ok 33 - background perturbations cannot become fitted appearance donors with a supplied mask
+  ---
+  duration_ms: 272.695128
+  type: 'test'
+  ...
+# Subtest: fitted fields explicitly distinguish observed front from inferred back
+ok 34 - fitted fields explicitly distinguish observed front from inferred back
+  ---
+  duration_ms: 112.77341
+  type: 'test'
+  ...
+# Subtest: bounded automatic color segmentation is reproducible without supplied labels
+ok 35 - bounded automatic color segmentation is reproducible without supplied labels
+  ---
+  duration_ms: 268.371127
+  type: 'test'
+  ...
+# Subtest: invalid and unsupported image inputs fail clearly instead of fabricating objects
+ok 36 - invalid and unsupported image inputs fail clearly instead of fabricating objects
+  ---
+  duration_ms: 10.559822
+  type: 'test'
+  ...
+# Subtest: an observed fit accepts the same CRFProgram edits and timeline as a generated object
+ok 37 - an observed fit accepts the same CRFProgram edits and timeline as a generated object
+  ---
+  duration_ms: 112.915143
+  type: 'test'
+  ...
+# Subtest: the shared renderer evaluates the fitted radius function with the same interpolation
+ok 38 - the shared renderer evaluates the fitted radius function with the same interpolation
+  ---
+  duration_ms: 53.923556
+  type: 'test'
+  ...
+# Subtest: runtime observed rendering needs no source image and uses the same Gaussian path
+ok 39 - runtime observed rendering needs no source image and uses the same Gaussian path
+  ---
+  duration_ms: 333.032529
+  type: 'test'
+  ...
+# Subtest: all native presets are validated programs with explicit generated provenance
+ok 40 - all native presets are validated programs with explicit generated provenance
+  ---
+  duration_ms: 19.338669
+  type: 'test'
+  ...
+# Subtest: serialized object program renders deterministically without original image resources
+ok 41 - serialized object program renders deterministically without original image resources
+  ---
+  duration_ms: 554.752562
+  type: 'test'
+  ...
+# Subtest: same material/shape operations apply to both observation and procedural generation
+ok 42 - same material/shape operations apply to both observation and procedural generation
+  ---
+  duration_ms: 485.214054
+  type: 'test'
+  ...
+# Subtest: perspective depth resolves real object occlusion independently of list order
+ok 43 - perspective depth resolves real object occlusion independently of list order
+  ---
+  duration_ms: 725.451993
+  type: 'test'
+  ...
+# Subtest: object rotation changes observed UV appearance and camera time changes projection
+ok 44 - object rotation changes observed UV appearance and camera time changes projection
+  ---
+  duration_ms: 357.461814
+  type: 'test'
+  ...
+# Subtest: opaque sampled lathe has no interior coverage holes, including the steep cap
+ok 45 - opaque sampled lathe has no interior coverage holes, including the steep cap
+  ---
+  duration_ms: 47.70207
+  type: 'test'
+  ...
+# Subtest: field cache respects confidence, reference color and dimensions with unchanged RGB bytes
+ok 46 - field cache respects confidence, reference color and dimensions with unchanged RGB bytes
+  ---
+  duration_ms: 0.606043
+  type: 'test'
+  ...
+# Subtest: observed recolor preserves neutral highlights and additive achromatic reflection
+ok 47 - observed recolor preserves neutral highlights and additive achromatic reflection
+  ---
+  duration_ms: 0.468857
+  type: 'test'
+  ...
+# Subtest: unmodified observed tint retains baseline floating-point arithmetic exactly
+ok 48 - unmodified observed tint retains baseline floating-point arithmetic exactly
+  ---
+  duration_ms: 103.409926
+  type: 'test'
+  ...
+# Subtest: linear observation coefficients match the actual runtime radius function
+ok 49 - linear observation coefficients match the actual runtime radius function
+  ---
+  duration_ms: 0.494876
+  type: 'test'
+  ...
+# Subtest: invalid operations are atomic and malformed program paths, fields and relations reject
+ok 50 - invalid operations are atomic and malformed program paths, fields and relations reject
+  ---
+  duration_ms: 1.236344
+  type: 'test'
+  ...
+# Subtest: timeline keyframes reject wrong ranges and vector types at import
+ok 51 - timeline keyframes reject wrong ranges and vector types at import
+  ---
+  duration_ms: 0.591892
+  type: 'test'
+  ...
+# Subtest: local intent compiler states partial support and preserves edited observations
+ok 52 - local intent compiler states partial support and preserves edited observations
+  ---
+  duration_ms: 1.805102
+  type: 'test'
+  ...
+1..52
+# tests 52
+# suites 0
+# pass 52
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5049.704771
+

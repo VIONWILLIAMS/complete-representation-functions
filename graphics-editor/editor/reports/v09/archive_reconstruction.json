@@ -1,0 +1,97 @@
+{
+  "schema": "crf.archive_reconstruction.v0.9",
+  "stats": {
+    "archiveCount": 8,
+    "originalBytes": 111660535,
+    "storedBytes": 76800656,
+    "savedBytes": 34859879,
+    "rawZipSegments": 1730,
+    "uniqueChunks": 1401,
+    "packFiles": 23,
+    "maxPackBytes": 4194304,
+    "payloadBytes": 111512991,
+    "metadataBytes": 147544,
+    "removedDisposableCopies": 0,
+    "sourcePreserved": true,
+    "allArchivesByteExact": true
+  },
+  "archives": [
+    {
+      "url": "/downloads/CRF_0_8_Render_Kit.zip",
+      "bytes": 13302600,
+      "sha256": "8928f57dae71514e3c5b8e07269eb3338aaea4e9cc10ed75c49e3034a4895ca1",
+      "matchingOriginal": true,
+      "status": 200,
+      "packFetches": 5,
+      "elapsedMilliseconds": 376.039179
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_5_Showcase.zip",
+      "bytes": 20993543,
+      "sha256": "d89f2dd4cd25b7203a1445d4d5148f844eda89ea1cd772fe9a88ed3714a63bd1",
+      "matchingOriginal": true,
+      "status": 200,
+      "packFetches": 6,
+      "elapsedMilliseconds": 333.62662099999994
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_5_Source.zip",
+      "bytes": 12999456,
+      "sha256": "54a0ec272ce4467bf2491f0139317dd795186d2c65f666a449b83b62b4c2e840",
+      "matchingOriginal": true,
+      "status": 200,
+      "packFetches": 5,
+      "elapsedMilliseconds": 107.70457599999997
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_6_Showcase.zip",
+      "bytes": 8229179,
+      "sha256": "f202f35f7fc4c051d6de013bd9a68d569fcea15f47fdeadfe60ea904ab07fc20",
+      "matchingOriginal": true,
+      "status": 200,
+      "packFetches": 2,
+      "elapsedMilliseconds": 20.15725599999996
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_6_Source.zip",
+      "bytes": 15260507,
+      "sha256": "14c74aceb609747aba5ca6bd59bf4dcade5537b2c0157e19e5f34575bc7da290",
+      "matchingOriginal": true,
+      "status": 200,
+      "packFetches": 7,
+      "elapsedMilliseconds": 65.96868200000006
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_7_Images.zip",
+      "bytes": 6405530,
+      "sha256": "80ded1b8bf0f80e6ffd02d86c32ea834280a72b129b7062c374a03a27ff36ad5",
+      "matchingOriginal": true,
+      "status": 200,
+      "packFetches": 1,
+      "elapsedMilliseconds": 13.505071000000044
+    },
+    {
+      "url": "/downloads/CRF_Graphics_0_7_Source.zip",
+      "bytes": 20136964,
+      "sha256": "5165b0b355fbf52317e71955ca0ef4981cab0a6c39bce677a04b481e9c14eab2",
+      "matchingOriginal": true,
+      "status": 200,
+      "packFetches": 10,
+      "elapsedMilliseconds": 80.40109099999995
+    },
+    {
+      "url": "/downloads/crf_street_0_4_source.zip",
+      "bytes": 14332756,
+      "sha256": "f0a82c8bc378f81a5e70a0c1a8d6cfc8cedccc48573ed90b68c4792ec5ea053b",
+      "matchingOriginal": true,
+      "status": 200,
+      "packFetches": 6,
+      "elapsedMilliseconds": 44.52636000000007
+    }
+  ],
+  "allOriginalArchivesByteExact": true,
+  "totalPackFetches": 42,
+  "uniquePacksFetched": 23,
+  "cacheBudgetBytes": 33554432,
+  "sourceModified": false
+}

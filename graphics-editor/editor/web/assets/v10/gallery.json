@@ -1,0 +1,115 @@
+{
+  "schema": "crf.gallery.v0.10",
+  "modelTraining": false,
+  "at": "2026-11-21T22:49:34.894Z",
+  "cases": [
+    {
+      "id": "fruit_trio",
+      "title": "果实的三种颜色",
+      "kind": "gaussian",
+      "imageUrl": "assets/v10/generated/polish-v3/fruit_trio.png",
+      "thumbnailUrl": "assets/v10/generated/polish-v3/fruit_trio.jpg",
+      "sceneUrl": "assets/v10/generated/polish-v3/fruit_trio.scene.json",
+      "reportUrl": "assets/v10/generated/polish-v3/fruit_trio.report.json",
+      "width": 1024,
+      "height": 768,
+      "pixelSha256": "cb87adc15783c283c5baf113bde1862e06b7971f9ff0dd1c40f5844714a05fe4",
+      "subtitle": "DeepSeek 编排 · 观测物品新组合",
+      "scope": "new_layout_of_observed_gaussian_objects",
+      "modelTraining": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_and_pear.jpg",
+      "sourceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Apple_and_pear.jpg",
+        "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/"
+      ]
+    },
+    {
+      "id": "ceramic_citrus",
+      "title": "青釉与柑橘",
+      "kind": "gaussian",
+      "imageUrl": "assets/v10/generated/polish-v3/ceramic_citrus.png",
+      "thumbnailUrl": "assets/v10/generated/polish-v3/ceramic_citrus.jpg",
+      "sceneUrl": "assets/v10/generated/polish-v3/ceramic_citrus.scene.json",
+      "reportUrl": "assets/v10/generated/polish-v3/ceramic_citrus.report.json",
+      "width": 1024,
+      "height": 768,
+      "pixelSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+      "subtitle": "DeepSeek 编排 · 观测物品新组合",
+      "scope": "new_layout_of_observed_gaussian_objects",
+      "modelTraining": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+      "sourceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+        "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/"
+      ]
+    },
+    {
+      "id": "orchard_duet",
+      "title": "暗调果实静物",
+      "kind": "gaussian",
+      "imageUrl": "assets/v10/generated/showcase-v1/orchard_duet.png",
+      "thumbnailUrl": "assets/v10/generated/showcase-v1/orchard_duet.jpg",
+      "sceneUrl": "assets/v10/generated/showcase-v1/orchard_duet.scene.json",
+      "reportUrl": "assets/v10/generated/showcase-v1/orchard_duet.report.json",
+      "width": 1024,
+      "height": 768,
+      "pixelSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+      "subtitle": "DeepSeek 编排 · 观测物品新组合",
+      "scope": "new_layout_of_observed_gaussian_objects",
+      "modelTraining": false,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_and_pear.jpg",
+      "sourceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Apple_and_pear.jpg"
+      ]
+    },
+    {
+      "id": "mist_lake",
+      "title": "雾湖 · 晨光变体",
+      "kind": "gaussian",
+      "imageUrl": "assets/v10/generated/showcase-v1/mist_lake.png",
+      "thumbnailUrl": "assets/v10/generated/showcase-v1/mist_lake.jpg",
+      "sceneUrl": "assets/v10/generated/showcase-v1/mist_lake.scene.json",
+      "reportUrl": "assets/v10/generated/showcase-v1/mist_lake.report.json",
+      "width": 768,
+      "height": 447,
+      "pixelSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+      "subtitle": "参考高斯重建 · 光色编辑",
+      "scope": "reference_reconstruction_edit",
+      "modelTraining": false,
+      "sourceUrl": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+      "sourceUrls": [
+        "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/"
+      ]
+    },
+    {
+      "id": "ochre_window",
+      "title": "赭黄墙面 · 柔和光色",
+      "kind": "gaussian",
+      "imageUrl": "assets/v10/generated/showcase-v1/ochre_window.png",
+      "thumbnailUrl": "assets/v10/generated/showcase-v1/ochre_window.jpg",
+      "sceneUrl": "assets/v10/generated/showcase-v1/ochre_window.scene.json",
+      "reportUrl": "assets/v10/generated/showcase-v1/ochre_window.report.json",
+      "width": 512,
+      "height": 768,
+      "pixelSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+      "subtitle": "参考高斯重建 · 光色编辑",
+      "scope": "reference_reconstruction_edit",
+      "modelTraining": false,
+      "sourceUrl": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+      "sourceUrls": [
+        "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/"
+      ]
+    },
+    {
+      "id": "street_kernel10",
+      "title": "街景 · 新内核兼容对照",
+      "kind": "gaussian",
+      "assetUrl": "assets/v08/gaussians/street.optimized.json",
+      "imageUrl": "assets/v08/gaussians/street.optimized.png",
+      "reportUrl": "assets/v10/kernel-evidence.json",
+      "referenceUrl": "assets/reference.png",
+      "subtitle": "旧参数迁移 · 新旧求值像素一致",
+      "scope": "legacy_gaussian_compatibility_not_original_photo_exact"
+    }
+  ]
+}

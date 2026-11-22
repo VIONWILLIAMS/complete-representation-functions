@@ -1,0 +1,194 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 10,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.10.0",
+      "label": "夜间行人过街按钮",
+      "category": "pedestrian-signal",
+      "role": "object",
+      "bbox": [
+        0.08,
+        0.32,
+        0.66,
+        0.7
+      ],
+      "palette": [
+        [
+          20,
+          25,
+          24
+        ],
+        [
+          205,
+          35,
+          20
+        ],
+        [
+          240,
+          160,
+          45
+        ],
+        [
+          41,
+          88,
+          84
+        ],
+        [
+          230,
+          225,
+          210
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "夜间近景：黑色矩形行人过街按钮盒固定在深色圆柱立柱上，正面可见红色LED环阵和模糊的“Push button / Wait for signal”字样，盒侧露出黄色边件。背景为强烈虚化的街道灯光与青绿色环境，暖色光斑形成散景；按钮面接近正面视角，LED为自发光，壳体和立柱有少量环境反光，接触阴影因夜景与浅景深难以辨认。可用于提取按钮盒、LED阵列、立柱连接和夜间城市氛围，但不能据此还原整段街道或外墙。",
+      "tags": [
+        "行人按钮",
+        "立柱",
+        "红色LED",
+        "夜间",
+        "街道设施",
+        "浅景深",
+        "散景",
+        "过街信号"
+      ],
+      "limitations": [
+        "低分辨率",
+        "夜景欠曝",
+        "背景虚化",
+        "文字不完整",
+        "无法确认材质",
+        "无侧后视角",
+        "不能替代精确分割"
+      ]
+    },
+    {
+      "id": "ref.10.1",
+      "label": "带贴纸的行人按钮立柱",
+      "category": "pedestrian-button",
+      "role": "object",
+      "bbox": [
+        0.28,
+        0.01,
+        0.62,
+        0.99
+      ],
+      "palette": [
+        [
+          155,
+          152,
+          140
+        ],
+        [
+          35,
+          95,
+          130
+        ],
+        [
+          240,
+          160,
+          40
+        ],
+        [
+          228,
+          225,
+          215
+        ],
+        [
+          180,
+          160,
+          120
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "白天近景：金属立柱正面安装蓝色矩形行人按钮盒，上部有橙黄色圆形按钮；立柱上叠贴多张白底图文贴纸，按钮盒下方可见黑色手掌图标贴纸与蓝底文字标签。背景是强虚化的斑马线、行人和树木，阳光明亮但主体受光较平。可提取立柱形态、按钮盒与立柱的贴合连接、贴纸层叠和白天街景氛围；无法从图中确认背面固定件和完整标牌。",
+      "tags": [
+        "行人按钮",
+        "金属立柱",
+        "贴纸",
+        "斑马线",
+        "白天",
+        "街道设施",
+        "浅景深",
+        "手形图标"
+      ],
+      "limitations": [
+        "低分辨率",
+        "背景虚化",
+        "贴纸文字不完整",
+        "无法确认材质",
+        "无侧后视角",
+        "无法确认固定件",
+        "不能替代精确分割"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "两张均为城市街道中行人过街按钮或信号装置的近景",
+    "装置均安装在垂直立柱上并以正面为主",
+    "均采用浅景深，背景明显虚化",
+    "主体居中，画面包含按钮盒及标签或贴纸信息",
+    "分别呈现夜间与白天两种环境光条件",
+    "两张设备不是同一实例，外形与配色不同"
+  ],
+  "missingEvidence": [
+    "两张图都未提供建筑立面、墙面颗粒和窗框的可辨识细节",
+    "缺少装置侧面、背面及立柱连接紧固件的清晰视图",
+    "缺少精确尺度、材质和表面粗糙度信息",
+    "缺少无虚化的全景与多视角",
+    "缺少可用于像素级分割的掩膜或原始分辨率",
+    "无法测量实际光照方向与接触阴影关系",
+    "无法确认贴纸或文字完整内容及耐久状态",
+    "无法判断整条街道的空间布局"
+  ],
+  "images": [
+    {
+      "id": "ref.10.0",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/rouge-nuit-securite-surete-6132943/",
+      "sha256": "3001cff4c181ce59010d157640220e1d39d8c45b5140ccf6e6605e66225de41e",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.10.1",
+      "sourceUrl": "https://www.pexels.com/el-gr/photo/37900603/",
+      "sha256": "a323d50da012bacf7661913141e5239ae3f4baf292a11d5777e194a45d01abdc",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "41d4024c-d918-4d7e-b2e3-7276d286e8b7",
+        "model": "deepseek-flash",
+        "elapsedMs": 28614,
+        "prompt_tokens": 1042,
+        "completion_tokens": 3679,
+        "total_tokens": 4721,
+        "reasoning_tokens": 2970,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 2
+      }
+    ],
+    "prompt_tokens": 1042,
+    "completion_tokens": 3679,
+    "total_tokens": 4721,
+    "reasoning_tokens": 2970
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 28616
+}

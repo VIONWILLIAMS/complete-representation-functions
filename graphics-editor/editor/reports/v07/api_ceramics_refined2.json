@@ -1,0 +1,1149 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:31:54.308Z",
+  "id": "ceramics",
+  "phase": "refined2",
+  "prompt": "生成一张窗边静物的摄影风格图片：灰绿色细腻墙面前，一座浅色石台上摆一只孔雀青釉花器和透明烟色玻璃球，旁边有一个小黄铜球、两本错落的书。侧面大窗柔光，构图紧凑，真实接触阴影和材质反射，画面没有文字。请实际搜索Pexels或Unsplash的公开照片页，分析所提供参考图的真实形态、材质、光线。用完整代码场景表达，适量细节，避免低多边形轮廓，地面和背景铺满画面。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 200,
+  "elapsedMs": 19203,
+  "inputImageProvided": true,
+  "response": {
+    "ok": true,
+    "runId": "crf07_e621aed2-d04c-4d68-8525-256d8abac9cf",
+    "model": "deepseek-flash",
+    "servedModel": "deepseek-flash",
+    "action": "program",
+    "message": "按可见问题修正：隐藏挡住主光并造成噪声的窗玻璃与窗框；统一地面与石台接触高度（地面顶0.08、石台顶0.88、石板顶1.04）；放大背景墙与地面；青瓷花器改为无透射、低凹凸的哑光釉；烟色玻璃球放大并去除噪声函数；黄铜球放大；相机改为更紧凑的侧前方构图。",
+    "engine": "radiance07",
+    "program": {
+      "schema": "crf.image_program.v0.7",
+      "id": "windowsill_celadon_still_life_01",
+      "title": "窗边青釉花器与烟色玻璃球静物",
+      "width": 1024,
+      "height": 768,
+      "seed": 20250712,
+      "exposure": 1,
+      "camera": {
+        "position": [
+          2.4,
+          2.05,
+          3.2
+        ],
+        "target": [
+          0.1,
+          1.5,
+          -0.25
+        ],
+        "fov": 32,
+        "aperture": 0.01,
+        "focusDistance": 4.18
+      },
+      "environment": {
+        "top": [
+          196,
+          204,
+          198
+        ],
+        "bottom": [
+          138,
+          140,
+          132
+        ],
+        "strength": 0.34
+      },
+      "lights": [
+        {
+          "id": "window_main",
+          "type": "area",
+          "position": [
+            -3,
+            5,
+            2
+          ],
+          "target": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            2.2,
+            2.2
+          ],
+          "color": [
+            255,
+            247,
+            232
+          ],
+          "intensity": 6
+        },
+        {
+          "id": "window_fill",
+          "type": "area",
+          "position": [
+            3,
+            4,
+            -1
+          ],
+          "target": [
+            0,
+            1,
+            0
+          ],
+          "size": [
+            1.5,
+            1.5
+          ],
+          "color": [
+            214,
+            226,
+            224
+          ],
+          "intensity": 1.2
+        }
+      ],
+      "objects": [
+        {
+          "id": "floor_base",
+          "label": "ground",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 30,
+            "height": 0.16,
+            "depth": 30,
+            "bevel": 0.01
+          },
+          "material": {
+            "color": [
+              112,
+              111,
+              103
+            ],
+            "roughness": 0.82,
+            "metalness": 0,
+            "texture": {
+              "kind": "stone",
+              "scale": 5.5,
+              "strength": 0.18
+            },
+            "bump": 0.012
+          },
+          "transform": {
+            "position": [
+              0,
+              -0.08,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "back_wall",
+          "label": "grey-green wall",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 20,
+            "height": 8,
+            "depth": 0.18,
+            "bevel": 0.02
+          },
+          "material": {
+            "color": [
+              132,
+              141,
+              128
+            ],
+            "roughness": 0.94,
+            "metalness": 0,
+            "texture": {
+              "kind": "none"
+            },
+            "bump": 0.006,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.94
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.06
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 22,
+                      "seed": 7
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0,
+              0,
+              -1.55
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "stone_base",
+          "label": "stone pedestal support",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 2.4,
+            "height": 0.8,
+            "depth": 1.2,
+            "bevel": 0.03
+          },
+          "material": {
+            "color": [
+              204,
+              197,
+              183
+            ],
+            "roughness": 0.68,
+            "metalness": 0,
+            "texture": {
+              "kind": "stone",
+              "scale": 3.2,
+              "strength": 0.24
+            },
+            "bump": 0.012
+          },
+          "transform": {
+            "position": [
+              -0.1,
+              0.08,
+              -0.35
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "stone_slab",
+          "label": "pale stone plinth top",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 3.1,
+            "height": 0.16,
+            "depth": 1.55,
+            "bevel": 0.025
+          },
+          "material": {
+            "color": [
+              214,
+              207,
+              193
+            ],
+            "roughness": 0.55,
+            "metalness": 0,
+            "texture": {
+              "kind": "stone",
+              "scale": 3.2,
+              "strength": 0.22
+            },
+            "bump": 0.011,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.98
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.05
+                    },
+                    {
+                      "op": "noise",
+                      "frequency": 16,
+                      "seed": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              -0.1,
+              0.88,
+              -0.35
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "slab_front_lip",
+          "label": "stone edge lip",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 3.12,
+            "height": 0.1,
+            "depth": 0.05,
+            "bevel": 0.012
+          },
+          "material": {
+            "color": [
+              200,
+              193,
+              181
+            ],
+            "roughness": 0.62,
+            "metalness": 0,
+            "bump": 0.008
+          },
+          "transform": {
+            "position": [
+              -0.1,
+              0.94,
+              0.425
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_left",
+          "label": "window vertical frame",
+          "visible": false,
+          "surface": {
+            "kind": "box",
+            "width": 0.18,
+            "height": 3.8,
+            "depth": 0.16,
+            "bevel": 0.015
+          },
+          "material": {
+            "color": [
+              226,
+              222,
+              210
+            ],
+            "roughness": 0.62,
+            "metalness": 0,
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              -2.35,
+              2,
+              0.35
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_top",
+          "label": "window top frame",
+          "visible": false,
+          "surface": {
+            "kind": "box",
+            "width": 2.7,
+            "height": 0.18,
+            "depth": 0.16,
+            "bevel": 0.015
+          },
+          "material": {
+            "color": [
+              226,
+              222,
+              210
+            ],
+            "roughness": 0.62,
+            "metalness": 0,
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              -1.05,
+              3.5,
+              0.35
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_glass",
+          "label": "window glass plane",
+          "visible": false,
+          "surface": {
+            "kind": "box",
+            "width": 2.4,
+            "height": 3.2,
+            "depth": 0.02,
+            "bevel": 0.01
+          },
+          "material": {
+            "color": [
+              225,
+              234,
+              232
+            ],
+            "roughness": 0.08,
+            "metalness": 0,
+            "transmission": 0.72,
+            "ior": 1.48,
+            "bump": 0.002
+          },
+          "transform": {
+            "position": [
+              -1.15,
+              1.9,
+              0.46
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "celadon_foot",
+          "label": "celadon foot ring",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.105,
+            "height": 0.045
+          },
+          "material": {
+            "color": [
+              130,
+              166,
+              153
+            ],
+            "roughness": 0.3,
+            "metalness": 0,
+            "bump": 0.004,
+            "transmission": 0,
+            "emissionStrength": 0
+          },
+          "transform": {
+            "position": [
+              -0.62,
+              1.04,
+              -0.22
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "celadon_body",
+          "label": "celadon pear vase body",
+          "visible": true,
+          "surface": {
+            "kind": "lathe",
+            "profile": [
+              0.18,
+              0.34,
+              0.52,
+              0.7,
+              0.86,
+              0.98,
+              1.02,
+              0.96,
+              0.82,
+              0.62,
+              0.42,
+              0.3,
+              0.24,
+              0.2
+            ],
+            "radius": 0.17,
+            "height": 0.62,
+            "thickness": 0.012
+          },
+          "material": {
+            "color": [
+              142,
+              177,
+              164
+            ],
+            "roughness": 0.24,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.52,
+            "bump": 0.004,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.92
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.06
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 18,
+                      "seed": 11
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.03
+                    },
+                    {
+                      "op": "sin",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "const",
+                              "value": 9
+                            },
+                            {
+                              "op": "y"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "emission": [
+              0,
+              0,
+              0
+            ],
+            "emissionStrength": 0
+          },
+          "transform": {
+            "position": [
+              -0.62,
+              1.085,
+              -0.22
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "celadon_neck",
+          "label": "celadon long neck",
+          "visible": true,
+          "surface": {
+            "kind": "lathe",
+            "profile": [
+              0.2,
+              0.18,
+              0.17,
+              0.17,
+              0.19,
+              0.23,
+              0.28
+            ],
+            "radius": 0.17,
+            "height": 0.34,
+            "thickness": 0.008
+          },
+          "material": {
+            "color": [
+              140,
+              176,
+              163
+            ],
+            "roughness": 0.22,
+            "metalness": 0,
+            "transmission": 0,
+            "bump": 0.004,
+            "emissionStrength": 0
+          },
+          "transform": {
+            "position": [
+              -0.62,
+              1.7,
+              -0.22
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "celadon_rim",
+          "label": "celadon flared rim",
+          "visible": true,
+          "surface": {
+            "kind": "lathe",
+            "profile": [
+              0.72,
+              0.78,
+              0.85,
+              0.88
+            ],
+            "radius": 0.066,
+            "height": 0.04,
+            "thickness": 0.006
+          },
+          "material": {
+            "color": [
+              152,
+              186,
+              173
+            ],
+            "roughness": 0.2,
+            "metalness": 0,
+            "bump": 0.004,
+            "transmission": 0,
+            "emissionStrength": 0
+          },
+          "transform": {
+            "position": [
+              -0.62,
+              2.04,
+              -0.22
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "smoke_glass_ball",
+          "label": "smoky glass sphere",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.24,
+            "height": 0.48
+          },
+          "material": {
+            "color": [
+              210,
+              220,
+              216
+            ],
+            "roughness": 0.035,
+            "metalness": 0,
+            "transmission": 1,
+            "ior": 1.45,
+            "bump": 0
+          },
+          "transform": {
+            "position": [
+              0.05,
+              1.04,
+              -0.38
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "brass_ball",
+          "label": "small brass sphere",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.11,
+            "height": 0.22
+          },
+          "material": {
+            "color": [
+              186,
+              142,
+              76
+            ],
+            "roughness": 0.24,
+            "metalness": 1,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.003
+          },
+          "transform": {
+            "position": [
+              0.5,
+              1.04,
+              -0.03
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "book_bottom_cover",
+          "label": "bottom book cover",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.68,
+            "height": 0.038,
+            "depth": 0.46,
+            "bevel": 0.006
+          },
+          "material": {
+            "color": [
+              118,
+              96,
+              82
+            ],
+            "roughness": 0.72,
+            "metalness": 0,
+            "texture": {
+              "kind": "fabric",
+              "scale": 4,
+              "strength": 0.24
+            },
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              1.13,
+              1.04,
+              0.05
+            ],
+            "rotation": [
+              0,
+              -8,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "book_bottom_pages",
+          "label": "bottom book page block",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.63,
+            "height": 0.042,
+            "depth": 0.42,
+            "bevel": 0.004
+          },
+          "material": {
+            "color": [
+              224,
+              213,
+              190
+            ],
+            "roughness": 0.86,
+            "metalness": 0,
+            "texture": {
+              "kind": "none"
+            },
+            "bump": 0.014,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.96
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.06
+                    },
+                    {
+                      "op": "noise",
+                      "frequency": 28,
+                      "seed": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              1.13,
+              1.078,
+              0.05
+            ],
+            "rotation": [
+              0,
+              -8,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "book_bottom_top",
+          "label": "bottom book top cover",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.68,
+            "height": 0.026,
+            "depth": 0.46,
+            "bevel": 0.006
+          },
+          "material": {
+            "color": [
+              118,
+              96,
+              82
+            ],
+            "roughness": 0.7,
+            "metalness": 0,
+            "texture": {
+              "kind": "fabric",
+              "scale": 4,
+              "strength": 0.22
+            },
+            "bump": 0.005
+          },
+          "transform": {
+            "position": [
+              1.13,
+              1.12,
+              0.05
+            ],
+            "rotation": [
+              0,
+              -8,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "book_top_cover",
+          "label": "top book lower cover",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.57,
+            "height": 0.034,
+            "depth": 0.4,
+            "bevel": 0.006
+          },
+          "material": {
+            "color": [
+              82,
+              102,
+              104
+            ],
+            "roughness": 0.68,
+            "metalness": 0,
+            "texture": {
+              "kind": "fabric",
+              "scale": 4.5,
+              "strength": 0.2
+            },
+            "bump": 0.005
+          },
+          "transform": {
+            "position": [
+              1.07,
+              1.146,
+              0
+            ],
+            "rotation": [
+              0,
+              12,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "book_top_pages",
+          "label": "top book page block",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.52,
+            "height": 0.04,
+            "depth": 0.36,
+            "bevel": 0.004
+          },
+          "material": {
+            "color": [
+              228,
+              219,
+              199
+            ],
+            "roughness": 0.88,
+            "metalness": 0,
+            "bump": 0.013
+          },
+          "transform": {
+            "position": [
+              1.07,
+              1.18,
+              0
+            ],
+            "rotation": [
+              0,
+              12,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "book_top_top",
+          "label": "top book upper cover",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.57,
+            "height": 0.024,
+            "depth": 0.4,
+            "bevel": 0.006
+          },
+          "material": {
+            "color": [
+              82,
+              102,
+              104
+            ],
+            "roughness": 0.66,
+            "metalness": 0,
+            "texture": {
+              "kind": "fabric",
+              "scale": 4.5,
+              "strength": 0.2
+            },
+            "bump": 0.005
+          },
+          "transform": {
+            "position": [
+              1.07,
+              1.22,
+              0
+            ],
+            "rotation": [
+              0,
+              12,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    "qualityNotes": [
+      "检查隐藏窗玻璃后主光是否正常进入，画面不再有遮挡光板与玻璃噪声",
+      "核对地面顶0.08、石台底0.08顶0.88、石板底0.88顶1.04的接触关系",
+      "确认青釉花器无透射、无自发光，釉面呈灰绿哑光而非塑料",
+      "确认烟色玻璃球在花器右前侧，能透过球体看到背景折射与接触阴影",
+      "检查黄铜球高光与青釉花器反射是否自然，两本书错落且贴合石板顶面",
+      "确认相机fov32下花器、玻璃球、书册、石台均在画面内且构图紧凑",
+      "检查背景墙与地面是否铺满画面、没有空洞与悬浮"
+    ],
+    "warnings": [
+      "烟色玻璃球transmission=1需要厚壁与背后环境才能产生可信折射，单椭球无法完全表达实心玻璃内部焦散",
+      "青釉表面函数仅调制颜色，无法表达真实釉层厚度变化与开片",
+      "两盏面积灯在画外，若渲染仍偏暗或过曝需微调曝光而非再放大灯尺寸",
+      "书本页块纹理噪声可能在小尺度观察时显粗糙，需渲染后确认"
+    ],
+    "research": {
+      "searched": false,
+      "status": "disabled",
+      "toolCalls": [],
+      "sources": [],
+      "summary": "",
+      "nativeSearchObserved": false,
+      "referenceImages": [],
+      "referenceImagesSubmitted": 0
+    },
+    "usage": {
+      "prompt_tokens": 5810,
+      "completion_tokens": 3450,
+      "total_tokens": 9260,
+      "providerCalls": 1,
+      "requests": [
+        {
+          "phase": "compose",
+          "requestId": "a12d3f62-8dfd-4363-9bd2-a87e72570ef8",
+          "model": "deepseek-flash",
+          "elapsedMs": 19194,
+          "prompt_tokens": 5810,
+          "completion_tokens": 3450,
+          "total_tokens": 9260,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "vision": {
+      "renderedImageProvided": true,
+      "referenceImagesProvided": 0,
+      "referenceSourceUrls": []
+    },
+    "repair": {
+      "attempted": false,
+      "passes": [],
+      "recovered": false
+    },
+    "validation": {
+      "declarative": true,
+      "envelope": true,
+      "renderer": true,
+      "clientValidationRequired": false
+    }
+  }
+}

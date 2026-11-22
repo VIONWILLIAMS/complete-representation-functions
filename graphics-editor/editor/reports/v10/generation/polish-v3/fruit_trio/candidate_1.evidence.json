@@ -1,0 +1,418 @@
+{
+  "index": 1,
+  "critique": {
+    "ok": true,
+    "version": "0.10.0",
+    "runId": "crf10_e4027fed-4dac-4d0c-81f5-eae9673cfc0a",
+    "representation": "reference_gaussian",
+    "modelTraining": false,
+    "action": "critique",
+    "message": "基于本轮实际附图：三件高斯水果均为必需对象且标签完整，苹果右侧仍由梨合理遮挡，画面无额外道具，整体吻合“克制静物”的语义。但按4.5/5真实感门槛严格审阅，接触阴影的层次与前后压影仍偏弱，且阴影在不同物体间的强度不均，因此本轮真实感未达门槛；构图间距已较上一轮改善，仅剩轻微节奏问题。以下缺陷均可用现有 shadow/exposure 算子或位置微调改善，不涉及补齐隐藏几何。",
+    "qualityNotes": [
+      "三件物品的外观细节来自源照片的显式高斯编码，本轮布局与阴影为CRF新编排，非新拍摄照片。",
+      "本轮苹果与梨的遮挡沿用源图观测方向，苹果右侧不可见部分未被补全，符合能力边界。",
+      "阴影为基于可见alpha包围盒的代码高斯接触阴影，属于近似，不是物理光照传播；贴近接触线的暗核改善会明显提升落地感。",
+      "构图层面：左密右疏的基本结构成立，橙子右移后需复核三件物体在1024×768内的左右留白平衡。"
+    ],
+    "warnings": [
+      "未达到4.5/5真实感门槛：主要差距在阴影层次与物体间压影，而非纹理或语义；这些差距部分受限于阴影算子只能生成底部接触阴影。",
+      "评审为模型视觉得出，非独立照片级验证；最终仍需另做独立审阅。",
+      "继续打磨应优先调整 shadow 与极小曝光，不要为增强立体感而加大暗块或修改纹理，否则会引入新的悬浮/贴纸感。"
+    ],
+    "capabilityGaps": [
+      {
+        "capability": "物体间投影与间接遮蔽",
+        "description": "当前 shadow 算子仅在物体自身底部生成接触阴影，无法让梨在苹果表面形成真实投影或让橙子对邻近物体产生柔和遮蔽；已排除用强暗块、albedoTint压暗或伪造高光残差来模拟，这些替代会损坏原有纹理可信度。",
+        "requiredForGoal": false
+      }
+    ],
+    "issues": [
+      {
+        "code": "contact",
+        "severity": "minor",
+        "objectIds": [
+          "orange"
+        ],
+        "description": "橙子切面底部可见落影比苹果、梨更淡，白瓤下缘几乎直接落在浅灰绿背景上；同时橙子底缘比苹果、梨略低几像素，缺少更深的贴地暗核，近看有轻微悬浮。可用现有 shadow 算子单独加深：orange.shadow.strength 约0.34–0.38、spread 0.36–0.42、dy 约0.03、squash 0.055–0.065，使暗核贴近底缘而不覆盖橙色果肉与切口。无需也不应使用强暗块。"
+      },
+      {
+        "code": "contact",
+        "severity": "minor",
+        "objectIds": [
+          "apple",
+          "pear"
+        ],
+        "description": "苹果与梨底部阴影面积较大但浓度偏低，暗核离底部接触线略远；梨压住苹果右缘的交界处缺少可读的前后压影，接触关系偏平。可收窄 spread（约0.30–0.34）或略增 dy（约0.02）以把暗度集中到接触线附近，保持 strength 在0.32/0.35左右。需明确：现有 shadow 算子只在各自底部生成接触阴影，无法生成梨投到苹果表面的真实投影，不能用暗块伪造。"
+      },
+      {
+        "code": "composition",
+        "severity": "minor",
+        "objectIds": [
+          "apple",
+          "pear",
+          "orange"
+        ],
+        "description": "左侧苹果+梨的密集组已成立，但梨与橙之间仍接近等距紧排，横向“疏密有致”的节奏不够明确，右侧留白略显局促。可将 orange.x 右移约15–20px（1024画幅坐标），保持苹果与梨的遮挡关系不动；同时保持三件物体底缘基本同高，避免右移后产生新的高低差。"
+      },
+      {
+        "code": "lighting",
+        "severity": "minor",
+        "objectIds": [
+          "orange"
+        ],
+        "description": "橙子切面整体亮度略高于苹果、梨的受光面，浅灰绿背景上的明度关系稍显跳。可在现有曝光算子内把 orange.exposure 微调约-0.05至-0.10，或在 illuminationGradient 上做极小修正，不得改动切口原有纹理与高光。"
+      }
+    ],
+    "scores": {
+      "realism": 4,
+      "semantic": 5,
+      "coherence": 4
+    },
+    "attempts": [
+      {
+        "phase": "gaussian10_critique",
+        "status": "responded",
+        "startedAt": "2026-11-21T22:42:57.065Z",
+        "usageKnown": true,
+        "requestSent": true,
+        "requestId": "f2ac3723-2957-4dc5-96c5-07f1ee4cac97",
+        "validation": "passed"
+      }
+    ],
+    "usage": {
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 2819,
+      "completion_tokens": 2558,
+      "total_tokens": 5377,
+      "reasoning_tokens": 1596,
+      "requests": [
+        {
+          "phase": "gaussian10_critique",
+          "requestId": "f2ac3723-2957-4dc5-96c5-07f1ee4cac97",
+          "model": "deepseek-flash",
+          "elapsedMs": 17223,
+          "prompt_tokens": 2819,
+          "completion_tokens": 2558,
+          "total_tokens": 5377,
+          "reasoning_tokens": 1596,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "high"
+        }
+      ]
+    },
+    "quality": {
+      "status": "requires_render_and_independent_verification",
+      "modelScoreIsProof": false
+    },
+    "imageEvidence": true,
+    "sourceFrameSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+    "submittedImageDataURLSha256": "55de7c97d1f0dbdf0728980751cf2bd8e1ae62b209fae03537e1ebd212e66428"
+  },
+  "verification": {
+    "schema": "crf.verification.v0.10",
+    "checkedAt": "2026-11-21T22:43:14.926Z",
+    "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+    "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+    "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297",
+    "checks": [
+      {
+        "id": "program.finite",
+        "kind": "program",
+        "type": "finite_parameters",
+        "required": true,
+        "status": "passed",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "render.frame",
+        "kind": "pixel",
+        "type": "valid_frame",
+        "required": true,
+        "status": "passed",
+        "reason": "Actual finite RGBA8 samples provided.",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "render.dimensions",
+        "kind": "pixel",
+        "type": "dimensions",
+        "required": true,
+        "status": "passed",
+        "observed": [
+          1024,
+          768
+        ],
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "visual.realism",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "failed",
+        "observed": 4,
+        "threshold": 4.5,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "visual.semantic",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 5,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "visual.coherence",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 4,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "visual.major_issues",
+        "kind": "perceptual",
+        "type": "no_major_issues",
+        "required": true,
+        "status": "passed",
+        "observed": 0,
+        "issues": [],
+        "scope": "Model-assisted perception only.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "visible.apple",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "status": "passed",
+        "observed": 47230,
+        "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "count.apple",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "status": "passed",
+        "observed": 1,
+        "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "visible.pear",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "status": "passed",
+        "observed": 59314,
+        "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "count.pear",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "status": "passed",
+        "observed": 1,
+        "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "visible.orange",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "status": "passed",
+        "observed": 23649,
+        "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      },
+      {
+        "id": "count.orange",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "status": "passed",
+        "observed": 1,
+        "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+        "evidence": {
+          "sceneSha256": "819fb9b07227e64cd006647e8eb5447e239ad16b4db2d0136f4e2c6da8c9fba4",
+          "imageSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+          "contractSha256": "c1ca158bc3f4613703a4c89b536ef3274307474b8a5cdfa9de876900d47eb297"
+        }
+      }
+    ],
+    "summary": {
+      "passed": 12,
+      "failed": 1,
+      "unknown": 0,
+      "blocked": 0,
+      "total": 13,
+      "required": 13,
+      "requiredPassed": 12
+    },
+    "hardPassed": true,
+    "measurementPassed": true,
+    "perceptualPassed": false,
+    "allRequiredPassed": false,
+    "independentReview": null,
+    "photorealisticAccepted": false,
+    "referenceReconstructionAccepted": false,
+    "unknowns": [],
+    "blocked": [],
+    "diagnosis": [
+      {
+        "module": "attachment_and_occlusion",
+        "status": "actionable",
+        "severity": "minor",
+        "objectIds": [
+          "orange"
+        ],
+        "reason": "橙子切面底部可见落影比苹果、梨更淡，白瓤下缘几乎直接落在浅灰绿背景上；同时橙子底缘比苹果、梨略低几像素，缺少更深的贴地暗核，近看有轻微悬浮。可用现有 shadow 算子单独加深：orange.shadow.strength 约0.34–0.38、spread 0.36–0.42、dy 约0.03、squash 0.055–0.065，使暗核贴近底缘而不覆盖橙色果肉与切口。无需也不应使用强暗块。",
+        "requiredCapability": null,
+        "requiredForGoal": null
+      },
+      {
+        "module": "attachment_and_occlusion",
+        "status": "actionable",
+        "severity": "minor",
+        "objectIds": [
+          "apple",
+          "pear"
+        ],
+        "reason": "苹果与梨底部阴影面积较大但浓度偏低，暗核离底部接触线略远；梨压住苹果右缘的交界处缺少可读的前后压影，接触关系偏平。可收窄 spread（约0.30–0.34）或略增 dy（约0.02）以把暗度集中到接触线附近，保持 strength 在0.32/0.35左右。需明确：现有 shadow 算子只在各自底部生成接触阴影，无法生成梨投到苹果表面的真实投影，不能用暗块伪造。",
+        "requiredCapability": null,
+        "requiredForGoal": null
+      },
+      {
+        "module": "layout",
+        "status": "actionable",
+        "severity": "minor",
+        "objectIds": [
+          "apple",
+          "pear",
+          "orange"
+        ],
+        "reason": "左侧苹果+梨的密集组已成立，但梨与橙之间仍接近等距紧排，横向“疏密有致”的节奏不够明确，右侧留白略显局促。可将 orange.x 右移约15–20px（1024画幅坐标），保持苹果与梨的遮挡关系不动；同时保持三件物体底缘基本同高，避免右移后产生新的高低差。",
+        "requiredCapability": null,
+        "requiredForGoal": null
+      },
+      {
+        "module": "illumination",
+        "status": "actionable",
+        "severity": "minor",
+        "objectIds": [
+          "orange"
+        ],
+        "reason": "橙子切面整体亮度略高于苹果、梨的受光面，浅灰绿背景上的明度关系稍显跳。可在现有曝光算子内把 orange.exposure 微调约-0.05至-0.10，或在 illuminationGradient 上做极小修正，不得改动切口原有纹理与高光。",
+        "requiredCapability": null,
+        "requiredForGoal": null
+      },
+      {
+        "module": "capability_gap",
+        "status": "unknown",
+        "severity": "major",
+        "objectIds": [],
+        "reason": "当前 shadow 算子仅在物体自身底部生成接触阴影，无法让梨在苹果表面形成真实投影或让橙子对邻近物体产生柔和遮蔽；已排除用强暗块、albedoTint压暗或伪造高光残差来模拟，这些替代会损坏原有纹理可信度。",
+        "requiredCapability": "物体间投影与间接遮蔽",
+        "requiredForGoal": false,
+        "scope": "general_limitation"
+      }
+    ],
+    "scope": "Contract checks on this exact scene/frame; no universal correctness or unseen-world claim."
+  },
+  "render": {
+    "engine": "CRF10Gaussian",
+    "renderer": "direct_affine_anisotropic_gaussians",
+    "colorSpace": "linear_srgb_composite_then_srgb8",
+    "basisColorSpaces": [
+      "linear_srgb"
+    ],
+    "filter": "mip",
+    "pixelFilterVariance": 0.08333333333333333,
+    "gaussians": 12288,
+    "basisEvaluations": 4614940,
+    "visibleObjects": 3,
+    "elapsedMs": 351,
+    "sourceRGBBlit": false,
+    "colourRasterResampling": false,
+    "neuralModelTraining": false,
+    "referenceConditioned": true,
+    "geometry": "image_plane_affine",
+    "physicalRelighting": false,
+    "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+    "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+    "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+    "coverageSemantics": "visible_alpha_contribution",
+    "pixelSha256": "fb33431916e93162fe1ff7ea02fc69e9ca1e36bf385ffeaeafcabd211f1aca64",
+    "pngSha256": "aced06725bd0ddb588cd84b9da14dd69ba5f6a763eee5e10f58770237e70093a"
+  }
+}

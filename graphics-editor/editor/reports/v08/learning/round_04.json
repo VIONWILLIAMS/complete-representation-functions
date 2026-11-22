@@ -1,0 +1,605 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 4,
+  "query": "咖啡与餐桌静物实拍",
+  "checkpoint": {
+    "sessionId": "crf08-ten-rounds",
+    "round": 4,
+    "topic": "咖啡与餐桌静物实拍",
+    "subtopic": "4–6张不同咖啡杯、木桌或餐桌照片，关注接触阴影、承托面、光照一致性",
+    "status": "searched",
+    "completedAt": "2026-11-21T13:25:27.446Z",
+    "runId": "crf07_46c47b28-74e6-4a14-95d1-fa0e9f4d8986",
+    "queries": [
+      "site:unsplash.com coffee cup on wooden table contact shadow natural light",
+      "site:pexels.com coffee cup on wooden table natural light shadow",
+      "site:commons.wikimedia.org coffee cup saucer wooden table photograph",
+      "site:unsplash.com coffee cup saucer close up wooden table",
+      "site:pexels.com coffee cup saucer wooden table close up",
+      "site:commons.wikimedia.org coffee cup and saucer photograph file",
+      "still life photograph coffee cup wooden table window light shadow caustics"
+    ],
+    "requestIds": [
+      "120cd380-3167-40fe-acae-aa70d97cec69"
+    ],
+    "sourceCount": 14,
+    "newSourceCount": 14,
+    "candidateCount": 12,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_5b4d217564d146b099dc5a27ed951f5d",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:unsplash.com coffee cup on wooden table contact shadow natural light",
+            "site:pexels.com coffee cup on wooden table natural light shadow",
+            "site:commons.wikimedia.org coffee cup saucer wooden table photograph",
+            "site:unsplash.com coffee cup saucer close up wooden table",
+            "site:pexels.com coffee cup saucer wooden table close up",
+            "site:commons.wikimedia.org coffee cup and saucer photograph file",
+            "still life photograph coffee cup wooden table window light shadow caustics"
+          ]
+        },
+        "sourceUrls": [
+          "https://unsplash.com/photos/a-cup-of-coffee-sitting-on-top-of-a-wooden-table-wXyc8vQLPTo",
+          "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+          "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=pl",
+          "https://unsplash.com/photos/a-shelf-filled-with-cups-and-saucers-on-top-of-a-wooden-table-sPbr3dR2v-Y",
+          "https://www.pexels.com/photo/person-writing-on-a-notebook-5588395/",
+          "https://www.skillshare.com/de/projects/AI-for-Designers-Project/744010?via=user-profile",
+          "https://unsplash.com/photos/the-shadow-of-a-coffee-cup-on-a-table-dpq9_bbAPdA",
+          "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+          "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=hy",
+          "https://unsplash.com/photos/a-bowl-and-a-glass-on-a-wooden-table-p8N4lRytlQ8",
+          "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+          "https://commons.wikimedia.org/wiki/Category:Crown_Works,_Burslem#1",
+          "https://blenderbench.realityreprojector.com/tasks/hyperreal-still",
+          "https://unsplash.com/photos/a-cup-of-cappuccino-on-a-wooden-table-pezwxLK99zA"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://unsplash.com/photos/a-cup-of-coffee-sitting-on-top-of-a-wooden-table-wXyc8vQLPTo",
+        "title": "Photo by Zach Camp on Unsplash",
+        "snippet": "a cup of coffee sitting on top of a wooden table Download this free HD photo of shadows, filmmaking, film, and noise by Zach Camp (@zachccamp) Published on Apple, iPhone 13 miniFree to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+        "title": "Photo by James Collington on Pexels",
+        "snippet": "Use filters Change focus Brighten up Add frames License Free Dimensions 4293x6440 ... Description # A warm cup of coffee bathed in morning sunlight casting a gentle shadow on the table. ## More like this Use filters Change focus Brighten up Add",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=pl",
+        "title": "Category:Saucers – Wikimedia Commons",
+        "snippet": "Drinking cups and saucers (8 kategorii, 135 plików) ... - 20190524 mango 04.jpg 1200 × 1703; 447 KB ... - CoffeeSet.jpg 2779 × 3146; 1...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-shelf-filled-with-cups-and-saucers-on-top-of-a-wooden-table-sPbr3dR2v-Y",
+        "title": "Photo by sehoon ye on Unsplash",
+        "snippet": "Editorial # a shelf filled with cups and saucers on top of a wooden table Download this free HD photo of saucer, pottery, coffee cup, and cup by sehoon ye (@_3bread) Published on FUJIFILM, X-E4Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/person-writing-on-a-notebook-5588395/",
+        "title": "Photo by Tony Schnagl on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 8134x5423 ... Software Adobe Photoshop CC (Windows) Description # Aerial view of a wooden table workspace with stationery, notebook, and coffee cup. ## More like this Add filters, effects",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.skillshare.com/de/projects/AI-for-Designers-Project/744010?via=user-profile",
+        "title": "AI for Designers: Project",
+        "snippet": "To the left of the plate is a white cup of black coffee on a saucer, with soft caustic light reflections forming on the surface of the coffee. ... Sunlight streams in from a large window behind the setup, creating gentle highlights, soft shadows, and visible caustic light patterns on the table.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/the-shadow-of-a-coffee-cup-on-a-table-dpq9_bbAPdA",
+        "title": "Photo by Tunmike Adebayo on Unsplash",
+        "snippet": "the shadow of a coffee cup on a table Download this free HD photo of reflection, wallpaper, cup, and coffee by Tunmike Adebayo (@2mike_a) Published on samsung, SM-A127FFree to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+        "title": "Photo de Cut Nanda Oemar sur Pexels",
+        "snippet": "Afterglow ... 2044x2592 ... Logiciel Adobe Lightroom 11.5.01 (Android) Description # Une tasse à café minimaliste en céramique projette une ombre douce sur une table en bois, baignée de lumière naturelle. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=hy",
+        "title": "Category:Saucers — Wikimedia Commons",
+        "snippet": "20190524 mango 04.jpg 1200 × 1703 ... - CoffeeSet.jpg 2779 × 3146; 1,56 ՄԲ - Crumbs saucer fork.jpg 800 × 600; 66 ԿԲ",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-bowl-and-a-glass-on-a-wooden-table-p8N4lRytlQ8",
+        "title": "Photo by Hümâ H. Yardım on Unsplash",
+        "snippet": "––– –––– –––– # a bowl and a glass on a wooden table Download this free HD photo of coffee cup, cup, pottery, and saucer by Hümâ H. Yardım (@humayardim) Published on Canon, EOS 700DFree to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+        "title": "Foto de Israyosoy S. no Pexels",
+        "snippet": "Use filters Change focus Brighten up Add frames ... 4000x6000 ... Descrição # Um coador de café Hario V60 e uma caneca de cerâmica sobre uma mesa de madeira em ambiente interno. ## Ver mais desse tipo",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Crown_Works,_Burslem#1",
+        "title": "Category:Crown Works, Burslem - Wikimedia Commons - Help",
+        "snippet": "5,152 × 3,864; 2.82 MB ... -2019-09-14 Coffee cup and saucer, ΄Parrot Tulip΄ (E2396), Susie Cooper.JPG ... 6.6 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://blenderbench.realityreprojector.com/tasks/hyperreal-still",
+        "title": "Blender-Bench — which robot blends best?",
+        "snippet": "a half-finished breakfast on a small café table at eight in the morning, lit by low sunlight through a window. ... Light: one low, warm sun from the window raking across the table, casting long, sharp shadows, with the juice throwing a coloured caustic onto the wood.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-cup-of-cappuccino-on-a-wooden-table-pezwxLK99zA",
+        "title": "Photo by Valeriia Svitlini on Unsplash",
+        "snippet": "– –– –––– ––– – ––– – – ... ––– – ––– – – # a cup of cappuccino on a wooden table Cup of cappuccino with latte art on a wooden table with shadows. Top view. Published on Apple, iPhone 11 Pro MaxFree to use under the Unsplash License",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "{\"summary\":\"本轮针对‘咖啡杯、木桌/餐桌、接触阴影、承托面、光照一致性’进行检索，找到 4 个可点击的摄影来源页，均来自 Unsplash 或 Pexels，页面文字直接涉及咖啡杯、木桌、阴影/阳光/柔光等要素。未获取图片字节，以下特征基于页面标题与描述推断，待原图验证。未发现 Wikimedia Commons 上符合本轮条件的单张咖啡杯木桌照片详情页（仅出现分类页或无关文件列表），故不列入正式候选。\",\"features\":[\"接触阴影：Unsplash ‘the shadow of a coffee cup on a table’ 页面标题直接以咖啡杯阴影为主体，可能提供杯底与桌面接触处的暗部形状、投影边缘软硬程度\",\"承托面材质：Pexels ‘minimalist ceramic coffee cup on wooden table’ 描述陶瓷杯在木桌上投下柔影，木纹承托面与杯底接触边界可作为材质区分参考\",\"光照方向：Pexels ‘sunlit coffee mug’ 描述晨光在桌面投下柔和阴影，提示可提取定向光下杯体高光与投影的几何关系\",\"光照一致性：Unsplash ‘cup of cappuccino on a wooden table’ 页面描述含‘with shadows’，可观察杯体、碟与木桌阴影方向是否一致\",\"杯体与桌面比例：Unsplash ‘a cup of coffee sitting on top of a wooden table’ 提供 iPhone 13 mini 拍摄的桌面场景，可能适合提取杯底椭圆与桌面平面的透视关系\"],\"selectionCriteria\":[\"优先选择页面标题或描述明确含‘shadow’‘sunlight’‘soft shadow’的候选，便于接触阴影形态提取\",\"承托面为木桌且页面描述木纹可见者优先，利于分离杯底边缘与木纹纹理\",\"单杯或杯碟组合、背景无过多杂物者优先，降低边缘提取干扰\",\"光照方向可从描述推断为自然光/定向晨光者优先，用于验证杯体高光与投影的一致性\",\"排除 Wikimedia Commons 分类页与无关文件列表，仅保留可确认的单张照片详情页\"],\"uncertainties\":[\"Unsplash 页面仅标题含‘shadow’，实际阴影是否由杯体接触桌面产生、投影边缘软硬程度未知\",\"Pexels ‘minimalist ceramic coffee cup’ 页面描述为法文，具体构图、杯底是否完全接触桌面、木纹复杂度需原图确认\",\"Pexels ‘sunlit coffee mug’ 页面未说明杯下是否有碟、桌面是否有其他道具干扰\",\"Unsplash ‘cup of cappuccino’ 页面描述简短，阴影是否来自同一光源、杯柄投影是否可见未说明\",\"Unsplash ‘a cup of coffee sitting on top of a wooden table’ 页面仅标签含‘shadows’，桌面纹理与杯底接触关系待验证\",\"未获取任何原图，所有特征均来自网页文字，不能替代像素级观察\"],\"nextFocus\":\"下一轮优先对上述 Unsplash/Pexels 候选获取原图，核验接触阴影的实际形态（杯底暗部宽度、投影软硬、是否与木纹融合）；补充定向检索 Wikimedia Commons 中具体文件页（如 ‘Coffee cup wooden table shadow’ 搜索，但需排除分类页），并尝试查找同一拍摄场景下多张不同角度/光照条件的照片，用于光照一致性比对。\"}",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://unsplash.com/photos/a-cup-of-coffee-sitting-on-top-of-a-wooden-table-wXyc8vQLPTo",
+      "title": "Photo by Zach Camp on Unsplash",
+      "snippet": "a cup of coffee sitting on top of a wooden table Download this free HD photo of shadows, filmmaking, film, and noise by Zach Camp (@zachccamp) Published on Apple, iPhone 13 miniFree to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+      "title": "Photo by James Collington on Pexels",
+      "snippet": "Use filters Change focus Brighten up Add frames License Free Dimensions 4293x6440 ... Description # A warm cup of coffee bathed in morning sunlight casting a gentle shadow on the table. ## More like this Use filters Change focus Brighten up Add",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=pl",
+      "title": "Category:Saucers – Wikimedia Commons",
+      "snippet": "Drinking cups and saucers (8 kategorii, 135 plików) ... - 20190524 mango 04.jpg 1200 × 1703; 447 KB ... - CoffeeSet.jpg 2779 × 3146; 1...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-shelf-filled-with-cups-and-saucers-on-top-of-a-wooden-table-sPbr3dR2v-Y",
+      "title": "Photo by sehoon ye on Unsplash",
+      "snippet": "Editorial # a shelf filled with cups and saucers on top of a wooden table Download this free HD photo of saucer, pottery, coffee cup, and cup by sehoon ye (@_3bread) Published on FUJIFILM, X-E4Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/person-writing-on-a-notebook-5588395/",
+      "title": "Photo by Tony Schnagl on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 8134x5423 ... Software Adobe Photoshop CC (Windows) Description # Aerial view of a wooden table workspace with stationery, notebook, and coffee cup. ## More like this Add filters, effects",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.skillshare.com/de/projects/AI-for-Designers-Project/744010?via=user-profile",
+      "title": "AI for Designers: Project",
+      "snippet": "To the left of the plate is a white cup of black coffee on a saucer, with soft caustic light reflections forming on the surface of the coffee. ... Sunlight streams in from a large window behind the setup, creating gentle highlights, soft shadows, and visible caustic light patterns on the table.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/the-shadow-of-a-coffee-cup-on-a-table-dpq9_bbAPdA",
+      "title": "Photo by Tunmike Adebayo on Unsplash",
+      "snippet": "the shadow of a coffee cup on a table Download this free HD photo of reflection, wallpaper, cup, and coffee by Tunmike Adebayo (@2mike_a) Published on samsung, SM-A127FFree to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+      "title": "Photo de Cut Nanda Oemar sur Pexels",
+      "snippet": "Afterglow ... 2044x2592 ... Logiciel Adobe Lightroom 11.5.01 (Android) Description # Une tasse à café minimaliste en céramique projette une ombre douce sur une table en bois, baignée de lumière naturelle. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=hy",
+      "title": "Category:Saucers — Wikimedia Commons",
+      "snippet": "20190524 mango 04.jpg 1200 × 1703 ... - CoffeeSet.jpg 2779 × 3146; 1,56 ՄԲ - Crumbs saucer fork.jpg 800 × 600; 66 ԿԲ",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-bowl-and-a-glass-on-a-wooden-table-p8N4lRytlQ8",
+      "title": "Photo by Hümâ H. Yardım on Unsplash",
+      "snippet": "––– –––– –––– # a bowl and a glass on a wooden table Download this free HD photo of coffee cup, cup, pottery, and saucer by Hümâ H. Yardım (@humayardim) Published on Canon, EOS 700DFree to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+      "title": "Foto de Israyosoy S. no Pexels",
+      "snippet": "Use filters Change focus Brighten up Add frames ... 4000x6000 ... Descrição # Um coador de café Hario V60 e uma caneca de cerâmica sobre uma mesa de madeira em ambiente interno. ## Ver mais desse tipo",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Crown_Works,_Burslem#1",
+      "title": "Category:Crown Works, Burslem - Wikimedia Commons - Help",
+      "snippet": "5,152 × 3,864; 2.82 MB ... -2019-09-14 Coffee cup and saucer, ΄Parrot Tulip΄ (E2396), Susie Cooper.JPG ... 6.6 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://blenderbench.realityreprojector.com/tasks/hyperreal-still",
+      "title": "Blender-Bench — which robot blends best?",
+      "snippet": "a half-finished breakfast on a small café table at eight in the morning, lit by low sunlight through a window. ... Light: one low, warm sun from the window raking across the table, casting long, sharp shadows, with the juice throwing a coloured caustic onto the wood.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-cup-of-cappuccino-on-a-wooden-table-pezwxLK99zA",
+      "title": "Photo by Valeriia Svitlini on Unsplash",
+      "snippet": "– –– –––– ––– – ––– – – ... ––– – ––– – – # a cup of cappuccino on a wooden table Cup of cappuccino with latte art on a wooden table with shadows. Top view. Published on Apple, iPhone 11 Pro MaxFree to use under the Unsplash License",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-cup-of-coffee-sitting-on-top-of-a-wooden-table-wXyc8vQLPTo",
+      "title": "Photo by Zach Camp on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+      "title": "Photo by James Collington on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=pl",
+      "title": "Category:Saucers – Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-shelf-filled-with-cups-and-saucers-on-top-of-a-wooden-table-sPbr3dR2v-Y",
+      "title": "Photo by sehoon ye on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/person-writing-on-a-notebook-5588395/",
+      "title": "Photo by Tony Schnagl on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/the-shadow-of-a-coffee-cup-on-a-table-dpq9_bbAPdA",
+      "title": "Photo by Tunmike Adebayo on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+      "title": "Photo de Cut Nanda Oemar sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=hy",
+      "title": "Category:Saucers — Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-bowl-and-a-glass-on-a-wooden-table-p8N4lRytlQ8",
+      "title": "Photo by Hümâ H. Yardım on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+      "title": "Foto de Israyosoy S. no Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Crown_Works,_Burslem#1",
+      "title": "Category:Crown Works, Burslem - Wikimedia Commons - Help",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-cup-of-cappuccino-on-a-wooden-table-pezwxLK99zA",
+      "title": "Photo by Valeriia Svitlini on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/35970499/pexels-photo-35970499.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+      "title": "Photo by James Collington on Pexels",
+      "sha256": "c2f1cb0642a55d680a61fe9bccb241889793cb30b4f6c1d9a2901ab01cd89931",
+      "bytes": 15216,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5588395/pexels-photo-5588395.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/person-writing-on-a-notebook-5588395/",
+      "title": "Photo by Tony Schnagl on Pexels",
+      "sha256": "9abbc6edf6d6e677bfc3115bf27e7f7c58b6254ac42a385c1d2cf8f8f7f99679",
+      "bytes": 77616,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/39187955/pexels-photo-39187955.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+      "title": "Photo de Cut Nanda Oemar sur Pexels",
+      "sha256": "ba8ec1aa482ec288e21ecdede970e21bd38d39b4f99c1e1db15a6b26a2950b68",
+      "bytes": 38264,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/29507972/pexels-photo-29507972.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+      "title": "Foto de Israyosoy S. no Pexels",
+      "sha256": "8fa1d7612d73a6335cc8f372d8abca431a838643446a92e90292b99925228a0f",
+      "bytes": 35022,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://unsplash.com/photos/a-cup-of-coffee-sitting-on-top-of-a-wooden-table-wXyc8vQLPTo",
+        "title": "Photo by Zach Camp on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+        "title": "Photo by James Collington on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/35970499/pexels-photo-35970499.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 15216,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "c2f1cb0642a55d680a61fe9bccb241889793cb30b4f6c1d9a2901ab01cd89931"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=pl",
+        "title": "Category:Saucers – Wikimedia Commons",
+        "status": "unavailable",
+        "error": "invalid_image_container"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/a-shelf-filled-with-cups-and-saucers-on-top-of-a-wooden-table-sPbr3dR2v-Y",
+        "title": "Photo by sehoon ye on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/person-writing-on-a-notebook-5588395/",
+        "title": "Photo by Tony Schnagl on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/5588395/pexels-photo-5588395.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 77616,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "9abbc6edf6d6e677bfc3115bf27e7f7c58b6254ac42a385c1d2cf8f8f7f99679"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/the-shadow-of-a-coffee-cup-on-a-table-dpq9_bbAPdA",
+        "title": "Photo by Tunmike Adebayo on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+        "title": "Photo de Cut Nanda Oemar sur Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/39187955/pexels-photo-39187955.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 38264,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "ba8ec1aa482ec288e21ecdede970e21bd38d39b4f99c1e1db15a6b26a2950b68"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Saucers?uselang=hy",
+        "title": "Category:Saucers — Wikimedia Commons",
+        "status": "unavailable",
+        "error": "invalid_image_container"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/a-bowl-and-a-glass-on-a-wooden-table-p8N4lRytlQ8",
+        "title": "Photo by Hümâ H. Yardım on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+        "title": "Foto de Israyosoy S. no Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/29507972/pexels-photo-29507972.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 35022,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "8fa1d7612d73a6335cc8f372d8abca431a838643446a92e90292b99925228a0f"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Crown_Works,_Burslem#1",
+        "title": "Category:Crown Works, Burslem - Wikimedia Commons - Help",
+        "status": "unavailable",
+        "error": "no_supported_image"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/a-cup-of-cappuccino-on-a-wooden-table-pezwxLK99zA",
+        "title": "Photo by Valeriia Svitlini on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "public source-page image metadata; container, dimensions and byte hash checked; not render textures"
+  },
+  "semanticPlan": {
+    "format": "model_semantic_plan",
+    "summary": "本轮针对‘咖啡杯、木桌/餐桌、接触阴影、承托面、光照一致性’进行检索，找到 4 个可点击的摄影来源页，均来自 Unsplash 或 Pexels，页面文字直接涉及咖啡杯、木桌、阴影/阳光/柔光等要素。未获取图片字节，以下特征基于页面标题与描述推断，待原图验证。未发现 Wikimedia Commons 上符合本轮条件的单张咖啡杯木桌照片详情页（仅出现分类页或无关文件列表），故不列入正式候选。",
+    "features": [
+      "接触阴影：Unsplash ‘the shadow of a coffee cup on a table’ 页面标题直接以咖啡杯阴影为主体，可能提供杯底与桌面接触处的暗部形状、投影边缘软硬程度",
+      "承托面材质：Pexels ‘minimalist ceramic coffee cup on wooden table’ 描述陶瓷杯在木桌上投下柔影，木纹承托面与杯底接触边界可作为材质区分参考",
+      "光照方向：Pexels ‘sunlit coffee mug’ 描述晨光在桌面投下柔和阴影，提示可提取定向光下杯体高光与投影的几何关系",
+      "光照一致性：Unsplash ‘cup of cappuccino on a wooden table’ 页面描述含‘with shadows’，可观察杯体、碟与木桌阴影方向是否一致",
+      "杯体与桌面比例：Unsplash ‘a cup of coffee sitting on top of a wooden table’ 提供 iPhone 13 mini 拍摄的桌面场景，可能适合提取杯底椭圆与桌面平面的透视关系"
+    ],
+    "selectionCriteria": [
+      "优先选择页面标题或描述明确含‘shadow’‘sunlight’‘soft shadow’的候选，便于接触阴影形态提取",
+      "承托面为木桌且页面描述木纹可见者优先，利于分离杯底边缘与木纹纹理",
+      "单杯或杯碟组合、背景无过多杂物者优先，降低边缘提取干扰",
+      "光照方向可从描述推断为自然光/定向晨光者优先，用于验证杯体高光与投影的一致性",
+      "排除 Wikimedia Commons 分类页与无关文件列表，仅保留可确认的单张照片详情页"
+    ],
+    "uncertainties": [
+      "Unsplash 页面仅标题含‘shadow’，实际阴影是否由杯体接触桌面产生、投影边缘软硬程度未知",
+      "Pexels ‘minimalist ceramic coffee cup’ 页面描述为法文，具体构图、杯底是否完全接触桌面、木纹复杂度需原图确认",
+      "Pexels ‘sunlit coffee mug’ 页面未说明杯下是否有碟、桌面是否有其他道具干扰",
+      "Unsplash ‘cup of cappuccino’ 页面描述简短，阴影是否来自同一光源、杯柄投影是否可见未说明",
+      "Unsplash ‘a cup of coffee sitting on top of a wooden table’ 页面仅标签含‘shadows’，桌面纹理与杯底接触关系待验证",
+      "未获取任何原图，所有特征均来自网页文字，不能替代像素级观察"
+    ],
+    "nextFocus": "下一轮优先对上述 Unsplash/Pexels 候选获取原图，核验接触阴影的实际形态（杯底暗部宽度、投影软硬、是否与木纹融合）；补充定向检索 Wikimedia Commons 中具体文件页（如 ‘Coffee cup wooden table shadow’ 搜索，但需排除分类页），并尝试查找同一拍摄场景下多张不同角度/光照条件的照片，用于光照一致性比对。",
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 10439,
+    "completion_tokens": 779,
+    "total_tokens": 11218,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "120cd380-3167-40fe-acae-aa70d97cec69",
+        "model": "deepseek-flash",
+        "elapsedMs": 11656,
+        "prompt_tokens": 10439,
+        "completion_tokens": 779,
+        "total_tokens": 11218,
+        "server_tool_use": {
+          "tool_search": 7,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 39571,
+  "downloads": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/35970499/pexels-photo-35970499.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/cozy-morning-with-sunlit-coffee-mug-35970499/",
+      "title": "Photo by James Collington on Pexels",
+      "sha256": "c2f1cb0642a55d680a61fe9bccb241889793cb30b4f6c1d9a2901ab01cd89931",
+      "bytes": 15216,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r04.c2f1cb0642a5",
+      "round": 4,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r04.c2f1cb0642a5.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "咖啡与餐桌静物实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5588395/pexels-photo-5588395.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/person-writing-on-a-notebook-5588395/",
+      "title": "Photo by Tony Schnagl on Pexels",
+      "sha256": "9abbc6edf6d6e677bfc3115bf27e7f7c58b6254ac42a385c1d2cf8f8f7f99679",
+      "bytes": 77616,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r04.9abbc6edf6d6",
+      "round": 4,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r04.9abbc6edf6d6.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "咖啡与餐桌静物实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/39187955/pexels-photo-39187955.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/tasse-a-cafe-minimaliste-en-ceramique-sur-une-table-en-bois-39187955/",
+      "title": "Photo de Cut Nanda Oemar sur Pexels",
+      "sha256": "ba8ec1aa482ec288e21ecdede970e21bd38d39b4f99c1e1db15a6b26a2950b68",
+      "bytes": 38264,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r04.ba8ec1aa482e",
+      "round": 4,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r04.ba8ec1aa482e.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "咖啡与餐桌静物实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/29507972/pexels-photo-29507972.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/pt-br/foto/configuracao-aconchegante-para-cafe-interno-com-hario-v60-29507972/",
+      "title": "Foto de Israyosoy S. no Pexels",
+      "sha256": "8fa1d7612d73a6335cc8f372d8abca431a838643446a92e90292b99925228a0f",
+      "bytes": 35022,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r04.8fa1d7612d73",
+      "round": 4,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r04.8fa1d7612d73.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "咖啡与餐桌静物实拍"
+    }
+  ]
+}

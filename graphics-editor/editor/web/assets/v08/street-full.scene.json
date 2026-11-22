@@ -1,0 +1,29 @@
+{
+  "schema": "crf.gaussian_scene.v0.8",
+  "id": "street.full",
+  "title": "街景 · 完整图高斯拟合",
+  "width": 667,
+  "height": 1000,
+  "background": [
+    232,
+    232,
+    225
+  ],
+  "objects": [
+    {
+      "id": "photo",
+      "label": "photo",
+      "assetId": "street.reference",
+      "x": 0,
+      "y": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "opacity": 1,
+      "visible": true,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 0
+    }
+  ]
+}

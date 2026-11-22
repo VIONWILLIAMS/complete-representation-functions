@@ -1,0 +1,4168 @@
+{
+  "schema": "crf.media_verification.v0.9",
+  "runId": "showcase-v1",
+  "indexSHA256": "b07162b94374956bd0e6d28d9be86e5bb3ab30f75be3f6d2326cebf6c89e213c",
+  "selectedIds": [
+    "01_ivory_facade",
+    "04_cold_alpine",
+    "08_three_fruits"
+  ],
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frameCount": 120,
+    "durationSeconds": 5,
+    "fit": "contain",
+    "nativeViewportFor4by3Scenes": [
+      240,
+      0,
+      1440,
+      1080
+    ],
+    "paddingRGBA": [
+      0,
+      0,
+      0,
+      255
+    ]
+  },
+  "rendererSources": {
+    "scripts/render_v09.cjs": "0e0755b97cd2a6f48f794c79d81e6bf304795eb27e12b3cbb4571cefa1ebb3ca",
+    "web/crf-generative09.js": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2"
+  },
+  "scope": "Explicit image-plane Gaussian/analytic camera studies from real generated scene programs.",
+  "realWorld3DReconstructionVerified": false,
+  "G4PhysicalMultiviewGatePassed": false,
+  "qualityCaveat": "Format, exact evaluator inputs, complete frame counts and temporal differences are measured. The camera represents inferred depth-layer parallax; it does not establish ground-truth hidden geometry or photorealism.",
+  "results": [
+    {
+      "id": "01_ivory_facade",
+      "title": "米白墙面与晨间行人灯",
+      "sceneUrl": "assets/v09/generated/showcase-v1/01_ivory_facade.scene.json",
+      "sceneSHA256": "cfe3b1e3079f41a49aa45149b34fd39121c03cf8745efe45b711b8802b889e67",
+      "sourceGenerationStatus": "review_required",
+      "sourceGenerationQualityGate": "not_evaluated",
+      "videoUrl": "assets/v09/media/01_ivory_facade.mp4",
+      "formatVerified": true,
+      "allEncodedFramesDecoded": true,
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "iec61966-2-1",
+            "color_primaries": "bt709",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "duration": "5.000000",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000",
+          "size": "676337"
+        }
+      },
+      "colorTags": {
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "iec61966-2-1",
+        "color_primaries": "bt709"
+      },
+      "firstFrameCodecFidelity": {
+        "scope": "Lossy H.264 first decoded frame versus the exact native source frame, only inside the content viewport; black padding excluded.",
+        "viewport": {
+          "fit": "contain",
+          "x": 240,
+          "y": 0,
+          "width": 1440,
+          "height": 1080,
+          "containerWidth": 1920,
+          "containerHeight": 1080,
+          "paddingRGBA": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeAspectPreserved": true,
+          "resampledContent": false
+        },
+        "meanAbsoluteRGBByteError": 1.3588953018188477,
+        "rootMeanSquareRGBByteError": 1.8987984657287598,
+        "meanSignedRGBByteError": [
+          -0.9393203258514404,
+          -1.4754083156585693,
+          -0.7894444465637207
+        ],
+        "maxAbsoluteRGBByteError": 101,
+        "linearFitDecodedFromSource": {
+          "slope": 1.0005466826789124,
+          "intercept": -1.1641188734922707
+        },
+        "sourceRGBAHash": "1164ee5f60b3867425e3751636e781d13149e3b4efa3deb7526159138dcc507a",
+        "newVisualQualityGateInvented": false,
+        "physicalOrPhotorealismClaim": false
+      },
+      "bytes": 676337,
+      "sha256": "4fb479539a5338034834f827884ea9597e5f2d77b809456445fedadee3e1ff17",
+      "encoding": {
+        "codec": "libx264",
+        "preset": "medium",
+        "crf": 21,
+        "maxrate": "4M",
+        "bufsize": "8M",
+        "pixelFormat": "yuv420p",
+        "colorConversion": "Full-range gamma-encoded sRGB → BT.709 YCbCr limited range; sRGB transfer retained and tagged. Frame-level setparams metadata is set after conversion as well as encoder flags.",
+        "filterDocumentation": "https://ffmpeg.org/ffmpeg-filters.html#setparams",
+        "lossless": false
+      },
+      "sourceFrameCount": 120,
+      "sourceFramesAllDecoded": true,
+      "viewport": {
+        "fit": "contain",
+        "x": 240,
+        "y": 0,
+        "width": 1440,
+        "height": 1080,
+        "containerWidth": 1920,
+        "containerHeight": 1080,
+        "paddingRGBA": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      "allSourceFramePaddingVerifiedOpaqueBlack": true,
+      "allFramesPreserveNativeAspectRatio": true,
+      "trajectoryAllFramesMatched": true,
+      "allFramePNGAndRGBAHashesVerified": true,
+      "uniqueSourceFrameHashes": 120,
+      "trajectoryFirstCamera": {
+        "panX": 0.01,
+        "panY": 0,
+        "zoom": 0.98
+      },
+      "trajectoryLastCamera": {
+        "panX": 0.06598839814814815,
+        "panY": -0.007998342592592593,
+        "zoom": 1.0436868028935185
+      },
+      "lastFrameTime": 4.958333333333333,
+      "sourceFrameRGBAHashes": [
+        "1164ee5f60b3867425e3751636e781d13149e3b4efa3deb7526159138dcc507a",
+        "da5eb22b960d83159abfbb9bda9addd636326bc387329015f734751f075357e3",
+        "cfbfd3cb9d468a2c9339dbffcb79ff8d32810b78a51d906e96f69bae61181ebf",
+        "cb384af3974a0fb16e6fc15c1def9b63c3199592d24014b2e5d3f7e0330ec450",
+        "e9ffbfd8a6497f5818689d23af715339ded9beca6c19a43f468994e3ed790d82",
+        "f622660524d97392a44037cbcd525ab748adeeb73cd433e07c170163fc0fc1a4",
+        "0dec436dcb1364759ba7627fe3fdd41571757322e0583dfd68d9488531ea86a9",
+        "8b805be35d733ca6e2ad37c052b5c0b80ace8c8e659547a81f690340034b0b76",
+        "91ef93a6b6e38702a0164fed7485a0a109d0a493d9888d78df05cc75a3a56ad5",
+        "bc5c62d0b700450c645aef99d43d7006eddd9e48012d15bbf7449c2982c9852d",
+        "f40008067ae069ce135ce5190efdf6f895804688c5363219c3d02e9367c6f898",
+        "72d7ca8edd4ac78632c39c46247b4f94958ca8ffb4669b2e0b5f902e556ed5c2",
+        "77cab44556b7abeee372f3bc1ceea323d0bfb36c733b0ac399603b3d9c55d3b2",
+        "eed277b3884e88b118b1df4d03a910a2b7b59e3425f4e257b7448c126572491b",
+        "393c023a92b0cc593becb363661af817af5a3ca74e20ba47c77aa2b8c76cf6c0",
+        "50b94bee86f2206d2ad040b6c3379d508d2f586372abfa414d275aeb2341d7df",
+        "6750268912fcbffcf915f9849c4d1b1531efe205c73b849b378b9d76e705692f",
+        "3212127bb4188da1c50d2b27e30b3b33e3a4917298e066023a74795ccf7a45f9",
+        "1d071c42bead3eb9d665cd8330deacbc7bf3903c8550abd4a525435b2f22774f",
+        "0c54f83e7f4ad19c80dc6c3a134c10dce0543896b09cc54b5c816987d774fab3",
+        "6ef7e903047bc40dbfde86a3b2bbb6b71df428327b036bfa825bc3f16ecdd96d",
+        "e7f94c8485e325c3222e838c2121f052d97a411775bd8edc9798f09a452bceff",
+        "ad766d312b79ef55c8688cc6efb6bdff2e8de4c2088f8d2f423265278107cabe",
+        "bc3ee8290ddd95ac49fe39508914ba949a02605e07b62e2b118da05e5dce86c5",
+        "6411200b3d4d044cbb7cc5f126d5a4d001a74bece8a3d2404e9c0f8d6eceb076",
+        "c89e7594450ef441002c06d39b8875d180fe155f741bb47d28627257f26f5dee",
+        "86d1fa5a50234d5bd4598e0c80d67e18d23b3a8682ecadd7d23e421ddd24fe81",
+        "5427478e9929f4d0c3af8bbd6bb393750b2273d2a581eab4fa5e1cf0db7a6926",
+        "49184eb605f1eb49991faaad1e13dadf26daa3bacf2a63563b39a4e521ff5b7b",
+        "b9ee384a10add8352410d41391110f14dd533ea85771d5830b2807e0c25d0d77",
+        "92e97cd45dc9fed4cf7961b1f656b61873a34b6ad8a6965d14f645be146b4ac7",
+        "415ab41f20cb46fc1d6bf29480bae405f26b9aa690693fce07c69176291eda6b",
+        "ab86a9927b97b60a3af447357d5f67f3dd56765eae97e499ae4adb79b258325a",
+        "0cea1e95b3b1356f5ae74604aa3fd98180b3370889e6936350f8ad65ca4dd425",
+        "762894085babd44a48d2e73032e4dfb55031b4fe1410a989b80fc0d5845f41a2",
+        "dc24adda2fd9a9cc3ba540ab47f990c32003c9f2383d988b8cef17c007b07f5b",
+        "910ba0321c386f91cbaa788ef204f1c991cbf110f0e4be6125992c081b94f265",
+        "f9713914b49a4a87ae85e5e4b47603dd3c22f57a062f8a75c4212e38a58e6273",
+        "4448a772fdb4f0500b50ea3031e0694e837428f1fdc1010101513a973a99c9ed",
+        "79da4481bce6ed14866164154e5786a586e845bde0f5d876267c6d9cd47eb480",
+        "62772bda4501688eb09fec922ec368d51098bcb8a44eb02e097fb88c903681fd",
+        "39c6227ade053b2c5b2762a766124873b4c15821fb7aa2c7e9f82cbcd0d85dc0",
+        "68483abf2f30c498e14b57ce1df050a0e5cd708671471e7895144e1854683aac",
+        "866baac128e0e8503ae80d81e998e3c6f2fc181b4e94d1a7f204ebb1bb92e5a8",
+        "22d97cd097c6162d3d26cacf0e99fdef3286260b85d57ba2fb652c5c3e690f5c",
+        "26871c0e5c804990f51021827888e9d5ffda33f9365ec1bba9dbc986a7ff7168",
+        "c43c97ae62a7246725cae768a3b78a4d15d86118f97f599c8496fdbd78b92d1f",
+        "b57d25f8b40134b902b12c8fbfbc77f7fe80bb018bd6c214c980a54a4ae19013",
+        "81685ea54e3721dd2f3249175348d04ea6d4af50ee3a318462b762579244703f",
+        "a73332968d2ad55de09aa54a84cf09c21f49f7c1dc94c3fa5b23bdab37c289c7",
+        "b988d641e04cd9238605db422a82c4f3cca48952d9249d1d40f16d7e2c5b2d5e",
+        "43757429f7abeb2e9d6d274f6eab8cd467cdd29634e44cc3493a20d665c72a06",
+        "877bbdcde031cd6e9eecec9949d97f7c8817ff45fcaafc9270f45e8f09b37008",
+        "9e4fbe640ec3123469e0937704af9bb2741d05ce1259805eaae6a3426e798f3b",
+        "22763259fc0ddb1b66e8d949c366c7a430e9bc5199f3dea160bb7b1e045738c6",
+        "c2f4af5dfbe6f98371b7f99fca09cc2815c46e822bbdc26d8bb685dcd8d580a2",
+        "cc9ad90d91d71be686518c54bb3485067edee800c6c13166852ed0cde85782db",
+        "c59c31ead6247389104d035423a65d2beaf96fac244e6e5fe357403324aa77b0",
+        "0e3687e359ffcb7473dd4b21a3990ac723f6c2d5f7776a8af5f809a7383a7626",
+        "12f5e0936aaa68bea0e6b5da27f8fc793bbf90dcae0ae96708172477de08ee6f",
+        "6648fc41b1b1131a70877a0ab0ed32964b56030a28f0eca7a3ea4314f3cdf5d6",
+        "468078c4e562f309f8d921a2dc727ac1c4aa489f9d64a2b70985576602991124",
+        "33edee197d3c7bf43ac5b56eb738cbf345408c5b4940a73f1349efc95835673f",
+        "9dba0e6ecd72e608d936c8dc345c5448e3217c0e36ba1a36b4d1363296b65eb1",
+        "f22a13b3cdb87fa9f7535a155673590001610d629f6337d19b3d56c63391ffdf",
+        "d25b9a9a29d1be7ea34d20e11650746beccd7e595cb8be200e914a15a0ba8eca",
+        "03e6291c05b18b81def10625865d3b6abb4f11e6b854ec5cb60267cecec3b36f",
+        "a4990f75a27605cf8799155a62bf80100149e681adce665e5bc9283014c3d8d1",
+        "51554f3e78ec0d521830b9d3131fa2d0bb8fbabb42963f07d57dba6c3fff1bf3",
+        "c1d12538067139d4d11e236bc8715cd4047b95fba15587258e0668a6af3ba957",
+        "66b202502f4f10a77ee6f1a81526503c298e3780cb039d1bd9dd6f41b3ddf873",
+        "f4b8b14ac7be55a82107e55caf34dc25531bd151eb632fa0ddb1fcee8bc0ecf6",
+        "1152be309fd0ea5dd502a6da7f3442dc76f8d0dba2e6afc4f3aa6ec7197ee09e",
+        "cc630ea42f4437b376b745f808dcdb2c973813784eeca75215daf444e2478a4c",
+        "f3316558d2a1f854d7d040fc3d3172a16dc3d4d74702052da8fdf5c57fd34aee",
+        "5d729a320a22c85a1f3a789d4ade7855998ace10e50ec547beddb5265ecd7a55",
+        "b660c8b266284aaeb56836a4ed06f35ef97cb6d92b0fd685fed077d79e23e753",
+        "5f9b2326a832208e2b1a8a2d1304be32a39244a95bec5c4e360b9cab7c5ab641",
+        "12f3bbe6bf2f56680ea837538e8eabaafcb5bea9fd96f79235f387257e448bfe",
+        "6f490d8d41cb3b92ba74032cc9cb75b1363a02c0d5ea5540bd565d81b7656b31",
+        "d28134d04738cef3f0a5e77562f57fa05604ccf4ed2f315c2cb7ea2e887d4005",
+        "53f7653dc9a5124ec295190fc96b5829bbee63e60fa4d236b23b935f9db48bfe",
+        "db6b4ee3ad822833bbf7bea2adeee68580270e94635ab89976f58843bb9bac95",
+        "3f64004410f67cfdf6b1589300e53ee58186cee17cb7f6def95748934f216b3f",
+        "fd8e527474380f3c85dabe4b1d8434c9a458bc33ed631807e3042d1ddbb93b00",
+        "6bf4fce5942568df5fe05bf9deea80c56bdcbca3dae1cbedc9a1871c59bfb1c8",
+        "d26941fe32aab2f3cb4defd8a0ba98cce9ffa38df38b8ea0ea06df542999bab9",
+        "b61e8b13ba9f2faa0ded5fddd1b70c1c57dbc3b56fe038faa02a5cfbbf3d525c",
+        "3feb08fcfd9c49fe9a28c82b778f7f0fcf8a801022b03ce2d4a6e3d79136ef86",
+        "f13dc47edbf83e56f94f70cfe58e09246d7bddeed51d5101b9c4bc09e67a0a18",
+        "d0e75e9ff198f116b8f0debede88eb260064bb979c44badd1ab827f0bf239796",
+        "365647d1b7c6eca4fafdbff03350de7cd6fc6afc144f86c81cf29824b814105e",
+        "c7ae395eb5036de71c63d60af561d790fb879db20bab40e218d1d2b5f3f895fd",
+        "22daaa0811e282f68f1264878d3703c2fde752b90ba846f44b2f1161e07373e8",
+        "5a5debcc379e7944a11f050c9eaa434d0b2bc4fbae1e4578e1375620ed4c363c",
+        "e5e62182e2fa98bd797ef88becbfc30ec83655ead0aeb4bb804dba870d09bf18",
+        "580835596b01166da2f28d91d028758b532230a17d04a7595b5ee3068e3c4b25",
+        "62d0f064606cd41f8527c180199fda10cc5ffe2eb3ebe04218d1fce1ef0ec62e",
+        "56eb0a3019de3c29e982e1a8df25f254e2913ede4d019876748dbd8167254e54",
+        "51f7ebb43490ece53e2cca12b67187a847ed51c2f13c68eaa1e264c00ee9f44f",
+        "cb160145e0dba662dbf1ca95aaaa277a5c3888c26e0a4c72f60a779ea9f101d2",
+        "c7dfde339047a584575cafaf2176b3a583e010cc3f7d55a841ada5069032f96b",
+        "48dcd31df116df63a7af85a91903f9af64023bcd3b63b154501d3f9fb54793d4",
+        "dae09a9b5e387107bdb08319c5560985977c8f8a788d6bbfd3f1eca72c286221",
+        "6bbdbfa678959a44560dbdda49ad5c0e367df9433be762d0597f4dcda29bbb78",
+        "77866c28f7341477fbf69e9b97720891cf75867abd735485fad3e87bd1e6be0c",
+        "9967139aa939cca66c95a13e534407383b8daf3674191bc0fbf57ae6cd879e81",
+        "d4118f55ebf8be989faa65ec976f3e92724a42a2cea91b500b145e3b25b49cd4",
+        "4d4652ae7a27a880e0293f5a3e96f4da5d5c0aaddaa055c6e66d93517c047ba0",
+        "d15fe245c81b1fb1d1126573653de5468f366f78262330e9976d8efcafc88d4c",
+        "336eba0f5f44a69819600be16e62419227e4ff23afdab78be78283fdb5313b7d",
+        "860d047962b9659560642b7331d017aa62202138907aa42a4009058e72b96a4c",
+        "ad467592784ca91def4c89152cce1892be20826c448b62fe4c5532fc3044e4b6",
+        "cbcbd3340a2db08dc2cf38661407f8e6df714223de7562bbf599c3c1de502020",
+        "edfca985116577e52fef51d5ef266aaa787189376753e3a89d27098e2f045fb8",
+        "561f0f5b583faf63fec449d6759d9f41a02e8dfeb95ea6888afb484bd830fdbf",
+        "ed75bb30cc7b3edc31cb1048e245756d6889757f18e37498cb69fdbdc8cd2486",
+        "b0dfb79864e73a032b0a230dd252b66d45b9a280976461a12810ad52dc4e0086",
+        "1174a3494f4841c0f3f64d055fb2fc68df51330f116b797a9a6a8158835fa701",
+        "19b6eeedff2c59f2b38945378f791f8065459fa834be7213f03073e3efdb2704"
+      ],
+      "temporalDiagnostic": {
+        "definition": "Absolute RGB byte differences between consecutive uncompressed rendered frames; contains intended camera motion, disocclusion and sampling changes. It is not a motion-compensated flicker score.",
+        "borderWidthPixels": 16,
+        "borderDomain": "Edge of the native content viewport, excluding black padding.",
+        "frameMeanChangeMedian": 0.5332516718106995,
+        "frameMeanChangeMax": 0.8156415573559671,
+        "borderMeanChangeMedian": 0.3130484659699893,
+        "borderMeanChangeMax": 0.46455067658092175,
+        "worstFramePair": {
+          "from": 54,
+          "to": 55,
+          "meanRGBByteChange": 0.8156415573559671,
+          "contentMeanRGBByteChange": 1.0875220764746227,
+          "borderMeanRGBByteChange": 0.46455067658092175,
+          "maxRGBByteChange": 215,
+          "pixelsWithAnyChannelChangeAbove32": 0.005165412808641976
+        },
+        "worstBorderPair": {
+          "from": 54,
+          "to": 55,
+          "meanRGBByteChange": 0.8156415573559671,
+          "contentMeanRGBByteChange": 1.0875220764746227,
+          "borderMeanRGBByteChange": 0.46455067658092175,
+          "maxRGBByteChange": 215,
+          "pixelsWithAnyChannelChangeAbove32": 0.005165412808641976
+        },
+        "perPair": [
+          {
+            "from": 0,
+            "to": 1,
+            "meanRGBByteChange": 0.009994534465020577,
+            "contentMeanRGBByteChange": 0.013326045953360769,
+            "borderMeanRGBByteChange": 0.005685624330117899,
+            "maxRGBByteChange": 17,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "meanRGBByteChange": 0.04036683384773663,
+            "contentMeanRGBByteChange": 0.0538224451303155,
+            "borderMeanRGBByteChange": 0.027075797159699894,
+            "maxRGBByteChange": 31,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "meanRGBByteChange": 0.049921231995884774,
+            "contentMeanRGBByteChange": 0.0665616426611797,
+            "borderMeanRGBByteChange": 0.03282003617363344,
+            "maxRGBByteChange": 54,
+            "pixelsWithAnyChannelChangeAbove32": 6.26929012345679e-06
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "meanRGBByteChange": 0.07016219778806584,
+            "contentMeanRGBByteChange": 0.09354959705075445,
+            "borderMeanRGBByteChange": 0.04505375803858521,
+            "maxRGBByteChange": 59,
+            "pixelsWithAnyChannelChangeAbove32": 1.109182098765432e-05
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "meanRGBByteChange": 0.09839393647119342,
+            "contentMeanRGBByteChange": 0.13119191529492455,
+            "borderMeanRGBByteChange": 0.06228647508038585,
+            "maxRGBByteChange": 83,
+            "pixelsWithAnyChannelChangeAbove32": 8.680555555555556e-05
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "meanRGBByteChange": 0.1239232896090535,
+            "contentMeanRGBByteChange": 0.16523105281207134,
+            "borderMeanRGBByteChange": 0.0703878617363344,
+            "maxRGBByteChange": 79,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006558641975308642
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "meanRGBByteChange": 0.14680587705761317,
+            "contentMeanRGBByteChange": 0.19574116941015088,
+            "borderMeanRGBByteChange": 0.08503315916398714,
+            "maxRGBByteChange": 90,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008670910493827161
+          },
+          {
+            "from": 7,
+            "to": 8,
+            "meanRGBByteChange": 0.19479134516460905,
+            "contentMeanRGBByteChange": 0.25972179355281205,
+            "borderMeanRGBByteChange": 0.12160034833869239,
+            "maxRGBByteChange": 92,
+            "pixelsWithAnyChannelChangeAbove32": 0.0014491705246913581
+          },
+          {
+            "from": 8,
+            "to": 9,
+            "meanRGBByteChange": 0.1625409915123457,
+            "contentMeanRGBByteChange": 0.2167213220164609,
+            "borderMeanRGBByteChange": 0.10587486602357984,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.0009485918209876543
+          },
+          {
+            "from": 9,
+            "to": 10,
+            "meanRGBByteChange": 0.22846836419753086,
+            "contentMeanRGBByteChange": 0.3046244855967078,
+            "borderMeanRGBByteChange": 0.1309242698285102,
+            "maxRGBByteChange": 120,
+            "pixelsWithAnyChannelChangeAbove32": 0.000861304012345679
+          },
+          {
+            "from": 10,
+            "to": 11,
+            "meanRGBByteChange": 0.2142647247942387,
+            "contentMeanRGBByteChange": 0.28568629972565157,
+            "borderMeanRGBByteChange": 0.13624564576634512,
+            "maxRGBByteChange": 122,
+            "pixelsWithAnyChannelChangeAbove32": 0.001159818672839506
+          },
+          {
+            "from": 11,
+            "to": 12,
+            "meanRGBByteChange": 0.2190263310185185,
+            "contentMeanRGBByteChange": 0.29203510802469135,
+            "borderMeanRGBByteChange": 0.14300726822079313,
+            "maxRGBByteChange": 128,
+            "pixelsWithAnyChannelChangeAbove32": 0.0010879629629629629
+          },
+          {
+            "from": 12,
+            "to": 13,
+            "meanRGBByteChange": 0.40926858281893,
+            "contentMeanRGBByteChange": 0.5456914437585734,
+            "borderMeanRGBByteChange": 0.24078074758842444,
+            "maxRGBByteChange": 166,
+            "pixelsWithAnyChannelChangeAbove32": 0.002585358796296296
+          },
+          {
+            "from": 13,
+            "to": 14,
+            "meanRGBByteChange": 0.25323286394032923,
+            "contentMeanRGBByteChange": 0.3376438185871056,
+            "borderMeanRGBByteChange": 0.16560322883172562,
+            "maxRGBByteChange": 136,
+            "pixelsWithAnyChannelChangeAbove32": 0.0012765239197530865
+          },
+          {
+            "from": 14,
+            "to": 15,
+            "meanRGBByteChange": 0.3108977944958848,
+            "contentMeanRGBByteChange": 0.4145303926611797,
+            "borderMeanRGBByteChange": 0.18721948687031081,
+            "maxRGBByteChange": 141,
+            "pixelsWithAnyChannelChangeAbove32": 0.0013353587962962963
+          },
+          {
+            "from": 15,
+            "to": 16,
+            "meanRGBByteChange": 0.2812938850308642,
+            "contentMeanRGBByteChange": 0.3750585133744856,
+            "borderMeanRGBByteChange": 0.18118217443729903,
+            "maxRGBByteChange": 146,
+            "pixelsWithAnyChannelChangeAbove32": 0.0013773148148148147
+          },
+          {
+            "from": 16,
+            "to": 17,
+            "meanRGBByteChange": 0.33635545267489714,
+            "contentMeanRGBByteChange": 0.4484739368998628,
+            "borderMeanRGBByteChange": 0.19718816988210075,
+            "maxRGBByteChange": 152,
+            "pixelsWithAnyChannelChangeAbove32": 0.0016951195987654321
+          },
+          {
+            "from": 17,
+            "to": 18,
+            "meanRGBByteChange": 0.368559670781893,
+            "contentMeanRGBByteChange": 0.49141289437585733,
+            "borderMeanRGBByteChange": 0.23427870444801716,
+            "maxRGBByteChange": 156,
+            "pixelsWithAnyChannelChangeAbove32": 0.002179783950617284
+          },
+          {
+            "from": 18,
+            "to": 19,
+            "meanRGBByteChange": 0.346284079218107,
+            "contentMeanRGBByteChange": 0.46171210562414267,
+            "borderMeanRGBByteChange": 0.21361702840300106,
+            "maxRGBByteChange": 161,
+            "pixelsWithAnyChannelChangeAbove32": 0.001763599537037037
+          },
+          {
+            "from": 19,
+            "to": 20,
+            "meanRGBByteChange": 0.48522698045267487,
+            "contentMeanRGBByteChange": 0.6469693072702332,
+            "borderMeanRGBByteChange": 0.2887149986602358,
+            "maxRGBByteChange": 167,
+            "pixelsWithAnyChannelChangeAbove32": 0.002701581790123457
+          },
+          {
+            "from": 20,
+            "to": 21,
+            "meanRGBByteChange": 0.41437596450617287,
+            "contentMeanRGBByteChange": 0.5525012860082305,
+            "borderMeanRGBByteChange": 0.25599963156484457,
+            "maxRGBByteChange": 169,
+            "pixelsWithAnyChannelChangeAbove32": 0.002704957561728395
+          },
+          {
+            "from": 21,
+            "to": 22,
+            "meanRGBByteChange": 0.39479873971193413,
+            "contentMeanRGBByteChange": 0.5263983196159122,
+            "borderMeanRGBByteChange": 0.24041649919614147,
+            "maxRGBByteChange": 167,
+            "pixelsWithAnyChannelChangeAbove32": 0.0021624228395061727
+          },
+          {
+            "from": 22,
+            "to": 23,
+            "meanRGBByteChange": 0.4207732124485597,
+            "contentMeanRGBByteChange": 0.5610309499314129,
+            "borderMeanRGBByteChange": 0.24734140541264737,
+            "maxRGBByteChange": 168,
+            "pixelsWithAnyChannelChangeAbove32": 0.002119020061728395
+          },
+          {
+            "from": 23,
+            "to": 24,
+            "meanRGBByteChange": 0.4843553883744856,
+            "contentMeanRGBByteChange": 0.6458071844993142,
+            "borderMeanRGBByteChange": 0.29914422561629156,
+            "maxRGBByteChange": 177,
+            "pixelsWithAnyChannelChangeAbove32": 0.003120659722222222
+          },
+          {
+            "from": 24,
+            "to": 25,
+            "meanRGBByteChange": 0.5446186985596708,
+            "contentMeanRGBByteChange": 0.7261582647462277,
+            "borderMeanRGBByteChange": 0.317335711414791,
+            "maxRGBByteChange": 175,
+            "pixelsWithAnyChannelChangeAbove32": 0.0028327546296296295
+          },
+          {
+            "from": 25,
+            "to": 26,
+            "meanRGBByteChange": 0.4499688143004115,
+            "contentMeanRGBByteChange": 0.5999584190672154,
+            "borderMeanRGBByteChange": 0.26660051580921756,
+            "maxRGBByteChange": 192,
+            "pixelsWithAnyChannelChangeAbove32": 0.0026191165123456792
+          },
+          {
+            "from": 26,
+            "to": 27,
+            "meanRGBByteChange": 0.5160117669753086,
+            "contentMeanRGBByteChange": 0.6880156893004116,
+            "borderMeanRGBByteChange": 0.2985413317256163,
+            "maxRGBByteChange": 183,
+            "pixelsWithAnyChannelChangeAbove32": 0.003052662037037037
+          },
+          {
+            "from": 27,
+            "to": 28,
+            "meanRGBByteChange": 0.46670154963991767,
+            "contentMeanRGBByteChange": 0.6222687328532236,
+            "borderMeanRGBByteChange": 0.2831172963558414,
+            "maxRGBByteChange": 177,
+            "pixelsWithAnyChannelChangeAbove32": 0.0021807484567901237
+          },
+          {
+            "from": 28,
+            "to": 29,
+            "meanRGBByteChange": 0.494922678755144,
+            "contentMeanRGBByteChange": 0.6598969050068587,
+            "borderMeanRGBByteChange": 0.284913417738478,
+            "maxRGBByteChange": 190,
+            "pixelsWithAnyChannelChangeAbove32": 0.00236304012345679
+          },
+          {
+            "from": 29,
+            "to": 30,
+            "meanRGBByteChange": 0.6030147247942387,
+            "contentMeanRGBByteChange": 0.8040196330589849,
+            "borderMeanRGBByteChange": 0.35740722132904607,
+            "maxRGBByteChange": 187,
+            "pixelsWithAnyChannelChangeAbove32": 0.0038136574074074075
+          },
+          {
+            "from": 30,
+            "to": 31,
+            "meanRGBByteChange": 0.5332516718106995,
+            "contentMeanRGBByteChange": 0.7110022290809328,
+            "borderMeanRGBByteChange": 0.3130484659699893,
+            "maxRGBByteChange": 186,
+            "pixelsWithAnyChannelChangeAbove32": 0.0026282793209876543
+          },
+          {
+            "from": 31,
+            "to": 32,
+            "meanRGBByteChange": 0.5418484760802469,
+            "contentMeanRGBByteChange": 0.7224646347736625,
+            "borderMeanRGBByteChange": 0.3211247320471597,
+            "maxRGBByteChange": 194,
+            "pixelsWithAnyChannelChangeAbove32": 0.0033333333333333335
+          },
+          {
+            "from": 32,
+            "to": 33,
+            "meanRGBByteChange": 0.5253853202160493,
+            "contentMeanRGBByteChange": 0.7005137602880659,
+            "borderMeanRGBByteChange": 0.31306102625937837,
+            "maxRGBByteChange": 193,
+            "pixelsWithAnyChannelChangeAbove32": 0.003171296296296296
+          },
+          {
+            "from": 33,
+            "to": 34,
+            "meanRGBByteChange": 0.6378620113168725,
+            "contentMeanRGBByteChange": 0.8504826817558299,
+            "borderMeanRGBByteChange": 0.365759813772776,
+            "maxRGBByteChange": 205,
+            "pixelsWithAnyChannelChangeAbove32": 0.003284625771604938
+          },
+          {
+            "from": 34,
+            "to": 35,
+            "meanRGBByteChange": 0.585183738425926,
+            "contentMeanRGBByteChange": 0.7802449845679013,
+            "borderMeanRGBByteChange": 0.3473548030546624,
+            "maxRGBByteChange": 208,
+            "pixelsWithAnyChannelChangeAbove32": 0.0034013310185185184
+          },
+          {
+            "from": 35,
+            "to": 36,
+            "meanRGBByteChange": 0.5424356995884774,
+            "contentMeanRGBByteChange": 0.7232475994513031,
+            "borderMeanRGBByteChange": 0.31611317658092175,
+            "maxRGBByteChange": 209,
+            "pixelsWithAnyChannelChangeAbove32": 0.0024074074074074076
+          },
+          {
+            "from": 36,
+            "to": 37,
+            "meanRGBByteChange": 0.6112847222222222,
+            "contentMeanRGBByteChange": 0.8150462962962963,
+            "borderMeanRGBByteChange": 0.35396988879957125,
+            "maxRGBByteChange": 207,
+            "pixelsWithAnyChannelChangeAbove32": 0.0031143904320987655
+          },
+          {
+            "from": 37,
+            "to": 38,
+            "meanRGBByteChange": 0.6913686342592592,
+            "contentMeanRGBByteChange": 0.9218248456790124,
+            "borderMeanRGBByteChange": 0.39509646302250806,
+            "maxRGBByteChange": 207,
+            "pixelsWithAnyChannelChangeAbove32": 0.0031630979938271605
+          },
+          {
+            "from": 38,
+            "to": 39,
+            "meanRGBByteChange": 0.6011038773148148,
+            "contentMeanRGBByteChange": 0.8014718364197531,
+            "borderMeanRGBByteChange": 0.3426405077706324,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.003193479938271605
+          },
+          {
+            "from": 39,
+            "to": 40,
+            "meanRGBByteChange": 0.6510132137345679,
+            "contentMeanRGBByteChange": 0.8680176183127573,
+            "borderMeanRGBByteChange": 0.3686528670953912,
+            "maxRGBByteChange": 206,
+            "pixelsWithAnyChannelChangeAbove32": 0.003249903549382716
+          },
+          {
+            "from": 40,
+            "to": 41,
+            "meanRGBByteChange": 0.6295225694444444,
+            "contentMeanRGBByteChange": 0.8393634259259259,
+            "borderMeanRGBByteChange": 0.3559711615755627,
+            "maxRGBByteChange": 208,
+            "pixelsWithAnyChannelChangeAbove32": 0.0035686728395061726
+          },
+          {
+            "from": 41,
+            "to": 42,
+            "meanRGBByteChange": 0.6899099794238683,
+            "contentMeanRGBByteChange": 0.9198799725651577,
+            "borderMeanRGBByteChange": 0.39014770900321544,
+            "maxRGBByteChange": 209,
+            "pixelsWithAnyChannelChangeAbove32": 0.0031182484567901236
+          },
+          {
+            "from": 42,
+            "to": 43,
+            "meanRGBByteChange": 0.6396034272119342,
+            "contentMeanRGBByteChange": 0.8528045696159122,
+            "borderMeanRGBByteChange": 0.3596262057877814,
+            "maxRGBByteChange": 212,
+            "pixelsWithAnyChannelChangeAbove32": 0.003667534722222222
+          },
+          {
+            "from": 43,
+            "to": 44,
+            "meanRGBByteChange": 0.6313278034979424,
+            "contentMeanRGBByteChange": 0.8417704046639232,
+            "borderMeanRGBByteChange": 0.355899986602358,
+            "maxRGBByteChange": 215,
+            "pixelsWithAnyChannelChangeAbove32": 0.0027647569444444442
+          },
+          {
+            "from": 44,
+            "to": 45,
+            "meanRGBByteChange": 0.7516459297839506,
+            "contentMeanRGBByteChange": 1.0021945730452675,
+            "borderMeanRGBByteChange": 0.42414422561629156,
+            "maxRGBByteChange": 209,
+            "pixelsWithAnyChannelChangeAbove32": 0.004557291666666667
+          },
+          {
+            "from": 45,
+            "to": 46,
+            "meanRGBByteChange": 0.6195230516975309,
+            "contentMeanRGBByteChange": 0.8260307355967078,
+            "borderMeanRGBByteChange": 0.3443361468381565,
+            "maxRGBByteChange": 209,
+            "pixelsWithAnyChannelChangeAbove32": 0.0032494212962962963
+          },
+          {
+            "from": 46,
+            "to": 47,
+            "meanRGBByteChange": 0.6811223636831276,
+            "contentMeanRGBByteChange": 0.9081631515775034,
+            "borderMeanRGBByteChange": 0.3901895766345123,
+            "maxRGBByteChange": 207,
+            "pixelsWithAnyChannelChangeAbove32": 0.003755787037037037
+          },
+          {
+            "from": 47,
+            "to": 48,
+            "meanRGBByteChange": 0.7330941358024692,
+            "contentMeanRGBByteChange": 0.9774588477366255,
+            "borderMeanRGBByteChange": 0.40641747052518756,
+            "maxRGBByteChange": 213,
+            "pixelsWithAnyChannelChangeAbove32": 0.0040446566358024695
+          },
+          {
+            "from": 48,
+            "to": 49,
+            "meanRGBByteChange": 0.663517232510288,
+            "contentMeanRGBByteChange": 0.8846896433470508,
+            "borderMeanRGBByteChange": 0.3744138531618435,
+            "maxRGBByteChange": 213,
+            "pixelsWithAnyChannelChangeAbove32": 0.003805459104938272
+          },
+          {
+            "from": 49,
+            "to": 50,
+            "meanRGBByteChange": 0.6719454089506173,
+            "contentMeanRGBByteChange": 0.8959272119341564,
+            "borderMeanRGBByteChange": 0.38131363879957125,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.002701581790123457
+          },
+          {
+            "from": 50,
+            "to": 51,
+            "meanRGBByteChange": 0.6637475887345679,
+            "contentMeanRGBByteChange": 0.8849967849794239,
+            "borderMeanRGBByteChange": 0.3737565313504823,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.0038450038580246913
+          },
+          {
+            "from": 51,
+            "to": 52,
+            "meanRGBByteChange": 0.7293975051440329,
+            "contentMeanRGBByteChange": 0.9725300068587106,
+            "borderMeanRGBByteChange": 0.4099092309753483,
+            "maxRGBByteChange": 211,
+            "pixelsWithAnyChannelChangeAbove32": 0.0038363233024691357
+          },
+          {
+            "from": 52,
+            "to": 53,
+            "meanRGBByteChange": 0.7258871849279835,
+            "contentMeanRGBByteChange": 0.967849579903978,
+            "borderMeanRGBByteChange": 0.41125318193997856,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.0037991898148148147
+          },
+          {
+            "from": 53,
+            "to": 54,
+            "meanRGBByteChange": 0.6316655414094651,
+            "contentMeanRGBByteChange": 0.8422207218792866,
+            "borderMeanRGBByteChange": 0.34952773311897106,
+            "maxRGBByteChange": 211,
+            "pixelsWithAnyChannelChangeAbove32": 0.0029460841049382715
+          },
+          {
+            "from": 54,
+            "to": 55,
+            "meanRGBByteChange": 0.8156415573559671,
+            "contentMeanRGBByteChange": 1.0875220764746227,
+            "borderMeanRGBByteChange": 0.46455067658092175,
+            "maxRGBByteChange": 215,
+            "pixelsWithAnyChannelChangeAbove32": 0.005165412808641976
+          },
+          {
+            "from": 55,
+            "to": 56,
+            "meanRGBByteChange": 0.744649241255144,
+            "contentMeanRGBByteChange": 0.9928656550068587,
+            "borderMeanRGBByteChange": 0.4111736334405145,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.004065875771604938
+          },
+          {
+            "from": 56,
+            "to": 57,
+            "meanRGBByteChange": 0.6353441679526749,
+            "contentMeanRGBByteChange": 0.8471255572702332,
+            "borderMeanRGBByteChange": 0.3513824691854234,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.0030574845679012344
+          },
+          {
+            "from": 57,
+            "to": 58,
+            "meanRGBByteChange": 0.7704848251028806,
+            "contentMeanRGBByteChange": 1.0273131001371743,
+            "borderMeanRGBByteChange": 0.4259654675777063,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.004035493827160494
+          },
+          {
+            "from": 58,
+            "to": 59,
+            "meanRGBByteChange": 0.7124993569958847,
+            "contentMeanRGBByteChange": 0.9499991426611797,
+            "borderMeanRGBByteChange": 0.4037128215434084,
+            "maxRGBByteChange": 211,
+            "pixelsWithAnyChannelChangeAbove32": 0.0041994598765432095
+          },
+          {
+            "from": 59,
+            "to": 60,
+            "meanRGBByteChange": 0.6855693801440329,
+            "contentMeanRGBByteChange": 0.9140925068587106,
+            "borderMeanRGBByteChange": 0.39107717041800644,
+            "maxRGBByteChange": 213,
+            "pixelsWithAnyChannelChangeAbove32": 0.003967496141975308
+          },
+          {
+            "from": 60,
+            "to": 61,
+            "meanRGBByteChange": 0.7580555555555556,
+            "contentMeanRGBByteChange": 1.0107407407407407,
+            "borderMeanRGBByteChange": 0.42247370712754556,
+            "maxRGBByteChange": 212,
+            "pixelsWithAnyChannelChangeAbove32": 0.0040885416666666665
+          },
+          {
+            "from": 61,
+            "to": 62,
+            "meanRGBByteChange": 0.7036988811728395,
+            "contentMeanRGBByteChange": 0.9382651748971194,
+            "borderMeanRGBByteChange": 0.4081047360664523,
+            "maxRGBByteChange": 209,
+            "pixelsWithAnyChannelChangeAbove32": 0.003525270061728395
+          },
+          {
+            "from": 62,
+            "to": 63,
+            "meanRGBByteChange": 0.6685334683641976,
+            "contentMeanRGBByteChange": 0.89137795781893,
+            "borderMeanRGBByteChange": 0.3647926714898178,
+            "maxRGBByteChange": 215,
+            "pixelsWithAnyChannelChangeAbove32": 0.002838059413580247
+          },
+          {
+            "from": 63,
+            "to": 64,
+            "meanRGBByteChange": 0.6879801633230452,
+            "contentMeanRGBByteChange": 0.917306884430727,
+            "borderMeanRGBByteChange": 0.38133875937834943,
+            "maxRGBByteChange": 206,
+            "pixelsWithAnyChannelChangeAbove32": 0.003816550925925926
+          },
+          {
+            "from": 64,
+            "to": 65,
+            "meanRGBByteChange": 0.7781936406893004,
+            "contentMeanRGBByteChange": 1.0375915209190671,
+            "borderMeanRGBByteChange": 0.4361979166666667,
+            "maxRGBByteChange": 213,
+            "pixelsWithAnyChannelChangeAbove32": 0.003951099537037037
+          },
+          {
+            "from": 65,
+            "to": 66,
+            "meanRGBByteChange": 0.7316282471707819,
+            "contentMeanRGBByteChange": 0.9755043295610425,
+            "borderMeanRGBByteChange": 0.40456273445873525,
+            "maxRGBByteChange": 213,
+            "pixelsWithAnyChannelChangeAbove32": 0.0049455054012345675
+          },
+          {
+            "from": 66,
+            "to": 67,
+            "meanRGBByteChange": 0.6525155928497942,
+            "contentMeanRGBByteChange": 0.8700207904663924,
+            "borderMeanRGBByteChange": 0.36218013129689175,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.0031770833333333334
+          },
+          {
+            "from": 67,
+            "to": 68,
+            "meanRGBByteChange": 0.8016767939814815,
+            "contentMeanRGBByteChange": 1.0689023919753087,
+            "borderMeanRGBByteChange": 0.4509646302250804,
+            "maxRGBByteChange": 211,
+            "pixelsWithAnyChannelChangeAbove32": 0.004343171296296296
+          },
+          {
+            "from": 68,
+            "to": 69,
+            "meanRGBByteChange": 0.6406467013888889,
+            "contentMeanRGBByteChange": 0.8541956018518518,
+            "borderMeanRGBByteChange": 0.34987104769560556,
+            "maxRGBByteChange": 208,
+            "pixelsWithAnyChannelChangeAbove32": 0.0036395640432098767
+          },
+          {
+            "from": 69,
+            "to": 70,
+            "meanRGBByteChange": 0.691059670781893,
+            "contentMeanRGBByteChange": 0.9214128943758574,
+            "borderMeanRGBByteChange": 0.3811043006430868,
+            "maxRGBByteChange": 213,
+            "pixelsWithAnyChannelChangeAbove32": 0.00390625
+          },
+          {
+            "from": 70,
+            "to": 71,
+            "meanRGBByteChange": 0.7542807998971194,
+            "contentMeanRGBByteChange": 1.005707733196159,
+            "borderMeanRGBByteChange": 0.4213390943193998,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.0032817322530864198
+          },
+          {
+            "from": 71,
+            "to": 72,
+            "meanRGBByteChange": 0.671446920010288,
+            "contentMeanRGBByteChange": 0.8952625600137174,
+            "borderMeanRGBByteChange": 0.3753181939978564,
+            "maxRGBByteChange": 214,
+            "pixelsWithAnyChannelChangeAbove32": 0.0031963734567901233
+          },
+          {
+            "from": 72,
+            "to": 73,
+            "meanRGBByteChange": 0.6470624356995884,
+            "contentMeanRGBByteChange": 0.862749914266118,
+            "borderMeanRGBByteChange": 0.351805332261522,
+            "maxRGBByteChange": 206,
+            "pixelsWithAnyChannelChangeAbove32": 0.0032904128086419754
+          },
+          {
+            "from": 73,
+            "to": 74,
+            "meanRGBByteChange": 0.7624926054526749,
+            "contentMeanRGBByteChange": 1.016656807270233,
+            "borderMeanRGBByteChange": 0.42812165058949625,
+            "maxRGBByteChange": 208,
+            "pixelsWithAnyChannelChangeAbove32": 0.004599729938271605
+          },
+          {
+            "from": 74,
+            "to": 75,
+            "meanRGBByteChange": 0.6723898855452675,
+            "contentMeanRGBByteChange": 0.89651984739369,
+            "borderMeanRGBByteChange": 0.37211950696677387,
+            "maxRGBByteChange": 208,
+            "pixelsWithAnyChannelChangeAbove32": 0.004157986111111111
+          },
+          {
+            "from": 75,
+            "to": 76,
+            "meanRGBByteChange": 0.6263782793209877,
+            "contentMeanRGBByteChange": 0.8351710390946502,
+            "borderMeanRGBByteChange": 0.349703577170418,
+            "maxRGBByteChange": 209,
+            "pixelsWithAnyChannelChangeAbove32": 0.003233989197530864
+          },
+          {
+            "from": 76,
+            "to": 77,
+            "meanRGBByteChange": 0.5853280928497943,
+            "contentMeanRGBByteChange": 0.780437457133059,
+            "borderMeanRGBByteChange": 0.32652146972132906,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.003042534722222222
+          },
+          {
+            "from": 77,
+            "to": 78,
+            "meanRGBByteChange": 0.7619560185185185,
+            "contentMeanRGBByteChange": 1.0159413580246914,
+            "borderMeanRGBByteChange": 0.4242949490889603,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.004465663580246914
+          },
+          {
+            "from": 78,
+            "to": 79,
+            "meanRGBByteChange": 0.6521516525205762,
+            "contentMeanRGBByteChange": 0.8695355366941016,
+            "borderMeanRGBByteChange": 0.3664924973204716,
+            "maxRGBByteChange": 213,
+            "pixelsWithAnyChannelChangeAbove32": 0.0037866512345679014
+          },
+          {
+            "from": 79,
+            "to": 80,
+            "meanRGBByteChange": 0.5833490869341563,
+            "contentMeanRGBByteChange": 0.7777987825788751,
+            "borderMeanRGBByteChange": 0.3197849678456592,
+            "maxRGBByteChange": 209,
+            "pixelsWithAnyChannelChangeAbove32": 0.003347318672839506
+          },
+          {
+            "from": 80,
+            "to": 81,
+            "meanRGBByteChange": 0.7032666216563787,
+            "contentMeanRGBByteChange": 0.9376888288751715,
+            "borderMeanRGBByteChange": 0.3884520699356913,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.003766878858024691
+          },
+          {
+            "from": 81,
+            "to": 82,
+            "meanRGBByteChange": 0.6465919174382716,
+            "contentMeanRGBByteChange": 0.8621225565843621,
+            "borderMeanRGBByteChange": 0.3737355975348339,
+            "maxRGBByteChange": 212,
+            "pixelsWithAnyChannelChangeAbove32": 0.004087094907407407
+          },
+          {
+            "from": 82,
+            "to": 83,
+            "meanRGBByteChange": 0.5536027520576132,
+            "contentMeanRGBByteChange": 0.7381370027434843,
+            "borderMeanRGBByteChange": 0.3118384914255091,
+            "maxRGBByteChange": 201,
+            "pixelsWithAnyChannelChangeAbove32": 0.0031086033950617283
+          },
+          {
+            "from": 83,
+            "to": 84,
+            "meanRGBByteChange": 0.6134254436728395,
+            "contentMeanRGBByteChange": 0.817900591563786,
+            "borderMeanRGBByteChange": 0.32791984860664525,
+            "maxRGBByteChange": 201,
+            "pixelsWithAnyChannelChangeAbove32": 0.0037119020061728396
+          },
+          {
+            "from": 84,
+            "to": 85,
+            "meanRGBByteChange": 0.6577446630658437,
+            "contentMeanRGBByteChange": 0.8769928840877915,
+            "borderMeanRGBByteChange": 0.36968281082529475,
+            "maxRGBByteChange": 209,
+            "pixelsWithAnyChannelChangeAbove32": 0.003934702932098765
+          },
+          {
+            "from": 85,
+            "to": 86,
+            "meanRGBByteChange": 0.6054505851337448,
+            "contentMeanRGBByteChange": 0.8072674468449932,
+            "borderMeanRGBByteChange": 0.33828208735262594,
+            "maxRGBByteChange": 212,
+            "pixelsWithAnyChannelChangeAbove32": 0.003507908950617284
+          },
+          {
+            "from": 86,
+            "to": 87,
+            "meanRGBByteChange": 0.5227064043209877,
+            "contentMeanRGBByteChange": 0.6969418724279836,
+            "borderMeanRGBByteChange": 0.2939400790460879,
+            "maxRGBByteChange": 210,
+            "pixelsWithAnyChannelChangeAbove32": 0.002933545524691358
+          },
+          {
+            "from": 87,
+            "to": 88,
+            "meanRGBByteChange": 0.5700442065329218,
+            "contentMeanRGBByteChange": 0.7600589420438958,
+            "borderMeanRGBByteChange": 0.31951701500535906,
+            "maxRGBByteChange": 204,
+            "pixelsWithAnyChannelChangeAbove32": 0.0031655092592592594
+          },
+          {
+            "from": 88,
+            "to": 89,
+            "meanRGBByteChange": 0.621290670010288,
+            "contentMeanRGBByteChange": 0.8283875600137174,
+            "borderMeanRGBByteChange": 0.3527934083601286,
+            "maxRGBByteChange": 200,
+            "pixelsWithAnyChannelChangeAbove32": 0.0034553433641975307
+          },
+          {
+            "from": 89,
+            "to": 90,
+            "meanRGBByteChange": 0.5139668531378601,
+            "contentMeanRGBByteChange": 0.6852891375171468,
+            "borderMeanRGBByteChange": 0.2808690045551983,
+            "maxRGBByteChange": 192,
+            "pixelsWithAnyChannelChangeAbove32": 0.0028843557098765433
+          },
+          {
+            "from": 90,
+            "to": 91,
+            "meanRGBByteChange": 0.5294304591049382,
+            "contentMeanRGBByteChange": 0.7059072788065843,
+            "borderMeanRGBByteChange": 0.2940154407824223,
+            "maxRGBByteChange": 192,
+            "pixelsWithAnyChannelChangeAbove32": 0.003054108796296296
+          },
+          {
+            "from": 91,
+            "to": 92,
+            "meanRGBByteChange": 0.5051298868312757,
+            "contentMeanRGBByteChange": 0.6735065157750343,
+            "borderMeanRGBByteChange": 0.27867932743837087,
+            "maxRGBByteChange": 188,
+            "pixelsWithAnyChannelChangeAbove32": 0.0024228395061728393
+          },
+          {
+            "from": 92,
+            "to": 93,
+            "meanRGBByteChange": 0.5231695280349794,
+            "contentMeanRGBByteChange": 0.6975593707133059,
+            "borderMeanRGBByteChange": 0.29177552250803857,
+            "maxRGBByteChange": 184,
+            "pixelsWithAnyChannelChangeAbove32": 0.003091724537037037
+          },
+          {
+            "from": 93,
+            "to": 94,
+            "meanRGBByteChange": 0.5499993569958848,
+            "contentMeanRGBByteChange": 0.733332475994513,
+            "borderMeanRGBByteChange": 0.3180265273311897,
+            "maxRGBByteChange": 184,
+            "pixelsWithAnyChannelChangeAbove32": 0.0030753279320987655
+          },
+          {
+            "from": 94,
+            "to": 95,
+            "meanRGBByteChange": 0.4766695601851852,
+            "contentMeanRGBByteChange": 0.6355594135802469,
+            "borderMeanRGBByteChange": 0.26291197749196143,
+            "maxRGBByteChange": 183,
+            "pixelsWithAnyChannelChangeAbove32": 0.003096064814814815
+          },
+          {
+            "from": 95,
+            "to": 96,
+            "meanRGBByteChange": 0.43943753215020576,
+            "contentMeanRGBByteChange": 0.5859167095336076,
+            "borderMeanRGBByteChange": 0.24058815648445875,
+            "maxRGBByteChange": 177,
+            "pixelsWithAnyChannelChangeAbove32": 0.002163869598765432
+          },
+          {
+            "from": 96,
+            "to": 97,
+            "meanRGBByteChange": 0.508203125,
+            "contentMeanRGBByteChange": 0.6776041666666667,
+            "borderMeanRGBByteChange": 0.2809150589496249,
+            "maxRGBByteChange": 172,
+            "pixelsWithAnyChannelChangeAbove32": 0.003035300925925926
+          },
+          {
+            "from": 97,
+            "to": 98,
+            "meanRGBByteChange": 0.48880144032921813,
+            "contentMeanRGBByteChange": 0.6517352537722908,
+            "borderMeanRGBByteChange": 0.2862489951768489,
+            "maxRGBByteChange": 174,
+            "pixelsWithAnyChannelChangeAbove32": 0.002828414351851852
+          },
+          {
+            "from": 98,
+            "to": 99,
+            "meanRGBByteChange": 0.43744759516460907,
+            "contentMeanRGBByteChange": 0.5832634602194787,
+            "borderMeanRGBByteChange": 0.24132084003215434,
+            "maxRGBByteChange": 171,
+            "pixelsWithAnyChannelChangeAbove32": 0.0027584876543209876
+          },
+          {
+            "from": 99,
+            "to": 100,
+            "meanRGBByteChange": 0.3844785236625514,
+            "contentMeanRGBByteChange": 0.5126380315500686,
+            "borderMeanRGBByteChange": 0.2135751607717042,
+            "maxRGBByteChange": 163,
+            "pixelsWithAnyChannelChangeAbove32": 0.002013888888888889
+          },
+          {
+            "from": 100,
+            "to": 101,
+            "meanRGBByteChange": 0.3482200038580247,
+            "contentMeanRGBByteChange": 0.46429333847736626,
+            "borderMeanRGBByteChange": 0.19961649249732047,
+            "maxRGBByteChange": 165,
+            "pixelsWithAnyChannelChangeAbove32": 0.0017915702160493827
+          },
+          {
+            "from": 101,
+            "to": 102,
+            "meanRGBByteChange": 0.3900025720164609,
+            "contentMeanRGBByteChange": 0.5200034293552812,
+            "borderMeanRGBByteChange": 0.21930683949624866,
+            "maxRGBByteChange": 160,
+            "pixelsWithAnyChannelChangeAbove32": 0.0017182677469135803
+          },
+          {
+            "from": 102,
+            "to": 103,
+            "meanRGBByteChange": 0.36585101594650205,
+            "contentMeanRGBByteChange": 0.4878013545953361,
+            "borderMeanRGBByteChange": 0.2112515072347267,
+            "maxRGBByteChange": 156,
+            "pixelsWithAnyChannelChangeAbove32": 0.002195698302469136
+          },
+          {
+            "from": 103,
+            "to": 104,
+            "meanRGBByteChange": 0.4157952353395062,
+            "contentMeanRGBByteChange": 0.5543936471193416,
+            "borderMeanRGBByteChange": 0.2300835677920686,
+            "maxRGBByteChange": 166,
+            "pixelsWithAnyChannelChangeAbove32": 0.0024932484567901235
+          },
+          {
+            "from": 104,
+            "to": 105,
+            "meanRGBByteChange": 0.30483957047325105,
+            "contentMeanRGBByteChange": 0.4064527606310014,
+            "borderMeanRGBByteChange": 0.1756682073954984,
+            "maxRGBByteChange": 142,
+            "pixelsWithAnyChannelChangeAbove32": 0.0017004243827160495
+          },
+          {
+            "from": 105,
+            "to": 106,
+            "meanRGBByteChange": 0.3045376800411523,
+            "contentMeanRGBByteChange": 0.40605024005486967,
+            "borderMeanRGBByteChange": 0.1587578711146838,
+            "maxRGBByteChange": 149,
+            "pixelsWithAnyChannelChangeAbove32": 0.0021026234567901236
+          },
+          {
+            "from": 106,
+            "to": 107,
+            "meanRGBByteChange": 0.2989900012860082,
+            "contentMeanRGBByteChange": 0.398653335048011,
+            "borderMeanRGBByteChange": 0.17691586280814578,
+            "maxRGBByteChange": 138,
+            "pixelsWithAnyChannelChangeAbove32": 0.0019854359567901235
+          },
+          {
+            "from": 107,
+            "to": 108,
+            "meanRGBByteChange": 0.26831870498971194,
+            "contentMeanRGBByteChange": 0.3577582733196159,
+            "borderMeanRGBByteChange": 0.15038015809217578,
+            "maxRGBByteChange": 144,
+            "pixelsWithAnyChannelChangeAbove32": 0.001298707561728395
+          },
+          {
+            "from": 108,
+            "to": 109,
+            "meanRGBByteChange": 0.24007056970164609,
+            "contentMeanRGBByteChange": 0.3200940929355281,
+            "borderMeanRGBByteChange": 0.13951550777063237,
+            "maxRGBByteChange": 128,
+            "pixelsWithAnyChannelChangeAbove32": 0.0012065972222222222
+          },
+          {
+            "from": 109,
+            "to": 110,
+            "meanRGBByteChange": 0.22895109953703704,
+            "contentMeanRGBByteChange": 0.30526813271604936,
+            "borderMeanRGBByteChange": 0.12532656752411575,
+            "maxRGBByteChange": 118,
+            "pixelsWithAnyChannelChangeAbove32": 0.0011554783950617285
+          },
+          {
+            "from": 110,
+            "to": 111,
+            "meanRGBByteChange": 0.2077387152777778,
+            "contentMeanRGBByteChange": 0.2769849537037037,
+            "borderMeanRGBByteChange": 0.11385064978563773,
+            "maxRGBByteChange": 113,
+            "pixelsWithAnyChannelChangeAbove32": 0.0012056327160493826
+          },
+          {
+            "from": 111,
+            "to": 112,
+            "meanRGBByteChange": 0.16850646219135804,
+            "contentMeanRGBByteChange": 0.2246752829218107,
+            "borderMeanRGBByteChange": 0.09712871784565916,
+            "maxRGBByteChange": 97,
+            "pixelsWithAnyChannelChangeAbove32": 0.001064332561728395
+          },
+          {
+            "from": 112,
+            "to": 113,
+            "meanRGBByteChange": 0.1599922839506173,
+            "contentMeanRGBByteChange": 0.2133230452674897,
+            "borderMeanRGBByteChange": 0.08478614013933548,
+            "maxRGBByteChange": 103,
+            "pixelsWithAnyChannelChangeAbove32": 0.000747974537037037
+          },
+          {
+            "from": 113,
+            "to": 114,
+            "meanRGBByteChange": 0.2686823238168724,
+            "contentMeanRGBByteChange": 0.3582430984224966,
+            "borderMeanRGBByteChange": 0.1571836481779207,
+            "maxRGBByteChange": 168,
+            "pixelsWithAnyChannelChangeAbove32": 0.0017650462962962962
+          },
+          {
+            "from": 114,
+            "to": 115,
+            "meanRGBByteChange": 0.11517312885802469,
+            "contentMeanRGBByteChange": 0.1535641718106996,
+            "borderMeanRGBByteChange": 0.061662647374062164,
+            "maxRGBByteChange": 85,
+            "pixelsWithAnyChannelChangeAbove32": 0.00047453703703703704
+          },
+          {
+            "from": 115,
+            "to": 116,
+            "meanRGBByteChange": 0.10400704089506173,
+            "contentMeanRGBByteChange": 0.13867605452674897,
+            "borderMeanRGBByteChange": 0.06005493033226152,
+            "maxRGBByteChange": 66,
+            "pixelsWithAnyChannelChangeAbove32": 0.00015432098765432098
+          },
+          {
+            "from": 116,
+            "to": 117,
+            "meanRGBByteChange": 0.08546778549382716,
+            "contentMeanRGBByteChange": 0.11395704732510288,
+            "borderMeanRGBByteChange": 0.048926513933547695,
+            "maxRGBByteChange": 60,
+            "pixelsWithAnyChannelChangeAbove32": 0.00018663194444444445
+          },
+          {
+            "from": 117,
+            "to": 118,
+            "meanRGBByteChange": 0.05126044881687243,
+            "contentMeanRGBByteChange": 0.06834726508916324,
+            "borderMeanRGBByteChange": 0.03145933815648446,
+            "maxRGBByteChange": 51,
+            "pixelsWithAnyChannelChangeAbove32": 6.799768518518518e-05
+          },
+          {
+            "from": 118,
+            "to": 119,
+            "meanRGBByteChange": 0.03087689686213992,
+            "contentMeanRGBByteChange": 0.041169195816186555,
+            "borderMeanRGBByteChange": 0.01785235798499464,
+            "maxRGBByteChange": 36,
+            "pixelsWithAnyChannelChangeAbove32": 4.822530864197531e-07
+          }
+        ]
+      },
+      "views": [
+        {
+          "view": "left",
+          "url": "assets/v09/media/views/01_ivory_facade/left.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 596139,
+          "rgbaSHA256": "72d5e28253275eda3d7d0a8ecfc937daf5172440adc4d91de0841e92e45dd7dc",
+          "pngSHA256": "b78876c8b3988440cac84541a0305aca9eaa177eddaec032781bc1b25c8630dc"
+        },
+        {
+          "view": "front",
+          "url": "assets/v09/media/views/01_ivory_facade/front.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 595099,
+          "rgbaSHA256": "c39a2036f854533d3c9a89059a956a681a627bfdbd8f459e683d312b7f8362ed",
+          "pngSHA256": "7a0c4985e66cf601a7bbba047000ca2c1e97aa83a3657455bfe59e350d8931ff"
+        },
+        {
+          "view": "right",
+          "url": "assets/v09/media/views/01_ivory_facade/right.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 594178,
+          "rgbaSHA256": "d44e90048de9410d68fb886d6f65c8134f29b56dface596bf9d736e1fc72e0fe",
+          "pngSHA256": "ae86e62612da41acd41a15685653babdb11b28473baebae92c95733272e100d8"
+        }
+      ]
+    },
+    {
+      "id": "04_cold_alpine",
+      "title": "冷色晨雾中的高山湖",
+      "sceneUrl": "assets/v09/generated/showcase-v1/04_cold_alpine.scene.json",
+      "sceneSHA256": "cc53ca1cdd729e43aa477a9eb5366a2cc9ebcba03e776b859c303cfa79871f6a",
+      "sourceGenerationStatus": "review_required",
+      "sourceGenerationQualityGate": "not_evaluated",
+      "videoUrl": "assets/v09/media/04_cold_alpine.mp4",
+      "formatVerified": true,
+      "allEncodedFramesDecoded": true,
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "iec61966-2-1",
+            "color_primaries": "bt709",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "duration": "5.000000",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000",
+          "size": "563171"
+        }
+      },
+      "colorTags": {
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "iec61966-2-1",
+        "color_primaries": "bt709"
+      },
+      "firstFrameCodecFidelity": {
+        "scope": "Lossy H.264 first decoded frame versus the exact native source frame, only inside the content viewport; black padding excluded.",
+        "viewport": {
+          "fit": "contain",
+          "x": 240,
+          "y": 0,
+          "width": 1440,
+          "height": 1080,
+          "containerWidth": 1920,
+          "containerHeight": 1080,
+          "paddingRGBA": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeAspectPreserved": true,
+          "resampledContent": false
+        },
+        "meanAbsoluteRGBByteError": 1.475145936012268,
+        "rootMeanSquareRGBByteError": 1.9594535827636719,
+        "meanSignedRGBByteError": [
+          -1.025554895401001,
+          -1.437650442123413,
+          -1.0339378118515015
+        ],
+        "maxAbsoluteRGBByteError": 40,
+        "linearFitDecodedFromSource": {
+          "slope": 0.9980875366753803,
+          "intercept": -0.9314163108153224
+        },
+        "sourceRGBAHash": "e2f73aec8a88aacbf480b01911f90e56fa336f1d8e216687b38007f399a9dd88",
+        "newVisualQualityGateInvented": false,
+        "physicalOrPhotorealismClaim": false
+      },
+      "bytes": 563171,
+      "sha256": "18a9fab29350eb1cdea498b823cd586993fb5070b131891b3c0cbb1378475d02",
+      "encoding": {
+        "codec": "libx264",
+        "preset": "medium",
+        "crf": 21,
+        "maxrate": "4M",
+        "bufsize": "8M",
+        "pixelFormat": "yuv420p",
+        "colorConversion": "Full-range gamma-encoded sRGB → BT.709 YCbCr limited range; sRGB transfer retained and tagged. Frame-level setparams metadata is set after conversion as well as encoder flags.",
+        "filterDocumentation": "https://ffmpeg.org/ffmpeg-filters.html#setparams",
+        "lossless": false
+      },
+      "sourceFrameCount": 120,
+      "sourceFramesAllDecoded": true,
+      "viewport": {
+        "fit": "contain",
+        "x": 240,
+        "y": 0,
+        "width": 1440,
+        "height": 1080,
+        "containerWidth": 1920,
+        "containerHeight": 1080,
+        "paddingRGBA": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      "allSourceFramePaddingVerifiedOpaqueBlack": true,
+      "allFramesPreserveNativeAspectRatio": true,
+      "trajectoryAllFramesMatched": true,
+      "allFramePNGAndRGBAHashesVerified": true,
+      "uniqueSourceFrameHashes": 120,
+      "trajectoryFirstCamera": {
+        "panX": 0,
+        "panY": 0,
+        "zoom": 1
+      },
+      "trajectoryLastCamera": {
+        "panX": 0.05598839814814815,
+        "panY": -0.007998342592592593,
+        "zoom": 1.0649865335648148
+      },
+      "lastFrameTime": 4.958333333333333,
+      "sourceFrameRGBAHashes": [
+        "e2f73aec8a88aacbf480b01911f90e56fa336f1d8e216687b38007f399a9dd88",
+        "7e66d088dadf8f5d1d71ee543a8966d5ca409a4504fb5b9622bbe785b0f2a418",
+        "5afe0e3be925bb0f039bb447f0b7023c16f3a70f40ef15761fa16c5aa9620b87",
+        "9741b772a0d6691498e718f0a0eadc3a8c723c1932905da7f527bf170305cb73",
+        "e3a8e004dd75c70c4056df189339d09e0f96b0fca26903f64305cdac1468293b",
+        "5f7c4f8ad0080833dd9f2b42b7a178d9c4dc430fe4e43ba852cf03677d873e7c",
+        "01fdc6281c91fba3a6c190a5b09280f3b1653da9d8d69599ab190118f8960b0a",
+        "56c6dada5eee736e1fee9de26a8a5fd6d9f867204dc9f403af00b43a1bb8cf42",
+        "26c27afe381fa38038b5d1b6abedc1b05403577c76734025a0efb22803e0598d",
+        "b70f8ef65aa3dcac91e8cb3f6af640399ce94e71c5d4ea4423099efb4e279c40",
+        "d26ef9852d070128a7e58ae89ce0ec3370b65b1e33c31edf9833209b91e3e76d",
+        "e8d51fdb6fa166ff91a176dacd448a350ebf26f677a5e630b08a6504e7e93bb9",
+        "187c8cb85a8648fcda04443857afceaa0b252c814f12fa54f84e363d60fe45fd",
+        "f90935b28d6a852a092c6efb70209b29d979b5c47fa84cb8aa1af8730424487a",
+        "1ddd9d249a7e46823d81d1da9c328a1f70ee6d072c0617e9350bf7a8c4f518ea",
+        "8b84445ad7ac25e184dcaa710557625f9970388ebf72682d943d374494f7247c",
+        "24eded615ed2f94025d4c82d3c698148d200f4fb741127504070497d23c6ddfd",
+        "761dd6d14d094bbc55650ab86a5ba085bebc3ebd9e8d0100ea08bef83a052b6e",
+        "54e4e250e305fcfd12da9c210f11b9aa0acdbe6631f02c561e0622ba2c01079a",
+        "4d20f41713f4eab58c66c2835be7e963fc150c77987cac3d4b362d133b837852",
+        "93b8602742b1ddc5f2845f80c802a4d36ee439d293b029152c3a936daa3de763",
+        "2db2185bef6926a6ca54d94ed4708f626c39355817c071460c01cef051072ea9",
+        "ef582886e11a03885f4a3d1ce6cf330d16979a9cfc7e1479e50fad15c293d25b",
+        "17dde9b47e8a760948a827353e3b69b02bf3bf3ea6e100cf61644c25cfa37ed0",
+        "6d54009ade5fdb8d6e04ec8242437709f4621e7c7e14115144ca787b10b06e5e",
+        "e920dd6b42cc2f58512aa0da4af35cff1f9ee1cdf8a1233b2bc8594f08db0568",
+        "bfeb9b46050f629ea734e5b226b48e1c50e532923d1305bd5f0b6e56d68ed559",
+        "de630fbe0fd863692cc8484a921e17a1db1d3dcab084aaa3a3fb8dd00b475ea1",
+        "e04b23256a0905497218cc5d3f9c3ac350e176c861618285157b398a569d01ec",
+        "6f6c9b2cac191b78843064107f024fef2fcce97e76128390bb44896a221174a2",
+        "352b3b0075f55f5a30617f6f64a512f90bdf05d9cfd3bb70b07bf940b9c331d1",
+        "846ec21c2e52895372b83b46f9ffcdb368af341f5b4cdd9e95b27485c7985c45",
+        "a338119a45dc1efc7af33d06c5b5c6190731584a0928305bcd6ece4c566a7be7",
+        "35f0b269f5c6156b346d505a00f9dd8c127ab1ebc1c370c885ca809aa1193949",
+        "72196fea4d3009571b66c1de402c11c8b4f9ceb5db176262528993525e138f05",
+        "c0d7d359a0d83f2c57e893ed007d19cf59c9b0d11641193668768f77a8eb9218",
+        "725475d45faae31d572cafc82e08b429d11dd1e816d7f80a3f849c0fbd0723e1",
+        "398bd0fe924b71f237e36c0638be671e9dea59c43280b1e6d9fff39aedc561f9",
+        "39bf640fb05059bdc41df53b6af032df9588cb26837aecebcdf23e90790b0641",
+        "b20b029fddd762045b061ca6b10febc9f3af13ec8a6df1cafcbeb199f87f3deb",
+        "0729f876e21abe8ff4ff0303dc6ed3739ecd3f182815a57b0d532d14bf0b1e71",
+        "069216b914d748cfa049b3d18f6d23604231d0865ef40ff11d9d9006e95a60db",
+        "015731b2dc14f03db7940dc347eee213960cb47a8fdafb31afcb31dba64c2d36",
+        "522cf1533af1dd914ac2e69ac3879ca214f9ceddd07463f6694e9406c754e5a3",
+        "fa0fd3dbd291193199b964d8b767f70edf4153519fe5a3424b31181acafe3734",
+        "f8bec929f37f6f7fe7874271d64a8da1d0214f317cd170c148bbde1c4f64ce5f",
+        "c4e1718a375d97f124d32931a4b5fe30b9c1963bb345e35282c96e732ed0617d",
+        "a423094fa64d23ee1c2fb563d802c2af119876b948e438d4241f2f2cda1e6909",
+        "a254da21e1504b93134776f8b31bd6426f6ff355e15de8d3e59d4477f1af5d10",
+        "77ce8d3ceecad1688406b8d8738089e867cfaf1c39a01c86a7f8c38df36fe10f",
+        "61efa5cb6c9c704d21736b03a1a9824ab0718ced18043736b3a4d5e47d3a73e6",
+        "69342de43bde7f7b39abc244591cd1c64d8d28b51dfc3f713e6c5698a5664984",
+        "0340914bbc7eee55b95655c78e2031368223ea2c710f7ee7723aa1521cf98b6f",
+        "746626fcfeb480b4542588afcf78df2428a219589491344eca5834a5208e22d1",
+        "cc3e9c220ad3156c497b0f7c05932e3858248bf8e55bbb03c43858b2f002cf48",
+        "0cc0529d31cefc818a3c0671510862232535ce74e518cb90f993f0fb420c3322",
+        "af0560cc427e4ff660b73df8a783183a0f29bf77fb8b9d07d8b16f067f40f83e",
+        "2bb620fa7f5b081fe5537c2d872cfac8de1f000286ed5a70468e55ba7fa56cd4",
+        "382077cc4dd40d7010e31b287b46783f628612f00516ada3256d683456fe87ce",
+        "4f8df21844a92c31b6db0b375dffead90e6d104b06a7f4a4105c71bb0a125d19",
+        "a806fe62eece7b23fcb800086cc3ca706a89e481581355c8f9f89eb05ce939c5",
+        "e72cbe46eec9306c181536fde0f7a29c914cfbb2890d70838653e74c9744e65d",
+        "c815fa86e87ffea5ab01b1398faed488aa16e55934b186d5b6fa833cd9821c81",
+        "64c4db6e2b7224e18fbfc7ecb041765833739963836a4f769016bc54460ab264",
+        "1ae635fe09307edf04e87dafe5f39f8131251ec97274dd8720939ab5f2f2bfa6",
+        "bef73a146ed2f0e977b1a50531a652feb482b7166c05abbb5400b17e3e00ddac",
+        "d1bf4a4d656b9298cf28ab4d7145ff5c437eae855a9db8491055e092470f9aa6",
+        "632493abaaaa877554260bec6d6103d02cf975450b0eae40efdeed7ddaa6118a",
+        "454718fb5b72745ee59ab8ae0a1357f99356879d76e1be5b4b58f72ae0022a08",
+        "31e2f5128e86de996e324a3b873d2cc700151fb9888663b628ba0eabe0bb8537",
+        "728e3b2db358d9ca75b8da5b71638dcb88768092c6b15f73306e3ebc04fc018a",
+        "c1202467c3839585a6411b856da56fff79c7915b00bbb72db487d25f68a6ae86",
+        "5a1efea613ec616cf3f6520337254e24e00dd74ba37c9f2c6ff96de7fef3be30",
+        "a9eb93ecfe62c0cd9e85921e011ec0b870fcdb62139a9ffb06c52d5ea14082c3",
+        "abd203d22ec8807e92aa8aef9290c833c090fd10f752e792296ff95203271b65",
+        "2dba35733fe4079e58240b14b1bf99ca2c4d15dd9457ee616fd63822183371d4",
+        "f5f667730b25a545941ab7e17d8c179729fd7daf5eb4110977c42b2bbab6bf2b",
+        "c6d7be0b1a5435a1e0ce0bb83bbff698f462960d2e38a9feda23fc9e1cc7f26f",
+        "214f3c92d6f4e194b3d53e5c9af61cffca97f3c2840750fe272b1cd531e65fe5",
+        "d63407c1e5e6f52d4eb556e3192a2f64f3ecb4b77cd42a26a1aab2c23d5abf8b",
+        "97ad8df96e0f3de4e19675022d157ccaf9d5423b6f90e2a01a9a52363dd22420",
+        "3836218d7e1c258a8627670fb3a43eb1227a951bbde7aac5b93c3296168afc20",
+        "218f7a51d3d652333cc1c48ca2da8b0710cd234200961d4af6f38d41280daa44",
+        "98e67d3aeebce5552d4636867aaddb8225f8a870068e6c976018c816720a627e",
+        "807590cc6b2222e772f961105093b2e6e837c1339b91894558da1ca1267798b4",
+        "0fcd67446c76724fa044a55fabc1f0b19fcfd2a12bae83783e460baf6662806d",
+        "f7e7c3e418a29915e8d8ca1910a31b1c782e46fd1ea0dd83194e4a89269b523a",
+        "fdca2ec111879f76a357f934a9d36fb1134dca0081e90bc9788494f5f0016964",
+        "3ac8066a7403005a65d8618ad115064b9614906b541055430a6b32278072a22a",
+        "b672699c3d9fe65c389a81df30a8003805c6be43a3ffcf1f361b290d4bdda48d",
+        "9a0aa120d112d2afd4eb82f96a29cd14eb64de186b228273a6c97765c7e36dca",
+        "ca77b855ff44d79d807cf33d991fb636e10d47aeb3f175dd238c38d1f24d048b",
+        "e95863f9f37ddcb6357c0eb1c808eef94fe92c32f3ed9f04ba45cecade9f198b",
+        "8b821bb862f7d22385b874c77941b8435aeceab23a544d156b46f99da2fe24b1",
+        "b3663901f380f320d350aaef721bb3d6f35ca380799136b143a99b103e64bc39",
+        "402ee5c809aea629a204fd5b9993a31c7fef655fe193d434b130e019f3949ace",
+        "db83963b935f3d54a0bc75a11407082626817abefd476e7d6d8582f59223081f",
+        "655638ccd3fc4292aed34f91c03e927f07b3d11aafef62d5f8691d911fdfce66",
+        "d33d420261e2da6198268d10721e83bc0435c85dacb059de8c242114f28d7046",
+        "ba6931bc889d59d88653a4bcc21907d2b8747581f776ff876de8f5da6ec17687",
+        "91acdf8e718eb9825447f052b48da8b9cd28204b00f16c30a86cf37ce3b00489",
+        "8662c0318a494cfa631943faad92b432a1795ec59ae97ac82a43e51d1a07a1a4",
+        "cd6119720f68c2c5009685968a9639377bf65c83d0274f538cffac0dea0bf5d2",
+        "f4f3b096e97877cb0f543a6a2940c3e14544f0ef7ea4a90105175affc299b589",
+        "8810e6ca7708abb2e447eedca3bc31daf966c056cedb630f84c41f27160fb1f7",
+        "094185555ce213558e930b08190c403f711ceadd2a8866717af0b27ca10aad64",
+        "5a6c36f60e166f4e07d782d1bacc31a01545cb6114e62886fb7b92f29351d017",
+        "6c2d8dfdfd61f058d298bf2fbc9b20098b481e72141ab9cf7d9280e150abd060",
+        "0a2de8f065709d015a9456d12a51afafc54c17ba7222046b203a0d6f0d7231d2",
+        "22769cd62acd583400fdb3515b14b418c8fb69a8f1d0222fef0b9a386845ba14",
+        "a3b99d3fc26926c53d9f518bd75b8e485a6f1d1a0b6545f5afa332d2e2d9745a",
+        "4d8076b280c18f5bece618aa5eb1eb61dfa083509743467d3c950de4eb65dbe4",
+        "733dbb47a2b957a831c6bbb832fa90b7b513b67a14d05b449177fab9a5132bcc",
+        "ef159b234d75de258a75dc2a6b0e9c186bb8e6b6a214bb279d1650546b7babde",
+        "5d90d47e24a8bc774ebbb0998a01f5882329580857a8ea0dca690a56b3ca8c4b",
+        "91bed8efb3c3af91d20932ddcddb3e1289d8fa69b703fd3b48bc2851d02fff9d",
+        "e3b4a24b01112ce5a140845462b332f986092b420965cf6970670ec48c6c5eee",
+        "6820a8112bbdbee2ae97945f25c45f795597281d688a5f94dec74074a2a10ddd",
+        "fc45cac5e2d0f1dbf5230d7b36799bef3cf817281065fa5583eac99c9ea5eacb",
+        "b6158ebe21be804e58b13daa57c660a95a5b2f896f4454eb94218212335918f5"
+      ],
+      "temporalDiagnostic": {
+        "definition": "Absolute RGB byte differences between consecutive uncompressed rendered frames; contains intended camera motion, disocclusion and sampling changes. It is not a motion-compensated flicker score.",
+        "borderWidthPixels": 16,
+        "borderDomain": "Edge of the native content viewport, excluding black padding.",
+        "frameMeanChangeMedian": 0.14633664480452674,
+        "frameMeanChangeMax": 0.29737172067901235,
+        "borderMeanChangeMedian": 0.0642040125937835,
+        "borderMeanChangeMax": 0.0828853496784566,
+        "worstFramePair": {
+          "from": 71,
+          "to": 72,
+          "meanRGBByteChange": 0.29737172067901235,
+          "contentMeanRGBByteChange": 0.39649562757201645,
+          "borderMeanRGBByteChange": 0.07782355305466238,
+          "maxRGBByteChange": 106,
+          "pixelsWithAnyChannelChangeAbove32": 0.002119502314814815
+        },
+        "worstBorderPair": {
+          "from": 61,
+          "to": 62,
+          "meanRGBByteChange": 0.18020302854938272,
+          "contentMeanRGBByteChange": 0.24027070473251028,
+          "borderMeanRGBByteChange": 0.0828853496784566,
+          "maxRGBByteChange": 108,
+          "pixelsWithAnyChannelChangeAbove32": 0.00023485725308641976
+        },
+        "perPair": [
+          {
+            "from": 0,
+            "to": 1,
+            "meanRGBByteChange": 0.003171778549382716,
+            "contentMeanRGBByteChange": 0.004229038065843621,
+            "borderMeanRGBByteChange": 0.0016663317256162915,
+            "maxRGBByteChange": 5,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "meanRGBByteChange": 0.009403131430041152,
+            "contentMeanRGBByteChange": 0.012537508573388203,
+            "borderMeanRGBByteChange": 0.0049948084137191855,
+            "maxRGBByteChange": 12,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "meanRGBByteChange": 0.015297228652263375,
+            "contentMeanRGBByteChange": 0.0203963048696845,
+            "borderMeanRGBByteChange": 0.008331658628081457,
+            "maxRGBByteChange": 13,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "meanRGBByteChange": 0.0246606545781893,
+            "contentMeanRGBByteChange": 0.03288087277091907,
+            "borderMeanRGBByteChange": 0.011509411843515541,
+            "maxRGBByteChange": 73,
+            "pixelsWithAnyChannelChangeAbove32": 6.510416666666667e-05
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "meanRGBByteChange": 0.026867766203703704,
+            "contentMeanRGBByteChange": 0.03582368827160494,
+            "borderMeanRGBByteChange": 0.014565748928188639,
+            "maxRGBByteChange": 23,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "meanRGBByteChange": 0.03245338220164609,
+            "contentMeanRGBByteChange": 0.043271176268861455,
+            "borderMeanRGBByteChange": 0.017580218381564844,
+            "maxRGBByteChange": 33,
+            "pixelsWithAnyChannelChangeAbove32": 4.822530864197531e-07
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "meanRGBByteChange": 0.03812564300411523,
+            "contentMeanRGBByteChange": 0.05083419067215363,
+            "borderMeanRGBByteChange": 0.02039372320471597,
+            "maxRGBByteChange": 38,
+            "pixelsWithAnyChannelChangeAbove32": 2.8935185185185186e-05
+          },
+          {
+            "from": 7,
+            "to": 8,
+            "meanRGBByteChange": 0.04342608667695473,
+            "contentMeanRGBByteChange": 0.05790144890260631,
+            "borderMeanRGBByteChange": 0.02333701768488746,
+            "maxRGBByteChange": 34,
+            "pixelsWithAnyChannelChangeAbove32": 4.822530864197531e-07
+          },
+          {
+            "from": 8,
+            "to": 9,
+            "meanRGBByteChange": 0.04821084104938272,
+            "contentMeanRGBByteChange": 0.06428112139917695,
+            "borderMeanRGBByteChange": 0.02634311361200429,
+            "maxRGBByteChange": 30,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 9,
+            "to": 10,
+            "meanRGBByteChange": 0.05685844264403292,
+            "contentMeanRGBByteChange": 0.07581125685871057,
+            "borderMeanRGBByteChange": 0.02891797293676313,
+            "maxRGBByteChange": 71,
+            "pixelsWithAnyChannelChangeAbove32": 9.066358024691358e-05
+          },
+          {
+            "from": 10,
+            "to": 11,
+            "meanRGBByteChange": 0.05886300797325103,
+            "contentMeanRGBByteChange": 0.07848401063100137,
+            "borderMeanRGBByteChange": 0.031371416130760985,
+            "maxRGBByteChange": 53,
+            "pixelsWithAnyChannelChangeAbove32": 6.36574074074074e-05
+          },
+          {
+            "from": 11,
+            "to": 12,
+            "meanRGBByteChange": 0.06303112139917695,
+            "contentMeanRGBByteChange": 0.08404149519890261,
+            "borderMeanRGBByteChange": 0.033954648981779204,
+            "maxRGBByteChange": 44,
+            "pixelsWithAnyChannelChangeAbove32": 3.08641975308642e-05
+          },
+          {
+            "from": 12,
+            "to": 13,
+            "meanRGBByteChange": 0.06855324074074073,
+            "contentMeanRGBByteChange": 0.09140432098765432,
+            "borderMeanRGBByteChange": 0.03669279206859593,
+            "maxRGBByteChange": 63,
+            "pixelsWithAnyChannelChangeAbove32": 6.36574074074074e-05
+          },
+          {
+            "from": 13,
+            "to": 14,
+            "meanRGBByteChange": 0.07543434927983539,
+            "contentMeanRGBByteChange": 0.10057913237311386,
+            "borderMeanRGBByteChange": 0.03876523981779207,
+            "maxRGBByteChange": 66,
+            "pixelsWithAnyChannelChangeAbove32": 0.00012104552469135802
+          },
+          {
+            "from": 14,
+            "to": 15,
+            "meanRGBByteChange": 0.14092190715020575,
+            "contentMeanRGBByteChange": 0.18789587620027434,
+            "borderMeanRGBByteChange": 0.04140290058949625,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.0009471450617283951
+          },
+          {
+            "from": 15,
+            "to": 16,
+            "meanRGBByteChange": 0.08227848508230452,
+            "contentMeanRGBByteChange": 0.10970464677640604,
+            "borderMeanRGBByteChange": 0.04402800107181136,
+            "maxRGBByteChange": 49,
+            "pixelsWithAnyChannelChangeAbove32": 6.558641975308642e-05
+          },
+          {
+            "from": 16,
+            "to": 17,
+            "meanRGBByteChange": 0.09040428883744855,
+            "contentMeanRGBByteChange": 0.12053905178326475,
+            "borderMeanRGBByteChange": 0.045317524115755625,
+            "maxRGBByteChange": 73,
+            "pixelsWithAnyChannelChangeAbove32": 0.0001306905864197531
+          },
+          {
+            "from": 17,
+            "to": 18,
+            "meanRGBByteChange": 0.0907201646090535,
+            "contentMeanRGBByteChange": 0.120960219478738,
+            "borderMeanRGBByteChange": 0.04775003349410504,
+            "maxRGBByteChange": 66,
+            "pixelsWithAnyChannelChangeAbove32": 6.944444444444444e-05
+          },
+          {
+            "from": 18,
+            "to": 19,
+            "meanRGBByteChange": 0.09870643647119341,
+            "contentMeanRGBByteChange": 0.13160858196159123,
+            "borderMeanRGBByteChange": 0.050241157556270094,
+            "maxRGBByteChange": 74,
+            "pixelsWithAnyChannelChangeAbove32": 0.00013020833333333333
+          },
+          {
+            "from": 19,
+            "to": 20,
+            "meanRGBByteChange": 0.09933786651234568,
+            "contentMeanRGBByteChange": 0.13245048868312756,
+            "borderMeanRGBByteChange": 0.0531802652733119,
+            "maxRGBByteChange": 83,
+            "pixelsWithAnyChannelChangeAbove32": 7.716049382716049e-05
+          },
+          {
+            "from": 20,
+            "to": 21,
+            "meanRGBByteChange": 0.10241608796296296,
+            "contentMeanRGBByteChange": 0.1365547839506173,
+            "borderMeanRGBByteChange": 0.05446141479099678,
+            "maxRGBByteChange": 57,
+            "pixelsWithAnyChannelChangeAbove32": 7.716049382716049e-05
+          },
+          {
+            "from": 21,
+            "to": 22,
+            "meanRGBByteChange": 0.11067756558641975,
+            "contentMeanRGBByteChange": 0.14757008744855968,
+            "borderMeanRGBByteChange": 0.05623660235798499,
+            "maxRGBByteChange": 88,
+            "pixelsWithAnyChannelChangeAbove32": 0.00015142746913580246
+          },
+          {
+            "from": 22,
+            "to": 23,
+            "meanRGBByteChange": 0.11102719907407407,
+            "contentMeanRGBByteChange": 0.14803626543209877,
+            "borderMeanRGBByteChange": 0.05728747990353698,
+            "maxRGBByteChange": 80,
+            "pixelsWithAnyChannelChangeAbove32": 8.198302469135803e-05
+          },
+          {
+            "from": 23,
+            "to": 24,
+            "meanRGBByteChange": 0.11757523148148148,
+            "contentMeanRGBByteChange": 0.15676697530864198,
+            "borderMeanRGBByteChange": 0.059841405412647375,
+            "maxRGBByteChange": 75,
+            "pixelsWithAnyChannelChangeAbove32": 0.00017119984567901236
+          },
+          {
+            "from": 24,
+            "to": 25,
+            "meanRGBByteChange": 0.11734487525720165,
+            "contentMeanRGBByteChange": 0.15645983367626887,
+            "borderMeanRGBByteChange": 0.06041499196141479,
+            "maxRGBByteChange": 71,
+            "pixelsWithAnyChannelChangeAbove32": 8.63233024691358e-05
+          },
+          {
+            "from": 25,
+            "to": 26,
+            "meanRGBByteChange": 0.12469151877572017,
+            "contentMeanRGBByteChange": 0.1662553583676269,
+            "borderMeanRGBByteChange": 0.062068763397642016,
+            "maxRGBByteChange": 93,
+            "pixelsWithAnyChannelChangeAbove32": 0.0001726466049382716
+          },
+          {
+            "from": 26,
+            "to": 27,
+            "meanRGBByteChange": 0.2589166988168724,
+            "contentMeanRGBByteChange": 0.34522226508916326,
+            "borderMeanRGBByteChange": 0.06245813236870311,
+            "maxRGBByteChange": 112,
+            "pixelsWithAnyChannelChangeAbove32": 0.0018050733024691358
+          },
+          {
+            "from": 27,
+            "to": 28,
+            "meanRGBByteChange": 0.2197874871399177,
+            "contentMeanRGBByteChange": 0.2930499828532236,
+            "borderMeanRGBByteChange": 0.06409934351554127,
+            "maxRGBByteChange": 109,
+            "pixelsWithAnyChannelChangeAbove32": 0.001478587962962963
+          },
+          {
+            "from": 28,
+            "to": 29,
+            "meanRGBByteChange": 0.136001478909465,
+            "contentMeanRGBByteChange": 0.18133530521262003,
+            "borderMeanRGBByteChange": 0.06588290460878886,
+            "maxRGBByteChange": 97,
+            "pixelsWithAnyChannelChangeAbove32": 0.00017843364197530864
+          },
+          {
+            "from": 29,
+            "to": 30,
+            "meanRGBByteChange": 0.13563400205761317,
+            "contentMeanRGBByteChange": 0.18084533607681755,
+            "borderMeanRGBByteChange": 0.06630576768488745,
+            "maxRGBByteChange": 83,
+            "pixelsWithAnyChannelChangeAbove32": 0.00010754243827160494
+          },
+          {
+            "from": 30,
+            "to": 31,
+            "meanRGBByteChange": 0.14151652520576133,
+            "contentMeanRGBByteChange": 0.18868870027434842,
+            "borderMeanRGBByteChange": 0.06767483922829581,
+            "maxRGBByteChange": 74,
+            "pixelsWithAnyChannelChangeAbove32": 0.00014274691358024693
+          },
+          {
+            "from": 31,
+            "to": 32,
+            "meanRGBByteChange": 0.14104713220164608,
+            "contentMeanRGBByteChange": 0.1880628429355281,
+            "borderMeanRGBByteChange": 0.06834890809217578,
+            "maxRGBByteChange": 91,
+            "pixelsWithAnyChannelChangeAbove32": 0.00013695987654320987
+          },
+          {
+            "from": 32,
+            "to": 33,
+            "meanRGBByteChange": 0.14633664480452674,
+            "contentMeanRGBByteChange": 0.19511552640603566,
+            "borderMeanRGBByteChange": 0.06926999598070739,
+            "maxRGBByteChange": 103,
+            "pixelsWithAnyChannelChangeAbove32": 0.00017505787037037037
+          },
+          {
+            "from": 33,
+            "to": 34,
+            "meanRGBByteChange": 0.14833060056584363,
+            "contentMeanRGBByteChange": 0.1977741340877915,
+            "borderMeanRGBByteChange": 0.07020364415862808,
+            "maxRGBByteChange": 100,
+            "pixelsWithAnyChannelChangeAbove32": 0.00015866126543209876
+          },
+          {
+            "from": 34,
+            "to": 35,
+            "meanRGBByteChange": 0.14907841435185185,
+            "contentMeanRGBByteChange": 0.19877121913580248,
+            "borderMeanRGBByteChange": 0.07213792872454448,
+            "maxRGBByteChange": 98,
+            "pixelsWithAnyChannelChangeAbove32": 0.00013937114197530863
+          },
+          {
+            "from": 35,
+            "to": 36,
+            "meanRGBByteChange": 0.15375626929012345,
+            "contentMeanRGBByteChange": 0.20500835905349793,
+            "borderMeanRGBByteChange": 0.07190765675241158,
+            "maxRGBByteChange": 98,
+            "pixelsWithAnyChannelChangeAbove32": 0.00017746913580246913
+          },
+          {
+            "from": 36,
+            "to": 37,
+            "meanRGBByteChange": 0.15307693544238682,
+            "contentMeanRGBByteChange": 0.20410258058984912,
+            "borderMeanRGBByteChange": 0.07309251071811361,
+            "maxRGBByteChange": 99,
+            "pixelsWithAnyChannelChangeAbove32": 0.00015335648148148148
+          },
+          {
+            "from": 37,
+            "to": 38,
+            "meanRGBByteChange": 0.16124356995884773,
+            "contentMeanRGBByteChange": 0.214991426611797,
+            "borderMeanRGBByteChange": 0.073908929528403,
+            "maxRGBByteChange": 100,
+            "pixelsWithAnyChannelChangeAbove32": 0.0001871141975308642
+          },
+          {
+            "from": 38,
+            "to": 39,
+            "meanRGBByteChange": 0.1604267939814815,
+            "contentMeanRGBByteChange": 0.21390239197530864,
+            "borderMeanRGBByteChange": 0.07528637459807073,
+            "maxRGBByteChange": 103,
+            "pixelsWithAnyChannelChangeAbove32": 0.00019290123456790122
+          },
+          {
+            "from": 39,
+            "to": 40,
+            "meanRGBByteChange": 0.25345759387860084,
+            "contentMeanRGBByteChange": 0.3379434585048011,
+            "borderMeanRGBByteChange": 0.07506028938906753,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.0015461033950617284
+          },
+          {
+            "from": 40,
+            "to": 41,
+            "meanRGBByteChange": 0.15673514660493826,
+            "contentMeanRGBByteChange": 0.20898019547325103,
+            "borderMeanRGBByteChange": 0.07616978161843516,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.0001470871913580247
+          },
+          {
+            "from": 41,
+            "to": 42,
+            "meanRGBByteChange": 0.1610373263888889,
+            "contentMeanRGBByteChange": 0.21471643518518518,
+            "borderMeanRGBByteChange": 0.07714948419078242,
+            "maxRGBByteChange": 95,
+            "pixelsWithAnyChannelChangeAbove32": 0.00019193672839506174
+          },
+          {
+            "from": 42,
+            "to": 43,
+            "meanRGBByteChange": 0.16302195859053498,
+            "contentMeanRGBByteChange": 0.21736261145404664,
+            "borderMeanRGBByteChange": 0.0778905412647374,
+            "maxRGBByteChange": 104,
+            "pixelsWithAnyChannelChangeAbove32": 0.00020013503086419753
+          },
+          {
+            "from": 43,
+            "to": 44,
+            "meanRGBByteChange": 0.16144949202674896,
+            "contentMeanRGBByteChange": 0.21526598936899863,
+            "borderMeanRGBByteChange": 0.07805382502679528,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.00015914351851851853
+          },
+          {
+            "from": 44,
+            "to": 45,
+            "meanRGBByteChange": 0.1657441165123457,
+            "contentMeanRGBByteChange": 0.22099215534979424,
+            "borderMeanRGBByteChange": 0.07886605707395498,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.00020399305555555557
+          },
+          {
+            "from": 45,
+            "to": 46,
+            "meanRGBByteChange": 0.16705922067901235,
+            "contentMeanRGBByteChange": 0.22274562757201646,
+            "borderMeanRGBByteChange": 0.0792093716505895,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.00020929783950617283
+          },
+          {
+            "from": 46,
+            "to": 47,
+            "meanRGBByteChange": 0.16871961805555555,
+            "contentMeanRGBByteChange": 0.22495949074074073,
+            "borderMeanRGBByteChange": 0.07922611870310825,
+            "maxRGBByteChange": 94,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002126736111111111
+          },
+          {
+            "from": 47,
+            "to": 48,
+            "meanRGBByteChange": 0.16636638374485596,
+            "contentMeanRGBByteChange": 0.22182184499314128,
+            "borderMeanRGBByteChange": 0.07999229635584137,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.00016348379629629628
+          },
+          {
+            "from": 48,
+            "to": 49,
+            "meanRGBByteChange": 0.17085101594650207,
+            "contentMeanRGBByteChange": 0.22780135459533607,
+            "borderMeanRGBByteChange": 0.0814492899249732,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.00021701388888888888
+          },
+          {
+            "from": 49,
+            "to": 50,
+            "meanRGBByteChange": 0.17194476594650207,
+            "contentMeanRGBByteChange": 0.2292596879286694,
+            "borderMeanRGBByteChange": 0.08032305064308681,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002160493827160494
+          },
+          {
+            "from": 50,
+            "to": 51,
+            "meanRGBByteChange": 0.2089401684670782,
+            "contentMeanRGBByteChange": 0.2785868912894376,
+            "borderMeanRGBByteChange": 0.08053238879957128,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008912037037037037
+          },
+          {
+            "from": 51,
+            "to": 52,
+            "meanRGBByteChange": 0.1712673611111111,
+            "contentMeanRGBByteChange": 0.2283564814814815,
+            "borderMeanRGBByteChange": 0.08129856645230439,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.0001615547839506173
+          },
+          {
+            "from": 52,
+            "to": 53,
+            "meanRGBByteChange": 0.17470164609053498,
+            "contentMeanRGBByteChange": 0.2329355281207133,
+            "borderMeanRGBByteChange": 0.08095525187566988,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002199074074074074
+          },
+          {
+            "from": 53,
+            "to": 54,
+            "meanRGBByteChange": 0.2796875,
+            "contentMeanRGBByteChange": 0.3729166666666667,
+            "borderMeanRGBByteChange": 0.08203125,
+            "maxRGBByteChange": 117,
+            "pixelsWithAnyChannelChangeAbove32": 0.0018277391975308642
+          },
+          {
+            "from": 54,
+            "to": 55,
+            "meanRGBByteChange": 0.17736512988683129,
+            "contentMeanRGBByteChange": 0.23648683984910837,
+            "borderMeanRGBByteChange": 0.08183028536977492,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.00023871527777777777
+          },
+          {
+            "from": 55,
+            "to": 56,
+            "meanRGBByteChange": 0.17632507073045267,
+            "contentMeanRGBByteChange": 0.23510009430727025,
+            "borderMeanRGBByteChange": 0.08082546221864952,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.00021797839506172839
+          },
+          {
+            "from": 56,
+            "to": 57,
+            "meanRGBByteChange": 0.17878456147119343,
+            "contentMeanRGBByteChange": 0.23837941529492454,
+            "borderMeanRGBByteChange": 0.08221546757770633,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.00024209104938271604
+          },
+          {
+            "from": 57,
+            "to": 58,
+            "meanRGBByteChange": 0.18015335648148148,
+            "contentMeanRGBByteChange": 0.24020447530864197,
+            "borderMeanRGBByteChange": 0.0812190179528403,
+            "maxRGBByteChange": 103,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002560763888888889
+          },
+          {
+            "from": 58,
+            "to": 59,
+            "meanRGBByteChange": 0.18025929140946503,
+            "contentMeanRGBByteChange": 0.24034572187928668,
+            "borderMeanRGBByteChange": 0.08208149115755627,
+            "maxRGBByteChange": 91,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002565586419753086
+          },
+          {
+            "from": 59,
+            "to": 60,
+            "meanRGBByteChange": 0.2148169045781893,
+            "contentMeanRGBByteChange": 0.2864225394375857,
+            "borderMeanRGBByteChange": 0.0823033896034298,
+            "maxRGBByteChange": 105,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008352623456790124
+          },
+          {
+            "from": 60,
+            "to": 61,
+            "meanRGBByteChange": 0.17764837319958848,
+            "contentMeanRGBByteChange": 0.2368644975994513,
+            "borderMeanRGBByteChange": 0.08190564710610933,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.00019290123456790122
+          },
+          {
+            "from": 61,
+            "to": 62,
+            "meanRGBByteChange": 0.18020302854938272,
+            "contentMeanRGBByteChange": 0.24027070473251028,
+            "borderMeanRGBByteChange": 0.0828853496784566,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.00023485725308641976
+          },
+          {
+            "from": 62,
+            "to": 63,
+            "meanRGBByteChange": 0.1790948109567901,
+            "contentMeanRGBByteChange": 0.23879308127572016,
+            "borderMeanRGBByteChange": 0.0817591103965702,
+            "maxRGBByteChange": 103,
+            "pixelsWithAnyChannelChangeAbove32": 0.00024498456790123457
+          },
+          {
+            "from": 63,
+            "to": 64,
+            "meanRGBByteChange": 0.1792480066872428,
+            "contentMeanRGBByteChange": 0.23899734224965707,
+            "borderMeanRGBByteChange": 0.08093850482315113,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002662037037037037
+          },
+          {
+            "from": 64,
+            "to": 65,
+            "meanRGBByteChange": 0.18002491640946502,
+            "contentMeanRGBByteChange": 0.2400332218792867,
+            "borderMeanRGBByteChange": 0.08255878215434084,
+            "maxRGBByteChange": 100,
+            "pixelsWithAnyChannelChangeAbove32": 0.00024546682098765434
+          },
+          {
+            "from": 65,
+            "to": 66,
+            "meanRGBByteChange": 0.1767357896090535,
+            "contentMeanRGBByteChange": 0.235647719478738,
+            "borderMeanRGBByteChange": 0.08068729903536978,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.00020399305555555557
+          },
+          {
+            "from": 66,
+            "to": 67,
+            "meanRGBByteChange": 0.1795119598765432,
+            "contentMeanRGBByteChange": 0.23934927983539095,
+            "borderMeanRGBByteChange": 0.08069567256162916,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.00023823302469135803
+          },
+          {
+            "from": 67,
+            "to": 68,
+            "meanRGBByteChange": 0.1781864068930041,
+            "contentMeanRGBByteChange": 0.2375818758573388,
+            "borderMeanRGBByteChange": 0.08117296355841372,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.00023919753086419754
+          },
+          {
+            "from": 68,
+            "to": 69,
+            "meanRGBByteChange": 0.17719376929012345,
+            "contentMeanRGBByteChange": 0.23625835905349793,
+            "borderMeanRGBByteChange": 0.07879069533762058,
+            "maxRGBByteChange": 101,
+            "pixelsWithAnyChannelChangeAbove32": 0.00024787808641975307
+          },
+          {
+            "from": 69,
+            "to": 70,
+            "meanRGBByteChange": 0.17576453189300412,
+            "contentMeanRGBByteChange": 0.23435270919067216,
+            "borderMeanRGBByteChange": 0.0797913317256163,
+            "maxRGBByteChange": 93,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002044753086419753
+          },
+          {
+            "from": 70,
+            "to": 71,
+            "meanRGBByteChange": 0.2465457818930041,
+            "contentMeanRGBByteChange": 0.3287277091906722,
+            "borderMeanRGBByteChange": 0.07784030010718114,
+            "maxRGBByteChange": 109,
+            "pixelsWithAnyChannelChangeAbove32": 0.001328125
+          },
+          {
+            "from": 71,
+            "to": 72,
+            "meanRGBByteChange": 0.29737172067901235,
+            "contentMeanRGBByteChange": 0.39649562757201645,
+            "borderMeanRGBByteChange": 0.07782355305466238,
+            "maxRGBByteChange": 106,
+            "pixelsWithAnyChannelChangeAbove32": 0.002119502314814815
+          },
+          {
+            "from": 72,
+            "to": 73,
+            "meanRGBByteChange": 0.17604134516460906,
+            "contentMeanRGBByteChange": 0.23472179355281206,
+            "borderMeanRGBByteChange": 0.07641680064308681,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002189429012345679
+          },
+          {
+            "from": 73,
+            "to": 74,
+            "meanRGBByteChange": 0.1719748263888889,
+            "contentMeanRGBByteChange": 0.22929976851851852,
+            "borderMeanRGBByteChange": 0.07695270632368703,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.0001779513888888889
+          },
+          {
+            "from": 74,
+            "to": 75,
+            "meanRGBByteChange": 0.17348090277777778,
+            "contentMeanRGBByteChange": 0.23130787037037037,
+            "borderMeanRGBByteChange": 0.07717879153269025,
+            "maxRGBByteChange": 100,
+            "pixelsWithAnyChannelChangeAbove32": 0.00023775077160493826
+          },
+          {
+            "from": 75,
+            "to": 76,
+            "meanRGBByteChange": 0.17199074074074075,
+            "contentMeanRGBByteChange": 0.229320987654321,
+            "borderMeanRGBByteChange": 0.07571342443729903,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002416087962962963
+          },
+          {
+            "from": 76,
+            "to": 77,
+            "meanRGBByteChange": 0.17049286265432098,
+            "contentMeanRGBByteChange": 0.22732381687242798,
+            "borderMeanRGBByteChange": 0.07476721596998928,
+            "maxRGBByteChange": 92,
+            "pixelsWithAnyChannelChangeAbove32": 0.00022955246913580247
+          },
+          {
+            "from": 77,
+            "to": 78,
+            "meanRGBByteChange": 0.16664367926954732,
+            "contentMeanRGBByteChange": 0.22219157235939643,
+            "borderMeanRGBByteChange": 0.0758474008574491,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.00017746913580246913
+          },
+          {
+            "from": 78,
+            "to": 79,
+            "meanRGBByteChange": 0.167099408436214,
+            "contentMeanRGBByteChange": 0.22279921124828533,
+            "borderMeanRGBByteChange": 0.07450763665594855,
+            "maxRGBByteChange": 101,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002271412037037037
+          },
+          {
+            "from": 79,
+            "to": 80,
+            "meanRGBByteChange": 0.16581002443415638,
+            "contentMeanRGBByteChange": 0.22108003257887518,
+            "borderMeanRGBByteChange": 0.07273244908896034,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.00022135416666666666
+          },
+          {
+            "from": 80,
+            "to": 81,
+            "meanRGBByteChange": 0.16805941358024692,
+            "contentMeanRGBByteChange": 0.22407921810699588,
+            "borderMeanRGBByteChange": 0.0722886521972133,
+            "maxRGBByteChange": 105,
+            "pixelsWithAnyChannelChangeAbove32": 0.00029369212962962964
+          },
+          {
+            "from": 81,
+            "to": 82,
+            "meanRGBByteChange": 0.1619405864197531,
+            "contentMeanRGBByteChange": 0.21592078189300412,
+            "borderMeanRGBByteChange": 0.07100331591639872,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.00019483024691358024
+          },
+          {
+            "from": 82,
+            "to": 83,
+            "meanRGBByteChange": 0.1605537872942387,
+            "contentMeanRGBByteChange": 0.21407171639231826,
+            "borderMeanRGBByteChange": 0.07010316184351555,
+            "maxRGBByteChange": 104,
+            "pixelsWithAnyChannelChangeAbove32": 0.00018759645061728396
+          },
+          {
+            "from": 83,
+            "to": 84,
+            "meanRGBByteChange": 0.15624164094650206,
+            "contentMeanRGBByteChange": 0.2083221879286694,
+            "borderMeanRGBByteChange": 0.07002780010718114,
+            "maxRGBByteChange": 98,
+            "pixelsWithAnyChannelChangeAbove32": 0.00013310185185185186
+          },
+          {
+            "from": 84,
+            "to": 85,
+            "meanRGBByteChange": 0.1557053755144033,
+            "contentMeanRGBByteChange": 0.20760716735253773,
+            "borderMeanRGBByteChange": 0.06723941586280814,
+            "maxRGBByteChange": 96,
+            "pixelsWithAnyChannelChangeAbove32": 0.0001808449074074074
+          },
+          {
+            "from": 85,
+            "to": 86,
+            "meanRGBByteChange": 0.15341129758230454,
+            "contentMeanRGBByteChange": 0.20454839677640604,
+            "borderMeanRGBByteChange": 0.06770833333333333,
+            "maxRGBByteChange": 97,
+            "pixelsWithAnyChannelChangeAbove32": 0.00016830632716049383
+          },
+          {
+            "from": 86,
+            "to": 87,
+            "meanRGBByteChange": 0.24763326260288065,
+            "contentMeanRGBByteChange": 0.3301776834705075,
+            "borderMeanRGBByteChange": 0.06664908226152197,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.0017414158950617284
+          },
+          {
+            "from": 87,
+            "to": 88,
+            "meanRGBByteChange": 0.14778533307613168,
+            "contentMeanRGBByteChange": 0.19704711076817558,
+            "borderMeanRGBByteChange": 0.0642040125937835,
+            "maxRGBByteChange": 100,
+            "pixelsWithAnyChannelChangeAbove32": 0.00015769675925925925
+          },
+          {
+            "from": 88,
+            "to": 89,
+            "meanRGBByteChange": 0.14514724794238684,
+            "contentMeanRGBByteChange": 0.19352966392318244,
+            "borderMeanRGBByteChange": 0.0625376808681672,
+            "maxRGBByteChange": 95,
+            "pixelsWithAnyChannelChangeAbove32": 0.00015190972222222222
+          },
+          {
+            "from": 89,
+            "to": 90,
+            "meanRGBByteChange": 0.14163162294238682,
+            "contentMeanRGBByteChange": 0.18884216392318245,
+            "borderMeanRGBByteChange": 0.061507737138263664,
+            "maxRGBByteChange": 88,
+            "pixelsWithAnyChannelChangeAbove32": 0.00014564043209876543
+          },
+          {
+            "from": 90,
+            "to": 91,
+            "meanRGBByteChange": 0.13969135802469135,
+            "contentMeanRGBByteChange": 0.18625514403292182,
+            "borderMeanRGBByteChange": 0.06107650053590568,
+            "maxRGBByteChange": 80,
+            "pixelsWithAnyChannelChangeAbove32": 0.0001625192901234568
+          },
+          {
+            "from": 91,
+            "to": 92,
+            "meanRGBByteChange": 0.13519338348765433,
+            "contentMeanRGBByteChange": 0.18025784465020575,
+            "borderMeanRGBByteChange": 0.05920501741693462,
+            "maxRGBByteChange": 76,
+            "pixelsWithAnyChannelChangeAbove32": 0.00011574074074074075
+          },
+          {
+            "from": 92,
+            "to": 93,
+            "meanRGBByteChange": 0.13339554398148148,
+            "contentMeanRGBByteChange": 0.17786072530864197,
+            "borderMeanRGBByteChange": 0.05810389871382637,
+            "maxRGBByteChange": 84,
+            "pixelsWithAnyChannelChangeAbove32": 0.00014660493827160494
+          },
+          {
+            "from": 93,
+            "to": 94,
+            "meanRGBByteChange": 0.12997026105967077,
+            "contentMeanRGBByteChange": 0.17329368141289436,
+            "borderMeanRGBByteChange": 0.05701534030010718,
+            "maxRGBByteChange": 89,
+            "pixelsWithAnyChannelChangeAbove32": 0.00010223765432098765
+          },
+          {
+            "from": 94,
+            "to": 95,
+            "meanRGBByteChange": 0.17430989583333334,
+            "contentMeanRGBByteChange": 0.23241319444444444,
+            "borderMeanRGBByteChange": 0.054909398445873524,
+            "maxRGBByteChange": 83,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008940972222222222
+          },
+          {
+            "from": 95,
+            "to": 96,
+            "meanRGBByteChange": 0.12325360082304526,
+            "contentMeanRGBByteChange": 0.16433813443072703,
+            "borderMeanRGBByteChange": 0.052112640675241156,
+            "maxRGBByteChange": 87,
+            "pixelsWithAnyChannelChangeAbove32": 9.45216049382716e-05
+          },
+          {
+            "from": 96,
+            "to": 97,
+            "meanRGBByteChange": 0.12036168981481482,
+            "contentMeanRGBByteChange": 0.16048225308641975,
+            "borderMeanRGBByteChange": 0.05139251741693462,
+            "maxRGBByteChange": 76,
+            "pixelsWithAnyChannelChangeAbove32": 9.645061728395061e-05
+          },
+          {
+            "from": 97,
+            "to": 98,
+            "meanRGBByteChange": 0.11656217849794238,
+            "contentMeanRGBByteChange": 0.1554162379972565,
+            "borderMeanRGBByteChange": 0.04976386655948553,
+            "maxRGBByteChange": 85,
+            "pixelsWithAnyChannelChangeAbove32": 0.00011863425925925926
+          },
+          {
+            "from": 98,
+            "to": 99,
+            "meanRGBByteChange": 0.11309960133744856,
+            "contentMeanRGBByteChange": 0.15079946844993142,
+            "borderMeanRGBByteChange": 0.048520397909967844,
+            "maxRGBByteChange": 68,
+            "pixelsWithAnyChannelChangeAbove32": 8.825231481481481e-05
+          },
+          {
+            "from": 99,
+            "to": 100,
+            "meanRGBByteChange": 0.10858587319958848,
+            "contentMeanRGBByteChange": 0.14478116426611798,
+            "borderMeanRGBByteChange": 0.045694332797427656,
+            "maxRGBByteChange": 76,
+            "pixelsWithAnyChannelChangeAbove32": 7.571373456790123e-05
+          },
+          {
+            "from": 100,
+            "to": 101,
+            "meanRGBByteChange": 0.10514837319958847,
+            "contentMeanRGBByteChange": 0.14019783093278462,
+            "borderMeanRGBByteChange": 0.04422059217577706,
+            "maxRGBByteChange": 73,
+            "pixelsWithAnyChannelChangeAbove32": 7.619598765432098e-05
+          },
+          {
+            "from": 101,
+            "to": 102,
+            "meanRGBByteChange": 0.09984230324074074,
+            "contentMeanRGBByteChange": 0.13312307098765433,
+            "borderMeanRGBByteChange": 0.04301899115755627,
+            "maxRGBByteChange": 59,
+            "pixelsWithAnyChannelChangeAbove32": 7.18557098765432e-05
+          },
+          {
+            "from": 102,
+            "to": 103,
+            "meanRGBByteChange": 0.09682179140946502,
+            "contentMeanRGBByteChange": 0.1290957218792867,
+            "borderMeanRGBByteChange": 0.041005158092175774,
+            "maxRGBByteChange": 65,
+            "pixelsWithAnyChannelChangeAbove32": 7.18557098765432e-05
+          },
+          {
+            "from": 103,
+            "to": 104,
+            "meanRGBByteChange": 0.09191084747942387,
+            "contentMeanRGBByteChange": 0.12254779663923182,
+            "borderMeanRGBByteChange": 0.03912111468381565,
+            "maxRGBByteChange": 71,
+            "pixelsWithAnyChannelChangeAbove32": 7.040895061728395e-05
+          },
+          {
+            "from": 104,
+            "to": 105,
+            "meanRGBByteChange": 0.08753054269547325,
+            "contentMeanRGBByteChange": 0.116707390260631,
+            "borderMeanRGBByteChange": 0.036856075830653805,
+            "maxRGBByteChange": 70,
+            "pixelsWithAnyChannelChangeAbove32": 6.36574074074074e-05
+          },
+          {
+            "from": 105,
+            "to": 106,
+            "meanRGBByteChange": 0.08265898276748972,
+            "contentMeanRGBByteChange": 0.11021197702331961,
+            "borderMeanRGBByteChange": 0.03453242229367631,
+            "maxRGBByteChange": 71,
+            "pixelsWithAnyChannelChangeAbove32": 3.472222222222222e-05
+          },
+          {
+            "from": 106,
+            "to": 107,
+            "meanRGBByteChange": 0.07735644933127572,
+            "contentMeanRGBByteChange": 0.10314193244170096,
+            "borderMeanRGBByteChange": 0.0330293743301179,
+            "maxRGBByteChange": 59,
+            "pixelsWithAnyChannelChangeAbove32": 6.124614197530864e-05
+          },
+          {
+            "from": 107,
+            "to": 108,
+            "meanRGBByteChange": 0.07261220421810699,
+            "contentMeanRGBByteChange": 0.09681627229080933,
+            "borderMeanRGBByteChange": 0.030567557609860664,
+            "maxRGBByteChange": 56,
+            "pixelsWithAnyChannelChangeAbove32": 3.6651234567901234e-05
+          },
+          {
+            "from": 108,
+            "to": 109,
+            "meanRGBByteChange": 0.06808384773662551,
+            "contentMeanRGBByteChange": 0.09077846364883402,
+            "borderMeanRGBByteChange": 0.02902264201500536,
+            "maxRGBByteChange": 58,
+            "pixelsWithAnyChannelChangeAbove32": 3.134645061728395e-05
+          },
+          {
+            "from": 109,
+            "to": 110,
+            "meanRGBByteChange": 0.06269868827160494,
+            "contentMeanRGBByteChange": 0.08359825102880658,
+            "borderMeanRGBByteChange": 0.026502210610932476,
+            "maxRGBByteChange": 37,
+            "pixelsWithAnyChannelChangeAbove32": 2.9417438271604938e-05
+          },
+          {
+            "from": 110,
+            "to": 111,
+            "meanRGBByteChange": 0.05758905606995885,
+            "contentMeanRGBByteChange": 0.07678540809327847,
+            "borderMeanRGBByteChange": 0.02438789523043944,
+            "maxRGBByteChange": 46,
+            "pixelsWithAnyChannelChangeAbove32": 2.9899691358024692e-05
+          },
+          {
+            "from": 111,
+            "to": 112,
+            "meanRGBByteChange": 0.2249778163580247,
+            "contentMeanRGBByteChange": 0.2999704218106996,
+            "borderMeanRGBByteChange": 0.02136505225080386,
+            "maxRGBByteChange": 110,
+            "pixelsWithAnyChannelChangeAbove32": 0.0022858796296296295
+          },
+          {
+            "from": 112,
+            "to": 113,
+            "meanRGBByteChange": 0.04652713477366255,
+            "contentMeanRGBByteChange": 0.06203617969821674,
+            "borderMeanRGBByteChange": 0.019409833869239015,
+            "maxRGBByteChange": 37,
+            "pixelsWithAnyChannelChangeAbove32": 4.822530864197531e-07
+          },
+          {
+            "from": 113,
+            "to": 114,
+            "meanRGBByteChange": 0.04113859953703704,
+            "contentMeanRGBByteChange": 0.054851466049382715,
+            "borderMeanRGBByteChange": 0.017102927384780277,
+            "maxRGBByteChange": 34,
+            "pixelsWithAnyChannelChangeAbove32": 2.218364197530864e-05
+          },
+          {
+            "from": 114,
+            "to": 115,
+            "meanRGBByteChange": 0.035266042952674895,
+            "contentMeanRGBByteChange": 0.047021390603566526,
+            "borderMeanRGBByteChange": 0.014528068060021436,
+            "maxRGBByteChange": 35,
+            "pixelsWithAnyChannelChangeAbove32": 4.822530864197531e-07
+          },
+          {
+            "from": 115,
+            "to": 116,
+            "meanRGBByteChange": 0.028976015946502058,
+            "contentMeanRGBByteChange": 0.03863468792866941,
+            "borderMeanRGBByteChange": 0.012053691050375135,
+            "maxRGBByteChange": 22,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 116,
+            "to": 117,
+            "meanRGBByteChange": 0.02262570730452675,
+            "contentMeanRGBByteChange": 0.030167609739368998,
+            "borderMeanRGBByteChange": 0.00932810825294748,
+            "maxRGBByteChange": 16,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 117,
+            "to": 118,
+            "meanRGBByteChange": 0.01639113940329218,
+            "contentMeanRGBByteChange": 0.02185485253772291,
+            "borderMeanRGBByteChange": 0.0065146034297963555,
+            "maxRGBByteChange": 12,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 118,
+            "to": 119,
+            "meanRGBByteChange": 0.010493666409465021,
+            "contentMeanRGBByteChange": 0.013991555212620027,
+            "borderMeanRGBByteChange": 0.004153269024651661,
+            "maxRGBByteChange": 49,
+            "pixelsWithAnyChannelChangeAbove32": 4.822530864197531e-06
+          }
+        ]
+      },
+      "views": [
+        {
+          "view": "left",
+          "url": "assets/v09/media/views/04_cold_alpine/left.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 656144,
+          "rgbaSHA256": "91e855ca915962f6e16e3aa194ffccb2cc7d879929340b8372b552037abdf564",
+          "pngSHA256": "09a7edda2b60471bf7f533344e781469b4c80765d66cc2b119571a95effdba66"
+        },
+        {
+          "view": "front",
+          "url": "assets/v09/media/views/04_cold_alpine/front.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 657754,
+          "rgbaSHA256": "dce75325bf8538ef6b13210b68ae3dd4062733ff0ffabbce1e2d4120b33b5fdd",
+          "pngSHA256": "87c4b83acac53b4f590dd9dd284fa2feb63ef1555e5e4ff51828d02201f41bf6"
+        },
+        {
+          "view": "right",
+          "url": "assets/v09/media/views/04_cold_alpine/right.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 658062,
+          "rgbaSHA256": "05d50597a8b690e5494b9e8fd07c1e14cf44494a8f7e794b813e2f2927354192",
+          "pngSHA256": "b4751fe6865cfce6eb9be695be8688eb53a7daff4db18d1a4e4a58e52a20d8c3"
+        }
+      ]
+    },
+    {
+      "id": "08_three_fruits",
+      "title": "自然窗光中的三种果物",
+      "sceneUrl": "assets/v09/generated/showcase-v1/08_three_fruits.scene.json",
+      "sceneSHA256": "5b67fd3a1e2608ec0e31aa67eaf12be465c4a81bdb281dc169717054142865c7",
+      "sourceGenerationStatus": "review_required",
+      "sourceGenerationQualityGate": "not_evaluated",
+      "videoUrl": "assets/v09/media/08_three_fruits.mp4",
+      "formatVerified": true,
+      "allEncodedFramesDecoded": true,
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "iec61966-2-1",
+            "color_primaries": "bt709",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "duration": "5.000000",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000",
+          "size": "454169"
+        }
+      },
+      "colorTags": {
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "iec61966-2-1",
+        "color_primaries": "bt709"
+      },
+      "firstFrameCodecFidelity": {
+        "scope": "Lossy H.264 first decoded frame versus the exact native source frame, only inside the content viewport; black padding excluded.",
+        "viewport": {
+          "fit": "contain",
+          "x": 240,
+          "y": 0,
+          "width": 1440,
+          "height": 1080,
+          "containerWidth": 1920,
+          "containerHeight": 1080,
+          "paddingRGBA": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nativeAspectPreserved": true,
+          "resampledContent": false
+        },
+        "meanAbsoluteRGBByteError": 1.4076117277145386,
+        "rootMeanSquareRGBByteError": 1.8671932220458984,
+        "meanSignedRGBByteError": [
+          -0.7065747380256653,
+          -1.7342965602874756,
+          -1.2048263549804688
+        ],
+        "maxAbsoluteRGBByteError": 72,
+        "linearFitDecodedFromSource": {
+          "slope": 1.0003422095209358,
+          "intercept": -1.2699003914243576
+        },
+        "sourceRGBAHash": "ed76de10806c5c3aba993c7f6bcb62b19326e4aae6d4455d2dadb870695afdd1",
+        "newVisualQualityGateInvented": false,
+        "physicalOrPhotorealismClaim": false
+      },
+      "bytes": 454169,
+      "sha256": "7f5782245ad5e4bd00238211107a5bdf6f9b97702a082eae14fd738b26da2f28",
+      "encoding": {
+        "codec": "libx264",
+        "preset": "medium",
+        "crf": 21,
+        "maxrate": "4M",
+        "bufsize": "8M",
+        "pixelFormat": "yuv420p",
+        "colorConversion": "Full-range gamma-encoded sRGB → BT.709 YCbCr limited range; sRGB transfer retained and tagged. Frame-level setparams metadata is set after conversion as well as encoder flags.",
+        "filterDocumentation": "https://ffmpeg.org/ffmpeg-filters.html#setparams",
+        "lossless": false
+      },
+      "sourceFrameCount": 120,
+      "sourceFramesAllDecoded": true,
+      "viewport": {
+        "fit": "contain",
+        "x": 240,
+        "y": 0,
+        "width": 1440,
+        "height": 1080,
+        "containerWidth": 1920,
+        "containerHeight": 1080,
+        "paddingRGBA": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      "allSourceFramePaddingVerifiedOpaqueBlack": true,
+      "allFramesPreserveNativeAspectRatio": true,
+      "trajectoryAllFramesMatched": true,
+      "allFramePNGAndRGBAHashesVerified": true,
+      "uniqueSourceFrameHashes": 120,
+      "trajectoryFirstCamera": {
+        "panX": 0,
+        "panY": -0.005,
+        "zoom": 1.02
+      },
+      "trajectoryLastCamera": {
+        "panX": 0.05598839814814815,
+        "panY": -0.012998342592592593,
+        "zoom": 1.086286264236111
+      },
+      "lastFrameTime": 4.958333333333333,
+      "sourceFrameRGBAHashes": [
+        "ed76de10806c5c3aba993c7f6bcb62b19326e4aae6d4455d2dadb870695afdd1",
+        "ce0b0cc84f196f8604ad47c0b4b1568810a9dd3fe1c35ee4846468f5c7aa5e99",
+        "a87175870e0bff363f18e98e7209ac56bbe6e0adafda651717fcf5ac912b407d",
+        "2f6078608949fa08723c23605e2e4b3318b0b1a99c01ac7bbda6fe6b3503401d",
+        "99a0721f1803b8d3b521f59f890fc362289c66fea529316a51cae8932f11f0c9",
+        "72f0fa5f6d7d3edd9cbbc33a9e51dfdf285292d02cf74b8927b75b57f048a76e",
+        "e14bac6c9308a057ae1a19bd1ade642358c1820c0e0276d83a3729edf795e442",
+        "5f53f8b7560f7ea7724298246c59cf86cdd3296dfc78292477beff291e8a6650",
+        "3a0d945af5d7120f6a05badbf4993e828d49f72a4ee4c1fcd903e1a14b5df865",
+        "c1b40f6c4e99de3aeb18780b271d9edb28ec52b6eec273a60e029cfe1a45c6e9",
+        "86a575581163defd2a62019a6975a802a795af7a5b87b0e7ab84a743c9ac0221",
+        "7582c2a0c9a6ceca73b68c7a3298317862dfe66ad44d20a4f34fa7faa5f66e32",
+        "a0576f3681f73d9ad49137b1f592f154ebf95a588962fcf05df2d535ce2b3a93",
+        "9e484186df01242d810137467a0da268e5e3ab499cc55e3eff53946ddcafe8f2",
+        "57424624206c8d293de4f61a62f864fccfde0d276ed384f133f92b80c3780833",
+        "43e72f4a718c8b54500a49f2115aa2d862bf7af1cb43ed4803093d5c1343a9ba",
+        "b079bbe75fbc6b0c776a6b744bdc5cb54787e9458ae7ccaa06bb0ab87e052737",
+        "80b796e3c762511a794f4f12c502d058a095c5709aeb9eae724ca1eaf7592785",
+        "aa2cb3d1a37c3a512d6bd7ad8cae603cebc03c1d2467bf71776d0ff1cb1a5933",
+        "6c6774e52683a44f1b8da937533afb08c77fabb05dee832079e1f24370753f44",
+        "2955e53f8bd706bf2fba5c916afde32400ae6fd8d54afe3ec6cc3c9afc27baa6",
+        "b2f66ad116cee07512ba40b91ce5b355549b82366ce70922ca5a4851f61ac6b7",
+        "67cd16d59b64136ac153db9ba1f6a1567b11c59059b7baf5a3e3684b45701f65",
+        "cfbebf8bf025e346d49c19356b39a3ca53e871947ed54d0f61d09a45c1a29105",
+        "2bbaaaeaf17cad57b4be0145adf9fdf5a8567cf40345f95954853c2f794def36",
+        "31317b7c55705c19b8bd560fccc80e9c982e736c47a1b069eecbea366a2fb1cd",
+        "d4e09108194201da18904c0cee41c08d442e51fbf787c55570963cfec7a37a52",
+        "aad34aac7062119f34ba276e67dd6e45e3e6c8e5814735688dc33e51954700d5",
+        "1e93cfaec5924c36b13439099fa81c46a95ab24c6203567083df1cf719ec30c2",
+        "ea151fd60323b810b7a916b867894a7785d8ff1fab2cf3502fbed820c4fc753e",
+        "b85b5a98af7d70c09b2294a24b3214db2259bdbc98520a2154d4dc9acdb8a861",
+        "b119e22f1c9ab536cc81d48d66aa65f3a31958dd065d279e8b0aef9a15d00f2a",
+        "e3dcce0c62e2f6f3bc353bc069173858e21f162830495ca67e93c1c5649869a1",
+        "a7faa819338a04cf04d4f521c339952f1766fe54632ae384d7cbbc80b962b4ff",
+        "9124ba9f7a2ed1153919baf0fd35a27ef81a93f72017a0235edb98d60dcb2f3c",
+        "9d31ed36fc608654ecac82debba3f7f43f77e3862f5194e4f9a4d11795b37aab",
+        "acd5f967c431302e33ac3a9204c729c5af9b7848c800a9f18edbec4e09376699",
+        "67175dd28fb1717d50dde90b9aa9115b590fc81794fec16b017c604d9e47f194",
+        "5b695235aa4c6b9e5b781f5c2585e5f6b629868c5024a86a53ef7d3083104d8a",
+        "a50976124e1acd6967c8f17a252e6e34ea44cb465d7f5d17c0cd4c459914d7cd",
+        "9243c0721acaf779b5e259c653448654afe94492ed10fafd61b508f062572db5",
+        "0b9cc144511ad858bd4ac9b360baa5748c88f7b19ab370107ce1aa5c54441557",
+        "ecc51816e9b1d442a53a1d5a02e4334e4eb6c20af1c41227110584b1979ce49a",
+        "f88715003a3ccbde409a358107ced7d61f5271ae9b9ee66acf137f9cceba592a",
+        "9e33c700b1f78915d181f45bed3eb79b9c2ee2d589a7e188c420c78c5fa465ac",
+        "63ff3b4ac0f472f5c6ce3b2f4758b66e7a28196319e7bf90065358e3cbaf2716",
+        "154bbaa19fd926bd346f3e56391a44e4223ef69810e2868de506563d13efeaf7",
+        "20302da4174b398f5073d5b3d5dd359e3f6ed8c91ff98e89e0f096fa578e9b5b",
+        "a3b4f0e94f7ddc7aee3cc472ef8ffd1231ea6519e87abba86bb111de8dd69052",
+        "e9994776dc163d7004c5f909b7b7c54e2df9c047da0506d4ecbd62a0fbb988db",
+        "222da88af6305787577bd06a545874d17348d990075cc586c31ca7e9ab1ec1c6",
+        "011554109db425945e08267e231e7e0ac24604439058bbb97f779a2c86a0388f",
+        "0f5f054cbdab630d2cac62ba0ed00fdf1a41225b10e8db9685eb7faa7d956efe",
+        "48ee4d7d135146eff0757c9ce1e76d78be0ceaebe5075aa876c62a196233a094",
+        "ed2713a0dabfc4986fec44aea865bd8f70c05ab84f4686f85a4cf24542975001",
+        "5d8a6642881035a731524272082e2281e829ee58dfc8505094aab0439f20d332",
+        "df8ac0aa3ea03440f6bbfcb6d775718160f0f9d5c50abf4147edbb8b113fa133",
+        "94d1d05b88bc093c08c9581f4f83f02f94a2c7743f1af4bd2f1b8e5cdd3d5f56",
+        "a3c991420468d70be175c2c38393280f8919de9acc9fb44023a01495fe9b5fa0",
+        "845673faadd89628bfb2cb51efdee21c82ca8a5a50471eceb992a96549bec54e",
+        "03ee5352b1b3ec8f98789576ce5adbdaf55fd48463181d07b0559c55b00e6bdb",
+        "106037b92377a8e5e89d5acb7d64f089bc81c82d034d49e87da2f1d09652eea1",
+        "e26758b778e2b98955387f360cbb3ce7253145f4a11e2178a87c8d138ebcdcc7",
+        "d32ca794f893ecd11f230290da6978655e958c015faa56757a9167f081915e46",
+        "e71ae4435f0badbda33a48c938506e12693b9da923c3d58140f9c778228115e9",
+        "1e5237dc310f1e22b04689b632e57d5f413db8b64807b23e84f2df71fe1d874f",
+        "7e875fa02c52385f578f55824de1c2589935fe34da28e042375261aa6b86719f",
+        "f2875309afe139aabc15a1231f38c56e41d2d0bbdaed601fcbd3096de7325828",
+        "e705860342086915afd0befb73d5a5b78b045b0be19b73203937d1897923d98a",
+        "0e7d6423f9f39eafe6492032067dcae28939713e61de4bf0756c77b640612f75",
+        "d28e2f29a47a954dfd5ee6bc3b67a1ccd1d84867452b649c8e19b9e3c449edc0",
+        "2bdd0291aa0f793f5fdf4eb7886645cc64676c3233d858966af5780afb3fd02d",
+        "b7e1d368f7ed48599c679f4f3b65d8cce8dc80e3dfb67248cc99b93362684ad2",
+        "51baf32481af1c1b131a07dc47d8d6ff4be1e28b73a97bd84f01d50c330c9a8d",
+        "5f182e507e0891d04180c4afd77ac12b6d2215025b2c1c96174694700297127e",
+        "ad4be74eba0e3459c1eca151f223883a6d128e71886e7511de23f3513b9274b5",
+        "fd12badb1a6f89030c3afd95807952036128f230d63a37382c09632db4aede88",
+        "60c80ed7880750895aa7efa5b518feeec82a9973e4caed0e21146763f5129b92",
+        "34d2b3940be22b8a320129b147c7cb72394b87476a569d3c171baba571297477",
+        "dbce4d4eb7bca61b2e4d073845cfadc88e2ab899417e6e2f16a30ca48a1a23a4",
+        "a42904a971850341d8cfa12258f1b5d65df6a6c888dc0a1dad60ba5ea01ab08a",
+        "887262b662f6cecbc6727787d73b8f900dba85bc3e7ebd3fd63671dcaf58bed6",
+        "ed7da18edf0c98ad0487c8ba438c6811c21db4dae680067adf3ba5a4d4cab9b6",
+        "a074e5f7b29e10689e205cb2898debaf32be7e2bbafb7f3bca45e967eac6783c",
+        "d46bb4df81a9b32449acbd16ddd52b06b9c209293b257aa2b78046d7635b5d34",
+        "af3755bdfcb93e96189f8c34d986a3b36f86f750810cef3f0c07a457b8b699aa",
+        "a2b6878dda8796a96281797b715fe6fad1564d018b2a2341a91d80bdb2f29bc3",
+        "807b7415aa5bbf2080f7473feb2a710d4ea806113c0840cd9ff664f315cddac8",
+        "1df0ed5454197ef6905fa211d80765c77c3fbdc30fb0363f0dded26a69103be1",
+        "7699b74db228480ffe252c343239fd56cd179b3470b0678497b8b7a7050f8303",
+        "d20949adbf8d4876e30e53fc4596bae9573163ada108153d1fd44c14094dc9f3",
+        "60f105e1cbe4583ae71461357804c0b0206ed25a5507c86a8ee0876eb81b23e4",
+        "50c9997ee9461f9fa8fdc0d386ab4772fec96b1c8e4ee6032dd7ca6054a6a365",
+        "80343f84c7e6206fd14e5127a9d4482b0b83cd21c0b567150eb80e55e52e5abf",
+        "80580c97c760c3fdcb7b845337779193bc902e843284cc850a396b64293083e9",
+        "caea6e9384b03e22ddf360b5282eac01e3ce39e51cc7275cc0633cab72168b67",
+        "ab31a7b8beeced2f498e82ad8c23a07a7a396356ab3602574d3b7f66fea52542",
+        "7003e4f4f532c4c953375705b3ea12fd3f9810482343beb4953d3ac9134a7a24",
+        "0aea6e4f893791a03634dca390d2c0b9c505976fad6026413a8bf03091640152",
+        "995840386b765b9772bb171dd84a80dcefa5896416333ad4cf97d4762ec2b04b",
+        "0410d2197b817ffe7aa6bcd97ecba4985fd59fdd83cb3ea35d8cd4f269865e85",
+        "e51e1de01540bc88c363ab965afcff8f3d828ff35ccef8a2498c3f1c42ee4916",
+        "b42ee103892e0f3385c0ba5ff1850144445550b54960ca84e441e5a818543dfb",
+        "14c0c66cd93f326fe917d95dd9d760dbb25dfbbad9002e3fb5c5974f29bdd6eb",
+        "4a4b3f3250b11b5efdc5eb7becb8b5d29f437907b5304bbcedfbad99859e1e8d",
+        "afa33e1aa1195178ba9bf3de61c597275d6f1bf8ae8c35d3daca8d7ca13d2ec5",
+        "3a70038f7168add1de290a95beda5a1fc62e9d4f36906493513bd560bb51ffa2",
+        "df5136378a1a1450dc45e4d5d0b55c62764ce07260b626cbcf4517cd04cfd57f",
+        "a4954a794c8621e4113a6559edf5de8ec748bfbff9c00464998fdc5b66aaf07e",
+        "93d5dae8d781278c576500fe34c51267221c7252b3845560472a818466026667",
+        "aefe9843f8d5106ec50bbcc5699b02a3a129afbc92cb78b1d94aca5c2c32f1d7",
+        "18fdb852762eaaa459ebb3658267e0ff948592a1c6f03e9f537e8148a1942c5c",
+        "4b6d45b58a12a64b2bb8d8dc5bb8213af517acdcdcf27287cedeaf6b1d92f421",
+        "63ebf3dd28b20154ae692de77c8e544a1f60eae76a0bca3db4d349077a33dc1f",
+        "f27d2edf3eb36b3030415c39d026da75b2d5b70421ec40d6e2c63e584d80b7a7",
+        "f90f3263f7d04c1ca8e7a64d93157dce8d7998366e5ad0d7b5a9559dcca45f52",
+        "bc5924fd3ff26db3140fb23b596b2d62637fa6a07ec77780e89c94d5eac2c183",
+        "c5f2a41ead70032bf8c68a7415fff88125d1376a9f467008586e528369f0dcc3",
+        "a687a33458462d6ea9e5eafc94dd1dc97ffe58fefde81967eae08c3b585eadc5",
+        "05fc728ee411c3a331cee034d79c6b0de5ba26433f88773e6f1df42bad13bd63"
+      ],
+      "temporalDiagnostic": {
+        "definition": "Absolute RGB byte differences between consecutive uncompressed rendered frames; contains intended camera motion, disocclusion and sampling changes. It is not a motion-compensated flicker score.",
+        "borderWidthPixels": 16,
+        "borderDomain": "Edge of the native content viewport, excluding black padding.",
+        "frameMeanChangeMedian": 0.1809151556069959,
+        "frameMeanChangeMax": 0.2522172389403292,
+        "borderMeanChangeMedian": 0.06496600348338692,
+        "borderMeanChangeMax": 0.12152917336548767,
+        "worstFramePair": {
+          "from": 61,
+          "to": 62,
+          "meanRGBByteChange": 0.2522172389403292,
+          "contentMeanRGBByteChange": 0.33628965192043897,
+          "borderMeanRGBByteChange": 0.12152917336548767,
+          "maxRGBByteChange": 163,
+          "pixelsWithAnyChannelChangeAbove32": 0.0011168981481481481
+        },
+        "worstBorderPair": {
+          "from": 61,
+          "to": 62,
+          "meanRGBByteChange": 0.2522172389403292,
+          "contentMeanRGBByteChange": 0.33628965192043897,
+          "borderMeanRGBByteChange": 0.12152917336548767,
+          "maxRGBByteChange": 163,
+          "pixelsWithAnyChannelChangeAbove32": 0.0011168981481481481
+        },
+        "perPair": [
+          {
+            "from": 0,
+            "to": 1,
+            "meanRGBByteChange": 0.005309606481481481,
+            "contentMeanRGBByteChange": 0.007079475308641976,
+            "borderMeanRGBByteChange": 0.0015156082529474812,
+            "maxRGBByteChange": 12,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "meanRGBByteChange": 0.015560378086419753,
+            "contentMeanRGBByteChange": 0.020747170781893004,
+            "borderMeanRGBByteChange": 0.004433782154340836,
+            "maxRGBByteChange": 23,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "meanRGBByteChange": 0.025615837191358026,
+            "contentMeanRGBByteChange": 0.03415444958847737,
+            "borderMeanRGBByteChange": 0.007197045819935691,
+            "maxRGBByteChange": 36,
+            "pixelsWithAnyChannelChangeAbove32": 1.4467592592592592e-06
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "meanRGBByteChange": 0.034586548353909466,
+            "contentMeanRGBByteChange": 0.04611539780521262,
+            "borderMeanRGBByteChange": 0.009939375669882101,
+            "maxRGBByteChange": 44,
+            "pixelsWithAnyChannelChangeAbove32": 7.71604938271605e-06
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "meanRGBByteChange": 0.04332979681069959,
+            "contentMeanRGBByteChange": 0.05777306241426612,
+            "borderMeanRGBByteChange": 0.01252679528403001,
+            "maxRGBByteChange": 52,
+            "pixelsWithAnyChannelChangeAbove32": 1.7843364197530866e-05
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "meanRGBByteChange": 0.052252764917695475,
+            "contentMeanRGBByteChange": 0.06967035322359397,
+            "borderMeanRGBByteChange": 0.015369607449088961,
+            "maxRGBByteChange": 57,
+            "pixelsWithAnyChannelChangeAbove32": 2.7488425925925926e-05
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "meanRGBByteChange": 0.060022344393004114,
+            "contentMeanRGBByteChange": 0.08002979252400548,
+            "borderMeanRGBByteChange": 0.017835610932475883,
+            "maxRGBByteChange": 62,
+            "pixelsWithAnyChannelChangeAbove32": 4.050925925925926e-05
+          },
+          {
+            "from": 7,
+            "to": 8,
+            "meanRGBByteChange": 0.0674877829218107,
+            "contentMeanRGBByteChange": 0.08998371056241426,
+            "borderMeanRGBByteChange": 0.020682609860664523,
+            "maxRGBByteChange": 71,
+            "pixelsWithAnyChannelChangeAbove32": 6.076388888888889e-05
+          },
+          {
+            "from": 8,
+            "to": 9,
+            "meanRGBByteChange": 0.07447804140946503,
+            "contentMeanRGBByteChange": 0.09930405521262002,
+            "borderMeanRGBByteChange": 0.022771804662379422,
+            "maxRGBByteChange": 77,
+            "pixelsWithAnyChannelChangeAbove32": 8.391203703703703e-05
+          },
+          {
+            "from": 9,
+            "to": 10,
+            "meanRGBByteChange": 0.0811135223765432,
+            "contentMeanRGBByteChange": 0.10815136316872428,
+            "borderMeanRGBByteChange": 0.0247144627545552,
+            "maxRGBByteChange": 84,
+            "pixelsWithAnyChannelChangeAbove32": 0.00010947145061728395
+          },
+          {
+            "from": 10,
+            "to": 11,
+            "meanRGBByteChange": 0.0883421746399177,
+            "contentMeanRGBByteChange": 0.11778956618655692,
+            "borderMeanRGBByteChange": 0.027624263129689176,
+            "maxRGBByteChange": 87,
+            "pixelsWithAnyChannelChangeAbove32": 0.00014178240740740742
+          },
+          {
+            "from": 11,
+            "to": 12,
+            "meanRGBByteChange": 0.09428899819958848,
+            "contentMeanRGBByteChange": 0.12571866426611797,
+            "borderMeanRGBByteChange": 0.030207495980707395,
+            "maxRGBByteChange": 94,
+            "pixelsWithAnyChannelChangeAbove32": 0.00015962577160493827
+          },
+          {
+            "from": 12,
+            "to": 13,
+            "meanRGBByteChange": 0.13158179012345678,
+            "contentMeanRGBByteChange": 0.17544238683127572,
+            "borderMeanRGBByteChange": 0.07332278269024652,
+            "maxRGBByteChange": 139,
+            "pixelsWithAnyChannelChangeAbove32": 0.000503954475308642
+          },
+          {
+            "from": 13,
+            "to": 14,
+            "meanRGBByteChange": 0.10648839377572017,
+            "contentMeanRGBByteChange": 0.14198452503429354,
+            "borderMeanRGBByteChange": 0.03511438236870311,
+            "maxRGBByteChange": 101,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002261766975308642
+          },
+          {
+            "from": 14,
+            "to": 15,
+            "meanRGBByteChange": 0.11196084104938271,
+            "contentMeanRGBByteChange": 0.14928112139917696,
+            "borderMeanRGBByteChange": 0.036671858252947484,
+            "maxRGBByteChange": 101,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002565586419753086
+          },
+          {
+            "from": 15,
+            "to": 16,
+            "meanRGBByteChange": 0.11735452031893004,
+            "contentMeanRGBByteChange": 0.1564726937585734,
+            "borderMeanRGBByteChange": 0.038133038585209,
+            "maxRGBByteChange": 107,
+            "pixelsWithAnyChannelChangeAbove32": 0.00028018904320987656
+          },
+          {
+            "from": 16,
+            "to": 17,
+            "meanRGBByteChange": 0.12249742798353909,
+            "contentMeanRGBByteChange": 0.16332990397805214,
+            "borderMeanRGBByteChange": 0.04061578912111469,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.00032166280864197533
+          },
+          {
+            "from": 17,
+            "to": 18,
+            "meanRGBByteChange": 0.1276877572016461,
+            "contentMeanRGBByteChange": 0.17025034293552813,
+            "borderMeanRGBByteChange": 0.0428138397642015,
+            "maxRGBByteChange": 114,
+            "pixelsWithAnyChannelChangeAbove32": 0.0003433641975308642
+          },
+          {
+            "from": 18,
+            "to": 19,
+            "meanRGBByteChange": 0.1320992476851852,
+            "contentMeanRGBByteChange": 0.17613233024691358,
+            "borderMeanRGBByteChange": 0.045175174169346195,
+            "maxRGBByteChange": 116,
+            "pixelsWithAnyChannelChangeAbove32": 0.0003761574074074074
+          },
+          {
+            "from": 19,
+            "to": 20,
+            "meanRGBByteChange": 0.1368335262345679,
+            "contentMeanRGBByteChange": 0.18244470164609053,
+            "borderMeanRGBByteChange": 0.046485631028938906,
+            "maxRGBByteChange": 116,
+            "pixelsWithAnyChannelChangeAbove32": 0.00040027006172839506
+          },
+          {
+            "from": 20,
+            "to": 21,
+            "meanRGBByteChange": 0.1416795267489712,
+            "contentMeanRGBByteChange": 0.18890603566529493,
+            "borderMeanRGBByteChange": 0.04780864817792069,
+            "maxRGBByteChange": 122,
+            "pixelsWithAnyChannelChangeAbove32": 0.00043402777777777775
+          },
+          {
+            "from": 21,
+            "to": 22,
+            "meanRGBByteChange": 0.14614213605967077,
+            "contentMeanRGBByteChange": 0.19485618141289437,
+            "borderMeanRGBByteChange": 0.050693327974276524,
+            "maxRGBByteChange": 124,
+            "pixelsWithAnyChannelChangeAbove32": 0.00044367283950617285
+          },
+          {
+            "from": 22,
+            "to": 23,
+            "meanRGBByteChange": 0.1502364647633745,
+            "contentMeanRGBByteChange": 0.200315286351166,
+            "borderMeanRGBByteChange": 0.05227592443729904,
+            "maxRGBByteChange": 122,
+            "pixelsWithAnyChannelChangeAbove32": 0.0004697145061728395
+          },
+          {
+            "from": 23,
+            "to": 24,
+            "meanRGBByteChange": 0.15398244598765432,
+            "contentMeanRGBByteChange": 0.2053099279835391,
+            "borderMeanRGBByteChange": 0.05374547829581994,
+            "maxRGBByteChange": 127,
+            "pixelsWithAnyChannelChangeAbove32": 0.0004952739197530864
+          },
+          {
+            "from": 24,
+            "to": 25,
+            "meanRGBByteChange": 0.1578147505144033,
+            "contentMeanRGBByteChange": 0.21041966735253773,
+            "borderMeanRGBByteChange": 0.054344185423365485,
+            "maxRGBByteChange": 128,
+            "pixelsWithAnyChannelChangeAbove32": 0.0005179398148148148
+          },
+          {
+            "from": 25,
+            "to": 26,
+            "meanRGBByteChange": 0.19293097350823046,
+            "contentMeanRGBByteChange": 0.25724129801097395,
+            "borderMeanRGBByteChange": 0.09823402331189711,
+            "maxRGBByteChange": 139,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008342978395061728
+          },
+          {
+            "from": 26,
+            "to": 27,
+            "meanRGBByteChange": 0.16551922582304526,
+            "contentMeanRGBByteChange": 0.22069230109739368,
+            "borderMeanRGBByteChange": 0.058371851554126476,
+            "maxRGBByteChange": 133,
+            "pixelsWithAnyChannelChangeAbove32": 0.0005598958333333334
+          },
+          {
+            "from": 27,
+            "to": 28,
+            "meanRGBByteChange": 0.16863216949588478,
+            "contentMeanRGBByteChange": 0.2248428926611797,
+            "borderMeanRGBByteChange": 0.06010517148981779,
+            "maxRGBByteChange": 130,
+            "pixelsWithAnyChannelChangeAbove32": 0.0005796682098765432
+          },
+          {
+            "from": 28,
+            "to": 29,
+            "meanRGBByteChange": 0.1723440715020576,
+            "contentMeanRGBByteChange": 0.2297920953360768,
+            "borderMeanRGBByteChange": 0.061461682743837086,
+            "maxRGBByteChange": 135,
+            "pixelsWithAnyChannelChangeAbove32": 0.0005926890432098765
+          },
+          {
+            "from": 29,
+            "to": 30,
+            "meanRGBByteChange": 0.17490676440329217,
+            "contentMeanRGBByteChange": 0.23320901920438958,
+            "borderMeanRGBByteChange": 0.06310289389067524,
+            "maxRGBByteChange": 139,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006086033950617284
+          },
+          {
+            "from": 30,
+            "to": 31,
+            "meanRGBByteChange": 0.17817917309670783,
+            "contentMeanRGBByteChange": 0.23757223079561043,
+            "borderMeanRGBByteChange": 0.0644300978027867,
+            "maxRGBByteChange": 141,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006327160493827161
+          },
+          {
+            "from": 31,
+            "to": 32,
+            "meanRGBByteChange": 0.1809151556069959,
+            "contentMeanRGBByteChange": 0.2412202074759945,
+            "borderMeanRGBByteChange": 0.06605456189710611,
+            "maxRGBByteChange": 146,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006442901234567901
+          },
+          {
+            "from": 32,
+            "to": 33,
+            "meanRGBByteChange": 0.18473508230452676,
+            "contentMeanRGBByteChange": 0.24631344307270234,
+            "borderMeanRGBByteChange": 0.06519208869239014,
+            "maxRGBByteChange": 150,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006655092592592592
+          },
+          {
+            "from": 33,
+            "to": 34,
+            "meanRGBByteChange": 0.21781137474279835,
+            "contentMeanRGBByteChange": 0.29041516632373116,
+            "borderMeanRGBByteChange": 0.10877629287245445,
+            "maxRGBByteChange": 149,
+            "pixelsWithAnyChannelChangeAbove32": 0.000972704475308642
+          },
+          {
+            "from": 34,
+            "to": 35,
+            "meanRGBByteChange": 0.18951019161522634,
+            "contentMeanRGBByteChange": 0.25268025548696843,
+            "borderMeanRGBByteChange": 0.06904809753483387,
+            "maxRGBByteChange": 147,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006983024691358025
+          },
+          {
+            "from": 35,
+            "to": 36,
+            "meanRGBByteChange": 0.19198061342592593,
+            "contentMeanRGBByteChange": 0.2559741512345679,
+            "borderMeanRGBByteChange": 0.06827773311897106,
+            "maxRGBByteChange": 148,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006823881172839506
+          },
+          {
+            "from": 36,
+            "to": 37,
+            "meanRGBByteChange": 0.19430828832304528,
+            "contentMeanRGBByteChange": 0.25907771776406036,
+            "borderMeanRGBByteChange": 0.07061813370846731,
+            "maxRGBByteChange": 148,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007132523148148148
+          },
+          {
+            "from": 37,
+            "to": 38,
+            "meanRGBByteChange": 0.19705488040123456,
+            "contentMeanRGBByteChange": 0.2627398405349794,
+            "borderMeanRGBByteChange": 0.07084840568060022,
+            "maxRGBByteChange": 153,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007142168209876543
+          },
+          {
+            "from": 38,
+            "to": 39,
+            "meanRGBByteChange": 0.19890239197530865,
+            "contentMeanRGBByteChange": 0.26520318930041153,
+            "borderMeanRGBByteChange": 0.07063906752411575,
+            "maxRGBByteChange": 154,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007344714506172839
+          },
+          {
+            "from": 39,
+            "to": 40,
+            "meanRGBByteChange": 0.2011476015946502,
+            "contentMeanRGBByteChange": 0.2681968021262003,
+            "borderMeanRGBByteChange": 0.07245193595927117,
+            "maxRGBByteChange": 151,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007465277777777778
+          },
+          {
+            "from": 40,
+            "to": 41,
+            "meanRGBByteChange": 0.20235468106995885,
+            "contentMeanRGBByteChange": 0.2698062414266118,
+            "borderMeanRGBByteChange": 0.07207094051446945,
+            "maxRGBByteChange": 156,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007508680555555555
+          },
+          {
+            "from": 41,
+            "to": 42,
+            "meanRGBByteChange": 0.23534079218106996,
+            "contentMeanRGBByteChange": 0.31378772290809326,
+            "borderMeanRGBByteChange": 0.11484709941050375,
+            "maxRGBByteChange": 159,
+            "pixelsWithAnyChannelChangeAbove32": 0.0010445601851851853
+          },
+          {
+            "from": 42,
+            "to": 43,
+            "meanRGBByteChange": 0.20658066486625515,
+            "contentMeanRGBByteChange": 0.2754408864883402,
+            "borderMeanRGBByteChange": 0.07329347534833869,
+            "maxRGBByteChange": 153,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007764274691358025
+          },
+          {
+            "from": 43,
+            "to": 44,
+            "meanRGBByteChange": 0.20858314043209877,
+            "contentMeanRGBByteChange": 0.278110853909465,
+            "borderMeanRGBByteChange": 0.07318880627009647,
+            "maxRGBByteChange": 155,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007807677469135803
+          },
+          {
+            "from": 44,
+            "to": 45,
+            "meanRGBByteChange": 0.20995772247942388,
+            "contentMeanRGBByteChange": 0.27994362997256517,
+            "borderMeanRGBByteChange": 0.07475046891747053,
+            "maxRGBByteChange": 154,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007807677469135803
+          },
+          {
+            "from": 45,
+            "to": 46,
+            "meanRGBByteChange": 0.21189268261316874,
+            "contentMeanRGBByteChange": 0.2825235768175583,
+            "borderMeanRGBByteChange": 0.07440296757770633,
+            "maxRGBByteChange": 160,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007966820987654321
+          },
+          {
+            "from": 46,
+            "to": 47,
+            "meanRGBByteChange": 0.21244695216049383,
+            "contentMeanRGBByteChange": 0.2832626028806584,
+            "borderMeanRGBByteChange": 0.07480489683815648,
+            "maxRGBByteChange": 162,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008130787037037037
+          },
+          {
+            "from": 47,
+            "to": 48,
+            "meanRGBByteChange": 0.21340888631687244,
+            "contentMeanRGBByteChange": 0.2845451817558299,
+            "borderMeanRGBByteChange": 0.07446576902465166,
+            "maxRGBByteChange": 165,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008000578703703704
+          },
+          {
+            "from": 48,
+            "to": 49,
+            "meanRGBByteChange": 0.24561358667695474,
+            "contentMeanRGBByteChange": 0.32748478223593963,
+            "borderMeanRGBByteChange": 0.11711632502679528,
+            "maxRGBByteChange": 158,
+            "pixelsWithAnyChannelChangeAbove32": 0.0010971257716049384
+          },
+          {
+            "from": 49,
+            "to": 50,
+            "meanRGBByteChange": 0.2165673225308642,
+            "contentMeanRGBByteChange": 0.28875643004115226,
+            "borderMeanRGBByteChange": 0.07540360396570203,
+            "maxRGBByteChange": 163,
+            "pixelsWithAnyChannelChangeAbove32": 0.000818383487654321
+          },
+          {
+            "from": 50,
+            "to": 51,
+            "meanRGBByteChange": 0.21760657793209875,
+            "contentMeanRGBByteChange": 0.29014210390946504,
+            "borderMeanRGBByteChange": 0.07670150053590569,
+            "maxRGBByteChange": 166,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008236882716049382
+          },
+          {
+            "from": 51,
+            "to": 52,
+            "meanRGBByteChange": 0.2182788387345679,
+            "contentMeanRGBByteChange": 0.29103845164609055,
+            "borderMeanRGBByteChange": 0.07591438906752411,
+            "maxRGBByteChange": 162,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008347800925925926
+          },
+          {
+            "from": 52,
+            "to": 53,
+            "meanRGBByteChange": 0.21904803240740742,
+            "contentMeanRGBByteChange": 0.29206404320987656,
+            "borderMeanRGBByteChange": 0.0777356310289389,
+            "maxRGBByteChange": 161,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008285108024691358
+          },
+          {
+            "from": 53,
+            "to": 54,
+            "meanRGBByteChange": 0.2205492862654321,
+            "contentMeanRGBByteChange": 0.29406571502057616,
+            "borderMeanRGBByteChange": 0.07786123392282958,
+            "maxRGBByteChange": 165,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008357445987654321
+          },
+          {
+            "from": 54,
+            "to": 55,
+            "meanRGBByteChange": 0.25070360725308644,
+            "contentMeanRGBByteChange": 0.3342714763374486,
+            "borderMeanRGBByteChange": 0.11959488879957128,
+            "maxRGBByteChange": 163,
+            "pixelsWithAnyChannelChangeAbove32": 0.0011144868827160494
+          },
+          {
+            "from": 55,
+            "to": 56,
+            "meanRGBByteChange": 0.22084940843621398,
+            "contentMeanRGBByteChange": 0.294465877914952,
+            "borderMeanRGBByteChange": 0.07752210610932476,
+            "maxRGBByteChange": 169,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008458719135802469
+          },
+          {
+            "from": 56,
+            "to": 57,
+            "meanRGBByteChange": 0.22192081404320987,
+            "contentMeanRGBByteChange": 0.29589441872427985,
+            "borderMeanRGBByteChange": 0.07853948954983923,
+            "maxRGBByteChange": 161,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008362268518518519
+          },
+          {
+            "from": 57,
+            "to": 58,
+            "meanRGBByteChange": 0.22165332433127571,
+            "contentMeanRGBByteChange": 0.29553776577503427,
+            "borderMeanRGBByteChange": 0.07833852491961414,
+            "maxRGBByteChange": 169,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008376736111111111
+          },
+          {
+            "from": 58,
+            "to": 59,
+            "meanRGBByteChange": 0.22229616769547325,
+            "contentMeanRGBByteChange": 0.296394890260631,
+            "borderMeanRGBByteChange": 0.07875720123258306,
+            "maxRGBByteChange": 163,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008275462962962963
+          },
+          {
+            "from": 59,
+            "to": 60,
+            "meanRGBByteChange": 0.22240740740740741,
+            "contentMeanRGBByteChange": 0.2965432098765432,
+            "borderMeanRGBByteChange": 0.07984575964630225,
+            "maxRGBByteChange": 164,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008405671296296296
+          },
+          {
+            "from": 60,
+            "to": 61,
+            "meanRGBByteChange": 0.22284143518518518,
+            "contentMeanRGBByteChange": 0.2971219135802469,
+            "borderMeanRGBByteChange": 0.07885768354769561,
+            "maxRGBByteChange": 163,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008487654320987654
+          },
+          {
+            "from": 61,
+            "to": 62,
+            "meanRGBByteChange": 0.2522172389403292,
+            "contentMeanRGBByteChange": 0.33628965192043897,
+            "borderMeanRGBByteChange": 0.12152917336548767,
+            "maxRGBByteChange": 163,
+            "pixelsWithAnyChannelChangeAbove32": 0.0011168981481481481
+          },
+          {
+            "from": 62,
+            "to": 63,
+            "meanRGBByteChange": 0.22282648533950616,
+            "contentMeanRGBByteChange": 0.2971019804526749,
+            "borderMeanRGBByteChange": 0.07964898177920686,
+            "maxRGBByteChange": 164,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008420138888888889
+          },
+          {
+            "from": 63,
+            "to": 64,
+            "meanRGBByteChange": 0.22237943672839505,
+            "contentMeanRGBByteChange": 0.2965059156378601,
+            "borderMeanRGBByteChange": 0.07995880225080386,
+            "maxRGBByteChange": 166,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008487654320987654
+          },
+          {
+            "from": 64,
+            "to": 65,
+            "meanRGBByteChange": 0.2223750964506173,
+            "contentMeanRGBByteChange": 0.29650012860082303,
+            "borderMeanRGBByteChange": 0.08026862272240086,
+            "maxRGBByteChange": 165,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008342978395061728
+          },
+          {
+            "from": 65,
+            "to": 66,
+            "meanRGBByteChange": 0.2215260095164609,
+            "contentMeanRGBByteChange": 0.29536801268861457,
+            "borderMeanRGBByteChange": 0.08034398445873527,
+            "maxRGBByteChange": 162,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008420138888888889
+          },
+          {
+            "from": 66,
+            "to": 67,
+            "meanRGBByteChange": 0.22137554655349795,
+            "contentMeanRGBByteChange": 0.2951673954046639,
+            "borderMeanRGBByteChange": 0.07966154206859592,
+            "maxRGBByteChange": 166,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008333333333333334
+          },
+          {
+            "from": 67,
+            "to": 68,
+            "meanRGBByteChange": 0.2506036201131687,
+            "contentMeanRGBByteChange": 0.33413816015089165,
+            "borderMeanRGBByteChange": 0.12083835744908895,
+            "maxRGBByteChange": 165,
+            "pixelsWithAnyChannelChangeAbove32": 0.0011332947530864198
+          },
+          {
+            "from": 68,
+            "to": 69,
+            "meanRGBByteChange": 0.22015223122427985,
+            "contentMeanRGBByteChange": 0.29353630829903976,
+            "borderMeanRGBByteChange": 0.07863578510182208,
+            "maxRGBByteChange": 163,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008309220679012345
+          },
+          {
+            "from": 69,
+            "to": 70,
+            "meanRGBByteChange": 0.21968171296296296,
+            "contentMeanRGBByteChange": 0.29290895061728395,
+            "borderMeanRGBByteChange": 0.07850599544480172,
+            "maxRGBByteChange": 159,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008275462962962963
+          },
+          {
+            "from": 70,
+            "to": 71,
+            "meanRGBByteChange": 0.21902906378600823,
+            "contentMeanRGBByteChange": 0.29203875171467764,
+            "borderMeanRGBByteChange": 0.07786960744908895,
+            "maxRGBByteChange": 164,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008333333333333334
+          },
+          {
+            "from": 71,
+            "to": 72,
+            "meanRGBByteChange": 0.2175144675925926,
+            "contentMeanRGBByteChange": 0.2900192901234568,
+            "borderMeanRGBByteChange": 0.07693595927116828,
+            "maxRGBByteChange": 161,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008371913580246913
+          },
+          {
+            "from": 72,
+            "to": 73,
+            "meanRGBByteChange": 0.21733008616255145,
+            "contentMeanRGBByteChange": 0.28977344821673523,
+            "borderMeanRGBByteChange": 0.07675592845659164,
+            "maxRGBByteChange": 158,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008058449074074074
+          },
+          {
+            "from": 73,
+            "to": 74,
+            "meanRGBByteChange": 0.2162255658436214,
+            "contentMeanRGBByteChange": 0.2883007544581619,
+            "borderMeanRGBByteChange": 0.0760023110932476,
+            "maxRGBByteChange": 157,
+            "pixelsWithAnyChannelChangeAbove32": 0.000818383487654321
+          },
+          {
+            "from": 74,
+            "to": 75,
+            "meanRGBByteChange": 0.2442160172325103,
+            "contentMeanRGBByteChange": 0.3256213563100137,
+            "borderMeanRGBByteChange": 0.11686930600214362,
+            "maxRGBByteChange": 162,
+            "pixelsWithAnyChannelChangeAbove32": 0.001103877314814815
+          },
+          {
+            "from": 75,
+            "to": 76,
+            "meanRGBByteChange": 0.21341676311728394,
+            "contentMeanRGBByteChange": 0.2845556841563786,
+            "borderMeanRGBByteChange": 0.07389218247588425,
+            "maxRGBByteChange": 169,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007947530864197531
+          },
+          {
+            "from": 76,
+            "to": 77,
+            "meanRGBByteChange": 0.2117822466563786,
+            "contentMeanRGBByteChange": 0.28237632887517145,
+            "borderMeanRGBByteChange": 0.07366609726688103,
+            "maxRGBByteChange": 161,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007880015432098766
+          },
+          {
+            "from": 77,
+            "to": 78,
+            "meanRGBByteChange": 0.21014965920781892,
+            "contentMeanRGBByteChange": 0.28019954561042526,
+            "borderMeanRGBByteChange": 0.072669647642015,
+            "maxRGBByteChange": 160,
+            "pixelsWithAnyChannelChangeAbove32": 0.0008000578703703704
+          },
+          {
+            "from": 78,
+            "to": 79,
+            "meanRGBByteChange": 0.2089556005658436,
+            "contentMeanRGBByteChange": 0.27860746742112485,
+            "borderMeanRGBByteChange": 0.07237238745980708,
+            "maxRGBByteChange": 156,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007865547839506173
+          },
+          {
+            "from": 79,
+            "to": 80,
+            "meanRGBByteChange": 0.20649610982510289,
+            "contentMeanRGBByteChange": 0.27532814643347053,
+            "borderMeanRGBByteChange": 0.07138431136120042,
+            "maxRGBByteChange": 159,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007740162037037037
+          },
+          {
+            "from": 80,
+            "to": 81,
+            "meanRGBByteChange": 0.20518952546296296,
+            "contentMeanRGBByteChange": 0.27358603395061726,
+            "borderMeanRGBByteChange": 0.07107030412647374,
+            "maxRGBByteChange": 154,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007672646604938272
+          },
+          {
+            "from": 81,
+            "to": 82,
+            "meanRGBByteChange": 0.23210326646090534,
+            "contentMeanRGBByteChange": 0.3094710219478738,
+            "borderMeanRGBByteChange": 0.1106519627545552,
+            "maxRGBByteChange": 153,
+            "pixelsWithAnyChannelChangeAbove32": 0.0010373263888888888
+          },
+          {
+            "from": 82,
+            "to": 83,
+            "meanRGBByteChange": 0.20113152649176955,
+            "contentMeanRGBByteChange": 0.26817536865569275,
+            "borderMeanRGBByteChange": 0.06898110932475884,
+            "maxRGBByteChange": 154,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007417052469135802
+          },
+          {
+            "from": 83,
+            "to": 84,
+            "meanRGBByteChange": 0.19856063528806583,
+            "contentMeanRGBByteChange": 0.2647475137174211,
+            "borderMeanRGBByteChange": 0.0672603496784566,
+            "maxRGBByteChange": 155,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007494212962962963
+          },
+          {
+            "from": 84,
+            "to": 85,
+            "meanRGBByteChange": 0.195879308127572,
+            "contentMeanRGBByteChange": 0.2611724108367627,
+            "borderMeanRGBByteChange": 0.06713056002143623,
+            "maxRGBByteChange": 147,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007272376543209876
+          },
+          {
+            "from": 85,
+            "to": 86,
+            "meanRGBByteChange": 0.19377346965020575,
+            "contentMeanRGBByteChange": 0.25836462620027434,
+            "borderMeanRGBByteChange": 0.06625552652733119,
+            "maxRGBByteChange": 155,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007137345679012345
+          },
+          {
+            "from": 86,
+            "to": 87,
+            "meanRGBByteChange": 0.1912082047325103,
+            "contentMeanRGBByteChange": 0.2549442729766804,
+            "borderMeanRGBByteChange": 0.06496600348338692,
+            "maxRGBByteChange": 146,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007007137345679012
+          },
+          {
+            "from": 87,
+            "to": 88,
+            "meanRGBByteChange": 0.18933915252057612,
+            "contentMeanRGBByteChange": 0.2524522033607682,
+            "borderMeanRGBByteChange": 0.06360111870310825,
+            "maxRGBByteChange": 149,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006886574074074074
+          },
+          {
+            "from": 88,
+            "to": 89,
+            "meanRGBByteChange": 0.18598813657407406,
+            "contentMeanRGBByteChange": 0.24798418209876544,
+            "borderMeanRGBByteChange": 0.06349226286173633,
+            "maxRGBByteChange": 145,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006751543209876543
+          },
+          {
+            "from": 89,
+            "to": 90,
+            "meanRGBByteChange": 0.21256237139917694,
+            "contentMeanRGBByteChange": 0.2834164951989026,
+            "borderMeanRGBByteChange": 0.10200629689174705,
+            "maxRGBByteChange": 148,
+            "pixelsWithAnyChannelChangeAbove32": 0.0009336419753086419
+          },
+          {
+            "from": 90,
+            "to": 91,
+            "meanRGBByteChange": 0.1801708783436214,
+            "contentMeanRGBByteChange": 0.2402278377914952,
+            "borderMeanRGBByteChange": 0.060888096195069664,
+            "maxRGBByteChange": 143,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006438078703703703
+          },
+          {
+            "from": 91,
+            "to": 92,
+            "meanRGBByteChange": 0.17750385802469135,
+            "contentMeanRGBByteChange": 0.23667181069958848,
+            "borderMeanRGBByteChange": 0.05842209271168274,
+            "maxRGBByteChange": 140,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006298225308641975
+          },
+          {
+            "from": 92,
+            "to": 93,
+            "meanRGBByteChange": 0.17417197145061727,
+            "contentMeanRGBByteChange": 0.2322292952674897,
+            "borderMeanRGBByteChange": 0.05624916264737406,
+            "maxRGBByteChange": 133,
+            "pixelsWithAnyChannelChangeAbove32": 0.0006168016975308642
+          },
+          {
+            "from": 93,
+            "to": 94,
+            "meanRGBByteChange": 0.17061840920781893,
+            "contentMeanRGBByteChange": 0.2274912122770919,
+            "borderMeanRGBByteChange": 0.05575093783494105,
+            "maxRGBByteChange": 133,
+            "pixelsWithAnyChannelChangeAbove32": 0.0005844907407407408
+          },
+          {
+            "from": 94,
+            "to": 95,
+            "meanRGBByteChange": 0.1666915830761317,
+            "contentMeanRGBByteChange": 0.2222554441015089,
+            "borderMeanRGBByteChange": 0.05388782824222937,
+            "maxRGBByteChange": 131,
+            "pixelsWithAnyChannelChangeAbove32": 0.0005729166666666667
+          },
+          {
+            "from": 95,
+            "to": 96,
+            "meanRGBByteChange": 0.16290316358024692,
+            "contentMeanRGBByteChange": 0.2172042181069959,
+            "borderMeanRGBByteChange": 0.052648546355841375,
+            "maxRGBByteChange": 135,
+            "pixelsWithAnyChannelChangeAbove32": 0.0005512152777777777
+          },
+          {
+            "from": 96,
+            "to": 97,
+            "meanRGBByteChange": 0.1596579218106996,
+            "contentMeanRGBByteChange": 0.2128772290809328,
+            "borderMeanRGBByteChange": 0.05072263531618435,
+            "maxRGBByteChange": 126,
+            "pixelsWithAnyChannelChangeAbove32": 0.0005328896604938272
+          },
+          {
+            "from": 97,
+            "to": 98,
+            "meanRGBByteChange": 0.15510577417695473,
+            "contentMeanRGBByteChange": 0.2068076989026063,
+            "borderMeanRGBByteChange": 0.049688504823151125,
+            "maxRGBByteChange": 126,
+            "pixelsWithAnyChannelChangeAbove32": 0.000498167438271605
+          },
+          {
+            "from": 98,
+            "to": 99,
+            "meanRGBByteChange": 0.1805375514403292,
+            "contentMeanRGBByteChange": 0.2407167352537723,
+            "borderMeanRGBByteChange": 0.08861284163987138,
+            "maxRGBByteChange": 139,
+            "pixelsWithAnyChannelChangeAbove32": 0.0007619598765432099
+          },
+          {
+            "from": 99,
+            "to": 100,
+            "meanRGBByteChange": 0.14659063143004114,
+            "contentMeanRGBByteChange": 0.19545417524005487,
+            "borderMeanRGBByteChange": 0.045175174169346195,
+            "maxRGBByteChange": 124,
+            "pixelsWithAnyChannelChangeAbove32": 0.00044077932098765435
+          },
+          {
+            "from": 100,
+            "to": 101,
+            "meanRGBByteChange": 0.14171055169753086,
+            "contentMeanRGBByteChange": 0.18894740226337448,
+            "borderMeanRGBByteChange": 0.04434200830653805,
+            "maxRGBByteChange": 114,
+            "pixelsWithAnyChannelChangeAbove32": 0.00042920524691358023
+          },
+          {
+            "from": 101,
+            "to": 102,
+            "meanRGBByteChange": 0.13768261316872427,
+            "contentMeanRGBByteChange": 0.18357681755829905,
+            "borderMeanRGBByteChange": 0.04089630225080386,
+            "maxRGBByteChange": 115,
+            "pixelsWithAnyChannelChangeAbove32": 0.000390625
+          },
+          {
+            "from": 102,
+            "to": 103,
+            "meanRGBByteChange": 0.13231979809670782,
+            "contentMeanRGBByteChange": 0.1764263974622771,
+            "borderMeanRGBByteChange": 0.04059904206859593,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.00036265432098765433
+          },
+          {
+            "from": 103,
+            "to": 104,
+            "meanRGBByteChange": 0.12744550540123456,
+            "contentMeanRGBByteChange": 0.16992734053497943,
+            "borderMeanRGBByteChange": 0.037785537245444804,
+            "maxRGBByteChange": 108,
+            "pixelsWithAnyChannelChangeAbove32": 0.0003356481481481481
+          },
+          {
+            "from": 104,
+            "to": 105,
+            "meanRGBByteChange": 0.12198881172839506,
+            "contentMeanRGBByteChange": 0.16265174897119342,
+            "borderMeanRGBByteChange": 0.035939174705251875,
+            "maxRGBByteChange": 103,
+            "pixelsWithAnyChannelChangeAbove32": 0.0003028549382716049
+          },
+          {
+            "from": 105,
+            "to": 106,
+            "meanRGBByteChange": 0.11638069058641975,
+            "contentMeanRGBByteChange": 0.15517425411522634,
+            "borderMeanRGBByteChange": 0.033640641747052516,
+            "maxRGBByteChange": 102,
+            "pixelsWithAnyChannelChangeAbove32": 0.00026089891975308643
+          },
+          {
+            "from": 106,
+            "to": 107,
+            "meanRGBByteChange": 0.11084764017489712,
+            "contentMeanRGBByteChange": 0.1477968535665295,
+            "borderMeanRGBByteChange": 0.032455787781350484,
+            "maxRGBByteChange": 100,
+            "pixelsWithAnyChannelChangeAbove32": 0.00023485725308641976
+          },
+          {
+            "from": 107,
+            "to": 108,
+            "meanRGBByteChange": 0.10478346836419752,
+            "contentMeanRGBByteChange": 0.13971129115226338,
+            "borderMeanRGBByteChange": 0.02998559753483387,
+            "maxRGBByteChange": 96,
+            "pixelsWithAnyChannelChangeAbove32": 0.00020785108024691358
+          },
+          {
+            "from": 108,
+            "to": 109,
+            "meanRGBByteChange": 0.0982275591563786,
+            "contentMeanRGBByteChange": 0.13097007887517148,
+            "borderMeanRGBByteChange": 0.02749028670953912,
+            "maxRGBByteChange": 93,
+            "pixelsWithAnyChannelChangeAbove32": 0.00015914351851851853
+          },
+          {
+            "from": 109,
+            "to": 110,
+            "meanRGBByteChange": 0.09156153549382716,
+            "contentMeanRGBByteChange": 0.12208204732510287,
+            "borderMeanRGBByteChange": 0.025045217041800644,
+            "maxRGBByteChange": 83,
+            "pixelsWithAnyChannelChangeAbove32": 0.00014130015432098765
+          },
+          {
+            "from": 110,
+            "to": 111,
+            "meanRGBByteChange": 0.0849021026234568,
+            "contentMeanRGBByteChange": 0.11320280349794239,
+            "borderMeanRGBByteChange": 0.023625904340836012,
+            "maxRGBByteChange": 81,
+            "pixelsWithAnyChannelChangeAbove32": 0.0001181520061728395
+          },
+          {
+            "from": 111,
+            "to": 112,
+            "meanRGBByteChange": 0.07769563400205762,
+            "contentMeanRGBByteChange": 0.10359417866941015,
+            "borderMeanRGBByteChange": 0.02125200964630225,
+            "maxRGBByteChange": 76,
+            "pixelsWithAnyChannelChangeAbove32": 9.500385802469136e-05
+          },
+          {
+            "from": 112,
+            "to": 113,
+            "meanRGBByteChange": 0.0700901813271605,
+            "contentMeanRGBByteChange": 0.09345357510288066,
+            "borderMeanRGBByteChange": 0.018928356109324758,
+            "maxRGBByteChange": 72,
+            "pixelsWithAnyChannelChangeAbove32": 6.36574074074074e-05
+          },
+          {
+            "from": 113,
+            "to": 114,
+            "meanRGBByteChange": 0.06223813657407407,
+            "contentMeanRGBByteChange": 0.08298418209876543,
+            "borderMeanRGBByteChange": 0.01668425107181136,
+            "maxRGBByteChange": 69,
+            "pixelsWithAnyChannelChangeAbove32": 3.7615740740740744e-05
+          },
+          {
+            "from": 114,
+            "to": 115,
+            "meanRGBByteChange": 0.053720582561728396,
+            "contentMeanRGBByteChange": 0.07162744341563786,
+            "borderMeanRGBByteChange": 0.013845625669882101,
+            "maxRGBByteChange": 58,
+            "pixelsWithAnyChannelChangeAbove32": 2.8935185185185186e-05
+          },
+          {
+            "from": 115,
+            "to": 116,
+            "meanRGBByteChange": 0.07415734310699588,
+            "contentMeanRGBByteChange": 0.09887645747599451,
+            "borderMeanRGBByteChange": 0.053498459271168274,
+            "maxRGBByteChange": 138,
+            "pixelsWithAnyChannelChangeAbove32": 0.0002922453703703704
+          },
+          {
+            "from": 116,
+            "to": 117,
+            "meanRGBByteChange": 0.036294367283950614,
+            "contentMeanRGBByteChange": 0.048392489711934154,
+            "borderMeanRGBByteChange": 0.0091271436227224,
+            "maxRGBByteChange": 43,
+            "pixelsWithAnyChannelChangeAbove32": 7.2337962962962966e-06
+          },
+          {
+            "from": 117,
+            "to": 118,
+            "meanRGBByteChange": 0.02636799125514403,
+            "contentMeanRGBByteChange": 0.03515732167352538,
+            "borderMeanRGBByteChange": 0.0065606578242229366,
+            "maxRGBByteChange": 36,
+            "pixelsWithAnyChannelChangeAbove32": 9.645061728395062e-07
+          },
+          {
+            "from": 118,
+            "to": 119,
+            "meanRGBByteChange": 0.016270415380658435,
+            "contentMeanRGBByteChange": 0.021693887174211248,
+            "borderMeanRGBByteChange": 0.0037010986066452305,
+            "maxRGBByteChange": 25,
+            "pixelsWithAnyChannelChangeAbove32": 0.0
+          }
+        ]
+      },
+      "views": [
+        {
+          "view": "left",
+          "url": "assets/v09/media/views/08_three_fruits/left.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 525644,
+          "rgbaSHA256": "b3cf600d77e2ba1b1059cdfe1820bd8f3c0ec36235d8edd350373f431d3a3ce0",
+          "pngSHA256": "0b38f716745b2de0ae11771b4fac788fe3a8dc96b84116bed6bc13b240d1a4d0"
+        },
+        {
+          "view": "front",
+          "url": "assets/v09/media/views/08_three_fruits/front.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 526575,
+          "rgbaSHA256": "da494ce7db9bbeb805ed7aa4073aa3712b39052d6961ff7b947093990dcaddae",
+          "pngSHA256": "1600ad52876e895e319b7b1f7e9eb5963ba2e2288635a3717d62e7000a3f548d"
+        },
+        {
+          "view": "right",
+          "url": "assets/v09/media/views/08_three_fruits/right.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 527288,
+          "rgbaSHA256": "a038a1bcb1ac70991bf46ffd62caf4373a77bb4c067fc5fdf5f22f300fcab468",
+          "pngSHA256": "1788e2ca2fd6de12855cf99553e916b5cd6a9695324488e962c62711419c29b5"
+        }
+      ]
+    }
+  ],
+  "publishedMediaBytes": {
+    "videos": 1693677,
+    "viewPNGs": 5336883,
+    "videoLimit": 10000000,
+    "viewPNGLimit": 12000000
+  },
+  "formatAndPixelChecksPassed": true,
+  "storageBudgetPassed": true,
+  "status": "passed_with_scope_limits"
+}

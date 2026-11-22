@@ -1,0 +1,31 @@
+{
+  "schema": "crf.release_checks.v0.10",
+  "newJavaScriptTests": {
+    "passed": 64,
+    "failed": 0
+  },
+  "pythonTests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "focusedLegacyRegression": {
+    "passed": 43,
+    "failed": 0
+  },
+  "changedPreviouslyTrackedWebFiles": [
+    "web/index.html"
+  ],
+  "deletedPreviouslyTrackedFiles": [],
+  "legacyAssetsUnchanged": true,
+  "allLegacyCasesRetained": true,
+  "assistantVisualInspection": {
+    "performed": true,
+    "independentHumanReview": false,
+    "overallPhotorealismGate": "not_passed",
+    "notes": [
+      "Fruit: inconsistent edge sharpness and weak surface contact.",
+      "Ceramic: encoded outline and grain; weak contact with background.",
+      "Lake and facade: reference reconstructions and edits, not novel text synthesis."
+    ]
+  }
+}

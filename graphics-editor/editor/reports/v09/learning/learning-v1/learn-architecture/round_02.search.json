@@ -1,0 +1,812 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 2,
+  "query": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "checkpoint": {
+    "sessionId": "crf09_0e3e9918-4a7c-4a89-b65f-9def0581418c",
+    "round": 2,
+    "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+    "subtopic": "自然颜色与材质：不同表面、微纹理和真实缺陷",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:46:37.279Z",
+    "runId": "crf07_568277f9-dd2e-4724-8fc8-2438da19a96e",
+    "queries": [
+      "site:commons.wikimedia.org pedestrian signal pole button close-up photo",
+      "site:pexels.com photo red brick wall vintage window close up",
+      "site:commons.wikimedia.org building facade window frame stone wall texture photo",
+      "site:pexels.com photo pedestrian traffic light pole street close up",
+      "site:commons.wikimedia.org pedestrian crossing signal pole connection close-up",
+      "site:commons.wikimedia.org brick wall window frame texture photo"
+    ],
+    "requestIds": [
+      "b98b83d7-b13c-435b-9bbf-a7f1d4534b0b"
+    ],
+    "sourceCount": 15,
+    "newSourceCount": 15,
+    "candidateCount": 15,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_8cb2c82df77c49e681bc56a9fd9e3ecc",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org pedestrian signal pole button close-up photo",
+            "site:pexels.com photo red brick wall vintage window close up",
+            "site:commons.wikimedia.org building facade window frame stone wall texture photo",
+            "site:pexels.com photo pedestrian traffic light pole street close up",
+            "site:commons.wikimedia.org pedestrian crossing signal pole connection close-up",
+            "site:commons.wikimedia.org brick wall window frame texture photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_the_United_States",
+          "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+          "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+          "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+          "https://commons.wikimedia.org/wiki/Category:Brick_window_arches",
+          "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_the_United_States",
+          "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+          "https://commons.wikimedia.org/wiki/File:Northwest_State_Office_Building,_Capitol_Street_and_Forster_Street,_Harrisburg,_PA.jpg#1",
+          "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+          "https://commons.wikimedia.org/wiki/Category:Brick_work_windows?uselang=de",
+          "https://commons.wikimedia.org/wiki/File:Signal_button_Korea.JPG#1",
+          "https://www.pexels.com/photo/window-in-red-brick-house-10254304/",
+          "https://commons.wikimedia.org/wiki/File:Carlton_Lofts,_John_R_Street,_Park,_Midtown,_Detroit,_MI.jpg",
+          "https://www.pexels.com/zh-cn/photo/33079407/",
+          "https://commons.wikimedia.org/wiki/File:Hue_Vietnam_Citadel-of-Hu%E1%BA%BF-11.jpg#1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_the_United_States",
+        "title": "Category:Pedestrian signals in the United States - Wikimedia Commons",
+        "snippet": "Media in category \"Pedestrian signals in the United States\" The following 57 files are in this category, out of 57 total. ... 2.75 MB - Pedestrian crossing button.jpg 2,912 × 4,368; 4.89 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+        "title": "Photo by Steffen Rühlmann on Pexels",
+        "snippet": "4242x2828 Aspect Ratio 3 ... Camera X-E5 Focal 56.0mm Aperture ƒ/5.0 ISO 125 Shutter Speed 1/400 sec Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+        "title": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG - Wikimedia Commons",
+        "snippet": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG ... Original file (3,264 × 2,448 pixels, file size...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+        "title": "Photo by Clarissa Schwarz on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Brick_window_arches",
+        "title": "Category:Brick window arches - Wikimedia Commons",
+        "snippet": "Media in category \"Brick window arches\" The following 48 files are in this category, out of 48 total. ... - Old bricks window arches.jpg 5,184 × 3,456; 7.83 MB - Red Brick Windows.jpg 3...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_the_United_States",
+        "title": "Category:Pedestrian signal push buttons in the United States - Wikimedia Commons",
+        "snippet": "Media in category \"Pedestrian signal push buttons in the United States\" The following 15 files are in this category, out of 15 total. - MUTCD R10-25 (2012).svg 820 × 1 ... - Pedestrian crossing button.jpg 2,912 × 4,368; 4.89 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+        "title": "Photo by BREAKS OUT on Pexels",
+        "snippet": "Dimensions 4000x6000 Aspect Ratio 2:3 Colors Date Apr 15 ... Aperture ƒ/4.5 ISO 100 Shutter Speed 1/320 sec ... Description # Close-up of a vintage red brick building facade with arched windows and peeling walls. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Northwest_State_Office_Building,_Capitol_Street_and_Forster_Street,_Harrisburg,_PA.jpg#1",
+        "title": "File:Northwest State Office Building, Capitol Street and Forster Street, Harrisburg, PA.jpg - Wikimedia Commons - DescriptionNorthwest State Office Building, Capitol Street and Forster Street, Harrisburg, PA",
+        "snippet": "DescriptionNorthwest State Office Building, Capitol Street and Forster Street ... The building features a cream brick facade, granite base, limestone trim, recessed window bays in the center of the facades on the ends of the wings, front ... with stone spandrel panels, one-over-one double-hung windows...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+        "title": "Photo de Katia Miasoed sur Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Poland Description # Feux de circulation à un passage piéton en ville avec des signaux pour vélos et piétons pendant l'automne. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Brick_work_windows?uselang=de",
+        "title": "Category:Brick work windows – Wikimedia Commons",
+        "snippet": "Brick work windows durch ein Gitterwerk aus Ziegeln verschlossene und geschützte Öffnungen in den Außenmauern von Gebäuden Medium hochladen ... Medien in der Kategorie „Brick work windows“ Diese Kategorie enthält nur folgende Datei.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Signal_button_Korea.JPG#1",
+        "title": "File:Signal button Korea.JPG - Wikimedia Commons - File:Signal button Korea.JPG",
+        "snippet": "File:Signal button Korea.JPG ... 448 × 3 ... DescriptionSignal button Korea.JPG | 한국어: 보행자작동식신호기(전라남도 여수시) 日本語: 押しボタン式信号機（全羅南道麗水市） ... Signal button Korea.JPG",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/window-in-red-brick-house-10254304/",
+        "title": "Photo by Fadime Demirtaş on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A rustic red brick wall featuring a white-framed window with a potted plant inside, creating a charming vintage vibe. ### More like this Add filters, effects ... Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Carlton_Lofts,_John_R_Street,_Park,_Midtown,_Detroit,_MI.jpg",
+        "title": "File:Carlton Lofts, John R Street, Park, Midtown, Detroit, MI.jpg - Wikimedia Commons",
+        "snippet": "DescriptionCarlton Lofts ... The building features a stone base, window headers on the first floor with festoons and cartouches, one-over-one windows, buff brick cladding above the second floor ... and large windows and balconies on the north and south facades.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/33079407/",
+        "title": "Pexels Ömer Derinyar图片",
+        "snippet": "尺寸 3359x5971 颜色 medium ... 焦距 22.0mm 光圈 ƒ/4.0 ISO 3200 快门速度 1/15秒 ... 软件 Adobe Imagecore (Linux) Istanbul, Turkey 描述 # 夜间城市街道上写着“DUR”的红色行人信号灯，特写视图。 ### 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Hue_Vietnam_Citadel-of-Hu%E1%BA%BF-11.jpg#1",
+        "title": "File:Hue Vietnam Citadel-of-Huế-11.jpg - Wikimedia Commons - File:Hue Vietnam Citadel-of-Huế-11.jpg",
+        "snippet": "Hue Vietnam Citadel-of-Huế-11.jpg ... DescriptionHue Vietnam Citadel-of-Huế-11.jpg | English: Hue, Vietnam: Brick wall with round, decorated window in the Imperial palace in Hue ... |author=CEphoto, Uwe Aranas |permission={{User...",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "{\"summary\":\"本轮实际检索到 4 个可点击的具体照片/文件详情页，覆盖砖墙与复古窗、建筑立面窗框、行人信号灯以及按钮/立柱连接。另有多个 Commons 分类页和 Pexels 结果，但分类页不能当作单张照片实例；部分 Pexels 页面缺少原始图像 URL，需后续获取照片字节后核验。未下载或逐像素观察任何照片。\",\"features\":[\"待图片验证：Pexels 砖墙与复古窗页面描述提到红色砖墙、阴影与复古窗，适合提取砖缝颗粒、墙面缺陷与窗框边缘的硬/软过渡\",\"待图片验证：Wikimedia Commons 石框窗建筑立面文件页适合提取石材/砖墙微纹理、窗洞轮廓与框料厚度\",\"待图片验证：Wikimedia Commons 行人信号灯文件页适合提取灯头轮廓、立柱连接与日间自然光下的接触阴影方向\",\"待图片验证：Wikimedia Commons 信号按钮文件页可能包含按钮与立柱连接结构，需确认主体占比与背景干扰\",\"待图片验证：接触阴影形态（灯头下方、窗框下沿、立柱底部）需看图判断边缘清晰度与光源方向\"],\"selectionCriteria\":[\"优先选择单张照片中主体轮廓清楚、背景干扰少，且主体占画面比例足以提取边缘的详情页\",\"优先选择自然光照明明确、接触阴影可见但未过曝的照片，便于分离材质颗粒与光照梯度\",\"优先选择正面或轻微侧面视角，避免强透视造成比例测量偏差；如为侧面，需保留立柱连接结构\",\"同一建筑或同一信号灯的不同裁切只计为同一实例，不作为新增参考\",\"来源页需能追溯到具体照片文件或馆藏记录，而不是分类页、图库首页或算法数据集描述\"],\"uncertainties\":[\"Pexels 页面返回的标题/描述提到砖墙与复古窗，但搜索结果未返回原始图像 URL；具体构图、砖缝尺度和光照方向待后续获取照片字节后验证\",\"Wikimedia Commons 文件页提供原文件尺寸与作者，但许可证字段在搜索结果中未完整呈现，需回源页核验\",\"部分 Commons 结果为分类页（如 Pedestrian signals in the United States），分类页本身不是单张照片实例，不能当作已发现照片\",\"Pexels 行人信号灯页面多为描述性内容，未提供原始图像 URL；主体占比与立柱连接是否清楚待看图判断\"],\"nextFocus\":\"下一轮优先补齐：1）Wikimedia Commons 上带明确许可证和原始文件 URL 的独立行人信号灯/立柱连接照片；2）Pexels 上可访问且能获取原始图像 URL 的具体照片页，覆盖砖墙颗粒、窗框边缘与自然光接触阴影；3）同一立面在正面与侧面视角下的不同实例，避免裁切重复。\"}",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+        "title": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carlton_Lofts,_John_R_Street,_Park,_Midtown,_Detroit,_MI.jpg",
+        "title": "File:Carlton Lofts, John R Street, Park, Midtown, Detroit, MI.jpg - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Carlton_Lofts,_John_R_Street,_Park,_Midtown,_Detroit,_MI.jpg"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_the_United_States",
+      "title": "Category:Pedestrian signals in the United States - Wikimedia Commons",
+      "snippet": "Media in category \"Pedestrian signals in the United States\" The following 57 files are in this category, out of 57 total. ... 2.75 MB - Pedestrian crossing button.jpg 2,912 × 4,368; 4.89 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "snippet": "4242x2828 Aspect Ratio 3 ... Camera X-E5 Focal 56.0mm Aperture ƒ/5.0 ISO 125 Shutter Speed 1/400 sec Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+      "title": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG - Wikimedia Commons",
+      "snippet": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG ... Original file (3,264 × 2,448 pixels, file size...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Brick_window_arches",
+      "title": "Category:Brick window arches - Wikimedia Commons",
+      "snippet": "Media in category \"Brick window arches\" The following 48 files are in this category, out of 48 total. ... - Old bricks window arches.jpg 5,184 × 3,456; 7.83 MB - Red Brick Windows.jpg 3...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_the_United_States",
+      "title": "Category:Pedestrian signal push buttons in the United States - Wikimedia Commons",
+      "snippet": "Media in category \"Pedestrian signal push buttons in the United States\" The following 15 files are in this category, out of 15 total. - MUTCD R10-25 (2012).svg 820 × 1 ... - Pedestrian crossing button.jpg 2,912 × 4,368; 4.89 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+      "title": "Photo by BREAKS OUT on Pexels",
+      "snippet": "Dimensions 4000x6000 Aspect Ratio 2:3 Colors Date Apr 15 ... Aperture ƒ/4.5 ISO 100 Shutter Speed 1/320 sec ... Description # Close-up of a vintage red brick building facade with arched windows and peeling walls. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Northwest_State_Office_Building,_Capitol_Street_and_Forster_Street,_Harrisburg,_PA.jpg#1",
+      "title": "File:Northwest State Office Building, Capitol Street and Forster Street, Harrisburg, PA.jpg - Wikimedia Commons - DescriptionNorthwest State Office Building, Capitol Street and Forster Street, Harrisburg, PA",
+      "snippet": "DescriptionNorthwest State Office Building, Capitol Street and Forster Street ... The building features a cream brick facade, granite base, limestone trim, recessed window bays in the center of the facades on the ends of the wings, front ... with stone spandrel panels, one-over-one double-hung windows...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+      "title": "Photo de Katia Miasoed sur Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Poland Description # Feux de circulation à un passage piéton en ville avec des signaux pour vélos et piétons pendant l'automne. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Brick_work_windows?uselang=de",
+      "title": "Category:Brick work windows – Wikimedia Commons",
+      "snippet": "Brick work windows durch ein Gitterwerk aus Ziegeln verschlossene und geschützte Öffnungen in den Außenmauern von Gebäuden Medium hochladen ... Medien in der Kategorie „Brick work windows“ Diese Kategorie enthält nur folgende Datei.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Signal_button_Korea.JPG#1",
+      "title": "File:Signal button Korea.JPG - Wikimedia Commons - File:Signal button Korea.JPG",
+      "snippet": "File:Signal button Korea.JPG ... 448 × 3 ... DescriptionSignal button Korea.JPG | 한국어: 보행자작동식신호기(전라남도 여수시) 日本語: 押しボタン式信号機（全羅南道麗水市） ... Signal button Korea.JPG",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/window-in-red-brick-house-10254304/",
+      "title": "Photo by Fadime Demirtaş on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A rustic red brick wall featuring a white-framed window with a potted plant inside, creating a charming vintage vibe. ### More like this Add filters, effects ... Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Carlton_Lofts,_John_R_Street,_Park,_Midtown,_Detroit,_MI.jpg",
+      "title": "File:Carlton Lofts, John R Street, Park, Midtown, Detroit, MI.jpg - Wikimedia Commons",
+      "snippet": "DescriptionCarlton Lofts ... The building features a stone base, window headers on the first floor with festoons and cartouches, one-over-one windows, buff brick cladding above the second floor ... and large windows and balconies on the north and south facades.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/33079407/",
+      "title": "Pexels Ömer Derinyar图片",
+      "snippet": "尺寸 3359x5971 颜色 medium ... 焦距 22.0mm 光圈 ƒ/4.0 ISO 3200 快门速度 1/15秒 ... 软件 Adobe Imagecore (Linux) Istanbul, Turkey 描述 # 夜间城市街道上写着“DUR”的红色行人信号灯，特写视图。 ### 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Hue_Vietnam_Citadel-of-Hu%E1%BA%BF-11.jpg#1",
+      "title": "File:Hue Vietnam Citadel-of-Huế-11.jpg - Wikimedia Commons - File:Hue Vietnam Citadel-of-Huế-11.jpg",
+      "snippet": "Hue Vietnam Citadel-of-Huế-11.jpg ... DescriptionHue Vietnam Citadel-of-Huế-11.jpg | English: Hue, Vietnam: Brick wall with round, decorated window in the Imperial palace in Hue ... |author=CEphoto, Uwe Aranas |permission={{User...",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_the_United_States",
+      "title": "Category:Pedestrian signals in the United States - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+      "title": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Brick_window_arches",
+      "title": "Category:Brick window arches - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_the_United_States",
+      "title": "Category:Pedestrian signal push buttons in the United States - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+      "title": "Photo by BREAKS OUT on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Northwest_State_Office_Building,_Capitol_Street_and_Forster_Street,_Harrisburg,_PA.jpg#1",
+      "title": "File:Northwest State Office Building, Capitol Street and Forster Street, Harrisburg, PA.jpg - Wikimedia Commons - DescriptionNorthwest State Office Building, Capitol Street and Forster Street, Harrisburg, PA",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+      "title": "Photo de Katia Miasoed sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Brick_work_windows?uselang=de",
+      "title": "Category:Brick work windows – Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Signal_button_Korea.JPG#1",
+      "title": "File:Signal button Korea.JPG - Wikimedia Commons - File:Signal button Korea.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/window-in-red-brick-house-10254304/",
+      "title": "Photo by Fadime Demirtaş on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carlton_Lofts,_John_R_Street,_Park,_Midtown,_Detroit,_MI.jpg",
+      "title": "File:Carlton Lofts, John R Street, Park, Midtown, Detroit, MI.jpg - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/33079407/",
+      "title": "Pexels Ömer Derinyar图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hue_Vietnam_Citadel-of-Hu%E1%BA%BF-11.jpg#1",
+      "title": "File:Hue Vietnam Citadel-of-Huế-11.jpg - Wikimedia Commons - File:Hue Vietnam Citadel-of-Huế-11.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 77428,
+        "sha256": "2e6d1b2e0f561f4ec0a738c59ce496294d21704c8493c4c861f7478ebbe95fd2"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36450164/pexels-photo-36450164.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "sha256": "2e6d1b2e0f561f4ec0a738c59ce496294d21704c8493c4c861f7478ebbe95fd2",
+      "bytes": 77428,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 200066,
+        "sha256": "02a6d5a3a497d9cd961172670a4b1b721be7f230b6e82bc388ffc6542259c874"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG/960px-Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+      "title": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG - Wikimedia Commons",
+      "sha256": "02a6d5a3a497d9cd961172670a4b1b721be7f230b6e82bc388ffc6542259c874",
+      "bytes": 200066,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Globetrotter19",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 3264,
+        "height": 2448,
+        "bytes": 1992849
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 25322,
+        "sha256": "cda9a834b5b5a1ea176797acb67c100629fcb4c98bcb71e58f37011a66ef47aa"
+      },
+      "imageUrl": "https://images.pexels.com/photos/19901332/pexels-photo-19901332.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "sha256": "cda9a834b5b5a1ea176797acb67c100629fcb4c98bcb71e58f37011a66ef47aa",
+      "bytes": 25322,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 514
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 182228,
+        "sha256": "b3a7ee2c330623c22add55bf88503cbada6d1ab1a4ec8fbcc63868d0c22a0108"
+      },
+      "imageUrl": "https://images.pexels.com/photos/21694009/pexels-photo-21694009.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+      "title": "Photo by BREAKS OUT on Pexels",
+      "sha256": "b3a7ee2c330623c22add55bf88503cbada6d1ab1a4ec8fbcc63868d0c22a0108",
+      "bytes": 182228,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/36450164/pexels-photo-36450164.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "sha256": "2e6d1b2e0f561f4ec0a738c59ce496294d21704c8493c4c861f7478ebbe95fd2",
+      "bytes": 77428,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG/960px-Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+      "title": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG - Wikimedia Commons",
+      "sha256": "02a6d5a3a497d9cd961172670a4b1b721be7f230b6e82bc388ffc6542259c874",
+      "bytes": 200066,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Globetrotter19",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 3264,
+        "height": 2448,
+        "bytes": 1992849
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/19901332/pexels-photo-19901332.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "sha256": "cda9a834b5b5a1ea176797acb67c100629fcb4c98bcb71e58f37011a66ef47aa",
+      "bytes": 25322,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 514,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/21694009/pexels-photo-21694009.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+      "title": "Photo by BREAKS OUT on Pexels",
+      "sha256": "b3a7ee2c330623c22add55bf88503cbada6d1ab1a4ec8fbcc63868d0c22a0108",
+      "bytes": 182228,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_the_United_States",
+        "title": "Category:Pedestrian signals in the United States - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+        "title": "Photo by Steffen Rühlmann on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/36450164/pexels-photo-36450164.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/36450164/pexels-photo-36450164.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 77428,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "2e6d1b2e0f561f4ec0a738c59ce496294d21704c8493c4c861f7478ebbe95fd2"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+        "title": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG/960px-Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Globetrotter19",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ADwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG/960px-Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 200066,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 720,
+        "sha256": "02a6d5a3a497d9cd961172670a4b1b721be7f230b6e82bc388ffc6542259c874"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+        "title": "Photo by Clarissa Schwarz on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/19901332/pexels-photo-19901332.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/19901332/pexels-photo-19901332.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 25322,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 514,
+        "sha256": "cda9a834b5b5a1ea176797acb67c100629fcb4c98bcb71e58f37011a66ef47aa"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Brick_window_arches",
+        "title": "Category:Brick window arches - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signal_push_buttons_in_the_United_States",
+        "title": "Category:Pedestrian signal push buttons in the United States - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+        "title": "Photo by BREAKS OUT on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/21694009/pexels-photo-21694009.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/21694009/pexels-photo-21694009.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 182228,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "b3a7ee2c330623c22add55bf88503cbada6d1ab1a4ec8fbcc63868d0c22a0108"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Northwest_State_Office_Building,_Capitol_Street_and_Forster_Street,_Harrisburg,_PA.jpg#1",
+        "title": "File:Northwest State Office Building, Capitol Street and Forster Street, Harrisburg, PA.jpg - Wikimedia Commons - DescriptionNorthwest State Office Building, Capitol Street and Forster Street, Harrisburg, PA",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Northwest_State_Office_Building%2C_Capitol_Street_and_Forster_Street%2C_Harrisburg%2C_PA.jpg/960px-Northwest_State_Office_Building%2C_Capitol_Street_and_Forster_Street%2C_Harrisburg%2C_PA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 2.0",
+          "url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "artist": "w_lemay",
+          "credit": "https://www.flickr.com/photos/59081381@N03/52441714538/",
+          "usageTerms": "Creative Commons Attribution-Share Alike 2.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ANorthwest_State_Office_Building%2C_Capitol_Street_and_Forster_Street%2C_Harrisburg%2C_PA.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Northwest_State_Office_Building%2C_Capitol_Street_and_Forster_Street%2C_Harrisburg%2C_PA.jpg/960px-Northwest_State_Office_Building%2C_Capitol_Street_and_Forster_Street%2C_Harrisburg%2C_PA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 255344,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 720,
+        "sha256": "99e7cf6f0dafad210020f48874434d3cc3cdb2d10cc8fff60085a2137d15800f"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+        "title": "Photo de Katia Miasoed sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/18794032/pexels-photo-18794032.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/18794032/pexels-photo-18794032.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 113076,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "dee9ee50ef5cd1baa3a711cfa0c25cbd8698f392a6648343c46752dccea78941"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "model_semantic_plan",
+    "summary": "本轮实际检索到 4 个可点击的具体照片/文件详情页，覆盖砖墙与复古窗、建筑立面窗框、行人信号灯以及按钮/立柱连接。另有多个 Commons 分类页和 Pexels 结果，但分类页不能当作单张照片实例；部分 Pexels 页面缺少原始图像 URL，需后续获取照片字节后核验。未下载或逐像素观察任何照片。",
+    "features": [
+      "待图片验证：Pexels 砖墙与复古窗页面描述提到红色砖墙、阴影与复古窗，适合提取砖缝颗粒、墙面缺陷与窗框边缘的硬/软过渡",
+      "待图片验证：Wikimedia Commons 石框窗建筑立面文件页适合提取石材/砖墙微纹理、窗洞轮廓与框料厚度",
+      "待图片验证：Wikimedia Commons 行人信号灯文件页适合提取灯头轮廓、立柱连接与日间自然光下的接触阴影方向",
+      "待图片验证：Wikimedia Commons 信号按钮文件页可能包含按钮与立柱连接结构，需确认主体占比与背景干扰",
+      "待图片验证：接触阴影形态（灯头下方、窗框下沿、立柱底部）需看图判断边缘清晰度与光源方向"
+    ],
+    "selectionCriteria": [
+      "优先选择单张照片中主体轮廓清楚、背景干扰少，且主体占画面比例足以提取边缘的详情页",
+      "优先选择自然光照明明确、接触阴影可见但未过曝的照片，便于分离材质颗粒与光照梯度",
+      "优先选择正面或轻微侧面视角，避免强透视造成比例测量偏差；如为侧面，需保留立柱连接结构",
+      "同一建筑或同一信号灯的不同裁切只计为同一实例，不作为新增参考",
+      "来源页需能追溯到具体照片文件或馆藏记录，而不是分类页、图库首页或算法数据集描述"
+    ],
+    "uncertainties": [
+      "Pexels 页面返回的标题/描述提到砖墙与复古窗，但搜索结果未返回原始图像 URL；具体构图、砖缝尺度和光照方向待后续获取照片字节后验证",
+      "Wikimedia Commons 文件页提供原文件尺寸与作者，但许可证字段在搜索结果中未完整呈现，需回源页核验",
+      "部分 Commons 结果为分类页（如 Pedestrian signals in the United States），分类页本身不是单张照片实例，不能当作已发现照片",
+      "Pexels 行人信号灯页面多为描述性内容，未提供原始图像 URL；主体占比与立柱连接是否清楚待看图判断"
+    ],
+    "nextFocus": "下一轮优先补齐：1）Wikimedia Commons 上带明确许可证和原始文件 URL 的独立行人信号灯/立柱连接照片；2）Pexels 上可访问且能获取原始图像 URL 的具体照片页，覆盖砖墙颗粒、窗框边缘与自然光接触阴影；3）同一立面在正面与侧面视角下的不同实例，避免裁切重复。",
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 8702,
+    "completion_tokens": 607,
+    "total_tokens": 9309,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "b98b83d7-b13c-435b-9bbf-a7f1d4534b0b",
+        "model": "deepseek-flash",
+        "elapsedMs": 6079,
+        "prompt_tokens": 8702,
+        "completion_tokens": 607,
+        "total_tokens": 9309,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 30457,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 77428,
+        "sha256": "2e6d1b2e0f561f4ec0a738c59ce496294d21704c8493c4c861f7478ebbe95fd2"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36450164/pexels-photo-36450164.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "sha256": "2e6d1b2e0f561f4ec0a738c59ce496294d21704c8493c4c861f7478ebbe95fd2",
+      "bytes": 77428,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/2e6d1b2e0f561f4ec0a738c59ce496294d21704c8493c4c861f7478ebbe95fd2.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 200066,
+        "sha256": "02a6d5a3a497d9cd961172670a4b1b721be7f230b6e82bc388ffc6542259c874"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG/960px-Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+      "title": "File:Dwelling house with balcony. Stone framed windows. - 11, Bástya Street, Downtown, Székesfehérvár, Fejér county, Hungary.JPG - Wikimedia Commons",
+      "sha256": "02a6d5a3a497d9cd961172670a4b1b721be7f230b6e82bc388ffc6542259c874",
+      "bytes": 200066,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Globetrotter19",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Dwelling_house_with_balcony._Stone_framed_windows._-_11%2C_B%C3%A1stya_Street%2C_Downtown%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%2C_Fej%C3%A9r_county%2C_Hungary.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 3264,
+        "height": 2448,
+        "bytes": 1992849
+      },
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/02a6d5a3a497d9cd961172670a4b1b721be7f230b6e82bc388ffc6542259c874.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 25322,
+        "sha256": "cda9a834b5b5a1ea176797acb67c100629fcb4c98bcb71e58f37011a66ef47aa"
+      },
+      "imageUrl": "https://images.pexels.com/photos/19901332/pexels-photo-19901332.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "sha256": "cda9a834b5b5a1ea176797acb67c100629fcb4c98bcb71e58f37011a66ef47aa",
+      "bytes": 25322,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 514,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/cda9a834b5b5a1ea176797acb67c100629fcb4c98bcb71e58f37011a66ef47aa.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 182228,
+        "sha256": "b3a7ee2c330623c22add55bf88503cbada6d1ab1a4ec8fbcc63868d0c22a0108"
+      },
+      "imageUrl": "https://images.pexels.com/photos/21694009/pexels-photo-21694009.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+      "title": "Photo by BREAKS OUT on Pexels",
+      "sha256": "b3a7ee2c330623c22add55bf88503cbada6d1ab1a4ec8fbcc63868d0c22a0108",
+      "bytes": 182228,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/b3a7ee2c330623c22add55bf88503cbada6d1ab1a4ec8fbcc63868d0c22a0108.webp"
+    }
+  ]
+}

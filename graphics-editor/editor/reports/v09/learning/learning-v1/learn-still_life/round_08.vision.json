@@ -1,0 +1,328 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 8,
+  "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "items": [
+    {
+      "id": "ref.8.0",
+      "label": "橙子与苹果近景静物",
+      "category": "fruit close-up",
+      "role": "object",
+      "bbox": [
+        0.28,
+        0.29,
+        0.96,
+        1
+      ],
+      "palette": [
+        [
+          238,
+          132,
+          26
+        ],
+        [
+          186,
+          51,
+          55
+        ],
+        [
+          195,
+          190,
+          130
+        ],
+        [
+          138,
+          84,
+          143
+        ],
+        [
+          85,
+          44,
+          35
+        ]
+      ],
+      "lightDirection": "front",
+      "description": "近距水果静物：前景一颗大橙子占据右下方，果皮有细密凹点、油亮高光和少量暗斑；上方与左后方还有橙子，左下和右下是红/粉色苹果与青红苹果；中央偏左的紫色圆形果实身份不清。构图紧密，水果相互遮挡并接近充满画面，适合观察果皮纹理、橙子轮廓和亮部，但不能据此判断完整外形。",
+      "tags": [
+        "橙子",
+        "苹果",
+        "果皮纹理",
+        "近景",
+        "静物",
+        "高光",
+        "遮挡",
+        "紫色果实",
+        "柑橘",
+        "照片"
+      ],
+      "limitations": [
+        "低分辨率且裁切紧",
+        "紫色果实身份不确定",
+        "无法确认梨或陶瓷花瓶是否在场",
+        "主要主体部分出画",
+        "bbox为估计非精确分割",
+        "光照方向判断受限"
+      ]
+    },
+    {
+      "id": "ref.8.1",
+      "label": "窗台玻璃花瓶插雏菊与水果",
+      "category": "window still life",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          126,
+          153,
+          70
+        ],
+        [
+          239,
+          236,
+          210
+        ],
+        [
+          168,
+          186,
+          147
+        ],
+        [
+          149,
+          53,
+          38
+        ],
+        [
+          198,
+          160,
+          54
+        ]
+      ],
+      "lightDirection": "back",
+      "description": "室内窗台静物：左侧有半透明窗帘，中央透明玻璃花瓶插白色雏菊状花与绿色茎叶，花瓶后面是窗框，窗外为明亮绿色植物；窗台上左右摆放数枚水果，左侧似青/红苹果，右侧黄色水果身份不明。强窗光从后方照射，花朵与花瓶轮廓较突出，玻璃有透射和高光，水果与背景有虚化。可复用透明容器、逆光轮廓和窗台承托关系；花瓶不是普通陶瓷花瓶。",
+      "tags": [
+        "玻璃花瓶",
+        "雏菊",
+        "窗台",
+        "逆光",
+        "水果",
+        "静物",
+        "透明材质",
+        "窗帘",
+        "室内",
+        "照片"
+      ],
+      "limitations": [
+        "花瓶为透明玻璃而非普通陶瓷",
+        "水果种类与数量不易辨清",
+        "逆光与低分辨率导致细节缺失",
+        "玻璃和花朵有遮挡与虚化",
+        "bbox为整图而非主体分割",
+        "无法获得新视角"
+      ]
+    },
+    {
+      "id": "ref.8.2",
+      "label": "庞贝壁画果篮静物",
+      "category": "ancient fresco still life",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          45,
+          88,
+          112
+        ],
+        [
+          169,
+          135,
+          74
+        ],
+        [
+          137,
+          76,
+          59
+        ],
+        [
+          91,
+          101,
+          67
+        ],
+        [
+          151,
+          146,
+          132
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "古代墙面壁画残片，画面中央绘有蓝色编织篮/盆，盛满圆形果实和成串果实，右侧有黄色梨形或瓶状物体与褐色罐/器皿，左侧和下方可见破损灰泥、线条和模糊器物。整体为褪色、斑驳的绘画表面，边缘不完整，不是真实水果照片；可复用古代静物构图、篮筐与果实色彩、残片轮廓，但不能当作真实物体材质或真实光照样本。",
+      "tags": [
+        "壁画",
+        "庞贝",
+        "果篮",
+        "古代静物",
+        "残片",
+        "褪色",
+        "蓝色篮筐",
+        "罐",
+        "绘画",
+        "考古"
+      ],
+      "limitations": [
+        "为壁画而非真实静物",
+        "颜料褪色且表面破损",
+        "物体身份多为推测",
+        "低分辨率细节不足",
+        "无真实光照方向和接触阴影可测",
+        "画面边界不完整"
+      ]
+    },
+    {
+      "id": "ref.8.3",
+      "label": "白布上的苹果、浆果与玻璃杯静物",
+      "category": "tabletop still life",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          122,
+          48,
+          38
+        ],
+        [
+          208,
+          203,
+          196
+        ],
+        [
+          180,
+          55,
+          44
+        ],
+        [
+          203,
+          180,
+          102
+        ],
+        [
+          72,
+          28,
+          42
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "深红褐色背景前的桌面静物：白灰色布幔铺在台面，中央一只透明小玻璃杯盛琥珀色液体并带深色浆果/果片，左右各有一枚带红晕的苹果，布上散落深红浆果；右侧苹果有黄绿亮面和红晕。柔光在布面形成褶皱阴影，物体有接触阴影。可复用苹果轮廓、布面承托、玻璃透射与浆果散点；图中为玻璃杯，不是陶瓷花瓶。",
+      "tags": [
+        "苹果",
+        "浆果",
+        "玻璃杯",
+        "白布",
+        "静物",
+        "桌面",
+        "接触阴影",
+        "柔光",
+        "红色背景",
+        "照片"
+      ],
+      "limitations": [
+        "为多物体完整场景，不能直接拆为独立实例",
+        "玻璃杯中内容物不清",
+        "部分浆果种类不可辨",
+        "光照方向可从高光推测但非精确",
+        "无梨或陶瓷花瓶",
+        "bbox为整图而非精确分割"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "四图均围绕水果或食物静物展开",
+    "可见圆形水果、容器或承托面",
+    "可见表面高光、阴影和物体遮挡",
+    "均受低分辨率或裁切限制",
+    "包含三张照片与一幅壁画，媒介不统一"
+  ],
+  "missingEvidence": [
+    "缺少清晰、独立的梨实例",
+    "缺少普通陶瓷花瓶的明确证据",
+    "无法从单视角获得物体背面或完整轮廓",
+    "无像素级分割、材质或尺寸测量",
+    "部分容器和水果种类无法确认",
+    "无拍摄参数和真实世界坐标",
+    "壁画图无法验证实际静物摆放与真实光照"
+  ],
+  "images": [
+    {
+      "id": "ref.8.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruit_(1).JPG#1",
+      "sha256": "c6d718d4044366a102c293279492079528d96191502aed859fcbc5356e300a37",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.8.1",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+      "sha256": "472bb1dfce7242ad0cc7a517cd6d6ac7d177cb48e955db872ae4d3c62f87eb33",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.8.2",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_lifes_with_food_-_Pompeii_(II_4_2-12)_-_Napoli_MAN_8611.jpg#1",
+      "sha256": "e5c10d4c211327aab67d0dc70279efe6e9d5f566796a8b42e017b66e24734e3a",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.8.3",
+      "sourceUrl": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+      "sha256": "6db7fa1d8a02900b403bcb98c696df2fd270efc75345bf61db7b1b7c968faa83",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "c4cb79e8-6ef4-46e2-9658-b18cb46b127b",
+        "model": "deepseek-flash",
+        "elapsedMs": 39438,
+        "prompt_tokens": 1624,
+        "completion_tokens": 5391,
+        "total_tokens": 7015,
+        "reasoning_tokens": 4183,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1624,
+    "completion_tokens": 5391,
+    "total_tokens": 7015,
+    "reasoning_tokens": 4183
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 39439
+}

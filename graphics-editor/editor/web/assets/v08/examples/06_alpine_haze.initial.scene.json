@@ -1,0 +1,44 @@
+{
+  "schema": "crf.gaussian_scene.v0.8",
+  "id": "alpine_morning_mist_variant",
+  "title": "阿尔卑斯湖畔晨雾光色变体",
+  "width": 800,
+  "height": 531,
+  "background": [
+    12,
+    18,
+    22
+  ],
+  "objects": [
+    {
+      "id": "bg_alpine_lake",
+      "label": "阿尔卑斯湖畔完整背景",
+      "assetId": "landscape.alpine",
+      "x": 0,
+      "y": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "opacity": 1,
+      "hue": 0,
+      "exposure": 0.03,
+      "zIndex": 0,
+      "visible": true
+    },
+    {
+      "id": "mist_far_shore",
+      "label": "远岸解析高斯薄雾",
+      "assetId": "atmosphere.haze",
+      "x": 0,
+      "y": -71,
+      "scaleX": 0.83,
+      "scaleY": 0.83,
+      "rotation": 0,
+      "opacity": 0.2,
+      "hue": 0,
+      "exposure": -0.05,
+      "zIndex": 1,
+      "visible": true
+    }
+  ]
+}

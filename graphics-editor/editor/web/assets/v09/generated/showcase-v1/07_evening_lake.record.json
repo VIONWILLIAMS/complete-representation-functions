@@ -1,0 +1,895 @@
+{
+  "schema": "crf.actual_generation_trial.v0.9",
+  "id": "07_evening_lake",
+  "title": "暮色湖岸与远山",
+  "category": "landscape",
+  "prompt": "暮色中的山湖，远处两层不同高度的山脊，暖灰天空与深蓝绿湖面。右岸两棵树，左前方两块岩石。画面光线克制，水面与岸线连接自然，避免装饰插画感。输出1024×768，使用CRF原生二维函数与共享高斯外观，保持共同光照、合理比例、材质细节和接触关系。",
+  "seed": 90107,
+  "protocolSha256": "299276050dd4890f52b74fa9e63ff0871716b5f12ad4fe433293a6616a963bc6",
+  "runId": "showcase-v1",
+  "taskId": "crf09_6200cd21-8821-492d-ab03-ab5f97561ac0",
+  "status": "review_required",
+  "stage": "complete",
+  "error": null,
+  "completedAt": "2026-11-21T16:08:24.617Z",
+  "selection": {
+    "index": 2,
+    "reason": "Latest candidate without declared semantic-constraint regression; visual approval remains pending.",
+    "independentReview": false
+  },
+  "frameGate": {
+    "expected": [
+      1024,
+      768
+    ],
+    "actual": [
+      1024,
+      768
+    ],
+    "passed": true
+  },
+  "model": {
+    "id": "shared-1b02095c",
+    "sha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e",
+    "sourceRGBEmbedded": false,
+    "scope": "shared multi-image linear-color moments and Gaussian frequency-band amplitude estimates; procedural shape prior is hand-authored"
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "png": "reports/v09/generation/showcase-v1/07_evening_lake/candidate_00.png",
+      "jpeg": "reports/v09/generation/showcase-v1/07_evening_lake/candidate_00.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 344130,
+        "semanticObjects": 6,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 677,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 677,
+        "pixelSha256": "ed50fabfd8b4ddf67152cd4fd946998fd44ee5438eb25ead20312ad20d7930aa",
+        "pngSha256": "60dfe8b706d8d95068e0c51a3e92e74ba3357e679fbab499f2e7530ac6344f70",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "ridge",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "visible",
+            "subject": "ridge",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "visible",
+            "subject": "tree",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "visible",
+            "subject": "rock",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "right_of",
+            "subject": "tree",
+            "target": "rock",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.835,
+              "targetMean": 0.255
+            }
+          },
+          {
+            "type": "left_of",
+            "subject": "rock",
+            "target": "tree",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.255,
+              "targetMean": 0.835
+            }
+          }
+        ],
+        "evaluated": 8,
+        "passed": 8,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          }
+        ],
+        "evaluated": 2,
+        "passed": 2,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_293a6ea9-5d9c-45c6-9762-8014a5dbddd2",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "画面已具备两层山脊、右岸两树、左前两石与深色水面等语义，但呈现明显的程序化插图质感：山脊带硬水平接缝、雪斑和森林带重复，倒影近乎镜面且与山体未对齐，树根与岸线的接触关系不清。",
+        "qualityNotes": [
+          "暮色情绪与蓝绿水面基调基本到位，用于后续改进的构图可信",
+          "语义元素齐全且左右关系符合约束"
+        ],
+        "warnings": [
+          "realism 评分仅为模型辅助意见，不代表独立人工验收；当前画面未达照片级",
+          "受限生成器对水面波动、山地细节与倒影衰减的表达有限"
+        ],
+        "issues": [
+          {
+            "code": "edge",
+            "severity": "major",
+            "objectIds": [
+              "distant_ridge_high",
+              "distant_ridge_low"
+            ],
+            "description": "两层山脊交界处出现贯穿画面的水平灰带与硬剪裁，低脊轮廓生硬。建议增大低脊与高脊的 y 间距，并提高 fog，或让低脊顶部融入高脊，避免水平分界。"
+          },
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "distant_ridge_high",
+              "distant_ridge_low"
+            ],
+            "description": "山脊白色雪斑呈高对比均匀噪声状，山腰针叶林带呈重复平铺，带有很强的装饰插画感。建议降低雪斑对比和 roughness，缩小森林元素尺度，并让纹理随距离衰减。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [],
+            "description": "水面反射接近完美镜面，缺少波纹与随距离的亮度衰减，导致深蓝绿湖面像玻璃。建议提高水面粗糙度或引入方向性散射，使倒影模糊并随距离变淡。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "right_bank_tree_1",
+              "right_bank_tree_2"
+            ],
+            "description": "右侧两棵树的根部直接没入水中，与浅色岸坡缺少明确接触线，显得漂浮。建议把树基移到右岸坡面并确定落点，在其下方加岸边分界。"
+          },
+          {
+            "code": "contact",
+            "severity": "minor",
+            "objectIds": [
+              "foreground_rock_left_1",
+              "foreground_rock_left_2"
+            ],
+            "description": "左前岩石与地表接触尚可，但缺少与低角度侧光一致的投影和暗部起伏，岩体像平面贴片。建议统一阴影方向并增强体积明暗。"
+          },
+          {
+            "code": "semantic",
+            "severity": "minor",
+            "objectIds": [
+              "distant_ridge_low"
+            ],
+            "description": "倒影中的山形、森林带与上方山脊未对齐且有倍增重复，湖岸与水面边界呈波浪形剪贴。建议让倒影轮廓对应主山脊，并强化岸线的自然衔接。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 4,
+          "coherence": 2
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2509,
+          "completion_tokens": 1616,
+          "total_tokens": 4125,
+          "reasoning_tokens": 995,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "e2b340c5-88a6-4f95-af06-23c80ffb90b9",
+              "model": "deepseek-flash",
+              "elapsedMs": 12212,
+              "prompt_tokens": 2509,
+              "completion_tokens": 1616,
+              "total_tokens": 4125,
+              "reasoning_tokens": 995,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:06:59.811Z",
+            "requestId": "e2b340c5-88a6-4f95-af06-23c80ffb90b9"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 12213
+      }
+    },
+    {
+      "index": 1,
+      "png": "reports/v09/generation/showcase-v1/07_evening_lake/candidate_01.png",
+      "jpeg": "reports/v09/generation/showcase-v1/07_evening_lake/candidate_01.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 344036,
+        "semanticObjects": 6,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 619,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 619,
+        "pixelSha256": "678c4915f6f1fa8e4e346b372bca024fc97d7ca748aaaa3e638e464209070aa1",
+        "pngSha256": "bbe21a27353c9874db1a67f625255219207a88dd4fa95105363b1581f31106b6",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "ridge",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "visible",
+            "subject": "ridge",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "visible",
+            "subject": "tree",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "visible",
+            "subject": "rock",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "right_of",
+            "subject": "tree",
+            "target": "rock",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.875,
+              "targetMean": 0.26
+            }
+          },
+          {
+            "type": "left_of",
+            "subject": "rock",
+            "target": "tree",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.26,
+              "targetMean": 0.875
+            }
+          }
+        ],
+        "evaluated": 8,
+        "passed": 8,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          }
+        ],
+        "evaluated": 2,
+        "passed": 2,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_364474ab-1f60-4284-aa7b-f1ae0880df23",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "画面具备两层山脊、右岸两树、左前两岩和湖面反射，但整体呈平涂程序化插画：山体雪斑像云块，横贯湖平线的等距针叶林与仅两棵树的场景不符，水面反射过于硬直镜像，岩石缺少岸线接触与材质层次。",
+        "qualityNotes": [
+          "构图核心元素齐全，湖面镜像与右岸前景形成了基本空间层次。",
+          "当前更接近示意性程序图，未达到暮色山地湖景的照片级自然外观；仍需材质、光照与接触关系细化。"
+        ],
+        "warnings": [
+          "密集背景林线不是当前场景中的两棵树对象，属于可见的额外语义生成，不应作为已验收的树木数量。",
+          "水面反射过强且无波纹扰动，容易产生装饰插画感。"
+        ],
+        "issues": [
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "distant_ridge_high",
+              "distant_ridge_low"
+            ],
+            "description": "山体表面呈大片灰白斑块，雪与裸岩过渡像云层或平涂贴片，缺少真实山脊结构、破碎岩纹和远近空气透视。应降低雪斑对比、增加脊线细节与分层雾化，避免装饰化。"
+          },
+          {
+            "code": "semantic",
+            "severity": "major",
+            "objectIds": [
+              "right_bank_tree_1",
+              "right_bank_tree_2"
+            ],
+            "description": "地平线出现横贯全幅的密集等距针叶林，远超场景中仅右岸两棵树，且与两棵树的空间位置约束不一致。若保留背景林线，应作为独立远景树群对象生成；否则应移除并保持仅右岸两树。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "foreground_rock_left_1",
+              "foreground_rock_left_2"
+            ],
+            "description": "左侧两块岩石像悬在水面或暗色地面上，缺少明确岸面、湿边、接触阴影和水位线。应将两岩置于同一可见岸面上，补接触暗部、湿岸和局部水线反射。"
+          },
+          {
+            "code": "composition",
+            "severity": "major",
+            "objectIds": [
+              "distant_ridge_high",
+              "distant_ridge_low"
+            ],
+            "description": "山脊、森林线与水面反射形成多条近乎平行的横向条带，重复感强、纵深感弱。应调整两层山脊轮廓高度与雾化差异，并打破林线的等距重复。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [],
+            "description": "整体为均匀环境光，暮色方向光和低角度高光不足；天空、山体、湖面缺少一致的冷暖渐变与背光面压暗，导致平涂感。应统一光源方向，并增强水面反射梯度与轻微波纹高光。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "right_bank_tree_1",
+              "right_bank_tree_2"
+            ],
+            "description": "右岸树冠呈规则分形轮廓，针叶层次重复，树干与暗绿岸坡的接触关系偏弱。应增加不规则枝簇、疏密变化和根部阴影。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [],
+            "description": "水面与右侧岸线是突然的硬边，缺少浅滩、湿岸暗带、自然曲线和倒影破碎过渡，使水岸衔接不自然。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 3,
+          "coherence": 2
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2513,
+          "completion_tokens": 2598,
+          "total_tokens": 5111,
+          "reasoning_tokens": 1861,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "dffed6fe-b24f-4e3a-9374-7d7e28c16f74",
+              "model": "deepseek-flash",
+              "elapsedMs": 17887,
+              "prompt_tokens": 2513,
+              "completion_tokens": 2598,
+              "total_tokens": 5111,
+              "reasoning_tokens": 1861,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:07:41.244Z",
+            "requestId": "dffed6fe-b24f-4e3a-9374-7d7e28c16f74"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 17888
+      }
+    },
+    {
+      "index": 2,
+      "png": "reports/v09/generation/showcase-v1/07_evening_lake/candidate_02.png",
+      "jpeg": "reports/v09/generation/showcase-v1/07_evening_lake/candidate_02.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 344148,
+        "semanticObjects": 6,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 596,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 596,
+        "pixelSha256": "2fae3eb9e9328663e2946a98121e1cd7b8a68666d91ae2fbd1c75dff9344c89c",
+        "pngSha256": "f6b4cea56ce8bc65660c37fcad79cf8798999ac44d61285048fc9b293d6e2357",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "ridge",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "visible",
+            "subject": "ridge",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "visible",
+            "subject": "tree",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "visible",
+            "subject": "rock",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "right_of",
+            "subject": "tree",
+            "target": "rock",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.8575,
+              "targetMean": 0.245
+            }
+          },
+          {
+            "type": "left_of",
+            "subject": "rock",
+            "target": "tree",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.245,
+              "targetMean": 0.8575
+            }
+          }
+        ],
+        "evaluated": 8,
+        "passed": 8,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "tree",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "rock",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          }
+        ],
+        "evaluated": 2,
+        "passed": 2,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": null
+    }
+  ],
+  "usage": [
+    {
+      "phase": "plan",
+      "providerCalls": 1,
+      "prompt_tokens": 1722,
+      "completion_tokens": 1478,
+      "total_tokens": 3200,
+      "reasoning_tokens": 1150,
+      "requests": [
+        {
+          "phase": "native09_plan",
+          "requestId": "90f7edce-590f-4db3-b302-e5b052f8ce70",
+          "model": "deepseek-flash",
+          "elapsedMs": 9184,
+          "prompt_tokens": 1722,
+          "completion_tokens": 1478,
+          "total_tokens": 3200,
+          "reasoning_tokens": 1150,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "generate",
+      "providerCalls": 1,
+      "prompt_tokens": 1887,
+      "completion_tokens": 1725,
+      "total_tokens": 3612,
+      "reasoning_tokens": 984,
+      "requests": [
+        {
+          "phase": "native09_generate",
+          "requestId": "00455886-af0f-4e11-bc87-0fb827cc1563",
+          "model": "deepseek-flash",
+          "elapsedMs": 10115,
+          "prompt_tokens": 1887,
+          "completion_tokens": 1725,
+          "total_tokens": 3612,
+          "reasoning_tokens": 984,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_0",
+      "providerCalls": 1,
+      "prompt_tokens": 2509,
+      "completion_tokens": 1616,
+      "total_tokens": 4125,
+      "reasoning_tokens": 995,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "e2b340c5-88a6-4f95-af06-23c80ffb90b9",
+          "model": "deepseek-flash",
+          "elapsedMs": 12212,
+          "prompt_tokens": 2509,
+          "completion_tokens": 1616,
+          "total_tokens": 4125,
+          "reasoning_tokens": 995,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_1",
+      "providerCalls": 1,
+      "prompt_tokens": 3260,
+      "completion_tokens": 4161,
+      "total_tokens": 7421,
+      "reasoning_tokens": 3253,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "b2a3503d-137b-48bc-9b6f-03e8df54c38c",
+          "model": "deepseek-flash",
+          "elapsedMs": 28315,
+          "prompt_tokens": 3260,
+          "completion_tokens": 4161,
+          "total_tokens": 7421,
+          "reasoning_tokens": 3253,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_1",
+      "providerCalls": 1,
+      "prompt_tokens": 2513,
+      "completion_tokens": 2598,
+      "total_tokens": 5111,
+      "reasoning_tokens": 1861,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "dffed6fe-b24f-4e3a-9374-7d7e28c16f74",
+          "model": "deepseek-flash",
+          "elapsedMs": 17887,
+          "prompt_tokens": 2513,
+          "completion_tokens": 2598,
+          "total_tokens": 5111,
+          "reasoning_tokens": 1861,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_2",
+      "providerCalls": 1,
+      "prompt_tokens": 3353,
+      "completion_tokens": 3978,
+      "total_tokens": 7331,
+      "reasoning_tokens": 3003,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "315c6765-c4b8-407c-bbb7-2e24a35668c3",
+          "model": "deepseek-flash",
+          "elapsedMs": 24578,
+          "prompt_tokens": 3353,
+          "completion_tokens": 3978,
+          "total_tokens": 7331,
+          "reasoning_tokens": 3003,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    }
+  ],
+  "apiOperations": [
+    {
+      "index": 0,
+      "phase": "plan",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:39.527Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_6200cd21-8821-492d-ab03-ab5f97561ac0:0",
+      "finishedAt": "2026-11-21T16:06:48.714Z",
+      "runId": "crf09_5f058ae6-dfda-468e-9590-8b07b52b02f9"
+    },
+    {
+      "index": 1,
+      "phase": "generate",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:48.729Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_6200cd21-8821-492d-ab03-ab5f97561ac0:1",
+      "finishedAt": "2026-11-21T16:06:58.857Z",
+      "runId": "crf09_ff2e6a63-7aed-4854-a687-655d24f6e8fd"
+    },
+    {
+      "index": 2,
+      "phase": "critique_0",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:59.802Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_6200cd21-8821-492d-ab03-ab5f97561ac0:2",
+      "finishedAt": "2026-11-21T16:07:12.024Z",
+      "runId": "crf09_293a6ea9-5d9c-45c6-9762-8014a5dbddd2"
+    },
+    {
+      "index": 3,
+      "phase": "revision_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:12.045Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_6200cd21-8821-492d-ab03-ab5f97561ac0:3",
+      "finishedAt": "2026-11-21T16:07:40.368Z",
+      "runId": "crf09_ec5921ba-d4fb-4a76-a49b-89e9aad99d59"
+    },
+    {
+      "index": 4,
+      "phase": "critique_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:41.233Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_6200cd21-8821-492d-ab03-ab5f97561ac0:4",
+      "finishedAt": "2026-11-21T16:07:59.133Z",
+      "runId": "crf09_364474ab-1f60-4284-aa7b-f1ae0880df23"
+    },
+    {
+      "index": 5,
+      "phase": "revision_2",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:59.154Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_6200cd21-8821-492d-ab03-ab5f97561ac0:5",
+      "finishedAt": "2026-11-21T16:08:23.750Z",
+      "runId": "crf09_82bd5872-c509-4365-8884-46ab3b65afcb"
+    }
+  ],
+  "planningHistory": [],
+  "replanCount": 0,
+  "planEvidence": {
+    "qualityNotes": [
+      "使用CRF原生二维高斯与解析成像及共享外观统计，重点控制暮色暖灰天空、深蓝绿湖面、山脊远近层次和克制光照。",
+      "水面与岸线以程序化几何接触关系近似，避免装饰插画式平铺；具体自然材质细节受共享先验限制。"
+    ],
+    "warnings": [
+      "共享外观摘要仅为有限统计先验，渲染候选不等同于照片级验收；山湖复杂地形与水面微观细节无法精确恢复。"
+    ],
+    "runId": "crf09_5f058ae6-dfda-468e-9590-8b07b52b02f9",
+    "requestIds": [
+      "90f7edce-590f-4db3-b302-e5b052f8ce70"
+    ]
+  },
+  "learning": null,
+  "quality": {
+    "releaseGate": "not_evaluated",
+    "independentHumanReview": false,
+    "scope": "Actual rendered candidates with bounded model feedback; not a photorealism certificate"
+  },
+  "artifact": {
+    "imageUrl": "assets/v09/generated/showcase-v1/07_evening_lake.png",
+    "thumbnailUrl": "assets/v09/generated/showcase-v1/07_evening_lake.jpg",
+    "sceneUrl": "assets/v09/generated/showcase-v1/07_evening_lake.scene.json",
+    "reportUrl": "assets/v09/generated/showcase-v1/07_evening_lake.record.json",
+    "width": 1024,
+    "height": 768,
+    "pixelSha256": "2fae3eb9e9328663e2946a98121e1cd7b8a68666d91ae2fbd1c75dff9344c89c",
+    "modelId": "shared-1b02095c",
+    "modelSha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e"
+  },
+  "limits": [
+    "These are fixed showcase trials, not the unrun 180-task terminal benchmark.",
+    "Model critique is auxiliary; photoreal quality requires independent review.",
+    "Current renderer is a restricted procedural/statistical 2D Gaussian function generator."
+  ]
+}

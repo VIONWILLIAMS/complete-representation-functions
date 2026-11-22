@@ -1,0 +1,2081 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:05:14.584Z",
+  "id": "interior",
+  "phase": "initial",
+  "prompt": "生成一张真实自然采光客厅的室内摄影：米灰色亚麻沙发、两个靠垫、圆形胡桃木茶几、陶杯与书，木地板和浅色地毯，左侧窗户照入柔和日光，墙角一盆绿植。相机处于人眼高度，看不到墙顶外的空洞，家具尺度正常，接触真实，窗框与墙正确连接。请实际搜索Pexels或Unsplash的公开室内照片页，从图像中提取可用形态、织物纹理、木纹、光照与构图；代码表达完整场景。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 200,
+  "elapsedMs": 59421,
+  "inputImageProvided": false,
+  "response": {
+    "ok": true,
+    "runId": "crf07_92ebb4d6-5c2c-487c-981f-8b8b124bea05",
+    "model": "deepseek-flash",
+    "servedModel": "deepseek-flash",
+    "action": "program",
+    "message": "构造了一个完整的人眼高度客厅：墙体围合留出左侧窗洞并安装窗框与玻璃，米灰色亚麻沙发（底座、坐垫、靠背、扶手、两个靠垫）、圆形胡桃木茶几与三腿、陶杯、打开的书、木地板与浅色地毯、墙角绿植组合齐全；主光从左侧窗口斜射。",
+    "engine": "radiance07",
+    "program": {
+      "schema": "crf.image_program.v0.7",
+      "id": "natural_light_living_room_01",
+      "title": "自然采光客厅：亚麻沙发与胡桃木圆几",
+      "width": 1024,
+      "height": 768,
+      "seed": 20240611,
+      "exposure": 1.05,
+      "camera": {
+        "position": [
+          2.6,
+          1.55,
+          4.3
+        ],
+        "target": [
+          0.1,
+          0.95,
+          0
+        ],
+        "fov": 46,
+        "aperture": 0.035,
+        "focusDistance": 4.6
+      },
+      "environment": {
+        "top": [
+          196,
+          206,
+          214
+        ],
+        "bottom": [
+          150,
+          134,
+          116
+        ],
+        "strength": 0.42
+      },
+      "lights": [
+        {
+          "id": "window_sun",
+          "type": "area",
+          "position": [
+            -3.55,
+            2.35,
+            0.35
+          ],
+          "target": [
+            0.4,
+            0.75,
+            -0.15
+          ],
+          "size": [
+            2.4,
+            2
+          ],
+          "color": [
+            255,
+            241,
+            220
+          ],
+          "intensity": 46
+        },
+        {
+          "id": "sky_fill",
+          "type": "area",
+          "position": [
+            -3.7,
+            1.8,
+            1.1
+          ],
+          "target": [
+            0.6,
+            0.9,
+            0.2
+          ],
+          "size": [
+            2,
+            1.6
+          ],
+          "color": [
+            206,
+            220,
+            235
+          ],
+          "intensity": 13
+        },
+        {
+          "id": "ceiling_bounce",
+          "type": "area",
+          "position": [
+            0,
+            2.85,
+            0.3
+          ],
+          "target": [
+            0,
+            0.6,
+            0
+          ],
+          "size": [
+            3,
+            2.2
+          ],
+          "color": [
+            236,
+            230,
+            220
+          ],
+          "intensity": 7
+        },
+        {
+          "id": "back_corner_fill",
+          "type": "area",
+          "position": [
+            2.4,
+            2,
+            1.6
+          ],
+          "target": [
+            1.2,
+            0.7,
+            -0.4
+          ],
+          "size": [
+            1.6,
+            1.4
+          ],
+          "color": [
+            222,
+            218,
+            212
+          ],
+          "intensity": 5
+        }
+      ],
+      "objects": [
+        {
+          "id": "floor",
+          "label": "浅色木地板",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 9,
+            "height": 0.1,
+            "depth": 9,
+            "bevel": 0.008
+          },
+          "material": {
+            "color": [
+              170,
+              142,
+              110
+            ],
+            "roughness": 0.62,
+            "metalness": 0,
+            "texture": {
+              "kind": "wood",
+              "scale": 9,
+              "strength": 0.42
+            },
+            "bump": 0.012,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.82
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.3
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 26,
+                      "seed": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0,
+              -0.05,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "back_wall",
+          "label": "米白后墙",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 8.4,
+            "height": 3,
+            "depth": 0.14
+          },
+          "material": {
+            "color": [
+              216,
+              209,
+              197
+            ],
+            "roughness": 0.92,
+            "texture": {
+              "kind": "stone",
+              "scale": 6,
+              "strength": 0.12
+            },
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              0,
+              1.5,
+              -2.6
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_wall",
+          "label": "右侧墙",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.14,
+            "height": 3,
+            "depth": 5.4
+          },
+          "material": {
+            "color": [
+              212,
+              205,
+              193
+            ],
+            "roughness": 0.92,
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              4.1,
+              1.5,
+              -0.1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_wall_lower",
+          "label": "左墙窗下墙",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.16,
+            "height": 0.72,
+            "depth": 5.4
+          },
+          "material": {
+            "color": [
+              214,
+              207,
+              196
+            ],
+            "roughness": 0.92,
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              -3.9,
+              0.36,
+              -0.1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_wall_upper",
+          "label": "左墙窗上墙",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.16,
+            "height": 0.68,
+            "depth": 5.4
+          },
+          "material": {
+            "color": [
+              214,
+              207,
+              196
+            ],
+            "roughness": 0.92,
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              -3.9,
+              2.66,
+              -0.1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_wall_front",
+          "label": "左墙窗前段",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.16,
+            "height": 1.6,
+            "depth": 1.9
+          },
+          "material": {
+            "color": [
+              214,
+              207,
+              196
+            ],
+            "roughness": 0.92,
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              -3.9,
+              1.52,
+              1.65
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_wall_back",
+          "label": "左墙窗后段",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.16,
+            "height": 1.6,
+            "depth": 1.6
+          },
+          "material": {
+            "color": [
+              214,
+              207,
+              196
+            ],
+            "roughness": 0.92,
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              -3.9,
+              1.52,
+              -1.9
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_glass",
+          "label": "窗玻璃",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.03,
+            "height": 1.34,
+            "depth": 2
+          },
+          "material": {
+            "color": [
+              224,
+              238,
+              246
+            ],
+            "roughness": 0.08,
+            "metalness": 0,
+            "transmission": 0.85,
+            "ior": 1.45,
+            "bump": 0
+          },
+          "transform": {
+            "position": [
+              -3.94,
+              1.52,
+              -1.05
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_top",
+          "label": "窗框上横",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.2,
+            "height": 0.08,
+            "depth": 2.16
+          },
+          "material": {
+            "color": [
+              236,
+              232,
+              224
+            ],
+            "roughness": 0.55
+          },
+          "transform": {
+            "position": [
+              -3.86,
+              2.24,
+              -1.05
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_bottom",
+          "label": "窗台下横",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.3,
+            "height": 0.08,
+            "depth": 2.16
+          },
+          "material": {
+            "color": [
+              236,
+              232,
+              224
+            ],
+            "roughness": 0.55
+          },
+          "transform": {
+            "position": [
+              -3.84,
+              0.8,
+              -1.05
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_front",
+          "label": "窗框前竖",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.14,
+            "height": 1.5,
+            "depth": 0.08
+          },
+          "material": {
+            "color": [
+              236,
+              232,
+              224
+            ],
+            "roughness": 0.55
+          },
+          "transform": {
+            "position": [
+              -3.86,
+              1.52,
+              -0.01
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_back",
+          "label": "窗框后竖",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.14,
+            "height": 1.5,
+            "depth": 0.08
+          },
+          "material": {
+            "color": [
+              236,
+              232,
+              224
+            ],
+            "roughness": 0.55
+          },
+          "transform": {
+            "position": [
+              -3.86,
+              1.52,
+              -2.09
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_mullion",
+          "label": "窗中竖棂",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.1,
+            "height": 1.4,
+            "depth": 0.06
+          },
+          "material": {
+            "color": [
+              236,
+              232,
+              224
+            ],
+            "roughness": 0.55
+          },
+          "transform": {
+            "position": [
+              -3.86,
+              1.52,
+              -1.05
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "rug",
+          "label": "浅色短绒地毯",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 3.4,
+            "height": 0.035,
+            "depth": 2.5,
+            "bevel": 0.012
+          },
+          "material": {
+            "color": [
+              206,
+              196,
+              178
+            ],
+            "roughness": 0.95,
+            "texture": {
+              "kind": "fabric",
+              "scale": 14,
+              "strength": 0.35
+            },
+            "bump": 0.02,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.9
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.18
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 70,
+                      "seed": 9
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              -0.5,
+              0.018,
+              1.35
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "sofa_base",
+          "label": "沙发底座",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 2.5,
+            "height": 0.34,
+            "depth": 1.05,
+            "bevel": 0.05
+          },
+          "material": {
+            "color": [
+              176,
+              166,
+              150
+            ],
+            "roughness": 0.93,
+            "texture": {
+              "kind": "fabric",
+              "scale": 11,
+              "strength": 0.4
+            },
+            "bump": 0.02,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.86
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.2
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 40,
+                      "seed": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0.55,
+              0.22,
+              -1.55
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "sofa_seat_cushion",
+          "label": "沙发坐垫",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 2.42,
+            "height": 0.2,
+            "depth": 0.92,
+            "bevel": 0.07
+          },
+          "material": {
+            "color": [
+              184,
+              174,
+              158
+            ],
+            "roughness": 0.94,
+            "texture": {
+              "kind": "fabric",
+              "scale": 12,
+              "strength": 0.42
+            },
+            "bump": 0.022,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.88
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.22
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 34,
+                      "seed": 7
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0.55,
+              0.49,
+              -1.46
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "sofa_back",
+          "label": "沙发靠背",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 2.5,
+            "height": 0.62,
+            "depth": 0.26,
+            "bevel": 0.06
+          },
+          "material": {
+            "color": [
+              178,
+              168,
+              152
+            ],
+            "roughness": 0.94,
+            "texture": {
+              "kind": "fabric",
+              "scale": 11,
+              "strength": 0.4
+            },
+            "bump": 0.02
+          },
+          "transform": {
+            "position": [
+              0.55,
+              0.83,
+              -1.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "sofa_arm_left",
+          "label": "沙发左扶手",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.24,
+            "height": 0.5,
+            "depth": 1.02,
+            "bevel": 0.05
+          },
+          "material": {
+            "color": [
+              178,
+              168,
+              152
+            ],
+            "roughness": 0.94,
+            "texture": {
+              "kind": "fabric",
+              "scale": 10,
+              "strength": 0.38
+            },
+            "bump": 0.02
+          },
+          "transform": {
+            "position": [
+              -0.63,
+              0.5,
+              -1.53
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "sofa_arm_right",
+          "label": "沙发右扶手",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.24,
+            "height": 0.5,
+            "depth": 1.02,
+            "bevel": 0.05
+          },
+          "material": {
+            "color": [
+              178,
+              168,
+              152
+            ],
+            "roughness": 0.94,
+            "texture": {
+              "kind": "fabric",
+              "scale": 10,
+              "strength": 0.38
+            },
+            "bump": 0.02
+          },
+          "transform": {
+            "position": [
+              1.73,
+              0.5,
+              -1.53
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "cushion_a",
+          "label": "靠垫A",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.46,
+            "height": 0.44,
+            "depth": 0.16,
+            "bevel": 0.07
+          },
+          "material": {
+            "color": [
+              156,
+              146,
+              128
+            ],
+            "roughness": 0.95,
+            "texture": {
+              "kind": "fabric",
+              "scale": 16,
+              "strength": 0.45
+            },
+            "bump": 0.025
+          },
+          "transform": {
+            "position": [
+              -0.1,
+              0.79,
+              -1.68
+            ],
+            "rotation": [
+              6,
+              -8,
+              7
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "cushion_b",
+          "label": "靠垫B",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.44,
+            "height": 0.42,
+            "depth": 0.15,
+            "bevel": 0.07
+          },
+          "material": {
+            "color": [
+              198,
+              188,
+              168
+            ],
+            "roughness": 0.95,
+            "texture": {
+              "kind": "fabric",
+              "scale": 16,
+              "strength": 0.45
+            },
+            "bump": 0.025
+          },
+          "transform": {
+            "position": [
+              1.16,
+              0.78,
+              -1.66
+            ],
+            "rotation": [
+              -5,
+              7,
+              -9
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "table_top",
+          "label": "胡桃木圆桌面",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.58,
+            "height": 0.06
+          },
+          "material": {
+            "color": [
+              86,
+              54,
+              36
+            ],
+            "roughness": 0.38,
+            "metalness": 0,
+            "texture": {
+              "kind": "wood",
+              "scale": 5,
+              "strength": 0.5
+            },
+            "bump": 0.01,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.85
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.3
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 22,
+                      "seed": 11
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              -0.55,
+              0.47,
+              0.45
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "table_leg_a",
+          "label": "茶几腿A",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.045,
+            "height": 0.44
+          },
+          "material": {
+            "color": [
+              78,
+              48,
+              32
+            ],
+            "roughness": 0.45,
+            "texture": {
+              "kind": "wood",
+              "scale": 3,
+              "strength": 0.4
+            }
+          },
+          "transform": {
+            "position": [
+              -0.85,
+              0.22,
+              0.2
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "table_leg_b",
+          "label": "茶几腿B",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.045,
+            "height": 0.44
+          },
+          "material": {
+            "color": [
+              78,
+              48,
+              32
+            ],
+            "roughness": 0.45,
+            "texture": {
+              "kind": "wood",
+              "scale": 3,
+              "strength": 0.4
+            }
+          },
+          "transform": {
+            "position": [
+              -0.3,
+              0.22,
+              0.68
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "table_leg_c",
+          "label": "茶几腿C",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.045,
+            "height": 0.44
+          },
+          "material": {
+            "color": [
+              78,
+              48,
+              32
+            ],
+            "roughness": 0.45,
+            "texture": {
+              "kind": "wood",
+              "scale": 3,
+              "strength": 0.4
+            }
+          },
+          "transform": {
+            "position": [
+              -0.52,
+              0.22,
+              0.56
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "cup_body",
+          "label": "陶杯",
+          "visible": true,
+          "surface": {
+            "kind": "lathe",
+            "radius": 0.075,
+            "height": 0.11,
+            "profile": [
+              0.98,
+              1,
+              0.94,
+              0.8,
+              0.7,
+              0.72
+            ],
+            "thickness": 0.012
+          },
+          "material": {
+            "color": [
+              224,
+              216,
+              204
+            ],
+            "roughness": 0.28,
+            "metalness": 0,
+            "texture": {
+              "kind": "ceramic",
+              "scale": 8,
+              "strength": 0.12
+            },
+            "bump": 0.003
+          },
+          "transform": {
+            "position": [
+              -0.72,
+              0.5,
+              0.33
+            ],
+            "rotation": [
+              0,
+              18,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "book_cover",
+          "label": "书封面",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.3,
+            "height": 0.028,
+            "depth": 0.22,
+            "bevel": 0.006
+          },
+          "material": {
+            "color": [
+              120,
+              76,
+              52
+            ],
+            "roughness": 0.72,
+            "texture": {
+              "kind": "wood",
+              "scale": 2,
+              "strength": 0.1
+            },
+            "bump": 0.004
+          },
+          "transform": {
+            "position": [
+              -0.32,
+              0.502,
+              0.49
+            ],
+            "rotation": [
+              0,
+              -14,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "book_pages",
+          "label": "书页",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.285,
+            "height": 0.018,
+            "depth": 0.205
+          },
+          "material": {
+            "color": [
+              232,
+              222,
+              202
+            ],
+            "roughness": 0.88,
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              -0.325,
+              0.523,
+              0.49
+            ],
+            "rotation": [
+              0,
+              -14,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "planter",
+          "label": "绿植陶盆",
+          "visible": true,
+          "surface": {
+            "kind": "lathe",
+            "radius": 0.3,
+            "height": 0.44,
+            "profile": [
+              0.7,
+              0.86,
+              0.95,
+              1,
+              0.98,
+              0.9
+            ],
+            "thickness": 0.03
+          },
+          "material": {
+            "color": [
+              142,
+              116,
+              92
+            ],
+            "roughness": 0.72,
+            "texture": {
+              "kind": "ceramic",
+              "scale": 3,
+              "strength": 0.18
+            },
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              2.95,
+              0.22,
+              -1.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "plant_soil",
+          "label": "盆土",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.27,
+            "height": 0.03
+          },
+          "material": {
+            "color": [
+              62,
+              46,
+              34
+            ],
+            "roughness": 1,
+            "bump": 0.03
+          },
+          "transform": {
+            "position": [
+              2.95,
+              0.44,
+              -1.95
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "plant_stem",
+          "label": "绿植主茎",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.022,
+            "height": 0.85
+          },
+          "material": {
+            "color": [
+              76,
+              92,
+              52
+            ],
+            "roughness": 0.8
+          },
+          "transform": {
+            "position": [
+              2.95,
+              0.86,
+              -1.95
+            ],
+            "rotation": [
+              2,
+              0,
+              -3
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "plant_leaf_a",
+          "label": "叶片A",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.2,
+            "height": 0.04
+          },
+          "material": {
+            "color": [
+              58,
+              100,
+              52
+            ],
+            "roughness": 0.63,
+            "texture": {
+              "kind": "orange",
+              "scale": 2,
+              "strength": 0.15
+            },
+            "bump": 0.008
+          },
+          "transform": {
+            "position": [
+              2.72,
+              1.18,
+              -1.9
+            ],
+            "rotation": [
+              12,
+              -30,
+              28
+            ],
+            "scale": [
+              1.4,
+              1,
+              0.8
+            ]
+          }
+        },
+        {
+          "id": "plant_leaf_b",
+          "label": "叶片B",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.19,
+            "height": 0.04
+          },
+          "material": {
+            "color": [
+              66,
+              108,
+              58
+            ],
+            "roughness": 0.62,
+            "bump": 0.008
+          },
+          "transform": {
+            "position": [
+              3.18,
+              1.24,
+              -2
+            ],
+            "rotation": [
+              -10,
+              32,
+              -24
+            ],
+            "scale": [
+              1.35,
+              1,
+              0.78
+            ]
+          }
+        },
+        {
+          "id": "plant_leaf_c",
+          "label": "叶片C",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.21,
+            "height": 0.04
+          },
+          "material": {
+            "color": [
+              52,
+              92,
+              48
+            ],
+            "roughness": 0.64,
+            "bump": 0.008
+          },
+          "transform": {
+            "position": [
+              2.9,
+              1.45,
+              -1.82
+            ],
+            "rotation": [
+              20,
+              -12,
+              8
+            ],
+            "scale": [
+              1.25,
+              1,
+              0.9
+            ]
+          }
+        },
+        {
+          "id": "plant_leaf_d",
+          "label": "叶片D",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.17,
+            "height": 0.035
+          },
+          "material": {
+            "color": [
+              70,
+              112,
+              60
+            ],
+            "roughness": 0.62
+          },
+          "transform": {
+            "position": [
+              2.78,
+              1.38,
+              -2.1
+            ],
+            "rotation": [
+              -16,
+              22,
+              34
+            ],
+            "scale": [
+              1.3,
+              1,
+              0.75
+            ]
+          }
+        }
+      ]
+    },
+    "qualityNotes": [
+      "检查沙发底座与地毯、靠背与坐垫之间是否无缝接触，无悬浮或穿插。",
+      "检查圆茶几三条腿是否落在桌底范围内并被遮挡合理，杯和书是否完全贴合桌面。",
+      "查看左侧窗框与墙体是否咬合，窗洞边缘是否露白或空洞穿帮。",
+      "确认窗光方向与沙发、地毯、绿植的受光/阴影方向一致，墙角不过暗或过曝。",
+      "检查木地板纹理方向与茶几胡桃木色差，地毯绒面是否过细或过糊。",
+      "验证人眼高度构图：坐垫、桌面、窗台和绿植盆的比例关系是否自然。"
+    ],
+    "warnings": [
+      "程序化织物与木纹不能还原参考照片中的真实经纬细节和自然褶皱，仅作尺度与方向近似。",
+      "叶片使用椭球近似，无法表达真实叶脉、裂叶和柔性弯曲。",
+      "窗玻璃为简化折射薄盒，无室内外环境图时透射区域可能偏亮或偏灰。",
+      "未实际渲染，接触阴影和柔光衰减需在渲染图中复核。"
+    ],
+    "research": {
+      "searched": true,
+      "toolCalls": [
+        {
+          "id": "srvtoolu_s_00_8a715cefb0654c3e892ea59c8579aad7",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com linen sofa living room window natural light walnut coffee table",
+              "site:unsplash.com living room linen sofa coffee table natural light",
+              "site:unsplash.com walnut wood grain texture close up",
+              "site:pexels.com linen fabric texture close up",
+              "site:unsplash.com indoor plant in living room corner natural light",
+              "site:commons.wikimedia.org living room interior window natural light",
+              "site:unsplash.com window frame wall interior daylight streaming in"
+            ]
+          },
+          "sourceUrls": [
+            "https://unsplash.com/photos/Od8ZrIlzI8Q",
+            "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+            "https://unsplash.com/photos/a-potted-plant-with-green-leaves-on-a-window-sill-6BhQ7iWwMmM",
+            "https://unsplash.com/photos/sunlight-streaming-through-a-diamond-paned-window-g4rnNp_Ge9g",
+            "https://unsplash.com/photos/JWfOBwUNbR8",
+            "https://www.pexels.com/ru-ru/photo/6850480/",
+            "https://unsplash.com/photos/sun-drenched-porch-overflowing-with-lush-green-plants-W83HRDSkaL4",
+            "https://unsplash.com/photos/sunlight-streams-through-a-wooden-shuttered-window-0oj8ajN1PCY",
+            "https://unsplash.com/photos/cross-section-of-a-walnut-shell-with-intricate-interior-detail-QnoV5Q-uoDE",
+            "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/",
+            "https://unsplash.com/photos/a-white-pot-filled-with-green-succulents-on-a-windowsill-ak3gS5JE-rw",
+            "https://unsplash.com/photos/rustic-wooden-room-with-sunlight-streaming-through-window-j1WtsUZn4ZI",
+            "https://unsplash.com/photos/aXH0m8YE7oc",
+            "https://www.pexels.com/fr-fr/photo/couvertures-literie-linge-de-maison-30618181/",
+            "https://unsplash.com/photos/hand-holding-a-potted-plant-with-blue-floral-design-RhRFcldFb68"
+          ]
+        },
+        {
+          "id": "srvtoolu_s_01_b0e1c2ce544c4a6a8d3d3294c9de3c0c",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com photo living room sofa coffee table natural light interior",
+              "site:unsplash.com photo living room sofa coffee table interior natural light",
+              "site:pexels.com photo interior window frame wall daylight room",
+              "site:unsplash.com photo ceramic cup and book on table still life",
+              "site:pexels.com photo light wood floor texture interior",
+              "site:unsplash.com photo light rug floor interior texture",
+              "site:commons.wikimedia.org interior living room sofa window sunlight"
+            ]
+          },
+          "sourceUrls": [
+            "https://www.pexels.com/photo/interior-design-of-living-room-4221393/",
+            "https://unsplash.com/photos/modern-living-room-with-neutral-tones-and-natural-elements-tPz3Lhh3z_4",
+            "https://www.pexels.com/photo/closed-windows-in-room-20741339/",
+            "https://unsplash.com/photos/white-ceramic-cup-on-brown-book-page-2Vf6qY1UWVk",
+            "https://www.pexels.com/fr-fr/photo/plancher-de-bois-brun-368755/",
+            "https://unsplash.com/photos/dU3--peZpkM",
+            "https://www.pexels.com/photo/a-room-in-a-hotel-in-elegant-style-15867752/",
+            "https://unsplash.com/photos/a-modern-inviting-living-room-is-well-lit-EMxd6-q7IHo",
+            "https://www.pexels.com/photo/cozy-library-with-city-view-in-istanbul-32560389/",
+            "https://unsplash.com/photos/white-ceramic-mug-on-brown-wooden-table-WehiNLwZrEA",
+            "https://www.pexels.com/photo/attic-open-space-apartment-20290965/",
+            "https://unsplash.com/photos/Jn_Ycc7kdTU",
+            "https://www.pexels.com/photo/a-gray-and-white-themed-living-room-8031929/",
+            "https://unsplash.com/photos/modern-living-room-with-white-sectional-sofa-and-pink-pillows-4-W8efSOL_8",
+            "https://www.pexels.com/photo/sunlit-vintage-interior-of-historical-building-29055864/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://unsplash.com/photos/Od8ZrIlzI8Q",
+          "title": "Photo by Sándor Szabó on Unsplash",
+          "snippet": "––– – ––– – – Download this free HD photo of black walnut, brown walnut, woodgrain, and walnut texture by Sándor Szabó (@verzum) Published on SONY, ILCE-5100Free to use under the Unsplash License ... Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+          "title": "Photo by Engin Akyurt on Pexels",
+          "snippet": "6720x4480 Aspect Ratio 3:2 Colors Date Jun 3, 2020 ... Software Adobe Photoshop Camera Raw 12.1 (Macintosh) Description # Close-up of brown linen fabric texture, ideal for backgrounds or textiles projects. ## More like this",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-potted-plant-with-green-leaves-on-a-window-sill-6BhQ7iWwMmM",
+          "title": "Photo by Georgia Visacri on Unsplash",
+          "snippet": "a potted plant with green leaves on a window sill Download this free HD photo of pilea peperomioides, green, natural light interior, and natural light by Georgia Visacri (@georgia_vis) Published on Canon, EOS Rebel T7Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/sunlight-streaming-through-a-diamond-paned-window-g4rnNp_Ge9g",
+          "title": "Photo by Ignat Kushnarev on Unsplash",
+          "snippet": "––– –––– –––– # Sunlight streaming through a diamond-paned window Download this free HD photo of interior design, interior, vintage, and window by Ignat Kushnarev (@ignatkushanrev) Published on Free to use under the Unsplash License Browse",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/JWfOBwUNbR8",
+          "title": "Photo by Sandra Pattetsom on Unsplash",
+          "snippet": "––– – ––– ––– Download this free HD photo of wood, texture, walnut logs, and lumber by Sandra Pattetsom (@spatterson266) Published on LG Electronics, LG-US996Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/ru-ru/photo/6850480/",
+          "title": "Автор фото на Pexels: Teona Swift",
+          "snippet": "Adobe Photoshop Lightroom Classic 10.1.1 (Macintosh) Описание # Детальный снимок аккуратно сложенной льняной ткани, демонстрирующей свою текстуру и мастерство на плетёной поверхности.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/sun-drenched-porch-overflowing-with-lush-green-plants-W83HRDSkaL4",
+          "title": "Photo by Brett Wharton on Unsplash",
+          "snippet": "Sun-drenched porch overflowing with lush, green plants. Sunlight streams through the tall windows of a lush indoor conservatory at the Winchester Mystery House, illuminating a colorful mix of potted plants. Purple heart vines, red geraniums, spider plants, and tropical foliage thrive in this warm, enclosed corner.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/sunlight-streams-through-a-wooden-shuttered-window-0oj8ajN1PCY",
+          "title": "Photo by Büsra Aksoy on Unsplash",
+          "snippet": "––– –––– –––– # Sunlight streams through a wooden shuttered window. Download this free HD photo of architecture, interior design, interior, and vintage in Konya, Türkiye by Büsra Aksoy (@busraaksoy00) Konya, Türkiye Published on Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/cross-section-of-a-walnut-shell-with-intricate-interior-detail-QnoV5Q-uoDE",
+          "title": "Photo by Sebastian Schuster on Unsplash",
+          "snippet": "Cross-section of a walnut shell with intricate interior detail Details of the internal structure of a walnut Calendar outlined Published on August 28 ... Unsplash License pattern fruit beauty object structure wooden walnut isolated complicated internal ornamental pockets",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/",
+          "title": "Foto door https://kaboompics.com/ op Pexels",
+          "snippet": "Brighten up Add frames ... Adobe Photoshop Lightroom Classic 9.2.1 (Macintosh) Beschrijving # Gedetailleerde close-up van beige linnen stof die de textuur en plooien toont. ### Meer van dit Use filters",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-white-pot-filled-with-green-succulents-on-a-windowsill-ak3gS5JE-rw",
+          "title": "Photo by Grooveland Designs on Unsplash",
+          "snippet": "A white pot filled with green succulents on a windowsill. A close-up of a Haworthia succulent in a white ceramic pot placed on a bright windowsill. Clean, minimalist home decor with fresh green leaves and soft natural light.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/rustic-wooden-room-with-sunlight-streaming-through-window-j1WtsUZn4ZI",
+          "title": "Photo by Frederick Shaw on Unsplash",
+          "snippet": "––– –––– –––– # Rustic wooden room with sunlight streaming through window Download this free HD photo of building, interior design, window, and floor by Frederick Shaw (@dropfastcollective) Published on Free to use under the Unsplash License Browse ... Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/aXH0m8YE7oc",
+          "title": "Photo by Rumman Amin on Unsplash",
+          "snippet": "––– – ––– – – Just look at that beautiful grain! You can find our Wooden Cutting Board / Serving Board made from solid American Black Walnut on @Etsy via londonwood.co Published on Nikon, NIKON D3500Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/fr-fr/photo/couvertures-literie-linge-de-maison-30618181/",
+          "title": "Photo de Kate L sur Pexels",
+          "snippet": "5080x7620 Format 2 ... Logiciel Adobe Photoshop Lightroom Classic 14.1.1 (Windows) Description # Tissu de literie en lin beige doux et texturé formant des plis naturels, parfait pour les thèmes de décoration intérieure. ## Médias similaires",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/hand-holding-a-potted-plant-with-blue-floral-design-RhRFcldFb68",
+          "title": "Photo by Tatyana Rubleva on Unsplash",
+          "snippet": "A cozy indoor moment: a hand holds a potted satin pothos (Scindapsus) in a painted ceramic pot by a bright window, with soft bokeh and natural, airy light. Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/photo/interior-design-of-living-room-4221393/",
+          "title": "Photo by Curtis Adams on Pexels",
+          "snippet": "820.9M views • 3.7M downloads License Free Dimensions 5000x3333 Colors Date Apr 23, 2020 ... Apr 22, 2020 Software Adobe Lightroom 3.2.1 (Windows) Description # Inviting living room featuring classic furniture, a fireplace, and natural lighting. ## More like this",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/modern-living-room-with-neutral-tones-and-natural-elements-tPz3Lhh3z_4",
+          "title": "Photo by Brian Zajac on Unsplash",
+          "snippet": "Modern living room with neutral tones and natural elements. ... This beautifully rendered interior features a comfortable off-white sofa facing a rustic wooden coffee table, complemented by a matching sideboard and two stylish gray accent chairs. ... Natural light floods the space through large French doors that open to a patio, enhancing the airy and relaxed atmosphere.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/photo/closed-windows-in-room-20741339/",
+          "title": "Photo by Ezgi Gözütok on Pexels",
+          "snippet": "Use filters Change focus Brighten up Add frames İstanbul, İstanbul, Türkiye Description # Soft sunlight streams through a window in a cozy İstanbul room. ## More like this Use filters Change focus Brighten up Add frames",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/white-ceramic-cup-on-brown-book-page-2Vf6qY1UWVk",
+          "title": "Photo by Kateryna Hliznitsova on Unsplash",
+          "snippet": "white ceramic cup on brown book page Download this free HD photo of brown, purple, text, and plant by Kateryna Hliznitsova (@kate_gliz) ... NIKON D3000Free to use under the Unsplash",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/fr-fr/photo/plancher-de-bois-brun-368755/",
+          "title": "Photo de Digital Buggu sur Pexels",
+          "snippet": "5312x2988 Format 16:9 Couleurs ... Appareil photo SM-N910G Focale 4.8mm Ouverture ƒ/2.2 ... Description # Texture de parquet en bois clair de haute qualité, parfaite pour les projets de design d'intérieur.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/dU3--peZpkM",
+          "title": "Photo by Thomas Louis Camy on Unsplash",
+          "snippet": "––– – ––– ––– Download this free HD photo of rug, texture, light, and floor by Thomas Louis Camy (@saucissedeluxe) Published on Apple, iPhone SEFree to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/photo/a-room-in-a-hotel-in-elegant-style-15867752/",
+          "title": "Photo by Thới Nam Cao on Pexels",
+          "snippet": "1 ##### Thới Nam Cao 18.9M views • 64.6K downloads Description # A minimalist living room with a beige sofa, modern table, and soft lighting. ### More like this Use filters Change focus Brighten up",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-modern-inviting-living-room-is-well-lit-EMxd6-q7IHo",
+          "title": "Photo by Interlock Singapore on Unsplash",
+          "snippet": "A modern, inviting living room is well-lit. A minimalist living room with natural light streaming through a large window. The space features a smart thermostat, a sleek black digital lock, and modern furnishings including a light gray sofa, wooden coffee table, and indoor plant.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/photo/cozy-library-with-city-view-in-istanbul-32560389/",
+          "title": "Photo by Rumeyda Tutak on Pexels",
+          "snippet": "Dimensions 2678x4044 Aspect Ratio 1339:2022 Colors Date Jun 14 ... Camera NIKON D5100 Focal ... Adobe Lightroom 10.3.2 (Android) İstanbul, İstanbul, Türkiye Description # Library interior with window view of bustling Istanbul waterfront on a sunny day. ## More like this",
+          "via": "server_tool"
+        }
+      ],
+      "summary": "**结论：现有公开照片页能提供织物、木纹、绿植和窗光参考，但没有找到与“米灰色亚麻沙发 + 圆形胡桃木茶几 + 陶杯与书 + 浅色地毯 + 人眼高度客厅”完全逐项匹配的单张照片。** 代码生成时建议以“局部材质照片 + 近似客厅照片”组合提取参数，而不是依赖一张全景参考。\n\n### 可用参考与可转化细节\n\n**1. 亚麻织物纹理**\n- Pexels 棕色亚麻近摄：标题明确为 brown linen fabric texture，适合提取经纬交织起伏与软阴影 。建议代码中沙发表面用低频法线扰动 + 高频纬线细条带，避免均匀噪声。\n- Pexels 米色亚麻折叠近摄：米色/米灰倾向更接近目标，可参考褶皱形态与纤维柔光 。靠垫建议用大尺度低幅褶皱法线，褶皱走向随靠垫体积弯曲。\n- 局限：以上是织物局部，不含沙发形态与尺度信息。\n\n**2. 胡桃木纹理**\n- Unsplash 胡桃木纹理页：标签含 black walnut、woodgrain、walnut texture 。建议代码中将胡桃木分为深棕底 + 较浅纵纹 + 少量短节疤，纵纹方向沿茶几圆面半径或板面长轴，不要全表面同向拉丝。\n- Unsplash 胡桃木砧板页：文字提及 solid American Black Walnut 与 beautiful grain，可辅助木纹颜色与抛光感 。局限：茶几圆面需要曲面 UV，纹理在边缘应轻微弯曲而非平面平铺。\n\n**3. 陶杯与书**\n- Unsplash 白陶杯放在棕色书页上：页面标题直接匹配“白色陶瓷杯 + 棕色书” 。代码建议：陶杯用高光偏哑的釉面，杯口内壁略暗；书用几片薄盒体，书页侧面用细密横线，封面与杯底接触处加短软阴影。\n- 局限：没有提供目标客厅中的相对位置与尺度，需自行按人眼高度设置桌面视平线。\n\n**4. 窗户日光与室内光**\n- Unsplash 阳光穿过多格窗：可参考窗光入射方向与光斑形态 。建议代码中把左侧窗户作为主光源，用面积光/矩形光从窗框外侧向室内投射，光斑在地毯和沙发扶手上有明确方向性。\n- Pexels 伊斯坦布尔房间软窗光：标题提到 soft sunlight streams through a window，适合参考低对比室内漫射感 。建议日光色温略偏暖，窗口附近照度高，向墙角绿植方向衰减，避免整体均匀提亮。\n\n**5. 绿植与墙角**\n- Unsplash 窗台盆栽：标签含 natural light interior、potted plant，可参考叶片受窗光后的透光感与轮廓 。墙角绿植建议放在窗户侧面而非正对窗口，叶片朝光轻微倾斜；盆底接触地面处加接触阴影。\n- 局限：窗台盆栽不等于落地墙角大盆，形态和盆径需自行放大。\n\n**6. 客厅构图与尺度近似参考**\n- Unsplash 中性色调客厅：描述含 off-white sofa、rustic wooden coffee table、large indoor plants、natural light through French doors 。可用于参考家具间距、沙发与茶几的相对高度、植物作为角落体块的布局。\n- Pexels 灰白主题客厅：标题与描述为 neutral-toned furniture + abundant natural light 。可参考人眼高度下的沙发坐面、茶几顶面与地毯边缘的透视关系。\n- 局限：上述客厅并非目标材质组合，不能直接照搬颜色与具体家具形态；只能用于构图和尺度校准。\n\n**7. 木地板与浅色地毯**\n- Pexels 浅色木地板纹理：标题为浅色木地板纹理，适合提取板缝与纵向纹理 。代码中地板板缝应细而暗，颜色比胡桃木茶几浅，反射低。\n- Unsplash 地毯纹理页：标签含 rug、texture、light、floor 。浅色地毯建议用高频短绒噪声 + 低频压痕，地毯边缘与木地板交界处加细窄接触阴影。\n- 局限：地毯参考较泛，无法确认厚度与绒毛长度。\n\n### 代码表达建议（按图形函数拆分）\n\n- **窗户**：左侧墙面开矩形窗洞，窗框用薄盒体与墙体咬合，窗台向内略伸；光源从窗框中心偏外上方射入。\n- **沙发**：底座 + 坐垫 + 靠背 + 两个靠垫；亚麻纹理用程序化经纬法线，坐垫边缘下垂，扶手圆角。\n- **茶几**：圆柱/圆台桌面 + 三条或四条腿；胡桃木纹沿桌面半径方向，桌面边缘略深。\n- **陶杯与书**：陶杯用旋转体，书用 3–4 层薄盒体；二者放在茶几靠近窗户一侧，投射短软阴影。\n- **绿植**：墙角位置，盆体圆锥/圆柱，叶片用弯曲薄片分布，受光面偏亮、背光面偏深。\n- **光照**：矩形面积光 + 低强度环境光；窗口附近高光柔和，远离窗户的墙角逐渐变暗，接触阴影集中在沙发脚、茶几脚、花盆底。\n\n### 来源\n- 亚麻纹理 \n- 胡桃木纹理 \n- 陶杯与书 \n- 窗光与室内日光 \n- 绿植 \n- 客厅构图近似 \n- 木地板/地毯 ",
+      "status": "completed",
+      "nativeSearchObserved": true,
+      "referenceImageCandidates": [],
+      "referenceImages": [
+        {
+          "sourceUrl": "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+          "title": "Photo by Engin Akyurt on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/4554339/pexels-photo-4554339.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "f1a62730b38b5de0ed84f5eea0e328d9d1f6b900da9a010b0743d6af4b74160d",
+          "bytes": 197670,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/ru-ru/photo/6850480/",
+          "title": "Автор фото на Pexels: Teona Swift",
+          "imageUrl": "https://images.pexels.com/photos/6850480/pexels-photo-6850480.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "b35db16a5a57d1e9a6a262f5ef4d91d328843ea4015f218b5b1d1b733ef0613b",
+          "bytes": 39680,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/",
+          "title": "Foto door https://kaboompics.com/ op Pexels",
+          "imageUrl": "https://images.pexels.com/photos/4862928/pexels-photo-4862928.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "de65daa286a9ab169bc04262d898135565587bf063fb79b24319d289b2aa78be",
+          "bytes": 112224,
+          "mime": "image/webp",
+          "submittedToVision": true
+        }
+      ],
+      "referenceImagesSubmitted": 3,
+      "inputImageProvided": false,
+      "referenceCollection": {
+        "method": "public source-page image metadata, verified image bytes; not render textures",
+        "sourcePageCount": 12,
+        "downloadedCount": 3,
+        "attempts": [
+          {
+            "sourceUrl": "https://unsplash.com/photos/Od8ZrIlzI8Q",
+            "title": "Photo by Sándor Szabó on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+            "title": "Photo by Engin Akyurt on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/4554339/pexels-photo-4554339.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 197670,
+            "mime": "image/webp",
+            "sha256": "f1a62730b38b5de0ed84f5eea0e328d9d1f6b900da9a010b0743d6af4b74160d"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-potted-plant-with-green-leaves-on-a-window-sill-6BhQ7iWwMmM",
+            "title": "Photo by Georgia Visacri on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/sunlight-streaming-through-a-diamond-paned-window-g4rnNp_Ge9g",
+            "title": "Photo by Ignat Kushnarev on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/JWfOBwUNbR8",
+            "title": "Photo by Sandra Pattetsom on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/ru-ru/photo/6850480/",
+            "title": "Автор фото на Pexels: Teona Swift",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/6850480/pexels-photo-6850480.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 39680,
+            "mime": "image/webp",
+            "sha256": "b35db16a5a57d1e9a6a262f5ef4d91d328843ea4015f218b5b1d1b733ef0613b"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/sun-drenched-porch-overflowing-with-lush-green-plants-W83HRDSkaL4",
+            "title": "Photo by Brett Wharton on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/sunlight-streams-through-a-wooden-shuttered-window-0oj8ajN1PCY",
+            "title": "Photo by Büsra Aksoy on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/cross-section-of-a-walnut-shell-with-intricate-interior-detail-QnoV5Q-uoDE",
+            "title": "Photo by Sebastian Schuster on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/",
+            "title": "Foto door https://kaboompics.com/ op Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/4862928/pexels-photo-4862928.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 112224,
+            "mime": "image/webp",
+            "sha256": "de65daa286a9ab169bc04262d898135565587bf063fb79b24319d289b2aa78be"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-white-pot-filled-with-green-succulents-on-a-windowsill-ak3gS5JE-rw",
+            "title": "Photo by Grooveland Designs on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/rustic-wooden-room-with-sunlight-streaming-through-window-j1WtsUZn4ZI",
+            "title": "Photo by Frederick Shaw on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          }
+        ],
+        "submittedToVision": true,
+        "submittedCount": 3
+      }
+    },
+    "usage": {
+      "prompt_tokens": 15662,
+      "completion_tokens": 6288,
+      "total_tokens": 21950,
+      "providerCalls": 2,
+      "requests": [
+        {
+          "phase": "research",
+          "requestId": "8616ca6b-15fd-4787-b72e-0d61486136cd",
+          "model": "deepseek-flash",
+          "elapsedMs": 19849,
+          "prompt_tokens": 8624,
+          "completion_tokens": 1314,
+          "total_tokens": 9938,
+          "server_tool_use": {
+            "tool_search": 14,
+            "tool_fetch": 0,
+            "tool_image_search": 0
+          }
+        },
+        {
+          "phase": "compose",
+          "requestId": "0e5ea4b1-6d12-429f-b51a-093b6f1324a6",
+          "model": "deepseek-flash",
+          "elapsedMs": 23136,
+          "prompt_tokens": 7038,
+          "completion_tokens": 4974,
+          "total_tokens": 12012,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "vision": {
+      "renderedImageProvided": false,
+      "referenceImagesProvided": 3,
+      "referenceSourceUrls": [
+        "https://www.pexels.com/photo/brown-cloth-in-close-up-shot-4554339/",
+        "https://www.pexels.com/ru-ru/photo/6850480/",
+        "https://www.pexels.com/nl-nl/foto/bruin-kleding-stof-stof-textiel-4862928/"
+      ]
+    },
+    "repair": {
+      "attempted": false,
+      "passes": [],
+      "recovered": false
+    },
+    "validation": {
+      "declarative": true,
+      "envelope": true,
+      "renderer": true,
+      "clientValidationRequired": false
+    }
+  }
+}

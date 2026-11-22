@@ -1,0 +1,38 @@
+{
+  "id": "studio.paper",
+  "width": 960,
+  "height": 640,
+  "base": [
+    221,
+    217,
+    207
+  ],
+  "splats": [
+    [
+      190,
+      80,
+      700,
+      520,
+      0,
+      30,
+      29,
+      26
+    ],
+    [
+      940,
+      580,
+      700,
+      300,
+      0,
+      -20,
+      -20,
+      -19
+    ]
+  ],
+  "schema": "crf.gaussian_asset.v0.8",
+  "provenance": {
+    "kind": "analytic-code",
+    "sourceRGBEmbedded": false,
+    "algorithm": "explicit Gaussian illumination / contact coverage"
+  }
+}

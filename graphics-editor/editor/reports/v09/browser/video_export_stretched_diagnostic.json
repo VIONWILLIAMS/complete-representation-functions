@@ -1,0 +1,29 @@
+{
+  "schema": "crf.browser_video_export.v0.9",
+  "actualDownloadBytes": 5491890,
+  "sha256": "7c7f3c3571ec13d59aba958b8a55d3de2ae745717bd24f4117b01accf03331ec",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp8",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_read_frames": "120"
+      }
+    ],
+    "format": {
+      "duration": "5.000000"
+    }
+  },
+  "allFramesDecoded": true,
+  "specificationPassed": true,
+  "scope": "Browser UI export from saved core example, not a DeepSeek showcase or true multiview recovery",
+  "codecReconstructionLossless": false,
+  "superseded": true,
+  "aspectRatioPreserved": false,
+  "limitation": "The initial export evaluated a 4:3 scene directly at 16:9, stretching normalized object dimensions. Superseded by contain viewport export without changing core scene parameters."
+}

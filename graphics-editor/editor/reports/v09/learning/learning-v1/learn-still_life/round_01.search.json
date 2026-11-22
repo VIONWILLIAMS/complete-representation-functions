@@ -1,0 +1,739 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 1,
+  "query": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "checkpoint": {
+    "sessionId": "crf09_e5ccf6cd-5556-4a02-a656-53316025d65f",
+    "round": 1,
+    "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+    "subtopic": "主体形态与比例：独立主体、正面或侧面、轮廓清楚",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:48:03.835Z",
+    "runId": "crf07_b8fd3e8c-e0c2-4e6a-85ea-8cca9dbb9778",
+    "queries": [
+      "Wikimedia Commons still life photograph apples pears oranges ceramic vase",
+      "Pexels still life photo apples pears orange ceramic vase",
+      "site:commons.wikimedia.org apples pears orange ceramic vase still life photograph",
+      "site:pexels.com photo apples pears orange ceramic vase",
+      "site:commons.wikimedia.org File still life apples pears vase photograph",
+      "site:commons.wikimedia.org File apples pear orange still life",
+      "site:pexels.com photo still life fruit vase",
+      "site:pexels.com photo apples pears vase",
+      "Pexels still life photography apples pears vase",
+      "Wikimedia Commons fruit still life photograph apple pear orange ceramic vase"
+    ],
+    "requestIds": [
+      "1e3d7446-3f9c-4868-9215-e069ad486b6f"
+    ],
+    "sourceCount": 15,
+    "newSourceCount": 15,
+    "candidateCount": 9,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_779516f852f9415297d941805f271f4c",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons still life photograph apples pears oranges ceramic vase",
+            "Pexels still life photo apples pears orange ceramic vase",
+            "site:commons.wikimedia.org apples pears orange ceramic vase still life photograph",
+            "site:pexels.com photo apples pears orange ceramic vase"
+          ]
+        },
+        "sourceUrls": [
+          "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+          "https://www.pexels.com/photo/colorful-still-life-with-fruits-and-abstract-art-39618875/",
+          "https://asifabrar.net/Pexels/CollectionMedia/9ixgq8z"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_01_bed56ca5b4a548eca11bee32ba90c43e",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org File still life apples pears vase photograph",
+            "site:commons.wikimedia.org File apples pear orange still life",
+            "site:pexels.com photo still life fruit vase",
+            "site:pexels.com photo apples pears vase",
+            "Pexels still life photography apples pears vase",
+            "Wikimedia Commons fruit still life photograph apple pear orange ceramic vase"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG",
+          "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+          "https://www.pexels.com/id-id/foto/still-life-artistik-dengan-buku-dan-apel-34775287/",
+          "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+          "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+          "https://create.vista.com/similar-photos/656330546/?page=4",
+          "https://create.vista.com/photos/apples-pears/",
+          "https://www.pexels.com/fr-fr/photo/fleurs-fruits-blanc-piece-4464261/",
+          "https://www.pexels.com/photo/colorful-still-life-with-fruits-and-abstract-art-39618875/",
+          "https://www.pexels.com/zh-cn/photo/38021573/",
+          "https://codes.uxw.net/261496.html",
+          "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+          "https://create.vista.com/photos/stilleben/?page=3",
+          "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+        "title": "Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)",
+        "snippet": "<p class=\"attribution\">\"<a rel=\"noopener noreferrer\" href=\"https://www.flickr.com/photos/84263736@N00/52660190645\">Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)</a>\"",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/colorful-still-life-with-fruits-and-abstract-art-39618875/",
+        "title": "Photo by Valentin Ivantsov on Pexels",
+        "snippet": "Afterglow ... 1 Valentin Ivantsov ... 3840x5760 Aspect Ratio 2 ... Software Adobe Photoshop 21.0 (Windows) Description # Vibrant still life featuring pears, abstract art, and a wine bottle on a blue backdrop. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://asifabrar.net/Pexels/CollectionMedia/9ixgq8z",
+        "title": "Pexels Collection Media",
+        "snippet": "Photo by Pixabay on Pexels ### Elegant still life featuring ripe pears and vintage books in a moody setting. Photo by Eneida Nieves on Pexels ... Photo by cottonbro studio on Pexels ... Dark moody floral arrangement in vase with stacked books on a wooden table. ... Elegant still life featuring vintage books and roses perfect for dark academia themes.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG",
+        "title": "File:Pissarro - Pommes et poires dans un panier, 1872.JPG - Wikimedia Commons",
+        "snippet": "acquired from the artist 26 Nov. 1872]; sold to Erwin Davis ... The official position taken by the Wikimedia Foundation is that \"faithful reproductions of two-dimensional public domain works of art are public domain\". This photographic reproduction is therefore also considered to be in the public domain in the United States. In other jurisdictions...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+        "title": "Photo by Vadim Bocharov on Pexels",
+        "snippet": "4524x6643 Aspect Ratio 348 ... Date Apr 10, 2019 Downloads 1.6K Views 317.1K ... Description # Elegant still life featuring a flower in a patterned vase and a citrus fruit on a plate. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/id-id/foto/still-life-artistik-dengan-buku-dan-apel-34775287/",
+        "title": "Foto oleh Valentin Ivantsov di Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages ... Valentin Ivantsov ... Kamera Canon EOS 5D Mark III Fokus 100.0mm ... Feb 14, 2021 Perangkat lunak Adobe Photoshop 21.0 (Windows) Keterangan # Still life kreatif yang menampilkan apel, buku, dan vas untuk sentuhan artistik.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+        "title": "Photo de simon wang sur Pexels",
+        "snippet": "simon wang 585,8 millier vues \\ 6,5 millier téléchargements Description # Composition créative d'agrumes « main de Bouddha » dans un vase en céramique, entourée de kumquats.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/similar-photos/656330546/?page=4",
+        "title": "Similar Free Stock Images of Still life with peaches and apples on a wooden table",
+        "snippet": "Still life in the old style with a vase and fruit ... yellow fruits and vegetables, pumpkin, pears, apple and melon. ... ceramic jug, melon ... Still life with ripe apples, lavender bouquet and ceramic vase. Vintage. ... Still life with pears and a bucket. fruits. food.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/photos/apples-pears/",
+        "title": "Apples pears Free Stock Photos, Images, and Pictures of Apples pears",
+        "snippet": "Still life: apples, pears, plums in a ceramic plate. Presented in close-up on a dark background. Front view, copy space ... Glass round vase plate of fruits, bananas, grapes, apples, pears against turquoise blue background Still life ... Presented in close-up. Front view",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/fleurs-fruits-blanc-piece-4464261/",
+        "title": "Photo de https://kaboompics.com/ sur Pexels",
+        "snippet": "Format 2 ... Ouverture ƒ/7.1 ISO 400 ... Logiciel Adobe Photoshop Lightroom Classic 9.2 (Macintosh) Description # Nature morte de jonquilles blanches dans un vase avec des abricots sur une table, style minimal. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/38021573/",
+        "title": "Pexels Matvei图片",
+        "snippet": "3200x2136 宽高比 400:267 颜色 medium ... 软件 Capture One Windows 描述 # 一幅布置优雅的静物画，描绘了石榴、葡萄和一个装饰华丽的罐子，摆放在一个装饰托盘上。 ## 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://codes.uxw.net/261496.html",
+        "title": "绘画素材哪里找？免费高清资源汇总，新手画画不发愁",
+        "snippet": "我最常用的是Unsplash和Pexels，这两个都是国外的摄影素材站 ... 比如你想练静物素描，搜“still life”就能出来一堆高清水果、器皿的照片，像素基本都在3000px以上，放大看连苹果表面的纹理都清晰可见。之前我教朋友画水彩风景...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+        "title": "Photo de Максим Вышарь sur Pexels",
+        "snippet": "Appareil photo NIKON D610 ... Logiciel Adobe Photoshop CC 2019 (Windows) Description # Nature morte rustique avec des pommes, un panier en osier et un vase avec des baies rouges sur une table en bois.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/photos/stilleben/?page=3",
+        "title": "Stilleben Free Stock Photos, Images, and Pictures of Stilleben",
+        "snippet": "Stock royalty-free photos and images of Stilleben ... Still life with branches of blossoming sakura and ripe apples. ... Still life with Fruits were placed together with a vase of flowers beautifully. ... Pears and a bunch of grapes in a glass vase on the background of a textured brown wall ... Still life with flowers and apples on a wooden background",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+        "title": "Photo by Townsend Walton on Pexels",
+        "snippet": "Date Jul 25, 2025 Downloads 37 Views ... 2025 Software Luminar Neo Lacey, Washington, United States Description # A beautiful still life featuring fresh plums in a patterned bowl with a vibrant dahlia flower. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "```json\n{\n  \"summary\": \"本轮实际搜索到少量与‘苹果、梨、橙子、陶瓷花瓶静物摄影’主题部分相关的公开照片详情页，但未发现同时包含苹果、梨、整橙子和普通陶瓷花瓶且适合提取独立主体正面/侧面轮廓的单一理想照片。Pexels 返回的具体照片页面多含苹果或梨，但橙色/柑橘类与陶瓷花瓶的组合常伴随花朵、书籍或抽象背景；Wikimedia Commons 命中结果以绘画或非摄影静物为主。可点击来源页与已知许可证/作者信息见下，照片字节需后续独立获取并验证。\",\n  \"features\": [\n    \"待图片验证：苹果与梨的轮廓是否清晰可分离，果皮高光是否呈现自然点状或条状反射\",\n    \"待图片验证：整橙子是否作为独立球形主体出现，表皮孔隙纹理是否可见\",\n    \"待图片验证：陶瓷花瓶是否为普通釉面或哑光表面，瓶口与瓶身曲率是否形成明确边缘\",\n    \"待图片验证：主体在承托面上的接触阴影是否柔和、方向一致，可用于估计光源位置\",\n    \"待图片验证：正面或微侧面视角下，各水果的遮挡关系是否简单，便于提取独立实例\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择主体在画面中占据较大面积、背景简洁且无强图案干扰的照片，便于高斯拟合与边缘提取\",\n    \"优先选择单个苹果、单个梨、单个整橙子与单个陶瓷花瓶各自形成独立轮廓的照片，避免堆叠或严重遮挡\",\n    \"优先选择可见明确接触阴影且承托面纹理简单的照片，便于估计光照方向与接触关系\",\n    \"优先选择许可证明确为 CC0/CC BY/CC BY-SA 且来源页可追溯的照片；Pexels 照片需确认具体页面许可证与可再分发条件\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 页面返回的许可证信息未在搜索结果中完整展示，具体照片的再使用条件待核验\",\n    \"Openverse 结果标注 CC BY-NC-ND 2.0，不满足 CC0/CC BY/CC BY-SA 优先条件，且为 1923 年静物摄影，是否适合数字形态提取待评估\",\n    \"Wikimedia Commons 命中结果多为绘画或公共领域艺术作品复制品，非现代真实静物摄影，轮廓与材质参考价值有限\",\n    \"尚未获取任何候选照片的图像字节，无法确认主体是否同时包含苹果、梨、整橙子与普通陶瓷花瓶\"\n  ],\n  \"nextFocus\": \"下一轮应针对 Wikimedia Commons 使用更精确的文件名/分类搜索词（如 ‘still life apples pears orange ceramic vase photograph’）并限定文件类型为 photograph；继续搜索 Pexels 时优先筛选含橙子与陶瓷花瓶且无花朵/书籍干扰的页面；同时记录每张候选的照片页面许可证与原始图像 URL，以便后续独立下载与视觉验证。\"\n}\n```\n\n**本轮可核验来源页（非理想候选，仅供后续筛选）：**\n\n1. Pexels：Valentin Ivantsov 静物照片，含梨、抽象画与酒瓶，蓝色背景，100mm，ƒ/10，1/160s，3840×5760 。未显示完整许可证，待核验。  \n2. Pexels：Valentin Ivantsov 静物照片，含苹果、书籍与花瓶，100mm，ƒ/11，1/160s，3813×5720 。描述含“apel, buku, dan vas”，可对应苹果与花瓶，但缺少梨和橙子；许可证待核验。  \n3. Pexels：Vadim Bocharov 静物照片，含花纹花瓶、花与盘中柑橘类水果 。有花瓶与柑橘，但花为主要元素，且非普通陶瓷花瓶；许可证待核验。  \n4. Openverse/Flickr：1923 年静物，蓝花瓶、红橙帷幔、苹果、梨、李子，CC BY-NC-ND 2.0，作者 eyetoeyerob 。许可证不符合优先条件，且为早期摄影，形态参考价值有限。  \n5. Wikimedia Commons：Pissarro 绘画《苹果与梨在篮中》，公共领域标记 。为绘画而非摄影，不适合直接提取真实果皮纹理与接触阴影。\n\n**搜索局限说明：** 本轮未检索到同时满足“苹果 + 梨 + 整橙子 + 普通陶瓷花瓶 + 正面/侧面 + 独立轮廓清晰”的 CC0/CC BY/CC BY-SA 照片详情页。上述页面仅作为来源线索，不代表已确认适合高斯拟合。后续应基于这些来源页的原始图像 URL 进行独立下载与视觉模型验证，再决定是否保留为参考。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG",
+        "title": "File:Pissarro - Pommes et poires dans un panier, 1872.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+      "title": "Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)",
+      "snippet": "<p class=\"attribution\">\"<a rel=\"noopener noreferrer\" href=\"https://www.flickr.com/photos/84263736@N00/52660190645\">Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)</a>\"",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/colorful-still-life-with-fruits-and-abstract-art-39618875/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "snippet": "Afterglow ... 1 Valentin Ivantsov ... 3840x5760 Aspect Ratio 2 ... Software Adobe Photoshop 21.0 (Windows) Description # Vibrant still life featuring pears, abstract art, and a wine bottle on a blue backdrop. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://asifabrar.net/Pexels/CollectionMedia/9ixgq8z",
+      "title": "Pexels Collection Media",
+      "snippet": "Photo by Pixabay on Pexels ### Elegant still life featuring ripe pears and vintage books in a moody setting. Photo by Eneida Nieves on Pexels ... Photo by cottonbro studio on Pexels ... Dark moody floral arrangement in vase with stacked books on a wooden table. ... Elegant still life featuring vintage books and roses perfect for dark academia themes.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG",
+      "title": "File:Pissarro - Pommes et poires dans un panier, 1872.JPG - Wikimedia Commons",
+      "snippet": "acquired from the artist 26 Nov. 1872]; sold to Erwin Davis ... The official position taken by the Wikimedia Foundation is that \"faithful reproductions of two-dimensional public domain works of art are public domain\". This photographic reproduction is therefore also considered to be in the public domain in the United States. In other jurisdictions...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+      "title": "Photo by Vadim Bocharov on Pexels",
+      "snippet": "4524x6643 Aspect Ratio 348 ... Date Apr 10, 2019 Downloads 1.6K Views 317.1K ... Description # Elegant still life featuring a flower in a patterned vase and a citrus fruit on a plate. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/id-id/foto/still-life-artistik-dengan-buku-dan-apel-34775287/",
+      "title": "Foto oleh Valentin Ivantsov di Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages ... Valentin Ivantsov ... Kamera Canon EOS 5D Mark III Fokus 100.0mm ... Feb 14, 2021 Perangkat lunak Adobe Photoshop 21.0 (Windows) Keterangan # Still life kreatif yang menampilkan apel, buku, dan vas untuk sentuhan artistik.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+      "title": "Photo de simon wang sur Pexels",
+      "snippet": "simon wang 585,8 millier vues \\ 6,5 millier téléchargements Description # Composition créative d'agrumes « main de Bouddha » dans un vase en céramique, entourée de kumquats.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/similar-photos/656330546/?page=4",
+      "title": "Similar Free Stock Images of Still life with peaches and apples on a wooden table",
+      "snippet": "Still life in the old style with a vase and fruit ... yellow fruits and vegetables, pumpkin, pears, apple and melon. ... ceramic jug, melon ... Still life with ripe apples, lavender bouquet and ceramic vase. Vintage. ... Still life with pears and a bucket. fruits. food.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/photos/apples-pears/",
+      "title": "Apples pears Free Stock Photos, Images, and Pictures of Apples pears",
+      "snippet": "Still life: apples, pears, plums in a ceramic plate. Presented in close-up on a dark background. Front view, copy space ... Glass round vase plate of fruits, bananas, grapes, apples, pears against turquoise blue background Still life ... Presented in close-up. Front view",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/fleurs-fruits-blanc-piece-4464261/",
+      "title": "Photo de https://kaboompics.com/ sur Pexels",
+      "snippet": "Format 2 ... Ouverture ƒ/7.1 ISO 400 ... Logiciel Adobe Photoshop Lightroom Classic 9.2 (Macintosh) Description # Nature morte de jonquilles blanches dans un vase avec des abricots sur une table, style minimal. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/38021573/",
+      "title": "Pexels Matvei图片",
+      "snippet": "3200x2136 宽高比 400:267 颜色 medium ... 软件 Capture One Windows 描述 # 一幅布置优雅的静物画，描绘了石榴、葡萄和一个装饰华丽的罐子，摆放在一个装饰托盘上。 ## 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://codes.uxw.net/261496.html",
+      "title": "绘画素材哪里找？免费高清资源汇总，新手画画不发愁",
+      "snippet": "我最常用的是Unsplash和Pexels，这两个都是国外的摄影素材站 ... 比如你想练静物素描，搜“still life”就能出来一堆高清水果、器皿的照片，像素基本都在3000px以上，放大看连苹果表面的纹理都清晰可见。之前我教朋友画水彩风景...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+      "title": "Photo de Максим Вышарь sur Pexels",
+      "snippet": "Appareil photo NIKON D610 ... Logiciel Adobe Photoshop CC 2019 (Windows) Description # Nature morte rustique avec des pommes, un panier en osier et un vase avec des baies rouges sur une table en bois.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/photos/stilleben/?page=3",
+      "title": "Stilleben Free Stock Photos, Images, and Pictures of Stilleben",
+      "snippet": "Stock royalty-free photos and images of Stilleben ... Still life with branches of blossoming sakura and ripe apples. ... Still life with Fruits were placed together with a vase of flowers beautifully. ... Pears and a bunch of grapes in a glass vase on the background of a textured brown wall ... Still life with flowers and apples on a wooden background",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+      "title": "Photo by Townsend Walton on Pexels",
+      "snippet": "Date Jul 25, 2025 Downloads 37 Views ... 2025 Software Luminar Neo Lacey, Washington, United States Description # A beautiful still life featuring fresh plums in a patterned bowl with a vibrant dahlia flower. ## More like this",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/photo/colorful-still-life-with-fruits-and-abstract-art-39618875/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG",
+      "title": "File:Pissarro - Pommes et poires dans un panier, 1872.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+      "title": "Photo by Vadim Bocharov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/id-id/foto/still-life-artistik-dengan-buku-dan-apel-34775287/",
+      "title": "Foto oleh Valentin Ivantsov di Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+      "title": "Photo de simon wang sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/fleurs-fruits-blanc-piece-4464261/",
+      "title": "Photo de https://kaboompics.com/ sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/38021573/",
+      "title": "Pexels Matvei图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+      "title": "Photo de Максим Вышарь sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+      "title": "Photo by Townsend Walton on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 38414,
+        "sha256": "e581376792e92636f82dad29bc73cf0d1b4237a9c6518b1b9b1b59382d8995a3"
+      },
+      "imageUrl": "https://images.pexels.com/photos/39618875/pexels-photo-39618875.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/colorful-still-life-with-fruits-and-abstract-art-39618875/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "sha256": "e581376792e92636f82dad29bc73cf0d1b4237a9c6518b1b9b1b59382d8995a3",
+      "bytes": 38414,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 225628,
+        "sha256": "e8ae788802177afee4a4d993c59b8d094938031457184d2b1724d6a5fd75bb11"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG/960px-Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG",
+      "title": "File:Pissarro - Pommes et poires dans un panier, 1872.JPG - Wikimedia Commons",
+      "sha256": "e8ae788802177afee4a4d993c59b8d094938031457184d2b1724d6a5fd75bb11",
+      "bytes": 225628,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 790,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "Camille Pissarro",
+        "credit": "http://www.pearlmancollection.org/files/artwork/L1988-62-15_0.jpg",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1980,
+        "height": 1630,
+        "bytes": 2450243
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 52560,
+        "sha256": "26521f060ba5afc67890c58d8774a49ec18b294d5f7c4235cc061427b975fdc0"
+      },
+      "imageUrl": "https://images.pexels.com/photos/2121876/pexels-photo-2121876.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+      "title": "Photo by Vadim Bocharov on Pexels",
+      "sha256": "26521f060ba5afc67890c58d8774a49ec18b294d5f7c4235cc061427b975fdc0",
+      "bytes": 52560,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1128
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 33116,
+        "sha256": "f7e86c6604c4a4d4370359a2fcef843bfdb305069ba8e4005abc2b101c2357f0"
+      },
+      "imageUrl": "https://images.pexels.com/photos/34775287/pexels-photo-34775287.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/id-id/foto/still-life-artistik-dengan-buku-dan-apel-34775287/",
+      "title": "Foto oleh Valentin Ivantsov di Pexels",
+      "sha256": "f7e86c6604c4a4d4370359a2fcef843bfdb305069ba8e4005abc2b101c2357f0",
+      "bytes": 33116,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/39618875/pexels-photo-39618875.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/colorful-still-life-with-fruits-and-abstract-art-39618875/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "sha256": "e581376792e92636f82dad29bc73cf0d1b4237a9c6518b1b9b1b59382d8995a3",
+      "bytes": 38414,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG/960px-Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG",
+      "title": "File:Pissarro - Pommes et poires dans un panier, 1872.JPG - Wikimedia Commons",
+      "sha256": "e8ae788802177afee4a4d993c59b8d094938031457184d2b1724d6a5fd75bb11",
+      "bytes": 225628,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 790,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "Camille Pissarro",
+        "credit": "http://www.pearlmancollection.org/files/artwork/L1988-62-15_0.jpg",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1980,
+        "height": 1630,
+        "bytes": 2450243
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/2121876/pexels-photo-2121876.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+      "title": "Photo by Vadim Bocharov on Pexels",
+      "sha256": "26521f060ba5afc67890c58d8774a49ec18b294d5f7c4235cc061427b975fdc0",
+      "bytes": 52560,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1128,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/34775287/pexels-photo-34775287.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/id-id/foto/still-life-artistik-dengan-buku-dan-apel-34775287/",
+      "title": "Foto oleh Valentin Ivantsov di Pexels",
+      "sha256": "f7e86c6604c4a4d4370359a2fcef843bfdb305069ba8e4005abc2b101c2357f0",
+      "bytes": 33116,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/photo/colorful-still-life-with-fruits-and-abstract-art-39618875/",
+        "title": "Photo by Valentin Ivantsov on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/39618875/pexels-photo-39618875.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/39618875/pexels-photo-39618875.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 38414,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "e581376792e92636f82dad29bc73cf0d1b4237a9c6518b1b9b1b59382d8995a3"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG",
+        "title": "File:Pissarro - Pommes et poires dans un panier, 1872.JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG/960px-Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "Public domain",
+          "url": null,
+          "artist": "Camille Pissarro",
+          "credit": "http://www.pearlmancollection.org/files/artwork/L1988-62-15_0.jpg",
+          "usageTerms": "Public domain",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3APissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG/960px-Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 225628,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 790,
+        "sha256": "e8ae788802177afee4a4d993c59b8d094938031457184d2b1724d6a5fd75bb11"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+        "title": "Photo by Vadim Bocharov on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/2121876/pexels-photo-2121876.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/2121876/pexels-photo-2121876.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 52560,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1128,
+        "sha256": "26521f060ba5afc67890c58d8774a49ec18b294d5f7c4235cc061427b975fdc0"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/id-id/foto/still-life-artistik-dengan-buku-dan-apel-34775287/",
+        "title": "Foto oleh Valentin Ivantsov di Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/34775287/pexels-photo-34775287.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/34775287/pexels-photo-34775287.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 33116,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "f7e86c6604c4a4d4370359a2fcef843bfdb305069ba8e4005abc2b101c2357f0"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+        "title": "Photo de simon wang sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/35852513/pexels-photo-35852513.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/35852513/pexels-photo-35852513.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 75082,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "674802cef1d9be94671d85e07fba9564850b57c3bef4bd22d31e11ffea206432"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/fleurs-fruits-blanc-piece-4464261/",
+        "title": "Photo de https://kaboompics.com/ sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/4464261/pexels-photo-4464261.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/4464261/pexels-photo-4464261.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 17778,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "33ce3a8a7d304c3be223fff5d653c9147b34860bc9cdb2a03342e9075c5c593e"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "```json\n{\n  \"summary\": \"本轮实际搜索到少量与‘苹果、梨、橙子、陶瓷花瓶静物摄影’主题部分相关的公开照片详情页，但未发现同时包含苹果、梨、整橙子和普通陶瓷花瓶且适合提取独立主体正面/侧面轮廓的单一理想照片。Pexels 返回的具体照片页面多含苹果或梨，但橙色/柑橘类与陶瓷花瓶的组合常伴随花朵、书籍或抽象背景；Wikimedia Commons 命中结果以绘画或非摄影静物为主。可点击来源页与已知许可证/作者信息见下，照片字节需后续独立获取并验证。\",\n  \"features\": [\n    \"待图片验证：苹果与梨的轮廓是否清晰可分离，果皮高光是否呈现自然点状或条状反射\",\n    \"待图片验证：整橙子是否作为独立球形主体出现，表皮孔隙纹理是否可见\",\n    \"待图片验证：陶瓷花瓶是否为普通釉面或哑光表面，瓶口与瓶身曲率是否形成明确边缘\",\n    \"待图片验证：主体在承托面上的接触阴影是否柔和、方向一致，可用于估计光源位置\",\n    \"待图片验证：正面或微侧面视角下，各水果的遮挡关系是否简单，便于提取独立实例\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择主体在画面中占据较大面积、背景简洁且无强图案干扰的照片，便于高斯拟合与边缘提取\",\n    \"优先选择单个苹果、单个梨、单个整橙子与单个陶瓷花瓶各自形成独立轮廓的照片，避免堆叠或严重遮挡\",\n    \"优先选择可见明确接触阴影且承托面纹理简单的照片，便于估计光照方向与接触关系\",\n    \"优先选择许可证明确为 CC0/CC BY/CC BY-SA 且来源页可追溯的照片；Pexels 照片需确认具体页面许可证与可再分发条件\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 页面返回的许可证信息未在搜索结果中完整展示，具体照片的再使用条件待核验\",\n    \"Openverse 结果标注 CC BY-NC-ND 2.0，不满足 CC0/CC BY/CC BY-SA 优先条件，且为 1923 年静物摄影，是否适合数字形态提取待评估\",\n    \"Wikimedia Commons 命中结果多为绘画或公共领域艺术作品复制品，非现代真实静物摄影，轮廓与材质参考价值有限\",\n    \"尚未获取任何候选照片的图像字节，无法确认主体是否同时包含苹果、梨、整橙子与普通陶瓷花瓶\"\n  ],\n  \"nextFocus\": \"下一轮应针对 Wikimedia Commons 使用更精确的文件名/分类搜索词（如 ‘still life apples pears orange ceramic vase photograph’）并限定文件类型为 photograph；继续搜索 Pexels 时优先筛选含橙子与陶瓷花瓶且无花朵/书籍干扰的页面；同时记录每张候选的照片页面许可证与原始图像 URL，以便后续独立下载与视觉验证。\"\n}\n```\n\n**本轮可核验来源页（非理想候选，仅供后续筛选）：**\n\n1. Pexels：Valentin Ivantsov 静物照片，含梨、抽象画与酒瓶，蓝色背景，100mm，ƒ/10，1/160s，3840×5760 。未显示完整许可证，待核验。  \n2. Pexels：Valentin Ivantsov 静物照片，含苹果、书籍与花瓶，100mm，ƒ/11，1/160s，3813×5720 。描述含“apel, buku, dan vas”，可对应苹果与花瓶，但缺少梨和橙子；许可证待核验。  \n3. Pexels：Vadim Bocharov 静物照片，含花纹花瓶、花与盘中柑橘类水果 。有花瓶与柑橘，但花为主要元素，且非普通陶瓷花瓶；许可证待核验。  \n4. Openverse/Flickr：1923 年静物，蓝花瓶、红橙帷幔、苹果、梨、李子，CC BY-NC-ND 2.0，作者 eyetoeyerob 。许可证不符合优先条件，且为早期摄影，形态参考价值有限。  \n5. Wikimedia Commons：Pissarro 绘画《苹果与梨在篮中》，公共领域标记 。为绘画而非摄影，不适合直接提取真实果皮纹理与接触阴影。\n\n**搜索局限说明：** 本轮未检索到同时满足“苹果 + 梨 + 整橙子 + 普通陶瓷花瓶 + 正面/侧面 + 独立轮廓清晰”的 CC0/CC BY/CC BY-SA 照片详情页。上述页面仅作为来源线索，不代表已确认适合高斯拟合。后续应基于这些来源页的原始图像 URL 进行独立下载与视觉模型验证，再决定是否保留为参考。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 7854,
+    "completion_tokens": 1058,
+    "total_tokens": 8912,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "1e3d7446-3f9c-4868-9215-e069ad486b6f",
+        "model": "deepseek-flash",
+        "elapsedMs": 13442,
+        "prompt_tokens": 7854,
+        "completion_tokens": 1058,
+        "total_tokens": 8912,
+        "server_tool_use": {
+          "tool_search": 10,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 31857,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 38414,
+        "sha256": "e581376792e92636f82dad29bc73cf0d1b4237a9c6518b1b9b1b59382d8995a3"
+      },
+      "imageUrl": "https://images.pexels.com/photos/39618875/pexels-photo-39618875.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/colorful-still-life-with-fruits-and-abstract-art-39618875/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "sha256": "e581376792e92636f82dad29bc73cf0d1b4237a9c6518b1b9b1b59382d8995a3",
+      "bytes": 38414,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/e581376792e92636f82dad29bc73cf0d1b4237a9c6518b1b9b1b59382d8995a3.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 225628,
+        "sha256": "e8ae788802177afee4a4d993c59b8d094938031457184d2b1724d6a5fd75bb11"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG/960px-Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Pommes_et_poires_dans_un_panier,_1872.JPG",
+      "title": "File:Pissarro - Pommes et poires dans un panier, 1872.JPG - Wikimedia Commons",
+      "sha256": "e8ae788802177afee4a4d993c59b8d094938031457184d2b1724d6a5fd75bb11",
+      "bytes": 225628,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 790,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "Camille Pissarro",
+        "credit": "http://www.pearlmancollection.org/files/artwork/L1988-62-15_0.jpg",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pissarro_-_Pommes_et_poires_dans_un_panier%2C_1872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1980,
+        "height": 1630,
+        "bytes": 2450243
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/e8ae788802177afee4a4d993c59b8d094938031457184d2b1724d6a5fd75bb11.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 52560,
+        "sha256": "26521f060ba5afc67890c58d8774a49ec18b294d5f7c4235cc061427b975fdc0"
+      },
+      "imageUrl": "https://images.pexels.com/photos/2121876/pexels-photo-2121876.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+      "title": "Photo by Vadim Bocharov on Pexels",
+      "sha256": "26521f060ba5afc67890c58d8774a49ec18b294d5f7c4235cc061427b975fdc0",
+      "bytes": 52560,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1128,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/26521f060ba5afc67890c58d8774a49ec18b294d5f7c4235cc061427b975fdc0.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 33116,
+        "sha256": "f7e86c6604c4a4d4370359a2fcef843bfdb305069ba8e4005abc2b101c2357f0"
+      },
+      "imageUrl": "https://images.pexels.com/photos/34775287/pexels-photo-34775287.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/id-id/foto/still-life-artistik-dengan-buku-dan-apel-34775287/",
+      "title": "Foto oleh Valentin Ivantsov di Pexels",
+      "sha256": "f7e86c6604c4a4d4370359a2fcef843bfdb305069ba8e4005abc2b101c2357f0",
+      "bytes": 33116,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/f7e86c6604c4a4d4370359a2fcef843bfdb305069ba8e4005abc2b101c2357f0.webp"
+    }
+  ]
+}

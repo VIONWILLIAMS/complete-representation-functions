@@ -1,0 +1,289 @@
+{
+  "index": 0,
+  "critique": {
+    "ok": true,
+    "version": "0.10.0",
+    "runId": "crf10_a86d97c6-df33-472e-9588-4b4ad8462e3c",
+    "representation": "reference_gaussian",
+    "modelTraining": false,
+    "action": "critique",
+    "message": "整体符合暗调双果静物的目标：红苹果在左、黄绿梨在右，深灰绿纯色背景成立，画幅完整且主体没有被截断。未见需要改稿的明确可见缺陷；双果紧邻并由梨轻微遮挡苹果右缘，也与现有资产未观察右侧的条件相容。",
+    "qualityNotes": [
+      "苹果与梨均完整落在1024×768画幅内，主体没有被裁切；两者左右关系和深灰绿背景符合要求。",
+      "果皮斑点、细纹与中性高光保留较好；exposure分别为-0.3与-0.25，属于轻微压低曝光，没有明显改变各自源外观。",
+      "梨以前景zIndex自然遮挡苹果右缘，既维持紧凑的静物关系，也避免暴露苹果源资产未观察到的右侧。",
+      "两果底部接触位置基本一致，自动接触阴影柔和且没有变成强暗块，接地关系可读。"
+    ],
+    "warnings": [
+      "苹果与梨的高光位置继承各自源照片，方向性并非完全一致；当前只能通过轻微曝光或低频照明渐变近似，不能做物理重光照，继续强行统一高光会与保留原始高光冲突。",
+      "接触阴影是底部接触阴影的启发式生成结果，不是实测投影；在暗背景下可见度有限，但当前接地关系已建立。",
+      "若明显拉开两果间距，苹果原本受遮挡的右侧可能暴露；应保持现有遮挡，或接受未观察几何无法补全的限制。"
+    ],
+    "capabilityGaps": [],
+    "issues": [],
+    "scores": {
+      "realism": 4,
+      "semantic": 5,
+      "coherence": 5
+    },
+    "attempts": [
+      {
+        "phase": "gaussian10_critique",
+        "status": "responded",
+        "startedAt": "2026-11-21T22:28:08.609Z",
+        "usageKnown": true,
+        "requestId": "703e1af9-4fff-43d6-a9e0-c740a20ab5f2",
+        "validation": "passed"
+      }
+    ],
+    "usage": {
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 2179,
+      "completion_tokens": 7925,
+      "total_tokens": 10104,
+      "reasoning_tokens": 7573,
+      "requests": [
+        {
+          "phase": "gaussian10_critique",
+          "requestId": "703e1af9-4fff-43d6-a9e0-c740a20ab5f2",
+          "model": "deepseek-flash",
+          "elapsedMs": 52780,
+          "prompt_tokens": 2179,
+          "completion_tokens": 7925,
+          "total_tokens": 10104,
+          "reasoning_tokens": 7573,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    },
+    "quality": {
+      "status": "requires_render_and_independent_verification",
+      "modelScoreIsProof": false
+    },
+    "imageEvidence": true,
+    "sourceFrameSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+    "submittedImageDataURLSha256": "9675cd512b69dc59c6bb5d854793af868f82f8023ae6dc56360edd562c5b6316"
+  },
+  "verification": {
+    "schema": "crf.verification.v0.10",
+    "checkedAt": "2026-11-21T22:29:01.813Z",
+    "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+    "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+    "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc",
+    "checks": [
+      {
+        "id": "program.finite",
+        "kind": "program",
+        "type": "finite_parameters",
+        "required": true,
+        "status": "passed",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "render.frame",
+        "kind": "pixel",
+        "type": "valid_frame",
+        "required": true,
+        "status": "passed",
+        "reason": "Actual finite RGBA8 samples provided.",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "render.dimensions",
+        "kind": "pixel",
+        "type": "dimensions",
+        "required": true,
+        "status": "passed",
+        "observed": [
+          1024,
+          768
+        ],
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "visual.realism",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 4,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "visual.semantic",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 5,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "visual.coherence",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 5,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "visual.major_issues",
+        "kind": "perceptual",
+        "type": "no_major_issues",
+        "required": true,
+        "status": "passed",
+        "observed": 0,
+        "issues": [],
+        "scope": "Model-assisted perception only.",
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "visible.apple",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "status": "passed",
+        "observed": 47575,
+        "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "count.apple",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "status": "passed",
+        "observed": 1,
+        "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "visible.pear",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "status": "passed",
+        "observed": 54274,
+        "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      },
+      {
+        "id": "count.pear",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "status": "passed",
+        "observed": 1,
+        "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+        "evidence": {
+          "sceneSha256": "d0139d5ef1d8c48d9cf9b9bf3779c9cc46b7c10d17bfdaa3c3c80044163a60fe",
+          "imageSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+          "contractSha256": "27d75e101acfa513dc7d93d31ad619d77c5a05a6c34df9b002ec0ba6868a6cfc"
+        }
+      }
+    ],
+    "summary": {
+      "passed": 11,
+      "failed": 0,
+      "unknown": 0,
+      "blocked": 0,
+      "total": 11,
+      "required": 11,
+      "requiredPassed": 11
+    },
+    "hardPassed": true,
+    "measurementPassed": true,
+    "perceptualPassed": true,
+    "allRequiredPassed": true,
+    "independentReview": null,
+    "photorealisticAccepted": false,
+    "referenceReconstructionAccepted": false,
+    "unknowns": [],
+    "blocked": [],
+    "diagnosis": [],
+    "scope": "Contract checks on this exact scene/frame; no universal correctness or unseen-world claim."
+  },
+  "render": {
+    "engine": "CRF10Gaussian",
+    "renderer": "direct_affine_anisotropic_gaussians",
+    "colorSpace": "linear_srgb_composite_then_srgb8",
+    "basisColorSpaces": [
+      "linear_srgb"
+    ],
+    "filter": "mip",
+    "pixelFilterVariance": 0.08333333333333333,
+    "gaussians": 8192,
+    "basisEvaluations": 3532252,
+    "visibleObjects": 2,
+    "elapsedMs": 396,
+    "sourceRGBBlit": false,
+    "colourRasterResampling": false,
+    "neuralModelTraining": false,
+    "referenceConditioned": true,
+    "geometry": "image_plane_affine",
+    "physicalRelighting": false,
+    "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+    "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+    "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+    "coverageSemantics": "visible_alpha_contribution",
+    "pixelSha256": "a5788357e1ebce8b099538f958ce99fb6485c3a714db3444c620f25fd24a560f",
+    "pngSha256": "32bdd81c9791b694d44d6d5695d96c0b17bee83f0cb8f1d1f8ab74f98f4bb613"
+  }
+}

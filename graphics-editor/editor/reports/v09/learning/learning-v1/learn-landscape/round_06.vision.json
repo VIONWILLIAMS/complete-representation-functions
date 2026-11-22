@@ -1,0 +1,339 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 6,
+  "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "items": [
+    {
+      "id": "ref.6.0",
+      "label": "岩石海湾与平静水面",
+      "category": "coastal-bay-scene",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          170,
+          200,
+          220
+        ],
+        [
+          80,
+          110,
+          120
+        ],
+        [
+          120,
+          100,
+          80
+        ],
+        [
+          30,
+          55,
+          35
+        ],
+        [
+          230,
+          235,
+          235
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "画面为真实海湾或湖湾的完整风景：中下部是平静水面，能看到岸边树木、天空和岩石的模糊倒影；前景有几块灰褐色圆岩露出水面；右岸分布橙褐色岩块和倾斜树木；远景为深绿树线，上方浅蓝天空带白色薄云。整体光线较均匀，阴影柔和，呈现自然薄雾感与湿地反光。复用时应保留水面前景岩石、倒影和岸线层次，但不能把它当作可自由变换视角的三维场景。",
+      "tags": [
+        "海湾",
+        "平静水面",
+        "倒影",
+        "岩石",
+        "岸线",
+        "树线",
+        "天空",
+        "自然风景"
+      ],
+      "limitations": [
+        "单张照片，无法推断完整地形",
+        "水面倒影受风与光线影响，不可直接重建",
+        "远景树线细节和物种不可辨",
+        "无地理坐标或尺度参照"
+      ]
+    },
+    {
+      "id": "ref.6.1",
+      "label": "针叶林中的阴影小径",
+      "category": "coniferous-forest",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          25,
+          50,
+          30
+        ],
+        [
+          155,
+          115,
+          45
+        ],
+        [
+          95,
+          120,
+          55
+        ],
+        [
+          30,
+          25,
+          20
+        ],
+        [
+          105,
+          140,
+          130
+        ]
+      ],
+      "lightDirection": "right",
+      "description": "画面为密集针叶林内部：大量细长深色树干垂直贯穿画面，近地面是覆盖黄绿苔藓或草的被照亮斜坡；一条狭窄土径从前景沿树干间延伸。右侧透入较强林间光，形成斑驳亮区和斜向阴影，树干与树冠层叠遮挡。整体色调偏黄绿与深绿，具有真实的林地纹理和空气透视。复用时可提取树干垂直线条、苔藓地面、小径透视和林间光斑，但不能据此恢复森林的完整空间结构。",
+      "tags": [
+        "针叶林",
+        "树干",
+        "林地",
+        "小径",
+        "苔藓",
+        "林间光",
+        "阴影",
+        "自然纹理"
+      ],
+      "limitations": [
+        "低分辨率，树皮与叶片纹理有限",
+        "单视角，不能确认林分结构",
+        "路径走向受透视遮挡",
+        "无法识别具体树种"
+      ]
+    },
+    {
+      "id": "ref.6.2",
+      "label": "岩石上的苔藓与地衣",
+      "category": "rock-texture",
+      "role": "material",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          190,
+          185,
+          170
+        ],
+        [
+          95,
+          75,
+          55
+        ],
+        [
+          70,
+          65,
+          60
+        ],
+        [
+          90,
+          120,
+          40
+        ],
+        [
+          50,
+          70,
+          30
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "近距离俯拍岩石表面：基底为棕褐、灰黑和浅灰交织的粗糙石面；表面散布大量灰白色壳状地衣，形成不规则斑块；中部偏右有几团鲜绿色苔藓，轮廓柔软，与坚硬石面形成明显质感对比。光线较平，纹理细节占主导，适合作为岩石、地衣和苔藓的材质参考。由于是局部特写，不能据此判断整块岩石的形态或所在环境。",
+      "tags": [
+        "岩石",
+        "苔藓",
+        "地衣",
+        "微距",
+        "自然纹理",
+        "灰白",
+        "绿色",
+        "材质"
+      ],
+      "limitations": [
+        "仅局部表面，缺少整体环境",
+        "物种无法确认",
+        "分辨率有限，细小结构不清晰",
+        "无明显方向光，难以判断表面法线"
+      ]
+    },
+    {
+      "id": "ref.6.3",
+      "label": "阳光下的木桌与绿色椅子",
+      "category": "indoor-wooden-furniture",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          190,
+          120,
+          55
+        ],
+        [
+          230,
+          180,
+          90
+        ],
+        [
+          200,
+          170,
+          130
+        ],
+        [
+          45,
+          75,
+          55
+        ],
+        [
+          85,
+          55,
+          30
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "室内场景中，浅橙色木桌占据画面中部，桌面上有强烈日光形成的大块亮斑和长阴影；墙上出现三角形光区，阴影边缘清晰。右侧可见深绿色椅背和椅脚，地面为暖棕色。整体色调温暖，木纹和光影是主要视觉信息；画面边缘裁切了桌椅，且对焦偏软。该图与自然山海主题关联较弱，更适合作为室内木质家具和强日光投影的参考。",
+      "tags": [
+        "室内",
+        "木桌",
+        "绿色椅子",
+        "阳光",
+        "投影",
+        "暖色调",
+        "家具",
+        "局部场景"
+      ],
+      "limitations": [
+        "主题与自然景观不一致",
+        "图像模糊，木纹与材质细节有限",
+        "桌椅被裁切，结构不完整",
+        "强光导致高光溢出和阴影细节丢失",
+        "缺少窗户或光源位置信息"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "均为单张静态摄影，不是多视角采集",
+    "画面都以中近景或局部场景为主",
+    "均包含清晰的明暗关系和阴影",
+    "视觉纹理丰富：水波、树皮、岩石、木纹",
+    "整体色调偏自然绿、褐或暖黄",
+    "均存在边缘裁切，缺少完整环境交代",
+    "都没有人物作为尺度参照",
+    "均无法从单帧直接恢复三维结构"
+  ],
+  "missingEvidence": [
+    "缺少原始高分辨率图像和EXIF信息",
+    "缺少每张照片的拍摄地点、时间与季节",
+    "图1无法确认水体深度、盐度或水底情况",
+    "图1倒影与薄雾的气象条件不可知",
+    "图2无法鉴定苔藓、地衣和岩石的具体种类",
+    "图2缺少岩石整体形状和周边环境",
+    "图3与自然景观主题关联薄弱，难以并入同一地理叙事",
+    "图3窗户或光源位置未入镜",
+    "不同照片之间没有空间连续性证据",
+    "无视频或多视角资料验证外观",
+    "缺少尺度标尺与相机参数",
+    "无法确认图像是否经过色彩或对比度处理",
+    "图1远景树线细节不足",
+    "图2局部特写不能代表整片地貌",
+    "图3高光与阴影区域损失部分纹理"
+  ],
+  "images": [
+    {
+      "id": "ref.6.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg#1",
+      "sha256": "75ea5da792cce09debd52a7bb88d252bc42344fc5601951105ec4df824e4dc7a",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.6.1",
+      "sourceUrl": "https://www.pexels.com/photo/steps-in-park-18558163/",
+      "sha256": "a92acdbd919bc3dc98d38fcd65eb96bf994e904b1057c88da27270a5e044f4ad",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.6.2",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/",
+      "sha256": "b14e532273126b432530b1ae6c77cec5a9f040c70db86503cc7088c98bcbc664",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.6.3",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/",
+      "sha256": "35fdc5539b382003830464065c1b437b0477824be291302b9602012560451e21",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 2,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "933eb216-ee78-43b0-b47d-2802284c7e87",
+        "model": "deepseek-flash",
+        "elapsedMs": 26483,
+        "prompt_tokens": 1596,
+        "completion_tokens": 2992,
+        "total_tokens": 4588,
+        "reasoning_tokens": 1654,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      },
+      {
+        "phase": "gaussian_semantic_repair",
+        "requestId": "40a5b824-f0b7-42c0-bf1b-96b9e86a9ab5",
+        "model": "deepseek-flash",
+        "elapsedMs": 6101,
+        "prompt_tokens": 2958,
+        "completion_tokens": 1344,
+        "total_tokens": 4302,
+        "reasoning_tokens": 24,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 4554,
+    "completion_tokens": 4336,
+    "total_tokens": 8890,
+    "reasoning_tokens": 1678
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": true,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 32584
+}

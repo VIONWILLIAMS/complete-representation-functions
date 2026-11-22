@@ -1,0 +1,60 @@
+
+> crf-graphics-editor@0.7.0 test:v07
+> node --test tests/test_deepseek07.mjs tests/test_worker_references07.mjs tests/test_radiance07.cjs
+
+✔ provider redirects are not followed and cannot forward credentials to a new host (6.475057ms)
+✔ research and JSON composition are separate and preserve actual tool evidence (11.083308ms)
+✔ model search claims and citations alone never become searched=true (0.815529ms)
+✔ explicit fallback runs once and records even an empty real search honestly (2.343962ms)
+✔ failed search fallback remains unavailable without a fabricated completion (2.319976ms)
+✔ verified reference collection feeds vision and returns metadata without image bytes (2.452586ms)
+✔ reference collection failure is visible and does not prevent text-only composition (1.498848ms)
+✔ zero-photo references trigger one real alternate-source search and one recollection (4.794603ms)
+✔ edit plus image and original intent produces genuine vision feedback with no search (1.298657ms)
+✔ legacy observation fields are retained locally and omitted from provider context (1.155551ms)
+✔ legacy invalid object IDs, operation names, and camera bounds are rejected (1.216152ms)
+✔ retained 0.6 operation protocol remains distinct from 0.5 (0.530559ms)
+✔ invalid input is refused before any paid request (0.43167ms)
+✔ bad JSON and truncation do not commit partial programs and retain paid usage (1.119787ms)
+✔ invalid AST, degenerate geometry, and renderer veto stop model programs (2.352585ms)
+✔ renderer optional material defaults are accepted without adding or clamping values (0.742669ms)
+✔ material AST accepts actual multi-term arithmetic and rejects over-budget arity (2.527248ms)
+✔ one schema repair uses exact field errors and preserves both paid responses (1.455833ms)
+✔ schema repair is bounded at one additional model call (1.64632ms)
+✔ nonempty malformed JSON gets one syntax repair with its parse error (1.194981ms)
+✔ provider error formats and model credential echo never leak authentication (1.709746ms)
+✔ caller cancellation and bounded response size are respected (14.124402ms)
+✔ bounded upstream timeout returns a retryable error without looping (1001.422867ms)
+✔ public JSON composition cannot forge trusted research evidence (0.863041ms)
+PASS all four varied procedural cases validate
+PASS expression, transform, geometry and resource budgets reject malformed programs
+PASS invalid compound edits are atomic; prototype paths cannot execute
+PASS n-ary add and mul preserve nested binary order and enforce operand bounds
+PASS same code and seed produce identical complete RGBA and object visibility
+PASS model-authored function changes actual pixels
+PASS object removal re-evaluates a real background with opaque pixels
+PASS glass and metal take distinct rendered transport paths
+PASS hollow lathe exposes its internal floor, rim stays connected
+PASS box bevel changes geometric silhouette rather than painting a highlight
+PASS denoising is explicit, deterministic, and retains object/depth maps
+PASS asynchronous and synchronous rendering agree
+PASS progressive rendering cancels without committing a completed frame
+{"suite":"CRF Radiance 0.7","checks":13,"status":"passed"}
+✔ tests/test_radiance07.cjs (804.424332ms)
+✔ Worker delegates non-API requests to the asset binding (5.942594ms)
+✔ Worker status exposes configuration only, never credentials or a different model (1.221731ms)
+✔ Worker rejects malformed, cross-origin, and unconfigured API requests locally (7.1685ms)
+✔ Worker enforces actual streamed body size without relying on Content-Length (1.610697ms)
+✔ collector refuses an already-cancelled operation before any page or image request (0.989141ms)
+✔ collector propagates cancellation between page and image without continuing downloads (2.136119ms)
+✔ collector rejects truncated magic-prefix payloads instead of reporting a usable photo (1.208743ms)
+✔ collector reports actual attempted pages separately from planned candidates (18.670147ms)
+✔ collector rejects off-list source hosts and never forwards authorization to public images (2.675395ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1192.53799

@@ -1,0 +1,326 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 7,
+  "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "items": [
+    {
+      "id": "ref.7.0",
+      "label": "山地湖泊与前景松树",
+      "category": "mountain-lake",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          196,
+          204,
+          209
+        ],
+        [
+          76,
+          96,
+          61
+        ],
+        [
+          34,
+          59,
+          59
+        ],
+        [
+          66,
+          103,
+          47
+        ],
+        [
+          145,
+          151,
+          143
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "前景右侧与底部为深绿色针叶松枝，针叶成簇；中景左侧为覆绿山坡与针叶林，向下没入深色湖面；湖对岸有隐约灰褐色岸线；天空布满灰白云层，远景带轻微雾霭。整体为阴天漫射光，前景枝条形成遮挡与深度层次。复用时可作为山地湖泊、松树前景、阴天薄雾参考；需保留低饱和绿、深水色和云层渐变。",
+      "tags": [
+        "山地湖泊",
+        "针叶林",
+        "松枝前景",
+        "阴天",
+        "云层",
+        "湖面",
+        "薄雾",
+        "层叠山体",
+        "自然景观"
+      ],
+      "limitations": [
+        "缩略图分辨率有限，湖对岸细节与树种无法确认",
+        "前景松枝遮挡部分水面",
+        "无法从单张图确认地理位置或真实尺度",
+        "未见明显镜面倒影，不能确认水面反射细节",
+        "无相机参数与EXIF",
+        "不能作为精确alpha分割或三维重建"
+      ]
+    },
+    {
+      "id": "ref.7.1",
+      "label": "岩壁前的横伸松枝",
+      "category": "pine-cliff",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          126,
+          115,
+          103
+        ],
+        [
+          83,
+          102,
+          53
+        ],
+        [
+          46,
+          57,
+          36
+        ],
+        [
+          151,
+          144,
+          131
+        ],
+        [
+          192,
+          196,
+          188
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "近景松枝从右侧横向伸入画面，针叶簇生、枝干深褐；背景为灰褐色陡直岩壁，表面有竖向裂隙与粗糙块面，局部阴影较深。松枝遮挡岩壁形成前中景层次，光线较均匀，适合表现针叶树与岩壁的对比、悬崖生境和前景枝遮挡。",
+      "tags": [
+        "松枝",
+        "针叶树",
+        "岩壁",
+        "悬崖生境",
+        "前景遮挡",
+        "灰褐岩石",
+        "自然纹理",
+        "森林"
+      ],
+      "limitations": [
+        "松枝遮挡大量岩壁，岩壁完整结构不可见",
+        "分辨率有限，树皮与裂隙细节不清",
+        "无法确认树种与地点",
+        "单张照片不能提供岩壁多角度或三维结构",
+        "不能证明该画面代表完整悬崖生境",
+        "无光照参数"
+      ]
+    },
+    {
+      "id": "ref.7.2",
+      "label": "水边覆冰枝条与岩石",
+      "category": "icy-shore",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          29,
+          107,
+          154
+        ],
+        [
+          24,
+          47,
+          38
+        ],
+        [
+          103,
+          111,
+          106
+        ],
+        [
+          238,
+          241,
+          237
+        ],
+        [
+          82,
+          62,
+          42
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "画面下半部为灰黑色湿岩或礁石，左上有深色岩坡；中景细长弯曲的裸枝从上方垂向水面，枝条下部挂有白色冰状或霜状附着物，形态呈细长垂坠；背景为明亮蓝色水面，远处隐约有淡色岸线。整体冷暖对比强烈，适合表现水边枝挂冰、礁石前景和蓝水背景；具体是冰、霜还是水花不可仅凭缩略图确认。",
+      "tags": [
+        "蓝水",
+        "礁石",
+        "裸枝",
+        "疑似冰挂",
+        "水边",
+        "冷暖对比",
+        "岸线",
+        "自然细节"
+      ],
+      "limitations": [
+        "白色附着物可能是冰、霜或水沫，单图无法确认",
+        "枝条与礁石细节受分辨率限制",
+        "蓝色水体类型（海或湖）不可确认",
+        "无法判断风向、温度与季节",
+        "不能用作精确分割掩码",
+        "无EXIF或相机参数"
+      ]
+    },
+    {
+      "id": "ref.7.3",
+      "label": "高山碎石坡与巨石",
+      "category": "alpine-scree",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          92,
+          144,
+          197
+        ],
+        [
+          136,
+          112,
+          78
+        ],
+        [
+          133,
+          128,
+          117
+        ],
+        [
+          229,
+          233,
+          232
+        ],
+        [
+          64,
+          64,
+          61
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "高海拔碎石坡占画面中下部，碎石大小混杂，呈灰褐与浅灰色；右上方一块巨大深褐色岩块突兀矗立，表面粗糙并带层状或块状纹理，底部与碎石接触处有阴影。左侧远处可见尖峭雪山，天空湛蓝、少量薄云。画面显得干燥、空旷，适合表现高山碎石地貌、巨石尺度对比和远山层次。",
+      "tags": [
+        "高山",
+        "碎石坡",
+        "巨石",
+        "雪山",
+        "蓝天",
+        "干旱地貌",
+        "尺度对比",
+        "自然景观"
+      ],
+      "limitations": [
+        "巨型岩块与远景雪山的真实距离和尺度无法确认",
+        "碎石坡纹理与岩性细节受缩略图限制",
+        "左下方暗点是否为人物或尺度物不确定",
+        "单张照片无法覆盖完整地形",
+        "无法确认具体地点与海拔",
+        "无相机参数"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "四张均为户外自然摄影，非棚拍或纯材质图",
+    "画面中均可见岩石、岩壁或碎石地貌",
+    "均包含植被、水体或远山等自然元素中的至少一种",
+    "均采用自然光，存在不同天气或光照条件",
+    "色调以蓝、绿、灰、褐等自然色为主",
+    "均呈现一定程度的前景、中景、远景层次",
+    "均无人工主体占据画面中心",
+    "均适合作为自然景观的视觉参考而非精确测绘资料"
+  ],
+  "missingEvidence": [
+    "无法从缩略图确认原始分辨率、焦距、曝光和EXIF",
+    "缺少同一地点的多视角照片，无法重建完整场景",
+    "缺少深度或视差信息，无法确认空间距离",
+    "缺少时间序列，无法判断季节、天气变化和动态",
+    "未提供精确地理位置与海拔",
+    "无法获得真实的材质反射参数与光照测量",
+    "没有像素级分割真值，bbox仅为估计",
+    "部分细节如冰或霜、树种、岩性、人物或尺度物无法确认",
+    "无法验证水面反射的物理属性"
+  ],
+  "images": [
+    {
+      "id": "ref.7.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Pine_and_Morskie_Oko.JPG",
+      "sha256": "789d571dabdddf5750344377cbc2da89974c81f31a35a1a60ae84e873584617e",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.7.1",
+      "sourceUrl": "https://www.pexels.com/photo/lush-pine-branches-against-rocky-cliff-35500276/",
+      "sha256": "787b7c24b70ab54e66cb8627703a88c8cd9d2f443cd9d36ddf178c024832f7e8",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.7.2",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34254426/",
+      "sha256": "90b585bd599672fac4939abf3044213db0f68ade0784058f916d0f4e3b052005",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.7.3",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gigantic_stone_near_the_Borit_lake,_Upper_Hunza,_Pakistan..jpg#1",
+      "sha256": "d84e3522f86113e94114b061d99c482d1d306d700ea6f4226e694d5b42f680bd",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "4c9583f6-3034-4ff2-8770-0d5e3cf4044d",
+        "model": "deepseek-flash",
+        "elapsedMs": 37299,
+        "prompt_tokens": 1597,
+        "completion_tokens": 5384,
+        "total_tokens": 6981,
+        "reasoning_tokens": 4083,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1597,
+    "completion_tokens": 5384,
+    "total_tokens": 6981,
+    "reasoning_tokens": 4083
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 37301
+}

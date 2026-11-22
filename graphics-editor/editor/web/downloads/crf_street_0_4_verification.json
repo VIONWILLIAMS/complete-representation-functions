@@ -1,0 +1,136 @@
+{
+  "schema": "crf.delivery_verification.v0.4",
+  "pass": true,
+  "referenceFileSha256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+  "coreSha256": "ae9364668e5277b6924e94f04771ed0a1f958362e555ddf403ebd4b0a8bf22d2",
+  "sceneDataSha256": "95df9a865bbae0b9e523fa32c312c086eb487e71e868dec3c71dacc924658d8d",
+  "representation": "dense observed RGB coefficients; does not test compact compression or physical 3D truth",
+  "checks": [
+    {
+      "name": "actual_gaussian_renderer_matches_independent_PNG",
+      "pass": true,
+      "detail": {
+        "exactPixels": 667000,
+        "totalPixels": 667000,
+        "exactPixelFraction": 1,
+        "mae": 0,
+        "maxAbsChannelError": 0
+      }
+    },
+    {
+      "name": "dimensions_are_original",
+      "pass": true,
+      "detail": {
+        "width": 667,
+        "height": 1000
+      }
+    },
+    {
+      "name": "all_pixels_have_one_observed_object",
+      "pass": true,
+      "detail": {
+        "objects": 18,
+        "observedSamples": 667000
+      }
+    },
+    {
+      "name": "scanned_RGB_matches_independent_source",
+      "pass": true,
+      "detail": {
+        "mismatchedChannels": 0,
+        "canonicalRGBSha256": "ce66923ff7c0bd64cc3aaec19ffe951dd30b3c3834843d711dd6ad86aadcf922"
+      }
+    },
+    {
+      "name": "wall_recolor_changes_only_wall_observations",
+      "pass": true,
+      "detail": {
+        "changedWallPixels": 437133,
+        "changedOtherPixels": 0
+      }
+    },
+    {
+      "name": "operations_are_immutable",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "attachment_cycles_rejected",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "nonfinite_parameters_rejected",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "signal_rig_moves_as_connected_parent_group",
+      "pass": true,
+      "detail": [
+        {
+          "id": "pole.main",
+          "deltaX": 12,
+          "deltaY": 0
+        },
+        {
+          "id": "pole.arm",
+          "deltaX": 12,
+          "deltaY": 0
+        },
+        {
+          "id": "signal.support",
+          "deltaX": 12,
+          "deltaY": 0
+        },
+        {
+          "id": "signal.main",
+          "deltaX": 12,
+          "deltaY": 0
+        },
+        {
+          "id": "signal.side",
+          "deltaX": 12,
+          "deltaY": 0
+        }
+      ]
+    },
+    {
+      "name": "prototype_CRUD_reaches_real_pixels",
+      "pass": true,
+      "detail": {
+        "visibleCopyPixels": 3152
+      }
+    },
+    {
+      "name": "depth_changes_camera_projection",
+      "pass": true,
+      "detail": {
+        "nearX": 26.8597271086486,
+        "farX": 2.485858427619121
+      }
+    },
+    {
+      "name": "relative_light_changes_actual_pixels",
+      "pass": true,
+      "detail": {
+        "maeVsBaseline": 9.265748625687156
+      }
+    },
+    {
+      "name": "numeric_gaussian_coefficient_controls_output",
+      "pass": true,
+      "detail": {
+        "exactPixels": 666999,
+        "totalPixels": 667000,
+        "exactPixelFraction": 0.9999985007496252,
+        "mae": 0.00002848575712143928,
+        "maxAbsChannelError": 57,
+        "probeXY": [
+          450,
+          500
+        ]
+      }
+    }
+  ]
+}

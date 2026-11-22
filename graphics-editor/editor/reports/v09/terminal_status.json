@@ -1,0 +1,1096 @@
+{
+  "schema": "crf.terminal_benchmark_status.v0.9",
+  "status": "not_run",
+  "protocolSha256": "299276050dd4890f52b74fa9e63ff0871716b5f12ad4fe433293a6616a963bc6",
+  "promptCount": 60,
+  "seedCount": 3,
+  "taskCount": 180,
+  "reason": "P3 feasibility must pass using independent evidence before terminal prompts are used.",
+  "requiredGate": {
+    "gate": "P3",
+    "status": "passed",
+    "independentEvidence": "nonempty array"
+  },
+  "tasks": [
+    {
+      "id": "architecture_01-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_01-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_01-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_02-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_02-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_02-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_03-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_03-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_03-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_04-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_04-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_04-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_05-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_05-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_05-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_06-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_06-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_06-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_07-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_07-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_07-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_08-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_08-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_08-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_09-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_09-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_09-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_10-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_10-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_10-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_11-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_11-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_11-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_12-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_12-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_12-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_13-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_13-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_13-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_14-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_14-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_14-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_15-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_15-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_15-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_16-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_16-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_16-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_17-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_17-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_17-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_18-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_18-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_18-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_19-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_19-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_19-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_20-s104729",
+      "category": "architecture",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_20-s130363",
+      "category": "architecture",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "architecture_20-s155921",
+      "category": "architecture",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_01-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_01-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_01-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_02-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_02-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_02-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_03-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_03-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_03-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_04-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_04-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_04-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_05-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_05-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_05-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_06-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_06-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_06-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_07-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_07-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_07-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_08-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_08-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_08-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_09-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_09-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_09-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_10-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_10-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_10-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_11-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_11-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_11-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_12-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_12-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_12-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_13-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_13-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_13-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_14-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_14-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_14-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_15-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_15-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_15-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_16-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_16-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_16-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_17-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_17-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_17-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_18-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_18-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_18-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_19-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_19-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_19-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_20-s104729",
+      "category": "landscape",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_20-s130363",
+      "category": "landscape",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "landscape_20-s155921",
+      "category": "landscape",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_01-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_01-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_01-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_02-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_02-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_02-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_03-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_03-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_03-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_04-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_04-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_04-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_05-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_05-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_05-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_06-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_06-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_06-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_07-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_07-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_07-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_08-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_08-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_08-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_09-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_09-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_09-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_10-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_10-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_10-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_11-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_11-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_11-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_12-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_12-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_12-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_13-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_13-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_13-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_14-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_14-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_14-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_15-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_15-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_15-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_16-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_16-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_16-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_17-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_17-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_17-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_18-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_18-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_18-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_19-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_19-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_19-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_20-s104729",
+      "category": "still_life",
+      "seed": 104729,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_20-s130363",
+      "category": "still_life",
+      "seed": 130363,
+      "status": "not_run"
+    },
+    {
+      "id": "still_life_20-s155921",
+      "category": "still_life",
+      "seed": 155921,
+      "status": "not_run"
+    }
+  ]
+}

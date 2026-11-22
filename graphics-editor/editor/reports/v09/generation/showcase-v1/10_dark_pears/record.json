@@ -1,0 +1,1057 @@
+{
+  "schema": "crf.actual_generation_trial.v0.9",
+  "id": "10_dark_pears",
+  "title": "深青背景的梨与苹果",
+  "category": "still_life",
+  "prompt": "深青灰背景，棕灰色桌面，两只黄绿色梨一高一矮，左前方一只深红苹果，不出现橙子或花瓶。偏暖低位侧光，暗部保持颜色层次，所有果物自然接地。输出1024×768，使用CRF原生二维函数与共享高斯外观，保持共同光照、合理比例、材质细节和接触关系。",
+  "seed": 90110,
+  "protocolSha256": "299276050dd4890f52b74fa9e63ff0871716b5f12ad4fe433293a6616a963bc6",
+  "runId": "showcase-v1",
+  "taskId": "crf09_00bcbb63-23fd-44fd-b6b3-3781bf9ae50b",
+  "status": "review_required",
+  "stage": "complete",
+  "error": null,
+  "completedAt": "2026-11-21T16:08:06.167Z",
+  "selection": {
+    "index": 2,
+    "reason": "Latest candidate without declared semantic-constraint regression; visual approval remains pending.",
+    "independentReview": false
+  },
+  "frameGate": {
+    "expected": [
+      1024,
+      768
+    ],
+    "actual": [
+      1024,
+      768
+    ],
+    "passed": true
+  },
+  "model": {
+    "id": "shared-1b02095c",
+    "sha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e",
+    "sourceRGBEmbedded": false,
+    "scope": "shared multi-image linear-color moments and Gaussian frequency-band amplitude estimates; procedural shape prior is hand-authored"
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "png": "reports/v09/generation/showcase-v1/10_dark_pears/candidate_00.png",
+      "jpeg": "reports/v09/generation/showcase-v1/10_dark_pears/candidate_00.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 263017,
+        "semanticObjects": 3,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 485,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 485,
+        "pixelSha256": "feacfa3153510455d1c188cd89da535db13a2ea39ee1f67e33c8334dfdbbbe59",
+        "pngSha256": "0e8700cb67de9b0323d259fcbab4dd832778eb26f8f9f37846288ab99c3c973c",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "color",
+            "subject": "pear",
+            "value": [
+              170,
+              184,
+              82
+            ],
+            "passed": true,
+            "observed": [
+              [
+                170,
+                184,
+                82
+              ],
+              [
+                185,
+                193,
+                96
+              ]
+            ]
+          },
+          {
+            "type": "color",
+            "subject": "apple",
+            "value": [
+              115,
+              22,
+              28
+            ],
+            "passed": true,
+            "observed": [
+              [
+                115,
+                22,
+                28
+              ]
+            ]
+          },
+          {
+            "type": "left_of",
+            "subject": "apple",
+            "target": "pear",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.34,
+              "targetMean": 0.64
+            }
+          },
+          {
+            "type": "below",
+            "subject": "apple",
+            "target": "pear",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.665,
+              "targetMean": 0.6325000000000001
+            }
+          },
+          {
+            "type": "visible",
+            "subject": "pear",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "visible",
+            "subject": "apple",
+            "value": true,
+            "passed": true,
+            "observed": true
+          }
+        ],
+        "evaluated": 10,
+        "passed": 10,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 4,
+        "passed": 4,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_80056a28-716e-4e37-b14e-055bde7b0754",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "图像正确呈现了深青灰背景、棕灰桌面、两只一高一矮黄绿梨和左前方一只深红苹果，无橙子与花瓶，三者底缘基本共享同一接触线。但整体仍明显是程序化示意图：苹果表皮出现不自然的高饱和红色斑块和大面积柔亮高光，梨面呈斑驳色块并带轻微棱面感；所谓偏暖低位侧光在画面上偏漫射，缺少同方向投影，苹果接地阴影很弱、略有悬浮感，暗部也没有可辨的暖色层次。语义达标，但材质细节、方向性光照与接地关系尚未达到照片级。",
+        "qualityNotes": [
+          "果物类型、数量、位置关系和背景/桌面配色均与需求一致",
+          "两梨存在明确高矮差异，苹果位于左前方且未被遮挡，构图简洁",
+          "苹果较亮高光与梨较粗糙表面形成一定材质区分，值得保留"
+        ],
+        "warnings": [
+          "当前为共享高斯外观与解析几何的程序化候选，不是照片级验收通过",
+          "暗部色彩层次与方向性投影仍依赖后续算子改进，现有参数下难以完全达到"
+        ],
+        "issues": [
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "apple_front_01"
+            ],
+            "description": "苹果表面出现成片高饱和红/橙斑块与一大团柔和镜面高光，像贴片而非果皮渐变；建议降低色斑对比、把高光收缩并偏移到受光侧上缘，同时略微提高roughness（如0.42~0.48）使反射更细碎自然。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "apple_front_01",
+              "pear_tall_01",
+              "pear_short_01"
+            ],
+            "description": "苹果底部接触阴影过淡，显轻微悬浮；梨与桌面的接触线也缺少由遮挡产生的暗部过度。建议对所有果物增加沿底面收窄的接触阴影，并把苹果y略下移（约0.01~0.02）确保与梨共享接触线。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [
+              "pear_tall_01",
+              "pear_short_01",
+              "apple_front_01"
+            ],
+            "description": "claimed暖低位侧光在画面接近平漫射，没有同方向的明确投影和暖色边缘，暗部偏灰无色彩层次。建议保持azimuth约-118、降低elevation至10~14、提高warmth与intensity对比，并让投影统一朝右后方延伸，暗部加入偏冷的补色以保留层次。"
+          },
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "pear_tall_01",
+              "pear_short_01"
+            ],
+            "description": "梨面呈现明显斑驳色块与轻微三角棱面感，缺乏果皮细密颗粒与自然明暗过渡。建议提高表面平滑度观感、降低局部色斑对比，并让梨的明暗从受光侧面到背光侧连续过渡，同时保留顶部果柄的暗部细节。"
+          },
+          {
+            "code": "edge",
+            "severity": "minor",
+            "objectIds": [
+              "pear_tall_01",
+              "pear_short_01",
+              "apple_front_01"
+            ],
+            "description": "果物与背景交界处可见柔和光晕状轮廓，尤其两梨边缘偏亮。建议收窄轮廓过渡、减少背景溢色，使边缘更贴合实体剪影。"
+          },
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [
+              "apple_front_01",
+              "pear_tall_01",
+              "pear_short_01"
+            ],
+            "description": "三果物横向排列较均等，中间留白偏大，略呈并排陈列感。可在不改变数量与左右关系的前提下让高梨略向苹果靠近或加大前后depth差，形成更自然的前后遮挡与景深。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 4,
+          "coherence": 3
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2371,
+          "completion_tokens": 2053,
+          "total_tokens": 4424,
+          "reasoning_tokens": 1211,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "c9160c46-10c3-4b34-ae8b-523e90e812b2",
+              "model": "deepseek-flash",
+              "elapsedMs": 14357,
+              "prompt_tokens": 2371,
+              "completion_tokens": 2053,
+              "total_tokens": 4424,
+              "reasoning_tokens": 1211,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:07:08.792Z",
+            "requestId": "c9160c46-10c3-4b34-ae8b-523e90e812b2"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 14358
+      }
+    },
+    {
+      "index": 1,
+      "png": "reports/v09/generation/showcase-v1/10_dark_pears/candidate_01.png",
+      "jpeg": "reports/v09/generation/showcase-v1/10_dark_pears/candidate_01.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 263017,
+        "semanticObjects": 3,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 372,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 372,
+        "pixelSha256": "30173efeb80c5158a2ea16611b0f29d0e04d88b8b030fa3b726b1dbf93c93f4c",
+        "pngSha256": "109dab7a9d8a0321a51496e4067707d7e723f6b248841b288fb336f3b0488b26",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "color",
+            "subject": "pear",
+            "value": [
+              170,
+              184,
+              82
+            ],
+            "passed": true,
+            "observed": [
+              [
+                176,
+                184,
+                92
+              ],
+              [
+                186,
+                192,
+                100
+              ]
+            ]
+          },
+          {
+            "type": "color",
+            "subject": "apple",
+            "value": [
+              115,
+              22,
+              28
+            ],
+            "passed": true,
+            "observed": [
+              [
+                112,
+                24,
+                30
+              ]
+            ]
+          },
+          {
+            "type": "left_of",
+            "subject": "apple",
+            "target": "pear",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.34,
+              "targetMean": 0.63
+            }
+          },
+          {
+            "type": "below",
+            "subject": "apple",
+            "target": "pear",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.675,
+              "targetMean": 0.6425000000000001
+            }
+          },
+          {
+            "type": "visible",
+            "subject": "pear",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "visible",
+            "subject": "apple",
+            "value": true,
+            "passed": true,
+            "observed": true
+          }
+        ],
+        "evaluated": 10,
+        "passed": 10,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 4,
+        "passed": 4,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": {
+        "ok": true,
+        "engine": "crf09-native",
+        "runId": "crf09_179d302b-71ab-4dde-a388-ff750ec9f8be",
+        "model": "deepseek-flash",
+        "action": "critique",
+        "message": "画面满足核心语义：深青灰背景、棕灰承托面、两只黄绿色梨（一高一矮）、左前方一只深红苹果，无橙子和花瓶；但整体更接近程序化示意，而非照片级静物。梨的轮廓出现明显折线与尖肩，接地阴影过弱，桌面纹理呈等距竖条纹，暖色低位侧光的明暗层次不足。",
+        "qualityNotes": [
+          "语义与数量约束均满足：苹果位于梨的左侧，三果的底部接触线大致齐平（y+height/2≈0.79~0.80）。",
+          "背景为深青灰，果物与背景分离度尚可；暗部没有完全丢失色相，但暖色侧光的色温差异偏弱。",
+          "苹果表面的深红斑块与两处明显高光晕斑更像程序化噪声，尚未形成可信的果皮微结构与柔和方向性高光。"
+        ],
+        "warnings": [
+          "当前图像为受限的解析几何和共享高斯外观生成的候选图，非照片级验收通过；梨体的曲面细分与接触阴影模型精度不足。",
+          "桌面竖纹由 uniform 纹理算子生成，与真实木纹的尺度、走向变化存在差距；不得据此声称真实世界恢复。"
+        ],
+        "issues": [
+          {
+            "code": "edge",
+            "severity": "major",
+            "objectIds": [
+              "pear_tall_01",
+              "pear_short_01"
+            ],
+            "description": "梨体轮廓呈明显折线与尖肩，肩部与腹部之间出现直线段，削弱了梨形曲面的连续性。建议提高二维解析轮廓的曲率采样密度，或改为连续圆锥-椭球混合轮廓，使 width .22/.19 与 height .35/.28 形成平滑收腰，并柔化果顶与蒂部过渡。"
+          },
+          {
+            "code": "contact",
+            "severity": "major",
+            "objectIds": [
+              "apple_front_01",
+              "pear_tall_01",
+              "pear_short_01"
+            ],
+            "description": "三只果物的接地阴影极短、极淡，两只梨几乎无接触暗部，视觉上有轻微悬浮感。建议在每只果物底部 y+height/2 处加入窄幅接触暗环，并按 light.azimuth=-118、elevation=12 向右投射短而偏暖的软阴影，使三果共用同一接触线。"
+          },
+          {
+            "code": "lighting",
+            "severity": "major",
+            "objectIds": [
+              "apple_front_01",
+              "pear_tall_01",
+              "pear_short_01"
+            ],
+            "description": "低位暖侧光未能形成清晰的方向性明暗分区：梨的明暗对比过平，苹果则以两个圆形高光晕斑代替柔和镜面高光。建议提高主光对比、降低环境填充，令受光侧偏暖（warmth 0.8 生效），背光侧保持青绿色暗部色相，并将苹果高光改为沿曲率分布的低强度宽高光。"
+          },
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [],
+            "description": "承托面的棕灰色桌面出现贯穿全宽的等距竖条纹，纹理强度与规则性明显失真，且 [98,82,70] 呈偏粉的暖褐。建议降低 texture 强度、增加纹理尺度与走向扰动，并把桌面基色向低饱和灰褐偏移，以匹配“棕灰色桌面”的描述。"
+          },
+          {
+            "code": "texture",
+            "severity": "minor",
+            "objectIds": [
+              "apple_front_01"
+            ],
+            "description": "苹果表面的深红斑块边界生硬、分布随机，类似贴图噪声而非自然果皮色差。建议将色差改为沿曲率与受光方向渐变的低幅值变化，并减小斑块对比。"
+          },
+          {
+            "code": "composition",
+            "severity": "minor",
+            "objectIds": [
+              "apple_front_01",
+              "pear_tall_01",
+              "pear_short_01"
+            ],
+            "description": "画面约上方 60% 为空白背景，果物集中在 y≈0.62~0.80 的窄带内。建议轻微提升 zoom 或调整 panY，使三果组占画面比例提高，同时保留左苹果右双梨的水平读取顺序。"
+          }
+        ],
+        "scores": {
+          "realism": 2,
+          "semantic": 4,
+          "coherence": 3
+        },
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2371,
+          "completion_tokens": 2022,
+          "total_tokens": 4393,
+          "reasoning_tokens": 1124,
+          "requests": [
+            {
+              "phase": "native09_critique",
+              "requestId": "ae639ee7-4d17-4031-b9e0-7c0cb5713cbd",
+              "model": "deepseek-flash",
+              "elapsedMs": 14737,
+              "prompt_tokens": 2371,
+              "completion_tokens": 2022,
+              "total_tokens": 4393,
+              "reasoning_tokens": 1124,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0
+            }
+          ]
+        },
+        "attempts": [
+          {
+            "phase": "native09_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T16:07:34.854Z",
+            "requestId": "ae639ee7-4d17-4031-b9e0-7c0cb5713cbd"
+          }
+        ],
+        "rendered": false,
+        "validation": {
+          "schema": true,
+          "renderer": false,
+          "repairUsed": false,
+          "editScopeChecked": false
+        },
+        "quality": {
+          "status": "candidate_requires_render_and_independent_review",
+          "modelCritiqueOnly": true
+        },
+        "vision": {
+          "renderedImageProvided": true
+        },
+        "elapsedMs": 14738
+      }
+    },
+    {
+      "index": 2,
+      "png": "reports/v09/generation/showcase-v1/10_dark_pears/candidate_02.png",
+      "jpeg": "reports/v09/generation/showcase-v1/10_dark_pears/candidate_02.jpg",
+      "render": {
+        "engine": "CRF09",
+        "schema": "crf.generative_scene.v0.9",
+        "renderer": "CRF09.renderScene",
+        "colorSpace": "linear_srgb_illumination_then_srgb8",
+        "gaussianBasisEvaluations": 263017,
+        "semanticObjects": 3,
+        "learnedModel": "shared-1b02095c",
+        "learnedSources": 124,
+        "time": 0,
+        "elapsedMs": 526,
+        "sourceImageBlit": false,
+        "embeddedPixelResidual": false,
+        "meshUsed": false,
+        "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+        "realWorldReconstructionClaim": false,
+        "photorealQualityGate": "not_evaluated",
+        "kernelMs": 526,
+        "pixelSha256": "696193b080b26896486239c251c12ddf905be90c0d0b1d23b6d34778d36ba668",
+        "pngSha256": "7f9471c33367abc68cdc4ff8de5afbcfd0ce120c451fb5bf33feff40ae337741",
+        "rendererVersion": "0.9.0-candidate"
+      },
+      "semanticFromPlanner": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "color",
+            "subject": "pear",
+            "value": [
+              170,
+              184,
+              82
+            ],
+            "passed": true,
+            "observed": [
+              [
+                176,
+                184,
+                92
+              ],
+              [
+                184,
+                190,
+                98
+              ]
+            ]
+          },
+          {
+            "type": "color",
+            "subject": "apple",
+            "value": [
+              115,
+              22,
+              28
+            ],
+            "passed": true,
+            "observed": [
+              [
+                110,
+                26,
+                30
+              ]
+            ]
+          },
+          {
+            "type": "left_of",
+            "subject": "apple",
+            "target": "pear",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.34,
+              "targetMean": 0.63
+            }
+          },
+          {
+            "type": "below",
+            "subject": "apple",
+            "target": "pear",
+            "passed": true,
+            "observed": {
+              "subjectMean": 0.672,
+              "targetMean": 0.64
+            }
+          },
+          {
+            "type": "visible",
+            "subject": "pear",
+            "value": true,
+            "passed": true,
+            "observed": true
+          },
+          {
+            "type": "visible",
+            "subject": "apple",
+            "value": true,
+            "passed": true,
+            "observed": true
+          }
+        ],
+        "evaluated": 10,
+        "passed": 10,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "semanticFrozen": {
+        "checks": [
+          {
+            "type": "count",
+            "subject": "pear",
+            "value": 2,
+            "passed": true,
+            "observed": 2
+          },
+          {
+            "type": "count",
+            "subject": "apple",
+            "value": 1,
+            "passed": true,
+            "observed": 1
+          },
+          {
+            "type": "count",
+            "subject": "orange",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          },
+          {
+            "type": "count",
+            "subject": "vase",
+            "value": 0,
+            "passed": true,
+            "observed": 0
+          }
+        ],
+        "evaluated": 4,
+        "passed": 4,
+        "allPassed": true,
+        "scope": "Checks declared scene parameters, not visual recognition or human realism."
+      },
+      "critique": null
+    }
+  ],
+  "usage": [
+    {
+      "phase": "plan",
+      "providerCalls": 1,
+      "prompt_tokens": 1722,
+      "completion_tokens": 1841,
+      "total_tokens": 3563,
+      "reasoning_tokens": 1473,
+      "requests": [
+        {
+          "phase": "native09_plan",
+          "requestId": "dfa4ef0a-a47f-42c1-ac1a-c3a796f75221",
+          "model": "deepseek-flash",
+          "elapsedMs": 11571,
+          "prompt_tokens": 1722,
+          "completion_tokens": 1841,
+          "total_tokens": 3563,
+          "reasoning_tokens": 1473,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "generate",
+      "providerCalls": 1,
+      "prompt_tokens": 1980,
+      "completion_tokens": 2071,
+      "total_tokens": 4051,
+      "reasoning_tokens": 1516,
+      "requests": [
+        {
+          "phase": "native09_generate",
+          "requestId": "f02a1ba8-3ead-4f97-ad7a-b4fade765597",
+          "model": "deepseek-flash",
+          "elapsedMs": 13349,
+          "prompt_tokens": 1980,
+          "completion_tokens": 2071,
+          "total_tokens": 4051,
+          "reasoning_tokens": 1516,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_0",
+      "providerCalls": 1,
+      "prompt_tokens": 2371,
+      "completion_tokens": 2053,
+      "total_tokens": 4424,
+      "reasoning_tokens": 1211,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "c9160c46-10c3-4b34-ae8b-523e90e812b2",
+          "model": "deepseek-flash",
+          "elapsedMs": 14357,
+          "prompt_tokens": 2371,
+          "completion_tokens": 2053,
+          "total_tokens": 4424,
+          "reasoning_tokens": 1211,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_1",
+      "providerCalls": 1,
+      "prompt_tokens": 3311,
+      "completion_tokens": 1885,
+      "total_tokens": 5196,
+      "reasoning_tokens": 1252,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "eb0f5dee-783b-4f3e-a1d7-6ad31eb4be37",
+          "model": "deepseek-flash",
+          "elapsedMs": 11069,
+          "prompt_tokens": 3311,
+          "completion_tokens": 1885,
+          "total_tokens": 5196,
+          "reasoning_tokens": 1252,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "critique_1",
+      "providerCalls": 1,
+      "prompt_tokens": 2371,
+      "completion_tokens": 2022,
+      "total_tokens": 4393,
+      "reasoning_tokens": 1124,
+      "requests": [
+        {
+          "phase": "native09_critique",
+          "requestId": "ae639ee7-4d17-4031-b9e0-7c0cb5713cbd",
+          "model": "deepseek-flash",
+          "elapsedMs": 14737,
+          "prompt_tokens": 2371,
+          "completion_tokens": 2022,
+          "total_tokens": 4393,
+          "reasoning_tokens": 1124,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    },
+    {
+      "phase": "revision_2",
+      "providerCalls": 1,
+      "prompt_tokens": 3367,
+      "completion_tokens": 2514,
+      "total_tokens": 5881,
+      "reasoning_tokens": 1921,
+      "requests": [
+        {
+          "phase": "native09_edit",
+          "requestId": "32ac7147-2332-455b-a54e-be4e63d39682",
+          "model": "deepseek-flash",
+          "elapsedMs": 15829,
+          "prompt_tokens": 3367,
+          "completion_tokens": 2514,
+          "total_tokens": 5881,
+          "reasoning_tokens": 1921,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0
+        }
+      ]
+    }
+  ],
+  "apiOperations": [
+    {
+      "index": 0,
+      "phase": "plan",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:43.141Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_00bcbb63-23fd-44fd-b6b3-3781bf9ae50b:0",
+      "finishedAt": "2026-11-21T16:06:54.716Z",
+      "runId": "crf09_67467e7e-0f7c-40dc-81db-bf666a80ebdb"
+    },
+    {
+      "index": 1,
+      "phase": "generate",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:06:54.732Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_00bcbb63-23fd-44fd-b6b3-3781bf9ae50b:1",
+      "finishedAt": "2026-11-21T16:07:08.090Z",
+      "runId": "crf09_7882361b-ddce-40a0-9d78-b31e0745f610"
+    },
+    {
+      "index": 2,
+      "phase": "critique_0",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:08.784Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_00bcbb63-23fd-44fd-b6b3-3781bf9ae50b:2",
+      "finishedAt": "2026-11-21T16:07:23.156Z",
+      "runId": "crf09_80056a28-716e-4e37-b14e-055bde7b0754"
+    },
+    {
+      "index": 3,
+      "phase": "revision_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:23.191Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_00bcbb63-23fd-44fd-b6b3-3781bf9ae50b:3",
+      "finishedAt": "2026-11-21T16:07:34.271Z",
+      "runId": "crf09_ac8ed001-36ae-4d3c-b89a-d3f91a60bdc3"
+    },
+    {
+      "index": 4,
+      "phase": "critique_1",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:34.845Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_00bcbb63-23fd-44fd-b6b3-3781bf9ae50b:4",
+      "finishedAt": "2026-11-21T16:07:49.592Z",
+      "runId": "crf09_179d302b-71ab-4dde-a388-ff750ec9f8be"
+    },
+    {
+      "index": 5,
+      "phase": "revision_2",
+      "path": "/api/crf/native/generate",
+      "startedAt": "2026-11-21T16:07:49.612Z",
+      "status": "completed",
+      "resultKey": "operation:crf09_00bcbb63-23fd-44fd-b6b3-3781bf9ae50b:5",
+      "finishedAt": "2026-11-21T16:08:05.453Z",
+      "runId": "crf09_f9d77126-c537-4fa5-9844-c95dc106c7cb"
+    }
+  ],
+  "planningHistory": [],
+  "replanCount": 0,
+  "planEvidence": {
+    "qualityNotes": [
+      "一高一矮将通过两只梨分别设置不同高度与前后位置实现。",
+      "暗部色彩层次、果皮粗糙度差异、接地接触阴影和共同光照是质量重点；渲染候选不等于照片级验收通过。"
+    ],
+    "warnings": [],
+    "runId": "crf09_67467e7e-0f7c-40dc-81db-bf666a80ebdb",
+    "requestIds": [
+      "dfa4ef0a-a47f-42c1-ac1a-c3a796f75221"
+    ]
+  },
+  "learning": null,
+  "quality": {
+    "releaseGate": "not_evaluated",
+    "independentHumanReview": false,
+    "scope": "Actual rendered candidates with bounded model feedback; not a photorealism certificate"
+  },
+  "artifact": {
+    "imageUrl": "assets/v09/generated/showcase-v1/10_dark_pears.png",
+    "thumbnailUrl": "assets/v09/generated/showcase-v1/10_dark_pears.jpg",
+    "sceneUrl": "assets/v09/generated/showcase-v1/10_dark_pears.scene.json",
+    "reportUrl": "assets/v09/generated/showcase-v1/10_dark_pears.record.json",
+    "width": 1024,
+    "height": 768,
+    "pixelSha256": "696193b080b26896486239c251c12ddf905be90c0d0b1d23b6d34778d36ba668",
+    "modelId": "shared-1b02095c",
+    "modelSha256": "dbda399c97ca9f52379075515d085be8d8710480e26b6e6cc6dab83f461fdd3e"
+  },
+  "limits": [
+    "These are fixed showcase trials, not the unrun 180-task terminal benchmark.",
+    "Model critique is auxiliary; photoreal quality requires independent review.",
+    "Current renderer is a restricted procedural/statistical 2D Gaussian function generator."
+  ]
+}

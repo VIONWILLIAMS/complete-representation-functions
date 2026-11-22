@@ -1,0 +1,227 @@
+{
+  "schema": "crf.release_evidence.v0.10",
+  "at": "2026-11-21T22:49:34.895Z",
+  "publishedCases": 6,
+  "newDeepSeekCases": 5,
+  "realExecutedTasks": 8,
+  "recordedProviderRequests": 34,
+  "unresolvedProviderAttempts": 1,
+  "reportedTokens": 265431,
+  "modelTraining": false,
+  "sharedModelUnchanged": true,
+  "selected": [
+    {
+      "id": "fruit_trio",
+      "title": "果实的三种颜色",
+      "status": "review_required",
+      "stopReason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "selectedCandidate": 0,
+      "candidates": 3,
+      "allCandidatesEvaluated": true,
+      "quality": {
+        "releaseGate": "not_passed",
+        "independentHumanReview": false,
+        "allCandidatesEvaluated": true,
+        "selectedCandidateEvaluated": true,
+        "trainingPerformed": false,
+        "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+      },
+      "scores": {
+        "realism": 4,
+        "semantic": 5,
+        "coherence": 4
+      },
+      "record": "assets/v10/generated/polish-v3/fruit_trio.report.json",
+      "output": "assets/v10/generated/polish-v3/fruit_trio.png",
+      "scope": "new_layout_of_observed_gaussian_objects"
+    },
+    {
+      "id": "ceramic_citrus",
+      "title": "青釉与柑橘",
+      "status": "review_required",
+      "stopReason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "selectedCandidate": 1,
+      "candidates": 3,
+      "allCandidatesEvaluated": true,
+      "quality": {
+        "releaseGate": "not_passed",
+        "independentHumanReview": false,
+        "allCandidatesEvaluated": true,
+        "selectedCandidateEvaluated": true,
+        "trainingPerformed": false,
+        "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+      },
+      "scores": {
+        "realism": 4,
+        "semantic": 5,
+        "coherence": 4
+      },
+      "record": "assets/v10/generated/polish-v3/ceramic_citrus.report.json",
+      "output": "assets/v10/generated/polish-v3/ceramic_citrus.png",
+      "scope": "new_layout_of_observed_gaussian_objects"
+    },
+    {
+      "id": "orchard_duet",
+      "title": "暗调果实静物",
+      "status": "review_required",
+      "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+      "selectedCandidate": 0,
+      "candidates": 1,
+      "allCandidatesEvaluated": true,
+      "quality": {
+        "releaseGate": "not_passed",
+        "independentHumanReview": false,
+        "allCandidatesEvaluated": true,
+        "selectedCandidateEvaluated": true,
+        "trainingPerformed": false,
+        "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+      },
+      "scores": {
+        "realism": 4,
+        "semantic": 5,
+        "coherence": 5
+      },
+      "record": "assets/v10/generated/showcase-v1/orchard_duet.report.json",
+      "output": "assets/v10/generated/showcase-v1/orchard_duet.png",
+      "scope": "new_layout_of_observed_gaussian_objects"
+    },
+    {
+      "id": "mist_lake",
+      "title": "雾湖 · 晨光变体",
+      "status": "review_required",
+      "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+      "selectedCandidate": 0,
+      "candidates": 1,
+      "allCandidatesEvaluated": true,
+      "quality": {
+        "releaseGate": "not_passed",
+        "independentHumanReview": false,
+        "allCandidatesEvaluated": true,
+        "selectedCandidateEvaluated": true,
+        "trainingPerformed": false,
+        "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+      },
+      "scores": {
+        "realism": 4,
+        "semantic": 5,
+        "coherence": 5
+      },
+      "record": "assets/v10/generated/showcase-v1/mist_lake.report.json",
+      "output": "assets/v10/generated/showcase-v1/mist_lake.png",
+      "scope": "reference_reconstruction_edit"
+    },
+    {
+      "id": "ochre_window",
+      "title": "赭黄墙面 · 柔和光色",
+      "status": "review_required",
+      "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+      "selectedCandidate": 0,
+      "candidates": 1,
+      "allCandidatesEvaluated": true,
+      "quality": {
+        "releaseGate": "not_passed",
+        "independentHumanReview": false,
+        "allCandidatesEvaluated": true,
+        "selectedCandidateEvaluated": true,
+        "trainingPerformed": false,
+        "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+      },
+      "scores": {
+        "realism": 5,
+        "semantic": 4,
+        "coherence": 5
+      },
+      "record": "assets/v10/generated/showcase-v1/ochre_window.report.json",
+      "output": "assets/v10/generated/showcase-v1/ochre_window.png",
+      "scope": "reference_reconstruction_edit"
+    }
+  ],
+  "history": [
+    {
+      "run": "showcase-v1",
+      "id": "fruit_trio",
+      "status": "blocked",
+      "candidates": 1,
+      "stopReason": "CAPABILITY_GAP",
+      "requests": 3,
+      "reportedTokens": 26777,
+      "unresolvedProviderAttempts": 0
+    },
+    {
+      "run": "showcase-v1",
+      "id": "ceramic_citrus",
+      "status": "review_required",
+      "candidates": 1,
+      "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+      "requests": 3,
+      "reportedTokens": 31661,
+      "unresolvedProviderAttempts": 1
+    },
+    {
+      "run": "showcase-v1",
+      "id": "orchard_duet",
+      "status": "review_required",
+      "candidates": 1,
+      "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+      "requests": 3,
+      "reportedTokens": 23126,
+      "unresolvedProviderAttempts": 0
+    },
+    {
+      "run": "showcase-v1",
+      "id": "mist_lake",
+      "status": "review_required",
+      "candidates": 1,
+      "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+      "requests": 3,
+      "reportedTokens": 11848,
+      "unresolvedProviderAttempts": 0
+    },
+    {
+      "run": "showcase-v1",
+      "id": "ochre_window",
+      "status": "review_required",
+      "candidates": 1,
+      "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+      "requests": 3,
+      "reportedTokens": 15210,
+      "unresolvedProviderAttempts": 0
+    },
+    {
+      "run": "repair-v2",
+      "id": "fruit_trio",
+      "status": "review_required",
+      "candidates": 1,
+      "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+      "requests": 5,
+      "reportedTokens": 66610,
+      "unresolvedProviderAttempts": 0
+    },
+    {
+      "run": "polish-v3",
+      "id": "fruit_trio",
+      "status": "review_required",
+      "candidates": 3,
+      "stopReason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "requests": 7,
+      "reportedTokens": 41205,
+      "unresolvedProviderAttempts": 0
+    },
+    {
+      "run": "polish-v3",
+      "id": "ceramic_citrus",
+      "status": "review_required",
+      "candidates": 3,
+      "stopReason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "requests": 7,
+      "reportedTokens": 48994,
+      "unresolvedProviderAttempts": 0
+    }
+  ],
+  "limits": [
+    "Reference-derived composition is not novel-image synthesis from a learned visual prior.",
+    "The photo-level release gate has not passed independent human review.",
+    "Interrupted provider attempts, if reported, have unknown usage and are excluded from known token totals.",
+    "The 8192-point street fitting quality regressed; legacy observation compatibility avoids replacing the better asset."
+  ]
+}

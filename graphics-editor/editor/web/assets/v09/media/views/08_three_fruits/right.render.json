@@ -1,0 +1,46 @@
+{
+  "schema": "crf.offline_render.v0.9",
+  "sceneId": "still_life_three_fruits_90108",
+  "kind": "native",
+  "width": 1024,
+  "height": 768,
+  "view": "right",
+  "time": 0,
+  "camera": {
+    "panX": 0.042,
+    "panY": -0.005,
+    "zoom": 1.02
+  },
+  "viewport": {
+    "fit": "native",
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 768
+  },
+  "rgbaSHA256": "a038a1bcb1ac70991bf46ffd62caf4373a77bb4c067fc5fdf5f22f300fcab468",
+  "rgbSHA256": "149f1c88c947f724935e2f352dc62de5090df572f51ee1064459ca64994758be",
+  "pngSHA256": "1788e2ca2fd6de12855cf99553e916b5cd6a9695324488e962c62711419c29b5",
+  "bytes": 527288,
+  "elapsedMs": 466.17874800000004,
+  "engineSourceSHA256": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+  "diagnostics": {
+    "engine": "CRF09",
+    "schema": "crf.generative_scene.v0.9",
+    "renderer": "analytic_image_plane_plus_sampled_gaussian_fields",
+    "colorSpace": "linear_srgb_illumination_then_srgb8",
+    "gaussianBasisEvaluations": 263018,
+    "semanticObjects": 3,
+    "learnedModel": "shared-1b02095c",
+    "learnedSources": 124,
+    "time": 0,
+    "elapsedMs": 376,
+    "sourceImageBlit": false,
+    "embeddedPixelResidual": false,
+    "meshUsed": false,
+    "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+    "realWorldReconstructionClaim": false,
+    "photorealQualityGate": "not_evaluated"
+  },
+  "sourcePhotoReadByRenderer": false
+}

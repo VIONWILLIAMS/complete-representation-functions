@@ -1,0 +1,38 @@
+{
+  "sourceHead": "0b2fa1c044d073bd8349ef941cc1b213cbe1cfe1",
+  "node": "v24.22.3",
+  "pythonDependencies": {
+    "numpy": "2.3.5",
+    "Pillow": "13.0.0",
+    "scipy": "1.17.0"
+  },
+  "tests": [
+    {
+      "command": "npm test",
+      "passed": 52,
+      "failed": 0,
+      "log": "core.log"
+    },
+    {
+      "command": "npm run test:v10",
+      "passed": 64,
+      "failed": 0,
+      "log": "v10.log"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_gaussian10.py' -v",
+      "passed": 4,
+      "failed": 0,
+      "log": "python.log"
+    }
+  ],
+  "build": {
+    "executed": false,
+    "reason": "esbuild dependency absent; build mutates reports/v10 and dist, so not run in read-only original checkout",
+    "hostingManifestPresent": true,
+    "hostingStaticFlag": false
+  },
+  "providerCalls": 0,
+  "gitStatus": "",
+  "httpSmoke": "local-http-smoke.json"
+}

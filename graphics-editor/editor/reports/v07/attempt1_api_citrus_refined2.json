@@ -1,0 +1,78 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:30:43.779Z",
+  "id": "citrus",
+  "phase": "refined2",
+  "prompt": "生成一张高质量摄影风格静物：三个大小略有差别的橙子，带一片真实细长绿叶，放在白色浅釉盘上，下面是细腻木桌。斜侧窗光，柔和真实阴影，果皮细小毛孔有尺度层次，轮廓平滑，构图近景，不出现整齐塑料球感。请搜索Pexels或Unsplash公开橙子静物照片页，从所给参考图中提取形态和细节函数，用代码构造整张图。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 502,
+  "elapsedMs": 26705,
+  "inputImageProvided": true,
+  "response": {
+    "ok": false,
+    "runId": "crf07_2ae8986f-854e-473c-be92-636cb9609ebe",
+    "model": "deepseek-flash",
+    "error": {
+      "code": "INVALID_MODEL_JSON",
+      "message": "模型未返回可解析的 JSON；当前场景保持不变。解析错误：Unexpected non-whitespace character after JSON at position 6699 (line 1 column 6700)",
+      "retryable": true
+    },
+    "httpStatus": 502,
+    "research": {
+      "searched": false,
+      "status": "disabled",
+      "toolCalls": [],
+      "sources": [],
+      "summary": "",
+      "nativeSearchObserved": false,
+      "referenceImages": [],
+      "referenceImagesSubmitted": 0
+    },
+    "usage": {
+      "prompt_tokens": 12843,
+      "completion_tokens": 5430,
+      "total_tokens": 18273,
+      "providerCalls": 2,
+      "requests": [
+        {
+          "phase": "compose",
+          "requestId": "d27a8d4c-b3aa-4a06-bcef-6bf474dcf749",
+          "model": "deepseek-flash",
+          "elapsedMs": 17084,
+          "prompt_tokens": 4979,
+          "completion_tokens": 2773,
+          "total_tokens": 7752,
+          "server_tool_use": {}
+        },
+        {
+          "phase": "schema_repair",
+          "requestId": "d1e2eb2a-5af0-45b7-920f-fdf0271f100f",
+          "model": "deepseek-flash",
+          "elapsedMs": 9596,
+          "prompt_tokens": 7864,
+          "completion_tokens": 2657,
+          "total_tokens": 10521,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "warnings": [],
+    "vision": {
+      "renderedImageProvided": true,
+      "referenceImagesProvided": 0,
+      "referenceSourceUrls": []
+    },
+    "repair": {
+      "attempted": true,
+      "passes": [
+        {
+          "attempt": 1,
+          "reasonCode": "INVALID_MODEL_JSON",
+          "validationError": "模型未返回可解析的 JSON；当前场景保持不变。解析错误：Expected ',' or ']' after array element in JSON at position 3736 (line 1 column 3737)",
+          "invalidRequestId": "d27a8d4c-b3aa-4a06-bcef-6bf474dcf749"
+        }
+      ],
+      "recovered": false
+    }
+  }
+}

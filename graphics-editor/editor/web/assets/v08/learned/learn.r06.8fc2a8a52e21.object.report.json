@@ -1,0 +1,365 @@
+{
+  "id": "learn.r06.8fc2a8a52e21.object",
+  "assetId": "learn.r06.8fc2a8a52e21.object",
+  "status": "fitted",
+  "round": 6,
+  "topic": "真实交通灯与街角实拍",
+  "sourceUrl": "https://www.pexels.com/photo/new-york-city-traffic-light-against-urban-skyline-35912156/",
+  "imageUrl": "https://images.pexels.com/photos/35912156/pexels-photo-35912156.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo by Optical Chemist on Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r06.8fc2a8a52e21.webp",
+  "sourceSHA256": "8fc2a8a52e2193edda81a376b7e5a4a7bc039805da9426d7983f2b7f5b62e85f",
+  "normalizedRGBA_SHA256": "7dc2ab2f462cc7f73f893a49a6d8f910c824e00f96e5a5fa6b8f870305560609",
+  "dHash64": "7350c04366665cdc",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    41,
+    76
+  ],
+  "assetURL": "assets/v08/learned/learn.r06.8fc2a8a52e21.object.json",
+  "renderURL": "assets/v08/learned/learn.r06.8fc2a8a52e21.object.png",
+  "reportURL": "assets/v08/learned/learn.r06.8fc2a8a52e21.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r06.8fc2a8a52e21.object.png",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 389,
+  "pixelToGaussianRatio": 8.010282776349614,
+  "assetBytes": 41705,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 4.051565377532229,
+    "rmse": 7.50727087709638,
+    "psnr": 30.6211618817181,
+    "ssim": 0.8879331645209749,
+    "maxError": 132,
+    "exactRGBFraction": 0.018646408839779006,
+    "evaluatedPixels": 1448,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 6.719752093520643,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 36.79688678684558,
+          "bestFloatMSE": 36.79688678684558
+        },
+        {
+          "step": 10,
+          "floatMSE": 15.682810426585045,
+          "bestFloatMSE": 15.682810426585045
+        },
+        {
+          "step": 20,
+          "floatMSE": 11.292148991842495,
+          "bestFloatMSE": 11.292148991842495
+        },
+        {
+          "step": 30,
+          "floatMSE": 9.203690459782411,
+          "bestFloatMSE": 9.203690459782411
+        },
+        {
+          "step": 40,
+          "floatMSE": 8.016461913375487,
+          "bestFloatMSE": 8.016461913375487
+        },
+        {
+          "step": 50,
+          "floatMSE": 7.294610654444987,
+          "bestFloatMSE": 7.294610654444987
+        },
+        {
+          "step": 60,
+          "floatMSE": 6.902652790618361,
+          "bestFloatMSE": 6.902652790618361
+        },
+        {
+          "step": 70,
+          "floatMSE": 6.719752093520643,
+          "bestFloatMSE": 6.719752093520643
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 136,
+        "elapsedSeconds": 0.006,
+        "mae": 21.28890423572744,
+        "rmse": 29.933955078917766,
+        "psnr": 18.607521556894056,
+        "ssim": 0.36537009840853923,
+        "maxError": 152,
+        "exactRGBFraction": 0.0013812154696132596,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 136,
+        "elapsedSeconds": 0.012,
+        "mae": 17.810313075506446,
+        "rmse": 24.779673693593256,
+        "psnr": 20.248891945606147,
+        "ssim": 0.5089673396419625,
+        "maxError": 151,
+        "exactRGBFraction": 0.0,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 300,
+        "elapsedSeconds": 0.05,
+        "mae": 11.671731123388582,
+        "rmse": 17.281002780227755,
+        "psnr": 23.37942480729893,
+        "ssim": 0.7319322328181763,
+        "maxError": 138,
+        "exactRGBFraction": 0.0,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 389,
+        "elapsedSeconds": 0.073,
+        "mae": 9.433471454880294,
+        "rmse": 14.575381941743345,
+        "psnr": 24.8584047269971,
+        "ssim": 0.7866347276489306,
+        "maxError": 139,
+        "exactRGBFraction": 0.0006906077348066298,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 389,
+        "elapsedSeconds": 0.075,
+        "mae": 9.433471454880294,
+        "rmse": 14.575381941743345,
+        "psnr": 24.8584047269971,
+        "ssim": 0.7866347276489306,
+        "maxError": 139,
+        "exactRGBFraction": 0.0006906077348066298,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 389,
+        "elapsedSeconds": 0.085,
+        "mae": 6.525092081031308,
+        "rmse": 10.639118287592487,
+        "psnr": 27.59269085908508,
+        "ssim": 0.843077919876223,
+        "maxError": 142,
+        "exactRGBFraction": 0.0006906077348066298,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 389,
+        "elapsedSeconds": 0.095,
+        "mae": 5.363720073664825,
+        "rmse": 9.188630976729849,
+        "psnr": 28.865787403898363,
+        "ssim": 0.8639160740321565,
+        "maxError": 140,
+        "exactRGBFraction": 0.0027624309392265192,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 389,
+        "elapsedSeconds": 0.106,
+        "mae": 4.779926335174954,
+        "rmse": 8.480315197936548,
+        "psnr": 29.56256371877934,
+        "ssim": 0.8741733243064383,
+        "maxError": 139,
+        "exactRGBFraction": 0.004143646408839779,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 389,
+        "elapsedSeconds": 0.116,
+        "mae": 4.435082872928176,
+        "rmse": 8.031074546993935,
+        "psnr": 30.035330464976667,
+        "ssim": 0.8808678176577325,
+        "maxError": 136,
+        "exactRGBFraction": 0.0055248618784530384,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 389,
+        "elapsedSeconds": 0.128,
+        "mae": 4.2161602209944755,
+        "rmse": 7.740719507246797,
+        "psnr": 30.355176995786216,
+        "ssim": 0.8849806395280664,
+        "maxError": 134,
+        "exactRGBFraction": 0.014502762430939226,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 389,
+        "elapsedSeconds": 0.14,
+        "mae": 4.09622467771639,
+        "rmse": 7.571360937484898,
+        "psnr": 30.547324606479794,
+        "ssim": 0.8870380348171777,
+        "maxError": 132,
+        "exactRGBFraction": 0.015883977900552487,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 389,
+        "elapsedSeconds": 0.153,
+        "mae": 4.051565377532229,
+        "rmse": 7.50727087709638,
+        "psnr": 30.6211618817181,
+        "ssim": 0.8879331645209749,
+        "maxError": 132,
+        "exactRGBFraction": 0.018646408839779006,
+        "evaluatedPixels": 1448,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 0.153,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 0.172,
+  "passedPilot": false,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.42,
+      0.31,
+      0.57,
+      0.73
+    ],
+    "proposalPixels": [
+      195,
+      78,
+      312,
+      226
+    ],
+    "cropPixels": [
+      232,
+      131,
+      273,
+      207
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 1140,
+    "pixelMaskVerified": false,
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r06.8fc2a8a52e21.object.png"
+  },
+  "semantics": {
+    "id": "learn.r06.8fc2a8a52e21",
+    "label": "黄壳悬挂交通信号灯",
+    "category": "traffic-signal",
+    "role": "object",
+    "bbox": [
+      0.42,
+      0.31,
+      0.57,
+      0.73
+    ],
+    "palette": [
+      [
+        222,
+        180,
+        38
+      ],
+      [
+        24,
+        24,
+        22
+      ],
+      [
+        54,
+        74,
+        82
+      ],
+      [
+        150,
+        90,
+        60
+      ],
+      [
+        200,
+        200,
+        185
+      ]
+    ],
+    "lightDirection": "front",
+    "description": "黄色外壳的三灯位交通信号灯通过绿色横臂悬挂，正对镜头，最下位亮绿色圆灯；上方灯位未亮，显示暗色圆形遮光罩。背景为暗色砖红高层建筑与阴沉天空，左侧有树影，灯体在暗背景中形成高对比黄色轮廓。",
+    "tags": [
+      "交通灯",
+      "黄色外壳",
+      "绿灯",
+      "悬挂横臂",
+      "砖楼",
+      "阴天",
+      "城市"
+    ],
+    "limitations": [
+      "灯面亮度与真实色温受曝光影响",
+      "悬挂横臂连接细节被压缩",
+      "背景建筑窗格细节较暗"
+    ]
+  },
+  "sourceId": "learn.r06.8fc2a8a52e21",
+  "referenceThumbnailURL": "assets/v08/references/learn.r06.8fc2a8a52e21.object.jpg"
+}

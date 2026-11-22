@@ -1,0 +1,343 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:01:33.743Z",
+  "id": "ceramics",
+  "phase": "initial",
+  "prompt": "生成一张窗边静物的摄影风格图片：灰绿色细腻墙面前，一座浅色石台上摆一只孔雀青釉花器和透明烟色玻璃球，旁边有一个小黄铜球、两本错落的书。侧面大窗柔光，构图紧凑，真实接触阴影和材质反射，画面没有文字。请实际搜索Pexels或Unsplash的公开照片页，分析所提供参考图的真实形态、材质、光线。用完整代码场景表达，适量细节，避免低多边形轮廓，地面和背景铺满画面。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 502,
+  "elapsedMs": 71830,
+  "inputImageProvided": false,
+  "response": {
+    "ok": false,
+    "runId": "crf07_cbb97462-2dfd-46e9-9973-522bf562a8d2",
+    "model": "deepseek-flash",
+    "error": {
+      "code": "INVALID_MODEL_PROGRAM",
+      "message": "物体材质无效。",
+      "retryable": false
+    },
+    "httpStatus": 502,
+    "research": {
+      "searched": true,
+      "toolCalls": [
+        {
+          "id": "srvtoolu_s_00_73c131a13e6d412da548e51cd9444cd5",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com peacock celadon glaze vase still life window light",
+              "site:unsplash.com celadon ceramic vase still life",
+              "site:unsplash.com smoke grey glass sphere still life",
+              "site:pexels.com books and brass sphere still life",
+              "site:wikimedia.org peacock celadon glaze vase",
+              "site:unsplash.com window light still life ceramic shadows",
+              "site:pexels.com natural window light still life ceramic vase"
+            ]
+          },
+          "sourceUrls": [
+            "https://www.pexels.com/photo/artistic-still-life-with-books-and-white-balls-34472835/",
+            "https://upload.wikimedia.org/wikipedia/commons/3/3e/Getty_Research_Institute_%28IA_catalogueoffirst00chri_1%29.pdf#2#2#2",
+            "https://unsplash.com/photos/green-window-on-yellow-wall-with-strong-shadows-and-sunlight-usigZAwG6Yc",
+            "https://www.pexels.com/zh-cn/photo/12618679/",
+            "https://upload.wikimedia.org/wikipedia/commons/f/fe/Illustrated_catalogue_of_the_beautiful_old_Chinese_porcelains_and_other_Oriental_objects_%28IA_illustratedcatal01amer_1%29.pdf#3#4#3",
+            "https://upload.wikimedia.org/wikipedia/commons/b/b0/Getty_Research_Institute_%28IA_ceramicartreport00blak%29.pdf#8#24#8"
+          ]
+        },
+        {
+          "id": "srvtoolu_s_01_a4621f81fd4447f88647ba4b372199f4",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com \"still life\" books brass ball",
+              "site:unsplash.com \"still life\" books brass sphere",
+              "site:pexels.com \"still life\" window light ceramic vase books",
+              "site:unsplash.com \"still life\" window light vase books",
+              "site:pexels.com celadon vase window light still life",
+              "site:unsplash.com celadon vase window light",
+              "site:wikimedia.org \"peacock blue\" glaze vase photograph"
+            ]
+          },
+          "sourceUrls": [
+            "https://unsplash.com/photos/a-table-topped-with-books-and-candles-next-to-a-window-sqkyzpcL6eE",
+            "https://upload.wikimedia.org/wikipedia/commons/f/fe/Illustrated_catalogue_of_the_beautiful_old_Chinese_porcelains_and_other_Oriental_objects_%28IA_illustratedcatal01amer_1%29.pdf#3#4#3",
+            "https://unsplash.com/photos/shallow-focus-photography-of-green-plants-on-vase-tCfI4zyQNfQ",
+            "https://upload.wikimedia.org/wikipedia/commons/d/d5/A_descriptive_catalogue_of_the_maiolica%2C_Hispano-Moresco%2C_Persian%2C_Damascus%2C_and_Rhodian_wares%2C_in_the_South_Kensington_Museum_-_with_historical_notices%2C_marks%2C_%26_monograms_%28IA_descriptivecatal00fort%29.pdf#26#105#26",
+            "https://unsplash.com/photos/a-black-and-white-photo-of-a-book-and-a-vase-U9P7dZUGbds",
+            "https://unsplash.com/photos/small-vase-with-daisies-next-to-yellow-book-ka3O8YdCl4M",
+            "https://unsplash.com/photos/still-life-with-objects-near-a-window-APj9StxteVs",
+            "https://unsplash.com/photos/a-table-topped-with-books-and-a-vase-filled-with-flowers-0DfP2Jo4wEo",
+            "https://unsplash.com/photos/a-white-pitcher-filled-with-flowers-next-to-a-book-CBAwnGNjc3g",
+            "https://unsplash.com/photos/a-shelf-with-books-and-a-vase-of-flowers-6x5dzOhx63M",
+            "https://unsplash.com/photos/cup-of-tea-beside-card-tSDM5xXw5jg",
+            "https://unsplash.com/photos/a-table-with-a-vase-of-flowers-and-a-book-on-it-9c9Ny1MDQOE"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pexels.com/photo/artistic-still-life-with-books-and-white-balls-34472835/",
+          "title": "Photo by Valentin Ivantsov on Pexels",
+          "snippet": "Choose your language: Afterglow Street Festive ... Oct 27, 2025 ... Jan 21, 2024 ... Adobe Photoshop 21.0 (Windows) Description # Creative still life with vintage books and white balls in a glass creating a whimsical display. ## More like this Afterglow",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Getty_Research_Institute_%28IA_catalogueoffirst00chri_1%29.pdf#2#2#2",
+          "title": "vase, with conventional asters in slight relief—9 in",
+          "snippet": "and a slender fleur-de-pêche vase—63 in. high—mounted with silver foot formed as three birds ... of pale brown dusted with silver—5 in. high 100 A pale fleur-de-pêche bottle, with fluted base, mounted with stand and double dragon in silver and gold—63 in. high 101 A SLENDER BOTTLE, of cream-coloured glaze, engraved with dragons ... high 104 A celadon bottle ... high 105 A pale celadon oviform jar...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/green-window-on-yellow-wall-with-strong-shadows-and-sunlight-usigZAwG6Yc",
+          "title": "Photo by N1CE on Unsplash",
+          "snippet": "Downloads 9 # Green window on yellow wall with strong shadows and sunlight Download this free HD photo of texture, autumn, still life, and sunlight by N1CE (@n1ce) Published on Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/zh-cn/photo/12618679/",
+          "title": "Pexels Саша Круглая图片",
+          "snippet": "4928x3264 宽高比 77 ... Jun 26, 2022 ... 软件 Adobe Photoshop CC (Windows) 描述 # 窗边有百叶窗的独特陶瓷花瓶里摆放着一株叶子繁茂的植物，极简展示。 ### 更多相似内容",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Illustrated_catalogue_of_the_beautiful_old_Chinese_porcelains_and_other_Oriental_objects_%28IA_illustratedcatal01amer_1%29.pdf#3#4#3",
+          "title": "(Illustrated) Height, 8/4 inches",
+          "snippet": "76—PEACOCK-BLUE BOTTLE-SHAPED VASE ... The glaze a bril- liant peacock-blue, duly speckled in darker color and having a fish-roe crackle. ... Covered with a brilliant glaze of peacock- blue ... Light porcelain coated with a richly mottled, brilliant peacock-blue glaze",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Getty_Research_Institute_%28IA_ceramicartreport00blak%29.pdf#8#24#8",
+          "title": "The list includes vases, white and blue, in red color, and in the deservedly admired celadon green; perforated work, enamelling ...",
+          "snippet": "Glazed decorated tiles were used in Egypt, and among the Assyrians and Babylonians. They were introduced in Spain by the Saracens and Moors. In China they were employed in remote periods for both exterior and interior decoration. ... and the design appears to be formed by a lighter colored clay filling incisions or impressions in the surface, and subsequently glazed. ... 1. Plain tiles, unglazed, glazed or enamelled, in colors. 2. Encaustic tiles, unglazed or glazed. ... The addition of a transparent glaze makes the color more brilliant, and gives a smoother surface. ... These enamelled tiles, like the glazed, have a smooth glassy surface, and are more appropriately used upon walls than in pavements, where the attrition would soon destroy the gloss of the enamel and produce scratches.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-table-topped-with-books-and-candles-next-to-a-window-sqkyzpcL6eE",
+          "title": "Photo by Anastasiya Leskova on Unsplash",
+          "snippet": "a table topped with books and candles next to a window Download this free HD photo of winter, book, candles, and tangerine by Anastasiya Leskova (@a_leskova) Published on Canon, EOS 6D Mark IIFree to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/shallow-focus-photography-of-green-plants-on-vase-tCfI4zyQNfQ",
+          "title": "Photo by Tim Goedhart on Unsplash",
+          "snippet": "shallow focus photography of green plants on vase Blinded by the evening sun, I closed one of my curtains. The remaining light, now coming from the other side of the window, hit the glasswork and lamp next to my desk, leaving a colourful reflection behind this still life!",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/A_descriptive_catalogue_of_the_maiolica%2C_Hispano-Moresco%2C_Persian%2C_Damascus%2C_and_Rhodian_wares%2C_in_the_South_Kensington_Museum_-_with_historical_notices%2C_marks%2C_%26_monograms_%28IA_descriptivecatal00fort%29.pdf#26#105#26",
+          "title": "VASE or Drug Pot, oviform, on raifed foot, with two handles",
+          "snippet": "Italian. (Tufcan ... The glaze has all the appearance of being flanniferous, the colours employed being a tan-coloured orange, a copper green, a purple, and the deep blue u fed in the outlines and finding. ... ) About 1480-1500. Diam.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-black-and-white-photo-of-a-book-and-a-vase-U9P7dZUGbds",
+          "title": "Photo by Jocelyn Morales on Unsplash",
+          "snippet": "Editorial # a black and white photo of a book and a vase Download this free HD photo of grey, books, still life, and interiors by Jocelyn Morales (@molnj) Published on Free to use under the Unsplash License ... 150 images · Curated by",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/small-vase-with-daisies-next-to-yellow-book-ka3O8YdCl4M",
+          "title": "Photo by Blake Wisz on Unsplash",
+          "snippet": "––– –––– –––– # Small vase with daisies next to yellow book. Download this free HD photo of interior design, minimalist, still life, and home decor by Blake Wisz (@blakewisz) Published on Free to use under the Unsplash License Browse",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/still-life-with-objects-near-a-window-APj9StxteVs",
+          "title": "Photo by Europeana on Unsplash",
+          "snippet": "124 # Still life with objects near a window Title: By the Window Creator: Cawén, Alvar Date: 1918 Providing institution: Finnish National Gallery Aggregator: National Library of Finland Providing Country: Finland CC0 By the Window by Cawén, Alvar - Finnish National Gallery, Finland - CC0.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-table-topped-with-books-and-a-vase-filled-with-flowers-0DfP2Jo4wEo",
+          "title": "Photo by Toa Heftiba on Unsplash",
+          "snippet": "A table topped with books and a vase filled with flowers Download this HD photo of aesthetic, books, interior design, and education by Toa Heftiba (@heftiba) ... Unsplash+ License aesthetic books interior design education home book study learning interior still life desk reading home office bookshelf",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-white-pitcher-filled-with-flowers-next-to-a-book-CBAwnGNjc3g",
+          "title": "Photo by Sixteen Miles Out on Unsplash",
+          "snippet": "a white pitcher filled with flowers next to a book Download this free HD photo of still life photography, books and flowers, books, and flowers by Sixteen Miles Out (@sixteenmilesout) Published on Canon, EOS 5D Mark IVFree to use under the",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-shelf-with-books-and-a-vase-of-flowers-6x5dzOhx63M",
+          "title": "Photo by Grigorii Shcheglov on Unsplash",
+          "snippet": "––– –– –– ––– –––– –––– ––– –– –– ––– –––– ––––  # A shelf with books and a vase of flowers  Download this free HD photo of flower, human, face, and window by Grigorii Shcheglov (@shegiva)  Published ",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/cup-of-tea-beside-card-tSDM5xXw5jg",
+          "title": "Photo by Diane Helentjaris on Unsplash",
+          "snippet": "– –– –––– ––– – ––– – – – –– –––– ––– – ––– – –  # cup of tea beside card  A cup of tea or coffee and a stack of letters await. In the background, a vase of orange trumpet vine flowers on a stack of b",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-table-with-a-vase-of-flowers-and-a-book-on-it-9c9Ny1MDQOE",
+          "title": "Photo by Jacalyn Beales on Unsplash",
+          "snippet": "– –– –––– ––– – ––– – – – –– –––– ––– – ––– – –  # a table with a vase of flowers and a book on it  Download this free HD photo of grey, lamp, plant, and window by Jacalyn Beales (@jacalynbeales)  Pub",
+          "via": "server_tool"
+        }
+      ],
+      "summary": "# 研究建议与来源\n\n**先说结论：严格匹配“孔雀青釉花器 + 烟色玻璃球 + 黄铜球 + 两本书 + 灰绿墙 + 侧窗柔光”的公开照片详情页，本轮搜索没有找到。** 以下来源只能作为**局部形态、材质与光线参考**，不能当作整场景的直接视觉依据。照片字节需由后续步骤获取后，再提交视觉模型判定；我未查看任何未提供的图片。\n\n## 可用的局部参考页\n\n**Pexels**\n- 书堆与玻璃球静物：`https://www.pexels.com/photo/artistic-still-life-with-books-and-white-balls-34472835/`。页面描述提到 vintage books 与 white balls in a glass，可参考“书与球状物同处一框”的摆放关系，但球体材质是白色而非烟色玻璃或黄铜。\n- 窗边陶瓷花瓶植物：`https://www.pexels.com/zh-cn/photo/12618679/`。有“窗边”和“陶瓷花瓶”两个元素，但主体是植物，不是孔雀青釉花器，也不含玻璃球与书。\n\n**Unsplash**\n- 窗边书与蜡烛：`https://unsplash.com/photos/a-table-topped-with-books-and-candles-next-to-a-window-sqkyzpcL6eE`。适合参考**侧窗光方向**与桌面物体的接触阴影逻辑，但物体组合不匹配。\n- 黑白书与花瓶：`https://unsplash.com/photos/a-black-and-white-photo-of-a-book-and-a-vase-U9P7dZUGbds`。标签含 grey、books、still life，可参考低饱和静物色调，但为黑白照片，无法判断釉色与玻璃透射。\n- 窗边静物（绘画）：`https://unsplash.com/photos/still-life-with-objects-near-a-window-APj9StxteVs`。标注为 Cawén 1918 年作品，是绘画而非摄影，仅可参考窗光构图，不能作为真实材质依据。\n\n**Wikimedia Commons**\n- 孔雀蓝釉瓶目录页：`https://upload.wikimedia.org/wikipedia/commons/f/fe/Illustrated_catalogue_of_the_beautiful_old_Chinese_porcelains_and_other_Orient_objects_%28IA_illustratedcatal01amer_1%29.pdf`。这是拍卖/藏品目录的文本描述，不是照片。其中对“peacock-blue”釉的描述包括：brilliant peacock-blue、finely mottled、fish-roe crackle（鱼子纹开片）、thick straight neck、ovoidal body 等。可转化为：花器轮廓取卵形或瓶形，颈部略粗，釉面有细碎开片与色斑，高光偏冷、反射较锐。\n- 另一目录页同样描述 peacock-blue glaze 与 fish-roe crackle。两条目录页一致指向“孔雀蓝釉”的典型特征：颜色不均、有细裂纹、釉层较厚。注意这是**文本目录**，不是摄影参考，不能替代真实照片的反射与阴影判断。\n\n## 可转化为图形函数的细节\n\n**花器（孔雀青釉）**：轮廓用卵形或矮瓶形，肩部饱满，颈短直，口沿微翻。釉色取灰绿到蓝绿之间的低饱和青绿，叠加细密开片纹理与轻微色斑；高光窄而亮，反射带一点冷色，模拟厚釉玻璃质感。局限：目录文本无法给出真实釉面的高光形状与菲涅尔强度，需后续图像模型根据摄影常识补全。\n\n**烟色玻璃球**：透明烟灰/茶灰玻璃，透射率中等，折射率约 1.5；边缘暗、中心亮，内部可见轻微烟色浓度梯度；与石台接触处有**深而窄的接触阴影**，同时透出下方石台颜色。底部反射中可见花器与黄铜球的模糊倒影。\n\n**黄铜球**：高反射金属，基色暖黄铜，粗糙度低；反射环境中灰绿墙面会混入暖色高光，形成“暖金属 + 冷环境”的色偏对比。与石台接触处阴影紧贴球底，边缘锐利。\n\n**书本两本错落**：一本平放，一本以轻微角度叠压或斜靠；书脊有细微圆角，封面哑光，纸页边缘有薄层叠影。接触阴影在书与石台之间呈柔和的深灰带状，书与书之间也有窄暗缝。\n\n**石台与灰绿墙面**：石台浅色、微粗糙，边缘有轻微倒角；墙面灰绿细腻，哑光，几乎无高频纹理，只保留大面积柔和明暗过渡。侧窗光从画面一侧以较大面积入射，物体阴影朝对侧拉长但边缘柔和；石台靠近窗的一侧略亮，远离窗的一侧渐暗。\n\n**构图与铺满**：镜头紧凑，物体占画面主体；地面/台面与背景墙面铺满画幅，不出现白边或空背景。窗光的高光落在花器肩部、玻璃球顶部与黄铜球侧面，形成三点错落高光。\n\n## 关键局限\n\n以上摄影参考页均**没有同时包含用户要求的全部主体**，不能作为“真实形态已确认”的依据。Wikimedia 来源是藏品目录文本，不是照片，只能提供釉色与器形的文字特征，不能替代真实摄影中的反射、透射和接触阴影观察。建议后续图像模型在生成时，把上述形态与光照函数作为**受控约束**，而不是宣称已有完整参考照片。",
+      "status": "completed",
+      "nativeSearchObserved": true,
+      "referenceImageCandidates": [],
+      "referenceImages": [
+        {
+          "sourceUrl": "https://www.pexels.com/photo/artistic-still-life-with-books-and-white-balls-34472835/",
+          "title": "Photo by Valentin Ivantsov on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/34472835/pexels-photo-34472835.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "bfef8cb6e2dee5e611d0be11fb5b35704b38c3f3ab91ce4b8a66737982edc33b",
+          "bytes": 48560,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/zh-cn/photo/12618679/",
+          "title": "Pexels Саша Круглая图片",
+          "imageUrl": "https://images.pexels.com/photos/12618679/pexels-photo-12618679.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "b3c4caf4a1ad101e87ef8085d12b03f54fe7ff30ced074aff6470c2848f139ac",
+          "bytes": 19868,
+          "mime": "image/webp",
+          "submittedToVision": true
+        }
+      ],
+      "referenceImagesSubmitted": 2,
+      "inputImageProvided": false,
+      "referenceCollection": {
+        "method": "public source-page image metadata, verified image bytes; not render textures",
+        "sourcePageCount": 12,
+        "downloadedCount": 2,
+        "attempts": [
+          {
+            "sourceUrl": "https://www.pexels.com/photo/artistic-still-life-with-books-and-white-balls-34472835/",
+            "title": "Photo by Valentin Ivantsov on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/34472835/pexels-photo-34472835.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 48560,
+            "mime": "image/webp",
+            "sha256": "bfef8cb6e2dee5e611d0be11fb5b35704b38c3f3ab91ce4b8a66737982edc33b"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/green-window-on-yellow-wall-with-strong-shadows-and-sunlight-usigZAwG6Yc",
+            "title": "Photo by N1CE on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/zh-cn/photo/12618679/",
+            "title": "Pexels Саша Круглая图片",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/12618679/pexels-photo-12618679.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 19868,
+            "mime": "image/webp",
+            "sha256": "b3c4caf4a1ad101e87ef8085d12b03f54fe7ff30ced074aff6470c2848f139ac"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-table-topped-with-books-and-candles-next-to-a-window-sqkyzpcL6eE",
+            "title": "Photo by Anastasiya Leskova on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/shallow-focus-photography-of-green-plants-on-vase-tCfI4zyQNfQ",
+            "title": "Photo by Tim Goedhart on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-black-and-white-photo-of-a-book-and-a-vase-U9P7dZUGbds",
+            "title": "Photo by Jocelyn Morales on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/small-vase-with-daisies-next-to-yellow-book-ka3O8YdCl4M",
+            "title": "Photo by Blake Wisz on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/still-life-with-objects-near-a-window-APj9StxteVs",
+            "title": "Photo by Europeana on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-table-topped-with-books-and-a-vase-filled-with-flowers-0DfP2Jo4wEo",
+            "title": "Photo by Toa Heftiba on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-white-pitcher-filled-with-flowers-next-to-a-book-CBAwnGNjc3g",
+            "title": "Photo by Sixteen Miles Out on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-shelf-with-books-and-a-vase-of-flowers-6x5dzOhx63M",
+            "title": "Photo by Grigorii Shcheglov on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/cup-of-tea-beside-card-tSDM5xXw5jg",
+            "title": "Photo by Diane Helentjaris on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          }
+        ],
+        "submittedToVision": true,
+        "submittedCount": 2
+      }
+    },
+    "usage": {
+      "prompt_tokens": 14094,
+      "completion_tokens": 3975,
+      "total_tokens": 18069,
+      "providerCalls": 2,
+      "requests": [
+        {
+          "phase": "research",
+          "requestId": "66333c1b-f99d-438c-9e99-127a9fbfc0f7",
+          "model": "deepseek-flash",
+          "elapsedMs": 22179,
+          "prompt_tokens": 8016,
+          "completion_tokens": 1290,
+          "total_tokens": 9306,
+          "server_tool_use": {
+            "tool_search": 14,
+            "tool_fetch": 0,
+            "tool_image_search": 0
+          }
+        },
+        {
+          "phase": "compose",
+          "requestId": "cee59892-77f4-4532-aa80-ee2d215ce4b6",
+          "model": "deepseek-flash",
+          "elapsedMs": 12066,
+          "prompt_tokens": 6078,
+          "completion_tokens": 2685,
+          "total_tokens": 8763,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "warnings": [],
+    "vision": {
+      "renderedImageProvided": false,
+      "referenceImagesProvided": 2,
+      "referenceSourceUrls": [
+        "https://www.pexels.com/photo/artistic-still-life-with-books-and-white-balls-34472835/",
+        "https://www.pexels.com/zh-cn/photo/12618679/"
+      ]
+    }
+  }
+}

@@ -1,0 +1,902 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 8,
+  "query": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "checkpoint": {
+    "sessionId": "crf09_e5ccf6cd-5556-4a02-a656-53316025d65f",
+    "round": 8,
+    "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+    "subtopic": "局部细节：近景纹理、连接结构、细小部件",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:55:45.431Z",
+    "runId": "crf07_05d05961-b73c-4a70-95dd-708e2b06c1b2",
+    "queries": [
+      "site:commons.wikimedia.org \"still life\" apples pears orange vase photograph",
+      "site:pexels.com photo still life apples pears orange ceramic vase",
+      "site:commons.wikimedia.org \"File:Apples, Pears, Oranges.jpg\"",
+      "site:pexels.com photo close-up apple skin texture macro",
+      "site:commons.wikimedia.org pear skin close-up photograph",
+      "site:pexels.com photo orange peel texture close-up",
+      "\"Apples, Pears, Oranges.jpg\" wikimedia commons file",
+      "site:pexels.com photo \"still life\" \"apples\" \"vase\"",
+      "site:commons.wikimedia.org still life photograph apples vase",
+      "site:pexels.com photo orange peel texture",
+      "site:commons.wikimedia.org apple skin texture macro photograph",
+      "site:pexels.com photo pear close-up skin",
+      "site:commons.wikimedia.org ceramic vase still life photograph"
+    ],
+    "requestIds": [
+      "8d764572-9b61-4b9a-a179-7b35a8fc0f48"
+    ],
+    "sourceCount": 21,
+    "newSourceCount": 12,
+    "candidateCount": 11,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_ccaaafc380694b70b7af310ac6aaf989",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"still life\" apples pears orange vase photograph",
+            "site:pexels.com photo still life apples pears orange ceramic vase",
+            "site:commons.wikimedia.org \"File:Apples, Pears, Oranges.jpg\"",
+            "site:pexels.com photo close-up apple skin texture macro",
+            "site:commons.wikimedia.org pear skin close-up photograph",
+            "site:pexels.com photo orange peel texture close-up"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/zh-tw/photo/34775290/",
+          "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+          "https://commons.wikimedia.org/wiki/Category:Pyrus_bretschneideri?uselang=zh-hk",
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+          "https://commons.wikimedia.org/wiki/Category:Focus_stacking_images_of_fruits#1",
+          "https://commons.wikimedia.org/wiki/Category:Blanquilla_(pear)",
+          "https://commons.wikimedia.org/wiki/File:Fruit_(1).JPG#1"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_01_264b09c5bf9a46078cc5ea9eddb30a13",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "\"Apples, Pears, Oranges.jpg\" wikimedia commons file",
+            "site:pexels.com photo \"still life\" \"apples\" \"vase\"",
+            "site:commons.wikimedia.org still life photograph apples vase",
+            "site:pexels.com photo orange peel texture",
+            "site:commons.wikimedia.org apple skin texture macro photograph",
+            "site:pexels.com photo pear close-up skin",
+            "site:commons.wikimedia.org ceramic vase still life photograph"
+          ]
+        },
+        "sourceUrls": [
+          "https://app.notion.com/p/tldraw/images-3e13e4c324c081c69aeef58e47f9cc94",
+          "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+          "https://commons.wikimedia.org/wiki/File:Paul_C%c3%a9zanne,_Still_Life_With_Apples,_c._1890.jpg",
+          "https://commons.wikimedia.org/wiki/Category:Russet_apples",
+          "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+          "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+          "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_lifes_with_food_-_Pompeii_(II_4_2-12)_-_Napoli_MAN_8611.jpg#1",
+          "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+          "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+          "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+          "https://commons.wikimedia.org/wiki/File:John_La_Farge_-_Camellias_and_Roses_in_Japanese_Vase_of_Earthenware_with_Crackle_(15749094665).jpg",
+          "https://www.pexels.com/zh-tw/photo/36753926/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/34775290/",
+        "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames 1 Valentin Ivantsov ... 尺寸 4085x6128 色彩 日期 Nov 17 ... 說明 # 藝術靜物，包含書籍、蘋果、花瓶和掛框畫作。 ## 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+        "title": "Category:2 fruit - Wikimedia Commons - Category:2 fruit",
+        "snippet": "2 apples (1 C, 57 F) ### O - 2 oranges (1 C, 3 F) ... The following 146 files are in this category, out of 146 total. ... - Pears-2.jpg 1,402 × 1,402; 822 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pyrus_bretschneideri?uselang=zh-hk",
+        "title": "Category:Pyrus bretschneideri - Wikimedia Commons",
+        "snippet": "Nashi.jpg 1,851 × 1,828；605 KB - Papple 3 copy.jpg 252 × 199；37 KB - Pyrus bretschneideri Leaf.jpg 1,840 × 3,264；1.79 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+        "title": "Photo by Evgeniy Alekseyev on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+        "title": "Category:Apples with other fruit - Wikimedia Commons",
+        "snippet": "The following 53 files are in this category, out of 53 total. ... 5.48 MB - Apples, Pears, Oranges.jpg 1,280 × 960; 291 KB ... - Pears & Apples.jpg 1,024 × 768; 361 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Focus_stacking_images_of_fruits#1",
+        "title": "Category:Focus stacking images of fruits - Wikimedia Commons - Category:Focus stacking images of fruits",
+        "snippet": "Media in category \"Focus stacking images of fruits\" The following 116 files are in this category ... 4.13 MB - 2019-09-25 Pear.jpg 4,288 × 2,848; 1.72 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Blanquilla_(pear)",
+        "title": "Category:Blanquilla (pear) - Wikimedia Commons",
+        "snippet": "Pera Blanquilla.jpg 4,624 × 3,472; 6.08 MB - Peras Blanquilla 2017 A1.jpg 4,608 × 3,456; 1.71 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Fruit_(1).JPG#1",
+        "title": "File:Fruit (1).JPG - Wikimedia Commons - File:Fruit (1).JPG",
+        "snippet": "File:Fruit (1).JPG ... Original file (1,503 × 1 ... 258 KB, MIME type: image/jpeg) ... DescriptionFruit (1).JPG | Polski: Owoce: pomarańcze, liczi, jabłka English: Fruit: orange, litchi, apple ... Source | Own work Author | Alina Zienowicz Ala z",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://app.notion.com/p/tldraw/images-3e13e4c324c081c69aeef58e47f9cc94",
+        "title": "Notion | Where teams and agents work together",
+        "snippet": "CC BY 2.0. License. https ... Apples, Pears, Oranges.jpg — Mark and Allegra Jaroski-Biava from Lausanne, Switzerland; CC BY-SA 2.0. License. ... Still Life with Apples and Pears MET DT1491.jpg — Paul Cézanne; CC0. ... Wikimedia Commons as part of a project by the Metropolitan Museum of Art.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+        "title": "Photo de Максим Вышарь sur Pexels",
+        "snippet": "Appareil photo NIKON D610 ... Logiciel Adobe Photoshop CC 2019 (Windows) Description # Nature morte rustique avec des pommes, un panier en osier et un vase avec des baies rouges sur une table en bois.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Paul_C%c3%a9zanne,_Still_Life_With_Apples,_c._1890.jpg",
+        "title": "File:Paul Cézanne, Still Life With Apples, c. 1890.jpg - Wikimedia Commons",
+        "snippet": "The official position taken by the Wikimedia Foundation is that \"faithful reproductions of two-dimensional public domain works of art are public domain\". This photographic reproduction is therefore also considered to be in the public domain in the United States. In other jurisdictions, re-use of this content may be restricted; see Reuse of PD-Art photographs for details.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Russet_apples",
+        "title": "Category:Russet apples - Wikimedia Commons",
+        "snippet": "Russeting on apples is a particular type of skin, slightly rough, usually with a greenish-brown to yellowish-brown colour. ... - Cień jabłka - 27.02.2026.jpg 1 ... - Egremont Russet Apple.jpg 650 × 650; 277 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+        "title": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg - Wikimedia Commons - File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg",
+        "snippet": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg ... Josefa de Óbidos: still life with boxes and crockery",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+        "title": "Photo de Nadia Vasil'eva sur Pexels",
+        "snippet": "Nadia Vasil'eva 27,3 million vues \\ 111,3 millier téléchargements ... Description # Un arrangement serein de marguerites dans un vase en verre près du rebord de la fenêtre, accompagné de pommes.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_lifes_with_food_-_Pompeii_(II_4_2-12)_-_Napoli_MAN_8611.jpg#1",
+        "title": "File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg - Wikimedia Commons - File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg",
+        "snippet": "Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg ... 2 still lifes with food ... ) 2) glass bowl with apples and grapes, small pointed amphora with lid, jar filled with raisins, pomegranate, apple - period / date...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+        "title": "File:(Toulouse) Nature morte, deux pots en terre vernissée - François Bonvin - Rouen, Musée des beaux-arts.jpg - Wikimedia Commons",
+        "snippet": "image has been assessed under the valued image criteria and is considered the most valued image on Commons within the scope: Nature morte, deux pots en terre vernissée ( Still life, two glazed earthenware pots.) by François Bonvin, Rouen, Musée des beaux-arts.. You can see its nomination here.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+        "title": "File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg - Wikimedia Commons - File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg",
+        "snippet": "Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg ... English: Still Life with Apples and Oranges, by Paul Cézanne, Musée d'Orsay, Paris.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+        "title": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg - Wikimedia Commons - File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg",
+        "snippet": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg ... Palazzo dei Musei (Modena) This is a photo of a monument which is part of cultural heritage of Italy.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+        "title": "Photo by olia danilevich on Pexels",
+        "snippet": "Date Nov 1, 2020 Downloads ... Oct 31, 2020 Software Adobe Photoshop 21.0 (Macintosh) Description # A delightful still life of a cranberry apple drink surrounded by fresh fruits. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:John_La_Farge_-_Camellias_and_Roses_in_Japanese_Vase_of_Earthenware_with_Crackle_(15749094665).jpg",
+        "title": "File:John La Farge - Camellias and Roses in Japanese Vase of Earthenware with Crackle (15749094665).jpg - Wikimedia Commons",
+        "snippet": "File:John La Farge - Camellias and Roses in Japanese Vase of Earthenware with Crackle (15749094665).jpg ... Original file (751 × 800 pixels, file size: 143 KB...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/36753926/",
+        "title": "Pexels 上由 Matvei 拍攝的相片",
+        "snippet": "2023 軟體 Capture One Windows 說明 # 一幅經典的靜物畫，描繪了花瓶裡的秋葉、蘋果和葡萄，喚起了人們對秋天溫暖和豐饒的聯想。 ### 更多類似內容",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "**本轮搜索没有找到可核验的、同时包含“苹果、梨、整橙子、普通陶瓷花瓶”的摄影详情页。** 搜索结果仍以绘画、分类页和文件名线索为主。不过，本轮发现了一条关于 `Apples, Pears, Oranges.jpg` 的作者与许可线索，以及几张可用于独立材质细节的 Pexels/Commons 照片，但均需进一步取图验证或核验详情页。\n\n### 可记录的新线索（非完整场景，需核验）\n\n**1. `Apples, Pears, Oranges.jpg` 的作者与许可线索（待定位文件页）**\n- 一处非 Commons 页面提到该文件由 **Mark and Allegra Jaroski-Biava（Lausanne, Switzerland）** 拍摄，许可为 **CC BY-SA 2.0** 。但这不是 Wikimedia Commons 的文件详情页，不能直接作为来源页使用。\n- Commons 分类页仍只列出文件名与尺寸（1,280 × 960），未提供详情页 。**下一步必须**在 Commons 内搜索该确切文件名，找到 `File:` 页后确认是否为摄影、是否含花瓶、许可证是否与上述线索一致。在此之前，该文件不能作为已核实来源。\n\n**2. Pexels：Evgeniy Alekseyev，白瓷碗中的红苹果**\n- 来源页：https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/\n- 元数据：Nikon D750，62mm，f/14.0，1/160s，ISO 100 。\n- **对局部细节的用途**：白瓷碗提供**普通陶瓷的素面反光与边缘高光**参考；苹果在碗内的堆积可观察**果皮与陶瓷接触处的遮挡与暗部**。f/14 提示景深较大，碗沿与近处苹果边缘应相对清晰。\n- **局限**：没有梨、橙子或花瓶；碗的形态不是花瓶。\n\n**3. Pexels：Valentin Ivantsov，书籍、苹果、花瓶静物（前轮已记录，本轮重复出现）**\n- 来源页：https://www.pexels.com/zh-tw/photo/34775290/ \n- 该页元数据与描述与前轮一致（Canon EOS 5D Mark III，100mm，f/11，1/160s，Photoshop 21.0）。仍**不能确认**梨、橙子或“普通陶瓷”材质，仅可作为多物体遮挡与尺度差的有限参考。\n\n**4. Pexels：Максим Вышарь，苹果、藤篮与红浆果花瓶的乡村静物**\n- 来源页：https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/\n- 元数据：Nikon D610，50mm，f/9.0，1/8s，ISO 100 。描述为苹果、藤篮和插红浆果的花瓶在木桌上。该页在前轮排除列表中已出现，但本轮搜索再次返回；**不建议重复纳入**，除非需要木桌与篮子的纹理参考。花瓶内有浆果，不是“普通空陶瓷花瓶”。\n\n### 对局部细节与连接结构的可转化建议（基于网页描述，待取图验证）\n\n**1. 陶瓷与水果的接触边缘**\n- 在 Alekseyev 的白瓷碗苹果页中，可预期碗沿与苹果底部形成**“硬质陶瓷边缘 + 柔软果皮压痕”**的对比。图形函数中，碗内苹果的接触点应表现为**陶瓷表面上的局部暗斑 + 苹果底部的轻微压扁**，而不是两个完美球体的点接触 。\n- 该页 f/14 的光圈提示接触边缘不会过度虚化，适合提取**接触阴影的硬边过渡**。\n\n**2. 果皮纹理的独立参考缺口**\n- 本轮未检索到专门针对苹果/梨/橙子近景果皮纹理的 Pexels 或 Commons 摄影详情页。Commons 的 `Russet apples` 分类有苹果表皮粗糙度的文件列表，但分类页不提供详情页与许可 。若要提取“果皮细节”，需下一轮定向搜索 Commons 中具体 `File:` 页（如 `Egremont Russet Apple.jpg`），确认摄影属性与许可后再使用。\n\n**3. 普通陶瓷花瓶仍缺独立近景**\n- 本轮搜索没有返回可核验的“素面陶瓷花瓶近景”摄影详情页。Alekseyev 页的白瓷碗可替代提供**陶瓷釉面高光**的局部参考，但无法提供**花瓶的竖向轮廓、瓶口边缘、底部圈足**等连接结构。\n\n### 局限与下一轮定向建议\n- **核心组合仍缺失**：没有任何一页可确认同时包含苹果、梨、整橙子与普通陶瓷花瓶。`Apples, Pears, Oranges.jpg` 即使定位到，也需确认是否含花瓶。\n- **图片字节未获取**：上述 Pexels 页的材质、边缘、接触阴影均无法从文本确认；不得声称已看过图像。\n- **下一轮优先动作**：\n  1. 在 Commons 搜索 `File:Apples, Pears, Oranges.jpg`，核验文件页、摄影属性、许可证。\n  2. 在 Pexels 搜索 `ceramic vase still life fruit` 或 `white ceramic vase apples`，寻找素面花瓶与水果同框的具体照片页。\n  3. 在 Commons 搜索 `Russet apple file` 或 `Pear skin close-up` 的具体 `File:` 页，补齐果皮近景纹理参考。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paul_C%c3%a9zanne,_Still_Life_With_Apples,_c._1890.jpg",
+        "title": "File:Paul Cézanne, Still Life With Apples, c. 1890.jpg - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Paul_C%c3%a9zanne,_Still_Life_With_Apples,_c._1890.jpg"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+        "title": "File:(Toulouse) Nature morte, deux pots en terre vernissée - François Bonvin - Rouen, Musée des beaux-arts.jpg - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_La_Farge_-_Camellias_and_Roses_in_Japanese_Vase_of_Earthenware_with_Crackle_(15749094665).jpg",
+        "title": "File:John La Farge - Camellias and Roses in Japanese Vase of Earthenware with Crackle (15749094665).jpg - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:John_La_Farge_-_Camellias_and_Roses_in_Japanese_Vase_of_Earthenware_with_Crackle_(15749094665).jpg"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/34775290/",
+      "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames 1 Valentin Ivantsov ... 尺寸 4085x6128 色彩 日期 Nov 17 ... 說明 # 藝術靜物，包含書籍、蘋果、花瓶和掛框畫作。 ## 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+      "title": "Category:2 fruit - Wikimedia Commons - Category:2 fruit",
+      "snippet": "2 apples (1 C, 57 F) ### O - 2 oranges (1 C, 3 F) ... The following 146 files are in this category, out of 146 total. ... - Pears-2.jpg 1,402 × 1,402; 822 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pyrus_bretschneideri?uselang=zh-hk",
+      "title": "Category:Pyrus bretschneideri - Wikimedia Commons",
+      "snippet": "Nashi.jpg 1,851 × 1,828；605 KB - Papple 3 copy.jpg 252 × 199；37 KB - Pyrus bretschneideri Leaf.jpg 1,840 × 3,264；1.79 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+      "title": "Category:Apples with other fruit - Wikimedia Commons",
+      "snippet": "The following 53 files are in this category, out of 53 total. ... 5.48 MB - Apples, Pears, Oranges.jpg 1,280 × 960; 291 KB ... - Pears & Apples.jpg 1,024 × 768; 361 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Focus_stacking_images_of_fruits#1",
+      "title": "Category:Focus stacking images of fruits - Wikimedia Commons - Category:Focus stacking images of fruits",
+      "snippet": "Media in category \"Focus stacking images of fruits\" The following 116 files are in this category ... 4.13 MB - 2019-09-25 Pear.jpg 4,288 × 2,848; 1.72 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Blanquilla_(pear)",
+      "title": "Category:Blanquilla (pear) - Wikimedia Commons",
+      "snippet": "Pera Blanquilla.jpg 4,624 × 3,472; 6.08 MB - Peras Blanquilla 2017 A1.jpg 4,608 × 3,456; 1.71 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Fruit_(1).JPG#1",
+      "title": "File:Fruit (1).JPG - Wikimedia Commons - File:Fruit (1).JPG",
+      "snippet": "File:Fruit (1).JPG ... Original file (1,503 × 1 ... 258 KB, MIME type: image/jpeg) ... DescriptionFruit (1).JPG | Polski: Owoce: pomarańcze, liczi, jabłka English: Fruit: orange, litchi, apple ... Source | Own work Author | Alina Zienowicz Ala z",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://app.notion.com/p/tldraw/images-3e13e4c324c081c69aeef58e47f9cc94",
+      "title": "Notion | Where teams and agents work together",
+      "snippet": "CC BY 2.0. License. https ... Apples, Pears, Oranges.jpg — Mark and Allegra Jaroski-Biava from Lausanne, Switzerland; CC BY-SA 2.0. License. ... Still Life with Apples and Pears MET DT1491.jpg — Paul Cézanne; CC0. ... Wikimedia Commons as part of a project by the Metropolitan Museum of Art.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+      "title": "Photo de Максим Вышарь sur Pexels",
+      "snippet": "Appareil photo NIKON D610 ... Logiciel Adobe Photoshop CC 2019 (Windows) Description # Nature morte rustique avec des pommes, un panier en osier et un vase avec des baies rouges sur une table en bois.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Paul_C%c3%a9zanne,_Still_Life_With_Apples,_c._1890.jpg",
+      "title": "File:Paul Cézanne, Still Life With Apples, c. 1890.jpg - Wikimedia Commons",
+      "snippet": "The official position taken by the Wikimedia Foundation is that \"faithful reproductions of two-dimensional public domain works of art are public domain\". This photographic reproduction is therefore also considered to be in the public domain in the United States. In other jurisdictions, re-use of this content may be restricted; see Reuse of PD-Art photographs for details.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Russet_apples",
+      "title": "Category:Russet apples - Wikimedia Commons",
+      "snippet": "Russeting on apples is a particular type of skin, slightly rough, usually with a greenish-brown to yellowish-brown colour. ... - Cień jabłka - 27.02.2026.jpg 1 ... - Egremont Russet Apple.jpg 650 × 650; 277 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+      "title": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg - Wikimedia Commons - File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg",
+      "snippet": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg ... Josefa de Óbidos: still life with boxes and crockery",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+      "title": "Photo de Nadia Vasil'eva sur Pexels",
+      "snippet": "Nadia Vasil'eva 27,3 million vues \\ 111,3 millier téléchargements ... Description # Un arrangement serein de marguerites dans un vase en verre près du rebord de la fenêtre, accompagné de pommes.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_lifes_with_food_-_Pompeii_(II_4_2-12)_-_Napoli_MAN_8611.jpg#1",
+      "title": "File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg - Wikimedia Commons - File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg",
+      "snippet": "Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg ... 2 still lifes with food ... ) 2) glass bowl with apples and grapes, small pointed amphora with lid, jar filled with raisins, pomegranate, apple - period / date...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+      "title": "File:(Toulouse) Nature morte, deux pots en terre vernissée - François Bonvin - Rouen, Musée des beaux-arts.jpg - Wikimedia Commons",
+      "snippet": "image has been assessed under the valued image criteria and is considered the most valued image on Commons within the scope: Nature morte, deux pots en terre vernissée ( Still life, two glazed earthenware pots.) by François Bonvin, Rouen, Musée des beaux-arts.. You can see its nomination here.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+      "title": "File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg - Wikimedia Commons - File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg",
+      "snippet": "Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg ... English: Still Life with Apples and Oranges, by Paul Cézanne, Musée d'Orsay, Paris.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+      "title": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg - Wikimedia Commons - File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg",
+      "snippet": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg ... Palazzo dei Musei (Modena) This is a photo of a monument which is part of cultural heritage of Italy.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+      "title": "Photo by olia danilevich on Pexels",
+      "snippet": "Date Nov 1, 2020 Downloads ... Oct 31, 2020 Software Adobe Photoshop 21.0 (Macintosh) Description # A delightful still life of a cranberry apple drink surrounded by fresh fruits. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:John_La_Farge_-_Camellias_and_Roses_in_Japanese_Vase_of_Earthenware_with_Crackle_(15749094665).jpg",
+      "title": "File:John La Farge - Camellias and Roses in Japanese Vase of Earthenware with Crackle (15749094665).jpg - Wikimedia Commons",
+      "snippet": "File:John La Farge - Camellias and Roses in Japanese Vase of Earthenware with Crackle (15749094665).jpg ... Original file (751 × 800 pixels, file size: 143 KB...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/36753926/",
+      "title": "Pexels 上由 Matvei 拍攝的相片",
+      "snippet": "2023 軟體 Capture One Windows 說明 # 一幅經典的靜物畫，描繪了花瓶裡的秋葉、蘋果和葡萄，喚起了人們對秋天溫暖和豐饒的聯想。 ### 更多類似內容",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+      "title": "Category:2 fruit - Wikimedia Commons - Category:2 fruit",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pyrus_bretschneideri?uselang=zh-hk",
+      "title": "Category:Pyrus bretschneideri - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Focus_stacking_images_of_fruits#1",
+      "title": "Category:Focus stacking images of fruits - Wikimedia Commons - Category:Focus stacking images of fruits",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Blanquilla_(pear)",
+      "title": "Category:Blanquilla (pear) - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruit_(1).JPG#1",
+      "title": "File:Fruit (1).JPG - Wikimedia Commons - File:Fruit (1).JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Russet_apples",
+      "title": "Category:Russet apples - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+      "title": "Photo de Nadia Vasil'eva sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_lifes_with_food_-_Pompeii_(II_4_2-12)_-_Napoli_MAN_8611.jpg#1",
+      "title": "File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg - Wikimedia Commons - File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+      "title": "Photo by olia danilevich on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_La_Farge_-_Camellias_and_Roses_in_Japanese_Vase_of_Earthenware_with_Crackle_(15749094665).jpg",
+      "title": "File:John La Farge - Camellias and Roses in Japanese Vase of Earthenware with Crackle (15749094665).jpg - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36753926/",
+      "title": "Pexels 上由 Matvei 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 187401,
+        "sha256": "03589348617b00763fc652b6ac5711800c8bc70819bd3817c05441e83365a293"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Fruit_%281%29.JPG/960px-Fruit_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruit_(1).JPG#1",
+      "title": "File:Fruit (1).JPG - Wikimedia Commons - File:Fruit (1).JPG",
+      "sha256": "03589348617b00763fc652b6ac5711800c8bc70819bd3817c05441e83365a293",
+      "bytes": 187401,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 814,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "artist": "Alina Zienowicz Ala z",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Fruit_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1503,
+        "height": 1274,
+        "bytes": 263800
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 62346,
+        "sha256": "243d11cfba4efb05ad910af5a85db5140ed8bd0bfae5ed8deb9802b99f440601"
+      },
+      "imageUrl": "https://images.pexels.com/photos/9390657/pexels-photo-9390657.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+      "title": "Photo de Nadia Vasil'eva sur Pexels",
+      "sha256": "243d11cfba4efb05ad910af5a85db5140ed8bd0bfae5ed8deb9802b99f440601",
+      "bytes": 62346,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 219723,
+        "sha256": "d13c62b33ac8a1f5386d2b70faf45f732d5c7c0575c7397422c62ac3913f28be"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg/960px-Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_lifes_with_food_-_Pompeii_(II_4_2-12)_-_Napoli_MAN_8611.jpg#1",
+      "title": "File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg - Wikimedia Commons - File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg",
+      "sha256": "d13c62b33ac8a1f5386d2b70faf45f732d5c7c0575c7397422c62ac3913f28be",
+      "bytes": 219723,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 437,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "ArchaiOptix",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4873,
+        "height": 2219,
+        "bytes": 14970891
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 34710,
+        "sha256": "1c4b9d073ac8ac1c427c62823635b4cecdcfc2c78fde285d93bd9582f210b43e"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5760182/pexels-photo-5760182.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+      "title": "Photo by olia danilevich on Pexels",
+      "sha256": "1c4b9d073ac8ac1c427c62823635b4cecdcfc2c78fde285d93bd9582f210b43e",
+      "bytes": 34710,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Fruit_%281%29.JPG/960px-Fruit_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruit_(1).JPG#1",
+      "title": "File:Fruit (1).JPG - Wikimedia Commons - File:Fruit (1).JPG",
+      "sha256": "03589348617b00763fc652b6ac5711800c8bc70819bd3817c05441e83365a293",
+      "bytes": 187401,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 814,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "artist": "Alina Zienowicz Ala z",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Fruit_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1503,
+        "height": 1274,
+        "bytes": 263800
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/9390657/pexels-photo-9390657.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+      "title": "Photo de Nadia Vasil'eva sur Pexels",
+      "sha256": "243d11cfba4efb05ad910af5a85db5140ed8bd0bfae5ed8deb9802b99f440601",
+      "bytes": 62346,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg/960px-Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_lifes_with_food_-_Pompeii_(II_4_2-12)_-_Napoli_MAN_8611.jpg#1",
+      "title": "File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg - Wikimedia Commons - File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg",
+      "sha256": "d13c62b33ac8a1f5386d2b70faf45f732d5c7c0575c7397422c62ac3913f28be",
+      "bytes": 219723,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 437,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "ArchaiOptix",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4873,
+        "height": 2219,
+        "bytes": 14970891
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5760182/pexels-photo-5760182.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+      "title": "Photo by olia danilevich on Pexels",
+      "sha256": "1c4b9d073ac8ac1c427c62823635b4cecdcfc2c78fde285d93bd9582f210b43e",
+      "bytes": 34710,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+        "title": "Category:2 fruit - Wikimedia Commons - Category:2 fruit",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pyrus_bretschneideri?uselang=zh-hk",
+        "title": "Category:Pyrus bretschneideri - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Focus_stacking_images_of_fruits#1",
+        "title": "Category:Focus stacking images of fruits - Wikimedia Commons - Category:Focus stacking images of fruits",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Blanquilla_(pear)",
+        "title": "Category:Blanquilla (pear) - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruit_(1).JPG#1",
+        "title": "File:Fruit (1).JPG - Wikimedia Commons - File:Fruit (1).JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Fruit_%281%29.JPG/960px-Fruit_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "artist": "Alina Zienowicz Ala z",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AFruit_%281%29.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Fruit_%281%29.JPG/960px-Fruit_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 187401,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 814,
+        "sha256": "03589348617b00763fc652b6ac5711800c8bc70819bd3817c05441e83365a293"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Russet_apples",
+        "title": "Category:Russet apples - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+        "title": "Photo de Nadia Vasil'eva sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/9390657/pexels-photo-9390657.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/9390657/pexels-photo-9390657.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 62346,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "243d11cfba4efb05ad910af5a85db5140ed8bd0bfae5ed8deb9802b99f440601"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_lifes_with_food_-_Pompeii_(II_4_2-12)_-_Napoli_MAN_8611.jpg#1",
+        "title": "File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg - Wikimedia Commons - File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg/960px-Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "ArchaiOptix",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AWall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg/960px-Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 219723,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 437,
+        "sha256": "d13c62b33ac8a1f5386d2b70faf45f732d5c7c0575c7397422c62ac3913f28be"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+        "title": "Photo by olia danilevich on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/5760182/pexels-photo-5760182.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/5760182/pexels-photo-5760182.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 34710,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "1c4b9d073ac8ac1c427c62823635b4cecdcfc2c78fde285d93bd9582f210b43e"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "**本轮搜索没有找到可核验的、同时包含“苹果、梨、整橙子、普通陶瓷花瓶”的摄影详情页。** 搜索结果仍以绘画、分类页和文件名线索为主。不过，本轮发现了一条关于 `Apples, Pears, Oranges.jpg` 的作者与许可线索，以及几张可用于独立材质细节的 Pexels/Commons 照片，但均需进一步取图验证或核验详情页。\n\n### 可记录的新线索（非完整场景，需核验）\n\n**1. `Apples, Pears, Oranges.jpg` 的作者与许可线索（待定位文件页）**\n- 一处非 Commons 页面提到该文件由 **Mark and Allegra Jaroski-Biava（Lausanne, Switzerland）** 拍摄，许可为 **CC BY-SA 2.0** 。但这不是 Wikimedia Commons 的文件详情页，不能直接作为来源页使用。\n- Commons 分类页仍只列出文件名与尺寸（1,280 × 960），未提供详情页 。**下一步必须**在 Commons 内搜索该确切文件名，找到 `File:` 页后确认是否为摄影、是否含花瓶、许可证是否与上述线索一致。在此之前，该文件不能作为已核实来源。\n\n**2. Pexels：Evgeniy Alekseyev，白瓷碗中的红苹果**\n- 来源页：https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/\n- 元数据：Nikon D750，62mm，f/14.0，1/160s，ISO 100 。\n- **对局部细节的用途**：白瓷碗提供**普通陶瓷的素面反光与边缘高光**参考；苹果在碗内的堆积可观察**果皮与陶瓷接触处的遮挡与暗部**。f/14 提示景深较大，碗沿与近处苹果边缘应相对清晰。\n- **局限**：没有梨、橙子或花瓶；碗的形态不是花瓶。\n\n**3. Pexels：Valentin Ivantsov，书籍、苹果、花瓶静物（前轮已记录，本轮重复出现）**\n- 来源页：https://www.pexels.com/zh-tw/photo/34775290/ \n- 该页元数据与描述与前轮一致（Canon EOS 5D Mark III，100mm，f/11，1/160s，Photoshop 21.0）。仍**不能确认**梨、橙子或“普通陶瓷”材质，仅可作为多物体遮挡与尺度差的有限参考。\n\n**4. Pexels：Максим Вышарь，苹果、藤篮与红浆果花瓶的乡村静物**\n- 来源页：https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/\n- 元数据：Nikon D610，50mm，f/9.0，1/8s，ISO 100 。描述为苹果、藤篮和插红浆果的花瓶在木桌上。该页在前轮排除列表中已出现，但本轮搜索再次返回；**不建议重复纳入**，除非需要木桌与篮子的纹理参考。花瓶内有浆果，不是“普通空陶瓷花瓶”。\n\n### 对局部细节与连接结构的可转化建议（基于网页描述，待取图验证）\n\n**1. 陶瓷与水果的接触边缘**\n- 在 Alekseyev 的白瓷碗苹果页中，可预期碗沿与苹果底部形成**“硬质陶瓷边缘 + 柔软果皮压痕”**的对比。图形函数中，碗内苹果的接触点应表现为**陶瓷表面上的局部暗斑 + 苹果底部的轻微压扁**，而不是两个完美球体的点接触 。\n- 该页 f/14 的光圈提示接触边缘不会过度虚化，适合提取**接触阴影的硬边过渡**。\n\n**2. 果皮纹理的独立参考缺口**\n- 本轮未检索到专门针对苹果/梨/橙子近景果皮纹理的 Pexels 或 Commons 摄影详情页。Commons 的 `Russet apples` 分类有苹果表皮粗糙度的文件列表，但分类页不提供详情页与许可 。若要提取“果皮细节”，需下一轮定向搜索 Commons 中具体 `File:` 页（如 `Egremont Russet Apple.jpg`），确认摄影属性与许可后再使用。\n\n**3. 普通陶瓷花瓶仍缺独立近景**\n- 本轮搜索没有返回可核验的“素面陶瓷花瓶近景”摄影详情页。Alekseyev 页的白瓷碗可替代提供**陶瓷釉面高光**的局部参考，但无法提供**花瓶的竖向轮廓、瓶口边缘、底部圈足**等连接结构。\n\n### 局限与下一轮定向建议\n- **核心组合仍缺失**：没有任何一页可确认同时包含苹果、梨、整橙子与普通陶瓷花瓶。`Apples, Pears, Oranges.jpg` 即使定位到，也需确认是否含花瓶。\n- **图片字节未获取**：上述 Pexels 页的材质、边缘、接触阴影均无法从文本确认；不得声称已看过图像。\n- **下一轮优先动作**：\n  1. 在 Commons 搜索 `File:Apples, Pears, Oranges.jpg`，核验文件页、摄影属性、许可证。\n  2. 在 Pexels 搜索 `ceramic vase still life fruit` 或 `white ceramic vase apples`，寻找素面花瓶与水果同框的具体照片页。\n  3. 在 Commons 搜索 `Russet apple file` 或 `Pear skin close-up` 的具体 `File:` 页，补齐果皮近景纹理参考。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 24510,
+    "completion_tokens": 1279,
+    "total_tokens": 25789,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "8d764572-9b61-4b9a-a179-7b35a8fc0f48",
+        "model": "deepseek-flash",
+        "elapsedMs": 11378,
+        "prompt_tokens": 24510,
+        "completion_tokens": 1279,
+        "total_tokens": 25789,
+        "server_tool_use": {
+          "tool_search": 13,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 30181,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 187401,
+        "sha256": "03589348617b00763fc652b6ac5711800c8bc70819bd3817c05441e83365a293"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Fruit_%281%29.JPG/960px-Fruit_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruit_(1).JPG#1",
+      "title": "File:Fruit (1).JPG - Wikimedia Commons - File:Fruit (1).JPG",
+      "sha256": "03589348617b00763fc652b6ac5711800c8bc70819bd3817c05441e83365a293",
+      "bytes": 187401,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 814,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "artist": "Alina Zienowicz Ala z",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Fruit_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 1503,
+        "height": 1274,
+        "bytes": 263800
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/03589348617b00763fc652b6ac5711800c8bc70819bd3817c05441e83365a293.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 62346,
+        "sha256": "243d11cfba4efb05ad910af5a85db5140ed8bd0bfae5ed8deb9802b99f440601"
+      },
+      "imageUrl": "https://images.pexels.com/photos/9390657/pexels-photo-9390657.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+      "title": "Photo de Nadia Vasil'eva sur Pexels",
+      "sha256": "243d11cfba4efb05ad910af5a85db5140ed8bd0bfae5ed8deb9802b99f440601",
+      "bytes": 62346,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/243d11cfba4efb05ad910af5a85db5140ed8bd0bfae5ed8deb9802b99f440601.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 219723,
+        "sha256": "d13c62b33ac8a1f5386d2b70faf45f732d5c7c0575c7397422c62ac3913f28be"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg/960px-Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_lifes_with_food_-_Pompeii_(II_4_2-12)_-_Napoli_MAN_8611.jpg#1",
+      "title": "File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg - Wikimedia Commons - File:Wall painting - still lifes with food - Pompeii (II 4 2-12) - Napoli MAN 8611.jpg",
+      "sha256": "d13c62b33ac8a1f5386d2b70faf45f732d5c7c0575c7397422c62ac3913f28be",
+      "bytes": 219723,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 437,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "ArchaiOptix",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Wall_painting_-_still_lifes_with_food_-_Pompeii_%28II_4_2-12%29_-_Napoli_MAN_8611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4873,
+        "height": 2219,
+        "bytes": 14970891
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/d13c62b33ac8a1f5386d2b70faf45f732d5c7c0575c7397422c62ac3913f28be.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 34710,
+        "sha256": "1c4b9d073ac8ac1c427c62823635b4cecdcfc2c78fde285d93bd9582f210b43e"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5760182/pexels-photo-5760182.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+      "title": "Photo by olia danilevich on Pexels",
+      "sha256": "1c4b9d073ac8ac1c427c62823635b4cecdcfc2c78fde285d93bd9582f210b43e",
+      "bytes": 34710,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/1c4b9d073ac8ac1c427c62823635b4cecdcfc2c78fde285d93bd9582f210b43e.webp"
+    }
+  ]
+}

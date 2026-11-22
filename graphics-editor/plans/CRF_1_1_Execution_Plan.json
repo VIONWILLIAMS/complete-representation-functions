@@ -1,0 +1,926 @@
+{
+  "schema": "crf.implementation_plan/1.1",
+  "productVersion": "1.1",
+  "status": "proposal_for_review",
+  "createdDate": "2026-11-22",
+  "timezone": "Asia/Shanghai",
+  "baseline": {
+    "productVersion": "1.0",
+    "historicalArtifactVersion": "0.10.0",
+    "commit": "0b2fa1c044d073bd8349ef941cc1b213cbe1cfe1",
+    "historicalSchemasPreserved": true,
+    "productionChangedThisTurn": false
+  },
+  "scope": {
+    "modelTraining": false,
+    "perObservationNumericalFitting": true,
+    "frozenModelInference": "separately declared and actually verified",
+    "blender": false,
+    "primaryRepresentation": "2D Gaussian RGB fields + coverage functions + relation graph",
+    "legacyCaseEntriesToPreserve": 17,
+    "noHiddenSourceRGBBlit": true,
+    "trueNovel3DViews": "future",
+    "fullPhysicalInverseRendering": "future",
+    "unrestrictedSelfModification": "excluded"
+  },
+  "coreObjective": "Improve executable visual programs through kernel corrections, explicit proof obligations and bounded RSI, then verify cross-task inheritance.",
+  "milestones": [
+    {
+      "id": "M0",
+      "title": "基线与计量冻结",
+      "status": "planned"
+    },
+    {
+      "id": "M1",
+      "title": "第一条真实编辑/证明闭环",
+      "status": "planned"
+    },
+    {
+      "id": "M2",
+      "title": "内核、求解与关系改善",
+      "status": "planned"
+    },
+    {
+      "id": "M3",
+      "title": "L2程序试改进与staged试用",
+      "status": "planned"
+    },
+    {
+      "id": "M4",
+      "title": "完整编辑器、导出与合格加速",
+      "status": "planned"
+    },
+    {
+      "id": "M5",
+      "title": "正式封存、晋升、继承与交付",
+      "status": "planned"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T00",
+      "workPackage": "W0",
+      "milestone": "M0",
+      "title": "冻结1.0基线与产品版本映射",
+      "dependsOn": [],
+      "plannedOutputs": [
+        "version-map.json",
+        "legacy-artifact-manifest.json"
+      ],
+      "acceptance": [
+        "旧schema和证据不改写",
+        "17入口完整保留"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T01",
+      "workPackage": "W0",
+      "milestone": "M0",
+      "title": "冻结计量、色彩、采样与预算协议",
+      "dependsOn": [
+        "T00"
+      ],
+      "plannedOutputs": [
+        "RenderProfile",
+        "ReferenceSpec",
+        "BenchmarkContract"
+      ],
+      "acceptance": [
+        "明确解析真值/数值参考/照片观察",
+        "禁止封存后降门槛"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T02",
+      "workPackage": "W5",
+      "milestone": "M0",
+      "title": "建立实际ArtifactStore与历史URL解析",
+      "dependsOn": [
+        "T00"
+      ],
+      "plannedOutputs": [
+        "disk store",
+        "hosted storage adapter",
+        "asset resolver"
+      ],
+      "acceptance": [
+        "旧资源字节一致且访问范围不变",
+        "托管存储未接通则不得标可用"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T03",
+      "workPackage": "W1",
+      "milestone": "M1",
+      "title": "语义目标编译和需求追溯",
+      "dependsOn": [
+        "T01"
+      ],
+      "plannedOutputs": [
+        "IntentContract",
+        "unresolvedRequirements"
+      ],
+      "acceptance": [
+        "要求不静默丢失",
+        "语义对齐与形式命题正确性分开"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T04",
+      "workPackage": "W1",
+      "milestone": "M1",
+      "title": "类型化Scene/Patch IR与作用域",
+      "dependsOn": [
+        "T01"
+      ],
+      "plannedOutputs": [
+        "SceneIR",
+        "PatchIR",
+        "EffectContract"
+      ],
+      "acceptance": [
+        "坐标与色域有类型",
+        "阴影/滤波/遮挡纳入依赖"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T05",
+      "workPackage": "W2",
+      "milestone": "M1",
+      "title": "参考渲染与误差分级",
+      "dependsOn": [
+        "T04"
+      ],
+      "plannedOutputs": [
+        "CPU reference evaluator",
+        "ReferenceSpec reports"
+      ],
+      "acceptance": [
+        "参考误差低于被检门槛",
+        "不以待优化内核生成自己的真值"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T06",
+      "workPackage": "W2",
+      "milestone": "M2",
+      "title": "联合预乘颜色与覆盖积分",
+      "dependsOn": [
+        "T05"
+      ],
+      "plannedOutputs": [
+        "integratePremultiplied",
+        "boundary fixtures"
+      ],
+      "acceptance": [
+        "同子像素位置求值颜色和alpha",
+        "受控多背景边缘检验"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T07",
+      "workPackage": "W4",
+      "milestone": "M1",
+      "title": "类型化证据清单与失效机制",
+      "dependsOn": [
+        "T03",
+        "T04",
+        "T05"
+      ],
+      "plannedOutputs": [
+        "EvidenceBundle",
+        "FrameDescriptor",
+        "ImplementationRefinement"
+      ],
+      "acceptance": [
+        "绑定尺寸色域构建参考ROI和帧",
+        "hash绑定不视为语义正确性证明"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T08",
+      "workPackage": "W4",
+      "milestone": "M1",
+      "title": "首个Lean定理及冻结命题检查",
+      "dependsOn": [
+        "T04",
+        "T07"
+      ],
+      "plannedOutputs": [
+        "P1 theorem",
+        "axiom manifest",
+        "checker receipt"
+      ],
+      "acceptance": [
+        "拒绝sorry与未允许公理",
+        "标明抽象模型与实现范围"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T09",
+      "workPackage": "W4",
+      "milestone": "M2",
+      "title": "扩充P2/P3/P5定理与P4/P6实例检查",
+      "dependsOn": [
+        "T08",
+        "T06"
+      ],
+      "plannedOutputs": [
+        "Lean core library",
+        "Z3 constraints",
+        "pixel witnesses"
+      ],
+      "acceptance": [
+        "反例可重放",
+        "矛盾前提与空ROI不通过",
+        "GPU不继承实数定理标签"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T10",
+      "workPackage": "W3",
+      "milestone": "M2",
+      "title": "统一FitSpec和固定预算求解",
+      "dependsOn": [
+        "T05",
+        "T06"
+      ],
+      "plannedOutputs": [
+        "portable solver",
+        "Python reference adapter",
+        "fitting evidence"
+      ],
+      "acceptance": [
+        "浏览器离线后端明确",
+        "requested/actual点数及辅助数据成本记录",
+        "回退率与新算法独立胜率分开"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T11",
+      "workPackage": "W3",
+      "milestone": "M2",
+      "title": "承接面连接和接收阴影",
+      "dependsOn": [
+        "T04",
+        "T06"
+      ],
+      "plannedOutputs": [
+        "relation compiler",
+        "contact operator",
+        "receiver-scoped shadow"
+      ],
+      "acceptance": [
+        "连接有锚点和像素证据",
+        "阴影不误伤未授权接收物体"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T12",
+      "workPackage": "W3",
+      "milestone": "M2",
+      "title": "删除后的背景函数补齐",
+      "dependsOn": [
+        "T11"
+      ],
+      "plannedOutputs": [
+        "completion operator",
+        "inferred-region record"
+      ],
+      "acceptance": [
+        "墙面接缝和保护区检查",
+        "自然隐藏墙面不声称有真实像素真值"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T13",
+      "workPackage": "W5",
+      "milestone": "M1",
+      "title": "持久异步任务与证明执行器",
+      "dependsOn": [
+        "T02",
+        "T07"
+      ],
+      "plannedOutputs": [
+        "job API",
+        "durable log",
+        "lease/fencing",
+        "proof worker"
+      ],
+      "acceptance": [
+        "真任务可恢复",
+        "未知调用不消失",
+        "旧执行者晚返回不能覆盖新结果"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T14",
+      "workPackage": "W7",
+      "milestone": "M1",
+      "title": "首条编辑器纵向流程",
+      "dependsOn": [
+        "T03",
+        "T07",
+        "T08",
+        "T13"
+      ],
+      "plannedOutputs": [
+        "goal/canvas/evidence interaction"
+      ],
+      "acceptance": [
+        "换墙色真实渲染与保护检查联动",
+        "证明后端未就绪则unknown"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T15",
+      "workPackage": "W6",
+      "milestone": "M3",
+      "title": "受限Operator IR与编译执行",
+      "dependsOn": [
+        "T04",
+        "T09"
+      ],
+      "plannedOutputs": [
+        "operator grammar",
+        "reference interpreter",
+        "effect checker"
+      ],
+      "acceptance": [
+        "纯函数有界执行",
+        "只改常数不计L2",
+        "实现符合性单列"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T16",
+      "workPackage": "W6",
+      "milestone": "M3",
+      "title": "模型程序提议与缺陷路由",
+      "dependsOn": [
+        "T03",
+        "T10",
+        "T11",
+        "T15"
+      ],
+      "plannedOutputs": [
+        "ParameterPatch/PipelinePatch/OperatorPatch proposals"
+      ],
+      "acceptance": [
+        "用实际图像与错误证据",
+        "不修改自身评分器",
+        "真实模型调用单独记录"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T17",
+      "workPackage": "W6",
+      "milestone": "M3",
+      "title": "RSI控制器及双图档案",
+      "dependsOn": [
+        "T13",
+        "T15",
+        "T16"
+      ],
+      "plannedOutputs": [
+        "TaskGraph",
+        "VariantGraph",
+        "runBudget",
+        "candidate archive"
+      ],
+      "acceptance": [
+        "L0/L1/L2共用预算",
+        "最后候选也评价",
+        "保存互补合格候选"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T18",
+      "workPackage": "W6",
+      "milestone": "M3",
+      "title": "staged能力与原子晋升协议",
+      "dependsOn": [
+        "T09",
+        "T13",
+        "T17"
+      ],
+      "plannedOutputs": [
+        "capability registry",
+        "CAS promotion",
+        "rollback"
+      ],
+      "acceptance": [
+        "试用与正式晋升区分",
+        "expectedRegistryRevision与有效attempt匹配"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T19",
+      "workPackage": "W7",
+      "milestone": "M4",
+      "title": "WebGPU符合性与局部更新",
+      "dependsOn": [
+        "T06",
+        "T11"
+      ],
+      "plannedOutputs": [
+        "tile compiler",
+        "GPU backend",
+        "conformance reports"
+      ],
+      "acceptance": [
+        "同采样语义",
+        "相对CPU按容差检验",
+        "全帧和脏区结果一致"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T20",
+      "workPackage": "W7",
+      "milestone": "M4",
+      "title": "编辑器完整任务与能力版本视图",
+      "dependsOn": [
+        "T12",
+        "T14",
+        "T17",
+        "T18"
+      ],
+      "plannedOutputs": [
+        "function panel",
+        "proof panel",
+        "task panel",
+        "capability panel"
+      ],
+      "acceptance": [
+        "每个显示状态来自真实记录",
+        "编辑后陈旧证据失效",
+        "历史案例可用"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T21",
+      "workPackage": "W0",
+      "milestone": "M0",
+      "title": "建立独立来源数据与受控真值",
+      "dependsOn": [
+        "T01"
+      ],
+      "plannedOutputs": [
+        "source-group manifest",
+        "synthetic truth fixtures",
+        "sealed split"
+      ],
+      "acceptance": [
+        "目标60独立来源组",
+        "同图派生物不能跨组",
+        "预注册封存访问协议"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T22",
+      "workPackage": "W7",
+      "milestone": "M4",
+      "title": "尺度时间与真实导出",
+      "dependsOn": [
+        "T06",
+        "T11",
+        "T20"
+      ],
+      "plannedOutputs": [
+        "5-second video",
+        "frame diagnostics",
+        "complete project export"
+      ],
+      "acceptance": [
+        "120帧24fps时长5秒",
+        "二维运镜正确标注",
+        "导出工程可重放"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T23",
+      "workPackage": "W6",
+      "milestone": "M3",
+      "title": "真实L2试改进与选择集试用",
+      "dependsOn": [
+        "T17",
+        "T18",
+        "T21"
+      ],
+      "plannedOutputs": [
+        "automatic patch trace",
+        "executedOperatorHash",
+        "staged trial"
+      ],
+      "acceptance": [
+        "人工种子与自动补丁区分",
+        "算子真实执行",
+        "不接触正式封存集"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T24",
+      "workPackage": "W8",
+      "milestone": "M5",
+      "title": "冻结候选并运行五组对照",
+      "dependsOn": [
+        "T10",
+        "T20",
+        "T23"
+      ],
+      "plannedOutputs": [
+        "comparison runs",
+        "L2-only ablation",
+        "cost distributions"
+      ],
+      "acceptance": [
+        "至少三条提议轨迹",
+        "人工内核提升与RSI贡献分离",
+        "适用域与fallback规则提前冻结"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T25",
+      "workPackage": "W8",
+      "milestone": "M5",
+      "title": "一次正式封存与跨任务能力继承",
+      "dependsOn": [
+        "T18",
+        "T21",
+        "T24"
+      ],
+      "plannedOutputs": [
+        "sealed audit",
+        "promotion receipt",
+        "fresh task execution"
+      ],
+      "acceptance": [
+        "封存检验前冻结程序与合约",
+        "通过后正式promoted",
+        "新任务实际执行晋升算子"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T26",
+      "workPackage": "W8",
+      "milestone": "M5",
+      "title": "完整验收与版本交付",
+      "dependsOn": [
+        "T09",
+        "T20",
+        "T22",
+        "T25"
+      ],
+      "plannedOutputs": [
+        "acceptance report",
+        "downloadable examples",
+        "1.1 release manifest"
+      ],
+      "acceptance": [
+        "所有发布必需项通过",
+        "照片质量/实时加速主张单独判定",
+        "失败则保持候选版"
+      ],
+      "status": "planned"
+    }
+  ],
+  "proofObligations": [
+    {
+      "id": "P1",
+      "kind": "formal",
+      "title": "Patch字段不变性",
+      "implementationScope": "abstract PatchIR, separate implementation correspondence",
+      "plannedChecker": "Lean",
+      "status": "not_run"
+    },
+    {
+      "id": "P2",
+      "kind": "formal_and_exhaustive",
+      "title": "保守影响域外不变",
+      "implementationScope": "conditional effect semantics plus actual finite frame check",
+      "plannedChecker": "Lean + runtime witness",
+      "status": "not_run"
+    },
+    {
+      "id": "P3",
+      "kind": "formal",
+      "title": "SDR固定点预乘合成边界与恒等",
+      "implementationScope": "declared fixed-point operator, not arbitrary HDR or WGSL",
+      "plannedChecker": "Lean + bitvector checks",
+      "status": "not_run"
+    },
+    {
+      "id": "P4",
+      "kind": "finite_constraint_and_witness",
+      "title": "锚点与实际像素连接",
+      "implementationScope": "declared scene and actual contribution frame",
+      "plannedChecker": "Z3 + pixel-path checker",
+      "status": "not_run"
+    },
+    {
+      "id": "P5",
+      "kind": "formal",
+      "title": "晋升状态机与必需证据",
+      "implementationScope": "pure transition rules, runtime orchestration tested separately",
+      "plannedChecker": "Lean + fault injection",
+      "status": "not_run"
+    },
+    {
+      "id": "P6",
+      "kind": "constraint",
+      "title": "非空ROI及前提可满足",
+      "implementationScope": "current contract and bounded constraints",
+      "plannedChecker": "Z3 + runtime validation",
+      "status": "not_run"
+    }
+  ],
+  "dataProtocol": {
+    "candidateSearchRounds": 10,
+    "targetIndependentSourceGroups": 60,
+    "splitBy": "original photography source and object identity",
+    "developmentGroups": 30,
+    "selectionGroups": 15,
+    "sealedGroups": 15,
+    "legacyRegressionSeparate": true,
+    "derivedImageCrossSplitAllowed": false,
+    "sealedExecutionsPerFrozenReleaseCandidate": 1,
+    "proposalModelSeesSealedImagesOrPerCaseFeedback": false,
+    "frozenFitterMayReadTargetObservation": true,
+    "sealedFailureUsedForFurtherRepair": "reclassify consumed set and create new sealed version"
+  },
+  "acceptance": {
+    "thresholdStatus": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+    "gates": [
+      {
+        "id": "G-legacy",
+        "gate": "required",
+        "criterion": "preserve all legacy cases/assets/URLs; strict-profile compatibility replay"
+      },
+      {
+        "id": "G-protected",
+        "gate": "required",
+        "criterion": "outside authorized conservative influence footprint, exact RGBA equality on strict reference path"
+      },
+      {
+        "id": "G-edge",
+        "gate": "required",
+        "truthRequired": true,
+        "candidateMayDefineEvaluationMask": false,
+        "boundaryBandOutputPixels": [
+          1,
+          3
+        ],
+        "medianMAEReductionTarget": 0.2,
+        "additionalGuards": [
+          "gradient error",
+          "contour displacement",
+          "absolute tolerance near zero baseline"
+        ]
+      },
+      {
+        "id": "G-fit",
+        "gate": "required",
+        "medianPSNRGainTargetDb": 0.5,
+        "perCaseRegressionLimitDb": 0.1,
+        "fallbackReportedSeparately": true,
+        "countAuxiliaryRepresentationCost": true
+      },
+      {
+        "id": "G-gpu",
+        "gate": "required_if_gpu_enabled",
+        "maxDisplayChannelErrorTarget": 0.00784313725490196,
+        "p99DisplayChannelErrorTarget": 0.00392156862745098,
+        "linearErrorAlsoReported": true,
+        "notAUniversalCrossHardwareProof": true
+      },
+      {
+        "id": "G-interactive",
+        "gate": "required_for_realtime_acceleration_claim",
+        "width": 1024,
+        "height": 768,
+        "maxActualGaussians": 65536,
+        "maxDependencyExpandedDirtyFraction": 0.25,
+        "eventToNewFrameP95TargetMs": 100,
+        "fullVerificationLatencySeparate": true
+      },
+      {
+        "id": "G-video",
+        "gate": "required",
+        "durationSeconds": 5,
+        "fps": 24,
+        "frames": 120,
+        "representation": "image_plane_motion",
+        "temporalProtocol": "freeze scale and coordinate-compensated residual tolerances at M0"
+      },
+      {
+        "id": "G-formal",
+        "gate": "required",
+        "coreLeanClaims": [
+          "P1",
+          "P2",
+          "P3",
+          "P5"
+        ],
+        "instanceChecks": [
+          "P4",
+          "P6"
+        ],
+        "sorryAllowed": false,
+        "trustedComputingBaseExplicit": true,
+        "specOnlyCannotCertifyImplementation": true
+      },
+      {
+        "id": "G-rsi",
+        "gate": "required",
+        "minActualNonParameterOperatorPrograms": 1,
+        "medianTargetErrorReductionVersusFixed11": 0.1,
+        "minSearchTrajectories": 3,
+        "isolatedL2AblationRequired": true,
+        "executedOperatorTraceRequired": true,
+        "newTaskMustUsePromotedOperator": true,
+        "applicabilityFrozenBeforeSealed": true,
+        "fallbackCoverageAndRawCandidateGainsSeparate": true
+      },
+      {
+        "id": "G-photo",
+        "gate": "required_for_photographic_quality_improvement_claim; diagnostic_for_technical_release",
+        "minIndependentTargetScenes": 20,
+        "minValidHumanReviewersPerScene": 3,
+        "scenePairwiseWinRateTarget": 0.6,
+        "uncertaintyProtocol": "pre-register clustered scene/source interval; require support for improvement, otherwise inconclusive",
+        "modelCannotFillHumanReview": true
+      }
+    ],
+    "overallStatus": "not_run"
+  },
+  "experimentArms": [
+    "1.0 + existing parameter loop",
+    "1.1 fixed kernel and pipeline",
+    "1.1 + L0",
+    "1.1 + L0/L1",
+    "1.1 + L0/L1/L2"
+  ],
+  "suggestedRunBudget": {
+    "status": "proposal, not API spending authorization in this planning turn",
+    "maxStartedProviderRequests": 40,
+    "maxKnownAndReservedTokens": 300000,
+    "maxSceneCandidates": 6,
+    "maxPipelineVariants": 3,
+    "maxOperatorProgramCandidates": 3,
+    "maxBranchDepth": 3,
+    "maxFitAndRenderSeconds": 1800,
+    "maxProofSeconds": 600,
+    "maxRetriesPerNode": 1,
+    "maxSearchRounds": 10,
+    "sharedAcrossAllLevelsChildrenAndResumes": true,
+    "reserveRequiredEvaluationBeforeCandidateStart": true,
+    "unknownRemoteUsageIsNotZero": true
+  },
+  "promotion": {
+    "states": [
+      "proposed",
+      "built",
+      "proof_checked",
+      "evaluated",
+      "staged",
+      "frozen_for_audit",
+      "sealed_checked",
+      "promoted",
+      "rolled_back",
+      "rejected"
+    ],
+    "stagedIsNotPromoted": true,
+    "currentTaskRegistrySnapshotImmutable": true,
+    "atomicEvidenceAndPointerCommit": true,
+    "expectedRegistryRevisionRequired": true,
+    "fencingTokenRequired": true,
+    "lateWorkerCannotPromote": true,
+    "candidateMayChangeVerifierContractOrBudgetLedger": false
+  },
+  "evidenceBindings": [
+    "intent",
+    "contract",
+    "scene_before",
+    "scene_after",
+    "patch",
+    "asset_hashes",
+    "pipeline",
+    "operator_registry",
+    "renderer_build",
+    "verifier_build",
+    "reference",
+    "ROI_masks",
+    "benchmark_manifest",
+    "render_profile",
+    "frame_descriptor",
+    "pixels",
+    "submitted_critique_image",
+    "model_response",
+    "executed_operator_trace"
+  ],
+  "implementationRefinement": {
+    "allowedStatuses": [
+      "spec_only",
+      "implementation_tested",
+      "refinement_proved"
+    ],
+    "defaultPlannedDelivery": "model_proved_plus_implementation_tested",
+    "status": "not_run"
+  },
+  "runtimeDependencies": [
+    {
+      "id": "artifact_store",
+      "state": "to_implement_and_connect"
+    },
+    {
+      "id": "durable_job_executor",
+      "state": "to_implement_and_connect"
+    },
+    {
+      "id": "Lean_Z3_worker",
+      "state": "to_install_pin_and_verify"
+    },
+    {
+      "id": "target_WebGPU_device",
+      "state": "capability_and_performance_unverified"
+    }
+  ],
+  "apiContract": {
+    "status": "planned",
+    "routes": [
+      "POST /api/crf/v1.1/jobs",
+      "GET /api/crf/v1.1/jobs/{id}",
+      "POST /api/crf/v1.1/jobs/{id}/actions",
+      "GET /api/crf/v1.1/artifacts/{digest}",
+      "POST /api/crf/v1.1/proof-jobs"
+    ]
+  },
+  "sources": [
+    {
+      "id": "R1",
+      "url": "https://arxiv.org/abs/2403.08551"
+    },
+    {
+      "id": "R2",
+      "url": "https://niujinshuchong.github.io/mip-splatting/"
+    },
+    {
+      "id": "R3",
+      "url": "https://www.w3.org/TR/compositing-1/"
+    },
+    {
+      "id": "R4",
+      "url": "https://www.w3.org/TR/WGSL/"
+    },
+    {
+      "id": "R5",
+      "url": "https://lean-lang.org/doc/reference/latest/ValidatingProofs/"
+    },
+    {
+      "id": "R6",
+      "url": "https://microsoft.github.io/z3guide/docs/theories/IEEE%20Floats/"
+    },
+    {
+      "id": "R7",
+      "url": "https://z3prover.github.io/api/html/js/index.html"
+    },
+    {
+      "id": "R8",
+      "url": "https://arxiv.org/html/2506.13131v1"
+    },
+    {
+      "id": "R9",
+      "url": "https://arxiv.org/html/2505.22954v3"
+    },
+    {
+      "id": "R10",
+      "url": "https://arxiv.org/html/2507.19457v2"
+    }
+  ]
+}

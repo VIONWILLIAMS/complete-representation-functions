@@ -1,0 +1,1787 @@
+{
+  "schema": "crf.image_program.v0.7",
+  "id": "rainstreet",
+  "title": "雨后街角",
+  "width": 960,
+  "height": 720,
+  "seed": 127,
+  "exposure": 1.3,
+  "camera": {
+    "aperture": 0.035,
+    "focusDistance": 7.5,
+    "position": [
+      3.2,
+      2.55,
+      6
+    ],
+    "target": [
+      -0.35,
+      1.5,
+      -0.7
+    ],
+    "fov": 45
+  },
+  "environment": {
+    "top": [
+      65,
+      83,
+      116
+    ],
+    "bottom": [
+      28,
+      35,
+      50
+    ],
+    "strength": 1.5
+  },
+  "lights": [
+    {
+      "id": "shop",
+      "type": "area",
+      "position": [
+        -2.7,
+        1.65,
+        -5.18
+      ],
+      "target": [
+        -2.7,
+        1.65,
+        5
+      ],
+      "size": [
+        2.1,
+        2.4
+      ],
+      "color": [
+        255,
+        177,
+        93
+      ],
+      "intensity": 5
+    },
+    {
+      "id": "cool.window",
+      "type": "area",
+      "position": [
+        2.75,
+        1.8,
+        -5.17
+      ],
+      "target": [
+        2.75,
+        1.8,
+        4
+      ],
+      "size": [
+        2.2,
+        2.7
+      ],
+      "color": [
+        133,
+        191,
+        255
+      ],
+      "intensity": 4.8
+    },
+    {
+      "id": "signal.red",
+      "type": "area",
+      "position": [
+        0.16,
+        2.58,
+        0.335
+      ],
+      "target": [
+        0.16,
+        2.58,
+        3
+      ],
+      "size": [
+        0.3,
+        0.32
+      ],
+      "color": [
+        255,
+        22,
+        8
+      ],
+      "intensity": 9.5
+    },
+    {
+      "id": "street.soft",
+      "type": "area",
+      "position": [
+        -3.8,
+        6,
+        1.5
+      ],
+      "target": [
+        0,
+        0,
+        -3
+      ],
+      "size": [
+        1.7,
+        1.7
+      ],
+      "color": [
+        255,
+        217,
+        164
+      ],
+      "intensity": 16
+    }
+  ],
+  "objects": [
+    {
+      "id": "road",
+      "label": "湿润沥青",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 100,
+        "height": 0.15,
+        "depth": 100
+      },
+      "material": {
+        "color": [
+          28,
+          34,
+          42
+        ],
+        "roughness": 0.2,
+        "metalness": 0.3,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "asphalt",
+          "scale": 0.6,
+          "strength": 0.8
+        },
+        "bump": 0.014
+      },
+      "transform": {
+        "position": [
+          0,
+          -0.15,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sidewalk",
+      "label": "人行道",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 100,
+        "height": 0.15,
+        "depth": 3.1
+      },
+      "material": {
+        "color": [
+          75,
+          83,
+          88
+        ],
+        "roughness": 0.76,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 3,
+          "strength": 0.35
+        },
+        "bump": 0.018
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          -4.7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "building.left",
+      "label": "左侧街楼",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 60,
+        "height": 15,
+        "depth": 2.1
+      },
+      "material": {
+        "color": [
+          98,
+          104,
+          100
+        ],
+        "roughness": 0.86,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 2,
+          "strength": 0.3
+        },
+        "bump": 0.02
+      },
+      "transform": {
+        "position": [
+          -29.8,
+          0.15,
+          -6.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "building.right",
+      "label": "右侧街楼",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 60,
+        "height": 15,
+        "depth": 2.2
+      },
+      "material": {
+        "color": [
+          105,
+          115,
+          129
+        ],
+        "roughness": 0.86,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0.02
+      },
+      "transform": {
+        "position": [
+          30.3,
+          0.15,
+          -6.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "shop.frame",
+      "label": "橱窗外框",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 2.4,
+        "height": 2.8,
+        "depth": 0.18
+      },
+      "material": {
+        "color": [
+          45,
+          50,
+          55
+        ],
+        "roughness": 0.27,
+        "metalness": 0.78,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -2.7,
+          0.25,
+          -5.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "shop.glass",
+      "label": "暖色橱窗",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 2.18,
+        "height": 2.48,
+        "depth": 0.05
+      },
+      "material": {
+        "color": [
+          61,
+          38,
+          25
+        ],
+        "roughness": 0.12,
+        "metalness": 0.5,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          255,
+          177,
+          91
+        ],
+        "emissionStrength": 1.4
+      },
+      "transform": {
+        "position": [
+          -2.7,
+          0.4,
+          -5.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "shop.mullion",
+      "label": "橱窗竖框",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.06,
+        "height": 2.5,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          45,
+          50,
+          55
+        ],
+        "roughness": 0.27,
+        "metalness": 0.78,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -2.7,
+          0.4,
+          -5.15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "shop.blue.frame",
+      "label": "冷光店面边框",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 2.45,
+        "height": 3,
+        "depth": 0.18
+      },
+      "material": {
+        "color": [
+          45,
+          50,
+          55
+        ],
+        "roughness": 0.27,
+        "metalness": 0.78,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          2.75,
+          0.3,
+          -5.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "shop.blue.mullion",
+      "label": "冷光橱窗竖框",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.07,
+        "height": 2.9,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          45,
+          50,
+          55
+        ],
+        "roughness": 0.27,
+        "metalness": 0.78,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          2.75,
+          0.33,
+          -5.13
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "shop.transom",
+      "label": "店面上框",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 12,
+        "height": 0.12,
+        "depth": 0.18
+      },
+      "material": {
+        "color": [
+          45,
+          50,
+          55
+        ],
+        "roughness": 0.27,
+        "metalness": 0.78,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.1,
+          3.25,
+          -5.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wall.band",
+      "label": "建筑横向接缝",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 13,
+        "height": 0.055,
+        "depth": 0.1
+      },
+      "material": {
+        "color": [
+          26,
+          32,
+          37
+        ],
+        "roughness": 0.72,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.1,
+          3.65,
+          -5.31
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.0",
+      "label": "楼上窗户",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.85,
+        "height": 1.05,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          24,
+          33,
+          43
+        ],
+        "roughness": 0.16,
+        "metalness": 0.6,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          255,
+          197,
+          120
+        ],
+        "emissionStrength": 0.8
+      },
+      "transform": {
+        "position": [
+          -4.2,
+          3.85,
+          -5.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.1",
+      "label": "楼上窗户",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.85,
+        "height": 1.05,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          24,
+          33,
+          43
+        ],
+        "roughness": 0.16,
+        "metalness": 0.6,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          54,
+          91,
+          134
+        ],
+        "emissionStrength": 0.18
+      },
+      "transform": {
+        "position": [
+          -2.4000000000000004,
+          3.85,
+          -5.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.2",
+      "label": "楼上窗户",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.85,
+        "height": 1.05,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          24,
+          33,
+          43
+        ],
+        "roughness": 0.16,
+        "metalness": 0.6,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          54,
+          91,
+          134
+        ],
+        "emissionStrength": 0.18
+      },
+      "transform": {
+        "position": [
+          -4.2,
+          5.55,
+          -5.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.3",
+      "label": "楼上窗户",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.85,
+        "height": 1.05,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          24,
+          33,
+          43
+        ],
+        "roughness": 0.16,
+        "metalness": 0.6,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          255,
+          197,
+          120
+        ],
+        "emissionStrength": 0.8
+      },
+      "transform": {
+        "position": [
+          -2.4000000000000004,
+          5.55,
+          -5.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.4",
+      "label": "楼上窗户",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.85,
+        "height": 1.05,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          24,
+          33,
+          43
+        ],
+        "roughness": 0.16,
+        "metalness": 0.6,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          54,
+          91,
+          134
+        ],
+        "emissionStrength": 0.18
+      },
+      "transform": {
+        "position": [
+          1.25,
+          3.85,
+          -5.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.5",
+      "label": "楼上窗户",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.85,
+        "height": 1.05,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          24,
+          33,
+          43
+        ],
+        "roughness": 0.16,
+        "metalness": 0.6,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          54,
+          91,
+          134
+        ],
+        "emissionStrength": 0.18
+      },
+      "transform": {
+        "position": [
+          3.05,
+          3.85,
+          -5.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.6",
+      "label": "楼上窗户",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.85,
+        "height": 1.05,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          24,
+          33,
+          43
+        ],
+        "roughness": 0.16,
+        "metalness": 0.6,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          255,
+          197,
+          120
+        ],
+        "emissionStrength": 0.8
+      },
+      "transform": {
+        "position": [
+          1.25,
+          5.55,
+          -5.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "window.7",
+      "label": "楼上窗户",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.85,
+        "height": 1.05,
+        "depth": 0.06
+      },
+      "material": {
+        "color": [
+          24,
+          33,
+          43
+        ],
+        "roughness": 0.16,
+        "metalness": 0.6,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          54,
+          91,
+          134
+        ],
+        "emissionStrength": 0.18
+      },
+      "transform": {
+        "position": [
+          3.05,
+          5.55,
+          -5.34
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crosswalk.0",
+      "label": "斑马线",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.8,
+        "height": 0.007,
+        "depth": 0.36
+      },
+      "material": {
+        "color": [
+          185,
+          185,
+          169
+        ],
+        "roughness": 0.22,
+        "metalness": 0.12,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "asphalt",
+          "scale": 1,
+          "strength": 0.2
+        },
+        "bump": 0.01
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0.002,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crosswalk.1",
+      "label": "斑马线",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.8,
+        "height": 0.007,
+        "depth": 0.36
+      },
+      "material": {
+        "color": [
+          185,
+          185,
+          169
+        ],
+        "roughness": 0.22,
+        "metalness": 0.12,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "asphalt",
+          "scale": 1,
+          "strength": 0.2
+        },
+        "bump": 0.01
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0.002,
+          1.26
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crosswalk.2",
+      "label": "斑马线",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.8,
+        "height": 0.007,
+        "depth": 0.36
+      },
+      "material": {
+        "color": [
+          185,
+          185,
+          169
+        ],
+        "roughness": 0.22,
+        "metalness": 0.12,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "asphalt",
+          "scale": 1,
+          "strength": 0.2
+        },
+        "bump": 0.01
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0.002,
+          0.52
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crosswalk.3",
+      "label": "斑马线",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.8,
+        "height": 0.007,
+        "depth": 0.36
+      },
+      "material": {
+        "color": [
+          185,
+          185,
+          169
+        ],
+        "roughness": 0.22,
+        "metalness": 0.12,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "asphalt",
+          "scale": 1,
+          "strength": 0.2
+        },
+        "bump": 0.01
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0.002,
+          -0.21999999999999975
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crosswalk.4",
+      "label": "斑马线",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.8,
+        "height": 0.007,
+        "depth": 0.36
+      },
+      "material": {
+        "color": [
+          185,
+          185,
+          169
+        ],
+        "roughness": 0.22,
+        "metalness": 0.12,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "asphalt",
+          "scale": 1,
+          "strength": 0.2
+        },
+        "bump": 0.01
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0.002,
+          -0.96
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crosswalk.5",
+      "label": "斑马线",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.8,
+        "height": 0.007,
+        "depth": 0.36
+      },
+      "material": {
+        "color": [
+          185,
+          185,
+          169
+        ],
+        "roughness": 0.22,
+        "metalness": 0.12,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "asphalt",
+          "scale": 1,
+          "strength": 0.2
+        },
+        "bump": 0.01
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0.002,
+          -1.7000000000000002
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "signal.pole",
+      "label": "信号灯杆",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.074,
+        "height": 3.6
+      },
+      "material": {
+        "color": [
+          45,
+          50,
+          55
+        ],
+        "roughness": 0.27,
+        "metalness": 0.78,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -1.05,
+          0,
+          0.18
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "signal.arm",
+      "label": "信号灯横臂",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.05,
+        "height": 1.28
+      },
+      "material": {
+        "color": [
+          45,
+          50,
+          55
+        ],
+        "roughness": 0.27,
+        "metalness": 0.78,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          -1.05,
+          3.1,
+          0.18
+        ],
+        "rotation": [
+          0,
+          0,
+          -90
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "signal.hanger",
+      "label": "信号灯连接件",
+      "visible": true,
+      "surface": {
+        "kind": "cylinder",
+        "radius": 0.026,
+        "height": 0.19
+      },
+      "material": {
+        "color": [
+          45,
+          50,
+          55
+        ],
+        "roughness": 0.27,
+        "metalness": 0.78,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.16,
+          2.92,
+          0.18
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "signal.housing",
+      "label": "行人信号灯外壳",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.5,
+        "height": 1.02,
+        "depth": 0.23,
+        "bevel": 0.045
+      },
+      "material": {
+        "color": [
+          45,
+          50,
+          55
+        ],
+        "roughness": 0.27,
+        "metalness": 0.78,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.16,
+          1.91,
+          0.18
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "signal.lower",
+      "label": "下方玻璃灯面",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.36,
+        "height": 0.37,
+        "depth": 0.025
+      },
+      "material": {
+        "color": [
+          32,
+          79,
+          80
+        ],
+        "roughness": 0.13,
+        "metalness": 0.3,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.16,
+          1.99,
+          0.31
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "signal.head",
+      "label": "行人标志头部",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.035,
+        "height": 0.07
+      },
+      "material": {
+        "color": [
+          255,
+          236,
+          188
+        ],
+        "roughness": 0.4,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          255,
+          231,
+          174
+        ],
+        "emissionStrength": 2.4
+      },
+      "transform": {
+        "position": [
+          0.16,
+          2.65,
+          0.349
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          0.12
+        ]
+      }
+    },
+    {
+      "id": "signal.body",
+      "label": "行人标志躯干",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.065,
+        "height": 0.12,
+        "depth": 0.008
+      },
+      "material": {
+        "color": [
+          255,
+          236,
+          188
+        ],
+        "roughness": 0.4,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          255,
+          231,
+          174
+        ],
+        "emissionStrength": 2.4
+      },
+      "transform": {
+        "position": [
+          0.16,
+          2.53,
+          0.351
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "signal.leg.left",
+      "label": "行人标志左腿",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.019,
+        "height": 0.09,
+        "depth": 0.008
+      },
+      "material": {
+        "color": [
+          255,
+          236,
+          188
+        ],
+        "roughness": 0.4,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          255,
+          231,
+          174
+        ],
+        "emissionStrength": 2.4
+      },
+      "transform": {
+        "position": [
+          0.138,
+          2.45,
+          0.351
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "signal.leg.right",
+      "label": "行人标志右腿",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 0.019,
+        "height": 0.09,
+        "depth": 0.008
+      },
+      "material": {
+        "color": [
+          255,
+          236,
+          188
+        ],
+        "roughness": 0.4,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0,
+        "emission": [
+          255,
+          231,
+          174
+        ],
+        "emissionStrength": 2.4
+      },
+      "transform": {
+        "position": [
+          0.182,
+          2.45,
+          0.351
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "curb",
+      "label": "近侧路缘",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 100,
+        "height": 0.08,
+        "depth": 0.25
+      },
+      "material": {
+        "color": [
+          111,
+          115,
+          112
+        ],
+        "roughness": 0.55,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0.02
+      },
+      "transform": {
+        "position": [
+          0,
+          0.01,
+          -3.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}

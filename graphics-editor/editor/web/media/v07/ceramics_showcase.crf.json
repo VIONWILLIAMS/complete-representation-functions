@@ -1,0 +1,510 @@
+{
+  "schema": "crf.image_program.v0.7",
+  "id": "ceramics",
+  "title": "釉色与玻璃",
+  "width": 960,
+  "height": 720,
+  "seed": 127,
+  "exposure": 1,
+  "camera": {
+    "aperture": 0.035,
+    "focusDistance": 9.2,
+    "position": [
+      5.3,
+      3.25,
+      7.6
+    ],
+    "target": [
+      0,
+      1.15,
+      0
+    ],
+    "fov": 36
+  },
+  "environment": {
+    "top": [
+      208,
+      225,
+      233
+    ],
+    "bottom": [
+      190,
+      184,
+      170
+    ],
+    "strength": 0.3
+  },
+  "lights": [
+    {
+      "id": "key",
+      "type": "area",
+      "position": [
+        -4,
+        5.5,
+        3
+      ],
+      "target": [
+        0,
+        1,
+        0
+      ],
+      "size": [
+        3.4,
+        4
+      ],
+      "color": [
+        255,
+        245,
+        230
+      ],
+      "intensity": 7.2
+    },
+    {
+      "id": "rim",
+      "type": "area",
+      "position": [
+        4,
+        3.5,
+        -2.4
+      ],
+      "target": [
+        -0.4,
+        1.2,
+        0
+      ],
+      "size": [
+        1.6,
+        3
+      ],
+      "color": [
+        205,
+        228,
+        255
+      ],
+      "intensity": 5
+    }
+  ],
+  "objects": [
+    {
+      "id": "table",
+      "label": "石质承托面",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 100,
+        "height": 0.12,
+        "depth": 100
+      },
+      "material": {
+        "color": [
+          177,
+          172,
+          158
+        ],
+        "roughness": 0.58,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 1.2,
+          "strength": 0.38
+        },
+        "bump": 0.018
+      },
+      "transform": {
+        "position": [
+          0,
+          -0.12,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "backdrop",
+      "label": "灰绿背景",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 100,
+        "height": 30,
+        "depth": 0.18
+      },
+      "material": {
+        "color": [
+          103,
+          112,
+          102
+        ],
+        "roughness": 0.9,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 5,
+          "strength": 0.15
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          -3.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "plinth",
+      "label": "切面石座",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 3.05,
+        "height": 0.46,
+        "depth": 2.08,
+        "bevel": 0.015
+      },
+      "material": {
+        "color": [
+          214,
+          206,
+          184
+        ],
+        "roughness": 0.52,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "stone",
+          "scale": 2.2,
+          "strength": 0.35
+        },
+        "bump": 0.01
+      },
+      "transform": {
+        "position": [
+          -0.35,
+          0,
+          0.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "vase",
+      "label": "孔雀青釉花器",
+      "visible": true,
+      "surface": {
+        "kind": "lathe",
+        "radius": 0.67,
+        "height": 2.28,
+        "profile": [
+          0.59,
+          0.76,
+          0.95,
+          1,
+          0.94,
+          0.72,
+          0.48,
+          0.4,
+          0.43
+        ],
+        "thickness": 0.055
+      },
+      "material": {
+        "color": [
+          36,
+          93,
+          97
+        ],
+        "roughness": 0.17,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "ceramic",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0.004
+      },
+      "transform": {
+        "position": [
+          -1.04,
+          0.46,
+          -0.03
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "glass",
+      "label": "浅烟色玻璃球",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.64,
+        "height": 1.28
+      },
+      "material": {
+        "color": [
+          213,
+          233,
+          226
+        ],
+        "roughness": 0.03,
+        "metalness": 0,
+        "transmission": 1,
+        "ior": 1.47,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          0.67,
+          0.46,
+          0.22
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "brass",
+      "label": "黄铜球",
+      "visible": true,
+      "surface": {
+        "kind": "ellipsoid",
+        "radius": 0.38,
+        "height": 0.76
+      },
+      "material": {
+        "color": [
+          212,
+          156,
+          74
+        ],
+        "roughness": 0.16,
+        "metalness": 0.97,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "none",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0.002
+      },
+      "transform": {
+        "position": [
+          1.76,
+          0,
+          0.53
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "book.a",
+      "label": "素色书册",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 1.35,
+        "height": 0.14,
+        "depth": 0.9
+      },
+      "material": {
+        "color": [
+          157,
+          132,
+          100
+        ],
+        "roughness": 0.85,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "fabric",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0.005
+      },
+      "transform": {
+        "position": [
+          1.39,
+          0,
+          -1.04
+        ],
+        "rotation": [
+          0,
+          -12,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "book.b",
+      "label": "白色书册",
+      "visible": true,
+      "surface": {
+        "kind": "box",
+        "width": 1.28,
+        "height": 0.11,
+        "depth": 0.86
+      },
+      "material": {
+        "color": [
+          216,
+          211,
+          194
+        ],
+        "roughness": 0.86,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "fabric",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0.004
+      },
+      "transform": {
+        "position": [
+          1.37,
+          0.14,
+          -1.04
+        ],
+        "rotation": [
+          0,
+          -5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "small.bowl",
+      "label": "白釉小碗",
+      "visible": true,
+      "surface": {
+        "kind": "lathe",
+        "radius": 0.43,
+        "height": 0.41,
+        "profile": [
+          0.58,
+          0.77,
+          0.92,
+          1
+        ],
+        "thickness": 0.045
+      },
+      "material": {
+        "color": [
+          232,
+          224,
+          207
+        ],
+        "roughness": 0.2,
+        "metalness": 0,
+        "transmission": 0,
+        "ior": 1.5,
+        "texture": {
+          "kind": "ceramic",
+          "scale": 1,
+          "strength": 0.5
+        },
+        "bump": 0
+      },
+      "transform": {
+        "position": [
+          1.36,
+          0.25,
+          -1.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}

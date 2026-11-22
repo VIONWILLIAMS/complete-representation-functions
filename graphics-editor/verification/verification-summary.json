@@ -1,0 +1,73 @@
+{
+  "schema": "crf.handoff_verification.v1",
+  "verified_at": "2026-11-22T00:16:25.116058+00:00",
+  "source_commit": "0b2fa1c044d073bd8349ef941cc1b213cbe1cfe1",
+  "product_version": "1.0",
+  "historical_code_version": "0.10.0",
+  "environment": {
+    "platform": "Linux",
+    "node": "v24.22.3",
+    "python": "3.12.14",
+    "python_dependencies": {
+      "numpy": "2.3.5",
+      "Pillow": "13.0.0",
+      "scipy": "1.17.0"
+    },
+    "node_dependencies": {
+      "esbuild": "0.28.2",
+      "pngjs": "7.0.0"
+    }
+  },
+  "source_snapshot": {
+    "file_count": 1934,
+    "total_bytes": 520985677,
+    "all_source_bytes_preserved": true,
+    "manifest": "../provenance/source-manifest.json"
+  },
+  "tests": [
+    {
+      "command": "npm test",
+      "passed": 52,
+      "failed": 0,
+      "log": "core.log"
+    },
+    {
+      "command": "npm run test:v10",
+      "passed": 64,
+      "failed": 0,
+      "log": "v10.log"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_gaussian10.py' -v",
+      "passed": 4,
+      "failed": 0,
+      "log": "python.log"
+    }
+  ],
+  "test_totals": {
+    "passed": 120,
+    "failed": 0
+  },
+  "build": {
+    "executed": true,
+    "command": "npm run build",
+    "exit_code": 0,
+    "executed_in": "independent packaging copy",
+    "dependency_installation": "npm ci --offline --no-audit --no-fund",
+    "public_resources_verified": 885,
+    "all_public_bytes_identical": true,
+    "historical_archives_verified": 9,
+    "expanded_bytes": 262070309,
+    "report": "build-verification-this-session.json",
+    "original_report_restored": true
+  },
+  "http_smoke": "local-http-smoke.json",
+  "provider_calls": 0,
+  "not_verified": [
+    "Full browser interaction and visual acceptance",
+    "User Mac or Windows host",
+    "Live model-provider generation",
+    "CRF 1.1 implementation or acceptance"
+  ],
+  "archive_verification": "See the separate CRF_Handoff_Verification.json delivered with the final ZIP for independent extraction and launcher results."
+}

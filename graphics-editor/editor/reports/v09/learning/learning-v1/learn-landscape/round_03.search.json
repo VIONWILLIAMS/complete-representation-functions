@@ -1,0 +1,716 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 3,
+  "query": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "checkpoint": {
+    "sessionId": "crf09_b59f3a06-8a8c-46de-ba82-44d05621b14e",
+    "round": 3,
+    "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+    "subtopic": "边缘与背景：干净轮廓、遮挡、接触区域",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:50:13.370Z",
+    "runId": "crf07_809bd795-476d-45c7-9acd-3f6895b1b9cd",
+    "queries": [
+      "Wikimedia Commons rocky coast waves photograph file page",
+      "site:commons.wikimedia.org mountain lake reflection photograph file page",
+      "site:pexels.com rocky coast waves photo",
+      "site:pexels.com mountain lake reflection photo",
+      "Wikimedia Commons coniferous forest fog photograph file page",
+      "site:commons.wikimedia.org tree bark lichen macro photograph file page"
+    ],
+    "requestIds": [
+      "8f00163a-f470-4b16-9cbb-372535015caa"
+    ],
+    "sourceCount": 10,
+    "newSourceCount": 10,
+    "candidateCount": 9,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_f0cda2a3a84a4973be3c884e0d1696b0",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons rocky coast waves photograph file page",
+            "site:commons.wikimedia.org mountain lake reflection photograph file page",
+            "site:pexels.com rocky coast waves photo",
+            "site:pexels.com mountain lake reflection photo",
+            "Wikimedia Commons coniferous forest fog photograph file page",
+            "site:commons.wikimedia.org tree bark lichen macro photograph file page"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.m.wikimedia.org/wiki/Category:Water_waves_of_Canada",
+          "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg",
+          "https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/",
+          "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+          "https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG#1",
+          "https://commons.wikimedia.org/wiki/File:Chugachreflection.JPG#1",
+          "https://www.pexels.com/photo/scenic-seaside-view-with-waves-crashing-on-rocks-33893108/",
+          "https://www.pexels.com/photo/snowy-mountain-winter-reflection-in-swiss-alps-35116935/",
+          "https://commons.wikimedia.org/wiki/File:Xanthoria_parietina_02.JPG#1",
+          "https://www.pexels.com/photo/tree-by-seashore-18844843/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.m.wikimedia.org/wiki/Category:Water_waves_of_Canada",
+        "title": "Category:Water waves of Canada - Wikimedia Commons",
+        "snippet": "Beautiful Tide (4339284822).jpg 2 ... 703 KB - Nova Scotia (4339351736).jpg 2,048 × 1,536; 681 KB - Rocky Coast 2.jpg 6,000 × 3,376; 7.16 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg",
+        "title": "File:Shandur Lake & Reflection of Mountain.jpg - Wikimedia Commons",
+        "snippet": "This file contains additional information such as Exif metadata which may have been added by the digital camera, scanner, or software program used to create or digitize it. If the file has been modified from its original state, some details such as the timestamp may not fully reflect those of the original file.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/",
+        "title": "Photo by Yusuf Onuk on Pexels",
+        "snippet": "Sep 12, 2024 Downloads 64 Views ... Adobe Photoshop Lightroom Classic 12.4 (Windows) Marmaris, Muğla, Türkiye Description # Waves crashing against a rocky coastline in Marmaris, illustrating nature's raw power.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+        "title": "Photo by zhiming long on Pexels",
+        "snippet": "Dimensions 3500x2333 Colors Date Jul 27, 2025 Downloads 194 Views ... 6 Camera Canon EOS 5D Mark III Focal 70.0mm ... 2023 Software Adobe Photoshop 22.4 (Macintosh) Description # Peaceful mountain scene with lake reflection and pine forests under cloudy skies. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG#1",
+        "title": "File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG - Wikimedia Commons - File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG",
+        "snippet": "Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG ... DescriptionSweetbay Magnolia Magnolia virginiana Tree Lichen.JPG | English: Photograph of the tree lichen on the bark of the Sweetbay Magnoliaen (Magnolia virginiana en ). Photo taken at the Tyler",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Chugachreflection.JPG#1",
+        "title": "File:Chugachreflection.JPG - Wikimedia Commons - File:Chugachreflection.JPG",
+        "snippet": "File:Chugachreflection.JPG ... Original file (1,232 × 1,632 pixels, file size: 700 KB, MIME type: image/jpeg) ... DescriptionChugachreflection.JPG | English: peak of the Chugach Mountains reflected in a lake ---|--- Date | (UTC) Source |",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/scenic-seaside-view-with-waves-crashing-on-rocks-33893108/",
+        "title": "Photo by chabraoui el hachemi on Pexels",
+        "snippet": "Sep 13, 2025 Downloads 41 Views ... Camera realme C53 Focal 4.05mm ... Taken At Sep 12, 2025 Casablanca, Casablanca-Settat, Maroc Description # Beautiful coastal scene in Casablanca with waves crashing on rocky shoreline, perfect for travel and nature themes.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/snowy-mountain-winter-reflection-in-swiss-alps-35116935/",
+        "title": "Photo by urtimud.89 on Pexels",
+        "snippet": "2025 Downloads 254 Views ... FC3582 Focal 6.72mm Aperture ƒ/1.7 ISO 140 Shutter Speed 1/320 sec Taken At Nov 4, 2025 Software Adobe Lightroom 9.0 (Macintosh) Italy Description # Snow-covered mountains reflecting in a serene lake, showcasing the winter beauty of the Swiss Alps. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Xanthoria_parietina_02.JPG#1",
+        "title": "File:Xanthoria parietina 02.JPG - Wikimedia Commons - File:Xanthoria parietina 02.JPG",
+        "snippet": "DescriptionXanthoria parietina 02.JPG ... Makro-Aufnahme mit ca. 3 cm Bilddiagonale. English: Common orange lichen (Xanthoria parietina) on the bark of a fruit tree. Close-up image with approx. 3 cm diagonal.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/tree-by-seashore-18844843/",
+        "title": "Photo by christine roy on Pexels",
+        "snippet": "Oct 21, 2023 Software Adobe Photoshop Lightroom Classic 13.0 (Windows) Description # Stunning view of a rocky coast with waves crashing, framed by lush trees and a vibrant blue sky. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "```json\n{\n  \"summary\": \"本轮实际检索到 5 个可核验的具体照片详情页：Wikimedia Commons 2 个（山湖倒影、树皮地衣微距），Pexels 3 个（岩石海岸浪花、山湖倒影松林、岩石海岸树木框景）。上一轮遗留的‘岩石海岸’与‘山湖水面反射’新实例缺口已补上；同时新增一个树皮地衣微距实例。所有外观描述均来自页面文字，未逐像素观察。\",\n  \"features\": [\n    \"岩石海岸浪花（Pexels 28379528）：页面描述为‘海浪拍打岩石海岸’，适合提取岩石硬边缘与浪花碎沫软边缘的接触区域；岩石表面湿润，与飞溅水雾形成高光与半透明过渡，可用于建模遮挡与边缘混合。\",\n    \"山湖倒影与针叶林（Pexels 33178316）：页面描述为‘平静的山湖倒影、松林与多云天空’，倒影边缘在无风状态下应较清晰，适合提取山体轮廓与水面倒影的镜像对应关系，以及远处树冠在倒影中的低对比形态。\",\n    \"岩石海岸与树木框景（Pexels 18844843）：页面描述为‘岩石海岸、海浪，由茂密树木框住’，适合提取前景树木枝叶的软遮挡边缘与背景岩石海岸的硬边缘分层；树冠轮廓与岩石轮廓形成前后景遮挡关系。\",\n    \"树皮地衣微距（Commons Sweetbay Magnolia Lichen）：页面事实为 70mm 微距、f/11，拍摄木兰树皮上的地衣。地衣斑块与树皮纵向裂纹之间为不规则分形边界，适合提取多尺度边缘与斑块形状函数。\",\n    \"山湖倒影（Commons Chugachreflection）：页面描述为‘楚加奇山峰倒映在湖中’，原始 1,232×1,632，适合提取山体剪影与水面反射的垂直镜像关系；倒影区域可能因水面微波而边缘轻微柔化。\"\n  ],\n  \"selectionCriteria\": [\n    \"岩石海岸照片需同时包含岩石硬边缘与浪花/水雾软边缘，且岩体不占满画面，保留水-岩接触区域。\",\n    \"山湖倒影照片需包含清晰的山体轮廓线与水面倒影的对应关系，倒影区域不应被大面积前景遮挡。\",\n    \"树皮地衣微距需有可辨的树皮纵向纹理与地衣斑块边界，避免整幅均匀覆盖。\",\n    \"优先 Wikimedia Commons 有明确 CC BY / CC BY-SA 许可与作者信息的文件页；Pexels 页面许可证原文需后续核验。\",\n    \"同一来源的裁切或不同尺寸版本不计为新实例。\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 三个新页面（28379528、33178316、18844843）的许可证原文未在返回内容中显示，仅可确认是具体照片页，CC 条款待核验。\",\n    \"Wikimedia Commons 的 Shandur Lake & Reflection 页面未完整显示作者与许可证信息，待核验。\",\n    \"Chugachreflection 页面未显示完整作者姓名（仅 Beeblebrox 用户名）与拍摄日期，许可证为 CC BY-SA 3.0，但作者实名待核验。\",\n    \"所有外观特征（边缘软硬、遮挡关系、倒影清晰度）均为页面文字推断，未获取图像字节逐像素验证。\",\n    \"Wikimedia Commons 的‘Water waves of Canada’分类页中的 Rocky Coast 2.jpg 未提供独立文件详情页链接，本轮未计入候选。\"\n  ],\n  \"nextFocus\": \"下一轮核验 Pexels 新页面的许可证原文，并尝试从 Wikimedia Commons 的 Shandur Lake 与 Chugachreflection 文件页获取原始图像直链与完整作者/许可信息；如有余力，补搜针叶林树冠锯齿轮廓的独立特写实例。\"\n}\n```\n\n**本轮可点击来源页：**\n\n1. **Pexels — 岩石海岸浪花（Marmaris, Turkey）**  \n   https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/  \n   页面事实：4000×6000，2024-09-12，描述“Waves crashing against a rocky coastline”。许可证待核验。\n\n2. **Pexels — 山湖倒影与松林**  \n   https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/  \n   页面事实：3500×2333，Canon EOS 5D Mark III，70mm，ƒ/4.0，ISO 100，1/500s。描述“mountain scene with lake reflection and pine forests”。许可证待核验。\n\n3. **Pexels — 岩石海岸与树木框景**  \n   https://www.pexels.com/photo/tree-by-seashore-18844843/  \n   页面事实：5504×8256，Nikon D850，24mm，ƒ/10.0，ISO 100，1/400s。描述“rocky coast with waves crashing, framed by lush trees”。许可证待核验。\n\n4. **Wikimedia Commons — File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG**  \n   https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG  \n   页面事实：4,928×3,264，Nikon D7000 + Sigma 70mm macro，f/11，1/8s，ISO 100；作者 Derek Ramsey (Ram-Man)，许可 **CC BY-SA 4.0**。\n\n5. **Wikimedia Commons — File:Chugachreflection.JPG**  \n   https://commons.wikimedia.org/wiki/File:Chugachreflection.JPG  \n   页面事实：1,232×1,632，描述“peak of the Chugach Mountains reflected in a lake”，作者 Beeblebrox，许可 **CC BY-SA 3.0**；实名待核验。\n\n**未计入候选的页面：**  \n- Commons “Shandur Lake & Reflection of Mountain.jpg”：页面存在，但作者与许可证未在返回内容中显示，暂列待核验。  \n- Commons “Water waves of Canada”分类页：仅为分类列表，非独立照片详情页。  \n- 其他搜索片段（Coniferous forests 搜索页、Uploads by Szilard 列表页）均非具体照片详情页，不计入。\n\n**局限说明：** 以上特征均来自页面文字描述与 EXIF 元数据，未下载图像、未做边缘提取或像素级验证。照片字节将由后续独立步骤获取并提交视觉模型。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg",
+        "title": "File:Shandur Lake & Reflection of Mountain.jpg - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.m.wikimedia.org/wiki/Category:Water_waves_of_Canada",
+      "title": "Category:Water waves of Canada - Wikimedia Commons",
+      "snippet": "Beautiful Tide (4339284822).jpg 2 ... 703 KB - Nova Scotia (4339351736).jpg 2,048 × 1,536; 681 KB - Rocky Coast 2.jpg 6,000 × 3,376; 7.16 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg",
+      "title": "File:Shandur Lake & Reflection of Mountain.jpg - Wikimedia Commons",
+      "snippet": "This file contains additional information such as Exif metadata which may have been added by the digital camera, scanner, or software program used to create or digitize it. If the file has been modified from its original state, some details such as the timestamp may not fully reflect those of the original file.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/",
+      "title": "Photo by Yusuf Onuk on Pexels",
+      "snippet": "Sep 12, 2024 Downloads 64 Views ... Adobe Photoshop Lightroom Classic 12.4 (Windows) Marmaris, Muğla, Türkiye Description # Waves crashing against a rocky coastline in Marmaris, illustrating nature's raw power.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+      "title": "Photo by zhiming long on Pexels",
+      "snippet": "Dimensions 3500x2333 Colors Date Jul 27, 2025 Downloads 194 Views ... 6 Camera Canon EOS 5D Mark III Focal 70.0mm ... 2023 Software Adobe Photoshop 22.4 (Macintosh) Description # Peaceful mountain scene with lake reflection and pine forests under cloudy skies. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG#1",
+      "title": "File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG - Wikimedia Commons - File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG",
+      "snippet": "Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG ... DescriptionSweetbay Magnolia Magnolia virginiana Tree Lichen.JPG | English: Photograph of the tree lichen on the bark of the Sweetbay Magnoliaen (Magnolia virginiana en ). Photo taken at the Tyler",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Chugachreflection.JPG#1",
+      "title": "File:Chugachreflection.JPG - Wikimedia Commons - File:Chugachreflection.JPG",
+      "snippet": "File:Chugachreflection.JPG ... Original file (1,232 × 1,632 pixels, file size: 700 KB, MIME type: image/jpeg) ... DescriptionChugachreflection.JPG | English: peak of the Chugach Mountains reflected in a lake ---|--- Date | (UTC) Source |",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/scenic-seaside-view-with-waves-crashing-on-rocks-33893108/",
+      "title": "Photo by chabraoui el hachemi on Pexels",
+      "snippet": "Sep 13, 2025 Downloads 41 Views ... Camera realme C53 Focal 4.05mm ... Taken At Sep 12, 2025 Casablanca, Casablanca-Settat, Maroc Description # Beautiful coastal scene in Casablanca with waves crashing on rocky shoreline, perfect for travel and nature themes.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/snowy-mountain-winter-reflection-in-swiss-alps-35116935/",
+      "title": "Photo by urtimud.89 on Pexels",
+      "snippet": "2025 Downloads 254 Views ... FC3582 Focal 6.72mm Aperture ƒ/1.7 ISO 140 Shutter Speed 1/320 sec Taken At Nov 4, 2025 Software Adobe Lightroom 9.0 (Macintosh) Italy Description # Snow-covered mountains reflecting in a serene lake, showcasing the winter beauty of the Swiss Alps. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Xanthoria_parietina_02.JPG#1",
+      "title": "File:Xanthoria parietina 02.JPG - Wikimedia Commons - File:Xanthoria parietina 02.JPG",
+      "snippet": "DescriptionXanthoria parietina 02.JPG ... Makro-Aufnahme mit ca. 3 cm Bilddiagonale. English: Common orange lichen (Xanthoria parietina) on the bark of a fruit tree. Close-up image with approx. 3 cm diagonal.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/tree-by-seashore-18844843/",
+      "title": "Photo by christine roy on Pexels",
+      "snippet": "Oct 21, 2023 Software Adobe Photoshop Lightroom Classic 13.0 (Windows) Description # Stunning view of a rocky coast with waves crashing, framed by lush trees and a vibrant blue sky. ## More like this",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg",
+      "title": "File:Shandur Lake & Reflection of Mountain.jpg - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/",
+      "title": "Photo by Yusuf Onuk on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+      "title": "Photo by zhiming long on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG#1",
+      "title": "File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG - Wikimedia Commons - File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chugachreflection.JPG#1",
+      "title": "File:Chugachreflection.JPG - Wikimedia Commons - File:Chugachreflection.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/scenic-seaside-view-with-waves-crashing-on-rocks-33893108/",
+      "title": "Photo by chabraoui el hachemi on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/snowy-mountain-winter-reflection-in-swiss-alps-35116935/",
+      "title": "Photo by urtimud.89 on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xanthoria_parietina_02.JPG#1",
+      "title": "File:Xanthoria parietina 02.JPG - Wikimedia Commons - File:Xanthoria parietina 02.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/tree-by-seashore-18844843/",
+      "title": "Photo by christine roy on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 163748,
+        "sha256": "f90b7ed7e83f8cee194ffe2a8328c8e31972ebb824439341e1c916debc837cfd"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Shandur_Lake_%26_Reflection_of_Mountain.jpg/960px-Shandur_Lake_%26_Reflection_of_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg",
+      "title": "File:Shandur Lake & Reflection of Mountain.jpg - Wikimedia Commons",
+      "sha256": "f90b7ed7e83f8cee194ffe2a8328c8e31972ebb824439341e1c916debc837cfd",
+      "bytes": 163748,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 597,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Mudassir Ahmed",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Shandur_Lake_%26_Reflection_of_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 5887,
+        "height": 3658,
+        "bytes": 21237662
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 80628,
+        "sha256": "b72f8977851af8f76372d82038c96b0b376210cd13c5c99dfd81f52ea070e496"
+      },
+      "imageUrl": "https://images.pexels.com/photos/28379528/pexels-photo-28379528.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/",
+      "title": "Photo by Yusuf Onuk on Pexels",
+      "sha256": "b72f8977851af8f76372d82038c96b0b376210cd13c5c99dfd81f52ea070e496",
+      "bytes": 80628,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 29828,
+        "sha256": "71a0afd706a5bc309bc6b99a4917ae3947d2aaf0d05ea24a125b5bcdfac12f45"
+      },
+      "imageUrl": "https://images.pexels.com/photos/33178316/pexels-photo-33178316.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+      "title": "Photo by zhiming long on Pexels",
+      "sha256": "71a0afd706a5bc309bc6b99a4917ae3947d2aaf0d05ea24a125b5bcdfac12f45",
+      "bytes": 29828,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 294204,
+        "sha256": "acea23bd7a6247e378da8a2b767979cdbd8c742617b82830d5af8fc9f2602257"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG/960px-Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG#1",
+      "title": "File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG - Wikimedia Commons - File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG",
+      "sha256": "acea23bd7a6247e378da8a2b767979cdbd8c742617b82830d5af8fc9f2602257",
+      "bytes": 294204,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 636,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Photo by and (c)2016 Derek Ramsey ( Ram-Man )",
+        "credit": "Self-photographed",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4928,
+        "height": 3264,
+        "bytes": 6093238
+      }
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Shandur_Lake_%26_Reflection_of_Mountain.jpg/960px-Shandur_Lake_%26_Reflection_of_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg",
+      "title": "File:Shandur Lake & Reflection of Mountain.jpg - Wikimedia Commons",
+      "sha256": "f90b7ed7e83f8cee194ffe2a8328c8e31972ebb824439341e1c916debc837cfd",
+      "bytes": 163748,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 597,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Mudassir Ahmed",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Shandur_Lake_%26_Reflection_of_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 5887,
+        "height": 3658,
+        "bytes": 21237662
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/28379528/pexels-photo-28379528.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/",
+      "title": "Photo by Yusuf Onuk on Pexels",
+      "sha256": "b72f8977851af8f76372d82038c96b0b376210cd13c5c99dfd81f52ea070e496",
+      "bytes": 80628,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/33178316/pexels-photo-33178316.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+      "title": "Photo by zhiming long on Pexels",
+      "sha256": "71a0afd706a5bc309bc6b99a4917ae3947d2aaf0d05ea24a125b5bcdfac12f45",
+      "bytes": 29828,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG/960px-Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG#1",
+      "title": "File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG - Wikimedia Commons - File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG",
+      "sha256": "acea23bd7a6247e378da8a2b767979cdbd8c742617b82830d5af8fc9f2602257",
+      "bytes": 294204,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 636,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Photo by and (c)2016 Derek Ramsey ( Ram-Man )",
+        "credit": "Self-photographed",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4928,
+        "height": 3264,
+        "bytes": 6093238
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg",
+        "title": "File:Shandur Lake & Reflection of Mountain.jpg - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Shandur_Lake_%26_Reflection_of_Mountain.jpg/960px-Shandur_Lake_%26_Reflection_of_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Mudassir Ahmed",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AShandur_Lake_%26_Reflection_of_Mountain.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Shandur_Lake_%26_Reflection_of_Mountain.jpg/960px-Shandur_Lake_%26_Reflection_of_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 163748,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 597,
+        "sha256": "f90b7ed7e83f8cee194ffe2a8328c8e31972ebb824439341e1c916debc837cfd"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/",
+        "title": "Photo by Yusuf Onuk on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/28379528/pexels-photo-28379528.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/28379528/pexels-photo-28379528.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 80628,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "b72f8977851af8f76372d82038c96b0b376210cd13c5c99dfd81f52ea070e496"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+        "title": "Photo by zhiming long on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/33178316/pexels-photo-33178316.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/33178316/pexels-photo-33178316.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 29828,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "71a0afd706a5bc309bc6b99a4917ae3947d2aaf0d05ea24a125b5bcdfac12f45"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG#1",
+        "title": "File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG - Wikimedia Commons - File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG/960px-Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Photo by and (c)2016 Derek Ramsey ( Ram-Man )",
+          "credit": "Self-photographed",
+          "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ASweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG/960px-Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 294204,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 636,
+        "sha256": "acea23bd7a6247e378da8a2b767979cdbd8c742617b82830d5af8fc9f2602257"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chugachreflection.JPG#1",
+        "title": "File:Chugachreflection.JPG - Wikimedia Commons - File:Chugachreflection.JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Chugachreflection.JPG/960px-Chugachreflection.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Beeblebrox ( talk ). Original uploader was Beeblebrox at en.wikipedia",
+          "credit": "Transferred from en.wikipedia to Commons by Beeblebrox . ( Original text: I ( Beeblebrox ( talk )) created this work entirely by myself. )",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AChugachreflection.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Chugachreflection.JPG/960px-Chugachreflection.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 290939,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 1272,
+        "sha256": "69471de2b28e16bde807de00e99492bad41a928de3ff23696ab09fec74a823cf"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/scenic-seaside-view-with-waves-crashing-on-rocks-33893108/",
+        "title": "Photo by chabraoui el hachemi on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/33893108/pexels-photo-33893108.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/33893108/pexels-photo-33893108.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 114510,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1020,
+        "sha256": "e1ee6265c59803627349183667e35f2fc11488b8e3ea116593444b03243750a6"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "```json\n{\n  \"summary\": \"本轮实际检索到 5 个可核验的具体照片详情页：Wikimedia Commons 2 个（山湖倒影、树皮地衣微距），Pexels 3 个（岩石海岸浪花、山湖倒影松林、岩石海岸树木框景）。上一轮遗留的‘岩石海岸’与‘山湖水面反射’新实例缺口已补上；同时新增一个树皮地衣微距实例。所有外观描述均来自页面文字，未逐像素观察。\",\n  \"features\": [\n    \"岩石海岸浪花（Pexels 28379528）：页面描述为‘海浪拍打岩石海岸’，适合提取岩石硬边缘与浪花碎沫软边缘的接触区域；岩石表面湿润，与飞溅水雾形成高光与半透明过渡，可用于建模遮挡与边缘混合。\",\n    \"山湖倒影与针叶林（Pexels 33178316）：页面描述为‘平静的山湖倒影、松林与多云天空’，倒影边缘在无风状态下应较清晰，适合提取山体轮廓与水面倒影的镜像对应关系，以及远处树冠在倒影中的低对比形态。\",\n    \"岩石海岸与树木框景（Pexels 18844843）：页面描述为‘岩石海岸、海浪，由茂密树木框住’，适合提取前景树木枝叶的软遮挡边缘与背景岩石海岸的硬边缘分层；树冠轮廓与岩石轮廓形成前后景遮挡关系。\",\n    \"树皮地衣微距（Commons Sweetbay Magnolia Lichen）：页面事实为 70mm 微距、f/11，拍摄木兰树皮上的地衣。地衣斑块与树皮纵向裂纹之间为不规则分形边界，适合提取多尺度边缘与斑块形状函数。\",\n    \"山湖倒影（Commons Chugachreflection）：页面描述为‘楚加奇山峰倒映在湖中’，原始 1,232×1,632，适合提取山体剪影与水面反射的垂直镜像关系；倒影区域可能因水面微波而边缘轻微柔化。\"\n  ],\n  \"selectionCriteria\": [\n    \"岩石海岸照片需同时包含岩石硬边缘与浪花/水雾软边缘，且岩体不占满画面，保留水-岩接触区域。\",\n    \"山湖倒影照片需包含清晰的山体轮廓线与水面倒影的对应关系，倒影区域不应被大面积前景遮挡。\",\n    \"树皮地衣微距需有可辨的树皮纵向纹理与地衣斑块边界，避免整幅均匀覆盖。\",\n    \"优先 Wikimedia Commons 有明确 CC BY / CC BY-SA 许可与作者信息的文件页；Pexels 页面许可证原文需后续核验。\",\n    \"同一来源的裁切或不同尺寸版本不计为新实例。\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 三个新页面（28379528、33178316、18844843）的许可证原文未在返回内容中显示，仅可确认是具体照片页，CC 条款待核验。\",\n    \"Wikimedia Commons 的 Shandur Lake & Reflection 页面未完整显示作者与许可证信息，待核验。\",\n    \"Chugachreflection 页面未显示完整作者姓名（仅 Beeblebrox 用户名）与拍摄日期，许可证为 CC BY-SA 3.0，但作者实名待核验。\",\n    \"所有外观特征（边缘软硬、遮挡关系、倒影清晰度）均为页面文字推断，未获取图像字节逐像素验证。\",\n    \"Wikimedia Commons 的‘Water waves of Canada’分类页中的 Rocky Coast 2.jpg 未提供独立文件详情页链接，本轮未计入候选。\"\n  ],\n  \"nextFocus\": \"下一轮核验 Pexels 新页面的许可证原文，并尝试从 Wikimedia Commons 的 Shandur Lake 与 Chugachreflection 文件页获取原始图像直链与完整作者/许可信息；如有余力，补搜针叶林树冠锯齿轮廓的独立特写实例。\"\n}\n```\n\n**本轮可点击来源页：**\n\n1. **Pexels — 岩石海岸浪花（Marmaris, Turkey）**  \n   https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/  \n   页面事实：4000×6000，2024-09-12，描述“Waves crashing against a rocky coastline”。许可证待核验。\n\n2. **Pexels — 山湖倒影与松林**  \n   https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/  \n   页面事实：3500×2333，Canon EOS 5D Mark III，70mm，ƒ/4.0，ISO 100，1/500s。描述“mountain scene with lake reflection and pine forests”。许可证待核验。\n\n3. **Pexels — 岩石海岸与树木框景**  \n   https://www.pexels.com/photo/tree-by-seashore-18844843/  \n   页面事实：5504×8256，Nikon D850，24mm，ƒ/10.0，ISO 100，1/400s。描述“rocky coast with waves crashing, framed by lush trees”。许可证待核验。\n\n4. **Wikimedia Commons — File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG**  \n   https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG  \n   页面事实：4,928×3,264，Nikon D7000 + Sigma 70mm macro，f/11，1/8s，ISO 100；作者 Derek Ramsey (Ram-Man)，许可 **CC BY-SA 4.0**。\n\n5. **Wikimedia Commons — File:Chugachreflection.JPG**  \n   https://commons.wikimedia.org/wiki/File:Chugachreflection.JPG  \n   页面事实：1,232×1,632，描述“peak of the Chugach Mountains reflected in a lake”，作者 Beeblebrox，许可 **CC BY-SA 3.0**；实名待核验。\n\n**未计入候选的页面：**  \n- Commons “Shandur Lake & Reflection of Mountain.jpg”：页面存在，但作者与许可证未在返回内容中显示，暂列待核验。  \n- Commons “Water waves of Canada”分类页：仅为分类列表，非独立照片详情页。  \n- 其他搜索片段（Coniferous forests 搜索页、Uploads by Szilard 列表页）均非具体照片详情页，不计入。\n\n**局限说明：** 以上特征均来自页面文字描述与 EXIF 元数据，未下载图像、未做边缘提取或像素级验证。照片字节将由后续独立步骤获取并提交视觉模型。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 11064,
+    "completion_tokens": 1535,
+    "total_tokens": 12599,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "8f00163a-f470-4b16-9cbb-372535015caa",
+        "model": "deepseek-flash",
+        "elapsedMs": 13945,
+        "prompt_tokens": 11064,
+        "completion_tokens": 1535,
+        "total_tokens": 12599,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 29965,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 163748,
+        "sha256": "f90b7ed7e83f8cee194ffe2a8328c8e31972ebb824439341e1c916debc837cfd"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Shandur_Lake_%26_Reflection_of_Mountain.jpg/960px-Shandur_Lake_%26_Reflection_of_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shandur_Lake_%26_Reflection_of_Mountain.jpg",
+      "title": "File:Shandur Lake & Reflection of Mountain.jpg - Wikimedia Commons",
+      "sha256": "f90b7ed7e83f8cee194ffe2a8328c8e31972ebb824439341e1c916debc837cfd",
+      "bytes": 163748,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 597,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Mudassir Ahmed",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Shandur_Lake_%26_Reflection_of_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 5887,
+        "height": 3658,
+        "bytes": 21237662
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/f90b7ed7e83f8cee194ffe2a8328c8e31972ebb824439341e1c916debc837cfd.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 80628,
+        "sha256": "b72f8977851af8f76372d82038c96b0b376210cd13c5c99dfd81f52ea070e496"
+      },
+      "imageUrl": "https://images.pexels.com/photos/28379528/pexels-photo-28379528.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/dramatic-rocky-coastline-of-marmaris-turkey-28379528/",
+      "title": "Photo by Yusuf Onuk on Pexels",
+      "sha256": "b72f8977851af8f76372d82038c96b0b376210cd13c5c99dfd81f52ea070e496",
+      "bytes": 80628,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/b72f8977851af8f76372d82038c96b0b376210cd13c5c99dfd81f52ea070e496.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 29828,
+        "sha256": "71a0afd706a5bc309bc6b99a4917ae3947d2aaf0d05ea24a125b5bcdfac12f45"
+      },
+      "imageUrl": "https://images.pexels.com/photos/33178316/pexels-photo-33178316.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/scenic-mountain-landscape-with-reflective-lake-33178316/",
+      "title": "Photo by zhiming long on Pexels",
+      "sha256": "71a0afd706a5bc309bc6b99a4917ae3947d2aaf0d05ea24a125b5bcdfac12f45",
+      "bytes": 29828,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/71a0afd706a5bc309bc6b99a4917ae3947d2aaf0d05ea24a125b5bcdfac12f45.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 294204,
+        "sha256": "acea23bd7a6247e378da8a2b767979cdbd8c742617b82830d5af8fc9f2602257"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG/960px-Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG#1",
+      "title": "File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG - Wikimedia Commons - File:Sweetbay Magnolia Magnolia virginiana Tree Lichen.JPG",
+      "sha256": "acea23bd7a6247e378da8a2b767979cdbd8c742617b82830d5af8fc9f2602257",
+      "bytes": 294204,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 636,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Photo by and (c)2016 Derek Ramsey ( Ram-Man )",
+        "credit": "Self-photographed",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sweetbay_Magnolia_Magnolia_virginiana_Tree_Lichen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4928,
+        "height": 3264,
+        "bytes": 6093238
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/acea23bd7a6247e378da8a2b767979cdbd8c742617b82830d5af8fc9f2602257.jpeg"
+    }
+  ]
+}

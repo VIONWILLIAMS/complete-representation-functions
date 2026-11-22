@@ -1,0 +1,647 @@
+{
+  "schema": "crf.visual_semantics.v0.8",
+  "round": 6,
+  "items": [
+    {
+      "id": "learn.r06.6cabbc1ac49e",
+      "label": "悬挂式黑色交通信号灯组",
+      "category": "traffic-signal",
+      "role": "object",
+      "bbox": [
+        0.35,
+        0.2,
+        0.65,
+        0.79
+      ],
+      "palette": [
+        [
+          232,
+          232,
+          230
+        ],
+        [
+          28,
+          31,
+          31
+        ],
+        [
+          120,
+          205,
+          170
+        ],
+        [
+          90,
+          100,
+          105
+        ],
+        [
+          195,
+          198,
+          195
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "黑色多灯位交通信号灯组由钢索悬吊，正对镜头，多个圆形遮光罩呈阵列排列；下方一个灯位亮青绿色，灯体边缘有金属支架和固定件。背景为浅灰白色历史建筑立面，带竖向长窗与古典线脚，整体处于柔和阴天光下，灯体与亮灯的轮廓清晰。",
+      "tags": [
+        "交通灯",
+        "悬挂",
+        "绿灯",
+        "钢索",
+        "历史建筑",
+        "城市街景",
+        "遮光罩"
+      ],
+      "limitations": [
+        "无法确认灯组背面、接线与内部结构",
+        "亮灯颜色受白平衡影响",
+        "悬索连接点被局部遮挡"
+      ]
+    },
+    {
+      "id": "learn.r06.a23c10c20c8a",
+      "label": "红色行人过街信号灯与倒计时",
+      "category": "pedestrian-signal",
+      "role": "object",
+      "bbox": [
+        0.54,
+        0.01,
+        0.91,
+        0.99
+      ],
+      "palette": [
+        [
+          230,
+          45,
+          30
+        ],
+        [
+          18,
+          18,
+          20
+        ],
+        [
+          212,
+          171,
+          52
+        ],
+        [
+          120,
+          105,
+          82
+        ],
+        [
+          210,
+          210,
+          205
+        ]
+      ],
+      "lightDirection": "front",
+      "description": "近景黑色行人信号灯正面：上方红色站立人形图标发光，下方红色倒计时数字“9”；灯体右侧有突出的黑色长遮光罩，顶部可见编号“021”。背景虚化，石砌建筑墙面与金色大字招牌可见，红灯与数字形成强烈暖红色发光点。",
+      "tags": [
+        "行人信号灯",
+        "红灯",
+        "倒计时",
+        "数字9",
+        "遮光罩",
+        "建筑招牌",
+        "近景"
+      ],
+      "limitations": [
+        "背景文字被裁切且失焦，无法完整辨认",
+        "倒计时具体机制与侧面结构不可见",
+        "强发光导致局部过曝"
+      ]
+    },
+    {
+      "id": "learn.r06.8fc2a8a52e21",
+      "label": "黄壳悬挂交通信号灯",
+      "category": "traffic-signal",
+      "role": "object",
+      "bbox": [
+        0.42,
+        0.31,
+        0.57,
+        0.73
+      ],
+      "palette": [
+        [
+          222,
+          180,
+          38
+        ],
+        [
+          24,
+          24,
+          22
+        ],
+        [
+          54,
+          74,
+          82
+        ],
+        [
+          150,
+          90,
+          60
+        ],
+        [
+          200,
+          200,
+          185
+        ]
+      ],
+      "lightDirection": "front",
+      "description": "黄色外壳的三灯位交通信号灯通过绿色横臂悬挂，正对镜头，最下位亮绿色圆灯；上方灯位未亮，显示暗色圆形遮光罩。背景为暗色砖红高层建筑与阴沉天空，左侧有树影，灯体在暗背景中形成高对比黄色轮廓。",
+      "tags": [
+        "交通灯",
+        "黄色外壳",
+        "绿灯",
+        "悬挂横臂",
+        "砖楼",
+        "阴天",
+        "城市"
+      ],
+      "limitations": [
+        "灯面亮度与真实色温受曝光影响",
+        "悬挂横臂连接细节被压缩",
+        "背景建筑窗格细节较暗"
+      ]
+    },
+    {
+      "id": "learn.r06.bae383fa0e3c",
+      "label": "行人过街操作指示牌",
+      "category": "pedestrian-signage",
+      "role": "object",
+      "bbox": [
+        0.34,
+        0,
+        0.66,
+        0.92
+      ],
+      "palette": [
+        [
+          235,
+          235,
+          230
+        ],
+        [
+          25,
+          25,
+          25
+        ],
+        [
+          200,
+          30,
+          25
+        ],
+        [
+          212,
+          175,
+          40
+        ],
+        [
+          120,
+          160,
+          90
+        ]
+      ],
+      "lightDirection": "front",
+      "description": "白色矩形金属指示牌固定在深色立柱上，牌面印有行人图标、红色手掌图标、红灯倒计时示意和“DON'T CROSS”等英文说明；下部有一条指向右侧的黑色箭头，标明“TO CROSS PUSH BUTTON”。牌下方可见黄色圆形按钮装置。背景为虚化绿树。",
+      "tags": [
+        "行人指示牌",
+        "过街按钮",
+        "红色手掌",
+        "英文说明",
+        "倒计时",
+        "金属立柱",
+        "绿树背景"
+      ],
+      "limitations": [
+        "牌面小字部分受反光与分辨率限制",
+        "按钮装置下部被裁切",
+        "无法判断按钮电气接口"
+      ]
+    },
+    {
+      "id": "learn.r06.9e74278ca935",
+      "label": "秋日街角信号柱与标牌",
+      "category": "street-corner",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          92,
+          120,
+          120
+        ],
+        [
+          70,
+          90,
+          55
+        ],
+        [
+          190,
+          175,
+          70
+        ],
+        [
+          50,
+          50,
+          48
+        ],
+        [
+          150,
+          155,
+          150
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "完整街角实拍：前景灰色信号灯立柱上固定两个浅灰绿色矩形标牌，柱顶附近有一个亮绿色小灯；右侧秋树黄叶部分遮挡画面，背景为虚化的街道、围栏、建筑物与车辆灯光。景深很浅，主体柱与标牌较清晰，环境昏暗偏冷。",
+      "tags": [
+        "街角",
+        "信号柱",
+        "绿色信号灯",
+        "标牌",
+        "秋叶",
+        "街景",
+        "浅景深"
+      ],
+      "limitations": [
+        "标牌文字模糊且受涂写干扰",
+        "多个对象重叠，不能作为单对象精确分割",
+        "无法从该单帧推断新视角或完整街角空间"
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "ok": true,
+      "engine": "gaussian08-semantic-learning",
+      "model": "deepseek-flash",
+      "round": 6,
+      "topic": "真实交通灯与街角实拍",
+      "items": [
+        {
+          "id": "learn.r06.6cabbc1ac49e",
+          "label": "悬挂式黑色交通信号灯组",
+          "category": "traffic-signal",
+          "role": "object",
+          "bbox": [
+            0.35,
+            0.2,
+            0.65,
+            0.79
+          ],
+          "palette": [
+            [
+              232,
+              232,
+              230
+            ],
+            [
+              28,
+              31,
+              31
+            ],
+            [
+              120,
+              205,
+              170
+            ],
+            [
+              90,
+              100,
+              105
+            ],
+            [
+              195,
+              198,
+              195
+            ]
+          ],
+          "lightDirection": "diffuse",
+          "description": "黑色多灯位交通信号灯组由钢索悬吊，正对镜头，多个圆形遮光罩呈阵列排列；下方一个灯位亮青绿色，灯体边缘有金属支架和固定件。背景为浅灰白色历史建筑立面，带竖向长窗与古典线脚，整体处于柔和阴天光下，灯体与亮灯的轮廓清晰。",
+          "tags": [
+            "交通灯",
+            "悬挂",
+            "绿灯",
+            "钢索",
+            "历史建筑",
+            "城市街景",
+            "遮光罩"
+          ],
+          "limitations": [
+            "无法确认灯组背面、接线与内部结构",
+            "亮灯颜色受白平衡影响",
+            "悬索连接点被局部遮挡"
+          ]
+        },
+        {
+          "id": "learn.r06.a23c10c20c8a",
+          "label": "红色行人过街信号灯与倒计时",
+          "category": "pedestrian-signal",
+          "role": "object",
+          "bbox": [
+            0.54,
+            0.01,
+            0.91,
+            0.99
+          ],
+          "palette": [
+            [
+              230,
+              45,
+              30
+            ],
+            [
+              18,
+              18,
+              20
+            ],
+            [
+              212,
+              171,
+              52
+            ],
+            [
+              120,
+              105,
+              82
+            ],
+            [
+              210,
+              210,
+              205
+            ]
+          ],
+          "lightDirection": "front",
+          "description": "近景黑色行人信号灯正面：上方红色站立人形图标发光，下方红色倒计时数字“9”；灯体右侧有突出的黑色长遮光罩，顶部可见编号“021”。背景虚化，石砌建筑墙面与金色大字招牌可见，红灯与数字形成强烈暖红色发光点。",
+          "tags": [
+            "行人信号灯",
+            "红灯",
+            "倒计时",
+            "数字9",
+            "遮光罩",
+            "建筑招牌",
+            "近景"
+          ],
+          "limitations": [
+            "背景文字被裁切且失焦，无法完整辨认",
+            "倒计时具体机制与侧面结构不可见",
+            "强发光导致局部过曝"
+          ]
+        },
+        {
+          "id": "learn.r06.8fc2a8a52e21",
+          "label": "黄壳悬挂交通信号灯",
+          "category": "traffic-signal",
+          "role": "object",
+          "bbox": [
+            0.42,
+            0.31,
+            0.57,
+            0.73
+          ],
+          "palette": [
+            [
+              222,
+              180,
+              38
+            ],
+            [
+              24,
+              24,
+              22
+            ],
+            [
+              54,
+              74,
+              82
+            ],
+            [
+              150,
+              90,
+              60
+            ],
+            [
+              200,
+              200,
+              185
+            ]
+          ],
+          "lightDirection": "front",
+          "description": "黄色外壳的三灯位交通信号灯通过绿色横臂悬挂，正对镜头，最下位亮绿色圆灯；上方灯位未亮，显示暗色圆形遮光罩。背景为暗色砖红高层建筑与阴沉天空，左侧有树影，灯体在暗背景中形成高对比黄色轮廓。",
+          "tags": [
+            "交通灯",
+            "黄色外壳",
+            "绿灯",
+            "悬挂横臂",
+            "砖楼",
+            "阴天",
+            "城市"
+          ],
+          "limitations": [
+            "灯面亮度与真实色温受曝光影响",
+            "悬挂横臂连接细节被压缩",
+            "背景建筑窗格细节较暗"
+          ]
+        },
+        {
+          "id": "learn.r06.bae383fa0e3c",
+          "label": "行人过街操作指示牌",
+          "category": "pedestrian-signage",
+          "role": "object",
+          "bbox": [
+            0.34,
+            0,
+            0.66,
+            0.92
+          ],
+          "palette": [
+            [
+              235,
+              235,
+              230
+            ],
+            [
+              25,
+              25,
+              25
+            ],
+            [
+              200,
+              30,
+              25
+            ],
+            [
+              212,
+              175,
+              40
+            ],
+            [
+              120,
+              160,
+              90
+            ]
+          ],
+          "lightDirection": "front",
+          "description": "白色矩形金属指示牌固定在深色立柱上，牌面印有行人图标、红色手掌图标、红灯倒计时示意和“DON'T CROSS”等英文说明；下部有一条指向右侧的黑色箭头，标明“TO CROSS PUSH BUTTON”。牌下方可见黄色圆形按钮装置。背景为虚化绿树。",
+          "tags": [
+            "行人指示牌",
+            "过街按钮",
+            "红色手掌",
+            "英文说明",
+            "倒计时",
+            "金属立柱",
+            "绿树背景"
+          ],
+          "limitations": [
+            "牌面小字部分受反光与分辨率限制",
+            "按钮装置下部被裁切",
+            "无法判断按钮电气接口"
+          ]
+        },
+        {
+          "id": "learn.r06.9e74278ca935",
+          "label": "秋日街角信号柱与标牌",
+          "category": "street-corner",
+          "role": "reference-frame",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "palette": [
+            [
+              92,
+              120,
+              120
+            ],
+            [
+              70,
+              90,
+              55
+            ],
+            [
+              190,
+              175,
+              70
+            ],
+            [
+              50,
+              50,
+              48
+            ],
+            [
+              150,
+              155,
+              150
+            ]
+          ],
+          "lightDirection": "diffuse",
+          "description": "完整街角实拍：前景灰色信号灯立柱上固定两个浅灰绿色矩形标牌，柱顶附近有一个亮绿色小灯；右侧秋树黄叶部分遮挡画面，背景为虚化的街道、围栏、建筑物与车辆灯光。景深很浅，主体柱与标牌较清晰，环境昏暗偏冷。",
+          "tags": [
+            "街角",
+            "信号柱",
+            "绿色信号灯",
+            "标牌",
+            "秋叶",
+            "街景",
+            "浅景深"
+          ],
+          "limitations": [
+            "标牌文字模糊且受涂写干扰",
+            "多个对象重叠，不能作为单对象精确分割",
+            "无法从该单帧推断新视角或完整街角空间"
+          ]
+        }
+      ],
+      "sharedFeatures": [
+        "均为真实户外交通信号或行人过街设施",
+        "背景多被浅景深或构图虚化",
+        "包含发光信号灯或红色图标元素",
+        "城市街道环境与建筑立面背景",
+        "自然光或阴天漫射光为主"
+      ],
+      "missingEvidence": [
+        "信号灯内部电路、灯珠规格与安装尺寸",
+        "真实色温与颜色校准数据",
+        "信号灯背面、侧面及支撑结构的完整视角",
+        "过街按钮的电气接口和操作反馈",
+        "多角度连续画面与空间测量信息"
+      ],
+      "images": [
+        {
+          "id": "learn.r06.6cabbc1ac49e",
+          "sourceUrl": "https://www.pexels.com/photo/urban-traffic-light-against-historic-building-38078925/",
+          "sha256": "6cabbc1ac49e521d201aeb568a43234e7901da96c31afa49d92c8375fc49d4d2",
+          "submittedToVision": true
+        },
+        {
+          "id": "learn.r06.a23c10c20c8a",
+          "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+          "sha256": "a23c10c20c8a5feded65d4e6d8404831123f200d854856c901a8965d8ea60946",
+          "submittedToVision": true
+        },
+        {
+          "id": "learn.r06.8fc2a8a52e21",
+          "sourceUrl": "https://www.pexels.com/photo/new-york-city-traffic-light-against-urban-skyline-35912156/",
+          "sha256": "8fc2a8a52e2193edda81a376b7e5a4a7bc039805da9426d7983f2b7f5b62e85f",
+          "submittedToVision": true
+        },
+        {
+          "id": "learn.r06.bae383fa0e3c",
+          "sourceUrl": "https://www.pexels.com/fr-fr/photo/texte-nature-morte-panneau-panneau-de-signalisation-7837387/",
+          "sha256": "bae383fa0e3ca9a75fdbd87d1f976f123a35ff2f44d9f73e9dfbc40cdbc4fa33",
+          "submittedToVision": true
+        },
+        {
+          "id": "learn.r06.9e74278ca935",
+          "sourceUrl": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+          "sha256": "9e74278ca93506a59e4317bd1c76161ad0ff0a34d46ad746201a3781065c7a33",
+          "submittedToVision": true
+        }
+      ],
+      "usage": {
+        "providerCalls": 1,
+        "requests": [
+          {
+            "phase": "gaussian_semantic_learning",
+            "requestId": "39dea164-bf66-47a9-9161-ef3942d34b5f",
+            "model": "deepseek-flash",
+            "elapsedMs": 11992,
+            "prompt_tokens": 1956,
+            "completion_tokens": 1606,
+            "total_tokens": 3562,
+            "reasoning_tokens": 358,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": false,
+            "finishReason": "stop",
+            "referenceImagesProvided": 5
+          }
+        ],
+        "prompt_tokens": 1956,
+        "completion_tokens": 1606,
+        "total_tokens": 3562,
+        "reasoning_tokens": 358
+      },
+      "validation": {
+        "schema": true,
+        "allImageIdsMatched": true,
+        "repairUsed": false,
+        "pixelMaskVerified": false
+      },
+      "modelWeightsUpdated": false,
+      "pixelFitPerformed": false,
+      "elapsedMs": 11995
+    }
+  ],
+  "actualInputImageCount": 5
+}

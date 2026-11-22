@@ -1,0 +1,101 @@
+{
+  "schema": "crf.assisted_mask_revision.v0.8",
+  "assetId": "fruit.apple",
+  "revision": "remove-bottom-table-strip-1",
+  "reason": "Inherited alpha included a flat grey-brown table strip below the visible fruit, producing rectangular protrusions in dark compositions.",
+  "assistance": "Human-reviewed lower silhouette control points; monotone cubic interpolation and a 0.8px coverage transition.",
+  "beforeSourcePath": "reports/v08/fruit.apple.mask_before.png",
+  "beforeSourceSHA256": "06c37f5ceda896a2a5750abd20804df9a3a3a49301008778ef351c5710addd6f",
+  "afterSourcePath": "fitting/sources08/fruit.apple.png",
+  "afterSourceSHA256": "e63e436f5b883a98f640b593f9474a4bbdd5a538e3b0fb42e0997db6f6fb1a39",
+  "originalRGB_SHA256": "b33abd05e66da7fde359ad8abcea3817df521ad663bd71705a7c52164435191d",
+  "revisedRGB_SHA256": "b33abd05e66da7fde359ad8abcea3817df521ad663bd71705a7c52164435191d",
+  "allRGBBytesUnchanged": true,
+  "alphaOnly": true,
+  "coverageProvenance": "inferred",
+  "pixelMaskVerified": false,
+  "controlPoints": [
+    [
+      70,
+      242.5
+    ],
+    [
+      80,
+      247.2
+    ],
+    [
+      90,
+      250.5
+    ],
+    [
+      100,
+      254.0
+    ],
+    [
+      110,
+      256.7
+    ],
+    [
+      125,
+      259.7
+    ],
+    [
+      140,
+      260.3
+    ],
+    [
+      155,
+      258.7
+    ],
+    [
+      170,
+      255.8
+    ],
+    [
+      185,
+      251.4
+    ],
+    [
+      200,
+      244.3
+    ]
+  ],
+  "coordinateSize": [
+    253,
+    261
+  ],
+  "affectedRegion": [
+    80,
+    244,
+    201,
+    261
+  ],
+  "changedPixels": 472,
+  "fullyRemovedPixels": 381,
+  "actualChangeBounds": [
+    80,
+    246,
+    197,
+    261
+  ],
+  "oldReferencePath": "web/assets/v06/apple-reference-mask.png",
+  "oldReferenceSHA256": "cc04cfeb84b9d0790a7cc346562b3e5e93e3181a8b3b6379c594bc2e6970ab44",
+  "fitConfiguration": {
+    "budget": 13177,
+    "iterations": 24,
+    "geometrySteps": 90,
+    "initialFraction": 0.35
+  },
+  "scope": "Observed apple front appearance only. This edit neither completes the pear-occluded right side nor infers another view.",
+  "fitMetrics": {
+    "mae": 0.6702592521816676,
+    "rmse": 1.144371704417964,
+    "psnr": 46.95946138950748,
+    "ssim": 0.9704711571013878,
+    "maxError": 37,
+    "exactRGBFraction": 0.1941142747945729,
+    "evaluatedPixels": 52330,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "legacyReferenceUnchanged": true
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "crf.boundary_context_qa.v0.5",
+  "inferredTextureStdRGB": 4.162110936396188,
+  "inferredSeam": {
+    "meanContrastRGBLevels": 46.08432407407407,
+    "minimumContrastRGBLevels": 39.702933333333306,
+    "minimumYRange": [
+      447,
+      448
+    ]
+  },
+  "boundaryMixturePixels": 10319,
+  "sourceBaselineAcceptance": "tests/test_core.cjs and frozen pixel gate",
+  "hiddenGroundTruthAvailable": false,
+  "metricsMeaning": "Texture energy and seam continuity are structural checks, not truth or photographic similarity scores.",
+  "v04SameTextureStdRGB": 0.15117895890580546,
+  "v04SameSeam": {
+    "meanContrastRGBLevels": 0.16618796296296365,
+    "minimumContrastRGBLevels": 0.0,
+    "minimumYRange": [
+      445,
+      450
+    ]
+  }
+}

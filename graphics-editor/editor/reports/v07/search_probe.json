@@ -1,0 +1,511 @@
+{
+  "schema": "crf.provider_probe.v0.7",
+  "recordedAt": "2026-11-21T09:50:52.259870+00:00",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "mode": "search",
+  "status": 200,
+  "response": {
+    "id": "fa5098d0-108f-4cac-bc89-348499facd06",
+    "object": "chat.completion",
+    "created": 1795254657,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "针对你为 CRF 系统编写可编辑场景程序的需求，我搜索了三类场景的参考照片。需要先说明：**搜索结果中部分页面仅提供了标题和简短标签，正文并未包含可直接验证的详细画面描述或 EXIF 参数**。以下分析严格区分“来源页面明确写出的信息”与“根据标题/标签可合理推断的方向”，不会把未看到的画面细节描述成已分析。\n\n---\n\n## 场景一：窗边自然光照下的陶瓷花器与木桌静物\n\n### 可访问参考照片网页\n- Unsplash：棕色与白色陶瓷花瓶置于棕色木桌 \n- Unsplash：白色木桌上的绿色陶瓷花瓶（iPhone 11 拍摄）\n- Unsplash：棕色木桌与白色陶瓷花瓶 \n- Pexels：木桌上蓝色陶瓷花瓶中的满天星 \n- Pexels：白色陶瓷壶与黄色野花，木质托盘 \n\n### 形态与材质规律（可提炼方向）\n\n**花器形态**：来源标题中出现的陶瓷器皿以“花瓶/壶”为主，颜色包括棕白、绿色、蓝色、白色。对程序化建模而言，可优先实现**旋转体（lathe）或变半径圆柱**作为基础几何，截面曲线控制瓶口收放、颈部收缩与腹部膨胀。白色陶瓷  与绿色陶瓷  提示釉面颜色是重要可变参数，适合用程序材质中的**低粗糙度介质层**加轻微次表面散射来近似陶瓷质感。\n\n**木桌材质**：多个来源明确出现“brown wooden table”或“white wooden table”。木材在光线追踪中适合用**程序化木纹**：以带状噪声模拟年轮，叠加细碎高频噪声制造孔隙感；粗糙度沿纹理方向做各向异性变化，可让窗光在桌面形成拉长的柔和高光。\n\n**光照与相机**：标题含“window”或“light”的来源  暗示窗边自然光。静物拍摄常见相机高度较低、接近桌面，形成**浅景深**。程序场景中可将面光源置于侧窗位置，面积较大、色温偏中性（约 5000–5500K），配合柔光衰减。需要注意：来源未提供具体光圈、快门或灯光位置参数，以上为基于“窗边自然光静物”这一场景类型的通用渲染推断，不是对来源照片的逐像素分析。\n\n---\n\n## 场景二：雨夜湿路面交通信号\n\n### 可访问参考照片网页\n- Unsplash：夜晚城市街道，交通灯与雨 （德国斯图加特）\n- Unsplash：雨中交通灯特写 \n- Unsplash：涩谷湿石阶反射红蓝霓虹与交通灯 \n- Pexels：夜间湿沥青路面反射街灯与交通信号 \n\n### 形态与材质规律\n\n**交通信号形态**：来源标签中明确出现“traffic light”。程序化建模可简化为**悬臂杆 + 矩形灯箱 + 圆形发光面**，灯箱外壳用深色哑光材质，发光面用自发光材质并赋予红/黄/绿三色独立强度控制。\n\n**湿路面材质**：这是该场景渲染的关键。来源中反复出现“wet road”“reflection”“wet street”。湿沥青在光线追踪中应表示为：**基础沥青颜色（深灰偏黑） + 极低粗糙度的水膜层**。水膜不宜均匀覆盖：可程序化生成随机水洼遮罩，水洼区域粗糙度接近 0.02–0.05，干燥区域粗糙度较高。反射中应能看到交通灯的**拉长光斑**，因为粗糙水面的微表面分布会沿视线方向拉伸高光。\n\n**光照与相机**：夜间场景，主光源来自交通灯自发光与周边街灯/霓虹 。相机通常手持或街道视角，画面中会出现**高动态范围**：灯面过曝、湿路面反射高光、暗部建筑剪影。程序场景中需开启**基于物理的发光材质**，并考虑多次反射（至少一次镜面反射路径）。涩谷来源的标签“neon lights”“vibrant colors” 提示可加入彩色辅助光源增强湿路面反射的丰富度。\n\n---\n\n## 场景三：现代室内自然采光\n\n### 可访问参考照片网页\n- Unsplash：现代室内，自动扶梯与几何天花板，柔和自然光 （悉尼 Naala Badu）\n- Unsplash：现代室内，几何木楼梯与天窗，自然光透过天窗 \n\n### 形态与材质规律\n\n**几何形态**：来源明确提到“geometric ceiling panels”“geometric wooden staircase”“multi-level atrium”。程序化场景应优先使用**平面、平行线、折面**构成建筑语言：天花板用重复矩形面板网格，楼梯用直跑或折跑加玻璃/木栏杆。扶梯来源的“glass railing” 提示透明/半透明材质在室内光环境中的重要性。\n\n**材质**：木楼梯来源的“warm wooden walls”“curved balconies” 说明木材是暖色基调来源；扶梯来源的“glass railing”“minimalist interior” 则引入玻璃与金属的冷色/中性色对比。程序材质方面，木材可用与场景一类似的木纹但粗糙度略高（室内木饰面通常不似桌面那样抛光）；玻璃用薄层透明介质，折射率 1.5 左右，开启**粗糙透射**以模拟轻微磨砂或灰尘。\n\n**光照**：两个来源均强调**自然光**。天窗  是最可控的程序化光源：在屋顶几何中留出矩形开口，外部放置大面积面光源，光向下投射形成**方向性明确但边缘柔和**的光斑。多层 atrium  中，光线经过多次反弹，程序渲染需要至少 3–4 次漫反射反弹才能让暗部不显得死黑。扶梯场景的“soft natural light” 则更适合侧窗大面积光，配合白色天花板和浅色地面形成均匀填充。\n\n**相机**：室内建筑摄影常用**广角镜头**（等效 16–24mm），低机位仰拍以强调天花板几何或天窗。程序场景中可将相机 FOV 设为 70–90°，并注意广角带来的边缘透视拉伸——这恰好适合展示几何面板的重复韵律。\n\n---\n\n## 对 CRF 场景程序的可编辑参数建议\n\n| 场景 | 核心几何图元 | 关键程序材质参数 | 光照参数 | 相机参数 |\n|---|---|---|---|---|\n| 陶瓷花器静物 | 旋转体（花器）、平面（桌）、矩形（窗） | 陶瓷：低粗糙度+SSS；木：各向异性木纹 | 侧窗面光源，面积大，色温 5000–5500K | 低机位，浅景深，FOV 40–50° |\n| 雨夜交通信号 | 圆柱（灯杆）、长方体（灯箱）、平面（路面） | 湿沥青：水洼遮罩控制粗糙度；灯面：自发光 | 自发光灯面 + 彩色霓虹辅助光 | 街道视角，高动态范围，开启多次反射 |\n| 现代室内 | 网格面板、折面楼梯、矩形天窗开口 | 木饰面：中等粗糙度木纹；玻璃：薄透明介质 | 天窗面光源，多次反弹（≥3） | 广角 70–90°，低机位仰拍 |\n\n**需要再次强调**：以上参数是从来源页面的标题、标签和少量描述中提炼的**通用渲染方向**，不是对来源照片的定量测量。若你的 CRF 系统需要精确光照匹配，建议在实际打开上述图片网页后，用图像分析工具提取亮度分布、色温和反射高光宽度，再映射到程序参数。",
+          "annotations": [
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/brown-and-white-ceramic-vase-on-brown-wooden-table-RiuDaFRKd5o",
+                "title": "Photo by Lute on Unsplash",
+                "start_index": 0,
+                "end_index": 228
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/green-ceramic-vase-on-white-wooden-table-_0RSg50o3yQ",
+                "title": "Photo by Doyle Shin on Unsplash",
+                "start_index": 230,
+                "end_index": 267
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/brown-wooden-table-with-white-ceramic-vase-on-top-7rvkxLAraU8",
+                "title": "Photo by Lasse Jensen on Unsplash",
+                "start_index": 268,
+                "end_index": 290
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://www.pexels.com/zh-tw/photo/35274092/",
+                "title": "Pexels 上由 Nguyen 拍攝的相片",
+                "start_index": 292,
+                "end_index": 315
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://www.pexels.com/de-de/foto/vase-mit-frischen-gelben-blumen-auf-weissem-tisch-8011718/",
+                "title": "Foto von Anna Alexes auf Pexels",
+                "start_index": 317,
+                "end_index": 341
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/brown-wooden-table-with-white-ceramic-vase-on-top-7rvkxLAraU8",
+                "title": "Photo by Lasse Jensen on Unsplash",
+                "start_index": 344,
+                "end_index": 477
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/green-ceramic-vase-on-white-wooden-table-_0RSg50o3yQ",
+                "title": "Photo by Doyle Shin on Unsplash",
+                "start_index": 479,
+                "end_index": 484
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/brown-and-white-ceramic-vase-on-brown-wooden-table-RiuDaFRKd5o",
+                "title": "Photo by Lute on Unsplash",
+                "start_index": 486,
+                "end_index": 596
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/green-ceramic-vase-on-white-wooden-table-_0RSg50o3yQ",
+                "title": "Photo by Doyle Shin on Unsplash",
+                "start_index": 486,
+                "end_index": 596
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/brown-wooden-table-with-white-ceramic-vase-on-top-7rvkxLAraU8",
+                "title": "Photo by Lasse Jensen on Unsplash",
+                "start_index": 486,
+                "end_index": 596
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/brown-and-white-ceramic-vase-on-brown-wooden-table-RiuDaFRKd5o",
+                "title": "Photo by Lute on Unsplash",
+                "start_index": 596,
+                "end_index": 709
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/green-ceramic-vase-on-white-wooden-table-_0RSg50o3yQ",
+                "title": "Photo by Doyle Shin on Unsplash",
+                "start_index": 596,
+                "end_index": 709
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/a-city-street-at-night-with-traffic-lights-and-rain-IWssMSi8A-s",
+                "title": "Photo by Christian Lue on Unsplash",
+                "start_index": 711,
+                "end_index": 925
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://Unsplash.com/photos/a-close-up-of-a-traffic-light-in-the-rain-ru8qctvEeyQ",
+                "title": "Photo by Limi change on Unsplash",
+                "start_index": 926,
+                "end_index": 953
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/wet-stone-steps-with-neon-reflections-nvLgybjPL_w",
+                "title": "Photo by Joshua Earle on Unsplash",
+                "start_index": 955,
+                "end_index": 981
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://www.pexels.com/ru-ru/photo/1676989/",
+                "title": "Автор фото на Pexels: Artem Saranin",
+                "start_index": 983,
+                "end_index": 1008
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/wet-stone-steps-with-neon-reflections-nvLgybjPL_w",
+                "title": "Photo by Joshua Earle on Unsplash",
+                "start_index": 1011,
+                "end_index": 1059
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/a-city-street-at-night-with-traffic-lights-and-rain-IWssMSi8A-s",
+                "title": "Photo by Christian Lue on Unsplash",
+                "start_index": 1011,
+                "end_index": 1059
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://Unsplash.com/photos/a-close-up-of-a-traffic-light-in-the-rain-ru8qctvEeyQ",
+                "title": "Photo by Limi change on Unsplash",
+                "start_index": 1011,
+                "end_index": 1059
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/wet-stone-steps-with-neon-reflections-nvLgybjPL_w",
+                "title": "Photo by Joshua Earle on Unsplash",
+                "start_index": 1059,
+                "end_index": 1194
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://www.pexels.com/ru-ru/photo/1676989/",
+                "title": "Автор фото на Pexels: Artem Saranin",
+                "start_index": 1059,
+                "end_index": 1194
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/a-city-street-at-night-with-traffic-lights-and-rain-IWssMSi8A-s",
+                "title": "Photo by Christian Lue on Unsplash",
+                "start_index": 1059,
+                "end_index": 1194
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/wet-stone-steps-with-neon-reflections-nvLgybjPL_w",
+                "title": "Photo by Joshua Earle on Unsplash",
+                "start_index": 1194,
+                "end_index": 1369
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/wet-stone-steps-with-neon-reflections-nvLgybjPL_w",
+                "title": "Photo by Joshua Earle on Unsplash",
+                "start_index": 1370,
+                "end_index": 1497
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-escalator-and-geometric-ceiling-vx45Dzt_4rg",
+                "title": "Photo by Zara Johnson on Unsplash",
+                "start_index": 1498,
+                "end_index": 1591
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-geometric-wooden-staircase-and-skylight--sL-EHenwTw",
+                "title": "Photo by Dmytro Yarish on Unsplash",
+                "start_index": 1592,
+                "end_index": 1640
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-escalator-and-geometric-ceiling-vx45Dzt_4rg",
+                "title": "Photo by Zara Johnson on Unsplash",
+                "start_index": 1643,
+                "end_index": 1745
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-geometric-wooden-staircase-and-skylight--sL-EHenwTw",
+                "title": "Photo by Dmytro Yarish on Unsplash",
+                "start_index": 1643,
+                "end_index": 1745
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-escalator-and-geometric-ceiling-vx45Dzt_4rg",
+                "title": "Photo by Zara Johnson on Unsplash",
+                "start_index": 1745,
+                "end_index": 1825
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-geometric-wooden-staircase-and-skylight--sL-EHenwTw",
+                "title": "Photo by Dmytro Yarish on Unsplash",
+                "start_index": 1826,
+                "end_index": 1900
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-escalator-and-geometric-ceiling-vx45Dzt_4rg",
+                "title": "Photo by Zara Johnson on Unsplash",
+                "start_index": 1901,
+                "end_index": 1954
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-geometric-wooden-staircase-and-skylight--sL-EHenwTw",
+                "title": "Photo by Dmytro Yarish on Unsplash",
+                "start_index": 1955,
+                "end_index": 2085
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-geometric-wooden-staircase-and-skylight--sL-EHenwTw",
+                "title": "Photo by Dmytro Yarish on Unsplash",
+                "start_index": 2087,
+                "end_index": 2156
+              }
+            },
+            {
+              "type": "url_citation",
+              "url_citation": {
+                "url": "https://unsplash.com/photos/modern-interior-with-escalator-and-geometric-ceiling-vx45Dzt_4rg",
+                "title": "Photo by Zara Johnson on Unsplash",
+                "start_index": 2158,
+                "end_index": 2224
+              }
+            }
+          ],
+          "server_tool_calls": [
+            {
+              "index": 0,
+              "calls": [
+                {
+                  "index": 0,
+                  "id": "srvtoolu_s_00_198b5d2fb94d4ca18b80c90686791a90",
+                  "type": "deepseek_web_search",
+                  "kind": "search",
+                  "action": {
+                    "type": "search",
+                    "queries": [
+                      "site:unsplash.com ceramic vase on wooden table window light",
+                      "site:pexels.com ceramic vase wooden table natural light still life",
+                      "site:unsplash.com traffic lights wet road rainy night",
+                      "site:pexels.com traffic light reflection wet street night",
+                      "site:unsplash.com modern interior natural daylight",
+                      "site:pexels.com modern interior daylight architecture",
+                      "photo reference for procedural rendering of still life, wet street at night, and modern interiors"
+                    ]
+                  },
+                  "status": "completed",
+                  "sources": [
+                    {
+                      "type": "url",
+                      "url": "https://unsplash.com/photos/brown-and-white-ceramic-vase-on-brown-wooden-table-RiuDaFRKd5o",
+                      "title": "Photo by Lute on Unsplash",
+                      "snippet": "brown and white ceramic vase on brown wooden table Download this free HD photo of flower, wood, light, and handmade by Lute (@milestogobeforeisleep) Published on SONY, ILCE-7M3Free to use under the Unsplash License",
+                      "site_name": "Unsplash",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/unsplash.com",
+                      "published_at": "2021-05-02T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://www.pexels.com/zh-tw/photo/35274092/",
+                      "title": "Pexels 上由 Nguyen 拍攝的相片",
+                      "snippet": "瀏覽次數 11.7 千 按讚數 2 說明 一幅寧靜的靜物畫，展現了放在木桌上的藍色陶瓷花瓶中的滿天星花。 更多類似內容",
+                      "site_name": "Pexels",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+                      "published_at": "2025-12-18T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://unsplash.com/photos/wet-stone-steps-with-neon-reflections-nvLgybjPL_w",
+                      "title": "Photo by Joshua Earle on Unsplash",
+                      "snippet": "Wet stone steps in Shibuya reflecting vibrant red and blue neon light at night ... Unsplash+ License japan city road night tokyo urban reflection traffic light shibuya neon lights night time rainy city zebra crossing night photography vibrant colors wet road after rain",
+                      "site_name": "Unsplash",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/unsplash.com",
+                      "published_at": "2026-10-12T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://www.pexels.com/ru-ru/photo/1676989/",
+                      "title": "Автор фото на Pexels: Artem Saranin",
+                      "snippet": "Add filters, effects ... Фокусировка 13.0mm ... Программное обеспечение Adobe Photoshop CC 2018 (Windows) Описание # Городская улица ночью с мокрым асфальтом, отражающим уличные огни и светофоры. ### Больше похожего контента",
+                      "site_name": "Pexels",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+                      "published_at": "2018-12-14T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://unsplash.com/photos/modern-interior-with-escalator-and-geometric-ceiling-vx45Dzt_4rg",
+                      "title": "Photo by Zara Johnson on Unsplash",
+                      "snippet": "Modern interior with escalator and geometric ceiling A minimalist interior featuring a glass railing, geometric ceiling panels, and soft natural light. Captures clean lines and contemporary design—ideal for architecture, modern interiors, and public space themes. Naala Badu, Sydney, Australia",
+                      "site_name": "Unsplash",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/unsplash.com",
+                      "published_at": "2025-10-06T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://elements.envato.com/blank-white-picture-frame-with-candlesticks-on-bro-ZJ2SZ6J",
+                      "title": "Still Life with Window and City at Night",
+                      "snippet": "Still Life with Window and City at Night ... An indoor still life showcases a dark wood shelf, supporting two metallic candlesticks with lit candles ... The scene is lit by the candles ... This photo could be used in projects focused on interior design, home decor, urban lifestyle, and peaceful moments.",
+                      "site_name": "Envato",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/envato.com",
+                      "published_at": "2025-10-14T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://unsplash.com/photos/green-ceramic-vase-on-white-wooden-table-_0RSg50o3yQ",
+                      "title": "Photo by Doyle Shin on Unsplash",
+                      "snippet": "––– – ––– – – # green ceramic vase on white wooden table Download this free HD photo of blue, glass, picture window, and goblet by Doyle Shin (@dotgae) Published on Apple, iPhone 11Free to use under the Unsplash License",
+                      "site_name": "Unsplash",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/unsplash.com",
+                      "published_at": "2021-08-04T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://www.pexels.com/de-de/foto/rustikales-vintage-stillleben-bei-gedampftem-licht-30453418/",
+                      "title": "Foto von quang vinh auf Pexels",
+                      "snippet": "Wähle Deine Sprache: Use filters Change focus Brighten up Add frames Beschreibung # Vintage-Stillleben mit Töpferwaren und Obst auf einem rustikalen Holztisch bei gedämpftem Licht. ### Mehr davon Use filters Change focus Brighten up Add frames",
+                      "site_name": "Pexels",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+                      "published_at": "2025-12-09T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://unsplash.com/photos/a-city-street-at-night-with-traffic-lights-and-rain-IWssMSi8A-s",
+                      "title": "Photo by Christian Lue on Unsplash",
+                      "snippet": "––– – ––– ––– – –––– –. ––– – ––– ––– # a city street at night with traffic lights and rain Extreme rainfall during summer night with a lot of wet and glowing light reflections in Stuttgart, Germany Published on Sony, a6000Free to use under the Unsplash License",
+                      "site_name": "Unsplash",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/unsplash.com",
+                      "published_at": "2021-06-24T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://www.pexels.com/zh-tw/video/19669502/",
+                      "title": "Pexels 上由 Ardalan Gaznay 拍攝的影片",
+                      "snippet": "說明 在雨中行駛的城市街道上，車輛穿行，並映出交通信號的倒影。 更多類似內容",
+                      "site_name": "Pexels",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+                      "published_at": "2024-10-30T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://unsplash.com/photos/modern-interior-with-geometric-wooden-staircase-and-skylight--sL-EHenwTw",
+                      "title": "Photo by Dmytro Yarish on Unsplash",
+                      "snippet": "Modern interior with geometric wooden staircase and skylight This architectural photograph captures the interior of a modern building, focusing on an upward view through a multi-level atrium. The image emphasizes the interplay of light and shadow, with natural light streaming through a large skylight at the top, illuminating the warm wooden walls and curved balconies.",
+                      "site_name": "Unsplash",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/unsplash.com",
+                      "published_at": "2025-10-11T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://www.artstation.com/marketplace/p/qoXnv/1000-high-resolution-photorealistic-macro-still-life-mixed-subject-reference-images-food-nature-people-animals-materials-objects-abstracts-3264-5824-portrait",
+                      "title": "ArtStation - 1000 High-Resolution Photorealistic Macro, Still-Life & Mixed-Subject Reference Images — Food, Nature, People, Animals, Materials, Objects & Abstracts (3264×5824 Portrait) | Resources",
+                      "snippet": "1000 High-Resolution Photorealistic Macro, Still-Life & Mixed-Subject Reference Images — Food, Nature, People, Animals, Materials, Objects & Abstracts (3264×5824 Portrait) This pack contains 1000 high-resolution...",
+                      "site_name": "ArtStation",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/artstation.com",
+                      "published_at": "2025-11-22T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://unsplash.com/photos/brown-wooden-table-with-white-ceramic-vase-on-top-7rvkxLAraU8",
+                      "title": "Photo by Lasse Jensen on Unsplash",
+                      "snippet": "––– – ––– – – ### Featured in Editorial # brown wooden table with white ceramic vase on top Download this free HD photo of interior, grey, design, and tabletop by Lasse Jensen (@maybejensen) Published on Free to use under the Unsplash License",
+                      "site_name": "Unsplash",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/unsplash.com",
+                      "published_at": "2021-05-11T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://www.pexels.com/de-de/foto/vase-mit-frischen-gelben-blumen-auf-weissem-tisch-8011718/",
+                      "title": "Foto von Anna Alexes auf Pexels",
+                      "snippet": "Kostenlos nutzen: # Stillleben mit gelben Wildblumen in einem weißen Keramikkrug auf einem Holztablett, das eine frische, blumige Stimmung erzeugt. ### Mehr davon",
+                      "site_name": "Pexels",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/pexels.com",
+                      "published_at": "2021-05-22T16:00:00+00:00"
+                    },
+                    {
+                      "type": "url",
+                      "url": "https://Unsplash.com/photos/a-close-up-of-a-traffic-light-in-the-rain-ru8qctvEeyQ",
+                      "title": "Photo by Limi change on Unsplash",
+                      "snippet": "––– –––– –––– # a close up of a traffic light in the rain Download this free HD photo of rain, night, light, and colorful by Limi change (@limichange) Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+                      "site_name": "Unsplash",
+                      "site_icon": "https://cdn.deepseek.com/site-icons/unsplash.com",
+                      "published_at": "2023-07-18T16:00:00+00:00"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3298,
+      "completion_tokens": 1810,
+      "total_tokens": 5108,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3298,
+      "server_tool_use": {
+        "tool_search": 7,
+        "tool_fetch": 0,
+        "tool_image_search": 0
+      }
+    },
+    "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+  }
+}

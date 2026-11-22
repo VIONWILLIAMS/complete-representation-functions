@@ -1,0 +1,618 @@
+{
+  "schema": "crf.render_kit_verification.v0.9",
+  "status": "passed",
+  "indexRunId": "showcase-v1",
+  "totalIndexEntries": 10,
+  "renderableCount": 10,
+  "candidateCount": 30,
+  "failedOrNonRenderable": [],
+  "results": [
+    {
+      "id": "01_ivory_facade",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "c39a2036f854533d3c9a89059a956a681a627bfdbd8f459e683d312b7f8362ed",
+      "actualRGBASHA256": "c39a2036f854533d3c9a89059a956a681a627bfdbd8f459e683d312b7f8362ed",
+      "expectedRGBSHA256": "fdf977018a2be263fe28c3ca2c4404c7232973f26af92ad5b906e17cc539cd4b",
+      "actualRGBSHA256": "fdf977018a2be263fe28c3ca2c4404c7232973f26af92ad5b906e17cc539cd4b",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 673.285481
+    },
+    {
+      "id": "02_ochre_corner",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "136f6172d747dfbc8f01c498126dcd45ac770ad1fae3b0d4bd944e12f3d600ac",
+      "actualRGBASHA256": "136f6172d747dfbc8f01c498126dcd45ac770ad1fae3b0d4bd944e12f3d600ac",
+      "expectedRGBSHA256": "daec5d51bfed542695173d8bca7c6de1707ba6e6daa70e4064500ef9ac41e950",
+      "actualRGBSHA256": "daec5d51bfed542695173d8bca7c6de1707ba6e6daa70e4064500ef9ac41e950",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 608.4989820000001
+    },
+    {
+      "id": "03_blue_wall",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "8e211c947b4755a38977c55adccf2b34a15de845c5faeed68c1406f6ef9f06db",
+      "actualRGBASHA256": "8e211c947b4755a38977c55adccf2b34a15de845c5faeed68c1406f6ef9f06db",
+      "expectedRGBSHA256": "e1d3206b31122b942a5587a0023155a3dfba5410207f7e0ce7412237de2510e3",
+      "actualRGBSHA256": "e1d3206b31122b942a5587a0023155a3dfba5410207f7e0ce7412237de2510e3",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 494.1463110000002
+    },
+    {
+      "id": "04_cold_alpine",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "dce75325bf8538ef6b13210b68ae3dd4062733ff0ffabbce1e2d4120b33b5fdd",
+      "actualRGBASHA256": "dce75325bf8538ef6b13210b68ae3dd4062733ff0ffabbce1e2d4120b33b5fdd",
+      "expectedRGBSHA256": "294ac9bc676cbbe396065b1986cc75b95d03156af1cb0d66b8de88acae5da83a",
+      "actualRGBSHA256": "294ac9bc676cbbe396065b1986cc75b95d03156af1cb0d66b8de88acae5da83a",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 757.910856
+    },
+    {
+      "id": "05_warm_coast",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "53e5a9f9b2b56359282d4fa248a29b1a4e1022b405c4e7bcc5a881e56430d433",
+      "actualRGBASHA256": "53e5a9f9b2b56359282d4fa248a29b1a4e1022b405c4e7bcc5a881e56430d433",
+      "expectedRGBSHA256": "26084952fc48d96aefa4a2c0eabc4e96713cfb2325c30c670976931694cc2e9c",
+      "actualRGBSHA256": "26084952fc48d96aefa4a2c0eabc4e96713cfb2325c30c670976931694cc2e9c",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 880.807076
+    },
+    {
+      "id": "06_misty_forest",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "8dcd83421a5275d81e0d4ea54654f813146183fd544fbf805f783b9bfe2f7c3c",
+      "actualRGBASHA256": "8dcd83421a5275d81e0d4ea54654f813146183fd544fbf805f783b9bfe2f7c3c",
+      "expectedRGBSHA256": "d69987fff319f3922b57123cbc19258a57a0b0b30935585a76d25f199bc5bf85",
+      "actualRGBSHA256": "d69987fff319f3922b57123cbc19258a57a0b0b30935585a76d25f199bc5bf85",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 688.7398290000001
+    },
+    {
+      "id": "07_evening_lake",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "2fae3eb9e9328663e2946a98121e1cd7b8a68666d91ae2fbd1c75dff9344c89c",
+      "actualRGBASHA256": "2fae3eb9e9328663e2946a98121e1cd7b8a68666d91ae2fbd1c75dff9344c89c",
+      "expectedRGBSHA256": "93741ca0d2fd9f285cbf769d06690a3c8cc636442d5cac1fa1e8f66f9999326a",
+      "actualRGBSHA256": "93741ca0d2fd9f285cbf769d06690a3c8cc636442d5cac1fa1e8f66f9999326a",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 793.4818009999999
+    },
+    {
+      "id": "08_three_fruits",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "da494ce7db9bbeb805ed7aa4073aa3712b39052d6961ff7b947093990dcaddae",
+      "actualRGBASHA256": "da494ce7db9bbeb805ed7aa4073aa3712b39052d6961ff7b947093990dcaddae",
+      "expectedRGBSHA256": "433320c2902581041bfd5a922f5b4e80bb3fa3e346a9f05b75fbcbfb96bcb040",
+      "actualRGBSHA256": "433320c2902581041bfd5a922f5b4e80bb3fa3e346a9f05b75fbcbfb96bcb040",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 629.7424549999996
+    },
+    {
+      "id": "09_celadon_citrus",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "228d6084674f3869849853e1e02bc7c8560c98bf91542e525b43690c5db5c771",
+      "actualRGBASHA256": "228d6084674f3869849853e1e02bc7c8560c98bf91542e525b43690c5db5c771",
+      "expectedRGBSHA256": "be692aaaaf128dcbef6217b8203bb0e5f940336dfc8de5426b5b88dc0cbe93b0",
+      "actualRGBSHA256": "be692aaaaf128dcbef6217b8203bb0e5f940336dfc8de5426b5b88dc0cbe93b0",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 614.6424900000002
+    },
+    {
+      "id": "10_dark_pears",
+      "expectedSize": [
+        1024,
+        768
+      ],
+      "actualSize": [
+        1024,
+        768
+      ],
+      "expectedRGBASHA256": "696193b080b26896486239c251c12ddf905be90c0d0b1d23b6d34778d36ba668",
+      "actualRGBASHA256": "696193b080b26896486239c251c12ddf905be90c0d0b1d23b6d34778d36ba668",
+      "expectedRGBSHA256": "9bbde8899a5dd38dad39077c78a735b1ccb485c92879cf777164c42de9c9ca11",
+      "actualRGBSHA256": "9bbde8899a5dd38dad39077c78a735b1ccb485c92879cf777164c42de9c9ca11",
+      "exactRGBAMatch": true,
+      "indexHashMatchesPublishedImage": true,
+      "elapsedMs": 712.3988440000003
+    }
+  ],
+  "runtime": "Node built-ins; no dependency installation",
+  "qualityGateNotEstablishedByThisCheck": true,
+  "independentMethod": "ZIP containing all eventual executable/data/image files unpacked into a fresh temporary directory; final ZIP adds only verification/manifest metadata after this run",
+  "testedPayloadFilesSHA256": {
+    "web/crf-generative09.js": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+    "web/crf-boundary09.js": "8b3470301d73840d3ee238c06ffbdf14ec659094f59e7bd5b8bca81b213ccdad",
+    "web/crf-gaussian08.js": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+    "scripts/render_v09.cjs": "0e0755b97cd2a6f48f794c79d81e6bf304795eb27e12b3cbb4571cefa1ebb3ca",
+    "scripts/render_candidates09.cjs": "7ee1b3499e4b3fbca40c5e31847c68bab6205d2745b064a7552269e6775ef8a7",
+    "tests/test_media09.cjs": "030d1d1e2b54a84b802284fc01498531951c673a6ae45969f67599c573e42d23",
+    "docs/v09/GENERATIVE_CORE.md": "2055b37b443ec5689452587ce61ad6619e7e562f6f699222333ba3fe71738d8f",
+    "web/assets/v09/generated/index.json": "b07162b94374956bd0e6d28d9be86e5bb3ab30f75be3f6d2326cebf6c89e213c",
+    "web/assets/v09/shared-appearance.json": "c1ae52b759ca5b39a6672142ae94eedf050ede5a91a7c95853b0e22048628a4c",
+    "web/assets/v09/street/context.json": "7d26424bf58c5497a01077b7836643c68f38c2abcb5eda4b9de8a0b6bbe36c5a",
+    "web/assets/v08/gaussians/street.optimized.json": "070fc31a5a2492f5501909449e29ee98ed2b3522edfeae97396462283014a2d3",
+    "web/assets/v09/street/detail.json": "3c797b2fbda73b82ccb0f525965df2696f024732b18fd8fa2050987c513895dd",
+    "web/assets/v09/generated/showcase-v1/01_ivory_facade.scene.json": "cfe3b1e3079f41a49aa45149b34fd39121c03cf8745efe45b711b8802b889e67",
+    "web/assets/v09/generated/showcase-v1/01_ivory_facade.png": "c05e1453152b85dfac8d2a8e45021d5d9725f8e0e8cbd72127113beb3d8a722d",
+    "web/assets/v09/generated/showcase-v1/01_ivory_facade.jpg": "973621a70b6814de388f847fed243c285febc25d5942b9611493c0f7e06b1def",
+    "web/assets/v09/generated/showcase-v1/01_ivory_facade.record.json": "6c5c76c02f339352c1e2ac1e22371aef2df6176aa106ba31e06b4da7bf2069d1",
+    "web/assets/v09/generated/showcase-v1/02_ochre_corner.scene.json": "be3cf43af700331c0ca922ac5046261c69af97a6661e2de804f189633eb4c322",
+    "web/assets/v09/generated/showcase-v1/02_ochre_corner.png": "eff9486dae3a5d4dab7dcf529931e7c3763070a8d0d0e961fa56937d75c87beb",
+    "web/assets/v09/generated/showcase-v1/02_ochre_corner.jpg": "1d5df4e616becbca8389e2de4f43fcffea98b6329a958d9225ecb1efba976823",
+    "web/assets/v09/generated/showcase-v1/02_ochre_corner.record.json": "7bda4b118b9ec4f35fc87f90f827b1237894ffeb0f705002238cdc1bcb368add",
+    "web/assets/v09/generated/showcase-v1/03_blue_wall.scene.json": "d18706bd0539a395dbe0a630a7ba6f97293f91ed351ee8926c9f2c1defbd5302",
+    "web/assets/v09/generated/showcase-v1/03_blue_wall.png": "107915336552ebd3ec1364274115e577bb756b47c6321c0b22928b48318fffba",
+    "web/assets/v09/generated/showcase-v1/03_blue_wall.jpg": "6aaf294e616ee592ef84baae6a4172a6fcb0f6338b6ae894475a94bc54ddcc8f",
+    "web/assets/v09/generated/showcase-v1/03_blue_wall.record.json": "fe372417ba7b3b13ca64f0c8877d507fc77a716f1e922a2f60cc35932d3a1bfc",
+    "web/assets/v09/generated/showcase-v1/04_cold_alpine.scene.json": "cc53ca1cdd729e43aa477a9eb5366a2cc9ebcba03e776b859c303cfa79871f6a",
+    "web/assets/v09/generated/showcase-v1/04_cold_alpine.png": "dd6640e4a93af05f8e1f0207c76d9203437a60a87a27f7c1017a533b1d4fe3c7",
+    "web/assets/v09/generated/showcase-v1/04_cold_alpine.jpg": "10a48c121ee331ae262a54ffe2edf6870d2ebe073421ccc1b7456be795e1061d",
+    "web/assets/v09/generated/showcase-v1/04_cold_alpine.record.json": "a0d46179bc4e16939b6e0e87f416ba45e948ec6d342a01e746e98118acab2150",
+    "web/assets/v09/generated/showcase-v1/05_warm_coast.scene.json": "304a5589c9c026bf3f6fa1d082a8bed2a86ca35348b72cb607c5f41e4bd43611",
+    "web/assets/v09/generated/showcase-v1/05_warm_coast.png": "4194eb861770fc03d30bb657002159b7c56e29e6ebe8804746d4835ec54f45cf",
+    "web/assets/v09/generated/showcase-v1/05_warm_coast.jpg": "98fd107fedac76b3066fbe064f9f678178d33583807b896a360625d2447fbf29",
+    "web/assets/v09/generated/showcase-v1/05_warm_coast.record.json": "370814e6a62f7a942c6c21763a054e7772f3ae08dee0c90216f05dec176f5fba",
+    "web/assets/v09/generated/showcase-v1/06_misty_forest.scene.json": "3810f414dcfbdf46708f4cbac66830d0c5f01b2ca96a8310b75714ec19f977e8",
+    "web/assets/v09/generated/showcase-v1/06_misty_forest.png": "55de59d38650594e62a93979c6f1ee1d596169d8f92ccd3b6dcd4b2c49ce2637",
+    "web/assets/v09/generated/showcase-v1/06_misty_forest.jpg": "fd0dd7b4c6e4fdf8e15ef37032c10dc30228af18510b6c87f6291593faf2326b",
+    "web/assets/v09/generated/showcase-v1/06_misty_forest.record.json": "4eb8d1726f0945c4640dbc4aee9962c77402cef7b5268a76af40052fa826672d",
+    "web/assets/v09/generated/showcase-v1/07_evening_lake.scene.json": "7dc0ff0ae065740a3f791f6a19720d5bb258d301f4069120ba4855edec123442",
+    "web/assets/v09/generated/showcase-v1/07_evening_lake.png": "f6b4cea56ce8bc65660c37fcad79cf8798999ac44d61285048fc9b293d6e2357",
+    "web/assets/v09/generated/showcase-v1/07_evening_lake.jpg": "7be3406f582cdec0281b56c8580401e033b86a8c8837cef085039f24e721bd7f",
+    "web/assets/v09/generated/showcase-v1/07_evening_lake.record.json": "36bbe2cfeab17b0b96d232c7377a87be7ff5462c61b75ef5f0a241d121c3d411",
+    "web/assets/v09/generated/showcase-v1/08_three_fruits.scene.json": "5b67fd3a1e2608ec0e31aa67eaf12be465c4a81bdb281dc169717054142865c7",
+    "web/assets/v09/generated/showcase-v1/08_three_fruits.png": "b1f6e56f9356b6a35ce8c7a7e1a2df02248cb2e6e8f8b6bdb3fb5e289bfddfa1",
+    "web/assets/v09/generated/showcase-v1/08_three_fruits.jpg": "e60db6409290027f255aeeb3449ef289e32772963665c985fe44213056748921",
+    "web/assets/v09/generated/showcase-v1/08_three_fruits.record.json": "2117f3a1dbad567ba6c83dbb1efb962b1dfdf672a944289e213ac294c547d130",
+    "web/assets/v09/generated/showcase-v1/09_celadon_citrus.scene.json": "33fb7899b5abdf2367c4e034f5b75e83f62c4c37653962fd8d7a7aaa23e302a7",
+    "web/assets/v09/generated/showcase-v1/09_celadon_citrus.png": "ab9443c9b38695588e6e87b4950577f9a3825afcc4675086a583260aee7379a7",
+    "web/assets/v09/generated/showcase-v1/09_celadon_citrus.jpg": "ea18acab60c1bfa80928342f21a185f93a05df1925b200ecb77d33ad92006f28",
+    "web/assets/v09/generated/showcase-v1/09_celadon_citrus.record.json": "c06a134b3ea2fba4d042fa02b48d5a35560c1839fbfc64ff2260344fe0961b01",
+    "web/assets/v09/generated/showcase-v1/10_dark_pears.scene.json": "c4bc7f7858f14b2d0a7c1990b6b5ec41e847a2d71dad1a2226a57d42bfa381a8",
+    "web/assets/v09/generated/showcase-v1/10_dark_pears.png": "7f9471c33367abc68cdc4ff8de5afbcfd0ce120c451fb5bf33feff40ae337741",
+    "web/assets/v09/generated/showcase-v1/10_dark_pears.jpg": "bf68cb0ff347a28d690488f4167e40a052f30e3f6cf0d058ddbfb3da9f02e33f",
+    "web/assets/v09/generated/showcase-v1/10_dark_pears.record.json": "cfe64942cc18f149117ce0a8b7596e5fed7fd88c87cf4c3b065cfe80fa41b9b1",
+    "reports/v09/generation/showcase-v1/01_ivory_facade/record.json": "6c5c76c02f339352c1e2ac1e22371aef2df6176aa106ba31e06b4da7bf2069d1",
+    "reports/v09/generation/showcase-v1/01_ivory_facade/task_evidence.json": "2a625ca708ec263a6e78074e42ac02689ae089554045f0b33d20f64ebe2c20d0",
+    "reports/v09/generation/showcase-v1/01_ivory_facade/candidate_00.scene.json": "54dc7002d25081549b6a2cfb452b35ddf576fdb044add499aacd57a8936a921d",
+    "reports/v09/generation/showcase-v1/01_ivory_facade/candidate_00.jpg": "2ed20457498a97e2c6bc3f385108bf2fb38455a642bc8f68dc83aaa275a90566",
+    "reports/v09/generation/showcase-v1/01_ivory_facade/candidate_01.scene.json": "0a7333d5a8436541bb204f094ffcde58de90035de7a107e31b29032b77dd7abf",
+    "reports/v09/generation/showcase-v1/01_ivory_facade/candidate_01.jpg": "3172d9456bb1097381d93522affa43fb890d4757f8d676d33b3e456396622c26",
+    "reports/v09/generation/showcase-v1/01_ivory_facade/candidate_02.scene.json": "cfe3b1e3079f41a49aa45149b34fd39121c03cf8745efe45b711b8802b889e67",
+    "reports/v09/generation/showcase-v1/01_ivory_facade/candidate_02.jpg": "e930dccbb438b4c527970bc49f08d74a05cd018b5d25214042aff571a1d6d23d",
+    "reports/v09/generation/showcase-v1/02_ochre_corner/record.json": "7bda4b118b9ec4f35fc87f90f827b1237894ffeb0f705002238cdc1bcb368add",
+    "reports/v09/generation/showcase-v1/02_ochre_corner/task_evidence.json": "ee05c4d8a52a571693ba7440e5c9582a6dab1b2a33289c54cba8a89e59346982",
+    "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_00.scene.json": "5d9e8a43e1761f6a44614404ddb7ca364e0f76f0356224619eefd7f9e6b046c2",
+    "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_00.jpg": "ad6c6db9e52443383b0c32ec54024a1fc3ce928b57e4ccac718f0b16c4a9eac9",
+    "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_01.scene.json": "bdf2b772f510368c5dc2f97c3feba15fbff88c9614066c49b2bcf8280d8923f6",
+    "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_01.jpg": "d3454325d0a579653afabee0f0c945f9901880793f4242f4862f0d9e7adcbfb8",
+    "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_02.scene.json": "be3cf43af700331c0ca922ac5046261c69af97a6661e2de804f189633eb4c322",
+    "reports/v09/generation/showcase-v1/02_ochre_corner/candidate_02.jpg": "10b98b36c049a8e32a65bf35317dac30b2c893a285c126c7740196b902d6768c",
+    "reports/v09/generation/showcase-v1/03_blue_wall/record.json": "fe372417ba7b3b13ca64f0c8877d507fc77a716f1e922a2f60cc35932d3a1bfc",
+    "reports/v09/generation/showcase-v1/03_blue_wall/task_evidence.json": "ea514abbe158f7364b3af60f780556bcff212b7603285b679d1bed444fd82ad1",
+    "reports/v09/generation/showcase-v1/03_blue_wall/candidate_00.scene.json": "612c1282b0dd8b92bb97b5e1f80dc97fc7c20cd39dae9381642cd9e582547450",
+    "reports/v09/generation/showcase-v1/03_blue_wall/candidate_00.jpg": "555c258a4a70044413b317442f4909ad2748d98b747c37610d049850782441b1",
+    "reports/v09/generation/showcase-v1/03_blue_wall/candidate_01.scene.json": "bba208ce8d60fca5651fac8d142d9602d723f5d42c9fa5f1d19ee7e8d9b8ac01",
+    "reports/v09/generation/showcase-v1/03_blue_wall/candidate_01.jpg": "77cda46b5ba6950446265121548efb7f95199a9b34efea62442cfa4766874033",
+    "reports/v09/generation/showcase-v1/03_blue_wall/candidate_02.scene.json": "d18706bd0539a395dbe0a630a7ba6f97293f91ed351ee8926c9f2c1defbd5302",
+    "reports/v09/generation/showcase-v1/03_blue_wall/candidate_02.jpg": "5fc6a0c30db1b07c3d10638e477760a79bf78f4a039c2553ae2a980b5de58626",
+    "reports/v09/generation/showcase-v1/04_cold_alpine/record.json": "a0d46179bc4e16939b6e0e87f416ba45e948ec6d342a01e746e98118acab2150",
+    "reports/v09/generation/showcase-v1/04_cold_alpine/task_evidence.json": "89b72c991543cb4f0f9013e33cfffa3b2e00dad0f70b57dc1a08883defe6b8df",
+    "reports/v09/generation/showcase-v1/04_cold_alpine/candidate_00.scene.json": "51fdfa660fab55c1a06c381dcd76088edfa38116c43cef819d2d2a07e0668111",
+    "reports/v09/generation/showcase-v1/04_cold_alpine/candidate_00.jpg": "045bc81bba4dad69dce2a10d2753feade206e7a7c3f2fcc8246d77ec31e62459",
+    "reports/v09/generation/showcase-v1/04_cold_alpine/candidate_01.scene.json": "522c0da8dfecc78704f93531fd3b81f089a019f709c013d76c0e560cd4d9f0e2",
+    "reports/v09/generation/showcase-v1/04_cold_alpine/candidate_01.jpg": "b94e847b8dd2b507e3ba0222e1f3310c7cc919697455a06f54ead81b0c875ec4",
+    "reports/v09/generation/showcase-v1/04_cold_alpine/candidate_02.scene.json": "cc53ca1cdd729e43aa477a9eb5366a2cc9ebcba03e776b859c303cfa79871f6a",
+    "reports/v09/generation/showcase-v1/04_cold_alpine/candidate_02.jpg": "2a595b6ac31eae87e1e3a88f19a247f73b4a32286901b34e62701700806204e1",
+    "reports/v09/generation/showcase-v1/05_warm_coast/record.json": "370814e6a62f7a942c6c21763a054e7772f3ae08dee0c90216f05dec176f5fba",
+    "reports/v09/generation/showcase-v1/05_warm_coast/task_evidence.json": "9265e80206b24c18b9cdf11ea532e9da550c14b23fb242ce9a2350c6efa28039",
+    "reports/v09/generation/showcase-v1/05_warm_coast/candidate_00.scene.json": "9455f4b16c1d9a1f0d01513ebb6b6068fdc5a30dc89eb5b1ebe0cde90f0ad7ca",
+    "reports/v09/generation/showcase-v1/05_warm_coast/candidate_00.jpg": "1527d511036313695b9378c50f9624127baf2e216ef350c05d722160bf146bdc",
+    "reports/v09/generation/showcase-v1/05_warm_coast/candidate_01.scene.json": "ec7785f6c1ba28e2c2d6e00c98688e1cddca249ba6a7bcaf37d85342b4ae45c6",
+    "reports/v09/generation/showcase-v1/05_warm_coast/candidate_01.jpg": "1fee920c9c9a497d725ee6e6f9b1e34a1c554bc094bcc04cf8e02713325beefb",
+    "reports/v09/generation/showcase-v1/05_warm_coast/candidate_02.scene.json": "304a5589c9c026bf3f6fa1d082a8bed2a86ca35348b72cb607c5f41e4bd43611",
+    "reports/v09/generation/showcase-v1/05_warm_coast/candidate_02.jpg": "41717556154410181d904de81a7fdedb82c9c727b2c75e4b78770716e908d5f9",
+    "reports/v09/generation/showcase-v1/06_misty_forest/record.json": "4eb8d1726f0945c4640dbc4aee9962c77402cef7b5268a76af40052fa826672d",
+    "reports/v09/generation/showcase-v1/06_misty_forest/task_evidence.json": "0a800a254e44e2fcccf4dd3ac47966b1b038bea605dd36502a0efdffe221f1bd",
+    "reports/v09/generation/showcase-v1/06_misty_forest/candidate_00.scene.json": "eb0136357f28c2ad332b4fd0e1a40ea93f35b56984cf5bde737d499dd22c925c",
+    "reports/v09/generation/showcase-v1/06_misty_forest/candidate_00.jpg": "80d9b24bfed64483720e1d5c68e39abac6f8331c1159b66de489a28fd2d4fb09",
+    "reports/v09/generation/showcase-v1/06_misty_forest/candidate_01.scene.json": "0214c92a6f06ea6b70f1325f57f93308adb1ac3e44bdea43e7fbbde308c343bf",
+    "reports/v09/generation/showcase-v1/06_misty_forest/candidate_01.jpg": "acb80ef83f1cdb526a3d954e97c0b26c9c0c4899d4b04bc1355b99fd15b65d14",
+    "reports/v09/generation/showcase-v1/06_misty_forest/candidate_02.scene.json": "3810f414dcfbdf46708f4cbac66830d0c5f01b2ca96a8310b75714ec19f977e8",
+    "reports/v09/generation/showcase-v1/06_misty_forest/candidate_02.jpg": "4efe92f79db80d0b0e2f0d9679e06d2db9dd0dcd0ecd04b61d5a988ee7e45a58",
+    "reports/v09/generation/showcase-v1/07_evening_lake/record.json": "36bbe2cfeab17b0b96d232c7377a87be7ff5462c61b75ef5f0a241d121c3d411",
+    "reports/v09/generation/showcase-v1/07_evening_lake/task_evidence.json": "4ae549a14822fd4230e14a050010e73bfa818c8ca12c86b427c63a2aa4228d9e",
+    "reports/v09/generation/showcase-v1/07_evening_lake/candidate_00.scene.json": "58277b13000c0935cc94b470b49eebf12234e943e1ada0c908e4370213912d75",
+    "reports/v09/generation/showcase-v1/07_evening_lake/candidate_00.jpg": "75918e82cd42da796d54d6af5eb25ea246ea8fad88f80fa30852f723b1127cd1",
+    "reports/v09/generation/showcase-v1/07_evening_lake/candidate_01.scene.json": "35bc4975107a3178f665834f3269947d5d0eb5521c9b050f91c4793c25294824",
+    "reports/v09/generation/showcase-v1/07_evening_lake/candidate_01.jpg": "99ecd2dcec62536514a3faf2f141ec3403b47d6f6f8375e8d42406d51ba4f8e7",
+    "reports/v09/generation/showcase-v1/07_evening_lake/candidate_02.scene.json": "7dc0ff0ae065740a3f791f6a19720d5bb258d301f4069120ba4855edec123442",
+    "reports/v09/generation/showcase-v1/07_evening_lake/candidate_02.jpg": "899360141cfa297181f649c166a2b08bb389347b91ccc636a42f220b50cfaa68",
+    "reports/v09/generation/showcase-v1/08_three_fruits/record.json": "2117f3a1dbad567ba6c83dbb1efb962b1dfdf672a944289e213ac294c547d130",
+    "reports/v09/generation/showcase-v1/08_three_fruits/task_evidence.json": "f7f2f5032167467319525169e1a1527fa35e0b840392f8f4b6a29f8dbdbc7185",
+    "reports/v09/generation/showcase-v1/08_three_fruits/candidate_00.scene.json": "31a0c054d6b0b3c6c7b8ac1ee13f2ad4d5531108ee7bbbd1f6025c6d2e53796a",
+    "reports/v09/generation/showcase-v1/08_three_fruits/candidate_00.jpg": "237b14f8a5fffa9fe6f256d4f70a0f3defb9406a897e817f82bbe5f3848318aa",
+    "reports/v09/generation/showcase-v1/08_three_fruits/candidate_01.scene.json": "904b291cc3535089d3534d8d1e29f234195055abbca11883782a18b60135dbd8",
+    "reports/v09/generation/showcase-v1/08_three_fruits/candidate_01.jpg": "f381d39fa70399443cd70e2d56b588bbf6484eb7cf65a285c0e83f5513e397ab",
+    "reports/v09/generation/showcase-v1/08_three_fruits/candidate_02.scene.json": "5b67fd3a1e2608ec0e31aa67eaf12be465c4a81bdb281dc169717054142865c7",
+    "reports/v09/generation/showcase-v1/08_three_fruits/candidate_02.jpg": "5bfde78a7f70280cf429c04173018e9ac894fe6c280c725d15e0888e50269aae",
+    "reports/v09/generation/showcase-v1/09_celadon_citrus/record.json": "c06a134b3ea2fba4d042fa02b48d5a35560c1839fbfc64ff2260344fe0961b01",
+    "reports/v09/generation/showcase-v1/09_celadon_citrus/task_evidence.json": "9b97154b27408b1d48d3a78e977c57109a0a24b6d50b2ede6d0db67c8b9907dd",
+    "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_00.scene.json": "872f2948dcfdefd15c08978e11673b49248a9bdf6386d51e6d4fc24dd645eb38",
+    "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_00.jpg": "171dfc7a08ac9205ec87ad0531bb62762f31386a7f756ee48a064071dd496287",
+    "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_01.scene.json": "cf47ad1cfc2a54527c901a14e1e34c0a47342034d42481ce8e952e21758f552e",
+    "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_01.jpg": "a1d4d2bc85c0a877a54d68e54722a31939e434a1821ffae7d1e83f9c52608d8a",
+    "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_02.scene.json": "33fb7899b5abdf2367c4e034f5b75e83f62c4c37653962fd8d7a7aaa23e302a7",
+    "reports/v09/generation/showcase-v1/09_celadon_citrus/candidate_02.jpg": "bcd8d546aebff3876677026959a5a1e9404bafd3690b7fdd11e661ab0467cff6",
+    "reports/v09/generation/showcase-v1/10_dark_pears/record.json": "cfe64942cc18f149117ce0a8b7596e5fed7fd88c87cf4c3b065cfe80fa41b9b1",
+    "reports/v09/generation/showcase-v1/10_dark_pears/task_evidence.json": "504015862b88c66598e002f4fc2001f8fe558f347d90b724fd8bde53500de889",
+    "reports/v09/generation/showcase-v1/10_dark_pears/candidate_00.scene.json": "8304424893b5725d69c7b30ca1d7bec784597801bac9b326887b99114b17b0be",
+    "reports/v09/generation/showcase-v1/10_dark_pears/candidate_00.jpg": "d69c37ba92262cd095b2109f4a83fe973731cefc5ca4904854cdbd317d6163f0",
+    "reports/v09/generation/showcase-v1/10_dark_pears/candidate_01.scene.json": "c74c8c49e78533fc11aa93608419f7d201254db94186fc981f4bc4213d44d615",
+    "reports/v09/generation/showcase-v1/10_dark_pears/candidate_01.jpg": "b9931c977c7170f48f9777a4f14bd741df1d671b485465cca192757c3c3ad265",
+    "reports/v09/generation/showcase-v1/10_dark_pears/candidate_02.scene.json": "c4bc7f7858f14b2d0a7c1990b6b5ec41e847a2d71dad1a2226a57d42bfa381a8",
+    "reports/v09/generation/showcase-v1/10_dark_pears/candidate_02.jpg": "e165b44d410c2d957ddea191a049fd0f9ec40e2a56d8802debfc7bd930b529bc",
+    "CANDIDATES.json": "d91482be697f90ab5069425ed0813cb8c226930394082469dde9fa644cc1ad51",
+    "web/downloads/CRF_0_9_Report.md": "c9390da7240ee4601df9459d71c75e79498b30f7a78e556d6a77ecff2ed5d3bd",
+    "docs/v09/PROVIDER_API.md": "87b11b123a890db1c5dc4e5e19a4535559b282283be4ec5350785481dd043b24",
+    "docs/v09/VIDEO_COLOUR.md": "db937607cfff7cd0c20ebfecbcc023d330623ab3fab061e983da7b49b69df112",
+    "web/crf-video09.js": "cfe939684ed4385acdaae5bf4b730130502c50024b08661fd824cebedf2305c3",
+    "reports/v09/experiment_summary.json": "352cb57cf994d1809a33cfe1510ed35bfe62565a120564a535b2204e376abca0",
+    "reports/v09/water_capability_diagnostic.json": "757c63016c91092cd78fab136e6ee7c25515626e4e08ad32f2503c90646c5ec5",
+    "reports/v09/visual_review.md": "c66e0504151f12d2e7e027fc7d4d17b910fb33f95fa80daad286de28092b81c1",
+    "reports/v09/media_verification.json": "50a1198461d4b5fcbadbe82b7365dfcf260c94490828aead2a7d91bc6b78a7dc",
+    "reports/v09/shared_learning.json": "63d5707eb635606bf17fc2b06e3005fdfc38ecf9fbce52a3b1786b8651519a0d",
+    "reports/v09/generative_core_verification.json": "039f82d86f43623c183bbd2a22180b70125d15f62ce051d94333225cfde4e3a6",
+    "reports/v09/terminal_status.json": "53bc29eaaf7677a01651c54ebf7bb5b3f973081d1629c4a6e23f282367cfb3fe",
+    "reports/v09/boundary/fidelity.json": "3d15fbce588a0d78570e0dc60f7c84099fcfe645583b56c9b862d2eb1fc58c56",
+    "reports/v09/boundary/controlled_metrics.json": "11c633d873bc6f0fa083cb683c4db242deb918fda7ee55c5c2286e54421211d5",
+    "reports/v09/boundary/controlled_validation.json": "11c633d873bc6f0fa083cb683c4db242deb918fda7ee55c5c2286e54421211d5",
+    "reports/v09/boundary/runtime.json": "c25714607b085139c26b212b65b24a356d1fb9a1263dcb077f1d8e8db1d62a63",
+    "web/assets/v09/acceptance.json": "fc2fd88d6616fc01d327b41a24d17e9bede7b444ca2161d2f52b9ab119970929",
+    "reports/v09/browser/actual_generation_export.json": "e6ce64e98887db659ee4eacc71aa629e113d7daf101211b8e38f958374d41f78",
+    "reports/v09/browser/export.json": "37e69050e39b004545f96fbf7795fc1faf6eaa345e091578f83d0daf622b9600",
+    "reports/v09/browser/exported.scene.json": "bc34b21f87d32c9da12d8ee821ead78ecda4cf4394d234a5d5dd5219ca70ab7c",
+    "reports/v09/browser/legacy_navigation.json": "c61d7b1976aa5ab97722a4594e07a5ab01d370ae5005c3ef3dd340fc66ac9c00",
+    "reports/v09/browser/published_downloads.json": "9ccea28068d5c6e6de5c530822c9e45fa786ad52bfccc840926382e836420a15",
+    "reports/v09/browser/video_colour_bitstream_diagnostic.json": "63535681a9c73171a125b0f786eadd87dc8e8d2e5194195188e157bc5fd4e7c1",
+    "reports/v09/browser/video_export.json": "ead3c3a96f8cd610fadab4dce81915ca8660ff141dc49c3107793d2a0a5eae4b",
+    "reports/v09/browser/video_export_colour_diagnostic.json": "81f70f8a2f5f16fd81abcf134fda5e6410f3e09b4c0605433d0d0b8e79177c78",
+    "reports/v09/browser/video_export_stretched_diagnostic.json": "566e210674b4233580b306a2a4caafaa6e2f5bbc982028466b987befaaacd0f7",
+    "reports/v09/browser/video_export_vp8_metadata_diagnostic.json": "ea2c8f7de8371028deec21a3ff2481d9ee05abfa72ea847165460d0f2611a9eb",
+    "scenes/street_original.json": "4d96cadf8c0db9e303b3168f4f2533bb2f08a418966acde7c334f315650eecb0",
+    "scenes/street_blue.json": "8c077f6562e3f750053aa467e0c8f8087b485329efc722a0c815da6b649a88c8",
+    "scenes/street_signal_removed.json": "db8708e0a2dafae5b23019c97849b761a84d3c5141d3d961363ea3d776e3bf32",
+    "package.json": "c3fd7cd8147246281d3c03893458c33158f7f42af9ec2716710c3cda521d5561",
+    "README.md": "4c5e11755db7df7103e9111139e13d90e7f7edcc475c1936102796e0f9fee799"
+  },
+  "street": {
+    "schema": "crf.offline_render.v0.9",
+    "sceneId": "street",
+    "kind": "street",
+    "width": 667,
+    "height": 1000,
+    "view": "front",
+    "time": 0,
+    "camera": {
+      "panX": 0,
+      "panY": 0,
+      "zoom": 1
+    },
+    "viewport": {
+      "fit": "native",
+      "x": 0,
+      "y": 0,
+      "width": 667,
+      "height": 1000
+    },
+    "rgbaSHA256": "9bb6ad809edc50b12ff540684deefef3e428a16e2a3d4e589fb9dce8a9a3b763",
+    "rgbSHA256": "c0f882363900fb49539c0e3a477e3dd698063eec9b6382f43d5d5b56f4d0396f",
+    "pngSHA256": "531fcaa60f2b0359e21ad2fb0b880ef9fd4dc6bedc03b9206f90e364bae3899d",
+    "bytes": 1267687,
+    "elapsedMs": 864.53072,
+    "engineSourceSHA256": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+    "diagnostics": {
+      "engine": "crf-boundary09",
+      "baselineGaussians": 65536,
+      "observedDetailGaussians": 100000,
+      "mixedEdgePixels": 0,
+      "inferredGaussianCount": 0,
+      "hiddenGroundTruthAvailable": false,
+      "signalAttachmentRecomputed": false,
+      "spatialMode": "observed image plane; inferred connector on bounded translation"
+    },
+    "sourcePhotoReadByRenderer": false
+  },
+  "candidates": [
+    {
+      "id": "01_ivory_facade_candidate_00",
+      "actualRGBASHA256": "2270098474a0b9e22183bec6f48cfabcb5c501234f15cd399960273fc28551dd",
+      "recordedPixelSHA256": "2270098474a0b9e22183bec6f48cfabcb5c501234f15cd399960273fc28551dd",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 662.2099989999999
+    },
+    {
+      "id": "01_ivory_facade_candidate_01",
+      "actualRGBASHA256": "9b59272ea22b3898d4bdebbf571ded3a394e1678f59ca22195c6099a77df7bf6",
+      "recordedPixelSHA256": "9b59272ea22b3898d4bdebbf571ded3a394e1678f59ca22195c6099a77df7bf6",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 493.04564100000005
+    },
+    {
+      "id": "01_ivory_facade_candidate_02",
+      "actualRGBASHA256": "c39a2036f854533d3c9a89059a956a681a627bfdbd8f459e683d312b7f8362ed",
+      "recordedPixelSHA256": "c39a2036f854533d3c9a89059a956a681a627bfdbd8f459e683d312b7f8362ed",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 613.2647400000001
+    },
+    {
+      "id": "02_ochre_corner_candidate_00",
+      "actualRGBASHA256": "06899203162537db5a3ca4d138d77300e03d74004855b0befdaf1218af69b3ec",
+      "recordedPixelSHA256": "06899203162537db5a3ca4d138d77300e03d74004855b0befdaf1218af69b3ec",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 562.8356130000002
+    },
+    {
+      "id": "02_ochre_corner_candidate_01",
+      "actualRGBASHA256": "a470e68aa2cc27773d6bda92a2acbcb04bc5d25c56a2ee0ac2d354870ea6ae4d",
+      "recordedPixelSHA256": "a470e68aa2cc27773d6bda92a2acbcb04bc5d25c56a2ee0ac2d354870ea6ae4d",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 460.06165299999975
+    },
+    {
+      "id": "02_ochre_corner_candidate_02",
+      "actualRGBASHA256": "136f6172d747dfbc8f01c498126dcd45ac770ad1fae3b0d4bd944e12f3d600ac",
+      "recordedPixelSHA256": "136f6172d747dfbc8f01c498126dcd45ac770ad1fae3b0d4bd944e12f3d600ac",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 443.68580399999973
+    },
+    {
+      "id": "03_blue_wall_candidate_00",
+      "actualRGBASHA256": "a51dc1af9f3bc566b18c8712783a4f71974728899d3616e5308880ff8a7244ad",
+      "recordedPixelSHA256": "a51dc1af9f3bc566b18c8712783a4f71974728899d3616e5308880ff8a7244ad",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 512.582817
+    },
+    {
+      "id": "03_blue_wall_candidate_01",
+      "actualRGBASHA256": "a7a7a4e352e0c7d968474b0bd846e0c6deb34f64a3ce8be58cc2275aeeb4acfd",
+      "recordedPixelSHA256": "a7a7a4e352e0c7d968474b0bd846e0c6deb34f64a3ce8be58cc2275aeeb4acfd",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 382.47321299999976
+    },
+    {
+      "id": "03_blue_wall_candidate_02",
+      "actualRGBASHA256": "8e211c947b4755a38977c55adccf2b34a15de845c5faeed68c1406f6ef9f06db",
+      "recordedPixelSHA256": "8e211c947b4755a38977c55adccf2b34a15de845c5faeed68c1406f6ef9f06db",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 435.7926290000005
+    },
+    {
+      "id": "04_cold_alpine_candidate_00",
+      "actualRGBASHA256": "d5b722b688820652aa8463770864ab2db8fe766fcb2db5702c357a1aa184220c",
+      "recordedPixelSHA256": "d5b722b688820652aa8463770864ab2db8fe766fcb2db5702c357a1aa184220c",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 788.0284369999999
+    },
+    {
+      "id": "04_cold_alpine_candidate_01",
+      "actualRGBASHA256": "a6397516727141ad620145106fb6e5503ec7d1bbb26d57835c8048f129742327",
+      "recordedPixelSHA256": "a6397516727141ad620145106fb6e5503ec7d1bbb26d57835c8048f129742327",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 721.4174929999999
+    },
+    {
+      "id": "04_cold_alpine_candidate_02",
+      "actualRGBASHA256": "dce75325bf8538ef6b13210b68ae3dd4062733ff0ffabbce1e2d4120b33b5fdd",
+      "recordedPixelSHA256": "dce75325bf8538ef6b13210b68ae3dd4062733ff0ffabbce1e2d4120b33b5fdd",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 600.6787100000001
+    },
+    {
+      "id": "05_warm_coast_candidate_00",
+      "actualRGBASHA256": "be908692f64298d429c2fd9d58e6915f0297a1898eaa07a9eb3b6e0175c7ef68",
+      "recordedPixelSHA256": "be908692f64298d429c2fd9d58e6915f0297a1898eaa07a9eb3b6e0175c7ef68",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 815.9408700000004
+    },
+    {
+      "id": "05_warm_coast_candidate_01",
+      "actualRGBASHA256": "4f81fc74f8e5be52a3760ef87309c227b1eafc23d66b874196b2f2639dd9d519",
+      "recordedPixelSHA256": "4f81fc74f8e5be52a3760ef87309c227b1eafc23d66b874196b2f2639dd9d519",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 802.0481650000002
+    },
+    {
+      "id": "05_warm_coast_candidate_02",
+      "actualRGBASHA256": "53e5a9f9b2b56359282d4fa248a29b1a4e1022b405c4e7bcc5a881e56430d433",
+      "recordedPixelSHA256": "53e5a9f9b2b56359282d4fa248a29b1a4e1022b405c4e7bcc5a881e56430d433",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 765.068881000001
+    },
+    {
+      "id": "06_misty_forest_candidate_00",
+      "actualRGBASHA256": "347c79fbadab62a75028cd8fcda47dd51fd51802a43a412bb6141a15a03614f7",
+      "recordedPixelSHA256": "347c79fbadab62a75028cd8fcda47dd51fd51802a43a412bb6141a15a03614f7",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 812.878804
+    },
+    {
+      "id": "06_misty_forest_candidate_01",
+      "actualRGBASHA256": "33034fa41f1145f41f09a31b4a78e5daf7550e1e20a41513d7885d4c18cb41cb",
+      "recordedPixelSHA256": "33034fa41f1145f41f09a31b4a78e5daf7550e1e20a41513d7885d4c18cb41cb",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 608.8497540000008
+    },
+    {
+      "id": "06_misty_forest_candidate_02",
+      "actualRGBASHA256": "8dcd83421a5275d81e0d4ea54654f813146183fd544fbf805f783b9bfe2f7c3c",
+      "recordedPixelSHA256": "8dcd83421a5275d81e0d4ea54654f813146183fd544fbf805f783b9bfe2f7c3c",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 646.7506560000002
+    },
+    {
+      "id": "07_evening_lake_candidate_00",
+      "actualRGBASHA256": "ed50fabfd8b4ddf67152cd4fd946998fd44ee5438eb25ead20312ad20d7930aa",
+      "recordedPixelSHA256": "ed50fabfd8b4ddf67152cd4fd946998fd44ee5438eb25ead20312ad20d7930aa",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 836.8698839999997
+    },
+    {
+      "id": "07_evening_lake_candidate_01",
+      "actualRGBASHA256": "678c4915f6f1fa8e4e346b372bca024fc97d7ca748aaaa3e638e464209070aa1",
+      "recordedPixelSHA256": "678c4915f6f1fa8e4e346b372bca024fc97d7ca748aaaa3e638e464209070aa1",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 700.1018970000005
+    },
+    {
+      "id": "07_evening_lake_candidate_02",
+      "actualRGBASHA256": "2fae3eb9e9328663e2946a98121e1cd7b8a68666d91ae2fbd1c75dff9344c89c",
+      "recordedPixelSHA256": "2fae3eb9e9328663e2946a98121e1cd7b8a68666d91ae2fbd1c75dff9344c89c",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 684.6260199999997
+    },
+    {
+      "id": "08_three_fruits_candidate_00",
+      "actualRGBASHA256": "db2cfd666eb8457cad20250b9522890ab934a9a41039f2639d56732e8695a2c2",
+      "recordedPixelSHA256": "db2cfd666eb8457cad20250b9522890ab934a9a41039f2639d56732e8695a2c2",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 649.847772000001
+    },
+    {
+      "id": "08_three_fruits_candidate_01",
+      "actualRGBASHA256": "d405ca9b7a105ab157a3a8212b06fb98d84a81aacc842f733245a592fb7c5194",
+      "recordedPixelSHA256": "d405ca9b7a105ab157a3a8212b06fb98d84a81aacc842f733245a592fb7c5194",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 616.7105049999991
+    },
+    {
+      "id": "08_three_fruits_candidate_02",
+      "actualRGBASHA256": "da494ce7db9bbeb805ed7aa4073aa3712b39052d6961ff7b947093990dcaddae",
+      "recordedPixelSHA256": "da494ce7db9bbeb805ed7aa4073aa3712b39052d6961ff7b947093990dcaddae",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 479.18936499999836
+    },
+    {
+      "id": "09_celadon_citrus_candidate_00",
+      "actualRGBASHA256": "59a0d71fcef6deeae2c8034d75b18e1767489c55cd70ea6084fa3591c90630e9",
+      "recordedPixelSHA256": "59a0d71fcef6deeae2c8034d75b18e1767489c55cd70ea6084fa3591c90630e9",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 581.075882000001
+    },
+    {
+      "id": "09_celadon_citrus_candidate_01",
+      "actualRGBASHA256": "15fbe879fcb7328be23bf20f536c145ff07757a060d66996faa58e3367ef4161",
+      "recordedPixelSHA256": "15fbe879fcb7328be23bf20f536c145ff07757a060d66996faa58e3367ef4161",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 460.0131430000001
+    },
+    {
+      "id": "09_celadon_citrus_candidate_02",
+      "actualRGBASHA256": "228d6084674f3869849853e1e02bc7c8560c98bf91542e525b43690c5db5c771",
+      "recordedPixelSHA256": "228d6084674f3869849853e1e02bc7c8560c98bf91542e525b43690c5db5c771",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 377.2177420000007
+    },
+    {
+      "id": "10_dark_pears_candidate_00",
+      "actualRGBASHA256": "feacfa3153510455d1c188cd89da535db13a2ea39ee1f67e33c8334dfdbbbe59",
+      "recordedPixelSHA256": "feacfa3153510455d1c188cd89da535db13a2ea39ee1f67e33c8334dfdbbbe59",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 624.1900620000015
+    },
+    {
+      "id": "10_dark_pears_candidate_01",
+      "actualRGBASHA256": "30173efeb80c5158a2ea16611b0f29d0e04d88b8b030fa3b726b1dbf93c93f4c",
+      "recordedPixelSHA256": "30173efeb80c5158a2ea16611b0f29d0e04d88b8b030fa3b726b1dbf93c93f4c",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 509.655018999998
+    },
+    {
+      "id": "10_dark_pears_candidate_02",
+      "actualRGBASHA256": "696193b080b26896486239c251c12ddf905be90c0d0b1d23b6d34778d36ba668",
+      "recordedPixelSHA256": "696193b080b26896486239c251c12ddf905be90c0d0b1d23b6d34778d36ba668",
+      "exactRecordedRGBAMatch": true,
+      "elapsedMs": 523.8282919999983
+    }
+  ],
+  "allRenderableScenesIdentical": true,
+  "allCandidateRecordsIdentical": true,
+  "archive": {
+    "file": "web/downloads/CRF_0_9_Render_Kit.zip",
+    "bytes": 13349993,
+    "sha256": "7c51b0a28e701a68b0e9973a9ffafcee6fef89102b738a7e5e128b6f5d8224c2",
+    "fileCount": 166
+  }
+}

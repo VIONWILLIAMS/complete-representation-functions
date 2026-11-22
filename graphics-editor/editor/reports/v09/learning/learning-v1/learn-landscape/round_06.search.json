@@ -1,0 +1,745 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 6,
+  "query": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "checkpoint": {
+    "sessionId": "crf09_b59f3a06-8a8c-46de-ba82-44d05621b14e",
+    "round": 6,
+    "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+    "subtopic": "背景与承托面：桌面、墙面、地面、局部环境",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:54:25.416Z",
+    "runId": "crf07_19a4e1ca-65ea-479d-b74e-aef00768687d",
+    "queries": [
+      "site:commons.wikimedia.org \"桌面\" \"墙面\" 静物 石 木 苔藓 照片",
+      "site:commons.wikimedia.org \"pine\" \"shadow\" \"ground\" photograph",
+      "site:commons.wikimedia.org \"rock\" \"texture\" \"lichen\" \"boulder\" photograph",
+      "site:pexels.com photo pine forest sunlight shadows on ground trunks",
+      "site:pexels.com photo stone wall texture moss lichen close-up",
+      "site:pexels.com photo wooden table surface sunlight shadow texture"
+    ],
+    "requestIds": [
+      "74212131-223c-42f9-b77f-c295c5b47961"
+    ],
+    "sourceCount": 15,
+    "newSourceCount": 14,
+    "candidateCount": 14,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_rl_00_d9dd1ce52f6344d5a466415f9b1d73d6",
+        "type": "deepseek_read_url",
+        "kind": "read_link",
+        "status": "completed",
+        "action": {
+          "type": "read_link",
+          "url": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/"
+        },
+        "sourceUrls": []
+      },
+      {
+        "id": "srvtoolu_s_01_d0c53197c87d41baa6ea90efeecb0fd5",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"桌面\" \"墙面\" 静物 石 木 苔藓 照片",
+            "site:commons.wikimedia.org \"pine\" \"shadow\" \"ground\" photograph",
+            "site:commons.wikimedia.org \"rock\" \"texture\" \"lichen\" \"boulder\" photograph",
+            "site:pexels.com photo pine forest sunlight shadows on ground trunks",
+            "site:pexels.com photo stone wall texture moss lichen close-up",
+            "site:pexels.com photo wooden table surface sunlight shadow texture"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg#1",
+          "https://www.pexels.com/photo/steps-in-park-18558163/",
+          "https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/",
+          "https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/",
+          "https://commons.wikimedia.org/wiki/Category:Biogeomorphology_of_Colorado",
+          "https://www.pexels.com/photo/photo-of-a-view-of-the-sun-through-trees-12453842/",
+          "https://www.pexels.com/fr-fr/photo/nature-mousse-rock-rocher-4573126/",
+          "https://www.pexels.com/fr-fr/photo/building-batiment-immeuble-motif-17796021/",
+          "https://commons.wikimedia.org/wiki/File:A_lichen_-_Anaptychia_runcinata_-_geograph.org.uk_-_933120.jpg#1",
+          "https://www.pexels.com/fr-fr/photo/foret-de-pins-tranquille-avec-la-lumiere-du-soleil-filtrant-a-travers-33202110/",
+          "https://www.pexels.com/zh-tw/photo/35543490/",
+          "https://www.pexels.com/ru-ru/photo/32796580/",
+          "https://www.pexels.com/fr-fr/photo/nature-foret-arbres-troncs-d-arbres-12508991/",
+          "https://www.pexels.com/fr-fr/photo/cailloux-glissant-mousse-pierres-1972/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+        "title": "Photo by Nunzio Guerrera on Pexels",
+        "snippet": "",
+        "via": "server_page"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg#1",
+        "title": "File:Bay of fires RL 004.jpg - Wikimedia Commons - File:Bay of fires RL 004.jpg",
+        "snippet": "Bay of fires RL 004.jpg ... DescriptionBay of fires RL 004.jpg | ... It stretches over 50 kilometres from Binalong bay in the south to Eddystone Point through the north. Bay of fires is famous for its orange-lichen covered granite rock boulders. ---|--- Date",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/steps-in-park-18558163/",
+        "title": "Photo by Josh Wabe Pascual on Pexels",
+        "snippet": "Dimensions 5120x3840 Aspect Ratio 4:3 Colors Date Sep 30, 2023 Downloads 12 Views 7.9K ... Aperture ƒ/2.2 ISO 64 Shutter Speed 1/120 sec ... 2019 Software Adobe Photoshop Express (Android) Description # A tranquil forest pathway with sunlight filtering through tall pine trees, casting shadows on wooden steps. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/",
+        "title": "Photo de Anastasiia sur Pexels",
+        "snippet": "Afterglow ... 2848x4272 Format 2 ... 523 Vues 45 ... Logiciel Adobe Photoshop 22.0 (Windows) Description # Vue détaillée de mousse verte et de lichen blanc sur une surface rocheuse brune, mettant en valeur des textures naturelles. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/",
+        "title": "Photo de Harun sur Pexels",
+        "snippet": "Dimensions 3510x6240 Format 9:16 Couleurs Date Jun 7, 2024 ... Description # Scène intérieure avec la lumière du soleil projetant des ombres sur une table en bois et une chaise en métal. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Biogeomorphology_of_Colorado",
+        "title": "Category:Biogeomorphology of Colorado - Wikimedia Commons",
+        "snippet": "The following 4 files are in this category, out of 4 total. ... 2.82 MB Rocky Mountain National Park in September 2011 - Bear Lake area - boulder with lichen.JPG 2,524 × 2,039; 2.1 MB Rocky Mountain National Park in September 2011",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/photo-of-a-view-of-the-sun-through-trees-12453842/",
+        "title": "Photo by Ibad Badrul on Pexels",
+        "snippet": "Add filters, effects ... Aspect Ratio 2:3 Colors Date Jun 10 ... 59 Views 32.2K ... Aperture ƒ/2.2 ISO 100 Shutter Speed 1/4000 sec Taken At Jun 5, 2022 Software Adobe Lightroom 4.1 (Windows) Description # Beautiful sunlight filtering through dense pine trees, capturing nature's serene beauty. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/nature-mousse-rock-rocher-4573126/",
+        "title": "Photo de ArtHouse Studio sur Pexels",
+        "snippet": "Afterglow Street ... 7606x5073 Couleurs Date Jun 5 ... Appareil photo ILCA-99M2 ... Logiciel Adobe Photoshop Lightroom 6.8 (Macintosh) Description # Texture détaillée de mousse et de lichen coloré poussant sur une surface rocheuse. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/building-batiment-immeuble-motif-17796021/",
+        "title": "Photo de David Brown sur Pexels",
+        "snippet": "4 David Brown 32,3 million vues \\ 108,6 millier téléchargements Description # La lumière du soleil créant des ombres diagonales formant un motif sur une surface en bois. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:A_lichen_-_Anaptychia_runcinata_-_geograph.org.uk_-_933120.jpg#1",
+        "title": "File:A lichen - Anaptychia runcinata - geograph.org.uk - 933120.jpg - Wikimedia Commons - File:A lichen - Anaptychia runcinata - geograph.org.uk - 933120.jpg",
+        "snippet": "A lichen - Anaptychia runcinata Growing on the boulders in a rocky bay, this looks vaguely like some flat variety of seaweed, but it is a maritime species of lichen, and grows on rocks down to sea-level. It has long narrow lobes which widen towards the tips.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/foret-de-pins-tranquille-avec-la-lumiere-du-soleil-filtrant-a-travers-33202110/",
+        "title": "Photo de Никита Шелайкин sur Pexels",
+        "snippet": "3024x4032 Format 3:4 Couleurs Date Jul 28, 2025 ... 34 Vues 8 ... Description # Forêt de pins sereine avec la lumière du soleil traversant les arbres, créant une atmosphère paisible.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/35543490/",
+        "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+        "snippet": "Use filters Change focus Brighten up ... 4128x6192 長寬比 2:3 色彩 ... 說明 # 戶外環境中，磚牆上長滿青苔的石質裝飾物特寫。 ### 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/ru-ru/photo/32796580/",
+        "title": "Автор фото на Pexels: Nothing Ahead",
+        "snippet": "Бесплатное использование # Мягкий солнечный свет, проникая сквозь него, создает узоры на деревянной поверхности, придавая ей теплые, землистые тона. ### Больше похожего контента",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/nature-foret-arbres-troncs-d-arbres-12508991/",
+        "title": "Photo de Andreu Marquès sur Pexels",
+        "snippet": "5444x3649 ... Logiciel Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh) Description # Belle vue d'une forêt de pins avec des troncs à l'écorce texturée créant une scène naturelle paisible.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/cailloux-glissant-mousse-pierres-1972/",
+        "title": "Photo de Little Visuals sur Pexels",
+        "snippet": "Create photo collages Add custom frames Little Visuals ... Format 3:2 Couleurs Date May 16 ... Logiciel Adobe Photoshop Lightroom 5.0 (Macintosh) Description # Texture détaillée de mousse et de lichen sur une surface rocheuse, montrant des tons et des motifs naturels. ## Médias similaires",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮针对“背景与承托面”检索，可核验的具体照片页仍以 Pexels 为主，但多数页面描述只写“阳光透过/投射阴影”，未给出明确光照方向与投影几何；Commons 返回的仍是分类页或搜索列表，不是可引用的独立文件详情页。以下候选按“能否对应到具体照片页”筛选，光照与材质描述均来自页面文字/EXIF，未观察图像字节。\n\n### 可点击来源页候选\n\n**1. Pexels — 森林小径与木质台阶投影**\n- 来源页：https://www.pexels.com/photo/steps-in-park-18558163/\n- 页面事实：5120×3840；ƒ/2.2；ISO 64；1/120s；描述写“阳光透过高大松树，在木质台阶上投下阴影”。\n- 可转化细节：木质台阶作为“承托面”，投影落在水平踏面与垂直踢面的交界处；可把台阶边缘建模为硬边，阴影区保留木材纹理的低频走向，受光区保留高频木纹。适合提取“人工承托面 + 树冠投影”的局部环境参考。\n- 局限：未观察图像；阴影是斑驳树影还是清晰枝干投影无法从文本确认；松树树冠未直接呈现。\n\n**2. Pexels — 室内木桌与金属椅的窗光投影**\n- 来源页：https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/\n- 页面事实：3510×6240；描述写“室内场景，阳光在木桌和金属椅上投射阴影”。\n- 可转化细节：这是“桌面/墙面”承托面中最接近强光明确投影的候选。木桌可作为低频纹理承托面，窗框投影在桌面形成几何硬边；金属椅提供高光反射与硬边缘。可把投影边界建模为沿窗格方向的阶跃函数，阴影内保留木纹低频，受光区提高粗糙度对比。\n- 局限：室内环境，不直接对应山湖/海岸/针叶林；金属椅的反射可能溢出，需后续图像验证。\n\n**3. Pexels — 阳光在木质表面形成对角阴影图案**\n- 来源页：https://www.pexels.com/fr-fr/photo/building-batiment-immeuble-motif-17796021/\n- 页面事实：描述写“阳光在木质表面形成对角阴影图案”。\n- 可转化细节：对角投影方向明确，适合提取“承托面 + 方向性硬阴影”的图形函数：投影边界可用旋转的阶跃边缘，木质表面保留顺纹低频纹理，阴影区不整体压黑而是降低亮度、保留纹理。\n- 局限：页面未提供尺寸、相机、EXIF；木质表面是桌面、地板还是墙面未知；需后续图像验证投影是否来自树冠或建筑构件。\n\n**4. Pexels — 松林与纹理树皮**\n- 来源页：https://www.pexels.com/fr-fr/photo/nature-foret-arbres-troncs-d-arbres-12508991/\n- 页面事实：5444×3649；描述写“松林，纹理树皮树干，宁静自然场景”。\n- 可转化细节：可作为“针叶林树干承托面”的纹理参考；树皮垂直走向的低频沟槽与高频鳞片适合拆成法线扰动与颜色变化。若页面未写强光投影，则仅用于材质，不宣称光照形态。\n- 局限：页面描述未明确阳光方向或地面投影；松针树冠的锯齿边缘与地面阴影缺失。\n\n**5. Pexels — 岩石表面的苔藓与地衣纹理（近景）**\n- 来源页：https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/\n- 页面事实：2848×4272；Canon EOS 450D；50mm；ƒ/2.0；ISO 100；1/200s；描述写“绿色苔藓与白色地衣在棕色岩石表面的细节，强调自然纹理”。\n- 可转化细节：岩石承托面的高频纹理与低饱和度棕色基底；苔藓为绿色斑块，地衣为白色点状/片状覆盖，可作为“岩石表面材质混合”的参考。ƒ/2.0 浅景深暗示近景局部，不适用于大景深山湖。\n- 局限：未写强光或投影；近景浅景深，不能直接推断岩壁明暗交界。\n\n**6. Pexels — 岩石表面苔藓与地衣（大尺寸）**\n- 来源页：https://www.pexels.com/fr-fr/photo/nature-mousse-rock-rocher-4573126/\n- 页面事实：7606×5073；ILCA-99M2；70mm；ƒ/7.1；1/100s；描述写“苔藓与彩色地衣在岩石表面的细节纹理”。\n- 可转化细节：ƒ/7.1 比上一张更适合保留岩石表面纹理；可把岩石基底建模为棕色低频层理，苔藓/地衣作为高频颜色斑块，用于“岩石承托面”的材质函数。\n- 局限：未写光照方向或投影；不涉及山湖/海岸大场景。\n\n### 本轮未解决的缺口\n\n- **针叶林树冠强光投影 + 地面/树干承托面**：Pexels 结果中“阳光透过松树”的页面  描述的是光照氛围，但未明确投影落在何种承托面、投影是否硬边。仍缺“树冠锯齿边缘 + 地面/岩石/木质承托面上的清晰投影”的具体照片页。\n- **山湖/海岸大场景的承托面**：本轮未返回可核验的山湖岩壁强光投影或海岸岩壁强光的具体文件详情页。Commons 的 Bay of Fires 文件页描述的是橙色地衣花岗岩巨石 ，但未提供光照方向与投影信息；且该页为文件页，非本轮重点承托面。\n- **墙面/地面承托面**：除室内木桌  与木质表面对角阴影  外，未找到可核验的“自然环境中墙面/地面 + 树冠/岩壁投影”的独立照片页。\n\n### 可转化为图形函数的细节（基于页面文字，非像素观察）\n\n1. **木质承托面 + 方向性投影** ：把承托面建模为低频木纹（顺纹方向可随机扰动），投影边界用硬阶跃；阴影区亮度降低但保留木纹对比度，避免均匀黑。窗光/树光投影的方向可从页面描述“对角”“投射”获得定性方向，但精确角度需图像验证。\n2. **岩石承托面材质混合** ：岩石基底为棕色低频层理，苔藓为绿色高频斑块，地衣为白色/浅灰点状或片状高频信号。可把三者作为独立颜色通道与粗糙度通道叠加，阴影区不应抹掉苔藓/地衣的局部对比。\n3. **针叶林树干承托面** ：树皮垂直沟槽可作为法线方向的高频扰动，颜色在深棕与灰褐间变化；若后续找到强光投影，树干受光面与背光面可沿圆柱法线分段，背光面保留沟槽纹理而非整体压暗。\n\n### 下一轮建议\n\n- 打开 Commons 文件页核验 `Bay of fires RL 004.jpg` 的作者/许可/描述，确认是否有光照方向字段。\n- 定向搜 Pexels/Commons 的“pine forest floor shadows”“sunlight through pine trees on rock/ground”具体照片页，目标是有地面投影几何与树冠边缘的实例，而非仅“阳光透过”的氛围描述。\n- 山湖承托面优先找 Commons Featured picture 的文件页，搜“mountain lake rock wall sunlight shadow”并筛选 File 命名空间，避免分类页。\n\n**来源**\n1. Commons — Bay of fires RL 004.jpg：https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg \n2. Pexels — steps in park：https://www.pexels.com/photo/steps-in-park-18558163/ \n3. Pexels — 苔藓岩石近景：https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/ \n4. Pexels — 木桌与金属椅：https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/ \n5. Pexels — 岩石苔藓地衣大尺寸：https://www.pexels.com/fr-fr/photo/nature-mousse-rock-rocher-4573126/ \n6. Pexels — 木质表面对角阴影：https://www.pexels.com/fr-fr/photo/building-batiment-immeuble-motif-17796021/ \n7. Pexels — 松林树皮：https://www.pexels.com/fr-fr/photo/nature-foret-arbres-troncs-d-arbres-12508991/ \n8. Pexels — 岩石苔藓纹理：https://www.pexels.com/fr-fr/photo/cailloux-glissant-mousse-pierres-1972/ ",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+      "title": "Photo by Nunzio Guerrera on Pexels",
+      "snippet": "",
+      "via": "server_page"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg#1",
+      "title": "File:Bay of fires RL 004.jpg - Wikimedia Commons - File:Bay of fires RL 004.jpg",
+      "snippet": "Bay of fires RL 004.jpg ... DescriptionBay of fires RL 004.jpg | ... It stretches over 50 kilometres from Binalong bay in the south to Eddystone Point through the north. Bay of fires is famous for its orange-lichen covered granite rock boulders. ---|--- Date",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/steps-in-park-18558163/",
+      "title": "Photo by Josh Wabe Pascual on Pexels",
+      "snippet": "Dimensions 5120x3840 Aspect Ratio 4:3 Colors Date Sep 30, 2023 Downloads 12 Views 7.9K ... Aperture ƒ/2.2 ISO 64 Shutter Speed 1/120 sec ... 2019 Software Adobe Photoshop Express (Android) Description # A tranquil forest pathway with sunlight filtering through tall pine trees, casting shadows on wooden steps. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/",
+      "title": "Photo de Anastasiia sur Pexels",
+      "snippet": "Afterglow ... 2848x4272 Format 2 ... 523 Vues 45 ... Logiciel Adobe Photoshop 22.0 (Windows) Description # Vue détaillée de mousse verte et de lichen blanc sur une surface rocheuse brune, mettant en valeur des textures naturelles. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/",
+      "title": "Photo de Harun sur Pexels",
+      "snippet": "Dimensions 3510x6240 Format 9:16 Couleurs Date Jun 7, 2024 ... Description # Scène intérieure avec la lumière du soleil projetant des ombres sur une table en bois et une chaise en métal. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Biogeomorphology_of_Colorado",
+      "title": "Category:Biogeomorphology of Colorado - Wikimedia Commons",
+      "snippet": "The following 4 files are in this category, out of 4 total. ... 2.82 MB Rocky Mountain National Park in September 2011 - Bear Lake area - boulder with lichen.JPG 2,524 × 2,039; 2.1 MB Rocky Mountain National Park in September 2011",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/photo-of-a-view-of-the-sun-through-trees-12453842/",
+      "title": "Photo by Ibad Badrul on Pexels",
+      "snippet": "Add filters, effects ... Aspect Ratio 2:3 Colors Date Jun 10 ... 59 Views 32.2K ... Aperture ƒ/2.2 ISO 100 Shutter Speed 1/4000 sec Taken At Jun 5, 2022 Software Adobe Lightroom 4.1 (Windows) Description # Beautiful sunlight filtering through dense pine trees, capturing nature's serene beauty. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/nature-mousse-rock-rocher-4573126/",
+      "title": "Photo de ArtHouse Studio sur Pexels",
+      "snippet": "Afterglow Street ... 7606x5073 Couleurs Date Jun 5 ... Appareil photo ILCA-99M2 ... Logiciel Adobe Photoshop Lightroom 6.8 (Macintosh) Description # Texture détaillée de mousse et de lichen coloré poussant sur une surface rocheuse. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/building-batiment-immeuble-motif-17796021/",
+      "title": "Photo de David Brown sur Pexels",
+      "snippet": "4 David Brown 32,3 million vues \\ 108,6 millier téléchargements Description # La lumière du soleil créant des ombres diagonales formant un motif sur une surface en bois. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:A_lichen_-_Anaptychia_runcinata_-_geograph.org.uk_-_933120.jpg#1",
+      "title": "File:A lichen - Anaptychia runcinata - geograph.org.uk - 933120.jpg - Wikimedia Commons - File:A lichen - Anaptychia runcinata - geograph.org.uk - 933120.jpg",
+      "snippet": "A lichen - Anaptychia runcinata Growing on the boulders in a rocky bay, this looks vaguely like some flat variety of seaweed, but it is a maritime species of lichen, and grows on rocks down to sea-level. It has long narrow lobes which widen towards the tips.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/foret-de-pins-tranquille-avec-la-lumiere-du-soleil-filtrant-a-travers-33202110/",
+      "title": "Photo de Никита Шелайкин sur Pexels",
+      "snippet": "3024x4032 Format 3:4 Couleurs Date Jul 28, 2025 ... 34 Vues 8 ... Description # Forêt de pins sereine avec la lumière du soleil traversant les arbres, créant une atmosphère paisible.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/35543490/",
+      "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+      "snippet": "Use filters Change focus Brighten up ... 4128x6192 長寬比 2:3 色彩 ... 說明 # 戶外環境中，磚牆上長滿青苔的石質裝飾物特寫。 ### 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/ru-ru/photo/32796580/",
+      "title": "Автор фото на Pexels: Nothing Ahead",
+      "snippet": "Бесплатное использование # Мягкий солнечный свет, проникая сквозь него, создает узоры на деревянной поверхности, придавая ей теплые, землистые тона. ### Больше похожего контента",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/nature-foret-arbres-troncs-d-arbres-12508991/",
+      "title": "Photo de Andreu Marquès sur Pexels",
+      "snippet": "5444x3649 ... Logiciel Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh) Description # Belle vue d'une forêt de pins avec des troncs à l'écorce texturée créant une scène naturelle paisible.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/cailloux-glissant-mousse-pierres-1972/",
+      "title": "Photo de Little Visuals sur Pexels",
+      "snippet": "Create photo collages Add custom frames Little Visuals ... Format 3:2 Couleurs Date May 16 ... Logiciel Adobe Photoshop Lightroom 5.0 (Macintosh) Description # Texture détaillée de mousse et de lichen sur une surface rocheuse, montrant des tons et des motifs naturels. ## Médias similaires",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg#1",
+      "title": "File:Bay of fires RL 004.jpg - Wikimedia Commons - File:Bay of fires RL 004.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/steps-in-park-18558163/",
+      "title": "Photo by Josh Wabe Pascual on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/",
+      "title": "Photo de Anastasiia sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/",
+      "title": "Photo de Harun sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Biogeomorphology_of_Colorado",
+      "title": "Category:Biogeomorphology of Colorado - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-view-of-the-sun-through-trees-12453842/",
+      "title": "Photo by Ibad Badrul on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/nature-mousse-rock-rocher-4573126/",
+      "title": "Photo de ArtHouse Studio sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/building-batiment-immeuble-motif-17796021/",
+      "title": "Photo de David Brown sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_lichen_-_Anaptychia_runcinata_-_geograph.org.uk_-_933120.jpg#1",
+      "title": "File:A lichen - Anaptychia runcinata - geograph.org.uk - 933120.jpg - Wikimedia Commons - File:A lichen - Anaptychia runcinata - geograph.org.uk - 933120.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/foret-de-pins-tranquille-avec-la-lumiere-du-soleil-filtrant-a-travers-33202110/",
+      "title": "Photo de Никита Шелайкин sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/35543490/",
+      "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/ru-ru/photo/32796580/",
+      "title": "Автор фото на Pexels: Nothing Ahead",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/nature-foret-arbres-troncs-d-arbres-12508991/",
+      "title": "Photo de Andreu Marquès sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/cailloux-glissant-mousse-pierres-1972/",
+      "title": "Photo de Little Visuals sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 186232,
+        "sha256": "acfd8514b509c8ea16ce2e30f9c8eba160463de6724a3cbd2b5e5fe99c232bfc"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bay_of_fires_RL_004.jpg/960px-Bay_of_fires_RL_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg#1",
+      "title": "File:Bay of fires RL 004.jpg - Wikimedia Commons - File:Bay of fires RL 004.jpg",
+      "sha256": "acfd8514b509c8ea16ce2e30f9c8eba160463de6724a3cbd2b5e5fe99c232bfc",
+      "bytes": 186232,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 640,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Wanderlust aus",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bay_of_fires_RL_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4896,
+        "height": 3264,
+        "bytes": 3852338
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 143008,
+        "sha256": "8264837d6c3cd9d0156555d4c44c852300eb3c703d4147762e2fbd46bdcc6b72"
+      },
+      "imageUrl": "https://images.pexels.com/photos/18558163/pexels-photo-18558163.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/steps-in-park-18558163/",
+      "title": "Photo by Josh Wabe Pascual on Pexels",
+      "sha256": "8264837d6c3cd9d0156555d4c44c852300eb3c703d4147762e2fbd46bdcc6b72",
+      "bytes": 143008,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 276514,
+        "sha256": "ac0c94515ace7719f80eaf9c2648dcac6e006034ce5cb01f0226590cd331a59a"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5952180/pexels-photo-5952180.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/",
+      "title": "Photo de Anastasiia sur Pexels",
+      "sha256": "ac0c94515ace7719f80eaf9c2648dcac6e006034ce5cb01f0226590cd331a59a",
+      "bytes": 276514,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 52040,
+        "sha256": "6eb6be0043d461dcf63f65975bc49d35ba0f49c589077460756b0bc782f41b27"
+      },
+      "imageUrl": "https://images.pexels.com/photos/25810992/pexels-photo-25810992.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/",
+      "title": "Photo de Harun sur Pexels",
+      "sha256": "6eb6be0043d461dcf63f65975bc49d35ba0f49c589077460756b0bc782f41b27",
+      "bytes": 52040,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1365
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bay_of_fires_RL_004.jpg/960px-Bay_of_fires_RL_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg#1",
+      "title": "File:Bay of fires RL 004.jpg - Wikimedia Commons - File:Bay of fires RL 004.jpg",
+      "sha256": "acfd8514b509c8ea16ce2e30f9c8eba160463de6724a3cbd2b5e5fe99c232bfc",
+      "bytes": 186232,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 640,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Wanderlust aus",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bay_of_fires_RL_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4896,
+        "height": 3264,
+        "bytes": 3852338
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/18558163/pexels-photo-18558163.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/steps-in-park-18558163/",
+      "title": "Photo by Josh Wabe Pascual on Pexels",
+      "sha256": "8264837d6c3cd9d0156555d4c44c852300eb3c703d4147762e2fbd46bdcc6b72",
+      "bytes": 143008,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5952180/pexels-photo-5952180.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/",
+      "title": "Photo de Anastasiia sur Pexels",
+      "sha256": "ac0c94515ace7719f80eaf9c2648dcac6e006034ce5cb01f0226590cd331a59a",
+      "bytes": 276514,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/25810992/pexels-photo-25810992.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/",
+      "title": "Photo de Harun sur Pexels",
+      "sha256": "6eb6be0043d461dcf63f65975bc49d35ba0f49c589077460756b0bc782f41b27",
+      "bytes": 52040,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1365,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg#1",
+        "title": "File:Bay of fires RL 004.jpg - Wikimedia Commons - File:Bay of fires RL 004.jpg",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bay_of_fires_RL_004.jpg/960px-Bay_of_fires_RL_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Wanderlust aus",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ABay_of_fires_RL_004.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bay_of_fires_RL_004.jpg/960px-Bay_of_fires_RL_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 186232,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 640,
+        "sha256": "acfd8514b509c8ea16ce2e30f9c8eba160463de6724a3cbd2b5e5fe99c232bfc"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/steps-in-park-18558163/",
+        "title": "Photo by Josh Wabe Pascual on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/18558163/pexels-photo-18558163.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/18558163/pexels-photo-18558163.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 143008,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 576,
+        "sha256": "8264837d6c3cd9d0156555d4c44c852300eb3c703d4147762e2fbd46bdcc6b72"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/",
+        "title": "Photo de Anastasiia sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/5952180/pexels-photo-5952180.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/5952180/pexels-photo-5952180.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 276514,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "ac0c94515ace7719f80eaf9c2648dcac6e006034ce5cb01f0226590cd331a59a"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/",
+        "title": "Photo de Harun sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/25810992/pexels-photo-25810992.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/25810992/pexels-photo-25810992.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 52040,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1365,
+        "sha256": "6eb6be0043d461dcf63f65975bc49d35ba0f49c589077460756b0bc782f41b27"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Biogeomorphology_of_Colorado",
+        "title": "Category:Biogeomorphology of Colorado - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/photo-of-a-view-of-the-sun-through-trees-12453842/",
+        "title": "Photo by Ibad Badrul on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/12453842/pexels-photo-12453842.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/12453842/pexels-photo-12453842.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 178616,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "8e753bb5e01358eee803b231456b9aebb8cd2595021ce27d7259780960a46b33"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮针对“背景与承托面”检索，可核验的具体照片页仍以 Pexels 为主，但多数页面描述只写“阳光透过/投射阴影”，未给出明确光照方向与投影几何；Commons 返回的仍是分类页或搜索列表，不是可引用的独立文件详情页。以下候选按“能否对应到具体照片页”筛选，光照与材质描述均来自页面文字/EXIF，未观察图像字节。\n\n### 可点击来源页候选\n\n**1. Pexels — 森林小径与木质台阶投影**\n- 来源页：https://www.pexels.com/photo/steps-in-park-18558163/\n- 页面事实：5120×3840；ƒ/2.2；ISO 64；1/120s；描述写“阳光透过高大松树，在木质台阶上投下阴影”。\n- 可转化细节：木质台阶作为“承托面”，投影落在水平踏面与垂直踢面的交界处；可把台阶边缘建模为硬边，阴影区保留木材纹理的低频走向，受光区保留高频木纹。适合提取“人工承托面 + 树冠投影”的局部环境参考。\n- 局限：未观察图像；阴影是斑驳树影还是清晰枝干投影无法从文本确认；松树树冠未直接呈现。\n\n**2. Pexels — 室内木桌与金属椅的窗光投影**\n- 来源页：https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/\n- 页面事实：3510×6240；描述写“室内场景，阳光在木桌和金属椅上投射阴影”。\n- 可转化细节：这是“桌面/墙面”承托面中最接近强光明确投影的候选。木桌可作为低频纹理承托面，窗框投影在桌面形成几何硬边；金属椅提供高光反射与硬边缘。可把投影边界建模为沿窗格方向的阶跃函数，阴影内保留木纹低频，受光区提高粗糙度对比。\n- 局限：室内环境，不直接对应山湖/海岸/针叶林；金属椅的反射可能溢出，需后续图像验证。\n\n**3. Pexels — 阳光在木质表面形成对角阴影图案**\n- 来源页：https://www.pexels.com/fr-fr/photo/building-batiment-immeuble-motif-17796021/\n- 页面事实：描述写“阳光在木质表面形成对角阴影图案”。\n- 可转化细节：对角投影方向明确，适合提取“承托面 + 方向性硬阴影”的图形函数：投影边界可用旋转的阶跃边缘，木质表面保留顺纹低频纹理，阴影区不整体压黑而是降低亮度、保留纹理。\n- 局限：页面未提供尺寸、相机、EXIF；木质表面是桌面、地板还是墙面未知；需后续图像验证投影是否来自树冠或建筑构件。\n\n**4. Pexels — 松林与纹理树皮**\n- 来源页：https://www.pexels.com/fr-fr/photo/nature-foret-arbres-troncs-d-arbres-12508991/\n- 页面事实：5444×3649；描述写“松林，纹理树皮树干，宁静自然场景”。\n- 可转化细节：可作为“针叶林树干承托面”的纹理参考；树皮垂直走向的低频沟槽与高频鳞片适合拆成法线扰动与颜色变化。若页面未写强光投影，则仅用于材质，不宣称光照形态。\n- 局限：页面描述未明确阳光方向或地面投影；松针树冠的锯齿边缘与地面阴影缺失。\n\n**5. Pexels — 岩石表面的苔藓与地衣纹理（近景）**\n- 来源页：https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/\n- 页面事实：2848×4272；Canon EOS 450D；50mm；ƒ/2.0；ISO 100；1/200s；描述写“绿色苔藓与白色地衣在棕色岩石表面的细节，强调自然纹理”。\n- 可转化细节：岩石承托面的高频纹理与低饱和度棕色基底；苔藓为绿色斑块，地衣为白色点状/片状覆盖，可作为“岩石表面材质混合”的参考。ƒ/2.0 浅景深暗示近景局部，不适用于大景深山湖。\n- 局限：未写强光或投影；近景浅景深，不能直接推断岩壁明暗交界。\n\n**6. Pexels — 岩石表面苔藓与地衣（大尺寸）**\n- 来源页：https://www.pexels.com/fr-fr/photo/nature-mousse-rock-rocher-4573126/\n- 页面事实：7606×5073；ILCA-99M2；70mm；ƒ/7.1；1/100s；描述写“苔藓与彩色地衣在岩石表面的细节纹理”。\n- 可转化细节：ƒ/7.1 比上一张更适合保留岩石表面纹理；可把岩石基底建模为棕色低频层理，苔藓/地衣作为高频颜色斑块，用于“岩石承托面”的材质函数。\n- 局限：未写光照方向或投影；不涉及山湖/海岸大场景。\n\n### 本轮未解决的缺口\n\n- **针叶林树冠强光投影 + 地面/树干承托面**：Pexels 结果中“阳光透过松树”的页面  描述的是光照氛围，但未明确投影落在何种承托面、投影是否硬边。仍缺“树冠锯齿边缘 + 地面/岩石/木质承托面上的清晰投影”的具体照片页。\n- **山湖/海岸大场景的承托面**：本轮未返回可核验的山湖岩壁强光投影或海岸岩壁强光的具体文件详情页。Commons 的 Bay of Fires 文件页描述的是橙色地衣花岗岩巨石 ，但未提供光照方向与投影信息；且该页为文件页，非本轮重点承托面。\n- **墙面/地面承托面**：除室内木桌  与木质表面对角阴影  外，未找到可核验的“自然环境中墙面/地面 + 树冠/岩壁投影”的独立照片页。\n\n### 可转化为图形函数的细节（基于页面文字，非像素观察）\n\n1. **木质承托面 + 方向性投影** ：把承托面建模为低频木纹（顺纹方向可随机扰动），投影边界用硬阶跃；阴影区亮度降低但保留木纹对比度，避免均匀黑。窗光/树光投影的方向可从页面描述“对角”“投射”获得定性方向，但精确角度需图像验证。\n2. **岩石承托面材质混合** ：岩石基底为棕色低频层理，苔藓为绿色高频斑块，地衣为白色/浅灰点状或片状高频信号。可把三者作为独立颜色通道与粗糙度通道叠加，阴影区不应抹掉苔藓/地衣的局部对比。\n3. **针叶林树干承托面** ：树皮垂直沟槽可作为法线方向的高频扰动，颜色在深棕与灰褐间变化；若后续找到强光投影，树干受光面与背光面可沿圆柱法线分段，背光面保留沟槽纹理而非整体压暗。\n\n### 下一轮建议\n\n- 打开 Commons 文件页核验 `Bay of fires RL 004.jpg` 的作者/许可/描述，确认是否有光照方向字段。\n- 定向搜 Pexels/Commons 的“pine forest floor shadows”“sunlight through pine trees on rock/ground”具体照片页，目标是有地面投影几何与树冠边缘的实例，而非仅“阳光透过”的氛围描述。\n- 山湖承托面优先找 Commons Featured picture 的文件页，搜“mountain lake rock wall sunlight shadow”并筛选 File 命名空间，避免分类页。\n\n**来源**\n1. Commons — Bay of fires RL 004.jpg：https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg \n2. Pexels — steps in park：https://www.pexels.com/photo/steps-in-park-18558163/ \n3. Pexels — 苔藓岩石近景：https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/ \n4. Pexels — 木桌与金属椅：https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/ \n5. Pexels — 岩石苔藓地衣大尺寸：https://www.pexels.com/fr-fr/photo/nature-mousse-rock-rocher-4573126/ \n6. Pexels — 木质表面对角阴影：https://www.pexels.com/fr-fr/photo/building-batiment-immeuble-motif-17796021/ \n7. Pexels — 松林树皮：https://www.pexels.com/fr-fr/photo/nature-foret-arbres-troncs-d-arbres-12508991/ \n8. Pexels — 岩石苔藓纹理：https://www.pexels.com/fr-fr/photo/cailloux-glissant-mousse-pierres-1972/ ",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 16256,
+    "completion_tokens": 2208,
+    "total_tokens": 18464,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "74212131-223c-42f9-b77f-c295c5b47961",
+        "model": "deepseek-flash",
+        "elapsedMs": 24761,
+        "prompt_tokens": 16256,
+        "completion_tokens": 2208,
+        "total_tokens": 18464,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 1,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 41867,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 186232,
+        "sha256": "acfd8514b509c8ea16ce2e30f9c8eba160463de6724a3cbd2b5e5fe99c232bfc"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bay_of_fires_RL_004.jpg/960px-Bay_of_fires_RL_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bay_of_fires_RL_004.jpg#1",
+      "title": "File:Bay of fires RL 004.jpg - Wikimedia Commons - File:Bay of fires RL 004.jpg",
+      "sha256": "acfd8514b509c8ea16ce2e30f9c8eba160463de6724a3cbd2b5e5fe99c232bfc",
+      "bytes": 186232,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 640,
+      "license": {
+        "name": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "artist": "Wanderlust aus",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 4.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bay_of_fires_RL_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4896,
+        "height": 3264,
+        "bytes": 3852338
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/acfd8514b509c8ea16ce2e30f9c8eba160463de6724a3cbd2b5e5fe99c232bfc.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 143008,
+        "sha256": "8264837d6c3cd9d0156555d4c44c852300eb3c703d4147762e2fbd46bdcc6b72"
+      },
+      "imageUrl": "https://images.pexels.com/photos/18558163/pexels-photo-18558163.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/steps-in-park-18558163/",
+      "title": "Photo by Josh Wabe Pascual on Pexels",
+      "sha256": "8264837d6c3cd9d0156555d4c44c852300eb3c703d4147762e2fbd46bdcc6b72",
+      "bytes": 143008,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/8264837d6c3cd9d0156555d4c44c852300eb3c703d4147762e2fbd46bdcc6b72.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 276514,
+        "sha256": "ac0c94515ace7719f80eaf9c2648dcac6e006034ce5cb01f0226590cd331a59a"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5952180/pexels-photo-5952180.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mousse-poussant-sur-un-rocher-5952180/",
+      "title": "Photo de Anastasiia sur Pexels",
+      "sha256": "ac0c94515ace7719f80eaf9c2648dcac6e006034ce5cb01f0226590cd331a59a",
+      "bytes": 276514,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/ac0c94515ace7719f80eaf9c2648dcac6e006034ce5cb01f0226590cd331a59a.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 52040,
+        "sha256": "6eb6be0043d461dcf63f65975bc49d35ba0f49c589077460756b0bc782f41b27"
+      },
+      "imageUrl": "https://images.pexels.com/photos/25810992/pexels-photo-25810992.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/table-en-bois-bois-chaise-25810992/",
+      "title": "Photo de Harun sur Pexels",
+      "sha256": "6eb6be0043d461dcf63f65975bc49d35ba0f49c589077460756b0bc782f41b27",
+      "bytes": 52040,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1365,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/6eb6be0043d461dcf63f65975bc49d35ba0f49c589077460756b0bc782f41b27.webp"
+    }
+  ]
+}

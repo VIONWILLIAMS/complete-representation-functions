@@ -1,0 +1,240 @@
+{
+  "schema": "crf.gaussian_acceptance.v0.8",
+  "evaluatedAtUTC": "2026-11-21T13:43:40.358498+00:00",
+  "scope": "Independent full-resolution comparison of the shared JavaScript layered render, plus independently rerendered optimized 65K Gaussian asset.",
+  "reference": {
+    "path": "web/assets/reference.png",
+    "sha256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+    "decodedRGBA_SHA256": "28bb5484467aeab18620f7a09ee738ffdc6cb7a14fef383715f679ff8c7d4b8d",
+    "width": 667,
+    "height": 1000,
+    "resized": false
+  },
+  "metricDefinition": {
+    "implementation": "fitting/crf08_gaussian.py::metrics",
+    "implementationSHA256": "d8e576bb59e02dd9328e29c64a321f1a5febaec1a0622982386bec9433de8aa4",
+    "colorSpace": "decoded sRGB RGB channels, 0..255",
+    "pixelScope": "all 667000 pixels; no crop, no mask, no resize",
+    "rounding": "floor(x+0.5), clamp 0..255",
+    "psnrPeak": 255,
+    "ssim": {
+      "window": "Gaussian",
+      "sigma": 1.5,
+      "truncate": 3.5,
+      "padding": "reflect",
+      "variance": "population",
+      "constants": [
+        6.5025,
+        58.5225
+      ],
+      "channelAggregation": "mean RGB"
+    },
+    "interpretation": "Reconstruction fidelity; does not measure unobserved-background correctness or new-image generation realism."
+  },
+  "layeredSharedRenderer": {
+    "renderPath": "web/assets/v08/renders/street.png",
+    "renderSHA256": "3aac5bceee5e207f562f0a038f0f7ba72742608edef70f0985a7cc5548301e33",
+    "decodedRGBA_SHA256": "5c3eabb42644c8939753af0c2b86980e212835f226057e4f1ba94d998a5ccd0a",
+    "scenePath": "web/assets/v08/street.scene.json",
+    "sceneSHA256": "f4294435aec4322873129916b7bf76ed67012f4f10cfb320604b6d0629ad412e",
+    "renderer": "web/crf-gaussian08.js",
+    "rendererSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+    "runtime": "v24.22.3",
+    "objectCount": 18,
+    "gaussians": 62329,
+    "assets": [
+      {
+        "id": "street.wall.main",
+        "path": "web/assets/v08/gaussians/street.wall.main.json",
+        "gaussians": 27287,
+        "bytes": 2223487,
+        "sha256": "db1526b053df8e90b6050bf3b6b2d96161eb877c73dc53f4102d696c530a760f"
+      },
+      {
+        "id": "street.wall.base",
+        "path": "web/assets/v08/gaussians/street.wall.base.json",
+        "gaussians": 912,
+        "bytes": 77873,
+        "sha256": "4c9ac126a7b07387f8dbb44a86d86098578973c1f3d5a7306fbd31dc9b8e3451"
+      },
+      {
+        "id": "street.sidewalk.main",
+        "path": "web/assets/v08/gaussians/street.sidewalk.main.json",
+        "gaussians": 2946,
+        "bytes": 240895,
+        "sha256": "41ab0bfd9bb99f84834dd5b3dcb4e8aaae822ef8125a0b0074ddc37f41163c82"
+      },
+      {
+        "id": "street.road.main",
+        "path": "web/assets/v08/gaussians/street.road.main.json",
+        "gaussians": 5770,
+        "bytes": 464384,
+        "sha256": "8c23e72c3021f1782b8f4f4c070c5332ae46f9dd667c4b4cf13c825e7d3ef654"
+      },
+      {
+        "id": "street.window.r0.c0",
+        "path": "web/assets/v08/gaussians/street.window.r0.c0.json",
+        "gaussians": 675,
+        "bytes": 64212,
+        "sha256": "8c19bbf4be414d447665bb19d99aa3395fd27366e01ea10ae3ff8e4f4a5846ee"
+      },
+      {
+        "id": "street.window.r0.c1",
+        "path": "web/assets/v08/gaussians/street.window.r0.c1.json",
+        "gaussians": 661,
+        "bytes": 60942,
+        "sha256": "fbc91c03c330f9b30f05559d88cda318cad6896a925c749fff7d8bd0791f1975"
+      },
+      {
+        "id": "street.window.r1.c0",
+        "path": "web/assets/v08/gaussians/street.window.r1.c0.json",
+        "gaussians": 1314,
+        "bytes": 114753,
+        "sha256": "455d376c99f0c4e80359e5127a3f8bc2879b873a2293ea36408893888094ed89"
+      },
+      {
+        "id": "street.window.r1.c1",
+        "path": "web/assets/v08/gaussians/street.window.r1.c1.json",
+        "gaussians": 1332,
+        "bytes": 116928,
+        "sha256": "c11257f90c0eaeca51f91011e391242cbe13d0a17bb9800773c5f2e6397c00a2"
+      },
+      {
+        "id": "street.window.r2.c0",
+        "path": "web/assets/v08/gaussians/street.window.r2.c0.json",
+        "gaussians": 1341,
+        "bytes": 116613,
+        "sha256": "f145399316d72276b548a2911cc552c11b0023b3538c7192039b9a6240c10c4d"
+      },
+      {
+        "id": "street.window.r2.c1",
+        "path": "web/assets/v08/gaussians/street.window.r2.c1.json",
+        "gaussians": 1359,
+        "bytes": 119239,
+        "sha256": "277d6b8b7a75b1510a6fb2a9ae8119662aafc5dc3314593083886c3b4cb6ce41"
+      },
+      {
+        "id": "street.wall.fixtures",
+        "path": "web/assets/v08/gaussians/street.wall.fixtures.json",
+        "gaussians": 421,
+        "bytes": 42317,
+        "sha256": "48f51904008ce15e25941538be7302d3babe5235a239639bd6a60791a3351fd2"
+      },
+      {
+        "id": "street.pole.main",
+        "path": "web/assets/v08/gaussians/street.pole.main.json",
+        "gaussians": 5281,
+        "bytes": 448573,
+        "sha256": "a3ca12dd186fe4a26e77aab70011003bb8d5622ee5ea8c54b057c18ba3054a4a"
+      },
+      {
+        "id": "street.pole.arm",
+        "path": "web/assets/v08/gaussians/street.pole.arm.json",
+        "gaussians": 766,
+        "bytes": 72722,
+        "sha256": "ca56941d2794defe44211496e04dbe158c2c32eb47ff1e323d04dd36eed0968c"
+      },
+      {
+        "id": "street.signal.support",
+        "path": "web/assets/v08/gaussians/street.signal.support.json",
+        "gaussians": 523,
+        "bytes": 51624,
+        "sha256": "9c202d0155b5ba10a000bde598497ab005bec1d9a0d01316fcbe6e3c92c587fe"
+      },
+      {
+        "id": "street.signal.side",
+        "path": "web/assets/v08/gaussians/street.signal.side.json",
+        "gaussians": 723,
+        "bytes": 66801,
+        "sha256": "89c2a147ca7654924670544fc07db31b91fdab607bbb1b9258efd2a0f1ed3ac4"
+      },
+      {
+        "id": "street.signal.main",
+        "path": "web/assets/v08/gaussians/street.signal.main.json",
+        "gaussians": 1072,
+        "bytes": 96183,
+        "sha256": "596fd80214daf378e48f6826ffb978ff1c1f4cdf3fa4cdafa49d87b40f9db0c5"
+      },
+      {
+        "id": "street.road.edge",
+        "path": "web/assets/v08/gaussians/street.road.edge.json",
+        "gaussians": 510,
+        "bytes": 45511,
+        "sha256": "7a2233f5975e6d2a8f72d4d59cc6cde26836af8cf81ba9e666f97403a2159c87"
+      },
+      {
+        "id": "street.crosswalk.main",
+        "path": "web/assets/v08/gaussians/street.crosswalk.main.json",
+        "gaussians": 9436,
+        "bytes": 758957,
+        "sha256": "4ce29b5c9dea80ba40027122dc380664c900a232b38f6629206b1d0540c495ca"
+      }
+    ],
+    "coldRenderMilliseconds": 669.03417,
+    "metrics": {
+      "mae": 1.5152653673163419,
+      "rmse": 2.21480367580037,
+      "psnr": 41.22409889632681,
+      "ssim": 0.9551302603493509,
+      "maxError": 60,
+      "exactRGBFraction": 0.13908845577211396,
+      "evaluatedPixels": 667000,
+      "rounding": "floor(x+0.5), clamp 0..255"
+    },
+    "targets": {
+      "pilotPSNR32_SSIM095": true,
+      "highFidelityPSNR38_SSIM098": false,
+      "exact100PercentRGB": false
+    },
+    "freshSceneRerenderParity": {
+      "matchingRGBA": true,
+      "mismatchedChannels": 0,
+      "maxChannelDifference": 0,
+      "pixelCount": 667000
+    }
+  },
+  "optimizedNative65K": {
+    "assetPath": "web/assets/v08/gaussians/street.optimized.json",
+    "assetSHA256": "070fc31a5a2492f5501909449e29ee98ed2b3522edfeae97396462283014a2d3",
+    "gaussians": 65536,
+    "width": 667,
+    "height": 1000,
+    "coldJSRenderMilliseconds": 428.8390800000001,
+    "sourceRGBEmbedded": false,
+    "losslessResidualEmbedded": false,
+    "metrics": {
+      "mae": 1.151816091954023,
+      "rmse": 1.71318023183395,
+      "psnr": 43.45474251897208,
+      "ssim": 0.9755363189227315,
+      "maxError": 33,
+      "exactRGBFraction": 0.15825337331334333,
+      "evaluatedPixels": 667000,
+      "rounding": "floor(x+0.5), clamp 0..255"
+    },
+    "targets": {
+      "pilotPSNR32_SSIM095": true,
+      "highFidelityPSNR38_SSIM098": false,
+      "exact100PercentRGB": false
+    },
+    "jsVersusFreshPython": {
+      "matchingRGBA": true,
+      "mismatchedChannels": 0,
+      "maxChannelDifference": 0,
+      "pixelCount": 667000
+    },
+    "jsVersusPublishedPythonPNG": {
+      "matchingRGBA": true,
+      "mismatchedChannels": 0,
+      "maxChannelDifference": 0,
+      "pixelCount": 667000
+    },
+    "publishedPythonPNG_SHA256": "13ad1da6ef8e7e1ffbc6990e502bf758ec6d6c59ff6a7d1fd9fa9843bb4083e5"
+  },
+  "notes": [
+    "The older street.reference.65k asset is a separate unrefined baseline and was not substituted for street.optimized.",
+    "RGBA parity only proves renderer/export consistency. It does not imply exact reconstruction of the input photograph.",
+    "Reported timings are one cold Node render on the current executor, not a guaranteed browser or Mac frame rate.",
+    "The planned high-fidelity threshold requires both PSNR >=38 and SSIM >=0.98; failing either remains a failure."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "crf.editor_contract_execution.v0.9",
+  "startedAt": "2026-11-21T16:48:25.004Z",
+  "completedAt": "2026-11-21T16:48:40.854Z",
+  "status": "passed",
+  "command": "node --test --test-reporter=tap tests/test_editor09_contract.cjs",
+  "exitCode": 0,
+  "tests": 7,
+  "passed": 7,
+  "failed": 0,
+  "skipped": 0,
+  "sourceSHA256": {
+    "tests/test_editor09_contract.cjs": "6711375369b3b898ceded195983af79c72fec8f2c92ecc645e14a5dd496d602f",
+    "web/editor09.js": "33f6155fe2cf63aa88a098c35702230b5141d2b892583bbfbc947304d537565f",
+    "web/studio09.html": "681b48ec9b3bbe84162548c8e731e12205f9f7ab800c0b8fe327981f272ed40c",
+    "web/render-worker09.js": "17abcc918f203b6ef1d25c33486787d0e2e13dd62a6bc24f08c1fdb464518fe9",
+    "web/crf-gaussian08.js": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+    "web/crf-generative09.js": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+    "web/crf-boundary09.js": "8b3470301d73840d3ee238c06ffbdf14ec659094f59e7bd5b8bca81b213ccdad"
+  },
+  "sourcesUnchangedDuringRun": true,
+  "networkProviderCalls": 0,
+  "scope": "Shipped editor functions and actual Worker source in a local transport/DOM harness; browser layout and browser video codec are not emulated.",
+  "output": "TAP version 13\n# Subtest: 0.9 renderer Worker preserves native and observation bytes and reports invalid input\nok 1 - 0.9 renderer Worker preserves native and observation bytes and reports invalid input\n  ---\n  duration_ms: 578.324197\n  type: 'test'\n  ...\n# Subtest: street Worker loads all declared functions, retries failure, and caches without source image fetch\nok 2 - street Worker loads all declared functions, retries failure, and caches without source image fetch\n  ---\n  duration_ms: 7514.632685\n  type: 'test'\n  ...\n# Subtest: editor history preserves model, scene, camera and time, and restores deterministic pixels\nok 3 - editor history preserves model, scene, camera and time, and restores deterministic pixels\n  ---\n  duration_ms: 575.496755\n  type: 'test'\n  ...\n# Subtest: editor camera trajectory is continuous across t=0 and finite over the complete five seconds\nok 4 - editor camera trajectory is continuous across t=0 and finite over the complete five seconds\n  ---\n  duration_ms: 1.729056\n  type: 'test'\n  ...\n# Subtest: invalid project import leaves the active scene and history unchanged; valid export reopens with its model\nok 5 - invalid project import leaves the active scene and history unchanged; valid export reopens with its model\n  ---\n  duration_ms: 2000.249166\n  type: 'test'\n  ...\n# Subtest: opening the editor never starts a paid provider call; street export declares every runtime dependency\nok 6 - opening the editor never starts a paid provider call; street export declares every runtime dependency\n  ---\n  duration_ms: 4960.74009\n  type: 'test'\n  ...\n# Subtest: 0.9 UI uses the colour-aware exporter, contains portrait/4:3 content, and preserves the returned colour report\nok 7 - 0.9 UI uses the colour-aware exporter, contains portrait/4:3 content, and preserves the returned colour report\n  ---\n  duration_ms: 31.686764\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 15782.615301\n\n"
+}

@@ -1,0 +1,14 @@
+✔ new iframe stays in layout until its animation-dependent API is ready (2.579128ms)
+✔ returning to a pending cached iframe restores its layout before waiting (3.696873ms)
+✔ missing child API gives a page-specific error and removes the failed frame (1.094049ms)
+✔ readiness timeout reports the phase and releases handlers and cache (61.314605ms)
+✔ cross-origin navigation is caught instead of escaping the onload handler (6.428792ms)
+✔ case failure remains visible with retry, and a successful retry clears it (8.391571ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 210.537726

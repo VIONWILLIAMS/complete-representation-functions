@@ -1,0 +1,38 @@
+{
+  "id": "studio.slate",
+  "width": 960,
+  "height": 640,
+  "base": [
+    33,
+    40,
+    44
+  ],
+  "splats": [
+    [
+      210,
+      90,
+      570,
+      400,
+      0,
+      20,
+      23,
+      23
+    ],
+    [
+      900,
+      640,
+      600,
+      360,
+      0,
+      -17,
+      -19,
+      -20
+    ]
+  ],
+  "schema": "crf.gaussian_asset.v0.8",
+  "provenance": {
+    "kind": "analytic-code",
+    "sourceRGBEmbedded": false,
+    "algorithm": "explicit Gaussian illumination / contact coverage"
+  }
+}

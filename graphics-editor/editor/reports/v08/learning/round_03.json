@@ -1,0 +1,454 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 3,
+  "query": "陶瓷杯与花瓶的实拍",
+  "checkpoint": {
+    "sessionId": "crf08-ten-rounds",
+    "round": 3,
+    "topic": "陶瓷杯与花瓶的实拍",
+    "subtopic": "4–6张不同陶瓷杯或花瓶的具体照片，简单背景，关注口沿、釉面、柔光",
+    "status": "searched",
+    "completedAt": "2026-11-21T13:24:47.862Z",
+    "runId": "crf07_21064488-5887-48c9-890b-a4db1e20ac71",
+    "queries": [
+      "site:commons.wikimedia.org ceramic cup rim glaze soft light white background",
+      "site:unsplash.com ceramic cup soft light plain background",
+      "site:pexels.com ceramic vase rim glaze close up soft light",
+      "site:commons.wikimedia.org ceramic vase glaze Wikimedia Commons",
+      "What are the visual characteristics of ceramic cup rims and glaze reflections under soft light?"
+    ],
+    "requestIds": [
+      "71b56f39-d669-481d-94d6-2b8fbda6d233"
+    ],
+    "sourceCount": 14,
+    "newSourceCount": 14,
+    "candidateCount": 9,
+    "downloadedImageCount": 1,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_acf211ae815a41cfacd6d8fa984dbbc2",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org ceramic cup rim glaze soft light white background",
+            "site:unsplash.com ceramic cup soft light plain background",
+            "site:pexels.com ceramic vase rim glaze close up soft light",
+            "site:commons.wikimedia.org ceramic vase glaze Wikimedia Commons",
+            "What are the visual characteristics of ceramic cup rims and glaze reflections under soft light?"
+          ]
+        },
+        "sourceUrls": [
+          "https://unsplash.com/photos/two-handmade-ceramic-bowls-on-a-white-surface-HQZTJxfMVfE",
+          "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+          "https://stockcake.com/i/ancient-glaze-landscape_4204755_1873673",
+          "https://unsplash.com/photos/coffee-beans-in-a-white-cup-H78FjJ0BEfU",
+          "https://commons.wikimedia.org/wiki/File:Vase,_China,_Qing_Dynasty,_Qianlong_period,_1736-1795,_porcelain_with_pale_blue_glaze_-_Chazen_Museum_of_Art_-_DSC01663.JPG",
+          "https://stockcake.com/i/ancient-glaze-landscape_4204754_1873673",
+          "https://unsplash.com/photos/dried-thistle-flower-in-a-textured-vase-UGOVKgymeVQ",
+          "https://stockcake.com/i/weathered-cup-landscape_4204757_1873673",
+          "https://unsplash.com/photos/a-textured-black-mug-on-a-light-background-GblECKqAk_4",
+          "https://commons.wikimedia.org/wiki/File:Pair_of_Hexagonal_Vases,_c._1752-1755,_Chelsea,_soft-paste_porcelain_with_overglaze_enamels_-_Gardiner_Museum,_Toronto_-_DSC00614.JPG",
+          "https://limnboard.com/110855/3",
+          "https://unsplash.com/photos/white-and-black-ceramic-mug-with-coffee-GBysETtVUIw",
+          "https://commons.wikimedia.org/wiki/Category:Glazed_pottery",
+          "https://curiosityartandframing.com/products/stained-glass-raku-vessel?pr_prod_strat=e5_desc&pr_rec_id=ce4f5f69d&pr_rec_pid=7800637456426&pr_ref_pid=7800736350250&pr_seq=uniform"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://unsplash.com/photos/two-handmade-ceramic-bowls-on-a-white-surface-HQZTJxfMVfE",
+        "title": "Photo by Olivie Strauss on Unsplash",
+        "snippet": "Set of neutral-toned ceramic cups in soft lighting. Useful for stock photo projects about slow living, craftsmanship, minimal interiors, and design-forward tableware. From this series",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+        "title": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+        "snippet": "Japanese - Vase (kabin) - Walters 491668 - Profile.jpg ... This vase, with its restrained shape and overall turquoise enamel glaze, follows Qing [Ch'ing] dynasty ceramic models. The design of the four-character mark, \"Made at Kairakuen,\" imitates enamel ... [Ch'ing] imperial wares. ... Medium | porcelain with turquoise enamel glaze on the biscuit",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://stockcake.com/i/ancient-glaze-landscape_4204755_1873673",
+        "title": "Free Ancient Glaze Landscape Image - Ceramic, Porcelain, Weathered | Download at StockCake",
+        "snippet": "The worn rim becomes a luminous landscape of ridges and valleys, decorated with sparkling crystalline glaze formations and shimmering mineral deposits. Golden hour light streams through translucent layers, creating magical rainbow halos that dance across the surface. Tiny cracks form geometric web patterns like topographic maps, while dust particles float in the warm glow.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/coffee-beans-in-a-white-cup-H78FjJ0BEfU",
+        "title": "Photo by Pascal on Unsplash",
+        "snippet": "Coffee beans in a white cup. A crisp, minimalist photograph featuring a white ceramic cup filled with whole coffee beans, set against a pure white background. The natural lighting casts a soft, rounded shadow, highlighting the cup’s handle and enhancing the image’s clean aesthetic.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Vase,_China,_Qing_Dynasty,_Qianlong_period,_1736-1795,_porcelain_with_pale_blue_glaze_-_Chazen_Museum_of_Art_-_DSC01663.JPG",
+        "title": "File:Vase, China, Qing Dynasty, Qianlong period, 1736-1795, porcelain with pale blue glaze - Chazen Museum of Art - DSC01663.JPG - Wikimedia Commons",
+        "snippet": "Vase, China, Qing Dynasty, Qianlong period, 1736-1795, porcelain with pale blue glaze - Chazen Museum of Art - DSC01663.JPG From Wikimedia Commons, the free media repository",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://stockcake.com/i/ancient-glaze-landscape_4204754_1873673",
+        "title": "Free Ancient Glaze Landscape Image - Macro, Ceramic, Pottery | Download at StockCake",
+        "snippet": "close-up photography transforms an ancient ceramic cup's weathered rim into an ethereal landscape of crystalline beauty. Golden hour backlight illuminates iridescent mineral deposits and translucent glaze layers, creating prismatic rainbow halos that dance across the curved surface. Micro-fractures form ... while erosion reveals pearlescent shimmer on worn porcelain. ... The mundane edge becomes a luminous study in texture, where ridges and valleys catch dramatic rim lighting, revealing hidden beauty in material imperfections and the passage of time.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/dried-thistle-flower-in-a-textured-vase-UGOVKgymeVQ",
+        "title": "Photo by Anya Chernykh on Unsplash",
+        "snippet": "Dried thistle flower in a textured vase A single dried thistle in a ribbed ceramic cup, photographed against a soft, muted background. The stark form and fine details of the flower contrast gently with the minimal, neutral-toned environment. Published on Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://stockcake.com/i/weathered-cup-landscape_4204757_1873673",
+        "title": "Free Weathered Cup Landscape Image - Ceramic, Porcelain, Pottery | Download at StockCake",
+        "snippet": "Crystalline glaze formations line the curved edge like tiny mountain ridges, while iridescent mineral deposits catch golden hour light to create shimmering rainbow halos. ... Soft bokeh melts the background into dreamy blur as warm backlight refracts through translucent glaze layers, making dust particles dance in the luminous glow.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/a-textured-black-mug-on-a-light-background-GblECKqAk_4",
+        "title": "Photo by Olivie Strauss on Unsplash",
+        "snippet": "A textured black mug on a light background. Minimalist stoneware cup in neutral tones. Stock applications in lifestyle, slow living, home decor, ceramics, and modern tableware. Published on Licensed under the Unsplash+ License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pair_of_Hexagonal_Vases,_c._1752-1755,_Chelsea,_soft-paste_porcelain_with_overglaze_enamels_-_Gardiner_Museum,_Toronto_-_DSC00614.JPG",
+        "title": "File:Pair of Hexagonal Vases, c. 1752-1755, Chelsea, soft-paste porcelain with overglaze enamels - Gardiner Museum, Toronto - DSC00614.JPG - Wikimedia Commons",
+        "snippet": "Pair of Hexagonal Vases, c. 1752-1755, Chelsea, soft-paste porcelain with overglaze enamels - Gardiner Museum, Toronto - DSC00614.JPG From Wikimedia Commons, the free media repository",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://limnboard.com/110855/3",
+        "title": "Attimo Tea Set",
+        "snippet": "the glaze finish appears smooth and slightly reflective suggesting cool porcelain under soft illumination ... lighting arrives from an elevated frontal position creating soft diffused illumination without harsh shadows, gentle highlights gleam along the upper rims of cups and the curved surfaces of handles suggesting the coolness of glazed ceramic under even studio lights...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/white-and-black-ceramic-mug-with-coffee-GBysETtVUIw",
+        "title": "Photo by Sylwia Bartyzel on Unsplash",
+        "snippet": "Editorial # white and black ceramic mug with coffee Download this free HD photo of cup, minimalism, lessismore, and home by Sylwia Bartyzel (@sylwiabartyzel) ... plain background 342 photos · Curated by Julia Morales",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Glazed_pottery",
+        "title": "Category:Glazed pottery - Wikimedia Commons",
+        "snippet": "Media in category \"Glazed pottery\" The following 46 files are in this category, out of 46 total. ... - Vase (3278023254).jpg 681 × 1,024; 530 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://curiosityartandframing.com/products/stained-glass-raku-vessel?pr_prod_strat=e5_desc&pr_rec_id=ce4f5f69d&pr_rec_pid=7800637456426&pr_ref_pid=7800736350250&pr_seq=uniform",
+        "title": "\"Stained Glass\" Raku Vessel",
+        "snippet": "The interior is uniformly dark, appearing glazed and smooth compared with the exterior’s rougher surface. Soft, even lighting casts a short, gentle shadow in front of the cup, emphasizing its rounded form and giving a quiet, handcrafted character to the piece.",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "**本轮实际发现**\n\n本轮针对“陶瓷杯/花瓶、简单背景、口沿/釉面/柔光”进行检索，在 Unsplash 与 Wikimedia Commons 找到若干可能相关的页面，但多数结果缺乏口沿特写或明确柔光描述，且部分页面信息不足以确认主体是否为陶瓷杯/花瓶。未发现同时满足“不同陶瓷杯或花瓶 4–6 张、简单背景、口沿清楚、釉面可见、柔光”全部条件的 Wikimedia Commons 照片。Pexels 搜索结果中未出现可确认的陶瓷杯/花瓶详情页。以下来源仅基于网页文字描述，未获取原图，未进行像素级观察。\n\n**可转化图形函数的细节（待图片验证）**\n\n- **口沿几何**：若后续原图确认口沿清楚，可提取杯口/瓶口的椭圆投影曲率、沿厚度的双线轮廓，以及外翻/内收的局部切线变化。当前网页文本未提供足够口沿特写描述。\n- **釉面反射**：Unsplash 页面描述“soft lighting”与“smooth and slightly reflective”提示釉面可能呈现柔和高光；可建模为宽而低幅的镜面瓣，而非硬质锐利高光。实际粗糙度参数待原图验证。\n- **轮廓与背景分离**：白色背景或中性浅色背景的陶瓷杯页面有助于后续边缘提取；但网页描述中“pure white background”或“neutral environment”仅可作为筛选线索，实际主体边缘对比度需看原图。\n- **材质暗示**：Wikimedia Commons 的清代瓷瓶页面记录“porcelain with pale blue glaze”，另一日式花瓶页面记录“turquoise enamel glaze on the biscuit”，可作为釉面颜色与反射层差异的候选来源；但页面未描述柔光或简单背景。\n\n**适合高斯拟合的选图条件（基于本轮检索修正）**\n\n- 口沿在画面中占据可辨识比例：杯口或瓶口需有足够像素跨度，避免全景小物件导致口沿曲率不可提取。\n- 釉面高光不饱和：优先柔光下高光呈宽椭圆、无过曝白斑的候选；本轮 Unsplash 的“soft lighting”描述可作为初筛，但需原图确认高光形态。\n- 背景为单一浅色或中性色：页面含“white surface”“pure white background”“neutral environment”等描述者可优先复核；但需排除背景纹理复杂或道具干扰的页面。\n- 主体单一：优先单杯或单瓶；成组陶瓷页面可能增加分割难度，本轮未将其列为首选。\n\n**不确定性与限制**\n\n- Unsplash 页面“Set of neutral-toned ceramic cups in soft lighting”的标题与描述指向陶瓷杯与柔光，但页面内容未明确口沿是否清楚、背景是否无杂物，需获取原图确认。\n- Unsplash “Coffee beans in a white cup” 页面描述为白瓷杯与纯白背景，但杯内装有咖啡豆，可能遮挡部分口沿内侧结构，且页面未说明柔光方向。\n- Wikimedia Commons 两件花瓶页面提供了釉色与尺寸信息，但未描述拍摄背景与光照条件；是否满足“简单背景、柔光”无法从文本确认。\n- StockCake 页面描述的是“ancient ceramic cup”的风化口沿与金色光晕，属于艺术化极近特写，并非本轮所需的柔光实拍参考，且来源为 StockCake 而非用户指定的优先平台，未列为正式候选。\n- Unsplash+ 许可的“textured black mug”页面已排除，因其许可证不满足 CC 或标准 Unsplash License 的优先条件。\n\n**下一轮补齐点**\n\n- 定向检索 Wikimedia Commons 中“ceramic cup rim”“porcelain vase simple background”的具体文件详情页，优先寻找白色或灰色无缝背景、单件器物、口沿横向或略俯视可见的 CC BY/CC BY-SA 照片。\n- 补充检索 Pexels 上陶瓷杯/花瓶的纯色背景照片，并确认页面是否描述柔光或侧光。\n- 对 Unsplash 候选页面（陶瓷杯组照、白瓷杯咖啡豆）获取原图后核验：口沿是否无遮挡、高光是否为宽柔反射、背景是否无干扰。\n- 若需釉面颜色变化参考，可复核 Wikimedia Commons 清代浅蓝釉瓷瓶与日式绿釉花瓶页面，确认其背景与光照是否适合边缘/反射提取。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_China,_Qing_Dynasty,_Qianlong_period,_1736-1795,_porcelain_with_pale_blue_glaze_-_Chazen_Museum_of_Art_-_DSC01663.JPG",
+        "title": "File:Vase, China, Qing Dynasty, Qianlong period, 1736-1795, porcelain with pale blue glaze - Chazen Museum of Art - DSC01663.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Vase,_China,_Qing_Dynasty,_Qianlong_period,_1736-1795,_porcelain_with_pale_blue_glaze_-_Chazen_Museum_of_Art_-_DSC01663.JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pair_of_Hexagonal_Vases,_c._1752-1755,_Chelsea,_soft-paste_porcelain_with_overglaze_enamels_-_Gardiner_Museum,_Toronto_-_DSC00614.JPG",
+        "title": "File:Pair of Hexagonal Vases, c. 1752-1755, Chelsea, soft-paste porcelain with overglaze enamels - Gardiner Museum, Toronto - DSC00614.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Pair_of_Hexagonal_Vases,_c._1752-1755,_Chelsea,_soft-paste_porcelain_with_overglaze_enamels_-_Gardiner_Museum,_Toronto_-_DSC00614.JPG"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://unsplash.com/photos/two-handmade-ceramic-bowls-on-a-white-surface-HQZTJxfMVfE",
+      "title": "Photo by Olivie Strauss on Unsplash",
+      "snippet": "Set of neutral-toned ceramic cups in soft lighting. Useful for stock photo projects about slow living, craftsmanship, minimal interiors, and design-forward tableware. From this series",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+      "title": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+      "snippet": "Japanese - Vase (kabin) - Walters 491668 - Profile.jpg ... This vase, with its restrained shape and overall turquoise enamel glaze, follows Qing [Ch'ing] dynasty ceramic models. The design of the four-character mark, \"Made at Kairakuen,\" imitates enamel ... [Ch'ing] imperial wares. ... Medium | porcelain with turquoise enamel glaze on the biscuit",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://stockcake.com/i/ancient-glaze-landscape_4204755_1873673",
+      "title": "Free Ancient Glaze Landscape Image - Ceramic, Porcelain, Weathered | Download at StockCake",
+      "snippet": "The worn rim becomes a luminous landscape of ridges and valleys, decorated with sparkling crystalline glaze formations and shimmering mineral deposits. Golden hour light streams through translucent layers, creating magical rainbow halos that dance across the surface. Tiny cracks form geometric web patterns like topographic maps, while dust particles float in the warm glow.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/coffee-beans-in-a-white-cup-H78FjJ0BEfU",
+      "title": "Photo by Pascal on Unsplash",
+      "snippet": "Coffee beans in a white cup. A crisp, minimalist photograph featuring a white ceramic cup filled with whole coffee beans, set against a pure white background. The natural lighting casts a soft, rounded shadow, highlighting the cup’s handle and enhancing the image’s clean aesthetic.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Vase,_China,_Qing_Dynasty,_Qianlong_period,_1736-1795,_porcelain_with_pale_blue_glaze_-_Chazen_Museum_of_Art_-_DSC01663.JPG",
+      "title": "File:Vase, China, Qing Dynasty, Qianlong period, 1736-1795, porcelain with pale blue glaze - Chazen Museum of Art - DSC01663.JPG - Wikimedia Commons",
+      "snippet": "Vase, China, Qing Dynasty, Qianlong period, 1736-1795, porcelain with pale blue glaze - Chazen Museum of Art - DSC01663.JPG From Wikimedia Commons, the free media repository",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://stockcake.com/i/ancient-glaze-landscape_4204754_1873673",
+      "title": "Free Ancient Glaze Landscape Image - Macro, Ceramic, Pottery | Download at StockCake",
+      "snippet": "close-up photography transforms an ancient ceramic cup's weathered rim into an ethereal landscape of crystalline beauty. Golden hour backlight illuminates iridescent mineral deposits and translucent glaze layers, creating prismatic rainbow halos that dance across the curved surface. Micro-fractures form ... while erosion reveals pearlescent shimmer on worn porcelain. ... The mundane edge becomes a luminous study in texture, where ridges and valleys catch dramatic rim lighting, revealing hidden beauty in material imperfections and the passage of time.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/dried-thistle-flower-in-a-textured-vase-UGOVKgymeVQ",
+      "title": "Photo by Anya Chernykh on Unsplash",
+      "snippet": "Dried thistle flower in a textured vase A single dried thistle in a ribbed ceramic cup, photographed against a soft, muted background. The stark form and fine details of the flower contrast gently with the minimal, neutral-toned environment. Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://stockcake.com/i/weathered-cup-landscape_4204757_1873673",
+      "title": "Free Weathered Cup Landscape Image - Ceramic, Porcelain, Pottery | Download at StockCake",
+      "snippet": "Crystalline glaze formations line the curved edge like tiny mountain ridges, while iridescent mineral deposits catch golden hour light to create shimmering rainbow halos. ... Soft bokeh melts the background into dreamy blur as warm backlight refracts through translucent glaze layers, making dust particles dance in the luminous glow.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/a-textured-black-mug-on-a-light-background-GblECKqAk_4",
+      "title": "Photo by Olivie Strauss on Unsplash",
+      "snippet": "A textured black mug on a light background. Minimalist stoneware cup in neutral tones. Stock applications in lifestyle, slow living, home decor, ceramics, and modern tableware. Published on Licensed under the Unsplash+ License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pair_of_Hexagonal_Vases,_c._1752-1755,_Chelsea,_soft-paste_porcelain_with_overglaze_enamels_-_Gardiner_Museum,_Toronto_-_DSC00614.JPG",
+      "title": "File:Pair of Hexagonal Vases, c. 1752-1755, Chelsea, soft-paste porcelain with overglaze enamels - Gardiner Museum, Toronto - DSC00614.JPG - Wikimedia Commons",
+      "snippet": "Pair of Hexagonal Vases, c. 1752-1755, Chelsea, soft-paste porcelain with overglaze enamels - Gardiner Museum, Toronto - DSC00614.JPG From Wikimedia Commons, the free media repository",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://limnboard.com/110855/3",
+      "title": "Attimo Tea Set",
+      "snippet": "the glaze finish appears smooth and slightly reflective suggesting cool porcelain under soft illumination ... lighting arrives from an elevated frontal position creating soft diffused illumination without harsh shadows, gentle highlights gleam along the upper rims of cups and the curved surfaces of handles suggesting the coolness of glazed ceramic under even studio lights...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/white-and-black-ceramic-mug-with-coffee-GBysETtVUIw",
+      "title": "Photo by Sylwia Bartyzel on Unsplash",
+      "snippet": "Editorial # white and black ceramic mug with coffee Download this free HD photo of cup, minimalism, lessismore, and home by Sylwia Bartyzel (@sylwiabartyzel) ... plain background 342 photos · Curated by Julia Morales",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Glazed_pottery",
+      "title": "Category:Glazed pottery - Wikimedia Commons",
+      "snippet": "Media in category \"Glazed pottery\" The following 46 files are in this category, out of 46 total. ... - Vase (3278023254).jpg 681 × 1,024; 530 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://curiosityartandframing.com/products/stained-glass-raku-vessel?pr_prod_strat=e5_desc&pr_rec_id=ce4f5f69d&pr_rec_pid=7800637456426&pr_ref_pid=7800736350250&pr_seq=uniform",
+      "title": "\"Stained Glass\" Raku Vessel",
+      "snippet": "The interior is uniformly dark, appearing glazed and smooth compared with the exterior’s rougher surface. Soft, even lighting casts a short, gentle shadow in front of the cup, emphasizing its rounded form and giving a quiet, handcrafted character to the piece.",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://unsplash.com/photos/two-handmade-ceramic-bowls-on-a-white-surface-HQZTJxfMVfE",
+      "title": "Photo by Olivie Strauss on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+      "title": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/coffee-beans-in-a-white-cup-H78FjJ0BEfU",
+      "title": "Photo by Pascal on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_China,_Qing_Dynasty,_Qianlong_period,_1736-1795,_porcelain_with_pale_blue_glaze_-_Chazen_Museum_of_Art_-_DSC01663.JPG",
+      "title": "File:Vase, China, Qing Dynasty, Qianlong period, 1736-1795, porcelain with pale blue glaze - Chazen Museum of Art - DSC01663.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/dried-thistle-flower-in-a-textured-vase-UGOVKgymeVQ",
+      "title": "Photo by Anya Chernykh on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/a-textured-black-mug-on-a-light-background-GblECKqAk_4",
+      "title": "Photo by Olivie Strauss on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pair_of_Hexagonal_Vases,_c._1752-1755,_Chelsea,_soft-paste_porcelain_with_overglaze_enamels_-_Gardiner_Museum,_Toronto_-_DSC00614.JPG",
+      "title": "File:Pair of Hexagonal Vases, c. 1752-1755, Chelsea, soft-paste porcelain with overglaze enamels - Gardiner Museum, Toronto - DSC00614.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/white-and-black-ceramic-mug-with-coffee-GBysETtVUIw",
+      "title": "Photo by Sylwia Bartyzel on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Glazed_pottery",
+      "title": "Category:Glazed pottery - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Japanese_-_Vase_%28kabin%29_-_Walters_491668_-_Profile.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+      "title": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+      "sha256": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "bytes": 1403013,
+      "mime": "image/jpeg",
+      "width": 1427,
+      "height": 1799,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://unsplash.com/photos/two-handmade-ceramic-bowls-on-a-white-surface-HQZTJxfMVfE",
+        "title": "Photo by Olivie Strauss on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+        "title": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+        "status": "downloaded",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Japanese_-_Vase_%28kabin%29_-_Walters_491668_-_Profile.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "bytes": 1403013,
+        "mime": "image/jpeg",
+        "width": 1427,
+        "height": 1799,
+        "sha256": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/coffee-beans-in-a-white-cup-H78FjJ0BEfU",
+        "title": "Photo by Pascal on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vase,_China,_Qing_Dynasty,_Qianlong_period,_1736-1795,_porcelain_with_pale_blue_glaze_-_Chazen_Museum_of_Art_-_DSC01663.JPG",
+        "title": "File:Vase, China, Qing Dynasty, Qianlong period, 1736-1795, porcelain with pale blue glaze - Chazen Museum of Art - DSC01663.JPG - Wikimedia Commons",
+        "status": "unavailable",
+        "error": "size_limit"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/dried-thistle-flower-in-a-textured-vase-UGOVKgymeVQ",
+        "title": "Photo by Anya Chernykh on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/a-textured-black-mug-on-a-light-background-GblECKqAk_4",
+        "title": "Photo by Olivie Strauss on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pair_of_Hexagonal_Vases,_c._1752-1755,_Chelsea,_soft-paste_porcelain_with_overglaze_enamels_-_Gardiner_Museum,_Toronto_-_DSC00614.JPG",
+        "title": "File:Pair of Hexagonal Vases, c. 1752-1755, Chelsea, soft-paste porcelain with overglaze enamels - Gardiner Museum, Toronto - DSC00614.JPG - Wikimedia Commons",
+        "status": "unavailable",
+        "error": "size_limit"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/white-and-black-ceramic-mug-with-coffee-GBysETtVUIw",
+        "title": "Photo by Sylwia Bartyzel on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Glazed_pottery",
+        "title": "Category:Glazed pottery - Wikimedia Commons",
+        "status": "unavailable",
+        "error": "no_supported_image"
+      }
+    ],
+    "downloadedCount": 1,
+    "method": "public source-page image metadata; container, dimensions and byte hash checked; not render textures"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "**本轮实际发现**\n\n本轮针对“陶瓷杯/花瓶、简单背景、口沿/釉面/柔光”进行检索，在 Unsplash 与 Wikimedia Commons 找到若干可能相关的页面，但多数结果缺乏口沿特写或明确柔光描述，且部分页面信息不足以确认主体是否为陶瓷杯/花瓶。未发现同时满足“不同陶瓷杯或花瓶 4–6 张、简单背景、口沿清楚、釉面可见、柔光”全部条件的 Wikimedia Commons 照片。Pexels 搜索结果中未出现可确认的陶瓷杯/花瓶详情页。以下来源仅基于网页文字描述，未获取原图，未进行像素级观察。\n\n**可转化图形函数的细节（待图片验证）**\n\n- **口沿几何**：若后续原图确认口沿清楚，可提取杯口/瓶口的椭圆投影曲率、沿厚度的双线轮廓，以及外翻/内收的局部切线变化。当前网页文本未提供足够口沿特写描述。\n- **釉面反射**：Unsplash 页面描述“soft lighting”与“smooth and slightly reflective”提示釉面可能呈现柔和高光；可建模为宽而低幅的镜面瓣，而非硬质锐利高光。实际粗糙度参数待原图验证。\n- **轮廓与背景分离**：白色背景或中性浅色背景的陶瓷杯页面有助于后续边缘提取；但网页描述中“pure white background”或“neutral environment”仅可作为筛选线索，实际主体边缘对比度需看原图。\n- **材质暗示**：Wikimedia Commons 的清代瓷瓶页面记录“porcelain with pale blue glaze”，另一日式花瓶页面记录“turquoise enamel glaze on the biscuit”，可作为釉面颜色与反射层差异的候选来源；但页面未描述柔光或简单背景。\n\n**适合高斯拟合的选图条件（基于本轮检索修正）**\n\n- 口沿在画面中占据可辨识比例：杯口或瓶口需有足够像素跨度，避免全景小物件导致口沿曲率不可提取。\n- 釉面高光不饱和：优先柔光下高光呈宽椭圆、无过曝白斑的候选；本轮 Unsplash 的“soft lighting”描述可作为初筛，但需原图确认高光形态。\n- 背景为单一浅色或中性色：页面含“white surface”“pure white background”“neutral environment”等描述者可优先复核；但需排除背景纹理复杂或道具干扰的页面。\n- 主体单一：优先单杯或单瓶；成组陶瓷页面可能增加分割难度，本轮未将其列为首选。\n\n**不确定性与限制**\n\n- Unsplash 页面“Set of neutral-toned ceramic cups in soft lighting”的标题与描述指向陶瓷杯与柔光，但页面内容未明确口沿是否清楚、背景是否无杂物，需获取原图确认。\n- Unsplash “Coffee beans in a white cup” 页面描述为白瓷杯与纯白背景，但杯内装有咖啡豆，可能遮挡部分口沿内侧结构，且页面未说明柔光方向。\n- Wikimedia Commons 两件花瓶页面提供了釉色与尺寸信息，但未描述拍摄背景与光照条件；是否满足“简单背景、柔光”无法从文本确认。\n- StockCake 页面描述的是“ancient ceramic cup”的风化口沿与金色光晕，属于艺术化极近特写，并非本轮所需的柔光实拍参考，且来源为 StockCake 而非用户指定的优先平台，未列为正式候选。\n- Unsplash+ 许可的“textured black mug”页面已排除，因其许可证不满足 CC 或标准 Unsplash License 的优先条件。\n\n**下一轮补齐点**\n\n- 定向检索 Wikimedia Commons 中“ceramic cup rim”“porcelain vase simple background”的具体文件详情页，优先寻找白色或灰色无缝背景、单件器物、口沿横向或略俯视可见的 CC BY/CC BY-SA 照片。\n- 补充检索 Pexels 上陶瓷杯/花瓶的纯色背景照片，并确认页面是否描述柔光或侧光。\n- 对 Unsplash 候选页面（陶瓷杯组照、白瓷杯咖啡豆）获取原图后核验：口沿是否无遮挡、高光是否为宽柔反射、背景是否无干扰。\n- 若需釉面颜色变化参考，可复核 Wikimedia Commons 清代浅蓝釉瓷瓶与日式绿釉花瓶页面，确认其背景与光照是否适合边缘/反射提取。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 10849,
+    "completion_tokens": 1071,
+    "total_tokens": 11920,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "71b56f39-d669-481d-94d6-2b8fbda6d233",
+        "model": "deepseek-flash",
+        "elapsedMs": 13466,
+        "prompt_tokens": 10849,
+        "completion_tokens": 1071,
+        "total_tokens": 11920,
+        "server_tool_use": {
+          "tool_search": 5,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 41076,
+  "downloads": [
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Japanese_-_Vase_%28kabin%29_-_Walters_491668_-_Profile.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_-_Vase_(kabin)_-_Walters_491668_-_Profile.jpg#1",
+      "title": "File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg - Wikimedia Commons - File:Japanese - Vase (kabin) - Walters 491668 - Profile.jpg",
+      "sha256": "097cfbf071e318510cc68b23f4ab49d29438c7142b721a93cc40ac1400a01ff9",
+      "bytes": 1403013,
+      "mime": "image/jpeg",
+      "width": 1427,
+      "height": 1799,
+      "id": "learn.r03.097cfbf071e3",
+      "round": 3,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r03.097cfbf071e3.jpg",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "陶瓷杯与花瓶的实拍"
+    }
+  ]
+}

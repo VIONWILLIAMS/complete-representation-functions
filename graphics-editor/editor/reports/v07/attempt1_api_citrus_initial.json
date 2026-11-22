@@ -1,0 +1,277 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:02:35.583Z",
+  "id": "citrus",
+  "phase": "initial",
+  "prompt": "生成一张高质量摄影风格静物：三个大小略有差别的橙子，带一片真实细长绿叶，放在白色浅釉盘上，下面是细腻木桌。斜侧窗光，柔和真实阴影，果皮细小毛孔有尺度层次，轮廓平滑，构图近景，不出现整齐塑料球感。请搜索Pexels或Unsplash公开橙子静物照片页，从所给参考图中提取形态和细节函数，用代码构造整张图。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 502,
+  "elapsedMs": 61837,
+  "inputImageProvided": false,
+  "response": {
+    "ok": false,
+    "runId": "crf07_6dedf957-7642-4920-8888-95f1abea9fa7",
+    "model": "deepseek-flash",
+    "error": {
+      "code": "INVALID_MODEL_PROGRAM",
+      "message": "物体材质无效。",
+      "retryable": false
+    },
+    "httpStatus": 502,
+    "research": {
+      "searched": true,
+      "toolCalls": [
+        {
+          "id": "srvtoolu_s_00_3c1b8fb84fea43b6a4ace28fe0e98f3b",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com photo three oranges on white plate wooden table natural window light",
+              "site:unsplash.com photos three oranges plate wood table soft window light",
+              "site:commons.wikimedia.org orange fruit macro peel pores photograph",
+              "orange fruit peel oil glands texture macro photograph",
+              "site:pexels.com photo single orange leaf on plate",
+              "静物摄影 窗光 阴影 柔光 质感 参考 布光方法"
+            ]
+          },
+          "sourceUrls": [
+            "https://www.pexels.com/zh-tw/photo/33961303/",
+            "https://unsplash.com/photos/three-oranges-sitting-on-a-plate-on-a-table-5yGIFuUbGAo",
+            "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+            "https://stockcake.com/i/orange-peel-detail_3532071_1718918",
+            "https://academy.fengniao.com/278/2780561_5.html",
+            "https://www.pexels.com/fr-fr/photo/sain-oranges-espace-de-copie-agrumes-6008097/",
+            "https://unsplash.com/photos/three-oranges-on-a-plate-on-a-bed-8WbziLIUANc",
+            "https://stockcake.com/i/orange-peel-macro_3725933_1767220",
+            "https://dp.pconline.com.cn/qa/6431.html?ad=9708",
+            "https://unsplash.com/photos/three-oranges-sitting-next-to-each-other-on-a-table-NjasKBn4qlQ",
+            "https://stockcake.com/i/orange-peel-closeup_3948680_1815726",
+            "https://dp.pconline.com.cn/qa/3596.html?ad=9706",
+            "https://unsplash.com/photos/three-oranges-and-a-bag-of-greens-on-a-table-B5yD1S6uhmQ",
+            "http://sciencephotogallery.com/featured/coloured-sem-of-trichomes-in-orange-peel-power-and-syred.html?product=greeting-card",
+            "https://www.chinahpsy.com/index.php/detail-208549.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pexels.com/zh-tw/photo/33961303/",
+          "title": "Pexels 上由 TIANYUN XIA 拍攝的相片",
+          "snippet": "按讚數 2 說明 一個玻璃碗裝滿新鮮的綠色和黃色柑橘水果，擺放在室內的木質桌子上。 更多類似內容 為下一個創意專案尋找最理想的相片。",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/three-oranges-sitting-on-a-plate-on-a-table-5yGIFuUbGAo",
+          "title": "Photo by tommao wang on Unsplash",
+          "snippet": "three oranges sitting on a plate on a table Download this free HD photo of food, woman, adult, and female by tommao wang (@tommaomaoer) Published on Leica Camera AG, LEICA M10-PFree to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+          "title": "Category:Close-up photographs of oranges - Wikimedia Commons",
+          "snippet": "Media in category \"Close-up photographs of oranges\" The following 11 files are in this category ... - Navelina oranges 02.jpg 3,002 × 2,252; 2.5 MB ... - Orange fruit of Thailand.JPG 1,616 × 1,078...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://stockcake.com/i/orange-peel-detail_3532071_1718918",
+          "title": "Free Orange Peel Detail Image - Citrus, Orange, Macro | Download at StockCake",
+          "snippet": "Macro photography captures the stunning details of citrus peel texture in extreme magnification. The burnt orange surface reveals intricate patterns of oil glands and natural dimples across the organic structure. ... The centered composition fills ... Every microscopic pore and fibrous structure becomes visible in this abstract yet natural study.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://academy.fengniao.com/278/2780561_5.html",
+          "title": "简单打造5种布光 让你在家也能拍静物大片",
+          "snippet": "我们将告诉大家如何使用反光、柔光、遮光的手段，控制这些闯入室内的光线 ... 这种做法同样利用了窗外光线的柔光特性，但是能更加完美地体现被摄对象的外形与质感。侧光也更容易与反光板 ... 为了提亮照片中这朵鲜花的阴影部分，我们使用了一片白色卡纸放在它的左侧作为反光板补光。",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/fr-fr/photo/sain-oranges-espace-de-copie-agrumes-6008097/",
+          "title": "Photo de Andre Taissin sur Pexels",
+          "snippet": "Dimensions 3936x2624 Format 3:2 Couleurs Date Nov 27, 2020 ... Vues 70,4 millier Mentions « J’aime » 2 Description # Trois oranges mûres disposées sur un papier superposé vert, bleu et orange pour un affichage vibrant. ## Médias similaires",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/three-oranges-on-a-plate-on-a-bed-8WbziLIUANc",
+          "title": "Photo by Dessy Dimcheva on Unsplash",
+          "snippet": "three oranges on a plate on a bed Download this free HD photo of plant, food, citrus fruit, and fruit by Dessy Dimcheva (@dessy_dmch) Published on FUJIFILM, X-T2Free to use under the",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://stockcake.com/i/orange-peel-macro_3725933_1767220",
+          "title": "Free Orange Peel Macro Image - Orange, Citrus, Texture | Download at StockCake",
+          "snippet": "Extreme close-up of fresh orange citrus peel reveals an amazing world of natural texture and pattern. The dimpled, porous surface creates crater-like formations with oil gland pockets that catch dramatic side lighting. ... This photorealistic macro combines natural organic beauty with abstract geometric design...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://dp.pconline.com.cn/qa/6431.html?ad=9708",
+          "title": "静物拍照需要买昂贵灯具吗，居家环境下如何利用低成本光源布光？ - 太平洋科技摄影部落",
+          "snippet": "对于相机用户，最推荐的低成本方案是“窗边侧光+反光板”。选择一个光线明亮但无阳光直射的窗边，将静物置于侧面，让光线以45度角照射主体，这样能凸显物体的立体感和纹理。在背光一侧放置白色泡沫板或硬纸板作为反光板...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/three-oranges-sitting-next-to-each-other-on-a-table-NjasKBn4qlQ",
+          "title": "Photo by Mar Designart on Unsplash",
+          "snippet": "three oranges sitting next to each other on a table Download this free HD photo of united states, orange aesthetic, orange background, and orange colors in United States by Mar Designart (@artbymar) Published on Canon, EOS Rebel T7Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://stockcake.com/i/orange-peel-closeup_3948680_1815726",
+          "title": "Free Orange Peel Closeup Image - Citrus, Orange, Texture | Download at StockCake",
+          "snippet": "Stunning extreme macro photography captures the intricate surface of fresh citrus peel in remarkable detail. The orange skin reveals a mesmerizing dimpled pattern with countless tiny pores and oil gland depressions creating a three-dimensional topographical landscape. ... Crystalline essential oil deposits catch the light on raised bumps, adding sparkle to the waxy surface.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://dp.pconline.com.cn/qa/3596.html?ad=9706",
+          "title": "日系光影和欧美光影区别大吗，室内静物摄影应该参考哪种打光逻辑？ - 太平洋科技摄影部落",
+          "snippet": "室内静物建议参考日系打光逻辑，利用窗光营造通透和谐感 ... 日系那种避免硬阴影 ... 在室内拍摄时，请关闭所有人造顶灯，仅保留窗口光作为主光源，因为窗光经过墙壁漫反射后极为柔和，能完美契合日系清新风格。观察日光变化...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/three-oranges-and-a-bag-of-greens-on-a-table-B5yD1S6uhmQ",
+          "title": "Photo by Anshu A on Unsplash",
+          "snippet": "three oranges and a bag of greens on a table Download this free HD photo of wellness, food, healthy, and watercress by Anshu A (@anshu18) Published on NIKON CORPORATION, NIKON D750Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "http://sciencephotogallery.com/featured/coloured-sem-of-trichomes-in-orange-peel-power-and-syred.html?product=greeting-card",
+          "title": "Coloured Sem Of Trichomes In Orange Peel. Greeting Card by Science Photo Library",
+          "snippet": "Coloured Scanning Electron Micrograph (SEM) of zest cells in the peel of an orange, Citrus sp.. ... In this section the zest cells have been cut across and appear as the round, concave orange structures. ... They are glandular, secreting the oil which gives orange peel its tangy flavour. Magnification x28 at 5x7cm size.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.chinahpsy.com/index.php/detail-208549.html",
+          "title": "静物拍摄怎么拍出高级感",
+          "snippet": "二、光线布置（决定80%画面质感） ... 自然光首选：上午9–11点、下午15–17点窗边柔光；阴天漫射光百搭 ... LED台灯+硫酸纸自制柔光，一个主光为主 ... 阴影是造型工具，没有阴影画面扁平...",
+          "via": "server_tool"
+        }
+      ],
+      "summary": "## 研究建议与来源\n\n### 可直接用于匹配场景的摄影参考页\n\n**Unsplash：three oranges sitting on a plate on a table**  \n页面标题与用户场景高度匹配：三个橙子、盘子、桌子。该页可作为构图与主体关系的首要参考。局限：页面文本未提供果皮纹理、光线方向、叶片存在与否的细节描述，需后续获取图片字节后由视觉模型提取。\n\n**Unsplash：three oranges on a plate on a bed**  \n同样为“三个橙子 + 盘子”的公开照片页。可作为“三果大小差异与摆放间距”的辅助参考。注意场景为床面而非木桌，木桌材质需另取参考。\n\n**Unsplash：three oranges sitting next to each other on a table**  \n三个橙子并列于桌面。可用于观察多个橙子之间的相对尺度与遮挡关系，但页面未说明是否有盘子和叶片。\n\n**Pexels：Trois oranges mûres disposées sur un papier superposé vert, bleu et orange**  \n三个成熟橙子陈列，页面摘要提到橙子。局限：背景为彩色纸面，不是白色浅釉盘和木桌，仅适合参考果实形态，不适合参考盘面与桌面材质。\n\n**Wikimedia Commons：Category: Close-up photographs of oranges**  \n这是橙子特写照片的分类页，列出多个高分辨率文件，如 `Navelina oranges 02.jpg`、`Orange close-up (24464006143).jpg` 等。可用于参考果皮毛孔、油腺凹陷的尺度层次。局限：它是分类页而非单张照片详情页，且文件内容需后续获取图片后确认。\n\n### 果皮毛孔与油腺纹理的参考\n\nStockCake 的橙皮微距页面描述虽为图库文本而非用户指定图库，但对“细小毛孔尺度层次”有可转化的描述：橙皮表面有油腺凹陷、天然麻点、侧光下凸起受光、凹陷落影，浅景深使中央细节清晰。可据此构造：**毛孔/油腺 = 多层尺度噪声 + 法线扰动 + 凹坑遮罩**；不要用单一均匀凹凸，否则易产生塑料球感。\n\n局限：StockCake 不是 Pexels / Unsplash / Wikimedia Commons；这些页面为文本描述，未提供可核验的原始照片字节，只能作为材质特征的语言参考，不能算“已看过的图像”。\n\n### 窗光与阴影的布光参考\n\n凤凰网摄影教程指出：窗光作为柔光时，将主体放在窗口一侧、用侧光更容易表现外形与质感；反光板放在光源相对位置可提亮暗部、降低对比。太平洋摄影部落建议：窗边侧光约 45° 照射主体，可凸显立体感和纹理；背光侧用白色泡沫板或硬纸板补光，避免完全消除阴影。另一篇建议静物使用 45° 侧光塑造陶瓷、木质、食物纹理，阴影是造型工具，不应全部消除。\n\n可转化为光照函数：**主光 = 窗面矩形面积光，方向斜侧约 40–50°**；阴影不宜全黑，保留柔和渐变；盘沿和橙子底部应有短而软的接触阴影；木桌纹理在掠射光下只轻微可见，不能抢过果皮细节。\n\n### 代码构造时的形态与材质函数建议\n\n**橙子轮廓**：不要用完美球体。以三个椭球为基底，半径略有差异，顶点做低频非对称扰动（±1–2%），模拟自然果实肩部与底部微凹。轮廓平滑但非数学球面。\n\n**果皮尺度层次**：三层叠加——  \n1. 低频形状扰动；  \n2. 中频油腺凹坑（随机分布的浅凹，直径小且密度不均）；  \n3. 高频毛孔噪声（极细，影响法线与高光断裂，不要做成可见几何凸起）。侧光下凹坑底部应略暗、凸起边缘有细高光。\n\n**叶片**：细长绿叶需真实，不要做成对称完美柳叶形。叶脉可用低频弯曲曲线 + 中频细脉；叶面有轻微蜡质高光，但比果皮弱；叶缘可有极小不规则起伏。叶片应贴盘或局部悬出盘沿，投影细而软。\n\n**白色浅釉盘**：釉面高光应柔、略宽，反射窗光形成拉长高光带；盘沿厚度造成极浅的灰色过渡；不要用镜面反射，否则会像瓷器广告而非自然窗光静物。\n\n**木桌**：细纹理，低对比。用方向性噪声生成木纹，配合低频色差；只在焦点附近保留可读纹理，远景或近景边缘可略虚。\n\n### 局限说明\n\n本次搜索未返回同时包含“三个橙子 + 白色浅釉盘 + 细长绿叶 + 木桌 + 斜侧窗光”全部条件的单张公开照片详情页。最接近的是 Unsplash 的三个橙子放盘子的页面，但页面文本缺少叶片、釉盘和光线细节。因此建议后续图片字节获取时，优先提交上述 Unsplash 页面和 Wikimedia Commons 橙子特写分类中的具体文件，再由视觉模型补足形态参数；不要仅凭文本描述声称已确认这些照片的视觉内容。",
+      "status": "completed",
+      "nativeSearchObserved": true,
+      "referenceImageCandidates": [],
+      "referenceImages": [
+        {
+          "sourceUrl": "https://www.pexels.com/zh-tw/photo/33961303/",
+          "title": "Pexels 上由 TIANYUN XIA 拍攝的相片",
+          "imageUrl": "https://images.pexels.com/photos/33961303/pexels-photo-33961303.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "c73c2911f3192315e1f5b06e982ec3ac79e2cfb79c47ed6c7cfcdffc030ae708",
+          "bytes": 47540,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/fr-fr/photo/sain-oranges-espace-de-copie-agrumes-6008097/",
+          "title": "Photo de Andre Taissin sur Pexels",
+          "imageUrl": "https://images.pexels.com/photos/6008097/pexels-photo-6008097.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "92e02eb171a9a54ed413bed431a2593dceeb7b6796dc4c1219e3b8c219452df8",
+          "bytes": 28752,
+          "mime": "image/webp",
+          "submittedToVision": true
+        }
+      ],
+      "referenceImagesSubmitted": 2,
+      "inputImageProvided": false,
+      "referenceCollection": {
+        "method": "public source-page image metadata, verified image bytes; not render textures",
+        "sourcePageCount": 7,
+        "downloadedCount": 2,
+        "attempts": [
+          {
+            "sourceUrl": "https://www.pexels.com/zh-tw/photo/33961303/",
+            "title": "Pexels 上由 TIANYUN XIA 拍攝的相片",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/33961303/pexels-photo-33961303.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 47540,
+            "mime": "image/webp",
+            "sha256": "c73c2911f3192315e1f5b06e982ec3ac79e2cfb79c47ed6c7cfcdffc030ae708"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/three-oranges-sitting-on-a-plate-on-a-table-5yGIFuUbGAo",
+            "title": "Photo by tommao wang on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+            "title": "Category:Close-up photographs of oranges - Wikimedia Commons",
+            "status": "unavailable",
+            "error": "no_supported_image"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/fr-fr/photo/sain-oranges-espace-de-copie-agrumes-6008097/",
+            "title": "Photo de Andre Taissin sur Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/6008097/pexels-photo-6008097.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 28752,
+            "mime": "image/webp",
+            "sha256": "92e02eb171a9a54ed413bed431a2593dceeb7b6796dc4c1219e3b8c219452df8"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/three-oranges-on-a-plate-on-a-bed-8WbziLIUANc",
+            "title": "Photo by Dessy Dimcheva on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/three-oranges-sitting-next-to-each-other-on-a-table-NjasKBn4qlQ",
+            "title": "Photo by Mar Designart on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/three-oranges-and-a-bag-of-greens-on-a-table-B5yD1S6uhmQ",
+            "title": "Photo by Anshu A on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          }
+        ],
+        "submittedToVision": true,
+        "submittedCount": 2
+      }
+    },
+    "usage": {
+      "prompt_tokens": 11037,
+      "completion_tokens": 3710,
+      "total_tokens": 14747,
+      "providerCalls": 2,
+      "requests": [
+        {
+          "phase": "research",
+          "requestId": "439ae8c4-6947-436e-a516-513d6fd9000e",
+          "model": "deepseek-flash",
+          "elapsedMs": 21838,
+          "prompt_tokens": 5568,
+          "completion_tokens": 1208,
+          "total_tokens": 6776,
+          "server_tool_use": {
+            "tool_search": 6,
+            "tool_fetch": 0,
+            "tool_image_search": 0
+          }
+        },
+        {
+          "phase": "compose",
+          "requestId": "206bb232-0092-4d87-a614-a4ac79b7468b",
+          "model": "deepseek-flash",
+          "elapsedMs": 15258,
+          "prompt_tokens": 5469,
+          "completion_tokens": 2502,
+          "total_tokens": 7971,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "warnings": [],
+    "vision": {
+      "renderedImageProvided": false,
+      "referenceImagesProvided": 2,
+      "referenceSourceUrls": [
+        "https://www.pexels.com/zh-tw/photo/33961303/",
+        "https://www.pexels.com/fr-fr/photo/sain-oranges-espace-de-copie-agrumes-6008097/"
+      ]
+    }
+  }
+}

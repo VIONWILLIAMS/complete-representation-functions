@@ -1,0 +1,368 @@
+{
+  "id": "learn.r09.f4e32f1238be.object",
+  "assetId": "learn.r09.f4e32f1238be.object",
+  "status": "fitted",
+  "round": 9,
+  "topic": "海岸岩石与海浪实拍",
+  "sourceUrl": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocks-in-huatulco-mexico-39525901/",
+  "imageUrl": "https://images.pexels.com/photos/39525901/pexels-photo-39525901.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo by Elchino portrait on Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r09.f4e32f1238be.webp",
+  "sourceSHA256": "f4e32f1238be63e338d75356ef2d707ea5cca138c47505cb29cc3f54a058a223",
+  "normalizedRGBA_SHA256": "8ecc3d439e162c15af27ab07c7edfd90fe8f2525fe656ec803ebc78b73d24635",
+  "dHash64": "634a9c9e1b1b1b9b",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    370,
+    145
+  ],
+  "assetURL": "assets/v08/learned/learn.r09.f4e32f1238be.object.json",
+  "renderURL": "assets/v08/learned/learn.r09.f4e32f1238be.object.png",
+  "reportURL": "assets/v08/learned/learn.r09.f4e32f1238be.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r09.f4e32f1238be.object.png",
+  "referenceThumbnailURL": "assets/v08/references/learn.r09.f4e32f1238be.object.jpg",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 6706,
+  "pixelToGaussianRatio": 8.000298240381747,
+  "assetBytes": 565646,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 2.096243982771725,
+    "rmse": 3.47067321809109,
+    "psnr": 37.322529118373005,
+    "ssim": 0.9489083894977,
+    "maxError": 65,
+    "exactRGBFraction": 0.07619711173042817,
+    "evaluatedPixels": 31576,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 5.553758178964136,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 32.926738286554446,
+          "bestFloatMSE": 32.926738286554446
+        },
+        {
+          "step": 10,
+          "floatMSE": 14.693194829836306,
+          "bestFloatMSE": 14.693194829836306
+        },
+        {
+          "step": 20,
+          "floatMSE": 10.444921732259212,
+          "bestFloatMSE": 10.444921732259212
+        },
+        {
+          "step": 30,
+          "floatMSE": 8.204838046551416,
+          "bestFloatMSE": 8.204838046551416
+        },
+        {
+          "step": 40,
+          "floatMSE": 6.900349546045463,
+          "bestFloatMSE": 6.900349546045463
+        },
+        {
+          "step": 50,
+          "floatMSE": 6.140816798734972,
+          "bestFloatMSE": 6.140816798734972
+        },
+        {
+          "step": 60,
+          "floatMSE": 5.738345522232249,
+          "bestFloatMSE": 5.738345522232249
+        },
+        {
+          "step": 70,
+          "floatMSE": 5.553758178964136,
+          "bestFloatMSE": 5.553758178964136
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2347,
+        "elapsedSeconds": 0.113,
+        "mae": 13.357824508065198,
+        "rmse": 20.315287312089772,
+        "psnr": 21.97434423302555,
+        "ssim": 0.5497973229082475,
+        "maxError": 145,
+        "exactRGBFraction": 0.006967316949581961,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2347,
+        "elapsedSeconds": 0.192,
+        "mae": 10.687114686259607,
+        "rmse": 16.462005490775194,
+        "psnr": 23.801148764517805,
+        "ssim": 0.6481274792908686,
+        "maxError": 131,
+        "exactRGBFraction": 0.01266784899923993,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 5180,
+        "elapsedSeconds": 1.026,
+        "mae": 6.657017988345579,
+        "rmse": 10.395005516311585,
+        "psnr": 27.794309125992072,
+        "ssim": 0.8435147865595146,
+        "maxError": 118,
+        "exactRGBFraction": 0.021060298961236384,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 6706,
+        "elapsedSeconds": 1.395,
+        "mae": 5.27920994848408,
+        "rmse": 8.156268317195638,
+        "psnr": 29.900973521680356,
+        "ssim": 0.886333132377122,
+        "maxError": 74,
+        "exactRGBFraction": 0.025652394223460856,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 6706,
+        "elapsedSeconds": 1.421,
+        "mae": 5.27920994848408,
+        "rmse": 8.156268317195638,
+        "psnr": 29.900973521680356,
+        "ssim": 0.886333132377122,
+        "maxError": 74,
+        "exactRGBFraction": 0.025652394223460856,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 6706,
+        "elapsedSeconds": 1.618,
+        "mae": 3.565535005489401,
+        "rmse": 5.4905312694193125,
+        "psnr": 33.33851622345088,
+        "ssim": 0.9261436847809505,
+        "maxError": 64,
+        "exactRGBFraction": 0.02660248289840385,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 6706,
+        "elapsedSeconds": 1.824,
+        "mae": 2.9293345156659067,
+        "rmse": 4.627387872266084,
+        "psnr": 34.8240855282347,
+        "ssim": 0.9372063830082159,
+        "maxError": 64,
+        "exactRGBFraction": 0.036451735495312894,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 6706,
+        "elapsedSeconds": 2.05,
+        "mae": 2.5669284688793175,
+        "rmse": 4.1368981361240325,
+        "psnr": 35.79730706296556,
+        "ssim": 0.9426522091309478,
+        "maxError": 64,
+        "exactRGBFraction": 0.04861287053458323,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 6706,
+        "elapsedSeconds": 2.263,
+        "mae": 2.3447132843509837,
+        "rmse": 3.8251823616206515,
+        "psnr": 36.47776071819266,
+        "ssim": 0.9457091856452655,
+        "maxError": 65,
+        "exactRGBFraction": 0.05744869521155308,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 6706,
+        "elapsedSeconds": 2.55,
+        "mae": 2.2064964952284436,
+        "rmse": 3.630714774369262,
+        "psnr": 36.930960959162825,
+        "ssim": 0.947489750759019,
+        "maxError": 66,
+        "exactRGBFraction": 0.06755130478844693,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 6706,
+        "elapsedSeconds": 2.746,
+        "mae": 2.131238915632126,
+        "rmse": 3.5225874840168485,
+        "psnr": 37.1935678549307,
+        "ssim": 0.9484681107975317,
+        "maxError": 65,
+        "exactRGBFraction": 0.07417025589054979,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 6706,
+        "elapsedSeconds": 2.945,
+        "mae": 2.096243982771725,
+        "rmse": 3.47067321809109,
+        "psnr": 37.322529118373005,
+        "ssim": 0.9489083894977,
+        "maxError": 65,
+        "exactRGBFraction": 0.07619711173042817,
+        "evaluatedPixels": 31576,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 2.946,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 3.278,
+  "passedPilot": false,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.16,
+      0.33,
+      0.86,
+      0.83
+    ],
+    "proposalPixels": [
+      61,
+      84,
+      461,
+      255
+    ],
+    "cropPixels": [
+      75,
+      85,
+      445,
+      230
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 30272,
+    "pixelMaskVerified": false,
+    "reviewedCorrections": [],
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r09.f4e32f1238be.object.png"
+  },
+  "semantics": {
+    "id": "learn.r09.f4e32f1238be",
+    "label": "海浪冲击黄褐色礁石溅起白色水花",
+    "category": "wave_splash_rock",
+    "role": "object",
+    "bbox": [
+      0.16,
+      0.33,
+      0.86,
+      0.83
+    ],
+    "palette": [
+      [
+        150,
+        186,
+        186
+      ],
+      [
+        240,
+        243,
+        242
+      ],
+      [
+        158,
+        116,
+        74
+      ],
+      [
+        64,
+        64,
+        64
+      ],
+      [
+        203,
+        178,
+        146
+      ]
+    ],
+    "lightDirection": "front",
+    "description": "中央为一块黄褐色、表面粗糙的岩块，白浪正从两侧合围拍打并向上溅起细碎水花；四周海水呈浅青色，带波纹和低矮泡沫带。前景右侧与下方是深灰黑色、块状分离的湿岩，左缘露出一小片浅色沙滩。光线较柔和但水体有亮部，浪尖白色高光明显。适合提取浪击瞬间的泡沫喷溅形态与湿岩对比。",
+    "tags": [
+      "海浪拍岸",
+      "溅浪",
+      "礁石",
+      "青色海水",
+      "湿岩",
+      "泡沫",
+      "海岸瞬间",
+      "质感对比"
+    ],
+    "limitations": [
+      "浪花形态为瞬时状态，无法复现同一形态",
+      "前景岩石边缘与画面边界相接，轮廓不完整",
+      "缺少尺度参照",
+      "无时间序列，无法判断浪的节奏"
+    ]
+  },
+  "sourceId": "learn.r09.f4e32f1238be"
+}

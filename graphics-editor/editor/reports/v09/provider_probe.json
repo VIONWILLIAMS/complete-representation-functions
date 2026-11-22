@@ -1,0 +1,25 @@
+{
+  "schema": "crf.provider_probe.v0.9",
+  "at": "2026-11-21T15:27:49.226Z",
+  "httpStatus": 200,
+  "ok": true,
+  "model": "deepseek-flash",
+  "requestId": "a6ea582e-84bb-4c88-a37f-0dd5b6893336",
+  "elapsedMs": 6975,
+  "usage": {
+    "prompt_tokens": 79,
+    "completion_tokens": 53,
+    "total_tokens": 132,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 79
+  },
+  "reasoningObserved": true,
+  "finishReason": "stop",
+  "content": "{\"ready\":true,\"task\":\"CRF 0.9 semantic scene compiler\"}"
+}

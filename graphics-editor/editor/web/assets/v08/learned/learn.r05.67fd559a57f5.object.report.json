@@ -1,0 +1,368 @@
+{
+  "id": "learn.r05.67fd559a57f5.object",
+  "assetId": "learn.r05.67fd559a57f5.object",
+  "status": "fitted",
+  "round": 5,
+  "topic": "植物近景与自然物品实拍",
+  "sourceUrl": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+  "imageUrl": "https://images.pexels.com/photos/30659564/pexels-photo-30659564.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo by Bảo Minh on Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r05.67fd559a57f5.webp",
+  "sourceSHA256": "67fd559a57f55edff8630a236fcc232192ed86c3dee5c5edbe121ce8c51ed8aa",
+  "normalizedRGBA_SHA256": "955636035b434c0d4bdad563a111162c9c8b951db7f7a25d3b7b5533b0d58c3d",
+  "dHash64": "079322f4d8cb182e",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    253,
+    211
+  ],
+  "assetURL": "assets/v08/learned/learn.r05.67fd559a57f5.object.json",
+  "renderURL": "assets/v08/learned/learn.r05.67fd559a57f5.object.png",
+  "reportURL": "assets/v08/learned/learn.r05.67fd559a57f5.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r05.67fd559a57f5.object.png",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 6672,
+  "pixelToGaussianRatio": 8.001049160671462,
+  "assetBytes": 571449,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 0.83399716565973,
+    "rmse": 1.5584626552123424,
+    "psnr": 44.2768756102625,
+    "ssim": 0.9608289630449695,
+    "maxError": 41,
+    "exactRGBFraction": 0.18863280375923025,
+    "evaluatedPixels": 22345,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 0.359611896613973,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 2.588420763096499,
+          "bestFloatMSE": 2.588420763096499
+        },
+        {
+          "step": 10,
+          "floatMSE": 1.0252522282776282,
+          "bestFloatMSE": 1.0252522282776282
+        },
+        {
+          "step": 20,
+          "floatMSE": 0.6658401384865692,
+          "bestFloatMSE": 0.6658401384865692
+        },
+        {
+          "step": 30,
+          "floatMSE": 0.5093949905152013,
+          "bestFloatMSE": 0.5093949905152013
+        },
+        {
+          "step": 40,
+          "floatMSE": 0.4298873077401782,
+          "bestFloatMSE": 0.4298873077401782
+        },
+        {
+          "step": 50,
+          "floatMSE": 0.38909445727232583,
+          "bestFloatMSE": 0.38909445727232583
+        },
+        {
+          "step": 60,
+          "floatMSE": 0.3687304327340133,
+          "bestFloatMSE": 0.3687304327340133
+        },
+        {
+          "step": 70,
+          "floatMSE": 0.359611896613973,
+          "bestFloatMSE": 0.359611896613973
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2335,
+        "elapsedSeconds": 0.09,
+        "mae": 6.91432833594391,
+        "rmse": 10.77736897193311,
+        "psnr": 27.480548577997915,
+        "ssim": 0.7667726968019535,
+        "maxError": 97,
+        "exactRGBFraction": 0.0053255761915417315,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2335,
+        "elapsedSeconds": 0.15,
+        "mae": 4.985902886551801,
+        "rmse": 8.266658606357215,
+        "psnr": 29.784203555619698,
+        "ssim": 0.8341506120770682,
+        "maxError": 99,
+        "exactRGBFraction": 0.013381069590512419,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 5154,
+        "elapsedSeconds": 0.775,
+        "mae": 2.7727754158275526,
+        "rmse": 4.699288742603275,
+        "psnr": 34.69016099693383,
+        "ssim": 0.92033916980935,
+        "maxError": 78,
+        "exactRGBFraction": 0.02465876034907138,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 6672,
+        "elapsedSeconds": 1.171,
+        "mae": 2.0518535093607815,
+        "rmse": 3.4773055105618553,
+        "psnr": 37.30594663296383,
+        "ssim": 0.9381135649956432,
+        "maxError": 73,
+        "exactRGBFraction": 0.04515551577534124,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 6672,
+        "elapsedSeconds": 1.193,
+        "mae": 2.0518535093607815,
+        "rmse": 3.4773055105618553,
+        "psnr": 37.30594663296383,
+        "ssim": 0.9381135649956432,
+        "maxError": 73,
+        "exactRGBFraction": 0.04515551577534124,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 6672,
+        "elapsedSeconds": 1.333,
+        "mae": 1.4349668083836802,
+        "rmse": 2.3892832760022955,
+        "psnr": 40.565450744184986,
+        "ssim": 0.9519557963142298,
+        "maxError": 66,
+        "exactRGBFraction": 0.042917878720071606,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 6672,
+        "elapsedSeconds": 1.475,
+        "mae": 1.1624972029536809,
+        "rmse": 2.014803126905446,
+        "psnr": 42.04615128475194,
+        "ssim": 0.9562257992121077,
+        "maxError": 63,
+        "exactRGBFraction": 0.07129111658089057,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 6672,
+        "elapsedSeconds": 1.62,
+        "mae": 1.0097113448198702,
+        "rmse": 1.8090958038088647,
+        "psnr": 42.981572282938565,
+        "ssim": 0.958391961112104,
+        "maxError": 55,
+        "exactRGBFraction": 0.11098679794137391,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 6672,
+        "elapsedSeconds": 1.786,
+        "mae": 0.92287610949504,
+        "rmse": 1.6866792817037592,
+        "psnr": 43.5901534023968,
+        "ssim": 0.9595935682494129,
+        "maxError": 47,
+        "exactRGBFraction": 0.14374580443052137,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 6672,
+        "elapsedSeconds": 1.943,
+        "mae": 0.8726187812336839,
+        "rmse": 1.6137878363423386,
+        "psnr": 43.9738748542717,
+        "ssim": 0.960279061112197,
+        "maxError": 43,
+        "exactRGBFraction": 0.169344372342806,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 6672,
+        "elapsedSeconds": 2.1,
+        "mae": 0.8469605429999254,
+        "rmse": 1.5765114113221919,
+        "psnr": 44.176861235369515,
+        "ssim": 0.9606524872767579,
+        "maxError": 42,
+        "exactRGBFraction": 0.18268068919221303,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 6672,
+        "elapsedSeconds": 2.257,
+        "mae": 0.83399716565973,
+        "rmse": 1.5584626552123424,
+        "psnr": 44.2768756102625,
+        "ssim": 0.9608289630449695,
+        "maxError": 41,
+        "exactRGBFraction": 0.18863280375923025,
+        "evaluatedPixels": 22345,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 2.259,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 2.541,
+  "passedPilot": true,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.25,
+      0.27,
+      0.83,
+      0.99
+    ],
+    "proposalPixels": [
+      108,
+      66,
+      445,
+      291
+    ],
+    "cropPixels": [
+      122,
+      81,
+      375,
+      292
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 19915,
+    "pixelMaskVerified": false,
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r05.67fd559a57f5.object.png"
+  },
+  "semantics": {
+    "id": "learn.r05.67fd559a57f5",
+    "label": "绿色蕨类叶片特写",
+    "category": "fern-frond",
+    "role": "object",
+    "bbox": [
+      0.25,
+      0.27,
+      0.83,
+      0.99
+    ],
+    "palette": [
+      [
+        88,
+        142,
+        58
+      ],
+      [
+        47,
+        93,
+        36
+      ],
+      [
+        21,
+        50,
+        28
+      ],
+      [
+        133,
+        175,
+        78
+      ],
+      [
+        7,
+        20,
+        14
+      ]
+    ],
+    "lightDirection": "diffuse",
+    "description": "一片绿色蕨类羽状复叶从画面中部向左下延伸，细小 leaflets 沿主轴向两侧排列，边缘呈细锯齿/羽裂状。中央叶片较清晰，前景左下和背景叶片明显虚化，暗绿色背景形成较强隔离感。左侧可见一段细枝或茎，整体光线柔和，叶面有轻微亮部。适合作为植物近景、叶片形态和浅景深构图参考。",
+    "tags": [
+      "蕨类",
+      "羽状复叶",
+      "绿色",
+      "植物近景",
+      "浅景深",
+      "暗背景",
+      "叶片",
+      "自然光"
+    ],
+    "limitations": [
+      "无法确定具体蕨类物种",
+      "只能看到局部叶片，缺少整株形态",
+      "背景虚化遮挡环境信息",
+      "bbox 为近似主体范围，包含部分背景",
+      "颜色可能受后期调色影响"
+    ]
+  },
+  "sourceId": "learn.r05.67fd559a57f5",
+  "referenceThumbnailURL": "assets/v08/references/learn.r05.67fd559a57f5.object.jpg"
+}

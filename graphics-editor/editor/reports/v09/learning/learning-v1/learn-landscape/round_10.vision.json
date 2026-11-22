@@ -1,0 +1,125 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 10,
+  "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "items": [
+    {
+      "id": "ref.10.0",
+      "label": "岩石海岸与远山海湾",
+      "category": "coastal-landscape",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          205,
+          216,
+          226
+        ],
+        [
+          76,
+          150,
+          157
+        ],
+        [
+          47,
+          94,
+          81
+        ],
+        [
+          146,
+          145,
+          130
+        ],
+        [
+          83,
+          111,
+          92
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "竖幅真实海岸风景照：前景为粗糙的浅灰褐色大岩石、碎石和干草，中景有深绿色灌丛与树冠覆盖的坡地，岩石海岸线向海湾延伸，可见小片浅色沙滩和拍岸白浪。海面呈青绿色，远处有低矮岬角与山丘轮廓，天空被薄云覆盖，整体呈阴天柔和散射光。画面包含多个自然层次，但清晰度有限，适合提取海岸地貌、水面、岩石与植被的整体视觉关系。",
+      "tags": [
+        "岩石海岸",
+        "海湾",
+        "白浪",
+        "远山",
+        "针叶或灌丛",
+        "阴天",
+        "薄雾感",
+        "自然景观",
+        "竖幅照片",
+        "青绿色海面"
+      ],
+      "limitations": [
+        "图像分辨率低且压缩明显",
+        "竖幅裁剪限制海岸两侧信息",
+        "不能据此判断完整地形或新视角",
+        "无精确地理位置与拍摄参数",
+        "岩石与植被边界无法作为精确alpha分割",
+        "阴天光照方向仅能概括为散射"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "真实自然海岸场景",
+    "岩石、植被、海水与天空的多层次组合",
+    "阴天或薄雾环境下的低对比度色彩",
+    "远景山丘与近景岩石形成空间纵深"
+  ],
+  "missingEvidence": [
+    "仅有一张独立照片，缺少其他海岸或山湖实例",
+    "缺少高分辨率近景纹理",
+    "缺少明确光照方向与阴影细节",
+    "缺少水面反射的连续观察",
+    "缺少地点、季节、天气和拍摄参数",
+    "缺少可用于分割的精确掩膜"
+  ],
+  "images": [
+    {
+      "id": "ref.10.0",
+      "sourceUrl": "https://www.pexels.com/photo/cloudy-sky-over-rocky-coast-11429206/",
+      "sha256": "915d340b63a74005678b5071b988ac4e6b51bf137e4d26788e12bbbcf3c15efa",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "bcfc88e4-f889-47df-94f0-0b41d7cbfa33",
+        "model": "deepseek-flash",
+        "elapsedMs": 12818,
+        "prompt_tokens": 760,
+        "completion_tokens": 736,
+        "total_tokens": 1496,
+        "reasoning_tokens": 335,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 1
+      }
+    ],
+    "prompt_tokens": 760,
+    "completion_tokens": 736,
+    "total_tokens": 1496,
+    "reasoning_tokens": 335
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 12820
+}

@@ -1,0 +1,759 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 10,
+  "query": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "checkpoint": {
+    "sessionId": "crf09_e5ccf6cd-5556-4a02-a656-53316025d65f",
+    "round": 10,
+    "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+    "subtopic": "难例补齐：前几轮缺失的形态、材质、背景与失败来源",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:58:46.661Z",
+    "runId": "crf07_00addfe7-cc39-4a58-a0a5-160f6a6cb035",
+    "queries": [
+      "Wikimedia Commons apples pears oranges ceramic vase still life photograph",
+      "Wikimedia Commons still life fruit ceramic vase photo",
+      "site:commons.wikimedia.org File: apples pears oranges",
+      "Pexels apples pears oranges ceramic vase still life photo",
+      "site:pexels.com photo apples pears oranges ceramic vase",
+      "Wikimedia Commons ceramic vase apples still life photo",
+      "site:commons.wikimedia.org \"File:\" still life apples pears oranges vase photograph",
+      "site:commons.wikimedia.org \"File:\" fruit ceramic vase photograph",
+      "site:pexels.com photo \"still life\" \"apples\" \"vase\"",
+      "site:pexels.com photo \"oranges\" \"ceramic vase\"",
+      "Wikimedia Commons featured pictures still life fruit photography",
+      "Pexels \"apples pears oranges\" photo"
+    ],
+    "requestIds": [
+      "794f2951-e215-4155-8d82-b3a7f77864c1"
+    ],
+    "sourceCount": 24,
+    "newSourceCount": 13,
+    "candidateCount": 4,
+    "downloadedImageCount": 3,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_rl_00_054890e8ee1d405d8848836caf947cf2",
+        "type": "deepseek_read_url",
+        "kind": "read_link",
+        "status": "completed",
+        "action": {
+          "type": "read_link",
+          "url": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/"
+        },
+        "sourceUrls": []
+      },
+      {
+        "id": "srvtoolu_rl_01_a4d6ac2c674f4392ba9cdec07d7e7c89",
+        "type": "deepseek_read_url",
+        "kind": "read_link",
+        "status": "completed",
+        "action": {
+          "type": "read_link",
+          "url": "https://www.fengniao.com/pe/0_197187.html"
+        },
+        "sourceUrls": []
+      },
+      {
+        "id": "srvtoolu_rl_02_68c597f8258444e6842ed83be9c14c98",
+        "type": "deepseek_read_url",
+        "kind": "read_link",
+        "status": "completed",
+        "action": {
+          "type": "read_link",
+          "url": "https://commons.wikimedia.org/w"
+        },
+        "sourceUrls": []
+      },
+      {
+        "id": "srvtoolu_s_03_f34eb8fc4f98485fbc5cc04bae0cde9f",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons apples pears oranges ceramic vase still life photograph",
+            "Wikimedia Commons still life fruit ceramic vase photo",
+            "site:commons.wikimedia.org File: apples pears oranges",
+            "Pexels apples pears oranges ceramic vase still life photo",
+            "site:pexels.com photo apples pears oranges ceramic vase",
+            "Wikimedia Commons ceramic vase apples still life photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+          "https://create.vista.com/similar-photos/104552064/",
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://musescope.app/en/artworks/still-life-with-head-shaped-vase-and-japanese-woodcut-gauguin",
+          "https://create.vista.com/photos/apples-pears/",
+          "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+          "https://create.vista.com/similar-photos/656321262/",
+          "https://create.vista.com/photos/still-life-with-apples/?page=6",
+          "https://ariadnesgallery.com/artwork/102792/",
+          "https://create.vista.com/similar-photos/20036037/?page=5"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_04_eb21a32525cc41ad9a0bdd17d3893680",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"File:\" still life apples pears oranges vase photograph",
+            "site:commons.wikimedia.org \"File:\" fruit ceramic vase photograph",
+            "site:pexels.com photo \"still life\" \"apples\" \"vase\"",
+            "site:pexels.com photo \"oranges\" \"ceramic vase\"",
+            "Wikimedia Commons featured pictures still life fruit photography",
+            "Pexels \"apples pears oranges\" photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Lorenzo_todini,_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano,_1670-85_ca._01.JPG#1",
+          "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+          "https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/",
+          "https://commons.wikimedia.org/wiki/Category:Still-life_clich%C3%A9-verre#1",
+          "https://elements.envato.com/top-view-fresh-fruits-different-mellow-fruits-on-w-C3KTEHF",
+          "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+          "https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/",
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://www.pexels.com/fr-fr/photo/fruits-oranges-photo-de-nourriture-photographie-de-nourriture-9960543/",
+          "https://act.library.vanderbilt.edu/artworks/46227",
+          "https://elements.envato.com/fresh-fruit-UVTSPNM",
+          "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+        "title": "Photo by Lucas Pezeta on Pexels",
+        "snippet": "",
+        "via": "server_page"
+      },
+      {
+        "url": "https://www.fengniao.com/pe/0_197187.html",
+        "title": "静物广告摄影布光技巧有哪些",
+        "snippet": "",
+        "via": "server_page"
+      },
+      {
+        "url": "https://commons.wikimedia.org/w",
+        "title": "Wikimedia Commons",
+        "snippet": "",
+        "via": "server_page"
+      },
+      {
+        "url": "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+        "title": "Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)",
+        "snippet": "<p class=\"attribution\">\"<a rel=\"noopener noreferrer\" href=\"https://www.flickr.com/photos/84263736@N00/52660190645\">Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)</a>\"",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/similar-photos/104552064/",
+        "title": "Similar Free Stock Images of The image of flowers and green pears against purple cloth",
+        "snippet": "Vintage. ... Still life with an old ceramic jug with peeling paint, a large dark brown glass bottle, a ceramic vase, a bunch of lavender and ripe apples. Vintage. ... Pears in a glass vase, oranges and pomegranates on a black background close up",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+        "title": "Photo by Evgeniy Alekseyev on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://musescope.app/en/artworks/still-life-with-head-shaped-vase-and-japanese-woodcut-gauguin",
+        "title": "Still Life with Head-Shaped Vase and Japanese Woodcut — Paul Gauguin",
+        "snippet": "Paul Gauguin, Still Life with Head-Shaped Vase and Japanese Woodcut, 1889. Wikimedia Commons. ... On the right stands a dark stoneware vase shaped like a human head. That head is Gauguin's own ... The apples and cloth between them tie the odd pairing into an ordinary still life.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/photos/apples-pears/",
+        "title": "Apples pears Free Stock Photos, Images, and Pictures of Apples pears",
+        "snippet": "apples, pears and oranges. Still life: apples, pears, plums in a ceramic plate. Presented in close-up on a dark background. Front view, copy space ... Glass round vase plate of fruits, bananas, grapes, apples, pears against turquoise blue background",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+        "title": "Category:2 fruit - Wikimedia Commons - Category:2 fruit",
+        "snippet": "2 apples (1 C, 57 F) ### O - 2 oranges (1 C, 3 F) ## Media in category \"2 fruit\" The following 146 files are in this category, out of 146 total.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/similar-photos/656321262/",
+        "title": "Similar Free Stock Images of Still life with apples and pears on a wooden background",
+        "snippet": "Still life with apples.Vintage. ... Still life with an old ceramic jug with peeling paint, a large dark brown glass bottle, a ceramic vase, a bunch of lavender and ripe apples. Vintage. ... Still life with Fruits were placed together with a vase of flowers beautifully.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/photos/still-life-with-apples/?page=6",
+        "title": "Still life with apples Free Stock Photos, Images, and Pictures of Still life with apples",
+        "snippet": "Stock royalty-free photos and images of Still life with apples ... Still life with an old ceramic jug with peeling paint, a large dark brown glass bottle, a ceramic vase, a bunch of lavender and ripe apples. Vintage. ... Still life with beautiful sunflowers bouquet in white vase with apples, pine cones and book on blue wooden background.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://ariadnesgallery.com/artwork/102792/",
+        "title": "Still life of Macaw, Chinese Vase and Fruit by Alexander Pope",
+        "snippet": "\"Still life of Macaw, Chinese Vase and Fruit\" by Alexander Pope – via Wikimedia Commons, CC BY-SA 3.0 # Still life of Macaw, Chinese Vase and Fruit Alexander Pope The painting titled Still life of a Macaw, Chinese Vase, and Fruit",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://create.vista.com/similar-photos/20036037/?page=5",
+        "title": "Similar Free Stock Images of Glass vase with fresh apricots on wooden table",
+        "snippet": "Still Life Fruits were placed on the timber with a beautiful vase of flowers. ... Fruit in ceramic dish and vase on the table ... Still life with a porcelain vintage jug and antique spice jars and green apple. ... Fresh orange ,pear and apple on an old wood table,still life",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Lorenzo_todini,_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano,_1670-85_ca._01.JPG#1",
+        "title": "File:Lorenzo todini, vaso in porcellana dipinta con fiori e due ciliege sul piano, 1670-85 ca. 01.JPG - Wikimedia Commons - Further authorizations required by the Italian \"Code of Cultural Heritage and Landscape\" (Codice Urbani), under Legi",
+        "snippet": "Further authorizations required by the Italian \"Code of Cultural Heritage and Landscape\" (Codice Urbani), under Legislative Decree No. 42, dated January 22, 2004, and its subsequent amendments ... This image reproduces a property belonging to the Italian cultural heritage as entrusted to the Italian government. Such images are regulated by Articles 106 et seq. ... Reproduction of this image is permitted for personal use or study.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+        "title": "Photo de Максим Вышарь sur Pexels",
+        "snippet": "Appareil photo NIKON D610 ... Logiciel Adobe Photoshop CC 2019 (Windows) Description # Nature morte rustique avec des pommes, un panier en osier et un vase avec des baies rouges sur une table en bois.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/",
+        "title": "Photo de Valentin Ivantsov sur Pexels",
+        "snippet": "Afterglow Street Festive Summer 1 Valentin Ivantsov ... Appareil photo Canon EOS 5D Mark III Focale 100.0mm Ouverture ƒ/13.0 ISO 100 ... 2022 Logiciel Adobe Photoshop 21.0 (Windows) Description # Nature morte artistique représentant des vases en porcelaine blanche et des sphères orange vif sur fond sombre. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Still-life_clich%C3%A9-verre#1",
+        "title": "Category:Still-life cliché-verre - Wikimedia Commons - Help",
+        "snippet": "Still-life cliché-verre ... Media in category \"Still-life cliché-verre\" The following 22 files are in this category, out of 22 total. ... Cactus fruit cut in half, NINO F Scholten Tel Aviv 21 8.tiff ... Still-life photography",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://elements.envato.com/top-view-fresh-fruits-different-mellow-fruits-on-w-C3KTEHF",
+        "title": "top view fresh fruits different mellow fruits on white background berry diet tasty color photo",
+        "snippet": "top view fresh fruits different mellow fruits on white background berry diet tasty color photo ... - 5600(w) × 3733(h) px ... Description Vibrant apples, pears, oranges, and other citrus fruits, including a pomegranate, are arranged on a textured surface.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+        "title": "Photo de Nadia Vasil'eva sur Pexels",
+        "snippet": "Nadia Vasil'eva 27,3 million vues \\ 111,3 millier téléchargements ... Description # Un arrangement serein de marguerites dans un vase en verre près du rebord de la fenêtre, accompagné de pommes.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/",
+        "title": "Photo by Valentin Ivantsov on Pexels",
+        "snippet": "Afterglow Street Festive ... 3946x5920 Aspect Ratio 1973 ... 2025 Downloads 32 Views ... 2 Camera Canon EOS 5D Mark III ... Taken At Oct 30, 2022 Software Adobe Photoshop 21.0 (Windows) Description # A minimalist composition featuring a vase and floating orange spheres on a modern background. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/fruits-oranges-photo-de-nourriture-photographie-de-nourriture-9960543/",
+        "title": "Photo de Jana Ohajdova sur Pexels",
+        "snippet": "Date Oct 20, 2021 ... Appareil photo NIKON Z 6 ... Logiciel Adobe Photoshop Lightroom Classic 10.4 (Macintosh) Description # Composition colorée de fruits agrumes avec des tranches de grapefruit et d'orange sur des assiettes en céramique. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://act.library.vanderbilt.edu/artworks/46227",
+        "title": "Still Life, Fruit and Nuts",
+        "snippet": "Still Life, Fruit and Nuts ... https://commons.wikimedia.org/wiki/File:Alfred_Sisley_057.jpg ... https://commons.wikimedia.org/wiki/File:Alfred_Sisley_057.jpg.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://elements.envato.com/fresh-fruit-UVTSPNM",
+        "title": "Fresh Apples, Pears and Citrus Fruit on Gray",
+        "snippet": "Fresh Apples, Pears and Citrus Fruit on Gray ... A variety of colorful fruits are scattered on a gray surface. Red and green apples are mixed with oranges, limes, and pears to make a striking contrast. The large yellow pomelo is a central focal point.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+        "title": "Photo by olia danilevich on Pexels",
+        "snippet": "Date Nov 1, 2020 Downloads ... Oct 31, 2020 Software Adobe Photoshop 21.0 (Macintosh) Description # A delightful still life of a cranberry apple drink surrounded by fresh fruits. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "第 10/10 轮结论：仍**没有**可核验的摄影详情页能同时确认“苹果 + 梨 + 整橙子 + 普通陶瓷花瓶”四类主体同框。本轮可补充的是**具体 Pexels 照片页**，但它们只解决“花瓶与橙色球体/陶瓷器皿与橙子”的局部形态、材质和光照线索，不能当作完整场景参考。下列来源均基于搜索结果文本，**未查看图片字节**；取图后需由视觉步骤确认。\n\n---\n\n## 一、本轮可记录的 Pexels 具体照片页\n\n### 1. Valentin Ivantsov：白瓷花瓶 + 橙色球体，暗背景\n- 来源页：https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/ \n- 可记录元数据：Canon EOS 5D Mark III，100 mm，f/13.0，1/160 s，原始尺寸 3745×5617；描述为“白色瓷花瓶与鲜橙色球体在暗背景上的艺术静物” 。\n- 用途：这是本轮**最接近“普通陶瓷花瓶 + 橙色球形主体”**的局部来源。可参考花瓶竖向轮廓与暗背景的分离方式；f/13 在 100 mm 下景深相对可控，适合观察**釉面花瓶边缘硬边与橙色球体柔边**的轮廓差异。\n- 局限：描述写“sphères orange / orange spheres”，**未确认是整橙子**；可能是装饰球体或橙子。不能作为“整橙子果皮细节”的已核实证据；花瓶是否“普通陶瓷”也需取图核验。许可证按 Pexels License，作者页标注 Valentin Ivantsov 。\n\n### 2. Valentin Ivantsov：极简花瓶与橙色球体\n- 来源页：https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/ \n- 元数据：Canon EOS 5D Mark III，100 mm，f/11.0，1/160 s，3946×5920 。\n- 用途：与上一条同一作者、不同照片页，**不是同一实例的裁切**。可补充“花瓶 + 橙色球体”的另一种构图；适合提取花瓶的竖向体块、承托面接触与暗背景高光。\n- 局限：标题明确写“floating orange balls”，**更偏向概念静物/装饰球**，不宜直接当作真实橙子。无苹果、梨。许可证 Pexels License，作者待按页面核验。\n\n### 3. Максим Вышарь：苹果、藤篮、花瓶、木桌\n- 来源页：https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/ \n- 元数据：Nikon D610，50 mm，f/9.0，ISO 100，1/8 s，5740×3826；描述为“质朴静物：苹果、藤篮和插红浆果的花瓶，木桌” 。\n- 用途：这是本轮少见的**苹果 + 花瓶 + 木桌承托面**同框照片页。可参考苹果与木桌的接触阴影、花瓶与桌面的落影，以及 f/9 下中景静物的景深分布。\n- 局限：花瓶描述为“vase avec des baies rouges”，未说明材质为普通陶瓷；**无梨、无整橙子**。1/8 s 快门提示可能使用三脚架或持续光，布光偏柔和，但不能从文本确认光源方向。许可证 Pexels License。\n\n### 4. Lucas Pezeta：绿陶瓷盘上的水果\n- 来源页：https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/ [citation:?]\n- 搜索返回页仅显示 Cookie 管理内容，**未能读取照片描述、作者、相机参数或尺寸**。因此本轮只能登记为“待取图核验的 Pexels 具体照片页”，不能给出材质/光照结论。\n- 用途待核验：若取图确认包含整橙子、苹果或梨，可用于陶瓷器皿与水果的接触关系；但**不确认有花瓶**。\n- 许可证：Pexels 页面通常为 Pexels License，需按页面实际标注核验；作者/参数待核验。\n\n---\n\n## 二、本轮未能补齐的失败来源与排除项\n\n- **Openverse 结果**：标题“Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)” 。该来源为 Flickr 转载，许可证 **CC BY-NC-ND 2.0**，且“1923”强烈提示可能是绘画/印刷品或受限作品；不适合作为公开可用的摄影参考，也不符合“真实静物摄影”优先条件。\n- **Commons 绘画与分类页**：搜索结果仍大量出现 Osias Beert、Van Kessel、Gauguin、Cézanne 等绘画，以及 `Category:2 fruit` 这类分类页 。它们不是摄影详情页，不纳入。\n- **VistaCreate / Envato / FastMedia 等聚合页**：只提供相似图列表或转载缩略图，不能作为具体照片的原始详情页；不替代 Commons/Pexels 来源 。\n- **`Apples, Pears, Oranges.jpg`**：本轮搜索仍未返回其 `File:` 详情页，无法核验作者、许可证和是否含花瓶；仍不能作为已核实来源。\n\n---\n\n## 三、可转化为图形函数的细节（基于网页文本，待取图验证）\n\n1. **花瓶轮廓与橙色球体的边缘分离**  \n   Ivantsov 的两张照片页提供“暗背景 + 浅色花瓶 + 橙色球体”的构图线索 。图形函数上可把花瓶视为**竖向旋转体**，轮廓边缘受釉面高光影响，在暗背景前出现较亮的细边缘；橙色球体则应有更柔和的明暗过渡。但**不能预设橙子果皮油胞纹理**，因为文本未确认是真实橙子。\n\n2. **陶瓷与承托面的接触阴影**  \n   Вышарь 的页面确认“木桌”作为承托面 ，可用于观察花瓶底部、藤篮底部与木桌的接触阴影。f/9、50 mm 下景深较深，桌面纹理与物体底部的暗部过渡可能比棚拍白背景更接近真实静物。局限：花瓶材质未确认，且无橙子、梨。\n\n3. **陶瓷器皿与水果的接触**  \n   Pexels 绿陶瓷盘页面本轮**未返回可读元数据**，不能写具体接触细节；只能登记为待取图候选。若后续取图确认有整橙子/苹果，可用于硬质釉面与果皮软接触的局部阴影，但需先解决“是否有花瓶”的问题。\n\n4. **苹果与花瓶同框的布光线索**  \n   Вышарь 照片页的 1/8 s 快门与 f/9 组合提示可能是柔和持续光或弱闪光环境 ；可作为“苹果高光不宜过锐”的反例参考，但光源方向与色温无法从文本确认，不能据此设定具体数值。\n\n---\n\n## 四、局限与下一轮定向建议\n\n- **核心组合仍未解决**：本轮没有一页能确认同时包含苹果、梨、整橙子和普通陶瓷花瓶。Ivantsov 的“橙色球体”可能是装饰球，不能替代整橙子；Вышарь 的页面无梨、无橙子。\n- **图片字节未获取**：上述轮廓、接触阴影、釉面高光均只能作为“待取图验证线索”，不能声称已目视确认。\n- **下一轮优先动作**：\n  1. 直接取图核验 Ivantsov 两张照片页：确认“橙色球体”是否为真实整橙子，以及花瓶是否为素面普通陶瓷。若不是，降级为“构图/暗背景参考”。\n  2. 在 Commons 搜索 `File:` 命名空间下的 `ceramic vase apples pears` 与 `earthenware vase still life fruit`，排除 `Category:`、`painting`、`oil on` 结果。\n  3. 在 Pexels 搜索 `white ceramic vase orange fruit` 或 `vase apples pears oranges`，只保留有相机参数和具体照片 ID 的页面；避免聚合页与相似图列表。\n  4. 若仍找不到四主体同框，最终参考策略应改为**分项材质参考 + 合成构图**，而不是继续等待单一完整照片。\n\n---\n\n## 五、本轮来源清单（可点击）\n\n| 类型 | 来源页 | 状态 |\n|---|---|---|\n| Pexels 具体照片页 | https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/  | 花瓶 + 橙色球体，暗背景；橙子真实性待核验 |\n| Pexels 具体照片页 | https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/  | 极简花瓶 + 橙色球体；偏概念静物 |\n| Pexels 具体照片页 | https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/  | 苹果 + 花瓶 + 木桌；无梨、无橙子 |\n| Pexels 具体照片页 | https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/ | 待取图核验；本轮元数据不可读 |\n| 不纳入 | https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10  | CC BY-NC-ND，且可能为受限作品/绘画 |\n| 不纳入 | Commons 绘画与分类页  | 非摄影详情页或绘画 |\n| 不纳入 | VistaCreate/Envato/FastMedia 聚合页  | 非原始照片详情页 |\n\n本轮不提供工具未返回的“原始图像 URL”；上述 Pexels 页面若后续取图，需从页面内嵌资源获取，不能根据文件名编造。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "snippet": "",
+      "via": "server_page"
+    },
+    {
+      "url": "https://www.fengniao.com/pe/0_197187.html",
+      "title": "静物广告摄影布光技巧有哪些",
+      "snippet": "",
+      "via": "server_page"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w",
+      "title": "Wikimedia Commons",
+      "snippet": "",
+      "via": "server_page"
+    },
+    {
+      "url": "https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10",
+      "title": "Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)",
+      "snippet": "<p class=\"attribution\">\"<a rel=\"noopener noreferrer\" href=\"https://www.flickr.com/photos/84263736@N00/52660190645\">Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)</a>\"",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/similar-photos/104552064/",
+      "title": "Similar Free Stock Images of The image of flowers and green pears against purple cloth",
+      "snippet": "Vintage. ... Still life with an old ceramic jug with peeling paint, a large dark brown glass bottle, a ceramic vase, a bunch of lavender and ripe apples. Vintage. ... Pears in a glass vase, oranges and pomegranates on a black background close up",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://musescope.app/en/artworks/still-life-with-head-shaped-vase-and-japanese-woodcut-gauguin",
+      "title": "Still Life with Head-Shaped Vase and Japanese Woodcut — Paul Gauguin",
+      "snippet": "Paul Gauguin, Still Life with Head-Shaped Vase and Japanese Woodcut, 1889. Wikimedia Commons. ... On the right stands a dark stoneware vase shaped like a human head. That head is Gauguin's own ... The apples and cloth between them tie the odd pairing into an ordinary still life.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/photos/apples-pears/",
+      "title": "Apples pears Free Stock Photos, Images, and Pictures of Apples pears",
+      "snippet": "apples, pears and oranges. Still life: apples, pears, plums in a ceramic plate. Presented in close-up on a dark background. Front view, copy space ... Glass round vase plate of fruits, bananas, grapes, apples, pears against turquoise blue background",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:2_fruit#1",
+      "title": "Category:2 fruit - Wikimedia Commons - Category:2 fruit",
+      "snippet": "2 apples (1 C, 57 F) ### O - 2 oranges (1 C, 3 F) ## Media in category \"2 fruit\" The following 146 files are in this category, out of 146 total.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/similar-photos/656321262/",
+      "title": "Similar Free Stock Images of Still life with apples and pears on a wooden background",
+      "snippet": "Still life with apples.Vintage. ... Still life with an old ceramic jug with peeling paint, a large dark brown glass bottle, a ceramic vase, a bunch of lavender and ripe apples. Vintage. ... Still life with Fruits were placed together with a vase of flowers beautifully.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/photos/still-life-with-apples/?page=6",
+      "title": "Still life with apples Free Stock Photos, Images, and Pictures of Still life with apples",
+      "snippet": "Stock royalty-free photos and images of Still life with apples ... Still life with an old ceramic jug with peeling paint, a large dark brown glass bottle, a ceramic vase, a bunch of lavender and ripe apples. Vintage. ... Still life with beautiful sunflowers bouquet in white vase with apples, pine cones and book on blue wooden background.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://ariadnesgallery.com/artwork/102792/",
+      "title": "Still life of Macaw, Chinese Vase and Fruit by Alexander Pope",
+      "snippet": "\"Still life of Macaw, Chinese Vase and Fruit\" by Alexander Pope – via Wikimedia Commons, CC BY-SA 3.0 # Still life of Macaw, Chinese Vase and Fruit Alexander Pope The painting titled Still life of a Macaw, Chinese Vase, and Fruit",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://create.vista.com/similar-photos/20036037/?page=5",
+      "title": "Similar Free Stock Images of Glass vase with fresh apricots on wooden table",
+      "snippet": "Still Life Fruits were placed on the timber with a beautiful vase of flowers. ... Fruit in ceramic dish and vase on the table ... Still life with a porcelain vintage jug and antique spice jars and green apple. ... Fresh orange ,pear and apple on an old wood table,still life",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lorenzo_todini,_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano,_1670-85_ca._01.JPG#1",
+      "title": "File:Lorenzo todini, vaso in porcellana dipinta con fiori e due ciliege sul piano, 1670-85 ca. 01.JPG - Wikimedia Commons - Further authorizations required by the Italian \"Code of Cultural Heritage and Landscape\" (Codice Urbani), under Legi",
+      "snippet": "Further authorizations required by the Italian \"Code of Cultural Heritage and Landscape\" (Codice Urbani), under Legislative Decree No. 42, dated January 22, 2004, and its subsequent amendments ... This image reproduces a property belonging to the Italian cultural heritage as entrusted to the Italian government. Such images are regulated by Articles 106 et seq. ... Reproduction of this image is permitted for personal use or study.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/",
+      "title": "Photo de Максим Вышарь sur Pexels",
+      "snippet": "Appareil photo NIKON D610 ... Logiciel Adobe Photoshop CC 2019 (Windows) Description # Nature morte rustique avec des pommes, un panier en osier et un vase avec des baies rouges sur une table en bois.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/",
+      "title": "Photo de Valentin Ivantsov sur Pexels",
+      "snippet": "Afterglow Street Festive Summer 1 Valentin Ivantsov ... Appareil photo Canon EOS 5D Mark III Focale 100.0mm Ouverture ƒ/13.0 ISO 100 ... 2022 Logiciel Adobe Photoshop 21.0 (Windows) Description # Nature morte artistique représentant des vases en porcelaine blanche et des sphères orange vif sur fond sombre. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Still-life_clich%C3%A9-verre#1",
+      "title": "Category:Still-life cliché-verre - Wikimedia Commons - Help",
+      "snippet": "Still-life cliché-verre ... Media in category \"Still-life cliché-verre\" The following 22 files are in this category, out of 22 total. ... Cactus fruit cut in half, NINO F Scholten Tel Aviv 21 8.tiff ... Still-life photography",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://elements.envato.com/top-view-fresh-fruits-different-mellow-fruits-on-w-C3KTEHF",
+      "title": "top view fresh fruits different mellow fruits on white background berry diet tasty color photo",
+      "snippet": "top view fresh fruits different mellow fruits on white background berry diet tasty color photo ... - 5600(w) × 3733(h) px ... Description Vibrant apples, pears, oranges, and other citrus fruits, including a pomegranate, are arranged on a textured surface.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/apple-pomme-centrale-plante-9390657/",
+      "title": "Photo de Nadia Vasil'eva sur Pexels",
+      "snippet": "Nadia Vasil'eva 27,3 million vues \\ 111,3 millier téléchargements ... Description # Un arrangement serein de marguerites dans un vase en verre près du rebord de la fenêtre, accompagné de pommes.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "snippet": "Afterglow Street Festive ... 3946x5920 Aspect Ratio 1973 ... 2025 Downloads 32 Views ... 2 Camera Canon EOS 5D Mark III ... Taken At Oct 30, 2022 Software Adobe Photoshop 21.0 (Windows) Description # A minimalist composition featuring a vase and floating orange spheres on a modern background. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/fruits-oranges-photo-de-nourriture-photographie-de-nourriture-9960543/",
+      "title": "Photo de Jana Ohajdova sur Pexels",
+      "snippet": "Date Oct 20, 2021 ... Appareil photo NIKON Z 6 ... Logiciel Adobe Photoshop Lightroom Classic 10.4 (Macintosh) Description # Composition colorée de fruits agrumes avec des tranches de grapefruit et d'orange sur des assiettes en céramique. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://act.library.vanderbilt.edu/artworks/46227",
+      "title": "Still Life, Fruit and Nuts",
+      "snippet": "Still Life, Fruit and Nuts ... https://commons.wikimedia.org/wiki/File:Alfred_Sisley_057.jpg ... https://commons.wikimedia.org/wiki/File:Alfred_Sisley_057.jpg.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://elements.envato.com/fresh-fruit-UVTSPNM",
+      "title": "Fresh Apples, Pears and Citrus Fruit on Gray",
+      "snippet": "Fresh Apples, Pears and Citrus Fruit on Gray ... A variety of colorful fruits are scattered on a gray surface. Red and green apples are mixed with oranges, limes, and pears to make a striking contrast. The large yellow pomelo is a central focal point.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/apples-on-the-wooden-table-5760182/",
+      "title": "Photo by olia danilevich on Pexels",
+      "snippet": "Date Nov 1, 2020 Downloads ... Oct 31, 2020 Software Adobe Photoshop 21.0 (Macintosh) Description # A delightful still life of a cranberry apple drink surrounded by fresh fruits. ## More like this",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/w",
+      "title": "Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lorenzo_todini,_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano,_1670-85_ca._01.JPG#1",
+      "title": "File:Lorenzo todini, vaso in porcellana dipinta con fiori e due ciliege sul piano, 1670-85 ca. 01.JPG - Wikimedia Commons - Further authorizations required by the Italian \"Code of Cultural Heritage and Landscape\" (Codice Urbani), under Legi",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/fruits-oranges-photo-de-nourriture-photographie-de-nourriture-9960543/",
+      "title": "Photo de Jana Ohajdova sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 322034,
+        "sha256": "ac070d0bd0d35f4eaaf729354f85e089628189398d4cb228458def1e6a2ae9f6"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG/960px-Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lorenzo_todini,_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano,_1670-85_ca._01.JPG#1",
+      "title": "File:Lorenzo todini, vaso in porcellana dipinta con fiori e due ciliege sul piano, 1670-85 ca. 01.JPG - Wikimedia Commons - Further authorizations required by the Italian \"Code of Cultural Heritage and Landscape\" (Codice Urbani), under Legi",
+      "sha256": "ac070d0bd0d35f4eaaf729354f85e089628189398d4cb228458def1e6a2ae9f6",
+      "bytes": 322034,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1301,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Sailko",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2214,
+        "height": 3000,
+        "bytes": 4950270
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 30658,
+        "sha256": "740ce7eea05aa4effef598b3af0a946d3163c03a040a9b0e8d748667419d2ec9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/35055923/pexels-photo-35055923.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "sha256": "740ce7eea05aa4effef598b3af0a946d3163c03a040a9b0e8d748667419d2ec9",
+      "bytes": 30658,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 68678,
+        "sha256": "09e542a09fa88906d2a7d5c03e0c05c1abe9adfc49d3947ff461640928478666"
+      },
+      "imageUrl": "https://images.pexels.com/photos/9960543/pexels-photo-9960543.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/fruits-oranges-photo-de-nourriture-photographie-de-nourriture-9960543/",
+      "title": "Photo de Jana Ohajdova sur Pexels",
+      "sha256": "09e542a09fa88906d2a7d5c03e0c05c1abe9adfc49d3947ff461640928478666",
+      "bytes": 68678,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 511
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG/960px-Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lorenzo_todini,_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano,_1670-85_ca._01.JPG#1",
+      "title": "File:Lorenzo todini, vaso in porcellana dipinta con fiori e due ciliege sul piano, 1670-85 ca. 01.JPG - Wikimedia Commons - Further authorizations required by the Italian \"Code of Cultural Heritage and Landscape\" (Codice Urbani), under Legi",
+      "sha256": "ac070d0bd0d35f4eaaf729354f85e089628189398d4cb228458def1e6a2ae9f6",
+      "bytes": 322034,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1301,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Sailko",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2214,
+        "height": 3000,
+        "bytes": 4950270
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/35055923/pexels-photo-35055923.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "sha256": "740ce7eea05aa4effef598b3af0a946d3163c03a040a9b0e8d748667419d2ec9",
+      "bytes": 30658,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/9960543/pexels-photo-9960543.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/fruits-oranges-photo-de-nourriture-photographie-de-nourriture-9960543/",
+      "title": "Photo de Jana Ohajdova sur Pexels",
+      "sha256": "09e542a09fa88906d2a7d5c03e0c05c1abe9adfc49d3947ff461640928478666",
+      "bytes": 68678,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 511,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/w",
+        "title": "Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lorenzo_todini,_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano,_1670-85_ca._01.JPG#1",
+        "title": "File:Lorenzo todini, vaso in porcellana dipinta con fiori e due ciliege sul piano, 1670-85 ca. 01.JPG - Wikimedia Commons - Further authorizations required by the Italian \"Code of Cultural Heritage and Landscape\" (Codice Urbani), under Legi",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG/960px-Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Sailko",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ALorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG/960px-Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 322034,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 1301,
+        "sha256": "ac070d0bd0d35f4eaaf729354f85e089628189398d4cb228458def1e6a2ae9f6"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/",
+        "title": "Photo by Valentin Ivantsov on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/35055923/pexels-photo-35055923.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/35055923/pexels-photo-35055923.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 30658,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "740ce7eea05aa4effef598b3af0a946d3163c03a040a9b0e8d748667419d2ec9"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/fruits-oranges-photo-de-nourriture-photographie-de-nourriture-9960543/",
+        "title": "Photo de Jana Ohajdova sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/9960543/pexels-photo-9960543.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/9960543/pexels-photo-9960543.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 68678,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 511,
+        "sha256": "09e542a09fa88906d2a7d5c03e0c05c1abe9adfc49d3947ff461640928478666"
+      }
+    ],
+    "downloadedCount": 3,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "第 10/10 轮结论：仍**没有**可核验的摄影详情页能同时确认“苹果 + 梨 + 整橙子 + 普通陶瓷花瓶”四类主体同框。本轮可补充的是**具体 Pexels 照片页**，但它们只解决“花瓶与橙色球体/陶瓷器皿与橙子”的局部形态、材质和光照线索，不能当作完整场景参考。下列来源均基于搜索结果文本，**未查看图片字节**；取图后需由视觉步骤确认。\n\n---\n\n## 一、本轮可记录的 Pexels 具体照片页\n\n### 1. Valentin Ivantsov：白瓷花瓶 + 橙色球体，暗背景\n- 来源页：https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/ \n- 可记录元数据：Canon EOS 5D Mark III，100 mm，f/13.0，1/160 s，原始尺寸 3745×5617；描述为“白色瓷花瓶与鲜橙色球体在暗背景上的艺术静物” 。\n- 用途：这是本轮**最接近“普通陶瓷花瓶 + 橙色球形主体”**的局部来源。可参考花瓶竖向轮廓与暗背景的分离方式；f/13 在 100 mm 下景深相对可控，适合观察**釉面花瓶边缘硬边与橙色球体柔边**的轮廓差异。\n- 局限：描述写“sphères orange / orange spheres”，**未确认是整橙子**；可能是装饰球体或橙子。不能作为“整橙子果皮细节”的已核实证据；花瓶是否“普通陶瓷”也需取图核验。许可证按 Pexels License，作者页标注 Valentin Ivantsov 。\n\n### 2. Valentin Ivantsov：极简花瓶与橙色球体\n- 来源页：https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/ \n- 元数据：Canon EOS 5D Mark III，100 mm，f/11.0，1/160 s，3946×5920 。\n- 用途：与上一条同一作者、不同照片页，**不是同一实例的裁切**。可补充“花瓶 + 橙色球体”的另一种构图；适合提取花瓶的竖向体块、承托面接触与暗背景高光。\n- 局限：标题明确写“floating orange balls”，**更偏向概念静物/装饰球**，不宜直接当作真实橙子。无苹果、梨。许可证 Pexels License，作者待按页面核验。\n\n### 3. Максим Вышарь：苹果、藤篮、花瓶、木桌\n- 来源页：https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/ \n- 元数据：Nikon D610，50 mm，f/9.0，ISO 100，1/8 s，5740×3826；描述为“质朴静物：苹果、藤篮和插红浆果的花瓶，木桌” 。\n- 用途：这是本轮少见的**苹果 + 花瓶 + 木桌承托面**同框照片页。可参考苹果与木桌的接触阴影、花瓶与桌面的落影，以及 f/9 下中景静物的景深分布。\n- 局限：花瓶描述为“vase avec des baies rouges”，未说明材质为普通陶瓷；**无梨、无整橙子**。1/8 s 快门提示可能使用三脚架或持续光，布光偏柔和，但不能从文本确认光源方向。许可证 Pexels License。\n\n### 4. Lucas Pezeta：绿陶瓷盘上的水果\n- 来源页：https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/ [citation:?]\n- 搜索返回页仅显示 Cookie 管理内容，**未能读取照片描述、作者、相机参数或尺寸**。因此本轮只能登记为“待取图核验的 Pexels 具体照片页”，不能给出材质/光照结论。\n- 用途待核验：若取图确认包含整橙子、苹果或梨，可用于陶瓷器皿与水果的接触关系；但**不确认有花瓶**。\n- 许可证：Pexels 页面通常为 Pexels License，需按页面实际标注核验；作者/参数待核验。\n\n---\n\n## 二、本轮未能补齐的失败来源与排除项\n\n- **Openverse 结果**：标题“Still life of blue vase, red-orange drape, apples, pear and plums on small plate (1923)” 。该来源为 Flickr 转载，许可证 **CC BY-NC-ND 2.0**，且“1923”强烈提示可能是绘画/印刷品或受限作品；不适合作为公开可用的摄影参考，也不符合“真实静物摄影”优先条件。\n- **Commons 绘画与分类页**：搜索结果仍大量出现 Osias Beert、Van Kessel、Gauguin、Cézanne 等绘画，以及 `Category:2 fruit` 这类分类页 。它们不是摄影详情页，不纳入。\n- **VistaCreate / Envato / FastMedia 等聚合页**：只提供相似图列表或转载缩略图，不能作为具体照片的原始详情页；不替代 Commons/Pexels 来源 。\n- **`Apples, Pears, Oranges.jpg`**：本轮搜索仍未返回其 `File:` 详情页，无法核验作者、许可证和是否含花瓶；仍不能作为已核实来源。\n\n---\n\n## 三、可转化为图形函数的细节（基于网页文本，待取图验证）\n\n1. **花瓶轮廓与橙色球体的边缘分离**  \n   Ivantsov 的两张照片页提供“暗背景 + 浅色花瓶 + 橙色球体”的构图线索 。图形函数上可把花瓶视为**竖向旋转体**，轮廓边缘受釉面高光影响，在暗背景前出现较亮的细边缘；橙色球体则应有更柔和的明暗过渡。但**不能预设橙子果皮油胞纹理**，因为文本未确认是真实橙子。\n\n2. **陶瓷与承托面的接触阴影**  \n   Вышарь 的页面确认“木桌”作为承托面 ，可用于观察花瓶底部、藤篮底部与木桌的接触阴影。f/9、50 mm 下景深较深，桌面纹理与物体底部的暗部过渡可能比棚拍白背景更接近真实静物。局限：花瓶材质未确认，且无橙子、梨。\n\n3. **陶瓷器皿与水果的接触**  \n   Pexels 绿陶瓷盘页面本轮**未返回可读元数据**，不能写具体接触细节；只能登记为待取图候选。若后续取图确认有整橙子/苹果，可用于硬质釉面与果皮软接触的局部阴影，但需先解决“是否有花瓶”的问题。\n\n4. **苹果与花瓶同框的布光线索**  \n   Вышарь 照片页的 1/8 s 快门与 f/9 组合提示可能是柔和持续光或弱闪光环境 ；可作为“苹果高光不宜过锐”的反例参考，但光源方向与色温无法从文本确认，不能据此设定具体数值。\n\n---\n\n## 四、局限与下一轮定向建议\n\n- **核心组合仍未解决**：本轮没有一页能确认同时包含苹果、梨、整橙子和普通陶瓷花瓶。Ivantsov 的“橙色球体”可能是装饰球，不能替代整橙子；Вышарь 的页面无梨、无橙子。\n- **图片字节未获取**：上述轮廓、接触阴影、釉面高光均只能作为“待取图验证线索”，不能声称已目视确认。\n- **下一轮优先动作**：\n  1. 直接取图核验 Ivantsov 两张照片页：确认“橙色球体”是否为真实整橙子，以及花瓶是否为素面普通陶瓷。若不是，降级为“构图/暗背景参考”。\n  2. 在 Commons 搜索 `File:` 命名空间下的 `ceramic vase apples pears` 与 `earthenware vase still life fruit`，排除 `Category:`、`painting`、`oil on` 结果。\n  3. 在 Pexels 搜索 `white ceramic vase orange fruit` 或 `vase apples pears oranges`，只保留有相机参数和具体照片 ID 的页面；避免聚合页与相似图列表。\n  4. 若仍找不到四主体同框，最终参考策略应改为**分项材质参考 + 合成构图**，而不是继续等待单一完整照片。\n\n---\n\n## 五、本轮来源清单（可点击）\n\n| 类型 | 来源页 | 状态 |\n|---|---|---|\n| Pexels 具体照片页 | https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/  | 花瓶 + 橙色球体，暗背景；橙子真实性待核验 |\n| Pexels 具体照片页 | https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/  | 极简花瓶 + 橙色球体；偏概念静物 |\n| Pexels 具体照片页 | https://www.pexels.com/fr-fr/photo/fleurs-jardin-table-recolte-12027259/  | 苹果 + 花瓶 + 木桌；无梨、无橙子 |\n| Pexels 具体照片页 | https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/ | 待取图核验；本轮元数据不可读 |\n| 不纳入 | https://openverse.org/tr/image/878fceec-e5a9-485b-b312-331489f3d733?p=10  | CC BY-NC-ND，且可能为受限作品/绘画 |\n| 不纳入 | Commons 绘画与分类页  | 非摄影详情页或绘画 |\n| 不纳入 | VistaCreate/Envato/FastMedia 聚合页  | 非原始照片详情页 |\n\n本轮不提供工具未返回的“原始图像 URL”；上述 Pexels 页面若后续取图，需从页面内嵌资源获取，不能根据文件名编造。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 41553,
+    "completion_tokens": 2458,
+    "total_tokens": 44011,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "794f2951-e215-4155-8d82-b3a7f77864c1",
+        "model": "deepseek-flash",
+        "elapsedMs": 29195,
+        "prompt_tokens": 41553,
+        "completion_tokens": 2458,
+        "total_tokens": 44011,
+        "server_tool_use": {
+          "tool_search": 12,
+          "tool_fetch": 3,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 47306,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 322034,
+        "sha256": "ac070d0bd0d35f4eaaf729354f85e089628189398d4cb228458def1e6a2ae9f6"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG/960px-Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lorenzo_todini,_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano,_1670-85_ca._01.JPG#1",
+      "title": "File:Lorenzo todini, vaso in porcellana dipinta con fiori e due ciliege sul piano, 1670-85 ca. 01.JPG - Wikimedia Commons - Further authorizations required by the Italian \"Code of Cultural Heritage and Landscape\" (Codice Urbani), under Legi",
+      "sha256": "ac070d0bd0d35f4eaaf729354f85e089628189398d4cb228458def1e6a2ae9f6",
+      "bytes": 322034,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1301,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Sailko",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Lorenzo_todini%2C_vaso_in_porcellana_dipinta_con_fiori_e_due_ciliege_sul_piano%2C_1670-85_ca._01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2214,
+        "height": 3000,
+        "bytes": 4950270
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/ac070d0bd0d35f4eaaf729354f85e089628189398d4cb228458def1e6a2ae9f6.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 30658,
+        "sha256": "740ce7eea05aa4effef598b3af0a946d3163c03a040a9b0e8d748667419d2ec9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/35055923/pexels-photo-35055923.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-vase-with-floating-orange-balls-35055923/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "sha256": "740ce7eea05aa4effef598b3af0a946d3163c03a040a9b0e8d748667419d2ec9",
+      "bytes": 30658,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/740ce7eea05aa4effef598b3af0a946d3163c03a040a9b0e8d748667419d2ec9.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 68678,
+        "sha256": "09e542a09fa88906d2a7d5c03e0c05c1abe9adfc49d3947ff461640928478666"
+      },
+      "imageUrl": "https://images.pexels.com/photos/9960543/pexels-photo-9960543.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/fruits-oranges-photo-de-nourriture-photographie-de-nourriture-9960543/",
+      "title": "Photo de Jana Ohajdova sur Pexels",
+      "sha256": "09e542a09fa88906d2a7d5c03e0c05c1abe9adfc49d3947ff461640928478666",
+      "bytes": 68678,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 511,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/09e542a09fa88906d2a7d5c03e0c05c1abe9adfc49d3947ff461640928478666.webp"
+    }
+  ]
+}

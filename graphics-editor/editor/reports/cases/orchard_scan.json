@@ -1,0 +1,494 @@
+{
+  "schema": "crf.pixel_scan.v0.5",
+  "width": 800,
+  "height": 600,
+  "pixelCount": 480000,
+  "labelsProvided": true,
+  "fileSha256": "710c064d8802060e4cbd3b93859e40b81c213a35b21c4ac5ff99340b7238242e",
+  "rgbSha256": "1f77679d349f4507ef628a9e0ca15a66dd956154906567c140a03a752e62b25b",
+  "edgePixelCount": 15024,
+  "segments": [
+    {
+      "index": 0,
+      "bbox": [
+        0,
+        0,
+        800,
+        521
+      ],
+      "pivot": [
+        421.17384041484763,
+        181.49390026440386
+      ],
+      "statistics": {
+        "pixelCount": 243945,
+        "fraction": 0.50821875,
+        "meanRGB": [
+          198.58368,
+          192.82715,
+          180.57917
+        ],
+        "stdRGB": [
+          40.94591,
+          43.66319,
+          47.60486
+        ],
+        "medianRGB": [
+          226.0,
+          220.0,
+          209.0
+        ],
+        "minRGB": [
+          52,
+          38,
+          0
+        ],
+        "maxRGB": [
+          255,
+          254,
+          250
+        ],
+        "meanLuminance": 193.16668114697984,
+        "gradientMean": 1.6580423891232756,
+        "gradientP95": 3.824575426922925,
+        "edgePixelCount": 3401,
+        "edgeFraction": 0.013941667179077251
+      }
+    },
+    {
+      "index": 1,
+      "bbox": [
+        0,
+        394,
+        800,
+        600
+      ],
+      "pivot": [
+        354.87529723181837,
+        525.8052985777738
+      ],
+      "statistics": {
+        "pixelCount": 111445,
+        "fraction": 0.23217708333333334,
+        "meanRGB": [
+          202.35763,
+          195.03159,
+          174.47674
+        ],
+        "stdRGB": [
+          24.32783,
+          26.10969,
+          24.14089
+        ],
+        "medianRGB": [
+          209.0,
+          201.0,
+          182.0
+        ],
+        "minRGB": [
+          68,
+          50,
+          27
+        ],
+        "maxRGB": [
+          255,
+          255,
+          255
+        ],
+        "meanLuminance": 195.10504850643815,
+        "gradientMean": 1.2062427711249981,
+        "gradientP95": 2.1951304813202377,
+        "edgePixelCount": 1916,
+        "edgeFraction": 0.017192337027233166
+      }
+    },
+    {
+      "index": 2,
+      "bbox": [
+        138,
+        203,
+        395,
+        470
+      ],
+      "pivot": [
+        265.3414188639246,
+        336.0372792489258
+      ],
+      "statistics": {
+        "pixelCount": 52831,
+        "fraction": 0.11006458333333333,
+        "meanRGB": [
+          142.55324,
+          32.95843,
+          15.82084
+        ],
+        "stdRGB": [
+          44.05128,
+          27.84161,
+          26.75206
+        ],
+        "medianRGB": [
+          149.0,
+          26.0,
+          6.0
+        ],
+        "minRGB": [
+          14,
+          0,
+          0
+        ],
+        "maxRGB": [
+          255,
+          255,
+          255
+        ],
+        "meanLuminance": 55.02095448884178,
+        "gradientMean": 4.908805137085475,
+        "gradientP95": 18.093229695194722,
+        "edgePixelCount": 5172,
+        "edgeFraction": 0.09789706800931272
+      }
+    },
+    {
+      "index": 3,
+      "bbox": [
+        375,
+        25,
+        630,
+        505
+      ],
+      "pivot": [
+        497.21252037504007,
+        325.63721283383717
+      ],
+      "statistics": {
+        "pixelCount": 71779,
+        "fraction": 0.14953958333333334,
+        "meanRGB": [
+          201.76042,
+          185.37976,
+          16.95599
+        ],
+        "stdRGB": [
+          32.98175,
+          36.32871,
+          26.8962
+        ],
+        "medianRGB": [
+          208.0,
+          194.0,
+          2.0
+        ],
+        "minRGB": [
+          64,
+          44,
+          0
+        ],
+        "maxRGB": [
+          255,
+          255,
+          226
+        ],
+        "meanLuminance": 176.7020936234832,
+        "gradientMean": 4.90036343370785,
+        "gradientP95": 13.331578016046718,
+        "edgePixelCount": 4535,
+        "edgeFraction": 0.06318003872999066
+      }
+    }
+  ],
+  "semantics": "Caller-supplied labels only; no automatic segmentation or depth inference",
+  "caseId": "orchard",
+  "source": {
+    "title": "Apple and pear",
+    "author": "Yves Geissbühler",
+    "url": "https://commons.wikimedia.org/wiki/File:Apple_and_pear.jpg",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Apple_and_pear.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceDimensions": [
+      3648,
+      2736
+    ],
+    "sourceDate": "2013-03-19",
+    "downloadedFileSha256": "0e2aaa1a2f5900fb8991220c4f278ad6e6a36e4dd88ef8af78e4e4ae7b63fa10",
+    "canonicalDimensions": [
+      800,
+      600
+    ],
+    "canonicalFileSha256": "710c064d8802060e4cbd3b93859e40b81c213a35b21c4ac5ff99340b7238242e",
+    "canonicalRgbSha256": "1f77679d349f4507ef628a9e0ca15a66dd956154906567c140a03a752e62b25b",
+    "normalization": "EXIF transpose; RGB8; Lanczos thumbnail bounded by 800x600; frozen before scan"
+  },
+  "note": "Source-color seeds and explicit silhouette/stalk annotations; baked shadows remain on table.",
+  "objects": [
+    {
+      "id": "wall.main",
+      "index": 0,
+      "label": "纹理墙面",
+      "kind": "wall",
+      "group": "实拍语义层",
+      "parent": null,
+      "bbox": [
+        0,
+        0,
+        800,
+        521
+      ],
+      "pivot": [
+        421.17384041484763,
+        181.49390026440386
+      ],
+      "depth": 0,
+      "depthSlope": [
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "statistics": {
+        "pixelCount": 243945,
+        "fraction": 0.50821875,
+        "meanRGB": [
+          198.58368,
+          192.82715,
+          180.57917
+        ],
+        "stdRGB": [
+          40.94591,
+          43.66319,
+          47.60486
+        ],
+        "medianRGB": [
+          226.0,
+          220.0,
+          209.0
+        ],
+        "minRGB": [
+          52,
+          38,
+          0
+        ],
+        "maxRGB": [
+          255,
+          254,
+          250
+        ],
+        "meanLuminance": 193.16668114697984,
+        "gradientMean": 1.6580423891232756,
+        "gradientP95": 3.824575426922925,
+        "edgePixelCount": 3401,
+        "edgeFraction": 0.013941667179077251
+      },
+      "provenance": {
+        "rgb": "canonical_reference_RGB8",
+        "segmentation": "explicit_example_adapter",
+        "depth": "single_view_hypothesis"
+      }
+    },
+    {
+      "id": "table.main",
+      "index": 1,
+      "label": "桌面与已观测阴影",
+      "kind": "table",
+      "group": "实拍语义层",
+      "parent": null,
+      "bbox": [
+        0,
+        394,
+        800,
+        600
+      ],
+      "pivot": [
+        354.87529723181837,
+        525.8052985777738
+      ],
+      "depth": 35,
+      "depthSlope": [
+        0,
+        0.55
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "statistics": {
+        "pixelCount": 111445,
+        "fraction": 0.23217708333333334,
+        "meanRGB": [
+          202.35763,
+          195.03159,
+          174.47674
+        ],
+        "stdRGB": [
+          24.32783,
+          26.10969,
+          24.14089
+        ],
+        "medianRGB": [
+          209.0,
+          201.0,
+          182.0
+        ],
+        "minRGB": [
+          68,
+          50,
+          27
+        ],
+        "maxRGB": [
+          255,
+          255,
+          255
+        ],
+        "meanLuminance": 195.10504850643815,
+        "gradientMean": 1.2062427711249981,
+        "gradientP95": 2.1951304813202377,
+        "edgePixelCount": 1916,
+        "edgeFraction": 0.017192337027233166
+      },
+      "provenance": {
+        "rgb": "canonical_reference_RGB8",
+        "segmentation": "explicit_example_adapter",
+        "depth": "single_view_hypothesis"
+      }
+    },
+    {
+      "id": "apple.photo",
+      "index": 2,
+      "label": "苹果·实拍表面",
+      "kind": "fruit_photo",
+      "group": "实拍语义层",
+      "parent": null,
+      "bbox": [
+        138,
+        203,
+        395,
+        470
+      ],
+      "pivot": [
+        265.3414188639246,
+        336.0372792489258
+      ],
+      "depth": 130,
+      "depthSlope": [
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "statistics": {
+        "pixelCount": 52831,
+        "fraction": 0.11006458333333333,
+        "meanRGB": [
+          142.55324,
+          32.95843,
+          15.82084
+        ],
+        "stdRGB": [
+          44.05128,
+          27.84161,
+          26.75206
+        ],
+        "medianRGB": [
+          149.0,
+          26.0,
+          6.0
+        ],
+        "minRGB": [
+          14,
+          0,
+          0
+        ],
+        "maxRGB": [
+          255,
+          255,
+          255
+        ],
+        "meanLuminance": 55.02095448884178,
+        "gradientMean": 4.908805137085475,
+        "gradientP95": 18.093229695194722,
+        "edgePixelCount": 5172,
+        "edgeFraction": 0.09789706800931272
+      },
+      "provenance": {
+        "rgb": "canonical_reference_RGB8",
+        "segmentation": "explicit_example_adapter",
+        "depth": "single_view_hypothesis"
+      }
+    },
+    {
+      "id": "pear.photo",
+      "index": 3,
+      "label": "梨子·实拍表面",
+      "kind": "fruit_photo",
+      "group": "实拍语义层",
+      "parent": null,
+      "bbox": [
+        375,
+        25,
+        630,
+        505
+      ],
+      "pivot": [
+        497.21252037504007,
+        325.63721283383717
+      ],
+      "depth": 150,
+      "depthSlope": [
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "statistics": {
+        "pixelCount": 71779,
+        "fraction": 0.14953958333333334,
+        "meanRGB": [
+          201.76042,
+          185.37976,
+          16.95599
+        ],
+        "stdRGB": [
+          32.98175,
+          36.32871,
+          26.8962
+        ],
+        "medianRGB": [
+          208.0,
+          194.0,
+          2.0
+        ],
+        "minRGB": [
+          64,
+          44,
+          0
+        ],
+        "maxRGB": [
+          255,
+          255,
+          226
+        ],
+        "meanLuminance": 176.7020936234832,
+        "gradientMean": 4.90036343370785,
+        "gradientP95": 13.331578016046718,
+        "edgePixelCount": 4535,
+        "edgeFraction": 0.06318003872999066
+      },
+      "provenance": {
+        "rgb": "canonical_reference_RGB8",
+        "segmentation": "explicit_example_adapter",
+        "depth": "single_view_hypothesis"
+      }
+    }
+  ]
+}

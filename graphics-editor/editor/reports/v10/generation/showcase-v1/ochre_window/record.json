@@ -1,0 +1,662 @@
+{
+  "schema": "crf.actual_generation_trial.v0.10",
+  "id": "ochre_window",
+  "title": "赭黄墙面 · 柔和光色",
+  "category": "architecture",
+  "prompt": "基于已有黄色墙面与阳台的高斯照片函数，生成轻微光色编辑：保留墙面颗粒、阳台栏杆、窗框及所有几何结构。保持原画幅，略降低过强黄色饱和感，可使用小幅反射率乘数与曝光约-0.05EV，不能涂成另一张照片。唯一对象ID为frame。这是参考重建变体，不是新视角。",
+  "representation": "reference_gaussian",
+  "scope": "reference_reconstruction_edit",
+  "at": "2026-11-21T22:30:11.751Z",
+  "taskId": "crf10_26343dd1-0a35-4b8a-a34e-eb6b00c846d8",
+  "status": "review_required",
+  "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+  "error": null,
+  "selectedCandidate": 0,
+  "selectionReason": "Best evaluated candidate under hard constraints, observed reconstruction checks and advisory visual scores; ties retain the earlier candidate.",
+  "contract": {
+    "schema": "crf.goal_contract.v0.10",
+    "id": "fixed-ochre_window",
+    "representation": "reference_gaussian",
+    "checks": [
+      {
+        "id": "program.finite",
+        "kind": "program",
+        "type": "finite_parameters",
+        "required": true
+      },
+      {
+        "id": "render.frame",
+        "kind": "pixel",
+        "type": "valid_frame",
+        "required": true
+      },
+      {
+        "id": "render.dimensions",
+        "kind": "pixel",
+        "type": "dimensions",
+        "required": true,
+        "value": [
+          512,
+          768
+        ]
+      },
+      {
+        "id": "visual.realism",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "metric": "realism",
+        "threshold": 4
+      },
+      {
+        "id": "visual.semantic",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "metric": "semantic",
+        "threshold": 4
+      },
+      {
+        "id": "visual.coherence",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "metric": "coherence",
+        "threshold": 4
+      },
+      {
+        "id": "visual.major_issues",
+        "kind": "perceptual",
+        "type": "no_major_issues",
+        "required": true
+      },
+      {
+        "id": "visible.frame",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "objectId": "frame",
+        "minimumPixels": 500
+      },
+      {
+        "id": "count.frame",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "constraint": {
+          "type": "count",
+          "subject": "frame.ochre_window",
+          "value": 1
+        }
+      }
+    ],
+    "requirements": [],
+    "acceptancePolicy": "all_required_checks_and_independent_visual_review_for_photorealism",
+    "revision": 1
+  },
+  "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe",
+  "quality": {
+    "releaseGate": "not_passed",
+    "independentHumanReview": false,
+    "allCandidatesEvaluated": true,
+    "selectedCandidateEvaluated": true,
+    "trainingPerformed": false,
+    "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+  },
+  "usageTotals": {
+    "providerRequests": 3,
+    "tokens": 15210,
+    "uncertainRequestsReserved": 0
+  },
+  "usage": [
+    {
+      "phase": "plan",
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 1646,
+      "completion_tokens": 1820,
+      "total_tokens": 3466,
+      "reasoning_tokens": 1364,
+      "requests": [
+        {
+          "phase": "gaussian10_plan",
+          "requestId": "1c0b69ec-27ce-4be4-b9e6-5993cda73d9b",
+          "model": "deepseek-flash",
+          "elapsedMs": 10809,
+          "prompt_tokens": 1646,
+          "completion_tokens": 1820,
+          "total_tokens": 3466,
+          "reasoning_tokens": 1364,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    },
+    {
+      "phase": "generate",
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 1914,
+      "completion_tokens": 2784,
+      "total_tokens": 4698,
+      "reasoning_tokens": 2415,
+      "requests": [
+        {
+          "phase": "gaussian10_generate",
+          "requestId": "94be1010-a65c-4929-aef6-ea0189649fc7",
+          "model": "deepseek-flash",
+          "elapsedMs": 17025,
+          "prompt_tokens": 1914,
+          "completion_tokens": 2784,
+          "total_tokens": 4698,
+          "reasoning_tokens": 2415,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    },
+    {
+      "phase": "critique_0",
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 1924,
+      "completion_tokens": 5122,
+      "total_tokens": 7046,
+      "reasoning_tokens": 4752,
+      "requests": [
+        {
+          "phase": "gaussian10_critique",
+          "requestId": "403736ef-b6af-4702-92dd-d16791008417",
+          "model": "deepseek-flash",
+          "elapsedMs": 37660,
+          "prompt_tokens": 1924,
+          "completion_tokens": 5122,
+          "total_tokens": 7046,
+          "reasoning_tokens": 4752,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    }
+  ],
+  "taskGraph": {
+    "schema": "crf.task_graph.v0.10",
+    "nodes": [
+      {
+        "id": "plan",
+        "type": "plan",
+        "dependsOn": [],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:29:14.206Z",
+        "evidence": {
+          "runId": "crf10_da6837d4-f8e9-4fd1-8d9f-17c3f7b61f87"
+        }
+      },
+      {
+        "id": "propose.0",
+        "type": "generate",
+        "dependsOn": [
+          "plan"
+        ],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:29:31.682Z",
+        "evidence": {
+          "runId": "crf10_e1af3ba7-f1da-467e-a687-001beaf67d07"
+        }
+      },
+      {
+        "id": "render.0",
+        "type": "render",
+        "dependsOn": [
+          "propose.0"
+        ],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:29:32.410Z",
+        "evidence": {
+          "renderKey": "render:crf10_26343dd1-0a35-4b8a-a34e-eb6b00c846d8:0"
+        }
+      },
+      {
+        "id": "critique.0",
+        "type": "critique",
+        "dependsOn": [
+          "render.0"
+        ],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:30:10.715Z",
+        "evidence": {
+          "runId": "crf10_83a4abb3-2bd7-45bb-a8db-ade119a05328"
+        }
+      },
+      {
+        "id": "verify.0",
+        "type": "verify",
+        "dependsOn": [
+          "render.0",
+          "critique.0"
+        ],
+        "status": "passed",
+        "updatedAt": "2026-11-21T22:30:11.026Z",
+        "evidence": {
+          "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+          "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe",
+          "summary": {
+            "passed": 9,
+            "failed": 0,
+            "unknown": 0,
+            "blocked": 0,
+            "total": 9,
+            "required": 9,
+            "requiredPassed": 9
+          }
+        }
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "parentIndex": null,
+      "status": "verified",
+      "render": {
+        "width": 512,
+        "height": 768,
+        "elapsedMs": 522,
+        "report": {
+          "engine": "CRF10Gaussian",
+          "renderer": "direct_affine_anisotropic_gaussians",
+          "colorSpace": "linear_srgb_composite_then_srgb8",
+          "basisColorSpaces": [
+            "linear_srgb"
+          ],
+          "filter": "mip",
+          "pixelFilterVariance": 0.08333333333333333,
+          "gaussians": 32768,
+          "basisEvaluations": 12874354,
+          "visibleObjects": 1,
+          "elapsedMs": 384,
+          "sourceRGBBlit": false,
+          "colourRasterResampling": false,
+          "neuralModelTraining": false,
+          "referenceConditioned": true,
+          "geometry": "image_plane_affine",
+          "physicalRelighting": false,
+          "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+          "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+          "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+          "coverageSemantics": "visible_alpha_contribution"
+        },
+        "rgbaProvided": true
+      },
+      "critique": {
+        "ok": true,
+        "version": "0.10.0",
+        "runId": "crf10_83a4abb3-2bd7-45bb-a8db-ade119a05328",
+        "representation": "reference_gaussian",
+        "modelTraining": false,
+        "action": "critique",
+        "message": "候选保持同一参考帧的全幅比例与建筑几何，窗框、双扇窗、栏杆及墙面颗粒均清楚；主要不足是黄色墙面的去饱和幅度过小，视觉上仍接近原图的高饱和橙黄。可通过现有全帧 albedo/exposure 轻微修正，不需要新视角或隐藏几何。",
+        "qualityNotes": [
+          "全幅 512×768，与参考比例一致，画面填满、无黑边，也没有新增或删除建筑元素。",
+          "檐口、窗套、双扇窗、阳台栏杆和墙面颗粒均保留；原拍摄方向与暖侧光一致。",
+          "仅对既有参考帧高斯做全幅色彩与曝光微调，没有声称新视角或恢复未观察几何。"
+        ],
+        "warnings": [
+          "资产为整幅单一对象，albedo tint 会同时影响黄墙、浅色窗套与金属栏杆，无法只选择性去饱和黄色墙面。",
+          "窗内明亮区域接近裁切白，preserveHighlights 仅做中性高亮保护，不能恢复源图中已缺失的窗内细节。"
+        ],
+        "capabilityGaps": [],
+        "issues": [
+          {
+            "code": "semantic",
+            "severity": "minor",
+            "objectIds": [
+              "frame"
+            ],
+            "description": "黄色墙面依然呈强橙黄高饱和；当前约红 0.96、蓝 1.03 的 albedo 乘数与 -0.05 EV 曝光只带来接近视觉阈值的变化，未明显体现“略降低过强黄色饱和感”。可在现有参数上略降红通道、微升蓝通道并保留 preserveHighlights=true，避免破坏窗框中性高亮。"
+          }
+        ],
+        "scores": {
+          "realism": 5,
+          "semantic": 4,
+          "coherence": 5
+        },
+        "attempts": [
+          {
+            "phase": "gaussian10_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T22:29:32.812Z",
+            "usageKnown": true,
+            "requestId": "403736ef-b6af-4702-92dd-d16791008417",
+            "validation": "passed"
+          }
+        ],
+        "usage": {
+          "providerCalls": 1,
+          "usageComplete": true,
+          "unknownUsageCalls": 0,
+          "totalsScope": "known_provider_reports_only",
+          "prompt_tokens": 1924,
+          "completion_tokens": 5122,
+          "total_tokens": 7046,
+          "reasoning_tokens": 4752,
+          "requests": [
+            {
+              "phase": "gaussian10_critique",
+              "requestId": "403736ef-b6af-4702-92dd-d16791008417",
+              "model": "deepseek-flash",
+              "elapsedMs": 37660,
+              "prompt_tokens": 1924,
+              "completion_tokens": 5122,
+              "total_tokens": 7046,
+              "reasoning_tokens": 4752,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0,
+              "reasoningEffort": "max"
+            }
+          ]
+        },
+        "quality": {
+          "status": "requires_render_and_independent_verification",
+          "modelScoreIsProof": false
+        },
+        "imageEvidence": true,
+        "sourceFrameSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+        "submittedImageDataURLSha256": "0e2bedfb74397270105e2abd3312d470e8598ba77342d8a583c9a4614ab58f2f"
+      },
+      "verification": {
+        "schema": "crf.verification.v0.10",
+        "checkedAt": "2026-11-21T22:30:11.025Z",
+        "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+        "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+        "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe",
+        "checks": [
+          {
+            "id": "program.finite",
+            "kind": "program",
+            "type": "finite_parameters",
+            "required": true,
+            "status": "passed",
+            "observed": true,
+            "evidence": {
+              "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+              "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+              "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+            }
+          },
+          {
+            "id": "render.frame",
+            "kind": "pixel",
+            "type": "valid_frame",
+            "required": true,
+            "status": "passed",
+            "reason": "Actual finite RGBA8 samples provided.",
+            "observed": true,
+            "evidence": {
+              "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+              "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+              "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+            }
+          },
+          {
+            "id": "render.dimensions",
+            "kind": "pixel",
+            "type": "dimensions",
+            "required": true,
+            "status": "passed",
+            "observed": [
+              512,
+              768
+            ],
+            "evidence": {
+              "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+              "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+              "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+            }
+          },
+          {
+            "id": "visual.realism",
+            "kind": "perceptual",
+            "type": "visual_score",
+            "required": true,
+            "status": "passed",
+            "observed": 5,
+            "threshold": 4,
+            "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+            "evidence": {
+              "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+              "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+              "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+            }
+          },
+          {
+            "id": "visual.semantic",
+            "kind": "perceptual",
+            "type": "visual_score",
+            "required": true,
+            "status": "passed",
+            "observed": 4,
+            "threshold": 4,
+            "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+            "evidence": {
+              "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+              "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+              "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+            }
+          },
+          {
+            "id": "visual.coherence",
+            "kind": "perceptual",
+            "type": "visual_score",
+            "required": true,
+            "status": "passed",
+            "observed": 5,
+            "threshold": 4,
+            "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+            "evidence": {
+              "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+              "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+              "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+            }
+          },
+          {
+            "id": "visual.major_issues",
+            "kind": "perceptual",
+            "type": "no_major_issues",
+            "required": true,
+            "status": "passed",
+            "observed": 0,
+            "issues": [],
+            "scope": "Model-assisted perception only.",
+            "evidence": {
+              "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+              "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+              "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+            }
+          },
+          {
+            "id": "visible.frame",
+            "kind": "pixel",
+            "type": "visible_coverage",
+            "required": true,
+            "status": "passed",
+            "observed": 393216,
+            "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+            "evidence": {
+              "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+              "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+              "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+            }
+          },
+          {
+            "id": "count.frame",
+            "kind": "declaration",
+            "type": "declaration",
+            "required": true,
+            "status": "passed",
+            "observed": 1,
+            "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+            "evidence": {
+              "sceneSha256": "a8bc6a6cc5ed9f6c1acdeacdb09d4430ed8d76ab18d440a1afe63e01f17674bc",
+              "imageSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f",
+              "contractSha256": "2ab5436d8d688d92093c4223d2f6269e5065a1b29587d222d4803fa67a1687fe"
+            }
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 0,
+          "unknown": 0,
+          "blocked": 0,
+          "total": 9,
+          "required": 9,
+          "requiredPassed": 9
+        },
+        "hardPassed": true,
+        "measurementPassed": true,
+        "perceptualPassed": true,
+        "allRequiredPassed": true,
+        "independentReview": null,
+        "photorealisticAccepted": false,
+        "referenceReconstructionAccepted": false,
+        "unknowns": [],
+        "blocked": [],
+        "diagnosis": [
+          {
+            "module": "semantic_program",
+            "status": "actionable",
+            "severity": "minor",
+            "objectIds": [
+              "frame"
+            ],
+            "reason": "黄色墙面依然呈强橙黄高饱和；当前约红 0.96、蓝 1.03 的 albedo 乘数与 -0.05 EV 曝光只带来接近视觉阈值的变化，未明显体现“略降低过强黄色饱和感”。可在现有参数上略降红通道、微升蓝通道并保留 preserveHighlights=true，避免破坏窗框中性高亮。",
+            "requiredCapability": null,
+            "requiredForGoal": null
+          }
+        ],
+        "scope": "Contract checks on this exact scene/frame; no universal correctness or unseen-world claim."
+      },
+      "imageUrl": "assets/v10/generated/showcase-v1/ochre_window.candidate_0.jpg",
+      "sceneUrl": "assets/v10/generated/showcase-v1/ochre_window.candidate_0.scene.json"
+    }
+  ],
+  "assets": [
+    {
+      "id": "frame.ochre_window",
+      "label": "frame.ochre_window",
+      "width": 512,
+      "height": 768,
+      "role": "reference-frame",
+      "visibleBounds": [
+        0,
+        0,
+        512,
+        768
+      ],
+      "contactPoint": [
+        255.5,
+        768
+      ],
+      "sourceKind": "observed_photo_gaussian",
+      "limitations": "源照片外观由显式高斯参数拟合，继承原光照与视角；没有隐藏几何。",
+      "url": "assets/v10/frames/ochre_window.json",
+      "gaussians": 32768,
+      "sha256": "ac45b679134332225ab6e31d3204ae0f7994b78e090e6869618bfe7b9cff1d87",
+      "provenance": {
+        "kind": "observed_gaussian_reconstruction",
+        "algorithm": "crf10-structure-irls-pixel-footprint-adam",
+        "sourceRGBEmbedded": false,
+        "losslessResidualEmbedded": false,
+        "neuralModelTraining": false,
+        "pretrainedInitializerUsed": false,
+        "optimizationScope": "this_observation_only",
+        "budget": 32768,
+        "illumination": "inherited_from_observation",
+        "sourceSHA256": "432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f",
+        "originalSize": [
+          768,
+          1152
+        ],
+        "fittedSize": [
+          512,
+          768
+        ],
+        "source": {
+          "sourceUrl": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+          "imageUrl": "https://images.pexels.com/photos/5438827/pexels-photo-5438827.jpeg?auto=compress&cs=tinysrgb&w=768",
+          "title": "Photo by rotekirsche 20 on Pexels",
+          "sha256": "432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f",
+          "file": "fitting/learning09/learning-v1/learn-architecture/originals/432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f.webp"
+        },
+        "referenceAcquisition": "Existing CRF 0.9 real DeepSeek search evidence; re-used observation, no new model training."
+      }
+    }
+  ],
+  "modelTraining": false,
+  "sharedModelBefore": "c1ae52b759ca5b39a6672142ae94eedf050ede5a91a7c95853b0e22048628a4c",
+  "sharedModelAfter": "c1ae52b759ca5b39a6672142ae94eedf050ede5a91a7c95853b0e22048628a4c",
+  "artifact": {
+    "imageUrl": "assets/v10/generated/showcase-v1/ochre_window.png",
+    "thumbnailUrl": "assets/v10/generated/showcase-v1/ochre_window.jpg",
+    "sceneUrl": "assets/v10/generated/showcase-v1/ochre_window.scene.json",
+    "reportUrl": "assets/v10/generated/showcase-v1/ochre_window.report.json",
+    "width": 512,
+    "height": 768,
+    "pixelSha256": "ab88de3d231aa1b89f0c16a8c29a14378f05a610cb316b9d1271b05fbe3c610f"
+  },
+  "apiOperations": [
+    {
+      "index": 0,
+      "phase": "plan",
+      "path": "/api/crf/native10/generate",
+      "status": "completed",
+      "startedAt": "2026-11-21T22:29:03.034Z",
+      "resultKey": "operation:crf10_26343dd1-0a35-4b8a-a34e-eb6b00c846d8:0",
+      "finishedAt": "2026-11-21T22:29:14.002Z",
+      "runId": "crf10_da6837d4-f8e9-4fd1-8d9f-17c3f7b61f87"
+    },
+    {
+      "index": 1,
+      "phase": "generate",
+      "path": "/api/crf/native10/generate",
+      "status": "completed",
+      "startedAt": "2026-11-21T22:29:14.337Z",
+      "resultKey": "operation:crf10_26343dd1-0a35-4b8a-a34e-eb6b00c846d8:1",
+      "finishedAt": "2026-11-21T22:29:31.507Z",
+      "runId": "crf10_e1af3ba7-f1da-467e-a687-001beaf67d07"
+    },
+    {
+      "index": 2,
+      "phase": "critique_0",
+      "path": "/api/crf/native10/generate",
+      "status": "completed",
+      "startedAt": "2026-11-21T22:29:32.601Z",
+      "resultKey": "operation:crf10_26343dd1-0a35-4b8a-a34e-eb6b00c846d8:2",
+      "finishedAt": "2026-11-21T22:30:10.475Z",
+      "runId": "crf10_83a4abb3-2bd7-45bb-a8db-ade119a05328"
+    }
+  ],
+  "unresolvedProviderAttempts": 0,
+  "usageComplete": true
+}

@@ -1,0 +1,203 @@
+{
+  "schema": "crf.gaussian_fit_report.v0.10",
+  "assetId": "orange",
+  "width": 195,
+  "height": 182,
+  "gaussians": 4096,
+  "assetBytes": 430897,
+  "sourceSHA256": "b634d9724b22acf4cb383fa6f5338c2b82f9bfb61ec96ac9777099b20966f57b",
+  "metrics": {
+    "mae": 4.048998192226574,
+    "rmse": 6.021680265744628,
+    "psnr": 32.53644976916696,
+    "ssim": 0.912927459351701,
+    "maxError": 96,
+    "exactRGBFraction": 0.0018830973184694184,
+    "evaluatedPixels": 26552,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fit": {
+    "iterationsPerStage": 20,
+    "irlsIterationsPerStage": 3,
+    "geometryOptimization": {
+      "steps": 30,
+      "history": [
+        {
+          "step": 0,
+          "perceptualMSE": 0.0006501468493733326,
+          "bestPerceptualMSE": 0.0006501468493733326
+        },
+        {
+          "step": 10,
+          "perceptualMSE": 0.0005193442400348771,
+          "bestPerceptualMSE": 0.0005193442400348771
+        },
+        {
+          "step": 20,
+          "perceptualMSE": 0.0003795347364157617,
+          "bestPerceptualMSE": 0.0003795347364157617
+        },
+        {
+          "step": 30,
+          "perceptualMSE": 0.0003347775147483801,
+          "bestPerceptualMSE": 0.0003347775147483801
+        }
+      ],
+      "bestPerceptualMSE": 0.0003347775147483801,
+      "parameters": "centre_xy,log_sigma_xy,rotation,linear_rgb_coefficients",
+      "pixelFootprintGradient": true
+    },
+    "history": [
+      {
+        "phase": "uniform_coverage_and_structure_initialization",
+        "count": 1433,
+        "elapsedSeconds": 0.134,
+        "mae": 26.85910665863212,
+        "rmse": 34.88425404930538,
+        "psnr": 17.278214795919872,
+        "ssim": 0.3300415714325626,
+        "maxError": 137,
+        "exactRGBFraction": 0.0,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_0",
+        "count": 1433,
+        "elapsedSeconds": 0.644,
+        "mae": 9.35798935422316,
+        "rmse": 13.77183640460514,
+        "psnr": 25.350966506939024,
+        "ssim": 0.6140694874986263,
+        "maxError": 141,
+        "exactRGBFraction": 0.0003766194636938837,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_1",
+        "count": 3163,
+        "elapsedSeconds": 1.46,
+        "mae": 6.285477553479964,
+        "rmse": 9.277939950756219,
+        "psnr": 28.78177246218232,
+        "ssim": 0.8195524733857559,
+        "maxError": 109,
+        "exactRGBFraction": 0.0008662247664959326,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "linear_light_irls_2",
+        "count": 4096,
+        "elapsedSeconds": 2.068,
+        "mae": 5.329303505071809,
+        "rmse": 7.951407390001572,
+        "psnr": 30.121923506956982,
+        "ssim": 0.8704800323862086,
+        "maxError": 96,
+        "exactRGBFraction": 0.0012805061765592046,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_0",
+        "count": 4096,
+        "elapsedSeconds": 2.198,
+        "mae": 5.329303505071809,
+        "rmse": 7.951407390001572,
+        "psnr": 30.121923506956982,
+        "ssim": 0.8704800323862086,
+        "maxError": 96,
+        "exactRGBFraction": 0.0012805061765592046,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_10",
+        "count": 4096,
+        "elapsedSeconds": 3.5,
+        "mae": 4.858830471025409,
+        "rmse": 7.136269738938096,
+        "psnr": 31.061378463160878,
+        "ssim": 0.8943357751946799,
+        "maxError": 94,
+        "exactRGBFraction": 0.0009038867128653209,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_20",
+        "count": 4096,
+        "elapsedSeconds": 4.724,
+        "mae": 4.287661946369388,
+        "rmse": 6.329888641034212,
+        "psnr": 32.10288221405004,
+        "ssim": 0.9077847384047683,
+        "maxError": 96,
+        "exactRGBFraction": 0.0015064778547755348,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "footprint_geometry_30",
+        "count": 4096,
+        "elapsedSeconds": 5.986,
+        "mae": 4.048998192226574,
+        "rmse": 6.021680265744628,
+        "psnr": 32.53644976916696,
+        "ssim": 0.912927459351701,
+        "maxError": 96,
+        "exactRGBFraction": 0.0018830973184694184,
+        "evaluatedPixels": 26552,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 5.998,
+    "bestCheckpointRule": "lowest_observed_srgb_mse",
+    "initializer": "uniform_coverage_plus_variance_partition_and_structure_tensor_no_neural_network"
+  },
+  "renderedFromExportOnly": true,
+  "modelTraining": false,
+  "qualityScope": "reference_observation_reconstruction_not_new_image_generation",
+  "provenance": {
+    "kind": "observed_gaussian_reconstruction",
+    "algorithm": "crf10-structure-irls-pixel-footprint-adam",
+    "sourceRGBEmbedded": false,
+    "losslessResidualEmbedded": false,
+    "neuralModelTraining": false,
+    "pretrainedInitializerUsed": false,
+    "optimizationScope": "this_observation_only",
+    "budget": 4096,
+    "illumination": "inherited_from_observation",
+    "sourceSHA256": "b634d9724b22acf4cb383fa6f5338c2b82f9bfb61ec96ac9777099b20966f57b",
+    "originalSize": [
+      195,
+      182
+    ],
+    "fittedSize": [
+      195,
+      182
+    ],
+    "sourceUrl": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+    "limitations": [
+      "只能看到切面与部分外轮廓，无法确认完整球形和背面",
+      "下方投影与浅色背景边界较柔，不适合作为精确抠图依据",
+      "没有尺寸参照",
+      "仅凭外观不能确定具体品种",
+      "由模型框选和GrabCut推断alpha，未以真值分割验收。",
+      "光照与高光来自该观测视角；缩放和二维变换不生成未观察到的背面。"
+    ],
+    "pixelMaskVerified": false,
+    "sourceCatalogId": "learn.r01.c6657129fc5c.object",
+    "alphaOrigin": "inherited_observed_semantic_coverage_not_recovered_geometry"
+  },
+  "crossRuntimeParity": {
+    "id": "orange",
+    "visiblePixels": 26552,
+    "maximumVisibleRGBDifference": 0,
+    "differentVisibleRGBValues": 0,
+    "alphaExactlyEqual": true,
+    "processAndRenderSeconds": 0.32
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "crf.generation_summary.v0.10",
+  "runId": "repair-v2",
+  "cases": [
+    {
+      "id": "fruit_trio",
+      "status": "review_required",
+      "selectedCandidate": 0,
+      "candidateCount": 1,
+      "quality": {
+        "releaseGate": "not_passed",
+        "independentHumanReview": false,
+        "allCandidatesEvaluated": true,
+        "selectedCandidateEvaluated": true,
+        "trainingPerformed": false,
+        "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+      },
+      "usageTotals": {
+        "providerRequests": 5,
+        "tokens": 66610,
+        "uncertainRequestsReserved": 0
+      },
+      "artifact": {
+        "imageUrl": "assets/v10/generated/repair-v2/fruit_trio.png",
+        "thumbnailUrl": "assets/v10/generated/repair-v2/fruit_trio.jpg",
+        "sceneUrl": "assets/v10/generated/repair-v2/fruit_trio.scene.json",
+        "reportUrl": "assets/v10/generated/repair-v2/fruit_trio.report.json",
+        "width": 1024,
+        "height": 768,
+        "pixelSha256": "8127ec82e32a67472f8f69d81e5f85ec6910027883def46a2930185208d7580f"
+      }
+    }
+  ],
+  "requests": 5,
+  "totalTokens": 66610,
+  "modelTraining": false,
+  "sharedModelUnchanged": true
+}

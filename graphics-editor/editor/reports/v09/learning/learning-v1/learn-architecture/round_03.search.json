@@ -1,0 +1,690 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 3,
+  "query": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "checkpoint": {
+    "sessionId": "crf09_0e3e9918-4a7c-4a89-b65f-9def0581418c",
+    "round": 3,
+    "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+    "subtopic": "边缘与背景：干净轮廓、遮挡、接触区域",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:47:40.065Z",
+    "runId": "crf07_3f2e9874-e2de-4d5a-9328-7882d9642414",
+    "queries": [
+      "site:commons.wikimedia.org pedestrian signal push button pole close-up contact shadow",
+      "site:pexels.com photo pedestrian traffic light pole close-up",
+      "site:commons.wikimedia.org brick wall window frame edge clean silhouette",
+      "site:pexels.com photo brick wall window frame close-up daylight",
+      "site:commons.wikimedia.org pedestrian signal push button occluded by pole shadow",
+      "site:pexels.com photo building facade window frame contact shadow wall texture"
+    ],
+    "requestIds": [
+      "6a0cc4f6-a0ef-4892-a9dd-96b9479c8124"
+    ],
+    "sourceCount": 15,
+    "newSourceCount": 11,
+    "candidateCount": 11,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_a20125f93e21412e9d97e4623027d80b",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org pedestrian signal push button pole close-up contact shadow",
+            "site:pexels.com photo pedestrian traffic light pole close-up",
+            "site:commons.wikimedia.org brick wall window frame edge clean silhouette",
+            "site:pexels.com photo brick wall window frame close-up daylight",
+            "site:commons.wikimedia.org pedestrian signal push button occluded by pole shadow",
+            "site:pexels.com photo building facade window frame contact shadow wall texture"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+          "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+          "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+          "https://www.pexels.com/zh-tw/photo/7891699/",
+          "https://www.pexels.com/zh-cn/photo/38261638/",
+          "https://www.pexels.com/zh-cn/photo/10637244/",
+          "https://www.pexels.com/zh-tw/photo/36512921/",
+          "https://www.pexels.com/photo/red-brick-wall-with-white-window-panel-35062128/",
+          "https://www.pexels.com/zh-cn/photo/37152155/",
+          "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+          "https://www.pexels.com/photo/classic-brick-building-under-clear-blue-sky-34847739/",
+          "https://www.pexels.com/photo/gray-concrete-building-11676105/",
+          "https://www.pexels.com/zh-cn/photo/35544752/",
+          "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+          "https://www.pexels.com/fr-fr/photo/exterieur-de-batiment-vitres-tir-vertical-batiment-brun-11931438/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+        "title": "Photo by Clarissa Schwarz on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+        "title": "Photo by Steffen Rühlmann on Pexels",
+        "snippet": "4242x2828 Aspect Ratio 3 ... Camera X-E5 Focal 56.0mm Aperture ƒ/5.0 ISO 125 Shutter Speed 1/400 sec Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+        "title": "Photo by rotekirsche 20 on Pexels",
+        "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Description # Colorful yellow building facade with a small balcony and window, casting clear shadows. ### More like this Use filters Change focus Brighten up Add frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/7891699/",
+        "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+        "snippet": "5069x3378 色彩 ... 焦點 56.0mm 光圈 ƒ/1.4 ISO 100 快門速度 1/4000 秒 ... 說明 # 交通燈顯示行人和自行車信號，背景是阿布達比的天際線。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/38261638/",
+        "title": "Pexels Shubhra Dhar图片",
+        "snippet": "Change focus Brighten up Add frames 尺寸 3552x2664 宽高比 4:3 颜色 medium ... 软件 Snapseed 2.0 描述 # 老式砖砌建筑立面的特写镜头，带有装饰性的拱形窗户。 ## 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/10637244/",
+        "title": "Pexels Nathan Marcam图片",
+        "snippet": "3451x5176 颜色 medium ... 软件 Adobe Photoshop Lightroom Classic 11.1 (Windows) 描述 # 现代建筑立面的特写，突出阴影和纹理。完美适合城市建筑主题。 ### 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/36512921/",
+        "title": "Pexels 上由 Rajan Abdulla 拍攝的相片",
+        "snippet": "Change focus Brighten up Add frames ... 3724x5586 ... 23.0mm 光圈 ƒ/4.0 ... 一個獨特符號的綠色行人燈，位於奧地利維也納的一座歷史建築附近。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/red-brick-wall-with-white-window-panel-35062128/",
+        "title": "Photo by Jan van der Wolf on Pexels",
+        "snippet": "Dimensions 5597x3731 ... Camera NIKON D750 Focal 52.0mm Aperture ƒ/7.1 ISO 100 Shutter Speed 1/500 sec Taken At Jul 4, 2021 Software Adobe Photoshop 23.0 (Windows) Description # A vibrant red brick wall featuring a white window panel. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/37152155/",
+        "title": "Pexels Matthew Jesús图片",
+        "snippet": "4000x6000 宽高比 2:3 ... 软件 Adobe Lightroom 11.1.0 (iOS) 描述 # 特写石头建筑的角落，配有黄色框架的窗户投射出阴影。 ### 更多相似内容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+        "title": "Photo de Katia Miasoed sur Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Poland Description # Feux de circulation à un passage piéton en ville avec des signaux pour vélos et piétons pendant l'automne. ## Médias similaires ... Make presentations Create photo collages Add",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/classic-brick-building-under-clear-blue-sky-34847739/",
+        "title": "Photo by Max W on Pexels",
+        "snippet": "Add custom frames License Free Dimensions 7728x5152 Aspect Ratio 3 ... Date Nov 21, 2025 ... 0 Camera X-E5 ... Digital Camera X-E5 Ver1.10 Description # A classic red brick building with white window frames under a clear blue sky, showcasing urban architecture. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/gray-concrete-building-11676105/",
+        "title": "Photo by Danil Lysov on Pexels",
+        "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Description # A striking view of a modern high-rise building with geometric windows and shadows. ## More like this Use filters Change focus Brighten up Add frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/35544752/",
+        "title": "Pexels Yusuf Çelik图片",
+        "snippet": "Change focus Brighten up ... 7728x5152 宽高比 3 ... 焦距 35.0mm 光圈 ƒ/2.0 ISO 250 快门速度 1/250秒 ... 软件 Adobe Lightroom 9.1 (Macintosh) ... 描述 # 位于保加利亚瓦尔纳的交通灯和行人标志，展示城市冬季场景。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+        "title": "Photo by BREAKS OUT on Pexels",
+        "snippet": "Dimensions 4000x6000 Aspect Ratio 2:3 Colors Date Apr 15 ... Aperture ƒ/4.5 ISO 100 Shutter Speed 1/320 sec ... Software ILCE-6500 v1.06 Description # Close-up of a vintage red brick building facade with arched windows and peeling walls. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/exterieur-de-batiment-vitres-tir-vertical-batiment-brun-11931438/",
+        "title": "Photo de Arseni Shuliak sur Pexels",
+        "snippet": "Brighten up Add frames Licence Gratuit Dimensions 2916x5184 ... Logiciel Adobe Photoshop Lightroom Classic 10.3 (Windows) ... Description # Gros plan sur une façade moderne de bâtiment avec des lignes ondulées et des fenêtres en verre à Berlin, en Allemagne. ## Médias similaires",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "{\"summary\":\"本轮实际检索到 Pexels 上若干具体照片详情页，覆盖砖墙窗框阴影、行人信号灯立柱、建筑立面边缘与遮挡关系。未在 Wikimedia Commons 获得新的具体文件详情页；检索结果以 Pexels 为主。所有图片均未下载，以下形态与光照判断仅来自页面文字描述和元数据，待图像字节核验。\",\"features\":[\"砖墙复古窗：页面描述为红砖墙与 vintage 窗投下阴影，适合提取墙颗粒、窗框直线边缘与投射阴影的接触区域\",\"红砖墙白色窗板：红砖与白色窗板形成强明暗对比，窗板外缘可作为干净轮廓候选\",\"石墙角落黄框窗：描述为石头建筑角落、黄色窗框投射阴影，适合观察墙体转角遮挡与窗框投影\",\"现代建筑立面：页面描述突出阴影和纹理，可能包含立面开口边缘与深浅交界，适合作为背景/边缘负样本\",\"阿姆斯特丹行人红灯倒计时：立柱与信号灯在街道环境中，页面未说明具体连接构造，待核验接触区域\",\"阿布扎比行人/自行车信号灯：交通灯与城市背景，可能适合提取信号灯与立柱的整体剪影\",\"维也纳绿色行人灯：历史建筑附近的行人灯，适合观察信号灯在建筑立面背景前的轮廓分离\",\"保加利亚瓦尔纳交通灯与行人标志：冬季城市场景，可用于比较不同自然光下的立柱/信号灯边缘\"],\"selectionCriteria\":[\"优先选择主体边缘与背景明度差明显的照片，便于后续拟合干净轮廓\",\"包含明确投射阴影或接触阴影的砖墙窗框照片，优先于阴影方向模糊的立面照\",\"行人信号灯应能看到立柱与灯箱/按钮的连接区域，而非仅远距离街景\",\"避免主体被行人、车辆大面积遮挡或裁切不完整的实例\",\"同一面砖墙或同一信号灯的不同裁切不计为新实例\"],\"uncertainties\":[\"Pexels 页面未提供可直接引用的原始图像 URL，需后续获取照片字节后核验\",\"多数页面仅显示标题/元数据，未逐像素确认墙颗粒尺度、窗框材质和接触阴影软硬程度\",\"行人信号灯候选是否清晰显示按钮/立柱连接，当前文本描述不足\",\"Wikimedia Commons 本轮未获得新的具体照片文件详情页；若需 CC 许可参考，下一轮应定向搜索具体 File 页\"],\"nextFocus\":\"下一轮补齐 Wikimedia Commons 具体文件页（砖墙窗框、行人信号灯按钮/立柱连接），并对本轮 Pexels 候选获取字节后核验：窗框与墙面的遮挡边界、信号灯立柱连接处的接触阴影形态、背景分离度。\"}",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "snippet": "4242x2828 Aspect Ratio 3 ... Camera X-E5 Focal 56.0mm Aperture ƒ/5.0 ISO 125 Shutter Speed 1/400 sec Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+      "title": "Photo by rotekirsche 20 on Pexels",
+      "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Description # Colorful yellow building facade with a small balcony and window, casting clear shadows. ### More like this Use filters Change focus Brighten up Add frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/7891699/",
+      "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+      "snippet": "5069x3378 色彩 ... 焦點 56.0mm 光圈 ƒ/1.4 ISO 100 快門速度 1/4000 秒 ... 說明 # 交通燈顯示行人和自行車信號，背景是阿布達比的天際線。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/38261638/",
+      "title": "Pexels Shubhra Dhar图片",
+      "snippet": "Change focus Brighten up Add frames 尺寸 3552x2664 宽高比 4:3 颜色 medium ... 软件 Snapseed 2.0 描述 # 老式砖砌建筑立面的特写镜头，带有装饰性的拱形窗户。 ## 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/10637244/",
+      "title": "Pexels Nathan Marcam图片",
+      "snippet": "3451x5176 颜色 medium ... 软件 Adobe Photoshop Lightroom Classic 11.1 (Windows) 描述 # 现代建筑立面的特写，突出阴影和纹理。完美适合城市建筑主题。 ### 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/36512921/",
+      "title": "Pexels 上由 Rajan Abdulla 拍攝的相片",
+      "snippet": "Change focus Brighten up Add frames ... 3724x5586 ... 23.0mm 光圈 ƒ/4.0 ... 一個獨特符號的綠色行人燈，位於奧地利維也納的一座歷史建築附近。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/red-brick-wall-with-white-window-panel-35062128/",
+      "title": "Photo by Jan van der Wolf on Pexels",
+      "snippet": "Dimensions 5597x3731 ... Camera NIKON D750 Focal 52.0mm Aperture ƒ/7.1 ISO 100 Shutter Speed 1/500 sec Taken At Jul 4, 2021 Software Adobe Photoshop 23.0 (Windows) Description # A vibrant red brick wall featuring a white window panel. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/37152155/",
+      "title": "Pexels Matthew Jesús图片",
+      "snippet": "4000x6000 宽高比 2:3 ... 软件 Adobe Lightroom 11.1.0 (iOS) 描述 # 特写石头建筑的角落，配有黄色框架的窗户投射出阴影。 ### 更多相似内容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+      "title": "Photo de Katia Miasoed sur Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Poland Description # Feux de circulation à un passage piéton en ville avec des signaux pour vélos et piétons pendant l'automne. ## Médias similaires ... Make presentations Create photo collages Add",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/classic-brick-building-under-clear-blue-sky-34847739/",
+      "title": "Photo by Max W on Pexels",
+      "snippet": "Add custom frames License Free Dimensions 7728x5152 Aspect Ratio 3 ... Date Nov 21, 2025 ... 0 Camera X-E5 ... Digital Camera X-E5 Ver1.10 Description # A classic red brick building with white window frames under a clear blue sky, showcasing urban architecture. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/gray-concrete-building-11676105/",
+      "title": "Photo by Danil Lysov on Pexels",
+      "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Description # A striking view of a modern high-rise building with geometric windows and shadows. ## More like this Use filters Change focus Brighten up Add frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/35544752/",
+      "title": "Pexels Yusuf Çelik图片",
+      "snippet": "Change focus Brighten up ... 7728x5152 宽高比 3 ... 焦距 35.0mm 光圈 ƒ/2.0 ISO 250 快门速度 1/250秒 ... 软件 Adobe Lightroom 9.1 (Macintosh) ... 描述 # 位于保加利亚瓦尔纳的交通灯和行人标志，展示城市冬季场景。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+      "title": "Photo by BREAKS OUT on Pexels",
+      "snippet": "Dimensions 4000x6000 Aspect Ratio 2:3 Colors Date Apr 15 ... Aperture ƒ/4.5 ISO 100 Shutter Speed 1/320 sec ... Software ILCE-6500 v1.06 Description # Close-up of a vintage red brick building facade with arched windows and peeling walls. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/exterieur-de-batiment-vitres-tir-vertical-batiment-brun-11931438/",
+      "title": "Photo de Arseni Shuliak sur Pexels",
+      "snippet": "Brighten up Add frames Licence Gratuit Dimensions 2916x5184 ... Logiciel Adobe Photoshop Lightroom Classic 10.3 (Windows) ... Description # Gros plan sur une façade moderne de bâtiment avec des lignes ondulées et des fenêtres en verre à Berlin, en Allemagne. ## Médias similaires",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+      "title": "Photo by rotekirsche 20 on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/7891699/",
+      "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/38261638/",
+      "title": "Pexels Shubhra Dhar图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/10637244/",
+      "title": "Pexels Nathan Marcam图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36512921/",
+      "title": "Pexels 上由 Rajan Abdulla 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/red-brick-wall-with-white-window-panel-35062128/",
+      "title": "Photo by Jan van der Wolf on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37152155/",
+      "title": "Pexels Matthew Jesús图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/classic-brick-building-under-clear-blue-sky-34847739/",
+      "title": "Photo by Max W on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/gray-concrete-building-11676105/",
+      "title": "Photo by Danil Lysov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/35544752/",
+      "title": "Pexels Yusuf Çelik图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/exterieur-de-batiment-vitres-tir-vertical-batiment-brun-11931438/",
+      "title": "Photo de Arseni Shuliak sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 162432,
+        "sha256": "432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5438827/pexels-photo-5438827.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+      "title": "Photo by rotekirsche 20 on Pexels",
+      "sha256": "432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f",
+      "bytes": 162432,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 21034,
+        "sha256": "c00df300366258d946e6664eac15cfeddf33c9b4a89fd0110f58cea62242e8f1"
+      },
+      "imageUrl": "https://images.pexels.com/photos/7891699/pexels-photo-7891699.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/7891699/",
+      "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+      "sha256": "c00df300366258d946e6664eac15cfeddf33c9b4a89fd0110f58cea62242e8f1",
+      "bytes": 21034,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 82538,
+        "sha256": "fccff9ee34e41326c3a23d83f7c21e0b0d35eb91425e70e87632f5ed6df58bb2"
+      },
+      "imageUrl": "https://images.pexels.com/photos/38261638/pexels-photo-38261638.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/38261638/",
+      "title": "Pexels Shubhra Dhar图片",
+      "sha256": "fccff9ee34e41326c3a23d83f7c21e0b0d35eb91425e70e87632f5ed6df58bb2",
+      "bytes": 82538,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 96986,
+        "sha256": "8e48667ae0f1592b4c395af15ef67521c72edde9fb83328332a34c9ee639fd4b"
+      },
+      "imageUrl": "https://images.pexels.com/photos/10637244/pexels-photo-10637244.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/10637244/",
+      "title": "Pexels Nathan Marcam图片",
+      "sha256": "8e48667ae0f1592b4c395af15ef67521c72edde9fb83328332a34c9ee639fd4b",
+      "bytes": 96986,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/5438827/pexels-photo-5438827.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+      "title": "Photo by rotekirsche 20 on Pexels",
+      "sha256": "432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f",
+      "bytes": 162432,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/7891699/pexels-photo-7891699.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/7891699/",
+      "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+      "sha256": "c00df300366258d946e6664eac15cfeddf33c9b4a89fd0110f58cea62242e8f1",
+      "bytes": 21034,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/38261638/pexels-photo-38261638.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/38261638/",
+      "title": "Pexels Shubhra Dhar图片",
+      "sha256": "fccff9ee34e41326c3a23d83f7c21e0b0d35eb91425e70e87632f5ed6df58bb2",
+      "bytes": 82538,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/10637244/pexels-photo-10637244.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/10637244/",
+      "title": "Pexels Nathan Marcam图片",
+      "sha256": "8e48667ae0f1592b4c395af15ef67521c72edde9fb83328332a34c9ee639fd4b",
+      "bytes": 96986,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+        "title": "Photo by rotekirsche 20 on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/5438827/pexels-photo-5438827.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/5438827/pexels-photo-5438827.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 162432,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/7891699/",
+        "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/7891699/pexels-photo-7891699.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/7891699/pexels-photo-7891699.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 21034,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "c00df300366258d946e6664eac15cfeddf33c9b4a89fd0110f58cea62242e8f1"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/38261638/",
+        "title": "Pexels Shubhra Dhar图片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/38261638/pexels-photo-38261638.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/38261638/pexels-photo-38261638.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 82538,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 576,
+        "sha256": "fccff9ee34e41326c3a23d83f7c21e0b0d35eb91425e70e87632f5ed6df58bb2"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/10637244/",
+        "title": "Pexels Nathan Marcam图片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/10637244/pexels-photo-10637244.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/10637244/pexels-photo-10637244.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 96986,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "8e48667ae0f1592b4c395af15ef67521c72edde9fb83328332a34c9ee639fd4b"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/36512921/",
+        "title": "Pexels 上由 Rajan Abdulla 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/36512921/pexels-photo-36512921.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/36512921/pexels-photo-36512921.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 57158,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "c7638470e03b5e8abfec0272fb1b4a99e61700eb67d75fa923d621e4a40b9817"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/red-brick-wall-with-white-window-panel-35062128/",
+        "title": "Photo by Jan van der Wolf on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/35062128/pexels-photo-35062128.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/35062128/pexels-photo-35062128.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 29054,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "58da89c873b35963d80312ec8cdf5f9bc04b9d19c6865730b7eefb1bfb4b1e37"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "model_semantic_plan",
+    "summary": "本轮实际检索到 Pexels 上若干具体照片详情页，覆盖砖墙窗框阴影、行人信号灯立柱、建筑立面边缘与遮挡关系。未在 Wikimedia Commons 获得新的具体文件详情页；检索结果以 Pexels 为主。所有图片均未下载，以下形态与光照判断仅来自页面文字描述和元数据，待图像字节核验。",
+    "features": [
+      "砖墙复古窗：页面描述为红砖墙与 vintage 窗投下阴影，适合提取墙颗粒、窗框直线边缘与投射阴影的接触区域",
+      "红砖墙白色窗板：红砖与白色窗板形成强明暗对比，窗板外缘可作为干净轮廓候选",
+      "石墙角落黄框窗：描述为石头建筑角落、黄色窗框投射阴影，适合观察墙体转角遮挡与窗框投影",
+      "现代建筑立面：页面描述突出阴影和纹理，可能包含立面开口边缘与深浅交界，适合作为背景/边缘负样本",
+      "阿姆斯特丹行人红灯倒计时：立柱与信号灯在街道环境中，页面未说明具体连接构造，待核验接触区域",
+      "阿布扎比行人/自行车信号灯：交通灯与城市背景，可能适合提取信号灯与立柱的整体剪影",
+      "维也纳绿色行人灯：历史建筑附近的行人灯，适合观察信号灯在建筑立面背景前的轮廓分离",
+      "保加利亚瓦尔纳交通灯与行人标志：冬季城市场景，可用于比较不同自然光下的立柱/信号灯边缘"
+    ],
+    "selectionCriteria": [
+      "优先选择主体边缘与背景明度差明显的照片，便于后续拟合干净轮廓",
+      "包含明确投射阴影或接触阴影的砖墙窗框照片，优先于阴影方向模糊的立面照",
+      "行人信号灯应能看到立柱与灯箱/按钮的连接区域，而非仅远距离街景",
+      "避免主体被行人、车辆大面积遮挡或裁切不完整的实例",
+      "同一面砖墙或同一信号灯的不同裁切不计为新实例"
+    ],
+    "uncertainties": [
+      "Pexels 页面未提供可直接引用的原始图像 URL，需后续获取照片字节后核验",
+      "多数页面仅显示标题/元数据，未逐像素确认墙颗粒尺度、窗框材质和接触阴影软硬程度",
+      "行人信号灯候选是否清晰显示按钮/立柱连接，当前文本描述不足",
+      "Wikimedia Commons 本轮未获得新的具体照片文件详情页；若需 CC 许可参考，下一轮应定向搜索具体 File 页"
+    ],
+    "nextFocus": "下一轮补齐 Wikimedia Commons 具体文件页（砖墙窗框、行人信号灯按钮/立柱连接），并对本轮 Pexels 候选获取字节后核验：窗框与墙面的遮挡边界、信号灯立柱连接处的接触阴影形态、背景分离度。",
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 5787,
+    "completion_tokens": 618,
+    "total_tokens": 6405,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "6a0cc4f6-a0ef-4892-a9dd-96b9479c8124",
+        "model": "deepseek-flash",
+        "elapsedMs": 10434,
+        "prompt_tokens": 5787,
+        "completion_tokens": 618,
+        "total_tokens": 6405,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 20066,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 162432,
+        "sha256": "432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5438827/pexels-photo-5438827.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+      "title": "Photo by rotekirsche 20 on Pexels",
+      "sha256": "432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f",
+      "bytes": 162432,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/432d3d82634c9b6f81014aa4112fae95516ffb6fcdb9a01e970b454408f7e58f.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 21034,
+        "sha256": "c00df300366258d946e6664eac15cfeddf33c9b4a89fd0110f58cea62242e8f1"
+      },
+      "imageUrl": "https://images.pexels.com/photos/7891699/pexels-photo-7891699.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/7891699/",
+      "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+      "sha256": "c00df300366258d946e6664eac15cfeddf33c9b4a89fd0110f58cea62242e8f1",
+      "bytes": 21034,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/c00df300366258d946e6664eac15cfeddf33c9b4a89fd0110f58cea62242e8f1.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 82538,
+        "sha256": "fccff9ee34e41326c3a23d83f7c21e0b0d35eb91425e70e87632f5ed6df58bb2"
+      },
+      "imageUrl": "https://images.pexels.com/photos/38261638/pexels-photo-38261638.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/38261638/",
+      "title": "Pexels Shubhra Dhar图片",
+      "sha256": "fccff9ee34e41326c3a23d83f7c21e0b0d35eb91425e70e87632f5ed6df58bb2",
+      "bytes": 82538,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/fccff9ee34e41326c3a23d83f7c21e0b0d35eb91425e70e87632f5ed6df58bb2.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 96986,
+        "sha256": "8e48667ae0f1592b4c395af15ef67521c72edde9fb83328332a34c9ee639fd4b"
+      },
+      "imageUrl": "https://images.pexels.com/photos/10637244/pexels-photo-10637244.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/10637244/",
+      "title": "Pexels Nathan Marcam图片",
+      "sha256": "8e48667ae0f1592b4c395af15ef67521c72edde9fb83328332a34c9ee639fd4b",
+      "bytes": 96986,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/8e48667ae0f1592b4c395af15ef67521c72edde9fb83328332a34c9ee639fd4b.webp"
+    }
+  ]
+}

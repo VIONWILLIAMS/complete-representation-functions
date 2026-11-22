@@ -1,0 +1,934 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 7,
+  "query": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "checkpoint": {
+    "sessionId": "crf09_0e3e9918-4a7c-4a89-b65f-9def0581418c",
+    "round": 7,
+    "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+    "subtopic": "复合布局：多个主体的相互遮挡与尺度",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:52:41.255Z",
+    "runId": "crf07_30f87c29-f8a1-45d5-ac77-dae56884b6fe",
+    "queries": [
+      "site:commons.wikimedia.org pedestrian signal pole \"traffic light\" close-up",
+      "site:pexels.com photo \"pedestrian signal\" pole close-up",
+      "site:commons.wikimedia.org \"traffic light\" \"street\" shadows pedestrians",
+      "site:pexels.com photo red brick wall window shutter shadows",
+      "site:commons.wikimedia.org brick wall window shutters facade photograph",
+      "site:pexels.com photo people walking in front of brick building window",
+      "site:commons.wikimedia.org \"pedestrian signal\" pole close-up photograph",
+      "site:commons.wikimedia.org \"traffic light\" \"pedestrian crossing\" pole shadows photograph",
+      "site:pexels.com photo \"traffic light\" pole close-up shadow",
+      "site:pexels.com photo \"traffic light\" street shadow people",
+      "site:pexels.com photo brick wall window shutters shadow",
+      "site:commons.wikimedia.org \"brick wall\" window shutters photo"
+    ],
+    "requestIds": [
+      "dacc46fb-0f03-48e8-9fed-9ea6c49afbb0"
+    ],
+    "sourceCount": 24,
+    "newSourceCount": 18,
+    "candidateCount": 18,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_68da332a8cb4480db298a564bf004686",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org pedestrian signal pole \"traffic light\" close-up",
+            "site:pexels.com photo \"pedestrian signal\" pole close-up",
+            "site:commons.wikimedia.org \"traffic light\" \"street\" shadows pedestrians",
+            "site:pexels.com photo red brick wall window shutter shadows",
+            "site:commons.wikimedia.org brick wall window shutters facade photograph",
+            "site:pexels.com photo people walking in front of brick building window"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/Category:Traffic_lights_in_Rotterdam#1",
+          "https://www.pexels.com/fr-fr/photo/panneau-de-signalisation-pour-chemin-pietonnier-avec-indicateur-de-distance-36328939/",
+          "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+          "https://commons.wikimedia.org/wiki/File:Administration_Building_(Saint_Ignatius_Hall),_John_Carroll_University,_University_Heights,_OH_-_52997611078.jpg#1",
+          "https://www.pexels.com/photo/ethnic-person-looking-out-of-old-brick-house-5960338/",
+          "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_the_United_States",
+          "https://www.pexels.com/zh-tw/photo/7891699/",
+          "https://www.pexels.com/zh-tw/photo/36208665/",
+          "https://commons.wikimedia.org/wiki/File:Corfu_town_101.JPG#1",
+          "https://www.pexels.com/photo/man-walking-past-historical-building-in-rome-36586072/",
+          "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+          "https://www.pexels.com/photo/a-white-wooden-framed-sash-window-4482206/",
+          "https://www.pexels.com/photo/couple-walking-on-urban-street-in-autumn-34936411/"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_01_6cfdbee5d027437cb46a89b0336e30b0",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org \"pedestrian signal\" pole close-up photograph",
+            "site:commons.wikimedia.org \"traffic light\" \"pedestrian crossing\" pole shadows photograph",
+            "site:pexels.com photo \"traffic light\" pole close-up shadow",
+            "site:pexels.com photo \"traffic light\" street shadow people",
+            "site:pexels.com photo brick wall window shutters shadow",
+            "site:commons.wikimedia.org \"brick wall\" window shutters photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/Category:Bergmannampel_(Ibbenb%C3%BCren)",
+          "https://commons.wikimedia.org/wiki/Category:Shadows_of_traffic_lights",
+          "https://www.pexels.com/photo/urban-traffic-light-against-historic-building-38078925/",
+          "https://www.pexels.com/photo/man-riding-a-motor-scooter-and-a-passerby-waiting-at-the-crosswalk-27118634/",
+          "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+          "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_Denmark",
+          "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_Washington,_D.C.",
+          "https://www.pexels.com/photo/urban-traffic-light-against-blue-sky-38842950/",
+          "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+          "https://www.pexels.com/fr-fr/photo/noir-et-blanc-mur-fenetres-grillage-6490106/",
+          "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_the_United_States",
+          "https://www.pexels.com/photo/traffic-light-with-amber-signal-in-rainy-istanbul-30186740/",
+          "https://www.pexels.com/photo/brick-building-facade-with-green-shutters-31089181/",
+          "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Traffic_lights_in_Rotterdam#1",
+        "title": "Category:Traffic lights in Rotterdam - Wikimedia Commons - Help",
+        "snippet": "Media in category \"Traffic lights in Rotterdam\" The following 42 files are in this category, out of 42 total. Bicycle traffic light with rain sensor, Schiebroek, Rotterdam (2020) 01.jpg",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/panneau-de-signalisation-pour-chemin-pietonnier-avec-indicateur-de-distance-36328939/",
+        "title": "Photo de Manuel Bluemel sur Pexels",
+        "snippet": "4608x3456 Format 4:3 ... Description # Gros plan sur un panneau de signalisation pour piétons indiquant une distance de 50 mètres, avec des branches d'arbres dénudées en arrière-plan.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+        "title": "Photo by Steffen Rühlmann on Pexels",
+        "snippet": "125 Shutter Speed 1/400 sec Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Administration_Building_(Saint_Ignatius_Hall),_John_Carroll_University,_University_Heights,_OH_-_52997611078.jpg#1",
+        "title": "File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH - 52997611078.jpg - Wikimedia Commons - File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH ",
+        "snippet": "Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH - 52997611078.jpg ... red brick cladding ... a large gothic arched opening with a large curtain wall on the first and second floor of the tower below an oriel window...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/ethnic-person-looking-out-of-old-brick-house-5960338/",
+        "title": "Photo by Mehmet Turgut Kirkgoz on Pexels",
+        "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Kathmandu, Central Development Region, Nepal Description # A senior person quietly observes the street from a weathered brick building window in Kathmandu. ### More like this Use filters Change focus Brighten up",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_the_United_States",
+        "title": "Category:Pedestrian signals in the United States - Wikimedia Commons",
+        "snippet": "Pedestrian signals in the United States ... Media in category \"Pedestrian signals in the United States\" The following 57 files are in this category, out of 57 total. - 10thAndPeachtreeSign.png 1,431 × 1,120; 1.91 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/7891699/",
+        "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+        "snippet": "5069x3378 ... 焦點 56.0mm 光圈 ƒ/1.4 ISO ... 說明 # 交通燈顯示行人和自行車信號，背景是阿布達比的天際線。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/36208665/",
+        "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+        "snippet": "Feb 15, 2026 軟體 Adobe Lightroom 11.1.2 (Android) Coesfeld, NRW, Deutschland 說明 # 德國科斯費爾德一堵歷史悠久的紅磚牆的特寫鏡頭，牆上投下陰影。 ## 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Corfu_town_101.JPG#1",
+        "title": "File:Corfu town 101.JPG - Wikimedia Commons - File:Corfu town 101.JPG",
+        "snippet": "Corfu town 101.JPG ... DescriptionCorfu town 101.JPG | Deutsch: Fensterläden in Korfu, Griechenland. English: Window shutters in Corfu town. Corfu, Greece. ... Source | Own work Author | Piotrus",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/man-walking-past-historical-building-in-rome-36586072/",
+        "title": "Photo by Miguel Rivera on Pexels",
+        "snippet": "ISO 500 ... Taken At Mar 6, 2026 Software Digital Camera X-T5 Ver4.31 Roma, Lacio, Italia Description # A man walking by a historical building with a circular window in Rome, Italy. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+        "title": "Photo de Katia Miasoed sur Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Poland Description # Feux de circulation à un passage piéton en ville avec des signaux pour vélos et piétons pendant l'automne. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/a-white-wooden-framed-sash-window-4482206/",
+        "title": "Photo by Suzy Hazelwood on Pexels",
+        "snippet": "Dimensions 1920x2753 ... Camera ILCE-6000 Focal 50.0mm Aperture ƒ/14.0 ISO 320 Shutter Speed 1/200 sec Taken At Sep 13 ... PhotoScape Description # Sash window set in a classic red brick wall, offering architectural charm. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/couple-walking-on-urban-street-in-autumn-34936411/",
+        "title": "Photo by atelierbyvineeth . . . on Pexels",
+        "snippet": "6240x4160 Aspect Ratio 3 ... Date Nov 26, 2025 Downloads 16 Views ... Oct 27, 2025 Software Adobe Photoshop Lightroom Classic 14.5.1 (Macintosh) Description # Two adults walking past a brick building in an urban setting, captured during the day. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Bergmannampel_(Ibbenb%C3%BCren)",
+        "title": "Category:Bergmannampel (Ibbenbüren) - Wikimedia Commons",
+        "snippet": "20221106 084621 Bergmannampel Ibbenbüren.jpg ... Pedestrian signals in Germany Mining in Ibbenbüren Traffic signals in North Rhine-Westphalia Streets in Ibbenbüren Unlawful pedestrian traffic lights",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Shadows_of_traffic_lights",
+        "title": "Category:Shadows of traffic lights - Wikimedia Commons",
+        "snippet": "Shadows of traffic lights ... Media in category \"Shadows of traffic lights\" The following 3 files are in this category, out of 3 total. Patched crosswalk markings, North 4th Street and East Julian Street, San Jose, California.jpg",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/urban-traffic-light-against-historic-building-38078925/",
+        "title": "Photo by Dirk Baker on Pexels",
+        "snippet": "Afterglow Street Festive Summer ##### Dirk Baker 160.4K views • 560 downloads Oslo, Norway Description # Close-up of a traffic light with a green signal in front of a historic building facade. ### More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/man-riding-a-motor-scooter-and-a-passerby-waiting-at-the-crosswalk-27118634/",
+        "title": "Photo by Theodore Nguyen on Pexels",
+        "snippet": "4000x6000 Aspect Ratio 2 ... 100 Shutter Speed 1/2500 sec ... Software Adobe Photoshop 24.0 (Windows) Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia Description # Motorcyclist waiting at traffic light on busy street in Kuala Lumpur, Malaysia. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_Denmark",
+        "title": "Category:Pedestrian signals in Denmark - Wikimedia Commons",
+        "snippet": "Media in category \"Pedestrian signals in Denmark\" The following 14 files are in this category, out of 14 total. - Aarhus wikinger 2022.jpg 3,024 × 3,024; 1.69 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_Washington,_D.C.",
+        "title": "Category:Pedestrian signals in Washington, D.C. - Wikimedia Commons",
+        "snippet": "The following 9 files are in this category, out of 9 total. - Pedestrian crossing light washington dc.ogv 1 min 3 s, 1,440 × 810; 23.7 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/urban-traffic-light-against-blue-sky-38842950/",
+        "title": "Photo by Fariz Arrazy on Pexels",
+        "snippet": "Camera X-E5 Focal 27.0mm Aperture ƒ/6.4 ISO 200 Shutter Speed 1/250 sec Taken At Aug 2, 2026 Software Adobe Lightroom 11.4.5 (Android) Description # Red traffic light in urban setting on a bright day, signaling stop.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+        "title": "Photo by Clarissa Schwarz on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/noir-et-blanc-mur-fenetres-grillage-6490106/",
+        "title": "Photo de Sonny Sixteen sur Pexels",
+        "snippet": "4928x3080 Format 8:5 Couleurs Date Jan 13, 2021 ... Description # Image en noir et blanc d'un mur de briques avec des fenêtres couvertes de treillis métallique projetant des ombres.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/traffic-light-with-amber-signal-in-rainy-istanbul-30186740/",
+        "title": "Photo by Fatih Özer on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Istanbul, İstanbul, Türkiye Description # A traffic light displaying amber in a rainy street scene in Istanbul, Türkiye. ### More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/brick-building-facade-with-green-shutters-31089181/",
+        "title": "Photo by Damir K on Pexels",
+        "snippet": "Choose your language: Afterglow Street Festive Summer Description # Patterned brick facade featuring green window shutters on a historic building. ## More like this Afterglow Street Festive Summer",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "```json\n{\n  \"summary\": \"本轮围绕复合布局中的相互遮挡与尺度关系进行了补充搜索，实际找到若干可对应到具体照片页的候选：Pexels 上有一张红砖墙+复古窗+阴影的近距离照片，一张交通灯与历史建筑立面同框的近距离照片，以及一张带绿色百叶窗的砖立面建筑照片。Wikimedia Commons 方面，发现有包含行人信号按钮的类别页，以及一个交通灯阴影类别页，但未定位到同时满足“行人信号灯立柱连接特写 + 多主体前后遮挡 + 自然光接触阴影”的单一理想照片。前几轮已收集来源未重复使用。\",\n  \"features\": [\n    \"待验证：红砖墙的砖缝颗粒与窗框阴影的接触边界是否清晰可分离\",\n    \"待验证：交通灯外壳与历史建筑立面的前后遮挡层次、灯体边缘与背景的对比度\",\n    \"待验证：绿色百叶窗与砖墙的色彩分界、百叶叶片产生的细密投影是否适合边缘提取\",\n    \"待验证：行人信号按钮在立柱上的安装方式、按钮外壳与柱体的材质差异与连接阴影形态\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择同时出现至少两个主体（如信号灯立柱 + 建筑立面/窗框）且存在明确前后遮挡关系的照片\",\n    \"自然光方向性明确、投影边缘不过度柔化或硬化的照片，便于拟合接触阴影的衰减函数\",\n    \"主体在画面中占比适中，既能提取边缘又不丢失材质颗粒（砖墙、金属柱体、塑料灯壳）\",\n    \"来源页含作者与许可证信息，或可在 Commons 文件页核验授权状态\"\n  ],\n  \"uncertainties\": [\n    \"未下载任何图像字节，上述特征均基于页面标题/元数据推断，未经视觉核验\",\n    \"Pexels 照片的许可证细节在返回页面中未完整展示，需逐页核验\",\n    \"Wikimedia Commons 行人信号类别页仅列出文件名，未确认其中是否存在立柱连接特写\",\n    \"交通灯阴影类别页的图片内容是否包含行人信号灯、是否与建筑立面同框，尚未核验\"\n  ],\n  \"nextFocus\": \"下一轮优先在 Wikimedia Commons 的 Pedestrian signals 子类别中定位具体的行人信号灯立柱特写文件页，并核验 Pexels 交通灯+建筑立面照片是否包含可用的遮挡与接触阴影；同时确认砖墙+窗框照片的光照方向是否支持投影拟合。\"\n}\n```",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Traffic_lights_in_Rotterdam#1",
+      "title": "Category:Traffic lights in Rotterdam - Wikimedia Commons - Help",
+      "snippet": "Media in category \"Traffic lights in Rotterdam\" The following 42 files are in this category, out of 42 total. Bicycle traffic light with rain sensor, Schiebroek, Rotterdam (2020) 01.jpg",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/panneau-de-signalisation-pour-chemin-pietonnier-avec-indicateur-de-distance-36328939/",
+      "title": "Photo de Manuel Bluemel sur Pexels",
+      "snippet": "4608x3456 Format 4:3 ... Description # Gros plan sur un panneau de signalisation pour piétons indiquant une distance de 50 mètres, avec des branches d'arbres dénudées en arrière-plan.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "title": "Photo by Steffen Rühlmann on Pexels",
+      "snippet": "125 Shutter Speed 1/400 sec Taken At Mar 1, 2026 Software Adobe Photoshop Lightroom Classic 15.2 (Macintosh) Description # Close-up of a red brick wall featuring a vintage window casting shadows. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Administration_Building_(Saint_Ignatius_Hall),_John_Carroll_University,_University_Heights,_OH_-_52997611078.jpg#1",
+      "title": "File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH - 52997611078.jpg - Wikimedia Commons - File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH ",
+      "snippet": "Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH - 52997611078.jpg ... red brick cladding ... a large gothic arched opening with a large curtain wall on the first and second floor of the tower below an oriel window...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ethnic-person-looking-out-of-old-brick-house-5960338/",
+      "title": "Photo by Mehmet Turgut Kirkgoz on Pexels",
+      "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Kathmandu, Central Development Region, Nepal Description # A senior person quietly observes the street from a weathered brick building window in Kathmandu. ### More like this Use filters Change focus Brighten up",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_the_United_States",
+      "title": "Category:Pedestrian signals in the United States - Wikimedia Commons",
+      "snippet": "Pedestrian signals in the United States ... Media in category \"Pedestrian signals in the United States\" The following 57 files are in this category, out of 57 total. - 10thAndPeachtreeSign.png 1,431 × 1,120; 1.91 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/7891699/",
+      "title": "Pexels 上由 Francis Jay Garingo 拍攝的相片",
+      "snippet": "5069x3378 ... 焦點 56.0mm 光圈 ƒ/1.4 ISO ... 說明 # 交通燈顯示行人和自行車信號，背景是阿布達比的天際線。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/36208665/",
+      "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+      "snippet": "Feb 15, 2026 軟體 Adobe Lightroom 11.1.2 (Android) Coesfeld, NRW, Deutschland 說明 # 德國科斯費爾德一堵歷史悠久的紅磚牆的特寫鏡頭，牆上投下陰影。 ## 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Corfu_town_101.JPG#1",
+      "title": "File:Corfu town 101.JPG - Wikimedia Commons - File:Corfu town 101.JPG",
+      "snippet": "Corfu town 101.JPG ... DescriptionCorfu town 101.JPG | Deutsch: Fensterläden in Korfu, Griechenland. English: Window shutters in Corfu town. Corfu, Greece. ... Source | Own work Author | Piotrus",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/man-walking-past-historical-building-in-rome-36586072/",
+      "title": "Photo by Miguel Rivera on Pexels",
+      "snippet": "ISO 500 ... Taken At Mar 6, 2026 Software Digital Camera X-T5 Ver4.31 Roma, Lacio, Italia Description # A man walking by a historical building with a circular window in Rome, Italy. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/ville-automne-tomber-passage-cloute-18794032/",
+      "title": "Photo de Katia Miasoed sur Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Poland Description # Feux de circulation à un passage piéton en ville avec des signaux pour vélos et piétons pendant l'automne. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/a-white-wooden-framed-sash-window-4482206/",
+      "title": "Photo by Suzy Hazelwood on Pexels",
+      "snippet": "Dimensions 1920x2753 ... Camera ILCE-6000 Focal 50.0mm Aperture ƒ/14.0 ISO 320 Shutter Speed 1/200 sec Taken At Sep 13 ... PhotoScape Description # Sash window set in a classic red brick wall, offering architectural charm. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/couple-walking-on-urban-street-in-autumn-34936411/",
+      "title": "Photo by atelierbyvineeth . . . on Pexels",
+      "snippet": "6240x4160 Aspect Ratio 3 ... Date Nov 26, 2025 Downloads 16 Views ... Oct 27, 2025 Software Adobe Photoshop Lightroom Classic 14.5.1 (Macintosh) Description # Two adults walking past a brick building in an urban setting, captured during the day. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Bergmannampel_(Ibbenb%C3%BCren)",
+      "title": "Category:Bergmannampel (Ibbenbüren) - Wikimedia Commons",
+      "snippet": "20221106 084621 Bergmannampel Ibbenbüren.jpg ... Pedestrian signals in Germany Mining in Ibbenbüren Traffic signals in North Rhine-Westphalia Streets in Ibbenbüren Unlawful pedestrian traffic lights",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Shadows_of_traffic_lights",
+      "title": "Category:Shadows of traffic lights - Wikimedia Commons",
+      "snippet": "Shadows of traffic lights ... Media in category \"Shadows of traffic lights\" The following 3 files are in this category, out of 3 total. Patched crosswalk markings, North 4th Street and East Julian Street, San Jose, California.jpg",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/urban-traffic-light-against-historic-building-38078925/",
+      "title": "Photo by Dirk Baker on Pexels",
+      "snippet": "Afterglow Street Festive Summer ##### Dirk Baker 160.4K views • 560 downloads Oslo, Norway Description # Close-up of a traffic light with a green signal in front of a historic building facade. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/man-riding-a-motor-scooter-and-a-passerby-waiting-at-the-crosswalk-27118634/",
+      "title": "Photo by Theodore Nguyen on Pexels",
+      "snippet": "4000x6000 Aspect Ratio 2 ... 100 Shutter Speed 1/2500 sec ... Software Adobe Photoshop 24.0 (Windows) Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia Description # Motorcyclist waiting at traffic light on busy street in Kuala Lumpur, Malaysia. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_Denmark",
+      "title": "Category:Pedestrian signals in Denmark - Wikimedia Commons",
+      "snippet": "Media in category \"Pedestrian signals in Denmark\" The following 14 files are in this category, out of 14 total. - Aarhus wikinger 2022.jpg 3,024 × 3,024; 1.69 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_Washington,_D.C.",
+      "title": "Category:Pedestrian signals in Washington, D.C. - Wikimedia Commons",
+      "snippet": "The following 9 files are in this category, out of 9 total. - Pedestrian crossing light washington dc.ogv 1 min 3 s, 1,440 × 810; 23.7 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/urban-traffic-light-against-blue-sky-38842950/",
+      "title": "Photo by Fariz Arrazy on Pexels",
+      "snippet": "Camera X-E5 Focal 27.0mm Aperture ƒ/6.4 ISO 200 Shutter Speed 1/250 sec Taken At Aug 2, 2026 Software Adobe Lightroom 11.4.5 (Android) Description # Red traffic light in urban setting on a bright day, signaling stop.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "title": "Photo by Clarissa Schwarz on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/noir-et-blanc-mur-fenetres-grillage-6490106/",
+      "title": "Photo de Sonny Sixteen sur Pexels",
+      "snippet": "4928x3080 Format 8:5 Couleurs Date Jan 13, 2021 ... Description # Image en noir et blanc d'un mur de briques avec des fenêtres couvertes de treillis métallique projetant des ombres.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/traffic-light-with-amber-signal-in-rainy-istanbul-30186740/",
+      "title": "Photo by Fatih Özer on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Istanbul, İstanbul, Türkiye Description # A traffic light displaying amber in a rainy street scene in Istanbul, Türkiye. ### More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/brick-building-facade-with-green-shutters-31089181/",
+      "title": "Photo by Damir K on Pexels",
+      "snippet": "Choose your language: Afterglow Street Festive Summer Description # Patterned brick facade featuring green window shutters on a historic building. ## More like this Afterglow Street Festive Summer",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Traffic_lights_in_Rotterdam#1",
+      "title": "Category:Traffic lights in Rotterdam - Wikimedia Commons - Help",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/panneau-de-signalisation-pour-chemin-pietonnier-avec-indicateur-de-distance-36328939/",
+      "title": "Photo de Manuel Bluemel sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Administration_Building_(Saint_Ignatius_Hall),_John_Carroll_University,_University_Heights,_OH_-_52997611078.jpg#1",
+      "title": "File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH - 52997611078.jpg - Wikimedia Commons - File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH ",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/ethnic-person-looking-out-of-old-brick-house-5960338/",
+      "title": "Photo by Mehmet Turgut Kirkgoz on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36208665/",
+      "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corfu_town_101.JPG#1",
+      "title": "File:Corfu town 101.JPG - Wikimedia Commons - File:Corfu town 101.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/man-walking-past-historical-building-in-rome-36586072/",
+      "title": "Photo by Miguel Rivera on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/a-white-wooden-framed-sash-window-4482206/",
+      "title": "Photo by Suzy Hazelwood on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/couple-walking-on-urban-street-in-autumn-34936411/",
+      "title": "Photo by atelierbyvineeth . . . on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Bergmannampel_(Ibbenb%C3%BCren)",
+      "title": "Category:Bergmannampel (Ibbenbüren) - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Shadows_of_traffic_lights",
+      "title": "Category:Shadows of traffic lights - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/urban-traffic-light-against-historic-building-38078925/",
+      "title": "Photo by Dirk Baker on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/man-riding-a-motor-scooter-and-a-passerby-waiting-at-the-crosswalk-27118634/",
+      "title": "Photo by Theodore Nguyen on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_Denmark",
+      "title": "Category:Pedestrian signals in Denmark - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pedestrian_signals_in_Washington,_D.C.",
+      "title": "Category:Pedestrian signals in Washington, D.C. - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/urban-traffic-light-against-blue-sky-38842950/",
+      "title": "Photo by Fariz Arrazy on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/traffic-light-with-amber-signal-in-rainy-istanbul-30186740/",
+      "title": "Photo by Fatih Özer on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/brick-building-facade-with-green-shutters-31089181/",
+      "title": "Photo by Damir K on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 88116,
+        "sha256": "3714001191076f9fb0897c576ba185ac10c7d52fa7f8b1793c22fe7307b613c8"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36328939/pexels-photo-36328939.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/panneau-de-signalisation-pour-chemin-pietonnier-avec-indicateur-de-distance-36328939/",
+      "title": "Photo de Manuel Bluemel sur Pexels",
+      "sha256": "3714001191076f9fb0897c576ba185ac10c7d52fa7f8b1793c22fe7307b613c8",
+      "bytes": 88116,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 227605,
+        "sha256": "3d828565520e06979e46fb0bc92d1e32853d41f68e3e635b0ae432f0a88746dd"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg/960px-Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Administration_Building_(Saint_Ignatius_Hall),_John_Carroll_University,_University_Heights,_OH_-_52997611078.jpg#1",
+      "title": "File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH - 52997611078.jpg - Wikimedia Commons - File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH ",
+      "sha256": "3d828565520e06979e46fb0bc92d1e32853d41f68e3e635b0ae432f0a88746dd",
+      "bytes": 227605,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "w_lemay",
+        "credit": "https://www.flickr.com/photos/59081381@N03/52997611078/",
+        "usageTerms": "Creative Commons Attribution-Share Alike 2.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4032,
+        "height": 3024,
+        "bytes": 4606470
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 65310,
+        "sha256": "071c7c139d6c196a6e1fa2807f5f648795637b1b93f7c4b07442dda4b649bed5"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5960338/pexels-photo-5960338.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/ethnic-person-looking-out-of-old-brick-house-5960338/",
+      "title": "Photo by Mehmet Turgut Kirkgoz on Pexels",
+      "sha256": "071c7c139d6c196a6e1fa2807f5f648795637b1b93f7c4b07442dda4b649bed5",
+      "bytes": 65310,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 91764,
+        "sha256": "1451e7bffd52242f8244ffc30ac386c9e0a09900f40eaeae8ad69c5ae0bdc3b8"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36208665/pexels-photo-36208665.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36208665/",
+      "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+      "sha256": "1451e7bffd52242f8244ffc30ac386c9e0a09900f40eaeae8ad69c5ae0bdc3b8",
+      "bytes": 91764,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/36328939/pexels-photo-36328939.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/panneau-de-signalisation-pour-chemin-pietonnier-avec-indicateur-de-distance-36328939/",
+      "title": "Photo de Manuel Bluemel sur Pexels",
+      "sha256": "3714001191076f9fb0897c576ba185ac10c7d52fa7f8b1793c22fe7307b613c8",
+      "bytes": 88116,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg/960px-Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Administration_Building_(Saint_Ignatius_Hall),_John_Carroll_University,_University_Heights,_OH_-_52997611078.jpg#1",
+      "title": "File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH - 52997611078.jpg - Wikimedia Commons - File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH ",
+      "sha256": "3d828565520e06979e46fb0bc92d1e32853d41f68e3e635b0ae432f0a88746dd",
+      "bytes": 227605,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "w_lemay",
+        "credit": "https://www.flickr.com/photos/59081381@N03/52997611078/",
+        "usageTerms": "Creative Commons Attribution-Share Alike 2.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4032,
+        "height": 3024,
+        "bytes": 4606470
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5960338/pexels-photo-5960338.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/ethnic-person-looking-out-of-old-brick-house-5960338/",
+      "title": "Photo by Mehmet Turgut Kirkgoz on Pexels",
+      "sha256": "071c7c139d6c196a6e1fa2807f5f648795637b1b93f7c4b07442dda4b649bed5",
+      "bytes": 65310,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/36208665/pexels-photo-36208665.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36208665/",
+      "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+      "sha256": "1451e7bffd52242f8244ffc30ac386c9e0a09900f40eaeae8ad69c5ae0bdc3b8",
+      "bytes": 91764,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Traffic_lights_in_Rotterdam#1",
+        "title": "Category:Traffic lights in Rotterdam - Wikimedia Commons - Help",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/panneau-de-signalisation-pour-chemin-pietonnier-avec-indicateur-de-distance-36328939/",
+        "title": "Photo de Manuel Bluemel sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/36328939/pexels-photo-36328939.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/36328939/pexels-photo-36328939.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 88116,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 576,
+        "sha256": "3714001191076f9fb0897c576ba185ac10c7d52fa7f8b1793c22fe7307b613c8"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Administration_Building_(Saint_Ignatius_Hall),_John_Carroll_University,_University_Heights,_OH_-_52997611078.jpg#1",
+        "title": "File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH - 52997611078.jpg - Wikimedia Commons - File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH ",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg/960px-Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 2.0",
+          "url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "artist": "w_lemay",
+          "credit": "https://www.flickr.com/photos/59081381@N03/52997611078/",
+          "usageTerms": "Creative Commons Attribution-Share Alike 2.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AAdministration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg/960px-Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 227605,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 720,
+        "sha256": "3d828565520e06979e46fb0bc92d1e32853d41f68e3e635b0ae432f0a88746dd"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/ethnic-person-looking-out-of-old-brick-house-5960338/",
+        "title": "Photo by Mehmet Turgut Kirkgoz on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/5960338/pexels-photo-5960338.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/5960338/pexels-photo-5960338.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 65310,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 576,
+        "sha256": "071c7c139d6c196a6e1fa2807f5f648795637b1b93f7c4b07442dda4b649bed5"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/36208665/",
+        "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/36208665/pexels-photo-36208665.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/36208665/pexels-photo-36208665.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 91764,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "1451e7bffd52242f8244ffc30ac386c9e0a09900f40eaeae8ad69c5ae0bdc3b8"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corfu_town_101.JPG#1",
+        "title": "File:Corfu town 101.JPG - Wikimedia Commons - File:Corfu town 101.JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Corfu_town_101.JPG/960px-Corfu_town_101.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Piotrus",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ACorfu_town_101.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Corfu_town_101.JPG/960px-Corfu_town_101.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 273898,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 720,
+        "sha256": "055f59da82e9e39dcea01b9c2bc5b2a7a1ff0f68859235d59895e6731a223a34"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "model_semantic_plan",
+    "summary": "本轮围绕复合布局中的相互遮挡与尺度关系进行了补充搜索，实际找到若干可对应到具体照片页的候选：Pexels 上有一张红砖墙+复古窗+阴影的近距离照片，一张交通灯与历史建筑立面同框的近距离照片，以及一张带绿色百叶窗的砖立面建筑照片。Wikimedia Commons 方面，发现有包含行人信号按钮的类别页，以及一个交通灯阴影类别页，但未定位到同时满足“行人信号灯立柱连接特写 + 多主体前后遮挡 + 自然光接触阴影”的单一理想照片。前几轮已收集来源未重复使用。",
+    "features": [
+      "待验证：红砖墙的砖缝颗粒与窗框阴影的接触边界是否清晰可分离",
+      "待验证：交通灯外壳与历史建筑立面的前后遮挡层次、灯体边缘与背景的对比度",
+      "待验证：绿色百叶窗与砖墙的色彩分界、百叶叶片产生的细密投影是否适合边缘提取",
+      "待验证：行人信号按钮在立柱上的安装方式、按钮外壳与柱体的材质差异与连接阴影形态"
+    ],
+    "selectionCriteria": [
+      "优先选择同时出现至少两个主体（如信号灯立柱 + 建筑立面/窗框）且存在明确前后遮挡关系的照片",
+      "自然光方向性明确、投影边缘不过度柔化或硬化的照片，便于拟合接触阴影的衰减函数",
+      "主体在画面中占比适中，既能提取边缘又不丢失材质颗粒（砖墙、金属柱体、塑料灯壳）",
+      "来源页含作者与许可证信息，或可在 Commons 文件页核验授权状态"
+    ],
+    "uncertainties": [
+      "未下载任何图像字节，上述特征均基于页面标题/元数据推断，未经视觉核验",
+      "Pexels 照片的许可证细节在返回页面中未完整展示，需逐页核验",
+      "Wikimedia Commons 行人信号类别页仅列出文件名，未确认其中是否存在立柱连接特写",
+      "交通灯阴影类别页的图片内容是否包含行人信号灯、是否与建筑立面同框，尚未核验"
+    ],
+    "nextFocus": "下一轮优先在 Wikimedia Commons 的 Pedestrian signals 子类别中定位具体的行人信号灯立柱特写文件页，并核验 Pexels 交通灯+建筑立面照片是否包含可用的遮挡与接触阴影；同时确认砖墙+窗框照片的光照方向是否支持投影拟合。",
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 19804,
+    "completion_tokens": 618,
+    "total_tokens": 20422,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "dacc46fb-0f03-48e8-9fed-9ea6c49afbb0",
+        "model": "deepseek-flash",
+        "elapsedMs": 16252,
+        "prompt_tokens": 19804,
+        "completion_tokens": 618,
+        "total_tokens": 20422,
+        "server_tool_use": {
+          "tool_search": 12,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 31385,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 88116,
+        "sha256": "3714001191076f9fb0897c576ba185ac10c7d52fa7f8b1793c22fe7307b613c8"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36328939/pexels-photo-36328939.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/panneau-de-signalisation-pour-chemin-pietonnier-avec-indicateur-de-distance-36328939/",
+      "title": "Photo de Manuel Bluemel sur Pexels",
+      "sha256": "3714001191076f9fb0897c576ba185ac10c7d52fa7f8b1793c22fe7307b613c8",
+      "bytes": 88116,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/3714001191076f9fb0897c576ba185ac10c7d52fa7f8b1793c22fe7307b613c8.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 227605,
+        "sha256": "3d828565520e06979e46fb0bc92d1e32853d41f68e3e635b0ae432f0a88746dd"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg/960px-Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Administration_Building_(Saint_Ignatius_Hall),_John_Carroll_University,_University_Heights,_OH_-_52997611078.jpg#1",
+      "title": "File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH - 52997611078.jpg - Wikimedia Commons - File:Administration Building (Saint Ignatius Hall), John Carroll University, University Heights, OH ",
+      "sha256": "3d828565520e06979e46fb0bc92d1e32853d41f68e3e635b0ae432f0a88746dd",
+      "bytes": 227605,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 720,
+      "license": {
+        "name": "CC BY-SA 2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "artist": "w_lemay",
+        "credit": "https://www.flickr.com/photos/59081381@N03/52997611078/",
+        "usageTerms": "Creative Commons Attribution-Share Alike 2.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Administration_Building_%28Saint_Ignatius_Hall%29%2C_John_Carroll_University%2C_University_Heights%2C_OH_-_52997611078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 4032,
+        "height": 3024,
+        "bytes": 4606470
+      },
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/3d828565520e06979e46fb0bc92d1e32853d41f68e3e635b0ae432f0a88746dd.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 65310,
+        "sha256": "071c7c139d6c196a6e1fa2807f5f648795637b1b93f7c4b07442dda4b649bed5"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5960338/pexels-photo-5960338.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/ethnic-person-looking-out-of-old-brick-house-5960338/",
+      "title": "Photo by Mehmet Turgut Kirkgoz on Pexels",
+      "sha256": "071c7c139d6c196a6e1fa2807f5f648795637b1b93f7c4b07442dda4b649bed5",
+      "bytes": 65310,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/071c7c139d6c196a6e1fa2807f5f648795637b1b93f7c4b07442dda4b649bed5.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 91764,
+        "sha256": "1451e7bffd52242f8244ffc30ac386c9e0a09900f40eaeae8ad69c5ae0bdc3b8"
+      },
+      "imageUrl": "https://images.pexels.com/photos/36208665/pexels-photo-36208665.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/36208665/",
+      "title": "Pexels 上由 Sergej ***** 拍攝的相片",
+      "sha256": "1451e7bffd52242f8244ffc30ac386c9e0a09900f40eaeae8ad69c5ae0bdc3b8",
+      "bytes": 91764,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 512,
+      "file": "fitting/learning09/learning-v1/learn-architecture/originals/1451e7bffd52242f8244ffc30ac386c9e0a09900f40eaeae8ad69c5ae0bdc3b8.webp"
+    }
+  ]
+}

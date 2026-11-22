@@ -1,0 +1,89 @@
+{
+  "schema": "crf.gaussian_scene.v0.8",
+  "id": "still.life",
+  "title": "果物静物 · 共享函数编排",
+  "width": 960,
+  "height": 640,
+  "background": [
+    232,
+    232,
+    225
+  ],
+  "objects": [
+    {
+      "id": "table",
+      "label": "table",
+      "assetId": "studio.paper",
+      "x": 0,
+      "y": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "opacity": 1,
+      "visible": true,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 0
+    },
+    {
+      "id": "shadow.apple",
+      "label": "shadow.apple",
+      "assetId": "studio.shadow",
+      "x": 155,
+      "y": 503,
+      "scaleX": 0.95,
+      "scaleY": 0.95,
+      "rotation": 0,
+      "opacity": 1,
+      "visible": true,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 1
+    },
+    {
+      "id": "shadow.pear",
+      "label": "shadow.pear",
+      "assetId": "studio.shadow",
+      "x": 405,
+      "y": 508,
+      "scaleX": 0.9,
+      "scaleY": 0.9,
+      "rotation": 0,
+      "opacity": 1,
+      "visible": true,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 1
+    },
+    {
+      "id": "apple",
+      "label": "苹果",
+      "assetId": "fruit.apple",
+      "x": 220,
+      "y": 290,
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "opacity": 1,
+      "visible": true,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 2
+    },
+    {
+      "id": "pear",
+      "label": "梨子",
+      "assetId": "fruit.pear",
+      "x": 445,
+      "y": 137,
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "opacity": 1,
+      "visible": true,
+      "hue": 0,
+      "exposure": 0,
+      "zIndex": 3
+    }
+  ]
+}

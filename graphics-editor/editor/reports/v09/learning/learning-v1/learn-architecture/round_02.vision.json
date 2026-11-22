@@ -1,0 +1,321 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 2,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.2.0",
+      "label": "红砖墙上的小方窗",
+      "category": "brick-facade-window",
+      "role": "object",
+      "bbox": [
+        0.17,
+        0.23,
+        0.5,
+        0.57
+      ],
+      "palette": [
+        [
+          120,
+          48,
+          32
+        ],
+        [
+          165,
+          78,
+          52
+        ],
+        [
+          80,
+          35,
+          28
+        ],
+        [
+          20,
+          24,
+          24
+        ],
+        [
+          180,
+          140,
+          110
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "老旧红砖墙的局部近景，砖块颜色深浅不一，灰缝粗糙，表面有风化颗粒和污渍；中央偏左嵌有一扇小矩形窗，深色窗框凹入墙体，玻璃几乎全黑，底部有浅色窗台或滴水线。斜射光使砖缝和窗框形成接触阴影，画面右下有斜向的大面积暗影。",
+      "tags": [
+        "红砖墙",
+        "小窗",
+        "窗框",
+        "灰缝",
+        "风化",
+        "接触阴影",
+        "自然光",
+        "立面细节"
+      ],
+      "limitations": [
+        "仅正面近景，缺少侧视与尺度参照",
+        "玻璃反光与室内不可见",
+        "阴影与砖色受白平衡和压缩影响",
+        "不能据此进行精确材质或结构测量"
+      ]
+    },
+    {
+      "id": "ref.2.1",
+      "label": "带阳台与石框窗的老式住宅立面",
+      "category": "historic-building-facade",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          125,
+          165,
+          200
+        ],
+        [
+          205,
+          195,
+          180
+        ],
+        [
+          165,
+          145,
+          120
+        ],
+        [
+          210,
+          180,
+          95
+        ],
+        [
+          45,
+          42,
+          38
+        ]
+      ],
+      "lightDirection": "right",
+      "description": "街边完整照片，主体为两层老住宅立面：左侧为白色抹灰山墙，中央为浅灰或土黄色外墙并带外挑小阳台，沿街面分布多扇石框窗和深色窗洞；右下有黄色栅门与低矮石墙。可见墙面颗粒、石质窗套、阳台底部阴影，街道向画面右侧延伸，天空明亮。",
+      "tags": [
+        "历史住宅",
+        "抹灰墙",
+        "石框窗",
+        "外挑阳台",
+        "街道立面",
+        "接触阴影",
+        "日照",
+        "黄色门"
+      ],
+      "limitations": [
+        "整幅街景，窗框与墙面细节受分辨率限制",
+        "相邻建筑与街道不能完整分割",
+        "无法判断室内和背光面",
+        "不提供新视角或三维结构"
+      ]
+    },
+    {
+      "id": "ref.2.2",
+      "label": "行人信号灯与邻近车行灯及立柱",
+      "category": "pedestrian-signal",
+      "role": "object",
+      "bbox": [
+        0.48,
+        0.1,
+        0.94,
+        0.95
+      ],
+      "palette": [
+        [
+          20,
+          20,
+          22
+        ],
+        [
+          200,
+          40,
+          30
+        ],
+        [
+          210,
+          150,
+          50
+        ],
+        [
+          120,
+          120,
+          120
+        ],
+        [
+          235,
+          235,
+          235
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "前景为黑色交通信号组件：行人灯头显示红色站立人形，下方为红色倒计时数字，灯头通过黑色支架与竖向黑柱连接；右侧是带白色圆环边框的邻近车行灯，多个黑色灯罩朝前。背景是城市店面与浅色石材立面，可见大块黄色招牌字与金属构件。日光较均匀，灯面自身发光，接触阴影集中在支架和灯罩边缘。",
+      "tags": [
+        "行人信号灯",
+        "红灯",
+        "倒计时",
+        "黑色立柱",
+        "车行灯",
+        "支架连接",
+        "城市街景",
+        "招牌背景",
+        "发光灯面",
+        "金属壳体"
+      ],
+      "limitations": [
+        "信号灯部分被画面边缘裁切",
+        "背景店面文字不完整且不应作为指令",
+        "灯色受曝光和发光影响",
+        "无法确认安装尺寸与电气连接",
+        "仅单视角，不能判断柱体背面"
+      ]
+    },
+    {
+      "id": "ref.2.3",
+      "label": "斑驳砖砌老建筑立面与拱窗",
+      "category": "weathered-brick-facade",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          175,
+          105,
+          60
+        ],
+        [
+          110,
+          45,
+          35
+        ],
+        [
+          120,
+          120,
+          115
+        ],
+        [
+          30,
+          35,
+          38
+        ],
+        [
+          200,
+          180,
+          150
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "竖向完整照片，主体为老旧两层砖石建筑立面：橙褐色砖墙斑驳，带灰浆修补和污渍，二层有三扇拱顶窗，深色窗框与玻璃，窗洞周围有浅色装饰线；底层可见门窗开口，屋顶覆灰色瓦片。左侧紧邻另一栋红砖建筑的窄立面，右上露出少量树影和浅色天空。光线较柔，檐口、窗洞和砖缝处有接触阴影。",
+      "tags": [
+        "老建筑",
+        "砖墙",
+        "拱窗",
+        "窗框",
+        "灰瓦屋顶",
+        "斑驳纹理",
+        "风化污渍",
+        "街景",
+        "接触阴影",
+        "立面"
+      ],
+      "limitations": [
+        "整幅建筑照片，无法拆分各窗的完整表面",
+        "上层被屋顶和相邻建筑遮挡",
+        "分辨率有限，窗框材质与室内不可辨",
+        "阴天或白平衡使砖色判断受限",
+        "不能代表完整三维立面或新视角"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "均呈现真实建筑或街道中的硬质构造与构件",
+    "均包含窗口、窗洞或信号灯具等可辨识的开口或界面",
+    "表面可见颗粒、风化、污渍或磨损痕迹",
+    "自然光或环境光形成受光面与接触阴影",
+    "存在前后遮挡、边缘截断和单视角限制",
+    "材质对比涉及砖石、抹灰、金属与玻璃",
+    "色调以砖红、灰黑、米黄等城市建筑色为主"
+  ],
+  "missingEvidence": [
+    "缺少同一构件的多角度和背面视图",
+    "缺少精确尺寸、比例尺与定位数据",
+    "缺少高分辨率微距纹理与反射信息",
+    "缺少阴影视差与光照方向测量",
+    "缺少原始曝光参数与白平衡信息",
+    "缺少窗框、灯具、墙体的真实材质与构造节点",
+    "缺少可验证的精确分割掩码，bbox仅为估计",
+    "不能从这些图像推断新视角或完整场景"
+  ],
+  "images": [
+    {
+      "id": "ref.2.0",
+      "sourceUrl": "https://www.pexels.com/photo/rustic-brick-wall-with-vintage-window-36450164/",
+      "sha256": "41ce430560e773da0c4d426d354f408716c3d08f4920b34d079d4a719fb7f62f",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.2.1",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwelling_house_with_balcony._Stone_framed_windows._-_11,_B%C3%A1stya_Street,_Downtown,_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r,_Fej%C3%A9r_county,_Hungary.JPG",
+      "sha256": "2b8fc556276b13ca0e757cf59c869cf7363d518c74e0814da68c0cdae0251ba7",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.2.2",
+      "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+      "sha256": "3597d053ed7f6c32f815f9f3bf868a9ce693553f4165f52e7f828a70646f1dd6",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.2.3",
+      "sourceUrl": "https://www.pexels.com/photo/buildings-made-of-brick-21694009/",
+      "sha256": "7102db6975b5960e94d6e0908b06c1c1fe088bb492c79e7242e33a3db58803a0",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "29993d3b-4e5f-4e1f-af69-5a52bf4825a4",
+        "model": "deepseek-flash",
+        "elapsedMs": 37588,
+        "prompt_tokens": 1649,
+        "completion_tokens": 5131,
+        "total_tokens": 6780,
+        "reasoning_tokens": 3885,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1649,
+    "completion_tokens": 5131,
+    "total_tokens": 6780,
+    "reasoning_tokens": 3885
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 37590
+}

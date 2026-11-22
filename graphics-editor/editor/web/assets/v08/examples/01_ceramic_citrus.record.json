@@ -1,0 +1,213 @@
+{
+  "id": "01_ceramic_citrus",
+  "title": "青釉与柑橘",
+  "scope": "new_composition_of_observed_objects",
+  "prompt": "生成一张960×640精致静物摄影构图：青蓝釉花瓶稍靠左，一枚横切橙子半在右前方，浅灰暖白承托面。必须组合已学的独立物体函数，不用整张参考照片做背景，不要复制同一个大图。保留釉面、橙肉纤维的自然细节；使用观察到的前视外观，物品底部同一承托水平。充分留白但主体不能太小，总占画面约60%。柔和小接触阴影准确放在底部；阴影是可见中心(160,50)的320×100函数，注意大部分是透明填充。颜色克制，物体不要扁拉、悬空或重叠穿插。",
+  "complete": true,
+  "assetIds": [
+    "studio.paper",
+    "studio.shadow",
+    "learn.r03.097cfbf071e3.object",
+    "learn.r01.c6657129fc5c.object"
+  ],
+  "initial": {
+    "providerCalls": 1,
+    "prompt_tokens": 1405,
+    "completion_tokens": 4077,
+    "total_tokens": 5482,
+    "reasoning_tokens": 3425,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "bc41c0f3-1bb1-4bae-8816-09291a60f2b1",
+        "model": "deepseek-flash",
+        "elapsedMs": 27816,
+        "prompt_tokens": 1405,
+        "completion_tokens": 4077,
+        "total_tokens": 5482,
+        "reasoning_tokens": 3425,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "critique": {
+    "providerCalls": 1,
+    "prompt_tokens": 2301,
+    "completion_tokens": 6985,
+    "total_tokens": 9286,
+    "reasoning_tokens": 6253,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "15689782-d60b-40a9-b22f-a0a9b34af342",
+        "model": "deepseek-flash",
+        "elapsedMs": 45316,
+        "prompt_tokens": 2301,
+        "completion_tokens": 6985,
+        "total_tokens": 9286,
+        "reasoning_tokens": 6253,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": true,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "candidate": {
+    "providerCalls": 1,
+    "prompt_tokens": 2881,
+    "completion_tokens": 2147,
+    "total_tokens": 5028,
+    "reasoning_tokens": 1364,
+    "requests": [
+      {
+        "phase": "gaussian_compose",
+        "requestId": "3a0f4ab3-9d03-4664-8e3e-8073ddbf6ade",
+        "model": "deepseek-flash",
+        "elapsedMs": 12951,
+        "prompt_tokens": 2881,
+        "completion_tokens": 2147,
+        "total_tokens": 5028,
+        "reasoning_tokens": 1364,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": true,
+        "finishReason": "stop"
+      }
+    ]
+  },
+  "actualRenders": [
+    {
+      "schema": "crf.actual_render.v0.8",
+      "sceneId": "stilllife_vase_orange_960x640",
+      "width": 960,
+      "height": 640,
+      "objectCount": 5,
+      "gaussianCount": 12630,
+      "elapsedMs": 266.6062550000024,
+      "rgbaSHA256": "2317dea7e15ab114314eb40a3ee97da6d70ae27782359eed13ae55873e09068e",
+      "pngSHA256": "11ab1f4e57726aaa76b784d275f3b3c286a497496b7804ddca48e8a33b0d23da",
+      "engine": "web/crf-gaussian08.js",
+      "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+      "sourceRasterReadByRenderer": false,
+      "assetIds": [
+        "studio.paper",
+        "studio.shadow",
+        "learn.r03.097cfbf071e3.object",
+        "learn.r01.c6657129fc5c.object"
+      ],
+      "metrics": null
+    },
+    {
+      "schema": "crf.actual_render.v0.8",
+      "sceneId": "stilllife_vase_orange_960x640",
+      "width": 960,
+      "height": 640,
+      "objectCount": 5,
+      "gaussianCount": 12630,
+      "elapsedMs": 322.6748559999978,
+      "rgbaSHA256": "276697c4d51af183e24ffc1202c54b57ada248acc619650f1811a864fdb32db8",
+      "pngSHA256": "d28dcceee9bd72654a2fa1e631683276bc3a4dfdc29aefdffe5369d42104b164",
+      "engine": "web/crf-gaussian08.js",
+      "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+      "sourceRasterReadByRenderer": false,
+      "assetIds": [
+        "studio.paper",
+        "studio.shadow",
+        "learn.r03.097cfbf071e3.object",
+        "learn.r01.c6657129fc5c.object"
+      ],
+      "metrics": null
+    },
+    {
+      "schema": "crf.actual_render.v0.8",
+      "sceneId": "stilllife_vase_orange_960x640",
+      "width": 960,
+      "height": 640,
+      "objectCount": 5,
+      "gaussianCount": 12630,
+      "elapsedMs": 250.2289619999974,
+      "rgbaSHA256": "d5c5b06160ece4fded5c23ff4d3d70f354324aa584e15bdc1338e662c9aeca77",
+      "pngSHA256": "cb2b8d7a52bdaa3ef612c9fb2adc801ddfef6e8b9621fcd8e33ed357c5bad3de",
+      "engine": "web/crf-gaussian08.js",
+      "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+      "sourceRasterReadByRenderer": false,
+      "assetIds": [
+        "studio.paper",
+        "studio.shadow",
+        "learn.r03.097cfbf071e3.object",
+        "learn.r01.c6657129fc5c.object"
+      ],
+      "metrics": null
+    }
+  ],
+  "selection": {
+    "chosen": "polish",
+    "status": "visually_reviewed",
+    "reviewer": "assistant visual inspection",
+    "reason": "下缘与阴影的间隙缩小；保留釉面和橙肉细节。仍是固定观察方向的物体组合。",
+    "photorealismIndependentlyProven": false,
+    "referenceReconstructionScoreUsedAsGenerationScore": false,
+    "finalAssetStateRerendered": true
+  },
+  "modelWeightsUpdated": false,
+  "polish": {
+    "usage": {
+      "providerCalls": 1,
+      "prompt_tokens": 2427,
+      "completion_tokens": 3153,
+      "total_tokens": 5580,
+      "reasoning_tokens": 2507,
+      "requests": [
+        {
+          "phase": "gaussian_compose",
+          "requestId": "0f5ef0e6-8bdc-4a93-add4-a776ccda857b",
+          "model": "deepseek-flash",
+          "elapsedMs": 23733,
+          "prompt_tokens": 2427,
+          "completion_tokens": 3153,
+          "total_tokens": 5580,
+          "reasoning_tokens": 2507,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop"
+        }
+      ]
+    },
+    "feedback": "实际图中花瓶与橙片下方还有微小悬浮间隙。依据目录新增的真实alpha下缘点计算变换后轮廓位置，把小接触阴影贴紧下缘，增强紧贴底部的暗度但保持软边。可适度移动阴影，不能把阴影变成宽重黑椭圆；保持已经良好的构图、尺度与材质。",
+    "source": "independent visual review and alpha-derived support hints",
+    "selection": "visually_reviewed"
+  },
+  "finalRender": {
+    "schema": "crf.actual_render.v0.8",
+    "sceneId": "stilllife_vase_orange_960x640",
+    "width": 960,
+    "height": 640,
+    "objectCount": 5,
+    "gaussianCount": 12630,
+    "elapsedMs": 235.981534,
+    "rgbaSHA256": "d5c5b06160ece4fded5c23ff4d3d70f354324aa584e15bdc1338e662c9aeca77",
+    "pngSHA256": "cb2b8d7a52bdaa3ef612c9fb2adc801ddfef6e8b9621fcd8e33ed357c5bad3de",
+    "engine": "web/crf-gaussian08.js",
+    "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+    "sourceRasterReadByRenderer": false,
+    "assetIds": [
+      "studio.paper",
+      "studio.shadow",
+      "learn.r03.097cfbf071e3.object",
+      "learn.r01.c6657129fc5c.object"
+    ],
+    "metrics": null,
+    "assetSHA256": {
+      "learn.r01.c6657129fc5c.object": "dc72fa0cc485de435d4404b576747c06beb197dcdffe7fc10429acfe3df2ee1b",
+      "learn.r03.097cfbf071e3.object": "bfd23447b8a174bf442e641aeec03dfa62694fa5bc24a15abf928cb286797342",
+      "studio.paper": "b4199545ffcd823cdeefb3d18c3cb63d91782dbd800f8cbf7aeed872735080ea",
+      "studio.shadow": "ce0236e339c11a232105b2aa20c87c90508ce9f71a5571c46099cff5a1177e42"
+    },
+    "sceneSHA256": "3a5767ae6fc192af5116af2c999c25aa32c0ee0b8ff82f30fe7116abc8c3c13d"
+  }
+}

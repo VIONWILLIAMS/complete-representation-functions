@@ -1,0 +1,317 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 4,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.4.0",
+      "label": "红砖立面与双六边形窗",
+      "category": "brick-facade",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          170,
+          75,
+          45
+        ],
+        [
+          215,
+          170,
+          130
+        ],
+        [
+          20,
+          27,
+          22
+        ],
+        [
+          230,
+          225,
+          210
+        ],
+        [
+          60,
+          40,
+          30
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "红棕色砖墙近景，水平砖缝与墙面颗粒较清楚；中央可见两扇竖长六边形窗，白色窗框较宽，深色玻璃反射较弱。画面中有深色树枝状线条和斜向阴影穿过墙面，形成遮挡。自然日光整体较均匀，可复用为砖墙颗粒、窗框轮廓和树枝投影的视觉参考；边界并非精确分割。",
+      "tags": [
+        "红砖墙",
+        "六边形窗",
+        "白色窗框",
+        "树枝阴影",
+        "墙面颗粒",
+        "建筑立面",
+        "自然光",
+        "近景"
+      ],
+      "limitations": [
+        "无精确alpha分割",
+        "窗内细节不可见",
+        "树枝实体与投影不易区分",
+        "缺乏尺度参照",
+        "阴影遮挡部分砖缝"
+      ]
+    },
+    {
+      "id": "ref.4.1",
+      "label": "街道背向行人与交通锥",
+      "category": "street-scene",
+      "role": "reference-frame",
+      "bbox": [
+        0.3,
+        0.34,
+        0.7,
+        0.98
+      ],
+      "palette": [
+        [
+          30,
+          80,
+          180
+        ],
+        [
+          240,
+          90,
+          25
+        ],
+        [
+          80,
+          80,
+          82
+        ],
+        [
+          80,
+          130,
+          60
+        ],
+        [
+          205,
+          205,
+          195
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "一条树荫夹道的城市道路，白色虚线向远处汇聚；前景有一名背对镜头的人，戴灰色帽子、穿蓝色上衣与深色长裤，脚边放置三个橙白相间交通锥。远处可见浅色古典式建筑立面、车辆和行人。路面有树影与物体接触阴影，可复用为街景尺度、交通锥形态和人物遮挡关系的参考，但不代表新的视角。",
+      "tags": [
+        "街景",
+        "背向行人",
+        "交通锥",
+        "道路标线",
+        "树荫",
+        "远处建筑",
+        "自然光",
+        "接触阴影"
+      ],
+      "limitations": [
+        "人物面部不可见",
+        "背景建筑细节受景深影响",
+        "无精确分割掩码",
+        "无法确认光照时间与方向参数",
+        "交通锥和人物局部重叠"
+      ]
+    },
+    {
+      "id": "ref.4.2",
+      "label": "灰白肋纹立面与斜向窗框",
+      "category": "metal-facade",
+      "role": "object",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          180,
+          185,
+          185
+        ],
+        [
+          20,
+          25,
+          28
+        ],
+        [
+          40,
+          110,
+          180
+        ],
+        [
+          235,
+          240,
+          245
+        ],
+        [
+          120,
+          125,
+          125
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "画面以斜向构图展示灰色细密肋纹表面，前景和上方有黑色斜向窗框或构件分割；玻璃或开口区域呈现蓝天与白云，形成冷暖对比和几何线条。表面有细密平行纹理，暗部与亮部反差明显，可复用为立面纹理、窗框几何和自然光反射的参考。",
+      "tags": [
+        "肋纹表面",
+        "灰色立面",
+        "斜向窗框",
+        "蓝天白云",
+        "几何构图",
+        "反光",
+        "自然光",
+        "建筑细部"
+      ],
+      "limitations": [
+        "难以判断肋纹材质是金属还是混凝土",
+        "天空属于反射还是直接可见无法确认",
+        "透视变形较强",
+        "缺少尺度参照",
+        "无精确材质参数"
+      ]
+    },
+    {
+      "id": "ref.4.3",
+      "label": "彩色阳台砖砌公寓楼",
+      "category": "apartment-building",
+      "role": "object",
+      "bbox": [
+        0.02,
+        0.12,
+        0.99,
+        0.78
+      ],
+      "palette": [
+        [
+          140,
+          65,
+          45
+        ],
+        [
+          190,
+          45,
+          35
+        ],
+        [
+          40,
+          100,
+          170
+        ],
+        [
+          100,
+          140,
+          60
+        ],
+        [
+          70,
+          70,
+          65
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "多层长条公寓楼占据画面主体，红棕色砖墙与灰色/深色墙面板交替，外挑阳台以红色和蓝色为主，窗户排列密集；右侧可见脚手架或附属结构。前景有草地、道路、路灯、汽车和停车区域，天空为蓝色带云。日光使阳台下方形成阴影，可复用为整体建筑体量、彩色阳台和街道环境的参考。",
+      "tags": [
+        "公寓楼",
+        "砖砌立面",
+        "彩色阳台",
+        "窗户",
+        "脚手架",
+        "街景",
+        "蓝天",
+        "自然光"
+      ],
+      "limitations": [
+        "建筑细节分辨率有限",
+        "右侧附属结构遮挡外立面",
+        "无法从单张图推断完整空间结构",
+        "玻璃与阳台内部不可见",
+        "无精确分割和材质尺度"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "四张均为真实户外拍摄的建筑或街景，包含自然日光和可见阴影",
+    "均能观察到硬质表面与几何线条，如砖墙、路面、肋纹立面和窗框",
+    "均存在前后遮挡或层次关系",
+    "色彩主要来自材质本色、天空和植被环境色",
+    "光影对比有助于表现轮廓与纹理",
+    "均适合作为同类实例的视觉参考，但没有像素级标注"
+  ],
+  "missingEvidence": [
+    "没有可辨识的行人信号灯及其与立柱连接细节",
+    "没有同一建筑的多视角或连续帧，无法推断完整三维结构",
+    "缺少材质尺度、反射率和光照参数",
+    "缺少精确分割掩码与相机参数",
+    "无法定量确认阴影来源、时间和天气条件",
+    "部分窗内和背光区域细节不可见",
+    "缺少近景微距以量化墙面颗粒"
+  ],
+  "images": [
+    {
+      "id": "ref.4.0",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/13322184/",
+      "sha256": "f3d9d4712f8dd2ef283bb21dd77be7d298cfb6cd27874e8b9f75bad656e5e020",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.4.1",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/37147703/",
+      "sha256": "301921a1a247fa349a1769e771c096fd0601d71d83c0869cf6b0b26b4c4861a8",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.4.2",
+      "sourceUrl": "https://www.pexels.com/photo/gray-concrete-building-under-the-blue-sky-12289125/",
+      "sha256": "02ee0e3a0317009a394eaf46746df4803791f254105342ccb519373d4f1ea585",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.4.3",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Byker_Wall_from_Dalton_Street_-_geograph.org.uk_-_1776778.jpg#1",
+      "sha256": "ed5c3f32e323f0bb1603af895c3fbd7507fdef8fefd982647788b1d63ceefaa5",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "0a8c18dd-63f1-4d5d-9447-b64f356d3379",
+        "model": "deepseek-flash",
+        "elapsedMs": 35434,
+        "prompt_tokens": 1605,
+        "completion_tokens": 4824,
+        "total_tokens": 6429,
+        "reasoning_tokens": 3686,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1605,
+    "completion_tokens": 4824,
+    "total_tokens": 6429,
+    "reasoning_tokens": 3686
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 35436
+}

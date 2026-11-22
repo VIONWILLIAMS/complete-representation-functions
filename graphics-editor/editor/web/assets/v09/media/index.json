@@ -1,0 +1,175 @@
+{
+  "schema": "crf.media_gallery.v0.9",
+  "runId": "showcase-v1",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "duration": 5,
+  "fit": "contain",
+  "paddingRGBA": [
+    0,
+    0,
+    0,
+    255
+  ],
+  "scope": "inferred_image_plane_depth_parallax",
+  "examples": [
+    {
+      "id": "01_ivory_facade",
+      "title": "米白墙面与晨间行人灯",
+      "sceneUrl": "assets/v09/generated/showcase-v1/01_ivory_facade.scene.json",
+      "videoUrl": "assets/v09/media/01_ivory_facade.mp4",
+      "posterUrl": "assets/v09/media/views/01_ivory_facade/front.png",
+      "views": [
+        {
+          "view": "left",
+          "url": "assets/v09/media/views/01_ivory_facade/left.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 596139,
+          "rgbaSHA256": "72d5e28253275eda3d7d0a8ecfc937daf5172440adc4d91de0841e92e45dd7dc",
+          "pngSHA256": "b78876c8b3988440cac84541a0305aca9eaa177eddaec032781bc1b25c8630dc"
+        },
+        {
+          "view": "front",
+          "url": "assets/v09/media/views/01_ivory_facade/front.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 595099,
+          "rgbaSHA256": "c39a2036f854533d3c9a89059a956a681a627bfdbd8f459e683d312b7f8362ed",
+          "pngSHA256": "7a0c4985e66cf601a7bbba047000ca2c1e97aa83a3657455bfe59e350d8931ff"
+        },
+        {
+          "view": "right",
+          "url": "assets/v09/media/views/01_ivory_facade/right.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 594178,
+          "rgbaSHA256": "d44e90048de9410d68fb886d6f65c8134f29b56dface596bf9d736e1fc72e0fe",
+          "pngSHA256": "ae86e62612da41acd41a15685653babdb11b28473baebae92c95733272e100d8"
+        }
+      ],
+      "viewport": {
+        "fit": "contain",
+        "x": 240,
+        "y": 0,
+        "width": 1440,
+        "height": 1080,
+        "containerWidth": 1920,
+        "containerHeight": 1080,
+        "paddingRGBA": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      "realWorld3DReconstructionVerified": false
+    },
+    {
+      "id": "04_cold_alpine",
+      "title": "冷色晨雾中的高山湖",
+      "sceneUrl": "assets/v09/generated/showcase-v1/04_cold_alpine.scene.json",
+      "videoUrl": "assets/v09/media/04_cold_alpine.mp4",
+      "posterUrl": "assets/v09/media/views/04_cold_alpine/front.png",
+      "views": [
+        {
+          "view": "left",
+          "url": "assets/v09/media/views/04_cold_alpine/left.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 656144,
+          "rgbaSHA256": "91e855ca915962f6e16e3aa194ffccb2cc7d879929340b8372b552037abdf564",
+          "pngSHA256": "09a7edda2b60471bf7f533344e781469b4c80765d66cc2b119571a95effdba66"
+        },
+        {
+          "view": "front",
+          "url": "assets/v09/media/views/04_cold_alpine/front.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 657754,
+          "rgbaSHA256": "dce75325bf8538ef6b13210b68ae3dd4062733ff0ffabbce1e2d4120b33b5fdd",
+          "pngSHA256": "87c4b83acac53b4f590dd9dd284fa2feb63ef1555e5e4ff51828d02201f41bf6"
+        },
+        {
+          "view": "right",
+          "url": "assets/v09/media/views/04_cold_alpine/right.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 658062,
+          "rgbaSHA256": "05d50597a8b690e5494b9e8fd07c1e14cf44494a8f7e794b813e2f2927354192",
+          "pngSHA256": "b4751fe6865cfce6eb9be695be8688eb53a7daff4db18d1a4e4a58e52a20d8c3"
+        }
+      ],
+      "viewport": {
+        "fit": "contain",
+        "x": 240,
+        "y": 0,
+        "width": 1440,
+        "height": 1080,
+        "containerWidth": 1920,
+        "containerHeight": 1080,
+        "paddingRGBA": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      "realWorld3DReconstructionVerified": false
+    },
+    {
+      "id": "08_three_fruits",
+      "title": "自然窗光中的三种果物",
+      "sceneUrl": "assets/v09/generated/showcase-v1/08_three_fruits.scene.json",
+      "videoUrl": "assets/v09/media/08_three_fruits.mp4",
+      "posterUrl": "assets/v09/media/views/08_three_fruits/front.png",
+      "views": [
+        {
+          "view": "left",
+          "url": "assets/v09/media/views/08_three_fruits/left.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 525644,
+          "rgbaSHA256": "b3cf600d77e2ba1b1059cdfe1820bd8f3c0ec36235d8edd350373f431d3a3ce0",
+          "pngSHA256": "0b38f716745b2de0ae11771b4fac788fe3a8dc96b84116bed6bc13b240d1a4d0"
+        },
+        {
+          "view": "front",
+          "url": "assets/v09/media/views/08_three_fruits/front.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 526575,
+          "rgbaSHA256": "da494ce7db9bbeb805ed7aa4073aa3712b39052d6961ff7b947093990dcaddae",
+          "pngSHA256": "1600ad52876e895e319b7b1f7e9eb5963ba2e2288635a3717d62e7000a3f548d"
+        },
+        {
+          "view": "right",
+          "url": "assets/v09/media/views/08_three_fruits/right.png",
+          "width": 1024,
+          "height": 768,
+          "bytes": 527288,
+          "rgbaSHA256": "a038a1bcb1ac70991bf46ffd62caf4373a77bb4c067fc5fdf5f22f300fcab468",
+          "pngSHA256": "1788e2ca2fd6de12855cf99553e916b5cd6a9695324488e962c62711419c29b5"
+        }
+      ],
+      "viewport": {
+        "fit": "contain",
+        "x": 240,
+        "y": 0,
+        "width": 1440,
+        "height": 1080,
+        "containerWidth": 1920,
+        "containerHeight": 1080,
+        "paddingRGBA": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      "realWorld3DReconstructionVerified": false
+    }
+  ],
+  "verificationUrl": "assets/v09/media/verification.json"
+}

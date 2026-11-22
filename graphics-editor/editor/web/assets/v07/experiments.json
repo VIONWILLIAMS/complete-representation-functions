@@ -1,0 +1,108 @@
+{
+  "schema": "crf.experiments.v0.7",
+  "version": "0.7.0",
+  "createdAt": "2026-11-21T10:35:30.045329+00:00",
+  "selectionMethod": "human visual inspection of actual rendered images",
+  "experiments": [
+    {
+      "id": "citrus",
+      "title": "橙子静物",
+      "prompt": "生成一张高质量摄影风格静物：三个大小略有差别的橙子，带一片真实细长绿叶，放在白色浅釉盘上，下面是细腻木桌。斜侧窗光，柔和真实阴影，果皮细小毛孔有尺度层次，轮廓平滑，构图近景，不出现整齐塑料球感。请搜索Pexels或Unsplash公开橙子静物照片页，从所给参考图中提取形态和细节函数，用代码构造整张图。",
+      "model": "deepseek-flash",
+      "searched": true,
+      "referenceImagesSubmitted": 3,
+      "initial": {
+        "image": "media/v07/citrus_initial.png",
+        "program": "assets/v07/generated/citrus_initial.crf.json"
+      },
+      "refined": {
+        "image": "media/v07/citrus_refined2.png",
+        "program": "assets/v07/generated/citrus_refined2.crf.json"
+      },
+      "selectedPhase": "refined2",
+      "notes": [
+        "选用第二轮反馈：三枚橙子均进入可见构图，浅盘与叶片连接得到改善。果体仍偏球形，木纹与叶片简化，暗部有采样噪声。",
+        "第二轮第一次调用在一次自动修正后仍有JSON错误；失败记录保留。另一次明确发起的开发测试返回了此候选。",
+        "初稿是原始模型JSON在材质表达式协议扩展后的原样本地恢复，没有伪造一次新的HTTP成功。未通过照片级质量验收。"
+      ],
+      "reportUrl": "media/v07/citrus_execution.json",
+      "llmGenerated": true,
+      "photorealismTargetPassed": false
+    },
+    {
+      "id": "ceramics",
+      "title": "陶瓷、玻璃与黄铜",
+      "prompt": "生成一张窗边静物的摄影风格图片：灰绿色细腻墙面前，一座浅色石台上摆一只孔雀青釉花器和透明烟色玻璃球，旁边有一个小黄铜球、两本错落的书。侧面大窗柔光，构图紧凑，真实接触阴影和材质反射，画面没有文字。请实际搜索Pexels或Unsplash的公开照片页，分析所提供参考图的真实形态、材质、光线。用完整代码场景表达，适量细节，避免低多边形轮廓，地面和背景铺满画面。",
+      "model": "deepseek-flash",
+      "searched": true,
+      "referenceImagesSubmitted": 4,
+      "initial": {
+        "image": "media/v07/ceramics_initial.png",
+        "program": "assets/v07/generated/ceramics_initial.crf.json"
+      },
+      "refined": {
+        "image": "media/v07/ceramics_refined2.png",
+        "program": "assets/v07/generated/ceramics_refined2.crf.json"
+      },
+      "selectedPhase": "refined2",
+      "notes": [
+        "选用第二轮反馈：移除悬空窗玻璃的遮挡，花器、玻璃球、黄铜球与书完整入镜，台面支撑与物品接触改善。",
+        "玻璃折射分界仍突兀，花器形状、书页及墙面材质仍有程序化观感，未通过照片级质量验收。",
+        "初稿来自实际模型修正响应，经表示协议扩展后原样本地恢复；全部模型输出与人工展示场景分别记录。"
+      ],
+      "reportUrl": "media/v07/ceramics_execution.json",
+      "llmGenerated": true,
+      "photorealismTargetPassed": false
+    },
+    {
+      "id": "interior",
+      "title": "自然采光客厅",
+      "prompt": "生成一张真实自然采光客厅的室内摄影：米灰色亚麻沙发、两个靠垫、圆形胡桃木茶几、陶杯与书，木地板和浅色地毯，左侧窗户照入柔和日光，墙角一盆绿植。相机处于人眼高度，看不到墙顶外的空洞，家具尺度正常，接触真实，窗框与墙正确连接。请实际搜索Pexels或Unsplash的公开室内照片页，从图像中提取可用形态、织物纹理、木纹、光照与构图；代码表达完整场景。",
+      "model": "deepseek-flash",
+      "searched": true,
+      "referenceImagesSubmitted": 3,
+      "initial": {
+        "image": "media/v07/interior_initial.png",
+        "program": "assets/v07/generated/interior_initial.crf.json"
+      },
+      "refined": {
+        "image": "media/v07/interior_refined3.png",
+        "program": "assets/v07/generated/interior_refined3.crf.json"
+      },
+      "selectedPhase": "refined3",
+      "notes": [
+        "选用第三轮反馈：墙体空洞、桌腿悬浮与天花灯板得到修正，采光相对第二轮恢复，盆栽进入画面。",
+        "第二轮虽然HTTP与程序校验成功，实际图像更暗且噪点增加；该退步轮次保留，没有作为质量提升隐藏。",
+        "窗边几何、织物/木材层次和噪点仍有不足。未通过照片级质量验收。"
+      ],
+      "reportUrl": "media/v07/interior_execution.json",
+      "llmGenerated": true,
+      "photorealismTargetPassed": false
+    },
+    {
+      "id": "rainstreet",
+      "title": "雨夜街角",
+      "prompt": "生成一张雨后夜晚街角的摄影风格图片：前景湿润沥青和斑马线，一根细黑色金属杆连接红色行人信号灯，后方是有窗框和亮窗的街楼与暖色店铺。地面反射有轻微微表面起伏，蓝色夜空与暖色灯光平衡。信号灯、横臂和竖杆必须连接，画面避免不明发光方块。请实际搜索Pexels或Unsplash公开夜街照片页，从参考图提取材质、比例与光线，再编写完整代码场景。",
+      "model": "deepseek-flash",
+      "searched": true,
+      "referenceImagesSubmitted": 6,
+      "initial": {
+        "image": "media/v07/rainstreet_initial.png",
+        "program": "assets/v07/generated/rainstreet_initial.crf.json"
+      },
+      "refined": {
+        "image": "media/v07/rainstreet_refined.png",
+        "program": "assets/v07/generated/rainstreet_refined.crf.json"
+      },
+      "selectedPhase": "refined",
+      "notes": [
+        "选用首轮反馈：斑马线从道路下方移到可见位置，竖杆、横臂、信号灯与建筑的空间关系改善。",
+        "画面仍偏暗，街楼、发光窗口与湿路材质较简化，未通过照片级质量验收。",
+        "这是新生成的夜街程序；原始午后Street红绿灯照片案例仍独立完整保留。"
+      ],
+      "reportUrl": "media/v07/rainstreet_execution.json",
+      "llmGenerated": true,
+      "photorealismTargetPassed": false
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:02:42.405Z",
+  "id": "rainstreet",
+  "phase": "initial",
+  "prompt": "生成一张雨后夜晚街角的摄影风格图片：前景湿润沥青和斑马线，一根细黑色金属杆连接红色行人信号灯，后方是有窗框和亮窗的街楼与暖色店铺。地面反射有轻微微表面起伏，蓝色夜空与暖色灯光平衡。信号灯、横臂和竖杆必须连接，画面避免不明发光方块。请实际搜索Pexels或Unsplash公开夜街照片页，从参考图提取材质、比例与光线，再编写完整代码场景。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 502,
+  "elapsedMs": 68659,
+  "inputImageProvided": false,
+  "response": {
+    "ok": false,
+    "runId": "crf07_da600efb-fff1-4bf5-8869-b3e534956c01",
+    "model": "deepseek-flash",
+    "error": {
+      "code": "INVALID_MODEL_JSON",
+      "message": "模型未返回可解析的 JSON；当前场景保持不变。",
+      "retryable": true
+    },
+    "httpStatus": 502,
+    "research": {
+      "searched": true,
+      "toolCalls": [
+        {
+          "id": "srvtoolu_s_00_ad8a626110c349b78854a923dc1f23de",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com photo wet street crosswalk at night traffic light red storefront reflection",
+              "site:unsplash.com photo rainy night street crosswalk traffic light wet asphalt reflection storefront",
+              "site:commons.wikimedia.org wet asphalt night street crosswalk pedestrian signal red light photo",
+              "site:pexels.com photo red pedestrian signal traffic light pole crosswalk night",
+              "site:unsplash.com photo night street building windows warm shop light",
+              "site:commons.wikimedia.org rainy street night reflections storefront building window photo"
+            ]
+          },
+          "sourceUrls": [
+            "https://www.pexels.com/fr-fr/photo/nuit-batiments-buildings-immeubles-11214953/",
+            "https://unsplash.com/photos/wet-stone-steps-with-neon-reflections-nvLgybjPL_w",
+            "https://www.pexels.com/zh-cn/photo/33079407/",
+            "https://unsplash.com/photos/dark-alleyway-with-warm-light-from-a-window-iq1IqNR_X2k",
+            "https://www.pexels.com/photo/a-person-in-red-jacket-walking-on-street-during-night-11277270/",
+            "https://unsplash.com/photos/people-walking-on-wet-city-street-PwD52o25-cM",
+            "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+            "https://unsplash.com/photos/a-couple-of-people-walking-down-a-sidewalk-next-to-a-store-NLl9bm5i4W8",
+            "https://commons.wikimedia.org/wiki/Category:Shop_windows_at_night",
+            "https://www.pexels.com/fr-fr/photo/ville-voitures-route-lumieres-9367699/",
+            "https://unsplash.com/photos/red-traffic-light-reflects-on-wet-street-at-night-0Y_-Y1nafB4",
+            "https://www.pexels.com/fr-fr/photo/lumieres-nuit-rue-trottoir-16636373/",
+            "https://unsplash.com/photos/window-with-warm-light-on-a-rainy-night-3GV9UvFyi7s"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pexels.com/fr-fr/photo/nuit-batiments-buildings-immeubles-11214953/",
+          "title": "Photo de Brett Sayles sur Pexels",
+          "snippet": "Afterglow Street Festive ... Dimensions 4024x6048 Format 503:756 Couleurs Date Feb 17, 2022 ... Description # Rue humide d'une ville la nuit avec des bâtiments illuminés et des réflexions. ## Médias similaires",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/wet-stone-steps-with-neon-reflections-nvLgybjPL_w",
+          "title": "Photo by Joshua Earle on Unsplash",
+          "snippet": "Wet stone steps in Shibuya reflecting vibrant red and blue neon light at night Download this Unsplash+ HD photo of wet stone steps in Shibuya by @joshuaearle ... Unsplash+ License japan city road ... traffic light shibuya neon lights night time rainy city zebra crossing night photography ... after rain cityscape at night wet street moody atmosphere",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/zh-cn/photo/33079407/",
+          "title": "Pexels Ömer Derinyar图片",
+          "snippet": "尺寸 3359x5971 颜色 medium ... Jul 19, 2025 ... 光圈 ƒ/4.0 ISO 3200 ... Jul 16, 2025 软件 Adobe Imagecore (Linux) Istanbul, Turkey 描述 # 夜间城市街道上写着“DUR”的红色行人信号灯，特写视图。 ### 更多相似内容",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/dark-alleyway-with-warm-light-from-a-window-iq1IqNR_X2k",
+          "title": "Photo by Liana S on Unsplash",
+          "snippet": "––– –––– –––– # Dark alleyway with warm light from a window. Download this free HD photo of building, dark, night, and street by Liana S (@cherstve_pechivo) Published on Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/photo/a-person-in-red-jacket-walking-on-street-during-night-11277270/",
+          "title": "Photo by Domenik drz on Pexels",
+          "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Toronto, ON, Canada Description # Charming wet city night scene with a person walking on a Toronto street, reflecting urban life. ## More like this Add filters, effects ... Add custom frames",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/people-walking-on-wet-city-street-PwD52o25-cM",
+          "title": "Photo by Anna Mould on Unsplash",
+          "snippet": "People walking on a wet city street at night with glowing shop lights and reflections London at Christmas, captured on experimental Cinestill 800T film. Rain slicks the streets, reflecting vivid red, orange, blue and green neon lights across the pavement as silhouettes move through the busy city after dark.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+          "title": "Photo by Clarissa Schwarz on Pexels",
+          "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Amsterdam, NH, Niederlande Description # Red pedestrian traffic light with countdown timer in Amsterdam city street. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-couple-of-people-walking-down-a-sidewalk-next-to-a-store-NLl9bm5i4W8",
+          "title": "Photo by Arda Mutlu on Unsplash",
+          "snippet": "A couple of people walking down a sidewalk next to a store A quiet evening street scene with a man walking away, holding a paper bag ... Warm light from shop windows reflects off the building, contrasting with the cool tones of the night sky and dimly lit surroundings.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Category:Shop_windows_at_night",
+          "title": "Category:Shop windows at night - Wikimedia Commons",
+          "snippet": "Shop windows at night ... Media in category \"Shop windows at night\" The following 69 files are in this category, out of 69 total. - BS Handelsweg abends.JPG 6,240 × 4,160; 4.53 MB",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/fr-fr/photo/ville-voitures-route-lumieres-9367699/",
+          "title": "Photo de Zeeshaan Shabbir sur Pexels",
+          "snippet": "Afterglow ... 3 Zeeshaan Shabbir ... Aug 28, 2021 Description # Un paysage urbain nocturne avec des réflexions colorées sur une route mouillée sous des phares lumineux et un ciel sombre. ## Médias similaires",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/red-traffic-light-reflects-on-wet-street-at-night-0Y_-Y1nafB4",
+          "title": "Photo by Emilipothèse on Unsplash",
+          "snippet": "Red traffic light reflects on wet street at night Download this free HD photo of night, red light, street lamp, and reflections in Fribourg, Suisse by Emilipothèse (@emilipothese) ... Published on Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/fr-fr/photo/lumieres-nuit-rue-trottoir-16636373/",
+          "title": "Photo de Erik Mclean sur Pexels",
+          "snippet": "3024x4032 Format 3:4 Couleurs Date May 1 ... St. John's, NL, Canada Description # Rues urbaines illuminées de St. John's, Canada la nuit avec un accent sur un signal de passage piéton. ## Médias similaires",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/window-with-warm-light-on-a-rainy-night-3GV9UvFyi7s",
+          "title": "Photo by Naomi Ramilo on Unsplash",
+          "snippet": "Window with warm light on a rainy night. Download this free HD photo of building, night, light, and interior in Ho Chi Minh City, Vietnam by Naomi Ramilo (@naomiramilo) Ho Chi Minh, Ho Chi Minh City, Vietnam",
+          "via": "server_tool"
+        }
+      ],
+      "summary": "**结论：** 已找到的公开照片详情页可支撑“湿沥青反射、红色行人信号灯、暖窗/店铺光、蓝夜天空”的参考组合，但**没有单一页面同时完整呈现你要求的全部元素**（斑马线 + 细黑金属杆连接红灯 + 后方街楼窗框 + 地面微起伏）。建议以下列页面为**分项参考**，在代码场景中按图形函数重组，而不是照搬某一图。\n\n---\n\n### 可用的照片参考页（按主体匹配）\n\n| 参考目标 | 页面 | 可提取的图形/光照线索 | 局限 |\n|---|---|---|---|\n| **湿街 + 城市灯光反射** | Pexels《Rue humide d'une ville la nuit avec des bâtiments illuminés et des réflexions》 | 湿润表面高光呈纵向拉长、暖色光斑为主；建筑体块作为反射光源 | 无斑马线、无行人信号灯细节 |\n| **红色行人信号灯 + 金属杆形态** | Pexels《夜间城市街道上写着“DUR”的红色行人信号灯，特写视图》 | 红色发光面为矩形、边缘有暗色边框；杆体细、深色、与灯箱连接；夜间高 ISO 下红色略溢出 | 非雨后地面，无斑马线 |\n| **红灯在湿地面的反射** | Unsplash《Red traffic light reflects on wet street at night》 | 红色光源在湿沥青上形成**纵向拉伸的椭圆光晕**，边缘模糊；湿面反射强度随距离衰减 | 未展示行人信号灯与杆的具体连接结构 |\n| **湿路 + 斑马线 + 霓虹反射** | Unsplash《Wet stone steps in Shibuya reflecting vibrant red and blue neon light at night》 | 斑马线白色条带在湿面上亮度降低、边缘因水膜略柔化；红蓝光混合反射 | 场景为台阶，非平地街角；信号灯不是主主体 |\n| **暖色店铺窗光 + 冷夜对比** | Unsplash《People walking on a wet city street at night with glowing shop lights and reflections》 | 店铺暖光从窗框内向外溢、在湿路面上形成暖色斑块；蓝夜天空作为背景低亮度区 | 无红色行人信号灯主体 |\n| **暖窗 + 蓝夜天空** | Unsplash《Window with warm light on a rainy night》 | 窗框矩形边界清晰，暖光集中在窗内、不向建筑外墙大面积扩散；雨夜环境光冷蓝 | 仅窗景，无街道地面与信号灯 |\n| **红色行人信号灯形态补充** | Pexels《Red pedestrian traffic light with countdown timer in Amsterdam city street》 | 行人信号灯正面常含倒计时数字区，红灯位于上部或左部；整体为黑色方壳 | 仅形态参考，非雨后光照 |\n\n---\n\n### 转化为图形函数的建议\n\n**1. 湿沥青材质**\n- 基础粗糙度低，但保留**微表面起伏**：用低频噪声扰动法线，使反射光斑产生轻微撕裂与纵向拉伸。\n- 反射颜色以暖色（店铺、窗光）和红色（信号灯）为主，蓝色仅作为天空在边缘的低强度补光。\n- 不要做镜面级完美反射；水膜厚度不均导致反射强度需用噪声调制。\n\n**2. 斑马线条带**\n- 白色条带在湿面上不应纯白：亮度压低、略偏暖或偏蓝（取决于反射混合）。\n- 条带边缘做轻微模糊，模拟水膜覆盖后的柔化。\n- 条带长度方向与视线夹角影响透视压缩，前景条带应明显宽于远景。\n\n**3. 细黑金属杆与信号灯连接**\n- 竖杆直径细、深灰黑色、哑光金属；与横臂连接处做倒角或套筒结构，避免“悬浮”感。\n- 横臂从竖杆顶部水平延伸，末端连接信号灯箱顶部或背面。\n- 灯箱为黑色矩形壳，红色发光面内凹或与外壳齐平；发光面只输出红色，不额外生成不明发光方块。\n\n**4. 街楼窗框与暖色店铺**\n- 窗框用细矩形线条区分于墙面，窗内暖光为面光源，不向窗框外大幅扩散。\n- 店铺暖光从开口区域向外投射，在湿地面形成**矩形或梯形暖色斑块**，边缘随水膜起伏略不规则。\n- 建筑体块作为遮挡体，避免天空光均匀填满背景。\n\n**5. 蓝夜天空与暖光平衡**\n- 天空为低亮度冷蓝渐变，靠近地平线略亮、顶部更暗。\n- 暖色光只出现在窗、店铺开口和湿地面反射区域；红色信号灯作为高饱和小面积重点，不扩大为全画面红色主导。\n\n---\n\n### 代码编写时的注意事项\n- 所有发光区域必须有**明确的几何载体**（灯箱、窗框内、店铺开口），不允许在无几何对应处输出发光方块。\n- 反射计算时区分**湿沥青低频起伏**与**水膜镜面反射**：前者用噪声法线扰动反射方向，后者用菲涅耳权重控制强度。\n- 行人信号灯的红色发光面与地面红色反射之间需有**光照一致性**：反射位置、拉伸方向与灯箱位置对应。\n\n**来源**：Pexels、Unsplash。以上均为照片详情页文本描述，未获取图像字节；具体视觉细节需后续视觉模型验证。",
+      "status": "completed",
+      "nativeSearchObserved": true,
+      "referenceImageCandidates": [],
+      "referenceImages": [
+        {
+          "sourceUrl": "https://www.pexels.com/fr-fr/photo/nuit-batiments-buildings-immeubles-11214953/",
+          "title": "Photo de Brett Sayles sur Pexels",
+          "imageUrl": "https://images.pexels.com/photos/11214953/pexels-photo-11214953.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "e44aaa411fbd074043df429ade4d3bfa757938be7723fd033edbbf6ea5cbd350",
+          "bytes": 62158,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/zh-cn/photo/33079407/",
+          "title": "Pexels Ömer Derinyar图片",
+          "imageUrl": "https://images.pexels.com/photos/33079407/pexels-photo-33079407.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "8e753fba8056c76e058b4ef9f0a026b913d2b07e6ae1ae50bb2d9a9fb823cb8f",
+          "bytes": 59434,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/a-person-in-red-jacket-walking-on-street-during-night-11277270/",
+          "title": "Photo by Domenik drz on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/11277270/pexels-photo-11277270.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "e9ec2203bc785d27edc4f3290b99310bb8cfe210273bc87ec9354b660c511b6a",
+          "bytes": 37704,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+          "title": "Photo by Clarissa Schwarz on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/19901332/pexels-photo-19901332.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "a23c10c20c8a5feded65d4e6d8404831123f200d854856c901a8965d8ea60946",
+          "bytes": 33948,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/fr-fr/photo/ville-voitures-route-lumieres-9367699/",
+          "title": "Photo de Zeeshaan Shabbir sur Pexels",
+          "imageUrl": "https://images.pexels.com/photos/9367699/pexels-photo-9367699.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "ef75712146cdfdfb42fb3f4aa3a3513fcc4de57085a3990f53a62e2cf4f3dd2c",
+          "bytes": 12292,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/fr-fr/photo/lumieres-nuit-rue-trottoir-16636373/",
+          "title": "Photo de Erik Mclean sur Pexels",
+          "imageUrl": "https://images.pexels.com/photos/16636373/pexels-photo-16636373.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "eb492f5059d48a2758e683f81932ad333b9833f9d0862568898e34326978c6da",
+          "bytes": 98050,
+          "mime": "image/webp",
+          "submittedToVision": true
+        }
+      ],
+      "referenceImagesSubmitted": 6,
+      "inputImageProvided": false,
+      "referenceCollection": {
+        "method": "public source-page image metadata, verified image bytes; not render textures",
+        "sourcePageCount": 12,
+        "downloadedCount": 6,
+        "attempts": [
+          {
+            "sourceUrl": "https://www.pexels.com/fr-fr/photo/nuit-batiments-buildings-immeubles-11214953/",
+            "title": "Photo de Brett Sayles sur Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/11214953/pexels-photo-11214953.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 62158,
+            "mime": "image/webp",
+            "sha256": "e44aaa411fbd074043df429ade4d3bfa757938be7723fd033edbbf6ea5cbd350"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/wet-stone-steps-with-neon-reflections-nvLgybjPL_w",
+            "title": "Photo by Joshua Earle on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/zh-cn/photo/33079407/",
+            "title": "Pexels Ömer Derinyar图片",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/33079407/pexels-photo-33079407.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 59434,
+            "mime": "image/webp",
+            "sha256": "8e753fba8056c76e058b4ef9f0a026b913d2b07e6ae1ae50bb2d9a9fb823cb8f"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/dark-alleyway-with-warm-light-from-a-window-iq1IqNR_X2k",
+            "title": "Photo by Liana S on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/photo/a-person-in-red-jacket-walking-on-street-during-night-11277270/",
+            "title": "Photo by Domenik drz on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/11277270/pexels-photo-11277270.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 37704,
+            "mime": "image/webp",
+            "sha256": "e9ec2203bc785d27edc4f3290b99310bb8cfe210273bc87ec9354b660c511b6a"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/people-walking-on-wet-city-street-PwD52o25-cM",
+            "title": "Photo by Anna Mould on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+            "title": "Photo by Clarissa Schwarz on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/19901332/pexels-photo-19901332.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 33948,
+            "mime": "image/webp",
+            "sha256": "a23c10c20c8a5feded65d4e6d8404831123f200d854856c901a8965d8ea60946"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-couple-of-people-walking-down-a-sidewalk-next-to-a-store-NLl9bm5i4W8",
+            "title": "Photo by Arda Mutlu on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Shop_windows_at_night",
+            "title": "Category:Shop windows at night - Wikimedia Commons",
+            "status": "unavailable",
+            "error": "no_supported_image"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/fr-fr/photo/ville-voitures-route-lumieres-9367699/",
+            "title": "Photo de Zeeshaan Shabbir sur Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/9367699/pexels-photo-9367699.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 12292,
+            "mime": "image/webp",
+            "sha256": "ef75712146cdfdfb42fb3f4aa3a3513fcc4de57085a3990f53a62e2cf4f3dd2c"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/red-traffic-light-reflects-on-wet-street-at-night-0Y_-Y1nafB4",
+            "title": "Photo by Emilipothèse on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/fr-fr/photo/lumieres-nuit-rue-trottoir-16636373/",
+            "title": "Photo de Erik Mclean sur Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/16636373/pexels-photo-16636373.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 98050,
+            "mime": "image/webp",
+            "sha256": "eb492f5059d48a2758e683f81932ad333b9833f9d0862568898e34326978c6da"
+          }
+        ],
+        "submittedToVision": true,
+        "submittedCount": 6
+      }
+    },
+    "usage": {
+      "prompt_tokens": 11891,
+      "completion_tokens": 5796,
+      "total_tokens": 17687,
+      "providerCalls": 2,
+      "requests": [
+        {
+          "phase": "research",
+          "requestId": "567676a3-afb1-4a81-9197-b2c6720818a6",
+          "model": "deepseek-flash",
+          "elapsedMs": 11789,
+          "prompt_tokens": 4333,
+          "completion_tokens": 1272,
+          "total_tokens": 5605,
+          "server_tool_use": {
+            "tool_search": 6,
+            "tool_fetch": 0,
+            "tool_image_search": 0
+          }
+        },
+        {
+          "phase": "compose",
+          "requestId": "8e6e47f9-ee10-4352-a80b-993b219ecd3f",
+          "model": "deepseek-flash",
+          "elapsedMs": 22035,
+          "prompt_tokens": 7558,
+          "completion_tokens": 4524,
+          "total_tokens": 12082,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "warnings": [],
+    "vision": {
+      "renderedImageProvided": false,
+      "referenceImagesProvided": 6,
+      "referenceSourceUrls": [
+        "https://www.pexels.com/fr-fr/photo/nuit-batiments-buildings-immeubles-11214953/",
+        "https://www.pexels.com/zh-cn/photo/33079407/",
+        "https://www.pexels.com/photo/a-person-in-red-jacket-walking-on-street-during-night-11277270/",
+        "https://www.pexels.com/photo/pedestrian-traffic-light-in-amsterdam-netherlands-19901332/",
+        "https://www.pexels.com/fr-fr/photo/ville-voitures-route-lumieres-9367699/",
+        "https://www.pexels.com/fr-fr/photo/lumieres-nuit-rue-trottoir-16636373/"
+      ]
+    }
+  }
+}

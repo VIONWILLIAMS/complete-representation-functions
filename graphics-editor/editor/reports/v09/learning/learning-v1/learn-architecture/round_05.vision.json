@@ -1,0 +1,322 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 5,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.5.0",
+      "label": "俯视街角的行人与黄色立柱",
+      "category": "street-scene",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          18,
+          22,
+          18
+        ],
+        [
+          74,
+          86,
+          55
+        ],
+        [
+          128,
+          130,
+          86
+        ],
+        [
+          200,
+          164,
+          56
+        ],
+        [
+          226,
+          222,
+          203
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "从暗处或窗口式遮挡后俯视街角：前景有黑色框状遮挡，中央为被强光切出的浅色铺地，一名穿浅色上衣、深色裤的行人正从黄色圆柱或立柱旁经过；右侧大面积深阴影与斜向光边形成强烈明暗分割。低分辨率下人物、立柱材质和地面接缝细节不清晰，适合作为街角光影和人物与立柱关系的参考帧，而非精确几何样本。",
+      "tags": [
+        "街角",
+        "行人",
+        "黄色立柱",
+        "斜向投影",
+        "强日光",
+        "城市地面",
+        "高角度",
+        "遮挡",
+        "真实场景"
+      ],
+      "limitations": [
+        "低分辨率，人物与立柱细节不可辨",
+        "无法确认立柱是信号杆、护柱或其他设施",
+        "暗部大面积，材质与颜色被压缩",
+        "无精确尺度、相机姿态和分割掩膜",
+        "不能据此重建街角全貌"
+      ]
+    },
+    {
+      "id": "ref.5.1",
+      "label": "俯视路口、信号灯与长投影",
+      "category": "street-intersection",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          55,
+          58,
+          55
+        ],
+        [
+          110,
+          110,
+          105
+        ],
+        [
+          190,
+          180,
+          160
+        ],
+        [
+          215,
+          160,
+          40
+        ],
+        [
+          220,
+          220,
+          210
+        ]
+      ],
+      "lightDirection": "right",
+      "description": "高空俯视城市路口：灰色沥青路面、白色车道线和底部斑马线；画面中央附近有黄色信号灯或灯箱及杆件，向一侧投下长而硬朗的斜影；右侧为浅色人行道。整体为真实街景参考帧，信号头、灯罩和杆件连接处因分辨率低而无法辨识。",
+      "tags": [
+        "俯视路口",
+        "斑马线",
+        "黄色信号灯",
+        "杆件",
+        "长投影",
+        "沥青路面",
+        "人行道",
+        "城市街景"
+      ],
+      "limitations": [
+        "信号灯头与立柱连接节点不可辨",
+        "低分辨率限制灯罩和杆件细节",
+        "长投影与路面标线交叠，边界不精确",
+        "无尺度、相机姿态和精确光源方位",
+        "无法确认信号灯的具体类型和安装方式"
+      ]
+    },
+    {
+      "id": "ref.5.2",
+      "label": "剥落墙面中的旧窗与红砖",
+      "category": "facade-detail",
+      "role": "object",
+      "bbox": [
+        0.08,
+        0.03,
+        0.92,
+        0.96
+      ],
+      "palette": [
+        [
+          150,
+          60,
+          40
+        ],
+        [
+          165,
+          158,
+          145
+        ],
+        [
+          190,
+          180,
+          160
+        ],
+        [
+          195,
+          195,
+          185
+        ],
+        [
+          50,
+          55,
+          55
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "建筑立面近景：灰黄色灰泥或抹灰层大面积剥落，露出下半部红砖砌体和灰色砂浆缝；中央偏左为旧窗，浅灰白窗框带竖向中梃和横档，玻璃暗色且反光弱，窗洞形成内凹阴影。墙面有裂纹、斑驳和修补痕迹，适合提取墙面颗粒、砖缝与旧窗框的视觉语义；不能据此确定窗扇开启方式或墙体构造。",
+      "tags": [
+        "旧窗",
+        "窗框",
+        "剥落灰泥",
+        "红砖墙",
+        "砂浆缝",
+        "玻璃",
+        "墙面纹理",
+        "裂纹",
+        "建筑立面"
+      ],
+      "limitations": [
+        "窗框材质是木、金属或其他材料不可确认",
+        "玻璃反射与室内侧不可见",
+        "砖墙破损范围与结构关系不清",
+        "无尺度与正射校正",
+        "低分辨率限制砖缝和墙面颗粒细节"
+      ]
+    },
+    {
+      "id": "ref.5.3",
+      "label": "砖墙前的白色披布雕像",
+      "category": "sculpture",
+      "role": "object",
+      "bbox": [
+        0.26,
+        0.21,
+        0.72,
+        0.98
+      ],
+      "palette": [
+        [
+          220,
+          215,
+          198
+        ],
+        [
+          125,
+          65,
+          45
+        ],
+        [
+          25,
+          20,
+          18
+        ],
+        [
+          170,
+          105,
+          70
+        ],
+        [
+          130,
+          125,
+          110
+        ]
+      ],
+      "lightDirection": "right",
+      "description": "砖墙前的白色古典披布人物雕像，立于方形基座或壁龛前；表面呈浅色石材或石膏质感，衣褶形成竖向阴影。现场有强烈方向性光，墙面呈暖红砖色，雕像右侧较亮，周边与左侧出现深色斜影和遮挡阴影，整体高对比。低分辨率下五官、材质缺损和基座细节不可辨，可复用其轮廓、衣褶和光影层次，不宜作为精确雕塑几何依据。",
+      "tags": [
+        "白色雕像",
+        "披布人物",
+        "红砖墙",
+        "基座",
+        "强侧光",
+        "斜影",
+        "高对比",
+        "衣褶",
+        "墙面纹理"
+      ],
+      "limitations": [
+        "无法确认石材、石膏等具体材质",
+        "面部与手部细节不可辨",
+        "阴影来源不明确",
+        "无多视角和精确尺度",
+        "低分辨率限制纹理与轮廓精度"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "真实场景照片，非合成材质图",
+    "硬质建筑或城市表面占据主要画面",
+    "可见灰泥、红砖、石材、沥青或铺地等表面纹理",
+    "现场光形成亮部、暗部与接触阴影",
+    "暖色材质与冷灰阴影并置",
+    "低分辨率缩略图，细部尺度不可靠"
+  ],
+  "missingEvidence": [
+    "信号灯头、灯罩与立柱连接节点的高清近景",
+    "窗框榫接、密封、玻璃反射和室内侧证据",
+    "砖缝、灰泥颗粒、石材表面的近距离纹理",
+    "人物、立柱、信号灯与雕像的精确尺度",
+    "相机位姿、焦距、EXIF和正射校正参数",
+    "同一对象的第二视角或环绕视角",
+    "可用的alpha分割或深度图",
+    "拍摄时间、天气与光源方位的标定信息",
+    "材质成分或结构连接的直接检测结果"
+  ],
+  "images": [
+    {
+      "id": "ref.5.0",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/37769093/",
+      "sha256": "82341e41e5a9f7e3f2060fdb6b7ac14254f7a0cfe535ece798ea3ba0e13afa07",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.5.1",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/feu-de-signalisation-et-ombres-dans-une-rue-de-new-york-33261389/",
+      "sha256": "66f652af2e6cff5e7f2657d05d765a097d42aca3c3c151f89072342e01485523",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.5.2",
+      "sourceUrl": "https://www.pexels.com/photo/vintage-brick-wall-with-old-window-36470808/",
+      "sha256": "3a9452dd773cbadbd237aed1ffefd90de1d52fb28ff3b75f800782b87e412dd9",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.5.3",
+      "sourceUrl": "https://www.pexels.com/photo/sculpture-in-dramatic-light-against-brick-wall-32080142/",
+      "sha256": "69f29b1668f87a6671ba825fc191d8bc9971257f0a308e9346278e94d24d24ef",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "1215cea5-41b8-4a52-9750-c46904c77451",
+        "model": "deepseek-flash",
+        "elapsedMs": 48200,
+        "prompt_tokens": 1619,
+        "completion_tokens": 7059,
+        "total_tokens": 8678,
+        "reasoning_tokens": 5806,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1619,
+    "completion_tokens": 7059,
+    "total_tokens": 8678,
+    "reasoning_tokens": 5806
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 48201
+}

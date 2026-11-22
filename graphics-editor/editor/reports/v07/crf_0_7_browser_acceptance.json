@@ -1,0 +1,256 @@
+{
+  "schema": "crf.browser_acceptance.v0.7",
+  "startedAt": "2026-11-21T10:04:59.282Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "url": "http://127.0.0.1:4173/verify-v07.html"
+  },
+  "providerCalls": 0,
+  "providerMocked": false,
+  "tests": [
+    {
+      "name": "全部既有案例与新增案例直接可见",
+      "pass": true,
+      "evidence": {
+        "requiredCount": 11,
+        "totalCount": 11,
+        "caseIds": [
+          "street",
+          "fruit_lab",
+          "orchard",
+          "alpine",
+          "common",
+          "stilllife",
+          "courtyard",
+          "citrus",
+          "ceramics",
+          "interior",
+          "rainstreet"
+        ]
+      },
+      "elapsedMs": 0
+    },
+    {
+      "name": "实际载入与像素读取：street",
+      "pass": true,
+      "evidence": {
+        "caseId": "street",
+        "engine": "legacy05",
+        "width": 667,
+        "height": 1000,
+        "pixelHash": "7477f7cd"
+      },
+      "elapsedMs": 7
+    },
+    {
+      "name": "实际载入与像素读取：fruit_lab",
+      "pass": true,
+      "evidence": {
+        "caseId": "fruit_lab",
+        "engine": "legacy05",
+        "width": 800,
+        "height": 600,
+        "pixelHash": "113ce78d"
+      },
+      "elapsedMs": 2040
+    },
+    {
+      "name": "实际载入与像素读取：orchard",
+      "pass": true,
+      "evidence": {
+        "caseId": "orchard",
+        "engine": "legacy05",
+        "width": 800,
+        "height": 600,
+        "pixelHash": "4eb490f6"
+      },
+      "elapsedMs": 880
+    },
+    {
+      "name": "实际载入与像素读取：alpine",
+      "pass": true,
+      "evidence": {
+        "caseId": "alpine",
+        "engine": "legacy05",
+        "width": 800,
+        "height": 531,
+        "pixelHash": "8cd6dde4"
+      },
+      "elapsedMs": 501
+    },
+    {
+      "name": "实际载入与像素读取：common",
+      "pass": true,
+      "evidence": {
+        "caseId": "common",
+        "engine": "program06",
+        "width": 640,
+        "height": 480,
+        "pixelHash": "35165c85"
+      },
+      "elapsedMs": 1485
+    },
+    {
+      "name": "实际载入与像素读取：stilllife",
+      "pass": true,
+      "evidence": {
+        "caseId": "stilllife",
+        "engine": "program06",
+        "width": 640,
+        "height": 480,
+        "pixelHash": "37007b2b"
+      },
+      "elapsedMs": 1702
+    },
+    {
+      "name": "实际载入与像素读取：courtyard",
+      "pass": true,
+      "evidence": {
+        "caseId": "courtyard",
+        "engine": "program06",
+        "width": 640,
+        "height": 480,
+        "pixelHash": "5bc0ef13"
+      },
+      "elapsedMs": 1926
+    },
+    {
+      "name": "实际载入与像素读取：citrus",
+      "pass": true,
+      "evidence": {
+        "caseId": "citrus",
+        "engine": "radiance07",
+        "width": 320,
+        "height": 240,
+        "pixelHash": "e2a7089a"
+      },
+      "elapsedMs": 1613
+    },
+    {
+      "name": "实际载入与像素读取：ceramics",
+      "pass": true,
+      "evidence": {
+        "caseId": "ceramics",
+        "engine": "radiance07",
+        "width": 320,
+        "height": 240,
+        "pixelHash": "c3a27e6f"
+      },
+      "elapsedMs": 1740
+    },
+    {
+      "name": "实际载入与像素读取：interior",
+      "pass": true,
+      "evidence": {
+        "caseId": "interior",
+        "engine": "radiance07",
+        "width": 320,
+        "height": 240,
+        "pixelHash": "4306a6b9"
+      },
+      "elapsedMs": 2033
+    },
+    {
+      "name": "实际载入与像素读取：rainstreet",
+      "pass": true,
+      "evidence": {
+        "caseId": "rainstreet",
+        "engine": "radiance07",
+        "width": 320,
+        "height": 240,
+        "pixelHash": "bcde0976"
+      },
+      "elapsedMs": 1570
+    },
+    {
+      "name": "Street 修改后切换其他案例再返回，编辑保持",
+      "pass": true,
+      "evidence": {
+        "changedChannels": 1341241,
+        "mae": 22.02797076461769,
+        "same": false,
+        "persisted": true,
+        "returnedHash": "39fb846b"
+      },
+      "elapsedMs": 2931
+    },
+    {
+      "name": "0.6 独立场景缓存保留编辑与原有画布",
+      "pass": true,
+      "evidence": {
+        "objectId": "pear.generated",
+        "persisted": true,
+        "width": 640,
+        "height": 480
+      },
+      "elapsedMs": 836
+    },
+    {
+      "name": "模型上下文省略密集像素字段，保留语义",
+      "pass": true,
+      "evidence": {
+        "fullBytes": 353625,
+        "contextBytes": 4143,
+        "objectCount": 2
+      },
+      "elapsedMs": 10
+    },
+    {
+      "name": "0.7 对象编辑影响真实像素，撤销精确恢复",
+      "pass": true,
+      "evidence": {
+        "changed": {
+          "changedChannels": 33925,
+          "mae": 2.4395182291666666,
+          "same": false
+        },
+        "restored": {
+          "changedChannels": 0,
+          "mae": 0,
+          "same": true
+        },
+        "beforeHash": "e2a7089a"
+      },
+      "elapsedMs": 4308
+    },
+    {
+      "name": "无效完整程序与混合事务原子拒绝",
+      "pass": true,
+      "evidence": {
+        "programRejected": true,
+        "opsRejected": true,
+        "programUnchanged": true,
+        "pixelsUnchanged": true
+      },
+      "elapsedMs": 4
+    },
+    {
+      "name": "取消实际渲染，保留原程序与已完成像素",
+      "pass": true,
+      "evidence": {
+        "cancelled": true,
+        "programUnchanged": true,
+        "pixelsUnchanged": true
+      },
+      "elapsedMs": 69
+    },
+    {
+      "name": "场景 JSON 导出导入后重现相同程序与像素",
+      "pass": true,
+      "evidence": {
+        "schema": "crf.workbench_scene.v0.7",
+        "jsonBytes": 12793,
+        "pixelHash": "e2a7089a",
+        "changedChannels": 0,
+        "mae": 0,
+        "same": true
+      },
+      "elapsedMs": 2690
+    }
+  ],
+  "elapsedMs": 26654,
+  "finishedAt": "2026-11-21T10:05:25.936Z",
+  "passed": 19,
+  "failed": 0,
+  "pass": true
+}

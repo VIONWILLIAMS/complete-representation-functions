@@ -1,0 +1,968 @@
+{
+  "schema": "crf.integration_review.v0.9",
+  "checkedAt": "2026-11-21T16:48:40.857Z",
+  "scope": "Independent local read-only engineering review; no provider requests or production certification",
+  "baseline": "26f9b85a2b25a84ef7afd9ace98a2930e5ab5851",
+  "engineeringPassed": true,
+  "failures": [],
+  "retention": {
+    "baseline": "26f9b85a2b25a84ef7afd9ace98a2930e5ab5851",
+    "total": 722,
+    "requiredUnchanged": 721,
+    "byteExact": 721,
+    "allRetained": true
+  },
+  "dependencies": {
+    "allPresent": true,
+    "missingBoundIds": [],
+    "checks": [
+      {
+        "from": "web/index.html",
+        "url": "editor08.css",
+        "path": "web/editor08.css",
+        "exists": true
+      },
+      {
+        "from": "web/index.html",
+        "url": "./",
+        "path": "web/index.html",
+        "exists": true
+      },
+      {
+        "from": "web/index.html",
+        "url": "studio09.html",
+        "path": "web/studio09.html",
+        "exists": true
+      },
+      {
+        "from": "web/index.html",
+        "url": "editor05.html?case=street",
+        "path": "web/editor05.html",
+        "exists": true
+      },
+      {
+        "from": "web/index.html",
+        "url": "studio07.html",
+        "path": "web/studio07.html",
+        "exists": true
+      },
+      {
+        "from": "web/index.html",
+        "url": "canvas07.html",
+        "path": "web/canvas07.html",
+        "exists": true
+      },
+      {
+        "from": "web/index.html",
+        "url": "downloads/CRF_0_8_Render_Kit.zip",
+        "path": "web/downloads/CRF_0_8_Render_Kit.zip",
+        "exists": true
+      },
+      {
+        "from": "web/index.html",
+        "url": "crf-gaussian08.js",
+        "path": "web/crf-gaussian08.js",
+        "exists": true
+      },
+      {
+        "from": "web/index.html",
+        "url": "learning-client08.js",
+        "path": "web/learning-client08.js",
+        "exists": true
+      },
+      {
+        "from": "web/index.html",
+        "url": "editor08.js",
+        "path": "web/editor08.js",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "editor09.css",
+        "path": "web/editor09.css",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "studio09.html",
+        "path": "web/studio09.html",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "gaussian08.html",
+        "path": "web/gaussian08.html",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "studio07.html",
+        "path": "web/studio07.html",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "canvas07.html",
+        "path": "web/canvas07.html",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "editor05.html?case=street",
+        "path": "web/editor05.html",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "studio07.html",
+        "path": "web/studio07.html",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "downloads/CRF_0_9_Render_Kit.zip",
+        "path": "web/downloads/CRF_0_9_Render_Kit.zip",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "assets/v09/acceptance.json",
+        "path": "web/assets/v09/acceptance.json",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "assets/v09/shared-appearance.json",
+        "path": "web/assets/v09/shared-appearance.json",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "downloads/CRF_0_9_Report.md",
+        "path": "web/downloads/CRF_0_9_Report.md",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "downloads/CRF_0_9_Render_Kit.zip",
+        "path": "web/downloads/CRF_0_9_Render_Kit.zip",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "crf-gaussian08.js",
+        "path": "web/crf-gaussian08.js",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "crf-generative09.js",
+        "path": "web/crf-generative09.js",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "crf-boundary09.js",
+        "path": "web/crf-boundary09.js",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "crf-video09.js",
+        "path": "web/crf-video09.js",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "task-runner09.js",
+        "path": "web/task-runner09.js",
+        "exists": true
+      },
+      {
+        "from": "web/studio09.html",
+        "url": "editor09.js",
+        "path": "web/editor09.js",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "crf-gaussian08.js",
+        "path": "web/crf-gaussian08.js",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "crf-generative09.js",
+        "path": "web/crf-generative09.js",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "crf-boundary09.js",
+        "path": "web/crf-boundary09.js",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "render-worker09.js",
+        "path": "web/render-worker09.js",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "task-runner09.js",
+        "path": "web/task-runner09.js",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "crf-video.js",
+        "path": "web/crf-video.js",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "assets/v09/street/context.json",
+        "path": "web/assets/v09/street/context.json",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "assets/v08/gaussians/street.optimized.json",
+        "path": "web/assets/v08/gaussians/street.optimized.json",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "assets/v09/street/detail.json",
+        "path": "web/assets/v09/street/detail.json",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "assets/v09/shared-appearance.json",
+        "path": "web/assets/v09/shared-appearance.json",
+        "exists": true
+      },
+      {
+        "from": "runtime_contract",
+        "url": "assets/v09/generated/index.json",
+        "path": "web/assets/v09/generated/index.json",
+        "exists": true
+      },
+      {
+        "from": "generated:01_ivory_facade",
+        "url": "assets/v09/generated/showcase-v1/01_ivory_facade.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/01_ivory_facade.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:01_ivory_facade",
+        "url": "assets/v09/generated/showcase-v1/01_ivory_facade.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/01_ivory_facade.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:01_ivory_facade",
+        "url": "assets/v09/generated/showcase-v1/01_ivory_facade.png",
+        "path": "web/assets/v09/generated/showcase-v1/01_ivory_facade.png",
+        "exists": true
+      },
+      {
+        "from": "generated:02_ochre_corner",
+        "url": "assets/v09/generated/showcase-v1/02_ochre_corner.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/02_ochre_corner.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:02_ochre_corner",
+        "url": "assets/v09/generated/showcase-v1/02_ochre_corner.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/02_ochre_corner.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:02_ochre_corner",
+        "url": "assets/v09/generated/showcase-v1/02_ochre_corner.png",
+        "path": "web/assets/v09/generated/showcase-v1/02_ochre_corner.png",
+        "exists": true
+      },
+      {
+        "from": "generated:03_blue_wall",
+        "url": "assets/v09/generated/showcase-v1/03_blue_wall.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/03_blue_wall.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:03_blue_wall",
+        "url": "assets/v09/generated/showcase-v1/03_blue_wall.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/03_blue_wall.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:03_blue_wall",
+        "url": "assets/v09/generated/showcase-v1/03_blue_wall.png",
+        "path": "web/assets/v09/generated/showcase-v1/03_blue_wall.png",
+        "exists": true
+      },
+      {
+        "from": "generated:04_cold_alpine",
+        "url": "assets/v09/generated/showcase-v1/04_cold_alpine.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/04_cold_alpine.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:04_cold_alpine",
+        "url": "assets/v09/generated/showcase-v1/04_cold_alpine.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/04_cold_alpine.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:04_cold_alpine",
+        "url": "assets/v09/generated/showcase-v1/04_cold_alpine.png",
+        "path": "web/assets/v09/generated/showcase-v1/04_cold_alpine.png",
+        "exists": true
+      },
+      {
+        "from": "generated:05_warm_coast",
+        "url": "assets/v09/generated/showcase-v1/05_warm_coast.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/05_warm_coast.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:05_warm_coast",
+        "url": "assets/v09/generated/showcase-v1/05_warm_coast.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/05_warm_coast.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:05_warm_coast",
+        "url": "assets/v09/generated/showcase-v1/05_warm_coast.png",
+        "path": "web/assets/v09/generated/showcase-v1/05_warm_coast.png",
+        "exists": true
+      },
+      {
+        "from": "generated:06_misty_forest",
+        "url": "assets/v09/generated/showcase-v1/06_misty_forest.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/06_misty_forest.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:06_misty_forest",
+        "url": "assets/v09/generated/showcase-v1/06_misty_forest.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/06_misty_forest.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:06_misty_forest",
+        "url": "assets/v09/generated/showcase-v1/06_misty_forest.png",
+        "path": "web/assets/v09/generated/showcase-v1/06_misty_forest.png",
+        "exists": true
+      },
+      {
+        "from": "generated:07_evening_lake",
+        "url": "assets/v09/generated/showcase-v1/07_evening_lake.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/07_evening_lake.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:07_evening_lake",
+        "url": "assets/v09/generated/showcase-v1/07_evening_lake.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/07_evening_lake.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:07_evening_lake",
+        "url": "assets/v09/generated/showcase-v1/07_evening_lake.png",
+        "path": "web/assets/v09/generated/showcase-v1/07_evening_lake.png",
+        "exists": true
+      },
+      {
+        "from": "generated:08_three_fruits",
+        "url": "assets/v09/generated/showcase-v1/08_three_fruits.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/08_three_fruits.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:08_three_fruits",
+        "url": "assets/v09/generated/showcase-v1/08_three_fruits.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/08_three_fruits.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:08_three_fruits",
+        "url": "assets/v09/generated/showcase-v1/08_three_fruits.png",
+        "path": "web/assets/v09/generated/showcase-v1/08_three_fruits.png",
+        "exists": true
+      },
+      {
+        "from": "generated:09_celadon_citrus",
+        "url": "assets/v09/generated/showcase-v1/09_celadon_citrus.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/09_celadon_citrus.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:09_celadon_citrus",
+        "url": "assets/v09/generated/showcase-v1/09_celadon_citrus.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/09_celadon_citrus.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:09_celadon_citrus",
+        "url": "assets/v09/generated/showcase-v1/09_celadon_citrus.png",
+        "path": "web/assets/v09/generated/showcase-v1/09_celadon_citrus.png",
+        "exists": true
+      },
+      {
+        "from": "generated:10_dark_pears",
+        "url": "assets/v09/generated/showcase-v1/10_dark_pears.scene.json",
+        "path": "web/assets/v09/generated/showcase-v1/10_dark_pears.scene.json",
+        "exists": true
+      },
+      {
+        "from": "generated:10_dark_pears",
+        "url": "assets/v09/generated/showcase-v1/10_dark_pears.jpg",
+        "path": "web/assets/v09/generated/showcase-v1/10_dark_pears.jpg",
+        "exists": true
+      },
+      {
+        "from": "generated:10_dark_pears",
+        "url": "assets/v09/generated/showcase-v1/10_dark_pears.png",
+        "path": "web/assets/v09/generated/showcase-v1/10_dark_pears.png",
+        "exists": true
+      }
+    ]
+  },
+  "evidence": {
+    "checks": [
+      {
+        "experiment": "H1",
+        "path": "reports/v09/core-preview/alpine-dusk.png",
+        "expected": "7b57bb227d4abb89d4b4005b8a8e037763c33ba104b5287c3d3bb943122d4ee0",
+        "actual": "7b57bb227d4abb89d4b4005b8a8e037763c33ba104b5287c3d3bb943122d4ee0",
+        "matches": true
+      },
+      {
+        "experiment": "H1",
+        "path": "reports/v09/core-preview/alpine-morning.png",
+        "expected": "e2c13f809ab9ff2e491dd9320e741c196f183a4c81c41cb9405bf4e89894522f",
+        "actual": "e2c13f809ab9ff2e491dd9320e741c196f183a4c81c41cb9405bf4e89894522f",
+        "matches": true
+      },
+      {
+        "experiment": "H1",
+        "path": "reports/v09/core-preview/facade-blue.png",
+        "expected": "668b7d22302db55f39e8942fed9d806f58f02b7d83814b4e54b956aa58380695",
+        "actual": "668b7d22302db55f39e8942fed9d806f58f02b7d83814b4e54b956aa58380695",
+        "matches": true
+      },
+      {
+        "experiment": "H1",
+        "path": "reports/v09/core-preview/facade-golden.png",
+        "expected": "fa9a45b13b869df04b5c466ab701add399add86bf17a4331516a6d091ca701c9",
+        "actual": "fa9a45b13b869df04b5c466ab701add399add86bf17a4331516a6d091ca701c9",
+        "matches": true
+      },
+      {
+        "experiment": "H1",
+        "path": "reports/v09/core-preview/fruit-window.png",
+        "expected": "1ec66a4cb8f9a281b3137014c09f453d78cfc13a5e3834130efd65f097683a47",
+        "actual": "1ec66a4cb8f9a281b3137014c09f453d78cfc13a5e3834130efd65f097683a47",
+        "matches": true
+      },
+      {
+        "experiment": "H1",
+        "path": "reports/v09/core-preview/vase-oranges.png",
+        "expected": "226ac8543cbbd751314e70dd3f40235f8d5c7649098810a92bf7b84ee407f953",
+        "actual": "226ac8543cbbd751314e70dd3f40235f8d5c7649098810a92bf7b84ee407f953",
+        "matches": true
+      },
+      {
+        "experiment": "H2",
+        "path": "reports/v09/hypothesis02/alpine-dusk.png",
+        "expected": "a254f651d0bcbb66367aad73830d8d235e9863b972d23155ef1bfcb1a6f1506f",
+        "actual": "a254f651d0bcbb66367aad73830d8d235e9863b972d23155ef1bfcb1a6f1506f",
+        "matches": true
+      },
+      {
+        "experiment": "H2",
+        "path": "reports/v09/hypothesis02/alpine-morning.png",
+        "expected": "8fd80a870613cc6575e5c10068e906213814b243ac281af9e8d0d01954c1e9ca",
+        "actual": "8fd80a870613cc6575e5c10068e906213814b243ac281af9e8d0d01954c1e9ca",
+        "matches": true
+      },
+      {
+        "experiment": "H2",
+        "path": "reports/v09/hypothesis02/facade-blue.png",
+        "expected": "40dd10ac01d70a83031fa59a5a31ec86bf5be2340836af8408f397e59b5eb3d5",
+        "actual": "40dd10ac01d70a83031fa59a5a31ec86bf5be2340836af8408f397e59b5eb3d5",
+        "matches": true
+      },
+      {
+        "experiment": "H2",
+        "path": "reports/v09/hypothesis02/facade-golden.png",
+        "expected": "757366c186daecd7115fc9eade54f197d57c3d97e99f589911bdf2fdf1c7b9ee",
+        "actual": "757366c186daecd7115fc9eade54f197d57c3d97e99f589911bdf2fdf1c7b9ee",
+        "matches": true
+      },
+      {
+        "experiment": "H2",
+        "path": "reports/v09/hypothesis02/fruit-window.png",
+        "expected": "e3eeed45e1ff0d191c22b13f45b17160d3c0e552e12f2fd358699d642752773d",
+        "actual": "e3eeed45e1ff0d191c22b13f45b17160d3c0e552e12f2fd358699d642752773d",
+        "matches": true
+      },
+      {
+        "experiment": "H2",
+        "path": "reports/v09/hypothesis02/vase-oranges.png",
+        "expected": "7b730e86881913bc02ae3be191ef9fd6cfa23cfd55638dc1158114069a3ba84d",
+        "actual": "7b730e86881913bc02ae3be191ef9fd6cfa23cfd55638dc1158114069a3ba84d",
+        "matches": true
+      },
+      {
+        "experiment": "H3",
+        "path": "reports/v09/hypothesis03/facade-golden.png",
+        "expected": "d0895d134fb52a8971c619718a6ceb2da5931be500e9db074efcd1ede8aeca7b",
+        "actual": "d0895d134fb52a8971c619718a6ceb2da5931be500e9db074efcd1ede8aeca7b",
+        "matches": true
+      },
+      {
+        "experiment": "H3",
+        "path": "reports/v09/hypothesis03/facade-blue.png",
+        "expected": "f1063ebe0ff5951c0a3da0dd2e0ec16b830dfbfc2d8607ddd362d80a8f5b34dc",
+        "actual": "f1063ebe0ff5951c0a3da0dd2e0ec16b830dfbfc2d8607ddd362d80a8f5b34dc",
+        "matches": true
+      },
+      {
+        "experiment": "H3",
+        "path": "reports/v09/hypothesis03/alpine-morning.png",
+        "expected": "f59d76c06d406641cd017c064d27864647416a0ea8249ba7f935fc468c9d8bd4",
+        "actual": "f59d76c06d406641cd017c064d27864647416a0ea8249ba7f935fc468c9d8bd4",
+        "matches": true
+      },
+      {
+        "experiment": "H3",
+        "path": "reports/v09/hypothesis03/alpine-dusk.png",
+        "expected": "e5d41c78b694ae75e54e066214c085409ee924274213249ff816e854790f9eb8",
+        "actual": "e5d41c78b694ae75e54e066214c085409ee924274213249ff816e854790f9eb8",
+        "matches": true
+      },
+      {
+        "experiment": "H3",
+        "path": "reports/v09/hypothesis03/coast-afternoon.png",
+        "expected": "59d9ad96254be0dc1f5d5ed64c545ae63ac4cdd838295d53c5fcddb405e799d9",
+        "actual": "59d9ad96254be0dc1f5d5ed64c545ae63ac4cdd838295d53c5fcddb405e799d9",
+        "matches": true
+      },
+      {
+        "experiment": "H3",
+        "path": "reports/v09/hypothesis03/forest-path.png",
+        "expected": "b6c0217ee516192d0a8b75e04ad6860a5df0ebd8f30b2529e569b1abd53340fd",
+        "actual": "b6c0217ee516192d0a8b75e04ad6860a5df0ebd8f30b2529e569b1abd53340fd",
+        "matches": true
+      },
+      {
+        "experiment": "H3",
+        "path": "reports/v09/hypothesis03/fruit-window.png",
+        "expected": "0a52e8c3134831726c4ea55db2cf590def8b8f36a8cd370a418a8655e2ed0550",
+        "actual": "0a52e8c3134831726c4ea55db2cf590def8b8f36a8cd370a418a8655e2ed0550",
+        "matches": true
+      },
+      {
+        "experiment": "H3",
+        "path": "reports/v09/hypothesis03/vase-oranges.png",
+        "expected": "e81aec2b735cca14a54cf3944708b94dfa84c2c243391137d7b77bf9ff5e28b8",
+        "actual": "e81aec2b735cca14a54cf3944708b94dfa84c2c243391137d7b77bf9ff5e28b8",
+        "matches": true
+      }
+    ],
+    "sourceEvolution": [
+      {
+        "path": "web/crf-generative09.js",
+        "historicalInputSHA256": "0641b41194cd18a562ce3d09c1897c88551490f85350194396d1dd86bbd18821",
+        "currentSHA256": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+        "changedSinceHistoricalExperiment": true,
+        "meaning": "Historical input identity retained. Current code/model evolution is disclosed separately; old output files and H3 embedded-model rerenders are checked below."
+      },
+      {
+        "path": "web/assets/v09/shared-appearance.json",
+        "historicalInputSHA256": "de77bedfa1993614226ad776841bd53e59b3b5fbcb57e84e20e167b55b6fb34e",
+        "currentSHA256": "c1ae52b759ca5b39a6672142ae94eedf050ede5a91a7c95853b0e22048628a4c",
+        "changedSinceHistoricalExperiment": true,
+        "meaning": "Historical input identity retained. Current code/model evolution is disclosed separately; old output files and H3 embedded-model rerenders are checked below."
+      }
+    ],
+    "historicalRenders": [
+      {
+        "experiment": "H3",
+        "scene": "reports/v09/hypothesis03/facade-golden.scene.json",
+        "sceneSHA256": "73438c824dacdebcbf86d2d8e19569fc88b0609c15c92c278e780f00470e98f6",
+        "embeddedModelPresent": true,
+        "embeddedModelId": "shared-1ffd72436b03f29b",
+        "expectedHistoricalModelId": "shared-1ffd72436b03f29b",
+        "expectedPixelSHA256": "b9dbb8ce5971db666452ecea844c8a49fa91dc170f9cced2c2df01fe822bdd08",
+        "rerenderedPixelSHA256": "b9dbb8ce5971db666452ecea844c8a49fa91dc170f9cced2c2df01fe822bdd08",
+        "exact": true,
+        "embeddedModelObjectSHA256": "19bb3f152359c1fa9b46e53e59778a072cb9efc56f9b721ba6b4169e14e86aeb"
+      },
+      {
+        "experiment": "H3",
+        "scene": "reports/v09/hypothesis03/facade-blue.scene.json",
+        "sceneSHA256": "51725de9612312472ea45d611385fff395d80fc4974c387e5bbd793b81004dc6",
+        "embeddedModelPresent": true,
+        "embeddedModelId": "shared-1ffd72436b03f29b",
+        "expectedHistoricalModelId": "shared-1ffd72436b03f29b",
+        "expectedPixelSHA256": "96bb4edcb3dfe48e4d485ee09f2ad3c279a1ebecf61b93c732e79de854997aa5",
+        "rerenderedPixelSHA256": "96bb4edcb3dfe48e4d485ee09f2ad3c279a1ebecf61b93c732e79de854997aa5",
+        "exact": true,
+        "embeddedModelObjectSHA256": "19bb3f152359c1fa9b46e53e59778a072cb9efc56f9b721ba6b4169e14e86aeb"
+      },
+      {
+        "experiment": "H3",
+        "scene": "reports/v09/hypothesis03/alpine-morning.scene.json",
+        "sceneSHA256": "d9eb2e171bec0272f5e6709018895d20ec04a44a86562942eca68aa0305026a3",
+        "embeddedModelPresent": true,
+        "embeddedModelId": "shared-1ffd72436b03f29b",
+        "expectedHistoricalModelId": "shared-1ffd72436b03f29b",
+        "expectedPixelSHA256": "fa94b5cb67c503d386567e72f3af6d433130c9ed0b57d9d17305fd8ac9bdef38",
+        "rerenderedPixelSHA256": "fa94b5cb67c503d386567e72f3af6d433130c9ed0b57d9d17305fd8ac9bdef38",
+        "exact": true,
+        "embeddedModelObjectSHA256": "19bb3f152359c1fa9b46e53e59778a072cb9efc56f9b721ba6b4169e14e86aeb"
+      },
+      {
+        "experiment": "H3",
+        "scene": "reports/v09/hypothesis03/alpine-dusk.scene.json",
+        "sceneSHA256": "fff996484935fc8ced73e36cc3ccf21e158ee44758b018741bb160249dec7ec5",
+        "embeddedModelPresent": true,
+        "embeddedModelId": "shared-1ffd72436b03f29b",
+        "expectedHistoricalModelId": "shared-1ffd72436b03f29b",
+        "expectedPixelSHA256": "db0af5ab103d6579b2fd00d9e21c41ad6b537bd1fbbe658b7a86f6d690294235",
+        "rerenderedPixelSHA256": "db0af5ab103d6579b2fd00d9e21c41ad6b537bd1fbbe658b7a86f6d690294235",
+        "exact": true,
+        "embeddedModelObjectSHA256": "19bb3f152359c1fa9b46e53e59778a072cb9efc56f9b721ba6b4169e14e86aeb"
+      },
+      {
+        "experiment": "H3",
+        "scene": "reports/v09/hypothesis03/coast-afternoon.scene.json",
+        "sceneSHA256": "0caf58d893920af5a82922a3b27f1133e5962a895af89b65613a7b698ead64af",
+        "embeddedModelPresent": true,
+        "embeddedModelId": "shared-1ffd72436b03f29b",
+        "expectedHistoricalModelId": "shared-1ffd72436b03f29b",
+        "expectedPixelSHA256": "223f228c79f961ce39907232f7b9a4eeaf6cb825e3ae9fc76c7ccc90282d0a38",
+        "rerenderedPixelSHA256": "223f228c79f961ce39907232f7b9a4eeaf6cb825e3ae9fc76c7ccc90282d0a38",
+        "exact": true,
+        "embeddedModelObjectSHA256": "19bb3f152359c1fa9b46e53e59778a072cb9efc56f9b721ba6b4169e14e86aeb"
+      },
+      {
+        "experiment": "H3",
+        "scene": "reports/v09/hypothesis03/forest-path.scene.json",
+        "sceneSHA256": "4b1e3cd5a0d4c99dfa2fc31d1aa8f52ece57e4bb609a8adb6aeb2035ccef597b",
+        "embeddedModelPresent": true,
+        "embeddedModelId": "shared-1ffd72436b03f29b",
+        "expectedHistoricalModelId": "shared-1ffd72436b03f29b",
+        "expectedPixelSHA256": "802afeee6736dc7335d5ac4e314f33df4fc6e2d7ea1eb93eb78109f139b8e3a5",
+        "rerenderedPixelSHA256": "802afeee6736dc7335d5ac4e314f33df4fc6e2d7ea1eb93eb78109f139b8e3a5",
+        "exact": true,
+        "embeddedModelObjectSHA256": "19bb3f152359c1fa9b46e53e59778a072cb9efc56f9b721ba6b4169e14e86aeb"
+      },
+      {
+        "experiment": "H3",
+        "scene": "reports/v09/hypothesis03/fruit-window.scene.json",
+        "sceneSHA256": "6f8a94a833e0632be92009674f49527eab9d2ac6db80b577ca698b477f16256f",
+        "embeddedModelPresent": true,
+        "embeddedModelId": "shared-1ffd72436b03f29b",
+        "expectedHistoricalModelId": "shared-1ffd72436b03f29b",
+        "expectedPixelSHA256": "4c2a82a55b7335bc980e37825386dcfe2103cf99283852cc3a6e791bda87a19d",
+        "rerenderedPixelSHA256": "4c2a82a55b7335bc980e37825386dcfe2103cf99283852cc3a6e791bda87a19d",
+        "exact": true,
+        "embeddedModelObjectSHA256": "19bb3f152359c1fa9b46e53e59778a072cb9efc56f9b721ba6b4169e14e86aeb"
+      },
+      {
+        "experiment": "H3",
+        "scene": "reports/v09/hypothesis03/vase-oranges.scene.json",
+        "sceneSHA256": "64f86d3253eee9faf27070de5c24d7ef4a25e325015b4166be0d4f0ba7093b56",
+        "embeddedModelPresent": true,
+        "embeddedModelId": "shared-1ffd72436b03f29b",
+        "expectedHistoricalModelId": "shared-1ffd72436b03f29b",
+        "expectedPixelSHA256": "3f3a9eca142e8f06191424b46bc55de105ee0192143f7ce160e577816c69ee15",
+        "rerenderedPixelSHA256": "3f3a9eca142e8f06191424b46bc55de105ee0192143f7ce160e577816c69ee15",
+        "exact": true,
+        "embeddedModelObjectSHA256": "19bb3f152359c1fa9b46e53e59778a072cb9efc56f9b721ba6b4169e14e86aeb"
+      }
+    ],
+    "allMatched": true,
+    "protocolSha256": "299276050dd4890f52b74fa9e63ff0871716b5f12ad4fe433293a6616a963bc6",
+    "terminalProtocolMatches": true,
+    "historicalSourceCaveat": [
+      "H1",
+      "H2"
+    ],
+    "historicalInputCaveat": "H1/H2 prior source snapshots are unavailable. H3 is pixel-verified using its embedded historical model and the current evaluator. An embedded JSON object does not preserve the byte formatting of the earlier standalone model file, so its original raw-file SHA is retained as historical metadata, not claimed reverified."
+  },
+  "privacy": {
+    "publicTextFilesScanned": 407,
+    "credentialValuesPrinted": false,
+    "credentialFindings": [],
+    "hostingStatic": false,
+    "note": "Source-level privacy check and local Worker boundary checks only; hosting authentication is verified separately in production."
+  },
+  "built": {
+    "status": "passed",
+    "allPublishedRoutes": 813,
+    "currentSourceFiles": 813,
+    "unpublishedCurrentSources": [],
+    "staleManifestSources": [],
+    "staticFetches": 860,
+    "expandedDistBytes": 255879841,
+    "buildReportedExpandedBytes": 255879841,
+    "headroomBytes": 6264159,
+    "belowLimit": true,
+    "privacy": {
+      "statusDoesNotReturnKey": true,
+      "noCredentialStatus": 503,
+      "crossOriginStatus": 403
+    },
+    "aliases": [
+      {
+        "url": "/",
+        "expectedFile": "web/index.html",
+        "status": 200,
+        "sha256": "a7c41ad63ca159bc3db17787eca1af9506921c8b2bf1fed821d8fff2fd0f54ef",
+        "byteExact": true
+      },
+      {
+        "url": "/index.html",
+        "expectedFile": "web/index.html",
+        "status": 200,
+        "sha256": "a7c41ad63ca159bc3db17787eca1af9506921c8b2bf1fed821d8fff2fd0f54ef",
+        "byteExact": true
+      },
+      {
+        "url": "/studio09",
+        "expectedFile": "web/studio09.html",
+        "status": 200,
+        "sha256": "681b48ec9b3bbe84162548c8e731e12205f9f7ab800c0b8fe327981f272ed40c",
+        "byteExact": true
+      },
+      {
+        "url": "/studio09.html",
+        "expectedFile": "web/studio09.html",
+        "status": 200,
+        "sha256": "681b48ec9b3bbe84162548c8e731e12205f9f7ab800c0b8fe327981f272ed40c",
+        "byteExact": true
+      },
+      {
+        "url": "/gaussian08",
+        "expectedFile": "web/gaussian08.html",
+        "status": 200,
+        "sha256": "832ec91e99ca904660ccf0638c3c2a095525f20a23203b316ed9e883a155908b",
+        "byteExact": true
+      },
+      {
+        "url": "/gaussian08.html",
+        "expectedFile": "web/gaussian08.html",
+        "status": 200,
+        "sha256": "832ec91e99ca904660ccf0638c3c2a095525f20a23203b316ed9e883a155908b",
+        "byteExact": true
+      },
+      {
+        "url": "/studio07",
+        "expectedFile": "web/studio07.html",
+        "status": 200,
+        "sha256": "6d327687566ca27dce424bf38861afd3fb0e5bd0a2034509948e6cf81d532c8c",
+        "byteExact": true
+      },
+      {
+        "url": "/studio07.html",
+        "expectedFile": "web/studio07.html",
+        "status": 200,
+        "sha256": "6d327687566ca27dce424bf38861afd3fb0e5bd0a2034509948e6cf81d532c8c",
+        "byteExact": true
+      },
+      {
+        "url": "/canvas07.html",
+        "expectedFile": "web/canvas07.html",
+        "status": 200,
+        "sha256": "9d9eafa59540449c34c31198ae3ffedddefd9dd2ac273533caeb8b8e3389c41d",
+        "byteExact": true
+      },
+      {
+        "url": "/editor06.html",
+        "expectedFile": "web/editor06.html",
+        "status": 200,
+        "sha256": "50d54748c24fc80d83f8a778bd4993742c1c13ba2966277da5491fa83029aab5",
+        "byteExact": true
+      },
+      {
+        "url": "/editor05.html",
+        "expectedFile": "web/editor05.html",
+        "status": 200,
+        "sha256": "c6568cb1459416cb6664f31046626e1d8a972e40de26028bdaf8d642bb4a8305",
+        "byteExact": true
+      }
+    ]
+  },
+  "media": {
+    "files": [
+      {
+        "path": "web/assets/v09/media/01_ivory_facade.mp4",
+        "sha256": "4fb479539a5338034834f827884ea9597e5f2d77b809456445fedadee3e1ff17",
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "nb_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      },
+      {
+        "path": "web/assets/v09/media/04_cold_alpine.mp4",
+        "sha256": "18a9fab29350eb1cdea498b823cd586993fb5070b131891b3c0cbb1378475d02",
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "nb_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      },
+      {
+        "path": "web/assets/v09/media/08_three_fruits.mp4",
+        "sha256": "7f5782245ad5e4bd00238211107a5bdf6f9b97702a082eae14fd738b26da2f28",
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "24/1",
+            "nb_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      }
+    ],
+    "actualMovieFiles": 3,
+    "requiredCategories": 3,
+    "visualTemporalReview": "not_performed_by_this_local_audit",
+    "newViewGeometry": "Declared image-plane depth/parallax; not recovered multiview ground truth"
+  },
+  "contracts": {
+    "schema": "crf.editor_contract_execution.v0.9",
+    "startedAt": "2026-11-21T16:48:25.004Z",
+    "completedAt": "2026-11-21T16:48:40.854Z",
+    "status": "passed",
+    "command": "node --test --test-reporter=tap tests/test_editor09_contract.cjs",
+    "exitCode": 0,
+    "tests": 7,
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "sourceSHA256": {
+      "tests/test_editor09_contract.cjs": "6711375369b3b898ceded195983af79c72fec8f2c92ecc645e14a5dd496d602f",
+      "web/editor09.js": "33f6155fe2cf63aa88a098c35702230b5141d2b892583bbfbc947304d537565f",
+      "web/studio09.html": "681b48ec9b3bbe84162548c8e731e12205f9f7ab800c0b8fe327981f272ed40c",
+      "web/render-worker09.js": "17abcc918f203b6ef1d25c33486787d0e2e13dd62a6bc24f08c1fdb464518fe9",
+      "web/crf-gaussian08.js": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+      "web/crf-generative09.js": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+      "web/crf-boundary09.js": "8b3470301d73840d3ee238c06ffbdf14ec659094f59e7bd5b8bca81b213ccdad"
+    },
+    "sourcesUnchangedDuringRun": true,
+    "networkProviderCalls": 0,
+    "scope": "Shipped editor functions and actual Worker source in a local transport/DOM harness; browser layout and browser video codec are not emulated.",
+    "currentSourcesMatch": true
+  },
+  "gates": {
+    "G1": {
+      "status": "partial",
+      "completedOriginalPhotoCases": 1,
+      "requiredCases": 12,
+      "streetMetrics": {
+        "mae": 0.6607011494252873,
+        "rmse": 0.9787852112466363,
+        "psnr": 48.31705563175143,
+        "ssim": 0.9907963480840976,
+        "maxError": 3,
+        "exactRGBFraction": 0.3081784107946027,
+        "evaluatedPixels": 667000,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      "jointStreetPass": true,
+      "exact100": false,
+      "observedResidualGaussians": 100000,
+      "summary": "One original street meets the joint fidelity target with a disclosed larger Gaussian budget. The full twelve-image set and exact reproduction are not established."
+    },
+    "G2": {
+      "status": "not_passed",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "actualOutputCount": 6
+        },
+        {
+          "id": "H2",
+          "actualOutputCount": 6
+        },
+        {
+          "id": "H3",
+          "actualOutputCount": 8
+        }
+      ],
+      "historicalTrainingSources": 23,
+      "historicalSourceGroups": {
+        "train": 23,
+        "validation": 7,
+        "test": 12
+      },
+      "currentPublishedModel": {
+        "id": "shared-1b02095c",
+        "observationCount": 124,
+        "sha256": "c1ae52b759ca5b39a6672142ae94eedf050ede5a91a7c95853b0e22048628a4c"
+      },
+      "fullP3Passed": false,
+      "terminalStatus": "not_run",
+      "terminalTasks": 180,
+      "independentVisualEvidence": "reports/v09/integration_visual_review.json",
+      "humanRatings": null,
+      "summary": "The shared generative family is executable and produces new pixels, but inspected outputs remain procedural in appearance. No independent photorealism pass or terminal benchmark is asserted."
+    },
+    "G3": {
+      "status": "partial",
+      "controlledPassed": true,
+      "naturalHiddenWallGroundTruth": null,
+      "developmentFixtures": true,
+      "summary": "Independent analytic mixed-edge and controlled masked-surface tests pass. The fixtures informed development; unseen natural hidden-wall accuracy and natural alpha truth remain unknown."
+    },
+    "G4": {
+      "status": "partial",
+      "actualMovieFiles": 3,
+      "requiredCategories": 3,
+      "temporalReview": "not_performed_by_this_local_audit",
+      "summary": "State continuity and code rendering are testable locally; three production media examples, temporal visual review, and true geometry evidence are not certified by this audit."
+    },
+    "G5": {
+      "status": "partial",
+      "legacyFilesByteExact": true,
+      "localBuiltRoutes": "passed",
+      "productionVerification": "pending_separate_owner_review",
+      "summary": "Old source bytes and local compiled delivery can be checked. Actual browser behavior, deployed privacy, downloads and production task execution require the production review."
+    }
+  },
+  "finalAcceptanceOverwritten": false
+}

@@ -1,0 +1,911 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 5,
+  "query": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "checkpoint": {
+    "sessionId": "crf09_e5ccf6cd-5556-4a02-a656-53316025d65f",
+    "round": 5,
+    "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+    "subtopic": "强光照明：明确投影、亮暗交界、保留纹理",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:52:17.149Z",
+    "runId": "crf07_6f02472f-612b-4821-9f06-d0836136574c",
+    "queries": [
+      "site:pexels.com photo \"apples pears oranges\" \"ceramic vase\" still life",
+      "site:commons.wikimedia.org \"apples pears oranges\" \"ceramic vase\" still life photograph",
+      "site:pexels.com photo still life fruit \"strong lighting\" cast shadow",
+      "site:commons.wikimedia.org \"still life\" fruit \"strong light\" shadow photograph",
+      "site:pexels.com photo ceramic vase texture close up natural light",
+      "site:pexels.com photo \"fruit bowl\" vase still life",
+      "site:commons.wikimedia.org \"still life\" apples oranges ceramic vase photograph",
+      "site:pexels.com photo \"orange\" \"vase\" still life fruit",
+      "site:commons.wikimedia.org pear apple orange still life photograph file",
+      "site:pexels.com photo \"strong shadows\" fruit still life",
+      "site:commons.wikimedia.org \"still life\" fruit \"window light\" photograph",
+      "site:pexels.com photo \"apple\" \"orange\" still life shadows"
+    ],
+    "requestIds": [
+      "17fee2d3-3eaa-4b84-9973-0d608e3abe6f"
+    ],
+    "sourceCount": 24,
+    "newSourceCount": 17,
+    "candidateCount": 17,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_60170508544c4b719ba16e4b8ef54e93",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com photo \"apples pears oranges\" \"ceramic vase\" still life",
+            "site:commons.wikimedia.org \"apples pears oranges\" \"ceramic vase\" still life photograph",
+            "site:pexels.com photo still life fruit \"strong lighting\" cast shadow",
+            "site:commons.wikimedia.org \"still life\" fruit \"strong light\" shadow photograph",
+            "site:pexels.com photo ceramic vase texture close up natural light"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+          "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+          "https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/",
+          "https://www.pexels.com/zh-cn/photo/14045574/",
+          "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_arance,_bergamotti,_cedri,_limoni_e_lumie,_1715,_01.JPG#1",
+          "https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/",
+          "https://www.pexels.com/fr-fr/photo/fruits-orange-sur-textile-blanc-10363634/",
+          "https://www.pexels.com/de-de/foto/klassische-keramikvase-in-schwach-beleuchtetem-raum-33521548/",
+          "https://www.pexels.com/photo/elegant-still-life-with-blueberries-and-wine-glass-36274324/",
+          "https://commons.wikimedia.org/wiki/Commons:Quality_images_candidates/Archives_November_2012#48",
+          "https://www.pexels.com/zh-tw/photo/28100133/",
+          "https://www.pexels.com/photo/backlit-lemon-slice-with-dramatic-lighting-35504493/",
+          "https://commons.wikimedia.org/wiki/File:Nature_morte_aux_poires,_Paul_C%C3%A9zanne_-_3194.jpg#1"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_01_a556aea527c642ef9c050e07755d5e78",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com photo \"fruit bowl\" vase still life",
+            "site:commons.wikimedia.org \"still life\" apples oranges ceramic vase photograph",
+            "site:pexels.com photo \"orange\" \"vase\" still life fruit",
+            "site:commons.wikimedia.org pear apple orange still life photograph file",
+            "site:pexels.com photo \"strong shadows\" fruit still life",
+            "site:commons.wikimedia.org \"still life\" fruit \"window light\" photograph",
+            "site:pexels.com photo \"apple\" \"orange\" still life shadows"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+          "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+          "https://www.pexels.com/fr-fr/photo/tulipes-vibrantes-avec-jus-d-orange-frais-30689951/",
+          "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+          "https://www.pexels.com/fr-fr/photo/pommes-hachees-dans-un-bol-a-melanger-orange-vif-30876394/",
+          "https://www.pexels.com/photo/wooden-bowls-and-a-jar-with-mix-of-herbs-and-spices-for-digestion-25349354/",
+          "https://www.pexels.com/fr-fr/photo/fruits-oranges-dans-un-vase-en-verre-transparent-10363630/",
+          "https://www.pexels.com/photo/red-round-fruits-near-the-white-wall-10190119/",
+          "https://www.pexels.com/zh-tw/photo/30876394/",
+          "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+          "https://commons.wikimedia.org/wiki/Category:1780s_still-life_paintings#1",
+          "https://www.pexels.com/photo/artistic-still-life-with-oranges-and-blue-bottle-34557215/",
+          "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+        "title": "Photo by Evgeniy Alekseyev on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages ... Date Mar 31, 2021 ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+        "title": "Photo by Lucas Pezeta on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A still life scene with fruit casting dramatic shadows in warm lighting. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+        "title": "File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg - Wikimedia Commons - File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg",
+        "snippet": "Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg ... English: Still Life with Apples and Oranges, by Paul Cézanne, Musée d'Orsay, Paris.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/",
+        "title": "Photo by Susheel Parihar on Pexels",
+        "snippet": "12 Views 12.4K ... Camera Canon EOS R Focal 50.0mm Aperture ƒ/1.8 ISO 100 Shutter Speed 1/500 sec Taken At Aug 24, 2024 Description # Close-up of a handcrafted clay vase being formed on a pottery wheel with a pink background. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-cn/photo/14045574/",
+        "title": "Pexels Sylwester Ficek图片",
+        "snippet": "尺寸 4000x6000 宽高比 2:3 ... 描述 # 一个带有绿叶的榅桲果在阳光的照射下，投下阴影，创造出生动而艺术的展示。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_arance,_bergamotti,_cedri,_limoni_e_lumie,_1715,_01.JPG#1",
+        "title": "File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG - Wikimedia Commons - File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG",
+        "snippet": "File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG ... Genre | still life Date | 1715 ... Source | Own work Author | Sailko ... Bergamotta scannellata",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/",
+        "title": "Photo by Mathilde Langevin on Pexels",
+        "snippet": "Afterglow ... Dimensions 3940x5500 Aspect Ratio 197 ... Software Adobe Photoshop Fix 1.7.3 Description # A collection of vintage ceramic vases with textured designs placed on a distressed stone surface, offering an artistic look. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/fruits-orange-sur-textile-blanc-10363634/",
+        "title": "Photo de Khohelen sur Pexels",
+        "snippet": "Khohelen 2,7 million vues \\ 9,6 millier téléchargements Description # Une seule orange mûre placée sur un tissu blanc avec une lumière naturelle et des ombres créant une nature morte sereine. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/de-de/foto/klassische-keramikvase-in-schwach-beleuchtetem-raum-33521548/",
+        "title": "Foto von Anna Danilina auf Pexels",
+        "snippet": "Change focus Brighten up Add frames Abmessungen 4000x6000 Seitenverhältnis 2:3 ... Verschlusszeit 1/125 Sek. ... Beschreibung # Eine detailreiche Keramikvase mit floralen Schnitzereien steht auf einem Holztisch neben einem Fenster und wirft Schatten. ### Mehr davon ... Brighten up",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/elegant-still-life-with-blueberries-and-wine-glass-36274324/",
+        "title": "Photo by Jonathan Goncalves on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages ... Date Feb 22, 2026 ... ISO 1250 Shutter Speed 1/100 sec ... Adobe Photoshop Lightroom Classic 15.1.1 (Windows) ... Description # Artistic composition with a wine glass of blueberries casting a shadow on a stool. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Commons:Quality_images_candidates/Archives_November_2012#48",
+        "title": "Commons:Quality images candidates/Archives November 2012 - Wikimedia Commons - - Support Good quality",
+        "snippet": "Neutral This DoF can be a good choice for food ... The DOF is acceptable for me if the subject is \"Sonoma Dry Jack\" ... - Oppose Very nice photo of the frame, but the lighting reflects too much off the paint. --Mattbuck 21 ... - Oppose Too much reflection.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/28100133/",
+        "title": "Pexels 上由 Ionela Mat 拍攝的相片",
+        "snippet": "Afterglow ... 焦點 50.0mm 光圈 ƒ/2.2 ... 軟體 Adobe Lightroom 7.4.1 (Windows) 說明 # 在自然光下擺放各種手工製作的陶瓷花瓶，展現顏色和質感。 ## 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/backlit-lemon-slice-with-dramatic-lighting-35504493/",
+        "title": "Photo by Joerg Hartmann on Pexels",
+        "snippet": "Afterglow Street ... 4560x3648 Aspect Ratio 5:4 Colors Date Jan 3, 2026 Downloads 56 Views ... 4 Camera DSC-RX10M4 Focal 18.92mm Aperture ƒ/3.2 ISO 100 Shutter Speed 1/640 sec ... Description # Artistic close-up of a backlit lemon slice highlighting textures. Ideal for kitchen decor. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Nature_morte_aux_poires,_Paul_C%C3%A9zanne_-_3194.jpg#1",
+        "title": "File:Nature morte aux poires, Paul Cézanne - 3194.jpg - Wikimedia Commons - File:Nature morte aux poires, Paul Cézanne - 3194.jpg",
+        "snippet": "File:Nature morte aux poires, Paul Cézanne - 3194.jpg ... Paul Cézanne: Still life with pears Artist ... Genre | still life Date | 1895 ... Permission (Reusing this file) ... Author | Elke Wetzig (User ... - Nature morte aux poires, Paul Cézanne",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+        "title": "Photo by Townsend Walton on Pexels",
+        "snippet": "Date Jul 25, 2025 Downloads 37 Views ... 2025 Software Luminar Neo Lacey, Washington, United States Description # A beautiful still life featuring fresh plums in a patterned bowl with a vibrant dahlia flower. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/tulipes-vibrantes-avec-jus-d-orange-frais-30689951/",
+        "title": "Photo de Kate Filatova sur Pexels",
+        "snippet": "Dimensions 2268x4032 Format 9:16 Couleurs Date Feb 12, 2025 Téléchargements ... Description # Tulipes colorées dans un vase avec du jus d'orange frais dans un pot Mason sur la table.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/pommes-hachees-dans-un-bol-a-melanger-orange-vif-30876394/",
+        "title": "Photo de The Wizard LiSarD sur Pexels",
+        "snippet": "Date Feb 24, 2025 Téléchargements 68 Vues 14 millier ... 3 Description # Des pommes coupées en dés éclairées par le soleil dans un bol orange sur un comptoir de cuisine, projetant des ombres artistiques.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/wooden-bowls-and-a-jar-with-mix-of-herbs-and-spices-for-digestion-25349354/",
+        "title": "Photo by Cameraman Surojit on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 3936x2624 Aspect Ratio 3 ... 2021 Software Adobe Photoshop 23.1 (Windows) Description # Warm still life featuring organic spices in bowls, fresh tangerines, and conscious food branding. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/fruits-oranges-dans-un-vase-en-verre-transparent-10363630/",
+        "title": "Photo de Khohelen sur Pexels",
+        "snippet": "Afterglow Street Festive Summer Khohelen 2,7 million vues \\ 9,6 millier téléchargements Description # Nature morte artistique mettant en scène une orange avec une lumière ombragée et un vase en verre. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/red-round-fruits-near-the-white-wall-10190119/",
+        "title": "Photo by Maria Tsegelnik on Pexels",
+        "snippet": "Description # Red berries hanging with shadows on a white wall, creating artistic contrast. ### More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/30876394/",
+        "title": "Pexels 上由 The Wizard LiSarD 拍攝的相片",
+        "snippet": "13.7 千 按讚數 2 說明 廚房檯面上的橘色碗裡放著切成丁的蘋果，陽光照射下來，投射出藝術的光影。 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+        "title": "Photo by Vadim Bocharov on Pexels",
+        "snippet": "4524x6643 Aspect Ratio 348 ... Date Apr 10, 2019 Downloads 1.6K Views 317.1K ... Description # Elegant still life featuring a flower in a patterned vase and a citrus fruit on a plate. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:1780s_still-life_paintings#1",
+        "title": "Category:1780s still-life paintings - Wikimedia Commons - Help",
+        "snippet": "Media in category \"1780s still-life paintings\" ... Pieter Faes - Earthen vase with flowers.jpg ... George William Sartorius (circle) - A still life of fruits.jpg ... George William Sartorius - Still life with peaches, apples...etc.jpg 1,348 × 998; 877 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/artistic-still-life-with-oranges-and-blue-bottle-34557215/",
+        "title": "Photo by Valentin Ivantsov on Pexels",
+        "snippet": "Afterglow Street Festive ... Camera Canon EOS 5D Mark III ... Taken At Feb 23, 2019 Software Adobe Photoshop CC (Windows) Description # Vibrant still life showcasing oranges and a striking blue bottle on a stylish table. ## More like this",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮实际检索仍未找到同时包含“苹果、梨、整橙子、普通陶瓷花瓶”四要素的摄影详情页，也未发现 Unsplash 替代页。可用的新来源集中在“强投影/暖光静物”“陶瓷花瓶材质”“单橙子纹理/硬光”三类，但均需后续取得图像字节后才能验证果皮细节与轮廓。以下只记录搜索与语义线索，不声称已逐像素观察。\n\n```json\n{\n  \"summary\": \"本轮实际发现：Pexels 与 Wikimedia Commons 仍以单一水果、水果盘、花瓶或绘画为主；未找到四要素齐全的真实摄影详情页。强光照明线索可来自 Pexels 的‘水果投下戏剧性阴影’静物页和单橙子硬光页，但目标组合仍需下一轮继续检索。\",\n  \"features\": [\n    \"待图片验证：强光下苹果、梨、橙子的投影边缘是否清晰，亮暗交界是否形成明确的高光带与暗部转折\",\n    \"待图片验证：橙子表皮凹坑在侧硬光下是否产生微小投影，苹果表皮是否呈连续高光而非碎斑\",\n    \"待图片验证：普通陶瓷花瓶釉面在强光下是否出现窄高光条、器身亮暗过渡与承托面接触阴影\",\n    \"待图片验证：水果与花瓶在承托面上的接触阴影是否分离、是否出现反光补光\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择单一硬光或侧光、投影方向明确的静物摄影，便于提取明暗交界与接触阴影\",\n    \"主体边缘清晰、果皮纹理可辨、背景简洁，避免绘画翻拍和过度后期柔焦\",\n    \"花瓶为普通陶瓷/釉面器皿，非玻璃、非透明材质，便于提取不透明表面反射\",\n    \"来源页需为具体照片详情页，并标注许可/作者；未知则写待核验\"\n  ],\n  \"uncertainties\": [\n    \"本轮结果中没有苹果+梨+整橙子+陶瓷花瓶四要素齐全的单一摄影页\",\n    \"Pexels 结果描述含‘戏剧性阴影’，但无法确认是强光硬阴影还是暖光柔阴影\",\n    \"Commons 结果仍以绘画或分类页为主，不是目标静物摄影\",\n    \"所有候选图像的实际纹理、投影方向与承托面接触形态均需后续取图验证\"\n  ],\n  \"nextFocus\": \"继续检索 Pexels/Commons 的‘apples pears oranges ceramic vase still life strong shadow’组合；优先寻找带投影方向说明、自然硬光或单侧窗光的静物照片；补查普通陶瓷花瓶釉面高光与水果接触阴影的单一静物页\"\n}\n```\n\n**可用的具体照片详情页（本轮实际返回，非重复列表）：**\n\n1. Pexels：Lucas Pezeta，水果静物，描述为“水果在暖光下投下戏剧性阴影”  \n   https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/  \n   用途：强光投影/明暗交界参考候选；未确认是否含苹果、梨、橙子和陶瓷花瓶。\n\n2. Pexels：Khohelen，单只成熟橙子放在白布上，自然光与阴影  \n   https://www.pexels.com/fr-fr/photo/fruits-orange-sur-textile-blanc-10363634/  \n   用途：整橙子轮廓、果皮纹理、单光源投影候选；无苹果、梨、花瓶。\n\n3. Wikimedia Commons：Dietmar Rabich，“Orange -- 2022 -- 9707”，CC BY-SA 4.0，Canon EOS 5D Mark IV，f/4，105mm  \n   https://commons.wikimedia.org/wiki/File:Orange_--_2022_--_9707.jpg  \n   用途：单橙子微距/静物纹理与硬光候选；许可与作者明确。\n\n4. Pexels：Anna Danilina，陶瓷花瓶靠窗、投射阴影  \n   https://www.pexels.com/de-de/foto/klassische-keramikvase-in-schwach-beleuchtetem-raum-33521548/  \n   用途：普通陶瓷花瓶釉面、窗光投影、承托面接触候选；无水果。\n\n5. Pexels：Mathilde Langevin，复古陶瓷花瓶纹理，置于石面  \n   https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/  \n   用途：陶瓷表面纹理与承托面材质候选；非目标组合。\n\n6. Pexels：Ionela Mat，自然光下手工陶瓷花瓶的颜色与质感  \n   https://www.pexels.com/zh-tw/photo/28100133/  \n   用途：陶瓷花瓶自然光材质候选；无水果。\n\n7. Pexels：Susheel Parihar，手工陶土花瓶在陶轮上，f/1.8，ISO 100  \n   https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/  \n   用途：普通陶瓷/陶土表面质感候选；不是静物承托场景。\n\n**给图形函数的转化建议（仅基于网页描述，待图像验证）：** 强光方向宜设为单侧偏高，投影边缘保留一定硬度但避免全黑；橙子表皮凹坑可用低频法线扰动加局部微阴影，苹果高光宜连续，花瓶釉面高光宜窄而长，并在底部与承托面之间加入接触暗带与轻微反光补光。上述均需后续取图后确认，不应直接当作已拟合参数。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages ... Date Mar 31, 2021 ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames Description # A still life scene with fruit casting dramatic shadows in warm lighting. ## More like this Add filters, effects Make presentations Create photo collages Add custom frames",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+      "title": "File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg - Wikimedia Commons - File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg",
+      "snippet": "Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg ... English: Still Life with Apples and Oranges, by Paul Cézanne, Musée d'Orsay, Paris.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/",
+      "title": "Photo by Susheel Parihar on Pexels",
+      "snippet": "12 Views 12.4K ... Camera Canon EOS R Focal 50.0mm Aperture ƒ/1.8 ISO 100 Shutter Speed 1/500 sec Taken At Aug 24, 2024 Description # Close-up of a handcrafted clay vase being formed on a pottery wheel with a pink background. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-cn/photo/14045574/",
+      "title": "Pexels Sylwester Ficek图片",
+      "snippet": "尺寸 4000x6000 宽高比 2:3 ... 描述 # 一个带有绿叶的榅桲果在阳光的照射下，投下阴影，创造出生动而艺术的展示。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_arance,_bergamotti,_cedri,_limoni_e_lumie,_1715,_01.JPG#1",
+      "title": "File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG - Wikimedia Commons - File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG",
+      "snippet": "File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG ... Genre | still life Date | 1715 ... Source | Own work Author | Sailko ... Bergamotta scannellata",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/",
+      "title": "Photo by Mathilde Langevin on Pexels",
+      "snippet": "Afterglow ... Dimensions 3940x5500 Aspect Ratio 197 ... Software Adobe Photoshop Fix 1.7.3 Description # A collection of vintage ceramic vases with textured designs placed on a distressed stone surface, offering an artistic look. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/fruits-orange-sur-textile-blanc-10363634/",
+      "title": "Photo de Khohelen sur Pexels",
+      "snippet": "Khohelen 2,7 million vues \\ 9,6 millier téléchargements Description # Une seule orange mûre placée sur un tissu blanc avec une lumière naturelle et des ombres créant une nature morte sereine. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/de-de/foto/klassische-keramikvase-in-schwach-beleuchtetem-raum-33521548/",
+      "title": "Foto von Anna Danilina auf Pexels",
+      "snippet": "Change focus Brighten up Add frames Abmessungen 4000x6000 Seitenverhältnis 2:3 ... Verschlusszeit 1/125 Sek. ... Beschreibung # Eine detailreiche Keramikvase mit floralen Schnitzereien steht auf einem Holztisch neben einem Fenster und wirft Schatten. ### Mehr davon ... Brighten up",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/elegant-still-life-with-blueberries-and-wine-glass-36274324/",
+      "title": "Photo by Jonathan Goncalves on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages ... Date Feb 22, 2026 ... ISO 1250 Shutter Speed 1/100 sec ... Adobe Photoshop Lightroom Classic 15.1.1 (Windows) ... Description # Artistic composition with a wine glass of blueberries casting a shadow on a stool. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Commons:Quality_images_candidates/Archives_November_2012#48",
+      "title": "Commons:Quality images candidates/Archives November 2012 - Wikimedia Commons - - Support Good quality",
+      "snippet": "Neutral This DoF can be a good choice for food ... The DOF is acceptable for me if the subject is \"Sonoma Dry Jack\" ... - Oppose Very nice photo of the frame, but the lighting reflects too much off the paint. --Mattbuck 21 ... - Oppose Too much reflection.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/28100133/",
+      "title": "Pexels 上由 Ionela Mat 拍攝的相片",
+      "snippet": "Afterglow ... 焦點 50.0mm 光圈 ƒ/2.2 ... 軟體 Adobe Lightroom 7.4.1 (Windows) 說明 # 在自然光下擺放各種手工製作的陶瓷花瓶，展現顏色和質感。 ## 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/backlit-lemon-slice-with-dramatic-lighting-35504493/",
+      "title": "Photo by Joerg Hartmann on Pexels",
+      "snippet": "Afterglow Street ... 4560x3648 Aspect Ratio 5:4 Colors Date Jan 3, 2026 Downloads 56 Views ... 4 Camera DSC-RX10M4 Focal 18.92mm Aperture ƒ/3.2 ISO 100 Shutter Speed 1/640 sec ... Description # Artistic close-up of a backlit lemon slice highlighting textures. Ideal for kitchen decor. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Nature_morte_aux_poires,_Paul_C%C3%A9zanne_-_3194.jpg#1",
+      "title": "File:Nature morte aux poires, Paul Cézanne - 3194.jpg - Wikimedia Commons - File:Nature morte aux poires, Paul Cézanne - 3194.jpg",
+      "snippet": "File:Nature morte aux poires, Paul Cézanne - 3194.jpg ... Paul Cézanne: Still life with pears Artist ... Genre | still life Date | 1895 ... Permission (Reusing this file) ... Author | Elke Wetzig (User ... - Nature morte aux poires, Paul Cézanne",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/elegant-still-life-with-plums-and-dahlia-flower-33164291/",
+      "title": "Photo by Townsend Walton on Pexels",
+      "snippet": "Date Jul 25, 2025 Downloads 37 Views ... 2025 Software Luminar Neo Lacey, Washington, United States Description # A beautiful still life featuring fresh plums in a patterned bowl with a vibrant dahlia flower. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/tulipes-vibrantes-avec-jus-d-orange-frais-30689951/",
+      "title": "Photo de Kate Filatova sur Pexels",
+      "snippet": "Dimensions 2268x4032 Format 9:16 Couleurs Date Feb 12, 2025 Téléchargements ... Description # Tulipes colorées dans un vase avec du jus d'orange frais dans un pot Mason sur la table.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/pommes-hachees-dans-un-bol-a-melanger-orange-vif-30876394/",
+      "title": "Photo de The Wizard LiSarD sur Pexels",
+      "snippet": "Date Feb 24, 2025 Téléchargements 68 Vues 14 millier ... 3 Description # Des pommes coupées en dés éclairées par le soleil dans un bol orange sur un comptoir de cuisine, projetant des ombres artistiques.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/wooden-bowls-and-a-jar-with-mix-of-herbs-and-spices-for-digestion-25349354/",
+      "title": "Photo by Cameraman Surojit on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 3936x2624 Aspect Ratio 3 ... 2021 Software Adobe Photoshop 23.1 (Windows) Description # Warm still life featuring organic spices in bowls, fresh tangerines, and conscious food branding. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/fruits-oranges-dans-un-vase-en-verre-transparent-10363630/",
+      "title": "Photo de Khohelen sur Pexels",
+      "snippet": "Afterglow Street Festive Summer Khohelen 2,7 million vues \\ 9,6 millier téléchargements Description # Nature morte artistique mettant en scène une orange avec une lumière ombragée et un vase en verre. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/red-round-fruits-near-the-white-wall-10190119/",
+      "title": "Photo by Maria Tsegelnik on Pexels",
+      "snippet": "Description # Red berries hanging with shadows on a white wall, creating artistic contrast. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/30876394/",
+      "title": "Pexels 上由 The Wizard LiSarD 拍攝的相片",
+      "snippet": "13.7 千 按讚數 2 說明 廚房檯面上的橘色碗裡放著切成丁的蘋果，陽光照射下來，投射出藝術的光影。 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/red-flower-in-clear-glass-flower-vase-2121876/",
+      "title": "Photo by Vadim Bocharov on Pexels",
+      "snippet": "4524x6643 Aspect Ratio 348 ... Date Apr 10, 2019 Downloads 1.6K Views 317.1K ... Description # Elegant still life featuring a flower in a patterned vase and a citrus fruit on a plate. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:1780s_still-life_paintings#1",
+      "title": "Category:1780s still-life paintings - Wikimedia Commons - Help",
+      "snippet": "Media in category \"1780s still-life paintings\" ... Pieter Faes - Earthen vase with flowers.jpg ... George William Sartorius (circle) - A still life of fruits.jpg ... George William Sartorius - Still life with peaches, apples...etc.jpg 1,348 × 998; 877 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/artistic-still-life-with-oranges-and-blue-bottle-34557215/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "snippet": "Afterglow Street Festive ... Camera Canon EOS 5D Mark III ... Taken At Feb 23, 2019 Software Adobe Photoshop CC (Windows) Description # Vibrant still life showcasing oranges and a striking blue bottle on a stylish table. ## More like this",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/",
+      "title": "Photo by Susheel Parihar on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/14045574/",
+      "title": "Pexels Sylwester Ficek图片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_arance,_bergamotti,_cedri,_limoni_e_lumie,_1715,_01.JPG#1",
+      "title": "File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG - Wikimedia Commons - File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/",
+      "title": "Photo by Mathilde Langevin on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/fruits-orange-sur-textile-blanc-10363634/",
+      "title": "Photo de Khohelen sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/de-de/foto/klassische-keramikvase-in-schwach-beleuchtetem-raum-33521548/",
+      "title": "Foto von Anna Danilina auf Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/elegant-still-life-with-blueberries-and-wine-glass-36274324/",
+      "title": "Photo by Jonathan Goncalves on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Commons:Quality_images_candidates/Archives_November_2012#48",
+      "title": "Commons:Quality images candidates/Archives November 2012 - Wikimedia Commons - - Support Good quality",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/28100133/",
+      "title": "Pexels 上由 Ionela Mat 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/backlit-lemon-slice-with-dramatic-lighting-35504493/",
+      "title": "Photo by Joerg Hartmann on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nature_morte_aux_poires,_Paul_C%C3%A9zanne_-_3194.jpg#1",
+      "title": "File:Nature morte aux poires, Paul Cézanne - 3194.jpg - Wikimedia Commons - File:Nature morte aux poires, Paul Cézanne - 3194.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/tulipes-vibrantes-avec-jus-d-orange-frais-30689951/",
+      "title": "Photo de Kate Filatova sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/pommes-hachees-dans-un-bol-a-melanger-orange-vif-30876394/",
+      "title": "Photo de The Wizard LiSarD sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/wooden-bowls-and-a-jar-with-mix-of-herbs-and-spices-for-digestion-25349354/",
+      "title": "Photo by Cameraman Surojit on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/fruits-oranges-dans-un-vase-en-verre-transparent-10363630/",
+      "title": "Photo de Khohelen sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/red-round-fruits-near-the-white-wall-10190119/",
+      "title": "Photo by Maria Tsegelnik on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/artistic-still-life-with-oranges-and-blue-bottle-34557215/",
+      "title": "Photo by Valentin Ivantsov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 17774,
+        "sha256": "b9954a3bdf8f65c3e347ec674b4d3f2c0ea07c998b0cd78c031ff8b383eac959"
+      },
+      "imageUrl": "https://images.pexels.com/photos/28382936/pexels-photo-28382936.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/",
+      "title": "Photo by Susheel Parihar on Pexels",
+      "sha256": "b9954a3bdf8f65c3e347ec674b4d3f2c0ea07c998b0cd78c031ff8b383eac959",
+      "bytes": 17774,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 33314,
+        "sha256": "48fe78d60d1a5e449e909f41c011cc32e4fad7b294ea9736245186be1b1822e2"
+      },
+      "imageUrl": "https://images.pexels.com/photos/14045574/pexels-photo-14045574.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/14045574/",
+      "title": "Pexels Sylwester Ficek图片",
+      "sha256": "48fe78d60d1a5e449e909f41c011cc32e4fad7b294ea9736245186be1b1822e2",
+      "bytes": 33314,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 241346,
+        "sha256": "18a0564b011d7a1cde2300463fd3187e63def43770e12d7ffa578e404ae1eff8"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG/960px-Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_arance,_bergamotti,_cedri,_limoni_e_lumie,_1715,_01.JPG#1",
+      "title": "File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG - Wikimedia Commons - File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG",
+      "sha256": "18a0564b011d7a1cde2300463fd3187e63def43770e12d7ffa578e404ae1eff8",
+      "bytes": 241346,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 735,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Sailko",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2862,
+        "height": 2190,
+        "bytes": 5599444
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 96944,
+        "sha256": "b5655db12993dcf1a148a7b010116298bf614a97adde27a636c11ffa329a9a92"
+      },
+      "imageUrl": "https://images.pexels.com/photos/15823362/pexels-photo-15823362.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/",
+      "title": "Photo by Mathilde Langevin on Pexels",
+      "sha256": "b5655db12993dcf1a148a7b010116298bf614a97adde27a636c11ffa329a9a92",
+      "bytes": 96944,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1072
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/28382936/pexels-photo-28382936.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/",
+      "title": "Photo by Susheel Parihar on Pexels",
+      "sha256": "b9954a3bdf8f65c3e347ec674b4d3f2c0ea07c998b0cd78c031ff8b383eac959",
+      "bytes": 17774,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/14045574/pexels-photo-14045574.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/14045574/",
+      "title": "Pexels Sylwester Ficek图片",
+      "sha256": "48fe78d60d1a5e449e909f41c011cc32e4fad7b294ea9736245186be1b1822e2",
+      "bytes": 33314,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG/960px-Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_arance,_bergamotti,_cedri,_limoni_e_lumie,_1715,_01.JPG#1",
+      "title": "File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG - Wikimedia Commons - File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG",
+      "sha256": "18a0564b011d7a1cde2300463fd3187e63def43770e12d7ffa578e404ae1eff8",
+      "bytes": 241346,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 735,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Sailko",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2862,
+        "height": 2190,
+        "bytes": 5599444
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/15823362/pexels-photo-15823362.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/",
+      "title": "Photo by Mathilde Langevin on Pexels",
+      "sha256": "b5655db12993dcf1a148a7b010116298bf614a97adde27a636c11ffa329a9a92",
+      "bytes": 96944,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1072,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/",
+        "title": "Photo by Susheel Parihar on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/28382936/pexels-photo-28382936.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/28382936/pexels-photo-28382936.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 17774,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "b9954a3bdf8f65c3e347ec674b4d3f2c0ea07c998b0cd78c031ff8b383eac959"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-cn/photo/14045574/",
+        "title": "Pexels Sylwester Ficek图片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/14045574/pexels-photo-14045574.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/14045574/pexels-photo-14045574.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 33314,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "48fe78d60d1a5e449e909f41c011cc32e4fad7b294ea9736245186be1b1822e2"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_arance,_bergamotti,_cedri,_limoni_e_lumie,_1715,_01.JPG#1",
+        "title": "File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG - Wikimedia Commons - File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG/960px-Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Sailko",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ABartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG/960px-Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 241346,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 735,
+        "sha256": "18a0564b011d7a1cde2300463fd3187e63def43770e12d7ffa578e404ae1eff8"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/",
+        "title": "Photo by Mathilde Langevin on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/15823362/pexels-photo-15823362.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/15823362/pexels-photo-15823362.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 96944,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1072,
+        "sha256": "b5655db12993dcf1a148a7b010116298bf614a97adde27a636c11ffa329a9a92"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/fruits-orange-sur-textile-blanc-10363634/",
+        "title": "Photo de Khohelen sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/10363634/pexels-photo-10363634.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/10363634/pexels-photo-10363634.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 85958,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1280,
+        "sha256": "09cf8a25c0dbc5470edc5e354aaa5e3a54ed0ac5f618784162e05c4d5c1b9f79"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/de-de/foto/klassische-keramikvase-in-schwach-beleuchtetem-raum-33521548/",
+        "title": "Foto von Anna Danilina auf Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/33521548/pexels-photo-33521548.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/33521548/pexels-photo-33521548.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 32230,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "e130bac25421068d789e2e120780a9eb5ac8416b033b1fe2aaf1b92bd9b59f0f"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮实际检索仍未找到同时包含“苹果、梨、整橙子、普通陶瓷花瓶”四要素的摄影详情页，也未发现 Unsplash 替代页。可用的新来源集中在“强投影/暖光静物”“陶瓷花瓶材质”“单橙子纹理/硬光”三类，但均需后续取得图像字节后才能验证果皮细节与轮廓。以下只记录搜索与语义线索，不声称已逐像素观察。\n\n```json\n{\n  \"summary\": \"本轮实际发现：Pexels 与 Wikimedia Commons 仍以单一水果、水果盘、花瓶或绘画为主；未找到四要素齐全的真实摄影详情页。强光照明线索可来自 Pexels 的‘水果投下戏剧性阴影’静物页和单橙子硬光页，但目标组合仍需下一轮继续检索。\",\n  \"features\": [\n    \"待图片验证：强光下苹果、梨、橙子的投影边缘是否清晰，亮暗交界是否形成明确的高光带与暗部转折\",\n    \"待图片验证：橙子表皮凹坑在侧硬光下是否产生微小投影，苹果表皮是否呈连续高光而非碎斑\",\n    \"待图片验证：普通陶瓷花瓶釉面在强光下是否出现窄高光条、器身亮暗过渡与承托面接触阴影\",\n    \"待图片验证：水果与花瓶在承托面上的接触阴影是否分离、是否出现反光补光\"\n  ],\n  \"selectionCriteria\": [\n    \"优先选择单一硬光或侧光、投影方向明确的静物摄影，便于提取明暗交界与接触阴影\",\n    \"主体边缘清晰、果皮纹理可辨、背景简洁，避免绘画翻拍和过度后期柔焦\",\n    \"花瓶为普通陶瓷/釉面器皿，非玻璃、非透明材质，便于提取不透明表面反射\",\n    \"来源页需为具体照片详情页，并标注许可/作者；未知则写待核验\"\n  ],\n  \"uncertainties\": [\n    \"本轮结果中没有苹果+梨+整橙子+陶瓷花瓶四要素齐全的单一摄影页\",\n    \"Pexels 结果描述含‘戏剧性阴影’，但无法确认是强光硬阴影还是暖光柔阴影\",\n    \"Commons 结果仍以绘画或分类页为主，不是目标静物摄影\",\n    \"所有候选图像的实际纹理、投影方向与承托面接触形态均需后续取图验证\"\n  ],\n  \"nextFocus\": \"继续检索 Pexels/Commons 的‘apples pears oranges ceramic vase still life strong shadow’组合；优先寻找带投影方向说明、自然硬光或单侧窗光的静物照片；补查普通陶瓷花瓶釉面高光与水果接触阴影的单一静物页\"\n}\n```\n\n**可用的具体照片详情页（本轮实际返回，非重复列表）：**\n\n1. Pexels：Lucas Pezeta，水果静物，描述为“水果在暖光下投下戏剧性阴影”  \n   https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/  \n   用途：强光投影/明暗交界参考候选；未确认是否含苹果、梨、橙子和陶瓷花瓶。\n\n2. Pexels：Khohelen，单只成熟橙子放在白布上，自然光与阴影  \n   https://www.pexels.com/fr-fr/photo/fruits-orange-sur-textile-blanc-10363634/  \n   用途：整橙子轮廓、果皮纹理、单光源投影候选；无苹果、梨、花瓶。\n\n3. Wikimedia Commons：Dietmar Rabich，“Orange -- 2022 -- 9707”，CC BY-SA 4.0，Canon EOS 5D Mark IV，f/4，105mm  \n   https://commons.wikimedia.org/wiki/File:Orange_--_2022_--_9707.jpg  \n   用途：单橙子微距/静物纹理与硬光候选；许可与作者明确。\n\n4. Pexels：Anna Danilina，陶瓷花瓶靠窗、投射阴影  \n   https://www.pexels.com/de-de/foto/klassische-keramikvase-in-schwach-beleuchtetem-raum-33521548/  \n   用途：普通陶瓷花瓶釉面、窗光投影、承托面接触候选；无水果。\n\n5. Pexels：Mathilde Langevin，复古陶瓷花瓶纹理，置于石面  \n   https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/  \n   用途：陶瓷表面纹理与承托面材质候选；非目标组合。\n\n6. Pexels：Ionela Mat，自然光下手工陶瓷花瓶的颜色与质感  \n   https://www.pexels.com/zh-tw/photo/28100133/  \n   用途：陶瓷花瓶自然光材质候选；无水果。\n\n7. Pexels：Susheel Parihar，手工陶土花瓶在陶轮上，f/1.8，ISO 100  \n   https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/  \n   用途：普通陶瓷/陶土表面质感候选；不是静物承托场景。\n\n**给图形函数的转化建议（仅基于网页描述，待图像验证）：** 强光方向宜设为单侧偏高，投影边缘保留一定硬度但避免全黑；橙子表皮凹坑可用低频法线扰动加局部微阴影，苹果高光宜连续，花瓶釉面高光宜窄而长，并在底部与承托面之间加入接触暗带与轻微反光补光。上述均需后续取图后确认，不应直接当作已拟合参数。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 19136,
+    "completion_tokens": 1275,
+    "total_tokens": 20411,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "17fee2d3-3eaa-4b84-9973-0d608e3abe6f",
+        "model": "deepseek-flash",
+        "elapsedMs": 16182,
+        "prompt_tokens": 19136,
+        "completion_tokens": 1275,
+        "total_tokens": 20411,
+        "server_tool_use": {
+          "tool_search": 12,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 36243,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 17774,
+        "sha256": "b9954a3bdf8f65c3e347ec674b4d3f2c0ea07c998b0cd78c031ff8b383eac959"
+      },
+      "imageUrl": "https://images.pexels.com/photos/28382936/pexels-photo-28382936.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/handcrafted-clay-vase-on-pottery-wheel-28382936/",
+      "title": "Photo by Susheel Parihar on Pexels",
+      "sha256": "b9954a3bdf8f65c3e347ec674b4d3f2c0ea07c998b0cd78c031ff8b383eac959",
+      "bytes": 17774,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/b9954a3bdf8f65c3e347ec674b4d3f2c0ea07c998b0cd78c031ff8b383eac959.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 33314,
+        "sha256": "48fe78d60d1a5e449e909f41c011cc32e4fad7b294ea9736245186be1b1822e2"
+      },
+      "imageUrl": "https://images.pexels.com/photos/14045574/pexels-photo-14045574.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/14045574/",
+      "title": "Pexels Sylwester Ficek图片",
+      "sha256": "48fe78d60d1a5e449e909f41c011cc32e4fad7b294ea9736245186be1b1822e2",
+      "bytes": 33314,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/48fe78d60d1a5e449e909f41c011cc32e4fad7b294ea9736245186be1b1822e2.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 241346,
+        "sha256": "18a0564b011d7a1cde2300463fd3187e63def43770e12d7ffa578e404ae1eff8"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG/960px-Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bartolomeo_bimbi,_arance,_bergamotti,_cedri,_limoni_e_lumie,_1715,_01.JPG#1",
+      "title": "File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG - Wikimedia Commons - File:Bartolomeo bimbi, arance, bergamotti, cedri, limoni e lumie, 1715, 01.JPG",
+      "sha256": "18a0564b011d7a1cde2300463fd3187e63def43770e12d7ffa578e404ae1eff8",
+      "bytes": 241346,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 735,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Sailko",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bartolomeo_bimbi%2C_arance%2C_bergamotti%2C_cedri%2C_limoni_e_lumie%2C_1715%2C_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2862,
+        "height": 2190,
+        "bytes": 5599444
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/18a0564b011d7a1cde2300463fd3187e63def43770e12d7ffa578e404ae1eff8.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 96944,
+        "sha256": "b5655db12993dcf1a148a7b010116298bf614a97adde27a636c11ffa329a9a92"
+      },
+      "imageUrl": "https://images.pexels.com/photos/15823362/pexels-photo-15823362.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-damaged-vases-15823362/",
+      "title": "Photo by Mathilde Langevin on Pexels",
+      "sha256": "b5655db12993dcf1a148a7b010116298bf614a97adde27a636c11ffa329a9a92",
+      "bytes": 96944,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1072,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/b5655db12993dcf1a148a7b010116298bf614a97adde27a636c11ffa329a9a92.webp"
+    }
+  ]
+}

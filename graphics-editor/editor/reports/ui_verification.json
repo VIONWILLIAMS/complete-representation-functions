@@ -1,0 +1,116 @@
+{
+  "schema": "crf.editor_ui_verification.v0.4",
+  "environment": "Managed cloud Chromium, CPU Gaussian fallback; native browser controls and actual downloads",
+  "checks": [
+    {
+      "name": "initial_reference_acceptance",
+      "pass": true,
+      "observed": "667000/667000, MAE 0, independent reference PNG"
+    },
+    {
+      "name": "semantic_wall_recolor",
+      "pass": true,
+      "observed": "Chinese example command visibly changed the wall to blue while windows and foreground retained appearance"
+    },
+    {
+      "name": "signal_function",
+      "pass": true,
+      "observed": "Go control extinguished upper red/white glyph and generated a green lower walking glyph"
+    },
+    {
+      "name": "undo_redo",
+      "pass": true,
+      "observed": "Undo restored 100% exact and MAE0; redo restored edited signal with 99.797% exact and MAE0.201; baseline retained separately"
+    },
+    {
+      "name": "JSON_cycle_rejection",
+      "pass": true,
+      "observed": "Attempting pole.main parent signal.main was rejected with Parent cycle errors before state commit"
+    },
+    {
+      "name": "JSON_structured_operations",
+      "pass": true,
+      "observed": "Applied parent pole translation and a new ring prototype, then displayed the new object in the tree"
+    },
+    {
+      "name": "object_copy_delete_reset",
+      "pass": true,
+      "observed": "Duplicated ring was selected, deletion removed it, reset returned scene to 18 original objects"
+    },
+    {
+      "name": "spatial_view",
+      "pass": true,
+      "observed": "Right camera preset showed yaw10 degrees and continuous Gaussian preview; image visibly reprojected"
+    },
+    {
+      "name": "fractional_edit_quality_policy",
+      "pass": true,
+      "observed": "Native keyboard input of object X=0.5 kept interactive Gaussian mode; displayed pending pixel score and preserved the independent baseline"
+    },
+    {
+      "name": "native_PNG_download",
+      "pass": true,
+      "observed": {
+        "downloadBytes": 988300,
+        "dimensions": [
+          667,
+          1000
+        ],
+        "exactPixelsAfterIndependentFileDecode": 667000,
+        "maeAfterIndependentFileDecode": 0
+      }
+    },
+    {
+      "name": "scene_JSON_download",
+      "pass": true,
+      "observed": {
+        "schema": "crf.project.v0.4",
+        "objects": 18,
+        "timelineDuration": 3,
+        "coreValidation": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "MediaRecorder_fallback_download_and_recovery",
+      "pass": true,
+      "observed": {
+        "downloadNonempty": true,
+        "decodedFrames": 6,
+        "dimensions": [
+          334,
+          500
+        ],
+        "codec": "vp9",
+        "restoredCanvas": [
+          667,
+          1000
+        ]
+      },
+      "limitation": "Playback recording dropped frames in this environment; it must not be presented as deterministic 24fps export"
+    }
+  ],
+  "deterministicVideo": {
+    "status": "passed",
+    "dimensions": [
+      667,
+      1000
+    ],
+    "decodedFrames": 72,
+    "frameRate": "24/1",
+    "durationSeconds": 3,
+    "codec": "vp8",
+    "latencyMode": "quality",
+    "encoderModuleSha256": "6b56aecce1bcb60f233e5573cd8565e25a6c41e5579b2eb150c354056a98dd48",
+    "sha256": "a6ce9cd1cc89a89c745a10af19b7c4d156109d8b4abbac668feb6865a15a8ebb",
+    "fileBytes": 2284322,
+    "toolWallTimeSeconds": 47.4611,
+    "note": "Wall time includes page reload, UI action, rendering, encoding, download and result observation; not pure encoding time."
+  },
+  "standaloneEditor": {
+    "status": "passed",
+    "scope": "Single HTML served alone; CSS, JS, data and reference PNG inline; browser initial pixel check exact100; source asset network dependencies absent. OS file-open dialogs not tested."
+  }
+}

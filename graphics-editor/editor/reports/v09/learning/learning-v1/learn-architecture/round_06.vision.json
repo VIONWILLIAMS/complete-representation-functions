@@ -1,0 +1,330 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 6,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.6.0",
+      "label": "暗墙斜向光带与玻璃杯",
+      "category": "interior-still-life",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          20,
+          26,
+          19
+        ],
+        [
+          42,
+          51,
+          38
+        ],
+        [
+          231,
+          224,
+          199
+        ],
+        [
+          117,
+          112,
+          92
+        ],
+        [
+          161,
+          162,
+          146
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "画面以深绿近黑的墙面为主，斜向平行亮带穿过右上区域，形成类似百叶或窗棂的投影；左下方桌面有一只透明玻璃杯，杯身折射暗部并带少量高光，墙面颗粒与玻璃透明感形成材质对比。构图大面积留暗，适合提取斜向光带、硬边阴影和透明杯体；墙面实际朝向和光源位置无法从画面完全确认。",
+      "tags": [
+        "斜向光带",
+        "硬边阴影",
+        "深色墙面",
+        "透明玻璃杯",
+        "桌面",
+        "低照度",
+        "窗影",
+        "材质对比",
+        "留白",
+        "静物"
+      ],
+      "limitations": [
+        "光源方向不能精确判定",
+        "玻璃杯边缘较小且分辨率有限",
+        "暗部纹理细节不足",
+        "亮带来源的百叶或窗框不可见",
+        "不能据此推断完整室内空间"
+      ]
+    },
+    {
+      "id": "ref.6.1",
+      "label": "黑白街道行人剪影与条状光影",
+      "category": "street-photography",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          8,
+          8,
+          8
+        ],
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          95,
+          95,
+          95
+        ],
+        [
+          190,
+          190,
+          185
+        ],
+        [
+          237,
+          237,
+          230
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "黑白高反差街景，画面中部偏左可见行人剪影，人物长投影落在较亮的地面上并向右延伸；亮区被斜向暗条分割，背景是几乎全黑的建筑或街面结构。适合提取行人轮廓、长投影、条状光影和城市暗部层次，但暗部细节因低照度与黑白处理大量丢失。",
+      "tags": [
+        "黑白摄影",
+        "街道",
+        "行人剪影",
+        "长投影",
+        "条状光影",
+        "高反差",
+        "城市暗部",
+        "低照度",
+        "地面亮区",
+        "轮廓"
+      ],
+      "limitations": [
+        "暗部细节几乎不可辨",
+        "行人数量与动作边界不清晰",
+        "画面中无法确认交通信号灯或立柱连接",
+        "高光局部过曝",
+        "建筑立面细节缺失",
+        "黑白处理掩盖原色"
+      ]
+    },
+    {
+      "id": "ref.6.2",
+      "label": "红砖墙旧木窗与斜影",
+      "category": "brick-window",
+      "role": "object",
+      "bbox": [
+        0.13,
+        0.06,
+        0.87,
+        0.87
+      ],
+      "palette": [
+        [
+          83,
+          41,
+          32
+        ],
+        [
+          143,
+          72,
+          53
+        ],
+        [
+          33,
+          29,
+          26
+        ],
+        [
+          108,
+          111,
+          92
+        ],
+        [
+          189,
+          177,
+          158
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "红砖立面近景，中央是一扇旧式上下推拉窗，深色窗框将玻璃分为多块；玻璃反射或透出偏灰绿的暗影，砖缝清晰，窗台与砖块有磨损和积尘。右上方一道锐利斜影压过窗面与墙面，强化了窗框和砖墙的凹凸。适合复用砖墙颗粒、旧窗框、玻璃反光和斜向硬影，但窗外景物与楼层关系不可辨。",
+      "tags": [
+        "红砖墙",
+        "旧窗框",
+        "上下推拉窗",
+        "玻璃反光",
+        "砖缝",
+        "斜向阴影",
+        "墙面颗粒",
+        "建筑细部",
+        "磨损",
+        "硬光"
+      ],
+      "limitations": [
+        "窗外景物被玻璃反射与暗部遮挡",
+        "无法确认窗后室内",
+        "斜影来源不在画面内",
+        "砖墙颜色受光照影响",
+        "窗框材质仅能粗略判断"
+      ]
+    },
+    {
+      "id": "ref.6.3",
+      "label": "砖砌公寓立面仰视窗阵",
+      "category": "brick-facade",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          137,
+          119,
+          110
+        ],
+        [
+          90,
+          74,
+          68
+        ],
+        [
+          212,
+          192,
+          157
+        ],
+        [
+          174,
+          160,
+          146
+        ],
+        [
+          39,
+          33,
+          31
+        ]
+      ],
+      "lightDirection": "top",
+      "description": "低角度仰视砖砌公寓内立面，重复的矩形窗洞与细窗框形成透视阵列；部分窗内透出暖黄光，部分窗扇反光或拉帘，左右两侧有深色百叶或凹槽结构。砖墙呈偏灰紫与棕的复古色调，窗洞、窗台和檐口产生层层接触阴影。适合复用重复窗阵列、砖墙尺度、低角度透视和混合色温，不能视为完整建筑的世界模型。",
+      "tags": [
+        "砖砌立面",
+        "公寓楼",
+        "仰视透视",
+        "重复窗阵",
+        "窗框",
+        "暖色窗光",
+        "百叶格栅",
+        "接触阴影",
+        "灰紫色调",
+        "城市建筑"
+      ],
+      "limitations": [
+        "仰视透视造成窗形比例失真",
+        "顶部天空与楼体边界不完整",
+        "部分窗内细节被帘子或反光遮挡",
+        "无法判断建筑真实高度与层数",
+        "左右侧结构细节不足",
+        "色彩可能经过滤镜处理"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "强方向光形成高反差明暗分区",
+    "硬边阴影或条状、斜向投影",
+    "矩形窗洞、窗框或桌面等线性构图",
+    "大面积暗部中保留局部亮区",
+    "粗糙墙面与光滑玻璃或地面的材质对比",
+    "整体偏暗的摄影基调",
+    "强调轮廓、几何投影和接触阴影",
+    "不同实例均围绕光线与表面关系组织"
+  ],
+  "missingEvidence": [
+    "本批未见清晰的行人信号灯灯头、灯态及立柱连接细节",
+    "缺少同一建筑的多视角与完整立面关系",
+    "缺少无阴影近距离墙面颗粒参考",
+    "窗框材质、尺寸和构造节点不足",
+    "光源实际位置、时刻与色温无法确认",
+    "行人身份、连续动作和场景前后关系缺失",
+    "无法获得精确alpha分割或深度信息",
+    "缺少原图曝光与色彩处理参数"
+  ],
+  "images": [
+    {
+      "id": "ref.6.0",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-shadow-and-glass-composition-34313659/",
+      "sha256": "fc573d1b8e732c963b8ef0b783ad750d47cb5b7851a2e2d41cb75e0b007456ab",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.6.1",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-white-dark-photo-of-a-street-in-city-18971796/",
+      "sha256": "e2bcdbeb57712462fd4741b02921aaea08746f8331acec86e082f7c14884b4dc",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.6.2",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/mur-en-brique-avec-fenetre-et-ombres-a-new-york-32409122/",
+      "sha256": "62857a22099573e22732ad68a21dc1cc71ff89237b91b6d1037646183274f8a7",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.6.3",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/587994/",
+      "sha256": "11da0f896f25a07c520b9e60935a993e015b4744c201c2d26da8444b77213030",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "c9bf92c8-01a2-43bc-823c-be94c5420c4b",
+        "model": "deepseek-flash",
+        "elapsedMs": 54528,
+        "prompt_tokens": 1606,
+        "completion_tokens": 7732,
+        "total_tokens": 9338,
+        "reasoning_tokens": 6481,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1606,
+    "completion_tokens": 7732,
+    "total_tokens": 9338,
+    "reasoning_tokens": 6481
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 54530
+}

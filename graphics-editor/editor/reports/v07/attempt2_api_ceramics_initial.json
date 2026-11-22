@@ -1,0 +1,425 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:05:32.385Z",
+  "id": "ceramics",
+  "phase": "initial",
+  "prompt": "生成一张窗边静物的摄影风格图片：灰绿色细腻墙面前，一座浅色石台上摆一只孔雀青釉花器和透明烟色玻璃球，旁边有一个小黄铜球、两本错落的书。侧面大窗柔光，构图紧凑，真实接触阴影和材质反射，画面没有文字。请实际搜索Pexels或Unsplash的公开照片页，分析所提供参考图的真实形态、材质、光线。用完整代码场景表达，适量细节，避免低多边形轮廓，地面和背景铺满画面。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 502,
+  "elapsedMs": 77224,
+  "inputImageProvided": false,
+  "response": {
+    "ok": false,
+    "runId": "crf07_a481cf09-f035-44a4-be6c-4a047801a768",
+    "model": "deepseek-flash",
+    "error": {
+      "code": "INVALID_MODEL_PROGRAM",
+      "message": "函数参数数量错误。",
+      "retryable": false
+    },
+    "httpStatus": 502,
+    "research": {
+      "searched": true,
+      "toolCalls": [
+        {
+          "id": "srvtoolu_s_00_e04d5ff3b92b4d1180693332a41b2a83",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com ceramic celadon vase still life window light",
+              "site:unsplash.com celadon vase window still life",
+              "site:commons.wikimedia.org celadon glaze vase",
+              "site:pexels.com smoked glass sphere still life",
+              "site:pexels.com brass ball still life window light",
+              "site:unsplash.com books still life window light",
+              "site:commons.wikimedia.org still life photography window light shadows"
+            ]
+          },
+          "sourceUrls": [
+            "https://unsplash.com/photos/a-table-topped-with-books-and-candles-next-to-a-window-sqkyzpcL6eE",
+            "https://commons.wikimedia.org/wiki/Commons:Photography_critiques/July_2025#1",
+            "https://unsplash.com/photos/an-orange-book-sitting-on-top-of-a-wicker-chair-SuU_MUQhyB8",
+            "https://unsplash.com/photos/books-rest-on-a-windowsill-with-an-outdoor-view-I9X52eCNMck",
+            "https://commons.wikimedia.org/wiki/Celadon?uselang=it#1",
+            "https://unsplash.com/photos/a-bookshelf-filled-with-lots-of-books-next-to-a-window-eSghx_3ICTI",
+            "https://commons.wikimedia.org/wiki/File:Spotted_Celadon_KONOIKE.JPG?uselang=zh-hans#1",
+            "https://unsplash.com/photos/a-window-sill-filled-with-books-and-candles-uWNxBHCCQs4"
+          ]
+        },
+        {
+          "id": "srvtoolu_s_01_d242cecbd1ee44b0931668b911cda171",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com \"still life\" window light vase",
+              "site:pexels.com glass sphere reflection still life",
+              "site:pexels.com brass ball object photo",
+              "site:unsplash.com glass sphere still life reflection",
+              "site:unsplash.com brass sphere still life",
+              "site:commons.wikimedia.org \"still life\" window light photograph",
+              "site:pexels.com still life books table window light"
+            ]
+          },
+          "sourceUrls": [
+            "https://www.pexels.com/photo/flowers-in-vase-and-lemons-on-windowsill-26903059/",
+            "https://www.pexels.com/zh-cn/photo/1557849/",
+            "https://unsplash.com/photos/a-glass-ball-sitting-on-top-of-a-metal-stand-JV3db1DDhUw",
+            "https://commons.wikimedia.org/wiki/Category:Still_lifes_by_Mary_Cassatt",
+            "https://www.pexels.com/photo/photograph-of-flowers-on-table-near-flowers-in-bottle-15893690/",
+            "https://www.pexels.com/fr-fr/photo/main-verre-transparent-chute-d-eau-20709028/",
+            "https://unsplash.com/photos/trees-reflected-in-a-glass-sphere-on-a-branch-9e3DCgfDLu0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+            "https://www.pexels.com/zh-tw/photo/1547812/",
+            "https://unsplash.com/photos/a-glass-ball-sitting-on-top-of-a-table-USlhqDaRlnQ",
+            "https://commons.wikimedia.org/wiki/Commons:Photography_critiques/July_2025#1",
+            "https://www.pexels.com/zh-cn/photo/34439437/",
+            "https://unsplash.com/photos/a-glass-ball-sitting-on-top-of-a-table-uRkg59JA4RU",
+            "https://unsplash.com/photos/balanced-stones-and-glass-spheres-BVuLkID0o7k",
+            "https://unsplash.com/photos/D2xGCatI1wo"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://unsplash.com/photos/a-table-topped-with-books-and-candles-next-to-a-window-sqkyzpcL6eE",
+          "title": "Photo by Anastasiya Leskova on Unsplash",
+          "snippet": "a table topped with books and candles next to a window Download this free HD photo of winter, book, candles, and tangerine by Anastasiya Leskova (@a_leskova) Published on Canon, EOS 6D Mark IIFree to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Commons:Photography_critiques/July_2025#1",
+          "title": "Commons:Photography critiques/July 2025 - Wikimedia Commons - Commons:Photography critiques/July 2025",
+          "snippet": "You should make this kind of tabletop photography (-> en:Still life photography / German: de ... Tabletop photography) in a well-lit room, use a neutral backdrop (like a LARGE and clean sheet of paper or fabric, avoid patterned wood ... Fluorescent lamps are mostly too blueish for decent stills, especially as they flicker with the grid frequency.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/an-orange-book-sitting-on-top-of-a-wicker-chair-SuU_MUQhyB8",
+          "title": "Photo by 1981 Digital on Unsplash",
+          "snippet": "––– – ––– ––– # an orange book sitting on top of a wicker chair Book in window light Published on SONY, ILCE-7M3Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/books-rest-on-a-windowsill-with-an-outdoor-view-I9X52eCNMck",
+          "title": "Photo by Eileen Martin on Unsplash",
+          "snippet": "2,097 ### Downloads 14 # Books rest on a windowsill with an outdoor view. Download this free HD photo of green and purple by Eileen Martin (@wolff_photography) Published on Free to use under the Unsplash License Browse",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Celadon?uselang=it#1",
+          "title": "Celadon - Wikimedia Commons - Chinese celadon with cut-out and engraved decoration, 10th century",
+          "snippet": "Detail of a celadon Soul Vase. Western Jin Dynasty (A.D. 265 - 326). Excavated at Shaoxing, Zhejiang Province. ... 11th or 12th century, porcelaneous pottery with celadon glaze, Honolulu Academy of Arts. ... Stoneware with celadon glaze.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-bookshelf-filled-with-lots-of-books-next-to-a-window-eSghx_3ICTI",
+          "title": "Photo by Jacob McGowin on Unsplash",
+          "snippet": "––– –––– –––– # A bookshelf filled with lots of books next to a window Books on a library book shelf with sunlight splashing across them. Cartersville, GA, USA Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Spotted_Celadon_KONOIKE.JPG?uselang=zh-hans#1",
+          "title": "File:Spotted Celadon KONOIKE.JPG - Wikimedia Commons - File:Spotted Celadon KONOIKE.JPG",
+          "snippet": "Celadon flower vase with iron brown spots, pear-shaped bottle. Longquan ware, Yuan Dynasty (13–14th century), height: 27.4 cm. Edo period, inherited in Konoike family in Osaka, today Museum of Oriental Ceramics, Osaka, Japan.",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-window-sill-filled-with-books-and-candles-uWNxBHCCQs4",
+          "title": "Photo by Ana Markovych 🇺🇦 on Unsplash",
+          "snippet": "a window sill filled with books and candles Download this free HD photo of cozy, candle, evening, and brown by Ana Markovych 🇺🇦 (@anamarkovych) Published on Canon, EOS 6D Mark IIFree to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/photo/flowers-in-vase-and-lemons-on-windowsill-26903059/",
+          "title": "Photo by Nadin Sh on Pexels",
+          "snippet": "Choose your language: Use filters Change focus Brighten up Add frames Description # A vase of yellow flowers beside fresh lemons on a windowsill, providing a cheerful still life scene. ## More like this Use filters Change focus Brighten up Add frames",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/zh-cn/photo/1557849/",
+          "title": "Pexels Manfred Legasto Francisco图片",
+          "snippet": "filters Change focus Brighten up ... 4288x2848 宽高比 134 ... Oct 13, 2018 软件 Adobe Photoshop Lightroom 5.7.1 (Macintosh) Milton, ON, Canada 描述 # 一只手握着一个玻璃球，反射出生动的秋季风景，展示出秋天的色彩。 ### 更多相似内容 Use filters",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-glass-ball-sitting-on-top-of-a-metal-stand-JV3db1DDhUw",
+          "title": "Photo by Diego Carneiro on Unsplash",
+          "snippet": "a glass ball sitting on top of a metal stand Download this free HD photo of reflection, glass, and globe by Diego Carneiro (@diegocarneiro) Published on Canon, EOS Rebel T100Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Category:Still_lifes_by_Mary_Cassatt",
+          "title": "Category:Still lifes by Mary Cassatt - Wikimedia Commons",
+          "snippet": "Cassatt Mary Lilacs in a Window 1880.jpg ... 572 ... Mary Cassat - Lilacs in a Window - MMA 1997.207.jpg ... Mary Cassatt - Lilacs in a Window (13832711654).jpg",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/photo/photograph-of-flowers-on-table-near-flowers-in-bottle-15893690/",
+          "title": "Photo by Nam Quân Nguyễn on Pexels",
+          "snippet": "Choose your language: Afterglow Street Festive Summer Description # A stylish flower vase with diverse blooms placed near a window, creating a natural and serene ambiance. ### More like this Afterglow Street Festive Summer",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/fr-fr/photo/main-verre-transparent-chute-d-eau-20709028/",
+          "title": "Photo de Cody King sur Pexels",
+          "snippet": "Focale ... Ouverture ƒ/2.8 ... Vitesse d’obturation 1/30 secondes ... Description # Une main tient une sphère en verre au premier plan avec un arrière-plan naturel flou et une cascade, créant une illusion réfléchissante. ### Médias similaires",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/trees-reflected-in-a-glass-sphere-on-a-branch-9e3DCgfDLu0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+          "title": "Photo by Luuk Endhoven 🇳🇱 on Unsplash",
+          "snippet": "Downloads 39 # Trees reflected in a glass sphere on a branch Download this free HD photo of blue, green, light, and white by Luuk Endhoven 🇳🇱 (@flex12121) Published on Free to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/zh-tw/photo/1547812/",
+          "title": "Pexels 上由 Artem Saranin 拍攝的相片",
+          "snippet": "Add filters, effects ... 4000x6000 長寬比 2:3 ... ƒ/5.0 ... 說明 # 一隻手握著一個玻璃球，反射出帶有散景效果的森林場景。 ## 更多類似內容",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-glass-ball-sitting-on-top-of-a-table-USlhqDaRlnQ",
+          "title": "Photo by Pete F on Unsplash",
+          "snippet": "––– – ––– – – # a glass ball sitting on top of a table Reflection of flower in a globe paperweight Published on SONY, ILCE-7M2Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/zh-cn/photo/34439437/",
+          "title": "Pexels Valentin Ivantsov图片",
+          "snippet": "尺寸 3795x5692 ... Canon EOS 5D Mark III 焦距 100.0mm ... 软件 Adobe Photoshop 21.0 (Windows) 描述 # 优雅的静物画，描绘了一杯水和一个具有反光表面的黑色球体。 ## 更多相似内容",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-glass-ball-sitting-on-top-of-a-table-uRkg59JA4RU",
+          "title": "Photo by Joshua Bayliss on Unsplash",
+          "snippet": "a glass ball sitting on top of a table Download this free HD photo of experimental, crystal ball, reflection, and red by Joshua Bayliss (@joshyb_) Published on Canon, EOS 500DFree to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/balanced-stones-and-glass-spheres-BVuLkID0o7k",
+          "title": "Photo by Pebri Ramadhan Mas on Unsplash",
+          "snippet": "A 3D render of a stack of smooth grey stones balanced with three clear glass spheres A surreal minimalist 3D composition featuring a carefully balanced stack of smooth natural stones and floating reflective glass spheres. Set against a soft gray studio environment with subtle reflections on the water-like surface...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/D2xGCatI1wo",
+          "title": "Photo by Jake Willett on Unsplash",
+          "snippet": "––– – ––– – – Download this free HD photo of glass ball, water, crystal ball, and reflective by Jake Willett (@jdphoto2000) Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        }
+      ],
+      "summary": "**结论：直接匹配“孔雀青釉花器 + 烟色玻璃球 + 黄铜球 + 窗边两本书”的单一公开照片未在搜索结果中找到。** 可用的公开页面主要集中在两类：青瓷花器的馆藏形态参考，以及窗边书本/玻璃球的光线与反射参考。由于未获取图片字节，以下分析基于网页标题与描述文本，不声称已视觉确认照片内容。\n\n### 可用的公开参考页面\n\n**青瓷花器形态与釉面：**\n- Wikimedia Commons 的 Longquan 青瓷花瓶档案页：描述为“梨形，高圆柱颈，灰绿色青瓷釉，开片，釉层厚” 。可用于生成**浅灰绿、半透明厚釉、细开片、梨形瓶身**，避免塑料感高光。\n- Wikimedia Commons 的青瓷花瓶页面（Yaozhou ware）：页面标题含“stoneware with celadon glaze”，可作为釉面厚重感的辅助参考 。\n- 注意：Commons 的 “Celadon” 搜索页多为零散古物描述，不是完整静物摄影场景，不宜作为构图参考 。\n\n**窗边书本与柔光氛围：**\n- Unsplash 的 “books rest on a windowsill with an outdoor view” ：标题直接匹配“窗边书本”，可用于参考窗光方向与书本错落关系，但页面描述未给出材质细节。\n- Unsplash 的 “a table topped with books and candles next to a window” ：窗边桌面静物，可作为“侧面窗光 + 桌面物体群”的氛围参考。\n- 注意：这两页只有标题级描述，没有具体光影参数，只能作为构图方向，不能当作已验证的材质照片。\n\n**玻璃球反射：**\n- Unsplash 的 “a glass ball sitting on top of a table”（Reflection of flower in a globe paperweight）：可用于参考透明球体的**环境倒影与焦散感**。\n- Pexels 的玻璃球页面多为手持自然场景 ，与桌面静物接触阴影无关，不建议采用。\n\n**照明原则（非照片页，仅作技术限制说明）：**\n- Wikimedia Commons 摄影批评页指出：静物摄影应避免直闪，用柔光/反射光；色温约 3800K–5800K 较自然 。这支持“侧面大窗柔光、真实接触阴影”的方向，但该页不是参考照片。\n\n### 可转化为图形函数的细节建议\n\n**1. 灰绿色墙面**\n- 基础色：低饱和灰绿，明度中等偏高，避免纯绿。\n- 纹理函数：叠加极细的 multi-octave noise，幅度很小，只在掠射角可见；不要用明显颗粒。\n- 光照响应：窗光从左侧掠射时，墙面亮度从左向右缓慢衰减，形成柔和渐变。\n\n**2. 浅色石台**\n- 基础色：暖灰白或米灰，粗糙度中等。\n- 接触阴影：每个物体底部加 contact shadow 函数，距离越近越暗，范围小、边缘软；不要用全局 AO 代替。\n- 台面反射：极低强度的模糊反射，仅在高光处轻微可见。\n\n**3. 孔雀青釉花器**\n- 形态：参考 Longquan 梨形瓶——腹部圆鼓、颈较高、口沿略外展 。\n- 釉面：灰绿色基色 + 轻微厚度感；高光宽而软，边缘有微弱“聚釉”暗边；开片用极细、不规则的浅色裂纹函数，密度低，不要规则网格。\n- 反射：釉面反射环境模糊，不要镜面锐反射。\n\n**4. 透明烟色玻璃球**\n- 材质：折射率约 1.5，透射色偏灰褐，边缘更暗（厚玻璃吸收）。\n- 关键细节：球体前方应有**窗光的局部高光**，球内可见倒置的环境模糊影像；球底与石台之间有一小片更亮的焦散区 。\n- 粗糙度：极低，但不要完美镜面，保留轻微模糊以匹配“真实摄影”。\n\n**5. 小黄铜球**\n- 基色：暖黄铜，金属度 1，粗糙度低到中等。\n- 反射：清晰但不锐利地映出窗格/花器轮廓；高光偏暖。\n- 接触阴影：比玻璃球更实、更小。\n\n**6. 两本错落的书**\n- 形态：平放或略斜靠，书脊厚度可见，页面边缘有细微分层。\n- 材质：封面哑光，页面边缘略粗糙；不要做高光塑料封面。\n- 阴影：书与石台、书与书之间都有软接触阴影，上层书在下方书面上投下柔影。\n\n**7. 侧面大窗柔光**\n- 主光：从画面左侧（或左上）来的大面积柔光，方向明确但阴影边缘很软。\n- 补光：右侧极弱的环境回弹光，只提亮暗部，不产生第二组投影。\n- 高光控制：玻璃球和釉面高光面积小、位置集中；黄铜高光略大。\n\n### 局限与未验证项\n\n- **没有实际查看参考图像素**：以上形态与材质建议来自页面文字描述和常识推断，不是视觉分析结果。\n- **缺少“孔雀青釉”具体样本**：搜索结果中的青瓷多为宋元 Longquan/Yaozhou 器型，未出现明确标注“孔雀青釉”的花器照片页。\n- **缺少黄铜球静物页**：未找到匹配“小黄铜球 + 窗边静物”的公开照片详情页，黄铜反射参数来自通用材质经验。\n- **烟色玻璃球与透明玻璃球有差异**：找到的玻璃球照片页多为透明球 ，烟色透射需在着色器中额外加入吸收色，不能直接套用透明球参数。\n\n### 来源清单（仅列相关公开照片/档案页）\n\n- 青瓷梨形瓶形态与釉面描述：https://commons.wikimedia.org/w/index.php?title=File:Gr%C3%B6n_vas_fr%C3%A5n_Kina_gjord_1127-1279_-_Hallwylska_museet_-_95508.tif \n- 青瓷石陶釉面档案：https://commons.wikimedia.org/w/index.php?title=File:Vase,_Yaozhou_ware,_Shaanxi_province,_China,_Northern_Song_dynasty,_11th-early_12th_century_AD,_stoneware_with_celadon_glaze_-_Freer_Gallery_of_Art_-_DSC05577.JPG \n- 窗边书本静物：https://unsplash.com/photos/books-rest-on-a-windowsill-with-an-outdoor-view-I9X52eCNMck \n- 窗边桌面书本与烛光：https://unsplash.com/photos/a-table-topped-with-books-and-candles-next-to-a-window-sqkyzpcL6eE \n- 玻璃球桌面反射：https://unsplash.com/photos/a-glass-ball-sitting-on-top-of-a-table-USlhqDaRlnQ ",
+      "status": "completed",
+      "nativeSearchObserved": true,
+      "referenceImageCandidates": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spotted_Celadon_KONOIKE.JPG?uselang=zh-hans#1",
+          "title": "File:Spotted Celadon KONOIKE.JPG - Wikimedia Commons - File:Spotted Celadon KONOIKE.JPG",
+          "imageUrl": "https://commons.wikimedia.org/wiki/File:Spotted_Celadon_KONOIKE.JPG?uselang=zh-hans#1"
+        }
+      ],
+      "referenceImages": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/Celadon?uselang=it#1",
+          "title": "Celadon - Wikimedia Commons - Chinese celadon with cut-out and engraved decoration, 10th century",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/CMOC_Treasures_of_Ancient_China_exhibit_-_celadon_soul_vase.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+          "sha256": "da54229bec9f5d142f87a8305730a8397f77e08d886c345ad675f8f261344920",
+          "bytes": 236303,
+          "mime": "image/jpeg",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spotted_Celadon_KONOIKE.JPG?uselang=zh-hans#1",
+          "title": "File:Spotted Celadon KONOIKE.JPG - Wikimedia Commons - File:Spotted Celadon KONOIKE.JPG",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Spotted_Celadon_KONOIKE.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+          "sha256": "3b80734bc83fcf1228b71e4de94b3a6f03274f610f429b4d15d842add08050e6",
+          "bytes": 286834,
+          "mime": "image/jpeg",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/flowers-in-vase-and-lemons-on-windowsill-26903059/",
+          "title": "Photo by Nadin Sh on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/26903059/pexels-photo-26903059.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "0f1a8b12c08ef87921ae319a9eaa573e87f53a101798b7dfbdddfa52dfd4788f",
+          "bytes": 91728,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/zh-cn/photo/1557849/",
+          "title": "Pexels Manfred Legasto Francisco图片",
+          "imageUrl": "https://images.pexels.com/photos/1557849/pexels-photo-1557849.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "f84ab90c52e6a403cc32d9745628b7d34632b652165996ab89a0108c20adfc07",
+          "bytes": 22032,
+          "mime": "image/webp",
+          "submittedToVision": true
+        }
+      ],
+      "referenceImagesSubmitted": 4,
+      "inputImageProvided": false,
+      "referenceCollection": {
+        "method": "public source-page image metadata, verified image bytes; not render textures",
+        "sourcePageCount": 12,
+        "downloadedCount": 4,
+        "attempts": [
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-table-topped-with-books-and-candles-next-to-a-window-sqkyzpcL6eE",
+            "title": "Photo by Anastasiya Leskova on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://commons.wikimedia.org/wiki/Commons:Photography_critiques/July_2025#1",
+            "title": "Commons:Photography critiques/July 2025 - Wikimedia Commons - Commons:Photography critiques/July 2025",
+            "status": "unavailable",
+            "error": "no_supported_image"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/an-orange-book-sitting-on-top-of-a-wicker-chair-SuU_MUQhyB8",
+            "title": "Photo by 1981 Digital on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/books-rest-on-a-windowsill-with-an-outdoor-view-I9X52eCNMck",
+            "title": "Photo by Eileen Martin on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://commons.wikimedia.org/wiki/Celadon?uselang=it#1",
+            "title": "Celadon - Wikimedia Commons - Chinese celadon with cut-out and engraved decoration, 10th century",
+            "status": "downloaded",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/CMOC_Treasures_of_Ancient_China_exhibit_-_celadon_soul_vase.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+            "bytes": 236303,
+            "mime": "image/jpeg",
+            "sha256": "da54229bec9f5d142f87a8305730a8397f77e08d886c345ad675f8f261344920"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-bookshelf-filled-with-lots-of-books-next-to-a-window-eSghx_3ICTI",
+            "title": "Photo by Jacob McGowin on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spotted_Celadon_KONOIKE.JPG?uselang=zh-hans#1",
+            "title": "File:Spotted Celadon KONOIKE.JPG - Wikimedia Commons - File:Spotted Celadon KONOIKE.JPG",
+            "status": "downloaded",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Spotted_Celadon_KONOIKE.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+            "bytes": 286834,
+            "mime": "image/jpeg",
+            "sha256": "3b80734bc83fcf1228b71e4de94b3a6f03274f610f429b4d15d842add08050e6"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-window-sill-filled-with-books-and-candles-uWNxBHCCQs4",
+            "title": "Photo by Ana Markovych 🇺🇦 on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/photo/flowers-in-vase-and-lemons-on-windowsill-26903059/",
+            "title": "Photo by Nadin Sh on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/26903059/pexels-photo-26903059.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 91728,
+            "mime": "image/webp",
+            "sha256": "0f1a8b12c08ef87921ae319a9eaa573e87f53a101798b7dfbdddfa52dfd4788f"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/zh-cn/photo/1557849/",
+            "title": "Pexels Manfred Legasto Francisco图片",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/1557849/pexels-photo-1557849.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 22032,
+            "mime": "image/webp",
+            "sha256": "f84ab90c52e6a403cc32d9745628b7d34632b652165996ab89a0108c20adfc07"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-glass-ball-sitting-on-top-of-a-metal-stand-JV3db1DDhUw",
+            "title": "Photo by Diego Carneiro on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Still_lifes_by_Mary_Cassatt",
+            "title": "Category:Still lifes by Mary Cassatt - Wikimedia Commons",
+            "status": "unavailable",
+            "error": "no_supported_image"
+          }
+        ],
+        "submittedToVision": true,
+        "submittedCount": 4
+      }
+    },
+    "usage": {
+      "prompt_tokens": 36018,
+      "completion_tokens": 10502,
+      "total_tokens": 46520,
+      "providerCalls": 3,
+      "requests": [
+        {
+          "phase": "research",
+          "requestId": "5c63ad80-2dbc-4eff-9c10-2fd6b5b152f8",
+          "model": "deepseek-flash",
+          "elapsedMs": 21453,
+          "prompt_tokens": 15828,
+          "completion_tokens": 1658,
+          "total_tokens": 17486,
+          "server_tool_use": {
+            "tool_search": 14,
+            "tool_fetch": 0,
+            "tool_image_search": 0
+          }
+        },
+        {
+          "phase": "compose",
+          "requestId": "e330ae66-7e76-4a78-8db4-99b7fd5e3046",
+          "model": "deepseek-flash",
+          "elapsedMs": 23225,
+          "prompt_tokens": 7823,
+          "completion_tokens": 4467,
+          "total_tokens": 12290,
+          "server_tool_use": {}
+        },
+        {
+          "phase": "schema_repair",
+          "requestId": "81bc1927-eab7-4bf3-84c7-219f66747f73",
+          "model": "deepseek-flash",
+          "elapsedMs": 14033,
+          "prompt_tokens": 12367,
+          "completion_tokens": 4377,
+          "total_tokens": 16744,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "warnings": [],
+    "vision": {
+      "renderedImageProvided": false,
+      "referenceImagesProvided": 4,
+      "referenceSourceUrls": [
+        "https://commons.wikimedia.org/wiki/Celadon?uselang=it#1",
+        "https://commons.wikimedia.org/wiki/File:Spotted_Celadon_KONOIKE.JPG?uselang=zh-hans#1",
+        "https://www.pexels.com/photo/flowers-in-vase-and-lemons-on-windowsill-26903059/",
+        "https://www.pexels.com/zh-cn/photo/1557849/"
+      ]
+    },
+    "repair": {
+      "attempted": true,
+      "passes": [
+        {
+          "attempt": 1,
+          "reasonCode": "INVALID_MODEL_PROGRAM",
+          "validationError": "函数参数数量错误。",
+          "invalidRequestId": "e330ae66-7e76-4a78-8db4-99b7fd5e3046"
+        }
+      ],
+      "recovered": false
+    }
+  }
+}

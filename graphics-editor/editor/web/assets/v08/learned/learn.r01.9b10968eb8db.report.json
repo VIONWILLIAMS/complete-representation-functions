@@ -1,0 +1,278 @@
+{
+  "id": "learn.r01.9b10968eb8db",
+  "assetId": "learn.r01.9b10968eb8db",
+  "status": "fitted",
+  "round": 1,
+  "topic": "橙子与柑橘的单体实拍",
+  "sourceUrl": "https://www.pexels.com/zh-tw/photo/5945786/",
+  "imageUrl": "https://images.pexels.com/photos/5945786/pexels-photo-5945786.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Pexels 上由 Any Lane 拍攝的相片",
+  "sourceFile": "fitting/learning08/originals/learn.r01.9b10968eb8db.webp",
+  "sourceSHA256": "9b10968eb8dbb0adcc6cfd60d472b321d62808e624eed86ed0b8dec0fa263290",
+  "normalizedRGBA_SHA256": "575499a62c2c08e3ac29af3b046c660ecca0250b2f34d8e63069d92ea4e28662",
+  "dHash64": "8ba999db31638f8e",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    512,
+    292
+  ],
+  "assetURL": "assets/v08/learned/learn.r01.9b10968eb8db.json",
+  "renderURL": "assets/v08/learned/learn.r01.9b10968eb8db.png",
+  "reportURL": "assets/v08/learned/learn.r01.9b10968eb8db.report.json",
+  "referenceURL": "assets/v08/references/learn.r01.9b10968eb8db.png",
+  "representationScope": "full_frame",
+  "semanticObjectExtraction": false,
+  "gaussians": 8192,
+  "pixelToGaussianRatio": 18.25,
+  "assetBytes": 670770,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 4.357560109874429,
+    "rmse": 7.0367178131097186,
+    "psnr": 31.183400903227344,
+    "ssim": 0.9401918532712387,
+    "maxError": 90,
+    "exactRGBFraction": 0.006381100171232877,
+    "evaluatedPixels": 149504,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 49.522905173240154,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 186.00694841062744,
+          "bestFloatMSE": 186.00694841062744
+        },
+        {
+          "step": 10,
+          "floatMSE": 101.26824082015591,
+          "bestFloatMSE": 101.26824082015591
+        },
+        {
+          "step": 20,
+          "floatMSE": 77.04992416831999,
+          "bestFloatMSE": 77.04992416831999
+        },
+        {
+          "step": 30,
+          "floatMSE": 64.17718303358393,
+          "bestFloatMSE": 64.17718303358393
+        },
+        {
+          "step": 40,
+          "floatMSE": 56.85892109884413,
+          "bestFloatMSE": 56.85892109884413
+        },
+        {
+          "step": 50,
+          "floatMSE": 52.69981777845528,
+          "bestFloatMSE": 52.69981777845528
+        },
+        {
+          "step": 60,
+          "floatMSE": 50.515234430077065,
+          "bestFloatMSE": 50.515234430077065
+        },
+        {
+          "step": 70,
+          "floatMSE": 49.522905173240154,
+          "bestFloatMSE": 49.522905173240154
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2867,
+        "elapsedSeconds": 0.266,
+        "mae": 20.04640678510274,
+        "rmse": 28.95732760502648,
+        "psnr": 18.895634018911352,
+        "ssim": 0.4643850427355674,
+        "maxError": 172,
+        "exactRGBFraction": 0.0005819242294520548,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2867,
+        "elapsedSeconds": 0.786,
+        "mae": 16.015067601312786,
+        "rmse": 23.73537921523802,
+        "psnr": 20.62288011382308,
+        "ssim": 0.5272921167452429,
+        "maxError": 154,
+        "exactRGBFraction": 0.0008896083047945205,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 6328,
+        "elapsedSeconds": 2.025,
+        "mae": 10.899909032534246,
+        "rmse": 16.613158612924078,
+        "psnr": 23.72175937897701,
+        "ssim": 0.750301194274615,
+        "maxError": 137,
+        "exactRGBFraction": 0.002013324058219178,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 8192,
+        "elapsedSeconds": 2.895,
+        "mae": 8.964348779965754,
+        "rmse": 13.607560854176407,
+        "psnr": 25.45519790476839,
+        "ssim": 0.8195410326997385,
+        "maxError": 117,
+        "exactRGBFraction": 0.0026822024828767124,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 8192,
+        "elapsedSeconds": 3.02,
+        "mae": 8.964348779965754,
+        "rmse": 13.607560854176407,
+        "psnr": 25.45519790476839,
+        "ssim": 0.8195410326997385,
+        "maxError": 117,
+        "exactRGBFraction": 0.0026822024828767124,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 8192,
+        "elapsedSeconds": 3.815,
+        "mae": 6.497768175656392,
+        "rmse": 10.039064124047094,
+        "psnr": 28.096939043149764,
+        "ssim": 0.890312019667944,
+        "maxError": 117,
+        "exactRGBFraction": 0.0029163099315068493,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 8192,
+        "elapsedSeconds": 4.615,
+        "mae": 5.5772666060216896,
+        "rmse": 8.761837511148853,
+        "psnr": 29.278899710735228,
+        "ssim": 0.9129102803957386,
+        "maxError": 115,
+        "exactRGBFraction": 0.0035316780821917806,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 8192,
+        "elapsedSeconds": 5.453,
+        "mae": 5.033845248287672,
+        "rmse": 8.003441475358354,
+        "psnr": 30.065268137914906,
+        "ssim": 0.9253509046112739,
+        "maxError": 103,
+        "exactRGBFraction": 0.00478248073630137,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 8192,
+        "elapsedSeconds": 6.355,
+        "mae": 4.704850706335616,
+        "rmse": 7.536878095628692,
+        "psnr": 30.586973791034026,
+        "ssim": 0.9326948876026606,
+        "maxError": 93,
+        "exactRGBFraction": 0.005538313356164383,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 8192,
+        "elapsedSeconds": 7.303,
+        "mae": 4.509819135273973,
+        "rmse": 7.257697395358346,
+        "psnr": 30.91482647596193,
+        "ssim": 0.9369100873658777,
+        "maxError": 92,
+        "exactRGBFraction": 0.006100171232876712,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 8192,
+        "elapsedSeconds": 8.189,
+        "mae": 4.405059396404109,
+        "rmse": 7.105872095408231,
+        "psnr": 31.098455888867473,
+        "ssim": 0.9391794671418918,
+        "maxError": 91,
+        "exactRGBFraction": 0.006314212328767123,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 8192,
+        "elapsedSeconds": 9.236,
+        "mae": 4.35755788027968,
+        "rmse": 7.036715436722902,
+        "psnr": 31.18340383656042,
+        "ssim": 0.9401917830665133,
+        "maxError": 90,
+        "exactRGBFraction": 0.006381100171232877,
+        "evaluatedPixels": 149504,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 9.238,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 9.83,
+  "passedPilot": false,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized RGB observation, not the original full-resolution download.",
+    "This full-frame Gaussian function is not an automatically segmented object function.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "referenceThumbnailURL": "assets/v08/references/learn.r01.9b10968eb8db.jpg"
+}

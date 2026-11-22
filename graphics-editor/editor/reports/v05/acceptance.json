@@ -1,0 +1,263 @@
+{
+  "schema": "crf.acceptance.v0.5",
+  "pass": true,
+  "checks": [
+    {
+      "name": "street_native_reference_match",
+      "pass": true,
+      "details": {
+        "exactPixels": 667000,
+        "totalPixels": 667000,
+        "mae": 0,
+        "maxAbsChannelError": 0,
+        "exact100": true,
+        "width": 667,
+        "height": 1000,
+        "referenceType": "independently_decoded_canonical_photo",
+        "referenceSha256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b"
+      }
+    },
+    {
+      "name": "street_five_second_timeline",
+      "pass": true,
+      "details": {
+        "duration": 5,
+        "frameCountAt24fps": 120
+      }
+    },
+    {
+      "name": "street_camera_changes_render",
+      "pass": true,
+      "details": {
+        "mae": 25.25848675662169,
+        "hypothesis": true
+      }
+    },
+    {
+      "name": "street_removal_reveals_inferred_wall_only",
+      "pass": true,
+      "details": {
+        "targetPixels": 4288,
+        "markedWallFill": 4288,
+        "changedOutsideTarget": 0,
+        "physicalHiddenTruth": "unavailable"
+      }
+    },
+    {
+      "name": "fruit_lab_native_reference_match",
+      "pass": true,
+      "details": {
+        "exactPixels": 480000,
+        "totalPixels": 480000,
+        "mae": 0,
+        "maxAbsChannelError": 0,
+        "exact100": true,
+        "width": 800,
+        "height": 600,
+        "referenceType": "generated_golden_repeatability",
+        "referenceSha256": "714665b1c1d247d7c020e87ca937eb57e144a74d5bdb60e15845dd375974f277"
+      }
+    },
+    {
+      "name": "fruit_lab_five_second_timeline",
+      "pass": true,
+      "details": {
+        "duration": 5,
+        "frameCountAt24fps": 120
+      }
+    },
+    {
+      "name": "fruit_lab_camera_changes_render",
+      "pass": true,
+      "details": {
+        "mae": 11.601286805555555,
+        "hypothesis": false
+      }
+    },
+    {
+      "name": "apple_to_pear_preserves_editable_identity",
+      "pass": true,
+      "details": {
+        "mae": 10.6991875
+      }
+    },
+    {
+      "name": "procedural_geometry_and_seed_reach_pixels",
+      "pass": true,
+      "details": {
+        "mae": 2.3165847222222222
+      }
+    },
+    {
+      "name": "orchard_native_reference_match",
+      "pass": true,
+      "details": {
+        "exactPixels": 480000,
+        "totalPixels": 480000,
+        "mae": 0,
+        "maxAbsChannelError": 0,
+        "exact100": true,
+        "width": 800,
+        "height": 600,
+        "referenceType": "independently_decoded_canonical_photo",
+        "referenceSha256": "710c064d8802060e4cbd3b93859e40b81c213a35b21c4ac5ff99340b7238242e"
+      }
+    },
+    {
+      "name": "orchard_five_second_timeline",
+      "pass": true,
+      "details": {
+        "duration": 5,
+        "frameCountAt24fps": 120
+      }
+    },
+    {
+      "name": "orchard_camera_changes_render",
+      "pass": true,
+      "details": {
+        "mae": 13.5169875,
+        "hypothesis": true
+      }
+    },
+    {
+      "name": "alpine_native_reference_match",
+      "pass": true,
+      "details": {
+        "exactPixels": 424800,
+        "totalPixels": 424800,
+        "mae": 0,
+        "maxAbsChannelError": 0,
+        "exact100": true,
+        "width": 800,
+        "height": 531,
+        "referenceType": "independently_decoded_canonical_photo",
+        "referenceSha256": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222"
+      }
+    },
+    {
+      "name": "alpine_five_second_timeline",
+      "pass": true,
+      "details": {
+        "duration": 5,
+        "frameCountAt24fps": 120
+      }
+    },
+    {
+      "name": "alpine_camera_changes_render",
+      "pass": true,
+      "details": {
+        "mae": 18.80483678593848,
+        "hypothesis": true
+      }
+    }
+  ],
+  "observedPhotoCases": [
+    {
+      "caseId": "street",
+      "exactPixels": 667000,
+      "totalPixels": 667000,
+      "mae": 0,
+      "maxAbsChannelError": 0,
+      "exact100": true,
+      "width": 667,
+      "height": 1000,
+      "canonicalSource": {
+        "id": "reference.street.001",
+        "asset": "assets/reference.png",
+        "fileSha256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+        "rgbSha256": "ce66923ff7c0bd64cc3aaec19ffe951dd30b3c3834843d711dd6ad86aadcf922",
+        "mode": "RGB8",
+        "scanCoverage": "all original pixels exactly once in observed layer",
+        "canonicalization": "Pillow ImageOps.exif_transpose; RGB8; row-major interleaved RGB",
+        "segmentation": "assistant-assisted segmentation of source pixels; not model-rendered labels",
+        "auxiliaryAnnotation": "CRF Street 0.3 observed regions and stripe boundary fits",
+        "auxiliaryAnnotationSha256": "a17198f902bd70af4a0bebb39e40890e051d654fb304b8a1fe2f7e5cc937bde3",
+        "notCompression": true,
+        "learnedAutomaticSegmentation": false
+      }
+    },
+    {
+      "caseId": "orchard",
+      "exactPixels": 480000,
+      "totalPixels": 480000,
+      "mae": 0,
+      "maxAbsChannelError": 0,
+      "exact100": true,
+      "width": 800,
+      "height": 600,
+      "canonicalSource": {
+        "title": "Apple and pear",
+        "author": "Yves Geissbühler",
+        "url": "https://commons.wikimedia.org/wiki/File:Apple_and_pear.jpg",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Apple_and_pear.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceDimensions": [
+          3648,
+          2736
+        ],
+        "sourceDate": "2013-03-19",
+        "downloadedFileSha256": "0e2aaa1a2f5900fb8991220c4f278ad6e6a36e4dd88ef8af78e4e4ae7b63fa10",
+        "canonicalDimensions": [
+          800,
+          600
+        ],
+        "canonicalFileSha256": "710c064d8802060e4cbd3b93859e40b81c213a35b21c4ac5ff99340b7238242e",
+        "canonicalRgbSha256": "1f77679d349f4507ef628a9e0ca15a66dd956154906567c140a03a752e62b25b",
+        "normalization": "EXIF transpose; RGB8; Lanczos thumbnail bounded by 800x600; frozen before scan"
+      }
+    },
+    {
+      "caseId": "alpine",
+      "exactPixels": 424800,
+      "totalPixels": 424800,
+      "mae": 0,
+      "maxAbsChannelError": 0,
+      "exact100": true,
+      "width": 800,
+      "height": 531,
+      "canonicalSource": {
+        "title": "Lautersee 2026",
+        "author": "Taubenflieger68",
+        "url": "https://commons.wikimedia.org/wiki/File:Lautersee_2026.jpg",
+        "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Lautersee_2026.jpg/1280px-Lautersee_2026.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceDimensions": [
+          9528,
+          6328
+        ],
+        "downloadedDimensions": [
+          1280,
+          850
+        ],
+        "sourceDate": "2026-10-10",
+        "downloadedFileSha256": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+        "canonicalDimensions": [
+          800,
+          531
+        ],
+        "canonicalFileSha256": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+        "canonicalRgbSha256": "900f08b9ec93d6f82fd584c5ba9c4e2380d3f8022660c7be0ed2449254e5f171",
+        "normalization": "EXIF transpose; RGB8; Lanczos thumbnail bounded by 800x600; frozen before scan"
+      }
+    }
+  ],
+  "observedPhotoTotalPixels": 1571800,
+  "hashes": {
+    "dist/crf-core.js": "6d47917158336251491d61d8ddd7575a6d0a6fcb9f6eac92f96f90641b0495e1",
+    "dist/crf-renderer.js": "cbdd2da34e72c8ee17d479692a5b45b0c9aa30859e4e1e2f7716c81de1c41941",
+    "dist/crf-fruit.js": "8ea015c2e758ac924f8e8960aa3b888bd382c938173916a97466f111636fa497",
+    "dist/crf-video.js": "6b56aecce1bcb60f233e5573cd8565e25a6c41e5579b2eb150c354056a98dd48",
+    "dist/editor.js": "48a3efc538b7d1def0249045de481fcacf0959391f7d0e562e75cd59e373f9d5",
+    "dist/assets/scene-data.js": "6846ceb9f9108550de7af8bf8bd21e30134084c672076aed78c92b3681f39226",
+    "dist/assets/cases/orchard-data.js": "603a067129c5a0f70ef60a800cc44fb1f190c8929e43b2ff6cadbff2b744d884",
+    "dist/assets/cases/alpine-data.js": "c6257f0c96788c6488a0d4a3549e52346e224d81311a034ee2f6e1ddfd0d54ad",
+    "dist/assets/cases/fruit_lab-data.js": "d6e9833d2baf068750b2543d8571ef4deef3e1dab8b7d09ed9b916a2a92229cf"
+  },
+  "limits": [
+    "Dense observed RGB is retained; this is not compact recovery from language alone.",
+    "Unseen views and occluded backgrounds have no photograph ground truth.",
+    "Procedural fruit golden comparison verifies repeatability, not photographic realism."
+  ]
+}

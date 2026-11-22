@@ -1,0 +1,1799 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:06:11.756Z",
+  "id": "rainstreet",
+  "phase": "initial",
+  "prompt": "生成一张雨后夜晚街角的摄影风格图片：前景湿润沥青和斑马线，一根细黑色金属杆连接红色行人信号灯，后方是有窗框和亮窗的街楼与暖色店铺。地面反射有轻微微表面起伏，蓝色夜空与暖色灯光平衡。信号灯、横臂和竖杆必须连接，画面避免不明发光方块。请实际搜索Pexels或Unsplash公开夜街照片页，从参考图提取材质、比例与光线，再编写完整代码场景。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 200,
+  "elapsedMs": 39371,
+  "inputImageProvided": false,
+  "response": {
+    "ok": true,
+    "runId": "crf07_139fdc8f-46a4-4a91-b3dc-77bc68e06158",
+    "model": "deepseek-flash",
+    "servedModel": "deepseek-flash",
+    "action": "program",
+    "message": "构造雨夜街角场景：湿润沥青与斑马线前景、细黑金属行人信号灯（竖杆+横臂+红色灯面）、带窗框和暖光店铺的街楼，蓝色夜空环境光与暖色面光源平衡。",
+    "engine": "radiance07",
+    "program": {
+      "schema": "crf.image_program.v0.7",
+      "id": "rainy_night_corner_signal",
+      "title": "雨后夜晚街角与红色行人信号灯",
+      "width": 1024,
+      "height": 768,
+      "seed": 20240717,
+      "exposure": 1.1,
+      "camera": {
+        "position": [
+          2.6,
+          1.5,
+          5.2
+        ],
+        "target": [
+          0.2,
+          1,
+          -1.6
+        ],
+        "fov": 48,
+        "aperture": 0.03,
+        "focusDistance": 6.2
+      },
+      "environment": {
+        "top": [
+          24,
+          38,
+          66
+        ],
+        "bottom": [
+          10,
+          12,
+          16
+        ],
+        "strength": 0.38
+      },
+      "lights": [
+        {
+          "id": "key_warm_shop",
+          "type": "area",
+          "position": [
+            3.6,
+            3.2,
+            -3.4
+          ],
+          "target": [
+            0.6,
+            0.2,
+            -1.4
+          ],
+          "size": [
+            6,
+            3.2
+          ],
+          "color": [
+            255,
+            178,
+            104
+          ],
+          "intensity": 42
+        },
+        {
+          "id": "cool_sky",
+          "type": "area",
+          "position": [
+            -4.5,
+            6,
+            2.5
+          ],
+          "target": [
+            0,
+            0.4,
+            -0.8
+          ],
+          "size": [
+            12,
+            6
+          ],
+          "color": [
+            118,
+            156,
+            214
+          ],
+          "intensity": 18
+        },
+        {
+          "id": "signal_red_glow",
+          "type": "area",
+          "position": [
+            -1.15,
+            1.06,
+            -0.35
+          ],
+          "target": [
+            -1.15,
+            0.85,
+            0.6
+          ],
+          "size": [
+            0.5,
+            0.5
+          ],
+          "color": [
+            255,
+            52,
+            40
+          ],
+          "intensity": 16
+        },
+        {
+          "id": "rim_back",
+          "type": "area",
+          "position": [
+            0.5,
+            3.8,
+            -6.8
+          ],
+          "target": [
+            0,
+            1.4,
+            0
+          ],
+          "size": [
+            4,
+            2.4
+          ],
+          "color": [
+            255,
+            206,
+            150
+          ],
+          "intensity": 22
+        }
+      ],
+      "objects": [
+        {
+          "id": "ground_asphalt",
+          "label": "湿润沥青路面",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 22,
+            "height": 0.12,
+            "depth": 22,
+            "bevel": 0.02
+          },
+          "material": {
+            "color": [
+              26,
+              27,
+              30
+            ],
+            "roughness": 0.32,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "texture": {
+              "kind": "asphalt",
+              "scale": 9,
+              "strength": 0.42
+            },
+            "bump": 0.04,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.92
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.16
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 7,
+                      "seed": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0,
+              -0.06,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "crosswalk_stripe_1",
+          "label": "斑马线白漆带",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.62,
+            "height": 0.012,
+            "depth": 7.6,
+            "bevel": 0.006
+          },
+          "material": {
+            "color": [
+              214,
+              214,
+              202
+            ],
+            "roughness": 0.5,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "texture": {
+              "kind": "stone",
+              "scale": 1.4,
+              "strength": 0.18
+            },
+            "bump": 0.008,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.95
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.2
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 18,
+                      "seed": 11
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              -2.1,
+              0.012,
+              1.9
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "crosswalk_stripe_2",
+          "label": "斑马线白漆带",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.62,
+            "height": 0.012,
+            "depth": 7.6,
+            "bevel": 0.006
+          },
+          "material": {
+            "color": [
+              210,
+              211,
+              200
+            ],
+            "roughness": 0.52,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "texture": {
+              "kind": "stone",
+              "scale": 1.4,
+              "strength": 0.2
+            },
+            "bump": 0.008,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.92
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.22
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 17,
+                      "seed": 12
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              -0.75,
+              0.012,
+              1.9
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "crosswalk_stripe_3",
+          "label": "斑马线白漆带",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.62,
+            "height": 0.012,
+            "depth": 7.6,
+            "bevel": 0.006
+          },
+          "material": {
+            "color": [
+              216,
+              216,
+              205
+            ],
+            "roughness": 0.5,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "texture": {
+              "kind": "stone",
+              "scale": 1.4,
+              "strength": 0.17
+            },
+            "bump": 0.008,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.93
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.19
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 19,
+                      "seed": 13
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0.6,
+              0.012,
+              1.9
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "crosswalk_stripe_4",
+          "label": "斑马线白漆带",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.62,
+            "height": 0.012,
+            "depth": 7.6,
+            "bevel": 0.006
+          },
+          "material": {
+            "color": [
+              208,
+              209,
+              198
+            ],
+            "roughness": 0.53,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "texture": {
+              "kind": "stone",
+              "scale": 1.4,
+              "strength": 0.22
+            },
+            "bump": 0.008,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.9
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.24
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 16,
+                      "seed": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              1.95,
+              0.012,
+              1.9
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "sidewalk_curb",
+          "label": "路缘石",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 9,
+            "height": 0.18,
+            "depth": 1,
+            "bevel": 0.04
+          },
+          "material": {
+            "color": [
+              82,
+              80,
+              76
+            ],
+            "roughness": 0.62,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "texture": {
+              "kind": "stone",
+              "scale": 3.2,
+              "strength": 0.25
+            },
+            "bump": 0.02
+          },
+          "transform": {
+            "position": [
+              0,
+              0.09,
+              -3.4
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "building_left",
+          "label": "左侧深色街楼立面",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 6,
+            "height": 9,
+            "depth": 7,
+            "bevel": 0.03
+          },
+          "material": {
+            "color": [
+              38,
+              42,
+              48
+            ],
+            "roughness": 0.78,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "texture": {
+              "kind": "stone",
+              "scale": 2,
+              "strength": 0.3
+            },
+            "bump": 0.03,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.8
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.2
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 4,
+                      "seed": 21
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              -5.2,
+              4.5,
+              -4.8
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_row1_a",
+          "label": "左楼窗框",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 1.15,
+            "height": 1.55,
+            "depth": 0.12,
+            "bevel": 0.015
+          },
+          "material": {
+            "color": [
+              24,
+              26,
+              30
+            ],
+            "roughness": 0.5,
+            "metalness": 0.3,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.01
+          },
+          "transform": {
+            "position": [
+              -3.9,
+              3.4,
+              -1.25
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_glass_row1_a",
+          "label": "左楼暖窗",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.95,
+            "height": 1.3,
+            "depth": 0.08,
+            "bevel": 0.008
+          },
+          "material": {
+            "color": [
+              255,
+              186,
+              112
+            ],
+            "roughness": 0.22,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "emission": [
+              255,
+              170,
+              96
+            ],
+            "emissionStrength": 1.35
+          },
+          "transform": {
+            "position": [
+              -3.9,
+              3.41,
+              -1.33
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_row1_b",
+          "label": "左楼窗框",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 1.15,
+            "height": 1.55,
+            "depth": 0.12,
+            "bevel": 0.015
+          },
+          "material": {
+            "color": [
+              24,
+              26,
+              30
+            ],
+            "roughness": 0.5,
+            "metalness": 0.3,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.01
+          },
+          "transform": {
+            "position": [
+              -2,
+              3.4,
+              -1.25
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_glass_row1_b",
+          "label": "左楼暖窗",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.95,
+            "height": 1.3,
+            "depth": 0.08,
+            "bevel": 0.008
+          },
+          "material": {
+            "color": [
+              255,
+              174,
+              98
+            ],
+            "roughness": 0.24,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "emission": [
+              255,
+              164,
+              88
+            ],
+            "emissionStrength": 1.1
+          },
+          "transform": {
+            "position": [
+              -2,
+              3.41,
+              -1.33
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_row2_a",
+          "label": "左楼窗框",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 1.15,
+            "height": 1.55,
+            "depth": 0.12,
+            "bevel": 0.015
+          },
+          "material": {
+            "color": [
+              24,
+              26,
+              30
+            ],
+            "roughness": 0.5,
+            "metalness": 0.3,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.01
+          },
+          "transform": {
+            "position": [
+              -3.9,
+              5.6,
+              -1.25
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_glass_row2_a",
+          "label": "左楼暖窗",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.95,
+            "height": 1.3,
+            "depth": 0.08,
+            "bevel": 0.008
+          },
+          "material": {
+            "color": [
+              56,
+              62,
+              76
+            ],
+            "roughness": 0.3,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "emission": [
+              40,
+              54,
+              74
+            ],
+            "emissionStrength": 0.22
+          },
+          "transform": {
+            "position": [
+              -3.9,
+              5.61,
+              -1.33
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_frame_row2_b",
+          "label": "左楼窗框",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 1.15,
+            "height": 1.55,
+            "depth": 0.12,
+            "bevel": 0.015
+          },
+          "material": {
+            "color": [
+              24,
+              26,
+              30
+            ],
+            "roughness": 0.5,
+            "metalness": 0.3,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.01
+          },
+          "transform": {
+            "position": [
+              -2,
+              5.6,
+              -1.25
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "window_glass_row2_b",
+          "label": "左楼暖窗",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.95,
+            "height": 1.3,
+            "depth": 0.08,
+            "bevel": 0.008
+          },
+          "material": {
+            "color": [
+              255,
+              196,
+              124
+            ],
+            "roughness": 0.22,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "emission": [
+              255,
+              184,
+              104
+            ],
+            "emissionStrength": 0.95
+          },
+          "transform": {
+            "position": [
+              -2,
+              5.61,
+              -1.33
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "shop_front_box",
+          "label": "暖色店铺门面",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 3.2,
+            "height": 2.4,
+            "depth": 0.35,
+            "bevel": 0.04
+          },
+          "material": {
+            "color": [
+              122,
+              86,
+              52
+            ],
+            "roughness": 0.55,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "texture": {
+              "kind": "wood",
+              "scale": 2,
+              "strength": 0.3
+            },
+            "bump": 0.02,
+            "emission": [
+              255,
+              160,
+              78
+            ],
+            "emissionStrength": 0.55
+          },
+          "transform": {
+            "position": [
+              3.5,
+              1.2,
+              -1.28
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "shop_glass",
+          "label": "店铺玻璃亮窗",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 2.6,
+            "height": 1.7,
+            "depth": 0.1,
+            "bevel": 0.01
+          },
+          "material": {
+            "color": [
+              255,
+              190,
+              120
+            ],
+            "roughness": 0.2,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "emission": [
+              255,
+              176,
+              96
+            ],
+            "emissionStrength": 1.6
+          },
+          "transform": {
+            "position": [
+              3.5,
+              1.35,
+              -1.48
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "shop_sign",
+          "label": "店铺招牌灯带",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 3,
+            "height": 0.34,
+            "depth": 0.12,
+            "bevel": 0.02
+          },
+          "material": {
+            "color": [
+              255,
+              200,
+              140
+            ],
+            "roughness": 0.3,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "emission": [
+              255,
+              154,
+              72
+            ],
+            "emissionStrength": 1.9
+          },
+          "transform": {
+            "position": [
+              3.5,
+              2.62,
+              -0.98
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "building_right",
+          "label": "右侧街楼",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 5,
+            "height": 8.5,
+            "depth": 7,
+            "bevel": 0.03
+          },
+          "material": {
+            "color": [
+              44,
+              46,
+              52
+            ],
+            "roughness": 0.8,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "texture": {
+              "kind": "stone",
+              "scale": 2.2,
+              "strength": 0.28
+            },
+            "bump": 0.03
+          },
+          "transform": {
+            "position": [
+              6.2,
+              4.25,
+              -4.8
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "signal_pole_vertical",
+          "label": "行人信号灯细黑金属杆",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.055,
+            "height": 3.1
+          },
+          "material": {
+            "color": [
+              14,
+              15,
+              18
+            ],
+            "roughness": 0.42,
+            "metalness": 0.85,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.004
+          },
+          "transform": {
+            "position": [
+              -1.15,
+              1.55,
+              -0.6
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "signal_arm",
+          "label": "信号灯横臂",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.7,
+            "height": 0.075,
+            "depth": 0.075,
+            "bevel": 0.012
+          },
+          "material": {
+            "color": [
+              14,
+              15,
+              18
+            ],
+            "roughness": 0.42,
+            "metalness": 0.85,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.004
+          },
+          "transform": {
+            "position": [
+              -1.15,
+              3.05,
+              -0.6
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "signal_housing",
+          "label": "信号灯深色外壳",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.5,
+            "height": 0.62,
+            "depth": 0.26,
+            "bevel": 0.035
+          },
+          "material": {
+            "color": [
+              18,
+              19,
+              22
+            ],
+            "roughness": 0.5,
+            "metalness": 0.6,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.006
+          },
+          "transform": {
+            "position": [
+              -1.15,
+              2.62,
+              -0.6
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "signal_red_panel",
+          "label": "红色行人灯面",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.34,
+            "height": 0.42,
+            "depth": 0.05,
+            "bevel": 0.02
+          },
+          "material": {
+            "color": [
+              255,
+              58,
+              44
+            ],
+            "roughness": 0.2,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "emission": [
+              255,
+              46,
+              32
+            ],
+            "emissionStrength": 2.6
+          },
+          "transform": {
+            "position": [
+              -1.15,
+              2.62,
+              -0.73
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "signal_cap",
+          "label": "信号灯顶盖",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.55,
+            "height": 0.05,
+            "depth": 0.3,
+            "bevel": 0.01
+          },
+          "material": {
+            "color": [
+              10,
+              10,
+              12
+            ],
+            "roughness": 0.5,
+            "metalness": 0.7,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.004
+          },
+          "transform": {
+            "position": [
+              -1.15,
+              2.94,
+              -0.6
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "streetlamp_pole",
+          "label": "街灯杆",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.07,
+            "height": 4.4
+          },
+          "material": {
+            "color": [
+              22,
+              24,
+              28
+            ],
+            "roughness": 0.45,
+            "metalness": 0.8,
+            "transmission": 0,
+            "ior": 1.5,
+            "bump": 0.005
+          },
+          "transform": {
+            "position": [
+              2.8,
+              2.2,
+              -2.6
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "streetlamp_head",
+          "label": "暖色路灯头",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 0.48,
+            "height": 0.18,
+            "depth": 0.3,
+            "bevel": 0.05
+          },
+          "material": {
+            "color": [
+              255,
+              204,
+              144
+            ],
+            "roughness": 0.3,
+            "metalness": 0,
+            "transmission": 0,
+            "ior": 1.5,
+            "emission": [
+              255,
+              190,
+              118
+            ],
+            "emissionStrength": 2.2
+          },
+          "transform": {
+            "position": [
+              2.8,
+              4.4,
+              -2.6
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    "qualityNotes": [
+      "检查竖杆底端是否与地面接触、横臂两端是否分别连接竖杆与信号灯外壳，红色灯面只出现在外壳正面。",
+      "检查湿润沥青是否呈现出蓝色夜空与暖色店铺/路灯的分层反射，避免整面镜面过亮。",
+      "检查斑马线白漆边缘是否有磨损噪声，且没有悬浮于地面之上。",
+      "检查左楼窗框与发光窗面是否贴合，亮窗亮度不过曝，暗窗占比合理。",
+      "检查相机目标点位于画面中心，信号灯、斑马线与店铺形成前后层次。"
+    ],
+    "warnings": [
+      "无法通过材质面内绘制文字或图标，红色灯面为纯色发光面板，未表达行人图标细节。",
+      "湿润反射由材质粗糙度与噪声近似，不包含真实平面反射或屏幕空间反射。",
+      "路面水膜与斑马线磨损用程序噪声近似，不能还原参考图的具体照片纹理。"
+    ],
+    "research": {
+      "searched": true,
+      "toolCalls": [
+        {
+          "id": "crf07_139fdc8f-46a4-4a91-b3dc-77bc68e06158_search",
+          "type": "search_api",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "生成一张雨后夜晚街角的摄影风格图片：前景湿润沥青和斑马线，一根细黑色金属杆连接红色行人信号灯，后方是有窗框和亮窗的街楼与暖色店铺。地面反射有轻微微表面起伏，蓝色夜空与暖色灯光平衡。信号灯、横臂和竖杆必须连接，画面避免不明发光方块。请实际搜索Pexels或U"
+            ]
+          },
+          "sourceUrls": [
+            "https://picxstudio.com/templates/22108-rainy-night-city-crossing",
+            "https://image2studio.com/zh/prompts/gpt-image-2-social-media-post-photorealistic-prompt-275",
+            "https://inkloom.im/ru/ai-prompts/prompt-6203056",
+            "https://inkloom.im/es/ai-prompts/prompt-6203056",
+            "https://inkloom.im/ai-prompts/prompt-6203056",
+            "https://www.cgfan.com/explore?tag=%E5%9F%8E%E5%B8%82%E5%A4%9C%E6%99%AF#main-content",
+            "https://www.tumblr.com/2k115/809067747191537664/neon-night-rain-urban-cyberpunk-vibes?redirect_to=%2F2k115%2F809067747191537664%2Fneon-night-rain-urban-cyberpunk-vibes&source=blog_view_login_wall#1",
+            "https://deepdreamgenerator.com/ddream/ualppl102si"
+          ]
+        },
+        {
+          "id": "crf07_139fdc8f-46a4-4a91-b3dc-77bc68e06158_reference_search",
+          "type": "search_api",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com/photo/ 生成一张雨后夜晚街角的摄影风格图片：前景湿润沥青和斑马线，一根细黑色金属杆连接红色行人信号灯，后方是有窗框和亮窗的街楼与暖色店铺。地面反射有轻微微表面起伏，蓝色夜空与暖色灯光平衡。信号灯、横臂和竖杆必须连接，画"
+            ]
+          },
+          "sourceUrls": [
+            "https://www.pexels.com/photo/dark-alley-in-the-city-during-the-rain-17095521/",
+            "https://www.pexels.com/photo/moody-urban-street-in-downtown-seattle-at-twilight-30832768/",
+            "https://www.pexels.com/photo/new-york-city-street-on-a-rainy-day-16963650/",
+            "https://www.pexels.com/photo/a-puddle-on-the-ground-7131790/",
+            "https://www.pexels.com/photo/people-walking-on-misty-street-at-night-19654680/",
+            "https://www.pexels.com/photo/urban-sunlit-alleyway-with-architectural-elements-36100699/",
+            "https://www.pexels.com/photo/foggy-day-on-salford-s-modern-architectural-bridge-34623082/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pexels.com/photo/dark-alley-in-the-city-during-the-rain-17095521/",
+          "title": "Photo by Lauren Boswell on Pexels",
+          "snippet": "Choose your language: Afterglow Street Festive Summer Description # Capture of a tram in a moody urban alley during rain, with reflections on wet pavement. ## More like this Afterglow Street Festive Summer",
+          "via": "reference_search_fallback"
+        },
+        {
+          "url": "https://www.pexels.com/photo/moody-urban-street-in-downtown-seattle-at-twilight-30832768/",
+          "title": "Photo by Josh Hild on Pexels",
+          "snippet": "Add filters, effects ... 2832x4240 Aspect Ratio 177 ... Adobe Photoshop Lightroom Classic 14.2 (Macintosh) Seattle, Washington, United States Description # A rainy Seattle street with glowing lights at twilight creates a moody urban scene ## More like this",
+          "via": "reference_search_fallback"
+        },
+        {
+          "url": "https://www.pexels.com/photo/new-york-city-street-on-a-rainy-day-16963650/",
+          "title": "Photo by Karl Solano on Pexels",
+          "snippet": "3921x2208 Aspect Ratio 1307 ... Adobe Photoshop Lightroom Classic 11.0.1 (Macintosh) Chicago, IL, United States Description # Pedestrian crossing a wet street in downtown Chicago, reflecting urban life and architecture. ## More like this",
+          "via": "reference_search_fallback"
+        },
+        {
+          "url": "https://www.pexels.com/photo/a-puddle-on-the-ground-7131790/",
+          "title": "Photo by David Gan on Pexels",
+          "snippet": "6000x4000 Aspect Ratio 3:2 ... Software Adobe Photoshop Lightroom Classic 9.4 (Windows) Singapore, Singapore Description # Moody reflection of a street lamp in a rainy puddle on a textured pavement in Singapore, capturing an abstract urban scene. ## More like this",
+          "via": "reference_search_fallback"
+        },
+        {
+          "url": "https://www.pexels.com/photo/people-walking-on-misty-street-at-night-19654680/",
+          "title": "Photo by LIZHI LIANG on Pexels",
+          "snippet": "Camera Canon EOS R6m2 ... Adobe Photoshop Lightroom Classic 12.4 (Macintosh) 斯特拉斯堡, 大东部大区, 法国 Description # Foggy night in Strasbourg with silhouetted pedestrians and glowing streetlights creating a moody atmosphere.",
+          "via": "reference_search_fallback"
+        },
+        {
+          "url": "https://www.pexels.com/photo/urban-sunlit-alleyway-with-architectural-elements-36100699/",
+          "title": "Photo by Letícia Alvares on Pexels",
+          "snippet": "Camera Canon EOS 5D Mark III ... Software Adobe Photoshop Lightroom Classic 13.4 (Windows) Description # Sunlit urban alley with architectural details, plants, and soft shadows, evoking a serene afternoon city ambiance. ## More like this",
+          "via": "reference_search_fallback"
+        },
+        {
+          "url": "https://www.pexels.com/photo/foggy-day-on-salford-s-modern-architectural-bridge-34623082/",
+          "title": "Photo by Sebastien Devocelle on Pexels",
+          "snippet": "2000x3008 Aspect Ratio 125:188 ... Camera ILCE-6000 ... Salford, England, United Kingdom Description # Modern bridge in Salford, England enveloped in fog, showcasing tension cables and sleek design.",
+          "via": "reference_search_fallback"
+        },
+        {
+          "url": "https://picxstudio.com/templates/22108-rainy-night-city-crossing",
+          "title": "Rainy Night City Crossing — AI Image Prompt | PicX Studio",
+          "snippet": "Rainy Night City Crossing A moody cinematic street photo of a lone pedestrian with an umbrella crossing a neon-lit rainy city road, ideal for urban atmosphere and noir-style visuals. ... A cinematic urban night street scene in heavy rain, viewed from a low street-level angle.",
+          "via": "search_api"
+        },
+        {
+          "url": "https://image2studio.com/zh/prompts/gpt-image-2-social-media-post-photorealistic-prompt-275",
+          "title": "雨夜城市穿行提示词",
+          "snippet": "雨夜城市穿行 ... 从低角度拍摄的电影级城市雨夜街景。前景中，1 位孤独的行人呈现为近乎黑色的剪影，正从左向右迈步穿过街道，头顶撑着 1 把雨伞，身穿深色外套并背着背包 ... 强调光亮的湿润路面、闪烁的雨滴...",
+          "via": "search_api"
+        },
+        {
+          "url": "https://inkloom.im/ru/ai-prompts/prompt-6203056",
+          "title": "雨夜城市穿行：电影级街景提示词 · Художественный ИИ-промпт | Inkloom",
+          "snippet": "从低角度拍摄的电影级城市雨夜街景。前景中 ... 强调光亮的湿润路面、闪烁的雨滴、散景光斑、强烈的对比度、戏剧性的逆光、忧郁的黑色电影氛围、写实摄影风格、浅景深以及鲜艳且饱和的倒影。",
+          "via": "search_api"
+        },
+        {
+          "url": "https://inkloom.im/es/ai-prompts/prompt-6203056",
+          "title": "雨夜城市穿行：电影级街景提示词 · Prompt artístico de IA | Inkloom",
+          "snippet": "从低角度拍摄的电影级城市雨夜街景。前景中 ... 强调光亮的湿润路面、闪烁的雨滴、散景光斑、强烈的对比度、戏剧性的逆光、忧郁的黑色电影氛围、写实摄影风格、浅景深以及鲜艳且饱和的倒影。",
+          "via": "search_api"
+        },
+        {
+          "url": "https://inkloom.im/ai-prompts/prompt-6203056",
+          "title": "雨夜城市穿行：电影级街景提示词 · AI Art Prompt | Inkloom",
+          "snippet": "从低角度拍摄的电影级城市雨夜街景。前景中 ... 强调光亮的湿润路面、闪烁的雨滴、散景光斑、强烈的对比度、戏剧性的逆光、忧郁的黑色电影氛围、写实摄影风格、浅景深以及鲜艳且饱和的倒影。",
+          "via": "search_api"
+        },
+        {
+          "url": "https://www.cgfan.com/explore?tag=%E5%9F%8E%E5%B8%82%E5%A4%9C%E6%99%AF#main-content",
+          "title": "#城市夜景 | CGfan",
+          "snippet": "CCD直闪下的城市混沌美学9:16竖版，近距离半身到大腿中部构图，CCD直闪纪实摄影，雨后夜晚的繁忙城市十字路口，真实生活化抓拍感，带一点日系胶片与千禧年CCD随手拍气质。画面处于红灯等待时刻...",
+          "via": "search_api"
+        },
+        {
+          "url": "https://www.tumblr.com/2k115/809067747191537664/neon-night-rain-urban-cyberpunk-vibes?redirect_to=%2F2k115%2F809067747191537664%2Fneon-night-rain-urban-cyberpunk-vibes&source=blog_view_login_wall#1",
+          "title": "由 @2k115 发布 · 1 个图像 - 图像描述",
+          "snippet": "图像描述 Vertical night street scene on West 53rd Street, New York City. ... Wet pavement reflects warm street lamps and neon signs, creating a cinematic, glitchy, atmospheric urban scene. ... Rain and mist rise from manholes, reflecting green neon and street lights on the wet asphalt. ... A cinematic rainy night in the city, with blurred reflections of neon",
+          "via": "search_api"
+        },
+        {
+          "url": "https://deepdreamgenerator.com/ddream/ualppl102si",
+          "title": "Night Reflections on a City Crosswalk | Deep Dream Generator",
+          "snippet": "“AFTER THE RAIN, THE CITY STILL BREATHES” Foreground A ginger girl stands on wet asphalt at night, next to a pedestrian crossing. ... impressionistic oil painting depicting a woman standing on a wet crosswalk at night in a bustling city...",
+          "via": "search_api"
+        }
+      ],
+      "summary": "我无法直接为你联网检索，因为本次对话未提供可用的联网/搜索工具（Pexels、Unsplash、Wikimedia Commons 的检索与页面抓取都不可用）。因此下面**不伪造照片页链接**，只给出可直接执行的检索式与“拿到照片后如何转化为图形函数”的方案。照片字节需由你在后续步骤获取并提交视觉模型。\n\n## 一、可直接执行的检索（拿到后把详情页 URL 填入）\n\n**Pexels（photo detail page，非首页）**\n- `site:pexels.com/photo wet asphalt street night crosswalk reflection`\n- `site:pexels.com/photo pedestrian signal red light night street`\n- `site:pexels.com/photo rainy street night city lights bokeh shop`\n\n**Unsplash（photo detail page）**\n- `site:unsplash.com/photos wet street night crosswalk reflection`\n- `site:unsplash.com/photos red pedestrian signal night street`\n- `site:unsplash.com/photos rain night street warm shop window`\n\n**Wikimedia Commons（file 详情页）**\n- `site:commons.wikimedia.org pedestrian signal red man`\n- `site:commons.wikimedia.org wet asphalt night reflection street`\n\n筛选标准：必须同时含①湿润沥青/斑马线②夜间街楼或店铺窗③可辨的行人信号灯或竖杆；优先含“横臂连接竖杆”的正面/侧后 3/4 视角。\n\n## 二、拿到照片后按区域提取（写入视觉模型提示词）\n\n对每张入选图分别记录，避免把不同图的比例混用：\n1. **前景沥青**：反射强度（高光是否成条状）、斑马线白漆磨损边缘、水膜厚度感（镜面 vs 漫反射比例）。转化为：反射层乘数 `0.25–0.6`，粗糙度噪声幅度约 `0.02–0.05`。\n2. **信号灯**：红人像素占灯面比例、灯面为圆角矩形、外框深色、灯面亮度明显高于环境。转化为：红色自发光块 + 深色边框，禁止额外方块光源。\n3. **杆件**：细黑金属，直径约为灯宽的 `1/12–1/6`；竖杆与横臂在灯壳顶部/侧面有可见连接点。转化为：单条路径函数生成竖杆+横臂+灯壳，连接处同材质重叠。\n4. **街楼**：窗框分格数（横向/纵向）、亮窗色温（约 2700–3500K 暖白）、暗窗比例。转化为：网格窗框函数 + 少量亮窗自发光。\n5. **店铺**：暖色灯带/招牌色（橙黄），与蓝色夜空形成互补。\n6. **夜空**：深蓝至青蓝渐变，无星点或极少。\n\n## 三、可编码的图形函数要点（与来源解耦）\n\n- `wetAsphalt(u,v)`：基础深灰 `#1a1a1c` + 低频噪声水膜 + 竖向拉长的反射模糊。\n- `crosswalkStripe(u)`：白漆 `#d8d8d0`，边缘磨损噪声，宽度沿透视收窄。\n- `signalPole(x)`：竖杆细圆柱 + 横臂 + 灯壳，**同一路径连接**；灯面仅一块红色发光矩形，加暗红描边。\n- `buildingWindows(grid)`：窗框深色细线，窗内暖光，亮暗随机但受控。\n- `shopGlow()`：暖色面光源，配合地面反射。\n- 光照：主环境为冷蓝 `#2b4a6f`，暖光 `#ffb46a`，二者按前景/背景分区加权，避免过曝方块。\n\n## 四、局限\n- 以上为检索与转化方法，**不是已查看图像的结论**；具体比例、色值需在取得照片字节并由视觉模型分析后校准。\n- Wikimedia Commons 的行人信号照片可能为白天或非湿地面，需单独确认是否匹配“雨后夜晚”。\n- 若需我给出实际照片详情页，请开启联网工具或提供已抓取页面内容，我再据实整理。\n# Rainy Night City Crossing\n\nA moody cinematic street photo of a lone pedestrian with an umbrella crossing a neon-lit rainy city road, ideal for urban atmosphere and noir-style visuals.\n...\nGPT Image 216:9\n...\n- Model and format preset\n...\n## The prompt behind this image\n\nCopy the exact prompt behind Rainy Night City Crossing, or open it in the studio and make it yours.\n\nA cinematic urban night street scene in heavy rain, viewed from a low street-level angle. In the foreground, 1 solitary pedestrian appears as a nearly black silhouette crossing left to right, mid-stride, holding 1 open umbrella overhead and wearing a dark coat with a backpack. The person’s face is obscured by shadow and backlighting. In the midground on the right, 1 city bus approaches with bright warm headlights and an amber LED route display, slightly blurred by rain and motion. On the far left, 1 pedestrian crossing signal glows red with a raised hand icon. The street is soaked with large reflective puddles, creating intense mirrored streaks of red, blue, orange, and white neon and traffic lights across the asphalt. Tall buildings line both sides of the street as a dense downtown corridor, with scattered illumin\n# 雨夜城市穿行\n\nGPT Image 2 提示词，适用于摄影，写实摄影风格，复制后直接用，也可以在这里生成，第一张免费且无需注册。\n\n用社媒广告工具生成你自己的图\n\n从低角度拍摄的电影级城市雨夜街景。前景中，1 位孤独的行人呈现为近乎黑色的剪影，正从左向右迈步穿过街道，头顶撑着 1 把雨伞，身穿深色外套并背着背包。行人的面部被阴影和逆光遮挡。中景右侧，1 辆城市公交车正迎面驶来，明亮的暖色车灯和琥珀色的 LED 线路显示屏在雨水和运动模糊中若隐若现。最左侧，1 个红色的行人过街信号灯亮起，显示着举手图标。街道被雨水浸透，形成大片积水，将红、蓝、橙、白色的霓虹灯和交通灯光在沥青路面上拉出强烈的倒影。街道两侧高楼林立，构成密集的市中心走廊，零星的灯箱和窗户光芒融入深蓝黑色的雨夜氛围中。强调光亮的湿润路面、闪烁的雨滴、散景光斑、强烈的对比度、戏剧性的逆光、忧郁的黑色电影氛围、写实摄影风格、浅景深以及鲜艳且饱和的倒影。采用宽银幕构图，剪影行人位于中左侧，公交车位于中右侧。\n\n- 模型\n- GPT Image 2\n- 比例\n- 16:9\n- 参考图\n- 不需要\n- 分类\n- 摄影\n\n## 这条提示词怎么用\n\n### 复制，或在工作台打开\n\n复制提示词，或一键在工作台中打开。\n\n### 换成你的内容\n\n把主体、文字和颜色换成你自己的。\n\n### 先用 1K 生成\n\n先用 1K 看构图，满意后再用 2K（横向和竖向比例可选 4K）重新生成，细节会有变化。\n...\n## 这条提示词能生成什么？\n\n生成「雨夜城市穿行」这类图片，分类是摄影，风格偏写实摄影，比例 16:9，使用 GPT Image 2 模型。\n\n## 需要参考图吗？\n\n不需要。只用这段文字就能生成。\n\n## 可以在 ChatGPT 里用吗？\n\n可以。把提示词粘贴到 ChatGPT 的图片生成里即可，也可以直接在这里用 GPT Image 2 生成。\n\n## 免费吗？\n\n第一张图无需账号，免费生成（1K）。注册免费，并赠送 50 额度，之后 1K 一张消耗 10 额度。\n#雨夜街景#电影级#黑色电影#剪影#城市风光#ai2image#gpt-image-2\n\n# 雨夜城市穿行：电影级街景提示词\n\nГотовый художественный ИИ-промпт. Прочитайте его бесплатно, а затем адаптируйте под себя в Inkloom.\n\nКопирование бесплатно. Для сохранения промптов и генерации изображений нужна учётная запись Inkloom.\n...\n## Полный промпт\n从低角度拍摄的电影级城市雨夜街景。前景中，1 位孤独的行人呈现为近乎黑色的剪影，正从左向右迈步穿过街道，头顶撑着 1 把雨伞，身穿深色外套并背着背包。行人的面部被阴影和逆光遮挡。中景右侧，1 辆城市公交车正迎面驶来，明亮的暖色车灯和琥珀色的 LED 线路显示屏在雨水和运动模糊中若隐若现。最左侧，1 个红色的行人过街信号灯亮起，显示着举手图标。街道被雨水浸透，形成大片积水，将红、蓝、橙、白色的霓虹灯和交通灯光在沥青路面上拉出强烈的倒影。街道两侧高楼林立，构成密集的市中心走廊，零星的灯箱和窗户光芒融入深蓝黑色的雨夜氛围中。强调光亮的湿润路面、闪烁的雨滴、散景光斑、强烈的对比度、戏剧性的逆光、忧郁的黑色电影氛围、写实摄影风格、浅景深以及鲜艳且饱和的倒影。采用宽银幕构图，剪影行人位于中左侧，公交车位于中右侧。\n#雨夜街景#电影级#黑色电影#剪影#城市风光#ai2image#gpt-image-2\n\n# 雨夜城市穿行：电影级街景提示词\n...\n## Prompt completo\n从低角度拍摄的电影级城市雨夜街景。前景中，1 位孤独的行人呈现为近乎黑色的剪影，正从左向右迈步穿过街道，头顶撑着 1 把雨伞，身穿深色外套并背着背包。行人的面部被阴影和逆光遮挡。中景右侧，1 辆城市公交车正迎面驶来，明亮的暖色车灯和琥珀色的 LED 线路显示屏在雨水和运动模糊中若隐若现。最左侧，1 个红色的行人过街信号灯亮起，显示着举手图标。街道被雨水浸透，形成大片积水，将红、蓝、橙、白色的霓虹灯和交通灯光在沥青路面上拉出强烈的倒影。街道两侧高楼林立，构成密集的市中心走廊，零星的灯箱和窗户光芒融入深蓝黑色的雨夜氛围中。强调光亮的湿润路面、闪烁的雨滴、散景光斑、强烈的对比度、戏剧性的逆光、忧郁的黑色电影氛围、写实摄影风格、浅景深以及鲜艳且饱和的倒影。采用宽银幕构图，剪影行人位于中左侧，公交车位于中右侧。\n#雨夜街景#电影级#黑色电影#剪影#城市风光#ai2image#gpt-image-2\n\n# 雨夜城市穿行：电影级街景提示词\n\nA ready-to-use AI art prompt.\n...\n## Full prompt\n从低角度拍摄的电影级城市雨夜街景。前景中，1 位孤独的行人呈现为近乎黑色的剪影，正从左向右迈步穿过街道，头顶撑着 1 把雨伞，身穿深色外套并背着背包。行人的面部被阴影和逆光遮挡。中景右侧，1 辆城市公交车正迎面驶来，明亮的暖色车灯和琥珀色的 LED 线路显示屏在雨水和运动模糊中若隐若现。最左侧，1 个红色的行人过街信号灯亮起，显示着举手图标。街道被雨水浸透，形成大片积水，将红、蓝、橙、白色的霓虹灯和交通灯光在沥青路面上拉出强烈的倒影。街道两侧高楼林立，构成密集的市中心走廊，零星的灯箱和窗户光芒融入深蓝黑色的雨夜氛围中。强调光亮的湿润路面、闪烁的雨滴、散景光斑、强烈的对比度、戏剧性的逆光、忧郁的黑色电影氛围、写实摄影风格、浅景深以及鲜艳且饱和的倒影。采用宽银幕构图，剪影行人位于中左侧，公交车位于中右侧。\n通用 Prompt进阶雨夜街拍：CCD直闪下的城市混沌美学9:16竖版，近距离半身到大腿中部构图，CCD直闪纪实摄影，雨后夜晚的繁忙城市十字路口，真实生活化抓拍感，带一点日系胶片与千禧年CCD随手拍气质。画面处于红灯等待时刻，人物站在斑马线边缘或路口转角处，前景与背景都带一点真实街头遮挡和拥挤感。…#街拍#CCD#胶片感月无关 | 0xKyne\n图像描述\n\nVertical night street scene on West 53rd Street, New York City. A lone figure in profile is silhouetted against a glowing streetlight, partially obscured by rising steam from a subway vent. Green pedestrian traffic light glows, with a vivid blue streak on the side. Wet pavement reflects warm street lamps and neon signs, creating a cinematic, glitchy, atmospheric urban scene.\n...\nBlurred silhouette of a person in steam at a crosswalk on West 53rd Street, New York, at night. Red stop-hand traffic light glows amid yellow-orange streetlights, creating a mysterious, cinematic urban atmosphere.\n...\nA lone figure in all black stands on the crosswalk of West 53rd Street in New York City at night. Rain and mist rise from manholes, reflecting green\n\nneon and street lights on the wet asphalt. A yellow taxi passes close to the camera with motion blur.A red traffic light glows on one side while green neon light illuminates the vapor and street. Brick buildings with subtle graffiti appear in the blurred background. Vertical 9:16, cinematic realistic,\n\nmoody, immersive street photography.\n...\nNeon reflections slice through the wet asphalt as New York breathes under the rain. An NYPD car fla\n# Night Reflections on a City Crosswalk\n...\n- Artist\njexiq...\n...\nPrompt by jexiq q: <<Masterpiece>>: Scene: Impasto, Glazing and Mixing Palette Knife and color ink Techniques: “AFTER THE RAIN, THE CITY STILL BREATHES” Foreground A ginger girl stands on wet asphalt at night, next to a pedestrian crossing. She holds old headphones in her hand. Her hair is slightly wet, her jacket heavy from the rain. Midground Asphalt full of puddles reflecting neon signs. The water on the road looks like stretched palette-knife strokes — uneven, thick, textured. Background Neon signs and car headlights diffused through moisture like glazing layers of light. Lighting Neon reflections in puddles mixed with cold streetlights. Painterly techniques in the scene Reflections in water resemble impasto texture, neon colors bleed like colored ink, layers of light through moisture feel like glazing. Mood Melancholic, urban, cinematic, as if the city itself has emotions.\n\n## More about Night Reflections on a City Crosswalk\n\nA vibrant, impressionistic oil painting depicting a woman standing on a wet crosswalk at night in a bustling city, observed from a low-angle medium shot, as if from a camera on a tripod, wi",
+      "status": "completed",
+      "nativeSearchObserved": false,
+      "fallbackUsed": true,
+      "referenceImageCandidates": [],
+      "referenceImages": [
+        {
+          "sourceUrl": "https://www.pexels.com/photo/dark-alley-in-the-city-during-the-rain-17095521/",
+          "title": "Photo by Lauren Boswell on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/17095521/pexels-photo-17095521.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "d954184b0f77b6b554015f045709a08518863808e2d756c9a637312a9c3f44b7",
+          "bytes": 46844,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/moody-urban-street-in-downtown-seattle-at-twilight-30832768/",
+          "title": "Photo by Josh Hild on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/30832768/pexels-photo-30832768.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "0e41c48a9978266ccb8bd529428119cf60b1c53ecc2022d234d323f005a1c4c5",
+          "bytes": 96814,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/new-york-city-street-on-a-rainy-day-16963650/",
+          "title": "Photo by Karl Solano on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/16963650/pexels-photo-16963650.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "55fe90ede00aa63531cf9c41bf3223660136139c2848cb881db31241fc5ff34b",
+          "bytes": 107468,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/a-puddle-on-the-ground-7131790/",
+          "title": "Photo by David Gan on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/7131790/pexels-photo-7131790.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "875f59456e7a0cd25948d50371a198352533d7d438f35fe3555106a2dcb418b6",
+          "bytes": 32248,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/people-walking-on-misty-street-at-night-19654680/",
+          "title": "Photo by LIZHI LIANG on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/19654680/pexels-photo-19654680.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "121aed8cf5b506af9e8422bffd20fe77fc0c4e8d5e03b815ab185d4c0e08d20c",
+          "bytes": 7138,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/photo/urban-sunlit-alleyway-with-architectural-elements-36100699/",
+          "title": "Photo by Letícia Alvares on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/36100699/pexels-photo-36100699.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "3cc8aa664d8b860d746e64b24b044d0956bb9ef641678df0c39098e87e379f10",
+          "bytes": 56998,
+          "mime": "image/webp",
+          "submittedToVision": true
+        }
+      ],
+      "referenceImagesSubmitted": 6,
+      "inputImageProvided": false,
+      "referenceCollection": {
+        "method": "public source-page image metadata, verified image bytes; not render textures",
+        "sourcePageCount": 7,
+        "downloadedCount": 6,
+        "attempts": [
+          {
+            "sourceUrl": "https://www.pexels.com/photo/dark-alley-in-the-city-during-the-rain-17095521/",
+            "title": "Photo by Lauren Boswell on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/17095521/pexels-photo-17095521.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 46844,
+            "mime": "image/webp",
+            "sha256": "d954184b0f77b6b554015f045709a08518863808e2d756c9a637312a9c3f44b7"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/photo/moody-urban-street-in-downtown-seattle-at-twilight-30832768/",
+            "title": "Photo by Josh Hild on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/30832768/pexels-photo-30832768.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 96814,
+            "mime": "image/webp",
+            "sha256": "0e41c48a9978266ccb8bd529428119cf60b1c53ecc2022d234d323f005a1c4c5"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/photo/new-york-city-street-on-a-rainy-day-16963650/",
+            "title": "Photo by Karl Solano on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/16963650/pexels-photo-16963650.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 107468,
+            "mime": "image/webp",
+            "sha256": "55fe90ede00aa63531cf9c41bf3223660136139c2848cb881db31241fc5ff34b"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/photo/a-puddle-on-the-ground-7131790/",
+            "title": "Photo by David Gan on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/7131790/pexels-photo-7131790.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 32248,
+            "mime": "image/webp",
+            "sha256": "875f59456e7a0cd25948d50371a198352533d7d438f35fe3555106a2dcb418b6"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/photo/people-walking-on-misty-street-at-night-19654680/",
+            "title": "Photo by LIZHI LIANG on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/19654680/pexels-photo-19654680.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 7138,
+            "mime": "image/webp",
+            "sha256": "121aed8cf5b506af9e8422bffd20fe77fc0c4e8d5e03b815ab185d4c0e08d20c"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/photo/urban-sunlit-alleyway-with-architectural-elements-36100699/",
+            "title": "Photo by Letícia Alvares on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/36100699/pexels-photo-36100699.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 56998,
+            "mime": "image/webp",
+            "sha256": "3cc8aa664d8b860d746e64b24b044d0956bb9ef641678df0c39098e87e379f10"
+          }
+        ],
+        "submittedToVision": true,
+        "submittedCount": 6,
+        "rounds": 2
+      },
+      "referenceFallbackUsed": true
+    },
+    "usage": {
+      "prompt_tokens": 10590,
+      "completion_tokens": 5535,
+      "total_tokens": 16125,
+      "providerCalls": 4,
+      "requests": [
+        {
+          "phase": "research",
+          "requestId": "792bdb8d-e8d9-4f9d-bc15-e1405fb4c48b",
+          "model": "deepseek-flash",
+          "elapsedMs": 7932,
+          "prompt_tokens": 546,
+          "completion_tokens": 919,
+          "total_tokens": 1465,
+          "server_tool_use": {}
+        },
+        {
+          "phase": "search_fallback",
+          "requestId": "",
+          "model": "deepseek-flash",
+          "elapsedMs": 592,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "server_tool_use": {}
+        },
+        {
+          "phase": "reference_search_fallback",
+          "requestId": "",
+          "model": "deepseek-flash",
+          "elapsedMs": 524,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "server_tool_use": {}
+        },
+        {
+          "phase": "compose",
+          "requestId": "0706c69e-1591-4df1-bb5a-d1fe17a08d68",
+          "model": "deepseek-flash",
+          "elapsedMs": 21723,
+          "prompt_tokens": 10044,
+          "completion_tokens": 4616,
+          "total_tokens": 14660,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "vision": {
+      "renderedImageProvided": false,
+      "referenceImagesProvided": 6,
+      "referenceSourceUrls": [
+        "https://www.pexels.com/photo/dark-alley-in-the-city-during-the-rain-17095521/",
+        "https://www.pexels.com/photo/moody-urban-street-in-downtown-seattle-at-twilight-30832768/",
+        "https://www.pexels.com/photo/new-york-city-street-on-a-rainy-day-16963650/",
+        "https://www.pexels.com/photo/a-puddle-on-the-ground-7131790/",
+        "https://www.pexels.com/photo/people-walking-on-misty-street-at-night-19654680/",
+        "https://www.pexels.com/photo/urban-sunlit-alleyway-with-architectural-elements-36100699/"
+      ]
+    },
+    "repair": {
+      "attempted": false,
+      "passes": [],
+      "recovered": false
+    },
+    "validation": {
+      "declarative": true,
+      "envelope": true,
+      "renderer": true,
+      "clientValidationRequired": false
+    }
+  }
+}

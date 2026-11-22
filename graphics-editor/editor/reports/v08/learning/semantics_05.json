@@ -1,0 +1,439 @@
+{
+  "schema": "crf.visual_semantics.v0.8",
+  "round": 5,
+  "items": [
+    {
+      "id": "learn.r05.92830dd7cdf2",
+      "label": "棕褐色放射状褶皱表面近景",
+      "category": "macro-texture",
+      "role": "material",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          126,
+          86,
+          55
+        ],
+        [
+          172,
+          134,
+          99
+        ],
+        [
+          88,
+          57,
+          37
+        ],
+        [
+          208,
+          180,
+          148
+        ],
+        [
+          52,
+          37,
+          27
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "极近距离拍摄的棕褐色褶皱/脊状表面，脊线大致从右上方向外放射，边缘带细密浅色颗粒与绒毛状质感。画面有明显浅景深，右侧与远端逐渐虚化，沟谷处呈深褐色阴影，脊部受光形成暖色高光。适合作为自然材质、干燥表面或有机纹理的参考，但主体具体身份无法仅凭画面确认。",
+      "tags": [
+        "棕色",
+        "褶皱",
+        "放射状",
+        "颗粒",
+        "微距",
+        "浅景深",
+        "有机纹理",
+        "暖光"
+      ],
+      "limitations": [
+        "无法确认具体材质或物品身份",
+        "缺少尺度参照",
+        "浅景深导致边缘与远端细节不可见",
+        "不能据此判断完整外形或结构",
+        "颗粒可能是表面附着物，也可能是纹理本身"
+      ]
+    },
+    {
+      "id": "learn.r05.67fd559a57f5",
+      "label": "绿色蕨类叶片特写",
+      "category": "fern-frond",
+      "role": "object",
+      "bbox": [
+        0.25,
+        0.27,
+        0.83,
+        0.99
+      ],
+      "palette": [
+        [
+          88,
+          142,
+          58
+        ],
+        [
+          47,
+          93,
+          36
+        ],
+        [
+          21,
+          50,
+          28
+        ],
+        [
+          133,
+          175,
+          78
+        ],
+        [
+          7,
+          20,
+          14
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "一片绿色蕨类羽状复叶从画面中部向左下延伸，细小 leaflets 沿主轴向两侧排列，边缘呈细锯齿/羽裂状。中央叶片较清晰，前景左下和背景叶片明显虚化，暗绿色背景形成较强隔离感。左侧可见一段细枝或茎，整体光线柔和，叶面有轻微亮部。适合作为植物近景、叶片形态和浅景深构图参考。",
+      "tags": [
+        "蕨类",
+        "羽状复叶",
+        "绿色",
+        "植物近景",
+        "浅景深",
+        "暗背景",
+        "叶片",
+        "自然光"
+      ],
+      "limitations": [
+        "无法确定具体蕨类物种",
+        "只能看到局部叶片，缺少整株形态",
+        "背景虚化遮挡环境信息",
+        "bbox 为近似主体范围，包含部分背景",
+        "颜色可能受后期调色影响"
+      ]
+    },
+    {
+      "id": "learn.r05.a5353610c875",
+      "label": "蕨类复叶层叠近景",
+      "category": "fern-foliage",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          101,
+          124,
+          74
+        ],
+        [
+          66,
+          91,
+          52
+        ],
+        [
+          38,
+          55,
+          37
+        ],
+        [
+          134,
+          151,
+          99
+        ],
+        [
+          20,
+          30,
+          22
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "画面被多层蕨类复叶填满，细密羽状小叶片反复分叉、相互重叠，形成繁复的自然纹理。整体为偏灰的橄榄绿色，背景更暗，部分叶片处于虚焦状态，少数叶面有浅色斑点或干枯痕迹。光线柔和、方向不明显，适合作为植物纹理、层叠结构和自然背景参考，但无法从单一画面还原完整植株。",
+      "tags": [
+        "蕨类",
+        "复叶",
+        "层叠",
+        "绿色",
+        "自然纹理",
+        "近景",
+        "柔和光",
+        "浅景深"
+      ],
+      "limitations": [
+        "多个叶片重叠，无法直接拆分单株",
+        "物种不可确认",
+        "缺少尺度与完整植株信息",
+        "景深变化造成局部模糊",
+        "浅色斑点成因无法判断",
+        "色彩可能受拍摄或后期影响"
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "ok": true,
+      "engine": "gaussian08-semantic-learning",
+      "model": "deepseek-flash",
+      "round": 5,
+      "topic": "植物近景与自然物品实拍",
+      "items": [
+        {
+          "id": "learn.r05.92830dd7cdf2",
+          "label": "棕褐色放射状褶皱表面近景",
+          "category": "macro-texture",
+          "role": "material",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "palette": [
+            [
+              126,
+              86,
+              55
+            ],
+            [
+              172,
+              134,
+              99
+            ],
+            [
+              88,
+              57,
+              37
+            ],
+            [
+              208,
+              180,
+              148
+            ],
+            [
+              52,
+              37,
+              27
+            ]
+          ],
+          "lightDirection": "left",
+          "description": "极近距离拍摄的棕褐色褶皱/脊状表面，脊线大致从右上方向外放射，边缘带细密浅色颗粒与绒毛状质感。画面有明显浅景深，右侧与远端逐渐虚化，沟谷处呈深褐色阴影，脊部受光形成暖色高光。适合作为自然材质、干燥表面或有机纹理的参考，但主体具体身份无法仅凭画面确认。",
+          "tags": [
+            "棕色",
+            "褶皱",
+            "放射状",
+            "颗粒",
+            "微距",
+            "浅景深",
+            "有机纹理",
+            "暖光"
+          ],
+          "limitations": [
+            "无法确认具体材质或物品身份",
+            "缺少尺度参照",
+            "浅景深导致边缘与远端细节不可见",
+            "不能据此判断完整外形或结构",
+            "颗粒可能是表面附着物，也可能是纹理本身"
+          ]
+        },
+        {
+          "id": "learn.r05.67fd559a57f5",
+          "label": "绿色蕨类叶片特写",
+          "category": "fern-frond",
+          "role": "object",
+          "bbox": [
+            0.25,
+            0.27,
+            0.83,
+            0.99
+          ],
+          "palette": [
+            [
+              88,
+              142,
+              58
+            ],
+            [
+              47,
+              93,
+              36
+            ],
+            [
+              21,
+              50,
+              28
+            ],
+            [
+              133,
+              175,
+              78
+            ],
+            [
+              7,
+              20,
+              14
+            ]
+          ],
+          "lightDirection": "diffuse",
+          "description": "一片绿色蕨类羽状复叶从画面中部向左下延伸，细小 leaflets 沿主轴向两侧排列，边缘呈细锯齿/羽裂状。中央叶片较清晰，前景左下和背景叶片明显虚化，暗绿色背景形成较强隔离感。左侧可见一段细枝或茎，整体光线柔和，叶面有轻微亮部。适合作为植物近景、叶片形态和浅景深构图参考。",
+          "tags": [
+            "蕨类",
+            "羽状复叶",
+            "绿色",
+            "植物近景",
+            "浅景深",
+            "暗背景",
+            "叶片",
+            "自然光"
+          ],
+          "limitations": [
+            "无法确定具体蕨类物种",
+            "只能看到局部叶片，缺少整株形态",
+            "背景虚化遮挡环境信息",
+            "bbox 为近似主体范围，包含部分背景",
+            "颜色可能受后期调色影响"
+          ]
+        },
+        {
+          "id": "learn.r05.a5353610c875",
+          "label": "蕨类复叶层叠近景",
+          "category": "fern-foliage",
+          "role": "reference-frame",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "palette": [
+            [
+              101,
+              124,
+              74
+            ],
+            [
+              66,
+              91,
+              52
+            ],
+            [
+              38,
+              55,
+              37
+            ],
+            [
+              134,
+              151,
+              99
+            ],
+            [
+              20,
+              30,
+              22
+            ]
+          ],
+          "lightDirection": "diffuse",
+          "description": "画面被多层蕨类复叶填满，细密羽状小叶片反复分叉、相互重叠，形成繁复的自然纹理。整体为偏灰的橄榄绿色，背景更暗，部分叶片处于虚焦状态，少数叶面有浅色斑点或干枯痕迹。光线柔和、方向不明显，适合作为植物纹理、层叠结构和自然背景参考，但无法从单一画面还原完整植株。",
+          "tags": [
+            "蕨类",
+            "复叶",
+            "层叠",
+            "绿色",
+            "自然纹理",
+            "近景",
+            "柔和光",
+            "浅景深"
+          ],
+          "limitations": [
+            "多个叶片重叠，无法直接拆分单株",
+            "物种不可确认",
+            "缺少尺度与完整植株信息",
+            "景深变化造成局部模糊",
+            "浅色斑点成因无法判断",
+            "色彩可能受拍摄或后期影响"
+          ]
+        }
+      ],
+      "sharedFeatures": [
+        "均为自然/有机材质或植物的近距离拍摄",
+        "均以局部纹理和形态为主要视觉内容",
+        "均使用浅景深或局部虚化",
+        "背景较暗或较简洁，主体相对突出",
+        "均缺少明确尺度参照",
+        "均无法仅凭单张图确认完整对象或物种"
+      ],
+      "missingEvidence": [
+        "三张图之间没有同一主体的多角度对应关系",
+        "缺少拍摄尺度、地点和环境上下文",
+        "缺少 EXIF、焦距、光圈等拍摄参数",
+        "无法确认第一张的具体材质身份",
+        "无法确认第二、三张蕨类的具体物种",
+        "缺少精确 alpha 分割或三维结构信息",
+        "无法判断色彩是否经过后期调色",
+        "缺少更广视角来还原完整植株或物品外形"
+      ],
+      "images": [
+        {
+          "id": "learn.r05.92830dd7cdf2",
+          "sourceUrl": "https://www.pexels.com/photo/extreme-close-up-of-candy-12458501/",
+          "sha256": "92830dd7cdf261f59cfcb5e1d9246069b1a557d964c82dc34f0d974a091e9070",
+          "submittedToVision": true
+        },
+        {
+          "id": "learn.r05.67fd559a57f5",
+          "sourceUrl": "https://www.pexels.com/photo/lush-green-fern-leaves-close-up-nature-photography-30659564/",
+          "sha256": "67fd559a57f55edff8630a236fcc232192ed86c3dee5c5edbe121ce8c51ed8aa",
+          "submittedToVision": true
+        },
+        {
+          "id": "learn.r05.a5353610c875",
+          "sourceUrl": "https://www.pexels.com/photo/green-leaves-of-a-fern-plant-5993687/",
+          "sha256": "a5353610c87581c1f3a83fec5fbdbebe9ba0cff71dcbba84682ed0eb9391dc32",
+          "submittedToVision": true
+        }
+      ],
+      "usage": {
+        "providerCalls": 1,
+        "requests": [
+          {
+            "phase": "gaussian_semantic_learning",
+            "requestId": "a175c170-900a-4fb4-935e-bde95cd3d770",
+            "model": "deepseek-flash",
+            "elapsedMs": 20714,
+            "prompt_tokens": 1332,
+            "completion_tokens": 3074,
+            "total_tokens": 4406,
+            "reasoning_tokens": 2147,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": false,
+            "finishReason": "stop",
+            "referenceImagesProvided": 3
+          }
+        ],
+        "prompt_tokens": 1332,
+        "completion_tokens": 3074,
+        "total_tokens": 4406,
+        "reasoning_tokens": 2147
+      },
+      "validation": {
+        "schema": true,
+        "allImageIdsMatched": true,
+        "repairUsed": false,
+        "pixelMaskVerified": false
+      },
+      "modelWeightsUpdated": false,
+      "pixelFitPerformed": false,
+      "elapsedMs": 20716
+    }
+  ],
+  "actualInputImageCount": 3
+}

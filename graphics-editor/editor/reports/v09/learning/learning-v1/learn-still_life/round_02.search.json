@@ -1,0 +1,918 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 2,
+  "query": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "checkpoint": {
+    "sessionId": "crf09_e5ccf6cd-5556-4a02-a656-53316025d65f",
+    "round": 2,
+    "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+    "subtopic": "自然颜色与材质：不同表面、微纹理和真实缺陷",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:49:24.937Z",
+    "runId": "crf07_9623dea6-89eb-4a66-97d0-a64223d589be",
+    "queries": [
+      "site:commons.wikimedia.org still life apples pears orange ceramic vase photograph",
+      "site:pexels.com photo still life apples pears orange ceramic vase",
+      "site:commons.wikimedia.org apple pear orange still life photograph",
+      "site:pexels.com photo fruit still life apples pears orange",
+      "site:commons.wikimedia.org ceramic vase still life photograph",
+      "苹果 梨 橙子 陶瓷花瓶 静物摄影 高清 图片 素材",
+      "site:pexels.com photo orange ceramic vase still life",
+      "site:commons.wikimedia.org orange in ceramic bowl photograph",
+      "site:pexels.com photo pears apples still life",
+      "site:commons.wikimedia.org apples pears still life photograph",
+      "site:pexels.com photo ceramic vase fruit still life",
+      "site:commons.wikimedia.org ceramic vase fruit still life photograph"
+    ],
+    "requestIds": [
+      "6ceaa194-abc1-4e6a-b782-d5828e496548"
+    ],
+    "sourceCount": 21,
+    "newSourceCount": 20,
+    "candidateCount": 18,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_42358e3639c649e39dd8082dca89034d",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:commons.wikimedia.org still life apples pears orange ceramic vase photograph",
+            "site:pexels.com photo still life apples pears orange ceramic vase",
+            "site:commons.wikimedia.org apple pear orange still life photograph",
+            "site:pexels.com photo fruit still life apples pears orange",
+            "site:commons.wikimedia.org ceramic vase still life photograph",
+            "苹果 梨 橙子 陶瓷花瓶 静物摄影 高清 图片 素材"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/zh-tw/photo/34775290/",
+          "https://www.pexels.com/photo/assorted-fresh-fruits-display-at-market-33115591/",
+          "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+          "http://www.daimg.com/photo/201812/photo_137758.html",
+          "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+          "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+          "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+          "https://zh.pngtree.com/freepng/photorealistic-fruit-bowl-vibrant-colors-detailed-textures-glossy-grapes-ripe-peaches-juicy-pears-fresh-oranges-crisp-apples-white-ceramic-green-leaves-studio-lighting-high-resolution-food-photography-3d-rendering-hyperrealistic-still-life-composition-app_17918150.html",
+          "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+          "https://www.pexels.com/fr-fr/photo/nourriture-aliments-apple-pomme-26466932/",
+          "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+          "https://zh.pngtree.com/freepng/a-vibrant-still-life-arrangement-featuring-trio-of-plump_18949957.html",
+          "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1"
+        ]
+      },
+      {
+        "id": "srvtoolu_s_01_fd36a1ee9ab8487d86e447434bc4909a",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "site:pexels.com photo orange ceramic vase still life",
+            "site:commons.wikimedia.org orange in ceramic bowl photograph",
+            "site:pexels.com photo pears apples still life",
+            "site:commons.wikimedia.org apples pears still life photograph",
+            "site:pexels.com photo ceramic vase fruit still life",
+            "site:commons.wikimedia.org ceramic vase fruit still life photograph"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/",
+          "https://commons.wikimedia.org/wiki/File:Anne_Dangar_-_Bowl_wheel-thrown_earthenware,_with_orange_ground_glaze,_black_geometrical_design_and_exterior_glaze,_artist%27s_signature_%27MSD%27_to_base.jpg",
+          "https://www.pexels.com/fr-fr/photo/nourriture-aliments-apple-pomme-26466932/",
+          "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+          "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+          "https://commons.wikimedia.org/wiki/Category:Orange_bowls",
+          "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+          "https://commons.wikimedia.org/wiki/Category:Bowls_with_food#1",
+          "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+          "https://commons.wikimedia.org/wiki/File:Medieval_ceramic_iron-rich_sandy_ware_glazed_vessel_fragments_(FindID_138637).jpg#1",
+          "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+          "https://www.pexels.com/photo/fruits-on-cutting-board-and-in-bowl-20346391/",
+          "https://commons.wikimedia.org/wiki/Category:Grasset_Collection"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/34775290/",
+        "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames 1 Valentin Ivantsov ... 尺寸 4085x6128 色彩 日期 Nov 17 ... 說明 # 藝術靜物，包含書籍、蘋果、花瓶和掛框畫作。 ## 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/assorted-fresh-fruits-display-at-market-33115591/",
+        "title": "Photo by Павел Хлыстунов on Pexels",
+        "snippet": "Afterglow ... Date Jul 22, 2025 ... 2025 Software Adobe Photoshop Lightroom Classic 14.0.1 (Windows) Description # Vibrant display of assorted apples and citrus fruits at an outdoor market stall. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+        "title": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg - Wikimedia Commons - File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg",
+        "snippet": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg ... Josefa de Óbidos: still life with boxes and crockery",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+        "title": "Photo by Evgeniy Alekseyev on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 6016x4016 ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+        "title": "Photo de Hans Heemsbergen sur Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages ... Appareil photo NIKON D7000 ... ISO 400 ... Logiciel Adobe Photoshop Elements 12.0 Windows Description # Un assortiment coloré de pommes, de poires et d'un avocat dans un panier. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+        "title": "File:(Toulouse) Nature morte, deux pots en terre vernissée - François Bonvin - Rouen, Musée des beaux-arts.jpg - Wikimedia Commons",
+        "snippet": "image has been assessed under the valued image criteria and is considered the most valued image on Commons within the scope: Nature morte, deux pots en terre vernissée ( Still life, two glazed earthenware pots.) by François Bonvin, Rouen, Musée des beaux-arts.. You can see its nomination here.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://zh.pngtree.com/freepng/photorealistic-fruit-bowl-vibrant-colors-detailed-textures-glossy-grapes-ripe-peaches-juicy-pears-fresh-oranges-crisp-apples-white-ceramic-green-leaves-studio-lighting-high-resolution-food-photography-3d-rendering-hyperrealistic-still-life-composition-app_17918150.html",
+        "title": "https://zh.pngtree.com/freepng/photorealistic-fruit-bowl-vibrant-colors-detailed-textures-glossy-grapes-ripe-peaches-juicy-pears-fresh-oranges-crisp-apples-white-ceramic-green-leaves-studio-lighting-high-resolution-food-photography-3d-rende",
+        "snippet": "下載帶有透明背景的逼真的水果碗 鮮豔的色彩 細緻的紋理 有光澤的葡萄 成熟的桃子 多汁的梨 新鮮的橙子 脆蘋果 白色陶瓷 綠葉 工作室照明 高分辨率食品攝影 3d渲染 超現實靜物構圖應用程式PNG圖片素材，該素材是免費的。",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+        "title": "Category:Apples with other fruit - Wikimedia Commons",
+        "snippet": "Media in category \"Apples with other fruit\" The following 53 files are in this category ... - Apples, Pears, Oranges.jpg 1,280 × 960; 291 KB ... - Pears & Apples.jpg 1,024 × 768; 361 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/nourriture-aliments-apple-pomme-26466932/",
+        "title": "Photo de TLK GentooExpressions sur Pexels",
+        "snippet": "Dimensions 4032x3024 Format 4:3 Couleurs Date Jun 17, 2024 Téléchargements 246 Vues 25,3 millier Mentions « J’aime » ... Description # Composition artistique de nature morte présentant des pommes et une poire sur un fond texturé.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+        "title": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg - Wikimedia Commons - File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg",
+        "snippet": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg ... Lit,\"natura morta con cesto di fiori, brocca di porcellana cinese e frutta\"",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://zh.pngtree.com/freepng/a-vibrant-still-life-arrangement-featuring-trio-of-plump_18949957.html",
+        "title": "https://zh.pngtree.com/freepng/a-vibrant-still-life-arrangement-featuring-trio-of-plump_18949957.html",
+        "snippet": "活力的靜物佈置 以三重奏為特色 免費PNG圖案素材 ... 充滿活力的水果碗多彩分類照片真實感高細節蘋果梨橙子葡萄番茄圓形構圖白盤新鮮農產品多汁水果生動的色彩健康飲食靜物食品攝影清晰的紋理平衡排列 ap",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+        "title": "File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg - Wikimedia Commons - File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg",
+        "snippet": "Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg ... English: Still Life with Apples and Oranges, by Paul Cézanne, Musée d'Orsay, Paris.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/",
+        "title": "Photo de Valentin Ivantsov sur Pexels",
+        "snippet": "Afterglow Street Festive Summer 1 Valentin Ivantsov ... Appareil photo Canon EOS 5D Mark III Focale 100.0mm Ouverture ƒ/13.0 ISO 100 ... Description # Nature morte artistique représentant des vases en porcelaine blanche et des sphères orange vif sur fond sombre. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Anne_Dangar_-_Bowl_wheel-thrown_earthenware,_with_orange_ground_glaze,_black_geometrical_design_and_exterior_glaze,_artist%27s_signature_%27MSD%27_to_base.jpg",
+        "title": "File:Anne Dangar - Bowl wheel-thrown earthenware, with orange ground glaze, black geometrical design and exterior glaze, artist's signature 'MSD' to base.jpg",
+        "snippet": "File:Anne Dangar - Bowl wheel-thrown earthenware, with orange ground glaze, black geometrical design and exterior glaze, artist's signature 'MSD' to base.jpg ... Original file (1,000 × 1,124 pixels, file size: 101 KB, MIME type: image/jpeg)",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+        "title": "Photo by Fatih Güney on Pexels",
+        "snippet": "4 Fatih Güney 47.2M views • 152.9K downloads Ankara, Ankara, Türkiye Description # A beautiful flower arrangement with berries in a ceramic vase against a textured backdrop. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Orange_bowls",
+        "title": "Category:Orange bowls - Wikimedia Commons",
+        "snippet": "Media in category \"Orange bowls\" The following 5 files are in this category, out of 5 total. - Bowl (AM 1979.137-3).jpg 1,228 × 1,779; 466 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Bowls_with_food#1",
+        "title": "Category:Bowls with food - Wikimedia Commons - Category:Bowls with food",
+        "snippet": "Apple plumble (10522689035).jpg 4 ... - Apple plumble (10522692695).jpg 4,032 × 3,024; 6.28 MB - Apples still life.jpg 2,144 × 1,424; 977 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+        "title": "Photo de simon wang sur Pexels",
+        "snippet": "simon wang 585,8 millier vues \\ 6,5 millier téléchargements Description # Composition créative d'agrumes « main de Bouddha » dans un vase en céramique, entourée de kumquats. ## Médias similaires",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Medieval_ceramic_iron-rich_sandy_ware_glazed_vessel_fragments_(FindID_138637).jpg#1",
+        "title": "File:Medieval ceramic iron-rich sandy ware glazed vessel fragments (FindID 138637).jpg - Wikimedia Commons - File:Medieval ceramic iron-rich sandy ware glazed vessel fragments (FindID 138637).jpg",
+        "snippet": "Medieval ceramic iron-rich sandy ware glazed vessel fragments (FindID 138637).jpg ... The surface of the pottery is evenly oxidised to an orange colour. ... The surface of the pottery can be evenly oxidised to a red, orange or fawn colour, patchily oxidised...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/fruits-on-cutting-board-and-in-bowl-20346391/",
+        "title": "Photo by Dagmara Dombrovska on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages ... Date Feb 21, 2024 ... Description # Vibrant fresh strawberries arranged in a ceramic cup and on a wooden board with a yellow fabric backdrop. ## More like this Add filters, effects",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+        "title": "Category:Grasset Collection - Wikimedia Commons",
+        "snippet": "Peter Binoit - Still Life of Grapes and Peaches on a Porcelain Bowl.jpg ... Jan Davidsz de Heem - Still life of flowers in a glass vase with insects and fruits in a stone niche l22036-58kpv-01-t1.jpg",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "{\"summary\":\"本轮实际搜索未发现同时包含苹果、梨、整橙子和普通陶瓷花瓶的单一理想摄影详情页。Pexels 命中以苹果/梨静物、花瓶与柑橘分离或水果市场陈列为主；Wikimedia Commons 仍以绘画复制品为主，但出现一个可能含苹果、梨、橙子的照片文件类别线索。所有照片字节均未获取，外观特征仅来自网页文字描述，需后续下载验证。\",\"features\":[\"待图片验证：苹果、梨、橙子表面颜色是否呈现自然差异（苹果红/黄、梨黄褐、橙子橙黄），以及果皮微纹理（橙皮孔隙、梨皮斑点、苹果皮条纹）\",\"待图片验证：陶瓷花瓶是否为普通釉面或哑光表面，瓶身曲率与高光是否形成可提取的边缘/反射函数\",\"待图片验证：承托面上水果与花瓶的接触阴影是否柔和、方向一致，有无明显遮挡导致轮廓不独立\",\"待图片验证：是否存在真实缺陷（果皮碰伤、褐斑、花瓶釉面不均或灰尘）可作为微纹理与材质真实感参考\"],\"selectionCriteria\":[\"优先选择主体在画面中占比较大、背景简洁且无强图案干扰的照片，便于边缘提取与高斯拟合\",\"优先选择单个苹果、单个梨、单个整橙子各自形成独立轮廓的照片；花瓶与水果的遮挡关系应简单\",\"优先选择可见明确接触阴影且承托面纹理简单的照片，便于估计光源方向与承托面接触关系\",\"优先选择许可证明确为 CC0/CC BY/CC BY-SA 的 Wikimedia Commons 照片或 Pexels 具体照片页；Pexels 许可证需逐页核验\"],\"uncertainties\":[\"Pexels 具体照片页的许可证信息在搜索结果中未完整展示，再使用条件待核验\",\"Wikimedia Commons 类别中 'Apples, Pears, Oranges.jpg' 仅见文件名与尺寸，页面详情、作者、许可证与拍摄属性均未获取，需独立打开文件页核验\",\"未获取任何候选照片的图像字节，无法确认主体是否同时包含苹果、梨、整橙子与普通陶瓷花瓶\",\"搜索结果中 Wikimedia Commons 命中仍多为绘画或非现代静物摄影，材质参考价值有限\"],\"nextFocus\":\"下一轮应打开 Wikimedia Commons 类别 'Apples with other fruit' 中的 'Apples, Pears, Oranges.jpg' 文件页，核验其是否为摄影、许可证与原始图像 URL；同时针对 Pexels 使用更精确查询词（如 'still life apple pear orange ceramic vase no flowers'）并限定具体照片页，逐条记录许可证与原始图像 URL，避免图库首页或列表页。\"}",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+        "title": "File:(Toulouse) Nature morte, deux pots en terre vernissée - François Bonvin - Rouen, Musée des beaux-arts.jpg - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anne_Dangar_-_Bowl_wheel-thrown_earthenware,_with_orange_ground_glaze,_black_geometrical_design_and_exterior_glaze,_artist%27s_signature_%27MSD%27_to_base.jpg",
+        "title": "File:Anne Dangar - Bowl wheel-thrown earthenware, with orange ground glaze, black geometrical design and exterior glaze, artist's signature 'MSD' to base.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Anne_Dangar_-_Bowl_wheel-thrown_earthenware,_with_orange_ground_glaze,_black_geometrical_design_and_exterior_glaze,_artist%27s_signature_%27MSD%27_to_base.jpg"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/34775290/",
+      "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames 1 Valentin Ivantsov ... 尺寸 4085x6128 色彩 日期 Nov 17 ... 說明 # 藝術靜物，包含書籍、蘋果、花瓶和掛框畫作。 ## 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/assorted-fresh-fruits-display-at-market-33115591/",
+      "title": "Photo by Павел Хлыстунов on Pexels",
+      "snippet": "Afterglow ... Date Jul 22, 2025 ... 2025 Software Adobe Photoshop Lightroom Classic 14.0.1 (Windows) Description # Vibrant display of assorted apples and citrus fruits at an outdoor market stall. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+      "title": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg - Wikimedia Commons - File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg",
+      "snippet": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg ... Josefa de Óbidos: still life with boxes and crockery",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 6016x4016 ... Software Adobe Photoshop 22.0 (Windows) Description # Close-up of vibrant red apples in a white ceramic bowl on a white background, emphasizing health and simplicity. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+      "title": "Photo de Hans Heemsbergen sur Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages ... Appareil photo NIKON D7000 ... ISO 400 ... Logiciel Adobe Photoshop Elements 12.0 Windows Description # Un assortiment coloré de pommes, de poires et d'un avocat dans un panier. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+      "title": "File:(Toulouse) Nature morte, deux pots en terre vernissée - François Bonvin - Rouen, Musée des beaux-arts.jpg - Wikimedia Commons",
+      "snippet": "image has been assessed under the valued image criteria and is considered the most valued image on Commons within the scope: Nature morte, deux pots en terre vernissée ( Still life, two glazed earthenware pots.) by François Bonvin, Rouen, Musée des beaux-arts.. You can see its nomination here.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://zh.pngtree.com/freepng/photorealistic-fruit-bowl-vibrant-colors-detailed-textures-glossy-grapes-ripe-peaches-juicy-pears-fresh-oranges-crisp-apples-white-ceramic-green-leaves-studio-lighting-high-resolution-food-photography-3d-rendering-hyperrealistic-still-life-composition-app_17918150.html",
+      "title": "https://zh.pngtree.com/freepng/photorealistic-fruit-bowl-vibrant-colors-detailed-textures-glossy-grapes-ripe-peaches-juicy-pears-fresh-oranges-crisp-apples-white-ceramic-green-leaves-studio-lighting-high-resolution-food-photography-3d-rende",
+      "snippet": "下載帶有透明背景的逼真的水果碗 鮮豔的色彩 細緻的紋理 有光澤的葡萄 成熟的桃子 多汁的梨 新鮮的橙子 脆蘋果 白色陶瓷 綠葉 工作室照明 高分辨率食品攝影 3d渲染 超現實靜物構圖應用程式PNG圖片素材，該素材是免費的。",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+      "title": "Category:Apples with other fruit - Wikimedia Commons",
+      "snippet": "Media in category \"Apples with other fruit\" The following 53 files are in this category ... - Apples, Pears, Oranges.jpg 1,280 × 960; 291 KB ... - Pears & Apples.jpg 1,024 × 768; 361 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/nourriture-aliments-apple-pomme-26466932/",
+      "title": "Photo de TLK GentooExpressions sur Pexels",
+      "snippet": "Dimensions 4032x3024 Format 4:3 Couleurs Date Jun 17, 2024 Téléchargements 246 Vues 25,3 millier Mentions « J’aime » ... Description # Composition artistique de nature morte présentant des pommes et une poire sur un fond texturé.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+      "title": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg - Wikimedia Commons - File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg",
+      "snippet": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg ... Lit,\"natura morta con cesto di fiori, brocca di porcellana cinese e frutta\"",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://zh.pngtree.com/freepng/a-vibrant-still-life-arrangement-featuring-trio-of-plump_18949957.html",
+      "title": "https://zh.pngtree.com/freepng/a-vibrant-still-life-arrangement-featuring-trio-of-plump_18949957.html",
+      "snippet": "活力的靜物佈置 以三重奏為特色 免費PNG圖案素材 ... 充滿活力的水果碗多彩分類照片真實感高細節蘋果梨橙子葡萄番茄圓形構圖白盤新鮮農產品多汁水果生動的色彩健康飲食靜物食品攝影清晰的紋理平衡排列 ap",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+      "title": "File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg - Wikimedia Commons - File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg",
+      "snippet": "Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg ... English: Still Life with Apples and Oranges, by Paul Cézanne, Musée d'Orsay, Paris.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/",
+      "title": "Photo de Valentin Ivantsov sur Pexels",
+      "snippet": "Afterglow Street Festive Summer 1 Valentin Ivantsov ... Appareil photo Canon EOS 5D Mark III Focale 100.0mm Ouverture ƒ/13.0 ISO 100 ... Description # Nature morte artistique représentant des vases en porcelaine blanche et des sphères orange vif sur fond sombre. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Anne_Dangar_-_Bowl_wheel-thrown_earthenware,_with_orange_ground_glaze,_black_geometrical_design_and_exterior_glaze,_artist%27s_signature_%27MSD%27_to_base.jpg",
+      "title": "File:Anne Dangar - Bowl wheel-thrown earthenware, with orange ground glaze, black geometrical design and exterior glaze, artist's signature 'MSD' to base.jpg",
+      "snippet": "File:Anne Dangar - Bowl wheel-thrown earthenware, with orange ground glaze, black geometrical design and exterior glaze, artist's signature 'MSD' to base.jpg ... Original file (1,000 × 1,124 pixels, file size: 101 KB, MIME type: image/jpeg)",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+      "title": "Photo by Fatih Güney on Pexels",
+      "snippet": "4 Fatih Güney 47.2M views • 152.9K downloads Ankara, Ankara, Türkiye Description # A beautiful flower arrangement with berries in a ceramic vase against a textured backdrop. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Orange_bowls",
+      "title": "Category:Orange bowls - Wikimedia Commons",
+      "snippet": "Media in category \"Orange bowls\" The following 5 files are in this category, out of 5 total. - Bowl (AM 1979.137-3).jpg 1,228 × 1,779; 466 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Bowls_with_food#1",
+      "title": "Category:Bowls with food - Wikimedia Commons - Category:Bowls with food",
+      "snippet": "Apple plumble (10522689035).jpg 4 ... - Apple plumble (10522692695).jpg 4,032 × 3,024; 6.28 MB - Apples still life.jpg 2,144 × 1,424; 977 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/presentation-artistique-des-agrumes-de-la-main-de-bouddha-35852513/",
+      "title": "Photo de simon wang sur Pexels",
+      "snippet": "simon wang 585,8 millier vues \\ 6,5 millier téléchargements Description # Composition créative d'agrumes « main de Bouddha » dans un vase en céramique, entourée de kumquats. ## Médias similaires",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Medieval_ceramic_iron-rich_sandy_ware_glazed_vessel_fragments_(FindID_138637).jpg#1",
+      "title": "File:Medieval ceramic iron-rich sandy ware glazed vessel fragments (FindID 138637).jpg - Wikimedia Commons - File:Medieval ceramic iron-rich sandy ware glazed vessel fragments (FindID 138637).jpg",
+      "snippet": "Medieval ceramic iron-rich sandy ware glazed vessel fragments (FindID 138637).jpg ... The surface of the pottery is evenly oxidised to an orange colour. ... The surface of the pottery can be evenly oxidised to a red, orange or fawn colour, patchily oxidised...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/fruits-on-cutting-board-and-in-bowl-20346391/",
+      "title": "Photo by Dagmara Dombrovska on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages ... Date Feb 21, 2024 ... Description # Vibrant fresh strawberries arranged in a ceramic cup and on a wooden board with a yellow fabric backdrop. ## More like this Add filters, effects",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+      "title": "Category:Grasset Collection - Wikimedia Commons",
+      "snippet": "Peter Binoit - Still Life of Grapes and Peaches on a Porcelain Bowl.jpg ... Jan Davidsz de Heem - Still life of flowers in a glass vase with insects and fruits in a stone niche l22036-58kpv-01-t1.jpg",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34775290/",
+      "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fresh-fruits-display-at-market-33115591/",
+      "title": "Photo by Павел Хлыстунов on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+      "title": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg - Wikimedia Commons - File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+      "title": "Photo de Hans Heemsbergen sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+      "title": "File:(Toulouse) Nature morte, deux pots en terre vernissée - François Bonvin - Rouen, Musée des beaux-arts.jpg - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Apples_with_other_fruit",
+      "title": "Category:Apples with other fruit - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/nourriture-aliments-apple-pomme-26466932/",
+      "title": "Photo de TLK GentooExpressions sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cristoforo_munari,_natura_morta_con_cesto_di_fiori,_brocca_di_porcellana_cinese_e_frutta,_1706_ca.jpg#1",
+      "title": "File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg - Wikimedia Commons - File:Cristoforo munari, natura morta con cesto di fiori, brocca di porcellana cinese e frutta, 1706 ca.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pommes_et_oranges,_par_Paul_C%C3%A9zanne,_Mus%C3%A9e_d'Orsay,_Paris_(36322958725).jpg#1",
+      "title": "File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg - Wikimedia Commons - File:Pommes et oranges, par Paul Cézanne, Musée d'Orsay, Paris (36322958725).jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/nature-morte-elegante-avec-vases-en-porcelaine-et-spheres-orange-40476872/",
+      "title": "Photo de Valentin Ivantsov sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anne_Dangar_-_Bowl_wheel-thrown_earthenware,_with_orange_ground_glaze,_black_geometrical_design_and_exterior_glaze,_artist%27s_signature_%27MSD%27_to_base.jpg",
+      "title": "File:Anne Dangar - Bowl wheel-thrown earthenware, with orange ground glaze, black geometrical design and exterior glaze, artist's signature 'MSD' to base.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/flower-arrangement-in-a-vase-19106167/",
+      "title": "Photo by Fatih Güney on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Orange_bowls",
+      "title": "Category:Orange bowls - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Bowls_with_food#1",
+      "title": "Category:Bowls with food - Wikimedia Commons - Category:Bowls with food",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Medieval_ceramic_iron-rich_sandy_ware_glazed_vessel_fragments_(FindID_138637).jpg#1",
+      "title": "File:Medieval ceramic iron-rich sandy ware glazed vessel fragments (FindID 138637).jpg - Wikimedia Commons - File:Medieval ceramic iron-rich sandy ware glazed vessel fragments (FindID 138637).jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/fruits-on-cutting-board-and-in-bowl-20346391/",
+      "title": "Photo by Dagmara Dombrovska on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Grasset_Collection",
+      "title": "Category:Grasset Collection - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 42708,
+        "sha256": "b27e3269ca553cd5ed9ed1e640d81738ea82ea4407188ee96c9451632492e37f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/34775290/pexels-photo-34775290.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34775290/",
+      "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+      "sha256": "b27e3269ca553cd5ed9ed1e640d81738ea82ea4407188ee96c9451632492e37f",
+      "bytes": 42708,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 64646,
+        "sha256": "978fa7b04f3e643a9c48d6caf4979208aaaeb5326a71cda305b6543157a22789"
+      },
+      "imageUrl": "https://images.pexels.com/photos/33115591/pexels-photo-33115591.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fresh-fruits-display-at-market-33115591/",
+      "title": "Photo by Павел Хлыстунов on Pexels",
+      "sha256": "978fa7b04f3e643a9c48d6caf4979208aaaeb5326a71cda305b6543157a22789",
+      "bytes": 64646,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1151
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 195464,
+        "sha256": "1b3c179b01e551ac58422c51beffb72f26c7aa1127b69127395ae35e68ba5d76"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg/960px-Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+      "title": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg - Wikimedia Commons - File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg",
+      "sha256": "1b3c179b01e551ac58422c51beffb72f26c7aa1127b69127395ae35e68ba5d76",
+      "bytes": 195464,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 694,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "Sailko",
+        "credit": "Own work",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2584,
+        "height": 1868,
+        "bytes": 2744162
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 13820,
+        "sha256": "0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a"
+      },
+      "imageUrl": "https://images.pexels.com/photos/7333128/pexels-photo-7333128.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "sha256": "0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a",
+      "bytes": 13820,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 513
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/34775290/pexels-photo-34775290.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34775290/",
+      "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+      "sha256": "b27e3269ca553cd5ed9ed1e640d81738ea82ea4407188ee96c9451632492e37f",
+      "bytes": 42708,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/33115591/pexels-photo-33115591.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fresh-fruits-display-at-market-33115591/",
+      "title": "Photo by Павел Хлыстунов on Pexels",
+      "sha256": "978fa7b04f3e643a9c48d6caf4979208aaaeb5326a71cda305b6543157a22789",
+      "bytes": 64646,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1151,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg/960px-Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+      "title": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg - Wikimedia Commons - File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg",
+      "sha256": "1b3c179b01e551ac58422c51beffb72f26c7aa1127b69127395ae35e68ba5d76",
+      "bytes": 195464,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 694,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "Sailko",
+        "credit": "Own work",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2584,
+        "height": 1868,
+        "bytes": 2744162
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/7333128/pexels-photo-7333128.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "sha256": "0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a",
+      "bytes": 13820,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 513,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/34775290/",
+        "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/34775290/pexels-photo-34775290.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/34775290/pexels-photo-34775290.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 42708,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "b27e3269ca553cd5ed9ed1e640d81738ea82ea4407188ee96c9451632492e37f"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/assorted-fresh-fruits-display-at-market-33115591/",
+        "title": "Photo by Павел Хлыстунов on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/33115591/pexels-photo-33115591.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/33115591/pexels-photo-33115591.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 64646,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1151,
+        "sha256": "978fa7b04f3e643a9c48d6caf4979208aaaeb5326a71cda305b6543157a22789"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+        "title": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg - Wikimedia Commons - File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg/960px-Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "Public domain",
+          "url": null,
+          "artist": "Sailko",
+          "credit": "Own work",
+          "usageTerms": "Public domain",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AJosefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg/960px-Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 195464,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 694,
+        "sha256": "1b3c179b01e551ac58422c51beffb72f26c7aa1127b69127395ae35e68ba5d76"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+        "title": "Photo by Evgeniy Alekseyev on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/7333128/pexels-photo-7333128.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/7333128/pexels-photo-7333128.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 13820,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 513,
+        "sha256": "0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/variete-de-fruits-frais-dans-un-panier-32515181/",
+        "title": "Photo de Hans Heemsbergen sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/32515181/pexels-photo-32515181.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/32515181/pexels-photo-32515181.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 38932,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 500,
+        "sha256": "05dbe1fad495d558a6650b7851616c54a7ea5fb055b4bc5e437e7fb9d39c38f3"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Nature_morte,_deux_pots_en_terre_verniss%c3%a9e_-_Fran%c3%a7ois_Bonvin_-_Rouen,_Mus%c3%a9e_des_beaux-arts.jpg",
+        "title": "File:(Toulouse) Nature morte, deux pots en terre vernissée - François Bonvin - Rouen, Musée des beaux-arts.jpg - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/%28Toulouse%29_Nature_morte%2C_deux_pots_en_terre_verniss%C3%A9e_-_Fran%C3%A7ois_Bonvin_-_Rouen%2C_Mus%C3%A9e_des_beaux-arts.jpg/960px-%28Toulouse%29_Nature_morte%2C_deux_pots_en_terre_verniss%C3%A9e_-_Fran%C3%A7ois_Bonvin_-_Rouen%2C_Mus%C3%A9e_des_beaux-arts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "Public domain",
+          "url": null,
+          "artist": "Didier Descouens",
+          "credit": "Own work",
+          "usageTerms": "Public domain",
+          "attributionRequired": "false",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3A%28Toulouse%29_Nature_morte%2C_deux_pots_en_terre_verniss%C3%A9e_-_Fran%C3%A7ois_Bonvin_-_Rouen%2C_Mus%C3%A9e_des_beaux-arts.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/%28Toulouse%29_Nature_morte%2C_deux_pots_en_terre_verniss%C3%A9e_-_Fran%C3%A7ois_Bonvin_-_Rouen%2C_Mus%C3%A9e_des_beaux-arts.jpg/960px-%28Toulouse%29_Nature_morte%2C_deux_pots_en_terre_verniss%C3%A9e_-_Fran%C3%A7ois_Bonvin_-_Rouen%2C_Mus%C3%A9e_des_beaux-arts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 381846,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 1120,
+        "sha256": "a85e961889a3df87d27b80c664c1f66b96e966f7b356fee8a76add5db450b0fa"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "model_semantic_plan",
+    "summary": "本轮实际搜索未发现同时包含苹果、梨、整橙子和普通陶瓷花瓶的单一理想摄影详情页。Pexels 命中以苹果/梨静物、花瓶与柑橘分离或水果市场陈列为主；Wikimedia Commons 仍以绘画复制品为主，但出现一个可能含苹果、梨、橙子的照片文件类别线索。所有照片字节均未获取，外观特征仅来自网页文字描述，需后续下载验证。",
+    "features": [
+      "待图片验证：苹果、梨、橙子表面颜色是否呈现自然差异（苹果红/黄、梨黄褐、橙子橙黄），以及果皮微纹理（橙皮孔隙、梨皮斑点、苹果皮条纹）",
+      "待图片验证：陶瓷花瓶是否为普通釉面或哑光表面，瓶身曲率与高光是否形成可提取的边缘/反射函数",
+      "待图片验证：承托面上水果与花瓶的接触阴影是否柔和、方向一致，有无明显遮挡导致轮廓不独立",
+      "待图片验证：是否存在真实缺陷（果皮碰伤、褐斑、花瓶釉面不均或灰尘）可作为微纹理与材质真实感参考"
+    ],
+    "selectionCriteria": [
+      "优先选择主体在画面中占比较大、背景简洁且无强图案干扰的照片，便于边缘提取与高斯拟合",
+      "优先选择单个苹果、单个梨、单个整橙子各自形成独立轮廓的照片；花瓶与水果的遮挡关系应简单",
+      "优先选择可见明确接触阴影且承托面纹理简单的照片，便于估计光源方向与承托面接触关系",
+      "优先选择许可证明确为 CC0/CC BY/CC BY-SA 的 Wikimedia Commons 照片或 Pexels 具体照片页；Pexels 许可证需逐页核验"
+    ],
+    "uncertainties": [
+      "Pexels 具体照片页的许可证信息在搜索结果中未完整展示，再使用条件待核验",
+      "Wikimedia Commons 类别中 'Apples, Pears, Oranges.jpg' 仅见文件名与尺寸，页面详情、作者、许可证与拍摄属性均未获取，需独立打开文件页核验",
+      "未获取任何候选照片的图像字节，无法确认主体是否同时包含苹果、梨、整橙子与普通陶瓷花瓶",
+      "搜索结果中 Wikimedia Commons 命中仍多为绘画或非现代静物摄影，材质参考价值有限"
+    ],
+    "nextFocus": "下一轮应打开 Wikimedia Commons 类别 'Apples with other fruit' 中的 'Apples, Pears, Oranges.jpg' 文件页，核验其是否为摄影、许可证与原始图像 URL；同时针对 Pexels 使用更精确查询词（如 'still life apple pear orange ceramic vase no flowers'）并限定具体照片页，逐条记录许可证与原始图像 URL，避免图库首页或列表页。",
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 21021,
+    "completion_tokens": 579,
+    "total_tokens": 21600,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "6ceaa194-abc1-4e6a-b782-d5828e496548",
+        "model": "deepseek-flash",
+        "elapsedMs": 11201,
+        "prompt_tokens": 21021,
+        "completion_tokens": 579,
+        "total_tokens": 21600,
+        "server_tool_use": {
+          "tool_search": 12,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 27822,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 42708,
+        "sha256": "b27e3269ca553cd5ed9ed1e640d81738ea82ea4407188ee96c9451632492e37f"
+      },
+      "imageUrl": "https://images.pexels.com/photos/34775290/pexels-photo-34775290.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/34775290/",
+      "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+      "sha256": "b27e3269ca553cd5ed9ed1e640d81738ea82ea4407188ee96c9451632492e37f",
+      "bytes": 42708,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/b27e3269ca553cd5ed9ed1e640d81738ea82ea4407188ee96c9451632492e37f.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 64646,
+        "sha256": "978fa7b04f3e643a9c48d6caf4979208aaaeb5326a71cda305b6543157a22789"
+      },
+      "imageUrl": "https://images.pexels.com/photos/33115591/pexels-photo-33115591.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fresh-fruits-display-at-market-33115591/",
+      "title": "Photo by Павел Хлыстунов on Pexels",
+      "sha256": "978fa7b04f3e643a9c48d6caf4979208aaaeb5326a71cda305b6543157a22789",
+      "bytes": 64646,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1151,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/978fa7b04f3e643a9c48d6caf4979208aaaeb5326a71cda305b6543157a22789.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 195464,
+        "sha256": "1b3c179b01e551ac58422c51beffb72f26c7aa1127b69127395ae35e68ba5d76"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg/960px-Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Josefa_d%27ayala_(detta_di_%C3%B3bidos),_natura_morta_con_scatole_e_vasellame,_1660-70_ca.jpg#1",
+      "title": "File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg - Wikimedia Commons - File:Josefa d'ayala (detta di óbidos), natura morta con scatole e vasellame, 1660-70 ca.jpg",
+      "sha256": "1b3c179b01e551ac58422c51beffb72f26c7aa1127b69127395ae35e68ba5d76",
+      "bytes": 195464,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 694,
+      "license": {
+        "name": "Public domain",
+        "url": null,
+        "artist": "Sailko",
+        "credit": "Own work",
+        "usageTerms": "Public domain",
+        "attributionRequired": "false",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Josefa_d%27ayala_%28detta_di_%C3%B3bidos%29%2C_natura_morta_con_scatole_e_vasellame%2C_1660-70_ca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2584,
+        "height": 1868,
+        "bytes": 2744162
+      },
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/1b3c179b01e551ac58422c51beffb72f26c7aa1127b69127395ae35e68ba5d76.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 13820,
+        "sha256": "0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a"
+      },
+      "imageUrl": "https://images.pexels.com/photos/7333128/pexels-photo-7333128.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/ripe-red-apples-in-bowl-on-white-background-7333128/",
+      "title": "Photo by Evgeniy Alekseyev on Pexels",
+      "sha256": "0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a",
+      "bytes": 13820,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 513,
+      "file": "fitting/learning09/learning-v1/learn-still_life/originals/0095427d2cd586bdb7b94a67172933b62beda39a96c705576a66bd5d7fdde69a.webp"
+    }
+  ]
+}

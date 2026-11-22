@@ -1,0 +1,459 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 1,
+  "query": "橙子与柑橘的单体实拍",
+  "checkpoint": {
+    "sessionId": "crf08-ten-rounds",
+    "round": 1,
+    "topic": "橙子与柑橘的单体实拍",
+    "subtopic": "4–6张不同橙子、整果和切面照片，优先干净背景，用于轮廓、果皮、瓣片材质学习",
+    "status": "searched",
+    "completedAt": "2026-11-21T13:23:42.300Z",
+    "runId": "crf07_3a988450-89b5-4cf1-90ef-bd32280a1b59",
+    "queries": [
+      "Wikimedia Commons whole orange and orange cross-section photographs",
+      "site:commons.wikimedia.org orange cross section",
+      "Wikimedia Commons orange fruit photographs by different photographers",
+      "site:pexels.com orange whole fruit cross section photo",
+      "site:unsplash.com orange fruit cross section photo",
+      "site:pexels.com orange peel texture photo"
+    ],
+    "requestIds": [
+      "15b1725e-8178-4023-a665-c6d868052f03"
+    ],
+    "sourceCount": 9,
+    "newSourceCount": 9,
+    "candidateCount": 7,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_s_00_dacc1d7aebe44e8c8712ffa6284ebdae",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons whole orange and orange cross-section photographs",
+            "site:commons.wikimedia.org orange cross section",
+            "Wikimedia Commons orange fruit photographs by different photographers",
+            "site:pexels.com orange whole fruit cross section photo",
+            "site:unsplash.com orange fruit cross section photo",
+            "site:pexels.com orange peel texture photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+          "https://unsplash.com/illustrations/a-slice-of-kumquat-on-a-dark-green-background-gJV6yLL487c",
+          "https://www.pexels.com/fr-fr/photo/boire-jus-d-orange-oranges-fruit-15560947/",
+          "https://unsplash.com/photos/an-orange-cut-in-half-sitting-on-a-table-74aJ-QmFFsg",
+          "https://etc.usf.edu/clipart/49600/49624/49624_orange.htm",
+          "https://www.pexels.com/zh-tw/photo/12267666/",
+          "https://unsplash.com/photos/close-up-photography-of-orange-fruit-xUY3p0SqovM",
+          "https://zh.wikipedia.org/wiki/File:Orange_and_cross_section.jpg",
+          "https://www.pexels.com/zh-tw/photo/5945786/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+        "title": "Photo by Ricardo Utsumi on Pexels",
+        "snippet": "Add custom frames License Free Dimensions 5184x3456 Aspect Ratio 3:2 Colors Date Aug 29, 2020 Downloads 186 Views ... 2020 Software Adobe Photoshop 21.2 (Macintosh) ... Description # A vibrant sliced orange showcasing its juicy interior on a plain white background. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/illustrations/a-slice-of-kumquat-on-a-dark-green-background-gJV6yLL487c",
+        "title": "Illustration by Studio Humi on Unsplash",
+        "snippet": "A flat vector illustration of a sliced orange shown from the top view, revealing its juicy segments arranged in a circular pattern. The orange peel is bright and textured with small dots, while the inner flesh appears fresh and vibrant",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/boire-jus-d-orange-oranges-fruit-15560947/",
+        "title": "Photo de Pablo de Haro sur Pexels",
+        "snippet": "3722x2792 Format 1861:1396 ... Appareil photo Canon EOS 1100D Focale 30.0mm Ouverture ƒ/11.0 ISO ... Description # Gros plan de jus d'orange frais dans un verre avec des oranges entières et tranchées, mettant en avant la vitamine C.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/an-orange-cut-in-half-sitting-on-a-table-74aJ-QmFFsg",
+        "title": "Photo by NATHAN MULLET on Unsplash",
+        "snippet": "– –– –––– ––– – ––– – – – –– –––– ––– – ––– – – # an orange cut in half sitting on a table Orange cut in half. The inside of an orange. Published on Free to use under the Unsplash License",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://etc.usf.edu/clipart/49600/49624/49624_orange.htm",
+        "title": "Orange",
+        "snippet": "Orange “Cross-section of an orange. a, axis of fruit with dots showing cut-off ends of fibro-vascular bundles; p, partition between cells of ovary; S, seed; c, cell of ovary filled with a pulp composed of irregular tubes full of juice; o, oil ... corky layer of epidermis.” -Bergen...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/12267666/",
+        "title": "Pexels 上由 Sherali Khan 拍攝的相片",
+        "snippet": "瀏覽次數 117.8 千 按讚數 5 說明 在木板上展示切片橙子和血橙的鮮豔陳列，突顯它們多汁的質感。 更多類似內容",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://unsplash.com/photos/close-up-photography-of-orange-fruit-xUY3p0SqovM",
+        "title": "Photo by Angelo Pantazis on Unsplash",
+        "snippet": "close up photography of orange fruit Download this free HD photo of orange, fruit, plant, and food by Angelo Pantazis (@angelopantazis) Published on NIKON CORPORATION, NIKON D700Free to use under the Unsplash",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://zh.wikipedia.org/wiki/File:Orange_and_cross_section.jpg",
+        "title": "File:Orange and cross section.jpg - 维基百科，自由的百科全书",
+        "snippet": "Orange and cross section.jpg ... 当前 | 2009年1月22日 (四) 01:07 | 2,752 × 998 （796 KB） | Fir0002 | Orange and its cross section isolated on a white background {{Fir0002 150}} Category:Orange Category...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/zh-tw/photo/5945786/",
+        "title": "Pexels 上由 Any Lane 拍攝的相片",
+        "snippet": "尺寸 3360x5040 長寬比 2:3 色彩 日期 ... 說明 # 鮮豔的血橙切片特寫，展現出活潑的色彩和多汁的質感。",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "```json\n{\n  \"summary\": \"本轮实际检索到可用的橙子整果与切面公开照片来源共5个，其中 Wikimedia Commons 1 个（带白色隔离背景的整果+切面），Pexels 2 个（切片特写、血橙切片），Unsplash 2 个（半切面、整果特写）。另发现 1 个 Wikimedia Commons 搜索摘要中提及的‘Orange Fruit peel’与‘Sliced juicy orange fruit’条目，但未获取到具体详情页，暂不作为本轮候选。未下载任何图片，未进行像素级观察。\",\n  \"features\": [\n    \"整果轮廓：接近球形或略扁球形，果顶与果蒂处有轻微凹凸，果皮表面呈细密点状油胞纹理\",\n    \"果皮颜色：明亮橙黄色至深橙色，成熟度不同存在深浅差异；血橙品种果皮可能带暗红晕\",\n    \"果皮材质：哑光至微蜡质光泽，油胞形成细小颗粒感；切面边缘可见白色海绵层（白瓤）\",\n    \"切面结构：放射状瓣片排列，瓣膜半透明，汁胞呈细长纺锤形密集排列，中心柱白色\",\n    \"截面汁液反光：汁胞表面湿润，在高光下呈现多个细小镜面反射点，可对应各向异性/高光函数\",\n    \"血橙切面：果肉呈深红至紫红色，与普通橙的橙黄色果肉形成色彩分布差异\"\n  ],\n  \"selectionCriteria\": [\n    \"背景干净：优先纯白、浅灰或单一纯色背景，便于主体分割与轮廓提取\",\n    \"照明均匀：避免硬阴影遮挡果皮油胞细节，切面高光不应过曝\",\n    \"整果与切面同源或同类：便于关联果皮颜色与内部瓣片颜色\",\n    \"分辨率足够：长边不低于 2000 像素，支持果皮纹理与汁胞细节辨识\",\n    \"构图简洁：单体或整果+切面组合，无多余道具干扰\",\n    \"许可证明确：优先 CC0/CC BY/CC BY-SA 或 Unsplash/Pexels 许可，便于后续使用\"\n  ],\n  \"uncertainties\": [\n    \"Wikimedia Commons 搜索结果摘要中提及的‘Orange Fruit peel.jpg’与‘Sliced juicy orange fruit.jpg’未获取到具体文件详情页，作者与许可证待核验\",\n    \"Pexels 照片的许可证为 Pexels License，非 CC 系列，需确认是否满足用户使用场景\",\n    \"Unsplash 照片的许可证为 Unsplash License，非 CC 系列，需确认是否满足用户使用场景\",\n    \"各候选照片的实际像素级果皮纹理清晰度、切面汁胞可见度尚未验证\",\n    \"血橙品种的果皮与果肉色差是否在单张照片中同时呈现，需查看原图确认\"\n  ],\n  \"nextFocus\": \"下一轮优先补齐 Wikimedia Commons 中‘Orange Fruit peel’与‘Sliced juicy orange fruit’的具体文件页及许可证信息；补充搜索 2–3 张具有干净背景的整果不同品种（如脐橙、血橙、瓦伦西亚橙）照片；确认 Pexels/Unsplash 许可证对用户使用场景的适配性。\"\n}\n```\n\n### 本轮可点击来源\n\n1. **Wikimedia Commons — Orange and cross section.jpg**  \n   白色背景整果与切面同框，适合轮廓与瓣片结构对照。原始尺寸 2,752 × 998。许可证与作者信息需在文件页核验。\n\n2. **Pexels — Photograph of a sliced orange (Ricardo Utsumi)**  \n   纯白背景切片橙子特写，适合切面瓣片与汁胞材质学习。尺寸 5184 × 3456。Pexels License。\n\n3. **Unsplash — an orange cut in half sitting on a table (NATHAN MULLET)**  \n   半切橙子，内部切面可见。Unsplash License。具体照明与背景需获取原图后确认。\n\n4. **Unsplash — close up photography of orange fruit (Angelo Pantazis)**  \n   整果特写，适合果皮油胞纹理与轮廓提取。Unsplash License。背景与构图待原图验证。\n\n5. **Pexels — 血橙切片特写 (Any Lane)**  \n   血橙切片，深红色果肉与橙皮色差对比明显，适合色彩分区与材质差异学习。尺寸 3360 × 5040。Pexels License。\n\n### 检索局限说明\n\n- 以上来源均基于搜索结果摘要，**未下载图片、未进行视觉观察**。\n- Wikimedia Commons 搜索摘要中提及的“Orange Fruit peel.jpg”“Sliced juicy orange fruit.jpg”等条目未返回具体文件详情页 URL，**不作为本轮正式候选**，留待下轮补查。\n- Pexels 与 Unsplash 页面未完整展示作者与许可证全文，标注依据为平台默认许可，**建议后续核验**。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://zh.wikipedia.org/wiki/File:Orange_and_cross_section.jpg",
+        "title": "File:Orange and cross section.jpg - 维基百科，自由的百科全书",
+        "imageUrl": "https://zh.wikipedia.org/wiki/File:Orange_and_cross_section.jpg"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+      "title": "Photo by Ricardo Utsumi on Pexels",
+      "snippet": "Add custom frames License Free Dimensions 5184x3456 Aspect Ratio 3:2 Colors Date Aug 29, 2020 Downloads 186 Views ... 2020 Software Adobe Photoshop 21.2 (Macintosh) ... Description # A vibrant sliced orange showcasing its juicy interior on a plain white background. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/illustrations/a-slice-of-kumquat-on-a-dark-green-background-gJV6yLL487c",
+      "title": "Illustration by Studio Humi on Unsplash",
+      "snippet": "A flat vector illustration of a sliced orange shown from the top view, revealing its juicy segments arranged in a circular pattern. The orange peel is bright and textured with small dots, while the inner flesh appears fresh and vibrant",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/boire-jus-d-orange-oranges-fruit-15560947/",
+      "title": "Photo de Pablo de Haro sur Pexels",
+      "snippet": "3722x2792 Format 1861:1396 ... Appareil photo Canon EOS 1100D Focale 30.0mm Ouverture ƒ/11.0 ISO ... Description # Gros plan de jus d'orange frais dans un verre avec des oranges entières et tranchées, mettant en avant la vitamine C.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/an-orange-cut-in-half-sitting-on-a-table-74aJ-QmFFsg",
+      "title": "Photo by NATHAN MULLET on Unsplash",
+      "snippet": "– –– –––– ––– – ––– – – – –– –––– ––– – ––– – – # an orange cut in half sitting on a table Orange cut in half. The inside of an orange. Published on Free to use under the Unsplash License",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://etc.usf.edu/clipart/49600/49624/49624_orange.htm",
+      "title": "Orange",
+      "snippet": "Orange “Cross-section of an orange. a, axis of fruit with dots showing cut-off ends of fibro-vascular bundles; p, partition between cells of ovary; S, seed; c, cell of ovary filled with a pulp composed of irregular tubes full of juice; o, oil ... corky layer of epidermis.” -Bergen...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/12267666/",
+      "title": "Pexels 上由 Sherali Khan 拍攝的相片",
+      "snippet": "瀏覽次數 117.8 千 按讚數 5 說明 在木板上展示切片橙子和血橙的鮮豔陳列，突顯它們多汁的質感。 更多類似內容",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://unsplash.com/photos/close-up-photography-of-orange-fruit-xUY3p0SqovM",
+      "title": "Photo by Angelo Pantazis on Unsplash",
+      "snippet": "close up photography of orange fruit Download this free HD photo of orange, fruit, plant, and food by Angelo Pantazis (@angelopantazis) Published on NIKON CORPORATION, NIKON D700Free to use under the Unsplash",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/File:Orange_and_cross_section.jpg",
+      "title": "File:Orange and cross section.jpg - 维基百科，自由的百科全书",
+      "snippet": "Orange and cross section.jpg ... 当前 | 2009年1月22日 (四) 01:07 | 2,752 × 998 （796 KB） | Fir0002 | Orange and its cross section isolated on a white background {{Fir0002 150}} Category:Orange Category...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/zh-tw/photo/5945786/",
+      "title": "Pexels 上由 Any Lane 拍攝的相片",
+      "snippet": "尺寸 3360x5040 長寬比 2:3 色彩 日期 ... 說明 # 鮮豔的血橙切片特寫，展現出活潑的色彩和多汁的質感。",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+      "title": "Photo by Ricardo Utsumi on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/illustrations/a-slice-of-kumquat-on-a-dark-green-background-gJV6yLL487c",
+      "title": "Illustration by Studio Humi on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/boire-jus-d-orange-oranges-fruit-15560947/",
+      "title": "Photo de Pablo de Haro sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/an-orange-cut-in-half-sitting-on-a-table-74aJ-QmFFsg",
+      "title": "Photo by NATHAN MULLET on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/12267666/",
+      "title": "Pexels 上由 Sherali Khan 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://unsplash.com/photos/close-up-photography-of-orange-fruit-xUY3p0SqovM",
+      "title": "Photo by Angelo Pantazis on Unsplash",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/5945786/",
+      "title": "Pexels 上由 Any Lane 拍攝的相片",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/5223989/pexels-photo-5223989.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+      "title": "Photo by Ricardo Utsumi on Pexels",
+      "sha256": "c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+      "bytes": 19046,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/15560947/pexels-photo-15560947.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/boire-jus-d-orange-oranges-fruit-15560947/",
+      "title": "Photo de Pablo de Haro sur Pexels",
+      "sha256": "adaf478e57c6dc6f47179c22b12f2fc7c8b9db3c505fa1505c5eb8ef2579889c",
+      "bytes": 39110,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/12267666/pexels-photo-12267666.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/12267666/",
+      "title": "Pexels 上由 Sherali Khan 拍攝的相片",
+      "sha256": "08d209b8092dee3fc3ec9d8fabc32a88dfcf9d583fd6f2193e5acc61d8525bf0",
+      "bytes": 93374,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5945786/pexels-photo-5945786.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/5945786/",
+      "title": "Pexels 上由 Any Lane 拍攝的相片",
+      "sha256": "9b10968eb8dbb0adcc6cfd60d472b321d62808e624eed86ed0b8dec0fa263290",
+      "bytes": 87150,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+        "title": "Photo by Ricardo Utsumi on Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/5223989/pexels-photo-5223989.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 19046,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/illustrations/a-slice-of-kumquat-on-a-dark-green-background-gJV6yLL487c",
+        "title": "Illustration by Studio Humi on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/boire-jus-d-orange-oranges-fruit-15560947/",
+        "title": "Photo de Pablo de Haro sur Pexels",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/15560947/pexels-photo-15560947.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 39110,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "adaf478e57c6dc6f47179c22b12f2fc7c8b9db3c505fa1505c5eb8ef2579889c"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/an-orange-cut-in-half-sitting-on-a-table-74aJ-QmFFsg",
+        "title": "Photo by NATHAN MULLET on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/12267666/",
+        "title": "Pexels 上由 Sherali Khan 拍攝的相片",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/12267666/pexels-photo-12267666.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 93374,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "08d209b8092dee3fc3ec9d8fabc32a88dfcf9d583fd6f2193e5acc61d8525bf0"
+      },
+      {
+        "sourceUrl": "https://unsplash.com/photos/close-up-photography-of-orange-fruit-xUY3p0SqovM",
+        "title": "Photo by Angelo Pantazis on Unsplash",
+        "status": "unavailable",
+        "error": "http_401"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/zh-tw/photo/5945786/",
+        "title": "Pexels 上由 Any Lane 拍攝的相片",
+        "status": "downloaded",
+        "imageUrl": "https://images.pexels.com/photos/5945786/pexels-photo-5945786.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+        "bytes": 87150,
+        "mime": "image/webp",
+        "width": 1100,
+        "height": 627,
+        "sha256": "9b10968eb8dbb0adcc6cfd60d472b321d62808e624eed86ed0b8dec0fa263290"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "public source-page image metadata; container, dimensions and byte hash checked; not render textures"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "```json\n{\n  \"summary\": \"本轮实际检索到可用的橙子整果与切面公开照片来源共5个，其中 Wikimedia Commons 1 个（带白色隔离背景的整果+切面），Pexels 2 个（切片特写、血橙切片），Unsplash 2 个（半切面、整果特写）。另发现 1 个 Wikimedia Commons 搜索摘要中提及的‘Orange Fruit peel’与‘Sliced juicy orange fruit’条目，但未获取到具体详情页，暂不作为本轮候选。未下载任何图片，未进行像素级观察。\",\n  \"features\": [\n    \"整果轮廓：接近球形或略扁球形，果顶与果蒂处有轻微凹凸，果皮表面呈细密点状油胞纹理\",\n    \"果皮颜色：明亮橙黄色至深橙色，成熟度不同存在深浅差异；血橙品种果皮可能带暗红晕\",\n    \"果皮材质：哑光至微蜡质光泽，油胞形成细小颗粒感；切面边缘可见白色海绵层（白瓤）\",\n    \"切面结构：放射状瓣片排列，瓣膜半透明，汁胞呈细长纺锤形密集排列，中心柱白色\",\n    \"截面汁液反光：汁胞表面湿润，在高光下呈现多个细小镜面反射点，可对应各向异性/高光函数\",\n    \"血橙切面：果肉呈深红至紫红色，与普通橙的橙黄色果肉形成色彩分布差异\"\n  ],\n  \"selectionCriteria\": [\n    \"背景干净：优先纯白、浅灰或单一纯色背景，便于主体分割与轮廓提取\",\n    \"照明均匀：避免硬阴影遮挡果皮油胞细节，切面高光不应过曝\",\n    \"整果与切面同源或同类：便于关联果皮颜色与内部瓣片颜色\",\n    \"分辨率足够：长边不低于 2000 像素，支持果皮纹理与汁胞细节辨识\",\n    \"构图简洁：单体或整果+切面组合，无多余道具干扰\",\n    \"许可证明确：优先 CC0/CC BY/CC BY-SA 或 Unsplash/Pexels 许可，便于后续使用\"\n  ],\n  \"uncertainties\": [\n    \"Wikimedia Commons 搜索结果摘要中提及的‘Orange Fruit peel.jpg’与‘Sliced juicy orange fruit.jpg’未获取到具体文件详情页，作者与许可证待核验\",\n    \"Pexels 照片的许可证为 Pexels License，非 CC 系列，需确认是否满足用户使用场景\",\n    \"Unsplash 照片的许可证为 Unsplash License，非 CC 系列，需确认是否满足用户使用场景\",\n    \"各候选照片的实际像素级果皮纹理清晰度、切面汁胞可见度尚未验证\",\n    \"血橙品种的果皮与果肉色差是否在单张照片中同时呈现，需查看原图确认\"\n  ],\n  \"nextFocus\": \"下一轮优先补齐 Wikimedia Commons 中‘Orange Fruit peel’与‘Sliced juicy orange fruit’的具体文件页及许可证信息；补充搜索 2–3 张具有干净背景的整果不同品种（如脐橙、血橙、瓦伦西亚橙）照片；确认 Pexels/Unsplash 许可证对用户使用场景的适配性。\"\n}\n```\n\n### 本轮可点击来源\n\n1. **Wikimedia Commons — Orange and cross section.jpg**  \n   白色背景整果与切面同框，适合轮廓与瓣片结构对照。原始尺寸 2,752 × 998。许可证与作者信息需在文件页核验。\n\n2. **Pexels — Photograph of a sliced orange (Ricardo Utsumi)**  \n   纯白背景切片橙子特写，适合切面瓣片与汁胞材质学习。尺寸 5184 × 3456。Pexels License。\n\n3. **Unsplash — an orange cut in half sitting on a table (NATHAN MULLET)**  \n   半切橙子，内部切面可见。Unsplash License。具体照明与背景需获取原图后确认。\n\n4. **Unsplash — close up photography of orange fruit (Angelo Pantazis)**  \n   整果特写，适合果皮油胞纹理与轮廓提取。Unsplash License。背景与构图待原图验证。\n\n5. **Pexels — 血橙切片特写 (Any Lane)**  \n   血橙切片，深红色果肉与橙皮色差对比明显，适合色彩分区与材质差异学习。尺寸 3360 × 5040。Pexels License。\n\n### 检索局限说明\n\n- 以上来源均基于搜索结果摘要，**未下载图片、未进行视觉观察**。\n- Wikimedia Commons 搜索摘要中提及的“Orange Fruit peel.jpg”“Sliced juicy orange fruit.jpg”等条目未返回具体文件详情页 URL，**不作为本轮正式候选**，留待下轮补查。\n- Pexels 与 Unsplash 页面未完整展示作者与许可证全文，标注依据为平台默认许可，**建议后续核验**。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 7319,
+    "completion_tokens": 1137,
+    "total_tokens": 8456,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "15b1725e-8178-4023-a665-c6d868052f03",
+        "model": "deepseek-flash",
+        "elapsedMs": 16040,
+        "prompt_tokens": 7319,
+        "completion_tokens": 1137,
+        "total_tokens": 8456,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 0,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 29290,
+  "downloads": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/5223989/pexels-photo-5223989.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/photo/photograph-of-a-sliced-orange-5223989/",
+      "title": "Photo by Ricardo Utsumi on Pexels",
+      "sha256": "c6657129fc5c5d3c7746b7c5da5336608391f0b805844af0a36c3b91acfb43e6",
+      "bytes": 19046,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r01.c6657129fc5c",
+      "round": 1,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r01.c6657129fc5c.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "橙子与柑橘的单体实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/15560947/pexels-photo-15560947.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/boire-jus-d-orange-oranges-fruit-15560947/",
+      "title": "Photo de Pablo de Haro sur Pexels",
+      "sha256": "adaf478e57c6dc6f47179c22b12f2fc7c8b9db3c505fa1505c5eb8ef2579889c",
+      "bytes": 39110,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r01.adaf478e57c6",
+      "round": 1,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r01.adaf478e57c6.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "橙子与柑橘的单体实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/12267666/pexels-photo-12267666.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/12267666/",
+      "title": "Pexels 上由 Sherali Khan 拍攝的相片",
+      "sha256": "08d209b8092dee3fc3ec9d8fabc32a88dfcf9d583fd6f2193e5acc61d8525bf0",
+      "bytes": 93374,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r01.08d209b8092d",
+      "round": 1,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r01.08d209b8092d.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "橙子与柑橘的单体实拍"
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5945786/pexels-photo-5945786.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/5945786/",
+      "title": "Pexels 上由 Any Lane 拍攝的相片",
+      "sha256": "9b10968eb8dbb0adcc6cfd60d472b321d62808e624eed86ed0b8dec0fa263290",
+      "bytes": 87150,
+      "mime": "image/webp",
+      "width": 1100,
+      "height": 627,
+      "id": "learn.r01.9b10968eb8db",
+      "round": 1,
+      "status": "downloaded",
+      "file": "fitting/learning08/originals/learn.r01.9b10968eb8db.webp",
+      "licenseStatus": "source terms require attribution/verification",
+      "topic": "橙子与柑橘的单体实拍"
+    }
+  ]
+}

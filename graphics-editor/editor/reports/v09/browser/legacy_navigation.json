@@ -1,0 +1,28 @@
+{
+  "schema": "crf.browser_legacy_navigation.v0.9",
+  "environment": "managed preview Cloud Chrome",
+  "checks": [
+    {
+      "route": "gaussian08.html",
+      "observed": "0.8 complete street Gaussian reconstruction displayed; native 667x1000 baseline and counters visible",
+      "passed": true
+    },
+    {
+      "route": "editor05.html?case=street",
+      "observed": "0.5 original street and 18 semantic objects displayed; reference counters visible",
+      "passed": true
+    },
+    {
+      "route": "editor05.html?case=street",
+      "selection": "苹果与梨子·实拍",
+      "observed": "Actual prior fruit observation rendered at 800x600; four object controls retained",
+      "passed": true
+    },
+    {
+      "route": "studio07.html",
+      "observed": "Historical library displayed 12 cases including retained street, fruits, alpine, generated examples and saved model program",
+      "passed": true
+    }
+  ],
+  "scope": "Selected entrance/load checks; not every old interaction, export or video was re-exercised. File retention is verified independently."
+}

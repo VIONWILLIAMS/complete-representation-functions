@@ -1,0 +1,22 @@
+{
+  "schema": "crf.browser_download_verification.v0.9",
+  "environment": "managed-preview cloud Chrome",
+  "checks": [
+    {
+      "url": "assets/v09/media/08_three_fruits.mp4",
+      "expectedSHA256": "7f5782245ad5e4bd00238211107a5bdf6f9b97702a082eae14fd738b26da2f28",
+      "downloadedSHA256": "7f5782245ad5e4bd00238211107a5bdf6f9b97702a082eae14fd738b26da2f28",
+      "bytes": 454169,
+      "passed": true
+    },
+    {
+      "url": "downloads/CRF_0_9_Render_Kit.zip",
+      "expectedSHA256": "7c51b0a28e701a68b0e9973a9ffafcee6fef89102b738a7e5e128b6f5d8224c2",
+      "downloadedSHA256": "7c51b0a28e701a68b0e9973a9ffafcee6fef89102b738a7e5e128b6f5d8224c2",
+      "bytes": 13349993,
+      "archiveFileCount": 166,
+      "crcIntegrity": true,
+      "passed": true
+    }
+  ]
+}

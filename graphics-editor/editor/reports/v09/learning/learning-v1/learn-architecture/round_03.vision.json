@@ -1,0 +1,333 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 3,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.3.0",
+      "label": "黄墙上的小阳台与双扇窗",
+      "category": "balcony-window",
+      "role": "object",
+      "bbox": [
+        0.11,
+        0.15,
+        0.9,
+        0.85
+      ],
+      "palette": [
+        [
+          224,
+          148,
+          36
+        ],
+        [
+          222,
+          178,
+          144
+        ],
+        [
+          48,
+          32,
+          26
+        ],
+        [
+          246,
+          247,
+          245
+        ],
+        [
+          125,
+          71,
+          55
+        ]
+      ],
+      "lightDirection": "front",
+      "description": "正面拍摄的明橙黄色墙面，中央嵌有带深褐色檐口和窗台的窄高窗门，外挑黑色金属栏杆；双扇窗上部有深色横档，玻璃呈亮白反光。墙面色块较均匀，窗框、栏杆和檐口形成清晰的几何层次，檐下与栏板处有接触阴影。",
+      "tags": [
+        "黄色墙面",
+        "窗框",
+        "金属栏杆",
+        "阳台",
+        "檐口",
+        "正面构图",
+        "建筑立面",
+        "接触阴影",
+        "暖色"
+      ],
+      "limitations": [
+        "图像分辨率较低",
+        "只看到局部立面",
+        "栏杆细部受压缩",
+        "无法确认窗后空间",
+        "无法判断真实尺度",
+        "光照方向仅据阴影推断"
+      ]
+    },
+    {
+      "id": "ref.3.1",
+      "label": "行人及自行车信号灯与立柱",
+      "category": "traffic-signal",
+      "role": "object",
+      "bbox": [
+        0.38,
+        0.02,
+        0.94,
+        0.96
+      ],
+      "palette": [
+        [
+          26,
+          29,
+          28
+        ],
+        [
+          22,
+          180,
+          138
+        ],
+        [
+          190,
+          25,
+          29
+        ],
+        [
+          147,
+          169,
+          177
+        ],
+        [
+          236,
+          206,
+          166
+        ]
+      ],
+      "lightDirection": "back",
+      "description": "近景切取黑色信号灯箱，左侧竖向两个绿色发光图标，上方为行人、下方为自行车；右侧灯箱露出红色圆形灯光。灯箱由深色金属支架和立柱承接，背景是虚化的高层建筑与棕榈树，天空偏暖亮，形成逆光轮廓。",
+      "tags": [
+        "信号灯",
+        "行人图标",
+        "自行车图标",
+        "红色灯",
+        "立柱",
+        "逆光",
+        "城市背景",
+        "虚化",
+        "发光LED"
+      ],
+      "limitations": [
+        "背景严重虚化",
+        "无法看到立柱底部",
+        "灯箱侧面和安装结构不完整",
+        "红色灯对应功能无法确认",
+        "分辨率有限",
+        "图标细节受发光晕影响"
+      ]
+    },
+    {
+      "id": "ref.3.2",
+      "label": "三拱窗砖石立面",
+      "category": "arched-facade",
+      "role": "object",
+      "bbox": [
+        0.02,
+        0.02,
+        0.98,
+        0.98
+      ],
+      "palette": [
+        [
+          157,
+          87,
+          58
+        ],
+        [
+          194,
+          136,
+          93
+        ],
+        [
+          38,
+          28,
+          24
+        ],
+        [
+          94,
+          57,
+          43
+        ],
+        [
+          188,
+          184,
+          174
+        ]
+      ],
+      "lightDirection": "top",
+      "description": "低角度仰拍的暖红棕色砖石立面，三个高拱形开洞并排，之间由壁柱或竖向构件分隔；拱顶附近可见深色装饰格栅，洞口内部较暗，上部有厚重檐口或水平线脚。表面呈粗糙砖石颗粒感，拱内和檐下形成明显阴影。",
+      "tags": [
+        "砖石立面",
+        "三连拱",
+        "拱窗",
+        "低角度仰拍",
+        "暖红棕色",
+        "檐口",
+        "壁柱",
+        "阴影",
+        "历史建筑"
+      ],
+      "limitations": [
+        "上下边缘裁切",
+        "无法确认完整建筑轮廓",
+        "拱内暗部细节不足",
+        "低分辨率",
+        "材质种类难判定",
+        "未提供尺度"
+      ]
+    },
+    {
+      "id": "ref.3.3",
+      "label": "深色格栅与浅色竖纹墙面",
+      "category": "facade-material",
+      "role": "material",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          24,
+          23,
+          20
+        ],
+        [
+          189,
+          172,
+          146
+        ],
+        [
+          139,
+          124,
+          104
+        ],
+        [
+          92,
+          83,
+          71
+        ],
+        [
+          211,
+          196,
+          170
+        ]
+      ],
+      "lightDirection": "unknown",
+      "description": "极近距的建筑立面切面：左侧为深色密集格栅或百叶，形成重复孔洞与横向亮边；右侧为浅米灰色墙面，表面有细密纵向凹凸纹理和污渍。两种材质之间形成竖直接缝，斜向硬阴影横跨浅色墙面，显示强方向光与近距离接触阴影。",
+      "tags": [
+        "建筑表面",
+        "深色格栅",
+        "浅色墙面",
+        "纵向纹理",
+        "斜向阴影",
+        "材质对比",
+        "近景",
+        "硬光"
+      ],
+      "limitations": [
+        "无整体楼体信息",
+        "格栅具体构造不明确",
+        "阴影来源不可见",
+        "颜色受曝光影响",
+        "无法测量纹理尺度",
+        "图像分辨率低"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "均为建筑或城市环境中的局部近景",
+    "强调几何线条、重复结构和材质表面",
+    "可见自然日光造成的高对比或接触阴影",
+    "深色构件与暖色墙面或天空形成对比",
+    "画面裁切紧凑，缺少完整场景",
+    "低分辨率照片，细节受压缩",
+    "包含栏杆竖杆、灯箱图标、三连拱或格栅网格等重复结构",
+    "色彩以暖黄、砖红、米灰和黑色为主",
+    "未出现清晰可辨的人物活动"
+  ],
+  "missingEvidence": [
+    "没有完整立面或街道全景",
+    "没有相机参数、焦距、曝光和白平衡",
+    "没有尺度参照物或实测尺寸",
+    "没有多视角或连续视角",
+    "没有高清纹理贴图或材质样本",
+    "无法确认各图像是否同一地点或同一实例",
+    "无法从单张照片恢复三维结构",
+    "缺少栏杆、窗框、信号灯、拱券和格栅的连接构造细节",
+    "缺少表面颗粒、涂层或砖石成分的近距离证据",
+    "无法验证光照时间、天气和阴影软硬来源",
+    "图像分辨率不足以精确分割和描摹细部",
+    "没有像素级标注或alpha遮罩",
+    "没有同一材质在不同光照下的配对样本"
+  ],
+  "images": [
+    {
+      "id": "ref.3.0",
+      "sourceUrl": "https://www.pexels.com/photo/aged-balcony-on-bright-wall-5438827/",
+      "sha256": "d50afae1aecef47fb8bc12e08e4358ee9fecafc788463e47439dbfb0c40c8b5a",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.3.1",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/7891699/",
+      "sha256": "b63ba683180e067a21a3fd9948d9488530c5f7d345be5a6471f613527226c879",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.3.2",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/38261638/",
+      "sha256": "474178b0f16bc7132b2987d3b37e6688296a80fb7743d6987167b0524af16b52",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.3.3",
+      "sourceUrl": "https://www.pexels.com/zh-cn/photo/10637244/",
+      "sha256": "bae691f150c74a367ae9432ee5076f83422c42ffeac10fc07817a7508541f7fa",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "3cc570da-25fb-4996-8cbb-b79a022b1cca",
+        "model": "deepseek-flash",
+        "elapsedMs": 33886,
+        "prompt_tokens": 1576,
+        "completion_tokens": 4621,
+        "total_tokens": 6197,
+        "reasoning_tokens": 3455,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1576,
+    "completion_tokens": 4621,
+    "total_tokens": 6197,
+    "reasoning_tokens": 3455
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 33888
+}

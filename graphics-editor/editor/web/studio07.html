@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#12252b">
+  <title>CRF 图形计算编辑器 · 0.7</title>
+  <meta name="description" content="描述场景、搜索参考、编写视觉程序、渲染与修改图片。全部既有案例继续保留。">
+  <link rel="stylesheet" href="editor07.css">
+</head>
+<body>
+<div class="studio" id="studio">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="CRF 图形计算编辑器主页"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>CRF 图形计算编辑器</strong><small>从视觉意图，到可执行图像 <b>0.7</b></small></span></a>
+    <div class="top-note">观察 · 生成 · 持续改进</div>
+    <a class="button" href="canvas07.html">二维代码生图</a>
+    <button class="connection" id="connectionButton" title="查看模型连接状态"><span id="connectionDot"></span><span id="connectionLabel">检查模型连接</span></button>
+    <button class="button quiet" id="downloadsButton">交付文件</button>
+    <button class="button quiet" id="focusButton" aria-pressed="false">专注画布</button>
+  </header>
+
+  <div class="body-grid">
+    <aside class="case-panel" aria-label="全部场景案例">
+      <div class="panel-heading"><h2>场景库</h2><span id="caseCount">11</span></div>
+      <p class="small-note library-note">已有案例持续保留。每个场景可单独编辑与保存。</p>
+      <nav id="caseList" class="case-list" aria-label="选择案例"></nav>
+      <div class="case-bottom"><button class="button quiet full" id="experimentsButton">模型实测对比</button><button class="button quiet full" id="importButton">导入场景程序</button><button class="text-button" id="guideButton">使用说明与能力边界</button></div>
+    </aside>
+
+    <main class="work-area" aria-label="场景编辑工作区">
+      <div class="scene-toolbar"><div class="scene-heading"><span id="sceneKind">观测场景</span><h1 id="sceneTitle">午后街角 · 红绿灯</h1></div><div class="scene-actions"><button class="button quiet" id="undoButton">撤销</button><button class="button quiet" id="sourceButton">场景程序</button><button class="button quiet" id="compareButton">前后对照</button><button class="button quiet" id="improveButton">检查并改进</button><button class="button primary" id="exportPNGButton">导出 PNG</button></div></div>
+      <div class="stage" id="stage">
+        <div class="embedded-host" id="embeddedHost"></div>
+        <section class="photo-view" id="photoView" hidden aria-label="代码生成图片">
+          <div class="photo-toolbar"><div class="quality-controls"><label>采样<select id="samplesSelect" aria-label="渲染采样数"><option value="4">快速 · 4</option><option value="16">细看 · 16</option><option value="48" selected>精细 · 48</option><option value="96">高采样 · 96</option></select></label><label>输出<select id="sizeSelect" aria-label="图片输出尺寸"><option value="640">640 × 480</option><option value="960" selected>960 × 720</option><option value="1280">1280 × 960</option></select></label><label class="denoise-control"><input type="checkbox" id="denoiseEnabled" checked>降噪显示</label></div><button class="button" id="previewButton">快速预览</button><button class="button primary" id="renderButton">渲染图片</button></div>
+          <div class="image-stage" id="imageStage"><canvas id="photoCanvas" width="640" height="480" aria-label="CRF 0.7 程序渲染画布"></canvas><div class="image-placeholder" id="imagePlaceholder"><strong>由程序重新计算每个像素</strong><p>选择场景，或在右侧描述你希望生成的画面。</p></div></div>
+          <div class="photo-status"><span id="renderLabel">准备渲染</span><span id="renderDimensions">—</span><span id="selectedObjectLabel">点击画面选择对象</span></div>
+          <details class="quick-properties" id="quickProperties"><summary>对象与光照</summary><div class="property-grid"><label>对象<select id="objectSelect" aria-label="选择程序对象"></select></label><label>表面颜色<input type="color" id="objectColor" value="#d7893f"></label><label>粗糙度<input type="range" id="roughness" min="0.04" max="1" step="0.02" value="0.4"><output id="roughnessValue">0.40</output></label><label>曝光<input type="range" id="exposure" min="0.1" max="3" step="0.05" value="1"><output id="exposureValue">1.00</output></label></div></details>
+        </section>
+        <div class="stage-loading" id="stageLoading" role="status" aria-live="polite"><span class="spinner"></span><strong id="loadingText">正在打开街景案例</strong><button class="button" id="retrySceneButton" hidden>重试当前案例</button></div>
+      </div>
+      <div class="operation-progress" id="operationProgress" hidden><div><strong id="progressLabel">准备生成</strong><button class="text-button" id="cancelButton">停止</button></div><progress id="progressBar" max="1" value="0"></progress><span id="progressDetail">—</span></div>
+      <footer class="workspace-footer"><span id="caseStatus">原有编辑、视角、视频与像素检查继续保留</span><button class="text-button" id="exportJSONButton">保存场景 JSON</button></footer>
+    </main>
+
+    <aside class="assistant-panel" id="assistantPanel" aria-label="模型对话与参考学习">
+      <div class="assistant-heading"><div><span class="eyebrow">视觉程序协作</span><h2>描述你想看到的画面</h2></div><button class="icon-button" id="newChatButton" aria-label="清空本页对话" title="清空本页对话">＋</button></div>
+      <div class="assistant-tabs" role="tablist"><button role="tab" aria-selected="true" data-tab="chat">对话</button><button role="tab" aria-selected="false" data-tab="research">参考与证据 <span id="sourceCount">0</span></button></div>
+      <div class="chat-scroll" id="chatScroll"><div class="chat-welcome"><span class="welcome-symbol">✦</span><h3>让场景成为可修改的程序</h3><p>描述构图、物品、材质与光线。模型可检索参考、编写场景，再通过实际渲染继续修改。</p><div class="prompt-suggestions"><button data-prompt="生成一张雨后夜晚街角的照片，行人信号灯是红色，路面有温暖的反光。">雨后的红绿灯街角</button><button data-prompt="生成一张窗边陶瓷花瓶的静物照片，柔和侧光、细腻釉面、浅色背景。">窗边陶瓷静物</button><button data-prompt="生成一张温暖的室内建筑照片，阳光穿过窗户，木材与墙面层次清晰。">午后室内光影</button></div></div><div id="messages" class="messages" aria-live="polite"></div></div>
+      <div class="research-scroll" id="researchScroll" hidden><div id="researchSummary" class="research-summary">尚未执行参考检索。实际调用后会在这里保留来源、搜索方式与模型使用情况。</div><div id="researchSources" class="research-sources"></div><details><summary>本次执行记录</summary><pre id="runEvidence">尚无记录</pre></details></div>
+      <form class="composer" id="chatForm"><div class="composer-options"><label><input id="searchEnabled" type="checkbox" checked>搜索参考</label><select id="chatMode" aria-label="对话任务"><option value="generate">生成新图片</option><option value="edit">修改当前画面</option><option value="critique">检查当前画面</option></select></div><label class="quality-pass"><input id="qualityPass" type="checkbox" checked>生成后检查实际画面，再反馈一轮</label><label class="sr-only" for="promptInput">对模型描述场景</label><textarea id="promptInput" rows="3" placeholder="例如：暖色夕阳照在墙面上，保留红绿灯与斑马线，把画面变得更真实…"></textarea><div class="composer-bottom"><span>⌘ / Ctrl + Enter 发送</span><button type="submit" class="button primary" id="sendButton">发送并生成</button></div></form>
+      <p class="assistant-footnote" id="modelNote">连接状态与搜索证据以实际返回为准。</p>
+    </aside>
+  </div>
+</div>
+
+<dialog id="sourceDialog" class="source-dialog"><div class="dialog-header"><div><span class="eyebrow">可执行视觉表示</span><h2>场景程序</h2></div><button class="icon-button" data-close="sourceDialog" aria-label="关闭场景程序">×</button></div><p class="dialog-note">编辑完整 JSON 或操作数组。应用前统一校验，未知代码不会作为 JavaScript 执行。</p><div class="source-options"><label>内容<select id="sourceMode"><option value="program">完整场景</option><option value="operations">编辑操作数组</option></select></label><button class="text-button" id="formatJSONButton">格式化</button></div><textarea id="sourceEditor" spellcheck="false" aria-label="场景 JSON 程序"></textarea><div id="sourceError" class="error" role="alert"></div><div class="dialog-footer"><span id="sourceSchema">—</span><button class="button primary" id="applyJSONButton">应用并渲染</button></div></dialog>
+
+<dialog id="compareDialog" class="compare-dialog"><div class="dialog-header"><div><span class="eyebrow">实际画面</span><h2>前后对照</h2></div><button class="icon-button" data-close="compareDialog" aria-label="关闭画面对照">×</button></div><div class="compare-grid"><figure><figcaption id="beforeCaption">上一次修改前</figcaption><img id="beforeImage" alt="上一次修改前的实际画面"></figure><figure><figcaption id="afterCaption">当前结果</figcaption><img id="afterImage" alt="当前程序的实际渲染画面"></figure></div><p class="dialog-note" id="compareNote">生成或修改后，可查看实际像素结果。</p></dialog>
+
+<dialog id="statusDialog" class="small-dialog"><div class="dialog-header"><div><span class="eyebrow">实际连接状态</span><h2>模型与搜索</h2></div><button class="icon-button" data-close="statusDialog" aria-label="关闭连接状态">×</button></div><div class="dialog-body"><p id="connectionDescription">正在检查服务端连接。</p><pre id="connectionDetails"></pre><button class="button" id="refreshStatusButton">重新检查</button></div></dialog>
+
+<dialog id="downloadsDialog" class="small-dialog"><div class="dialog-header"><div><span class="eyebrow">保存与复现</span><h2>工程与结果下载</h2></div><button class="icon-button" data-close="downloadsDialog" aria-label="关闭下载">×</button></div><div class="dialog-body"><p>当前作品请导出 PNG 与场景 JSON。下列为本次交付的源码、案例与验收文件。</p><div id="downloadsList" class="downloads-list"></div></div></dialog>
+
+<dialog id="experimentsDialog" class="experiments-dialog"><div class="dialog-header"><div><span class="eyebrow">实际模型调用 · 实际程序渲染</span><h2>模型实测对比</h2></div><button class="icon-button" data-close="experimentsDialog" aria-label="关闭实测对比">×</button></div><p class="dialog-note">初稿和反馈后都来自实际模型返回的场景程序。两轮并列展示；没有自动评定哪张更好。可打开对应程序继续编辑。</p><div class="experiments-list" id="experimentsList">正在读取实测记录…</div></dialog>
+
+<dialog id="guideDialog" class="small-dialog"><div class="dialog-header"><div><span class="eyebrow">CRF 0.7</span><h2>使用说明</h2></div><button class="icon-button" data-close="guideDialog" aria-label="关闭使用说明">×</button></div><div class="dialog-body guide-copy"><h3>已有案例一直在</h3><p>左侧直接选择红绿灯街景、湖畔、实拍水果和全部0.6场景。它们保留各自的对象编辑、相机、视频、像素检查与导出能力。切换案例时会保存本页状态。</p><h3>描述、搜索、生成</h3><p>选择“生成新图片”并描述目标。模型服务返回场景程序后，由本地渲染器求值。参考列表只显示本次实际搜索返回的证据。</p><h3>对话修改与画面检查</h3><p>“修改当前画面”在当前表示上编辑。“检查当前画面”把实际画布送交模型分析；是否支持图像检查取决于已连接模型。“检查并改进”提交实际画面，并生成反馈候选。新图默认执行一轮可关闭的画面反馈，候选完成渲染后才替换初稿；可对照“初稿 / 反馈后”。每次修改后可导出独立的场景程序。</p><h3>质量与真实性</h3><p>照片观测的像素回放、基于单图的空间假设和原生程序生成分别标明。界面不将程序通过校验等同于照片写实，不将模型自评当作独立质量证明。</p><h3>保存</h3><p>本页对话和各场景草稿尽力保存在当前浏览器中。请导出重要场景 JSON 作为可移植副本。API 密钥仅由服务端保存。</p></div></dialog>
+
+<input type="file" id="jsonFile" accept="application/json,.json" hidden><div id="toast" class="toast" role="status"></div>
+<script src="assets/cases.js"></script><script src="crf-radiance07.js"></script><script src="crf-photo07.js"></script><script src="editor07.js"></script>
+</body>
+</html>

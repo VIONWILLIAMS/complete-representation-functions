@@ -1,0 +1,373 @@
+{
+  "index": 1,
+  "critique": {
+    "ok": true,
+    "version": "0.10.0",
+    "runId": "crf10_57a4b428-28c6-40be-9872-15114dd5c528",
+    "representation": "reference_gaussian",
+    "modelTraining": false,
+    "action": "critique",
+    "message": "本轮实际图像中，青釉花瓶位于偏左位置，橙子切面位于偏右且其底缘与花瓶处于同一地面线；青灰纯色背景、左上方光照方向、两件物体的柔和接触阴影都基本一致，上一轮提到的构图拥挤与橙子阴影过重问题已明显缓解，当前左右留白接近、构图较平衡。主要剩余缺陷集中在源高斯编码的轮廓边界：花瓶底缘有明显暗色锯齿和毛边，右缘有细暗边；橙子右缘有橙色光晕或毛边，底缘与阴影的接触线略模糊。这些可以通过小幅缩放、微调位置、曝光和阴影参数缓解，但无法用现有算子恢复源照片未观察到的光滑轮廓或更细的釉面结晶与果肉微结构。独立评审下真实感约为 4/5，未达到本轮 4.5 的目标门槛。",
+    "qualityNotes": [
+      "画面由照片可见外观的二维高斯编码组合而成，光照方向为左上方近似，阴影为程序生成的接触阴影，并非物理重光照。",
+      "花瓶与橙子的底缘均落在同一条地面线上，左右留白接近，构图较均衡；上一轮的拥挤与重心问题已基本缓解。",
+      "花瓶颈部高光与橙子切面亮度分布方向基本一致，背景为均匀青灰色纯色，符合极简静物目标。",
+      "轮廓锯齿与毛边来自源资产的高斯编码边界，只能通过缩放、位置、曝光与阴影参数缓解，不能恢复未被观察到的几何或微结构。"
+    ],
+    "warnings": [
+      "本轮真实感独立评审为 4/5，未达到 4.5/5 的目标门槛；提升主要受源高斯编码边界伪影限制。",
+      "对花瓶和橙子的缩放与曝光调整只能在有限范围内缓解轮廓与毛边，过度缩小或降曝光会使物体显得模糊或偏暗，需谨慎迭代。"
+    ],
+    "capabilityGaps": [
+      {
+        "capability": "源资产未见几何与微结构恢复",
+        "description": "无法恢复光滑的陶瓷轮廓、釉面结晶细节或更细的果粒几何；已通过遮挡、缩放、位置、曝光和阴影等允许方式尝试缓解边界伪影，仍不能消除。",
+        "requiredForGoal": false
+      }
+    ],
+    "issues": [
+      {
+        "code": "texture",
+        "severity": "major",
+        "objectIds": [
+          "ceramic"
+        ],
+        "description": "花瓶底缘可见不规则暗色锯齿与毛边，右缘有细暗边，破坏了釉面轮廓的干净度。这是显式高斯编码边界造成的，可通过将 scaleX/scaleY 从 1.08 轻微降至约 1.05、y 上移约 2px、opacity 降至约 0.98，使底缘更多融入接触阴影来缓解；不能用调色冒充恢复光滑的真实器身轮廓。"
+      },
+      {
+        "code": "texture",
+        "severity": "minor",
+        "objectIds": [
+          "orange"
+        ],
+        "description": "橙子右缘在浅灰背景上有一圈橙色毛边或光晕，果肉纹理略带高斯颗粒。可通过将 scale 从 0.84 轻微降至约 0.82、exposure 从 -0.04 微调至约 -0.08 缓解边界残余；不能借此恢复更细的果粒几何。"
+      },
+      {
+        "code": "contact",
+        "severity": "minor",
+        "objectIds": [
+          "orange"
+        ],
+        "description": "橙子底缘与椭圆阴影的接触线略模糊，底缘毛边使接触点不够清楚，阴影仍比花瓶阴影略重。可将 shadow.strength 从 0.20 降至约 0.17–0.18、spread 从 0.44 增至约 0.48、dx 微调至约 0.03，使接触线清晰但整体更柔。"
+      }
+    ],
+    "scores": {
+      "realism": 4,
+      "semantic": 5,
+      "coherence": 4
+    },
+    "attempts": [
+      {
+        "phase": "gaussian10_critique",
+        "status": "responded",
+        "startedAt": "2026-11-21T22:43:53.315Z",
+        "usageKnown": true,
+        "requestSent": true,
+        "requestId": "04a33531-112c-4dc1-b4d0-f7758b643ba0",
+        "validation": "passed"
+      }
+    ],
+    "usage": {
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 2545,
+      "completion_tokens": 3854,
+      "total_tokens": 6399,
+      "reasoning_tokens": 3025,
+      "requests": [
+        {
+          "phase": "gaussian10_critique",
+          "requestId": "04a33531-112c-4dc1-b4d0-f7758b643ba0",
+          "model": "deepseek-flash",
+          "elapsedMs": 22676,
+          "prompt_tokens": 2545,
+          "completion_tokens": 3854,
+          "total_tokens": 6399,
+          "reasoning_tokens": 3025,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "high"
+        }
+      ]
+    },
+    "quality": {
+      "status": "requires_render_and_independent_verification",
+      "modelScoreIsProof": false
+    },
+    "imageEvidence": true,
+    "sourceFrameSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+    "submittedImageDataURLSha256": "ba82b6af46d01083a0330da9bd5f7693561c41fe6a5d84fad29cded87d055a0d"
+  },
+  "verification": {
+    "schema": "crf.verification.v0.10",
+    "checkedAt": "2026-11-21T22:44:16.300Z",
+    "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+    "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+    "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66",
+    "checks": [
+      {
+        "id": "program.finite",
+        "kind": "program",
+        "type": "finite_parameters",
+        "required": true,
+        "status": "passed",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "render.frame",
+        "kind": "pixel",
+        "type": "valid_frame",
+        "required": true,
+        "status": "passed",
+        "reason": "Actual finite RGBA8 samples provided.",
+        "observed": true,
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "render.dimensions",
+        "kind": "pixel",
+        "type": "dimensions",
+        "required": true,
+        "status": "passed",
+        "observed": [
+          1024,
+          768
+        ],
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "visual.realism",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "failed",
+        "observed": 4,
+        "threshold": 4.5,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "visual.semantic",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 5,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "visual.coherence",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "status": "passed",
+        "observed": 4,
+        "threshold": 4,
+        "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "visual.major_issues",
+        "kind": "perceptual",
+        "type": "no_major_issues",
+        "required": true,
+        "status": "failed",
+        "observed": 1,
+        "issues": [
+          {
+            "code": "texture",
+            "severity": "major",
+            "objectIds": [
+              "ceramic"
+            ],
+            "description": "花瓶底缘可见不规则暗色锯齿与毛边，右缘有细暗边，破坏了釉面轮廓的干净度。这是显式高斯编码边界造成的，可通过将 scaleX/scaleY 从 1.08 轻微降至约 1.05、y 上移约 2px、opacity 降至约 0.98，使底缘更多融入接触阴影来缓解；不能用调色冒充恢复光滑的真实器身轮廓。"
+          }
+        ],
+        "scope": "Model-assisted perception only.",
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "visible.ceramic",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "status": "passed",
+        "observed": 57705,
+        "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "count.ceramic",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "status": "passed",
+        "observed": 1,
+        "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "visible.orange",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "status": "passed",
+        "observed": 18841,
+        "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      },
+      {
+        "id": "count.orange",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "status": "passed",
+        "observed": 1,
+        "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+        "evidence": {
+          "sceneSha256": "11e36a96d123ba21579756aa764e62bf95b09a2edc13e41989c8a6df87b81e08",
+          "imageSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+          "contractSha256": "8ea7585b7b00c38b0aa89d11d3d80ee3e499be4ecc1724fc575a9d9cbada5c66"
+        }
+      }
+    ],
+    "summary": {
+      "passed": 9,
+      "failed": 2,
+      "unknown": 0,
+      "blocked": 0,
+      "total": 11,
+      "required": 11,
+      "requiredPassed": 9
+    },
+    "hardPassed": true,
+    "measurementPassed": true,
+    "perceptualPassed": false,
+    "allRequiredPassed": false,
+    "independentReview": null,
+    "photorealisticAccepted": false,
+    "referenceReconstructionAccepted": false,
+    "unknowns": [],
+    "blocked": [],
+    "diagnosis": [
+      {
+        "module": "appearance",
+        "status": "actionable",
+        "severity": "major",
+        "objectIds": [
+          "ceramic"
+        ],
+        "reason": "花瓶底缘可见不规则暗色锯齿与毛边，右缘有细暗边，破坏了釉面轮廓的干净度。这是显式高斯编码边界造成的，可通过将 scaleX/scaleY 从 1.08 轻微降至约 1.05、y 上移约 2px、opacity 降至约 0.98，使底缘更多融入接触阴影来缓解；不能用调色冒充恢复光滑的真实器身轮廓。",
+        "requiredCapability": null,
+        "requiredForGoal": null
+      },
+      {
+        "module": "appearance",
+        "status": "actionable",
+        "severity": "minor",
+        "objectIds": [
+          "orange"
+        ],
+        "reason": "橙子右缘在浅灰背景上有一圈橙色毛边或光晕，果肉纹理略带高斯颗粒。可通过将 scale 从 0.84 轻微降至约 0.82、exposure 从 -0.04 微调至约 -0.08 缓解边界残余；不能借此恢复更细的果粒几何。",
+        "requiredCapability": null,
+        "requiredForGoal": null
+      },
+      {
+        "module": "attachment_and_occlusion",
+        "status": "actionable",
+        "severity": "minor",
+        "objectIds": [
+          "orange"
+        ],
+        "reason": "橙子底缘与椭圆阴影的接触线略模糊，底缘毛边使接触点不够清楚，阴影仍比花瓶阴影略重。可将 shadow.strength 从 0.20 降至约 0.17–0.18、spread 从 0.44 增至约 0.48、dx 微调至约 0.03，使接触线清晰但整体更柔。",
+        "requiredCapability": null,
+        "requiredForGoal": null
+      },
+      {
+        "module": "capability_gap",
+        "status": "unknown",
+        "severity": "major",
+        "objectIds": [],
+        "reason": "无法恢复光滑的陶瓷轮廓、釉面结晶细节或更细的果粒几何；已通过遮挡、缩放、位置、曝光和阴影等允许方式尝试缓解边界伪影，仍不能消除。",
+        "requiredCapability": "源资产未见几何与微结构恢复",
+        "requiredForGoal": false,
+        "scope": "general_limitation"
+      }
+    ],
+    "scope": "Contract checks on this exact scene/frame; no universal correctness or unseen-world claim."
+  },
+  "render": {
+    "engine": "CRF10Gaussian",
+    "renderer": "direct_affine_anisotropic_gaussians",
+    "colorSpace": "linear_srgb_composite_then_srgb8",
+    "basisColorSpaces": [
+      "linear_srgb"
+    ],
+    "filter": "mip",
+    "pixelFilterVariance": 0.08333333333333333,
+    "gaussians": 8192,
+    "basisEvaluations": 2826475,
+    "visibleObjects": 2,
+    "elapsedMs": 280,
+    "sourceRGBBlit": false,
+    "colourRasterResampling": false,
+    "neuralModelTraining": false,
+    "referenceConditioned": true,
+    "geometry": "image_plane_affine",
+    "physicalRelighting": false,
+    "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+    "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+    "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+    "coverageSemantics": "visible_alpha_contribution",
+    "pixelSha256": "f3dccc4e8ce86312f2964b68e30bdd21297acfa4f275a9726834dbef98651dde",
+    "pngSha256": "65cc9ff7d4ab0b0cabc79e810286bbc4b4a86589873c9e6796a58d9b367f3c9f"
+  }
+}

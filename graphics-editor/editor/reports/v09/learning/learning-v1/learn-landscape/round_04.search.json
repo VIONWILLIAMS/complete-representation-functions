@@ -1,0 +1,689 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 4,
+  "query": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "checkpoint": {
+    "sessionId": "crf09_b59f3a06-8a8c-46de-ba82-44d05621b14e",
+    "round": 4,
+    "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+    "subtopic": "柔和照明：自然侧光、低对比阴影与高光",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:51:36.044Z",
+    "runId": "crf07_8b4c705e-12ae-45b7-9559-a622f0a36a4f",
+    "queries": [
+      "soft light mountain lake shore reference photo Wikimedia Commons",
+      "site:pexels.com soft morning light mountain lake reflection",
+      "site:commons.wikimedia.org soft light coastal rocks sea fog photograph",
+      "site:commons.wikimedia.org coniferous forest sunlight photograph",
+      "site:pexels.com soft light forest mist trees photo"
+    ],
+    "requestIds": [
+      "f19259d2-d311-48f9-8d92-8f30aee43aec"
+    ],
+    "sourceCount": 13,
+    "newSourceCount": 12,
+    "candidateCount": 10,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_rl_00_63215f0f6c924dbdbef063115b1bcb92",
+        "type": "deepseek_read_url",
+        "kind": "read_link",
+        "status": "completed",
+        "action": {
+          "type": "read_link",
+          "url": "https://www.pexels.com/photo/tree-by-seashore-18844843/"
+        },
+        "sourceUrls": []
+      },
+      {
+        "id": "srvtoolu_s_01_817046be7d884dd7919ed84f39ad7411",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "soft light mountain lake shore reference photo Wikimedia Commons",
+            "site:pexels.com soft morning light mountain lake reflection",
+            "site:commons.wikimedia.org soft light coastal rocks sea fog photograph",
+            "site:commons.wikimedia.org coniferous forest sunlight photograph",
+            "site:pexels.com soft light forest mist trees photo"
+          ]
+        },
+        "sourceUrls": [
+          "https://www.rawpixel.com/image/3283561/free-photo-image-lake-snow-forest",
+          "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+          "https://commons.wikimedia.org/wiki/File:Calima.JPG#1",
+          "https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/",
+          "https://www.rawpixel.com/image/3292461/free-photo-image-eagle-wallpaper-abies-cc0",
+          "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+          "https://commons.wikimedia.org/wiki/Category:Sea_cliffs_of_Kauai",
+          "https://www.pexels.com/photo/autumn-forest-with-sunlight-filtering-through-trees-39922676/",
+          "https://www.pexels.com/photo/landscape-photography-of-mountain-1574184/",
+          "https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg#1",
+          "https://www.pexels.com/photo/misty-pine-forest-in-tranquil-landscape-35151768/",
+          "https://www.pexels.com/photo/mountain-reflecting-on-body-of-water-1525064/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pexels.com/photo/tree-by-seashore-18844843/",
+        "title": "Photo by christine roy on Pexels",
+        "snippet": "",
+        "via": "server_page"
+      },
+      {
+        "url": "https://www.rawpixel.com/image/3283561/free-photo-image-lake-snow-forest",
+        "title": "Download free image of A clear, blue lake with colorful canoes lined up on the shore; tall evergreen trees line one side while snow-capped mountains are visible in the distance. Original public domain image from Wikimedia Commons about lake",
+        "snippet": "//www.rawpixel.com/image/3283561Edit ImageSaveSaveEditCropCustom TextA clear, blue lake with colorful canoes lined up on the shore; tall evergreen trees line one side while snow-capped mountains are visible in the distance. Original public domain image from Wikimedia CommonsMorePublic",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+        "title": "Photo by Nunzio Guerrera on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 7067x2830 ... Taken At Sep 21, 2013 Software Adobe ... (Windows) Banff, Alberta, Canada Description # Beautiful sunrise reflection at Bow Lake with towering mountains in Banff National Park. ## More like this Add filters...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Calima.JPG#1",
+        "title": "File:Calima.JPG - Wikimedia Commons - File:Calima.JPG",
+        "snippet": "File:Calima.JPG ... Original file (600 × 800 pixels, file size ... Summary [edit] DescriptionCalima.JPG | English: cliffs of Conil - Cabo Roche in the mist ---|--- Date Source | Own work Author | Joanika ... Supported Flashpix version | 1",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/",
+        "title": "Photo by Lucas Pezeta on Pexels",
+        "snippet": "Add filters, effects Make presentations Create photo collages ... 7041x5625 Aspect Ratio 2347 ... Date Oct 13, 2020 ... 2019 Software Adobe Photoshop Lightroom Classic 9.4 (Windows) Description # A serene misty forest scene with lush greenery and soft fog enveloping the trees. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.rawpixel.com/image/3292461/free-photo-image-eagle-wallpaper-abies-cc0",
+        "title": "The still surface of a lake surrounded by a green forest with a mountain in the distance. Original public domain image from Wikimedia Commons",
+        "snippet": "//creativecommons.org/publicdomain/zero/1.0/https://www.rawpixel.com/image/3292461Edit ImageSaveSaveEditCropCustom TextThe still surface of a lake surrounded by a green forest with a mountain in the distance. Original public domain image from Wikimedia CommonsMorePublic",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+        "title": "Photo by Anton Atanasov on Pexels",
+        "snippet": "Afterglow Street ... Date Feb 12, 2021 ... Camera Canon EOS 6D ... Software Adobe Photoshop Lightroom 6.12 (Windows) Description # Peaceful landscape of a misty mountain lake at dawn with tranquil reflections. Perfect for nature lovers. ## More like this Afterglow",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Sea_cliffs_of_Kauai",
+        "title": "Category:Sea cliffs of Kauai - Wikimedia Commons",
+        "snippet": "Media in category \"Sea cliffs of Kauai\" The following 3 files are in this category, out of 3 total. - Coastal Fog (209049263).jpeg 2,048 × 1,366; 739 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/autumn-forest-with-sunlight-filtering-through-trees-39922676/",
+        "title": "Photo by Plato Terentev on Pexels",
+        "snippet": "Plato Terentev 275.4M views • 461K downloads License Free ... 4160x4160 Aspect Ratio 1 ... 2026 Downloads 10 Views 999 ... 100 Shutter Speed 1/400 sec ... 2024 Software Adobe ... (Windows) Description # Misty autumn forest scene with sunlight filtering through trees, highlighting fall foliage. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/landscape-photography-of-mountain-1574184/",
+        "title": "Photo by James Wheeler on Pexels",
+        "snippet": "Jul 27, 2012 Software Adobe Photoshop Lightroom Classic 8.0 (Windows) Improvement District No. 9, AB, Canada Description # Capture of a serene lake reflecting majestic mountains at sunrise in the wilderness. ## More like this Use filters",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg#1",
+        "title": "File:Haystack Rock and Needles in fog at Cannon Beach.jpg - Wikimedia Commons - File:Haystack Rock and Needles in fog at Cannon Beach.jpg",
+        "snippet": "Haystack Rock and Needles in fog at Cannon Beach.jpg ... DescriptionHaystack Rock and Needles in fog at Cannon Beach.jpg | English: Haystack Rock and The Needles in morning fog at Cannon Beach, Oregon. ... - Haystack Rock and The Needles in morning fog at Cannon Beach, Oregon.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/misty-pine-forest-in-tranquil-landscape-35151768/",
+        "title": "Photo by Arto Suraj on Pexels",
+        "snippet": "Afterglow ... 6000x4000 Aspect Ratio 3:2 Colors Date Dec 11, 2025 Downloads 203 Views ... Taken At Jul 19, 2025 Software Adobe Photoshop Lightroom Classic 12.2 (Windows) India Description # Serene misty pine forest creating a tranquil and mystical atmosphere. Perfect for nature and travel themes. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/mountain-reflecting-on-body-of-water-1525064/",
+        "title": "Photo by Francesco Ungaro on Pexels",
+        "snippet": "Oct 19, 2018 ... 2018 Software Adobe Photoshop Lightroom Classic 7.5 (Macintosh) Description # Beautiful mountain lake reflecting the sunrise, surrounded by autumn trees and a scenic path. ## More like this Use filters",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "**本轮检索结论**：针对“柔和照明：自然侧光、低对比阴影与高光”，我从 Pexels 与 Wikimedia Commons 找到 4 个此前未收集的具体照片详情页，覆盖山湖侧光倒影、雾中海岸巨岩（低对比高光）、以及针叶/混交林中的漫射侧光。外观细节均来自页面文字与 EXIF，**未下载图像、未做像素级观察**；这些仅是待后续视觉模型验证的候选参考。\n\n```json\n{\n  \"summary\": \"本轮实际检索到 4 个可核验的具体照片详情页：Pexels 2 个（Bow Lake 日出侧光倒影、雾中巨岩海岸），Wikimedia Commons 2 个（雾中 Cannon Beach 巨岩、Rawpixel 转介的 CC0 湖面针叶林倒影详情页待核验）。覆盖自然侧光下山体轮廓与水面高光、薄雾对海岸岩石高光的压低、以及林间漫射侧光。所有外观描述来自页面文字与 EXIF，未逐像素观察。\",\n  \"features\": [\n    \"Bow Lake 日出侧光（Pexels 32194131）：页面描述为‘Beautiful sunrise reflection at Bow Lake with towering mountains’。日出低角度光可产生山体一侧受光、一侧阴影的低对比横向明暗分层；湖面倒影在 8.0s 曝光下可能呈现柔和镜面高光，适合提取山脊线两侧光照渐变与水面高光衰减。\",\n    \"雾中 Cannon Beach 巨岩（Commons Haystack Rock and Needles in fog）：页面描述为‘Haystack Rock and The Needles in morning fog at Cannon Beach’。晨雾作为体积散射介质会压低岩石暗部与天空亮部的对比，岩石轮廓边缘被雾柔化；适合提取‘低对比阴影 + 雾中软边缘高光’的联合分布。\",\n    \"雾中海岸巨岩（Pexels Calima 类参考，Commons Calima.JPG）：页面描述为‘cliffs of Conil - Cabo Roche in the mist’。悬崖在雾中呈现低饱和、低对比的阶梯状明暗；适合提取雾气对岩石表面纹理的对比度衰减函数。\",\n    \"湖面针叶林倒影（Rawpixel 3283561 / 3292461）：CC0 公共领域图像，原始来自 Wikimedia Commons；描述为‘clear, blue lake’与‘still surface of a lake surrounded by a green forest with a mountain in the distance’。无风静水提供清晰倒影，针叶林在侧光下的树冠轮廓可作为高频边缘叠加在低频山体倒影上；适合提取多尺度边缘能谱。\",\n    \"雾中针叶林漫射光（Pexels 5590062）：页面描述为‘serene misty forest scene with lush greenery and soft fog enveloping the trees’；f/32、ISO 800、1/45s，小光圈与雾共同作用，树冠高光被散射摊平，适合提取低对比树冠团块与枝干暗部的软过渡。\"\n  ],\n  \"selectionCriteria\": [\n    \"侧光照片需有明确方向性光源（如日出/晨雾侧光），使山体或岩石一侧亮、一侧暗，但暗部仍保留纹理细节，而非死黑。\",\n    \"水面倒影需包含山体或树冠的垂直镜像对应关系，且倒影高光不溢出、不形成大面积纯白。\",\n    \"雾景需有可辨识的前景硬边缘（岩石/树干）与背景软边缘（雾中轮廓）分层，避免整幅均匀灰雾。\",\n    \"针叶林场景优先选择树冠轮廓可辨、枝干暗部与雾光形成低对比分层的照片，避免密集树冠糊成单一纹理。\",\n    \"优先 Wikimedia Commons 有明确 CC 许可与作者信息的文件页；Pexels 页面许可证原文需后续核验；Rawpixel 转介页需回溯原始 Commons 文件页确认作者与许可。\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 32194131（Bow Lake）的许可证原文未在返回内容中显示，仅可确认是具体照片页，CC 条款待核验。\",\n    \"Pexels 5590062 的许可证原文未显示，待核验。\",\n    \"Commons Calima.JPG 作者为 Joanika，许可未在返回内容中完整显示，待核验。\",\n    \"Commons Haystack Rock and Needles in fog 作者为 Lianguanlun，许可字段未在返回内容中显示，待核验。\",\n    \"Rawpixel 3283561 与 3292461 为 CC0 转介页，原始 Wikimedia Commons 文件页 URL 未在返回内容中给出，作者与原始详情页待回溯核验。\",\n    \"所有光照方向、雾浓度、倒影清晰度、树冠边缘软硬均为页面文字与 EXIF 推断，未获取图像字节验证。\",\n    \"Pexels 39922676（秋林光斑）与 Pexels 35151768（雾中松林）虽相关，但前者偏秋色落叶、后者偏雾中松林，与本轮‘低对比侧光’匹配度需后续图像验证，本轮仅列为备选、未计入主候选。\"\n  ],\n  \"nextFocus\": \"下一轮核验 Pexels 32194131、5590062 与 Commons Calima.JPG、Haystack Rock 的许可证原文；回溯 Rawpixel 转介页对应的原始 Wikimedia Commons 文件页，补全作者与直链；尝试补搜一张针叶林树冠在侧光下的独立特写（非秋色、非纯雾），用于提取树冠锯齿边缘与枝干暗部分层。\"\n}\n```\n\n**可点击来源页（本轮新增，均非此前已收集）**：\n\n1. **Pexels — Bow Lake 日出倒影**  \n   https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/  \n   页面事实：20.0mm，8.0s 曝光，Banff 国家公园；描述“Beautiful sunrise reflection at Bow Lake with towering mountains”。许可证待核验。\n\n2. **Wikimedia Commons — Haystack Rock and Needles in fog at Cannon Beach**  \n   https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg  \n   页面事实：5,744×3,829，Sony ILCE-6000，30mm，1/1,600s，2018-05-13；描述“Haystack Rock and The Needles in morning fog at Cannon Beach, Oregon”；作者 Lianguanlun。许可字段待核验。\n\n3. **Wikimedia Commons — Calima.JPG**  \n   https://commons.wikimedia.org/wiki/File:Calima.JPG  \n   页面事实：600×800，描述“cliffs of Conil - Cabo Roche in the mist”；作者 Joanika。许可字段待核验。\n\n4. **Pexels — 雾中森林漫射侧光**  \n   https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/  \n   页面事实：7041×5625，Canon EOS 5D Mark III，75mm，ƒ/32，ISO 800，1/45s；描述“A serene misty forest scene with lush greenery and soft fog enveloping the trees”。许可证待核验。\n\n5. **Rawpixel（转介 CC0，原始来源 Wikimedia Commons）— 静湖针叶林倒影**  \n   https://www.rawpixel.com/image/3283561/free-photo-image-lake-snow-forest  \n   https://www.rawpixel.com/image/3292461/free-photo-image-eagle-wallpaper-abies-cc0  \n   页面事实：标注“Original public domain image from Wikimedia Commons”，CC0；描述含“clear, blue lake”“still surface of a lake surrounded by a green forest with a mountain in the distance”。原始 Commons 文件页与作者待回溯核验。\n\n**未计入主候选的备选**：  \n- Pexels 35151768（雾中松林）：https://www.pexels.com/photo/misty-pine-forest-in-tranquil-landscape-35151768/ ，页面描述“Serene misty pine forest”，但未明确侧光方向，待图像验证。  \n- Pexels 39922676（秋林光斑）：https://www.pexels.com/photo/autumn-forest-with-sunlight-filtering-through-trees-39922676/ ，偏秋色与光斑，非低对比侧光主体，待验证。\n\n**局限**：以上特征均来自页面文字与 EXIF，未下载图像字节，未做边缘提取或像素级光照验证；照片字节将由后续独立步骤获取并提交视觉模型。Rawpixel 页面为 CC0 转介，原始 Commons 详情页需下一轮补全。",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://www.pexels.com/photo/tree-by-seashore-18844843/",
+      "title": "Photo by christine roy on Pexels",
+      "snippet": "",
+      "via": "server_page"
+    },
+    {
+      "url": "https://www.rawpixel.com/image/3283561/free-photo-image-lake-snow-forest",
+      "title": "Download free image of A clear, blue lake with colorful canoes lined up on the shore; tall evergreen trees line one side while snow-capped mountains are visible in the distance. Original public domain image from Wikimedia Commons about lake",
+      "snippet": "//www.rawpixel.com/image/3283561Edit ImageSaveSaveEditCropCustom TextA clear, blue lake with colorful canoes lined up on the shore; tall evergreen trees line one side while snow-capped mountains are visible in the distance. Original public domain image from Wikimedia CommonsMorePublic",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+      "title": "Photo by Nunzio Guerrera on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages Add custom frames License Free Dimensions 7067x2830 ... Taken At Sep 21, 2013 Software Adobe ... (Windows) Banff, Alberta, Canada Description # Beautiful sunrise reflection at Bow Lake with towering mountains in Banff National Park. ## More like this Add filters...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Calima.JPG#1",
+      "title": "File:Calima.JPG - Wikimedia Commons - File:Calima.JPG",
+      "snippet": "File:Calima.JPG ... Original file (600 × 800 pixels, file size ... Summary [edit] DescriptionCalima.JPG | English: cliffs of Conil - Cabo Roche in the mist ---|--- Date Source | Own work Author | Joanika ... Supported Flashpix version | 1",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "snippet": "Add filters, effects Make presentations Create photo collages ... 7041x5625 Aspect Ratio 2347 ... Date Oct 13, 2020 ... 2019 Software Adobe Photoshop Lightroom Classic 9.4 (Windows) Description # A serene misty forest scene with lush greenery and soft fog enveloping the trees. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.rawpixel.com/image/3292461/free-photo-image-eagle-wallpaper-abies-cc0",
+      "title": "The still surface of a lake surrounded by a green forest with a mountain in the distance. Original public domain image from Wikimedia Commons",
+      "snippet": "//creativecommons.org/publicdomain/zero/1.0/https://www.rawpixel.com/image/3292461Edit ImageSaveSaveEditCropCustom TextThe still surface of a lake surrounded by a green forest with a mountain in the distance. Original public domain image from Wikimedia CommonsMorePublic",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+      "title": "Photo by Anton Atanasov on Pexels",
+      "snippet": "Afterglow Street ... Date Feb 12, 2021 ... Camera Canon EOS 6D ... Software Adobe Photoshop Lightroom 6.12 (Windows) Description # Peaceful landscape of a misty mountain lake at dawn with tranquil reflections. Perfect for nature lovers. ## More like this Afterglow",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Sea_cliffs_of_Kauai",
+      "title": "Category:Sea cliffs of Kauai - Wikimedia Commons",
+      "snippet": "Media in category \"Sea cliffs of Kauai\" The following 3 files are in this category, out of 3 total. - Coastal Fog (209049263).jpeg 2,048 × 1,366; 739 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/autumn-forest-with-sunlight-filtering-through-trees-39922676/",
+      "title": "Photo by Plato Terentev on Pexels",
+      "snippet": "Plato Terentev 275.4M views • 461K downloads License Free ... 4160x4160 Aspect Ratio 1 ... 2026 Downloads 10 Views 999 ... 100 Shutter Speed 1/400 sec ... 2024 Software Adobe ... (Windows) Description # Misty autumn forest scene with sunlight filtering through trees, highlighting fall foliage. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/landscape-photography-of-mountain-1574184/",
+      "title": "Photo by James Wheeler on Pexels",
+      "snippet": "Jul 27, 2012 Software Adobe Photoshop Lightroom Classic 8.0 (Windows) Improvement District No. 9, AB, Canada Description # Capture of a serene lake reflecting majestic mountains at sunrise in the wilderness. ## More like this Use filters",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg#1",
+      "title": "File:Haystack Rock and Needles in fog at Cannon Beach.jpg - Wikimedia Commons - File:Haystack Rock and Needles in fog at Cannon Beach.jpg",
+      "snippet": "Haystack Rock and Needles in fog at Cannon Beach.jpg ... DescriptionHaystack Rock and Needles in fog at Cannon Beach.jpg | English: Haystack Rock and The Needles in morning fog at Cannon Beach, Oregon. ... - Haystack Rock and The Needles in morning fog at Cannon Beach, Oregon.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/misty-pine-forest-in-tranquil-landscape-35151768/",
+      "title": "Photo by Arto Suraj on Pexels",
+      "snippet": "Afterglow ... 6000x4000 Aspect Ratio 3:2 Colors Date Dec 11, 2025 Downloads 203 Views ... Taken At Jul 19, 2025 Software Adobe Photoshop Lightroom Classic 12.2 (Windows) India Description # Serene misty pine forest creating a tranquil and mystical atmosphere. Perfect for nature and travel themes. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/mountain-reflecting-on-body-of-water-1525064/",
+      "title": "Photo by Francesco Ungaro on Pexels",
+      "snippet": "Oct 19, 2018 ... 2018 Software Adobe Photoshop Lightroom Classic 7.5 (Macintosh) Description # Beautiful mountain lake reflecting the sunrise, surrounded by autumn trees and a scenic path. ## More like this Use filters",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+      "title": "Photo by Nunzio Guerrera on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calima.JPG#1",
+      "title": "File:Calima.JPG - Wikimedia Commons - File:Calima.JPG",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+      "title": "Photo by Anton Atanasov on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Sea_cliffs_of_Kauai",
+      "title": "Category:Sea cliffs of Kauai - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/autumn-forest-with-sunlight-filtering-through-trees-39922676/",
+      "title": "Photo by Plato Terentev on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/landscape-photography-of-mountain-1574184/",
+      "title": "Photo by James Wheeler on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg#1",
+      "title": "File:Haystack Rock and Needles in fog at Cannon Beach.jpg - Wikimedia Commons - File:Haystack Rock and Needles in fog at Cannon Beach.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/misty-pine-forest-in-tranquil-landscape-35151768/",
+      "title": "Photo by Arto Suraj on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/mountain-reflecting-on-body-of-water-1525064/",
+      "title": "Photo by Francesco Ungaro on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 23048,
+        "sha256": "d54c1e6113a2f71de10494a708cbeea175bbd96f95a3f616aef0638d232fb188"
+      },
+      "imageUrl": "https://images.pexels.com/photos/32194131/pexels-photo-32194131.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+      "title": "Photo by Nunzio Guerrera on Pexels",
+      "sha256": "d54c1e6113a2f71de10494a708cbeea175bbd96f95a3f616aef0638d232fb188",
+      "bytes": 23048,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 308
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 183252,
+        "sha256": "a8ef9dcfabe5af5c5bc025571f2cb667843ef9a0e16b3f06a73ee248c0fc48d1"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Calima.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calima.JPG#1",
+      "title": "File:Calima.JPG - Wikimedia Commons - File:Calima.JPG",
+      "sha256": "a8ef9dcfabe5af5c5bc025571f2cb667843ef9a0e16b3f06a73ee248c0fc48d1",
+      "bytes": 183252,
+      "mime": "image/jpeg",
+      "width": 600,
+      "height": 800,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Joanika",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Calima.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 600,
+        "height": 800,
+        "bytes": 183252
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 13724,
+        "sha256": "38f7e15b7c021024ade7d422a5c1119a001bb4b7f91b325c71c2c2b058284745"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5590062/pexels-photo-5590062.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "sha256": "38f7e15b7c021024ade7d422a5c1119a001bb4b7f91b325c71c2c2b058284745",
+      "bytes": 13724,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 614
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 10410,
+        "sha256": "7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d"
+      },
+      "imageUrl": "https://images.pexels.com/photos/6805484/pexels-photo-6805484.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+      "title": "Photo by Anton Atanasov on Pexels",
+      "sha256": "7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d",
+      "bytes": 10410,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 447
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/32194131/pexels-photo-32194131.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+      "title": "Photo by Nunzio Guerrera on Pexels",
+      "sha256": "d54c1e6113a2f71de10494a708cbeea175bbd96f95a3f616aef0638d232fb188",
+      "bytes": 23048,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 308,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Calima.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calima.JPG#1",
+      "title": "File:Calima.JPG - Wikimedia Commons - File:Calima.JPG",
+      "sha256": "a8ef9dcfabe5af5c5bc025571f2cb667843ef9a0e16b3f06a73ee248c0fc48d1",
+      "bytes": 183252,
+      "mime": "image/jpeg",
+      "width": 600,
+      "height": 800,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Joanika",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Calima.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 600,
+        "height": 800,
+        "bytes": 183252
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/5590062/pexels-photo-5590062.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "sha256": "38f7e15b7c021024ade7d422a5c1119a001bb4b7f91b325c71c2c2b058284745",
+      "bytes": 13724,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 614,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/6805484/pexels-photo-6805484.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+      "title": "Photo by Anton Atanasov on Pexels",
+      "sha256": "7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d",
+      "bytes": 10410,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 447,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+        "title": "Photo by Nunzio Guerrera on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/32194131/pexels-photo-32194131.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/32194131/pexels-photo-32194131.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 23048,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 308,
+        "sha256": "d54c1e6113a2f71de10494a708cbeea175bbd96f95a3f616aef0638d232fb188"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calima.JPG#1",
+        "title": "File:Calima.JPG - Wikimedia Commons - File:Calima.JPG",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Calima.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Joanika",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3ACalima.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Calima.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "bytes": 183252,
+        "mime": "image/jpeg",
+        "width": 600,
+        "height": 800,
+        "sha256": "a8ef9dcfabe5af5c5bc025571f2cb667843ef9a0e16b3f06a73ee248c0fc48d1"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/",
+        "title": "Photo by Lucas Pezeta on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/5590062/pexels-photo-5590062.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/5590062/pexels-photo-5590062.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 13724,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 614,
+        "sha256": "38f7e15b7c021024ade7d422a5c1119a001bb4b7f91b325c71c2c2b058284745"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+        "title": "Photo by Anton Atanasov on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/6805484/pexels-photo-6805484.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/6805484/pexels-photo-6805484.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 10410,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 447,
+        "sha256": "7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Sea_cliffs_of_Kauai",
+        "title": "Category:Sea cliffs of Kauai - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/autumn-forest-with-sunlight-filtering-through-trees-39922676/",
+        "title": "Photo by Plato Terentev on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/39922676/pexels-photo-39922676.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/39922676/pexels-photo-39922676.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 92076,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 768,
+        "sha256": "86ba11b74372778272a509a509678a48c54c6487b6edd1f3bf74c009b6013852"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "**本轮检索结论**：针对“柔和照明：自然侧光、低对比阴影与高光”，我从 Pexels 与 Wikimedia Commons 找到 4 个此前未收集的具体照片详情页，覆盖山湖侧光倒影、雾中海岸巨岩（低对比高光）、以及针叶/混交林中的漫射侧光。外观细节均来自页面文字与 EXIF，**未下载图像、未做像素级观察**；这些仅是待后续视觉模型验证的候选参考。\n\n```json\n{\n  \"summary\": \"本轮实际检索到 4 个可核验的具体照片详情页：Pexels 2 个（Bow Lake 日出侧光倒影、雾中巨岩海岸），Wikimedia Commons 2 个（雾中 Cannon Beach 巨岩、Rawpixel 转介的 CC0 湖面针叶林倒影详情页待核验）。覆盖自然侧光下山体轮廓与水面高光、薄雾对海岸岩石高光的压低、以及林间漫射侧光。所有外观描述来自页面文字与 EXIF，未逐像素观察。\",\n  \"features\": [\n    \"Bow Lake 日出侧光（Pexels 32194131）：页面描述为‘Beautiful sunrise reflection at Bow Lake with towering mountains’。日出低角度光可产生山体一侧受光、一侧阴影的低对比横向明暗分层；湖面倒影在 8.0s 曝光下可能呈现柔和镜面高光，适合提取山脊线两侧光照渐变与水面高光衰减。\",\n    \"雾中 Cannon Beach 巨岩（Commons Haystack Rock and Needles in fog）：页面描述为‘Haystack Rock and The Needles in morning fog at Cannon Beach’。晨雾作为体积散射介质会压低岩石暗部与天空亮部的对比，岩石轮廓边缘被雾柔化；适合提取‘低对比阴影 + 雾中软边缘高光’的联合分布。\",\n    \"雾中海岸巨岩（Pexels Calima 类参考，Commons Calima.JPG）：页面描述为‘cliffs of Conil - Cabo Roche in the mist’。悬崖在雾中呈现低饱和、低对比的阶梯状明暗；适合提取雾气对岩石表面纹理的对比度衰减函数。\",\n    \"湖面针叶林倒影（Rawpixel 3283561 / 3292461）：CC0 公共领域图像，原始来自 Wikimedia Commons；描述为‘clear, blue lake’与‘still surface of a lake surrounded by a green forest with a mountain in the distance’。无风静水提供清晰倒影，针叶林在侧光下的树冠轮廓可作为高频边缘叠加在低频山体倒影上；适合提取多尺度边缘能谱。\",\n    \"雾中针叶林漫射光（Pexels 5590062）：页面描述为‘serene misty forest scene with lush greenery and soft fog enveloping the trees’；f/32、ISO 800、1/45s，小光圈与雾共同作用，树冠高光被散射摊平，适合提取低对比树冠团块与枝干暗部的软过渡。\"\n  ],\n  \"selectionCriteria\": [\n    \"侧光照片需有明确方向性光源（如日出/晨雾侧光），使山体或岩石一侧亮、一侧暗，但暗部仍保留纹理细节，而非死黑。\",\n    \"水面倒影需包含山体或树冠的垂直镜像对应关系，且倒影高光不溢出、不形成大面积纯白。\",\n    \"雾景需有可辨识的前景硬边缘（岩石/树干）与背景软边缘（雾中轮廓）分层，避免整幅均匀灰雾。\",\n    \"针叶林场景优先选择树冠轮廓可辨、枝干暗部与雾光形成低对比分层的照片，避免密集树冠糊成单一纹理。\",\n    \"优先 Wikimedia Commons 有明确 CC 许可与作者信息的文件页；Pexels 页面许可证原文需后续核验；Rawpixel 转介页需回溯原始 Commons 文件页确认作者与许可。\"\n  ],\n  \"uncertainties\": [\n    \"Pexels 32194131（Bow Lake）的许可证原文未在返回内容中显示，仅可确认是具体照片页，CC 条款待核验。\",\n    \"Pexels 5590062 的许可证原文未显示，待核验。\",\n    \"Commons Calima.JPG 作者为 Joanika，许可未在返回内容中完整显示，待核验。\",\n    \"Commons Haystack Rock and Needles in fog 作者为 Lianguanlun，许可字段未在返回内容中显示，待核验。\",\n    \"Rawpixel 3283561 与 3292461 为 CC0 转介页，原始 Wikimedia Commons 文件页 URL 未在返回内容中给出，作者与原始详情页待回溯核验。\",\n    \"所有光照方向、雾浓度、倒影清晰度、树冠边缘软硬均为页面文字与 EXIF 推断，未获取图像字节验证。\",\n    \"Pexels 39922676（秋林光斑）与 Pexels 35151768（雾中松林）虽相关，但前者偏秋色落叶、后者偏雾中松林，与本轮‘低对比侧光’匹配度需后续图像验证，本轮仅列为备选、未计入主候选。\"\n  ],\n  \"nextFocus\": \"下一轮核验 Pexels 32194131、5590062 与 Commons Calima.JPG、Haystack Rock 的许可证原文；回溯 Rawpixel 转介页对应的原始 Wikimedia Commons 文件页，补全作者与直链；尝试补搜一张针叶林树冠在侧光下的独立特写（非秋色、非纯雾），用于提取树冠锯齿边缘与枝干暗部分层。\"\n}\n```\n\n**可点击来源页（本轮新增，均非此前已收集）**：\n\n1. **Pexels — Bow Lake 日出倒影**  \n   https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/  \n   页面事实：20.0mm，8.0s 曝光，Banff 国家公园；描述“Beautiful sunrise reflection at Bow Lake with towering mountains”。许可证待核验。\n\n2. **Wikimedia Commons — Haystack Rock and Needles in fog at Cannon Beach**  \n   https://commons.wikimedia.org/wiki/File:Haystack_Rock_and_Needles_in_fog_at_Cannon_Beach.jpg  \n   页面事实：5,744×3,829，Sony ILCE-6000，30mm，1/1,600s，2018-05-13；描述“Haystack Rock and The Needles in morning fog at Cannon Beach, Oregon”；作者 Lianguanlun。许可字段待核验。\n\n3. **Wikimedia Commons — Calima.JPG**  \n   https://commons.wikimedia.org/wiki/File:Calima.JPG  \n   页面事实：600×800，描述“cliffs of Conil - Cabo Roche in the mist”；作者 Joanika。许可字段待核验。\n\n4. **Pexels — 雾中森林漫射侧光**  \n   https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/  \n   页面事实：7041×5625，Canon EOS 5D Mark III，75mm，ƒ/32，ISO 800，1/45s；描述“A serene misty forest scene with lush greenery and soft fog enveloping the trees”。许可证待核验。\n\n5. **Rawpixel（转介 CC0，原始来源 Wikimedia Commons）— 静湖针叶林倒影**  \n   https://www.rawpixel.com/image/3283561/free-photo-image-lake-snow-forest  \n   https://www.rawpixel.com/image/3292461/free-photo-image-eagle-wallpaper-abies-cc0  \n   页面事实：标注“Original public domain image from Wikimedia Commons”，CC0；描述含“clear, blue lake”“still surface of a lake surrounded by a green forest with a mountain in the distance”。原始 Commons 文件页与作者待回溯核验。\n\n**未计入主候选的备选**：  \n- Pexels 35151768（雾中松林）：https://www.pexels.com/photo/misty-pine-forest-in-tranquil-landscape-35151768/ ，页面描述“Serene misty pine forest”，但未明确侧光方向，待图像验证。  \n- Pexels 39922676（秋林光斑）：https://www.pexels.com/photo/autumn-forest-with-sunlight-filtering-through-trees-39922676/ ，偏秋色与光斑，非低对比侧光主体，待验证。\n\n**局限**：以上特征均来自页面文字与 EXIF，未下载图像字节，未做边缘提取或像素级光照验证；照片字节将由后续独立步骤获取并提交视觉模型。Rawpixel 页面为 CC0 转介，原始 Commons 详情页需下一轮补全。",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 13847,
+    "completion_tokens": 1999,
+    "total_tokens": 15846,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "f19259d2-d311-48f9-8d92-8f30aee43aec",
+        "model": "deepseek-flash",
+        "elapsedMs": 24391,
+        "prompt_tokens": 13847,
+        "completion_tokens": 1999,
+        "total_tokens": 15846,
+        "server_tool_use": {
+          "tool_search": 5,
+          "tool_fetch": 1,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 43148,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 23048,
+        "sha256": "d54c1e6113a2f71de10494a708cbeea175bbd96f95a3f616aef0638d232fb188"
+      },
+      "imageUrl": "https://images.pexels.com/photos/32194131/pexels-photo-32194131.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/majestic-bow-lake-at-sunrise-in-banff-national-park-32194131/",
+      "title": "Photo by Nunzio Guerrera on Pexels",
+      "sha256": "d54c1e6113a2f71de10494a708cbeea175bbd96f95a3f616aef0638d232fb188",
+      "bytes": 23048,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 308,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/d54c1e6113a2f71de10494a708cbeea175bbd96f95a3f616aef0638d232fb188.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 183252,
+        "sha256": "a8ef9dcfabe5af5c5bc025571f2cb667843ef9a0e16b3f06a73ee248c0fc48d1"
+      },
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Calima.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calima.JPG#1",
+      "title": "File:Calima.JPG - Wikimedia Commons - File:Calima.JPG",
+      "sha256": "a8ef9dcfabe5af5c5bc025571f2cb667843ef9a0e16b3f06a73ee248c0fc48d1",
+      "bytes": 183252,
+      "mime": "image/jpeg",
+      "width": 600,
+      "height": 800,
+      "license": {
+        "name": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "artist": "Joanika",
+        "credit": "Own work",
+        "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Calima.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 600,
+        "height": 800,
+        "bytes": 183252
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/a8ef9dcfabe5af5c5bc025571f2cb667843ef9a0e16b3f06a73ee248c0fc48d1.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 13724,
+        "sha256": "38f7e15b7c021024ade7d422a5c1119a001bb4b7f91b325c71c2c2b058284745"
+      },
+      "imageUrl": "https://images.pexels.com/photos/5590062/pexels-photo-5590062.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/trees-growing-in-foggy-forest-5590062/",
+      "title": "Photo by Lucas Pezeta on Pexels",
+      "sha256": "38f7e15b7c021024ade7d422a5c1119a001bb4b7f91b325c71c2c2b058284745",
+      "bytes": 13724,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 614,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/38f7e15b7c021024ade7d422a5c1119a001bb4b7f91b325c71c2c2b058284745.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 10410,
+        "sha256": "7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d"
+      },
+      "imageUrl": "https://images.pexels.com/photos/6805484/pexels-photo-6805484.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+      "title": "Photo by Anton Atanasov on Pexels",
+      "sha256": "7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d",
+      "bytes": 10410,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 447,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d.webp"
+    }
+  ]
+}

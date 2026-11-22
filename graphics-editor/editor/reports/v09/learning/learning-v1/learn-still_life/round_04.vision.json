@@ -1,0 +1,331 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 4,
+  "topic": "苹果、梨、整橙子和普通陶瓷花瓶的真实静物；独立实例、果皮细节、轮廓、光照与承托面接触",
+  "items": [
+    {
+      "id": "ref.4.0",
+      "label": "橙红马克杯装果块",
+      "category": "cup-of-fruit",
+      "role": "object",
+      "bbox": [
+        0.14,
+        0.32,
+        0.96,
+        0.74
+      ],
+      "palette": [
+        [
+          214,
+          54,
+          18
+        ],
+        [
+          245,
+          222,
+          174
+        ],
+        [
+          74,
+          58,
+          52
+        ],
+        [
+          12,
+          10,
+          10
+        ],
+        [
+          166,
+          133,
+          108
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "俯视近景中，一只带右侧把手的橙红色马克杯或碗置于深色台面，杯内盛浅黄白色不规则果块，果块表面有湿润高光；左上角露出部分金属罐或调味瓶。强烈斜射光在台面投下窗格状硬阴影，杯体边缘受光而内部略暗。可复用红色容器、切块水果的堆积质感、硬光投影与承托面接触关系；但果块种类难以确认。",
+      "tags": [
+        "橙红马克杯",
+        "切块水果",
+        "硬光阴影",
+        "窗格投影",
+        "深色台面",
+        "俯视",
+        "高光",
+        "承托面",
+        "金属容器",
+        "静物"
+      ],
+      "limitations": [
+        "果块种类无法确认",
+        "杯身高光与阴影影响材质判断",
+        "左侧金属物被裁切",
+        "无精确尺度",
+        "强窗影干扰分割",
+        "非普通陶瓷花瓶",
+        "非整果样本"
+      ]
+    },
+    {
+      "id": "ref.4.1",
+      "label": "暖光下的菠萝果盘静物",
+      "category": "still-life-scene",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          43,
+          44,
+          20
+        ],
+        [
+          171,
+          119,
+          35
+        ],
+        [
+          20,
+          20,
+          13
+        ],
+        [
+          125,
+          129,
+          35
+        ],
+        [
+          89,
+          56,
+          23
+        ]
+      ],
+      "lightDirection": "right",
+      "description": "低照度室内静物：直立菠萝位于绿色浅盘右侧，左侧有模糊的其他水果，深色桌面承托；暖黄色墙面被光源照亮，菠萝冠叶在墙面投出夸张长影，右侧有窗帘或织物。画面整体偏暗、颗粒和模糊明显，适合提取暖光氛围、轮廓投影和果盘承托关系，不宜据此确认所有水果种类。",
+      "tags": [
+        "菠萝",
+        "果盘",
+        "暖光",
+        "长阴影",
+        "低照度",
+        "室内静物",
+        "窗帘",
+        "绿盘",
+        "轮廓",
+        "氛围光"
+      ],
+      "limitations": [
+        "低照度且模糊",
+        "部分水果不可辨识",
+        "场景包含多个物体，无法直接分离单果",
+        "暖色光严重改变真实颜色",
+        "菠萝叶与阴影重叠",
+        "非苹果/梨/橙子/花瓶清晰样本"
+      ]
+    },
+    {
+      "id": "ref.4.2",
+      "label": "蓝花陶瓷瓶与苹果静物画",
+      "category": "painting-still-life",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          139,
+          168,
+          186
+        ],
+        [
+          176,
+          63,
+          39
+        ],
+        [
+          224,
+          210,
+          180
+        ],
+        [
+          90,
+          75,
+          64
+        ],
+        [
+          161,
+          135,
+          73
+        ]
+      ],
+      "lightDirection": "left",
+      "description": "一幅笔触明显的静物油画：中央为浅蓝色带深色花卉纹样的陶瓷瓶或壶，前方白盘上堆叠数个红黄苹果，右侧深色酒杯，左侧餐刀，背景是浅色花纹墙纸。物体落在桌布或台面上，苹果与盘子、瓶底与桌面有接触阴影。可复用绘画质感、蓝花陶瓷容器、苹果堆叠与桌面静物构图；但非照片，细部与真实材质受笔触影响。",
+      "tags": [
+        "静物画",
+        "苹果",
+        "蓝花陶瓷瓶",
+        "白盘",
+        "酒杯",
+        "餐刀",
+        "花纹墙纸",
+        "笔触",
+        "接触阴影",
+        "传统静物"
+      ],
+      "limitations": [
+        "为绘画而非照片",
+        "笔触和低分辨率限制果皮细节",
+        "瓶身纹样与形状不能代表普通素陶花瓶",
+        "苹果品种难确认",
+        "无真实尺度与背面信息",
+        "画面包含多个物体，不能拆成独立实拍样本"
+      ]
+    },
+    {
+      "id": "ref.4.3",
+      "label": "白碗盛樱桃",
+      "category": "bowl-of-cherries",
+      "role": "object",
+      "bbox": [
+        0.1,
+        0.54,
+        0.98,
+        0.99
+      ],
+      "palette": [
+        [
+          72,
+          15,
+          26
+        ],
+        [
+          145,
+          26,
+          38
+        ],
+        [
+          243,
+          239,
+          231
+        ],
+        [
+          219,
+          197,
+          180
+        ],
+        [
+          137,
+          128,
+          123
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "近景中一只白色浅碗被双手托住，碗内堆满深红至紫红色樱桃，带细长绿色果梗，果皮有湿润高光；背景为强虚化的浅色针织或皮肤与灰白纹理，景深很浅。柔散光使樱桃明暗过渡平缓，白碗边缘与手指有接触。可复用樱桃的密集堆叠、白碗承托与浅景深背景；不是苹果、梨、橙子或花瓶样本。",
+      "tags": [
+        "樱桃",
+        "白碗",
+        "双手托持",
+        "浅景深",
+        "湿润高光",
+        "绿色果梗",
+        "柔散光",
+        "虚化背景",
+        "针织纹理",
+        "近景"
+      ],
+      "limitations": [
+        "非学习主题中的苹果/梨/橙子/花瓶",
+        "樱桃被遮挡和堆叠",
+        "碗沿和手指被裁切",
+        "浅景深导致背景与部分果实模糊",
+        "红色高光可能受后期影响",
+        "无尺度与背面信息"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "四图均为室内静物或食物题材，水果或果块是视觉中心之一",
+    "水果均被杯子、盘或碗等容器承托，存在接触面关系",
+    "均有可观察的光照与阴影，但光质和色温差异很大",
+    "均非孤立单果的标准化样本，包含遮挡、裁切或模糊",
+    "画面均缺少尺度参照，无法直接换算真实尺寸",
+    "色彩受强光、低照度、绘画或后期影响，不能当作真实反照率"
+  ],
+  "missingEvidence": [
+    "缺少同一实拍场景中苹果、梨、整橙子与普通素色陶瓷花瓶的清晰并置",
+    "缺少各水果完整轮廓、底部和承托面接触特写",
+    "缺少中性白平衡、灰卡和尺度参照",
+    "缺少多视角、深度图或分割掩码",
+    "缺少材质参数，如水果表皮蜡质、陶瓷釉面或素胎",
+    "低照度、浅景深与绘画笔触限制细节复用",
+    "无法确认被遮挡部分和背面外观",
+    "无法据此学习新的视角或完整三维世界"
+  ],
+  "images": [
+    {
+      "id": "ref.4.0",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/30876394/",
+      "sha256": "8f8491da4763d0f063f25e79cf730bd70ab2839ae8edb29cfd986f6db9d40c00",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.4.1",
+      "sourceUrl": "https://www.pexels.com/photo/assorted-fruits-on-green-ceramic-plate-7536327/",
+      "sha256": "3751de48133a44a002c1a60a0f456abc3379ef74fc24ae8a12c44c5fff011b4b",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.4.2",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pissarro_-_Still_Life_with_Apples_and_Pitcher.JPG#1",
+      "sha256": "4698e434708173a3fccb62a0e96e1c78e55c845f44b6b006619481b45521286b",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.4.3",
+      "sourceUrl": "https://www.pexels.com/photo/a-bowl-of-cherries-8463557/",
+      "sha256": "671138f5a1404c6c4801cce65694369f69c90205d3f2da5a148df7f83898c8e2",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "4ce07627-293a-442a-b892-003bcdbe7840",
+        "model": "deepseek-flash",
+        "elapsedMs": 36965,
+        "prompt_tokens": 1610,
+        "completion_tokens": 5199,
+        "total_tokens": 6809,
+        "reasoning_tokens": 3854,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 4
+      }
+    ],
+    "prompt_tokens": 1610,
+    "completion_tokens": 5199,
+    "total_tokens": 6809,
+    "reasoning_tokens": 3854
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 36966
+}

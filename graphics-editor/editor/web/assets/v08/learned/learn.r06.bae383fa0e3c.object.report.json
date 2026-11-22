@@ -1,0 +1,365 @@
+{
+  "id": "learn.r06.bae383fa0e3c.object",
+  "assetId": "learn.r06.bae383fa0e3c.object",
+  "status": "fitted",
+  "round": 6,
+  "topic": "真实交通灯与街角实拍",
+  "sourceUrl": "https://www.pexels.com/fr-fr/photo/texte-nature-morte-panneau-panneau-de-signalisation-7837387/",
+  "imageUrl": "https://images.pexels.com/photos/7837387/pexels-photo-7837387.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo de Nathaniel B. Gerhart sur Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r06.bae383fa0e3c.webp",
+  "sourceSHA256": "bae383fa0e3ca9a75fdbd87d1f976f123a35ff2f44d9f73e9dfbc40cdbc4fa33",
+  "normalizedRGBA_SHA256": "b672b0dec8e6040d4d279a42ea201267efb6587cfece05590f61957e586059a5",
+  "dHash64": "d69652d216ca7919",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    183,
+    285
+  ],
+  "assetURL": "assets/v08/learned/learn.r06.bae383fa0e3c.object.json",
+  "renderURL": "assets/v08/learned/learn.r06.bae383fa0e3c.object.png",
+  "reportURL": "assets/v08/learned/learn.r06.bae383fa0e3c.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r06.bae383fa0e3c.object.png",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 6519,
+  "pixelToGaussianRatio": 8.000460193281178,
+  "assetBytes": 548932,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 4.280101424392726,
+    "rmse": 6.497867585727116,
+    "psnr": 31.87538646872751,
+    "ssim": 0.9161196677655054,
+    "maxError": 58,
+    "exactRGBFraction": 0.04182563906905761,
+    "evaluatedPixels": 41936,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 31.261199282429875,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 122.45889908191447,
+          "bestFloatMSE": 122.45889908191447
+        },
+        {
+          "step": 10,
+          "floatMSE": 59.99836408404402,
+          "bestFloatMSE": 59.99836408404402
+        },
+        {
+          "step": 20,
+          "floatMSE": 46.116061215673554,
+          "bestFloatMSE": 46.116061215673554
+        },
+        {
+          "step": 30,
+          "floatMSE": 39.155632651600776,
+          "bestFloatMSE": 39.155632651600776
+        },
+        {
+          "step": 40,
+          "floatMSE": 35.3065692007522,
+          "bestFloatMSE": 35.3065692007522
+        },
+        {
+          "step": 50,
+          "floatMSE": 33.06281293196914,
+          "bestFloatMSE": 33.06281293196914
+        },
+        {
+          "step": 60,
+          "floatMSE": 31.837366109585957,
+          "bestFloatMSE": 31.837366109585957
+        },
+        {
+          "step": 70,
+          "floatMSE": 31.261199282429875,
+          "bestFloatMSE": 31.261199282429875
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2281,
+        "elapsedSeconds": 0.121,
+        "mae": 23.221090868625208,
+        "rmse": 31.372261913404827,
+        "psnr": 18.199886966890865,
+        "ssim": 0.4134567309758871,
+        "maxError": 179,
+        "exactRGBFraction": 0.011994467760396796,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2281,
+        "elapsedSeconds": 0.251,
+        "mae": 18.637169337403027,
+        "rmse": 25.30769269889748,
+        "psnr": 20.065752561550262,
+        "ssim": 0.5116216983570064,
+        "maxError": 146,
+        "exactRGBFraction": 0.007463754292254865,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 5035,
+        "elapsedSeconds": 1.222,
+        "mae": 11.195957331807199,
+        "rmse": 15.507970416704342,
+        "psnr": 24.319704331326072,
+        "ssim": 0.7685740277976447,
+        "maxError": 110,
+        "exactRGBFraction": 0.013162914917970241,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 6519,
+        "elapsedSeconds": 1.769,
+        "mae": 9.247392852600788,
+        "rmse": 12.826480412454531,
+        "psnr": 25.96865356324727,
+        "ssim": 0.8275862706207576,
+        "maxError": 89,
+        "exactRGBFraction": 0.017431323922167112,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 6519,
+        "elapsedSeconds": 1.812,
+        "mae": 9.247392852600788,
+        "rmse": 12.826480412454531,
+        "psnr": 25.96865356324727,
+        "ssim": 0.8275862706207576,
+        "maxError": 89,
+        "exactRGBFraction": 0.017431323922167112,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 6519,
+        "elapsedSeconds": 2.114,
+        "mae": 6.414393361312476,
+        "rmse": 9.006671718481075,
+        "psnr": 29.039516937462018,
+        "ssim": 0.8806490267519462,
+        "maxError": 73,
+        "exactRGBFraction": 0.015094429607020222,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 6519,
+        "elapsedSeconds": 2.382,
+        "mae": 5.491264466488618,
+        "rmse": 7.8939324300519,
+        "psnr": 30.184935516060737,
+        "ssim": 0.8971569229772279,
+        "maxError": 67,
+        "exactRGBFraction": 0.02150896604349485,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 6519,
+        "elapsedSeconds": 2.655,
+        "mae": 4.957586163042096,
+        "rmse": 7.281256217319306,
+        "psnr": 30.886677337845935,
+        "ssim": 0.9054559046941224,
+        "maxError": 62,
+        "exactRGBFraction": 0.029378099961846624,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 6519,
+        "elapsedSeconds": 2.954,
+        "mae": 4.630603777184281,
+        "rmse": 6.911050170569572,
+        "psnr": 31.339922694105308,
+        "ssim": 0.9104936799525035,
+        "maxError": 60,
+        "exactRGBFraction": 0.03381342998855399,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 6519,
+        "elapsedSeconds": 3.208,
+        "mae": 4.4390181864428335,
+        "rmse": 6.689003420218232,
+        "psnr": 31.623575248360105,
+        "ssim": 0.9134951896296778,
+        "maxError": 59,
+        "exactRGBFraction": 0.03846337275848913,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 6519,
+        "elapsedSeconds": 3.49,
+        "mae": 4.332435139259824,
+        "rmse": 6.561053986689435,
+        "psnr": 31.79133138264497,
+        "ssim": 0.9152413389239274,
+        "maxError": 58,
+        "exactRGBFraction": 0.040514116749332314,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 6519,
+        "elapsedSeconds": 3.755,
+        "mae": 4.280101424392726,
+        "rmse": 6.497867585727116,
+        "psnr": 31.87538646872751,
+        "ssim": 0.9161196677655054,
+        "maxError": 58,
+        "exactRGBFraction": 0.04182563906905761,
+        "evaluatedPixels": 41936,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 3.757,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 4.148,
+  "passedPilot": false,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0.34,
+      0,
+      0.66,
+      0.92
+    ],
+    "proposalPixels": [
+      154,
+      1,
+      358,
+      281
+    ],
+    "cropPixels": [
+      156,
+      0,
+      339,
+      285
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 40865,
+    "pixelMaskVerified": false,
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r06.bae383fa0e3c.object.png"
+  },
+  "semantics": {
+    "id": "learn.r06.bae383fa0e3c",
+    "label": "行人过街操作指示牌",
+    "category": "pedestrian-signage",
+    "role": "object",
+    "bbox": [
+      0.34,
+      0,
+      0.66,
+      0.92
+    ],
+    "palette": [
+      [
+        235,
+        235,
+        230
+      ],
+      [
+        25,
+        25,
+        25
+      ],
+      [
+        200,
+        30,
+        25
+      ],
+      [
+        212,
+        175,
+        40
+      ],
+      [
+        120,
+        160,
+        90
+      ]
+    ],
+    "lightDirection": "front",
+    "description": "白色矩形金属指示牌固定在深色立柱上，牌面印有行人图标、红色手掌图标、红灯倒计时示意和“DON'T CROSS”等英文说明；下部有一条指向右侧的黑色箭头，标明“TO CROSS PUSH BUTTON”。牌下方可见黄色圆形按钮装置。背景为虚化绿树。",
+    "tags": [
+      "行人指示牌",
+      "过街按钮",
+      "红色手掌",
+      "英文说明",
+      "倒计时",
+      "金属立柱",
+      "绿树背景"
+    ],
+    "limitations": [
+      "牌面小字部分受反光与分辨率限制",
+      "按钮装置下部被裁切",
+      "无法判断按钮电气接口"
+    ]
+  },
+  "sourceId": "learn.r06.bae383fa0e3c",
+  "referenceThumbnailURL": "assets/v08/references/learn.r06.bae383fa0e3c.object.jpg"
+}

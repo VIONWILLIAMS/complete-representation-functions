@@ -1,0 +1,310 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:06:38.863Z",
+  "id": "citrus",
+  "phase": "initial",
+  "prompt": "生成一张高质量摄影风格静物：三个大小略有差别的橙子，带一片真实细长绿叶，放在白色浅釉盘上，下面是细腻木桌。斜侧窗光，柔和真实阴影，果皮细小毛孔有尺度层次，轮廓平滑，构图近景，不出现整齐塑料球感。请搜索Pexels或Unsplash公开橙子静物照片页，从所给参考图中提取形态和细节函数，用代码构造整张图。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 502,
+  "elapsedMs": 66478,
+  "inputImageProvided": false,
+  "response": {
+    "ok": false,
+    "runId": "crf07_3ab5b074-efcc-476e-8a75-7e6907e68849",
+    "model": "deepseek-flash",
+    "error": {
+      "code": "INVALID_MODEL_JSON",
+      "message": "模型未返回可解析的 JSON；当前场景保持不变。",
+      "retryable": true
+    },
+    "httpStatus": 502,
+    "research": {
+      "searched": true,
+      "toolCalls": [
+        {
+          "id": "srvtoolu_s_00_ca50cca1d6544fbb9f52d7fd000a4371",
+          "type": "deepseek_web_search",
+          "kind": "search",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:pexels.com oranges still life white plate wooden table soft window light",
+              "site:unsplash.com three oranges white plate wooden table natural light",
+              "site:commons.wikimedia.org orange fruit close up peel texture",
+              "site:pexels.com orange peel close-up texture pores",
+              "site:unsplash.com orange slice citrus leaf close-up",
+              "site:commons.wikimedia.org orange fruit botanical illustration morphology"
+            ]
+          },
+          "sourceUrls": [
+            "https://www.pexels.com/photo/artistic-still-life-with-oranges-and-blue-bottle-34557215/",
+            "https://unsplash.com/photos/three-oranges-cut-in-half-on-a-wooden-surface-K-kAN4orvgE",
+            "https://commons.wikimedia.org/wiki/File:Naranjas,_cortada_con_piel.JPG",
+            "https://unsplash.com/photos/a-close-up-of-an-orange-with-a-leaf-on-it-XuuhVDWptF0",
+            "https://www.pexels.com/zh-tw/photo/38554814/",
+            "https://unsplash.com/photos/a-white-bowl-filled-with-oranges-on-top-of-a-wooden-table-i8wgkdxOtgw",
+            "https://commons.wikimedia.org/wiki/Category:Dosakai",
+            "https://unsplash.com/photos/dried-citrus-slices-and-green-leaves-on-orange-surface-rRbTjJLzJ9o",
+            "https://www.pexels.com/zh-tw/photo/37658044/",
+            "https://unsplash.com/photos/three-oranges-sitting-on-a-plate-on-a-table-5yGIFuUbGAo",
+            "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+            "https://unsplash.com/photos/a-close-up-of-a-woman-with-a-half-of-an-orange-on-her-shoulder-QUIgTIOx9II"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pexels.com/photo/artistic-still-life-with-oranges-and-blue-bottle-34557215/",
+          "title": "Photo by Valentin Ivantsov on Pexels",
+          "snippet": "Afterglow Street Festive Summer License Free Dimensions 3793x5690 Colors Date Nov 2 ... Software Adobe Photoshop CC (Windows) Description # Vibrant still life showcasing oranges and a striking blue bottle on a stylish table. ## More like this",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/three-oranges-cut-in-half-on-a-wooden-surface-K-kAN4orvgE",
+          "title": "Photo by Salah Ait Mokhtar on Unsplash",
+          "snippet": "––– – ––– – – # three oranges cut in half on a wooden surface Download this free HD photo of wooden surface, citrus fruits, juicy, and refreshing by Salah Ait Mokhtar (@motosha) Published on Free to use under the Unsplash License Browse premium related images on iStock | Save 20% with code UNSPLASH20",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Naranjas,_cortada_con_piel.JPG",
+          "title": "File:Naranjas, cortada con piel.JPG - Wikimedia Commons",
+          "snippet": "File:Naranjas, cortada con piel.JPG From Wikimedia Commons, the free media repository ... Original file (3,072 × 2,304 pixels, file size: 2.42 MB, MIME type: image/jpeg)",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-close-up-of-an-orange-with-a-leaf-on-it-XuuhVDWptF0",
+          "title": "Photo by Danielle-Claude Bélanger on Unsplash",
+          "snippet": "––– –––– –––– # A close up of an orange with a leaf on it Download this free HD photo of texture, food, fruit, and orange by Danielle-Claude Bélanger (@dcbelanger) Published on Canon, EOS Rebel T6iFree to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/zh-tw/photo/38554814/",
+          "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+          "snippet": "3480x5376 ... 相機 Canon EOS 5D Mark III ... Adobe Photoshop 21.0 (Windows) 說明 # 一堆新鮮的檸檬優雅地擺放在白色覆蓋的桌上，展示出鮮豔的柑橘水果。 ## 更多類似內容",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-white-bowl-filled-with-oranges-on-top-of-a-wooden-table-i8wgkdxOtgw",
+          "title": "Photo by Maria Kovalets on Unsplash",
+          "snippet": "A white bowl filled with oranges on top of a wooden table Download this free HD photo of citrus fruit, food, fruit, and orange by Maria Kovalets (@marylooo) Published on Canon, EOS 5D Mark IIFree to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Category:Dosakai",
+          "title": "Category:Dosakai - Wikimedia Commons",
+          "snippet": "Category:Dosakai English: Dosakaya or kekiri (Cucumis melo conomon) is a smooth-skinned, relatively-hard melon (popular in South India and Sri Lanka) that becomes orange or yellow in colour when matured ## Media in category \"Dosakai\"",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/dried-citrus-slices-and-green-leaves-on-orange-surface-rRbTjJLzJ9o",
+          "title": "Photo by Behnam Norouzi on Unsplash",
+          "snippet": "Dried citrus slices and green leaves on orange surface Download this HD photo of texture, food, autumn, and fall by Behnam Norouzi (@behy_studio) Published on Licensed under the Unsplash+ License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://www.pexels.com/zh-tw/photo/37658044/",
+          "title": "Pexels 上由 Matvei 拍攝的相片",
+          "snippet": "2136x3200 長寬比 267 ... 軟體 Capture One Windows 說明 # 一幅生動的靜物畫，顯示檸檬水、柑橘水果切片和一把木匙，置於一張質樸的桌子上。 ### 更多類似內容",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/three-oranges-sitting-on-a-plate-on-a-table-5yGIFuUbGAo",
+          "title": "Photo by tommao wang on Unsplash",
+          "snippet": "––– –––– –––– # three oranges sitting on a plate on a table Download this free HD photo of food, woman, adult, and female by tommao wang (@tommaomaoer) Published on Leica Camera AG, LEICA M10-PFree to use under the Unsplash License",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+          "title": "Category:Close-up photographs of oranges - Wikimedia Commons",
+          "snippet": "Close-up photographs of oranges ## Media in category \"Close-up photographs of oranges\" ... - Orange close-up (24464006143).jpg 6,016 × 4,000 ... - Orange fruit of Thailand.JPG 1,616 × 1,078...",
+          "via": "server_tool"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-close-up-of-a-woman-with-a-half-of-an-orange-on-her-shoulder-QUIgTIOx9II",
+          "title": "Photo by Nina Zeynep Güler on Unsplash",
+          "snippet": "More Actions a close up of a woman with a half of an orange on her shoulder ... Unsplash+ License texture food fruit health orange skin hair natural beauty close up citrus long hair neck refreshing shoulder orange slice refreshment freshness collarbone juicy slice",
+          "via": "server_tool"
+        }
+      ],
+      "summary": "**先说明局限**：本轮搜索结果中，**没有一张完全匹配**“三个橙子 + 白色浅釉盘 + 木桌 + 斜侧窗光”的公开照片详情页。最接近的是 Unsplash 上“三个橙子放在桌上”的页面，但盘子材质、光线方向、叶片细节均未在文本摘要中描述，我**未查看图片本身**，不能确认其视觉内容。以下建议基于**形态相近的页面线索**与摄影常识推断，供你提取图形函数时参考。\n\n**可用的参考页面（需后续获取图片字节并视觉确认）**\n\n| 参考点 | 公开页面 | 可尝试提取的细节（需视觉验证） |\n|---|---|---|\n| 三橙构图 | Unsplash: three oranges sitting on a plate on a table  | 近景三果的空间排布、大小差异、遮挡关系；但盘子是否浅釉、有无叶片未知 |\n| 单橙 + 叶 | Unsplash: close up of an orange with a leaf  | 橙子轮廓曲率、叶片细长比例、果皮表面高光与毛孔纹理的尺度关系 |\n| 橙子 + 木桌场景 | Unsplash: white bowl filled with oranges on wooden table  | 木桌纹理方向、白色器皿与橙色果实的明度对比；碗形不同于浅盘 |\n| 果皮毛孔/纹理 | Wikimedia Commons: Close-up photographs of oranges 分类  | 含 Navelina 橙近照文件，可用于提取果皮凹凸频率与毛孔分布密度（需逐张确认） |\n| 整果形态 | Wikimedia Commons: Citrus sinensis 搜索页中的植物学水彩  | 水彩不是摄影，但可参考橙子**非完美球形**的轮廓起伏与果顶/果蒂区域的不对称性 |\n\n**可转化为图形函数的细节建议（基于摄影常识，非来自已查看图像）**\n\n1. **轮廓函数**：不要用单一球体。对每个橙子叠加低频正弦扰动，幅度约半径的 **2%–4%**，产生“略不规则但平滑”的有机轮廓。三个橙子使用不同相位与频率，避免重复感。果顶/果蒂处可轻微压扁或凸起。\n2. **果皮毛孔尺度层次**：分两层构造。**细毛孔**：高频噪声，幅度极小，仅影响法线微扰，模拟皮孔；**粗起伏**：中频噪声，幅度约为毛孔的 3–5 倍，对应果皮自然的凹凸不均。毛孔密度在受光侧略低、背光侧略高（因斜侧光强调侧光面的微纹理）。\n3. **叶片形态**：细长、不对称。主叶脉轻微弯曲，叶缘呈浅锯齿或波浪（低频扰动）。叶片厚度极薄，需在侧光下呈现**半透光感**——可让叶身部分区域的漫反射带有轻微橙色透射成分，但不要过度。\n4. **盘子材质**：白色浅釉盘的特征是**高光柔和、边缘积釉处略厚**。轮廓线在盘沿处应有一圈微弱的亮度提升（釉层厚度变化），盘面反射不要像镜面，粗糙度控制在中等偏高。\n5. **木桌纹理**：细腻木桌需要**方向性噪声**——拉长的纤维纹理沿一个轴延伸，叠加少量随机节疤或色差斑块。纹理幅度要低，不能抢过橙子主体。\n6. **斜侧窗光与阴影**：主光方向约与桌面呈 **30°–45°** 斜角，来自画面一侧。橙子阴影分两部分：**接触阴影**紧贴盘面/桌面，暗而窄；**投射阴影**拉长、边缘柔和，衰减符合平方反比但被窗光柔化。橙子之间的相互遮挡要产生轻微的明暗过渡，避免每个橙子独立打光。\n7. **避免塑料球感的关键**：给每个橙子的法线加入**非均匀微扰**；在果皮凹陷处（如果蒂周围）略微降低高光强度；橙子底部与盘面接触处压暗并轻微“嵌入”阴影；高光不要用完美的圆形点，要沿果皮曲率拉成柔和椭圆。\n\n**来源汇总（公开照片页面，供后续获取字节）**\n- https://unsplash.com/photos/three-oranges-sitting-on-a-plate-on-a-table-5yGIFuUbGAo \n- https://unsplash.com/photos/a-close-up-of-an-orange-with-a-leaf-on-it-XuuhVDWptF0 \n- https://unsplash.com/photos/a-white-bowl-filled-with-oranges-on-top-of-a-wooden-table-i8wgkdxOtgw \n- https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges \n\n**检索建议**：上述页面中，最值得优先做视觉确认的是 （构图匹配度最高）和 （叶片与果皮质感）。若  中盘子不符合浅釉要求，可只取其橙子排布与大小关系，盘子与木桌的材质函数依据你自己的常识参数化，并明确标注为**推断**而非参考提取。",
+      "status": "completed",
+      "nativeSearchObserved": true,
+      "referenceImageCandidates": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naranjas,_cortada_con_piel.JPG",
+          "title": "File:Naranjas, cortada con piel.JPG - Wikimedia Commons",
+          "imageUrl": "https://commons.wikimedia.org/wiki/File:Naranjas,_cortada_con_piel.JPG"
+        }
+      ],
+      "referenceImages": [
+        {
+          "sourceUrl": "https://www.pexels.com/photo/artistic-still-life-with-oranges-and-blue-bottle-34557215/",
+          "title": "Photo by Valentin Ivantsov on Pexels",
+          "imageUrl": "https://images.pexels.com/photos/34557215/pexels-photo-34557215.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "8165456827b6e6de6e8705bddf895fbdef238c1503fcf1f88567a5a0d32205ad",
+          "bytes": 53016,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/zh-tw/photo/38554814/",
+          "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+          "imageUrl": "https://images.pexels.com/photos/38554814/pexels-photo-38554814.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "6ca1ff10b254fbc3c01189512ae1471419040ce51925e381e2296bee598b9108",
+          "bytes": 34720,
+          "mime": "image/webp",
+          "submittedToVision": true
+        },
+        {
+          "sourceUrl": "https://www.pexels.com/zh-tw/photo/37658044/",
+          "title": "Pexels 上由 Matvei 拍攝的相片",
+          "imageUrl": "https://images.pexels.com/photos/37658044/pexels-photo-37658044.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+          "sha256": "11f83d94cfc4322b1f6206b0e7ab5393793b08fb49630e6432c3f6c2df8a45f4",
+          "bytes": 79924,
+          "mime": "image/webp",
+          "submittedToVision": true
+        }
+      ],
+      "referenceImagesSubmitted": 3,
+      "inputImageProvided": false,
+      "referenceCollection": {
+        "method": "public source-page image metadata, verified image bytes; not render textures",
+        "sourcePageCount": 12,
+        "downloadedCount": 3,
+        "attempts": [
+          {
+            "sourceUrl": "https://www.pexels.com/photo/artistic-still-life-with-oranges-and-blue-bottle-34557215/",
+            "title": "Photo by Valentin Ivantsov on Pexels",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/34557215/pexels-photo-34557215.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 53016,
+            "mime": "image/webp",
+            "sha256": "8165456827b6e6de6e8705bddf895fbdef238c1503fcf1f88567a5a0d32205ad"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/three-oranges-cut-in-half-on-a-wooden-surface-K-kAN4orvgE",
+            "title": "Photo by Salah Ait Mokhtar on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naranjas,_cortada_con_piel.JPG",
+            "title": "File:Naranjas, cortada con piel.JPG - Wikimedia Commons",
+            "status": "unavailable",
+            "error": "size_limit"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-close-up-of-an-orange-with-a-leaf-on-it-XuuhVDWptF0",
+            "title": "Photo by Danielle-Claude Bélanger on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/zh-tw/photo/38554814/",
+            "title": "Pexels 上由 Valentin Ivantsov 拍攝的相片",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/38554814/pexels-photo-38554814.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 34720,
+            "mime": "image/webp",
+            "sha256": "6ca1ff10b254fbc3c01189512ae1471419040ce51925e381e2296bee598b9108"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-white-bowl-filled-with-oranges-on-top-of-a-wooden-table-i8wgkdxOtgw",
+            "title": "Photo by Maria Kovalets on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Dosakai",
+            "title": "Category:Dosakai - Wikimedia Commons",
+            "status": "unavailable",
+            "error": "no_supported_image"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/dried-citrus-slices-and-green-leaves-on-orange-surface-rRbTjJLzJ9o",
+            "title": "Photo by Behnam Norouzi on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://www.pexels.com/zh-tw/photo/37658044/",
+            "title": "Pexels 上由 Matvei 拍攝的相片",
+            "status": "downloaded",
+            "imageUrl": "https://images.pexels.com/photos/37658044/pexels-photo-37658044.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+            "bytes": 79924,
+            "mime": "image/webp",
+            "sha256": "11f83d94cfc4322b1f6206b0e7ab5393793b08fb49630e6432c3f6c2df8a45f4"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/three-oranges-sitting-on-a-plate-on-a-table-5yGIFuUbGAo",
+            "title": "Photo by tommao wang on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          },
+          {
+            "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_oranges",
+            "title": "Category:Close-up photographs of oranges - Wikimedia Commons",
+            "status": "unavailable",
+            "error": "no_supported_image"
+          },
+          {
+            "sourceUrl": "https://unsplash.com/photos/a-close-up-of-a-woman-with-a-half-of-an-orange-on-her-shoulder-QUIgTIOx9II",
+            "title": "Photo by Nina Zeynep Güler on Unsplash",
+            "status": "unavailable",
+            "error": "http_401"
+          }
+        ],
+        "submittedToVision": true,
+        "submittedCount": 3
+      }
+    },
+    "usage": {
+      "prompt_tokens": 10554,
+      "completion_tokens": 4291,
+      "total_tokens": 14845,
+      "providerCalls": 2,
+      "requests": [
+        {
+          "phase": "research",
+          "requestId": "f8c4f670-2c90-48f7-8a34-55ed5c053dc0",
+          "model": "deepseek-flash",
+          "elapsedMs": 14840,
+          "prompt_tokens": 4974,
+          "completion_tokens": 1178,
+          "total_tokens": 6152,
+          "server_tool_use": {
+            "tool_search": 6,
+            "tool_fetch": 0,
+            "tool_image_search": 0
+          }
+        },
+        {
+          "phase": "compose",
+          "requestId": "6880fff3-47f5-46d9-a492-5c8274d58d61",
+          "model": "deepseek-flash",
+          "elapsedMs": 18151,
+          "prompt_tokens": 5580,
+          "completion_tokens": 3113,
+          "total_tokens": 8693,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "warnings": [],
+    "vision": {
+      "renderedImageProvided": false,
+      "referenceImagesProvided": 3,
+      "referenceSourceUrls": [
+        "https://www.pexels.com/photo/artistic-still-life-with-oranges-and-blue-bottle-34557215/",
+        "https://www.pexels.com/zh-tw/photo/38554814/",
+        "https://www.pexels.com/zh-tw/photo/37658044/"
+      ]
+    },
+    "repair": {
+      "attempted": false,
+      "passes": [],
+      "recovered": false
+    }
+  }
+}

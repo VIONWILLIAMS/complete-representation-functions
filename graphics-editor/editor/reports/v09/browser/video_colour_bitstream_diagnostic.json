@@ -1,0 +1,37 @@
+{
+  "schema": "crf.browser_video_colour_bitstream_diagnostic.v0.9",
+  "fileSHA256": "d4b07e7a02bcfccbe9029adb1ba5be60c112e9a3f23301b9ca87eb4eec8bf05c",
+  "stream": {
+    "codec_name": "vp8",
+    "profile": "0",
+    "pix_fmt": "yuv420p",
+    "color_range": "pc",
+    "color_space": "bt709",
+    "color_transfer": "iec61966-2-1",
+    "color_primaries": "bt709"
+  },
+  "decodedFrameCount": 120,
+  "decodedColourConfigurations": [
+    {
+      "frameCount": 120,
+      "color_primaries": "bt709",
+      "color_range": "tv",
+      "color_space": "bt470bg",
+      "color_transfer": "iec61966-2-1",
+      "pix_fmt": "yuv420p"
+    }
+  ],
+  "keyframeCount": 5,
+  "containerAndFrameRangeMatrixAgree": false,
+  "finding": "VP8 decoded frame range/matrix override the correct container Colour tags; tagging alone does not repair ordinary decoding.",
+  "mutation": false,
+  "newExporterRevision": "0.9.1",
+  "proposedCorrection": "Prefer supported VP9; verify each encoded keyframe range/matrix against encoder metadata; retain unspecified metadata; reject incompatible VP8 fallback. No pixel compensation.",
+  "validationRemaining": "Actual editor VP9 export; ordinary ffprobe stream+frame metadata and same-time decoded-pixel comparison, without decoder colour overrides.",
+  "sources": [
+    "https://ffmpeg.org/doxygen/7.1/vp8_8c_source.html",
+    "https://chromium.googlesource.com/chromium/src/+/refs/heads/main/media/video/vpx_video_encoder.cc",
+    "https://downloads.webmproject.org/docs/vp9/vp9-bitstream_superframe-and-uncompressed-header_v1.0.pdf",
+    "https://www.rfc-editor.org/rfc/rfc6386.html"
+  ]
+}

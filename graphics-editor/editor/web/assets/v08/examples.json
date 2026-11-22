@@ -1,0 +1,64 @@
+{
+  "examples": [
+    {
+      "id": "01_ceramic_citrus",
+      "title": "青釉与柑橘",
+      "sceneUrl": "assets/v08/examples/01_ceramic_citrus.scene.json",
+      "thumbnailUrl": "assets/v08/examples/01_ceramic_citrus.png",
+      "prompt": "生成一张960×640精致静物摄影构图：青蓝釉花瓶稍靠左，一枚横切橙子半在右前方，浅灰暖白承托面。必须组合已学的独立物体函数，不用整张参考照片做背景，不要复制同一个大图。保留釉面、橙肉纤维的自然细节；使用观察到的前视外观，物品底部同一承托水平。充分留白但主体不能太小，总占画面约60%。柔和小接触阴影准确放在底部；阴影是可见中心(160,50)的320×100函数，注意大部分是透明填充。颜色克制，物体不要扁拉、悬空或重叠穿插。",
+      "scope": "new_composition_of_observed_objects",
+      "subtitle": "DeepSeek · 学习物体重新构图",
+      "reportUrl": "assets/v08/examples/01_ceramic_citrus.record.json"
+    },
+    {
+      "id": "02_dark_fruit",
+      "title": "深色果物静物",
+      "sceneUrl": "assets/v08/examples/02_dark_fruit.scene.json",
+      "thumbnailUrl": "assets/v08/examples/02_dark_fruit.png",
+      "prompt": "生成一张960×640深灰底的苹果、梨与半橙静物照片构图。只组合独立高斯物品函数。红苹果和黄梨接近，橙子切面稍靠右前；大小符合真实果物比例，梨略高。照片内已有光照，不要用极端曝光或色相把质感抹掉。利用小而柔和的接触阴影让底部接地，不出现阴影矩形边界。已观察苹果右侧有缺口，安排梨适当遮挡该侧。画面主体组占中间约65%，精致、细节丰富、暗背景与亮果物形成自然对比。",
+      "scope": "new_composition_of_observed_objects",
+      "subtitle": "DeepSeek · 学习物体重新构图",
+      "reportUrl": "assets/v08/examples/02_dark_fruit.record.json"
+    },
+    {
+      "id": "03_coffee_fern",
+      "title": "咖啡与蕨叶",
+      "sceneUrl": "assets/v08/examples/03_coffee_fern.scene.json",
+      "thumbnailUrl": "assets/v08/examples/03_coffee_fern.png",
+      "prompt": "生成一张960×640自然光俯拍静物照片：左侧一只完整白色咖啡杯，右上角一枝蕨叶伸入画面，右下有一片橙子切面形成色彩点缀。用已学独立物体高斯函数，不能使用完整照片矩形贴图。咖啡图本身是俯拍视角，应保持原姿态；叶片不能穿过杯体；不要把茎插进咖啡。杯体约画面宽30%，橙片约15%，以背景留白维持安静构图。保证物体有合理尺度和柔和贴近的投影。叶片自带景深虚化，避免过度放大。",
+      "scope": "new_composition_of_observed_objects",
+      "subtitle": "DeepSeek · 学习物体重新构图",
+      "reportUrl": "assets/v08/examples/03_coffee_fern.record.json"
+    },
+    {
+      "id": "04_street_teal",
+      "title": "青绿墙面的午后街角",
+      "sceneUrl": "assets/v08/examples/04_street_teal.scene.json",
+      "thumbnailUrl": "assets/v08/examples/04_street_teal.png",
+      "prompt": "仅把主墙面改为自然柔和的青绿色调，保留原有阴影、墙面颗粒与亮暗关系。主墙面色相可以旋转约70–90度，但不能过曝。红绿灯、立柱、支架、全部窗户和斑马线的位置、尺寸、颜色、标签与全部其他参数原样保留。完整返回现有18对象场景。此结果标为真实参考场景的语义编辑，不声称新拍摄或新3D视角。",
+      "scope": "semantic_edit_of_observation",
+      "subtitle": "DeepSeek · 参考语义编辑",
+      "reportUrl": "assets/v08/examples/04_street_teal.record.json"
+    },
+    {
+      "id": "05_street_context_fill",
+      "title": "移除行人灯后的街角",
+      "sceneUrl": "assets/v08/examples/05_street_context_fill.scene.json",
+      "thumbnailUrl": "assets/v08/examples/05_street_context_fill.png",
+      "prompt": "把正面行人信号灯 signal.main 隐藏，保留立柱、横臂与吊架、侧向灯背和所有其他对象完全不变。背景由已建立的墙面高斯函数显露，不能用任何新的矩形遮挡或纯色盖住。不要修改墙面或者场景光照。保持原始667×1000画幅。描述中说明被遮挡墙面是估计补全而非观测真值。",
+      "scope": "semantic_edit_with_inferred_background",
+      "subtitle": "DeepSeek · 参考语义编辑",
+      "reportUrl": "assets/v08/examples/05_street_context_fill.record.json"
+    },
+    {
+      "id": "06_alpine_haze",
+      "title": "湖畔薄雾光色实验",
+      "sceneUrl": "assets/v08/examples/06_alpine_haze.scene.json",
+      "thumbnailUrl": "assets/v08/examples/06_alpine_haze.png",
+      "prompt": "在原800×531阿尔卑斯湖畔高斯函数上，生成一幅克制的晨雾光色变体：保留山体、树林、湖岸线与倒影全部空间结构；叠加少量解析高斯薄雾，使远岸稍柔和，近处水纹仍然清楚。薄雾函数原960×640，位置需映射到场景；不要明显遮白，不要旋转地平线。轻微曝光调整可以，但不要把它描述成新的地貌、全新世界或新相机角度。",
+      "scope": "reference_conditioned_atmosphere_variant",
+      "subtitle": "DeepSeek · 参考语义编辑",
+      "reportUrl": "assets/v08/examples/06_alpine_haze.record.json"
+    }
+  ]
+}

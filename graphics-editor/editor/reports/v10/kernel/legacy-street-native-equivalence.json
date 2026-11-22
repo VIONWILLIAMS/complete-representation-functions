@@ -1,0 +1,37 @@
+{
+  "asset": "web/assets/v08/gaussians/street.optimized.json",
+  "width": 667,
+  "height": 1000,
+  "gaussians": 65536,
+  "legacyMs": 368,
+  "v10ImportAndRenderMs": 470,
+  "maximumByteDifference": 0,
+  "differentBytes": 0,
+  "exactPixels": 667000,
+  "totalPixels": 667000,
+  "exactFraction": 1,
+  "diagnostics": {
+    "engine": "CRF10Gaussian",
+    "renderer": "direct_affine_anisotropic_gaussians",
+    "colorSpace": "linear_srgb_composite_then_srgb8",
+    "basisColorSpaces": [
+      "srgb_encoded_0_1"
+    ],
+    "filter": "mip",
+    "pixelFilterVariance": 0.08333333333333333,
+    "gaussians": 65536,
+    "basisEvaluations": 12818726,
+    "visibleObjects": 1,
+    "elapsedMs": 444,
+    "sourceRGBBlit": false,
+    "colourRasterResampling": false,
+    "neuralModelTraining": false,
+    "referenceConditioned": true,
+    "geometry": "image_plane_affine",
+    "physicalRelighting": false,
+    "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+    "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+    "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+    "coverageSemantics": null
+  }
+}

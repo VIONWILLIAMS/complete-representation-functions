@@ -1,0 +1,643 @@
+{
+  "schema": "crf.actual_generation_trial.v0.10",
+  "id": "mist_lake",
+  "title": "雾湖 · 晨光变体",
+  "category": "landscape",
+  "prompt": "基于已有雾湖高斯照片函数生成轻微晨光变体：保留全部山脉、湖岸、倒影结构，保持原宽高和完整画面，曝光约增加0.08EV，色调稍暖，禁止新增物体、虚构新视角或改变地貌。这是一张参考重建的光色编辑结果，不是从零生成新的风景。唯一对象ID为frame。",
+  "representation": "reference_gaussian",
+  "scope": "reference_reconstruction_edit",
+  "at": "2026-11-21T22:29:29.063Z",
+  "taskId": "crf10_cebea5aa-7c2f-47ad-a8f2-b9ae93ca53ef",
+  "status": "review_required",
+  "stopReason": "CHECKS_PASSED_INDEPENDENT_REVIEW_REQUIRED",
+  "error": null,
+  "selectedCandidate": 0,
+  "selectionReason": "Best evaluated candidate under hard constraints, observed reconstruction checks and advisory visual scores; ties retain the earlier candidate.",
+  "contract": {
+    "schema": "crf.goal_contract.v0.10",
+    "id": "fixed-mist_lake",
+    "representation": "reference_gaussian",
+    "checks": [
+      {
+        "id": "program.finite",
+        "kind": "program",
+        "type": "finite_parameters",
+        "required": true
+      },
+      {
+        "id": "render.frame",
+        "kind": "pixel",
+        "type": "valid_frame",
+        "required": true
+      },
+      {
+        "id": "render.dimensions",
+        "kind": "pixel",
+        "type": "dimensions",
+        "required": true,
+        "value": [
+          768,
+          447
+        ]
+      },
+      {
+        "id": "visual.realism",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "metric": "realism",
+        "threshold": 4
+      },
+      {
+        "id": "visual.semantic",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "metric": "semantic",
+        "threshold": 4
+      },
+      {
+        "id": "visual.coherence",
+        "kind": "perceptual",
+        "type": "visual_score",
+        "required": true,
+        "metric": "coherence",
+        "threshold": 4
+      },
+      {
+        "id": "visual.major_issues",
+        "kind": "perceptual",
+        "type": "no_major_issues",
+        "required": true
+      },
+      {
+        "id": "visible.frame",
+        "kind": "pixel",
+        "type": "visible_coverage",
+        "required": true,
+        "objectId": "frame",
+        "minimumPixels": 500
+      },
+      {
+        "id": "count.frame",
+        "kind": "declaration",
+        "type": "declaration",
+        "required": true,
+        "constraint": {
+          "type": "count",
+          "subject": "frame.mist_lake",
+          "value": 1
+        }
+      }
+    ],
+    "requirements": [],
+    "acceptancePolicy": "all_required_checks_and_independent_visual_review_for_photorealism",
+    "revision": 1
+  },
+  "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403",
+  "quality": {
+    "releaseGate": "not_passed",
+    "independentHumanReview": false,
+    "allCandidatesEvaluated": true,
+    "selectedCandidateEvaluated": true,
+    "trainingPerformed": false,
+    "scope": "Evidence-guided bounded search. Model scores are advisory; unknown checks remain unresolved."
+  },
+  "usageTotals": {
+    "providerRequests": 3,
+    "tokens": 11848,
+    "uncertainRequestsReserved": 0
+  },
+  "usage": [
+    {
+      "phase": "plan",
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 1642,
+      "completion_tokens": 1288,
+      "total_tokens": 2930,
+      "reasoning_tokens": 740,
+      "requests": [
+        {
+          "phase": "gaussian10_plan",
+          "requestId": "d2354d2c-b9e8-4e00-b43d-9436296750d7",
+          "model": "deepseek-flash",
+          "elapsedMs": 8036,
+          "prompt_tokens": 1642,
+          "completion_tokens": 1288,
+          "total_tokens": 2930,
+          "reasoning_tokens": 740,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": false,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    },
+    {
+      "phase": "generate",
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 1864,
+      "completion_tokens": 1885,
+      "total_tokens": 3749,
+      "reasoning_tokens": 1513,
+      "requests": [
+        {
+          "phase": "gaussian10_generate",
+          "requestId": "95956593-86c6-4bce-baac-b4350aa0e8a3",
+          "model": "deepseek-flash",
+          "elapsedMs": 11429,
+          "prompt_tokens": 1864,
+          "completion_tokens": 1885,
+          "total_tokens": 3749,
+          "reasoning_tokens": 1513,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    },
+    {
+      "phase": "critique_0",
+      "providerCalls": 1,
+      "usageComplete": true,
+      "unknownUsageCalls": 0,
+      "totalsScope": "known_provider_reports_only",
+      "prompt_tokens": 1878,
+      "completion_tokens": 3291,
+      "total_tokens": 5169,
+      "reasoning_tokens": 2950,
+      "requests": [
+        {
+          "phase": "gaussian10_critique",
+          "requestId": "501787cf-07e7-4140-92d6-9f34f1bb6dde",
+          "model": "deepseek-flash",
+          "elapsedMs": 21728,
+          "prompt_tokens": 1878,
+          "completion_tokens": 3291,
+          "total_tokens": 5169,
+          "reasoning_tokens": 2950,
+          "reasoningEnabled": true,
+          "reasoningObserved": true,
+          "renderedImageProvided": true,
+          "finishReason": "stop",
+          "referenceImagesProvided": 0,
+          "reasoningEffort": "max"
+        }
+      ]
+    }
+  ],
+  "taskGraph": {
+    "schema": "crf.task_graph.v0.10",
+    "nodes": [
+      {
+        "id": "plan",
+        "type": "plan",
+        "dependsOn": [],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:28:52.750Z",
+        "evidence": {
+          "runId": "crf10_28354ca0-cb5d-4a54-8f3d-450122b6e4da"
+        }
+      },
+      {
+        "id": "propose.0",
+        "type": "generate",
+        "dependsOn": [
+          "plan"
+        ],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:29:04.615Z",
+        "evidence": {
+          "runId": "crf10_0f3412c9-afcd-44c7-97b0-c454ea02d11f"
+        }
+      },
+      {
+        "id": "render.0",
+        "type": "render",
+        "dependsOn": [
+          "propose.0"
+        ],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:29:05.333Z",
+        "evidence": {
+          "renderKey": "render:crf10_cebea5aa-7c2f-47ad-a8f2-b9ae93ca53ef:0"
+        }
+      },
+      {
+        "id": "critique.0",
+        "type": "critique",
+        "dependsOn": [
+          "render.0"
+        ],
+        "status": "complete",
+        "updatedAt": "2026-11-21T22:29:27.751Z",
+        "evidence": {
+          "runId": "crf10_0d721cec-0300-4143-891a-b1ce18082cfc"
+        }
+      },
+      {
+        "id": "verify.0",
+        "type": "verify",
+        "dependsOn": [
+          "render.0",
+          "critique.0"
+        ],
+        "status": "passed",
+        "updatedAt": "2026-11-21T22:29:28.267Z",
+        "evidence": {
+          "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+          "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403",
+          "summary": {
+            "passed": 9,
+            "failed": 0,
+            "unknown": 0,
+            "blocked": 0,
+            "total": 9,
+            "required": 9,
+            "requiredPassed": 9
+          }
+        }
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "parentIndex": null,
+      "status": "verified",
+      "render": {
+        "width": 768,
+        "height": 447,
+        "elapsedMs": 524,
+        "report": {
+          "engine": "CRF10Gaussian",
+          "renderer": "direct_affine_anisotropic_gaussians",
+          "colorSpace": "linear_srgb_composite_then_srgb8",
+          "basisColorSpaces": [
+            "linear_srgb"
+          ],
+          "filter": "mip",
+          "pixelFilterVariance": 0.08333333333333333,
+          "gaussians": 32768,
+          "basisEvaluations": 11723229,
+          "visibleObjects": 1,
+          "elapsedMs": 412,
+          "sourceRGBBlit": false,
+          "colourRasterResampling": false,
+          "neuralModelTraining": false,
+          "referenceConditioned": true,
+          "geometry": "image_plane_affine",
+          "physicalRelighting": false,
+          "editingModel": "multiplicative_albedo_and_low_frequency_illumination_approximation",
+          "highlightSeparation": "optional_neutral_bright_residual_heuristic_not_inverse_rendering",
+          "alphaFiltering": "separate_coverage_footprint_then_linear_float_composite",
+          "coverageSemantics": "visible_alpha_contribution"
+        },
+        "rgbaProvided": true
+      },
+      "critique": {
+        "ok": true,
+        "version": "0.10.0",
+        "runId": "crf10_0d721cec-0300-4143-891a-b1ce18082cfc",
+        "representation": "reference_gaussian",
+        "modelTraining": false,
+        "action": "critique",
+        "message": "已完成全帧参考变体的检查：画幅保持 768×447 并完整填满，山脉、湖岸、沙洲和倒影结构保留，未见新增物体、黑边、越界或明显光色断层。曝光约 +0.08EV、暖调约 ±2%，效果非常克制，符合“轻微晨光”的约束；源照片的雾化柔焦仍可见，但不是本次编辑新增的失真。",
+        "qualityNotes": [
+          "frame 仍按 1:1 原比例覆盖整个画幅，未留黑条，也未放大低分辨率源图。",
+          "山体轮廓、林线、湖岸、沙洲与水面倒影均保留，布局和拍摄方向未改变。",
+          "+0.08EV 与轻微暖调没有造成高光溢出、过饱和或大面积暗块；原雾湖低反差观感仍在。",
+          "对象仅一个全帧参考画面，且未添加接触阴影，符合风景全幅变体设定。"
+        ],
+        "warnings": [
+          "0.08EV 在低反差雾景中属于接近视觉阈值的微调，晨光感主要来自轻微的暖色偏移。",
+          "preserveHighlights=true 是基于亮度/中性色的启发式保留，并非物理逆渲染；部分白色雾层或水面高光可能被中性化。",
+          "本结果只进行光色变体，不包含新视角、新物体或未观察到的隐藏几何。"
+        ],
+        "capabilityGaps": [],
+        "issues": [],
+        "scores": {
+          "realism": 4,
+          "semantic": 5,
+          "coherence": 5
+        },
+        "attempts": [
+          {
+            "phase": "gaussian10_critique",
+            "status": "responded",
+            "startedAt": "2026-11-21T22:29:05.785Z",
+            "usageKnown": true,
+            "requestId": "501787cf-07e7-4140-92d6-9f34f1bb6dde",
+            "validation": "passed"
+          }
+        ],
+        "usage": {
+          "providerCalls": 1,
+          "usageComplete": true,
+          "unknownUsageCalls": 0,
+          "totalsScope": "known_provider_reports_only",
+          "prompt_tokens": 1878,
+          "completion_tokens": 3291,
+          "total_tokens": 5169,
+          "reasoning_tokens": 2950,
+          "requests": [
+            {
+              "phase": "gaussian10_critique",
+              "requestId": "501787cf-07e7-4140-92d6-9f34f1bb6dde",
+              "model": "deepseek-flash",
+              "elapsedMs": 21728,
+              "prompt_tokens": 1878,
+              "completion_tokens": 3291,
+              "total_tokens": 5169,
+              "reasoning_tokens": 2950,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop",
+              "referenceImagesProvided": 0,
+              "reasoningEffort": "max"
+            }
+          ]
+        },
+        "quality": {
+          "status": "requires_render_and_independent_verification",
+          "modelScoreIsProof": false
+        },
+        "imageEvidence": true,
+        "sourceFrameSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+        "submittedImageDataURLSha256": "e3f99782140604d9370f239d6c0cf395edffcea52a505fc1f29f6019398aeb13"
+      },
+      "verification": {
+        "schema": "crf.verification.v0.10",
+        "checkedAt": "2026-11-21T22:29:28.267Z",
+        "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+        "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+        "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403",
+        "checks": [
+          {
+            "id": "program.finite",
+            "kind": "program",
+            "type": "finite_parameters",
+            "required": true,
+            "status": "passed",
+            "observed": true,
+            "evidence": {
+              "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+              "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+              "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+            }
+          },
+          {
+            "id": "render.frame",
+            "kind": "pixel",
+            "type": "valid_frame",
+            "required": true,
+            "status": "passed",
+            "reason": "Actual finite RGBA8 samples provided.",
+            "observed": true,
+            "evidence": {
+              "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+              "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+              "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+            }
+          },
+          {
+            "id": "render.dimensions",
+            "kind": "pixel",
+            "type": "dimensions",
+            "required": true,
+            "status": "passed",
+            "observed": [
+              768,
+              447
+            ],
+            "evidence": {
+              "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+              "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+              "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+            }
+          },
+          {
+            "id": "visual.realism",
+            "kind": "perceptual",
+            "type": "visual_score",
+            "required": true,
+            "status": "passed",
+            "observed": 4,
+            "threshold": 4,
+            "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+            "evidence": {
+              "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+              "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+              "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+            }
+          },
+          {
+            "id": "visual.semantic",
+            "kind": "perceptual",
+            "type": "visual_score",
+            "required": true,
+            "status": "passed",
+            "observed": 5,
+            "threshold": 4,
+            "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+            "evidence": {
+              "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+              "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+              "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+            }
+          },
+          {
+            "id": "visual.coherence",
+            "kind": "perceptual",
+            "type": "visual_score",
+            "required": true,
+            "status": "passed",
+            "observed": 5,
+            "threshold": 4,
+            "scope": "Model-assisted perception, not a formal proof or independent human certificate.",
+            "evidence": {
+              "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+              "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+              "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+            }
+          },
+          {
+            "id": "visual.major_issues",
+            "kind": "perceptual",
+            "type": "no_major_issues",
+            "required": true,
+            "status": "passed",
+            "observed": 0,
+            "issues": [],
+            "scope": "Model-assisted perception only.",
+            "evidence": {
+              "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+              "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+              "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+            }
+          },
+          {
+            "id": "visible.frame",
+            "kind": "pixel",
+            "type": "visible_coverage",
+            "required": true,
+            "status": "passed",
+            "observed": 343296,
+            "scope": "Actual visible alpha contribution; object identity remains a declaration.",
+            "evidence": {
+              "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+              "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+              "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+            }
+          },
+          {
+            "id": "count.frame",
+            "kind": "declaration",
+            "type": "declaration",
+            "required": true,
+            "status": "passed",
+            "observed": 1,
+            "scope": "Declared scene parameters only; excludes final-image recognition and occlusion.",
+            "evidence": {
+              "sceneSha256": "b6ff56e7e1c6bf35314a5942bddb3cae3f632f89e097ad5cf952ddf624cf3e60",
+              "imageSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899",
+              "contractSha256": "dbd3a7d78e78e95ec670fad95f2d2bc6016ae9d9313aa8f787cf49f2f9043403"
+            }
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 0,
+          "unknown": 0,
+          "blocked": 0,
+          "total": 9,
+          "required": 9,
+          "requiredPassed": 9
+        },
+        "hardPassed": true,
+        "measurementPassed": true,
+        "perceptualPassed": true,
+        "allRequiredPassed": true,
+        "independentReview": null,
+        "photorealisticAccepted": false,
+        "referenceReconstructionAccepted": false,
+        "unknowns": [],
+        "blocked": [],
+        "diagnosis": [],
+        "scope": "Contract checks on this exact scene/frame; no universal correctness or unseen-world claim."
+      },
+      "imageUrl": "assets/v10/generated/showcase-v1/mist_lake.candidate_0.jpg",
+      "sceneUrl": "assets/v10/generated/showcase-v1/mist_lake.candidate_0.scene.json"
+    }
+  ],
+  "assets": [
+    {
+      "id": "frame.mist_lake",
+      "label": "frame.mist_lake",
+      "width": 768,
+      "height": 447,
+      "role": "reference-frame",
+      "visibleBounds": [
+        0,
+        0,
+        768,
+        447
+      ],
+      "contactPoint": [
+        383.5,
+        447
+      ],
+      "sourceKind": "observed_photo_gaussian",
+      "limitations": "源照片外观由显式高斯参数拟合，继承原光照与视角；没有隐藏几何。",
+      "url": "assets/v10/frames/mist_lake.json",
+      "gaussians": 32768,
+      "sha256": "34c09698cbb81063c8c8dd62c342893d1fb40b3e530f977691972d45a7715132",
+      "provenance": {
+        "kind": "observed_gaussian_reconstruction",
+        "algorithm": "crf10-structure-irls-pixel-footprint-adam",
+        "sourceRGBEmbedded": false,
+        "losslessResidualEmbedded": false,
+        "neuralModelTraining": false,
+        "pretrainedInitializerUsed": false,
+        "optimizationScope": "this_observation_only",
+        "budget": 32768,
+        "illumination": "inherited_from_observation",
+        "sourceSHA256": "7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d",
+        "originalSize": [
+          768,
+          447
+        ],
+        "fittedSize": [
+          768,
+          447
+        ],
+        "source": {
+          "sourceUrl": "https://www.pexels.com/photo/dawn-at-lake-in-mountain-landscape-6805484/",
+          "imageUrl": "https://images.pexels.com/photos/6805484/pexels-photo-6805484.jpeg?auto=compress&cs=tinysrgb&w=768",
+          "title": "Photo by Anton Atanasov on Pexels",
+          "sha256": "7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d",
+          "file": "fitting/learning09/learning-v1/learn-landscape/originals/7aa43d93ff0a397689439950a31dfc408cda5fa5a8c399ab42cc97a1d449041d.webp"
+        },
+        "referenceAcquisition": "Existing CRF 0.9 real DeepSeek search evidence; re-used observation, no new model training."
+      }
+    }
+  ],
+  "modelTraining": false,
+  "sharedModelBefore": "c1ae52b759ca5b39a6672142ae94eedf050ede5a91a7c95853b0e22048628a4c",
+  "sharedModelAfter": "c1ae52b759ca5b39a6672142ae94eedf050ede5a91a7c95853b0e22048628a4c",
+  "artifact": {
+    "imageUrl": "assets/v10/generated/showcase-v1/mist_lake.png",
+    "thumbnailUrl": "assets/v10/generated/showcase-v1/mist_lake.jpg",
+    "sceneUrl": "assets/v10/generated/showcase-v1/mist_lake.scene.json",
+    "reportUrl": "assets/v10/generated/showcase-v1/mist_lake.report.json",
+    "width": 768,
+    "height": 447,
+    "pixelSha256": "ac6602a94e0e1bece224e6131db5b824a09427ec8c2483db2fa8ff1ba2648899"
+  },
+  "apiOperations": [
+    {
+      "index": 0,
+      "phase": "plan",
+      "path": "/api/crf/native10/generate",
+      "status": "completed",
+      "startedAt": "2026-11-21T22:28:44.385Z",
+      "resultKey": "operation:crf10_cebea5aa-7c2f-47ad-a8f2-b9ae93ca53ef:0",
+      "finishedAt": "2026-11-21T22:28:52.578Z",
+      "runId": "crf10_28354ca0-cb5d-4a54-8f3d-450122b6e4da"
+    },
+    {
+      "index": 1,
+      "phase": "generate",
+      "path": "/api/crf/native10/generate",
+      "status": "completed",
+      "startedAt": "2026-11-21T22:28:52.882Z",
+      "resultKey": "operation:crf10_cebea5aa-7c2f-47ad-a8f2-b9ae93ca53ef:1",
+      "finishedAt": "2026-11-21T22:29:04.458Z",
+      "runId": "crf10_0f3412c9-afcd-44c7-97b0-c454ea02d11f"
+    },
+    {
+      "index": 2,
+      "phase": "critique_0",
+      "path": "/api/crf/native10/generate",
+      "status": "completed",
+      "startedAt": "2026-11-21T22:29:05.557Z",
+      "resultKey": "operation:crf10_cebea5aa-7c2f-47ad-a8f2-b9ae93ca53ef:2",
+      "finishedAt": "2026-11-21T22:29:27.514Z",
+      "runId": "crf10_0d721cec-0300-4143-891a-b1ce18082cfc"
+    }
+  ],
+  "unresolvedProviderAttempts": 0,
+  "usageComplete": true
+}

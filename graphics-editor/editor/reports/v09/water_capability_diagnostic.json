@@ -1,0 +1,210 @@
+{
+  "schema": "crf.water_capability_diagnostic.v0.9",
+  "scope": "development_readonly_operator_audit",
+  "createdAt": "2026-11-21T16:11:34.360Z",
+  "source": {
+    "file": "web/crf-generative09.js",
+    "sha256": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+    "unchanged": true
+  },
+  "frozenCase": "04_cold_alpine",
+  "finding": "Existing alpine water operator was omitted from provider capability detail; no renderer change is required to express approximate ripples and terrain reflection.",
+  "operatorEvidence": {
+    "waterFunction": "web/crf-generative09.js:321-330",
+    "callOrder": "alpine: procedural sky/base → ridges → generated distant forest and far trees → water → shoreline → near semantic objects",
+    "mechanism": [
+      "Copy current synthetic linear RGB framebuffer, not a source photograph.",
+      "Map water pixels to horizontally perturbed, vertically reflected positions above the horizon.",
+      "Blend the reflected field with groundColor, using reflect=.72-v*.23.",
+      "Add analytic ripple shimmer, a newly sampled learned Gaussian texture field and 260 seeded Gaussian glints."
+    ],
+    "implementedScope": "Image-space synthetic reflection and seeded procedural ripples.",
+    "limitations": [
+      "No Fresnel/BRDF-calibrated physical water reflection.",
+      "No ray-traced world geometry or recovery of hidden terrain.",
+      "Near trees/rocks rendered after water do not contribute to this prepass reflection.",
+      "Ripple parameters are authored constants, not independently editable semantic water objects.",
+      "Current time parameter does not evolve fluid dynamics."
+    ]
+  },
+  "causalTest": {
+    "method": "Change only one ridge color in two otherwise identical 192×144 scenes; compare lower water-region output pixels.",
+    "sceneA": {
+      "schema": "crf.generative_scene.v0.9",
+      "id": "scene-90104",
+      "title": "CRF 0.9 landscape",
+      "category": "landscape",
+      "seed": 90104,
+      "width": 192,
+      "height": 144,
+      "environment": {
+        "wallColor": [
+          190,
+          188,
+          172
+        ],
+        "skyColor": [
+          128,
+          171,
+          197
+        ],
+        "groundColor": [
+          43,
+          74,
+          72
+        ],
+        "horizon": 0.6,
+        "fog": 0,
+        "texture": 1,
+        "terrain": "alpine"
+      },
+      "light": {
+        "azimuth": -40,
+        "elevation": 30,
+        "intensity": 1,
+        "warmth": 0.55
+      },
+      "camera": {
+        "panX": 0,
+        "panY": 0,
+        "zoom": 1
+      },
+      "objects": [
+        {
+          "depth": 0.3,
+          "rotation": 0,
+          "roughness": 0.6,
+          "visible": true,
+          "color": [
+            150,
+            50,
+            40
+          ],
+          "id": "causal.ridge",
+          "type": "ridge",
+          "x": 0.5,
+          "y": 0.49,
+          "width": 1.4,
+          "height": 0.27,
+          "seed": 904776119
+        }
+      ],
+      "revision": 0,
+      "provenance": {
+        "kind": "generated",
+        "mechanism": "analytic_image_plane_geometry_and_learned_gaussian_appearance",
+        "sourceImageEmbedded": false,
+        "rawPixelResidual": false,
+        "meshUsed": false,
+        "unobservedAppearance": "procedural inference",
+        "scope": "restricted three-category statistical/procedural generator"
+      },
+      "appearanceModel": null
+    },
+    "sceneB": {
+      "schema": "crf.generative_scene.v0.9",
+      "id": "scene-90104",
+      "title": "CRF 0.9 landscape",
+      "category": "landscape",
+      "seed": 90104,
+      "width": 192,
+      "height": 144,
+      "environment": {
+        "wallColor": [
+          190,
+          188,
+          172
+        ],
+        "skyColor": [
+          128,
+          171,
+          197
+        ],
+        "groundColor": [
+          43,
+          74,
+          72
+        ],
+        "horizon": 0.6,
+        "fog": 0,
+        "texture": 1,
+        "terrain": "alpine"
+      },
+      "light": {
+        "azimuth": -40,
+        "elevation": 30,
+        "intensity": 1,
+        "warmth": 0.55
+      },
+      "camera": {
+        "panX": 0,
+        "panY": 0,
+        "zoom": 1
+      },
+      "objects": [
+        {
+          "depth": 0.3,
+          "rotation": 0,
+          "roughness": 0.6,
+          "visible": true,
+          "color": [
+            40,
+            70,
+            155
+          ],
+          "id": "causal.ridge",
+          "type": "ridge",
+          "x": 0.5,
+          "y": 0.49,
+          "width": 1.4,
+          "height": 0.27,
+          "seed": 904776119
+        }
+      ],
+      "revision": 0,
+      "provenance": {
+        "kind": "generated",
+        "mechanism": "analytic_image_plane_geometry_and_learned_gaussian_appearance",
+        "sourceImageEmbedded": false,
+        "rawPixelResidual": false,
+        "meshUsed": false,
+        "unobservedAppearance": "procedural inference",
+        "scope": "restricted three-category statistical/procedural generator"
+      },
+      "appearanceModel": null
+    },
+    "seed": 90104,
+    "size": [
+      192,
+      144
+    ],
+    "landChangedPixels": 6300,
+    "waterRegion": {
+      "normalizedY": [
+        0.63,
+        0.83
+      ],
+      "pixelCount": 5568,
+      "changedPixels": 4459,
+      "changedFraction": 0.8008261494252874,
+      "meanMaxChannelByteDelta": 52.48293821839081
+    },
+    "imageASHA256": "c4a5539918f4139aeef298c345b61d60af9af26ba9f917dbf9728aa3798888ef",
+    "imageBSHA256": "d796f9e9a44fd6845da2acb379afa7f57e303309b8198ef39ced91cbb68c4a10",
+    "sourcePhotoBlit": false,
+    "demonstrates": "Generated ridge appearance causally affects computed water reflection.",
+    "doesNotDemonstrate": "Photorealism, physical reflection accuracy, or multiview truth."
+  },
+  "minimalRemedy": {
+    "modifyCore": false,
+    "modifyFrozenPrompt": false,
+    "modifyFrozenConstraints": false,
+    "action": "Describe existing alpine reflection/ripple operator and its limits in provider capability prompt, then permit one audited replan of the same failed task.",
+    "risk": "Describing this approximation as physical mirror transport would overstate capability; keep it a quality limitation and preserve all failed/planning attempts."
+  },
+  "quality": {
+    "G2Passed": false,
+    "G4Passed": false,
+    "independentHumanBlindReviewPerformed": false
+  }
+}

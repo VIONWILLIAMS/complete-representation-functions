@@ -1,0 +1,93 @@
+{
+  "schema": "crf.video_verification.v0.5",
+  "pass": true,
+  "items": [
+    {
+      "file": "crf_0_5_street_5s.mp4",
+      "pass": true,
+      "bytes": 763787,
+      "sha256": "b79aa531452413acb605d1c59564ad04d42f361f36a11fd823b6f885fcf64d4e",
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 668,
+            "height": 1000,
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "duration": "5.000000",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000",
+          "size": "763787"
+        }
+      },
+      "decodedFrames": 120,
+      "distinctDecodedFrames": 120,
+      "source": "same_CRF_CPUrender_120_frames_then_ffmpeg",
+      "losslessPixelClaim": false
+    },
+    {
+      "file": "crf_0_5_fruit_lab_5s.mp4",
+      "pass": true,
+      "bytes": 303645,
+      "sha256": "931460c656a545868a19da2f6b94d1d00053c423bab9717960ae1cb5a462d79e",
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 800,
+            "height": 600,
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "duration": "5.000000",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000",
+          "size": "303645"
+        }
+      },
+      "decodedFrames": 120,
+      "distinctDecodedFrames": 120,
+      "source": "same_CRF_CPUrender_120_frames_then_ffmpeg",
+      "losslessPixelClaim": false
+    },
+    {
+      "file": "crf_0_5_editor_5s.webm",
+      "pass": true,
+      "bytes": 4863010,
+      "sha256": "c8006d708726d90d47d7e9e3d90a30e6308325a10b90ce69103f7bdfa435595d",
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp8",
+            "width": 667,
+            "height": 1000,
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000",
+          "size": "4863010"
+        }
+      },
+      "decodedFrames": 120,
+      "distinctDecodedFrames": 120,
+      "source": "actual_editor_button_download",
+      "losslessPixelClaim": false
+    }
+  ],
+  "note": "MP4 Street pads one column to 668 for yuv420p; WebM keeps 667. Encoded videos use lossy codecs, not exact RGB files."
+}

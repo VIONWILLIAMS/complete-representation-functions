@@ -1,0 +1,1581 @@
+{
+  "schema": "crf.generation_trials.v0.8",
+  "counts": {
+    "completedCases": 6,
+    "distinctProviderRequests": 21,
+    "observedImageCritiqueRequests": 6,
+    "retainedCandidateRenders": 15,
+    "finalRenders": 6
+  },
+  "requests": [
+    {
+      "phase": "gaussian_compose",
+      "requestId": "bc41c0f3-1bb1-4bae-8816-09291a60f2b1",
+      "model": "deepseek-flash",
+      "elapsedMs": 27816,
+      "prompt_tokens": 1405,
+      "completion_tokens": 4077,
+      "total_tokens": 5482,
+      "reasoning_tokens": 3425,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": false,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "15689782-d60b-40a9-b22f-a0a9b34af342",
+      "model": "deepseek-flash",
+      "elapsedMs": 45316,
+      "prompt_tokens": 2301,
+      "completion_tokens": 6985,
+      "total_tokens": 9286,
+      "reasoning_tokens": 6253,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "3a0f4ab3-9d03-4664-8e3e-8073ddbf6ade",
+      "model": "deepseek-flash",
+      "elapsedMs": 12951,
+      "prompt_tokens": 2881,
+      "completion_tokens": 2147,
+      "total_tokens": 5028,
+      "reasoning_tokens": 1364,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "0f5ef0e6-8bdc-4a93-add4-a776ccda857b",
+      "model": "deepseek-flash",
+      "elapsedMs": 23733,
+      "prompt_tokens": 2427,
+      "completion_tokens": 3153,
+      "total_tokens": 5580,
+      "reasoning_tokens": 2507,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "0a46d784-55a7-416e-91b2-a853360cc921",
+      "model": "deepseek-flash",
+      "elapsedMs": 29221,
+      "prompt_tokens": 1375,
+      "completion_tokens": 3989,
+      "total_tokens": 5364,
+      "reasoning_tokens": 3195,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": false,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "278d7292-e62c-4166-80bb-bd18074a1c37",
+      "model": "deepseek-flash",
+      "elapsedMs": 21010,
+      "prompt_tokens": 2411,
+      "completion_tokens": 2767,
+      "total_tokens": 5178,
+      "reasoning_tokens": 2042,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "c54edf4c-fc1a-4409-8fca-b0102f266c25",
+      "model": "deepseek-flash",
+      "elapsedMs": 24223,
+      "prompt_tokens": 2961,
+      "completion_tokens": 3729,
+      "total_tokens": 6690,
+      "reasoning_tokens": 2911,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "20ffa712-0967-4560-86cd-d45ee12fa228",
+      "model": "deepseek-flash",
+      "elapsedMs": 28260,
+      "prompt_tokens": 2585,
+      "completion_tokens": 4634,
+      "total_tokens": 7219,
+      "reasoning_tokens": 3908,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "1836fba7-82d5-4cbf-b56c-b2f98bd8f51b",
+      "model": "deepseek-flash",
+      "elapsedMs": 39988,
+      "prompt_tokens": 1575,
+      "completion_tokens": 6500,
+      "total_tokens": 8075,
+      "reasoning_tokens": 5804,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": false,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "19714d38-834d-4b4a-8dbd-216b7c326cce",
+      "model": "deepseek-flash",
+      "elapsedMs": 35227,
+      "prompt_tokens": 2478,
+      "completion_tokens": 4846,
+      "total_tokens": 7324,
+      "reasoning_tokens": 4064,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "d471553b-64bd-4cd5-bbf3-d39e9216f97f",
+      "model": "deepseek-flash",
+      "elapsedMs": 25452,
+      "prompt_tokens": 3106,
+      "completion_tokens": 3986,
+      "total_tokens": 7092,
+      "reasoning_tokens": 3203,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "2cd7f48c-f447-48dd-bbf7-00572b8f08ed",
+      "model": "deepseek-flash",
+      "elapsedMs": 38889,
+      "prompt_tokens": 2717,
+      "completion_tokens": 6583,
+      "total_tokens": 9300,
+      "reasoning_tokens": 5796,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "cbdc97c4-6ed5-4e22-9202-ac20b031c22b",
+      "model": "deepseek-flash",
+      "elapsedMs": 7235,
+      "prompt_tokens": 4230,
+      "completion_tokens": 1598,
+      "total_tokens": 5828,
+      "reasoning_tokens": 56,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "2f57a891-32b8-4b7c-933c-12d3fdcf8e52",
+      "model": "deepseek-flash",
+      "elapsedMs": 18212,
+      "prompt_tokens": 4277,
+      "completion_tokens": 2040,
+      "total_tokens": 6317,
+      "reasoning_tokens": 1651,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "21540a54-7d26-4d81-ad85-096f76a698a0",
+      "model": "deepseek-flash",
+      "elapsedMs": 12599,
+      "prompt_tokens": 4465,
+      "completion_tokens": 2405,
+      "total_tokens": 6870,
+      "reasoning_tokens": 751,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "fcef5d48-bac8-4c1b-90e9-93dac5327e3b",
+      "model": "deepseek-flash",
+      "elapsedMs": 7416,
+      "prompt_tokens": 4216,
+      "completion_tokens": 1638,
+      "total_tokens": 5854,
+      "reasoning_tokens": 119,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "66f128bd-40d8-4cdc-95b9-65828192f206",
+      "model": "deepseek-flash",
+      "elapsedMs": 30915,
+      "prompt_tokens": 4256,
+      "completion_tokens": 4172,
+      "total_tokens": 8428,
+      "reasoning_tokens": 3691,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "4f2d80ec-77b7-4f37-9eee-1cf42532041c",
+      "model": "deepseek-flash",
+      "elapsedMs": 12271,
+      "prompt_tokens": 4576,
+      "completion_tokens": 2418,
+      "total_tokens": 6994,
+      "reasoning_tokens": 716,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "24a50f93-eeed-4533-8cf3-d8e4113533f8",
+      "model": "deepseek-flash",
+      "elapsedMs": 14959,
+      "prompt_tokens": 1050,
+      "completion_tokens": 2264,
+      "total_tokens": 3314,
+      "reasoning_tokens": 1848,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": false,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "21760a89-36a5-4a37-9757-39723c77939c",
+      "model": "deepseek-flash",
+      "elapsedMs": 26940,
+      "prompt_tokens": 1605,
+      "completion_tokens": 2097,
+      "total_tokens": 3702,
+      "reasoning_tokens": 1574,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    },
+    {
+      "phase": "gaussian_compose",
+      "requestId": "e521fd14-80ca-4499-9886-fa56691fc948",
+      "model": "deepseek-flash",
+      "elapsedMs": 24262,
+      "prompt_tokens": 2056,
+      "completion_tokens": 3153,
+      "total_tokens": 5209,
+      "reasoning_tokens": 2686,
+      "reasoningEnabled": true,
+      "reasoningObserved": true,
+      "renderedImageProvided": true,
+      "finishReason": "stop"
+    }
+  ],
+  "results": [
+    {
+      "id": "01_ceramic_citrus",
+      "title": "青釉与柑橘",
+      "scope": "new_composition_of_observed_objects",
+      "prompt": "生成一张960×640精致静物摄影构图：青蓝釉花瓶稍靠左，一枚横切橙子半在右前方，浅灰暖白承托面。必须组合已学的独立物体函数，不用整张参考照片做背景，不要复制同一个大图。保留釉面、橙肉纤维的自然细节；使用观察到的前视外观，物品底部同一承托水平。充分留白但主体不能太小，总占画面约60%。柔和小接触阴影准确放在底部；阴影是可见中心(160,50)的320×100函数，注意大部分是透明填充。颜色克制，物体不要扁拉、悬空或重叠穿插。",
+      "complete": true,
+      "assetIds": [
+        "studio.paper",
+        "studio.shadow",
+        "learn.r03.097cfbf071e3.object",
+        "learn.r01.c6657129fc5c.object"
+      ],
+      "initial": {
+        "providerCalls": 1,
+        "prompt_tokens": 1405,
+        "completion_tokens": 4077,
+        "total_tokens": 5482,
+        "reasoning_tokens": 3425,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "bc41c0f3-1bb1-4bae-8816-09291a60f2b1",
+            "model": "deepseek-flash",
+            "elapsedMs": 27816,
+            "prompt_tokens": 1405,
+            "completion_tokens": 4077,
+            "total_tokens": 5482,
+            "reasoning_tokens": 3425,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": false,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "critique": {
+        "providerCalls": 1,
+        "prompt_tokens": 2301,
+        "completion_tokens": 6985,
+        "total_tokens": 9286,
+        "reasoning_tokens": 6253,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "15689782-d60b-40a9-b22f-a0a9b34af342",
+            "model": "deepseek-flash",
+            "elapsedMs": 45316,
+            "prompt_tokens": 2301,
+            "completion_tokens": 6985,
+            "total_tokens": 9286,
+            "reasoning_tokens": 6253,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "candidate": {
+        "providerCalls": 1,
+        "prompt_tokens": 2881,
+        "completion_tokens": 2147,
+        "total_tokens": 5028,
+        "reasoning_tokens": 1364,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "3a0f4ab3-9d03-4664-8e3e-8073ddbf6ade",
+            "model": "deepseek-flash",
+            "elapsedMs": 12951,
+            "prompt_tokens": 2881,
+            "completion_tokens": 2147,
+            "total_tokens": 5028,
+            "reasoning_tokens": 1364,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "actualRenders": [
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "stilllife_vase_orange_960x640",
+          "width": 960,
+          "height": 640,
+          "objectCount": 5,
+          "gaussianCount": 12630,
+          "elapsedMs": 266.6062550000024,
+          "rgbaSHA256": "2317dea7e15ab114314eb40a3ee97da6d70ae27782359eed13ae55873e09068e",
+          "pngSHA256": "11ab1f4e57726aaa76b784d275f3b3c286a497496b7804ddca48e8a33b0d23da",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "studio.paper",
+            "studio.shadow",
+            "learn.r03.097cfbf071e3.object",
+            "learn.r01.c6657129fc5c.object"
+          ],
+          "metrics": null
+        },
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "stilllife_vase_orange_960x640",
+          "width": 960,
+          "height": 640,
+          "objectCount": 5,
+          "gaussianCount": 12630,
+          "elapsedMs": 322.6748559999978,
+          "rgbaSHA256": "276697c4d51af183e24ffc1202c54b57ada248acc619650f1811a864fdb32db8",
+          "pngSHA256": "d28dcceee9bd72654a2fa1e631683276bc3a4dfdc29aefdffe5369d42104b164",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "studio.paper",
+            "studio.shadow",
+            "learn.r03.097cfbf071e3.object",
+            "learn.r01.c6657129fc5c.object"
+          ],
+          "metrics": null
+        },
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "stilllife_vase_orange_960x640",
+          "width": 960,
+          "height": 640,
+          "objectCount": 5,
+          "gaussianCount": 12630,
+          "elapsedMs": 250.2289619999974,
+          "rgbaSHA256": "d5c5b06160ece4fded5c23ff4d3d70f354324aa584e15bdc1338e662c9aeca77",
+          "pngSHA256": "cb2b8d7a52bdaa3ef612c9fb2adc801ddfef6e8b9621fcd8e33ed357c5bad3de",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "studio.paper",
+            "studio.shadow",
+            "learn.r03.097cfbf071e3.object",
+            "learn.r01.c6657129fc5c.object"
+          ],
+          "metrics": null
+        }
+      ],
+      "selection": {
+        "chosen": "polish",
+        "status": "visually_reviewed",
+        "reviewer": "assistant visual inspection",
+        "reason": "下缘与阴影的间隙缩小；保留釉面和橙肉细节。仍是固定观察方向的物体组合。",
+        "photorealismIndependentlyProven": false,
+        "referenceReconstructionScoreUsedAsGenerationScore": false,
+        "finalAssetStateRerendered": true
+      },
+      "modelWeightsUpdated": false,
+      "polish": {
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2427,
+          "completion_tokens": 3153,
+          "total_tokens": 5580,
+          "reasoning_tokens": 2507,
+          "requests": [
+            {
+              "phase": "gaussian_compose",
+              "requestId": "0f5ef0e6-8bdc-4a93-add4-a776ccda857b",
+              "model": "deepseek-flash",
+              "elapsedMs": 23733,
+              "prompt_tokens": 2427,
+              "completion_tokens": 3153,
+              "total_tokens": 5580,
+              "reasoning_tokens": 2507,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop"
+            }
+          ]
+        },
+        "feedback": "实际图中花瓶与橙片下方还有微小悬浮间隙。依据目录新增的真实alpha下缘点计算变换后轮廓位置，把小接触阴影贴紧下缘，增强紧贴底部的暗度但保持软边。可适度移动阴影，不能把阴影变成宽重黑椭圆；保持已经良好的构图、尺度与材质。",
+        "source": "independent visual review and alpha-derived support hints",
+        "selection": "visually_reviewed"
+      },
+      "finalRender": {
+        "schema": "crf.actual_render.v0.8",
+        "sceneId": "stilllife_vase_orange_960x640",
+        "width": 960,
+        "height": 640,
+        "objectCount": 5,
+        "gaussianCount": 12630,
+        "elapsedMs": 235.981534,
+        "rgbaSHA256": "d5c5b06160ece4fded5c23ff4d3d70f354324aa584e15bdc1338e662c9aeca77",
+        "pngSHA256": "cb2b8d7a52bdaa3ef612c9fb2adc801ddfef6e8b9621fcd8e33ed357c5bad3de",
+        "engine": "web/crf-gaussian08.js",
+        "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+        "sourceRasterReadByRenderer": false,
+        "assetIds": [
+          "studio.paper",
+          "studio.shadow",
+          "learn.r03.097cfbf071e3.object",
+          "learn.r01.c6657129fc5c.object"
+        ],
+        "metrics": null,
+        "assetSHA256": {
+          "learn.r01.c6657129fc5c.object": "dc72fa0cc485de435d4404b576747c06beb197dcdffe7fc10429acfe3df2ee1b",
+          "learn.r03.097cfbf071e3.object": "bfd23447b8a174bf442e641aeec03dfa62694fa5bc24a15abf928cb286797342",
+          "studio.paper": "b4199545ffcd823cdeefb3d18c3cb63d91782dbd800f8cbf7aeed872735080ea",
+          "studio.shadow": "ce0236e339c11a232105b2aa20c87c90508ce9f71a5571c46099cff5a1177e42"
+        },
+        "sceneSHA256": "3a5767ae6fc192af5116af2c999c25aa32c0ee0b8ff82f30fe7116abc8c3c13d"
+      }
+    },
+    {
+      "id": "02_dark_fruit",
+      "title": "深色果物静物",
+      "scope": "new_composition_of_observed_objects",
+      "prompt": "生成一张960×640深灰底的苹果、梨与半橙静物照片构图。只组合独立高斯物品函数。红苹果和黄梨接近，橙子切面稍靠右前；大小符合真实果物比例，梨略高。照片内已有光照，不要用极端曝光或色相把质感抹掉。利用小而柔和的接触阴影让底部接地，不出现阴影矩形边界。已观察苹果右侧有缺口，安排梨适当遮挡该侧。画面主体组占中间约65%，精致、细节丰富、暗背景与亮果物形成自然对比。",
+      "complete": true,
+      "assetIds": [
+        "studio.slate",
+        "studio.shadow",
+        "fruit.apple",
+        "fruit.pear",
+        "learn.r01.c6657129fc5c.object"
+      ],
+      "initial": {
+        "providerCalls": 1,
+        "prompt_tokens": 1375,
+        "completion_tokens": 3989,
+        "total_tokens": 5364,
+        "reasoning_tokens": 3195,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "0a46d784-55a7-416e-91b2-a853360cc921",
+            "model": "deepseek-flash",
+            "elapsedMs": 29221,
+            "prompt_tokens": 1375,
+            "completion_tokens": 3989,
+            "total_tokens": 5364,
+            "reasoning_tokens": 3195,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": false,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "critique": {
+        "providerCalls": 1,
+        "prompt_tokens": 2411,
+        "completion_tokens": 2767,
+        "total_tokens": 5178,
+        "reasoning_tokens": 2042,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "278d7292-e62c-4166-80bb-bd18074a1c37",
+            "model": "deepseek-flash",
+            "elapsedMs": 21010,
+            "prompt_tokens": 2411,
+            "completion_tokens": 2767,
+            "total_tokens": 5178,
+            "reasoning_tokens": 2042,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "candidate": {
+        "providerCalls": 1,
+        "prompt_tokens": 2961,
+        "completion_tokens": 3729,
+        "total_tokens": 6690,
+        "reasoning_tokens": 2911,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "c54edf4c-fc1a-4409-8fca-b0102f266c25",
+            "model": "deepseek-flash",
+            "elapsedMs": 24223,
+            "prompt_tokens": 2961,
+            "completion_tokens": 3729,
+            "total_tokens": 6690,
+            "reasoning_tokens": 2911,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "actualRenders": [
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "stilllife_apple_pear_orange_960x640",
+          "width": 960,
+          "height": 640,
+          "objectCount": 7,
+          "gaussianCount": 31615,
+          "elapsedMs": 241.86619000000064,
+          "rgbaSHA256": "b600c275e2a4824621b4d43666e8f451acde2fd1c154ea807e5d49ec07416807",
+          "pngSHA256": "f36b97606f8f14ea68d2a7de8a740795beb236871872061a3db9ce91998c9209",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "studio.slate",
+            "studio.shadow",
+            "fruit.apple",
+            "fruit.pear",
+            "learn.r01.c6657129fc5c.object"
+          ],
+          "metrics": null
+        },
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "stilllife_apple_pear_orange_960x640",
+          "width": 960,
+          "height": 640,
+          "objectCount": 7,
+          "gaussianCount": 31615,
+          "elapsedMs": 390.6145770000003,
+          "rgbaSHA256": "0aa1c29d9e5617beb08ba969d6ba25e3f38703e6121cc839a91ca7cb8c9c57da",
+          "pngSHA256": "b725738c2fe932966b8d70600bfcfe6dc76bce77170d89a2ad4f13bfcd535f11",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "studio.slate",
+            "studio.shadow",
+            "fruit.apple",
+            "fruit.pear",
+            "learn.r01.c6657129fc5c.object"
+          ],
+          "metrics": null
+        },
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "stilllife_apple_pear_orange_960x640",
+          "width": 960,
+          "height": 640,
+          "objectCount": 7,
+          "gaussianCount": 31615,
+          "elapsedMs": 371.8517209999991,
+          "rgbaSHA256": "f20ee24bb85d80367c3e2520bf4791fce1327be5080876624d1600cc1b9fa575",
+          "pngSHA256": "9e1b33d510a5cc1f401e992ebd7633376437f4885194fbba20b386c9e6314b20",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "studio.slate",
+            "studio.shadow",
+            "fruit.apple",
+            "fruit.pear",
+            "learn.r01.c6657129fc5c.object"
+          ],
+          "metrics": null
+        }
+      ],
+      "selection": {
+        "chosen": "polish",
+        "status": "visually_reviewed",
+        "reviewer": "assistant visual inspection",
+        "reason": "苹果缺口被梨遮住，接触阴影更紧贴；不同来源的照明仍未统一分解。",
+        "photorealismIndependentlyProven": false,
+        "referenceReconstructionScoreUsedAsGenerationScore": false,
+        "finalAssetStateRerendered": true
+      },
+      "modelWeightsUpdated": false,
+      "polish": {
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2585,
+          "completion_tokens": 4634,
+          "total_tokens": 7219,
+          "reasoning_tokens": 3908,
+          "requests": [
+            {
+              "phase": "gaussian_compose",
+              "requestId": "20ffa712-0967-4560-86cd-d45ee12fa228",
+              "model": "deepseek-flash",
+              "elapsedMs": 28260,
+              "prompt_tokens": 2585,
+              "completion_tokens": 4634,
+              "total_tokens": 7219,
+              "reasoning_tokens": 3908,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop"
+            }
+          ]
+        },
+        "feedback": "实际图中苹果和梨的接触还偏硬、橙片底部略像浮起。根据新增alpha下缘坐标让接触阴影紧靠物品轮廓，暗底下应克制。保持苹果缺口被梨遮住，不改变果物材质；不能捏造新表面。",
+        "source": "independent visual review and alpha-derived support hints",
+        "selection": "visually_reviewed"
+      },
+      "finalRender": {
+        "schema": "crf.actual_render.v0.8",
+        "sceneId": "stilllife_apple_pear_orange_960x640",
+        "width": 960,
+        "height": 640,
+        "objectCount": 7,
+        "gaussianCount": 31615,
+        "elapsedMs": 311.916195,
+        "rgbaSHA256": "24b99cc66ccd0b9788ef038af3585e68c6cd419c22ee3beb554b4e17f8942373",
+        "pngSHA256": "e88d5e582daa1bc97ea74b57a450036fac8c32ed33f991507482fb6ae7aa2741",
+        "engine": "web/crf-gaussian08.js",
+        "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+        "sourceRasterReadByRenderer": false,
+        "assetIds": [
+          "studio.slate",
+          "studio.shadow",
+          "fruit.apple",
+          "fruit.pear",
+          "learn.r01.c6657129fc5c.object"
+        ],
+        "metrics": null,
+        "assetSHA256": {
+          "fruit.apple": "238252d1c1887d3676380cf97fa2549addfc08e16016fe333a8c9841bdbc41da",
+          "fruit.pear": "0a978e2e965853e22e3f99ebe1ff406c364018c9dcf1cdb3951681226cf04e35",
+          "learn.r01.c6657129fc5c.object": "dc72fa0cc485de435d4404b576747c06beb197dcdffe7fc10429acfe3df2ee1b",
+          "studio.shadow": "ce0236e339c11a232105b2aa20c87c90508ce9f71a5571c46099cff5a1177e42",
+          "studio.slate": "4b46fec1a3373ae731eeb22abf63e9a819456963f21ad3ab95de7b4916d7392c"
+        },
+        "sceneSHA256": "fec35d8c07b0f459d42e85f786b28e0c86b78049df5d0b4f8e69fa6fe8f1cbbc"
+      }
+    },
+    {
+      "id": "03_coffee_fern",
+      "title": "咖啡与蕨叶",
+      "scope": "new_composition_of_observed_objects",
+      "prompt": "生成一张960×640自然光俯拍静物照片：左侧一只完整白色咖啡杯，右上角一枝蕨叶伸入画面，右下有一片橙子切面形成色彩点缀。用已学独立物体高斯函数，不能使用完整照片矩形贴图。咖啡图本身是俯拍视角，应保持原姿态；叶片不能穿过杯体；不要把茎插进咖啡。杯体约画面宽30%，橙片约15%，以背景留白维持安静构图。保证物体有合理尺度和柔和贴近的投影。叶片自带景深虚化，避免过度放大。",
+      "complete": true,
+      "assetIds": [
+        "studio.paper",
+        "studio.shadow",
+        "learn.r04.c2f1cb0642a5.object",
+        "learn.r05.67fd559a57f5.object",
+        "learn.r01.c6657129fc5c.object"
+      ],
+      "initial": {
+        "providerCalls": 1,
+        "prompt_tokens": 1575,
+        "completion_tokens": 6500,
+        "total_tokens": 8075,
+        "reasoning_tokens": 5804,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "1836fba7-82d5-4cbf-b56c-b2f98bd8f51b",
+            "model": "deepseek-flash",
+            "elapsedMs": 39988,
+            "prompt_tokens": 1575,
+            "completion_tokens": 6500,
+            "total_tokens": 8075,
+            "reasoning_tokens": 5804,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": false,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "critique": {
+        "providerCalls": 1,
+        "prompt_tokens": 2478,
+        "completion_tokens": 4846,
+        "total_tokens": 7324,
+        "reasoning_tokens": 4064,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "19714d38-834d-4b4a-8dbd-216b7c326cce",
+            "model": "deepseek-flash",
+            "elapsedMs": 35227,
+            "prompt_tokens": 2478,
+            "completion_tokens": 4846,
+            "total_tokens": 7324,
+            "reasoning_tokens": 4064,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "candidate": {
+        "providerCalls": 1,
+        "prompt_tokens": 3106,
+        "completion_tokens": 3986,
+        "total_tokens": 7092,
+        "reasoning_tokens": 3203,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "d471553b-64bd-4cd5-bbf3-d39e9216f97f",
+            "model": "deepseek-flash",
+            "elapsedMs": 25452,
+            "prompt_tokens": 3106,
+            "completion_tokens": 3986,
+            "total_tokens": 7092,
+            "reasoning_tokens": 3203,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "actualRenders": [
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "still_life_cup_fern_orange_960x640",
+          "width": 960,
+          "height": 640,
+          "objectCount": 5,
+          "gaussianCount": 18481,
+          "elapsedMs": 108.82570000000123,
+          "rgbaSHA256": "cfd8894ee8763c181ad5ebe9a03644b1070e5a29c0ff5362be25ecea3bc5d5ea",
+          "pngSHA256": "fdfdb8497696cdaf6582f6635a4297a70e5b5e08848ded855fcb66359e66ebd2",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "studio.shadow",
+            "learn.r05.67fd559a57f5.object",
+            "learn.r04.c2f1cb0642a5.object",
+            "learn.r01.c6657129fc5c.object"
+          ],
+          "metrics": null
+        },
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "still_life_cup_fern_orange_960x640",
+          "width": 960,
+          "height": 640,
+          "objectCount": 5,
+          "gaussianCount": 18481,
+          "elapsedMs": 135.75281899998663,
+          "rgbaSHA256": "c7ded024bf4bc69c892e5bf28da2ea3649e9ad4370c6bda13eb39b303f2ffa3d",
+          "pngSHA256": "9ec2a60304e96a4dfba3a190f6c037d8381b77f7e34c87bd7dad45c064ca668f",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "studio.shadow",
+            "learn.r05.67fd559a57f5.object",
+            "learn.r04.c2f1cb0642a5.object",
+            "learn.r01.c6657129fc5c.object"
+          ],
+          "metrics": null
+        },
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "still_life_cup_fern_960x640",
+          "width": 960,
+          "height": 640,
+          "objectCount": 5,
+          "gaussianCount": 14045,
+          "elapsedMs": 106.19221600001038,
+          "rgbaSHA256": "34be0dce471754fc7528762c286ce2c30d9ba515c9ffb79fcedff3de6a59d98d",
+          "pngSHA256": "3b3adc8e06b4fb4b6e1a558521d5fc7d60b3bc45270bc64caae23c72a495a795",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "studio.shadow",
+            "learn.r05.67fd559a57f5.object",
+            "learn.r04.c2f1cb0642a5.object",
+            "learn.r01.c6657129fc5c.object"
+          ],
+          "metrics": null
+        }
+      ],
+      "selection": {
+        "chosen": "polish",
+        "status": "visually_reviewed",
+        "reviewer": "assistant visual inspection",
+        "reason": "移除了与咖啡视角不一致的橙片；保留杯体和入画蕨叶。叶片虚化来自观测，未重新推断景深。",
+        "photorealismIndependentlyProven": false,
+        "referenceReconstructionScoreUsedAsGenerationScore": false,
+        "finalAssetStateRerendered": true
+      },
+      "modelWeightsUpdated": false,
+      "polish": {
+        "usage": {
+          "providerCalls": 1,
+          "prompt_tokens": 2717,
+          "completion_tokens": 6583,
+          "total_tokens": 9300,
+          "reasoning_tokens": 5796,
+          "requests": [
+            {
+              "phase": "gaussian_compose",
+              "requestId": "2cd7f48c-f447-48dd-bbf7-00572b8f08ed",
+              "model": "deepseek-flash",
+              "elapsedMs": 38889,
+              "prompt_tokens": 2717,
+              "completion_tokens": 6583,
+              "total_tokens": 9300,
+              "reasoning_tokens": 5796,
+              "reasoningEnabled": true,
+              "reasoningObserved": true,
+              "renderedImageProvided": true,
+              "finishReason": "stop"
+            }
+          ]
+        },
+        "feedback": "实际图中右侧橙片是前视切面，杯子是俯视/斜俯视，视角不统一。当前二维表示不能重建橙片新视角，故删除或隐藏橙片与它的阴影，以一只咖啡杯和右上角蕨叶构成更一致的照片构图。杯体覆盖已修复，当前尺寸261×226；控制杯子约画面宽30–35%，保持有留白但不太空，叶片可以自然裁出右上边缘，别显示悬空叶柄。不宣称解决了物理重新打光。",
+        "source": "independent visual review and alpha-derived support hints",
+        "selection": "visually_reviewed"
+      },
+      "finalRender": {
+        "schema": "crf.actual_render.v0.8",
+        "sceneId": "still_life_cup_fern_960x640",
+        "width": 960,
+        "height": 640,
+        "objectCount": 5,
+        "gaussianCount": 14045,
+        "elapsedMs": 123.05641100000001,
+        "rgbaSHA256": "34be0dce471754fc7528762c286ce2c30d9ba515c9ffb79fcedff3de6a59d98d",
+        "pngSHA256": "3b3adc8e06b4fb4b6e1a558521d5fc7d60b3bc45270bc64caae23c72a495a795",
+        "engine": "web/crf-gaussian08.js",
+        "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+        "sourceRasterReadByRenderer": false,
+        "assetIds": [
+          "studio.shadow",
+          "learn.r05.67fd559a57f5.object",
+          "learn.r04.c2f1cb0642a5.object",
+          "learn.r01.c6657129fc5c.object"
+        ],
+        "metrics": null,
+        "assetSHA256": {
+          "learn.r01.c6657129fc5c.object": "dc72fa0cc485de435d4404b576747c06beb197dcdffe7fc10429acfe3df2ee1b",
+          "learn.r04.c2f1cb0642a5.object": "53f6c602426f509733be6c5b9dca4812f63b49827f2c6eb0190fd123ba869c12",
+          "learn.r05.67fd559a57f5.object": "00392034133617e1cc3adc9ae0544934c32e74d53287e54641a96ea210529108",
+          "studio.shadow": "ce0236e339c11a232105b2aa20c87c90508ce9f71a5571c46099cff5a1177e42"
+        },
+        "sceneSHA256": "d0bd32d5b184dd8da41162fdbfd600cc3975847a7e2e5a935ff3cf70a66a782a"
+      }
+    },
+    {
+      "id": "04_street_teal",
+      "title": "青绿墙面的午后街角",
+      "scope": "semantic_edit_of_observation",
+      "prompt": "仅把主墙面改为自然柔和的青绿色调，保留原有阴影、墙面颗粒与亮暗关系。主墙面色相可以旋转约70–90度，但不能过曝。红绿灯、立柱、支架、全部窗户和斑马线的位置、尺寸、颜色、标签与全部其他参数原样保留。完整返回现有18对象场景。此结果标为真实参考场景的语义编辑，不声称新拍摄或新3D视角。",
+      "complete": true,
+      "assetIds": [
+        "street.wall.main",
+        "street.wall.base",
+        "street.sidewalk.main",
+        "street.road.main",
+        "street.window.r0.c0",
+        "street.window.r0.c1",
+        "street.window.r1.c0",
+        "street.window.r1.c1",
+        "street.window.r2.c0",
+        "street.window.r2.c1",
+        "street.wall.fixtures",
+        "street.pole.main",
+        "street.pole.arm",
+        "street.signal.support",
+        "street.signal.side",
+        "street.signal.main",
+        "street.road.edge",
+        "street.crosswalk.main"
+      ],
+      "initial": {
+        "providerCalls": 1,
+        "prompt_tokens": 4230,
+        "completion_tokens": 1598,
+        "total_tokens": 5828,
+        "reasoning_tokens": 56,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "cbdc97c4-6ed5-4e22-9202-ac20b031c22b",
+            "model": "deepseek-flash",
+            "elapsedMs": 7235,
+            "prompt_tokens": 4230,
+            "completion_tokens": 1598,
+            "total_tokens": 5828,
+            "reasoning_tokens": 56,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "critique": {
+        "providerCalls": 1,
+        "prompt_tokens": 4277,
+        "completion_tokens": 2040,
+        "total_tokens": 6317,
+        "reasoning_tokens": 1651,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "2f57a891-32b8-4b7c-933c-12d3fdcf8e52",
+            "model": "deepseek-flash",
+            "elapsedMs": 18212,
+            "prompt_tokens": 4277,
+            "completion_tokens": 2040,
+            "total_tokens": 6317,
+            "reasoning_tokens": 1651,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "candidate": {
+        "providerCalls": 1,
+        "prompt_tokens": 4465,
+        "completion_tokens": 2405,
+        "total_tokens": 6870,
+        "reasoning_tokens": 751,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "21540a54-7d26-4d81-ad85-096f76a698a0",
+            "model": "deepseek-flash",
+            "elapsedMs": 12599,
+            "prompt_tokens": 4465,
+            "completion_tokens": 2405,
+            "total_tokens": 6870,
+            "reasoning_tokens": 751,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "actualRenders": [
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "street",
+          "width": 667,
+          "height": 1000,
+          "objectCount": 18,
+          "gaussianCount": 62329,
+          "elapsedMs": 582.0876029999927,
+          "rgbaSHA256": "6ec8963d995a785050b8c81c0d6d26a7f52941fc0dff4e0a1813462a12ee849f",
+          "pngSHA256": "4e6e361758fc00a33c15c53b40bd5a06691effbc564a7ffea3fa1fb29a20e7f4",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "street.wall.main",
+            "street.wall.base",
+            "street.sidewalk.main",
+            "street.road.main",
+            "street.window.r0.c0",
+            "street.window.r0.c1",
+            "street.window.r1.c0",
+            "street.window.r1.c1",
+            "street.window.r2.c0",
+            "street.window.r2.c1",
+            "street.wall.fixtures",
+            "street.pole.main",
+            "street.pole.arm",
+            "street.signal.support",
+            "street.signal.side",
+            "street.signal.main",
+            "street.road.edge",
+            "street.crosswalk.main"
+          ],
+          "metrics": null
+        },
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "street",
+          "width": 667,
+          "height": 1000,
+          "objectCount": 18,
+          "gaussianCount": 62329,
+          "elapsedMs": 591.5263929999928,
+          "rgbaSHA256": "81de2ee70d71671840a48610677f0aa6ae3ac8df19339714176bf8b2574fbda6",
+          "pngSHA256": "f9250b5e4158b53a6692a9e05f912ffa5b92318564f8c1388a9718fdd6234172",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "street.wall.main",
+            "street.wall.base",
+            "street.sidewalk.main",
+            "street.road.main",
+            "street.window.r0.c0",
+            "street.window.r0.c1",
+            "street.window.r1.c0",
+            "street.window.r1.c1",
+            "street.window.r2.c0",
+            "street.window.r2.c1",
+            "street.wall.fixtures",
+            "street.pole.main",
+            "street.pole.arm",
+            "street.signal.support",
+            "street.signal.side",
+            "street.signal.main",
+            "street.road.edge",
+            "street.crosswalk.main"
+          ],
+          "metrics": null
+        }
+      ],
+      "selection": {
+        "chosen": "candidate",
+        "status": "visually_reviewed",
+        "reviewer": "assistant visual inspection",
+        "reason": "实际图像反馈修正初版紫色墙面。只有主墙面参数变化，保护区逐像素不变。",
+        "photorealismIndependentlyProven": false,
+        "referenceReconstructionScoreUsedAsGenerationScore": false,
+        "finalAssetStateRerendered": true
+      },
+      "modelWeightsUpdated": false,
+      "finalRender": {
+        "schema": "crf.actual_render.v0.8",
+        "sceneId": "street",
+        "width": 667,
+        "height": 1000,
+        "objectCount": 18,
+        "gaussianCount": 62329,
+        "elapsedMs": 508.10627600000004,
+        "rgbaSHA256": "81de2ee70d71671840a48610677f0aa6ae3ac8df19339714176bf8b2574fbda6",
+        "pngSHA256": "f9250b5e4158b53a6692a9e05f912ffa5b92318564f8c1388a9718fdd6234172",
+        "engine": "web/crf-gaussian08.js",
+        "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+        "sourceRasterReadByRenderer": false,
+        "assetIds": [
+          "street.wall.main",
+          "street.wall.base",
+          "street.sidewalk.main",
+          "street.road.main",
+          "street.window.r0.c0",
+          "street.window.r0.c1",
+          "street.window.r1.c0",
+          "street.window.r1.c1",
+          "street.window.r2.c0",
+          "street.window.r2.c1",
+          "street.wall.fixtures",
+          "street.pole.main",
+          "street.pole.arm",
+          "street.signal.support",
+          "street.signal.side",
+          "street.signal.main",
+          "street.road.edge",
+          "street.crosswalk.main"
+        ],
+        "metrics": null,
+        "assetSHA256": {
+          "street.crosswalk.main": "4ce29b5c9dea80ba40027122dc380664c900a232b38f6629206b1d0540c495ca",
+          "street.pole.arm": "ca56941d2794defe44211496e04dbe158c2c32eb47ff1e323d04dd36eed0968c",
+          "street.pole.main": "a3ca12dd186fe4a26e77aab70011003bb8d5622ee5ea8c54b057c18ba3054a4a",
+          "street.road.edge": "7a2233f5975e6d2a8f72d4d59cc6cde26836af8cf81ba9e666f97403a2159c87",
+          "street.road.main": "8c23e72c3021f1782b8f4f4c070c5332ae46f9dd667c4b4cf13c825e7d3ef654",
+          "street.sidewalk.main": "41ab0bfd9bb99f84834dd5b3dcb4e8aaae822ef8125a0b0074ddc37f41163c82",
+          "street.signal.main": "596fd80214daf378e48f6826ffb978ff1c1f4cdf3fa4cdafa49d87b40f9db0c5",
+          "street.signal.side": "89c2a147ca7654924670544fc07db31b91fdab607bbb1b9258efd2a0f1ed3ac4",
+          "street.signal.support": "9c202d0155b5ba10a000bde598497ab005bec1d9a0d01316fcbe6e3c92c587fe",
+          "street.wall.base": "4c9ac126a7b07387f8dbb44a86d86098578973c1f3d5a7306fbd31dc9b8e3451",
+          "street.wall.fixtures": "48f51904008ce15e25941538be7302d3babe5235a239639bd6a60791a3351fd2",
+          "street.wall.main": "db1526b053df8e90b6050bf3b6b2d96161eb877c73dc53f4102d696c530a760f",
+          "street.window.r0.c0": "8c19bbf4be414d447665bb19d99aa3395fd27366e01ea10ae3ff8e4f4a5846ee",
+          "street.window.r0.c1": "fbc91c03c330f9b30f05559d88cda318cad6896a925c749fff7d8bd0791f1975",
+          "street.window.r1.c0": "455d376c99f0c4e80359e5127a3f8bc2879b873a2293ea36408893888094ed89",
+          "street.window.r1.c1": "c11257f90c0eaeca51f91011e391242cbe13d0a17bb9800773c5f2e6397c00a2",
+          "street.window.r2.c0": "f145399316d72276b548a2911cc552c11b0023b3538c7192039b9a6240c10c4d",
+          "street.window.r2.c1": "277d6b8b7a75b1510a6fb2a9ae8119662aafc5dc3314593083886c3b4cb6ce41"
+        },
+        "sceneSHA256": "ae45c93c0f978b54d23e7a40e2d699e011e00754221603b0986eeae841cb3dcb"
+      }
+    },
+    {
+      "id": "05_street_context_fill",
+      "title": "移除行人灯后的街角",
+      "scope": "semantic_edit_with_inferred_background",
+      "prompt": "把正面行人信号灯 signal.main 隐藏，保留立柱、横臂与吊架、侧向灯背和所有其他对象完全不变。背景由已建立的墙面高斯函数显露，不能用任何新的矩形遮挡或纯色盖住。不要修改墙面或者场景光照。保持原始667×1000画幅。描述中说明被遮挡墙面是估计补全而非观测真值。",
+      "complete": true,
+      "assetIds": [
+        "street.wall.main",
+        "street.wall.base",
+        "street.sidewalk.main",
+        "street.road.main",
+        "street.window.r0.c0",
+        "street.window.r0.c1",
+        "street.window.r1.c0",
+        "street.window.r1.c1",
+        "street.window.r2.c0",
+        "street.window.r2.c1",
+        "street.wall.fixtures",
+        "street.pole.main",
+        "street.pole.arm",
+        "street.signal.support",
+        "street.signal.side",
+        "street.signal.main",
+        "street.road.edge",
+        "street.crosswalk.main"
+      ],
+      "initial": {
+        "providerCalls": 1,
+        "prompt_tokens": 4216,
+        "completion_tokens": 1638,
+        "total_tokens": 5854,
+        "reasoning_tokens": 119,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "fcef5d48-bac8-4c1b-90e9-93dac5327e3b",
+            "model": "deepseek-flash",
+            "elapsedMs": 7416,
+            "prompt_tokens": 4216,
+            "completion_tokens": 1638,
+            "total_tokens": 5854,
+            "reasoning_tokens": 119,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "critique": {
+        "providerCalls": 1,
+        "prompt_tokens": 4256,
+        "completion_tokens": 4172,
+        "total_tokens": 8428,
+        "reasoning_tokens": 3691,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "66f128bd-40d8-4cdc-95b9-65828192f206",
+            "model": "deepseek-flash",
+            "elapsedMs": 30915,
+            "prompt_tokens": 4256,
+            "completion_tokens": 4172,
+            "total_tokens": 8428,
+            "reasoning_tokens": 3691,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "candidate": {
+        "providerCalls": 1,
+        "prompt_tokens": 4576,
+        "completion_tokens": 2418,
+        "total_tokens": 6994,
+        "reasoning_tokens": 716,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "4f2d80ec-77b7-4f37-9eee-1cf42532041c",
+            "model": "deepseek-flash",
+            "elapsedMs": 12271,
+            "prompt_tokens": 4576,
+            "completion_tokens": 2418,
+            "total_tokens": 6994,
+            "reasoning_tokens": 716,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "actualRenders": [
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "street",
+          "width": 667,
+          "height": 1000,
+          "objectCount": 18,
+          "gaussianCount": 61257,
+          "elapsedMs": 785.2134300000034,
+          "rgbaSHA256": "103650c2f229938ba3a92ba412de9c4195bc9f192f0ed5ff1a731809aef307ab",
+          "pngSHA256": "a82bf45408d8235b89ba5351d6472ffc9034f0280e4058a3514d3f3d0fe2c22e",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "street.wall.main",
+            "street.wall.base",
+            "street.sidewalk.main",
+            "street.road.main",
+            "street.window.r0.c0",
+            "street.window.r0.c1",
+            "street.window.r1.c0",
+            "street.window.r1.c1",
+            "street.window.r2.c0",
+            "street.window.r2.c1",
+            "street.wall.fixtures",
+            "street.pole.main",
+            "street.pole.arm",
+            "street.signal.support",
+            "street.signal.side",
+            "street.signal.main",
+            "street.road.edge",
+            "street.crosswalk.main"
+          ],
+          "metrics": null
+        },
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "street",
+          "width": 667,
+          "height": 1000,
+          "objectCount": 18,
+          "gaussianCount": 61257,
+          "elapsedMs": 461.7174449999875,
+          "rgbaSHA256": "103650c2f229938ba3a92ba412de9c4195bc9f192f0ed5ff1a731809aef307ab",
+          "pngSHA256": "a82bf45408d8235b89ba5351d6472ffc9034f0280e4058a3514d3f3d0fe2c22e",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "street.wall.main",
+            "street.wall.base",
+            "street.sidewalk.main",
+            "street.road.main",
+            "street.window.r0.c0",
+            "street.window.r0.c1",
+            "street.window.r1.c0",
+            "street.window.r1.c1",
+            "street.window.r2.c0",
+            "street.window.r2.c1",
+            "street.wall.fixtures",
+            "street.pole.main",
+            "street.pole.arm",
+            "street.signal.support",
+            "street.signal.side",
+            "street.signal.main",
+            "street.road.edge",
+            "street.crosswalk.main"
+          ],
+          "metrics": null
+        }
+      ],
+      "selection": {
+        "chosen": "candidate",
+        "status": "visually_reviewed",
+        "reviewer": "assistant visual inspection",
+        "reason": "仅隐藏正面行人灯，显露既有推测墙面；保留支架与侧向灯。隐藏墙面无观测真值。",
+        "photorealismIndependentlyProven": false,
+        "referenceReconstructionScoreUsedAsGenerationScore": false,
+        "finalAssetStateRerendered": true
+      },
+      "modelWeightsUpdated": false,
+      "finalRender": {
+        "schema": "crf.actual_render.v0.8",
+        "sceneId": "street",
+        "width": 667,
+        "height": 1000,
+        "objectCount": 18,
+        "gaussianCount": 61257,
+        "elapsedMs": 510.31242799999995,
+        "rgbaSHA256": "103650c2f229938ba3a92ba412de9c4195bc9f192f0ed5ff1a731809aef307ab",
+        "pngSHA256": "a82bf45408d8235b89ba5351d6472ffc9034f0280e4058a3514d3f3d0fe2c22e",
+        "engine": "web/crf-gaussian08.js",
+        "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+        "sourceRasterReadByRenderer": false,
+        "assetIds": [
+          "street.wall.main",
+          "street.wall.base",
+          "street.sidewalk.main",
+          "street.road.main",
+          "street.window.r0.c0",
+          "street.window.r0.c1",
+          "street.window.r1.c0",
+          "street.window.r1.c1",
+          "street.window.r2.c0",
+          "street.window.r2.c1",
+          "street.wall.fixtures",
+          "street.pole.main",
+          "street.pole.arm",
+          "street.signal.support",
+          "street.signal.side",
+          "street.signal.main",
+          "street.road.edge",
+          "street.crosswalk.main"
+        ],
+        "metrics": null,
+        "assetSHA256": {
+          "street.crosswalk.main": "4ce29b5c9dea80ba40027122dc380664c900a232b38f6629206b1d0540c495ca",
+          "street.pole.arm": "ca56941d2794defe44211496e04dbe158c2c32eb47ff1e323d04dd36eed0968c",
+          "street.pole.main": "a3ca12dd186fe4a26e77aab70011003bb8d5622ee5ea8c54b057c18ba3054a4a",
+          "street.road.edge": "7a2233f5975e6d2a8f72d4d59cc6cde26836af8cf81ba9e666f97403a2159c87",
+          "street.road.main": "8c23e72c3021f1782b8f4f4c070c5332ae46f9dd667c4b4cf13c825e7d3ef654",
+          "street.sidewalk.main": "41ab0bfd9bb99f84834dd5b3dcb4e8aaae822ef8125a0b0074ddc37f41163c82",
+          "street.signal.main": "596fd80214daf378e48f6826ffb978ff1c1f4cdf3fa4cdafa49d87b40f9db0c5",
+          "street.signal.side": "89c2a147ca7654924670544fc07db31b91fdab607bbb1b9258efd2a0f1ed3ac4",
+          "street.signal.support": "9c202d0155b5ba10a000bde598497ab005bec1d9a0d01316fcbe6e3c92c587fe",
+          "street.wall.base": "4c9ac126a7b07387f8dbb44a86d86098578973c1f3d5a7306fbd31dc9b8e3451",
+          "street.wall.fixtures": "48f51904008ce15e25941538be7302d3babe5235a239639bd6a60791a3351fd2",
+          "street.wall.main": "db1526b053df8e90b6050bf3b6b2d96161eb877c73dc53f4102d696c530a760f",
+          "street.window.r0.c0": "8c19bbf4be414d447665bb19d99aa3395fd27366e01ea10ae3ff8e4f4a5846ee",
+          "street.window.r0.c1": "fbc91c03c330f9b30f05559d88cda318cad6896a925c749fff7d8bd0791f1975",
+          "street.window.r1.c0": "455d376c99f0c4e80359e5127a3f8bc2879b873a2293ea36408893888094ed89",
+          "street.window.r1.c1": "c11257f90c0eaeca51f91011e391242cbe13d0a17bb9800773c5f2e6397c00a2",
+          "street.window.r2.c0": "f145399316d72276b548a2911cc552c11b0023b3538c7192039b9a6240c10c4d",
+          "street.window.r2.c1": "277d6b8b7a75b1510a6fb2a9ae8119662aafc5dc3314593083886c3b4cb6ce41"
+        },
+        "sceneSHA256": "8d340b652650d4be26052c626f491cdc2fd72f181fb8830eca21cd000eabb146"
+      }
+    },
+    {
+      "id": "06_alpine_haze",
+      "title": "湖畔薄雾光色实验",
+      "scope": "reference_conditioned_atmosphere_variant",
+      "prompt": "在原800×531阿尔卑斯湖畔高斯函数上，生成一幅克制的晨雾光色变体：保留山体、树林、湖岸线与倒影全部空间结构；叠加少量解析高斯薄雾，使远岸稍柔和，近处水纹仍然清楚。薄雾函数原960×640，位置需映射到场景；不要明显遮白，不要旋转地平线。轻微曝光调整可以，但不要把它描述成新的地貌、全新世界或新相机角度。",
+      "complete": true,
+      "assetIds": [
+        "landscape.alpine",
+        "atmosphere.haze"
+      ],
+      "initial": {
+        "providerCalls": 1,
+        "prompt_tokens": 1050,
+        "completion_tokens": 2264,
+        "total_tokens": 3314,
+        "reasoning_tokens": 1848,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "24a50f93-eeed-4533-8cf3-d8e4113533f8",
+            "model": "deepseek-flash",
+            "elapsedMs": 14959,
+            "prompt_tokens": 1050,
+            "completion_tokens": 2264,
+            "total_tokens": 3314,
+            "reasoning_tokens": 1848,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": false,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "critique": {
+        "providerCalls": 1,
+        "prompt_tokens": 1605,
+        "completion_tokens": 2097,
+        "total_tokens": 3702,
+        "reasoning_tokens": 1574,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "21760a89-36a5-4a37-9757-39723c77939c",
+            "model": "deepseek-flash",
+            "elapsedMs": 26940,
+            "prompt_tokens": 1605,
+            "completion_tokens": 2097,
+            "total_tokens": 3702,
+            "reasoning_tokens": 1574,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "candidate": {
+        "providerCalls": 1,
+        "prompt_tokens": 2056,
+        "completion_tokens": 3153,
+        "total_tokens": 5209,
+        "reasoning_tokens": 2686,
+        "requests": [
+          {
+            "phase": "gaussian_compose",
+            "requestId": "e521fd14-80ca-4499-9886-fa56691fc948",
+            "model": "deepseek-flash",
+            "elapsedMs": 24262,
+            "prompt_tokens": 2056,
+            "completion_tokens": 3153,
+            "total_tokens": 5209,
+            "reasoning_tokens": 2686,
+            "reasoningEnabled": true,
+            "reasoningObserved": true,
+            "renderedImageProvided": true,
+            "finishReason": "stop"
+          }
+        ]
+      },
+      "actualRenders": [
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "alpine_morning_mist_variant",
+          "width": 800,
+          "height": 531,
+          "objectCount": 2,
+          "gaussianCount": 65536,
+          "elapsedMs": 542.8614809999999,
+          "rgbaSHA256": "fcb3049d221efb44c7d585165f3d89148836cbcb5d94b28f145a0b0ec6260e17",
+          "pngSHA256": "3413de80abddbbc8f057a4bbdbd3bbb19e97536bb54bac967a9aba68ec852193",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "landscape.alpine",
+            "atmosphere.haze"
+          ],
+          "metrics": null
+        },
+        {
+          "schema": "crf.actual_render.v0.8",
+          "sceneId": "alpine_morning_mist_variant",
+          "width": 800,
+          "height": 531,
+          "objectCount": 2,
+          "gaussianCount": 65536,
+          "elapsedMs": 364.9959309999831,
+          "rgbaSHA256": "232620f69d752fb017d3d75232220b76efd50e96c32b6539b1d87afe9ecf8948",
+          "pngSHA256": "9389ca7ec669d3cab591fdef422cf378718f68098786222c3780b055bcbc6423",
+          "engine": "web/crf-gaussian08.js",
+          "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+          "sourceRasterReadByRenderer": false,
+          "assetIds": [
+            "landscape.alpine",
+            "atmosphere.haze"
+          ],
+          "metrics": null
+        }
+      ],
+      "selection": {
+        "chosen": "candidate",
+        "status": "visually_reviewed",
+        "reviewer": "assistant visual inspection",
+        "reason": "减弱并收窄二维雾带，保留近水纹理；这是参考条件下光色变体。",
+        "photorealismIndependentlyProven": false,
+        "referenceReconstructionScoreUsedAsGenerationScore": false,
+        "finalAssetStateRerendered": true
+      },
+      "modelWeightsUpdated": false,
+      "finalRender": {
+        "schema": "crf.actual_render.v0.8",
+        "sceneId": "alpine_morning_mist_variant",
+        "width": 800,
+        "height": 531,
+        "objectCount": 2,
+        "gaussianCount": 65536,
+        "elapsedMs": 403.784752,
+        "rgbaSHA256": "232620f69d752fb017d3d75232220b76efd50e96c32b6539b1d87afe9ecf8948",
+        "pngSHA256": "9389ca7ec669d3cab591fdef422cf378718f68098786222c3780b055bcbc6423",
+        "engine": "web/crf-gaussian08.js",
+        "rendererSourceSHA256": "267719bb6387d49eb1f7317deadad98cb2c5372668e46d9020966b882a5ff43a",
+        "sourceRasterReadByRenderer": false,
+        "assetIds": [
+          "landscape.alpine",
+          "atmosphere.haze"
+        ],
+        "metrics": null,
+        "assetSHA256": {
+          "atmosphere.haze": "bc43682a8dbc263d1ebbdd4f1e1d7623569f6b03b8a1df3e51467aee7481b47f",
+          "landscape.alpine": "1797213bb6b0ff1eb42215f7700e18d46d32fd72f0b84fa4d9fa4276864ee380"
+        },
+        "sceneSHA256": "578c156f74f89c3055ec7d75e9104a7ce151e490872eb939c5ceabdc94129876"
+      }
+    }
+  ],
+  "limits": [
+    "Reference-conditioned function composition; model weights were not trained.",
+    "Light and material are still entangled in observed RGB.",
+    "A 2D transform cannot recover unobserved geometry or new viewpoints."
+  ]
+}

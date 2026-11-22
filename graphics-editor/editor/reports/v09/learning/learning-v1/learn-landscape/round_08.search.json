@@ -1,0 +1,730 @@
+{
+  "ok": true,
+  "engine": "gaussian08-learning",
+  "model": "deepseek-flash",
+  "round": 8,
+  "query": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+  "checkpoint": {
+    "sessionId": "crf09_b59f3a06-8a8c-46de-ba82-44d05621b14e",
+    "round": 8,
+    "topic": "真实山湖、海岸与针叶森林；地貌层次、水面反射、岩石、树冠和自然薄雾，不同独立摄影实例",
+    "subtopic": "局部细节：近景纹理、连接结构、细小部件",
+    "status": "searched",
+    "completedAt": "2026-11-21T15:57:31.302Z",
+    "runId": "crf07_26a9071f-e068-47db-9847-0e1ee84bf649",
+    "queries": [
+      "Wikimedia Commons pine branches against rocky cliff file — site:commons.wikimedia.org",
+      "Wikimedia Commons pine tree shadow on rock file — site:commons.wikimedia.org",
+      "Wikimedia Commons lake boulder mountain file — site:commons.wikimedia.org",
+      "Wikimedia Commons moss lichen on rock close-up file — site:commons.wikimedia.org",
+      "site:www.pexels.com close-up pine branch bark texture",
+      "site:www.pexels.com moss covered rocks close-up"
+    ],
+    "requestIds": [
+      "24d38770-25ca-4d94-9f32-f94b65a36900"
+    ],
+    "sourceCount": 12,
+    "newSourceCount": 10,
+    "candidateCount": 10,
+    "downloadedImageCount": 4,
+    "fittedFunctionCount": 0
+  },
+  "research": {
+    "searched": true,
+    "toolCalls": [
+      {
+        "id": "srvtoolu_rl_00_2d0835136be9474ab2967f9e6f04f02d",
+        "type": "deepseek_read_url",
+        "kind": "read_link",
+        "status": "completed",
+        "action": {
+          "type": "read_link",
+          "url": "https://commons.wikimedia.org/wiki/File:Furuskog.JPG#1"
+        },
+        "sourceUrls": []
+      },
+      {
+        "id": "srvtoolu_s_01_cd10ea27696342008d4b84682af73e81",
+        "type": "deepseek_web_search",
+        "kind": "search",
+        "status": "completed",
+        "action": {
+          "type": "search",
+          "queries": [
+            "Wikimedia Commons pine branches against rocky cliff file — site:commons.wikimedia.org",
+            "Wikimedia Commons pine tree shadow on rock file — site:commons.wikimedia.org",
+            "Wikimedia Commons lake boulder mountain file — site:commons.wikimedia.org",
+            "Wikimedia Commons moss lichen on rock close-up file — site:commons.wikimedia.org",
+            "site:www.pexels.com close-up pine branch bark texture",
+            "site:www.pexels.com moss covered rocks close-up"
+          ]
+        },
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/Category:Boulder_Mountain_(Utah)",
+          "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+          "https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/",
+          "https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/",
+          "https://commons.wikimedia.org/wiki/Category:Pinus_(branches)",
+          "https://commons.wikimedia.org/wiki/File:WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg#1",
+          "https://commons.wikimedia.org/wiki/Category:Boulder_fields_in_Washington_(state)",
+          "https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/",
+          "https://www.pexels.com/photo/mossy-rock-formation-in-iceland-s-natural-landscape-37066095/",
+          "https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG",
+          "https://commons.wikimedia.org/wiki/Category:Garfield_County,_Utah"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Furuskog.JPG#1",
+        "title": "File:Furuskog.JPG - Wikimedia Commons",
+        "snippet": "",
+        "via": "server_page"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Boulder_Mountain_(Utah)",
+        "title": "Category:Boulder Mountain (Utah) - Wikimedia Commons",
+        "snippet": "Boulder mountain 2.jpg 2,048 × 1,536; 212 KB ... - Boulder Mt. ... - Boulder mtn lake.jpg 3,030 × 1,224; 1,010 KB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "snippet": "Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef ... From Wikimedia Commons, the free media repository ... Original file (2,560 × 1,920 pixels, file size: 7.13 MB...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/",
+        "title": "Photo de Julia Maslova sur Pexels",
+        "snippet": "3024x4032 Format 3:4 Couleurs Date Sep 11 ... 8 Vues 1 millier ... Description # Vue détaillée de l'écorce d'un pin présentant des textures uniques et des tons terreux, prise à Svetlogorsk, en Russie.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/",
+        "title": "Photo by Adrian Hoparda on Pexels",
+        "snippet": "Dimensions 3648x5472 Aspect Ratio 2:3 ... Camera NX300 Focal 55.0mm ... Taken At Aug 9, 2013 ... Description # A close-up view of moss-covered rocks with a blurred natural background, captured in sunlight. ### More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pinus_(branches)",
+        "title": "Category:Pinus (branches) - Wikimedia Commons",
+        "snippet": "Media in category \"Pinus (branches)\" The following 46 files are in this category, out of 46 total. - -Pin (pinus).jpg 4,032 × 3,024; 7.01 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg#1",
+        "title": "File:WLA moma Paul Czanne Pines and Rocks.jpg - Wikimedia Commons - File:WLA moma Paul Czanne Pines and Rocks.jpg",
+        "snippet": "WLA moma Paul Czanne Pines and Rocks.jpg ... Pines and Rocks (Fontainebleau?). c. ... Oil on canvas, 32 x 25 3/4\" (81.3 x 65.4 cm). Lillie P.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Boulder_fields_in_Washington_(state)",
+        "title": "Category:Boulder fields in Washington (state) - Wikimedia Commons",
+        "snippet": "Bald Mountain 8725.JPG 4,272 × 2,848; 4.92 MB - Lenore Lake 2017-09-22 619.jpg 3,072 × 4,608; 4.63 MB",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/",
+        "title": "Foto von Sergej ***** auf Pexels",
+        "snippet": "Kostenlos nutzen: Coesfeld, NRW, Deutschland # Detailansicht eines Kiefernzweigs mit jungen Zapfen und Nadeln, die natürliche Muster und Texturen zeigt.",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://www.pexels.com/photo/mossy-rock-formation-in-iceland-s-natural-landscape-37066095/",
+        "title": "Photo by David Hitchcock on Pexels",
+        "snippet": "Aspect Ratio 3:2 Colors Date Apr 13, 2026 ... Oct 13, 2018 ... Adobe Photoshop Lightroom Classic 15.2.1 (Macintosh) Iceland Description # Closeup of moss-covered rocks in Iceland, showcasing rich textures and natural beauty. ## More like this",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG",
+        "title": "File:Mono Lake - Pinyon Pine (Pinus monophylla) near Lee Vinning Creek - branch.JPG - Wikimedia Commons",
+        "snippet": "Mono Lake - Pinyon Pine (Pinus monophylla) near Lee Vinning Creek - branch.JPG From Wikimedia Commons, the free media repository ... Original file (2,450 × 1,629 pixels, file size: 1.94 MB...",
+        "via": "server_tool"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Garfield_County,_Utah",
+        "title": "Category:Garfield County, Utah - Wikimedia Commons",
+        "snippet": "Boulder Mt. - panoramio.jpg 2,160 × 1,440; 947 KB - Boulder Mt. Trees - panoramio.jpg 2,160 × 1,440; 1.23 MB",
+        "via": "server_tool"
+      }
+    ],
+    "summary": "本轮针对“近景纹理、连接结构、细小部件”，实际检索到的**可用具体照片详情页以 Pexels 近景为主**；Commons 返回的多为分类页、用户画廊或低质量文件页，不能作为独立摄影实例。以下候选均**未观察图像字节**，只依据页面文字与 EXIF 整理；光照方向、遮挡边界、纹理清晰度均需后续图像验证。\n\n---\n\n### 1. Pexels — 松树皮近景纹理（树皮块状/鳞片状低频纹理）\n- 来源页：https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/\n- 页面事实：3024×4032；描述“松树皮特写，独特纹理与土色调”，拍摄于俄罗斯 Svetlogorsk；作者 Julia Maslova 。\n- 可转化为图形函数：树皮作为近景承托面，可建模为**低频块状/鳞片状纹理**，边缘用不规则多边形扰动；土色调（棕—灰—赭）可作为颜色基底，裂缝处压暗、凸起处提亮，形成方向性粗糙度场。\n- 局限：页面未给 EXIF、光照方向；树皮是松树还是其他松科未知；许可证需在 Pexels 页核验（通常 Pexels License）。\n\n### 2. Pexels — 松枝与幼球果近景（针叶边缘 + 连接结构）\n- 来源页：https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/\n- 页面事实：描述“松枝特写，带幼球果与针叶，展示自然图案与纹理”；作者 Sergej ***** 。\n- 可转化为图形函数：针叶可建模为**高频锯齿/细长条边缘**，球果作为**附着在枝条上的小尺度椭球/鳞片堆叠结构**；枝条本身提供中频圆柱/曲线连接骨架。适合提取“针叶—球果—枝条”三级连接关系：针叶从枝条节点放射状伸出，球果位于节点附近。\n- 局限：无尺寸、EXIF、光照方向；球果成熟度未知；许可证待核验。\n\n### 3. Pexels — 苔藓覆盖岩石近景（苔藓软边 vs. 岩石硬边）\n- 来源页：https://www.pexels.com/photo/mossy-rock-formation-in-iceland-s-natural-landscape-37066095/\n- 页面事实：6000×4000；Canon EOS Rebel T7i；55mm；ƒ/5.6；ISO 400；1/60s；拍摄于 2018-10-13；描述“冰岛苔藓覆盖岩石特写，丰富纹理与自然美感”；作者 David Hitchcock 。\n- 可转化为图形函数：苔藓覆盖层可建模为**低对比度、软边、高频颗粒纹理**，岩石本体为**硬边、低频块状轮廓**；两者交界处形成“软—硬”边缘混合。55mm 近景 + ƒ/5.6 提供一定景深，但近景苔藓可能部分虚化，适合提取“苔藓绒面 vs. 岩石裂隙”的材质对比。\n- 局限：页面未写光照方向；苔藓厚度、岩石类型未知；属于近景材质参考，不直接对应山湖大场景。\n\n### 4. Pexels — 阳光下苔藓岩石近景（光照方向可推断为侧光/逆光）\n- 来源页：https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/\n- 页面事实：3648×5472；NX300；55.0mm；ƒ/5.6；ISO 200；1/160s；拍摄于 2013-08-09；描述“苔藓覆盖岩石特写，模糊自然背景，阳光下拍摄”；作者 Adrian Hoparda 。\n- 可转化为图形函数：**“阳光下拍摄”**提示存在直射光，可推断岩石顶部/苔藓受光面与阴影面形成明暗阶跃；苔藓在受光处呈现黄绿高光，阴影处偏深绿/黑。适合提取“岩石硬边轮廓 + 苔藓软边覆盖 + 侧光方向性”的组合。\n- 局限：页面未明确光照角度；背景模糊程度未知；许可证待核验。\n\n### 5. Commons — 松枝（Pinyon Pine）近景（针叶束连接结构，待核验质量）\n- 来源页：https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG\n- 页面事实：2450×1629；1.94 MB；描述为 Mono Lake 附近单叶松（Pinus monophylla）枝条 。\n- 可转化为图形函数：单叶松针叶以**单针或小束**附着于枝条，适合提取“针叶基部与枝条连接节点”的细小结构；比成束松针更稀疏，边缘锯齿频率较低。\n- 局限：页面描述极简，无 EXIF、无作者/许可文本（需打开文件页核验）；质量与光照未知；**未观察图像**，无法确认针叶清晰度。\n\n---\n\n### 对“近景纹理与连接结构”的可转化建议（基于页面文字，非像素观察）\n\n1. **树皮纹理分层**：Pexels 松树皮近景  提示可把树皮建模为“低频板块 + 中频裂缝 + 高频颗粒”三层：板块边界用不规则 Voronoi 扰动，裂缝用暗线，颗粒用噪声调制亮度。\n2. **针叶—球果—枝条连接**：Pexels 松枝幼球果  提示连接结构可函数化为：枝条曲线骨架 → 节点处放射状针叶（高频锯齿遮罩）→ 球果（鳞片状椭球堆叠）。针叶方向受枝条局部切线约束。\n3. **苔藓—岩石软硬边缘**：Pexels 冰岛苔藓岩石  与阳光下苔藓岩石  提示苔藓覆盖层用软边、低对比、高频颗粒，岩石本体用硬边、低频块状；交界处用噪声扰动混合权重，而非单一阈值。\n4. **光照方向**：阳光下苔藓岩石  的“阳光下”描述可用于推断侧光/顶光，但需图像验证；若确认，受光面苔藓提高黄绿饱和度，阴影面降低亮度但保留纹理对比度。\n\n---\n\n### 尚未解决 / 本轮缺口\n\n- **缺“针叶树冠在地面/岩石上的清晰硬边投影”的具体照片页**：本轮搜索未返回符合的 Commons File 页面或 Pexels 具体照片；石墙树影实例（前轮 18623679）仍是唯一投影参考，但投影源不明确。\n- **缺海岸针叶林 + 岩壁近景连接结构**：Pexels 松枝与岩壁（前轮 35500276）有前景遮挡，但非海岸语境；本轮未找到更好的海岸复合近景实例。\n- **Commons 候选质量不足**：Furuskog.JPG 被 Commons 标注为“图像过小/过亮过暗，可能无法充分说明主题”，且仅 640×480，不适合提取近景纹理；用户画廊与分类页不作为独立实例。\n- **许可证核验**：Pexels 候选页面未直接显示许可证文本，需打开页面核验；Commons 的 Mono Lake 松枝页作者/许可待核验。\n\n---\n\n### 来源\n1. Pexels — 松树皮近景：https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/ \n2. Pexels — 松枝幼球果近景：https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/ \n3. Pexels — 冰岛苔藓岩石近景：https://www.pexels.com/photo/mossy-rock-formation-in-iceland-s-natural-landscape-37066095/ \n4. Pexels — 阳光下苔藓岩石近景：https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/ \n5. Commons — Mono Lake 单叶松枝条：https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG ",
+    "status": "completed",
+    "nativeSearchObserved": true,
+    "referenceImageCandidates": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG",
+        "title": "File:Mono Lake - Pinyon Pine (Pinus monophylla) near Lee Vinning Creek - branch.JPG - Wikimedia Commons",
+        "imageUrl": "https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG"
+      }
+    ],
+    "referenceImages": [],
+    "referenceImagesSubmitted": 0,
+    "inputImageProvided": false
+  },
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Furuskog.JPG#1",
+      "title": "File:Furuskog.JPG - Wikimedia Commons",
+      "snippet": "",
+      "via": "server_page"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Boulder_Mountain_(Utah)",
+      "title": "Category:Boulder Mountain (Utah) - Wikimedia Commons",
+      "snippet": "Boulder mountain 2.jpg 2,048 × 1,536; 212 KB ... - Boulder Mt. ... - Boulder mtn lake.jpg 3,030 × 1,224; 1,010 KB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Lichens_and_mosses_can_be_spotted_on_tree_bark_and_rocks._Together,_they_seemingly_resemble_a_coral_reef!_(b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "title": "File:Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef! (b5139cc5-2b04-4936-a46c-87d306e29160).JPG",
+      "snippet": "Lichens and mosses can be spotted on tree bark and rocks. Together, they seemingly resemble a coral reef ... From Wikimedia Commons, the free media repository ... Original file (2,560 × 1,920 pixels, file size: 7.13 MB...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/",
+      "title": "Photo de Julia Maslova sur Pexels",
+      "snippet": "3024x4032 Format 3:4 Couleurs Date Sep 11 ... 8 Vues 1 millier ... Description # Vue détaillée de l'écorce d'un pin présentant des textures uniques et des tons terreux, prise à Svetlogorsk, en Russie.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/",
+      "title": "Photo by Adrian Hoparda on Pexels",
+      "snippet": "Dimensions 3648x5472 Aspect Ratio 2:3 ... Camera NX300 Focal 55.0mm ... Taken At Aug 9, 2013 ... Description # A close-up view of moss-covered rocks with a blurred natural background, captured in sunlight. ### More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pinus_(branches)",
+      "title": "Category:Pinus (branches) - Wikimedia Commons",
+      "snippet": "Media in category \"Pinus (branches)\" The following 46 files are in this category, out of 46 total. - -Pin (pinus).jpg 4,032 × 3,024; 7.01 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg#1",
+      "title": "File:WLA moma Paul Czanne Pines and Rocks.jpg - Wikimedia Commons - File:WLA moma Paul Czanne Pines and Rocks.jpg",
+      "snippet": "WLA moma Paul Czanne Pines and Rocks.jpg ... Pines and Rocks (Fontainebleau?). c. ... Oil on canvas, 32 x 25 3/4\" (81.3 x 65.4 cm). Lillie P.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Boulder_fields_in_Washington_(state)",
+      "title": "Category:Boulder fields in Washington (state) - Wikimedia Commons",
+      "snippet": "Bald Mountain 8725.JPG 4,272 × 2,848; 4.92 MB - Lenore Lake 2017-09-22 619.jpg 3,072 × 4,608; 4.63 MB",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/",
+      "title": "Foto von Sergej ***** auf Pexels",
+      "snippet": "Kostenlos nutzen: Coesfeld, NRW, Deutschland # Detailansicht eines Kiefernzweigs mit jungen Zapfen und Nadeln, die natürliche Muster und Texturen zeigt.",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://www.pexels.com/photo/mossy-rock-formation-in-iceland-s-natural-landscape-37066095/",
+      "title": "Photo by David Hitchcock on Pexels",
+      "snippet": "Aspect Ratio 3:2 Colors Date Apr 13, 2026 ... Oct 13, 2018 ... Adobe Photoshop Lightroom Classic 15.2.1 (Macintosh) Iceland Description # Closeup of moss-covered rocks in Iceland, showcasing rich textures and natural beauty. ## More like this",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG",
+      "title": "File:Mono Lake - Pinyon Pine (Pinus monophylla) near Lee Vinning Creek - branch.JPG - Wikimedia Commons",
+      "snippet": "Mono Lake - Pinyon Pine (Pinus monophylla) near Lee Vinning Creek - branch.JPG From Wikimedia Commons, the free media repository ... Original file (2,450 × 1,629 pixels, file size: 1.94 MB...",
+      "via": "server_tool"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Garfield_County,_Utah",
+      "title": "Category:Garfield County, Utah - Wikimedia Commons",
+      "snippet": "Boulder Mt. - panoramio.jpg 2,160 × 1,440; 947 KB - Boulder Mt. Trees - panoramio.jpg 2,160 × 1,440; 1.23 MB",
+      "via": "server_tool"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Boulder_Mountain_(Utah)",
+      "title": "Category:Boulder Mountain (Utah) - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/",
+      "title": "Photo de Julia Maslova sur Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/",
+      "title": "Photo by Adrian Hoparda on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pinus_(branches)",
+      "title": "Category:Pinus (branches) - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg#1",
+      "title": "File:WLA moma Paul Czanne Pines and Rocks.jpg - Wikimedia Commons - File:WLA moma Paul Czanne Pines and Rocks.jpg",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Boulder_fields_in_Washington_(state)",
+      "title": "Category:Boulder fields in Washington (state) - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/",
+      "title": "Foto von Sergej ***** auf Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://www.pexels.com/photo/mossy-rock-formation-in-iceland-s-natural-landscape-37066095/",
+      "title": "Photo by David Hitchcock on Pexels",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG",
+      "title": "File:Mono Lake - Pinyon Pine (Pinus monophylla) near Lee Vinning Creek - branch.JPG - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Garfield_County,_Utah",
+      "title": "Category:Garfield County, Utah - Wikimedia Commons",
+      "imageUrl": null,
+      "licenseStatus": "needs_source_verification",
+      "status": "search_candidate"
+    }
+  ],
+  "images": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 300498,
+        "sha256": "7ee9d37899ef7dc3d2c95bcb6086d744d3b5b0bf561d0e14cd968d49d72e03f9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/39479323/pexels-photo-39479323.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/",
+      "title": "Photo de Julia Maslova sur Pexels",
+      "sha256": "7ee9d37899ef7dc3d2c95bcb6086d744d3b5b0bf561d0e14cd968d49d72e03f9",
+      "bytes": 300498,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 44630,
+        "sha256": "4a8afd66e9b49426df0009e5f524c79eab71a720cb70c6cd088e0ffd00ede957"
+      },
+      "imageUrl": "https://images.pexels.com/photos/6104374/pexels-photo-6104374.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/",
+      "title": "Photo by Adrian Hoparda on Pexels",
+      "sha256": "4a8afd66e9b49426df0009e5f524c79eab71a720cb70c6cd088e0ffd00ede957",
+      "bytes": 44630,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 227228,
+        "sha256": "b447b9c86838c96f58d2e2c7015cc0c638c66776956efffa86d7a5c40ca9fb89"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg/960px-WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg#1",
+      "title": "File:WLA moma Paul Czanne Pines and Rocks.jpg - Wikimedia Commons - File:WLA moma Paul Czanne Pines and Rocks.jpg",
+      "sha256": "b447b9c86838c96f58d2e2c7015cc0c638c66776956efffa86d7a5c40ca9fb89",
+      "bytes": 227228,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1111,
+      "license": {
+        "name": "CC BY 2.5",
+        "url": "https://creativecommons.org/licenses/by/2.5",
+        "artist": "Wikipedia Loves Art participant \" Opal_Art_Seekers_4 \"",
+        "credit": "Uploaded from the Wikipedia Loves Art photo pool on Flickr",
+        "usageTerms": "Creative Commons Attribution 2.5",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2400,
+        "height": 2778,
+        "bytes": 955374
+      }
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 61666,
+        "sha256": "a5ec4efbb6fa74b0ae1656c8343d591fab5c90f4abca9caf1b98b7b107705cc9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/37318639/pexels-photo-37318639.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/",
+      "title": "Foto von Sergej ***** auf Pexels",
+      "sha256": "a5ec4efbb6fa74b0ae1656c8343d591fab5c90f4abca9caf1b98b7b107705cc9",
+      "bytes": 61666,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576
+    }
+  ],
+  "imageMetadata": [
+    {
+      "imageUrl": "https://images.pexels.com/photos/39479323/pexels-photo-39479323.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/",
+      "title": "Photo de Julia Maslova sur Pexels",
+      "sha256": "7ee9d37899ef7dc3d2c95bcb6086d744d3b5b0bf561d0e14cd968d49d72e03f9",
+      "bytes": 300498,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1024,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/6104374/pexels-photo-6104374.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/",
+      "title": "Photo by Adrian Hoparda on Pexels",
+      "sha256": "4a8afd66e9b49426df0009e5f524c79eab71a720cb70c6cd088e0ffd00ede957",
+      "bytes": 44630,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg/960px-WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg#1",
+      "title": "File:WLA moma Paul Czanne Pines and Rocks.jpg - Wikimedia Commons - File:WLA moma Paul Czanne Pines and Rocks.jpg",
+      "sha256": "b447b9c86838c96f58d2e2c7015cc0c638c66776956efffa86d7a5c40ca9fb89",
+      "bytes": 227228,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1111,
+      "license": {
+        "name": "CC BY 2.5",
+        "url": "https://creativecommons.org/licenses/by/2.5",
+        "artist": "Wikipedia Loves Art participant \" Opal_Art_Seekers_4 \"",
+        "credit": "Uploaded from the Wikipedia Loves Art photo pool on Flickr",
+        "usageTerms": "Creative Commons Attribution 2.5",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2400,
+        "height": 2778,
+        "bytes": 955374
+      },
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    },
+    {
+      "imageUrl": "https://images.pexels.com/photos/37318639/pexels-photo-37318639.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/",
+      "title": "Foto von Sergej ***** auf Pexels",
+      "sha256": "a5ec4efbb6fa74b0ae1656c8343d591fab5c90f4abca9caf1b98b7b107705cc9",
+      "bytes": 61666,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "status": "decoded_container",
+      "pixelFitPerformed": false
+    }
+  ],
+  "collection": {
+    "attempts": [
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Boulder_Mountain_(Utah)",
+        "title": "Category:Boulder Mountain (Utah) - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/",
+        "title": "Photo de Julia Maslova sur Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/39479323/pexels-photo-39479323.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/39479323/pexels-photo-39479323.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 300498,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1024,
+        "sha256": "7ee9d37899ef7dc3d2c95bcb6086d744d3b5b0bf561d0e14cd968d49d72e03f9"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/",
+        "title": "Photo by Adrian Hoparda on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/6104374/pexels-photo-6104374.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/6104374/pexels-photo-6104374.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 44630,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 1152,
+        "sha256": "4a8afd66e9b49426df0009e5f524c79eab71a720cb70c6cd088e0ffd00ede957"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Pinus_(branches)",
+        "title": "Category:Pinus (branches) - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg#1",
+        "title": "File:WLA moma Paul Czanne Pines and Rocks.jpg - Wikimedia Commons - File:WLA moma Paul Czanne Pines and Rocks.jpg",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg/960px-WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY 2.5",
+          "url": "https://creativecommons.org/licenses/by/2.5",
+          "artist": "Wikipedia Loves Art participant \" Opal_Art_Seekers_4 \"",
+          "credit": "Uploaded from the Wikipedia Loves Art photo pool on Flickr",
+          "usageTerms": "Creative Commons Attribution 2.5",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AWLA_moma_Paul_Czanne_Pines_and_Rocks.jpg&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg/960px-WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 227228,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 1111,
+        "sha256": "b447b9c86838c96f58d2e2c7015cc0c638c66776956efffa86d7a5c40ca9fb89"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Boulder_fields_in_Washington_(state)",
+        "title": "Category:Boulder fields in Washington (state) - Wikimedia Commons",
+        "status": "unavailable",
+        "imageAttempts": [],
+        "error": "source_is_not_photo_detail"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/",
+        "title": "Foto von Sergej ***** auf Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/37318639/pexels-photo-37318639.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/37318639/pexels-photo-37318639.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 61666,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 576,
+        "sha256": "a5ec4efbb6fa74b0ae1656c8343d591fab5c90f4abca9caf1b98b7b107705cc9"
+      },
+      {
+        "sourceUrl": "https://www.pexels.com/photo/mossy-rock-formation-in-iceland-s-natural-landscape-37066095/",
+        "title": "Photo by David Hitchcock on Pexels",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://images.pexels.com/photos/37066095/pexels-photo-37066095.jpeg?auto=compress&cs=tinysrgb&w=768",
+            "status": "downloaded"
+          }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/37066095/pexels-photo-37066095.jpeg?auto=compress&cs=tinysrgb&w=768",
+        "bytes": 125528,
+        "mime": "image/webp",
+        "width": 768,
+        "height": 512,
+        "sha256": "21246761fd4c3926c642ec0053997aaaea382e2f3c5e94bebf494fcb20c9a80b"
+      },
+      {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG",
+        "title": "File:Mono Lake - Pinyon Pine (Pinus monophylla) near Lee Vinning Creek - branch.JPG - Wikimedia Commons",
+        "status": "downloaded",
+        "imageAttempts": [
+          {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Mono_Lake_-_Pinyon_Pine_%28Pinus_monophylla%29_near_Lee_Vinning_Creek_-_branch.JPG/960px-Mono_Lake_-_Pinyon_Pine_%28Pinus_monophylla%29_near_Lee_Vinning_Creek_-_branch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "status": "downloaded"
+          }
+        ],
+        "license": {
+          "name": "CC BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Daniel Mayer (mav)",
+          "credit": "Own work",
+          "usageTerms": "Creative Commons Attribution-Share Alike 3.0",
+          "attributionRequired": "true",
+          "source": "commons-imageinfo"
+        },
+        "metadataSource": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&titles=File%3AMono_Lake_-_Pinyon_Pine_%28Pinus_monophylla%29_near_Lee_Vinning_Creek_-_branch.JPG&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=768&iiextmetadatafilter=LicenseShortName%7CLicenseUrl%7CArtist%7CCredit%7CAttributionRequired%7CUsageTerms",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Mono_Lake_-_Pinyon_Pine_%28Pinus_monophylla%29_near_Lee_Vinning_Creek_-_branch.JPG/960px-Mono_Lake_-_Pinyon_Pine_%28Pinus_monophylla%29_near_Lee_Vinning_Creek_-_branch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "bytes": 355962,
+        "mime": "image/jpeg",
+        "width": 960,
+        "height": 638,
+        "sha256": "37fa4f84953db4f4ab8792bbd2c6745af1f0299f68ff8263528b4767a3574cd2"
+      }
+    ],
+    "downloadedCount": 4,
+    "method": "source-page photos; Commons documented 768px imageinfo thumbnails; uncropped Pexels 768px; checked image containers/dimensions/SHA-256; access denials respected"
+  },
+  "semanticPlan": {
+    "format": "unstructured_model_summary",
+    "summary": "本轮针对“近景纹理、连接结构、细小部件”，实际检索到的**可用具体照片详情页以 Pexels 近景为主**；Commons 返回的多为分类页、用户画廊或低质量文件页，不能作为独立摄影实例。以下候选均**未观察图像字节**，只依据页面文字与 EXIF 整理；光照方向、遮挡边界、纹理清晰度均需后续图像验证。\n\n---\n\n### 1. Pexels — 松树皮近景纹理（树皮块状/鳞片状低频纹理）\n- 来源页：https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/\n- 页面事实：3024×4032；描述“松树皮特写，独特纹理与土色调”，拍摄于俄罗斯 Svetlogorsk；作者 Julia Maslova 。\n- 可转化为图形函数：树皮作为近景承托面，可建模为**低频块状/鳞片状纹理**，边缘用不规则多边形扰动；土色调（棕—灰—赭）可作为颜色基底，裂缝处压暗、凸起处提亮，形成方向性粗糙度场。\n- 局限：页面未给 EXIF、光照方向；树皮是松树还是其他松科未知；许可证需在 Pexels 页核验（通常 Pexels License）。\n\n### 2. Pexels — 松枝与幼球果近景（针叶边缘 + 连接结构）\n- 来源页：https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/\n- 页面事实：描述“松枝特写，带幼球果与针叶，展示自然图案与纹理”；作者 Sergej ***** 。\n- 可转化为图形函数：针叶可建模为**高频锯齿/细长条边缘**，球果作为**附着在枝条上的小尺度椭球/鳞片堆叠结构**；枝条本身提供中频圆柱/曲线连接骨架。适合提取“针叶—球果—枝条”三级连接关系：针叶从枝条节点放射状伸出，球果位于节点附近。\n- 局限：无尺寸、EXIF、光照方向；球果成熟度未知；许可证待核验。\n\n### 3. Pexels — 苔藓覆盖岩石近景（苔藓软边 vs. 岩石硬边）\n- 来源页：https://www.pexels.com/photo/mossy-rock-formation-in-iceland-s-natural-landscape-37066095/\n- 页面事实：6000×4000；Canon EOS Rebel T7i；55mm；ƒ/5.6；ISO 400；1/60s；拍摄于 2018-10-13；描述“冰岛苔藓覆盖岩石特写，丰富纹理与自然美感”；作者 David Hitchcock 。\n- 可转化为图形函数：苔藓覆盖层可建模为**低对比度、软边、高频颗粒纹理**，岩石本体为**硬边、低频块状轮廓**；两者交界处形成“软—硬”边缘混合。55mm 近景 + ƒ/5.6 提供一定景深，但近景苔藓可能部分虚化，适合提取“苔藓绒面 vs. 岩石裂隙”的材质对比。\n- 局限：页面未写光照方向；苔藓厚度、岩石类型未知；属于近景材质参考，不直接对应山湖大场景。\n\n### 4. Pexels — 阳光下苔藓岩石近景（光照方向可推断为侧光/逆光）\n- 来源页：https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/\n- 页面事实：3648×5472；NX300；55.0mm；ƒ/5.6；ISO 200；1/160s；拍摄于 2013-08-09；描述“苔藓覆盖岩石特写，模糊自然背景，阳光下拍摄”；作者 Adrian Hoparda 。\n- 可转化为图形函数：**“阳光下拍摄”**提示存在直射光，可推断岩石顶部/苔藓受光面与阴影面形成明暗阶跃；苔藓在受光处呈现黄绿高光，阴影处偏深绿/黑。适合提取“岩石硬边轮廓 + 苔藓软边覆盖 + 侧光方向性”的组合。\n- 局限：页面未明确光照角度；背景模糊程度未知；许可证待核验。\n\n### 5. Commons — 松枝（Pinyon Pine）近景（针叶束连接结构，待核验质量）\n- 来源页：https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG\n- 页面事实：2450×1629；1.94 MB；描述为 Mono Lake 附近单叶松（Pinus monophylla）枝条 。\n- 可转化为图形函数：单叶松针叶以**单针或小束**附着于枝条，适合提取“针叶基部与枝条连接节点”的细小结构；比成束松针更稀疏，边缘锯齿频率较低。\n- 局限：页面描述极简，无 EXIF、无作者/许可文本（需打开文件页核验）；质量与光照未知；**未观察图像**，无法确认针叶清晰度。\n\n---\n\n### 对“近景纹理与连接结构”的可转化建议（基于页面文字，非像素观察）\n\n1. **树皮纹理分层**：Pexels 松树皮近景  提示可把树皮建模为“低频板块 + 中频裂缝 + 高频颗粒”三层：板块边界用不规则 Voronoi 扰动，裂缝用暗线，颗粒用噪声调制亮度。\n2. **针叶—球果—枝条连接**：Pexels 松枝幼球果  提示连接结构可函数化为：枝条曲线骨架 → 节点处放射状针叶（高频锯齿遮罩）→ 球果（鳞片状椭球堆叠）。针叶方向受枝条局部切线约束。\n3. **苔藓—岩石软硬边缘**：Pexels 冰岛苔藓岩石  与阳光下苔藓岩石  提示苔藓覆盖层用软边、低对比、高频颗粒，岩石本体用硬边、低频块状；交界处用噪声扰动混合权重，而非单一阈值。\n4. **光照方向**：阳光下苔藓岩石  的“阳光下”描述可用于推断侧光/顶光，但需图像验证；若确认，受光面苔藓提高黄绿饱和度，阴影面降低亮度但保留纹理对比度。\n\n---\n\n### 尚未解决 / 本轮缺口\n\n- **缺“针叶树冠在地面/岩石上的清晰硬边投影”的具体照片页**：本轮搜索未返回符合的 Commons File 页面或 Pexels 具体照片；石墙树影实例（前轮 18623679）仍是唯一投影参考，但投影源不明确。\n- **缺海岸针叶林 + 岩壁近景连接结构**：Pexels 松枝与岩壁（前轮 35500276）有前景遮挡，但非海岸语境；本轮未找到更好的海岸复合近景实例。\n- **Commons 候选质量不足**：Furuskog.JPG 被 Commons 标注为“图像过小/过亮过暗，可能无法充分说明主题”，且仅 640×480，不适合提取近景纹理；用户画廊与分类页不作为独立实例。\n- **许可证核验**：Pexels 候选页面未直接显示许可证文本，需打开页面核验；Commons 的 Mono Lake 松枝页作者/许可待核验。\n\n---\n\n### 来源\n1. Pexels — 松树皮近景：https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/ \n2. Pexels — 松枝幼球果近景：https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/ \n3. Pexels — 冰岛苔藓岩石近景：https://www.pexels.com/photo/mossy-rock-formation-in-iceland-s-natural-landscape-37066095/ \n4. Pexels — 阳光下苔藓岩石近景：https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/ \n5. Commons — Mono Lake 单叶松枝条：https://commons.wikimedia.org/wiki/File:Mono_Lake_-_Pinyon_Pine_(Pinus_monophylla)_near_Lee_Vinning_Creek_-_branch.JPG ",
+    "features": [],
+    "selectionCriteria": [],
+    "uncertainties": [],
+    "pixelAnalysisPerformed": false
+  },
+  "usage": {
+    "prompt_tokens": 20675,
+    "completion_tokens": 2018,
+    "total_tokens": 22693,
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "research",
+        "requestId": "24d38770-25ca-4d94-9f32-f94b65a36900",
+        "model": "deepseek-flash",
+        "elapsedMs": 31096,
+        "prompt_tokens": 20675,
+        "completion_tokens": 2018,
+        "total_tokens": 22693,
+        "server_tool_use": {
+          "tool_search": 6,
+          "tool_fetch": 1,
+          "tool_image_search": 0
+        }
+      }
+    ]
+  },
+  "warnings": [
+    "搜索候选、已下载图像与已拟合函数分别计数；当前接口不训练模型权重。"
+  ],
+  "elapsedMs": 59265,
+  "downloads": [
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 300498,
+        "sha256": "7ee9d37899ef7dc3d2c95bcb6086d744d3b5b0bf561d0e14cd968d49d72e03f9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/39479323/pexels-photo-39479323.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/fr-fr/photo/ecorce-texturee-en-gros-plan-d-un-pin-39479323/",
+      "title": "Photo de Julia Maslova sur Pexels",
+      "sha256": "7ee9d37899ef7dc3d2c95bcb6086d744d3b5b0bf561d0e14cd968d49d72e03f9",
+      "bytes": 300498,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1024,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/7ee9d37899ef7dc3d2c95bcb6086d744d3b5b0bf561d0e14cd968d49d72e03f9.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 44630,
+        "sha256": "4a8afd66e9b49426df0009e5f524c79eab71a720cb70c6cd088e0ffd00ede957"
+      },
+      "imageUrl": "https://images.pexels.com/photos/6104374/pexels-photo-6104374.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/photo/black-rocks-on-the-grass-field-6104374/",
+      "title": "Photo by Adrian Hoparda on Pexels",
+      "sha256": "4a8afd66e9b49426df0009e5f524c79eab71a720cb70c6cd088e0ffd00ede957",
+      "bytes": 44630,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 1152,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/4a8afd66e9b49426df0009e5f524c79eab71a720cb70c6cd088e0ffd00ede957.webp"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/jpeg",
+        "bytes": 227228,
+        "sha256": "b447b9c86838c96f58d2e2c7015cc0c638c66776956efffa86d7a5c40ca9fb89"
+      },
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg/960px-WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg#1",
+      "title": "File:WLA moma Paul Czanne Pines and Rocks.jpg - Wikimedia Commons - File:WLA moma Paul Czanne Pines and Rocks.jpg",
+      "sha256": "b447b9c86838c96f58d2e2c7015cc0c638c66776956efffa86d7a5c40ca9fb89",
+      "bytes": 227228,
+      "mime": "image/jpeg",
+      "width": 960,
+      "height": 1111,
+      "license": {
+        "name": "CC BY 2.5",
+        "url": "https://creativecommons.org/licenses/by/2.5",
+        "artist": "Wikipedia Loves Art participant \" Opal_Art_Seekers_4 \"",
+        "credit": "Uploaded from the Wikipedia Loves Art photo pool on Flickr",
+        "usageTerms": "Creative Commons Attribution 2.5",
+        "attributionRequired": "true",
+        "source": "commons-imageinfo"
+      },
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/WLA_moma_Paul_Czanne_Pines_and_Rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "width": 2400,
+        "height": 2778,
+        "bytes": 955374
+      },
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/b447b9c86838c96f58d2e2c7015cc0c638c66776956efffa86d7a5c40ca9fb89.jpeg"
+    },
+    {
+      "url": {
+        "embeddedImageOmitted": true,
+        "mime": "image/webp",
+        "bytes": 61666,
+        "sha256": "a5ec4efbb6fa74b0ae1656c8343d591fab5c90f4abca9caf1b98b7b107705cc9"
+      },
+      "imageUrl": "https://images.pexels.com/photos/37318639/pexels-photo-37318639.jpeg?auto=compress&cs=tinysrgb&w=768",
+      "sourceUrl": "https://www.pexels.com/de-de/foto/nahaufnahme-eines-kiefernzweigs-mit-zapfen-37318639/",
+      "title": "Foto von Sergej ***** auf Pexels",
+      "sha256": "a5ec4efbb6fa74b0ae1656c8343d591fab5c90f4abca9caf1b98b7b107705cc9",
+      "bytes": 61666,
+      "mime": "image/webp",
+      "width": 768,
+      "height": 576,
+      "file": "fitting/learning09/learning-v1/learn-landscape/originals/a5ec4efbb6fa74b0ae1656c8343d591fab5c90f4abca9caf1b98b7b107705cc9.webp"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "crf.offline_render.v0.9",
+  "sceneId": "stucco_facade_three_windows_signal_90101",
+  "kind": "native",
+  "width": 1024,
+  "height": 768,
+  "view": "right",
+  "time": 0,
+  "camera": {
+    "panX": 0.052000000000000005,
+    "panY": 0,
+    "zoom": 0.98
+  },
+  "viewport": {
+    "fit": "native",
+    "x": 0,
+    "y": 0,
+    "width": 1024,
+    "height": 768
+  },
+  "rgbaSHA256": "d44e90048de9410d68fb886d6f65c8134f29b56dface596bf9d736e1fc72e0fe",
+  "rgbSHA256": "8460a24b24aa38566fb93394b023100ad5cc47066988fd6141251b18058f7443",
+  "pngSHA256": "ae86e62612da41acd41a15685653babdb11b28473baebae92c95733272e100d8",
+  "bytes": 594178,
+  "elapsedMs": 550.0879239999999,
+  "engineSourceSHA256": "69f5a96e117803f5e147d5aa165d1ff1c7d1c555dbb873ed5497be88157d71e2",
+  "diagnostics": {
+    "engine": "CRF09",
+    "schema": "crf.generative_scene.v0.9",
+    "renderer": "analytic_image_plane_plus_sampled_gaussian_fields",
+    "colorSpace": "linear_srgb_illumination_then_srgb8",
+    "gaussianBasisEvaluations": 65543,
+    "semanticObjects": 5,
+    "learnedModel": "shared-1b02095c",
+    "learnedSources": 124,
+    "time": 0,
+    "elapsedMs": 392,
+    "sourceImageBlit": false,
+    "embeddedPixelResidual": false,
+    "meshUsed": false,
+    "cameraMode": "depth_layer_parallax_with_analytic_inferred_shapes",
+    "realWorldReconstructionClaim": false,
+    "photorealQualityGate": "not_evaluated"
+  },
+  "sourcePhotoReadByRenderer": false
+}

@@ -1,0 +1,1018 @@
+{
+  "schema": "crf.api_acceptance.v0.7",
+  "recordedAt": "2026-11-21T10:31:51.278Z",
+  "id": "citrus",
+  "phase": "refined2",
+  "prompt": "生成一张高质量摄影风格静物：三个大小略有差别的橙子，带一片真实细长绿叶，放在白色浅釉盘上，下面是细腻木桌。斜侧窗光，柔和真实阴影，果皮细小毛孔有尺度层次，轮廓平滑，构图近景，不出现整齐塑料球感。请搜索Pexels或Unsplash公开橙子静物照片页，从所给参考图中提取形态和细节函数，用代码构造整张图。",
+  "endpoint": "/api/crf/generate",
+  "httpStatus": 200,
+  "elapsedMs": 16199,
+  "inputImageProvided": true,
+  "response": {
+    "ok": true,
+    "runId": "crf07_f3b59b4b-2be7-4a02-bf84-d09909d48558",
+    "model": "deepseek-flash",
+    "servedModel": "deepseek-flash",
+    "action": "program",
+    "message": "按指定参数重排三只橙子、镜头与灯光，隐藏封盘的内凹片和釉面圆片，保留单一薄壁盘体；降低果皮纹理频率并调整叶、蒂位置，使叶根接果蒂、三果同盘可见。",
+    "engine": "radiance07",
+    "program": {
+      "schema": "crf.image_program.v0.7",
+      "id": "orange_still_life_plate_wood",
+      "title": "三只橙子与白釉浅盘木桌静物（修正版）",
+      "width": 1024,
+      "height": 768,
+      "seed": 42731,
+      "exposure": 1,
+      "camera": {
+        "position": [
+          1.45,
+          1.6,
+          2.4
+        ],
+        "target": [
+          0,
+          0.29,
+          0.02
+        ],
+        "fov": 42,
+        "aperture": 0.01,
+        "focusDistance": 3.08
+      },
+      "environment": {
+        "top": [
+          236,
+          233,
+          226
+        ],
+        "bottom": [
+          86,
+          72,
+          58
+        ],
+        "strength": 0.46
+      },
+      "lights": [
+        {
+          "id": "window_key",
+          "type": "area",
+          "position": [
+            -2.5,
+            3.15,
+            1.65
+          ],
+          "target": [
+            0.1,
+            0.35,
+            0
+          ],
+          "size": [
+            2.2,
+            1.5
+          ],
+          "color": [
+            255,
+            244,
+            225
+          ],
+          "intensity": 6
+        },
+        {
+          "id": "window_fill",
+          "type": "area",
+          "position": [
+            2.2,
+            1.85,
+            1.15
+          ],
+          "target": [
+            0.1,
+            0.3,
+            0
+          ],
+          "size": [
+            3,
+            2
+          ],
+          "color": [
+            222,
+            230,
+            244
+          ],
+          "intensity": 0.5
+        },
+        {
+          "id": "rim_back",
+          "type": "area",
+          "position": [
+            0.35,
+            2.2,
+            -2.1
+          ],
+          "target": [
+            0,
+            0.3,
+            0
+          ],
+          "size": [
+            1.6,
+            1.2
+          ],
+          "color": [
+            255,
+            238,
+            214
+          ],
+          "intensity": 1.5
+        }
+      ],
+      "objects": [
+        {
+          "id": "table_top",
+          "label": "细木纹桌面",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 20,
+            "height": 0.14,
+            "depth": 18,
+            "bevel": 0.015
+          },
+          "material": {
+            "color": [
+              118,
+              88,
+              64
+            ],
+            "roughness": 0.62,
+            "metalness": 0,
+            "texture": {
+              "kind": "wood",
+              "scale": 5.5,
+              "strength": 0.42
+            },
+            "bump": 0.018,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.86
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.15
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 16,
+                      "seed": 9
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.07
+                    },
+                    {
+                      "op": "sin",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "x"
+                            },
+                            {
+                              "op": "const",
+                              "value": 23
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0,
+              -0.14,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "back_wall",
+          "label": "摄影背景墙",
+          "visible": true,
+          "surface": {
+            "kind": "box",
+            "width": 20,
+            "height": 8,
+            "depth": 0.08
+          },
+          "material": {
+            "color": [
+              172,
+              160,
+              146
+            ],
+            "roughness": 0.8,
+            "metalness": 0,
+            "texture": {
+              "kind": "fabric",
+              "scale": 4,
+              "strength": 0.18
+            }
+          },
+          "transform": {
+            "position": [
+              0,
+              0,
+              -2.28
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "plate_wall_outer",
+          "label": "浅盘外侧薄壁",
+          "visible": true,
+          "surface": {
+            "kind": "lathe",
+            "radius": 1.02,
+            "height": 0.105,
+            "profile": [
+              0.3,
+              0.52,
+              0.74,
+              0.9,
+              0.99,
+              1,
+              1
+            ],
+            "thickness": 0.03
+          },
+          "material": {
+            "color": [
+              236,
+              231,
+              219
+            ],
+            "roughness": 0.27,
+            "metalness": 0,
+            "bump": 0.007,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.95
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.06
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 22,
+                      "seed": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "plate_inner_basin",
+          "label": "浅盘内凹面薄壁",
+          "visible": false,
+          "surface": {
+            "kind": "lathe",
+            "radius": 0.78,
+            "height": 0.075,
+            "profile": [
+              0.16,
+              0.5,
+              0.8,
+              0.96,
+              1
+            ],
+            "thickness": 0.02
+          },
+          "material": {
+            "color": [
+              243,
+              238,
+              227
+            ],
+            "roughness": 0.22,
+            "metalness": 0,
+            "bump": 0.005
+          },
+          "transform": {
+            "position": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "plate_rim_glaze",
+          "label": "盘沿积釉高光",
+          "visible": false,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 1.02,
+            "height": 0.012
+          },
+          "material": {
+            "color": [
+              250,
+              247,
+              238
+            ],
+            "roughness": 0.16,
+            "metalness": 0
+          },
+          "transform": {
+            "position": [
+              0,
+              0.103,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "orange_large",
+          "label": "大橙子",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.335,
+            "height": 0.66
+          },
+          "material": {
+            "color": [
+              206,
+              92,
+              18
+            ],
+            "roughness": 0.48,
+            "metalness": 0,
+            "texture": {
+              "kind": "orange",
+              "scale": 1,
+              "strength": 0.55
+            },
+            "bump": 0.065,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.72
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.2
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 9,
+                      "seed": 14
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.13
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 34,
+                      "seed": 22
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.09
+                    },
+                    {
+                      "op": "sin",
+                      "args": [
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "x"
+                                },
+                                {
+                                  "op": "const",
+                                  "value": 18
+                                }
+                              ]
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "z"
+                                },
+                                {
+                                  "op": "const",
+                                  "value": 11
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": -0.08
+                    },
+                    {
+                      "op": "clamp",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "const",
+                              "value": 3
+                            },
+                            {
+                              "op": "y"
+                            }
+                          ]
+                        }
+                      ],
+                      "min": 0,
+                      "max": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              -0.4,
+              0.031,
+              0.1
+            ],
+            "rotation": [
+              0,
+              23,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              0.96
+            ]
+          }
+        },
+        {
+          "id": "orange_medium",
+          "label": "中橙子",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.285,
+            "height": 0.56
+          },
+          "material": {
+            "color": [
+              220,
+              114,
+              24
+            ],
+            "roughness": 0.5,
+            "metalness": 0,
+            "texture": {
+              "kind": "orange",
+              "scale": 1.1,
+              "strength": 0.55
+            },
+            "bump": 0.065,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.76
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.18
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 8,
+                      "seed": 31
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.12
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 38,
+                      "seed": 40
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": -0.07
+                    },
+                    {
+                      "op": "clamp",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "const",
+                              "value": 3.4
+                            },
+                            {
+                              "op": "y"
+                            }
+                          ]
+                        }
+                      ],
+                      "min": 0,
+                      "max": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0.25,
+              0.031,
+              -0.28
+            ],
+            "rotation": [
+              0,
+              -17,
+              0
+            ],
+            "scale": [
+              0.98,
+              1,
+              1.02
+            ]
+          }
+        },
+        {
+          "id": "orange_small",
+          "label": "小橙子",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.235,
+            "height": 0.47
+          },
+          "material": {
+            "color": [
+              210,
+              96,
+              16
+            ],
+            "roughness": 0.52,
+            "metalness": 0,
+            "texture": {
+              "kind": "orange",
+              "scale": 1.2,
+              "strength": 0.55
+            },
+            "bump": 0.065,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.7
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.21
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 10,
+                      "seed": 53
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.1
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 42,
+                      "seed": 61
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": -0.08
+                    },
+                    {
+                      "op": "clamp",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "const",
+                              "value": 4
+                            },
+                            {
+                              "op": "y"
+                            }
+                          ]
+                        }
+                      ],
+                      "min": 0,
+                      "max": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              0.28,
+              0.031,
+              0.4
+            ],
+            "rotation": [
+              0,
+              42,
+              0
+            ],
+            "scale": [
+              1,
+              0.96,
+              1
+            ]
+          }
+        },
+        {
+          "id": "stalk_large",
+          "label": "大橙果蒂",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.026,
+            "height": 0.028
+          },
+          "material": {
+            "color": [
+              92,
+              66,
+              38
+            ],
+            "roughness": 0.82,
+            "metalness": 0,
+            "bump": 0.02
+          },
+          "transform": {
+            "position": [
+              -0.4,
+              0.685,
+              0.1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "leaf_blade",
+          "label": "细长绿叶叶身",
+          "visible": true,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.14,
+            "height": 0.02
+          },
+          "material": {
+            "color": [
+              76,
+              118,
+              41
+            ],
+            "roughness": 0.5,
+            "metalness": 0,
+            "texture": {
+              "kind": "fabric",
+              "scale": 3.5,
+              "strength": 0.08
+            },
+            "bump": 0.012,
+            "function": {
+              "op": "add",
+              "args": [
+                {
+                  "op": "const",
+                  "value": 0.86
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "const",
+                      "value": 0.18
+                    },
+                    {
+                      "op": "fbm",
+                      "frequency": 15,
+                      "seed": 7
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "transform": {
+            "position": [
+              -0.22,
+              0.7,
+              0.1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1.4,
+              1,
+              0.48
+            ]
+          }
+        },
+        {
+          "id": "leaf_midrib",
+          "label": "叶主脉",
+          "visible": true,
+          "surface": {
+            "kind": "cylinder",
+            "radius": 0.005,
+            "height": 0.32
+          },
+          "material": {
+            "color": [
+              131,
+              152,
+              82
+            ],
+            "roughness": 0.55,
+            "metalness": 0
+          },
+          "transform": {
+            "position": [
+              -0.4,
+              0.711,
+              0.1
+            ],
+            "rotation": [
+              0,
+              0,
+              -90
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "leaf_tip",
+          "label": "叶尖细部",
+          "visible": false,
+          "surface": {
+            "kind": "ellipsoid",
+            "radius": 0.07,
+            "height": 0.02
+          },
+          "material": {
+            "color": [
+              91,
+              128,
+              48
+            ],
+            "roughness": 0.5,
+            "metalness": 0,
+            "emission": [
+              22,
+              40,
+              8
+            ],
+            "emissionStrength": 0.03
+          },
+          "transform": {
+            "position": [
+              0.26,
+              0.72,
+              0.02
+            ],
+            "rotation": [
+              8,
+              18,
+              -12
+            ],
+            "scale": [
+              1.2,
+              1,
+              0.6
+            ]
+          }
+        }
+      ]
+    },
+    "qualityNotes": [
+      "渲染后确认三只橙子在画面中互不遮挡且同时可见。",
+      "确认盘体为单一薄壁结构，内底可见且无封口圆片。",
+      "检查大橙顶部果蒂与叶主脉相接、叶片不悬浮。",
+      "检查果皮毛孔尺度是否偏大，并确认木桌与背景墙比例自然。",
+      "检查斜侧窗光造成的柔影是否偏暗或过曝。"
+    ],
+    "warnings": [
+      "lathe盘体单一薄壁的厚度由thickness控制，内外表面衔接处可能仍显生硬。",
+      "orange纹理在scale=1.0附近为程序默认尺度，实际毛孔层次需渲染后确认。"
+    ],
+    "research": {
+      "searched": false,
+      "status": "disabled",
+      "toolCalls": [],
+      "sources": [],
+      "summary": "",
+      "nativeSearchObserved": false,
+      "referenceImages": [],
+      "referenceImagesSubmitted": 0
+    },
+    "usage": {
+      "prompt_tokens": 5068,
+      "completion_tokens": 2643,
+      "total_tokens": 7711,
+      "providerCalls": 1,
+      "requests": [
+        {
+          "phase": "compose",
+          "requestId": "41fd7503-1959-4ed4-87cf-9a43cc4a1261",
+          "model": "deepseek-flash",
+          "elapsedMs": 16182,
+          "prompt_tokens": 5068,
+          "completion_tokens": 2643,
+          "total_tokens": 7711,
+          "server_tool_use": {}
+        }
+      ]
+    },
+    "vision": {
+      "renderedImageProvided": true,
+      "referenceImagesProvided": 0,
+      "referenceSourceUrls": []
+    },
+    "repair": {
+      "attempted": false,
+      "passes": [],
+      "recovered": false
+    },
+    "validation": {
+      "declarative": true,
+      "envelope": true,
+      "renderer": true,
+      "clientValidationRequired": false
+    }
+  }
+}

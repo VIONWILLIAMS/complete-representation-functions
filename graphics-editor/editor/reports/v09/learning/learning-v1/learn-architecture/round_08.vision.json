@@ -1,0 +1,199 @@
+{
+  "ok": true,
+  "engine": "gaussian08-semantic-learning",
+  "model": "deepseek-flash",
+  "round": 8,
+  "topic": "真实建筑立面、墙面颗粒、窗框、行人信号灯与立柱连接；同类不同实例，不同自然光与接触阴影",
+  "items": [
+    {
+      "id": "ref.8.0",
+      "label": "白色粉刷砖墙与旧窗铁栏",
+      "category": "painted-brick-facade",
+      "role": "reference-frame",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "palette": [
+        [
+          219,
+          214,
+          201
+        ],
+        [
+          150,
+          145,
+          133
+        ],
+        [
+          43,
+          50,
+          44
+        ],
+        [
+          112,
+          72,
+          48
+        ],
+        [
+          184,
+          179,
+          165
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "近距离拍摄的白色或米白粉刷砖墙立面，左侧嵌入一扇旧窗：深色窗洞内有竖向锈迹铁栏，窗下为浅色窗台，窗框与墙面交界有污渍和风化。砖块表面可见颗粒、起伏、局部剥落与灰缝，右侧墙面较完整，底部砖缝横向延展。整体光比柔和，接触阴影集中在窗台下方和铁栏、窗框边缘，适合提取墙面纹理、旧窗框与金属栏遮挡关系；但画面只是局部，不能代表完整建筑立面或新视角。",
+      "tags": [
+        "白色砖墙",
+        "旧窗",
+        "铁栏",
+        "窗台",
+        "灰缝",
+        "墙面颗粒",
+        "风化",
+        "接触阴影",
+        "建筑立面",
+        "局部特写"
+      ],
+      "limitations": [
+        "仅局部立面，缺少建筑整体与尺度参照",
+        "不能当作精确alpha分割或材质贴图",
+        "窗玻璃与室内细节不可辨",
+        "铁栏细部受分辨率与锈蚀影响",
+        "无法确定光源准确方向",
+        "未显示行人信号灯或立柱连接"
+      ]
+    },
+    {
+      "id": "ref.8.1",
+      "label": "砖墙上的白色铁艺窗栅",
+      "category": "window-grille",
+      "role": "object",
+      "bbox": [
+        0.12,
+        0.04,
+        0.88,
+        0.82
+      ],
+      "palette": [
+        [
+          113,
+          79,
+          64
+        ],
+        [
+          151,
+          141,
+          128
+        ],
+        [
+          225,
+          224,
+          214
+        ],
+        [
+          39,
+          42,
+          39
+        ],
+        [
+          73,
+          94,
+          59
+        ]
+      ],
+      "lightDirection": "diffuse",
+      "description": "红褐至灰褐色砖墙立面中嵌一扇竖向窗户，外覆白色细金属防盗栅：竖条修长，中部有对称卷曲花纹，顶部与窗楣、窗台形成明显白亮轮廓；窗洞内部深暗，栅条后在砖墙与玻璃之间形成层叠遮挡和接触阴影。窗楣和窗台为浅色石材或粉刷面，墙面砖缝、颗粒、风化与局部绿苔、杂草清晰，画面底部有绿色植物和黑色立管切入。柔和的自然光使白栅条较亮、砖墙较暗，适合提取铁艺窗栅轮廓和立面材质关系；不能据此还原完整建筑或栅条精确几何。",
+      "tags": [
+        "砖墙",
+        "白色窗栅",
+        "铁艺防盗窗",
+        "窗楣",
+        "窗台",
+        "深色窗洞",
+        "杂草",
+        "接触阴影",
+        "建筑立面",
+        "风化砖"
+      ],
+      "limitations": [
+        "窗栅后方与室内不可见",
+        "细栅条存在混叠和遮挡，几何不精确",
+        "植物与黑色立管部分遮挡边缘",
+        "缺少整体建筑和尺度参照",
+        "不能当作精确alpha分割",
+        "无法确认光源准确方向",
+        "未显示行人信号灯或立柱连接"
+      ]
+    }
+  ],
+  "sharedFeatures": [
+    "两张均为真实建筑立面的近距离照片",
+    "均包含砖砌墙体与明显灰缝、砖块颗粒",
+    "均以窗洞加金属竖向构件为视觉中心",
+    "金属构件与窗台或窗框周围可见接触阴影",
+    "墙面存在风化、污渍和局部色彩不均",
+    "均为自然光下的静态局部取景，无人物",
+    "均无完整建筑轮廓或尺度参照",
+    "均不能直接作为精确分割掩码或PBR材质"
+  ],
+  "missingEvidence": [
+    "未出现主题中提到的行人信号灯",
+    "未出现信号灯与立柱的连接结构",
+    "缺少多角度、多实例对照的完整立面",
+    "缺少可验证的尺寸、位置与拍摄参数",
+    "窗后室内、玻璃反射及被遮挡细节不可见",
+    "细金属条的精确几何与材质参数不足",
+    "缺少高分辨率或深度信息以支持精确分割",
+    "无法仅凭两图确认完整世界或新视角"
+  ],
+  "images": [
+    {
+      "id": "ref.8.0",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/11159844/",
+      "sha256": "2841350f39f9ed4c4902f8bd965ec62ec97c725f548cfce99ceecffe82e4a2f4",
+      "submittedToVision": true
+    },
+    {
+      "id": "ref.8.1",
+      "sourceUrl": "https://www.pexels.com/zh-tw/photo/38633803/",
+      "sha256": "14705767f246202c7584a108aa0ce2b4a69f07f743369d0f741950aa9004e975",
+      "submittedToVision": true
+    }
+  ],
+  "usage": {
+    "providerCalls": 1,
+    "requests": [
+      {
+        "phase": "gaussian_semantic_learning",
+        "requestId": "7dc8dbea-6465-46f5-b4a0-da43a1fe82b4",
+        "model": "deepseek-flash",
+        "elapsedMs": 28426,
+        "prompt_tokens": 1020,
+        "completion_tokens": 3862,
+        "total_tokens": 4882,
+        "reasoning_tokens": 3013,
+        "reasoningEnabled": true,
+        "reasoningObserved": true,
+        "renderedImageProvided": false,
+        "finishReason": "stop",
+        "referenceImagesProvided": 2
+      }
+    ],
+    "prompt_tokens": 1020,
+    "completion_tokens": 3862,
+    "total_tokens": 4882,
+    "reasoning_tokens": 3013
+  },
+  "validation": {
+    "schema": true,
+    "allImageIdsMatched": true,
+    "repairUsed": false,
+    "pixelMaskVerified": false
+  },
+  "modelWeightsUpdated": false,
+  "pixelFitPerformed": false,
+  "elapsedMs": 28426
+}

@@ -1,0 +1,368 @@
+{
+  "id": "learn.r09.fd06c878ce46.object",
+  "assetId": "learn.r09.fd06c878ce46.object",
+  "status": "fitted",
+  "round": 9,
+  "topic": "海岸岩石与海浪实拍",
+  "sourceUrl": "https://www.pexels.com/photo/rocks-on-sea-shore-on-zipolite-beach-in-mexico-17859760/",
+  "imageUrl": "https://images.pexels.com/photos/17859760/pexels-photo-17859760.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1100",
+  "title": "Photo by V Bawa on Pexels",
+  "sourceFile": "fitting/learning08/originals/learn.r09.fd06c878ce46.webp",
+  "sourceSHA256": "fd06c878ce46355a0baf3c560b740b01cd4de36ec7ee7dd196824112634c8fc8",
+  "normalizedRGBA_SHA256": "b36c8b90f90f1827849a6f0b389c99e54f83d6f1e24c8daff862ff20616a54ca",
+  "dHash64": "070b890d888f4b6e",
+  "originalSize": [
+    1100,
+    627
+  ],
+  "orientedSize": [
+    1100,
+    627
+  ],
+  "fittedSize": [
+    495,
+    203
+  ],
+  "assetURL": "assets/v08/learned/learn.r09.fd06c878ce46.object.json",
+  "renderURL": "assets/v08/learned/learn.r09.fd06c878ce46.object.png",
+  "reportURL": "assets/v08/learned/learn.r09.fd06c878ce46.object.report.json",
+  "referenceURL": "assets/v08/references/learn.r09.fd06c878ce46.object.png",
+  "referenceThumbnailURL": "assets/v08/references/learn.r09.fd06c878ce46.object.jpg",
+  "representationScope": "semantic_object",
+  "semanticObjectExtraction": true,
+  "gaussians": 8192,
+  "pixelToGaussianRatio": 12.2662353515625,
+  "assetBytes": 692476,
+  "sourceRGBEmbedded": false,
+  "losslessResidualEmbedded": false,
+  "independentlyRenderedFromExportOnly": true,
+  "metrics": {
+    "mae": 8.121538416214943,
+    "rmse": 11.150268477307362,
+    "psnr": 27.18509711873657,
+    "ssim": 0.8831893178756248,
+    "maxError": 91,
+    "exactRGBFraction": 0.0032995522036295072,
+    "evaluatedPixels": 67888,
+    "rounding": "floor(x+0.5), clamp 0..255"
+  },
+  "fitConfig": {
+    "maxSide": 512,
+    "budget": 8192,
+    "geometrySteps": 70,
+    "iterations": 24,
+    "algorithm": "crf08-residual-adaptive-lsmr-adam-v2",
+    "initialFraction": 0.35,
+    "mode": "semantic_object"
+  },
+  "fit": {
+    "iterationsPerStage": 24,
+    "initialFraction": 0.35,
+    "geometryOptimization": {
+      "available": true,
+      "steps": 70,
+      "bestFloatMSE": 80.14227003422711,
+      "history": [
+        {
+          "step": 0,
+          "floatMSE": 207.78308792025106,
+          "bestFloatMSE": 207.78308792025106
+        },
+        {
+          "step": 10,
+          "floatMSE": 133.66512538128038,
+          "bestFloatMSE": 133.66512538128038
+        },
+        {
+          "step": 20,
+          "floatMSE": 111.79341919731972,
+          "bestFloatMSE": 111.79341919731972
+        },
+        {
+          "step": 30,
+          "floatMSE": 98.12753228633089,
+          "bestFloatMSE": 98.12753228633089
+        },
+        {
+          "step": 40,
+          "floatMSE": 89.6327032271004,
+          "bestFloatMSE": 89.6327032271004
+        },
+        {
+          "step": 50,
+          "floatMSE": 84.40826272782627,
+          "bestFloatMSE": 84.40826272782627
+        },
+        {
+          "step": 60,
+          "floatMSE": 81.50913851118361,
+          "bestFloatMSE": 81.50913851118361
+        },
+        {
+          "step": 70,
+          "floatMSE": 80.14227003422711,
+          "bestFloatMSE": 80.14227003422711
+        }
+      ],
+      "parameters": "centre_x,centre_y,log_sigma_x,log_sigma_y,theta,rgb_coefficients"
+    },
+    "history": [
+      {
+        "phase": "grid_sample_initialization",
+        "count": 2867,
+        "elapsedSeconds": 0.155,
+        "mae": 25.068647379998428,
+        "rmse": 32.561029963497184,
+        "psnr": 17.87684092979729,
+        "ssim": 0.23190971275801056,
+        "maxError": 178,
+        "exactRGBFraction": 0.0005892057506481263,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "fixed_geometry_least_squares",
+        "count": 2867,
+        "elapsedSeconds": 0.331,
+        "mae": 21.12703766988766,
+        "rmse": 27.60841859078177,
+        "psnr": 19.30997298908949,
+        "ssim": 0.34407933764071164,
+        "maxError": 137,
+        "exactRGBFraction": 0.0004713646005185011,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 6328,
+        "elapsedSeconds": 1.31,
+        "mae": 15.647792442454238,
+        "rmse": 20.486833969483257,
+        "psnr": 21.901306652292853,
+        "ssim": 0.6568722041314745,
+        "maxError": 105,
+        "exactRGBFraction": 0.0015761253829837379,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "adaptive_geometry_least_squares",
+        "count": 8192,
+        "elapsedSeconds": 1.848,
+        "mae": 13.724963665645376,
+        "rmse": 17.913918107901157,
+        "psnr": 23.066991917895905,
+        "ssim": 0.7401410486682519,
+        "maxError": 88,
+        "exactRGBFraction": 0.0020769502710346454,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_0",
+        "count": 8192,
+        "elapsedSeconds": 1.901,
+        "mae": 13.724963665645376,
+        "rmse": 17.913918107901157,
+        "psnr": 23.066991917895905,
+        "ssim": 0.7401410486682519,
+        "maxError": 88,
+        "exactRGBFraction": 0.0020769502710346454,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_10",
+        "count": 8192,
+        "elapsedSeconds": 2.278,
+        "mae": 10.882448542697777,
+        "rmse": 14.376054511527382,
+        "psnr": 24.978009391197958,
+        "ssim": 0.8175003172204688,
+        "maxError": 86,
+        "exactRGBFraction": 0.0015908555267499412,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_20",
+        "count": 8192,
+        "elapsedSeconds": 2.66,
+        "mae": 9.810334668866368,
+        "rmse": 13.146756720620937,
+        "psnr": 25.754431080019312,
+        "ssim": 0.844380844828464,
+        "maxError": 88,
+        "exactRGBFraction": 0.002401013433891115,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_30",
+        "count": 8192,
+        "elapsedSeconds": 3.053,
+        "mae": 9.098397360358238,
+        "rmse": 12.32549453847108,
+        "psnr": 26.31471653688193,
+        "ssim": 0.8607538006217638,
+        "maxError": 90,
+        "exactRGBFraction": 0.0022831722837614895,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_40",
+        "count": 8192,
+        "elapsedSeconds": 3.453,
+        "mae": 8.6419543954749,
+        "rmse": 11.786059221098185,
+        "psnr": 26.703431229628283,
+        "ssim": 0.8712409812140584,
+        "maxError": 91,
+        "exactRGBFraction": 0.002901838321942022,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_50",
+        "count": 8192,
+        "elapsedSeconds": 3.863,
+        "mae": 8.357932673422892,
+        "rmse": 11.44050110782916,
+        "psnr": 26.961902658701966,
+        "ssim": 0.8777542580302615,
+        "maxError": 90,
+        "exactRGBFraction": 0.0033290124911619138,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_60",
+        "count": 8192,
+        "elapsedSeconds": 4.254,
+        "mae": 8.196676879566345,
+        "rmse": 11.24459786848675,
+        "psnr": 27.1119250341798,
+        "ssim": 0.8814396251457824,
+        "maxError": 91,
+        "exactRGBFraction": 0.003446853641291539,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      },
+      {
+        "phase": "geometry_gradient_70",
+        "count": 8192,
+        "elapsedSeconds": 4.707,
+        "mae": 8.121528596119099,
+        "rmse": 11.150264954487293,
+        "psnr": 27.185099862960286,
+        "ssim": 0.8831894652996997,
+        "maxError": 91,
+        "exactRGBFraction": 0.0032995522036295072,
+        "evaluatedPixels": 67888,
+        "rounding": "floor(x+0.5), clamp 0..255"
+      }
+    ],
+    "seconds": 4.709,
+    "bestCheckpointRule": "lowest_weighted_float_mse"
+  },
+  "elapsedSeconds": 5.244,
+  "passedPilot": false,
+  "passedHighFidelity": false,
+  "licenseStatus": "source terms require attribution/verification",
+  "notes": [
+    "Metrics compare the declared resized/cropped RGB observation, not the original full-resolution download.",
+    "Object alpha is an inferred segmentation, not ground-truth matting.",
+    "Near-duplicate detection is a conservative heuristic; sources remain separately recorded."
+  ],
+  "segmentation": {
+    "method": "DeepSeek vision bbox + seeded OpenCV GrabCut + 0.55px coverage smoothing",
+    "normalizedBBox": [
+      0,
+      0.1,
+      0.92,
+      0.78
+    ],
+    "proposalPixels": [
+      1,
+      17,
+      492,
+      240
+    ],
+    "cropPixels": [
+      0,
+      34,
+      495,
+      237
+    ],
+    "workingSize": [
+      512,
+      292
+    ],
+    "foregroundPixels": 66279,
+    "pixelMaskVerified": false,
+    "reviewedCorrections": [],
+    "coverageProvenance": "inferred",
+    "edgeColour": "nearest foreground-interior extension where alpha < 0.8",
+    "extractedFile": "fitting/learning08/extracted/learn.r09.fd06c878ce46.object.png"
+  },
+  "semantics": {
+    "id": "learn.r09.fd06c878ce46",
+    "label": "植被覆盖的海蚀拱岩岛",
+    "category": "sea_arch_island",
+    "role": "object",
+    "bbox": [
+      0,
+      0.1,
+      0.92,
+      0.78
+    ],
+    "palette": [
+      [
+        86,
+        151,
+        210
+      ],
+      [
+        86,
+        110,
+        60
+      ],
+      [
+        152,
+        132,
+        102
+      ],
+      [
+        62,
+        162,
+        176
+      ],
+      [
+        240,
+        243,
+        242
+      ]
+    ],
+    "lightDirection": "front",
+    "description": "主体为一座大型岩岛，顶部与坡面覆盖低矮绿色植被，中部岩壁呈黄褐与灰褐的层状风化纹理，中间被海水穿透形成明显拱洞，洞内可见透出的蓝色天光；岛体两侧岩壁棱角分明并有深浅裂缝阴影。前景为深褐色礁石带与青绿色浪涌，白色浪花沿礁缘散开；背景是干净的蓝色天空。光线来自前方偏上，岩壁受光面明亮、拱洞内形成强暗部对比。",
+    "tags": [
+      "海蚀拱",
+      "岩岛",
+      "海蚀洞",
+      "植被覆盖",
+      "青绿色海水",
+      "层理",
+      "蓝色天空",
+      "前景礁石"
+    ],
+    "limitations": [
+      "远景目标，细节受距离限制",
+      "只能看到单侧立面，无法了解背后与洞内结构",
+      "天空与海水为不可控背景，复用需替换",
+      "缺少尺度与地质信息"
+    ]
+  },
+  "sourceId": "learn.r09.fd06c878ce46"
+}
