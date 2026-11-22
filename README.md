@@ -1,15 +1,23 @@
 # Complete Representation Functions / 完备表示函数
 
-## CRF 图形计算编辑器｜1.1 开发入口
+## CRF 图形计算编辑器｜整体计划与 96 GB GPU 开发入口
 
-**完整工程已接入：可运行的产品 1.0 基线（历史 0.10.0/v10）＋最新 1.1 开发计划＋Codex 交接说明。1.1 尚未完成验收。**
+**当前任务：把原生 CRF 计算推进到可编辑真实场景、高质量几何/材质/光照/细节，以及原生 2K/4K 输出。目标设备为用户已有的 RTX PRO 6000 / 96 GB。**
 
-- **[打开 1.1 开发工作区](graphics-editor/README.md)**
-- [完整源码与历史资源](graphics-editor/editor/) · [1.1 开发计划](graphics-editor/plans/CRF_1_1_Implementation_Plan.md)
-- [1.1 执行任务](graphics-editor/plans/CRF_1_1_Execution_Plan.json) · [Codex 交接提示词](graphics-editor/CODEX_HANDOFF_PROMPT.md)
-- [本地启动](graphics-editor/README_START_HERE.md) · [验证报告](graphics-editor/verification/verification-summary.json)
+计划、当前约束和 Codex 开发任务已在本仓库统一。GPU 实现与正式验收仍需按计划完成；分支名称和文档提交不代表产品已完成。
 
-应用代码和资源位于 `graphics-editor/`，原有论文与研究对象资料继续保留。开发编辑器时，请让 Codex 打开 `graphics-editor/` 目录并阅读其中的 `AGENTS.md`。
+| 入口 | 用途 |
+| --- | --- |
+| **[最新整体开发计划](graphics-editor/plans/CRF_Integrated_Development_Plan.md)** | 继承 1.1 要求、实际版本映射、几何/材质/光照/细节和整体交付门槛 |
+| **[Codex 开发启动说明](graphics-editor/CODEX_START_HERE.md)** | 应用代码基线、阅读顺序、启动命令、首批实现任务 |
+| **[开发分支：crf-gpu96-development](https://github.com/VIONWILLIAMS/complete-representation-functions/tree/crf-gpu96-development)** | 当前对象函数与 quality12 参考重建实现，加上整合计划；实际开发从这里开始 |
+| [96 GB GPU 完整技术方案](graphics-editor/plans/CRF_96GB_GPU_Technical_Plan.md) | CUDA、三模式显存预算、并行拟合、采样、原生高分辨率和真实性验证 |
+| [活动任务账本](graphics-editor/plans/CRF_Integrated_Execution_Plan.json) · [可复制交接提示词](graphics-editor/CODEX_HANDOFF_PROMPT.md) | 依赖、交付物、实现/验证状态与执行要求 |
+| [基线与证据状态](graphics-editor/verification/GPU96_BASELINE_STATUS.md) | 已上传代码、未同步的 1.2 报告提交和未测项目的明确边界 |
+
+**代码位置请区分：**`main` 保留恢复基线并同步最新计划；`crf-gpu96-development` 基于已核实的对象函数与参考重建提交 `55103cc7399cef3bb5eb7d9e7875f3785dedd9cd`。报告中的 1.2 实验提交目前不能在本仓库解析，原始报告文字与来源已归档，不能据此声称代码同步或复现完成。原 1.1 的计算内核、证明、真实程序 RSI、可运行编辑器四项完成条件继续有效。
+
+应用开发约束见 [graphics-editor/AGENTS.md](graphics-editor/AGENTS.md)。论文、数学域、机器元数据与历史证据仍遵循根目录 `AGENTS.md` 的事实和验证规则。
 
 ---
 
@@ -74,7 +82,8 @@ Executable evidence roadmap:
 
 ## Graphics Editor History / 图形计算编辑器历史计划
 
-- 最新完整工程与 1.1 计划：[graphics-editor/](graphics-editor/README.md)
+- 当前整体计划与开发导航：[graphics-editor/](graphics-editor/README.md)
+- 原始 1.1 需求：[CRF 1.1 完整计划](graphics-editor/plans/CRF_1_1_Implementation_Plan.md)
 - 历史归档：[CRF 图形计算编辑器 0.8 研发计划](docs/graphics-editor/CRF_0_8_Development_Plan.md)
 
 The plan covers image-plane Gaussian reconstruction, semantic object editing, and bounded language-driven generation. Its milestones and metrics are proposed research targets; this document does not change the verification status of the paper or runtime.

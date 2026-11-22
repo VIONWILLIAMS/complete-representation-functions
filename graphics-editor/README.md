@@ -1,64 +1,60 @@
-# CRF 图形计算编辑器｜1.1 开发工作区
+# CRF 图形计算编辑器｜整体开发计划与 GPU96 工作区
 
-这里是可直接交给 Codex 的完整工程：**可运行的产品 1.0 基线、最新 1.1 开发计划、全部恢复资源、实验记录和开发交接说明**。
+**目标：让模型编写和修改场景程序，由 CRF 原生计算几何、材质、光照和细节，生成可编辑的高质量图片与视频。** 本轮按用户已有 RTX PRO 6000 / 96 GB 设计云端计算能力，同时保留原 1.1 的内核、证明、真实程序 RSI 和编辑器验收。
 
-**版本状态：1.0 基线已恢复并验证；1.1 正在进入开发阶段，尚未完成验收。** 历史源码中的 `0.10.0 / v10` 对应产品 1.0，保留原始标识用于兼容与证据追溯。
+## 当前入口
 
-## 从这里开始
+| 文件 / 分支 | 内容 |
+| --- | --- |
+| **[整体开发计划](plans/CRF_Integrated_Development_Plan.md)** | 当前完整目标、范围变更、继承关系与交付次序 |
+| **[Codex 启动说明](CODEX_START_HERE.md)** | 按实际代码开始开发，首批工作与复现命令 |
+| [96 GB GPU 技术方案全文](plans/CRF_96GB_GPU_Technical_Plan.md) | 19 节技术方案、显存账本、几何/材质/光传输和质量实验 |
+| [活动执行账本](plans/CRF_Integrated_Execution_Plan.json) | 任务依赖、预期制品、状态与验收 |
+| [Codex 交接提示词](CODEX_HANDOFF_PROMPT.md) | 可直接复制给开发任务的完整指令 |
+| [开发分支](https://github.com/VIONWILLIAMS/complete-representation-functions/tree/crf-gpu96-development) | 包含最新可读取对象函数实现与整合计划 |
+| [基线核对](verification/GPU96_BASELINE_STATUS.md) | 可用代码、报告依据、未测能力与来源 |
+| [现行工程约束](AGENTS.md) | 训练范围、版本、兼容、证据、预算与里程碑命名 |
 
-| 入口 | 内容 |
-|---|---|
-| [本地启动说明](README_START_HERE.md) | macOS 启动入口、开发依赖、模型配置及验证方法 |
-| [Codex 开发交接提示词](CODEX_HANDOFF_PROMPT.md) | 直接执行的 1.0 → 1.1 开发任务 |
-| [1.1 完整开发计划](plans/CRF_1_1_Implementation_Plan.md) | 计算内核、形式证明、受限 RSI、编辑器集成与验收 |
-| [1.1 执行任务 JSON](plans/CRF_1_1_Execution_Plan.json) | M0–M5 与 T00–T26 的任务、依赖和状态 |
-| [完整应用源码](editor/) | 1,934 个恢复源文件、全部历史资源和九个旧版下载包 |
-| [本次验证报告](verification/verification-summary.json) | 测试、构建和本地服务检查 |
-| [项目开发约束](AGENTS.md) | 版本映射、实现边界和四项总验收 |
+## 先选对代码
 
-## 启动
+本计划同时发布到默认 `main` 和开发分支，但应用源码基线不同：
 
-使用 Node.js 22 或以上。在本目录执行：
+- `main` 保留原恢复工程；在这里阅读计划并不表示已获得对象函数实验或 GPU 实现。
+- **`crf-gpu96-development`** 以对象函数分支的实际提交 `55103cc7399cef3bb5eb7d9e7875f3785dedd9cd` 为基础，包含 1.1 实验内核、训练器、Harness、GUI、quality12 完整参考重建实现与既有运行证据，以及 quality13 全分辨率细节设计/合同。
+- `quality12` 是内部模块编号，不是用户报告中的“1.2 已完成版”。quality12 实现已经在当前基线中，需先复现并继续改进；quality13 的新增实现尚待完成。
+- 用户 1.2 报告中的 `0325a1c…` 和 `9c6ecd6…` 尚不能在本仓库解析。报告作为 `reported_only` 输入保留，代码定位与独立重跑是显式任务。
+- GPU96 是当前开发项目名，可能服务后续候选版本；没有提前发布“1.3 完成版”。
+
+## 启动已有参考重建与对象函数实验
+
+在干净的开发分支检出中，使用 Node.js 22 或以上：
 
 ```bash
-node tools/start.mjs
+cd graphics-editor/editor
+npm ci
+npm run dev:quality
 ```
 
-浏览器打开 <http://127.0.0.1:4173/>。macOS 也可运行 `Start_CRF.command`。已有案例与本地像素计算不需要模型 API 密钥。
+打开 <http://127.0.0.1:4173/quality12.html>。对象函数实验仍可用 `npm run dev:v11` 打开 `/studio11.html`。参考重建说明见[质量工作台](https://github.com/VIONWILLIAMS/complete-representation-functions/blob/crf-gpu96-development/graphics-editor/README_QUALITY.md)，对象函数说明见[当前实验启动说明](https://github.com/VIONWILLIAMS/complete-representation-functions/blob/crf-gpu96-development/graphics-editor/README_1_1.md)。这里启动的是已有 CPU 实验；GPU 服务及其端点需按本轮任务实现，不能把启动旧页面记作 GPU 验收。
 
-开始开发时：
+已有基线命令：
 
 ```bash
-cd editor
-npm ci
+cd graphics-editor/editor
 npm test
 npm run test:v10
+npm run test:v11
+npm run test:quality
+npm run verify:quality
 npm run build
 ```
 
-构建需要 Python 3。Python 高斯拟合与对应测试还需要 `requirements.txt` 中的依赖和 g++ / clang++。真实模型任务需要服务端 `DEEPSEEK_API_KEY`；本次发布没有发起真实供应商调用。
+这些命令在源分支有真实脚本定义。本次计划发布没有重跑应用测试；请记录实际执行环境和结果。GPU、真实模型调用与服务器凭证不能用示例数据替代。
 
-## 1.1 的目标
+## 与历史资料的关系
 
-1. 统一计算内核，修复联合颜色/覆盖度积分、边缘、拟合预算和关系算子。
-2. 实现具有明确语义、前提、可信基础与反例的机器检查证明。
-3. 实现 L0 参数、L1 管线、L2 程序结构修复，验证真实程序 RSI 的独立收益。
-4. 在编辑器中贯通目标、函数、证据、持久任务、能力晋升及新任务继承。
+原 [1.1 完整方案](plans/CRF_1_1_Implementation_Plan.md) 和 [T00–T26 原始任务](plans/CRF_1_1_Execution_Plan.json) 保留，整合账本负责追踪继承要求，不把旧 `planned` 或既有报告自动改为通过。
 
-正式完成必须同时满足：**计算内核改善、证明层有效、真实程序 RSI 收益、编辑器可运行**。现有规则检查和参数反馈不视为这四项已经完成。
+[1.0 本地启动与恢复说明](README_START_HERE.md)、`provenance/`、`verification/verification-summary.json` 和 `MANIFEST.json` 记录历史交接时的状态；`MANIFEST.json` 不是新分支全部文件的现行清单。新的计划文件不改写原始恢复证据。
 
-## 已验证的基线
-
-- 来源提交：`0b2fa1c044d073bd8349ef941cc1b213cbe1cfe1`。
-- 恢复的 1,934 个源文件保持原字节，清单在 [provenance/source-manifest.json](provenance/source-manifest.json)。
-- 核心测试 52/52，最新版本测试 64/64，Python 高斯测试 4/4，共 120 项通过。
-- 构建通过，885 个公开资源逐字节验证，九个历史 ZIP 保持原字节。
-- 完整包独立解压、文件哈希和本机服务启动检查通过。
-
-上述检查在 Linux 上完成；完整浏览器交互、用户 Mac/Windows 实机、真实模型调用和 1.1 验收不在本次已验证范围内。
-
-## 记录的时间边界
-
-[RECOVERY_NOTES.md](RECOVERY_NOTES.md) 保留打包时的恢复记录，其中“GitHub 尚未同步”描述的是本次提交之前的状态。本目录的提交完成了这批工程资料的 GitHub 同步。完整聊天逐字稿未恢复；历史报告中的绝对路径指原实验环境，本地运行以启动说明为准。
-
-`MANIFEST.json` 覆盖原始交接包；本次新增的 GitHub README 是发布导航，不改变其中的源文件哈希。仓库原有的论文、机器可读研究元数据和 0.8 历史计划继续保留在上级目录。
+[1.2 报告文本](history/CRF_1_2_Technical_Report.txt) 和[来源摘要](history/CRF_1_2_Report_Provenance.json) 可由 Codex 直接读取；文本副本不含原 HTML 内嵌媒体，不能用它冒充完整可复现实验源码。

@@ -1,0 +1,45 @@
+{
+  "schema": "crf.report_provenance.v1",
+  "published_at_local_date": "2026-11-22",
+  "timezone": "Asia/Shanghai",
+  "title": "CRF 1.2 技术完成报告",
+  "evidence_class": "user_supplied_report_not_independently_reproduced_in_this_publication",
+  "original": {
+    "filename": "CRF-1.2-技术完成报告.html",
+    "bytes": 1000756,
+    "sha256": "6fa80548726ca6e9597a5d7e67f9d30edeed4e7c12dfdd85d797b446803a9626",
+    "available_in_this_repository": false,
+    "format": "self_contained_html",
+    "embedded_media": {
+      "jpeg": 1,
+      "png": 4,
+      "mp4": 2
+    }
+  },
+  "repository_copy": {
+    "path": "graphics-editor/history/CRF_1_2_Technical_Report.txt",
+    "bytes": 58581,
+    "sha256": "0dff8cd5eebd7e8238b36859e975545f1e13d38b94f8163f2f8f7bcd552ed80a",
+    "format": "utf8_plain_text",
+    "scope": "Extracted written report including expanded embedded textual evidence and code snapshots. Original inline images, videos, styling, links and executable HTML are not included.",
+    "normalization": "Text extraction linearizes tables and normalizes whitespace; the historical absolute project path prefix is replaced by <LOCAL_PROJECT_ROOT>/.",
+    "local_path_prefix_replacements": 3,
+    "is_byte_identical_to_original_html": false,
+    "is_complete_experiment_source_checkout": false
+  },
+  "reported_commits": [
+    {
+      "role": "report_experiment",
+      "sha": "0325a1c15f4259732fa49afccba51c956c2c918b",
+      "resolution_in_repository": "not_found_at_publication_audit"
+    },
+    {
+      "role": "report_baseline_1_1",
+      "sha": "9c6ecd6fc56fb3a6520c22951867c0437cea52b7",
+      "resolution_in_repository": "not_found_at_publication_audit"
+    }
+  ],
+  "repository": "VIONWILLIAMS/complete-representation-functions",
+  "verified_available_source_baseline": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+  "interpretation": "Reported measurements remain reported_only until source/assets/environment are located and independently replayed. This copy preserves the development input without making a current performance, GPU, formal proof, photorealism or RSI claim."
+}

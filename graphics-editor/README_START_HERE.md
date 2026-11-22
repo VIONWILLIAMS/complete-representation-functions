@@ -1,4 +1,8 @@
+> **历史说明：**本文记录原 1.0 恢复包及当时的 1.1 交接。当前整体任务从 [CODEX_START_HERE.md](CODEX_START_HERE.md) 开始；对象函数实验与 GPU96 开发请使用 `crf-gpu96-development` 分支。文中的“下一阶段”、版本和验证数字均属于当时记录。
+
 # CRF 1.0 完整工程与 1.1 开发交接包
+
+> 实验开发分支第二轮交付请从 [真实场景质量工作台](https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/README_QUALITY.md) 开始：`cd editor && npm ci && npm run dev:quality`，访问 `/quality12.html`。以下是保留的 1.0 恢复包启动说明。
 
 日期：2026-11-22，北京时间。
 

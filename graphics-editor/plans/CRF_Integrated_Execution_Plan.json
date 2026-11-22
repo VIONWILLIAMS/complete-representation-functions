@@ -1,0 +1,3646 @@
+{
+  "schema": "crf.integrated_execution_plan.v1",
+  "plan_id": "crf-gpu96-integrated-2026-11-22",
+  "created_date": "2026-11-22",
+  "timezone": "Asia/Shanghai",
+  "status": "development_plan_not_implementation_report",
+  "product_release_status": "unreleased_no_new_product_version_claim",
+  "repository": {
+    "full_name": "VIONWILLIAMS/complete-representation-functions",
+    "plan_publication_branch": "main",
+    "mandatory_development_branch": "crf-gpu96-development",
+    "publication_base_commit": "a04e7a0e85f997b8040bff85783dda89a768e928",
+    "publication_branch_code_scope": "main同步计划与入口，保留原恢复代码；不作为最新对象函数实现的开发基线",
+    "implementation_source_branch": "feat/crf-1.1-learnable-object-functions",
+    "implementation_base_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+    "source_tree_note": "来自GitHub Git commit API，完整递归tree未截断；详细来源见基线状态文档。",
+    "branch_creation_policy": "开发分支从指定55103最新实现基线创建并加入整合文档，保留f66对象函数、576d1e4质量实现与55103合同提交的来源历史；不覆盖用户未提交修改",
+    "source_tree_sha": "346d3199a254545da9c87de655f49c753e938823",
+    "historical_object_baseline_commit": "f66a3e35b1501ef0172b859351a42aa4c03230ee"
+  },
+  "documents": {
+    "start_here": "../CODEX_START_HERE.md",
+    "integrated_plan": "CRF_Integrated_Development_Plan.md",
+    "technical_plan": "CRF_96GB_GPU_Technical_Plan.md",
+    "baseline_status": "../verification/GPU96_BASELINE_STATUS.md",
+    "report12": "../history/CRF_1_2_Technical_Report.txt",
+    "report12_provenance": "../history/CRF_1_2_Report_Provenance.json",
+    "legacy_plan": "CRF_1_1_Implementation_Plan.md",
+    "legacy_execution_plan": "CRF_1_1_Execution_Plan.json",
+    "quality12_contract": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/contracts/quality12.json",
+    "quality12_design": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/plans/CRF_1_1_Visual_Quality_Iteration.md",
+    "implemented_baseline_readme": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/README_1_1.md",
+    "implemented_baseline_delivery": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/docs/v11/DELIVERY.md",
+    "quality12_delivery": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/README_QUALITY.md",
+    "quality13_contract": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/contracts/quality13.json",
+    "quality13_design": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/plans/CRF_1_1_Detail_Quality_Iteration.md"
+  },
+  "baseline_facts": [
+    {
+      "id": "BASE-1.0",
+      "source_commit": "0b2fa1c044d073bd8349ef941cc1b213cbe1cfe1",
+      "historical_code_versions": [
+        "0.10.0",
+        "v10"
+      ],
+      "product_label": "1.0",
+      "status": "historical_recovered_baseline"
+    },
+    {
+      "id": "BASE-OBJECT11",
+      "source_commit": "f66a3e35b1501ef0172b859351a42aa4c03230ee",
+      "product_label": "1.1.0-experimental.1",
+      "implementation_status": "repository_implementation_present",
+      "verification_status": "repository_evidence_present_not_reexecuted_by_plan",
+      "scope": [
+        "CPU JavaScript/Worker",
+        "局部对象坐标网络真实训练",
+        "GUI/Harness/Compute共同工程",
+        "CPU直接/缓存与工程/PNG/二维视频证据"
+      ],
+      "not_proven": [
+        "完整原1.1验收",
+        "CUDA/WebGPU",
+        "真实供应商视觉任务收益",
+        "程序级RSI",
+        "通用材质分解与未知对象泛化"
+      ],
+      "historical_role": "既有对象函数实现来源；当前开发基线已前移至55103，保留其历史证据"
+    },
+    {
+      "id": "BASE-QUALITY12",
+      "contract_version": "1.1.0-experimental.2",
+      "implementation_status": "implemented",
+      "verification_status": "evidence_present_not_replayed",
+      "note": "quality12是内部模块编号，对应产品1.1.0-experimental.2；55103基线已包含完整实现及仓库验收证据。本次整合只读取证据，未重新拟合、运行测试或复现浏览器。",
+      "source_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+      "implementation_history_commit_prefix": "576d1e4",
+      "reported_quality": {
+        "width": 800,
+        "height": 531,
+        "psnr_db": 36.6677525,
+        "ssim": 0.9728077,
+        "mae_rgb8": 2.1342954,
+        "roi_status": "three_frozen_ROIs_reported_passed",
+        "gaussian_count": 65536
+      },
+      "reported_tests": {
+        "javascript": 187,
+        "python": 9,
+        "replayed_in_this_integration": false
+      },
+      "evidence_refs": [
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/README_QUALITY.md",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/web/assets/quality12/alpine.quality.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/review/independent-audit.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/kernel/verification.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/browser/artifact-verification.json"
+      ],
+      "not_proven": [
+        "GPU执行与性能",
+        "程序级RSI及新任务继承",
+        "真实LLM调用闭环",
+        "形式证明",
+        "任意新场景照片生成",
+        "物理材质分解或重光照"
+      ]
+    },
+    {
+      "id": "BASE-QUALITY13",
+      "source_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "scope": "已冻结合同与设计；新拟合/细化实现和通过证据尚未据此确认",
+      "contract_sha256": "f262a18ad60ae4f77bed9608b28aecac2c1201d109a7709b82668a1d0a1b193b",
+      "source_dimensions": [
+        [
+          1280,
+          850
+        ],
+        [
+          667,
+          1000
+        ],
+        [
+          800,
+          600
+        ]
+      ],
+      "note": "quality13为内部模块编号，不是产品1.3；三个声明观察尺寸均不再降采样，不冒充相机原片或未见场景生成。"
+    },
+    {
+      "id": "REPORT-1.2",
+      "reported_commit": "0325a1c15f4259732fa49afccba51c956c2c918b",
+      "reported_base_commit": "9c6ecd6fc56fb3a6520c22951867c0437cea52b7",
+      "repository_resolution": "missing_in_this_repository_at_integration",
+      "verification_status": "report_only",
+      "reuse_policy": "保留报告及来源，不把它当可checkout源码或以不存在实现为依赖；若以后取得源码，单独验明并接入。"
+    },
+    {
+      "id": "GPU96",
+      "resource": "用户已有云端RTX PRO6000/96GB",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "no_claims": [
+        "没有本计划实际GPU profiling",
+        "没有本计划原生4K照片级验收",
+        "没有本计划云端Codex任务成功声明"
+      ]
+    }
+  ],
+  "objectives": [
+    "模型编写和修改可执行场景程序，CRF函数/算子产生高质量真实场景图片与视频",
+    "几何、材质、光线、细节与场景关系均有实际计算和独立质量证据",
+    "GUI Service、Agent Harness、Compute Kernel共享表示、任务、资产版本与验收",
+    "真实模型创建和连续编辑闭环，不用注入响应或人工JSON搬运冒充完整运行",
+    "原生2048级长边及3840x2160输出、尺度/时序稳定与可重放工程",
+    "96GB动态预算、有效吞吐和同预算质量收益，不以占满显存代替成果",
+    "计算内核改善、证明层有效、真实程序RSI收益、编辑器可运行同时成立"
+  ],
+  "scope_policy": {
+    "inherited_preserved": [
+      "旧17入口及资源/归档字节",
+      "250MiB旧静态构建上限",
+      "原V11门槛与完整任务追踪",
+      "原生CRF产图",
+      "同源版本与证据",
+      "独立来源/封存纪律"
+    ],
+    "explicit_additions": [
+      "CUDA主计算后端",
+      "对象局部神经函数训练",
+      "多尺度材质/几何细节",
+      "原生GPU4K新合同",
+      "条件成立后的CRF空间查询和多次光传输"
+    ],
+    "training": {
+      "allowed": "逐对象/逐观察/逐资产参数与小网络训练，完整记录来源/成本/适用域",
+      "frozen": "基础语言/视觉模型",
+      "forbidden": "未授权的跨场景共享基础模型训练或云端无边界后台训练",
+      "rsi_classification": "仅优化数值权重/常数不属于L2；结构性受限程序变更另验"
+    },
+    "final_pixel_source": "声明的场景、显式函数及声明函数资产；不以源RGB/残差/外部完整成图替代",
+    "external_renderer_replacement": false,
+    "modify_core_math_domains_or_dsl": false,
+    "schema_policy": "产品Scene/Operator/Job契约可显式扩展；不自动采用proposed.v1_3或提升发布版本",
+    "spending_policy": "计划数值不是付费授权；不自动购买/开通/启动收费实例或付费任务，按既有授权使用可用资源",
+    "public_repository_policy": "不保存凭证、账户诊断或个人连接信息；外部阻塞只记录非敏感功能前提",
+    "authorization_policy": "已有授权持续有效；缺外部前提时完成可独立离线工作，不重复索取已授权事项"
+  },
+  "namespaces": {
+    "V11": {
+      "kind": "inherited_requirements",
+      "milestones": "V11-M0..V11-M5",
+      "tasks": "V11-T00..V11-T26",
+      "note": "原始含义保留；继承表不是重复执行作业队列"
+    },
+    "GPU": {
+      "kind": "active_gpu_program",
+      "milestones": "GPU-M0..GPU-M6",
+      "tasks": "GPU-T00..GPU-T23"
+    },
+    "INT": {
+      "kind": "integration_baseline_and_contracts",
+      "tasks": "INT-T00..INT-T02"
+    },
+    "Q12": {
+      "kind": "existing_frozen_quality_delivery_reuse_and_replay",
+      "tasks": "Q12-T00..Q12-T02"
+    },
+    "bare_milestone_ids_for_cross_document_links_allowed": false,
+    "Q13": {
+      "kind": "frozen_source_resolution_detail_quality",
+      "tasks": "Q13-T00..Q13-T02",
+      "source_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd"
+    }
+  },
+  "status_model": {
+    "implementation": [
+      "planned",
+      "requires_audit",
+      "in_progress",
+      "implemented",
+      "blocked",
+      "not_applicable"
+    ],
+    "verification": [
+      "not_run",
+      "reported_only",
+      "evidence_present_not_replayed",
+      "passed",
+      "failed",
+      "unknown",
+      "stale"
+    ],
+    "rules": [
+      "完成任务必须同时满足实现与接受条件，并链接实际证据",
+      "报告/设计/接口存在不等于运行通过",
+      "verified数学claim仍遵循根AGENTS及machine/claim-graph.json，不由本任务账本代替",
+      "本次仅整合计划，所有新增执行任务均未运行"
+    ]
+  },
+  "milestones": [
+    {
+      "id": "GPU-M0",
+      "namespace": "GPU",
+      "title": "实际基线、硬件、数据与合同",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "task_ids": [
+        "INT-T00",
+        "INT-T01",
+        "INT-T02",
+        "GPU-T00",
+        "GPU-T01"
+      ]
+    },
+    {
+      "id": "GPU-M1",
+      "namespace": "GPU",
+      "title": "真实GPU热点、参考符合性和持久执行",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "task_ids": [
+        "Q12-T00",
+        "GPU-T02",
+        "GPU-T03",
+        "GPU-T04",
+        "Q13-T00"
+      ]
+    },
+    {
+      "id": "GPU-M2",
+      "namespace": "GPU",
+      "title": "几何、材质、细节、拟合与证明义务",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "task_ids": [
+        "Q12-T01",
+        "GPU-T05",
+        "GPU-T06",
+        "GPU-T07",
+        "GPU-T08",
+        "GPU-T09",
+        "GPU-T17",
+        "Q13-T01"
+      ]
+    },
+    {
+      "id": "GPU-M3",
+      "namespace": "GPU",
+      "title": "整卡动态调度与稳定性",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "task_ids": [
+        "GPU-T10"
+      ]
+    },
+    {
+      "id": "GPU-M4",
+      "namespace": "GPU",
+      "title": "三层工作台、真实模型闭环与原生2K/4K",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "task_ids": [
+        "Q12-T02",
+        "GPU-T11",
+        "GPU-T12",
+        "GPU-T13",
+        "GPU-T14",
+        "GPU-T23",
+        "Q13-T02"
+      ]
+    },
+    {
+      "id": "GPU-M5",
+      "namespace": "GPU",
+      "title": "原生空间查询与完整光传输",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "task_ids": [
+        "GPU-T15",
+        "GPU-T16"
+      ]
+    },
+    {
+      "id": "GPU-M6",
+      "namespace": "GPU",
+      "title": "RSI、正式封存、继承与整合交付",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "task_ids": [
+        "GPU-T18",
+        "GPU-T19",
+        "GPU-T20",
+        "GPU-T21",
+        "GPU-T22"
+      ]
+    }
+  ],
+  "legacy_milestones": [
+    {
+      "id": "V11-M0",
+      "title": "基线与计量冻结",
+      "historical_status": "planned",
+      "current_verification_status": "requires_task_audit"
+    },
+    {
+      "id": "V11-M1",
+      "title": "第一条真实编辑/证明闭环",
+      "historical_status": "planned",
+      "current_verification_status": "requires_task_audit"
+    },
+    {
+      "id": "V11-M2",
+      "title": "内核、求解与关系改善",
+      "historical_status": "planned",
+      "current_verification_status": "requires_task_audit"
+    },
+    {
+      "id": "V11-M3",
+      "title": "L2程序试改进与staged试用",
+      "historical_status": "planned",
+      "current_verification_status": "requires_task_audit"
+    },
+    {
+      "id": "V11-M4",
+      "title": "完整编辑器、导出与合格加速",
+      "historical_status": "planned",
+      "current_verification_status": "requires_task_audit"
+    },
+    {
+      "id": "V11-M5",
+      "title": "正式封存、晋升、继承与交付",
+      "historical_status": "planned",
+      "current_verification_status": "requires_task_audit"
+    }
+  ],
+  "active_tasks": [
+    {
+      "id": "INT-T00",
+      "namespace": "INT",
+      "milestone": "GPU-M0",
+      "title": "锁定正确实现基线并复现既有工作台",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [],
+      "deliverables": [
+        "基线提交/文件清单与版本映射",
+        "旧工程、CPU测试、构建和工作台重放记录",
+        "原1.1任务逐项审计状态"
+      ],
+      "acceptance": [
+        "从crf-gpu96-development开发；其代码基于55103cc7399cef3bb5eb7d9e7875f3785dedd9cd，tree为346d3199a254545da9c87de655f49c753e938823，包含既有对象函数和quality12实现，不从main旧1.0代码误起步",
+        "保留用户未提交改动，不把缺失的0325a1c/9c6ecd6报告提交伪造为可用源码",
+        "核对现有CPU、对象训练、quality12、GUI和归档证据；55103只新增quality13冻结设计，不能冒充新画质通过。本次实际重跑与历史报告分开",
+        "保持17个旧入口、885个历史公共资源和9个历史归档按原字节恢复；实际库存以基线清单核定"
+      ],
+      "compute_budget": {
+        "profile_ref": "offline",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-BASELINE"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T00"
+      ]
+    },
+    {
+      "id": "INT-T01",
+      "namespace": "INT",
+      "milestone": "GPU-M0",
+      "title": "冻结继承矩阵、数据划分与验收合同登记",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "INT-T00"
+      ],
+      "deliverables": [
+        "V11-T00至T26、P1至P6、G门槛的逐项状态表",
+        "quality12与quality13原合同摘要、冻结时间、参考尺寸和来源核对",
+        "新GPU合同草案与数据访问/封存协议"
+      ],
+      "acceptance": [
+        "原1.1的每项要求均有负责任务、证据入口和真实状态，不因新计划自动完成",
+        "quality12文件SHA256为3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8，指标/ROI/4M/200M上限不修改",
+        "GPU4K使用新的合同ID、采样/颜色/运行预算，不能放宽旧合同",
+        "旧V11-M与新GPU-M全程命名空间化；开发/选择/封存按来源分组",
+        "quality13文件SHA256为f262a18ad60ae4f77bed9608b28aecac2c1201d109a7709b82668a1d0a1b193b；嵌入的完整冻结合同、三观察原尺寸/ROI/尾部误差/拟合尝试预算不可放宽"
+      ],
+      "compute_budget": {
+        "profile_ref": "offline",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T00",
+        "V11-T01"
+      ]
+    },
+    {
+      "id": "INT-T02",
+      "namespace": "INT",
+      "milestone": "GPU-M0",
+      "title": "准备独立观察、资产存储与参考真值",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "INT-T01"
+      ],
+      "deliverables": [
+        "来源组清单、训练/开发/选择/封存划分",
+        "受控几何、积分、边缘与多光照参考",
+        "内容寻址资产清单和受控存取适配"
+      ],
+      "acceptance": [
+        "保留原目标60独立来源组及30/15/15划分；不足时明确样本缺口，不拿同图裁剪补数",
+        "为重建与新创作建立不同评价轨道；正式质量评价至少20独立目标、每目标3名有效人类评审",
+        "封存图及逐例反馈不进入提议循环；已消费封存集不能再次作为未见集",
+        "大资产/权重/中间帧保存在有摘要的独立资产存储，旧静态构建250MiB上限和旧URL字节契约不变"
+      ],
+      "compute_budget": {
+        "profile_ref": "offline",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-OBSERVATIONS",
+        "B-STORAGE",
+        "B-HUMAN_REVIEW"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T02",
+        "V11-T21"
+      ]
+    },
+    {
+      "id": "Q12-T00",
+      "namespace": "Q12",
+      "milestone": "GPU-M1",
+      "title": "重用并复现既有quality12表示、内核和资产格式",
+      "implementation_status": "implemented",
+      "verification_status": "evidence_present_not_replayed",
+      "depends_on": [
+        "INT-T01"
+      ],
+      "deliverables": [
+        "quality12 Python/JavaScript内核与资产/工程格式",
+        "有界支持域遍历、预算检查、取消和独立重放入口"
+      ],
+      "acceptance": [
+        "遵守signed additive anisotropic 2D Gaussian加RGB base的原表示、最多262144核、min sigma 0.35源像素及q<=16",
+        "固定像素中心、Float64参考累计及RGB8 floor(x+0.5)量化；不得嵌入原图/残差或逐像素查表",
+        "4,000,000输出像素和200,000,000支持访问仍为该合同硬限；超限明确拒绝",
+        "对应实际代码、反例、独立重放入口及仓库执行证据已存在；在开发分支复现后追加本次记录，不因读取报告直接标本次passed"
+      ],
+      "compute_budget": {
+        "profile_ref": "offline",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/README_QUALITY.md",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/web/assets/quality12/alpine.quality.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/review/independent-audit.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/kernel/verification.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/browser/artifact-verification.json"
+      ],
+      "inherits_requirements": [
+        "V11-T06",
+        "V11-T10"
+      ],
+      "implementation_source_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+      "next_action": "重用既有实现，先独立重放相应证据；只修复实际未过项或回归，不重写已存在功能。历史通过与本次复现分开记录。"
+    },
+    {
+      "id": "Q12-T01",
+      "namespace": "Q12",
+      "milestone": "GPU-M2",
+      "title": "复现quality12冻结画质证据并继续未过项",
+      "implementation_status": "implemented",
+      "verification_status": "evidence_present_not_replayed",
+      "depends_on": [
+        "Q12-T00"
+      ],
+      "deliverables": [
+        "序列化最终函数资产、800x531原生PNG及同采样ROI裁切",
+        "全图/ROI质量报告与失败基线、优化历史",
+        "独立JS/Python重放报告"
+      ],
+      "acceptance": [
+        "冻结landscape.alpine.png摘要b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222及800x531尺寸",
+        "最终序列化资产输出全图PSNR>=32dB、SSIM>=0.95、RGB8 MAE<=4；三个固定ROI各SSIM>=0.90、MAE<=6",
+        "SSIM从全帧map裁取ROI，不能修改窗口/边界/区域或通过模糊缩放提高分数",
+        "独立JS重放相对Python最大通道差<=1，渲染时不读取源图；失败保持失败"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_fit",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/README_QUALITY.md",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/web/assets/quality12/alpine.quality.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/review/independent-audit.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/kernel/verification.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/browser/artifact-verification.json"
+      ],
+      "inherits_requirements": [
+        "V11-T10"
+      ],
+      "implementation_source_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+      "next_action": "重用既有实现，先独立重放相应证据；只修复实际未过项或回归，不重写已存在功能。历史通过与本次复现分开记录。"
+    },
+    {
+      "id": "Q12-T02",
+      "namespace": "Q12",
+      "milestone": "GPU-M4",
+      "title": "复现quality12浏览器交付并继续兼容性未过项",
+      "implementation_status": "implemented",
+      "verification_status": "evidence_present_not_replayed",
+      "depends_on": [
+        "Q12-T01"
+      ],
+      "deliverables": [
+        "quality12工作台实际加载/编辑/2x求值/导出/重开证据",
+        "下载文件独立读回与旧资源/构建回归报告"
+      ],
+      "acceptance": [
+        "重用已存在quality12.html工作台及studio11链接，复现真实加载/编辑/导出/重开；本次未执行不得标为本次通过",
+        "参考对照独立显示；identity历史指标不代表编辑后输出",
+        "保存/导入工程无原参考图仍可重放；旧结果不能覆盖更新/取消请求",
+        "不修改quality12预算或旧静态构建250MiB上限；保持所有历史资源和归档字节"
+      ],
+      "compute_budget": {
+        "profile_ref": "offline",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-BROWSER"
+      ],
+      "evidence_refs": [
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/README_QUALITY.md",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/web/assets/quality12/alpine.quality.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/review/independent-audit.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/kernel/verification.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/browser/artifact-verification.json"
+      ],
+      "inherits_requirements": [],
+      "implementation_source_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+      "next_action": "重用既有实现，先独立重放相应证据；只修复实际未过项或回归，不重写已存在功能。历史通过与本次复现分开记录。"
+    },
+    {
+      "id": "Q13-T00",
+      "namespace": "Q13",
+      "milestone": "GPU-M1",
+      "title": "实现源尺寸残差细化并复用既有quality12内核",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "INT-T01",
+        "Q12-T00"
+      ],
+      "deliverables": [
+        "quality13独立模块、原尺寸观察加载与冻结摘要检查",
+        "旧算法同最终函数数基线、新残差布局/联合优化/颜色回修路径",
+        "拟合边界、预算、序列化、参考证据绑定与旧参考缓存回归检查"
+      ],
+      "acceptance": [
+        "完整遵守frozen_quality13.contract；先预留总函数预算，首轮几何优化后按残差细化，再联合优化与颜色回修",
+        "alpine_hd为1280x850/196608核；street为667x1000/98304核；orchard为800x600/65536核；拟合及评价不再降采样",
+        "最小sigma为0.35源像素、最多262144核；不嵌入源RGB、残差栅格或逐像素查表；使用现有独立JS计算语义",
+        "复用quality12及其4M输出/200M支持访问限制；实现超限明确拒绝和序列化重载，不放宽历史合同"
+      ],
+      "compute_budget": {
+        "profile_ref": "quality13_frozen_cpu",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/contracts/quality13.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/plans/CRF_1_1_Detail_Quality_Iteration.md"
+      ],
+      "evidence_note": "上述链接为冻结要求与设计，不是已运行结果。",
+      "inherits_requirements": []
+    },
+    {
+      "id": "Q13-T01",
+      "namespace": "Q13",
+      "milestone": "GPU-M2",
+      "title": "验证三观察原尺寸细节和误差尾部并保留失败",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "Q13-T00",
+        "Q12-T01"
+      ],
+      "deliverables": [
+        "每图最终序列化函数资产、原尺寸PNG、固定ROI及误差图",
+        "旧/新算法同函数数对照、逐尝试成本与失败记录",
+        "独立JS重放和最终PNG全图/ROI/尾部误差报告"
+      ],
+      "acceptance": [
+        "每图同时PSNR>=35dB、SSIM>=0.97、RGB8 MAE<=3、p99通道误差<=18、任一通道误差>32的像素比例<=0.003",
+        "每个冻结ROI同时SSIM>=0.93、MAE<=5；复用quality12全帧SSIM map裁ROI语义及量化，不重选区域",
+        "只评价序列化重载并由独立JS内核求得的最终PNG；逐图证据支持后才采用改进候选",
+        "每图最多3次拟合；旧/新算法同最终高斯数，初始几何100步/后期60步/颜色回修40次按合同执行，真实不等耗时另报",
+        "仅可称真实观察的函数重建；不得外推未见场景生成、相机原片细节、物理换光或完整研究计划完成"
+      ],
+      "compute_budget": {
+        "profile_ref": "quality13_frozen_cpu",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/contracts/quality13.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/plans/CRF_1_1_Detail_Quality_Iteration.md"
+      ],
+      "evidence_note": "上述链接为冻结要求与设计，不是已运行结果。",
+      "inherits_requirements": []
+    },
+    {
+      "id": "Q13-T02",
+      "namespace": "Q13",
+      "milestone": "GPU-M4",
+      "title": "交付源尺寸工程与独立便携预览并复现编辑器流程",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "Q13-T01",
+        "Q12-T02"
+      ],
+      "deliverables": [
+        "quality-packs内三场景完整工程、来源/参数摘要及原生结果",
+        "参数直接绘制Canvas的独立便携预览构建器",
+        "现有质量编辑器打开工程、源图关闭运行、导出读回及旧资源兼容证据"
+      ],
+      "acceptance": [
+        "完整本地工程与独立交付包包含quality-packs；不加入受250MiB限制的历史托管包，不修改旧URL与原资源字节",
+        "工程和独立预览使用同一已验证内核；源图只在用户主动开启参考对照时读取；渲染不依赖源RGB",
+        "alpine原生1280x850为1088000像素，完整2x为4352000像素，旧4M合同明确拒绝；局部或1.5x求值仍检查输出/支持预算，不静默降分辨率",
+        "保留三图已声明原尺寸；未来观察大于4K时不得以GPU4K输出替代其原尺寸验收",
+        "浏览器实际打开/编辑/保存重开/导出并独立读回；基准质量不冒充编辑后质量；结果、失败、真实成本与未过项同步交付"
+      ],
+      "compute_budget": {
+        "profile_ref": "offline",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-BROWSER"
+      ],
+      "evidence_refs": [
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/contracts/quality13.json",
+        "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/plans/CRF_1_1_Detail_Quality_Iteration.md"
+      ],
+      "evidence_note": "上述链接为冻结要求与设计，不是已运行结果。",
+      "inherits_requirements": []
+    },
+    {
+      "id": "GPU-T00",
+      "namespace": "GPU",
+      "milestone": "GPU-M0",
+      "title": "只读探测既有GPU与固定可复现运行环境",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "INT-T00"
+      ],
+      "deliverables": [
+        "hardware-profile.json、环境锁定和设备可用状态",
+        "驱动/运行时/扩展兼容与初始资源记录"
+      ],
+      "acceptance": [
+        "记录实际型号、UUID、可见显存bytes、sm、驱动/运行时、功率/共享状态及主机条件",
+        "不从96GB规格推断96GiB可用容量或独占状态；验证目标sm兼容",
+        "仅使用已获授权且实际可用的现有服务器；不购买/开通/启动收费实例，不公开凭证或账户诊断",
+        "没有连接条件时如实阻塞实际GPU检查，继续可离线准备工作"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_probe",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-GPU_ENV"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": []
+    },
+    {
+      "id": "GPU-T01",
+      "namespace": "GPU",
+      "milestone": "GPU-M0",
+      "title": "统一Scene/Patch/Operator契约与CPU独立参考",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "INT-T01"
+      ],
+      "deliverables": [
+        "版本化场景/函数/RenderProfile/FitSpec接口",
+        "独立CPU积分/合成参考与收敛报告",
+        "GPU4K新合同及旧算子GPU符合性合同"
+      ],
+      "acceptance": [
+        "兼容现有crf.project.v1.1和既有函数版本；产品schema扩展不修改核心数学域/DSL",
+        "声明颜色、覆盖、像素足迹、预乘、截断、精度、参考误差和输出编码",
+        "旧算子支持域按最大显示通道误差2/255、P99 1/255建议冻结；HDR/随机积分/空间函数另立合同",
+        "参考误差低于被测门槛，禁止待优化内核自行产生未经独立检验的真值",
+        "GPU4K上限8,294,400像素，支持访问/样本/时间上限必须在运行前冻结为有限数值；不能借此改quality12",
+        "GPU4K的8294400像素仅为该独立档位；quality13按其冻结源尺寸执行，未来更大观察单列有限预算原尺寸合同"
+      ],
+      "compute_budget": {
+        "profile_ref": "offline",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T01",
+        "V11-T04",
+        "V11-T05",
+        "V11-T07"
+      ]
+    },
+    {
+      "id": "GPU-T02",
+      "namespace": "GPU",
+      "milestone": "GPU-M1",
+      "title": "实现持久GPU任务、资产版本与证据账本",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "INT-T00",
+        "INT-T01"
+      ],
+      "deliverables": [
+        "异步任务API、事件、租约/fencing、取消/恢复",
+        "ArtifactStore适配与固定注册表快照",
+        "EvidenceBundle、FrameDescriptor和失败/费用账本"
+      ],
+      "acceptance": [
+        "GUI/API/worker同一JobSpec与固定输入摘要；不以同步长请求承载全任务",
+        "保存任务、检查点、未知调用与失败；旧执行者晚返回不能覆盖新状态",
+        "场景、参考/ROI、采样、内核、编译器、模型与实际帧绑定；内容hash不冒充语义证明",
+        "现有存储只在授权范围适配，未接通时准确报告状态；公开工程无密钥"
+      ],
+      "compute_budget": {
+        "profile_ref": "offline",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-STORAGE"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T02",
+        "V11-T07",
+        "V11-T13",
+        "V11-T17"
+      ]
+    },
+    {
+      "id": "GPU-T03",
+      "namespace": "GPU",
+      "milestone": "GPU-M1",
+      "title": "迁移首个真实计算热点并验收CUDA数值符合性",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T00",
+        "GPU-T01"
+      ],
+      "deliverables": [
+        "至少一个实际CUDA覆盖/积分/函数求值/损失内核",
+        "CPU/GPU差分、冷/热时间线、复现命令"
+      ],
+      "acceptance": [
+        "相同输入/参数/采样和计算量比较CPU-Ref与GPU-A；实际记录设备执行，不接受接口占位",
+        "记录线性域/显示域/边缘误差、NaN/越界和精度配置，不要求跨硬件逐字节恒等",
+        "保留CPU参考回退与明确后端标签，不把回退结果计为GPU加速",
+        "首个可评审实现提交必须含真实计算路径、差分入口和资源记录"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_kernel",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-GPU_ENV"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T05",
+        "V11-T06",
+        "V11-T19"
+      ]
+    },
+    {
+      "id": "GPU-T04",
+      "namespace": "GPU",
+      "milestone": "GPU-M1",
+      "title": "实现互斥显存账本、动态池与profiling",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T03",
+        "GPU-T02"
+      ],
+      "deliverables": [
+        "bytes单位显存账本和预算管理器",
+        "allocated/reserved/device-used/框架外分配分解",
+        "Nsight/替代可用追踪和峰值/吞吐记录"
+      ],
+      "acceptance": [
+        "B=M-E-G，各内存归属只计一次；known临时/重分配峰值在B，G保留额外不确定余量",
+        "默认g=0.10；仅独立压力校准后允许0.08且继续受额外峰值约束；85-90%不是占满目标",
+        "单个主要GPU所有者，无LLM预留；候选共享不可变资产并记录增量",
+        "显存/活跃时间截图不足以验收；扩容只有吞吐、质量或缓存收益时继续"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_kernel",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-PROFILER"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T19"
+      ]
+    },
+    {
+      "id": "GPU-T05",
+      "namespace": "GPU",
+      "milestone": "GPU-M2",
+      "title": "实现对象关系、覆盖/深度/法线及背景显露函数",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T01",
+        "GPU-T03"
+      ],
+      "deliverables": [
+        "稳定对象/部件与局部坐标、覆盖/深度/法线资产",
+        "attachedTo/supportedBy/occludes/shadowReceiver算子",
+        "背景补齐函数、推断区域和关系反例"
+      ],
+      "acceptance": [
+        "几何基准法线与深度关系可检查；连接和接触既有参数约束也有实际贡献像素证据",
+        "删除信号灯等旧案例显露背景保持接缝/保护区条件，真实隐藏墙面保持unknown而非伪称真值",
+        "未知背面/离屏结构明确标注；固定视角结果不标为自由三维能力",
+        "新增字段必须实际进入CUDA求值，不仅增加schema"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_fit",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-OBSERVATIONS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T04",
+        "V11-T11",
+        "V11-T12"
+      ]
+    },
+    {
+      "id": "GPU-T06",
+      "namespace": "GPU",
+      "milestone": "GPU-M2",
+      "title": "统一固定预算求解与连续/离散参数处理",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T05",
+        "GPU-T04"
+      ],
+      "deliverables": [
+        "共享FitSpec、分阶段求解与最优状态保存",
+        "同表示/同时间预算对比、回退率与独立胜率",
+        "自动微分/解析梯度及离散外循环证据"
+      ],
+      "acceptance": [
+        "连续参数用验证过的梯度/数值方法，部件缺失/拓扑/函数类型用离散修订，遮挡不连续明确处理",
+        "实际点数、局部网络参数、覆盖和辅助数据全部计入表示成本",
+        "候选回到同一发布前向内核验收；不能靠增加点数或回退掩盖新算法质量回归",
+        "共同预算覆盖子分支/重试/评价，保存最优检查点和失败"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_fit",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-OBSERVATIONS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T10"
+      ]
+    },
+    {
+      "id": "GPU-T07",
+      "namespace": "GPU",
+      "milestone": "GPU-M2",
+      "title": "实现可辨识材质与对象局部网络资产",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T05",
+        "GPU-T06",
+        "INT-T02"
+      ],
+      "deliverables": [
+        "粗糙非金属/金属/涂层首批材质算子与资产",
+        "对象局部hash-grid/小MLP受控对照与训练元数据",
+        "冻结权重后的保留光照、形变和对象换位验证"
+      ],
+      "acceptance": [
+        "参数优化明确记录为对象/资产局部训练；基础模型冻结，不训练跨场景共享基础模型",
+        "本征材质场不接受当前光源/帧号/相机像素坐标作为烘焙绕道；方向响应通过显式接口",
+        "先几何和低频再细节；材质/光照标定不足时输出相对估计及假设",
+        "固定函数基线与局部网络在相同预算和未参与拟合条件下比较；无收益则不纳入发布",
+        "局部网络权重优化不记为程序级L2 RSI"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_fit",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-OBSERVATIONS",
+        "B-GPU_ACCESS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": []
+    },
+    {
+      "id": "GPU-T08",
+      "namespace": "GPU",
+      "milestone": "GPU-M2",
+      "title": "实现面积光、可见性与受限直接换光",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T05",
+        "GPU-T07"
+      ],
+      "deliverables": [
+        "光源/接收层/接触阴影/线性HDR计算",
+        "几何、材质与光照分开的单因素图与留出实拍对照"
+      ],
+      "acceptance": [
+        "方向/点/面积光语义明确，阴影只作用于声明接收层；无空间信息时声明近似或unknown",
+        "留出灯位分别评价物体与落影区域，不仅验证高光中心移动方向",
+        "本征材质在换光前后保持固定身份与权重，曝光/色调映射协议不暗改",
+        "纯2.5D路径不声称完整离屏反射、折射或多次光传输"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_render",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-OBSERVATIONS",
+        "B-GPU_ACCESS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T11",
+        "V11-T12"
+      ]
+    },
+    {
+      "id": "GPU-T09",
+      "namespace": "GPU",
+      "milestone": "GPU-M2",
+      "title": "实现多尺度几何/法线/材质细节与过滤",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T06",
+        "GPU-T07",
+        "GPU-T08"
+      ],
+      "deliverables": [
+        "对象坐标细节函数、尺度足迹与LOD",
+        "木纹/织纹/拉丝/磨损分项与尺度/运动对照"
+      ],
+      "acceptance": [
+        "轮廓几何、法线扰动、颜色/粗糙度细节分开，不以RGB噪声代替结构",
+        "尺寸变化与运动下稳定附着，细节随足迹过滤；原生求值与低分辨率插值对照分开",
+        "GPU实现真实消费新增参数，冻结材质权重后验证灯位与编辑泛化"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_fit",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-OBSERVATIONS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": []
+    },
+    {
+      "id": "GPU-T10",
+      "namespace": "GPU",
+      "milestone": "GPU-M3",
+      "title": "实现三模式调度、微批保真与恢复压力验证",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T04",
+        "GPU-T02",
+        "GPU-T06"
+      ],
+      "deliverables": [
+        "Fit/Render/Search软池、优先队列和调度器",
+        "batch/容量/吞吐曲线及取消恢复记录",
+        "至少2小时代表混合负载压力报告"
+      ],
+      "acceptance": [
+        "保持逻辑批、总样本、随机样本ID和更新规则，尾批按有效样本数加权；缩小微批不暗减总计算",
+        "流式tile/样本累积及视频有限缓冲，避免像素×所有高斯密集笛卡尔积",
+        "无未处理OOM/持续显存增长/陈旧结果覆盖；扩容无收益即回退并报告瓶颈",
+        "封存集不作为填充空闲GPU的后台任务；所有后台工作有来源、预算和检查点"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_stability",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-PROFILER"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T19"
+      ]
+    },
+    {
+      "id": "GPU-T11",
+      "namespace": "GPU",
+      "milestone": "GPU-M4",
+      "title": "接通真实模型提议与类型化目标闭环",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T02",
+        "GPU-T05"
+      ],
+      "deliverables": [
+        "现有Harness真实供应商适配及逐项IntentContract",
+        "真实请求/原答/修复/渲染/成本与失败记录"
+      ],
+      "acceptance": [
+        "使用既有提议模型服务，目录不传大数组权重；实际原答经类型、引用、作用域、预算检查再渲染",
+        "至少从新描述创建并连续两轮修改同一程序；未解析要求不静默删除",
+        "适配器单测、真实调用成功、视觉目标达标分别记录；注入/模拟响应不冒充真实调用",
+        "未配置时准确不可用；凭证只在服务侧，费用未知不记零，不自动启动未授权付费调用"
+      ],
+      "compute_budget": {
+        "profile_ref": "provider_validation",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-PROVIDER"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T03",
+        "V11-T14",
+        "V11-T16"
+      ]
+    },
+    {
+      "id": "GPU-T12",
+      "namespace": "GPU",
+      "milestone": "GPU-M4",
+      "title": "把GUI/Harness/Compute接成同一可用工作流",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T02",
+        "GPU-T10",
+        "GPU-T11"
+      ],
+      "deliverables": [
+        "工作台提交/渐进预览/进度/取消/恢复/版本比较",
+        "工程保存重开、函数/证据面板及真实交互记录"
+      ],
+      "acceptance": [
+        "新描述/观察、真实模型修改、GPU计算和导出通过同一工程完成，无手工传递JSON",
+        "后端、版本、原生尺寸与预算可见；近似预览不能代替最终合同",
+        "取消/用户修改后旧候选不得覆盖；重开固定资产和程序可继续编辑",
+        "旧入口仍可用，未接通服务不能显示演示成功"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_render",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-BROWSER",
+        "B-GPU_ACCESS",
+        "B-PROVIDER",
+        "B-STORAGE"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T03",
+        "V11-T14",
+        "V11-T20",
+        "V11-T22"
+      ]
+    },
+    {
+      "id": "GPU-T13",
+      "namespace": "GPU",
+      "milestone": "GPU-M4",
+      "title": "原生2K/4K与同程序时间导出",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T08",
+        "GPU-T09",
+        "GPU-T10"
+      ],
+      "deliverables": [
+        "2048级长边与3840x2160原生图/100%裁切",
+        "CPU/GPU及全帧/tile差分、未去噪线性结果",
+        "同程序5秒24fps视频、第2秒独立静帧和编码报告"
+      ],
+      "acceptance": [
+        "GPU4K新合同覆盖8,294,400像素；原quality12仍拒绝超4M请求，不改其200M访问上限",
+        "按声明相机/视口重新求值；长宽比转换显式处理，不把插值放大算原生4K",
+        "120帧与独立t=2秒对应第48帧按同后端合同比较；编码误差单列",
+        "几何/材质权重与随机序列固定；缓存/LOD状态可重建，原始结果与可选去噪/时间滤波分开",
+        "2K/4K阶段输出不替代quality13的冻结源尺寸评价；未来超过4K的观察仍须保留原尺寸合同与独立资源预算"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_render",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-BROWSER"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T22"
+      ]
+    },
+    {
+      "id": "GPU-T14",
+      "namespace": "GPU",
+      "milestone": "GPU-M4",
+      "title": "验证三类真实场景的直接光质量与编辑",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T13",
+        "GPU-T12",
+        "INT-T02"
+      ],
+      "deliverables": [
+        "阅读角/庭院/工具静物三类开发场景及能力矩阵",
+        "原生图/裁切/参考误差/编辑保持与视觉评审记录"
+      ],
+      "acceptance": [
+        "几何、材质、光线、细节、场景关系逐项检查，不能仅增加复杂对象数量",
+        "原杯子/订书机只作历史参考或有源码时的回归，不能作为新能力主要证据",
+        "重建与新创作分别评价；需要空间反射/透射的子项明确等待GPU-M5，不能以M4替代最终验收",
+        "开发样例不用于正式独立来源胜率宣称"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_render",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-OBSERVATIONS",
+        "B-HUMAN_REVIEW",
+        "B-GPU_ACCESS",
+        "B-PROVIDER"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": []
+    },
+    {
+      "id": "GPU-T15",
+      "namespace": "GPU",
+      "milestone": "GPU-M5",
+      "title": "实现CRF原生空间查询及未知语义",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T05",
+        "GPU-T08"
+      ],
+      "deliverables": [
+        "intersect/surface/visibility/transmittance/thickness受限接口",
+        "解析/数值独立参考与空间能力域报告"
+      ],
+      "acceptance": [
+        "未知不当miss；厚度、介质身份、边界方向与几何法线显式声明",
+        "空间函数仍由CRF定义求值，不用外部完整成图或Blender替代",
+        "若使用OptiX，实际区分硬件求交与自定义CUDA计算；无源码/轨迹不宣称RT Core收益",
+        "产品空间接口不自动新增核心数学域/DSL关键词"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_kernel",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-OBSERVATIONS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": []
+    },
+    {
+      "id": "GPU-T16",
+      "namespace": "GPU",
+      "milestone": "GPU-M5",
+      "title": "受控反射/透射/间接光与完整场景质量",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T15",
+        "GPU-T07",
+        "GPU-T13"
+      ],
+      "deliverables": [
+        "独立积分参考、光传输算子与收敛曲线",
+        "保留视角/光照的反射/透射/间接光结果",
+        "三类场景空间子项与编辑依赖验证"
+      ],
+      "acceptance": [
+        "仅在空间/材质前提成立时启用反弹和透射；1/2/4反弹、64/256/1024样本是预算档位而非质量承诺",
+        "先正确简单积分器，后重要性采样/分波次优化；原始线性结果单独保留",
+        "光传输扩大依赖域但不能偷偷绕过用户冻结区；冲突明确拒绝或按已批准约束处理",
+        "未覆盖极端焦散/复杂体积等保持unknown，不外推任意照片级"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_render",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-OBSERVATIONS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": []
+    },
+    {
+      "id": "GPU-T17",
+      "namespace": "GPU",
+      "milestone": "GPU-M2",
+      "title": "落实原证明义务与实现符合性链",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T01",
+        "GPU-T02"
+      ],
+      "deliverables": [
+        "P1/P2/P3/P5 Lean定理与依赖/公理清单",
+        "P4/P6约束、反例及像素witness",
+        "ImplementationRefinement与GPU数值合同记录"
+      ],
+      "acceptance": [
+        "拒绝sorry/未允许公理；空ROI、矛盾前提、超时、无证书不通过",
+        "编辑字段/局部影响/合成/晋升状态机的语义和可信基础明确",
+        "GPU实现、HDR、编译器或采样变化不继承旧定理标签；spec-only与实现测试/精化证明分开",
+        "旧SDR固定点证明不越过未经验证的HDR/颜色适配器"
+      ],
+      "compute_budget": {
+        "profile_ref": "proof",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-PROOF_TOOLS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T07",
+        "V11-T08",
+        "V11-T09",
+        "V11-T13",
+        "V11-T14"
+      ]
+    },
+    {
+      "id": "GPU-T18",
+      "namespace": "GPU",
+      "milestone": "GPU-M6",
+      "title": "受限Pipeline/Operator IR及真实非参数提议",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T03",
+        "GPU-T05",
+        "GPU-T17",
+        "GPU-T11"
+      ],
+      "deliverables": [
+        "有界纯函数算子语法、编译/解释与作用域检查",
+        "Parameter/Pipeline/Operator补丁提议、执行hash与错误诊断"
+      ],
+      "acceptance": [
+        "模型补丁不能任意执行脚本或更改验证器/合约/预算；先检查后运行",
+        "L0常数/权重、L1管线和L2算法结构明确区分，人工内核改进不计自主L2",
+        "提议来自实际任务/图像失败证据，算子真实执行且保留trace",
+        "实现语义与形式模型对应检查单列"
+      ],
+      "compute_budget": {
+        "profile_ref": "rsi_search",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-PROVIDER",
+        "B-PROOF_TOOLS",
+        "B-GPU_ACCESS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T04",
+        "V11-T15",
+        "V11-T16",
+        "V11-T23"
+      ]
+    },
+    {
+      "id": "GPU-T19",
+      "namespace": "GPU",
+      "milestone": "GPU-M6",
+      "title": "RSI搜索、staged试用与原子晋升/回退",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T18",
+        "GPU-T10",
+        "GPU-T02",
+        "INT-T02"
+      ],
+      "deliverables": [
+        "TaskGraph/VariantGraph、候选档案与共享预算",
+        "staged注册表、CAS/fencing晋升和回滚记录",
+        "至少3条独立提议轨迹及失败/回退统计"
+      ],
+      "acceptance": [
+        "L0/L1/L2与子任务/恢复共用预算；最后候选也评价，未知消耗不能记零",
+        "当前任务固定注册表快照；staged不等于promoted",
+        "仅开发/选择集进行试用；正式封存由GPU-T21单独触发",
+        "证据缺失/过期/前提不成立时不得晋升，后续新任务需真实执行晋升版本"
+      ],
+      "compute_budget": {
+        "profile_ref": "rsi_search",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-PROVIDER",
+        "B-OBSERVATIONS",
+        "B-GPU_ACCESS",
+        "B-PROOF_TOOLS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T16",
+        "V11-T17",
+        "V11-T18",
+        "V11-T23"
+      ]
+    },
+    {
+      "id": "GPU-T20",
+      "namespace": "GPU",
+      "milestone": "GPU-M6",
+      "title": "冻结预算并运行算法/算力/容量/RSI对照",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T14",
+        "GPU-T16",
+        "GPU-T19",
+        "INT-T01"
+      ],
+      "deliverables": [
+        "CPU-Ref/GPU-A/B/C/D对照及24/48/72GB/完整B容量试验",
+        "原V11五组实验与L2-only消融、质量/成本分布",
+        "回退前收益、回退后覆盖及不确定区间"
+      ],
+      "acceptance": [
+        "CPU/GPU同算法同设置先过符合性；B增预算，C/D保持相同预算以隔离算法/RSI收益",
+        "模型变更另设对照；不以新增模型或额外调用混充GPU收益",
+        "逻辑容量限制作用于应用池min(B,cap)，不冒充不同型号GPU性能",
+        "旧独立来源/预算/缺陷指标保持；候选不得修改参考、ROI、指标或封存协议"
+      ],
+      "compute_budget": {
+        "profile_ref": "benchmark",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-GPU_ACCESS",
+        "B-OBSERVATIONS",
+        "B-PROVIDER",
+        "B-HUMAN_REVIEW"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T01",
+        "V11-T21",
+        "V11-T24"
+      ]
+    },
+    {
+      "id": "GPU-T21",
+      "namespace": "GPU",
+      "milestone": "GPU-M6",
+      "title": "正式封存、视觉评价与新任务继承",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T20",
+        "GPU-T17",
+        "Q12-T02",
+        "GPU-T12",
+        "Q13-T02"
+      ],
+      "deliverables": [
+        "一次冻结候选的封存审计与质量评审",
+        "有效晋升回执、独立新任务执行trace",
+        "原1.1门槛及新增GPU门槛逐项判定"
+      ],
+      "acceptance": [
+        "执行前冻结程序/评价/适用域/fallback规则；已消费封存集不再次伪作未见",
+        "原L2目标至少一个真实非参数算子、至少3轨迹、相对固定1.1目标误差中位数改善10%的建议门槛按冻结合同判断",
+        "正式照片质量至少20独立目标及每目标3有效人工评审，报告场景级胜率和不确定区间；模型不代填人工票",
+        "quality12原冻结门槛独立复现，quality13三图原尺寸/细节尾部冻结门槛独立通过，GPU4K质量/性能/工作流另行通过；任何失败保留失败",
+        "新任务实际调用promoted算子，不以登记成功替代继承"
+      ],
+      "compute_budget": {
+        "profile_ref": "sealed_audit",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-OBSERVATIONS",
+        "B-HUMAN_REVIEW",
+        "B-GPU_ACCESS",
+        "B-PROVIDER",
+        "B-PROOF_TOOLS"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T18",
+        "V11-T20",
+        "V11-T21",
+        "V11-T25"
+      ]
+    },
+    {
+      "id": "GPU-T22",
+      "namespace": "GPU",
+      "milestone": "GPU-M6",
+      "title": "整合交付与版本事实核验",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T21",
+        "GPU-T13",
+        "GPU-T16",
+        "GPU-T12",
+        "GPU-T23"
+      ],
+      "deliverables": [
+        "完整工程/资产摘要/原生结果/复现与启动说明",
+        "实施与验证双状态清单、遗留问题、版本映射",
+        "用户可访问的开发入口及真实任务链接（若实际创建）"
+      ],
+      "acceptance": [
+        "不因本计划发布就升级产品版本或宣布1.1/1.2/1.3完成",
+        "计算内核、证明层、真实程序RSI、可运行编辑器四项同时成立；高质量真实场景、原生2K4K及GPU证据也分别判定；quality12已有结果需复现、quality13新增合同需通过，不能互相替代",
+        "无真实GPU/供应商/浏览器/封存记录的项不得标通过；原WebGPU子项独立验证，未完成则不得宣布原1.1全部继承要求完成",
+        "main与开发分支的源码差异明确；不覆盖用户改动，不公开凭证或账户诊断",
+        "远端发布和费用遵循既有授权，计划预算不构成开通收费资源或创建付费任务的自动授权"
+      ],
+      "compute_budget": {
+        "profile_ref": "offline",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-BROWSER"
+      ],
+      "evidence_refs": [],
+      "inherits_requirements": [
+        "V11-T02",
+        "V11-T26"
+      ]
+    },
+    {
+      "id": "GPU-T23",
+      "namespace": "GPU",
+      "milestone": "GPU-M4",
+      "title": "独立核对原WebGPU与浏览器增量执行子项",
+      "implementation_status": "planned",
+      "verification_status": "not_run",
+      "depends_on": [
+        "GPU-T01",
+        "GPU-T03",
+        "GPU-T10"
+      ],
+      "deliverables": [
+        "原V11-T19浏览器WebGPU实现/未实现状态及独立符合性报告",
+        "浏览器全帧/脏区、设备能力和交互时延记录"
+      ],
+      "acceptance": [
+        "CUDA完成不能自动把V11-T19的WebGPU实现记完成",
+        "若交付WebGPU，实际目标设备上验证同采样数值、脏区/全帧一致性及显式后端",
+        "若阶段仅交付CUDA，原V11-T19保持未完成；可报告CUDA阶段能力，不得将此任务或完整原1.1继承验收标为通过",
+        "原实时交互门槛的设备渲染、云端往返和完整验证时延分别计量"
+      ],
+      "compute_budget": {
+        "profile_ref": "gpu_kernel",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [
+        "B-WEBGPU_DEVICE"
+      ],
+      "evidence_refs": [],
+      "requirement_level": "required_for_original_V11_T19_and_full_inherited_completion",
+      "inherits_requirements": [
+        "V11-T19"
+      ]
+    }
+  ],
+  "inherited_v11_tasks": [
+    {
+      "id": "V11-T00",
+      "namespace": "V11",
+      "source_task_id": "T00",
+      "source_milestone": "M0",
+      "milestone": "V11-M0",
+      "title": "冻结1.0基线与产品版本映射",
+      "work_package": "W0",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [],
+      "deliverables": [
+        "version-map.json",
+        "legacy-artifact-manifest.json"
+      ],
+      "acceptance": [
+        "旧schema和证据不改写",
+        "17入口完整保留"
+      ],
+      "covered_by": [
+        "INT-T00",
+        "INT-T01"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T01",
+      "namespace": "V11",
+      "source_task_id": "T01",
+      "source_milestone": "M0",
+      "milestone": "V11-M0",
+      "title": "冻结计量、色彩、采样与预算协议",
+      "work_package": "W0",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T00"
+      ],
+      "deliverables": [
+        "RenderProfile",
+        "ReferenceSpec",
+        "BenchmarkContract"
+      ],
+      "acceptance": [
+        "明确解析真值/数值参考/照片观察",
+        "禁止封存后降门槛"
+      ],
+      "covered_by": [
+        "INT-T01",
+        "GPU-T01",
+        "GPU-T20"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T02",
+      "namespace": "V11",
+      "source_task_id": "T02",
+      "source_milestone": "M0",
+      "milestone": "V11-M0",
+      "title": "建立实际ArtifactStore与历史URL解析",
+      "work_package": "W5",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T00"
+      ],
+      "deliverables": [
+        "disk store",
+        "hosted storage adapter",
+        "asset resolver"
+      ],
+      "acceptance": [
+        "旧资源字节一致且访问范围不变",
+        "托管存储未接通则不得标可用"
+      ],
+      "covered_by": [
+        "INT-T02",
+        "GPU-T02",
+        "GPU-T22"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T03",
+      "namespace": "V11",
+      "source_task_id": "T03",
+      "source_milestone": "M1",
+      "milestone": "V11-M1",
+      "title": "语义目标编译和需求追溯",
+      "work_package": "W1",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T01"
+      ],
+      "deliverables": [
+        "IntentContract",
+        "unresolvedRequirements"
+      ],
+      "acceptance": [
+        "要求不静默丢失",
+        "语义对齐与形式命题正确性分开"
+      ],
+      "covered_by": [
+        "GPU-T11",
+        "GPU-T12"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T04",
+      "namespace": "V11",
+      "source_task_id": "T04",
+      "source_milestone": "M1",
+      "milestone": "V11-M1",
+      "title": "类型化Scene/Patch IR与作用域",
+      "work_package": "W1",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T01"
+      ],
+      "deliverables": [
+        "SceneIR",
+        "PatchIR",
+        "EffectContract"
+      ],
+      "acceptance": [
+        "坐标与色域有类型",
+        "阴影/滤波/遮挡纳入依赖"
+      ],
+      "covered_by": [
+        "GPU-T01",
+        "GPU-T05",
+        "GPU-T18"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T05",
+      "namespace": "V11",
+      "source_task_id": "T05",
+      "source_milestone": "M1",
+      "milestone": "V11-M1",
+      "title": "参考渲染与误差分级",
+      "work_package": "W2",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T04"
+      ],
+      "deliverables": [
+        "CPU reference evaluator",
+        "ReferenceSpec reports"
+      ],
+      "acceptance": [
+        "参考误差低于被检门槛",
+        "不以待优化内核生成自己的真值"
+      ],
+      "covered_by": [
+        "GPU-T01",
+        "GPU-T03"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T06",
+      "namespace": "V11",
+      "source_task_id": "T06",
+      "source_milestone": "M2",
+      "milestone": "V11-M2",
+      "title": "联合预乘颜色与覆盖积分",
+      "work_package": "W2",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T05"
+      ],
+      "deliverables": [
+        "integratePremultiplied",
+        "boundary fixtures"
+      ],
+      "acceptance": [
+        "同子像素位置求值颜色和alpha",
+        "受控多背景边缘检验"
+      ],
+      "covered_by": [
+        "GPU-T03",
+        "Q12-T00"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T07",
+      "namespace": "V11",
+      "source_task_id": "T07",
+      "source_milestone": "M1",
+      "milestone": "V11-M1",
+      "title": "类型化证据清单与失效机制",
+      "work_package": "W4",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T03",
+        "V11-T04",
+        "V11-T05"
+      ],
+      "deliverables": [
+        "EvidenceBundle",
+        "FrameDescriptor",
+        "ImplementationRefinement"
+      ],
+      "acceptance": [
+        "绑定尺寸色域构建参考ROI和帧",
+        "hash绑定不视为语义正确性证明"
+      ],
+      "covered_by": [
+        "GPU-T01",
+        "GPU-T02",
+        "GPU-T17"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T08",
+      "namespace": "V11",
+      "source_task_id": "T08",
+      "source_milestone": "M1",
+      "milestone": "V11-M1",
+      "title": "首个Lean定理及冻结命题检查",
+      "work_package": "W4",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T04",
+        "V11-T07"
+      ],
+      "deliverables": [
+        "P1 theorem",
+        "axiom manifest",
+        "checker receipt"
+      ],
+      "acceptance": [
+        "拒绝sorry与未允许公理",
+        "标明抽象模型与实现范围"
+      ],
+      "covered_by": [
+        "GPU-T17"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T09",
+      "namespace": "V11",
+      "source_task_id": "T09",
+      "source_milestone": "M2",
+      "milestone": "V11-M2",
+      "title": "扩充P2/P3/P5定理与P4/P6实例检查",
+      "work_package": "W4",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T08",
+        "V11-T06"
+      ],
+      "deliverables": [
+        "Lean core library",
+        "Z3 constraints",
+        "pixel witnesses"
+      ],
+      "acceptance": [
+        "反例可重放",
+        "矛盾前提与空ROI不通过",
+        "GPU不继承实数定理标签"
+      ],
+      "covered_by": [
+        "GPU-T17"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T10",
+      "namespace": "V11",
+      "source_task_id": "T10",
+      "source_milestone": "M2",
+      "milestone": "V11-M2",
+      "title": "统一FitSpec和固定预算求解",
+      "work_package": "W3",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T05",
+        "V11-T06"
+      ],
+      "deliverables": [
+        "portable solver",
+        "Python reference adapter",
+        "fitting evidence"
+      ],
+      "acceptance": [
+        "浏览器离线后端明确",
+        "requested/actual点数及辅助数据成本记录",
+        "回退率与新算法独立胜率分开"
+      ],
+      "covered_by": [
+        "Q12-T00",
+        "Q12-T01",
+        "GPU-T06"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T11",
+      "namespace": "V11",
+      "source_task_id": "T11",
+      "source_milestone": "M2",
+      "milestone": "V11-M2",
+      "title": "承接面连接和接收阴影",
+      "work_package": "W3",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T04",
+        "V11-T06"
+      ],
+      "deliverables": [
+        "relation compiler",
+        "contact operator",
+        "receiver-scoped shadow"
+      ],
+      "acceptance": [
+        "连接有锚点和像素证据",
+        "阴影不误伤未授权接收物体"
+      ],
+      "covered_by": [
+        "GPU-T05",
+        "GPU-T08"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T12",
+      "namespace": "V11",
+      "source_task_id": "T12",
+      "source_milestone": "M2",
+      "milestone": "V11-M2",
+      "title": "删除后的背景函数补齐",
+      "work_package": "W3",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T11"
+      ],
+      "deliverables": [
+        "completion operator",
+        "inferred-region record"
+      ],
+      "acceptance": [
+        "墙面接缝和保护区检查",
+        "自然隐藏墙面不声称有真实像素真值"
+      ],
+      "covered_by": [
+        "GPU-T05",
+        "GPU-T08"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T13",
+      "namespace": "V11",
+      "source_task_id": "T13",
+      "source_milestone": "M1",
+      "milestone": "V11-M1",
+      "title": "持久异步任务与证明执行器",
+      "work_package": "W5",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T02",
+        "V11-T07"
+      ],
+      "deliverables": [
+        "job API",
+        "durable log",
+        "lease/fencing",
+        "proof worker"
+      ],
+      "acceptance": [
+        "真任务可恢复",
+        "未知调用不消失",
+        "旧执行者晚返回不能覆盖新结果"
+      ],
+      "covered_by": [
+        "GPU-T02",
+        "GPU-T17"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T14",
+      "namespace": "V11",
+      "source_task_id": "T14",
+      "source_milestone": "M1",
+      "milestone": "V11-M1",
+      "title": "首条编辑器纵向流程",
+      "work_package": "W7",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T03",
+        "V11-T07",
+        "V11-T08",
+        "V11-T13"
+      ],
+      "deliverables": [
+        "goal/canvas/evidence interaction"
+      ],
+      "acceptance": [
+        "换墙色真实渲染与保护检查联动",
+        "证明后端未就绪则unknown"
+      ],
+      "covered_by": [
+        "GPU-T11",
+        "GPU-T12",
+        "GPU-T17"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T15",
+      "namespace": "V11",
+      "source_task_id": "T15",
+      "source_milestone": "M3",
+      "milestone": "V11-M3",
+      "title": "受限Operator IR与编译执行",
+      "work_package": "W6",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T04",
+        "V11-T09"
+      ],
+      "deliverables": [
+        "operator grammar",
+        "reference interpreter",
+        "effect checker"
+      ],
+      "acceptance": [
+        "纯函数有界执行",
+        "只改常数不计L2",
+        "实现符合性单列"
+      ],
+      "covered_by": [
+        "GPU-T18"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T16",
+      "namespace": "V11",
+      "source_task_id": "T16",
+      "source_milestone": "M3",
+      "milestone": "V11-M3",
+      "title": "模型程序提议与缺陷路由",
+      "work_package": "W6",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T03",
+        "V11-T10",
+        "V11-T11",
+        "V11-T15"
+      ],
+      "deliverables": [
+        "ParameterPatch/PipelinePatch/OperatorPatch proposals"
+      ],
+      "acceptance": [
+        "用实际图像与错误证据",
+        "不修改自身评分器",
+        "真实模型调用单独记录"
+      ],
+      "covered_by": [
+        "GPU-T11",
+        "GPU-T18",
+        "GPU-T19"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T17",
+      "namespace": "V11",
+      "source_task_id": "T17",
+      "source_milestone": "M3",
+      "milestone": "V11-M3",
+      "title": "RSI控制器及双图档案",
+      "work_package": "W6",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T13",
+        "V11-T15",
+        "V11-T16"
+      ],
+      "deliverables": [
+        "TaskGraph",
+        "VariantGraph",
+        "runBudget",
+        "candidate archive"
+      ],
+      "acceptance": [
+        "L0/L1/L2共用预算",
+        "最后候选也评价",
+        "保存互补合格候选"
+      ],
+      "covered_by": [
+        "GPU-T02",
+        "GPU-T19"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T18",
+      "namespace": "V11",
+      "source_task_id": "T18",
+      "source_milestone": "M3",
+      "milestone": "V11-M3",
+      "title": "staged能力与原子晋升协议",
+      "work_package": "W6",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T09",
+        "V11-T13",
+        "V11-T17"
+      ],
+      "deliverables": [
+        "capability registry",
+        "CAS promotion",
+        "rollback"
+      ],
+      "acceptance": [
+        "试用与正式晋升区分",
+        "expectedRegistryRevision与有效attempt匹配"
+      ],
+      "covered_by": [
+        "GPU-T19",
+        "GPU-T21"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T19",
+      "namespace": "V11",
+      "source_task_id": "T19",
+      "source_milestone": "M4",
+      "milestone": "V11-M4",
+      "title": "WebGPU符合性与局部更新",
+      "work_package": "W7",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T06",
+        "V11-T11"
+      ],
+      "deliverables": [
+        "tile compiler",
+        "GPU backend",
+        "conformance reports"
+      ],
+      "acceptance": [
+        "同采样语义",
+        "相对CPU按容差检验",
+        "全帧和脏区结果一致"
+      ],
+      "covered_by": [
+        "GPU-T03",
+        "GPU-T04",
+        "GPU-T10",
+        "GPU-T23"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "CUDA仅承接新增加速后端的数值/脏区要求；WebGPU实现必须由GPU-T23独立核验，不自动完成原任务。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T20",
+      "namespace": "V11",
+      "source_task_id": "T20",
+      "source_milestone": "M4",
+      "milestone": "V11-M4",
+      "title": "编辑器完整任务与能力版本视图",
+      "work_package": "W7",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T12",
+        "V11-T14",
+        "V11-T17",
+        "V11-T18"
+      ],
+      "deliverables": [
+        "function panel",
+        "proof panel",
+        "task panel",
+        "capability panel"
+      ],
+      "acceptance": [
+        "每个显示状态来自真实记录",
+        "编辑后陈旧证据失效",
+        "历史案例可用"
+      ],
+      "covered_by": [
+        "GPU-T12",
+        "GPU-T21"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T21",
+      "namespace": "V11",
+      "source_task_id": "T21",
+      "source_milestone": "M0",
+      "milestone": "V11-M0",
+      "title": "建立独立来源数据与受控真值",
+      "work_package": "W0",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T01"
+      ],
+      "deliverables": [
+        "source-group manifest",
+        "synthetic truth fixtures",
+        "sealed split"
+      ],
+      "acceptance": [
+        "目标60独立来源组",
+        "同图派生物不能跨组",
+        "预注册封存访问协议"
+      ],
+      "covered_by": [
+        "INT-T02",
+        "GPU-T20",
+        "GPU-T21"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T22",
+      "namespace": "V11",
+      "source_task_id": "T22",
+      "source_milestone": "M4",
+      "milestone": "V11-M4",
+      "title": "尺度时间与真实导出",
+      "work_package": "W7",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T06",
+        "V11-T11",
+        "V11-T20"
+      ],
+      "deliverables": [
+        "5-second video",
+        "frame diagnostics",
+        "complete project export"
+      ],
+      "acceptance": [
+        "120帧24fps时长5秒",
+        "二维运镜正确标注",
+        "导出工程可重放"
+      ],
+      "covered_by": [
+        "GPU-T13",
+        "GPU-T12"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T23",
+      "namespace": "V11",
+      "source_task_id": "T23",
+      "source_milestone": "M3",
+      "milestone": "V11-M3",
+      "title": "真实L2试改进与选择集试用",
+      "work_package": "W6",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T17",
+        "V11-T18",
+        "V11-T21"
+      ],
+      "deliverables": [
+        "automatic patch trace",
+        "executedOperatorHash",
+        "staged trial"
+      ],
+      "acceptance": [
+        "人工种子与自动补丁区分",
+        "算子真实执行",
+        "不接触正式封存集"
+      ],
+      "covered_by": [
+        "GPU-T18",
+        "GPU-T19"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T24",
+      "namespace": "V11",
+      "source_task_id": "T24",
+      "source_milestone": "M5",
+      "milestone": "V11-M5",
+      "title": "冻结候选并运行五组对照",
+      "work_package": "W8",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T10",
+        "V11-T20",
+        "V11-T23"
+      ],
+      "deliverables": [
+        "comparison runs",
+        "L2-only ablation",
+        "cost distributions"
+      ],
+      "acceptance": [
+        "至少三条提议轨迹",
+        "人工内核提升与RSI贡献分离",
+        "适用域与fallback规则提前冻结"
+      ],
+      "covered_by": [
+        "GPU-T20"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T25",
+      "namespace": "V11",
+      "source_task_id": "T25",
+      "source_milestone": "M5",
+      "milestone": "V11-M5",
+      "title": "一次正式封存与跨任务能力继承",
+      "work_package": "W8",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T18",
+        "V11-T21",
+        "V11-T24"
+      ],
+      "deliverables": [
+        "sealed audit",
+        "promotion receipt",
+        "fresh task execution"
+      ],
+      "acceptance": [
+        "封存检验前冻结程序与合约",
+        "通过后正式promoted",
+        "新任务实际执行晋升算子"
+      ],
+      "covered_by": [
+        "GPU-T21"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    },
+    {
+      "id": "V11-T26",
+      "namespace": "V11",
+      "source_task_id": "T26",
+      "source_milestone": "M5",
+      "milestone": "V11-M5",
+      "title": "完整验收与版本交付",
+      "work_package": "W8",
+      "implementation_status": "requires_audit",
+      "verification_status": "not_run",
+      "depends_on": [
+        "V11-T09",
+        "V11-T20",
+        "V11-T22",
+        "V11-T25"
+      ],
+      "deliverables": [
+        "acceptance report",
+        "downloadable examples",
+        "1.1 release manifest"
+      ],
+      "acceptance": [
+        "所有发布必需项通过",
+        "照片质量/实时加速主张单独判定",
+        "失败则保持候选版"
+      ],
+      "covered_by": [
+        "GPU-T22"
+      ],
+      "compute_budget": {
+        "profile_ref": "legacy_v11_proposal",
+        "shared_with_children_and_retries": true,
+        "is_spending_authorization": false
+      },
+      "external_blockers": [],
+      "evidence_refs": [],
+      "mapping_rule": "映射是负责关系，不是完成证明；逐项以现有代码与新证据审计。",
+      "historical_status": "planned"
+    }
+  ],
+  "inherited_source_sha256": "7ba81ded75bbe94af59d2df32aeb70568dd62c0ff736db455588512b11ece90e",
+  "inherited_gates": [
+    {
+      "id": "V11:G-legacy",
+      "namespace": "V11",
+      "source_gate_id": "G-legacy",
+      "definition": {
+        "id": "G-legacy",
+        "gate": "required",
+        "criterion": "preserve all legacy cases/assets/URLs; strict-profile compatibility replay"
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "继承原定义与条件；任务映射不等于此门槛已通过。"
+    },
+    {
+      "id": "V11:G-protected",
+      "namespace": "V11",
+      "source_gate_id": "G-protected",
+      "definition": {
+        "id": "G-protected",
+        "gate": "required",
+        "criterion": "outside authorized conservative influence footprint, exact RGBA equality on strict reference path"
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "继承原定义与条件；任务映射不等于此门槛已通过。"
+    },
+    {
+      "id": "V11:G-edge",
+      "namespace": "V11",
+      "source_gate_id": "G-edge",
+      "definition": {
+        "id": "G-edge",
+        "gate": "required",
+        "truthRequired": true,
+        "candidateMayDefineEvaluationMask": false,
+        "boundaryBandOutputPixels": [
+          1,
+          3
+        ],
+        "medianMAEReductionTarget": 0.2,
+        "additionalGuards": [
+          "gradient error",
+          "contour displacement",
+          "absolute tolerance near zero baseline"
+        ]
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "继承原定义与条件；任务映射不等于此门槛已通过。"
+    },
+    {
+      "id": "V11:G-fit",
+      "namespace": "V11",
+      "source_gate_id": "G-fit",
+      "definition": {
+        "id": "G-fit",
+        "gate": "required",
+        "medianPSNRGainTargetDb": 0.5,
+        "perCaseRegressionLimitDb": 0.1,
+        "fallbackReportedSeparately": true,
+        "countAuxiliaryRepresentationCost": true
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "继承原定义与条件；任务映射不等于此门槛已通过。"
+    },
+    {
+      "id": "V11:G-gpu",
+      "namespace": "V11",
+      "source_gate_id": "G-gpu",
+      "definition": {
+        "id": "G-gpu",
+        "gate": "required_if_gpu_enabled",
+        "maxDisplayChannelErrorTarget": 0.00784313725490196,
+        "p99DisplayChannelErrorTarget": 0.00392156862745098,
+        "linearErrorAlsoReported": true,
+        "notAUniversalCrossHardwareProof": true
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "旧算子已支持域保持原数值建议；新增HDR/随机积分/空间函数另立合同，不能扩大旧定理结论。"
+    },
+    {
+      "id": "V11:G-interactive",
+      "namespace": "V11",
+      "source_gate_id": "G-interactive",
+      "definition": {
+        "id": "G-interactive",
+        "gate": "required_for_realtime_acceleration_claim",
+        "width": 1024,
+        "height": 768,
+        "maxActualGaussians": 65536,
+        "maxDependencyExpandedDirtyFraction": 0.25,
+        "eventToNewFrameP95TargetMs": 100,
+        "fullVerificationLatencySeparate": true
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "继承原定义与条件；任务映射不等于此门槛已通过。"
+    },
+    {
+      "id": "V11:G-video",
+      "namespace": "V11",
+      "source_gate_id": "G-video",
+      "definition": {
+        "id": "G-video",
+        "gate": "required",
+        "durationSeconds": 5,
+        "fps": 24,
+        "frames": 120,
+        "representation": "image_plane_motion",
+        "temporalProtocol": "freeze scale and coordinate-compensated residual tolerances at M0"
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "继承原定义与条件；任务映射不等于此门槛已通过。"
+    },
+    {
+      "id": "V11:G-formal",
+      "namespace": "V11",
+      "source_gate_id": "G-formal",
+      "definition": {
+        "id": "G-formal",
+        "gate": "required",
+        "coreLeanClaims": [
+          "P1",
+          "P2",
+          "P3",
+          "P5"
+        ],
+        "instanceChecks": [
+          "P4",
+          "P6"
+        ],
+        "sorryAllowed": false,
+        "trustedComputingBaseExplicit": true,
+        "specOnlyCannotCertifyImplementation": true
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "继承原定义与条件；任务映射不等于此门槛已通过。"
+    },
+    {
+      "id": "V11:G-rsi",
+      "namespace": "V11",
+      "source_gate_id": "G-rsi",
+      "definition": {
+        "id": "G-rsi",
+        "gate": "required",
+        "minActualNonParameterOperatorPrograms": 1,
+        "medianTargetErrorReductionVersusFixed11": 0.1,
+        "minSearchTrajectories": 3,
+        "isolatedL2AblationRequired": true,
+        "executedOperatorTraceRequired": true,
+        "newTaskMustUsePromotedOperator": true,
+        "applicabilityFrozenBeforeSealed": true,
+        "fallbackCoverageAndRawCandidateGainsSeparate": true
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "继承原定义与条件；任务映射不等于此门槛已通过。"
+    },
+    {
+      "id": "V11:G-photo",
+      "namespace": "V11",
+      "source_gate_id": "G-photo",
+      "definition": {
+        "id": "G-photo",
+        "gate": "required_for_photographic_quality_improvement_claim; diagnostic_for_technical_release",
+        "minIndependentTargetScenes": 20,
+        "minValidHumanReviewersPerScene": 3,
+        "scenePairwiseWinRateTarget": 0.6,
+        "uncertaintyProtocol": "pre-register clustered scene/source interval; require support for improvement, otherwise inconclusive",
+        "modelCannotFillHumanReview": true
+      },
+      "threshold_status": "proposed; calibrate on development data and freeze at M0 before sealed testing",
+      "verification_status": "not_run",
+      "application_note": "本次完整高质量目标需独立照片/真实感证据；旧技术发布中的diagnostic属性不能用来免除新目标。"
+    }
+  ],
+  "proof_obligations": [
+    {
+      "id": "V11-P1",
+      "kind": "formal",
+      "title": "Patch字段不变性",
+      "implementationScope": "abstract PatchIR, separate implementation correspondence",
+      "plannedChecker": "Lean",
+      "status": "not_run",
+      "source_id": "P1",
+      "responsible_tasks": [
+        "GPU-T17"
+      ],
+      "implementation_refinement_required": true
+    },
+    {
+      "id": "V11-P2",
+      "kind": "formal_and_exhaustive",
+      "title": "保守影响域外不变",
+      "implementationScope": "conditional effect semantics plus actual finite frame check",
+      "plannedChecker": "Lean + runtime witness",
+      "status": "not_run",
+      "source_id": "P2",
+      "responsible_tasks": [
+        "GPU-T17"
+      ],
+      "implementation_refinement_required": true
+    },
+    {
+      "id": "V11-P3",
+      "kind": "formal",
+      "title": "SDR固定点预乘合成边界与恒等",
+      "implementationScope": "declared fixed-point operator, not arbitrary HDR or WGSL",
+      "plannedChecker": "Lean + bitvector checks",
+      "status": "not_run",
+      "source_id": "P3",
+      "responsible_tasks": [
+        "GPU-T17"
+      ],
+      "implementation_refinement_required": true
+    },
+    {
+      "id": "V11-P4",
+      "kind": "finite_constraint_and_witness",
+      "title": "锚点与实际像素连接",
+      "implementationScope": "declared scene and actual contribution frame",
+      "plannedChecker": "Z3 + pixel-path checker",
+      "status": "not_run",
+      "source_id": "P4",
+      "responsible_tasks": [
+        "GPU-T17"
+      ],
+      "implementation_refinement_required": true
+    },
+    {
+      "id": "V11-P5",
+      "kind": "formal",
+      "title": "晋升状态机与必需证据",
+      "implementationScope": "pure transition rules, runtime orchestration tested separately",
+      "plannedChecker": "Lean + fault injection",
+      "status": "not_run",
+      "source_id": "P5",
+      "responsible_tasks": [
+        "GPU-T17"
+      ],
+      "implementation_refinement_required": true
+    },
+    {
+      "id": "V11-P6",
+      "kind": "constraint",
+      "title": "非空ROI及前提可满足",
+      "implementationScope": "current contract and bounded constraints",
+      "plannedChecker": "Z3 + runtime validation",
+      "status": "not_run",
+      "source_id": "P6",
+      "responsible_tasks": [
+        "GPU-T17"
+      ],
+      "implementation_refinement_required": true
+    }
+  ],
+  "original_data_protocol": {
+    "candidateSearchRounds": 10,
+    "targetIndependentSourceGroups": 60,
+    "splitBy": "original photography source and object identity",
+    "developmentGroups": 30,
+    "selectionGroups": 15,
+    "sealedGroups": 15,
+    "legacyRegressionSeparate": true,
+    "derivedImageCrossSplitAllowed": false,
+    "sealedExecutionsPerFrozenReleaseCandidate": 1,
+    "proposalModelSeesSealedImagesOrPerCaseFeedback": false,
+    "frozenFitterMayReadTargetObservation": true,
+    "sealedFailureUsedForFurtherRepair": "reclassify consumed set and create new sealed version"
+  },
+  "original_experiment_arms": [
+    "1.0 + existing parameter loop",
+    "1.1 fixed kernel and pipeline",
+    "1.1 + L0",
+    "1.1 + L0/L1",
+    "1.1 + L0/L1/L2"
+  ],
+  "original_promotion_policy": {
+    "states": [
+      "proposed",
+      "built",
+      "proof_checked",
+      "evaluated",
+      "staged",
+      "frozen_for_audit",
+      "sealed_checked",
+      "promoted",
+      "rolled_back",
+      "rejected"
+    ],
+    "stagedIsNotPromoted": true,
+    "currentTaskRegistrySnapshotImmutable": true,
+    "atomicEvidenceAndPointerCommit": true,
+    "expectedRegistryRevisionRequired": true,
+    "fencingTokenRequired": true,
+    "lateWorkerCannotPromote": true,
+    "candidateMayChangeVerifierContractOrBudgetLedger": false
+  },
+  "original_evidence_bindings": [
+    "intent",
+    "contract",
+    "scene_before",
+    "scene_after",
+    "patch",
+    "asset_hashes",
+    "pipeline",
+    "operator_registry",
+    "renderer_build",
+    "verifier_build",
+    "reference",
+    "ROI_masks",
+    "benchmark_manifest",
+    "render_profile",
+    "frame_descriptor",
+    "pixels",
+    "submitted_critique_image",
+    "model_response",
+    "executed_operator_trace"
+  ],
+  "original_implementation_refinement": {
+    "allowedStatuses": [
+      "spec_only",
+      "implementation_tested",
+      "refinement_proved"
+    ],
+    "defaultPlannedDelivery": "model_proved_plus_implementation_tested",
+    "status": "not_run"
+  },
+  "frozen_quality12": {
+    "id": "alpine-native-quality-2026-11-22",
+    "source_url": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/contracts/quality12.json",
+    "source_path_on_development_branch": "editor/contracts/quality12.json",
+    "file_sha256": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+    "contract": {
+      "schema": "crf.reference_quality_contract.v1",
+      "id": "alpine-native-quality-2026-11-22",
+      "version": "1.1.0-experimental.2",
+      "scope": "reference_conditioned_reconstruction_at_canonical_native_resolution",
+      "frozenBefore": "delivery implementation and final candidate selection; thresholds were sent before feasibility experiments",
+      "reference": {
+        "path": "web/assets/v08/references/landscape.alpine.png",
+        "fileSha256": "b689d5ebe330549b6aa6489c3addffef029e7b803aeb63d61666843642a75222",
+        "width": 800,
+        "height": 531,
+        "normalization": "existing canonical RGB8 asset; originally EXIF-transposed and Lanczos-downsampled from the downloaded 1280x850 source; no further resizing in this evaluation"
+      },
+      "metrics": {
+        "domain": "sRGB encoded RGB8, all three channels, opaque full frame",
+        "quantization": "clamp(floor(value + 0.5), 0, 255)",
+        "mae": "mean absolute error over all RGB channels",
+        "psnr": "10 * log10(255^2 / mean squared RGB8 error)",
+        "ssim": {
+          "implementation": "scipy.ndimage.gaussian_filter per RGB channel; mean of full-frame SSIM map",
+          "sigma": 1.5,
+          "truncate": 3.5,
+          "boundary": "reflect",
+          "covariance": "population",
+          "C1": 6.5025,
+          "C2": 58.5225,
+          "roiPolicy": "crop the already computed full-frame SSIM map; never recompute window padding inside a crop"
+        }
+      },
+      "fullFrame": {
+        "psnrMin": 32,
+        "ssimMin": 0.95,
+        "maeMax": 4
+      },
+      "roiCoordinates": "normalized continuous image boundaries; floor lower bounds, ceil upper bounds, clamp to image; upper bounds exclusive",
+      "rois": [
+        {
+          "id": "mountain_forest",
+          "label": "山体与树林",
+          "bounds": [
+            0.05,
+            0.05,
+            0.4,
+            0.55
+          ],
+          "ssimMin": 0.9,
+          "maeMax": 6
+        },
+        {
+          "id": "water",
+          "label": "水面与倒影",
+          "bounds": [
+            0.05,
+            0.7,
+            0.95,
+            0.98
+          ],
+          "ssimMin": 0.9,
+          "maeMax": 6
+        },
+        {
+          "id": "shore_buildings",
+          "label": "岸线与建筑",
+          "bounds": [
+            0.6,
+            0.48,
+            0.98,
+            0.7
+          ],
+          "ssimMin": 0.9,
+          "maeMax": 6
+        }
+      ],
+      "representation": {
+        "family": "signed additive anisotropic 2D Gaussian functions plus RGB base",
+        "maxBasisCount": 262144,
+        "minSigmaSourcePixels": 0.35,
+        "cutoffSquaredMahalanobis": 16,
+        "sourceRGBRasterEmbedded": false,
+        "residualRasterEmbedded": false,
+        "perPixelLookupAllowed": false,
+        "sourceRequiredAtRenderTime": false,
+        "parameterCountAndStorageDisclosureRequired": true
+      },
+      "runtime": {
+        "maxOutputPixels": 4000000,
+        "maxSupportVisits": 200000000,
+        "referenceReplayMaxChannelError": 1
+      },
+      "requiredEvidence": [
+        "full-frame reconstruction PNG at 800x531",
+        "reference/result side-by-side and matching crops at native sampling",
+        "metrics recomputed from the serialized final asset output",
+        "independent JavaScript replay compared against Python",
+        "source-free renderer and saved-project replay",
+        "real browser load, edit, full-resolution render and PNG export",
+        "failed baseline and optimization history retained",
+        "legacy assets and routes remain byte-exact"
+      ],
+      "exclusions": [
+        "not an unseen-scene generation or class-generalization benchmark",
+        "not recovered unseen high-resolution detail when zoomed",
+        "not physically correct relighting or a learned dynamic scene",
+        "not a formal proof or autonomous L2 program RSI result",
+        "not a claim that a finite PSNR/SSIM gate establishes universal photorealism"
+      ],
+      "policy": "Candidates cannot edit this contract or lower its thresholds. A failed candidate remains failed. Engineering replay/performance results do not substitute for reference quality."
+    },
+    "change_policy": "保持原文件和全部指标/表示/运行限额；GPU4K使用独立合同，不修改此合同。",
+    "verification_status": "evidence_present_not_replayed",
+    "responsible_tasks": [
+      "Q12-T00",
+      "Q12-T01",
+      "Q12-T02"
+    ],
+    "source_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+    "original_freeze_commit": "f66a3e35b1501ef0172b859351a42aa4c03230ee",
+    "reported_quality": {
+      "width": 800,
+      "height": 531,
+      "psnr_db": 36.6677525,
+      "ssim": 0.9728077,
+      "mae_rgb8": 2.1342954,
+      "roi_status": "three_frozen_ROIs_reported_passed",
+      "gaussian_count": 65536
+    },
+    "evidence_refs": [
+      "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/README_QUALITY.md",
+      "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/web/assets/quality12/alpine.quality.json",
+      "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/review/independent-audit.json",
+      "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/kernel/verification.json",
+      "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/reports/quality12/browser/artifact-verification.json"
+    ]
+  },
+  "gpu4k_contract": {
+    "id": "crf-gpu96-native-output.proposed.v1",
+    "status": "proposed_freeze_before_execution",
+    "legacy_quality12_contract_unchanged": true,
+    "outputs": [
+      {
+        "kind": "long_edge",
+        "pixels": 2048,
+        "aspect": "declared_camera_or_source_preserved"
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "pixels": 8294400
+      }
+    ],
+    "runtime": {
+      "max_output_pixels": 8294400,
+      "max_support_visits": null,
+      "max_sample_evaluations": null,
+      "unresolved_limit_policy": "GPU-M0依据实际算子/设备冻结明确有限上限；null为尚未制定，调度器必须拒绝未设限正式运行，不表示无限。"
+    },
+    "contracts_required": [
+      "linear_HDR_and_display_encoding",
+      "sampling_and_RNG",
+      "geometry_visibility_and_unknown",
+      "material_training_and_holdout",
+      "CPU_GPU_supported_domain_tolerances",
+      "tile_and_temporal_conformance",
+      "dependency_and_protected_regions",
+      "quality_and_cost_baselines"
+    ],
+    "raw_outputs_required": [
+      "native_image",
+      "linear_image",
+      "diagnostic_channels",
+      "full_frame_and_100_percent_crops",
+      "actual_samples_and_representation_bytes",
+      "kernel/device/profile_hashes"
+    ],
+    "quality_policy": "目标真值/保留观测/人工评价分别冻结，不能通过改尺寸、插值放大、换参考或降旧门槛宣称提升",
+    "required_tasks": [
+      "GPU-T01",
+      "GPU-T13",
+      "GPU-T14",
+      "GPU-T16",
+      "GPU-T20",
+      "GPU-T21"
+    ],
+    "verification_status": "not_run",
+    "scope": "独立的新场景2K/UHD4K输出档位；不是所有来源图像的分辨率上限，也不覆盖quality13原尺寸合同",
+    "source_resolution_policy": "quality13按其冻结观察尺寸验收。未来声明更大的观察时，保持原尺寸并另设足够的有限任务预算；不能把大于4K的观察缩到4K后声称原尺寸通过。"
+  },
+  "external_blockers": {
+    "B-BASELINE": {
+      "prerequisite": "可读取指定f66基线并有隔离工作区",
+      "status": "source_identified_replay_pending",
+      "offline_work": "固定清单、审查代码、补齐可重放命令；不依赖缺失1.2提交"
+    },
+    "B-GPU_ACCESS": {
+      "prerequisite": "既有GPU节点的授权连接与可用时段",
+      "status": "not_verified_by_this_plan",
+      "offline_work": "编写后端接口/CPU参考/合同/任务协议",
+      "secret_in_repository": false
+    },
+    "B-GPU_ENV": {
+      "prerequisite": "兼容实际sm/驱动的CUDA/PyTorch/扩展",
+      "status": "not_verified_by_this_plan",
+      "offline_work": "准备锁定方案和可重复安装说明，不伪造运行"
+    },
+    "B-PROFILER": {
+      "prerequisite": "允许可用性能追踪工具访问目标GPU",
+      "status": "not_verified_by_this_plan",
+      "offline_work": "定义事件与资源字段；权限不足保留unknown"
+    },
+    "B-PROVIDER": {
+      "prerequisite": "现有提议模型配置及相应真实调用授权",
+      "status": "runtime_configuration_not_verified",
+      "offline_work": "真实不可用状态、适配器/反例测试；注入结果独立标记",
+      "secret_in_repository": false
+    },
+    "B-STORAGE": {
+      "prerequisite": "授权的持久任务与内容寻址资产存储",
+      "status": "integration_not_verified",
+      "offline_work": "实现本地适配/接口与恢复逻辑"
+    },
+    "B-OBSERVATIONS": {
+      "prerequisite": "独立真实来源、必要的多光照/多视图与标注",
+      "status": "additional_data_required",
+      "offline_work": "受控解析/数值测试和来源清单；不得替代正式实拍验证"
+    },
+    "B-HUMAN_REVIEW": {
+      "prerequisite": "独立人类盲评和有效场景数量",
+      "status": "not_collected_by_this_plan",
+      "offline_work": "预注册随机化/评价界面/统计协议；不得由模型填票"
+    },
+    "B-BROWSER": {
+      "prerequisite": "受支持的真实浏览器及编解码工具",
+      "status": "current_environment_not_verified",
+      "offline_work": "端到端脚本与资产重放准备；不把脚本存在当运行"
+    },
+    "B-PROOF_TOOLS": {
+      "prerequisite": "锁定Lean/Z3与实际证书检查执行器",
+      "status": "not_verified_by_this_plan",
+      "offline_work": "命题/前提/反例/可信基础准备"
+    },
+    "B-WEBGPU_DEVICE": {
+      "prerequisite": "实际浏览器WebGPU目标设备",
+      "status": "not_verified_by_this_plan",
+      "offline_work": "保留接口与原要求；CUDA证据不替代WebGPU"
+    }
+  },
+  "budget_profiles": {
+    "offline": {
+      "status": "proposed",
+      "max_provider_requests": 0,
+      "max_gpu_seconds": 0,
+      "notes": "离线实现/检查不授权外部付费；CPU长实验另显式声明预算"
+    },
+    "gpu_probe": {
+      "status": "proposed",
+      "max_gpu_seconds": 120,
+      "max_provider_requests": 0,
+      "max_candidates": 1
+    },
+    "gpu_kernel": {
+      "status": "proposed",
+      "max_gpu_seconds": 600,
+      "max_provider_requests": 0,
+      "max_candidates": 8
+    },
+    "legacy_fit": {
+      "status": "proposed",
+      "max_fit_and_render_seconds": 1800,
+      "max_provider_requests": 0,
+      "contract_ref": "frozen_quality12.contract",
+      "rule": "任何额外预算不能改变quality12冻结质量与运行上限"
+    },
+    "gpu_fit": {
+      "status": "proposed",
+      "max_gpu_seconds": 1800,
+      "max_provider_requests": 0,
+      "max_numeric_candidates": 64,
+      "rule": "按任务分配共享总预算；64为上限提案而非必须全部执行"
+    },
+    "gpu_render": {
+      "status": "proposed",
+      "max_gpu_seconds": 3600,
+      "max_provider_requests": 0,
+      "max_active_candidates": "calibrate_under_memory_ledger",
+      "sample_levels_proposed": [
+        64,
+        256,
+        1024
+      ],
+      "bounce_levels_proposed": [
+        1,
+        2,
+        4
+      ],
+      "rule": "仅实现相应算子时启用，所有分支与重试计总量"
+    },
+    "gpu_stability": {
+      "status": "proposed",
+      "max_wall_seconds": 7200,
+      "max_gpu_seconds": 7200,
+      "max_provider_requests": 0,
+      "rule": "该单独压力验收预算不用于偷偷扩大质量/RSI对照预算"
+    },
+    "provider_validation": {
+      "status": "proposed_not_spending_authorization",
+      "max_started_provider_requests": 10,
+      "max_known_and_reserved_tokens": 100000,
+      "max_structure_repair_retries_per_task": 1,
+      "max_gpu_seconds": 1800,
+      "activation": "existing_configuration_and_authorized_real_calls"
+    },
+    "proof": {
+      "status": "proposed",
+      "max_proof_seconds": 600,
+      "max_gpu_seconds": 0,
+      "max_provider_requests": 0,
+      "timeout_status": "unknown"
+    },
+    "rsi_search": {
+      "status": "proposal, not API spending authorization in this planning turn",
+      "maxStartedProviderRequests": 40,
+      "maxKnownAndReservedTokens": 300000,
+      "maxSceneCandidates": 6,
+      "maxPipelineVariants": 3,
+      "maxOperatorProgramCandidates": 3,
+      "maxBranchDepth": 3,
+      "maxFitAndRenderSeconds": 1800,
+      "maxProofSeconds": 600,
+      "maxRetriesPerNode": 1,
+      "maxSearchRounds": 10,
+      "sharedAcrossAllLevelsChildrenAndResumes": true,
+      "reserveRequiredEvaluationBeforeCandidateStart": true,
+      "unknownRemoteUsageIsNotZero": true,
+      "max_gpu_seconds": 1800,
+      "scope": "一条提议轨迹，L0/L1/L2及子任务/重试/恢复共享；三条轨迹各自声明并完整汇总成本"
+    },
+    "benchmark": {
+      "status": "freeze_matched_budgets_at_GPU_M0",
+      "reference_profiles": [
+        "gpu_fit",
+        "gpu_render",
+        "rsi_search"
+      ],
+      "cpu_gpu_equal_work": true,
+      "C_D_same_total_budget": true,
+      "all_attempts_counted": true,
+      "automatic_budget_escalation": false
+    },
+    "sealed_audit": {
+      "status": "freeze_once_before_formal_audit",
+      "reference_profiles": [
+        "benchmark"
+      ],
+      "executions_per_frozen_candidate": 1,
+      "proposal_model_sealed_access": false
+    },
+    "legacy_v11_proposal": {
+      "status": "inherited_proposal_not_spending_authorization",
+      "maxStartedProviderRequests": 40,
+      "maxKnownAndReservedTokens": 300000,
+      "maxSceneCandidates": 6,
+      "maxPipelineVariants": 3,
+      "maxOperatorProgramCandidates": 3,
+      "maxBranchDepth": 3,
+      "maxFitAndRenderSeconds": 1800,
+      "maxProofSeconds": 600,
+      "maxRetriesPerNode": 1,
+      "maxSearchRounds": 10,
+      "sharedAcrossAllLevelsChildrenAndResumes": true,
+      "reserveRequiredEvaluationBeforeCandidateStart": true,
+      "unknownRemoteUsageIsNotZero": true
+    },
+    "quality13_frozen_cpu": {
+      "status": "frozen_source_contract",
+      "contract_ref": "frozen_quality13.contract",
+      "source_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+      "solver": "CPU numerical fitting; no paid provider/GPU claim",
+      "initial_geometry_steps": 100,
+      "late_geometry_steps": 60,
+      "polish_iterations": 40,
+      "max_fit_attempts_per_scene": 3,
+      "max_scenes": 3,
+      "max_provider_requests": 0,
+      "max_gpu_seconds": 0,
+      "algorithm_comparison": "same final Gaussian count; record unequal wall time, no equal-time speed claim",
+      "rule": "每图最多3次拟合，基线、候选、失败和重试计入尝试账本；同最终高斯数比较并披露不同耗时，不宣称等时加速。CPU时间、峰值内存和参数字节实际计量；GPU另设合同/实验臂，不回写本冻结CPU结论。"
+    }
+  },
+  "memory_policy": {
+    "units": "bytes in all decisions; GB=10^9, GiB=2^30; actual total M from device",
+    "formula": [
+      "g=0.10; after independent pressure calibration only g=0.08 may be used",
+      "G=max(g*M,additional_unbudgeted_peak+fragmentation_uncertainty)",
+      "B=M-E-G"
+    ],
+    "accounting": "E excludes every allocation already charged to a CRF pool, including custom CUDA/OptiX buffers; known temporaries and replacement coexistence peaks belong inside B",
+    "modes": {
+      "Fit": {
+        "assets": 18,
+        "optimizer": 24,
+        "active_samples": 24,
+        "observation_cache": 12,
+        "frame_buffers": 10,
+        "evaluation_workspace": 12
+      },
+      "Render": {
+        "assets": 32,
+        "optimizer": 0,
+        "active_samples": 28,
+        "observation_cache": 8,
+        "frame_buffers": 24,
+        "evaluation_workspace": 8
+      },
+      "Search": {
+        "assets": 22,
+        "optimizer": 16,
+        "active_samples": 18,
+        "observation_cache": 10,
+        "frame_buffers": 12,
+        "evaluation_workspace": 22
+      }
+    },
+    "percentages_apply_to": "B, soft and borrowable; not preallocated",
+    "default_LLM_weight_budget_bytes": 0,
+    "guard_policy": "90% normal device-use ceiling; validated 8% guard permits at most92%, not while claiming10% remains",
+    "useful_work_policy": "85-90% capacity exploration is not a mandatory occupancy score; stop scaling when quality/throughput/cache benefit stops",
+    "single_primary_gpu_owner": true,
+    "shared_assets_and_incremental_candidates": true,
+    "microbatch_invariants": [
+      "same logical batch",
+      "same total samples",
+      "same RNG sample IDs",
+      "same update rule",
+      "effective-sample weighted tail reduction"
+    ],
+    "capacity_experiments": {
+      "caps_decimal_GB": [
+        24,
+        48,
+        72
+      ],
+      "full": "B",
+      "application": "min(B,cap); fixed E/guard accounting, same actual GPU"
+    },
+    "no_padding_or_duplicate_models": true
+  },
+  "gpu_comparison_arms": [
+    {
+      "id": "CPU-Ref",
+      "algorithm": "original",
+      "budget": "original",
+      "purpose": "independent numeric/semantic baseline"
+    },
+    {
+      "id": "GPU-A",
+      "algorithm": "same_as_CPU_Ref",
+      "budget": "same_work",
+      "purpose": "GPU port and speed"
+    },
+    {
+      "id": "GPU-B",
+      "algorithm": "same_as_A",
+      "budget": "increased_explicitly",
+      "purpose": "compute budget contribution"
+    },
+    {
+      "id": "GPU-C",
+      "algorithm": "new_fixed_algorithm",
+      "budget": "matched_time_cost_with_B",
+      "rsi": false,
+      "purpose": "algorithm contribution"
+    },
+    {
+      "id": "GPU-D",
+      "algorithm": "same_base_as_C",
+      "budget": "same_total_as_C_including_search_failures_evaluation",
+      "rsi": true,
+      "purpose": "isolated_RSI_contribution"
+    }
+  ],
+  "release_policy": {
+    "required_dimensions": [
+      "kernel_improvement",
+      "proof_layer_validity",
+      "actual_program_RSI_gain_and_inheritance",
+      "usable_editor_and_real_model_workflow",
+      "frozen_quality12_pass",
+      "frozen_quality13_native_reference_and_detail_pass",
+      "native_2K_4K_and_real_scene_quality",
+      "GPU_execution_and_resource_evidence"
+    ],
+    "missing_required_dimension": "retain_candidate_status_and_report_specific_gap",
+    "plans_or_test_counts_are_not_quality_evidence": true,
+    "original_WebGPU_claim": "Original V11-T19 remains required for full inherited completion; GPU-T23 must implement and verify it. CUDA stages may ship with an explicit partial/candidate status and do not satisfy WebGPU.",
+    "public_release_or_remote_task_state": "only actual confirmed operations/URLs; no simulated task completion",
+    "unchanged_core_math_registry": true
+  },
+  "execution_rules": [
+    "depends_on约束正式验收/完成，不阻止提前开展独立接口、离线代码和测试准备；依赖未通过时不得标记该项整体通过。",
+    "外部阻塞只阻塞需要该条件的实际执行部分；继续完成不依赖它的工作，状态和证据保持分开。",
+    "本清单是计划而非已执行命令记录；任何新增GPU/供应商/证明/浏览器通过都须补充实际证据。"
+  ],
+  "frozen_quality13": {
+    "id": "crf-detail-quality-2026-11-22",
+    "source_commit": "55103cc7399cef3bb5eb7d9e7875f3785dedd9cd",
+    "source_tree_sha": "346d3199a254545da9c87de655f49c753e938823",
+    "source_url": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/editor/contracts/quality13.json",
+    "source_path_on_development_branch": "editor/contracts/quality13.json",
+    "file_sha256": "f262a18ad60ae4f77bed9608b28aecac2c1201d109a7709b82668a1d0a1b193b",
+    "design_url": "https://github.com/VIONWILLIAMS/complete-representation-functions/blob/55103cc7399cef3bb5eb7d9e7875f3785dedd9cd/graphics-editor/plans/CRF_1_1_Detail_Quality_Iteration.md",
+    "design_sha256": "18dad7bf6aaa9c683c7de885b12c1bb123601267bbe5c01054d4b7b8bd28b75f",
+    "contract": {
+      "schema": "crf.detail_quality_contract.v1",
+      "id": "crf-detail-quality-2026-11-22",
+      "status": "frozen_before_new_fits",
+      "scope": "Finite observation-conditioned reconstruction at each declared source size. Not novel-scene generation or physical relighting.",
+      "noDownsampleDuringFitOrEvaluation": true,
+      "baseContract": "contracts/quality12.json",
+      "baseContractHash": "3cdd4ed7c25d91bd8eb78c435816154b79038008e397db94b5ae5fc589734ab8",
+      "globalGate": {
+        "psnrMin": 35.0,
+        "ssimMin": 0.97,
+        "maeMax": 3.0,
+        "p99ChannelErrorMax": 18.0,
+        "fractionPixelsAnyChannelAbove32Max": 0.003
+      },
+      "roiGate": {
+        "ssimMin": 0.93,
+        "maeMax": 5.0
+      },
+      "representation": {
+        "minimumSigmaSourcePixels": 0.35,
+        "maximumBasisCount": 262144,
+        "sourceRGBEmbedded": false,
+        "residualRasterEmbedded": false
+      },
+      "budgets": {
+        "solver": "CPU numerical fitting; no paid provider/GPU claim",
+        "initialGeometrySteps": 100,
+        "lateGeometrySteps": 60,
+        "polishIterations": 40,
+        "maxFitAttemptsPerScene": 3,
+        "algorithmComparison": "same final Gaussian count; record unequal wall time, no equal-time speed claim"
+      },
+      "scenes": [
+        {
+          "id": "alpine_hd",
+          "title": "山林湖泊",
+          "referencePath": "assets/source_photos/alpine.jpg",
+          "fileSHA256": "1e0a844e3f99acdd3d03f67c50e457a638ed0f6a57e66783fe84f8ff9bb842f0",
+          "width": 1280,
+          "height": 850,
+          "basisBudget": 196608,
+          "referenceScope": "downloaded 1280px observation, not full 9528px camera image",
+          "rois": [
+            {
+              "id": "forest",
+              "bounds": [
+                0.05,
+                0.05,
+                0.4,
+                0.55
+              ]
+            },
+            {
+              "id": "water",
+              "bounds": [
+                0.05,
+                0.7,
+                0.95,
+                0.98
+              ]
+            },
+            {
+              "id": "buildings",
+              "bounds": [
+                0.6,
+                0.48,
+                0.98,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "id": "street",
+          "title": "建筑与信号灯",
+          "referencePath": "web/assets/reference.png",
+          "fileSHA256": "f9544f0a67fb117a6ac7e80980576c53c42e787bdcc67071954fab4bfd786f7b",
+          "width": 667,
+          "height": 1000,
+          "basisBudget": 98304,
+          "referenceScope": "existing canonical reference, not camera-native image",
+          "rois": [
+            {
+              "id": "signal",
+              "bounds": [
+                0.4,
+                0.37,
+                0.51,
+                0.5
+              ]
+            },
+            {
+              "id": "wall",
+              "bounds": [
+                0.54,
+                0.2,
+                0.93,
+                0.7
+              ]
+            },
+            {
+              "id": "crosswalk",
+              "bounds": [
+                0.15,
+                0.83,
+                0.98,
+                0.99
+              ]
+            }
+          ]
+        },
+        {
+          "id": "orchard",
+          "title": "果皮与高光",
+          "referencePath": "web/assets/cases/orchard-reference.png",
+          "fileSHA256": "710c064d8802060e4cbd3b93859e40b81c213a35b21c4ac5ff99340b7238242e",
+          "width": 800,
+          "height": 600,
+          "basisBudget": 65536,
+          "referenceScope": "existing canonical reference, not camera-native image",
+          "rois": [
+            {
+              "id": "apple",
+              "bounds": [
+                0.19,
+                0.35,
+                0.46,
+                0.77
+              ]
+            },
+            {
+              "id": "pear",
+              "bounds": [
+                0.49,
+                0.19,
+                0.72,
+                0.81
+              ]
+            },
+            {
+              "id": "contact",
+              "bounds": [
+                0.2,
+                0.72,
+                0.77,
+                0.89
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "implementation_status": "planned",
+    "verification_status": "not_run",
+    "change_policy": "完整保留冻结合同、baseContract及其4M/200M限制。不能以4K、缩放预览、改ROI、改阈值或追加未申报尝试替代指定观察原尺寸验收。未来若声明观察大于4K，必须另立保持源尺寸的有限预算合同，不能静默改成4K。",
+    "responsible_tasks": [
+      "Q13-T00",
+      "Q13-T01",
+      "Q13-T02"
+    ],
+    "limitations": [
+      "有限观察重建，不是任意未见场景生成",
+      "alpine使用已下载1280x850观察，不是9528px相机原图",
+      "二维函数求值不自动提供物理重光照、三维语义、自然动态、GPU、形式证明或RSI证据"
+    ]
+  }
+}
