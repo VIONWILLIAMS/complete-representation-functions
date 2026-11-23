@@ -1,0 +1,11 @@
+{
+  "renderer": "CRF original C++17 CPU path tracer",
+  "scene": "scenes/control_product_B.scene",
+  "width": 320, "height": 400, "spp": 48,
+  "seed": 77331, "max_depth": 12, "threads": 2,
+  "primitives": 14898, "bvh_nodes": 9617, "materials": 15,
+  "area_lights": 3, "seconds": 21.266843,
+  "camera_paths": 6144000, "mean_luminance": 0.31826064, "max_linear_channel": 8.1508579, "nonfinite_pixels": 0, "invalid_samples": 0,
+  "external_assets": [], "neural_models": [], "postprocessing_baked_in": false,
+  "fog_model": "none"
+}

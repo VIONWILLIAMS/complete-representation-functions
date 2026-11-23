@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/581063d55086/crf_raw_only_replay_test/scenes/still_life.py", line 4, in <module>
+    from arch_helpers import rounded_box,smooth_profile,olive_branch,cloth,curtain
+ModuleNotFoundError: No module named 'arch_helpers'
+/workspace/scratch/581063d55086/crf_raw_only_replay_test/outputs/CRF_01_Warm_Still_Life.png (2048, 2560) radiance max 673.460205078125 p99 0.7047170996665955
+Traceback (most recent call last):
+  File "/workspace/scratch/581063d55086/crf_raw_only_replay_test/tools/apply_still_life_display.py", line 99, in <module>
+    if __name__=='__main__':adopt()
+                            ^^^^^^^
+  File "/workspace/scratch/581063d55086/crf_raw_only_replay_test/tools/apply_still_life_display.py", line 44, in adopt
+    if not scene.exists():subprocess.run([sys.executable,str(ROOT/'scenes/still_life.py'),str(scene)],check=True)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3', '/workspace/scratch/581063d55086/crf_raw_only_replay_test/scenes/still_life.py', '/workspace/scratch/581063d55086/crf_raw_only_replay_test/scenes/still_life.scene']' returned non-zero exit status 1.

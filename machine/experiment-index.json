@@ -46,6 +46,36 @@
         "reported_pass_rate": 1.0
       },
       "reproduce": "npm run test:domains"
+    },
+    {
+      "id": "EXP-GRAPHICS-GAUSSIAN-HANDOFF-20261123",
+      "domain": [
+        "D1"
+      ],
+      "domain_association_note": "Engineering observer/rendering experiment associated with geometric scene data; no claim of D1 theorem validation, new core domain, or new DSL keyword.",
+      "title": "Gaussian world research, procedural fixtures and code-native CPU/CUDA experiment handoff",
+      "status": "prepared_with_historical_cpu_evidence_gpu_not_run",
+      "artifacts": [
+        "graphics-editor/research/gaussian-world/README.md",
+        "graphics-editor/research/gaussian-world/CODEX_HANDOFF.md",
+        "graphics-editor/research/gaussian-world/WORK_LOG.md",
+        "graphics-editor/research/gaussian-world/STATUS.json",
+        "graphics-editor/research/gaussian-world/gaussian_upgrade_research/CRF_Gaussian_World_v0.2_Research.md",
+        "graphics-editor/research/gaussian-world/records/COPIED_SOURCE_MANIFEST.json",
+        "graphics-editor/research/gaussian-world/validation/handoff_validation.json"
+      ],
+      "reported_results": {
+        "historical_cpu_images": 5,
+        "cuda_cross_compile_and_link": "passed_local_cuda13_sm120_only",
+        "gpu_execution": false,
+        "fixture_cameras": 120,
+        "fixture_scene_definitions": 360,
+        "fixture_images_rendered": 0,
+        "gaussian_trainer_implemented": false,
+        "gpu_performance_measured": false,
+        "application_integration": "not_implemented",
+        "mathematical_claim_verified": false
+      }
     }
   ]
 }

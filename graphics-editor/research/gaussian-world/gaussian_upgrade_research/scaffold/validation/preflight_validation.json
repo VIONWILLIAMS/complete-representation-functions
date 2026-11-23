@@ -1,0 +1,31 @@
+{
+  "date_utc": "2026-11-23T12:25:08+00:00",
+  "scope": "Actual local --help and one optional-PyTorch inventory invocation; no GPU workload.",
+  "commands": [
+    "python tools/gpu_preflight.py --help",
+    "python tools/gpu_preflight.py --torch --torch-timeout 15 --output validation/local_preflight.json"
+  ],
+  "checks": {
+    "help_exit_zero": true,
+    "help_lists_output_and_torch": true,
+    "inventory_exit_zero": true,
+    "report_is_json": true,
+    "training_explicitly_unvalidated": true,
+    "performance_not_measured": true,
+    "training_or_rendering_not_started": true,
+    "settings_unchanged": true,
+    "no_packages_installed": true,
+    "no_temporary_report_left": true,
+    "no_sensitive_identity_or_environment_keys": true
+  },
+  "all_requested_local_checks_passed": true,
+  "observed_status": "gpu_not_detected",
+  "observed_nvidia_smi_status": "not_installed_or_not_on_path",
+  "observed_nvcc_status": "not_installed_or_not_on_path",
+  "observed_torch_status": "not_installed",
+  "training_validated": false,
+  "performance_measured": false,
+  "hardware_dependent_branches_not_validated": "No GPU benchmark or training; unsupported-query fallback needs an actual applicable driver to exercise.",
+  "script_sha256": "80cac17d0a45622c6a44684931ae29697b795830dd05a1958a5cf05742ad747c",
+  "report_sha256": "1c853c6050a02e7ff5b7a39bb37c2163603e85d24d45f520758c7282d39ad53f"
+}

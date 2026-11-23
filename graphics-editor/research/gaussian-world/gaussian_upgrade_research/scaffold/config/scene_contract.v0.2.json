@@ -1,0 +1,42 @@
+{
+  "document_type": "interface_design_not_a_complete_JSON_schema",
+  "version": "0.2",
+  "status": "proposed_contract_with_fixture_subset_implemented",
+  "world": {
+    "length_unit": "metres",
+    "up_axis": "+Y",
+    "handedness": "right",
+    "old_scene_unit_conversion": "must_be_explicit_not_assumed"
+  },
+  "camera": {
+    "camera_axes": "OpenCV X-right Y-down Z-forward",
+    "matrix_storage": "row-major 4x4",
+    "c2w_rule": "world = c2w @ camera",
+    "w2c_rule": "camera = w2c @ world",
+    "fixture_pixel_centres": "integer coordinates with top-left centre (0,0)",
+    "projection": "u=fx*X/Z+cx, v=fy*Y/Z+cy",
+    "backend_pixel_centres": "verify per backend; do not silently reuse fixture K",
+    "initial_lens": "pinhole"
+  },
+  "color": {
+    "physical_compositing_domain": "linear RGB with explicit primaries/white point and exposure convention",
+    "legacy_rgb_primaries": "not physically calibrated; declare the working RGB convention in each experiment",
+    "appearance_baseline_domain": "may use fixed developed RGB, labelled as such",
+    "display_transform": "versioned_and_frozen",
+    "reference_hdr_is_unfiltered": true
+  },
+  "legacy_aov_adapter": {
+    "depth": "ray distance t, zero on miss; Z=t/sqrt(1+((u-cx)/fx)^2+((v-cy)/fy)^2)",
+    "normal": "decode 2*encoded-1; world-space face-forward normal; separate geometric/shading normal in new exporter",
+    "albedo": "type-dependent material color, not universally diffuse reflectance",
+    "material_parameters": "diffuse reflectance / conductor F0 / IOR / absorption and transmission semantics must be distinct"
+  },
+  "source_fields": ["scene_id", "object_id", "geometry_hash", "material_hash", "lighting_hash", "camera_hash", "generator_revision", "random_seed", "input_provenance"],
+  "representation_fields": ["backend", "source_commit", "trained_weights_hash", "training_view_ids", "training_light_ids", "color_domain", "valid_camera_domain", "valid_light_domain", "rendering_owner_per_region", "cache_invalidation_policy"],
+  "cache_invalidation": {
+    "radiance_cache": ["geometry", "material", "illumination", "color-domain", "training-data", "representation-version"],
+    "transfer_cache": ["geometry", "material", "visibility", "basis-definition", "representation-version"],
+    "basis_validity": "Only lighting inside the declared basis/domain is allowed without rebuilding."
+  },
+  "not_yet_implemented": ["new Scene IR parser", "Gaussian training adapter", "physical energy compositing", "component AOV exporter", "relightable transport cache", "NHT integration", "GPU compatibility validation"]
+}

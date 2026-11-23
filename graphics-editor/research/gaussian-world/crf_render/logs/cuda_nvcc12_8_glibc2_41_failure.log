@@ -1,0 +1,29 @@
+$ nice -n 10 /workspace/scratch/581063d55086/cuda_toolchain/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_120 -Xcompiler=-fopenmp --expt-relaxed-constexpr -lineinfo -Xptxas=-v renderer_cuda.cu -o crf_render_cuda_sm120
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h(79): error: exception specification is incompatible with that of previous function "cospi" (declared at line 2601 of /workspace/scratch/581063d55086/cuda_toolchain/cuda-12.8/bin/..//include/crt/math_functions.h)
+   extern double cospi (double __x) noexcept (true); extern double __cospi (double __x) noexcept (true);
+                                    ^
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h(81): error: exception specification is incompatible with that of previous function "sinpi" (declared at line 2556 of /workspace/scratch/581063d55086/cuda_toolchain/cuda-12.8/bin/..//include/crt/math_functions.h)
+   extern double sinpi (double __x) noexcept (true); extern double __sinpi (double __x) noexcept (true);
+                                    ^
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h(79): error: exception specification is incompatible with that of previous function "cospif" (declared at line 2623 of /workspace/scratch/581063d55086/cuda_toolchain/cuda-12.8/bin/..//include/crt/math_functions.h)
+   extern float cospif (float __x) noexcept (true); extern float __cospif (float __x) noexcept (true);
+                                   ^
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h(81): error: exception specification is incompatible with that of previous function "sinpif" (declared at line 2579 of /workspace/scratch/581063d55086/cuda_toolchain/cuda-12.8/bin/..//include/crt/math_functions.h)
+   extern float sinpif (float __x) noexcept (true); extern float __sinpif (float __x) noexcept (true);
+                                   ^
+
+cuda_shared.generated.cuh(15): warning #20012-D: __host__ annotation is ignored on a function("V") that is explicitly defaulted on its first declaration
+   __attribute__((host)) __attribute__((device)) V()=default; __attribute__((host)) __attribute__((device)) V(float a):x(a),y(a),z(a){} __attribute__((host)) __attribute__((device)) V(float a,float b,float c):x(a),y(b),z(c){}
+                  ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+cuda_shared.generated.cuh(15): warning #20012-D: __device__ annotation is ignored on a function("V") that is explicitly defaulted on its first declaration
+   __attribute__((host)) __attribute__((device)) V()=default; __attribute__((host)) __attribute__((device)) V(float a):x(a),y(a),z(a){} __attribute__((host)) __attribute__((device)) V(float a,float b,float c):x(a),y(b),z(c){}
+                                        ^
+
+4 errors detected in the compilation of "renderer_cuda.cu".

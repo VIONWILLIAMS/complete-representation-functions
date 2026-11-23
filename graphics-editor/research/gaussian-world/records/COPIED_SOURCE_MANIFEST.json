@@ -1,0 +1,2821 @@
+{
+  "scope": "Exact copies of local source/evidence; hashes identify bytes, not validation of scientific claims.",
+  "date": "2026-11-23",
+  "files": [
+    {
+      "path": "crf_render/Makefile",
+      "sha256": "57a6037d2d57d3d577cad57fe6af04bf0ce1a71dbaeeacc093542c1e24a986cb",
+      "bytes": 187
+    },
+    {
+      "path": "crf_render/README.md",
+      "sha256": "a78f5038fcf32a66cd5221b41aaef7a8911d6d71c4525c034544a80e80163afb",
+      "bytes": 10780
+    },
+    {
+      "path": "crf_render/audit/landscape_display/CRF_04_Alpine_Lake_before_firefly_suppression.development.json",
+      "sha256": "b3db63b11a3bb61316134f0e60cd0188e4a662941577e4dbb2ce2310cf19927a",
+      "bytes": 571
+    },
+    {
+      "path": "crf_render/audit/landscape_display/CRF_04_Alpine_Lake_firefly_report.json",
+      "sha256": "3902487d537f8e96d7f793aa4a0806e2fc5838ed2dc341408846225334d68214",
+      "bytes": 505831
+    },
+    {
+      "path": "crf_render/audit/landscape_display/README.md",
+      "sha256": "605df2a3264631052d2cf6fef950fe5f6add4feaad46bf0522252c5aaa8f64c3",
+      "bytes": 1465
+    },
+    {
+      "path": "crf_render/audit/landscape_display/adoption_verification.json",
+      "sha256": "4802e5c904fc76140049366d8bd05f1a245eaced964cd4702284009b661ec03a",
+      "bytes": 2017
+    },
+    {
+      "path": "crf_render/audit/landscape_display/material_policy.json",
+      "sha256": "dc8988aeb1b8cbe89560c4862896129a75f503c4bbbabaebeadd28f5f46bd9a7",
+      "bytes": 268
+    },
+    {
+      "path": "crf_render/audit/still_life_display/CRF_01_Warm_Still_Life_before_firefly_suppression.development.json",
+      "sha256": "60d860fbb43158f08d4d31287912deb4596e36a1e76607b0ac9253b0f10b9415",
+      "bytes": 575
+    },
+    {
+      "path": "crf_render/audit/still_life_display/CRF_01_Warm_Still_Life_firefly_report.json",
+      "sha256": "d34aab73ece365fa77dea890614081ca7cac6144cf7ed7a880ef75abbcd19a35",
+      "bytes": 42359
+    },
+    {
+      "path": "crf_render/audit/still_life_display/README.md",
+      "sha256": "ad62caa420b07a3a05e62ba4f4c0c163ab1002c4d23ba720b4ce5ab56fef4916",
+      "bytes": 1430
+    },
+    {
+      "path": "crf_render/audit/still_life_display/adoption_verification.json",
+      "sha256": "411cc3b7954a42171da6b43921fe47f1df73318ae34c8fd63c7e7cdb513eaa61",
+      "bytes": 1232
+    },
+    {
+      "path": "crf_render/audit/still_life_display/protected_specular_materials.scene",
+      "sha256": "edc8663bde5d8a750ae525e648db6910118bd4b7d58080c07e6c45d93a940f94",
+      "bytes": 104
+    },
+    {
+      "path": "crf_render/build_cuda.sh",
+      "sha256": "f13cecd1a292ac002f57372b40477908cdc9d701aecdda0fa5695f37ff2cb83c",
+      "bytes": 876
+    },
+    {
+      "path": "crf_render/delivery/CRF_GPU_Colab.build.json",
+      "sha256": "4b5b481e8679cf5e36052e5a93abb8b3dc4ae93168cd537ac903f87630bfae20",
+      "bytes": 3290
+    },
+    {
+      "path": "crf_render/delivery/CRF_GPU_Colab.ipynb",
+      "sha256": "0ad141d06907c3ed3bddc117780fdc596477093b2a6589f18d7f32d0b3fd3788",
+      "bytes": 836475
+    },
+    {
+      "path": "crf_render/delivery/delivery_verification.json",
+      "sha256": "c259131d82ac0a19c44e172e46771ba445172d2b7c0c7937bfa13148b5b5b21c",
+      "bytes": 1675
+    },
+    {
+      "path": "crf_render/docs/COLAB_EXISTING_RUNTIME_PROBE.md",
+      "sha256": "de88cf9a849c4f6f9c989b64cfa3ec4a587f7678f527b7442f7dce9628ceb75c",
+      "bytes": 8189
+    },
+    {
+      "path": "crf_render/docs/COLAB_NOTEBOOK.md",
+      "sha256": "61d3763be0327d001e94180ae28e4a59ef00ff2de88d9b44df9149bc68ee9136",
+      "bytes": 3591
+    },
+    {
+      "path": "crf_render/docs/CUDA_BACKEND.md",
+      "sha256": "0aa92f22f31fc0cdef6402d4154318283f8dd5979a649cc086ced4f2147c3cf3",
+      "bytes": 5830
+    },
+    {
+      "path": "crf_render/docs/FIREFLY_RECONSTRUCTION.md",
+      "sha256": "6357b8000cf9d13e791ba4d8acb79e7fdfa0258ff56c2c130c4a130daaab2385",
+      "bytes": 2984
+    },
+    {
+      "path": "crf_render/docs/HOW_PIXELS_ARE_COMPUTED.md",
+      "sha256": "207e54491b2a5cdc49d29c39209ff816f55573f01564df834ffa080c9be66ae5",
+      "bytes": 6536
+    },
+    {
+      "path": "crf_render/docs/IMPLEMENTATION_REPORT.md",
+      "sha256": "d0a97ceef4b5cedde01faff1951b109393087ac5031a836103562ee3ec835a42",
+      "bytes": 10144
+    },
+    {
+      "path": "crf_render/docs/SCENE_FORMAT.md",
+      "sha256": "f0b662bd1449a02d2a0cbb57008d22f7fdec4354ada56121f4b8c9490f63e3b1",
+      "bytes": 2913
+    },
+    {
+      "path": "crf_render/logs/CRF_01_Warm_Still_Life.log",
+      "sha256": "38393bc99ec8bba751db65062f28a721bdcb1f31e27466c6e041f567710712ee",
+      "bytes": 360
+    },
+    {
+      "path": "crf_render/logs/CRF_02_Sunlit_Interior.log",
+      "sha256": "78cf8529dd9b104d22e3dbaa0495332ae9264124c75e3ddd576b8e4422e90691",
+      "bytes": 367
+    },
+    {
+      "path": "crf_render/logs/CRF_03_Atelier_Product.log",
+      "sha256": "150114174e012b3c54ca508a1922b4a65dae044f09852b468aef092f327edf9e",
+      "bytes": 316
+    },
+    {
+      "path": "crf_render/logs/CRF_04_Alpine_Lake.log",
+      "sha256": "7f91b6cfbdf674c6cb59eaceee5e852932afefa353278c0324f5c96b9215200c",
+      "bytes": 354
+    },
+    {
+      "path": "crf_render/logs/CRF_05_Wind_Dunes.log",
+      "sha256": "2c15593c21bac28bd61a80bd8217f5faf5632c93368ec0f2314589093a6bd29e",
+      "bytes": 354
+    },
+    {
+      "path": "crf_render/logs/architecture_preview.log",
+      "sha256": "432204aa663762f28d2b3927c78d25651f4baa0cd9d5d7ecea11b21905e57b8d",
+      "bytes": 296
+    },
+    {
+      "path": "crf_render/logs/architecture_v2.log",
+      "sha256": "e8fb859f07db2f7939d8f59146e2b02142b453247e0674ea41ca5131480271e8",
+      "bytes": 293
+    },
+    {
+      "path": "crf_render/logs/architecture_v3.log",
+      "sha256": "891cc417f12aa07aabcf164de3362774c3d57b1eef534837d555936beebbcc5d",
+      "bytes": 295
+    },
+    {
+      "path": "crf_render/logs/architecture_v4.log",
+      "sha256": "8d3f602948ca7d4233a2800c0adfa8db2d262f910f9e0483e6b1a668b7964cc6",
+      "bytes": 299
+    },
+    {
+      "path": "crf_render/logs/cloud_connection_status.json",
+      "sha256": "67e744d1a639b8c4390a03aadb0bc2d3940ccb08eae4409cd14a4184392cc00d",
+      "bytes": 975
+    },
+    {
+      "path": "crf_render/logs/colab_connection_status.json",
+      "sha256": "38750a9fbad5e7be5b85018d6ad14cc0d09de8875bcd85ee4887dcc4a670accc",
+      "bytes": 820
+    },
+    {
+      "path": "crf_render/logs/colab_probe_static_review.json",
+      "sha256": "0154dabac01cc1e650b6af2edc2b8359b0620c2ce37a791b45db5d0a9ec31892",
+      "bytes": 587
+    },
+    {
+      "path": "crf_render/logs/collection_run.log",
+      "sha256": "f1293bcec9c0fd94f6eba079e8da6326641b37bf9e32171778eeb156972890b6",
+      "bytes": 3804
+    },
+    {
+      "path": "crf_render/logs/control_product_A.log",
+      "sha256": "9ac56f674c4b4457476893dc30fd2d54f0cba892802b357ba7520f050847e72a",
+      "bytes": 288
+    },
+    {
+      "path": "crf_render/logs/control_product_B.log",
+      "sha256": "dfa8ea1573a56cf4e2ce848debf309488523dd80ee6b89e94914bf54bc24df0d",
+      "bytes": 295
+    },
+    {
+      "path": "crf_render/logs/controlled_parameter_check.json",
+      "sha256": "b6ca0a24bb967c41b0cde2437baab0da512ad67eb02b19d5f19a21ea8d73879b",
+      "bytes": 6354
+    },
+    {
+      "path": "crf_render/logs/cuda_compile_status.json",
+      "sha256": "c64d770efda3f1b4891460431c1348ce08ea32a665199cc9fc50eb6e431e388b",
+      "bytes": 5648
+    },
+    {
+      "path": "crf_render/logs/cuda_nvcc12_8_glibc2_41_failure.log",
+      "sha256": "4a7e2569a2bae2ba46253db1474744bdca827549b45060c4bab7565612449033",
+      "bytes": 2787
+    },
+    {
+      "path": "crf_render/logs/cuda_nvcc13_0_initial_link_failure.log",
+      "sha256": "94dd7417317481426a902be2a11a48feca795a2f09fa577415be2d4b6efc2e3d",
+      "bytes": 4712
+    },
+    {
+      "path": "crf_render/logs/cuda_nvcc13_0_sm120_success.log",
+      "sha256": "a0df84ad42a1d1eadfcb55cccf547fb7cf9ee753c321851fde968ae643a9bcd2",
+      "bytes": 4621
+    },
+    {
+      "path": "crf_render/logs/cuda_preparation_status.json",
+      "sha256": "5a448a430008b348994958323ff2b2a45e1ea836b9da0a83b3d9ed7d25748ced",
+      "bytes": 1124
+    },
+    {
+      "path": "crf_render/logs/desert_preview.log",
+      "sha256": "d7a7e221b3cedbc4565ed2a557234214a9bf48a7dd2d0f2c342bcc7da4b6e5b9",
+      "bytes": 288
+    },
+    {
+      "path": "crf_render/logs/desert_preview_v2.log",
+      "sha256": "c57f9e04fef790434fce6dd889b161b5e3d05b23d69c9ff0d84284b53d5f4d77",
+      "bytes": 296
+    },
+    {
+      "path": "crf_render/logs/desert_preview_v3.log",
+      "sha256": "1c6b11158dece8e9ed5f936659514f4d2fa38f2e0f17ca598044a5209c4b5450",
+      "bytes": 295
+    },
+    {
+      "path": "crf_render/logs/desert_preview_v4.log",
+      "sha256": "21c17c07e5ce40bae9f96aae072d16b4ca7a235e903cf442e457bbf06bfc1965",
+      "bytes": 296
+    },
+    {
+      "path": "crf_render/logs/execution_environment.json",
+      "sha256": "5fefde850c134002016e0e01501c0da09da72a1f0767b9f11c544d858c901228",
+      "bytes": 941
+    },
+    {
+      "path": "crf_render/logs/firefly_filter_checks.json",
+      "sha256": "c84c97b78dfab5cc55e6495959ab27c4bb3159a53ec88622732c01e1b375c261",
+      "bytes": 133
+    },
+    {
+      "path": "crf_render/logs/landscape_adoption_other_images_before.json",
+      "sha256": "0f53acd9b3825b4ef88c08bd3014dc88160ed99c632eaae43c10776d6cc6750a",
+      "bytes": 966
+    },
+    {
+      "path": "crf_render/logs/landscape_firefly_candidate.log",
+      "sha256": "689e55efb6fb15525bba78adcc5f198856bbe396c5243685e018d90d235e747d",
+      "bytes": 1543
+    },
+    {
+      "path": "crf_render/logs/landscape_preview.log",
+      "sha256": "486ce00e11be7ed4d0062322d448476d68bec68ab5de7fa8c22c7cdafd0ed83f",
+      "bytes": 288
+    },
+    {
+      "path": "crf_render/logs/landscape_preview_v2.log",
+      "sha256": "717f06a8d02f4386fba5a0467bac52ecf35f5ecb098b12f7c2317194536d810b",
+      "bytes": 291
+    },
+    {
+      "path": "crf_render/logs/landscape_preview_v3.log",
+      "sha256": "c0a2fd80c6109663be3e3f55eb75e3f77197c9ab9763dd47c508d1c7e9e906b2",
+      "bytes": 291
+    },
+    {
+      "path": "crf_render/logs/landscape_preview_v4.log",
+      "sha256": "fe2b7df6ee0b52d6f551211dff2174c6304b8fc0e6e018c4279b3cbab1b8e84d",
+      "bytes": 294
+    },
+    {
+      "path": "crf_render/logs/product_preview.log",
+      "sha256": "f6b4912564cc2b0c71e3e4331df4998eca81a31a73ee98062479f10c1009f09d",
+      "bytes": 286
+    },
+    {
+      "path": "crf_render/logs/product_refined.log",
+      "sha256": "ab1832a0aeae0058a05d4631983b6606b1dfe44a010f454f604ffc7e01c10000",
+      "bytes": 293
+    },
+    {
+      "path": "crf_render/logs/raw_only_replay_attempt1_fixture.log",
+      "sha256": "decb6f05d9b78bfc07b78065377e0c6a0ce909e02ee0c3d6118a0f7f30619e33",
+      "bytes": 1499
+    },
+    {
+      "path": "crf_render/logs/raw_only_replay_execution.log",
+      "sha256": "f5c3c8809413d85a7d16437661de6c679a920a5035fbd4aed1b030052285ae6b",
+      "bytes": 2817
+    },
+    {
+      "path": "crf_render/logs/raw_only_replay_setup.json",
+      "sha256": "76800a6ec8bb1d458d58b497427403207a574053cc37e696ae2b89c4c6197c93",
+      "bytes": 1594
+    },
+    {
+      "path": "crf_render/logs/raw_only_replay_verification.json",
+      "sha256": "e832a4c4ce76ed74df790e58a61bab7d5e9f6f26c57916cf55fd51990b15aea9",
+      "bytes": 2213
+    },
+    {
+      "path": "crf_render/logs/renderer_verification.json",
+      "sha256": "ac225086fd4021f2bab2af00c1bc47f78066fa737f29d693403b575d11cbdf70",
+      "bytes": 1996
+    },
+    {
+      "path": "crf_render/logs/still_life_display_replay.log",
+      "sha256": "a94dbd67bbcab69b4fef7a9b19f26c512cbe5c2a0fd863467bf64b02cf1c984c",
+      "bytes": 2342
+    },
+    {
+      "path": "crf_render/logs/still_life_preview.log",
+      "sha256": "4517fd069f2b911e6b30d5e0a9c5ffc645a7bb821d37928760977972feba0bc1",
+      "bytes": 290
+    },
+    {
+      "path": "crf_render/outputs/CRF_01_Warm_Still_Life.development.json",
+      "sha256": "d5a9b09c2baf4cd91d76c457185572b881442d9052b9cc605b91d5e3af675bf7",
+      "bytes": 2141
+    },
+    {
+      "path": "crf_render/outputs/CRF_01_Warm_Still_Life.json",
+      "sha256": "19735c26c8937452f34e96132d19be19149564b29ea1f2a446ed2fca417b2c28",
+      "bytes": 532
+    },
+    {
+      "path": "crf_render/outputs/CRF_02_Sunlit_Interior.development.json",
+      "sha256": "700d8f0a905127758d79120077adb1c6c6ea8821ba5ee17d8d52e3e7ced52551",
+      "bytes": 577
+    },
+    {
+      "path": "crf_render/outputs/CRF_02_Sunlit_Interior.json",
+      "sha256": "dacf2f52c8dbcbb3d1925d85a47f29d77eb2a686a8d43dce0cdc85aa0aef72b5",
+      "bytes": 534
+    },
+    {
+      "path": "crf_render/outputs/CRF_03_Atelier_Product.development.json",
+      "sha256": "c3e76f6bd325e66cd45da46f982b958e789b0ec917af58d9e8aa2e46abadf1a4",
+      "bytes": 575
+    },
+    {
+      "path": "crf_render/outputs/CRF_03_Atelier_Product.json",
+      "sha256": "3dc2b9a095aed16d8ce5c7ba856d66200d098959f5565f8be1374652eac77d07",
+      "bytes": 528
+    },
+    {
+      "path": "crf_render/outputs/CRF_04_Alpine_Lake.development.json",
+      "sha256": "086a83e5d167e8802a6bba63e9de334517f19c0cd923fbaf907b6441adbb83b4",
+      "bytes": 2253
+    },
+    {
+      "path": "crf_render/outputs/CRF_04_Alpine_Lake.json",
+      "sha256": "59dadb24339830c328b7351cb3c81ad7555d3ec78bbe41fbabc33ddbb542f37e",
+      "bytes": 580
+    },
+    {
+      "path": "crf_render/outputs/CRF_05_Wind_Dunes.development.json",
+      "sha256": "a8c262ab37fbd50284a41354c828ccbbc154e41852f9870603d7d256801d660a",
+      "bytes": 570
+    },
+    {
+      "path": "crf_render/outputs/CRF_05_Wind_Dunes.json",
+      "sha256": "7f568a5d7a1396b1d8cd6e4fd6af869d173af96f88e42994a87b2d4131149fd1",
+      "bytes": 576
+    },
+    {
+      "path": "crf_render/outputs/architecture_atrous.development.json",
+      "sha256": "c6a8a412fe37bd2cd4d9ef78f1e414ccbe72ca4c13c1c9f5ccf7bdc1fe85056f",
+      "bytes": 566
+    },
+    {
+      "path": "crf_render/outputs/architecture_preview.json",
+      "sha256": "3bb02829590c2a9aa168b57eee286ad5f7c5dda7bf56e8298675eea1513a136c",
+      "bytes": 501
+    },
+    {
+      "path": "crf_render/outputs/architecture_v2.development.json",
+      "sha256": "b5ca0c6f1b5e34c227b6a4ed17522999f2830e4299ed4a2fad57d901ccb9faa1",
+      "bytes": 544
+    },
+    {
+      "path": "crf_render/outputs/architecture_v2.json",
+      "sha256": "fbfc6ce77bc206de2fc8a6ed75a7ab4a8460a0dc6f6ffb105913b30b585649e5",
+      "bytes": 501
+    },
+    {
+      "path": "crf_render/outputs/architecture_v3.development.json",
+      "sha256": "b441892321ace9ed26368c61c516999f830ac049321041e81716939e2d2e9e8c",
+      "bytes": 543
+    },
+    {
+      "path": "crf_render/outputs/architecture_v3.json",
+      "sha256": "92bfdea932f2487bb7d0fb6793d631f69a156268cbcb266db42b8781b22460d2",
+      "bytes": 524
+    },
+    {
+      "path": "crf_render/outputs/architecture_v4.development.json",
+      "sha256": "651409f77828c951de38cde908b560dbe9ed5295f13d44f7903dd873a8a8a536",
+      "bytes": 565
+    },
+    {
+      "path": "crf_render/outputs/architecture_v4.json",
+      "sha256": "7fbf12313d981ccd48e3e4a169317d3460358946e576ddf6359c33ed0033ada0",
+      "bytes": 524
+    },
+    {
+      "path": "crf_render/outputs/check_beer.json",
+      "sha256": "2d70d47a2eccff7bdaaa0493f389899201cdf5ec680f420ed78c65ccc9cd40fd",
+      "bytes": 479
+    },
+    {
+      "path": "crf_render/outputs/check_beer_final.json",
+      "sha256": "4cfc44add14b1cd4fd4cf4cea303d2fff6b7c06ef23a46877dde02f71623d3a3",
+      "bytes": 501
+    },
+    {
+      "path": "crf_render/outputs/check_lambert.json",
+      "sha256": "195ed133623364848d5ca2c292a00c46b61feffc3817b5a1c12d5d9f70e8ed17",
+      "bytes": 486
+    },
+    {
+      "path": "crf_render/outputs/collection_manifest.json",
+      "sha256": "6eb26c19dcf7802de67aade29fecf8ebbdf32bf099fc0147b93834aa4e446156",
+      "bytes": 10349
+    },
+    {
+      "path": "crf_render/outputs/control_product_A.development.json",
+      "sha256": "f2bf5344c441ee46f16b9994f3a9bff3c48ab5e7e852247a34c40bf78d4df227",
+      "bytes": 566
+    },
+    {
+      "path": "crf_render/outputs/control_product_A.json",
+      "sha256": "aebb7cc1f5b850c0c5ea0db8e11abb07bb74d8f3e87bce286ed4f0b0c484cf73",
+      "bytes": 529
+    },
+    {
+      "path": "crf_render/outputs/control_product_B.development.json",
+      "sha256": "7abceb8b31296ab75774e7f78e3df31f398b2a2f59172d38d2f4afbd61a76c48",
+      "bytes": 566
+    },
+    {
+      "path": "crf_render/outputs/control_product_B.json",
+      "sha256": "6666b0e76d3caf785cc2b2aab41311fd05c85943f07093a4497fa5410290b5fc",
+      "bytes": 529
+    },
+    {
+      "path": "crf_render/outputs/desert_preview.development.json",
+      "sha256": "597e15322c493d54c1a10766c7713320da236993ca9253e484c358d158c8036a",
+      "bytes": 528
+    },
+    {
+      "path": "crf_render/outputs/desert_preview.json",
+      "sha256": "5b1f430c55b6190a13ee1f01101c5823fb9770bc72e2de0929a5bd997db6464f",
+      "bytes": 565
+    },
+    {
+      "path": "crf_render/outputs/desert_preview_v2.development.json",
+      "sha256": "3cef39274c270bcefa3ae2f17f7f915238205067355b8dec115dd1bb1f600a6e",
+      "bytes": 531
+    },
+    {
+      "path": "crf_render/outputs/desert_preview_v2.json",
+      "sha256": "a433faa165a31c536ddba831b2975801f3092cd76b5e233740d7ddd67049f39b",
+      "bytes": 568
+    },
+    {
+      "path": "crf_render/outputs/desert_preview_v3.development.json",
+      "sha256": "2bd4b629c5685519e82d23cd7adcc084c2a12e3daea5d40fa1c59c5f4d02ada9",
+      "bytes": 531
+    },
+    {
+      "path": "crf_render/outputs/desert_preview_v3.json",
+      "sha256": "5abdfefbe78dfc0083f6d077800e6083680d266596dd801df17d8a9d26f00913",
+      "bytes": 566
+    },
+    {
+      "path": "crf_render/outputs/desert_preview_v4.development.json",
+      "sha256": "86f5b331a793d5eb048785d8b3a686f4f20e3e4402938a09ca5224cf22a3f6a8",
+      "bytes": 531
+    },
+    {
+      "path": "crf_render/outputs/desert_preview_v4.json",
+      "sha256": "fbb38ba785eea9d7e7d029fc910818cab49e8a43a9f32026cac66855b2f0def6",
+      "bytes": 567
+    },
+    {
+      "path": "crf_render/outputs/determinism_a.json",
+      "sha256": "4c42ae5cf5fd09a39c94b29c6b0bed708b7c36227b8c970554663386373afdb9",
+      "bytes": 487
+    },
+    {
+      "path": "crf_render/outputs/determinism_b.json",
+      "sha256": "a95419a905765be77ee4a0c5d127200d9f6e22a239c0ca1cf0e76324b15cfe19",
+      "bytes": 487
+    },
+    {
+      "path": "crf_render/outputs/firefly_review/CRF_01_Warm_Still_Life_firefly_report.json",
+      "sha256": "8954c4af5accfce1b1a7f5eb6722c3ff3199842f1799a439203ff325784d46f9",
+      "bytes": 47132
+    },
+    {
+      "path": "crf_render/outputs/firefly_review_specular_protected/CRF_01_Warm_Still_Life_firefly_report.json",
+      "sha256": "aa6e41fb953d97df791fce6541aff33f2dd54427c89a987ea200347957f444dc",
+      "bytes": 42359
+    },
+    {
+      "path": "crf_render/outputs/landscape_firefly_review/CRF_04_Alpine_Lake_firefly_report.json",
+      "sha256": "3902487d537f8e96d7f793aa4a0806e2fc5838ed2dc341408846225334d68214",
+      "bytes": 505831
+    },
+    {
+      "path": "crf_render/outputs/landscape_preview.json",
+      "sha256": "83183fe173426dcbee7e6c54a17515217980adc99fa3dde5fb7ab106661174d2",
+      "bytes": 546
+    },
+    {
+      "path": "crf_render/outputs/landscape_preview_v2.development.json",
+      "sha256": "0a4fb1711533513874b14b13d1a291dfe2d8f2dfd5b2ae0ae638c9e5e4e5359d",
+      "bytes": 512
+    },
+    {
+      "path": "crf_render/outputs/landscape_preview_v2.json",
+      "sha256": "b6b32ab8b6c7bf480ea20e1ef2a2daeb4c04aa19835aec9633adfeaaf990ac9c",
+      "bytes": 546
+    },
+    {
+      "path": "crf_render/outputs/landscape_preview_v3.development.json",
+      "sha256": "2f1286f0a4a6e3a33d32e78861e7825ca77bbf6ed20fd7983449ca9729c79c42",
+      "bytes": 512
+    },
+    {
+      "path": "crf_render/outputs/landscape_preview_v3.json",
+      "sha256": "67bddd766275d5bdb60cab4dd70e74d58270cf1faa66575de18a64ddb8c0aaae",
+      "bytes": 546
+    },
+    {
+      "path": "crf_render/outputs/landscape_preview_v4.development.json",
+      "sha256": "af032e5600edcf3839d0bde7d0d665b8169dcdc8a293795f8b2fc67e85e66612",
+      "bytes": 512
+    },
+    {
+      "path": "crf_render/outputs/landscape_preview_v4.json",
+      "sha256": "f353aa922c2ef78ef74eefbd0d8e2328da0a218faf7e40e50a23e257110072ad",
+      "bytes": 570
+    },
+    {
+      "path": "crf_render/outputs/mesh_smoke.json",
+      "sha256": "1c0bf13f44ee67f6813f0fc9ddfc62bda85e06752cdba59f8fb116b70ca8f9e1",
+      "bytes": 498
+    },
+    {
+      "path": "crf_render/outputs/product_preview.development.json",
+      "sha256": "9f604eedc278221453da949ab9255c28cb7d3ad08b0442b0a581ebfc069fc158",
+      "bytes": 507
+    },
+    {
+      "path": "crf_render/outputs/product_preview.json",
+      "sha256": "a5d89c4da6b6695478b2b5c475e96b2716302412c42a05377a3ec8dd18330dc9",
+      "bytes": 500
+    },
+    {
+      "path": "crf_render/outputs/product_refined.development.json",
+      "sha256": "bb586c60461e38b189eeae702eb2f69172351b235045573d6ca5704e189e60df",
+      "bytes": 541
+    },
+    {
+      "path": "crf_render/outputs/product_refined.json",
+      "sha256": "1721c8edd8658bdf69beb3a00d38f28a3232b92112469590f7fed0cea849a450",
+      "bytes": 523
+    },
+    {
+      "path": "crf_render/outputs/product_refined_atrous.development.json",
+      "sha256": "b772c38242dbcd81dadd63647153bb8643ab04b7ca26b73f7c55abac2134c1d2",
+      "bytes": 564
+    },
+    {
+      "path": "crf_render/outputs/renderer_test.json",
+      "sha256": "0ca810cae0ae3c542fb884e9770efa79ad8e709ef19ebb181db3bea32e8303ad",
+      "bytes": 491
+    },
+    {
+      "path": "crf_render/outputs/still_life_atrous.development.json",
+      "sha256": "e174851e2ca5b71764025b037884530e09076ce5c34ba4317464a7dc8890e585",
+      "bytes": 567
+    },
+    {
+      "path": "crf_render/outputs/still_life_display_replay/CRF_01_Warm_Still_Life_firefly_report.json",
+      "sha256": "d34aab73ece365fa77dea890614081ca7cac6144cf7ed7a880ef75abbcd19a35",
+      "bytes": 42359
+    },
+    {
+      "path": "crf_render/outputs/still_life_preview.development.json",
+      "sha256": "b0744ee7e5590bcf7380234a20b640c08e6b2dceffdd158d169f92d86bcfb70a",
+      "bytes": 546
+    },
+    {
+      "path": "crf_render/outputs/still_life_preview.json",
+      "sha256": "4bfca6c518134fc21ff6fe65f594822a07d1af3b7f2f3df4a37ee1a6f3a53fee",
+      "bytes": 500
+    },
+    {
+      "path": "crf_render/requirements.txt",
+      "sha256": "dc7f6821ab2618e6dfefb42f12c92d21046b7fd388990b063107a41be95272c6",
+      "bytes": 37
+    },
+    {
+      "path": "crf_render/run_sources/architecture/architecture.py",
+      "sha256": "aad4f9c5f82d0a72fcd11cabffb79e1c456f16c975c9cf2c54d2d0f58a2046ca",
+      "bytes": 6696
+    },
+    {
+      "path": "crf_render/run_sources/architecture/common.py",
+      "sha256": "7e91b460380337f60976fa6449557690b8e55ae3934b350202a12dda705b2eca",
+      "bytes": 5744
+    },
+    {
+      "path": "crf_render/run_sources/architecture/renderer.cpp",
+      "sha256": "b016786233f2360cc5fe419f8d9e58d278cd7ac20d8f6054763dfa0d0db4dc4c",
+      "bytes": 20524
+    },
+    {
+      "path": "crf_render/run_sources/architecture/source_hashes.json",
+      "sha256": "500d232977e5bf7a20ffe792689c84b6368316b6c84d7b14e5820b1a25429f57",
+      "bytes": 372
+    },
+    {
+      "path": "crf_render/run_sources/desert/common.py",
+      "sha256": "7e91b460380337f60976fa6449557690b8e55ae3934b350202a12dda705b2eca",
+      "bytes": 5744
+    },
+    {
+      "path": "crf_render/run_sources/desert/desert.py",
+      "sha256": "1933334372a9bfdd2d0e0b0770fac85754d5951cdf9154c95455685e4489e17c",
+      "bytes": 3263
+    },
+    {
+      "path": "crf_render/run_sources/desert/renderer.cpp",
+      "sha256": "b016786233f2360cc5fe419f8d9e58d278cd7ac20d8f6054763dfa0d0db4dc4c",
+      "bytes": 20524
+    },
+    {
+      "path": "crf_render/run_sources/desert/source_hashes.json",
+      "sha256": "f69f8c385c99108e18c2ebfb279a38cc011ad98e5bdc0d0f122312086d725108",
+      "bytes": 360
+    },
+    {
+      "path": "crf_render/run_sources/landscape/common.py",
+      "sha256": "7e91b460380337f60976fa6449557690b8e55ae3934b350202a12dda705b2eca",
+      "bytes": 5744
+    },
+    {
+      "path": "crf_render/run_sources/landscape/landscape.py",
+      "sha256": "f34e1d5b484634c0402025591014bd3e0f0f140140a3ea6ef482364076b4e45e",
+      "bytes": 11725
+    },
+    {
+      "path": "crf_render/run_sources/landscape/renderer.cpp",
+      "sha256": "b016786233f2360cc5fe419f8d9e58d278cd7ac20d8f6054763dfa0d0db4dc4c",
+      "bytes": 20524
+    },
+    {
+      "path": "crf_render/run_sources/landscape/source_hashes.json",
+      "sha256": "8d55e1e462afe4f08c012c0eae95aafd02c052c27d4484bd90de436a52c8d724",
+      "bytes": 366
+    },
+    {
+      "path": "crf_render/run_sources/product/common.py",
+      "sha256": "7e91b460380337f60976fa6449557690b8e55ae3934b350202a12dda705b2eca",
+      "bytes": 5744
+    },
+    {
+      "path": "crf_render/run_sources/product/manifest.json",
+      "sha256": "2b67074d030afae1f73880d3e238844724b4f71158a9d40a45c79cac09fd5bcd",
+      "bytes": 1023
+    },
+    {
+      "path": "crf_render/run_sources/product/product.py",
+      "sha256": "76bcc9404ba538bb3fc8d4f8727e7711b03db62561ce30a3a265fb56b6110d11",
+      "bytes": 6647
+    },
+    {
+      "path": "crf_render/run_sources/product/product.scene",
+      "sha256": "c76677ec8dd620ad85978d0f2a182e5197ce1409a2ab94da8e6bf4d80d9e46d1",
+      "bytes": 2914369
+    },
+    {
+      "path": "crf_render/run_sources/product/renderer.cpp",
+      "sha256": "919f1fd23fd34a933ee8fdc052a8c2e5f8e7c5df6b44e66a26b072ef28851345",
+      "bytes": 20263
+    },
+    {
+      "path": "crf_render/run_sources/still_life/common.py",
+      "sha256": "7e91b460380337f60976fa6449557690b8e55ae3934b350202a12dda705b2eca",
+      "bytes": 5744
+    },
+    {
+      "path": "crf_render/run_sources/still_life/renderer.cpp",
+      "sha256": "b016786233f2360cc5fe419f8d9e58d278cd7ac20d8f6054763dfa0d0db4dc4c",
+      "bytes": 20524
+    },
+    {
+      "path": "crf_render/run_sources/still_life/source_hashes.json",
+      "sha256": "391f76c1c98c1a07e32c7e4dd8dae2110d79dabf0758bc1dcd17eb1cb5dda560",
+      "bytes": 368
+    },
+    {
+      "path": "crf_render/run_sources/still_life/still_life.py",
+      "sha256": "9d9ef3696845da481fb291efcdf4b5ce6597f862420af1ec4bb30d8ea9b623c4",
+      "bytes": 3628
+    },
+    {
+      "path": "crf_render/scenes/arch_helpers.py",
+      "sha256": "b36a2fe9fc939339b02d5c2a6bbed96450b3ea9f499a7a2d7658f60e0929c6f1",
+      "bytes": 5560
+    },
+    {
+      "path": "crf_render/scenes/architecture.py",
+      "sha256": "aad4f9c5f82d0a72fcd11cabffb79e1c456f16c975c9cf2c54d2d0f58a2046ca",
+      "bytes": 6696
+    },
+    {
+      "path": "crf_render/scenes/check_beer.scene",
+      "sha256": "ea3c92cd4d4787513ec1ad2f55cf794556916978c92da35e8b4cd9e42997ebbd",
+      "bytes": 103
+    },
+    {
+      "path": "crf_render/scenes/check_lambert.scene",
+      "sha256": "c27d6d5676ba96424e8eb5f8f7e4f39bd935ee63970fdba852f667e43dee813b",
+      "bytes": 125
+    },
+    {
+      "path": "crf_render/scenes/common.py",
+      "sha256": "7e91b460380337f60976fa6449557690b8e55ae3934b350202a12dda705b2eca",
+      "bytes": 5744
+    },
+    {
+      "path": "crf_render/scenes/desert.py",
+      "sha256": "1933334372a9bfdd2d0e0b0770fac85754d5951cdf9154c95455685e4489e17c",
+      "bytes": 3263
+    },
+    {
+      "path": "crf_render/scenes/landscape.py",
+      "sha256": "f34e1d5b484634c0402025591014bd3e0f0f140140a3ea6ef482364076b4e45e",
+      "bytes": 11725
+    },
+    {
+      "path": "crf_render/scenes/product.py",
+      "sha256": "76bcc9404ba538bb3fc8d4f8727e7711b03db62561ce30a3a265fb56b6110d11",
+      "bytes": 6647
+    },
+    {
+      "path": "crf_render/scenes/renderer_test.txt",
+      "sha256": "92dc25b126e7851dbf4adef1b0a912f2e546c68bdfb57333012a54928f2c2c3c",
+      "bytes": 383
+    },
+    {
+      "path": "crf_render/scenes/still_life.py",
+      "sha256": "9d9ef3696845da481fb291efcdf4b5ce6597f862420af1ec4bb30d8ea9b623c4",
+      "bytes": 3628
+    },
+    {
+      "path": "crf_render/src/cuda_shared.generated.cuh",
+      "sha256": "400d70e894bd5b3e9d3bebb12b2dd3583d39a075c49ca14042acae1bcd8ea562",
+      "bytes": 12611
+    },
+    {
+      "path": "crf_render/src/renderer.cpp",
+      "sha256": "b016786233f2360cc5fe419f8d9e58d278cd7ac20d8f6054763dfa0d0db4dc4c",
+      "bytes": 20524
+    },
+    {
+      "path": "crf_render/src/renderer_cuda.cu",
+      "sha256": "c411072a90d85467575791b2e5f3b88db3ce8c3ba920ab01ecf43a8f0afaf314",
+      "bytes": 8895
+    },
+    {
+      "path": "crf_render/tools/apply_landscape_display.py",
+      "sha256": "8c8149ebb24aa4f5565108eebd3d952134de3d9104cdf2365b5ba514255f9da1",
+      "bytes": 9298
+    },
+    {
+      "path": "crf_render/tools/apply_still_life_display.py",
+      "sha256": "ac850bbbb1514ddd19251cd7daf65a5108a942b4df3e8b92a2fa5fde5d2e5d14",
+      "bytes": 7933
+    },
+    {
+      "path": "crf_render/tools/build_colab_notebook.py",
+      "sha256": "ff02396b1b21d1b874bdd4d17d47cd4994ee2b1c653cfc92e5f9543fdfe9c385",
+      "bytes": 26947
+    },
+    {
+      "path": "crf_render/tools/build_gallery.py",
+      "sha256": "c7edfa6161ff2e9445920ac8c877b35598d75c0b84ac8304ae00469c56cbe362",
+      "bytes": 26086
+    },
+    {
+      "path": "crf_render/tools/colab_existing_runtime_probe.py",
+      "sha256": "3dccb443e28c0770cf33b1522fba8337a025cb64dc0d8e0d100a49308cab3e9b",
+      "bytes": 22034
+    },
+    {
+      "path": "crf_render/tools/controlled_parameter_proof.py",
+      "sha256": "2f47d942ff9dc1d714363215a2ab5118199a5a40b9db0c40471fc6bcacc9765c",
+      "bytes": 5466
+    },
+    {
+      "path": "crf_render/tools/develop.py",
+      "sha256": "a4e4b9808628f36156fa2cef2693c3119a201ed77149899fa2571daf903bb345",
+      "bytes": 5928
+    },
+    {
+      "path": "crf_render/tools/finish_collection.py",
+      "sha256": "28f52b4b53dc71256afac6938a195f749f2ae24ba29a745d84b705730c16c451",
+      "bytes": 6154
+    },
+    {
+      "path": "crf_render/tools/generate_cuda_shared.py",
+      "sha256": "a8d00b3f80db6886834ea1a06c6ccd1cfa02591188e53358d972d07200d82d1e",
+      "bytes": 2880
+    },
+    {
+      "path": "crf_render/tools/package_delivery.py",
+      "sha256": "95ca4bd10484594113ade796a93bdc1cc4143107e02681db0b9ef8bb3ed9ffa8",
+      "bytes": 9099
+    },
+    {
+      "path": "crf_render/tools/remove_fireflies.py",
+      "sha256": "521c2c6a76408505619487d9ef609d76c03d499b0073ed5218cd9cc8b4cef6db",
+      "bytes": 7933
+    },
+    {
+      "path": "crf_render/tools/run_gpu_workload.sh",
+      "sha256": "ab00c2060f1e70e57b02b2fc1b0530131e3cc120ed6ba9deef00150507e95982",
+      "bytes": 3856
+    },
+    {
+      "path": "crf_render/tools/verify_cuda.py",
+      "sha256": "fe7963b2234c15e252a7fbef32290dccb100b214a8c7ec19f4f7bb4e185f0859",
+      "bytes": 1336
+    },
+    {
+      "path": "input/CRF_CodeNative_Photorealistic_Rendering_v0.1_Plan.md",
+      "sha256": "9959f41bd24d657069de37a92eed3c276ee8ef6c5e139b0c45755feaf7ee2bf7",
+      "bytes": 9599
+    },
+    {
+      "path": "crf_render/audit/landscape_display/CRF_04_Alpine_Lake_changed_mask.png",
+      "sha256": "fe3bb856b62e6f2891a2109cea362022d7a63f0edbce71f9ce343426c527fd16",
+      "bytes": 11778
+    },
+    {
+      "path": "crf_render/audit/landscape_display/CRF_04_Alpine_Lake_comparison_100pct.jpg",
+      "sha256": "8dff2cdc4ccdd21d683603e66d3418a96da9cb38bdd4c1e02960085f31fe3394",
+      "bytes": 124385
+    },
+    {
+      "path": "crf_render/audit/still_life_display/CRF_01_Warm_Still_Life_changed_mask.png",
+      "sha256": "daa2d6365b152fb67b8c6f531c0ed79c1e4199f6c8fcda06064fe0d3840bd53c",
+      "bytes": 5692
+    },
+    {
+      "path": "crf_render/audit/still_life_display/CRF_01_Warm_Still_Life_comparison_100pct.jpg",
+      "sha256": "75505a897229358721372c4d79bf470fd92afa4624bf9979b28c53a2f39e0505",
+      "bytes": 109504
+    },
+    {
+      "path": "crf_render/delivery/CRF_Collection_Contact_Sheet.jpg",
+      "sha256": "7ae62f1d88b9247d9e66c5803d3d2ec384f6823ae2543b2a4c714dcc3caa9ae6",
+      "bytes": 794846
+    },
+    {
+      "path": "crf_render/outputs/CRF_01_Warm_Still_Life_preview.jpg",
+      "sha256": "22673e953050990a10413745e84a0391cb86fa9fcea91d86f0bf56d7df6d34d4",
+      "bytes": 314419
+    },
+    {
+      "path": "crf_render/outputs/CRF_02_Sunlit_Interior_preview.jpg",
+      "sha256": "4113edee218fa9156e072928b9d3e517dfbbe5c9557b87786d1cde556fff1839",
+      "bytes": 272771
+    },
+    {
+      "path": "crf_render/outputs/CRF_03_Atelier_Product_preview.jpg",
+      "sha256": "b51c66e6d70f16e5709713efeae38c732bff69c2a8714d8af29a027c238cf141",
+      "bytes": 289266
+    },
+    {
+      "path": "crf_render/outputs/CRF_04_Alpine_Lake_preview.jpg",
+      "sha256": "f146b77cfc06d3499f09a0e5eecf2fcb7792751bbb1edcde60a05434fdce1595",
+      "bytes": 337506
+    },
+    {
+      "path": "crf_render/outputs/CRF_05_Wind_Dunes_preview.jpg",
+      "sha256": "309b3ee765414e825f08f7ca83fb78abd8db63955f1c05cb8f819d434671663c",
+      "bytes": 157302
+    },
+    {
+      "path": "crf_render/outputs/CRF_Controlled_Parameter_Change.png",
+      "sha256": "1f5b323d11ad10d122f6f419bda0b3c9c435993ab1256f25e27ab05f9f23fe6a",
+      "bytes": 307491
+    },
+    {
+      "path": "gaussian_upgrade_research/CRF_Gaussian_World_v0.2_Research.md",
+      "sha256": "9e0095310b4f30f1b2748c2e11b5ed8bee61a2dc7d9a8bfcc05807ca265120ca",
+      "bytes": 32347
+    },
+    {
+      "path": "gaussian_upgrade_research/notes_engineering.md",
+      "sha256": "40d90266596d59bbecb064ec12f27817e89af5c8495e4d60dc62d445793b9c38",
+      "bytes": 21914
+    },
+    {
+      "path": "gaussian_upgrade_research/notes_renderer.md",
+      "sha256": "678f88bb105001ef0b0355fc262b2000b5d7f8cf4911f2c9225ca7304a71cfc5",
+      "bytes": 22522
+    },
+    {
+      "path": "gaussian_upgrade_research/notes_worlds.md",
+      "sha256": "f198df0cedf395ca3f997652a51da6d748b2a68bd86bd4be4fb8b1fb84b791e3",
+      "bytes": 31001
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/ADAPTER_NOTES.md",
+      "sha256": "911a7f635f337ffa0c1e3653a844bdb965c7092a3a4fda01453ec01ece212763",
+      "bytes": 6245
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/README.md",
+      "sha256": "d7b1a99b6d93f85e369a31b1991e5566e11eb0d889ab1038a7b2e6db5ce9c227",
+      "bytes": 4904
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/config/experiment_plan.json",
+      "sha256": "5ae1f101c26a96c4f6b27ead5730dc0ece8781c2f2589fe3e104b311b2c7b1fb",
+      "bytes": 8013
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/config/scene_contract.v0.2.json",
+      "sha256": "1d8d10bedb134aa787614cd88981e0090e664e4424203143d6f6bb97df2fd087",
+      "bytes": 2598
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/cameras.json",
+      "sha256": "8e5f5f5abd1b6046355bf29f76c4efad0aff1222b40356cf12eb3fe7d5f94bd8",
+      "bytes": 279431
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/geometry.scene",
+      "sha256": "e5c4dac6e578e6bcd0e1fa23ba614cf532891c447ccc0fafaa57934657f7a71f",
+      "bytes": 788
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/manifest.json",
+      "sha256": "8774a0ea5b2cfa92615561e3ee8ad6be80e8d28431c31f50ba7f929c169db8ef",
+      "bytes": 56981
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/metadata.json",
+      "sha256": "502ab9739282bdd573648e00b637767ad77b0253dbfd23a571896780fb55777a",
+      "bytes": 5180
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/render_jobs.json",
+      "sha256": "86a4989dd368b6614b7da2b07383ec79bbb8fdcb1f37e1136ba8b828b8aa3711",
+      "bytes": 99542
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a00.scene",
+      "sha256": "f0ef2c365c7c1945bb3e47a5ff864f373c2d93ae38c119d9be8f04066394f4b9",
+      "bytes": 788
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a01.scene",
+      "sha256": "411206deb6ee6239597f42d6f7766240ade6866752c664608e06770477664e45",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a02.scene",
+      "sha256": "02c3d565714d1b379012752a5c84fbb07d398181154ee3019b148c057510a55f",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a03.scene",
+      "sha256": "93253523591ed9a6ce5ce70093f458251fbec81e6e6c5a044011d64e0dd5095a",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a04.scene",
+      "sha256": "b11122c807b00b3247bbe4286f93921a980d6e3b32e4ae22c29af6d82a68bac0",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a05.scene",
+      "sha256": "770cfb1206fd264c20c38ec629b277d943aa9b87936af5600e8fbf348627754e",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a06.scene",
+      "sha256": "bfb6bbf3896a2790733049c9f5f315ab7c787f041de92de533d03ae42e298e40",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a07.scene",
+      "sha256": "889d255fb9fd7bc6a4693fbee44078bb2b6fb176e5436d54b72f15f526098105",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a08.scene",
+      "sha256": "8282cfc462293c4aab1209bd48b54826a11609747dd2b3206c787cca7ba5dad1",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a09.scene",
+      "sha256": "12200390a6610b6c0462f6caebbe7699f069478beb3ade4f302299c5229ac3bb",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a10.scene",
+      "sha256": "d70b6a3d85409d4eafb8a65c493b098c87e3c74e86fa28daa4d25e7f5eed8983",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a11.scene",
+      "sha256": "9d1fda239ebdf11f32ddf4555eabee18ea737be561d2577e4ec06b327cb025d0",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a12.scene",
+      "sha256": "994bd05b1f00867a95aee61218727ff6fa09c017055f604f5d01968d26a3500d",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a13.scene",
+      "sha256": "238eb3d257e8577df0a7bdf9bb3456d7c0a31c2849785efe64fe5b9fed2646dd",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a14.scene",
+      "sha256": "c18fcc306cc3dcb4345650c6a8ac438a056ecce4373652e07a2326017eb54e28",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a15.scene",
+      "sha256": "3ec9611b6988810cf27be672eaf0e2b6be043709d55662a474d55bee6faaeded",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a16.scene",
+      "sha256": "15aeabfffe5656334b2efc8951c070a4ce8e64b73dc743ab97df47c3250ab25c",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a17.scene",
+      "sha256": "75619740d0a5a264a84341aba51bc7ca65663b00582bd7200560d93eaac9459d",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a18.scene",
+      "sha256": "851efa814071c28fcaa89a6502e71a680f70d06264b3765c158cbf27eb53310f",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a19.scene",
+      "sha256": "b76ec1f086297ef8d234c3b5da3b78cc2b86c542136e56f44b614f124415bdfc",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a20.scene",
+      "sha256": "c9080f7a00500f2b3a7247f5a8b007e615ac00e9eebf4d278820177d9fd39176",
+      "bytes": 810
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a21.scene",
+      "sha256": "e6cbff9dbc3f73456f732bedec68e13290cae946846f65658056ad1079d4d33d",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a22.scene",
+      "sha256": "80b551cfe661784c87875d8d07026e232469d4cfafdecd4c0c94778b8957af9d",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a23.scene",
+      "sha256": "f060995ff3aa96810727c97082fe3bfe64169b8fe4b0ffb22a69215ac9afa50a",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a24.scene",
+      "sha256": "6c04a48ee4cc64617e2d011e05e72bc49f55606877b3eec114dd95b33a8d632b",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a25.scene",
+      "sha256": "87979c31fd9f29e144b8d0d542942c6f95adb70059bbe7d81cfca30a9045f122",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a26.scene",
+      "sha256": "061cb7b00f557745a1aa821a2170fd1ca512da733d2926050770405449b1cdbd",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a27.scene",
+      "sha256": "03b2265caa6c4ba60f0a4400267d6ecfd063e55341b890e1f6540f7e69ddbabe",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a28.scene",
+      "sha256": "1c012c63870d7788d84848a3ea33de0db7be1980c0c25528e699e40188b50177",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a29.scene",
+      "sha256": "f726547bd321b26f9ae29187fd0364f94717efa60bd5f75aea80969cfcf4eb9e",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a30.scene",
+      "sha256": "52b1278c3a956a5de5eae3cde8f29c1a756fccc744557e8db5a2e6a054b43978",
+      "bytes": 811
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a31.scene",
+      "sha256": "69ccd61446000a3a5c7bc06a3c6f1ca90718acebffcb6cc7813d7940e20c17d9",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a32.scene",
+      "sha256": "de165aa164a1c79fd329c47c7fcd064d0dbd9c08f793f01671223c74e0e3d01e",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a33.scene",
+      "sha256": "1571da63866e7fb9e8bf6acaafc10c5016b4a3e01e697739f5a9e34abe3b0eef",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a34.scene",
+      "sha256": "91ec9912fbd4ee1bd96975ca57b8ab5787b35adb936d3d7a6996d1d3ebe1ae43",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a35.scene",
+      "sha256": "86b2ddaa970a2ba1bb0da481769c730a64d95576bb30c65e811f678fb64e8e61",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a36.scene",
+      "sha256": "4bb09294425f8982c1157a500675d3c585753bf9c411b8a4f879daa5ec0b1c9f",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a37.scene",
+      "sha256": "bcac8da26117710ff139182c752717a94552438d40a347cb77cf90a7271b0bbc",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a38.scene",
+      "sha256": "10ecaa3d4111781c1c936041dc581fed702a2e374d88c07e826bd41e12a17339",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e00_a39.scene",
+      "sha256": "368962a434b56a6e0a695f07ff33ee61eee09ba5f8d27b9f376dcf1be9647987",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a00.scene",
+      "sha256": "5f33a1de1883cb61fcb9c3e75b8d013cb941f37575c09d5b3a415dd04e208030",
+      "bytes": 787
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a01.scene",
+      "sha256": "4a806537c7bc58d89d68e810438af585619e5e3f15454f8aa4d6ba312e2ea330",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a02.scene",
+      "sha256": "77399d5675a40913f8c0d23fc8a84789573b0fa153a72854e5529a07a2abe41d",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a03.scene",
+      "sha256": "35eeb9922ba278f38247bc4a02c927770f9ca0ca5360d4744fdaa9bd89afb233",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a04.scene",
+      "sha256": "0e8c6e0201f173e4cf0f297ea8c1b063d33c69c40815e8772cb103e1ec61cdab",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a05.scene",
+      "sha256": "9af9a4d1158b56601a18c3e6556ad1352fb5b24c40eee7bcee226f71eb79569d",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a06.scene",
+      "sha256": "b2e7f49ee25dc8ed418e83b7ae347c67241f11a7ea28f3ffc7e2ca1fa469c356",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a07.scene",
+      "sha256": "8acb30825b0efb9ad8c9b4f7d77e4a604bdab4e71a4687e60183eac657107e8c",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a08.scene",
+      "sha256": "e9727adf677673dcc22bbbefe8c227c178f6a57bbde8d2adb61e72351074295a",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a09.scene",
+      "sha256": "e27599d5ead28f63b958f4aaf7a17e867983efe42e7c9bc83f10cf9e60b6d620",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a10.scene",
+      "sha256": "0147bc49dc2343d45455a0a1ccc3de6354b00cad18ef3aaade56052d9ba49660",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a11.scene",
+      "sha256": "432b4cc48bad45bf4d51139ef1d7e231f7e91f66f3b84c7edcd1fd2cce3f602f",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a12.scene",
+      "sha256": "5dd41fa2ba316e8e8765a29fc64730eb27ca5441751d345d177d85f8f921defb",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a13.scene",
+      "sha256": "3c4544ef7bbf5fe367d707db43fbd5074f22a4fda21fc99ca3696d63992e3540",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a14.scene",
+      "sha256": "f49ad198380991c9340205037a1a2290cefabba98288aa71252f093b1c2fe562",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a15.scene",
+      "sha256": "67265065b110af3966ab04c8202338d0b3a0f1023d76433be3c44ec3691d7467",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a16.scene",
+      "sha256": "cd9789cdb9c5f46f18148c140cb3f2d3c13b36d106b32c817ca1009981b842fd",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a17.scene",
+      "sha256": "4eb073ff254ef8b9496209d74d7dff77011de6d55f07be6dffe9fbf6d007feb3",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a18.scene",
+      "sha256": "9e438e286fdc3d1ce89c2b7f1ca4cf8095ad9e2010c207de8fec0806ce0484ae",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a19.scene",
+      "sha256": "8b84139110a4d16c4bef03156c851eca99230e0beec16392f4d156234d51c3af",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a20.scene",
+      "sha256": "440119c8fe0156d237d78579abf7fb2e37da496cc00adef5571452ef6a814b63",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a21.scene",
+      "sha256": "35c61d8e0200d80a201d133ffc7e8e36b40baa0a02ba7ff3af5ef2714c3415ba",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a22.scene",
+      "sha256": "0da6c12c5c01f3fb4f166f910fdf6a265f72f116789b05eace3dc1830e7db6f2",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a23.scene",
+      "sha256": "7e48e6f561f2019192ae4a8b486b2bbc0107e60df38926a552982e0bbf6d44f7",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a24.scene",
+      "sha256": "b6db2cbdf096358bf81770c0d1879d5972548b68a8848742741125c04ae1e3c3",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a25.scene",
+      "sha256": "a7b522b4bd7548750a393e50e1de42f8022751c0189935692481b45a6b9d9098",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a26.scene",
+      "sha256": "e1e7e10868bce6369e2f655d7b8b7b486e3a23741ce4565a763039f3b67e4324",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a27.scene",
+      "sha256": "5ddea956ed05f13e4203963ad71eaeacb9813e9b71d8255453a5e28b73e7600c",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a28.scene",
+      "sha256": "68cba8af296f46e7908af0c433c72616b5b73dffb7c96c8e1279d5ef5033ed3e",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a29.scene",
+      "sha256": "7bd69f1e06efbb544448293b9a89ff58de20b89c5b85bfe4f334830a927b8446",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a30.scene",
+      "sha256": "20e20dacc49d01864fb451fdaac4a431e7690e481141c1bf450344ab39d3841b",
+      "bytes": 810
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a31.scene",
+      "sha256": "70a45a3818b4221767bb305021d30c4e60ece58e1b8ab92c9d3d2f858356ce18",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a32.scene",
+      "sha256": "26341288271154843253802e4af798505455a667ed623a45ce776f3555741c83",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a33.scene",
+      "sha256": "73a21bb124e9c1e4271cb11ecd0bae7a80f514e52f88b2defcce3120d388c862",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a34.scene",
+      "sha256": "bf63ab33111a40ca1bfa5ead0bd91f5cbd15590fe245329b167c449c0c92c565",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a35.scene",
+      "sha256": "1ea8856ab0278d1618f60fa6d0649e20127157681e8cb6d6415b9f2853e1229a",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a36.scene",
+      "sha256": "7e06faaf91865f6fcb092e18c9f1bb584cc3b153f84ae408ba1e49025bcf0e1b",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a37.scene",
+      "sha256": "1a752771b28b782d036e7054afdb08c0c09898b6989cb06e9251e7f9939daa67",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a38.scene",
+      "sha256": "437bb3307dbab307552cd4f727252582bd28d20df1c475575f5f06d021f1a12a",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e01_a39.scene",
+      "sha256": "7505ad92e874213e014e0d2ced913ff26bd8c26e04a8c62fa729c5bb1ede18b5",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a00.scene",
+      "sha256": "e2c4bb51a1296e5e096a184a930d4444883bd3a2784e6280bd31341eb327b8a0",
+      "bytes": 788
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a01.scene",
+      "sha256": "2f72f9af1274c87ea4dd4e7a659dc3dd860e42732ea829a64825867e8189a1fc",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a02.scene",
+      "sha256": "f698faf854ef75d80b09cd8d876c74878e3871690d1c694ff20916845bc74f31",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a03.scene",
+      "sha256": "229ed9890d7eb2f58a30da5cc8f480250b4e2322d825fd80dfdf65d5d819a4a9",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a04.scene",
+      "sha256": "6f7d9fcc52c13a2c8231df8ea875f087b801cdc1ece8a025f2f46b9e784dd8a3",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a05.scene",
+      "sha256": "a7e6c69ec855bf7ee5e7fa23968febe19a98712d6d9251677027a8349312c8af",
+      "bytes": 803
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a06.scene",
+      "sha256": "cdcde13b3b4cfd24757b3d93b6f7efcd816cd987ecd214e657f8d0403d428e30",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a07.scene",
+      "sha256": "ab031b68a16b8f2ff6c198e9e179f1c6076798cdd97ab780718faec8fb3dc915",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a08.scene",
+      "sha256": "f1b3979677c96353e2e1a0c84bf51db14b042764e4065507ba558ad37dfeea4c",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a09.scene",
+      "sha256": "77ab0ac6115cb1b435468ccebe7d6058f6872be3a031c62e35e9462f139c3842",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a10.scene",
+      "sha256": "8846bd59a42480272d9c975c319400d5960c2d2cd88140bb255b5b5bdf8d8d1c",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a11.scene",
+      "sha256": "b8ffe59f847dd519a263fc82272c2282b5c354fa1a91fdf5f69e6ea1fbb12611",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a12.scene",
+      "sha256": "96d24d6c39182e8b96c2dc18ace0985a89421e447df4a7089b476c0b819a3973",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a13.scene",
+      "sha256": "dcda53f0134a3826fc4e011060e1036cf2eb7488f8d2bc76fa928974a667229b",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a14.scene",
+      "sha256": "f03bd4bf291e90578a9c5be3452649e292ffae399cff3b2853b540b1c92d3dee",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a15.scene",
+      "sha256": "49ef6ac8ab882f115aa80205ddebb8e5e4ba90cab8a6459478ec5ce6009e87c6",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a16.scene",
+      "sha256": "8bd6e4e89fb1c4c6417173261c1ee7df8133702a4b5f2cf9188c06383842cd86",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a17.scene",
+      "sha256": "84af9788a5f10aca07107a61990134c8b2f5e50a37952fc9baef0d5cc2a91662",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a18.scene",
+      "sha256": "dd96d82a784a924a491b9f70a8ccdb417cdace5cfec10a6ecdb4ae0b4c90fc2c",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a19.scene",
+      "sha256": "4277965c4ff4500144fc178ebb404e03a009189a9f94c5fc6cdddb87b958ac0a",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a20.scene",
+      "sha256": "02917ac8b28033801ad15ae39af9fe480c5fb50b58e57081782e26bdf0d652a4",
+      "bytes": 810
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a21.scene",
+      "sha256": "912c644352f3943a6c1512ca321dd97b273f6a9c29e1d38368cae146b4fec7b1",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a22.scene",
+      "sha256": "ad58ef36d5beb40649f094448bee4dababdbb40cc4548c05a48154280bcc17cf",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a23.scene",
+      "sha256": "a1a893b50abee79ee63b3362a65a212ff8ec3fec51a630a246f372e808f90bee",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a24.scene",
+      "sha256": "b9bb4bd440da8fd811a85d9fe3c88917356fe2ec4e91a0c147057bfdedfabad4",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a25.scene",
+      "sha256": "eeef8397fcc4cbd75c558f900b3fa5a5ab2ed645bd03b55d069778ab6024567e",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a26.scene",
+      "sha256": "57461fcf7504ba5bc1fda0bd1a8dbdc2227c2f00be6184578c59534bd6ffbefe",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a27.scene",
+      "sha256": "686a34500f9f97556f388de3d704f53018022245e247cb362bdd48aeb82e1dd3",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a28.scene",
+      "sha256": "11b98239233ed0df30928d604c586630ff470b05fe98503bb6038b06858d67d9",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a29.scene",
+      "sha256": "5c98270213e65b2fea2497ff37dee1712ce0b49950522c62d34fead0ad6e31da",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a30.scene",
+      "sha256": "fbc6b25b5f14d404b295d0854845419df704f5637c8fb73ada8542fcd16ec9bd",
+      "bytes": 811
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a31.scene",
+      "sha256": "91909f429aeb348769fc2b52cb5c0c16d0d71f79d15b202f0c1b994436502070",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a32.scene",
+      "sha256": "8f4f4cb6eeca913498a47dc10fa38b9d443637824fa1d7872307008c4ce8661a",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a33.scene",
+      "sha256": "4f15c6b6f7d3956702d194dc38e111e6550fa5451051cb032559af117a6fa53e",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a34.scene",
+      "sha256": "5876f995cd25c0eabee222c54eac9ebbc4f7cd2f14f0b374c5fbc99bfb460e8a",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a35.scene",
+      "sha256": "967124b9e78024a8b573c4c8fbdca4a1ad81fdb825dfc7b63fc17ecf6feb890a",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a36.scene",
+      "sha256": "483ea710a65e5910a19e9a6a196c2242fb8eedceccbb49434e5a4a8f97a98615",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a37.scene",
+      "sha256": "c58fe499d3c76a48c582643626419cbdd8cee344169cd07372a901e65fc6fd82",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a38.scene",
+      "sha256": "b60ad1f0b486680ae48f626328dc81641b4e0cf8640e8f7a34f77229de01b1a6",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/cool_right/e02_a39.scene",
+      "sha256": "775712335ccf1e22a19ce7e8d4035b5648bfd502831b0373280472dabf54dc25",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a00.scene",
+      "sha256": "e5c4dac6e578e6bcd0e1fa23ba614cf532891c447ccc0fafaa57934657f7a71f",
+      "bytes": 788
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a01.scene",
+      "sha256": "bccbd66210a8119736a75423c2baf59edc78e680136e94bf3e1702a9c144acf4",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a02.scene",
+      "sha256": "1a2ed011ed0e4014c031e45f902f201130e7cb2c216f181cc1c92341ed562401",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a03.scene",
+      "sha256": "6aea484ec5a28d6238f9a2e99e43173ef70cf5cc59a30f41c00f9d25883e2f0c",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a04.scene",
+      "sha256": "4457acc6189b77cdb9e311291d800bc8785483e91d8a1998851462c5b7728abb",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a05.scene",
+      "sha256": "fe80ce4958d0237319eb938baee8d0b47ef45869ff8595b525ef48ba99c932ba",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a06.scene",
+      "sha256": "a96f40145753aa14ab445cbc844259b9d9cdb58f6d06a247cee3b7fd8fcb11bc",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a07.scene",
+      "sha256": "d4c888206d41987e4d6ae9673475068cbc565c870eb2ef3ecea646f0705a6d89",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a08.scene",
+      "sha256": "13324f2a2212d1419588d2902bdedcca8867d251af8f5003c8be7ffc9e266bd1",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a09.scene",
+      "sha256": "e37432fc28a0ae5d63f3aa8daa58a73a936ec4781f0d6f575cde457444a4e508",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a10.scene",
+      "sha256": "19439f03ac5cf497f0085e675cbd18bfeecac70206c47924f7eb9613ef2628d1",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a11.scene",
+      "sha256": "7be99d4a36a8fce61f4f32464b6d21ffe29d570218b576657a526b255e39970f",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a12.scene",
+      "sha256": "d1fc8a9025360d0d404bc0b41b62c13b4854693f55dbff2a453b3a0c47bd798c",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a13.scene",
+      "sha256": "dc5ec3d1792c4929cd7bae817df5de44a8c51757b267d3f70c5e9cd08ff79753",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a14.scene",
+      "sha256": "ffdcd3ab02ce76399e30e0d54ddbdfb04b4548e13c9adbe281250673d66400af",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a15.scene",
+      "sha256": "085cbe5395aa5ba7a527683dece4dcc23198b62b6e326c91f608e7e97549f611",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a16.scene",
+      "sha256": "b883a6b68174e6e41e330aff98f4a2970f93afd7d25e8fce477825aa7c43c10e",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a17.scene",
+      "sha256": "6300bd17c14d95907081b5625e23899efdbd502ecd34122102dc7d2f154f08e6",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a18.scene",
+      "sha256": "67b6ddba72f03bdc50e5eaade413cddf7ca77d18934c31d6e649a2d967d0b257",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a19.scene",
+      "sha256": "d1a6a14a55ad8c3d79acb153e9b65084497342784cef30fd5c5adbe20a55534e",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a20.scene",
+      "sha256": "05d95249764cc3917604c87c03b1c7eaf1d312f989cc721953f1c767725ee02e",
+      "bytes": 810
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a21.scene",
+      "sha256": "13fbfb8001abb597160812b83cc108e923da7dd10c3d54440ae0737ff7be2554",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a22.scene",
+      "sha256": "859d946e5955741660558985e9b6e5c3848970ec76fe8ab02f0547b31de87ceb",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a23.scene",
+      "sha256": "806acf37b3f7b1533966aa1886735826bfd340f1633adcb9324d1be68a9bee35",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a24.scene",
+      "sha256": "3b2adddaa149194efa7485fec7011ab7fe83b40adbc68e7ba4144c4a87282a50",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a25.scene",
+      "sha256": "8d91613bc2d35f986b813fbc6321315a7e7a215f4b6b8bfd219ac79ab71ac5db",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a26.scene",
+      "sha256": "6f446e3af411d5606d12d1c0d44f9fa4acefc9b6eaef5cd8c6f46666488b8855",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a27.scene",
+      "sha256": "e502b6557c788e2c8969481dd0c72f71782a0a57398ae49d60ba55d953fc1b2d",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a28.scene",
+      "sha256": "8eb12fe1f5a0177e036775e1d3fbbeb8a8692b9d53b38fa78cd6ea464a4014ca",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a29.scene",
+      "sha256": "cc42b37a8345acba4e980d3517a084559a0a4aaed38aedf411a5f3c162900e5a",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a30.scene",
+      "sha256": "8286554689709916eea84f346b18465cba93bdda54de1a9b1fbe46384d5e8418",
+      "bytes": 811
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a31.scene",
+      "sha256": "a4e2de6d0177b78a938327a83e56ad0143d6c1ee30e3e1dc1211b984ebb2173c",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a32.scene",
+      "sha256": "2fff2796e4d2b9b3662ba022dfd1f31384ee319722a9eeec2bedf67d0a014948",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a33.scene",
+      "sha256": "6341101608852e89b71e6c9f4e654e872d5d37c9884d1bdd68692d0fe49e2f55",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a34.scene",
+      "sha256": "5823a4a57c4aba553fc35455f5190c3a3d56c22b5106a28d9391ce977dd9169d",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a35.scene",
+      "sha256": "3069b29c8eb1ea76aa9d8d036ae2d89a7c3867a7f7bf4ae1e849b3b68cc43678",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a36.scene",
+      "sha256": "a7348534e08dd5b8b69592294df574714a61d21f3701b3dd49f11c5efe3bc434",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a37.scene",
+      "sha256": "769d86658c4c2632152ce9b9baeef5aac0141e7039d5318690191662b918e118",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a38.scene",
+      "sha256": "0d96a6532e619423890d40926c3b96f8ef61d84c50b33692c77cf48635e0d71d",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e00_a39.scene",
+      "sha256": "199184c6b61d2cdd57f82a6f0a10562e4b34b1176a33bb314c5fc6ba5efab672",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a00.scene",
+      "sha256": "7f02a3dd33296f06b730b6a47752dccb19da111a6f58743eed7e4bffa9f98711",
+      "bytes": 787
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a01.scene",
+      "sha256": "babb6122df2a53a29c373e32e8b29ec0621ea91e4160aa377d9e78b20adf4e62",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a02.scene",
+      "sha256": "0981662b2445bc3f2d54874b1c4e19d28e15c1c7cbf2ac13e4024b74c57c28c4",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a03.scene",
+      "sha256": "abcb66f59abbbc732b763ec244f305e3b8a976d2960f5853685512dd7c753e4f",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a04.scene",
+      "sha256": "63d514730d2f755bafd7db34ca056cdedaeb56614c06a51c63faa3e10211277f",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a05.scene",
+      "sha256": "99971c7a9236a3aaa81d40a34400714a551203550241790ad9ee23dbc03ad84f",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a06.scene",
+      "sha256": "05fc4de50d23aff19c2e567df812a4e0bbc0dd6a78b9d41d49a51399fd9bd79c",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a07.scene",
+      "sha256": "bca2a2f1030ed0881a43c001191b8ac2cd67c080aa5aa7862c39da0f380525ae",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a08.scene",
+      "sha256": "6b8765f0917745b21d874e4b36eeb5b9a305f121a517ea3755aec9681813584b",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a09.scene",
+      "sha256": "a7f8d21b648e7c761c2bb7301dff1ce57e624dc49728182ae7b5484787c8d2fa",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a10.scene",
+      "sha256": "b59a587d37a8934b1abbea074e0d8825589b7f192c00274a98a1a0ed5388467f",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a11.scene",
+      "sha256": "8ba3a0eb6b08a6c42620b791dc5b4b294b2740274c7c5d1fc5a44108d3aff108",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a12.scene",
+      "sha256": "785aa0e73b1ed4519dafde1d77983707522eb8b9664c5693de37a9b0cd9a3950",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a13.scene",
+      "sha256": "8b4a4b35f000cd0c7b38e7f87bfdb3e32501b7926bfa3b823b177e804d95e411",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a14.scene",
+      "sha256": "79802af6f9d3f95d6d95cb98afeff3455f1aa425d9db174726959ee3d9d66e61",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a15.scene",
+      "sha256": "e42b7a9a23143b5898c725bde0505fd1a3c24ca577194c3e80e4bdc8baff869a",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a16.scene",
+      "sha256": "d086d9cd829d95b88ad64bb747641316d7716fbddc5632acd30222f8ee31d539",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a17.scene",
+      "sha256": "718ebb0cd8c7846a03b95025b030ac206acc1f6d78cfa4c1a186d2fa9620ff38",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a18.scene",
+      "sha256": "3818b4ee88045dab25ca5b214401604320e2764bdeabbb44a90dfc936de49a90",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a19.scene",
+      "sha256": "be5516711a3733f07268b7e808d5ca3930195670aa9253033da84013f79e0971",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a20.scene",
+      "sha256": "7f2e8d8771bfcef401cc44efe20cced47576a57f49556bba1648ad3b794bf17e",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a21.scene",
+      "sha256": "e662e82ed8ebc875f474cac7c742665e790090e6c3355538dc08b8a7cbebfbef",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a22.scene",
+      "sha256": "cad05d47b030ed5c33784faaac0eb9491bc1c38854ad52eddad1895c895fd64d",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a23.scene",
+      "sha256": "c3657075ce6dde68954379b887b6480b2808caf2795b733d32edde068b3cdda8",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a24.scene",
+      "sha256": "ad165741884138ad3246af7bcbc6217906ec22102c918ee7d5049bdedb9a1f8f",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a25.scene",
+      "sha256": "6eb2578b16e48bf05613df96a5024f0004cea4b1c25a4cb4a332c87a5804dd68",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a26.scene",
+      "sha256": "c5f5136c7b73a54b9b134ffabf194aa4ec443827dbbb30a9160e1e5a7ea1cc77",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a27.scene",
+      "sha256": "71c8afa07412c806b8fcbbc90394cfc3f587036d52201e8554bb3e7b37e4b80d",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a28.scene",
+      "sha256": "dbc3da3dcc42cf66071fbe8c0447160049c0c1f2be6736890b17568c4bd335e9",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a29.scene",
+      "sha256": "cc363b2181117f8f363dde4f348dbb3fb650c506f2396f9636b7c86325a1bec8",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a30.scene",
+      "sha256": "aaf6da6303dec7b7c1ce8def3946ce360768debe213c54ba4e0f12d71c377b52",
+      "bytes": 810
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a31.scene",
+      "sha256": "922d98319dbc3e072ea702b0ffa61eea39350bc82e7ac5fb970025d6a51ce330",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a32.scene",
+      "sha256": "e74744fab0d7c507d2f7bb3089914d5853a70902493d64aa09d48d813441f8cd",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a33.scene",
+      "sha256": "81e14400d5886e1dc8543e6496c82b0930baed8e32d9b35ccab41f4fd308e1a2",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a34.scene",
+      "sha256": "3acbbc563599cfbc50053130793df57e3b64723c36dd14271cacdf143588746b",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a35.scene",
+      "sha256": "7e7aa90984655773147ec308e5446c80955674001375cb9778c30abadb5e68d2",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a36.scene",
+      "sha256": "3cf91a9f1e22b6dca1f0fb2ac374da143f7139a55ccddef5828c0b3472de4d45",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a37.scene",
+      "sha256": "6c1882612169a702ebb36f5b59e96caeffcd0c59ca3af72ea0554c0c3a8e0305",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a38.scene",
+      "sha256": "987051741c884a36144b24df2f8cdf70e7a07a600f6f8a3c338ecd3dde06eafb",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e01_a39.scene",
+      "sha256": "2c9470521b68cda9b9997ed65beb9b48501e30be35d9a2df170ee380e53808e6",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a00.scene",
+      "sha256": "2d7de99735e5e0e327fc19941f6d493bacfe8c73e2e3eda6bfe75ab49f3221ec",
+      "bytes": 788
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a01.scene",
+      "sha256": "0783f058977e007a7023b2232990b173eb9efd4bb5a2e6c1c269f92e13963dc3",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a02.scene",
+      "sha256": "065ad40973a9b81a9ec105197649279289745941f79d28d1785fb904e0f400d3",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a03.scene",
+      "sha256": "190ac4723cc75c5b5b8f7adb935f0c08a1fa9e4bb0dc3cb44b7c2fe0781253d4",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a04.scene",
+      "sha256": "4e9a791a2cfd15897823b6db9a3e82a4d8daba5a35232e4e7ed785191b9ba40a",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a05.scene",
+      "sha256": "8370c8424d5a4a5a497441b6acf4353fa3747fcdd031a58338d66ba3da2d2a40",
+      "bytes": 803
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a06.scene",
+      "sha256": "8d2087d330f90644dbb58b7161e22014a0f61b5ff17e1a0d498bf036b42cae6c",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a07.scene",
+      "sha256": "a52d9ef20ee568fab468ca65cb33296050f11cc6074f8dbf2195fc364a199ca8",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a08.scene",
+      "sha256": "70dd2d20b87e15fd5f7a6f680631b7e06509efa3ae0922fb3db07efa647b83bd",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a09.scene",
+      "sha256": "b85561ed38389b3e54dfb98bd5d07447358a578093acbf34b39591ee7cf7aeba",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a10.scene",
+      "sha256": "c2d448148001266047cce9d383bb6c772a71f074fab51e8099d0ce2916ab4cde",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a11.scene",
+      "sha256": "bec5cea7a91c43b4c48cefff35af1d999244b1db0e61fe037a43b04148263fde",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a12.scene",
+      "sha256": "490edb3bbdfdf4babb6d59d7c7eff24ad4caf3d7e2997908ded4742a9b32928d",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a13.scene",
+      "sha256": "3f4c54390d938d3f3e5c390e169921085a003684cc6967348c1e882f1bfa0a76",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a14.scene",
+      "sha256": "2a33159eb4206326e010e84fb3c42554dfcaf833e384aad5754b63abd6e9820e",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a15.scene",
+      "sha256": "e25b8b6d0ad609833acab94679bb223e5a3d775dc94c995958ba0ee3dad05afe",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a16.scene",
+      "sha256": "d8d60b50a5e8d9a16a0325a7d2ab05e64fe6beb5a684889d3f58153402c054ba",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a17.scene",
+      "sha256": "a4e885e01b8ca248af87b04770224cc31e7ebbf85157d694548b15cdf4572d49",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a18.scene",
+      "sha256": "809a6653e2a79ecf4918b77a6f179812db0dcb48d64ef2bbe48e8b861169588b",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a19.scene",
+      "sha256": "8d31fd9abace2a68e1efd47236e2fe198926ef4bd4c6e29e80d95d425fb2d459",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a20.scene",
+      "sha256": "525e43e431235272102e24ea6dea6ea1bf9073414ee08bc22404a13b817c4e2a",
+      "bytes": 810
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a21.scene",
+      "sha256": "c1ba1b608b213fbb00aaff2478e05dd8b0cb761824a08d987d0de6c6efec6de5",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a22.scene",
+      "sha256": "184d375504f35a85d9a724544f2fa0a217de602b363d1865899848b0036e3f58",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a23.scene",
+      "sha256": "e6c059e827301a50f3f16288bcc8b67fef862e64f46be3d9879ca9da95e98dc5",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a24.scene",
+      "sha256": "d9ec3ff347180f5dcdf265b0e1a8faaa3cf33e708d88278321438b4ec90d9c17",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a25.scene",
+      "sha256": "0981faab20b13c5f15f4dd055ac6e9ee22165e98a4e393096345c1bdd961cdd7",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a26.scene",
+      "sha256": "d03f9d1a3e09044dcca48444c23e788cbe284fb5afb94855d3d37755100abb0e",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a27.scene",
+      "sha256": "8e2cdbe12a972681a4e0fbeeefa4d87ca29f38d960af3093cd80b968d775d71a",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a28.scene",
+      "sha256": "c2f756a13bd5aeec2c90b4a0ea4041151eb1adaca9b3345a34e23c91f200d5eb",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a29.scene",
+      "sha256": "f1a1dcabd5e767163c04713a7471a819b614aeb4f03cad16ce3e15b27fb450ff",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a30.scene",
+      "sha256": "3749e1f7f2cbe23be6998eac83bf86f530e3235a1694289139d9ca29f66758f5",
+      "bytes": 811
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a31.scene",
+      "sha256": "0f1f1788699bc32c9fca22b7848d8907c5d4d046557209df718a1f0a2598efc7",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a32.scene",
+      "sha256": "b5bb78495578ba3ecf83a08e88f9d4f054e4045dda88cf468345a0484f203de7",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a33.scene",
+      "sha256": "7f9a6c152dbacca1f5bf708bb52053c23c6df955ff62310d49ad3752fa91c9d1",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a34.scene",
+      "sha256": "25f9201e834ea69edf4c1bf449668b45a190a66cb62714818d697f803508a6d1",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a35.scene",
+      "sha256": "14f8f7a39381f9d25121e5c724ce721f139eef5f642d41a43688043991f2ad17",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a36.scene",
+      "sha256": "22e27b9243765992c3dbf03fddd5bbfcd4b31cf64a29fb305fe2d281453b5f54",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a37.scene",
+      "sha256": "969ba1999b5aa8b1fa117af9850171b49c303d0ca7d024449eb223bc1659dba6",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a38.scene",
+      "sha256": "11a3193e3cc7776ce3ebb8822512fb71d92db971007b1b0b3c5f19132bd83ce0",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/neutral_top/e02_a39.scene",
+      "sha256": "1ac6b154b88986e5bff23b8ab5deba4ae4de23f7efc717d6ebd0bbcf9f3c106a",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a00.scene",
+      "sha256": "3abed0e2d494bd59c8d6c8b9b7e3227fdc5765c67f037f791b078f036914322b",
+      "bytes": 789
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a01.scene",
+      "sha256": "3e9bbb7efc0e8007c84821d8bfb6e88190db23c39581626180693a8cd90b1da2",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a02.scene",
+      "sha256": "25bd79b3aeb43ddc657b10f823218716fdee3815249795bde81f635dafd41a9c",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a03.scene",
+      "sha256": "3526c381db9c6fc42118b7cd423e67d56b7571964bae5fc8d9021b229acb6a13",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a04.scene",
+      "sha256": "66a6be178e7f658a7461e6c0a7c3381d0122d57dd024efdadb194a037eb1301f",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a05.scene",
+      "sha256": "2025efd1f55d237729c96d556602203415c5acd5e9f9340a9505834d68d29256",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a06.scene",
+      "sha256": "1222a45392c07d4721472c5b573fb236f2fa6e51dd605a8813570e85ddb6c64f",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a07.scene",
+      "sha256": "62b0fdf95d151686f1f5417d268fd0a2e898688445a7d1a622bddaf453c64d6f",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a08.scene",
+      "sha256": "3cb685fa62ff68cbecb97d207f3ba2bf6b74e911747fe3d34e792d702b3f7340",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a09.scene",
+      "sha256": "8b082184a9f394a8d236dc4190e1fb42f7dd0a34ce5ff02f23bf1d9f01b36f4b",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a10.scene",
+      "sha256": "4d97e5544a612b2ded8fe0be091a1408c9d51fbe23860791e9cc4d48dac4d942",
+      "bytes": 810
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a11.scene",
+      "sha256": "777a8ad49127d78b5a86043f8c2e9252456280cbfadb10dc3905bbca07507b05",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a12.scene",
+      "sha256": "b01d504e3e9886222600af57e2eb1e1cc86cd7a5acc3a4b3c665a4e15f87bac5",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a13.scene",
+      "sha256": "6d70eff785482810be093dc31795edf5a962874e97aa3794b2eab48375a5d466",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a14.scene",
+      "sha256": "bcff7ef4ef44c22b288aaa4d7d6f58f68dbc220021b911db2476b9ad1c32b63b",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a15.scene",
+      "sha256": "9c57a47da7266928f3bfad5ad901ca7879a77c310d17c22ca57a874e7ddfc7ba",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a16.scene",
+      "sha256": "032348c0646e441d84676c132ec8917d842fa2b30d25201498d41bcda75e873d",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a17.scene",
+      "sha256": "54345e7a18efad5c10702c4812318ee5c1237a017abbca9bb7e8f87480496aaa",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a18.scene",
+      "sha256": "4bd2054a1cdf5f93fd80d46e9999ec8ac210cc5d8b387390d63f61f45fdc43d4",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a19.scene",
+      "sha256": "684b03bf01f66c4495b38b5b3c2de4036dcdde2bcda4516d3956e97dbff54689",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a20.scene",
+      "sha256": "f4d8b9f7c5b544a34692ac3d6da88abcc8c12a0aa9aec0a69db74e7c9a9b53b2",
+      "bytes": 811
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a21.scene",
+      "sha256": "6059a03932e33960a93c7340e0bbd73a4ac1e5fbcc284835c686e7856fabcdd1",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a22.scene",
+      "sha256": "04bf49563354b9ee933ebeea06649ae256c85a61f3ec6700c3c239c5b05e3462",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a23.scene",
+      "sha256": "0d82ab4ba828a2e902303f40241b55a388347bb30ec84413d5b21bd8dbf388df",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a24.scene",
+      "sha256": "d5356daf8663052f84dfae241e76dcf0501231c3701ac2a86556f28680247e35",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a25.scene",
+      "sha256": "8a3b40dac2dec7468f5b9eaf0e2476645898e706a0ad284899ab9642c4ccd394",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a26.scene",
+      "sha256": "05b3d0325ab2eaa6c49aef833db819cb5c04b3bbe73298d58704ac4d9c543c4d",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a27.scene",
+      "sha256": "c6ded2df02d29b790d97d4c72a9c3dd6751af545cdb5e31bf5121ed1e783a525",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a28.scene",
+      "sha256": "34ad533a68953a1a9b96471faa4280f0e7efbfb703e679031bc8c5227c20785c",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a29.scene",
+      "sha256": "91fbb776664268757cb96655914ff49a79bd1b74f047573cfebd87ce77a2eb04",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a30.scene",
+      "sha256": "2acf97b1fc092caee489f943fe5c972b5c0d3c3a5543b1f3cbd05ef3e6aec0b9",
+      "bytes": 812
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a31.scene",
+      "sha256": "55371376137ee4ceafb012be024d978f9ac120cbcacd2bcc2e8530a9d2bcd9f9",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a32.scene",
+      "sha256": "6fa24fc674b9ec17e9053d452eea8665fbe7f6c2ebe2003fd391bff1ba6bea43",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a33.scene",
+      "sha256": "17d389cc2a82216edf40103f3e537313f25a437ff99f9e7d2b2b49f934035777",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a34.scene",
+      "sha256": "356c5db166f86d5c13c979c025785bf6d054aa438788547886cf4435516977d9",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a35.scene",
+      "sha256": "1f914a068552b8de0e03ab8704f3d0d9d97a358db6635486924d9a48c502f3ec",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a36.scene",
+      "sha256": "2eb79b0a32e9c3f0ba8ec2e15c36d8ecd4b58d51f481a251ef597e236ac37d3c",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a37.scene",
+      "sha256": "4e041a70b0991d787fff7733acb785e3532fde849173a7ec01019657be3d04e1",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a38.scene",
+      "sha256": "a0ea4f38928471a0b90f1630642818458cdd2267901be1e609c8c69813c12c00",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e00_a39.scene",
+      "sha256": "8b14d69367de19bd910dcd253a459e677021fae4d636c6adbacfebae2a6fba55",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a00.scene",
+      "sha256": "aac8a01c68f5ec9c1a6030864b4188cdd87bee2580a7d8265c4b2426b109e4c6",
+      "bytes": 788
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a01.scene",
+      "sha256": "0e1812167deffcbe15124eb9b9994dffaabc37fb1c4de8693491e9a50838e62b",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a02.scene",
+      "sha256": "4094c9f12dd557cf311b98cfa1eb979f47e388651a1c665992a686a9f570acc7",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a03.scene",
+      "sha256": "8b914e4a0e3b5e5e886190bb548ea1e009d5f7935d64aa497a4a415d47d96219",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a04.scene",
+      "sha256": "32cdaa485b494a310ed789f8e3e73f6c5e5ff6bbfc774fefb6e7d9bdd48476d5",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a05.scene",
+      "sha256": "a80830950a97a749b57ac693e4beb1e83f0123a1340c31fb6098951fe42ed03b",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a06.scene",
+      "sha256": "7c3195ad86300fe0a3ae125d0233b82ed5521d77188dfe41c40bbe42874994cb",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a07.scene",
+      "sha256": "ab9a9dd5115718b571faa44c8cb67ea77a4be17204087e98bdd84ce0c34077b6",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a08.scene",
+      "sha256": "3a83cf255165d92cd53fe213c08108c1000ff3f797cf308a76f15077943c28fe",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a09.scene",
+      "sha256": "0722dbcba2ee7902f85f3f8eaa7648878de952ed48eec16f0925a6aead40daa3",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a10.scene",
+      "sha256": "5f644a44020d3555ab4055592ae86002a9db38abb907ddea137c3b88ac86d095",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a11.scene",
+      "sha256": "dc297dfab5d1a8f158838e2985d431ab18112287712fae566afae376bd9cd158",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a12.scene",
+      "sha256": "7e435b2f61d6034997130ef830837518669c2630ab9f57067d62dc6b0832170d",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a13.scene",
+      "sha256": "7ce54c7ebd4d3d73938b18a4bb66cf49f2adddee9da75703fa24a19a3ea75421",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a14.scene",
+      "sha256": "bf399147bf3e2c48dffd69d3c3110f2c2ee71bfd2da03233599f92c891fad182",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a15.scene",
+      "sha256": "1d91409c2148cbe739d67196435a491ac640abe4c3b136ffee7c342fa24536b9",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a16.scene",
+      "sha256": "e26e7eb4a094931b15188f07b302596c3d53135c4b5c1b1bc9adb8a742adada9",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a17.scene",
+      "sha256": "56c19eb16bda061b3b4aa1e1733404a7becfdd72945fc880e22bd94ddab5f286",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a18.scene",
+      "sha256": "15f06df6ce9fd1e412c52764f5a40941aeb76a8711e65710d60c60dccf32c6f7",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a19.scene",
+      "sha256": "7eca58c1b4615bb89ee146c2e107822f7811a5ca0e8da161c5991cc820070332",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a20.scene",
+      "sha256": "93acf969e8ee56e48ebf161a52b4ff1ba659bbe1a0c6ad82c27398416e200dbc",
+      "bytes": 810
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a21.scene",
+      "sha256": "17cf8ae691eda405886b1a3d1470d5c4748ace2d8e869a84ac5ac294f6564a10",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a22.scene",
+      "sha256": "cdc69c826bbbe7f222422884ef525ddbd63b75b03ea2648505c9f19a3e913a59",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a23.scene",
+      "sha256": "979d6b07fa119c0ad6ba6c56cf7abcb451a777ef363babd458f40203fd2dca4a",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a24.scene",
+      "sha256": "234fd26ce2e3e159a7dfcb1356d57d537febc1062a67214b99caec44fad69d30",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a25.scene",
+      "sha256": "4626cdd4921ba78af681f941fec97318bc182843276f317d42cc58839d5ac719",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a26.scene",
+      "sha256": "09e111623caf98f49707bb96ae326abfed87cc252dd624a9c3dc41d278fd3545",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a27.scene",
+      "sha256": "0af78b448c23e85cc076c7b27619424263b879f1614719b0332d44cad284544c",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a28.scene",
+      "sha256": "aef13ac3b54239f9a19322038bd17ec68b34b4ee7db25151f809d340778c8a53",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a29.scene",
+      "sha256": "f8c79992efee7931266be5a6b85874d1ce48b2ed30af680ab2cc213933b151eb",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a30.scene",
+      "sha256": "36ad0e236675de9ed36375f3ae61ed3b3c815dc76f4a461012a7cde888b1c5c5",
+      "bytes": 811
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a31.scene",
+      "sha256": "a7c3eb7f6eb8e861dcfa5fa6bd61c1a2634967e8e7f452b0f46614cbc5e7a261",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a32.scene",
+      "sha256": "cc361a999554aeb00e5b6d34ef9431add8c461180dce934f1f68438f1e839bfc",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a33.scene",
+      "sha256": "4b8f33cd251ae37a3ce639df2d210d244b8b3221998777e52af6fa1ae47bb2b8",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a34.scene",
+      "sha256": "b397f69b045039a1a053426db340cae6da8ac05b89e62447c4153955c33dd022",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a35.scene",
+      "sha256": "0dd1b68be4af2fe6df5d2ebd5a2772ed62cab35b4cdd00c787e38cd987b38322",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a36.scene",
+      "sha256": "539d9b1a5e16a9742a11575509de93a6f3ecc8016efcef30afb7d6ce40b74da4",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a37.scene",
+      "sha256": "d28117233756043007495a7fe1b673cf689f1a09e38af96477e2023672099e79",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a38.scene",
+      "sha256": "30f327bdcb35e9cc08b968cebf77d8c0607ccefbe8199d22648a05747e7cd835",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e01_a39.scene",
+      "sha256": "6d75367a234a445aa53b3296105875f35d6636b3743bf012fd78ef58cab1da5b",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a00.scene",
+      "sha256": "b4363b8e348a9517fd318525869dd35fabc655689e2e664f25e8e18127be0332",
+      "bytes": 789
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a01.scene",
+      "sha256": "09dfe04f3bb99d3da516a03627c0f00a32e7fadfad05085cbd5217178beeb7c3",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a02.scene",
+      "sha256": "d13ecfa1df5b84c26a9d4cab36494162b33123ae8c527fac0a78cf487f8d37b6",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a03.scene",
+      "sha256": "b034a8046bc005321d03debae0a22dc920afe8c70439ba5d83afdbd1ce008420",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a04.scene",
+      "sha256": "2a61e3ac049012227021bc4dd553adfb23372e64154437ce2f5ba1f00b07a11c",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a05.scene",
+      "sha256": "97e421a103efedde55791bb09a11e9be5b72b3f108b8ce8a9157f7e554ec49ad",
+      "bytes": 804
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a06.scene",
+      "sha256": "d775c9140684247c714518129f489378e236eddb8a9acc9b8cde4bec1479952c",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a07.scene",
+      "sha256": "e85ecc6b8ea3348e063dd461adb42071cb16362019ecc9c28117a2adc0a8b461",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a08.scene",
+      "sha256": "e0bf6402e05eb8d41874720742bf5239e307ace80f435dcebed8330938ffff13",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a09.scene",
+      "sha256": "dcaaeaf22229ad78cfc70acd0a78c3d7eb5b9bcdbd16ebb4f4ca45b5829e96d7",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a10.scene",
+      "sha256": "41580f3a8fb4f1063bed2203f6f8eb9b8c3e8508bb5b02cfe827931b38627ba4",
+      "bytes": 810
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a11.scene",
+      "sha256": "b6b9381dea7e1cd00520daafc5bf72cef24b313efd7c310e1a23d99cb0289a74",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a12.scene",
+      "sha256": "f13a7617420792d73d9c7b01ef73bd7044c6d6d1ea3086457b1bec7b9fa23563",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a13.scene",
+      "sha256": "5f55baa36662e7e376e9dea71076f7b2ad74c0f0eb3f6ffe57079e52feb98a46",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a14.scene",
+      "sha256": "c115774c58d2a734bbbe8a687397c0edcbbb08eec653bf5dffbd3f10bd5c3bac",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a15.scene",
+      "sha256": "c792554389efdb894b784dd9a11aecc6d197acc3652e36f784a29dce0901c728",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a16.scene",
+      "sha256": "c09ec1aab3e8dee63e1deb2d2163e795dd1146a7f1ff3922168894914ccc3bf4",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a17.scene",
+      "sha256": "42db305782be57b8ca148bb137d9e02b5329a7035ed0e9233b635b39cf70f74b",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a18.scene",
+      "sha256": "cee12f1b6f4b8418f81300c0f7afda1ab4b2dcd5a619feaa59732ff6e3906569",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a19.scene",
+      "sha256": "4148a9053b4da3b18bfafb7c8cfdc88761990b1818a39ee86905d4cd78bc8277",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a20.scene",
+      "sha256": "e315acbcb29babcbe9fe6f3cb2d8f1206bb954e2e1504f973db3f4bcceaa4999",
+      "bytes": 811
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a21.scene",
+      "sha256": "1f6363bb48eee733ccdc61ebb75af79805182f144626283e7f90a5553108617c",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a22.scene",
+      "sha256": "d5576844b6c33470f3c7d44245dbf3d681870d26b3d5433c354f137e44ec9aad",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a23.scene",
+      "sha256": "c06b04e94b83341770ba12fab780d87e51b5c63d01c1a199848220064fc936cc",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a24.scene",
+      "sha256": "d041f06887e7cb21fd7277611840e33b49b3ce157d99433e8747b0a6aafeb7c2",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a25.scene",
+      "sha256": "22a349c084451ede0a6675c930e9f33c041b220dc18b205416664ab297aa3dc7",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a26.scene",
+      "sha256": "d80cec6c8625f8aaed39c25401284409c8cdf7a6f8ec3f659ef5226bc9c052af",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a27.scene",
+      "sha256": "cd6a091404631228b45cefb5ed2b7478ae67e35bd4ec2b197b238c2e8d704eba",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a28.scene",
+      "sha256": "45390da99e83fb6710ee09629e18b311b25f0dc50cb23f85537e120ec0186498",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a29.scene",
+      "sha256": "3de34c6d993c0cb824d873710eba1b0ea9cbe1d0122fa44c34bfedf55420c6a6",
+      "bytes": 809
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a30.scene",
+      "sha256": "4cc772d5dd88606ad860e77a5deaad2a1737641c80eda832dfab4671abfa6d03",
+      "bytes": 812
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a31.scene",
+      "sha256": "c9bdd1fc410652f6a820b07dc30be65f80188594f9fd64849858a4bf605e2e18",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a32.scene",
+      "sha256": "ad63313ec907bf0b7ebcd2aa5d011c33cf013c1e38ec5315b70990a530a2a20a",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a33.scene",
+      "sha256": "39366dd94a8456a0a37fc81514493a519dd2e0280340bdf865089078333242fc",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a34.scene",
+      "sha256": "a4969b6318ffdc25e812d8bc988b24f23ec074a10547d133d37e6c4837c93af2",
+      "bytes": 806
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a35.scene",
+      "sha256": "6fcae1449e1228ebd0bca544ac44616647ce425142a03a65e7a19bc463a098b6",
+      "bytes": 805
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a36.scene",
+      "sha256": "ca11d802509a2fde6e694affc557d873d28ffdd3096cd582fd5a6e74256b2d77",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a37.scene",
+      "sha256": "c5b3c0e188fce5784ebdffcc6fc1eaae642ac08e377684b1a8bdd952b5867cec",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a38.scene",
+      "sha256": "2264dd78e3fe8b1650619f172bdc6505bd31f54ba79f8b56bb51ed1f97e66f2e",
+      "bytes": 807
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/scenes/warm_left/e02_a39.scene",
+      "sha256": "488247436d4ff22e56a9a9efdd2209bb451f34d607dc670dbf6ed8d3f27e67fd",
+      "bytes": 808
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/fixtures/procedural_v1/validation.json",
+      "sha256": "8c214addfabb13dc064b1885c0d8c6d1fa6b902d73ffed660191f78ccef990dc",
+      "bytes": 857
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/tools/gpu_preflight.py",
+      "sha256": "80cac17d0a45622c6a44684931ae29697b795830dd05a1958a5cf05742ad747c",
+      "bytes": 11064
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/tools/prepare_fixture.py",
+      "sha256": "fc5cd121c32730f79c5bc33255c81122527986821dd0f55cbf85fe37a6f3bf7a",
+      "bytes": 18536
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/validation/gpu_preflight_help.txt",
+      "sha256": "3fe1e64bb9f4ba6431c62d2d40967bc1cda231e79cfe9fafdd0b7bee6299b965",
+      "bytes": 1058
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/validation/local_preflight.json",
+      "sha256": "1c853c6050a02e7ff5b7a39bb37c2163603e85d24d45f520758c7282d39ad53f",
+      "bytes": 1263
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/validation/package_validation.json",
+      "sha256": "b45a054cfaba4e1e1ccde1e9c524b9a6c9118d6d2f35be6a63d6f68829a50e7a",
+      "bytes": 369
+    },
+    {
+      "path": "gaussian_upgrade_research/scaffold/validation/preflight_validation.json",
+      "sha256": "2c75af34f7466c93533df22c1b4283260f46d321a58a256485dd97cffd78ffb9",
+      "bytes": 1395
+    },
+    {
+      "path": "input/CRF_CodeNative_Photorealistic_Rendering_v0.1_Plan.md",
+      "sha256": "9959f41bd24d657069de37a92eed3c276ee8ef6c5e139b0c45755feaf7ee2bf7",
+      "bytes": 9599
+    }
+  ]
+}

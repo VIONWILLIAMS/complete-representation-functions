@@ -1,0 +1,11 @@
+{
+  "renderer": "CRF original C++17 CPU path tracer",
+  "scene": "scenes/check_lambert.scene",
+  "width": 16, "height": 16, "spp": 1,
+  "seed": 1, "max_depth": 3, "threads": 1,
+  "primitives": 2, "bvh_nodes": 1, "materials": 1,
+  "area_lights": 0, "seconds": 0.000465902,
+  "camera_paths": 256, "mean_luminance": 0.38635999, "max_linear_channel": 0.80000007, "nonfinite_pixels": 0,
+  "external_assets": [], "neural_models": [], "postprocessing_baked_in": false,
+  "fog_model": "none"
+}

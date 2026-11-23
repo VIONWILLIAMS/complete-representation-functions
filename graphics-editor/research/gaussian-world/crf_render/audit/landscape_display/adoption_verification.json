@@ -1,0 +1,29 @@
+{
+  "adopted": true,
+  "ordinary_baseline_generated": false,
+  "baseline_missing_inputs": [],
+  "scope": "landscape display PNG and preview only",
+  "modified_original_pixels": 2049,
+  "removed_fraction_of_total_estimated_luminance": 0.04332438021580197,
+  "original_png_sha256": "fd8fcffff8329ec9204b06989e84aeeb4d22f0e89fe5d43a6c52a0e336241925",
+  "adopted_png_sha256": "703a129a6fec103d5524502fdf7f8b4a512bccf581cb5032a82fb6a89fcebd9d",
+  "adopted_preview_sha256": "f146b77cfc06d3499f09a0e5eecf2fcb7792751bbb1edcde60a05434fdce1595",
+  "raw_pfm_sha256_before_after": "a221550021f9bacc34d830ab728f97a93c6918fe4bfceeb64ddc571b52ab5f27",
+  "raw_exr_sha256_before_after": "966af2b224167545b486487bd1c488b50611da2159cf48e6d34e432e50b96c1f",
+  "raw_hdr_unchanged": true,
+  "reproduce_command": "python3 tools/apply_landscape_display.py",
+  "candidate_source": "outputs/landscape_firefly_review",
+  "other_three_completed_images_png_preview_development_unchanged": true,
+  "other_image_hashes": {
+    "CRF_01_Warm_Still_Life.png": "58be28d97da7a0780cbb741dbcc2b3715bb1e2be2a6eeb3ed6b5e29d21102ed3",
+    "CRF_01_Warm_Still_Life_preview.jpg": "22673e953050990a10413745e84a0391cb86fa9fcea91d86f0bf56d7df6d34d4",
+    "CRF_01_Warm_Still_Life.development.json": "d5a9b09c2baf4cd91d76c457185572b881442d9052b9cc605b91d5e3af675bf7",
+    "CRF_02_Sunlit_Interior.png": "3fb59a90887ab11deabda861c59b60c59b525b1d6df1b2226cd84c3d83c77b75",
+    "CRF_02_Sunlit_Interior_preview.jpg": "4113edee218fa9156e072928b9d3e517dfbbe5c9557b87786d1cde556fff1839",
+    "CRF_02_Sunlit_Interior.development.json": "700d8f0a905127758d79120077adb1c6c6ea8821ba5ee17d8d52e3e7ced52551",
+    "CRF_03_Atelier_Product.png": "0667f7f0d2c7547539bca9ca5a73273c59645df4db36ea8862d5c953069263b3",
+    "CRF_03_Atelier_Product_preview.jpg": "b51c66e6d70f16e5709713efeae38c732bff69c2a8714d8af29a027c238cf141",
+    "CRF_03_Atelier_Product.development.json": "c3e76f6bd325e66cd45da46f982b958e789b0ec917af58d9e8aa2e46abadf1a4"
+  },
+  "package_record_validation": "PASS"
+}

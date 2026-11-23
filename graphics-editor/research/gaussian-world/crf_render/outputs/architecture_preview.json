@@ -1,0 +1,11 @@
+{
+  "renderer": "CRF original C++17 CPU path tracer",
+  "scene": "scenes/architecture.scene",
+  "width": 600, "height": 400, "spp": 32,
+  "seed": 2026, "max_depth": 8, "threads": 3,
+  "primitives": 36868, "bvh_nodes": 23721, "materials": 24,
+  "area_lights": 2, "seconds": 15.942581,
+  "camera_paths": 7680000, "mean_luminance": 0.20104648, "max_linear_channel": 2.0499995, "nonfinite_pixels": 0,
+  "external_assets": [], "neural_models": [], "postprocessing_baked_in": false,
+  "fog_model": "none"
+}

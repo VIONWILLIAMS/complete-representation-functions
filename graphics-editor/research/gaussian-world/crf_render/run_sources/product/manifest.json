@@ -1,0 +1,29 @@
+{
+  "collection": "CRF Code-native Render Study",
+  "created_local_date": "2026-11-23",
+  "existing_project_modified": false,
+  "method": "original C++ CPU path tracer; procedural Python geometry and materials",
+  "external_assets": [],
+  "model_images": false,
+  "neural_denoiser": false,
+  "cloud_gpu_status": "not_connected_network_unavailable",
+  "source_snapshot": "run_sources/product",
+  "files": {
+    "run_sources/product/renderer.cpp": {
+      "bytes": 20263,
+      "sha256": "919f1fd23fd34a933ee8fdc052a8c2e5f8e7c5df6b44e66a26b072ef28851345"
+    },
+    "run_sources/product/common.py": {
+      "bytes": 5744,
+      "sha256": "7e91b460380337f60976fa6449557690b8e55ae3934b350202a12dda705b2eca"
+    },
+    "run_sources/product/product.scene": {
+      "bytes": 2914369,
+      "sha256": "c76677ec8dd620ad85978d0f2a182e5197ce1409a2ab94da8e6bf4d80d9e46d1"
+    },
+    "run_sources/product/product.py": {
+      "bytes": 6647,
+      "sha256": "76bcc9404ba538bb3fc8d4f8727e7711b03db62561ce30a3a265fb56b6110d11"
+    }
+  }
+}

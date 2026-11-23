@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "camera_count": 120,
+  "split_counts": {
+    "train": 96,
+    "val": 12,
+    "test": 12
+  },
+  "lighting_group_count": 3,
+  "reused_view_split_for_all_lights": true,
+  "render_scene_count": 360,
+  "test_pixels_per_camera": 9,
+  "sphere_bounds_checked": true,
+  "max_errors": {
+    "rotation_orthogonality": 4.440892098500626e-16,
+    "rotation_determinant_error": 4.440892098500626e-16,
+    "inverse_matrix_error": 4.440892098500626e-16,
+    "target_projection_error_pixels": 1.1368683772161603e-13,
+    "opencv_vs_crf_ray_error": 4.440892098500626e-16,
+    "ray_distance_to_z_error": 1.3322676295501878e-15
+  },
+  "absolute_tolerance": 1e-09,
+  "failures": [],
+  "rendered": false,
+  "trained": false,
+  "gpu_started": false,
+  "scope": "Analytical camera/projection/data preparation validation only; no rendered image comparison."
+}

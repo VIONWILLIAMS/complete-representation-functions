@@ -1,0 +1,86 @@
+{
+  "schema": "crf.gaussian_experiment_plan.v0.2",
+  "created_date": "2026-11-23",
+  "status": "planned_not_trained_not_gpu_executed",
+  "purpose": "Test code-native physical scenes and Gaussian representations under separately controlled views and illumination.",
+  "content_policy": {
+    "default_route": "procedural",
+    "external_photographs": false,
+    "external_texture_assets": false,
+    "stock_mesh_assets": false,
+    "pretrained_generation_models": false,
+    "diffusion_enhancement": false,
+    "per_scene_gaussian_optimization_on_own_data": true,
+    "per_scene_nht_on_own_data": "optional_later_ablation",
+    "lpips_evaluation_weights": "optional_metric_dependency_recorded_separately"
+  },
+  "source_fixture": {
+    "directory": "fixtures/procedural_v1",
+    "metadata": "fixtures/procedural_v1/metadata.json",
+    "cameras": "fixtures/procedural_v1/cameras.json",
+    "generated_scene_count": 360,
+    "image_data_present": false,
+    "training_checkpoint_present": false,
+    "unit": "metres",
+    "world_up": "+Y",
+    "view_counts": {"train": 96, "val": 12, "test": 12},
+    "camera_adapter_required": true,
+    "adapter_note": "Fixture K uses integer-centre pixels. Verify destination rasterizer conventions, including any +0.5 principal-point shift. Matrix direction and normal/depth conversions are explicit in metadata."
+  },
+  "frozen_evaluation_protocol": {
+    "status": "defined_for_future_execution",
+    "selection_rgb": {"views": "train", "lights": ["neutral_top"]},
+    "validation_rgb": {"views": "val", "lights": ["neutral_top"]},
+    "appearance_test_V": {"views": "test", "lights": ["neutral_top"]},
+    "relighting_development": {
+      "train_lights": ["neutral_top"],
+      "validation_light": "warm_left",
+      "test_light": "cool_right",
+      "test_L": {"views": "train", "lights": ["cool_right"]},
+      "test_VL": {"views": "test", "lights": ["cool_right"]},
+      "warm_left_use": "Validation only; do not fit model parameters to validation RGB. Model selection may use it and must be recorded.",
+      "physical_material_parameters": "Known declared procedural parameters may be supplied to the proposed physically supervised branch; this is a stronger supervision setting than RGB-only reconstruction and must be labelled.",
+      "illumination_at_test": "The declared test light parameters are inputs; test rendered RGB is evaluation-only.",
+      "scope": "Three finite-distance area lights define a narrow explicit-light editing test, not arbitrary-light generalization or a far-field PRT benchmark.",
+      "not_applicable_to_E5b_without_new_fixture": "Low-frequency environment-light PRT needs a separately generated basis and unseen-light-combination protocol; those data are not present.",
+      "forbidden_test_adaptation": ["refit Gaussian colors", "fit exposure to test RGB", "fit per-test color matrices", "select checkpoint using test scores"]
+    },
+    "missing_pixels": "Do not silently remove failing regions or NaNs; record masks and failures.",
+    "metrics": ["per-view PSNR in a fixed declared display domain", "SSIM with pinned implementation", "optional LPIPS with registered weights", "separate linear-HDR error", "opaque-region depth and normal errors", "native-resolution crops", "trajectory inspection"],
+    "reference_rule": "The old renderer is a baseline, not certified ground truth. Validate physical cases against independent analytical or renderer references.",
+    "unimplemented_aov_requirements": ["material_id", "object_id", "diffuse_component", "specular_component", "direct", "indirect", "BRDF_parameter_images"],
+    "prohibited_claims": ["percentage realism from PSNR", "photorealism from resolution alone", "GPU speed from compile success", "relighting from fixed-light novel-view scores"]
+  },
+  "resource_policy": {
+    "device_type": "read_from_preflight_not_assumed",
+    "concurrent_training_jobs": 1,
+    "initial_soft_fraction_of_available_vram": 0.70,
+    "soft_fraction_is_an_experimental_budget": true,
+    "smoke_stop_after_seconds": 1200,
+    "initial_baseline_total_stop_after_seconds": 7200,
+    "ablation_total_stop_after_seconds": 21600,
+    "power_or_clock_changes": false,
+    "synthetic_memory_saturation": false,
+    "large_downloads_started": false,
+    "disk_preflight_required": true,
+    "checkpoint_on_budget_exhaustion": true
+  },
+  "experiments": [
+    {"id": "E0", "status": "planned", "name": "Device and kernel compatibility", "requirements": ["read-only preflight", "pin exact source revisions", "forward/backward smoke", "checkpoint save/resume", "CPU/GPU numeric reference"], "quality_claim_allowed": false},
+    {"id": "E1", "status": "prepared_camera_metadata_only", "name": "Physical and interface reference", "fixture": "procedural_v1", "rendered": false, "requirements": ["pixel-centre adapter", "ray-distance to Z", "face-forward world-normal decode", "material-channel semantics", "independent radiometric checks"]},
+    {"id": "E2", "status": "planned", "name": "Fixed-light Gaussian baseline", "backend_candidate": "gsplat", "version": null, "commit": null, "camera_light_protocol": "V", "train_steps": [500, 7000, 30000], "train_steps_are_checkpoints_not_promised_convergence": true, "image_long_edge_schedule": [512, 1024, 2048], "teacher_data_exists": false},
+    {"id": "E3a", "status": "planned", "name": "Anti-aliasing ablation", "change_one_factor": "classic versus documented antialiased setting", "warning": "Does not by itself implement complete Mip-Splatting 3D filtering", "seeds": [17, 29], "evaluation_scales": [0.5, 1.0, 2.0]},
+    {"id": "E3b", "status": "planned", "name": "Appearance capacity ablation", "baseline": "SH", "candidate": "NHT fitted to own synthetic data", "controls": ["same Gaussian budget", "same camera split", "same training budget", "same output resolution"], "seeds": [17, 29]},
+    {"id": "E4", "status": "research_not_implemented", "name": "Surface and optical hybrid", "candidates": ["surface-constrained Gaussians", "explicit PBR foreground with Gaussian query backend", "editable-reflection decomposition"], "blockers": ["verified geometric ownership and visibility", "energy-accounting interface", "new component AOVs", "implementation license selection"]},
+    {"id": "E5a", "status": "research_not_implemented", "name": "Fixed-light incoming-radiance cache", "protocols": ["V under fixed illumination", "separately measured cache rebuild after edits"], "rule": "A light change invalidates this cache. Rebuilding is not zero-retraining relighting generalization.", "invalidate_on": ["geometry change", "material change affecting cached transport", "lighting change", "representation or color-domain change"]},
+    {"id": "E5b", "status": "research_not_implemented", "name": "Limited-basis precomputed light transfer", "protocols": ["V", "L", "VL"], "required_fixture": "new declared far-field lighting basis with held-out coefficient combinations; not generated", "rule": "Known geometry/materials may support precomputation. Do not fit to test RGB. State exactly which light domain is represented.", "invalidate_on": ["geometry change", "material change affecting cached transport", "lighting outside represented basis", "representation or color-domain change"]},
+    {"id": "E6", "status": "planned_after_quality_gates", "name": "High-resolution multi-type delivery", "scene_types": ["product", "interior", "natural close-up"], "target_native_resolution": [3840, 2160], "deliverables": ["PNG", "linear HDR", "AOV", "native crops", "camera trajectory video", "versioned manifest", "measured timing and memory"]}
+  ],
+  "performance_measurement": {
+    "warmup_frames": 30,
+    "measured_frames": 200,
+    "repetitions": 3,
+    "fields": ["resolution", "scene_hash", "backend_version", "Gaussian_count", "median_latency_ms", "p95_latency_ms", "peak_device_memory", "torch_allocated_and_reserved_if_applicable", "GPU_utilization", "loading_time", "training_time", "rendering_time", "export_time"],
+    "status": "not_measured"
+  }
+}

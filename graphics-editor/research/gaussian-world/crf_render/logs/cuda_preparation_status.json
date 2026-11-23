@@ -1,0 +1,22 @@
+{
+  "cpu_shader_changes": [
+    "tex2 warped anisotropic wood with reduced ring contrast and material phase",
+    "tex7 wind-ripple sand"
+  ],
+  "cuda_validation_status": "NOT_COMPILED_NOT_RUN",
+  "nvcc_available": false,
+  "completed_checks": [
+    "bash syntax for CUDA build/workload scripts",
+    "Python syntax for generator/verifier",
+    "generated shared shader C++ host syntax with CUDA-qualifier stubs (not NVCC compilation)"
+  ],
+  "files": {
+    "src/renderer.cpp": "b016786233f2360cc5fe419f8d9e58d278cd7ac20d8f6054763dfa0d0db4dc4c",
+    "src/renderer_cuda.cu": "c411072a90d85467575791b2e5f3b88db3ce8c3ba920ab01ecf43a8f0afaf314",
+    "src/cuda_shared.generated.cuh": "400d70e894bd5b3e9d3bebb12b2dd3583d39a075c49ca14042acae1bcd8ea562",
+    "crf_render": "5ba6960d20ed2eec68ef449d27deb8dc260299e5747da61416fde0bcdd539db4",
+    "build_cuda.sh": "f13cecd1a292ac002f57372b40477908cdc9d701aecdda0fa5695f37ff2cb83c",
+    "tools/run_gpu_workload.sh": "ab00c2060f1e70e57b02b2fc1b0530131e3cc120ed6ba9deef00150507e95982",
+    "tools/verify_cuda.py": "fe7963b2234c15e252a7fbef32290dccb100b214a8c7ec19f4f7bb4e185f0859"
+  }
+}

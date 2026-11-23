@@ -2,6 +2,12 @@
 
 **任务是实现和验证产品能力。请直接进入开发，不要把重新编写计划作为本次任务的完成结果。**
 
+## 2026-11-23 补充：Gaussian 世界研究交接
+
+本次新增 [Gaussian 世界接手任务](research/gaussian-world/CODEX_HANDOFF.md)、[完整工作记录](research/gaussian-world/WORK_LOG.md) 和 [研究与实验目录](research/gaussian-world/README.md)。它们位于从 `crf-gpu96-development@c2b759b9d9d0ee56ccef7a47dbe540f80c07d952` 派生的 `codex/gaussian-world-handoff-20261123` 交接分支；合入前要使用包含这次交接提交的工作树。
+
+该目录提供独立 CPU 渲染样片、CUDA 本机交叉编译记录，以及尚未训练/渲染的 Gaussian 夹具与技术路线。主应用仍在 `editor/`，下文的整体任务、quality12/quality13、证明/RSI/WebGPU 责任全部保留。研究文件 `v0.1/v0.2` 不改变产品版本；独立 C++ 实验不代表已有工作台完成 GPU 或三维 Gaussian 集成。E0–E6 实验编号已映射到现有 GPU-T 任务，不另立唯一活动任务账本。
+
 ## 1. 选择正确的仓库与开发分支
 
 | 项目 | 本轮固定值 |

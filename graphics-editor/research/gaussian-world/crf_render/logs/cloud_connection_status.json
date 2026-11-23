@@ -1,0 +1,31 @@
+{
+  "status": "NOT_CONNECTED",
+  "credentials_sent": false,
+  "gpu_spec_source": "user supplied screenshot, not machine telemetry",
+  "expected_gpu": "NVIDIA RTX PRO 6000 Max-Q 96 GB",
+  "expected_runtime": {
+    "CUDA": "12.8",
+    "PyTorch": "2.8.0",
+    "python": "3.12",
+    "os": "Ubuntu 22.04"
+  },
+  "connection_observations": [
+    {
+      "route": "direct network",
+      "result": "name resolution unavailable in current managed execution environment"
+    },
+    {
+      "route": "authorized remote desktop connector",
+      "result": "known device offline"
+    },
+    {
+      "route": "provided managed HTTP proxy",
+      "result": "CONNECT response 200; SSH key-exchange connection closed before authentication"
+    }
+  ],
+  "gpu_inventory_verified": false,
+  "gpu_render_executed": false,
+  "gpu_memory_peak_bytes": null,
+  "gpu_utilization": null,
+  "limitation": "No live GPU figures can be inferred from authored CUDA code or supplied hardware screenshot."
+}

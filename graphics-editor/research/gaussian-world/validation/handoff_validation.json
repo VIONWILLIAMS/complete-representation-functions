@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-11-23T13:06:15.613547+00:00",
+  "scope": "Git handoff integrity, syntax, published-data pattern review and required root repository checks. No rendering, training or application/GPU acceptance.",
+  "copied_source_files_checked": 563,
+  "fixture_artifact_hashes_checked": 365,
+  "fixture_scene_definitions": 360,
+  "json_files_parsed": 99,
+  "python_files_ast_parsed": 31,
+  "new_entry_local_markdown_links_checked": 19,
+  "notebook_code_cells_ast_parsed": 9,
+  "notebook_gpu_cells_executed": false,
+  "embedded_source_archives": [
+    {
+      "sha256": "95a21c942e0a25c53876f250aeb66e954c3ab9df4ed4cea8e7a296b300a25473",
+      "bytes": 524877,
+      "files": 71,
+      "text_files_scanned": 71,
+      "crc_passed": true
+    }
+  ],
+  "publication_pattern_review": {
+    "top_level_text_files_checked": 565,
+    "pattern_names": [
+      "private_key",
+      "github_token",
+      "aws_access_key",
+      "signed_transfer_url",
+      "specific_cloud_connection",
+      "tmate_session",
+      "url_embedded_credentials"
+    ],
+    "finding_count": 0,
+    "note": "Finite pattern review plus file selection and manual provenance review; not a general proof of absence of secrets."
+  },
+  "required_repository_commands": [
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "validate:machine"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "core_claim_domain_dsl_and_active_ledger_unchanged": true,
+  "rendering_executed_this_handoff": false,
+  "gaussian_training_executed": false,
+  "gpu_runtime_executed": false,
+  "application_test_suite_rerun": false,
+  "failures": [],
+  "staged_whitespace_review": {
+    "full_staged_check_exit_code": 2,
+    "historical_exact_copy_warnings": [
+      "graphics-editor/research/gaussian-world/gaussian_upgrade_research/notes_renderer.md:241: new blank line at EOF.",
+      "graphics-editor/research/gaussian-world/gaussian_upgrade_research/scaffold/ADAPTER_NOTES.md:101: new blank line at EOF.",
+      "graphics-editor/research/gaussian-world/input/CRF_CodeNative_Photorealistic_Rendering_v0.1_Plan.md:3: trailing whitespace."
+    ],
+    "new_authored_files_exit_code": 0,
+    "decision": "Preserve original input/research bytes and their hashes. Three historical Markdown whitespace warnings documented; no new authored whitespace warnings."
+  }
+}

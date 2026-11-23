@@ -1,0 +1,40 @@
+$ npm test
+
+> complete-representation-functions@0.1.0 test
+> npm run validate:machine
+
+
+> complete-representation-functions@0.1.0 validate:machine
+> node scripts/validate-machine.mjs
+
+validated 18 JSON files
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+exit_code=0
+
+$ npm run validate:machine
+
+> complete-representation-functions@0.1.0 validate:machine
+> node scripts/validate-machine.mjs
+
+validated 18 JSON files
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+exit_code=0
+
+$ git diff --check
+
+exit_code=0
+
+$ git diff --cached --check
+graphics-editor/research/gaussian-world/gaussian_upgrade_research/notes_renderer.md:241: new blank line at EOF.
+graphics-editor/research/gaussian-world/gaussian_upgrade_research/scaffold/ADAPTER_NOTES.md:101: new blank line at EOF.
+graphics-editor/research/gaussian-world/input/CRF_CodeNative_Photorealistic_Rendering_v0.1_Plan.md:3: trailing whitespace.
++**性质：** 技术设计与验收计划；不是已经完成的渲染器，也不代表已生成照片级成品。  
+
+exit_code=2
+Three inherited Markdown whitespace warnings retained to preserve original artifact hashes.
+
+$ git diff --cached --check -- <new authored files and 3 modified repository files>
+exit_code=0

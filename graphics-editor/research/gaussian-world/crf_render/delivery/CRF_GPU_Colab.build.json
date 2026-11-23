@@ -1,0 +1,77 @@
+{
+  "notebook": "delivery/CRF_GPU_Colab.ipynb",
+  "notebook_bytes": 836475,
+  "notebook_sha256": "0ad141d06907c3ed3bddc117780fdc596477093b2a6589f18d7f32d0b3fd3788",
+  "source_zip": "/workspace/scratch/581063d55086/crf_render/delivery/CRF_CodeNative_Render_Source.zip",
+  "source_zip_sha256": "95a21c942e0a25c53876f250aeb66e954c3ab9df4ed4cea8e7a296b300a25473",
+  "snapshot_status": "refreshed",
+  "current_source_differences": [],
+  "cells": 17,
+  "code_cells_syntax_valid": true,
+  "notebook_format_valid": true,
+  "embedded_zip_crc_valid": true,
+  "source_paths_checked": [
+    "build_cuda.sh",
+    "requirements.txt",
+    "src/renderer.cpp",
+    "src/renderer_cuda.cu",
+    "tools/generate_cuda_shared.py",
+    "tools/run_gpu_workload.sh",
+    "tools/verify_cuda.py",
+    "tools/develop.py",
+    "scenes/common.py",
+    "scenes/still_life.py",
+    "scenes/architecture.py",
+    "scenes/product.py",
+    "scenes/landscape.py",
+    "scenes/check_lambert.scene",
+    "scenes/check_beer.scene"
+  ],
+  "gpu_cells_executed": false,
+  "local_cuda_compile_evidence": {
+    "available": true,
+    "record_path": "logs/cuda_compile_status.json",
+    "record_origin": "embedded_source_zip",
+    "record_sha256": "c64d770efda3f1b4891460431c1348ce08ea32a665199cc9fc50eb6e431e388b",
+    "local_compile_and_link_passed": true,
+    "cross_compile_matches_embedded_source": true,
+    "embedded_source_hash_checks": {
+      "renderer.cpp": true,
+      "renderer_cuda.cu": true,
+      "cuda_shared.generated.cuh": true
+    },
+    "nvcc_version": "13.0.88",
+    "toolkit_distribution": "CUDA 13.0.1",
+    "host_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "host_glibc": "ldd (Debian GLIBC 2.41-12+deb13u4) 2.41",
+    "target": "sm_120",
+    "compile_seconds": 86.61962429100004,
+    "local_binary_sha256": "c0cd9f052880c73db5b9e7813a422124a670433d7844df334741b237cb2e5809",
+    "gpu_execution_verified": false,
+    "remote_cuda12_8_validated": false,
+    "remote_build_required": true,
+    "attempts": [
+      {
+        "nvcc": "12.8.93",
+        "exit_code": 2,
+        "outcome": "Host glibc 2.41 vs CUDA header exception-specification mismatch for cospi/sinpi/cospif/sinpif; no renderer-source fix attempted.",
+        "log": "logs/cuda_nvcc12_8_glibc2_41_failure.log"
+      },
+      {
+        "nvcc": "13.0.88",
+        "exit_code": 1,
+        "outcome": "Device compilation completed; initial linking failed because extracted libraries were in lib instead of lib64.",
+        "log": "logs/cuda_nvcc13_0_initial_link_failure.log"
+      },
+      {
+        "nvcc": "13.0.88",
+        "exit_code": 0,
+        "outcome": "Compilation and linking succeeded after isolated toolchain layout correction.",
+        "log": "logs/cuda_nvcc13_0_sm120_success.log"
+      }
+    ],
+    "interpretation": "Compile success establishes syntax/code-generation/linkability in this local toolchain only. It does not establish GPU correctness, performance, remote-driver compatibility, or image equivalence."
+  },
+  "execution_gap": "Local cross-compilation evidence is reported separately. No NVIDIA GPU execution occurred in this notebook build; remote compiler/driver compatibility, CUDA execution and GPU images must be validated in the user-selected runtime.",
+  "created_asia_shanghai": "2026-11-23T19:50:52+08:00"
+}

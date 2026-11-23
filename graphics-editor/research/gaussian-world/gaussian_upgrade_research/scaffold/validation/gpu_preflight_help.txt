@@ -1,0 +1,24 @@
+usage: gpu_preflight.py [-h] [--output OUTPUT] [--disk-path DISK_PATH]
+                        [--timeout TIMEOUT] [--torch]
+                        [--torch-timeout TORCH_TIMEOUT]
+
+Read-only GPU environment inventory. No installations, settings changes, or
+training.
+
+options:
+  -h, --help            show this help message and exit
+  --output OUTPUT       atomic JSON report destination (default:
+                        gpu_preflight.json)
+  --disk-path DISK_PATH
+                        existing path whose filesystem capacity is queried
+                        (default: current directory)
+  --timeout TIMEOUT     timeout per external version/device query, in seconds
+                        (default: 10)
+  --torch               optionally import PyTorch in a child process and query
+                        CUDA availability
+  --torch-timeout TORCH_TIMEOUT
+                        timeout for optional PyTorch child process (default:
+                        20 seconds)
+
+Exit 0 means the JSON report was written; it does not mean GPU training
+passed.
