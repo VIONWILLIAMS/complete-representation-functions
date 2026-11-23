@@ -7,6 +7,8 @@
 - **产品版本：**当前代码为 1.1.0-experimental.2；quality12 已有完整实现与仓库证据，quality13 是新冻结的源尺寸细节合同/设计。二者都是内部模块编号。发布本计划不宣布 1.1、1.2 或 1.3 已整体完成。
 - **配套入口：**[Codex 开始这里](../CODEX_START_HERE.md) · [机器任务清单](CRF_Integrated_Execution_Plan.json) · [实际基线状态](../verification/GPU96_BASELINE_STATUS.md)。
 
+- **2026-11-23 补充研究：**[Gaussian 世界方案与完整实验交接](../research/gaussian-world/README.md)提供独立 CPU/CUDA 记录、程序夹具和 Gaussian 候选路线。具体接手任务映射到本文既有 GPU-T 编号；不更改本计划的产品版本、冻结合同或完成状态。独立渲染器与第三方 Gaussian 基线须通过明确适配及验收才能成为现有工作台能力。
+
 ## 1. 要完成的整体目标
 
 建立能从文字和有来源的观察出发，持续编辑同一场景程序，并由 CRF 自身函数与算子产生**高质量真实场景图片和视频**的计算工作台。几何、材质、光线、细节、对象关系和原生输出质量均需有实际证据。

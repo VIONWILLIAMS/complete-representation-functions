@@ -1,0 +1,11 @@
+{
+  "renderer": "CRF original C++17 CPU path tracer",
+  "scene": "scenes/still_life.scene",
+  "width": 480, "height": 600, "spp": 32,
+  "seed": 2026, "max_depth": 10, "threads": 3,
+  "primitives": 57526, "bvh_nodes": 36639, "materials": 20,
+  "area_lights": 1, "seconds": 9.1611281,
+  "camera_paths": 9216000, "mean_luminance": 0.20932515, "max_linear_channel": 1.6415386, "nonfinite_pixels": 0,
+  "external_assets": [], "neural_models": [], "postprocessing_baked_in": false,
+  "fog_model": "none"
+}

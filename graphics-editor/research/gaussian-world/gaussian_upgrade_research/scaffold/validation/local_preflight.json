@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-11-23T12:25:08+00:00",
+  "status": "gpu_not_detected",
+  "scope": "Only this execution environment; hidden host hardware is not asserted absent.",
+  "training_validated": false,
+  "training_or_rendering_started": false,
+  "performance_measured": false,
+  "system_settings_changed": false,
+  "packages_installed": false,
+  "os": {
+    "system": "Linux",
+    "release": "6.18.57",
+    "machine": "x86_64"
+  },
+  "python": {
+    "version": "3.12.14",
+    "implementation": "CPython"
+  },
+  "disk": {
+    "status": "ok",
+    "total_bytes": 67586535424,
+    "used_bytes": 5256732672,
+    "free_bytes": 58877054976
+  },
+  "nvidia_device_node_count": 0,
+  "nvidia_smi": {
+    "status": "not_installed_or_not_on_path",
+    "devices": [],
+    "attempts": []
+  },
+  "nvcc": {
+    "status": "not_installed_or_not_on_path"
+  },
+  "torch": {
+    "status": "not_installed",
+    "error_type": "ModuleNotFoundError",
+    "seconds": 0.018
+  },
+  "notes": [
+    "Device detection, compiler presence, or PyTorch import is not a training/gradient test.",
+    "nvidia-smi ordinals and PyTorch visible ordinals may differ; no mapping is assumed.",
+    "Compiler not on PATH does not prove no isolated compiler exists elsewhere."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "renderer": "CRF original C++17 CPU path tracer",
+  "scene": "scenes/landscape.scene",
+  "width": 600, "height": 400, "spp": 48,
+  "seed": 4203, "max_depth": 8, "threads": 3,
+  "primitives": 118212, "bvh_nodes": 75739, "materials": 25,
+  "area_lights": 0, "seconds": 10.636739,
+  "camera_paths": 11520000, "mean_luminance": 0.13723349, "max_linear_channel": 218.33554, "nonfinite_pixels": 0, "invalid_samples": 0,
+  "external_assets": [], "neural_models": [], "postprocessing_baked_in": false,
+  "fog_model": "analytic camera-distance blend, not volume transport"
+}

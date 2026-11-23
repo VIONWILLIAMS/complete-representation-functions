@@ -1,0 +1,39 @@
+isolated bright pixels: 2049 of 6291456
+{
+  "candidate_pixels": 2969,
+  "protected_specular_candidates": 0,
+  "protected_albedos": [],
+  "modified_pixels": 2049,
+  "modified_fraction": 0.0003256797790527344,
+  "rejected": {
+    "few_surface_neighbors": 349,
+    "not_robust_outlier": 423,
+    "coherent_highlight": 148
+  },
+  "max_luminance_before": 178.475341796875,
+  "max_luminance_after": 37.50119400024414,
+  "removed_luminance_sum": 38100.48046875,
+  "algorithm": "AOV-gated isolated radiance winsorization before existing a-trous reconstruction",
+  "parameters": {
+    "luminance_ratio": 1.6,
+    "absolute_threshold_linear": 0.035,
+    "radius_pixels": 3,
+    "minimum_same_surface_neighbors": 12,
+    "normal_sq_distance": 0.0016,
+    "albedo_sq_distance": 0.003,
+    "relative_depth_difference": 0.01,
+    "mad_multiplier": 10,
+    "coherent_bright_neighbors_preserved_at": 3,
+    "atrous_passes": 3
+  },
+  "native_width": 3072,
+  "native_height": 2048,
+  "raw_sha256_unchanged": "a221550021f9bacc34d830ab728f97a93c6918fe4bfceeb64ddc571b52ab5f27",
+  "candidate_png_sha256": "703a129a6fec103d5524502fdf7f8b4a512bccf581cb5032a82fb6a89fcebd9d",
+  "original_hdr_untouched": true,
+  "original_final_png_untouched": true,
+  "learned_models": [],
+  "generative_processing": false,
+  "seconds": 60.49256150400015,
+  "cost": "Biased display-only local outlier suppression; could attenuate a real isolated subpixel specular glint or under-sampled caustic. Raw radiance remains available. Not suitable as an unbiased scientific measurement."
+}

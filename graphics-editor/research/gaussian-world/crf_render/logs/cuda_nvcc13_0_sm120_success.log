@@ -1,0 +1,46 @@
+$ nice -n 10 /workspace/scratch/581063d55086/cuda_toolchain/cuda-13.0/bin/nvcc -O3 -std=c++17 -arch=sm_120 -Xcompiler=-fopenmp --expt-relaxed-constexpr -lineinfo -Xptxas=-v --keep --keep-dir /workspace/scratch/581063d55086/cuda_toolchain/build/intermediates renderer_cuda.cu -o crf_render_cuda_sm120
+
+cuda_shared.generated.cuh(15): warning #20012-D: __host__ annotation is ignored on a non-virtual function("V") that is explicitly defaulted on its first declaration
+   __attribute__((host)) __attribute__((device)) V()=default; __attribute__((host)) __attribute__((device)) V(float a):x(a),y(a),z(a){} __attribute__((host)) __attribute__((device)) V(float a,float b,float c):x(a),y(b),z(c){}
+                  ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+cuda_shared.generated.cuh(15): warning #20012-D: __device__ annotation is ignored on a non-virtual function("V") that is explicitly defaulted on its first declaration
+   __attribute__((host)) __attribute__((device)) V()=default; __attribute__((host)) __attribute__((device)) V(float a):x(a),y(a),z(a){} __attribute__((host)) __attribute__((device)) V(float a,float b,float c):x(a),y(b),z(c){}
+                                        ^
+
+renderer.cpp(89): warning #550-D: variable "sun" was set but never used
+  V direct(const Scene&s,const Hit&h,const Mat&m,V col,V n,V v,RNG&r){int total=int(s.lights.size())+(s.ei>0?1:0)+(maxc(s.sunC)>0?1:0);if(!total)return V(0);int k=std::min(total-1,int(r.u()*total));float sel=1.f/total,pdf=0,dist=INF;V l,Le;bool sun=false;
+                                                                                                                                                                                                                                                     ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+cuda_shared.generated.cuh(15): warning #20012-D: __host__ annotation is ignored on a non-virtual function("V") that is explicitly defaulted on its first declaration
+   __attribute__((host)) __attribute__((device)) V()=default; __attribute__((host)) __attribute__((device)) V(float a):x(a),y(a),z(a){} __attribute__((host)) __attribute__((device)) V(float a,float b,float c):x(a),y(b),z(c){}
+                  ^
+
+cuda_shared.generated.cuh(15): warning #20012-D: __device__ annotation is ignored on a non-virtual function("V") that is explicitly defaulted on its first declaration
+   __attribute__((host)) __attribute__((device)) V()=default; __attribute__((host)) __attribute__((device)) V(float a):x(a),y(a),z(a){} __attribute__((host)) __attribute__((device)) V(float a,float b,float c):x(a),y(b),z(c){}
+                                        ^
+
+cuda_shared.generated.cuh(74): warning #550-D: variable "sun" was set but never used
+  __attribute__((host)) __attribute__((device)) V direct(const SceneView&s,const Hit&h,const Mat&m,V col,V n,V v,RNG&r){int total=int(s.lights.size())+(s.ei>0?1:0)+(maxc(s.sunC)>0?1:0);if(!total)return V(0);int k=gmin(total-1,int(r.u()*total));float sel=1.f/total,pdf=0,dist=INF;V l,Le;bool sun=false;
+                                                                                                                                                                                                                                                                                                   ^
+
+ptxas info    : 24 bytes gmem
+ptxas info    : Compiling entry function '_Z15normalizeKernelPN6crfgpu1VEmf' for 'sm_120'
+ptxas info    : Function properties for _Z15normalizeKernelPN6crfgpu1VEmf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, used 0 barriers
+ptxas info    : Compile time = 157.603 ms
+ptxas info    : Compiling entry function '_Z17renderBatchKernelN6crfgpu9SceneViewE9CameraGPUiiiPNS_1VEPmPy' for 'sm_120'
+ptxas info    : Function properties for _Z17renderBatchKernelN6crfgpu9SceneViewE9CameraGPUiiiPNS_1VEPmPy
+    512 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 0 barriers, 512 bytes cumulative stack size
+ptxas info    : Compile time = 5677.840 ms
+ptxas info    : Compiling entry function '_Z16initializeKernelN6crfgpu9SceneViewE9CameraGPUiimPNS_1VES3_S3_S3_Pm' for 'sm_120'
+ptxas info    : Function properties for _Z16initializeKernelN6crfgpu9SceneViewE9CameraGPUiimPNS_1VES3_S3_S3_Pm
+    512 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 512 bytes cumulative stack size
+ptxas info    : Compile time = 369.175 ms

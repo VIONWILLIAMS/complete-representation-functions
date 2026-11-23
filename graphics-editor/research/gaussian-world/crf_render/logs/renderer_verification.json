@@ -1,0 +1,108 @@
+{
+  "single_vs_four_threads_bit_identical": true,
+  "renderer_test": {
+    "finite": true,
+    "minimum": 0.00014406733680516481,
+    "maximum": 8.770467758178711,
+    "shape": [
+      240,
+      320,
+      3
+    ]
+  },
+  "renderer_test_normal": {
+    "finite": true,
+    "minimum": 0.0,
+    "maximum": 1.0,
+    "shape": [
+      240,
+      320,
+      3
+    ]
+  },
+  "renderer_test_albedo": {
+    "finite": true,
+    "minimum": 0.0,
+    "maximum": 0.9900000095367432,
+    "shape": [
+      240,
+      320,
+      3
+    ]
+  },
+  "renderer_test_depth": {
+    "finite": true,
+    "minimum": 0.0,
+    "maximum": 11.458431243896484,
+    "shape": [
+      240,
+      320,
+      3
+    ]
+  },
+  "mesh_smoke": {
+    "finite": true,
+    "minimum": 0.0,
+    "maximum": 1.8163706064224243,
+    "shape": [
+      240,
+      160,
+      3
+    ]
+  },
+  "mesh_smoke_normal": {
+    "finite": true,
+    "minimum": 0.0,
+    "maximum": 1.0,
+    "shape": [
+      240,
+      160,
+      3
+    ]
+  },
+  "mesh_smoke_albedo": {
+    "finite": true,
+    "minimum": 0.0,
+    "maximum": 0.9100000262260437,
+    "shape": [
+      240,
+      160,
+      3
+    ]
+  },
+  "mesh_smoke_depth": {
+    "finite": true,
+    "minimum": 0.0,
+    "maximum": 10.752190589904785,
+    "shape": [
+      240,
+      160,
+      3
+    ]
+  },
+  "mesh_speed": {
+    "renderer": "CRF original C++17 CPU path tracer",
+    "scene": "scenes/still_life.scene",
+    "width": 160,
+    "height": 240,
+    "spp": 8,
+    "seed": 124,
+    "max_depth": 10,
+    "threads": 2,
+    "primitives": 57526,
+    "bvh_nodes": 36641,
+    "materials": 20,
+    "area_lights": 1,
+    "seconds": 0.66454381,
+    "camera_paths": 307200,
+    "mean_luminance": 0.21949628,
+    "max_linear_channel": 1.8163706,
+    "nonfinite_pixels": 0,
+    "external_assets": [],
+    "neural_models": [],
+    "postprocessing_baked_in": false,
+    "fog_model": "none"
+  },
+  "lambert_uniform_environment_MIS_max_error": 7.152557368605983e-08,
+  "beer_unit_index_sphere_max_error": 3.496408462533296e-06
+}

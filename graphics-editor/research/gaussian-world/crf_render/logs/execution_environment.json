@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-23",
+  "cpu_render_backend": "original C++17 OpenMP path tracer",
+  "cpu_render_threads": 9,
+  "logical_cpus_visible": 9,
+  "cpu_affinity_count": 9,
+  "machine": "x86_64",
+  "python_version": "3.12.14",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "numpy_version": "2.3.5",
+  "pillow_version": "13.0.0",
+  "scipy_version": "1.17.0",
+  "gxx": "g++ (Debian 14.2.0-19) 14.2.0",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "cpu_compile_flags": [
+    "-O3",
+    "-march=native",
+    "-std=c++17",
+    "-fopenmp",
+    "-DNDEBUG"
+  ],
+  "nvidia_smi_on_default_path": false,
+  "local_cuda_cross_compile_record": "logs/cuda_compile_status.json",
+  "remote_gpu_execution": false,
+  "note": "Recorded execution environment for reproducibility; no claim of bitwise equivalence across different compilers or math libraries."
+}

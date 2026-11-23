@@ -1,0 +1,22 @@
+{
+  "adopted": true,
+  "scope": "still_life display PNG and preview only",
+  "modified_original_pixels": 167,
+  "original_png_sha256": "582a1e4d4ec1b71158448d87c60d3f7f64b82800b710bdb09f1dd5ae102063fd",
+  "adopted_png_sha256": "58be28d97da7a0780cbb741dbcc2b3715bb1e2be2a6eeb3ed6b5e29d21102ed3",
+  "adopted_preview_sha256": "22673e953050990a10413745e84a0391cb86fa9fcea91d86f0bf56d7df6d34d4",
+  "raw_pfm_sha256_before_after": "d36feee121a06916229e5be2cbeb8d439510fa82fea7881371f0a0e6fa3556cb",
+  "raw_exr_sha256_before_after": "c251f2ae97f9bfbc3442fa063f2d420e46a84e89ec549656903afce0343d860e",
+  "raw_hdr_unchanged": true,
+  "reproduce_command": "python3 tools/apply_still_life_display.py",
+  "candidate_source": "outputs/still_life_display_replay",
+  "independent_full_replay": {
+    "command": "python3 tools/apply_still_life_display.py",
+    "used_cached_candidate": false,
+    "exit_code": 0,
+    "png_byte_identical_to_first_accepted_candidate": true,
+    "png_sha256": "58be28d97da7a0780cbb741dbcc2b3715bb1e2be2a6eeb3ed6b5e29d21102ed3",
+    "script_sha256": "b6b7cb2fa1b49fb1b8e2e21834b594d5357ddd7aad9ea36953977489e1917e3e",
+    "filter_script_sha256": "521c2c6a76408505619487d9ef609d76c03d499b0073ed5218cd9cc8b4cef6db"
+  }
+}

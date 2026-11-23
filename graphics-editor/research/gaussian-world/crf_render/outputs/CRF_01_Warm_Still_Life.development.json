@@ -1,0 +1,50 @@
+{
+  "source_linear_pfm": "CRF_01_Warm_Still_Life.pfm",
+  "native_width": 2048,
+  "native_height": 2560,
+  "output_width": 2048,
+  "output_height": 2560,
+  "exposure_stops": 0,
+  "tone_curve": "compact filmic fitted curve; sRGB transfer",
+  "denoiser": "Specular-protected AOV-gated isolated outlier suppression + AOV-guided a-trous local reconstruction",
+  "denoiser_strength": 0,
+  "atrous_passes": 3,
+  "generative_processing": false,
+  "super_resolution": false,
+  "raw_sha256": "d36feee121a06916229e5be2cbeb8d439510fa82fea7881371f0a0e6fa3556cb",
+  "png_sha256": "58be28d97da7a0780cbb741dbcc2b3715bb1e2be2a6eeb3ed6b5e29d21102ed3",
+  "preview_sha256": "22673e953050990a10413745e84a0391cb86fa9fcea91d86f0bf56d7df6d34d4",
+  "firefly_suppression": {
+    "method": "AOV-gated isolated radiance suppression; primary glass/metal protected; then 3-pass a-trous",
+    "modified_original_pixels": 167,
+    "modified_fraction": 3.185272216796875e-05,
+    "protected_specular_candidates": 398,
+    "protected_albedos": [
+      [
+        0.65,
+        0.91,
+        0.75
+      ]
+    ],
+    "parameters": {
+      "luminance_ratio": 1.6,
+      "absolute_threshold_linear": 0.035,
+      "radius_pixels": 3,
+      "minimum_same_surface_neighbors": 12,
+      "normal_sq_distance": 0.0016,
+      "albedo_sq_distance": 0.003,
+      "relative_depth_difference": 0.01,
+      "mad_multiplier": 10,
+      "coherent_bright_neighbors_preserved_at": 3,
+      "atrous_passes": 3
+    },
+    "display_only_biased_reconstruction": true,
+    "raw_hdr_unchanged": true,
+    "limitation": "May attenuate real but undersampled diffuse caustics; not a physical accuracy improvement or unbiased radiance measurement.",
+    "report": "audit/still_life_display/CRF_01_Warm_Still_Life_firefly_report.json",
+    "comparison_100pct": "audit/still_life_display/CRF_01_Warm_Still_Life_comparison_100pct.jpg",
+    "changed_mask": "audit/still_life_display/CRF_01_Warm_Still_Life_changed_mask.png",
+    "unsuppressed_display": "audit/still_life_display/CRF_01_Warm_Still_Life_before_firefly_suppression.png",
+    "reproduce_command": "python3 tools/apply_still_life_display.py"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_linear_pfm": "architecture_v4.pfm",
+  "native_width": 600,
+  "native_height": 400,
+  "output_width": 600,
+  "output_height": 400,
+  "exposure_stops": 0.5,
+  "tone_curve": "compact filmic fitted curve; sRGB transfer",
+  "denoiser": "3x3 AOV-guided local cross-bilateral",
+  "denoiser_strength": 1.0,
+  "atrous_passes": 0,
+  "generative_processing": false,
+  "super_resolution": false,
+  "raw_sha256": "fdc747decca89df819d8a391e795ae31c73616d079188e7f37f6ae60420ee807",
+  "png_sha256": "0ede0b8d01609462421a5a3ed0dbf34cf4f1be15696304242cc30f0888574205"
+}

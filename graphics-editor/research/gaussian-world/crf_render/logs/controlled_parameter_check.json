@@ -1,0 +1,171 @@
+{
+  "experiment": "A single material parameter vector changes the image after re-rendering.",
+  "parameter": "Glass Beer transmission colour per world unit (linear RGB).",
+  "scene_line_number_1based": 6,
+  "exact_line_A": "mat glass 2 0.39 0.72 0.45 0 1.51 0 1 0",
+  "exact_line_B": "mat glass 2 0.86 0.42 0.08 0 1.51 0 1 0",
+  "changed_scene_lines": 1,
+  "everything_else_in_scene_identical": true,
+  "unchanged_scene_sha256": "06052a2563ef862df3da7ddcefa2c4fb3258b47a761d39f45797c3f823d3012b",
+  "renderer_binary_sha256": "5ba6960d20ed2eec68ef449d27deb8dc260299e5747da61416fde0bcdd539db4",
+  "geometry_aov_byte_identical": {
+    "_normal.pfm": true,
+    "_depth.pfm": true
+  },
+  "beauty_changed": true,
+  "albedo_changed_pixel_count": 19500,
+  "albedo_changed_bbox_xyxy": [
+    70,
+    104,
+    207,
+    316
+  ],
+  "seed": 77331,
+  "threads": 2,
+  "postprocessing": "Identical 2-pass AOV-guided a-trous, filmic curve, sRGB.",
+  "interpretation": "This proves explicit code-level material control and identical primary geometry. It does not assert that indirect illumination is unchanged; material changes may affect reflections and transmitted light.",
+  "results": {
+    "A": {
+      "scene": "scenes/control_product_A.scene",
+      "scene_sha256": "c76677ec8dd620ad85978d0f2a182e5197ce1409a2ab94da8e6bf4d80d9e46d1",
+      "render_settings": {
+        "renderer": "CRF original C++17 CPU path tracer",
+        "scene": "scenes/control_product_A.scene",
+        "width": 320,
+        "height": 400,
+        "spp": 48,
+        "seed": 77331,
+        "max_depth": 12,
+        "threads": 2,
+        "primitives": 14898,
+        "bvh_nodes": 9617,
+        "materials": 15,
+        "area_lights": 3,
+        "seconds": 7.7690522,
+        "camera_paths": 6144000,
+        "mean_luminance": 0.32106542,
+        "max_linear_channel": 7.7479658,
+        "nonfinite_pixels": 0,
+        "invalid_samples": 0,
+        "external_assets": [],
+        "neural_models": [],
+        "postprocessing_baked_in": false,
+        "fog_model": "none"
+      },
+      "artifacts": {
+        ".pfm": {
+          "path": "outputs/control_product_A.pfm",
+          "sha256": "5392fc69f0283d507bf2a8df4a68818066c7eedba0039d043b24bb24401d0b8e"
+        },
+        ".png": {
+          "path": "outputs/control_product_A.png",
+          "sha256": "7f4bc17e1117b95c0ee07b2b3c1cc98d7ca5fdcd777570a24f85c6b74a3108ee"
+        },
+        "_normal.pfm": {
+          "path": "outputs/control_product_A_normal.pfm",
+          "sha256": "781e3202722db1beacc681f4d1d816cc9f793adcf2f90c431e99e9a50c4b296d"
+        },
+        "_depth.pfm": {
+          "path": "outputs/control_product_A_depth.pfm",
+          "sha256": "94c2995264b26b93b09a0aea6140d2f5a67d24d1752f752bf0371f09abe5a35f"
+        },
+        "_albedo.pfm": {
+          "path": "outputs/control_product_A_albedo.pfm",
+          "sha256": "8f480facccc146568fdffaa41dbd6ee81a0c7f1bcc0fd2d4fe3e28332e214b43"
+        }
+      },
+      "development": {
+        "source_linear_pfm": "control_product_A.pfm",
+        "native_width": 320,
+        "native_height": 400,
+        "output_width": 320,
+        "output_height": 400,
+        "exposure_stops": 0,
+        "tone_curve": "compact filmic fitted curve; sRGB transfer",
+        "denoiser": "AOV-guided a-trous local reconstruction",
+        "denoiser_strength": 0,
+        "atrous_passes": 2,
+        "generative_processing": false,
+        "super_resolution": false,
+        "raw_sha256": "5392fc69f0283d507bf2a8df4a68818066c7eedba0039d043b24bb24401d0b8e",
+        "png_sha256": "7f4bc17e1117b95c0ee07b2b3c1cc98d7ca5fdcd777570a24f85c6b74a3108ee"
+      }
+    },
+    "B": {
+      "scene": "scenes/control_product_B.scene",
+      "scene_sha256": "b669e773e122f8104f2ba5a01fd09a20de1b8c07c5fc986b5192e3bc6b77d3f3",
+      "render_settings": {
+        "renderer": "CRF original C++17 CPU path tracer",
+        "scene": "scenes/control_product_B.scene",
+        "width": 320,
+        "height": 400,
+        "spp": 48,
+        "seed": 77331,
+        "max_depth": 12,
+        "threads": 2,
+        "primitives": 14898,
+        "bvh_nodes": 9617,
+        "materials": 15,
+        "area_lights": 3,
+        "seconds": 21.266843,
+        "camera_paths": 6144000,
+        "mean_luminance": 0.31826064,
+        "max_linear_channel": 8.1508579,
+        "nonfinite_pixels": 0,
+        "invalid_samples": 0,
+        "external_assets": [],
+        "neural_models": [],
+        "postprocessing_baked_in": false,
+        "fog_model": "none"
+      },
+      "artifacts": {
+        ".pfm": {
+          "path": "outputs/control_product_B.pfm",
+          "sha256": "4d6e012334c84d760395071c054fd35c7f4e51d6a3ba1a2ea06e67b8fa31da6c"
+        },
+        ".png": {
+          "path": "outputs/control_product_B.png",
+          "sha256": "50bef29a1264c1971eeb09ad1b54f42480ac461b9ee8c321382b7a2245b2030d"
+        },
+        "_normal.pfm": {
+          "path": "outputs/control_product_B_normal.pfm",
+          "sha256": "781e3202722db1beacc681f4d1d816cc9f793adcf2f90c431e99e9a50c4b296d"
+        },
+        "_depth.pfm": {
+          "path": "outputs/control_product_B_depth.pfm",
+          "sha256": "94c2995264b26b93b09a0aea6140d2f5a67d24d1752f752bf0371f09abe5a35f"
+        },
+        "_albedo.pfm": {
+          "path": "outputs/control_product_B_albedo.pfm",
+          "sha256": "b0b3bf1ee2f85b372340c2a6f68ca468396e2da2d61e15d27ad93889d5d7b6fd"
+        }
+      },
+      "development": {
+        "source_linear_pfm": "control_product_B.pfm",
+        "native_width": 320,
+        "native_height": 400,
+        "output_width": 320,
+        "output_height": 400,
+        "exposure_stops": 0,
+        "tone_curve": "compact filmic fitted curve; sRGB transfer",
+        "denoiser": "AOV-guided a-trous local reconstruction",
+        "denoiser_strength": 0,
+        "atrous_passes": 2,
+        "generative_processing": false,
+        "super_resolution": false,
+        "raw_sha256": "4d6e012334c84d760395071c054fd35c7f4e51d6a3ba1a2ea06e67b8fa31da6c",
+        "png_sha256": "50bef29a1264c1971eeb09ad1b54f42480ac461b9ee8c321382b7a2245b2030d"
+      }
+    }
+  },
+  "comparison": {
+    "path": "outputs/CRF_Controlled_Parameter_Change.png",
+    "sha256": "1f5b323d11ad10d122f6f419bda0b3c9c435993ab1256f25e27ab05f9f23fe6a",
+    "width": 800,
+    "height": 564,
+    "source_panels_native_size": [
+      320,
+      400
+    ]
+  }
+}

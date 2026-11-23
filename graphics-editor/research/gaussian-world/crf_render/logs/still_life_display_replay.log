@@ -1,0 +1,58 @@
+isolated bright pixels: 167 of 5242880
+{
+  "candidate_pixels": 435,
+  "protected_specular_candidates": 398,
+  "protected_albedos": [
+    [
+      0.65,
+      0.91,
+      0.75
+    ]
+  ],
+  "modified_pixels": 167,
+  "modified_fraction": 3.185272216796875e-05,
+  "rejected": {
+    "few_surface_neighbors": 108,
+    "not_robust_outlier": 151,
+    "coherent_highlight": 9
+  },
+  "max_luminance_before": 552.0875854492188,
+  "max_luminance_after": 552.0875854492188,
+  "removed_luminance_sum": 9038.8251953125,
+  "algorithm": "AOV-gated isolated radiance winsorization before existing a-trous reconstruction",
+  "parameters": {
+    "luminance_ratio": 1.6,
+    "absolute_threshold_linear": 0.035,
+    "radius_pixels": 3,
+    "minimum_same_surface_neighbors": 12,
+    "normal_sq_distance": 0.0016,
+    "albedo_sq_distance": 0.003,
+    "relative_depth_difference": 0.01,
+    "mad_multiplier": 10,
+    "coherent_bright_neighbors_preserved_at": 3,
+    "atrous_passes": 3
+  },
+  "native_width": 2048,
+  "native_height": 2560,
+  "raw_sha256_unchanged": "d36feee121a06916229e5be2cbeb8d439510fa82fea7881371f0a0e6fa3556cb",
+  "candidate_png_sha256": "58be28d97da7a0780cbb741dbcc2b3715bb1e2be2a6eeb3ed6b5e29d21102ed3",
+  "original_hdr_untouched": true,
+  "original_final_png_untouched": true,
+  "learned_models": [],
+  "generative_processing": false,
+  "seconds": 64.59802001300068,
+  "cost": "Biased display-only local outlier suppression; could attenuate a real isolated subpixel specular glint or under-sampled caustic. Raw radiance remains available. Not suitable as an unbiased scientific measurement."
+}
+{
+  "adopted": true,
+  "scope": "still_life display PNG and preview only",
+  "modified_original_pixels": 167,
+  "original_png_sha256": "582a1e4d4ec1b71158448d87c60d3f7f64b82800b710bdb09f1dd5ae102063fd",
+  "adopted_png_sha256": "58be28d97da7a0780cbb741dbcc2b3715bb1e2be2a6eeb3ed6b5e29d21102ed3",
+  "adopted_preview_sha256": "22673e953050990a10413745e84a0391cb86fa9fcea91d86f0bf56d7df6d34d4",
+  "raw_pfm_sha256_before_after": "d36feee121a06916229e5be2cbeb8d439510fa82fea7881371f0a0e6fa3556cb",
+  "raw_exr_sha256_before_after": "c251f2ae97f9bfbc3442fa063f2d420e46a84e89ec549656903afce0343d860e",
+  "raw_hdr_unchanged": true,
+  "reproduce_command": "python3 tools/apply_still_life_display.py",
+  "candidate_source": "outputs/still_life_display_replay"
+}

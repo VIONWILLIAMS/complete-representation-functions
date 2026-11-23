@@ -1,0 +1,184 @@
+{
+  "schema": "crf.procedural_fixture.v1",
+  "status": "prepared_not_rendered_or_trained",
+  "content_origin": "procedural geometry and analytic materials only; no photos, external meshes or pretrained weights",
+  "width": 1024,
+  "height": 768,
+  "radius_metres": 4.8,
+  "vertical_fov_degrees": 50.0,
+  "target_world": [
+    0.0,
+    0.5,
+    0.0
+  ],
+  "camera_conventions": {
+    "world_units": "metres",
+    "world_up": "+Y",
+    "world_handedness": "right",
+    "camera_axes": "OpenCV: +X right, +Y down, +Z forward",
+    "c2w_storage": "row-major 4x4; columns 0..2 are camera axes in world; column 3 is position",
+    "transform_rule": "world_homogeneous = c2w_opencv @ camera_homogeneous",
+    "pixel_coordinates": "integer (u,v) are pixel centres; top-left centre=(0,0)",
+    "image_edges": "u in [-0.5,width-0.5]; v in [-0.5,height-0.5]",
+    "intrinsics": "fx=fy=height/(2*tan(vfov/2)); cx=(width-1)/2; cy=(height-1)/2",
+    "vertical_fov": "angle between top and bottom image edges, not between outermost pixel centres",
+    "crf_pixel_equivalence": "CRF samples at (x+0.5,y+0.5) in image-edge coordinates; integer-centre OpenCV K above is equivalent",
+    "lens": "pinhole, aperture=0, no distortion, global shutter",
+    "image_array": "top-to-bottom rows; PFM file storage is bottom-to-top and must be flipped when decoded"
+  },
+  "split": {
+    "method": "contiguous azimuth blocks withheld across all elevations; not random adjacent-frame splitting",
+    "azimuth_count": 40,
+    "step_degrees": 9.0,
+    "val_azimuth_indices": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "test_azimuth_indices": [
+      28,
+      29,
+      30,
+      31
+    ],
+    "train_count": 96,
+    "val_count": 12,
+    "test_count": 12,
+    "elevations_degrees": [
+      15.0,
+      30.0,
+      50.0
+    ],
+    "guard_gap": "none; boundary neighbours can be 9 degrees apart",
+    "lighting_split": "same view labels for every lighting group; all lights are provided, not a held-out-light benchmark"
+  },
+  "geometry": {
+    "spheres": 3,
+    "ground_quads": 1,
+    "emitter_quads_per_light_group": 1,
+    "renderer_primitive_count": 7,
+    "material_count": 5,
+    "geometry_scene_role": "standalone CRF scene using first view and neutral_top lighting"
+  },
+  "lighting": [
+    {
+      "id": "neutral_top",
+      "origin": [
+        -1.5,
+        4.0,
+        -1.0
+      ],
+      "edge_u": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "edge_v": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "radiance_linear_rgb": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "id": "warm_left",
+      "origin": [
+        -3.0,
+        3.5,
+        -1.0
+      ],
+      "edge_u": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "edge_v": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "radiance_linear_rgb": [
+        10.0,
+        7.0,
+        4.0
+      ]
+    },
+    {
+      "id": "cool_right",
+      "origin": [
+        1.0,
+        3.5,
+        -1.0
+      ],
+      "edge_u": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "edge_v": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "radiance_linear_rgb": [
+        5.0,
+        7.0,
+        10.0
+      ]
+    }
+  ],
+  "environment_intensity": 0.025,
+  "aov_contract": {
+    "beauty": {
+      "implemented": true,
+      "suffix": ".pfm",
+      "meaning": "linear RGB path-traced estimate before display filtering"
+    },
+    "albedo": {
+      "implemented": true,
+      "suffix": "_albedo.pfm",
+      "meaning": "first pinhole hit material color: diffuse reflectance for matte/ground; metal reflectance parameter for metal; Beer transmission per metre for glass; not universal diffuse albedo"
+    },
+    "normal": {
+      "implemented": true,
+      "suffix": "_normal.pfm",
+      "meaning": "world-space face-forward first-hit surface/shading normal encoded n*0.5+0.5; no bump in this fixture; not camera-space normal"
+    },
+    "depth": {
+      "implemented": true,
+      "suffix": "_depth.pfm",
+      "meaning": "first-hit normalized-ray distance t in metres repeated in RGB; not camera-Z; zero on miss",
+      "to_opencv_z": "Z=t/sqrt(1+((u-cx)/fx)^2+((v-cy)/fy)^2)"
+    },
+    "direct": {
+      "implemented": false
+    },
+    "indirect": {
+      "implemented": false
+    },
+    "specular": {
+      "implemented": false
+    },
+    "diffuse_component": {
+      "implemented": false
+    },
+    "material_id": {
+      "implemented": false
+    },
+    "brdf_parameter_images": {
+      "implemented": false
+    }
+  },
+  "limitations": [
+    "No rendering, training, GPU measurement or perceptual-quality claim has occurred.",
+    "The existing renderer is a prototype; its output is a reference implementation, not automatically physical ground truth.",
+    "Sphere geometry, camera matrices and declared material parameters are exact fixture inputs; transport remains a sampled numerical estimate.",
+    "Direct/indirect/specular separation required by advanced reflection research is not implemented in the existing renderer.",
+    "Camera and view split stay identical across lights; define an additional held-out lighting protocol before claiming relighting generalization."
+  ]
+}

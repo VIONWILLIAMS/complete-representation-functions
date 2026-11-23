@@ -1,0 +1,13 @@
+# New runs belong outside the immutable historical evidence.
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+runtime-runs/
+*.pfm
+*.exr
+crf_render/crf_render
+crf_render/crf_render_cuda*
+crf_render/crf_render_product_snapshot
+crf_render/outputs/codex_*/
+gaussian_upgrade_research/scaffold/fixtures/procedural_reproduction/

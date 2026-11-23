@@ -1,0 +1,11 @@
+{
+  "renderer": "CRF original C++17 CPU path tracer",
+  "scene": "scenes/renderer_test.txt",
+  "width": 80, "height": 60, "spp": 8,
+  "seed": 831, "max_depth": 8, "threads": 1,
+  "primitives": 7, "bvh_nodes": 5, "materials": 5,
+  "area_lights": 1, "seconds": 0.021661145,
+  "camera_paths": 38400, "mean_luminance": 0.11284764, "max_linear_channel": 7.4012218, "nonfinite_pixels": 0,
+  "external_assets": [], "neural_models": [], "postprocessing_baked_in": false,
+  "fog_model": "none"
+}
